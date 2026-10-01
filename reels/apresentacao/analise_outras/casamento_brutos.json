@@ -1,0 +1,79 @@
+[
+ {
+  "entrada_master": 1572.1,
+  "rotulo": "Sagrada Família",
+  "bruto": "IMG_1192.MOV",
+  "t_bruto": 3.7916666666666665,
+  "corr": 0.40317609906196594,
+  "segundo": [
+   "IMG_0586.MOV",
+   0.37718114256858826
+  ]
+ },
+ {
+  "entrada_master": 91.75,
+  "rotulo": "Diego c/ camisa do Bahia",
+  "bruto": "IMG_0520.MOV",
+  "t_bruto": 0.08333333333333333,
+  "corr": 0.9976038336753845,
+  "segundo": [
+   "IMG_1192.MOV",
+   0.37092459201812744
+  ]
+ },
+ {
+  "entrada_master": 565.83,
+  "rotulo": "De costas no Arco",
+  "bruto": "IMG_0781.MOV",
+  "t_bruto": 3.0833333333333335,
+  "corr": 0.9972646236419678,
+  "segundo": [
+   "IMG_0502.MOV",
+   0.31890785694122314
+  ]
+ },
+ {
+  "entrada_master": 639.4,
+  "rotulo": "Brinde na 1ª tapa",
+  "bruto": "IMG_0816.MP4",
+  "t_bruto": 22.0,
+  "corr": 0.9980833530426025,
+  "segundo": [
+   "IMG_0520.MOV",
+   0.2606160044670105
+  ]
+ },
+ {
+  "entrada_master": 71.15,
+  "rotulo": "Chegando ao Camp Nou",
+  "bruto": "IMG_0502.MOV",
+  "t_bruto": 2.6666666666666665,
+  "corr": 0.9980471730232239,
+  "segundo": [
+   "IMG_0781.MOV",
+   0.23773294687271118
+  ]
+ },
+ {
+  "entrada_master": 218.2,
+  "rotulo": "Vista de Montjuïc",
+  "bruto": "IMG_0586.MOV",
+  "t_bruto": 3.375,
+  "corr": 0.9961164593696594,
+  "segundo": [
+   "IMG_1192.MOV",
+   0.3529592454433441
+  ]
+ },
+ {
+  "entrada_master": 453.45,
+  "rotulo": "Praia da Barceloneta",
+  "bruto": "IMG_0690.MOV",
+  "t_bruto": 9.958333333333334,
+  "corr": 0.9971100091934204,
+  "segundo": [
+   "IMG_0586.MOV",
+   0.19630193710327148
+  ]
+ }
+]

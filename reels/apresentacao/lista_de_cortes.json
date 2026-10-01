@@ -1,0 +1,386 @@
+{
+  "master": "fonte/Primeiro_Dia_Barcelona_Dia_01_MASTER_CORRIGIDO_v2.mp4",
+  "pasta_tmp": "_tmp",
+  "pasta_saida": ".",
+  "lufs": -15.0,
+  "fade_final": 0.5,
+  "narracao": {
+    "arquivo": "narracao/narracao.m4a",
+    "inicio": 3.0,
+    "corte_tomada": [
+      0.375,
+      12.4
+    ],
+    "voz_trecho": [
+      0.74,
+      12.105
+    ],
+    "voz_nr": 6,
+    "legendas": "narracao/narracao.srt",
+    "destaques": [
+      "Diego",
+      "soteropolitano",
+      "primeiro dia",
+      "perrengues"
+    ],
+    "aviso": null
+  },
+  "textos": {
+    "gancho": {
+      "linha1": "Aqui é o",
+      "linha2": "Primeiro Dia",
+      "y": 640,
+      "tam_linha2": 132
+    },
+    "aviso": {
+      "estilo": "titulo",
+      "linha1": "Segue para acompanhar",
+      "linha2": "a próxima chegada",
+      "tam_linha1": 52,
+      "tam_linha2": 94,
+      "y": 250,
+      "atraso": 0.25
+    },
+    "cidade": {
+      "tam": 30,
+      "trak": 3,
+      "maiusculas": true
+    }
+  },
+  "capa": {
+    "tempo": "26:13.00",
+    "centro_x": 0.43,
+    "y_titulo": 760
+  },
+  "cortes": [
+    {
+      "bloco": "gancho",
+      "entrada": 2.0,
+      "saida": 5.0,
+      "arquivo": "fonte/brutos_bcn/IMG_1192.MOV",
+      "centro_x": 0.48,
+      "dia": 3,
+      "rotulo": "Sagrada Família",
+      "rotulo2": "gancho · bruto, outro ângulo",
+      "descricao": "Sagrada Família de baixo, com a palmeira e as gruas (dia 3, exceção do gancho)",
+      "motivo": "O ângulo do master não está nos brutos; este é o bruto da Sagrada (IMG_1192), no trecho sem música (2–5 s).",
+      "com_ela": false,
+      "correspondencia": {
+        "cena_atual": "1 · gancho (master 26:12,10)",
+        "bruto": "IMG_1192.MOV",
+        "t_bruto": "2,00–5,00",
+        "tipo": "momento novo (o plano do master não está no bruto)"
+      }
+    },
+    {
+      "bloco": "apresentacao",
+      "entrada": 475.25,
+      "saida": 476.5,
+      "centro_x": 0.46,
+      "dia": 1,
+      "rotulo": "El Vaso de Oro",
+      "rotulo2": "bar · olhando para a câmera",
+      "descricao": "Diego no balcão do El Vaso de Oro, abaixa a cerveja e olha para a câmera",
+      "motivo": "Entra em \"Eu sou o Diego,\". Substitui a cena do museu (camisa do Bahia), que estava desfocada: foco caçando o telão, nitidez 8 contra 32–56 aqui. Trecho sem fala e sem música.",
+      "com_ela": false,
+      "correspondencia": {
+        "cena_atual": "2 · El Vaso de Oro (master 07:55,25)",
+        "bruto": "master (dia 1)",
+        "t_bruto": "475,25–476,50",
+        "tipo": "troca da cena desfocada"
+      }
+    },
+    {
+      "bloco": "apresentacao",
+      "entrada": 3.08,
+      "saida": 7.2883,
+      "arquivo": "fonte/brutos_bcn/IMG_0781.MOV",
+      "centro_x": 0.52,
+      "dia": 1,
+      "rotulo": "Arco do Triunfo",
+      "rotulo2": "indo até o arco",
+      "descricao": "Diego de costas, caminhando até o Arco do Triunfo",
+      "motivo": "Entra em \"sou soteropolitano e aqui eu te mostro o primeiro dia em cada cidade que eu visito.\"",
+      "com_ela": false,
+      "correspondencia": {
+        "cena_atual": "3 · Arco do Triunfo (master 09:25,83)",
+        "bruto": "IMG_0781.MOV",
+        "t_bruto": "3,08–7,16",
+        "tipo": "mesmo momento (estendido até o fim da frase)"
+      }
+    },
+    {
+      "bloco": "apresentacao",
+      "entrada": 2.67,
+      "saida": 4.9617,
+      "arquivo": "fonte/brutos_bcn/IMG_0502.MOV",
+      "centro_x": 0.56,
+      "dia": 1,
+      "rotulo": "Camp Nou",
+      "rotulo2": "chegada + fila",
+      "descricao": "Diego de perfil chegando ao Camp Nou, com a fila enorme ao lado",
+      "motivo": "Entra em \"A chegada, os meus perrengues\".",
+      "com_ela": false,
+      "correspondencia": {
+        "cena_atual": "5 · chegando ao Camp Nou (master 01:11,15)",
+        "bruto": "IMG_0502.MOV",
+        "t_bruto": "2,67–5,04",
+        "tipo": "mesmo momento"
+      }
+    },
+    {
+      "bloco": "apresentacao",
+      "entrada": 23.4,
+      "saida": 25.025,
+      "arquivo": "fonte/brutos_bcn/IMG_0816.MP4",
+      "centro_x": 0.44,
+      "dia": 1,
+      "rotulo": "Brinde",
+      "rotulo2": "primeira tapa, noite",
+      "descricao": "Diego levanta a cerveja e bebe, com as patatas bravas na mesa",
+      "motivo": "Entra em \"e o que mais me surpreende,\". Começa 0,2 s depois de ele terminar de falar no bruto (\"...para acompanhar.\").",
+      "com_ela": false,
+      "correspondencia": {
+        "cena_atual": "4 · brinde (master 10:39,40)",
+        "bruto": "IMG_0816.MP4",
+        "t_bruto": "23,40–25,03",
+        "tipo": "mesmo plano, 1,4 s depois (o trecho exato começa com a sua fala)"
+      }
+    },
+    {
+      "bloco": "apresentacao",
+      "entrada": 8.92,
+      "saida": 11.4617,
+      "arquivo": "fonte/brutos_bcn/IMG_0781.MOV",
+      "centro_x": 0.52,
+      "dia": 1,
+      "rotulo": "Arco do Triunfo",
+      "rotulo2": "vira e volta sorrindo",
+      "descricao": "No Arco, Diego se vira e volta andando para a câmera, sorrindo",
+      "motivo": "Entra em \"até porque o primeiro dia a gente nunca esquece.\" Começa depois do \"Ei!\" (8,50–8,76 s).",
+      "com_ela": false,
+      "correspondencia": {
+        "cena_atual": "3 · Arco do Triunfo (master 09:25,83)",
+        "bruto": "IMG_0781.MOV",
+        "t_bruto": "8,92–11,42",
+        "tipo": "momento novo do mesmo bruto"
+      }
+    },
+    {
+      "bloco": "montagem",
+      "entrada": 0.3,
+      "saida": 5.0083,
+      "centro_x": 0.45,
+      "dia": 1,
+      "cidade": "Barcelona",
+      "fala": true,
+      "fala_trecho": [
+        0.58,
+        4.82
+      ],
+      "rotulo": "\"Buenos días, Barcelona!\"",
+      "rotulo2": "chegada",
+      "descricao": "Selfie andando em Gràcia: \"Buenos días, Barcelona! Chegamos ao nosso primeiro destino.\"",
+      "motivo": "Frase inteira, com pausa real depois de \"destino\". Som direto do master (sem música nesse trecho).",
+      "legendas": [
+        {
+          "texto": "Buenos días, *Barcelona*!",
+          "de": 0.58,
+          "ate": 2.36
+        },
+        {
+          "texto": "Chegamos ao nosso *primeiro* *destino*.",
+          "de": 3.14,
+          "ate": 4.82
+        }
+      ],
+      "com_ela": false
+    },
+    {
+      "bloco": "montagem",
+      "entrada": 6.3,
+      "saida": 9.0083,
+      "arquivo": "fonte/outras_cidades/IMG_1384.MOV",
+      "centro_x": 0.5,
+      "dia": 1,
+      "cidade": "Amsterdam",
+      "fala": true,
+      "fala_trecho": [
+        8.25,
+        8.9
+      ],
+      "rotulo": "\"Chegamos!\"",
+      "rotulo2": "chegada / malas · com ela",
+      "descricao": "Vídeo vertical: ela vem com a mala, a câmera vira e Diego diz \"Chegamos!\"",
+      "motivo": "Chegada com as malas. Fala entre 8,34 e 8,80 s, com folga antes e depois.",
+      "legendas": [
+        {
+          "texto": "*Chegamos!*",
+          "de": 8.3,
+          "ate": 8.8
+        }
+      ],
+      "com_ela": true
+    },
+    {
+      "bloco": "montagem",
+      "entrada": 1.8,
+      "saida": 4.3833,
+      "arquivo": "fonte/outras_cidades/IMG_2761.MOV",
+      "girar": 90,
+      "centro_x": 0.39,
+      "dia": 1,
+      "cidade": "Paris",
+      "rotulo": "Torre Eiffel",
+      "rotulo2": "monumento · com ela",
+      "descricao": "Selfie dos dois com a Torre Eiffel atrás",
+      "motivo": "Sem fala; os dois e a torre cabem no crop do começo ao fim.",
+      "com_ela": true
+    },
+    {
+      "bloco": "montagem",
+      "entrada": 6.0,
+      "saida": 8.5,
+      "arquivo": "fonte/outras_cidades/IMG_2693.MOV",
+      "centro_x": 0.55,
+      "dia": 1,
+      "cidade": "Bruges",
+      "rotulo": "Waffle",
+      "rotulo2": "comida",
+      "descricao": "Diego morde o waffle na rua, com \"Place de Brugge\" atrás",
+      "motivo": "Sem fala.",
+      "com_ela": false
+    },
+    {
+      "bloco": "montagem",
+      "entrada": 12.4,
+      "saida": 15.4,
+      "arquivo": "fonte/outras_cidades/IMG_2693.MOV",
+      "centro_x": 0.5,
+      "dia": 1,
+      "cidade": "Bruges",
+      "fala": true,
+      "fala_trecho": [
+        12.55,
+        15.21
+      ],
+      "rotulo": "\"Muito, muito...\"",
+      "rotulo2": "rua · voz dela",
+      "descricao": "Diego se vira e sai andando pela rua histórica; ele diz \"Muito,\" e ela responde \"muito, muito, muito\" atrás da câmera",
+      "motivo": "Entra no lugar de Bruxelas: único trecho 4K de outra cidade que cabe no 9:16 sem cortar ela.",
+      "legendas": [
+        {
+          "texto": "Muito,",
+          "de": 12.58,
+          "ate": 13.04
+        },
+        {
+          "texto": "muito, muito, muito.",
+          "de": 13.38,
+          "ate": 15.16
+        }
+      ],
+      "com_ela": false
+    },
+    {
+      "bloco": "montagem",
+      "entrada": 12.9,
+      "saida": 17.4417,
+      "arquivo": "fonte/brutos_bcn/IMG_0816.MP4",
+      "centro_x": 0.3,
+      "dia": 1,
+      "cidade": "Barcelona",
+      "fala": true,
+      "fala_trecho": [
+        13.0,
+        17.22
+      ],
+      "rotulo": "\"Minha primeira tapa\"",
+      "rotulo2": "comida",
+      "descricao": "Selfie no bar: \"E agora eu acabei de pedir minha primeira tapa de Barcelona.\"",
+      "motivo": "Frase inteira, direto do bruto (sem a trilha da edição). Nos primeiros 0,9 s ela sai pela borda direita do quadro original e fica fora do crop.",
+      "legendas": [
+        {
+          "texto": "E agora eu acabei",
+          "de": 13.0,
+          "ate": 14.12
+        },
+        {
+          "texto": "de pedir minha *primeira*",
+          "de": 14.12,
+          "ate": 15.7
+        },
+        {
+          "texto": "tapa de Barcelona.",
+          "de": 15.7,
+          "ate": 17.22
+        }
+      ],
+      "com_ela": false
+    },
+    {
+      "bloco": "aviso",
+      "entrada": 9.96,
+      "saida": 16.4183,
+      "centro_x": 0.7,
+      "ambiente": 0.6,
+      "dia": 1,
+      "ambiente_de": [
+        [
+          297.35,
+          298.29
+        ],
+        [
+          779.27,
+          780.65
+        ],
+        [
+          1327.33,
+          1328.29
+        ],
+        [
+          1630.59,
+          1631.41
+        ],
+        [
+          772.09,
+          773.21
+        ],
+        [
+          279.43,
+          280.35
+        ],
+        [
+          1313.43,
+          1314.15
+        ]
+      ],
+      "rotulo": "Praia da Barceloneta",
+      "rotulo2": "fechamento",
+      "descricao": "Praia da Barceloneta com céu azul; panorâmica lenta em que o Hotel W (a \"vela\") entra pela direita",
+      "motivo": "Imagem do bruto (mesmo momento). O som do bruto tem violão o tempo todo, então fica o ambiente de pausas sem música, como antes.",
+      "com_ela": false,
+      "arquivo": "fonte/brutos_bcn/IMG_0690.MOV",
+      "correspondencia": {
+        "cena_atual": "14 · Barceloneta (master 07:33,45)",
+        "bruto": "IMG_0690.MOV",
+        "t_bruto": "9,96–16,42",
+        "tipo": "mesmo momento (só a imagem; o som do bruto tem violão)"
+      }
+    }
+  ],
+  "audio": {
+    "fala_lufs": -18.0,
+    "ambiente_lufs": -22.0,
+    "fala_nr": 5,
+    "ducking_db": 9.0,
+    "release_ms": 400,
+    "latencia_nr": 0.025
+  },
+  "regras_revisao_4": {
+    "falas": "corte só em pausa: >= 0,15 s depois da última palavra e >= 0,1 s antes da primeira; nenhuma frase cortada",
+    "som": "som original de cada cena; nada de música; só o fechamento mantém ambiente de pausas (bruto com violão)",
+    "barcelona": "dia 1 (09/03) no master até 10:57,5 e nos brutos pela data; exceção: o gancho (11/03)"
+  },
+  "tp": -1.5
+}

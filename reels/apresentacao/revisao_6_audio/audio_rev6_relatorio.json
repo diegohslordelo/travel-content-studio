@@ -1,0 +1,89 @@
+{
+ "narracao": {
+  "cadeia": "highpass=f=80:poles=2,equalizer=f=300:t=o:w=1.0:g=-2,equalizer=f=3000:t=o:w=1.2:g=2,volume=4.28dB,acompressor=threshold=-15dB:ratio=2:attack=20:release=150:knee=4:makeup=1",
+  "limiar_dB": -15,
+  "reducao_picos_dB": 2.52,
+  "reducao_mediana_dB": 0.12,
+  "lufs_voz": -18.0
+ },
+ "ducking": {
+  "trechos_alterados_s": [
+   8.104,
+   8.969
+  ],
+  "maior_correcao_dB": -10.51,
+  "reducao_media_rev5_dB": 9.77
+ },
+ "cena8": {
+  "fonte": "som cru do bruto IMG_1384 (Reel da rev. 3), passa-altas 80 Hz, sem redução de ruído/EQ/compressão",
+  "ganho_nivel_dB": -4.17,
+  "alinhamento_amostras": 129998,
+  "ambiente_antes_da_fala_dB": 6,
+  "trecho_s": [
+   19.625,
+   21.62
+  ]
+ },
+ "cena12": {
+  "alinhamento_amostras": 23,
+  "ms": 0.48
+ },
+ "clique": {
+  "tempo_s": 23.9759,
+  "amostras": 12,
+  "canal": "direito"
+ },
+ "restauro_agudos": [
+  {
+   "cena": "07 Buenos días",
+   "ganho_por_banda_dB": {
+    "2000": 0.1,
+    "2500": 0.9,
+    "3150": 1.4,
+    "4000": 1.3,
+    "5000": 3.1,
+    "6300": 3.6,
+    "8000": 4.0,
+    "10000": 4.8,
+    "12500": 4.1,
+    "16000": 4.7
+   }
+  },
+  {
+   "cena": "11 Bruges",
+   "ganho_por_banda_dB": {
+    "2000": 0.0,
+    "2500": 0.0,
+    "3150": 0.0,
+    "4000": 0.6,
+    "5000": 2.0,
+    "6300": 3.5,
+    "8000": 4.7,
+    "10000": 4.6,
+    "12500": 4.0,
+    "16000": 4.8
+   }
+  },
+  {
+   "cena": "12 tapa",
+   "ganho_por_banda_dB": {
+    "2000": 0.5,
+    "2500": 0.7,
+    "3150": 1.3,
+    "4000": 1.7,
+    "5000": 1.5,
+    "6300": 1.2,
+    "8000": 1.4,
+    "10000": 2.6,
+    "12500": 1.8,
+    "16000": 0.3
+   }
+  }
+ ],
+ "final": {
+  "ganho_dB": 0.3,
+  "limite": 0.715,
+  "I": -15.1,
+  "TP": -2.3
+ }
+}

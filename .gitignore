@@ -1,0 +1,16 @@
+# Master (10 GB) e brutos: ficam fora do git
+fonte/
+
+# Temporários do render
+_tmp/
+__pycache__/
+*.pyc
+*.f32
+
+# Ambiente local
+.env
+.venv/
+
+# Sistema
+.DS_Store
+Thumbs.db

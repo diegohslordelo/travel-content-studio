@@ -1,0 +1,18 @@
+teste_voz.mp4 · loudness medido (EBU R128)
+
+Antes da normalização final (cada voz tratada separadamente):
+          7: -16.0 LUFS (bruto -14.7; redução de ruído com piso -26 dB)
+          8: -16.0 LUFS (bruto -14.4; redução de ruído com piso -37 dB)
+         11: -16.0 LUFS (bruto -19.8; redução de ruído com piso -39 dB)
+         12: -16.0 LUFS (bruto -16.6; redução de ruído com piso -26 dB)
+   narração: -16.0 LUFS (bruto -22.2; redução de ruído com piso -50 dB)
+
+No áudio final do Reel (-14 LUFS no total), só nos trechos de voz:
+    3.00- 14.62 s   -13.6 LUFS  Narração (com o som das cenas por baixo)
+   14.62- 19.33 s   -12.4 LUFS  Barcelona: Buenos días, Barcelona! Chegamos ao nosso primeiro destino.
+   19.33- 22.04 s   -12.4 LUFS  Amsterdam: Chegamos!
+   27.12- 30.12 s   -13.4 LUFS  Bruges: Muito, muito, muito, muito.
+   30.12- 34.67 s   -12.8 LUFS  Barcelona: E agora eu acabei de pedir minha primeira tapa de Barcelona.
+
+teste_voz.mp4 inteiro: -13.5 LUFS integrados, pico -2.4 dBTP
+Reel inteiro (áudio final): -14.1 LUFS integrados, pico -1.7 dBTP

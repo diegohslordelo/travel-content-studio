@@ -1,0 +1,51 @@
+inicio	fim	dur	musica	fala	interior	exterior	top
+4.97	6.41	1.44	0.072	0.565	0.007	0.114	Speech 0.56; Vehicle 0.11; Music 0.07; Sliding door 0.03
+38.45	39.47	1.02	0.274	0.151	0.008	0.016	Music 0.27; Speech 0.15; Crowd 0.04; Sound effect 0.03
+59.55	60.61	1.06	0.073	0.550	0.010	0.016	Speech 0.55; Male speech, man speaking 0.10; Music 0.07; Animal 0.02
+130.81	131.95	1.14	0.127	0.082	0.004	0.119	Music 0.13; Vehicle 0.12; Speech 0.08; Car 0.06
+163.65	164.37	0.72	0.093	0.218	0.004	0.050	Speech 0.22; Music 0.09; Vehicle 0.05; Slam 0.03
+181.37	182.07	0.70	0.162	0.272	0.006	0.043	Speech 0.27; Music 0.16; Vehicle 0.04; Sound effect 0.04
+183.19	183.93	0.74	0.143	0.254	0.002	0.028	Speech 0.25; Cattle, bovinae 0.25; Livestock, farm animals, working animals 0.16; Music 0.14
+279.43	280.35	0.92	0.033	0.153	0.006	0.272	Vehicle 0.27; Speech 0.15; Car 0.12; Bus 0.06
+297.35	298.29	0.94	0.045	0.316	0.005	0.220	Speech 0.32; Vehicle 0.22; Car 0.08; Music 0.04
+340.87	341.89	1.02	0.026	0.508	0.009	0.037	Speech 0.51; Outside, urban or manmade 0.04; Vehicle 0.03; Music 0.03
+352.35	353.19	0.84	0.364	0.275	0.008	0.034	Music 0.36; Speech 0.28; Sound effect 0.04; Vehicle 0.03
+408.01	409.23	1.22	0.029	0.627	0.009	0.077	Speech 0.63; Vehicle 0.08; Music 0.03; Male speech, man speaking 0.03
+465.33	466.35	1.02	0.111	0.542	0.010	0.027	Speech 0.54; Music 0.11; Male speech, man speaking 0.09; Television 0.03
+471.31	476.71	5.40	0.010	0.597	0.011	0.005	Speech 0.60; Dishes, pots, and pans 0.22; Cutlery, silverware 0.10; Chink, clink 0.04
+609.49	610.31	0.82	0.348	0.347	0.006	0.035	Music 0.35; Speech 0.35; Explosion 0.09; Sound effect 0.06
+616.89	617.57	0.68	0.244	0.424	0.009	0.036	Speech 0.42; Music 0.24; Vehicle 0.04; Sound effect 0.03
+619.73	620.55	0.82	0.291	0.524	0.010	0.023	Speech 0.52; Music 0.29; Male speech, man speaking 0.05; Vehicle 0.02
+624.29	626.39	2.10	0.068	0.569	0.028	0.064	Speech 0.57; Cattle, bovinae 0.27; Moo 0.15; Livestock, farm animals, working animals 0.12
+628.15	630.07	1.92	0.080	0.595	0.030	0.084	Speech 0.60; Vehicle 0.08; Music 0.08; Male speech, man speaking 0.04
+725.43	726.53	1.10	0.360	0.434	0.007	0.022	Speech 0.43; Music 0.36; Animal 0.03; Run 0.03
+743.45	744.19	0.74	0.087	0.121	0.007	0.032	Speech 0.12; Music 0.09; Engine 0.07; Rattle 0.05
+772.09	773.21	1.12	0.024	0.140	0.011	0.086	Speech 0.14; Vehicle 0.09; Animal 0.07; Clip-clop 0.06
+779.27	780.65	1.38	0.054	0.180	0.007	0.052	Speech 0.18; Door 0.08; Sliding door 0.07; Music 0.05
+816.33	817.35	1.02	0.221	0.365	0.014	0.017	Speech 0.36; Music 0.22; Quack 0.04; Animal 0.03
+919.83	920.49	0.66	0.243	0.389	0.008	0.062	Speech 0.39; Music 0.24; Vehicle 0.06; Animal 0.03
+1115.73	1116.59	0.86	0.036	0.600	0.007	0.242	Speech 0.60; Vehicle 0.24; Car 0.14; Motor vehicle (road) 0.04
+1122.19	1124.05	1.86	0.016	0.745	0.006	0.353	Speech 0.74; Vehicle 0.35; Car 0.12; Bus 0.07
+1171.67	1172.35	0.68	0.115	0.443	0.017	0.099	Speech 0.44; Music 0.11; Vehicle 0.10; Outside, urban or manmade 0.03
+1184.23	1185.07	0.84	0.051	0.533	0.018	0.081	Speech 0.53; Vehicle 0.08; Music 0.05; Male speech, man speaking 0.04
+1226.65	1227.85	1.20	0.217	0.338	0.004	0.078	Speech 0.34; Music 0.22; Vehicle 0.08; Explosion 0.05
+1256.07	1256.93	0.86	0.133	0.375	0.010	0.025	Speech 0.37; Music 0.13; Male speech, man speaking 0.02; Vehicle 0.02
+1273.31	1274.19	0.88	0.138	0.489	0.005	0.070	Speech 0.49; Music 0.14; Vehicle 0.07; Male speech, man speaking 0.04
+1276.15	1276.85	0.70	0.129	0.461	0.010	0.129	Speech 0.46; Music 0.13; Vehicle 0.13; Car 0.05
+1309.87	1310.89	1.02	0.054	0.543	0.011	0.061	Speech 0.54; Vehicle 0.06; Music 0.05; Male speech, man speaking 0.03
+1313.43	1314.15	0.72	0.063	0.094	0.003	0.082	Speech 0.09; Vehicle 0.08; Explosion 0.07; Music 0.06
+1324.51	1325.27	0.76	0.129	0.225	0.005	0.152	Speech 0.22; Vehicle 0.15; Music 0.13; Car 0.08
+1327.33	1328.29	0.96	0.043	0.068	0.003	0.281	Vehicle 0.28; Car 0.18; Speech 0.07; Car passing by 0.06
+1412.47	1413.35	0.88	0.076	0.419	0.021	0.006	Speech 0.42; Music 0.08; Rub 0.06; Male speech, man speaking 0.05
+1562.39	1563.31	0.92	0.217	0.327	0.005	0.038	Speech 0.33; Music 0.22; Tick-tock 0.20; Tick 0.20
+1592.31	1593.05	0.74	0.057	0.369	0.012	0.150	Speech 0.37; Vehicle 0.15; Train 0.09; Railroad car, train wagon 0.07
+1630.59	1631.41	0.82	0.026	0.066	0.002	0.128	Vehicle 0.13; Speech 0.07; Car 0.06; Explosion 0.06
+1703.11	1704.03	0.92	0.054	0.500	0.008	0.132	Speech 0.50; Vehicle 0.13; Car 0.07; Music 0.05
+1722.85	1723.53	0.68	0.039	0.676	0.007	0.051	Speech 0.68; Vehicle 0.05; Music 0.04; Male speech, man speaking 0.03
+1791.53	1792.27	0.74	0.327	0.265	0.008	0.004	Music 0.33; Speech 0.26; Tap 0.03; Chopping (food) 0.02
+1802.67	1803.33	0.66	0.354	0.246	0.014	0.015	Music 0.35; Speech 0.25; Door 0.03; Slam 0.02
+1917.79	1918.77	0.98	0.272	0.453	0.017	0.012	Speech 0.45; Music 0.27; Male speech, man speaking 0.04; Gasp 0.03
+1923.49	1924.23	0.74	0.027	0.594	0.007	0.068	Speech 0.59; Vehicle 0.07; Car 0.03; Animal 0.03
+1932.21	1932.91	0.70	0.026	0.148	0.006	0.039	Speech 0.15; Vehicle 0.04; Slam 0.03; Car 0.03
+2004.45	2005.87	1.42	0.054	0.513	0.010	0.019	Speech 0.51; Music 0.05; Male speech, man speaking 0.05; Animal 0.02
+2046.75	2047.51	0.76	0.068	0.441	0.006	0.023	Speech 0.44; Oink 0.09; Animal 0.09; Grunt 0.07

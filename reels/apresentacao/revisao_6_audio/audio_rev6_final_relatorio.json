@@ -1,0 +1,53 @@
+{
+ "paris": {
+  "pausas_do_clipe_s": [
+   [
+    6.1,
+    6.5
+   ],
+   [
+    2.66,
+    3.04
+   ],
+   [
+    7.26,
+    7.55
+   ],
+   [
+    0.03,
+    0.3
+   ]
+  ],
+  "lufs_alvo_ambiente_abaixado": -27.16,
+  "crossfades_s": [
+   [
+    6.858,
+    7.058
+   ],
+   [
+    8.358,
+    8.558
+   ]
+  ]
+ },
+ "s_ganho_rev5_dB": 2.14,
+ "amsterdam": {
+  "inicio_img_s": 6.5083,
+  "fim_som_img_s": 9.13,
+  "ganho_dB": -4.17,
+  "s_final": "agudos da rev. 3 / curva qsin até 9,00 s e da rev. 5 / curva qsin de 9,02 a 9,08 s, final suave até 9,13 s; graves do ambiente IMG 7,95-8,17 s",
+  "fim_da_cena_7": "ambiente 17,10-17,30 s no lugar da mistura de 19,525-19,725 s"
+ },
+ "torre_eiffel": {
+  "entra_em_s": 22.125,
+  "fade_in_s": 0.25,
+  "som_do_chegamos_ate_s": 22.247
+ },
+ "final": {
+  "ganho_dB": 0.3,
+  "limite": 0.715,
+  "I": -15.1,
+  "TP": -2.3,
+  "duracao_s": 41.2083
+ }
+}

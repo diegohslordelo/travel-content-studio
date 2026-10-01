@@ -1,0 +1,1397 @@
+{
+  "$description": "Primeiro Dia (@primeirodiaem) — tokens v2.0.0 (REV 2 'Objetos do Primeiro Dia'), 01/10/2026. W3C DTCG 2025.10. Primitivos → semânticos → componentes. Substitui primeiro-dia-tokens-v1.json.",
+  "color": {
+    "signal": {
+      "100": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1.0,
+            0.9647,
+            0.8627
+          ],
+          "hex": "#FFF6DC"
+        },
+        "$description": "Amarelo Chegada 100 — fundo de etiqueta clara."
+      },
+      "300": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1.0,
+            0.8863,
+            0.5686
+          ],
+          "hex": "#FFE291"
+        },
+        "$description": "Amarelo Chegada 300 — brilho (glow) do SURPREENDE. Nunca texto."
+      },
+      "500": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1.0,
+            0.7608,
+            0.102
+          ],
+          "hex": "#FFC21A"
+        },
+        "$description": "Amarelo Chegada — a cor da marca. Face da Placa, números do Placar, estrela do Ticket. Grafite por cima (11,48:1). Nunca texto sobre claro (1,46:1)."
+      },
+      "700": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5412,
+            0.3529,
+            0.0
+          ],
+          "hex": "#8A5A00"
+        },
+        "$description": "Amarelo Texto — único amarelo permitido como texto sobre papel (5,35:1)."
+      }
+    },
+    "night": {
+      "900": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0706,
+            0.0745,
+            0.0902
+          ],
+          "hex": "#121317"
+        },
+        "$description": "Grafite Noite — estrutura: texto, módulo da seta, Placar, Quadro. Sobre ele: amarelo (11,48:1) ou papel (16,75:1)."
+      },
+      "800": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1059,
+            0.1137,
+            0.1373
+          ],
+          "hex": "#1B1D23"
+        },
+        "$description": "Grafite Noite 800 — superfície elevada escura (amarelo 10,42:1)."
+      },
+      "700": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.149,
+            0.1608,
+            0.1843
+          ],
+          "hex": "#26292F"
+        },
+        "$description": "Grafite Noite 700 — linhas do Quadro, faixa elevada (amarelo 9,01:1)."
+      },
+      "500": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.3569,
+            0.3765,
+            0.4196
+          ],
+          "hex": "#5B606B"
+        },
+        "$description": "Cinza Asfalto — texto secundário sobre papel (5,69:1) e recibo (6,09:1). Nunca sobre grafite (2,94:1)."
+      },
+      "400": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.4627,
+            0.4824,
+            0.5255
+          ],
+          "hex": "#767B86"
+        },
+        "$description": "Cinza Poeira — texto apagado, só ≥ 32px sobre papel (3,83:1); sobre grafite 4,37:1, só ≥ 24px."
+      },
+      "300": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7843,
+            0.7961,
+            0.8196
+          ],
+          "hex": "#C8CBD1"
+        },
+        "$description": "Cinza Concreto — divisórias e linha pontilhada de recibo. Nunca texto."
+      }
+    },
+    "paper": {
+      "500": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9647,
+            0.9529,
+            0.9255
+          ],
+          "hex": "#F6F3EC"
+        },
+        "$description": "Papel Bilhete — o papel da marca: bilhete, ticket, etiqueta, fundo de carrossel. Grafite por cima (16,75:1)."
+      },
+      "0": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9882,
+            0.9843,
+            0.9725
+          ],
+          "hex": "#FCFBF8"
+        },
+        "$description": "Papel Recibo — papel térmico do Recibo e da Comanda (grafite 17,94:1)."
+      }
+    },
+    "stamp": {
+      "500": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7686,
+            0.1882,
+            0.1647
+          ],
+          "hex": "#C4302A"
+        },
+        "$description": "Vermelho Carimbo — tinta do carimbo PERRENGUE e do ✗ PULA. Sobre papel 4,98:1. Nunca sobre grafite (3,36:1) nem sobre vídeo sem papel por baixo."
+      },
+      "700": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6039,
+            0.1333,
+            0.1137
+          ],
+          "hex": "#9A221D"
+        },
+        "$description": "Vermelho Carimbo 700 — texto pequeno em vermelho (< 32px) sobre papel."
+      }
+    },
+    "ink": {
+      "500": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1216,
+            0.2314,
+            0.702
+          ],
+          "hex": "#1F3BB3"
+        },
+        "$description": "Azul Caneta — só a camada caneta (letra do Diego, círculos, sublinhados). Sobre papel 8,12:1. Nunca sobre grafite (2,06:1) nem encostado no amarelo (colisão Ryanair/BB/Mercado Livre)."
+      }
+    },
+    "exit": {
+      "600": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0784,
+            0.4784,
+            0.2667
+          ],
+          "hex": "#147A44"
+        },
+        "$description": "Verde Saída — ✓ VALE e 'deu certo'. Sobre papel 4,86:1. Uso pontual, nunca fundo grande."
+      }
+    },
+    "semantic": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.signal.500}",
+        "$description": "Primary = Amarelo Chegada. 10% da tela. Sempre com grafite por cima."
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.night.900}",
+        "$description": "Secondary = Grafite Noite. Estrutura, 30%."
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{color.stamp.500}",
+        "$description": "Accent = Vermelho Carimbo. Raro: só PERRENGUE e PULA."
+      },
+      "background": {
+        "$type": "color",
+        "$value": "{color.paper.500}",
+        "$description": "Fundo de carrossel e de página (claro: papel; escuro: grafite)."
+      },
+      "background-dark": {
+        "$type": "color",
+        "$value": "{color.night.900}",
+        "$description": "Tema escuro"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{color.paper.0}",
+        "$description": "Superfície de cartão/recibo."
+      },
+      "surface-dark": {
+        "$type": "color",
+        "$value": "{color.night.800}",
+        "$description": "Tema escuro"
+      },
+      "text-primary": {
+        "$type": "color",
+        "$value": "{color.night.900}",
+        "$description": "Texto principal sobre background/surface do mesmo tema."
+      },
+      "text-primary-dark": {
+        "$type": "color",
+        "$value": "{color.paper.500}",
+        "$description": "Tema escuro"
+      },
+      "text-secondary": {
+        "$type": "color",
+        "$value": "{color.night.500}",
+        "$description": "Texto secundário (claro 5,69:1 · escuro 11,7:1)."
+      },
+      "text-secondary-dark": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7843,
+            0.7961,
+            0.8196
+          ],
+          "hex": "#C8CBD1"
+        },
+        "$description": "Tema escuro"
+      },
+      "text-muted": {
+        "$type": "color",
+        "$value": "{color.night.400}",
+        "$description": "Texto apagado, só ≥ 32px (claro 3,83:1 · escuro 7,0:1)."
+      },
+      "text-muted-dark": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6039,
+            0.6235,
+            0.6588
+          ],
+          "hex": "#9A9FA8"
+        },
+        "$description": "Tema escuro"
+      },
+      "on-primary": {
+        "$type": "color",
+        "$value": "{color.night.900}",
+        "$description": "Texto e seta sobre amarelo. Nunca branco (1,62:1)."
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{color.exit.600}",
+        "$description": "✓ VALE. Sempre com ícone + palavra."
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{color.signal.700}",
+        "$description": "Atenção em texto (claro: amarelo 700; escuro: amarelo 500)."
+      },
+      "warning-dark": {
+        "$type": "color",
+        "$value": "{color.signal.500}",
+        "$description": "Tema escuro"
+      },
+      "danger": {
+        "$type": "color",
+        "$value": "{color.stamp.500}",
+        "$description": "PERRENGUE, ✗ PULA, 'não faça isso'. Sempre sobre papel."
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{color.night.900}",
+        "$description": "Informação = grafite + pictograma 'i'. Sem azul extra: o azul é da caneta."
+      },
+      "caption-text": {
+        "$type": "color",
+        "$value": "{color.paper.0}",
+        "$description": "Texto de legenda sobre vídeo, sempre com scrim + sombra (seção Legendas)."
+      },
+      "scrim": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0706,
+            0.0745,
+            0.0902
+          ],
+          "hex": "#121317",
+          "alpha": 0.63
+        },
+        "$description": "Véu grafite 63% atrás das legendas e do Placar sobre vídeo claro."
+      },
+      "glass": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0706,
+            0.0745,
+            0.0902
+          ],
+          "hex": "#121317",
+          "alpha": 0.55
+        },
+        "$description": "Vidro de trem: grafite 55% + desfoque 24px (legenda narrativa)."
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Barlow Condensed",
+          "Arial Narrow",
+          "sans-serif"
+        ]
+      },
+      "text": {
+        "$type": "fontFamily",
+        "$value": [
+          "Barlow",
+          "Arial",
+          "sans-serif"
+        ]
+      },
+      "data": {
+        "$type": "fontFamily",
+        "$value": [
+          "PD Placar",
+          "Barlow Condensed",
+          "sans-serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "IBM Plex Mono",
+          "Courier New",
+          "monospace"
+        ]
+      },
+      "pen": {
+        "$type": "fontFamily",
+        "$value": [
+          "Caneta Diego",
+          "Reenie Beanie",
+          "cursive"
+        ]
+      }
+    },
+    "style": {
+      "display": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.display}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 168,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 800,
+          "lineHeight": 0.88,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": -0.01,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Capa de carrossel e thumbnail. CAIXA-ALTA, 1 a 2 palavras."
+      },
+      "h1": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.display}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 128,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 800,
+          "lineHeight": 0.9,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": 0.005,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Destino da Placa (linha 2). CAIXA-ALTA. 104px se o nome tem 13–16 letras."
+      },
+      "h2": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.display}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 80,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 700,
+          "lineHeight": 0.95,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": 0.0,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Título de slide de carrossel e de card. Caixa de frase."
+      },
+      "h3": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.display}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 56,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 600,
+          "lineHeight": 1,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": 0.02,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Nome de lugar em card, capítulo, lower third."
+      },
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.display}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 36,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 600,
+          "lineHeight": 1,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": 0.08,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Rótulo da Placa (linha 1) e de séries. CAIXA-ALTA, tracking +8%."
+      },
+      "editorial": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.display}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 88,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 300,
+          "lineHeight": 1,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": -0.01,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Legenda emocional e hook de impacto. Leve + itálico, contraste com o 800 da placa."
+      },
+      "caption": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 56,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 700,
+          "lineHeight": 1.15,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": 0.0,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Legenda embutida padrão no Reel. Máx. 2 linhas × 26 caracteres."
+      },
+      "body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 44,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 500,
+          "lineHeight": 1.3,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": 0.0,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Texto de carrossel e de card. Máx. 40 palavras por slide."
+      },
+      "narrative": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 44,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 500,
+          "lineHeight": 1.25,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": 0.0,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Legenda narrativa (vidro)."
+      },
+      "data-xl": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.data}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 128,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 700,
+          "lineHeight": 0.9,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": 0.0,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Total do Recibo, preço do hook."
+      },
+      "data": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.data}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 56,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 700,
+          "lineHeight": 1,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": 0.0,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Placar e valores de linha. Algarismos tabulares."
+      },
+      "micro": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.mono}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 30,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 500,
+          "lineHeight": 1.3,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": 0.02,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Coordenadas, cotação, rodapé de recibo, data do carimbo. Nunca informação essencial abaixo de 32px."
+      },
+      "pen": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.pen}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 80,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 400,
+          "lineHeight": 1.05,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": 0.0,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Bilhete, veredito, humor. Sempre minúsculas, Azul Caneta, sobre papel."
+      }
+    }
+  },
+  "space": {
+    "1": {
+      "$type": "dimension",
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      }
+    },
+    "2": {
+      "$type": "dimension",
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    "3": {
+      "$type": "dimension",
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    "5": {
+      "$type": "dimension",
+      "$value": {
+        "value": 40,
+        "unit": "px"
+      }
+    },
+    "6": {
+      "$type": "dimension",
+      "$value": {
+        "value": 48,
+        "unit": "px"
+      }
+    },
+    "7": {
+      "$type": "dimension",
+      "$value": {
+        "value": 56,
+        "unit": "px"
+      }
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": {
+        "value": 64,
+        "unit": "px"
+      }
+    },
+    "9": {
+      "$type": "dimension",
+      "$value": {
+        "value": 72,
+        "unit": "px"
+      }
+    },
+    "10": {
+      "$type": "dimension",
+      "$value": {
+        "value": 80,
+        "unit": "px"
+      }
+    },
+    "11": {
+      "$type": "dimension",
+      "$value": {
+        "value": 96,
+        "unit": "px"
+      }
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": {
+        "value": 128,
+        "unit": "px"
+      }
+    }
+  },
+  "radius": {
+    "paper": {
+      "$type": "dimension",
+      "$value": {
+        "value": 3,
+        "unit": "px"
+      }
+    },
+    "tag": {
+      "$type": "dimension",
+      "$value": {
+        "value": 10,
+        "unit": "px"
+      }
+    },
+    "plate": {
+      "$type": "dimension",
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    "photo": {
+      "$type": "dimension",
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    "full": {
+      "$type": "dimension",
+      "$value": {
+        "value": 999,
+        "unit": "px"
+      }
+    }
+  },
+  "shadow": {
+    "shadow-plate": {
+      "$type": "shadow",
+      "$value": "0 3px 0 rgba(0,0,0,0.28), 0 18px 32px -10px rgba(0,0,0,0.55)",
+      "$description": "Placa e Placar: borda dura (espessura do metal) + sombra projetada. (string CSS; converter para objeto DTCG se a ferramenta exigir)"
+    },
+    "shadow-plate-bevel": {
+      "$type": "shadow",
+      "$value": "inset 0 2px 0 rgba(255,255,255,0.45), inset 0 -4px 0 rgba(0,0,0,0.16)",
+      "$description": "Relevo do esmalte da Placa (sempre junto do shadow-plate). (string CSS; converter para objeto DTCG se a ferramenta exigir)"
+    },
+    "shadow-paper": {
+      "$type": "shadow",
+      "$value": "0 1px 1px rgba(0,0,0,0.20), 0 14px 26px -10px rgba(0,0,0,0.50)",
+      "$description": "Bilhete, recibo, carimbo, etiqueta: papel encostado no vídeo. (string CSS; converter para objeto DTCG se a ferramenta exigir)"
+    },
+    "shadow-lift": {
+      "$type": "shadow",
+      "$value": "0 28px 50px -14px rgba(0,0,0,0.55)",
+      "$description": "Ticket SURPREENDE no ápice da subida (papel no ar). (string CSS; converter para objeto DTCG se a ferramenta exigir)"
+    }
+  },
+  "duration": {
+    "dur-tick": {
+      "$type": "duration",
+      "$value": {
+        "value": 80,
+        "unit": "ms"
+      },
+      "$description": "Troca de número no Placar; flash do Snap (2 quadros a 30 fps)."
+    },
+    "dur-fast": {
+      "$type": "duration",
+      "$value": {
+        "value": 160,
+        "unit": "ms"
+      },
+      "$description": "Palavra de legenda; carimbo batendo."
+    },
+    "dur-base": {
+      "$type": "duration",
+      "$value": {
+        "value": 240,
+        "unit": "ms"
+      },
+      "$description": "Saída de objetos; etiqueta; cards."
+    },
+    "dur-arrive": {
+      "$type": "duration",
+      "$value": {
+        "value": 560,
+        "unit": "ms"
+      },
+      "$description": "Assinatura Chegada (placa entrando e assentando)."
+    },
+    "dur-slow": {
+      "$type": "duration",
+      "$value": {
+        "value": 400,
+        "unit": "ms"
+      },
+      "$description": "Bilhete sendo escrito; legenda emocional."
+    },
+    "dur-cinema": {
+      "$type": "duration",
+      "$value": {
+        "value": 700,
+        "unit": "ms"
+      },
+      "$description": "Transição Cinema; nascer do 1º."
+    }
+  },
+  "easing": {
+    "ease-arrive": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.16,
+        1.28,
+        0.36,
+        1.0
+      ],
+      "$description": "Chegada: entra rápido, passa 2–4% e assenta. Placa, Ticket, etiqueta."
+    },
+    "ease-out": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.2,
+        0.8,
+        0.2,
+        1.0
+      ],
+      "$description": "Entrada suave sem quique: legendas, cards, palavras."
+    },
+    "ease-exit": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.55,
+        0.0,
+        0.85,
+        0.35
+      ],
+      "$description": "Saída: acelera e sai pela direita (adiante)."
+    },
+    "ease-drop": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.55,
+        0.0,
+        1.0,
+        0.45
+      ],
+      "$description": "Queda do carimbo (gravidade) até o impacto."
+    },
+    "ease-cinema": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.65,
+        0.0,
+        0.35,
+        1.0
+      ],
+      "$description": "Transição Cinema e nascer do 1º."
+    }
+  },
+  "rotation": {
+    "rot-note": {
+      "$type": "number",
+      "$value": 3.0,
+      "$description": "Bilhete (horário). Segundo bilhete: -2deg. (graus; positivo = horário)"
+    },
+    "rot-stamp": {
+      "$type": "number",
+      "$value": -7.0,
+      "$description": "Carimbo PERRENGUE (anti-horário). (graus; positivo = horário)"
+    },
+    "rot-ticket": {
+      "$type": "number",
+      "$value": 4.0,
+      "$description": "Ticket SURPREENDE (horário). (graus; positivo = horário)"
+    },
+    "rot-tag": {
+      "$type": "number",
+      "$value": -3.0,
+      "$description": "Etiqueta de bagagem. (graus; positivo = horário)"
+    }
+  },
+  "opacity": {
+    "op-grain": {
+      "$type": "number",
+      "$value": 0.05,
+      "$description": "Granulação do vídeo (5%) e do esmalte da placa."
+    },
+    "op-fiber": {
+      "$type": "number",
+      "$value": 0.04,
+      "$description": "Fibra do papel (bilhete, recibo, ticket)."
+    },
+    "op-scrim": {
+      "$type": "number",
+      "$value": 0.63,
+      "$description": "Véu atrás da legenda sobre vídeo claro."
+    },
+    "op-glass": {
+      "$type": "number",
+      "$value": 0.55,
+      "$description": "Vidro da legenda narrativa."
+    }
+  },
+  "layout": {
+    "reel": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1080,
+          "unit": "px"
+        }
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1920,
+          "unit": "px"
+        }
+      },
+      "safe-top": {
+        "$type": "dimension",
+        "$value": {
+          "value": 256,
+          "unit": "px"
+        }
+      },
+      "safe-bottom": {
+        "$type": "dimension",
+        "$value": {
+          "value": 480,
+          "unit": "px"
+        }
+      },
+      "safe-left": {
+        "$type": "dimension",
+        "$value": {
+          "value": 72,
+          "unit": "px"
+        }
+      },
+      "safe-right": {
+        "$type": "dimension",
+        "$value": {
+          "value": 136,
+          "unit": "px"
+        }
+      },
+      "zone-scoreboard-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 256,
+          "unit": "px"
+        }
+      },
+      "zone-plate-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 640,
+          "unit": "px"
+        }
+      },
+      "zone-object-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 880,
+          "unit": "px"
+        }
+      },
+      "zone-caption-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1250,
+          "unit": "px"
+        }
+      },
+      "caption-limit-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1440,
+          "unit": "px"
+        }
+      }
+    },
+    "carousel": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1080,
+          "unit": "px"
+        }
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1440,
+          "unit": "px"
+        }
+      },
+      "margin": {
+        "$type": "dimension",
+        "$value": {
+          "value": 80,
+          "unit": "px"
+        }
+      },
+      "columns": {
+        "$type": "number",
+        "$value": 4
+      },
+      "gutter": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        }
+      }
+    },
+    "feed-4x5": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1080,
+          "unit": "px"
+        }
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1350,
+          "unit": "px"
+        }
+      },
+      "margin": {
+        "$type": "dimension",
+        "$value": {
+          "value": 80,
+          "unit": "px"
+        }
+      }
+    },
+    "square": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1080,
+          "unit": "px"
+        }
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1080,
+          "unit": "px"
+        }
+      },
+      "margin": {
+        "$type": "dimension",
+        "$value": {
+          "value": 72,
+          "unit": "px"
+        }
+      }
+    },
+    "story": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1080,
+          "unit": "px"
+        }
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1920,
+          "unit": "px"
+        }
+      },
+      "safe-top": {
+        "$type": "dimension",
+        "$value": {
+          "value": 256,
+          "unit": "px"
+        }
+      },
+      "safe-bottom": {
+        "$type": "dimension",
+        "$value": {
+          "value": 320,
+          "unit": "px"
+        }
+      }
+    },
+    "yt": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1920,
+          "unit": "px"
+        }
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1080,
+          "unit": "px"
+        }
+      },
+      "title-safe": {
+        "$type": "dimension",
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        }
+      },
+      "action-safe": {
+        "$type": "dimension",
+        "$value": {
+          "value": 64,
+          "unit": "px"
+        }
+      }
+    },
+    "yt-thumb": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1280,
+          "unit": "px"
+        }
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": {
+          "value": 720,
+          "unit": "px"
+        }
+      },
+      "margin": {
+        "$type": "dimension",
+        "$value": {
+          "value": 48,
+          "unit": "px"
+        }
+      },
+      "timestamp-free-x": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1040,
+          "unit": "px"
+        }
+      },
+      "timestamp-free-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 600,
+          "unit": "px"
+        }
+      }
+    }
+  },
+  "component": {
+    "plate": {
+      "face": {
+        "$type": "color",
+        "$value": "{color.semantic.primary}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.semantic.on-primary}"
+      },
+      "arrow-module": {
+        "$type": "color",
+        "$value": "{color.semantic.secondary}"
+      },
+      "arrow": {
+        "$type": "color",
+        "$value": "{color.semantic.primary}"
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{radius.plate}"
+      },
+      "shadow": {
+        "$type": "shadow",
+        "$value": "{shadow.shadow-plate}"
+      },
+      "enter": {
+        "$type": "duration",
+        "$value": "{duration.dur-arrive}"
+      },
+      "easing": {
+        "$type": "cubicBezier",
+        "$value": "{easing.ease-arrive}"
+      }
+    },
+    "stamp": {
+      "ink": {
+        "$type": "color",
+        "$value": "{color.semantic.danger}"
+      },
+      "paper": {
+        "$type": "color",
+        "$value": "{color.paper.500}"
+      },
+      "rotation": {
+        "$type": "number",
+        "$value": "{rotation.rot-stamp}"
+      },
+      "easing": {
+        "$type": "cubicBezier",
+        "$value": "{easing.ease-drop}"
+      }
+    },
+    "ticket": {
+      "paper": {
+        "$type": "color",
+        "$value": "{color.paper.500}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.semantic.text-primary}"
+      },
+      "star": {
+        "$type": "color",
+        "$value": "{color.semantic.primary}"
+      },
+      "glow": {
+        "$type": "color",
+        "$value": "{color.signal.300}"
+      },
+      "rotation": {
+        "$type": "number",
+        "$value": "{rotation.rot-ticket}"
+      }
+    },
+    "note": {
+      "paper": {
+        "$type": "color",
+        "$value": "{color.paper.500}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.ink.500}"
+      },
+      "rotation": {
+        "$type": "number",
+        "$value": "{rotation.rot-note}"
+      }
+    },
+    "receipt": {
+      "paper": {
+        "$type": "color",
+        "$value": "{color.paper.0}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.semantic.text-primary}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.semantic.text-secondary}"
+      }
+    },
+    "scoreboard": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.semantic.secondary}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.semantic.primary}"
+      }
+    },
+    "caption": {
+      "text": {
+        "$type": "color",
+        "$value": "{color.semantic.caption-text}"
+      },
+      "scrim": {
+        "$type": "color",
+        "$value": "{color.semantic.scrim}"
+      },
+      "highlight-face": {
+        "$type": "color",
+        "$value": "{color.semantic.primary}"
+      },
+      "highlight-text": {
+        "$type": "color",
+        "$value": "{color.semantic.on-primary}"
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "revisao": 7,
+  "saida": "reel_apresentacao_rev7.mp4",
+  "base": "../reel_apresentacao_sem_texto_rev6.mp4",
+  "srt_narracao": "../narracao/narracao_rev6.srt",
+  "fps": 24,
+  "sr": 48000,
+  "largura": 1080,
+  "altura": 1920,
+  "quadros_total": 643,
+
+  "tokens": {
+    "_fonte": "primeiro-dia-tokens-v1.json (DS v1.0.1 'Placa & Caneta')",
+    "amarelo": "#FFC21A",
+    "grafite": "#16181D",
+    "papel": "#F6F3EC",
+    "safe": {"x0": 72, "x1": 944, "y0": 256, "y1": 1440},
+    "raio": 8,
+    "tracking_display": 0.01
+  },
+
+  "placa": {
+    "_decisao": "REV7: 'PRIMEIRO DIA →' em 1 linha, exceção de posição x72 · y1104 (CLAUDE.md §11). Regra geral do DS (y640) não muda.",
+    "texto": "PRIMEIRO DIA",
+    "fonte": "BarlowCondensed-ExtraBold.ttf",
+    "tamanho": 104,
+    "x": 72,
+    "y": 1104,
+    "altura": 136,
+    "padding_h": 24,
+    "seta_altura": 78,
+    "seta_haste": 0.16,
+    "seta_ponta_comprimento": 0.5,
+    "seta_largura_total": 70,
+    "seta_distancia": 24,
+    "entrada_quadros": 3,
+    "_entrada": "desliza da esquerda em 3 quadros (120 ms, curva enter 0.2,0.8,0.2,1), começando no quadro 0, recortada em x 72 (não sai da safe zone)",
+    "saida_s": 2.458
+  },
+
+  "legenda": {
+    "fonte": "Barlow-SemiBold.ttf",
+    "tamanho": 52,
+    "entrelinha": 1.2,
+    "padding_v": 12,
+    "padding_h": 24,
+    "topo": 1272,
+    "max_linhas": 2,
+    "max_caracteres": 32,
+    "_centro": "centralizada na coluna de conteúdo do DS 5.3 (x 72–944, centro 508)",
+    "mini_placa_padding_h": 8
+  },
+
+  "fechamento": {
+    "texto": "@primeirodiaem",
+    "fonte": "Barlow-SemiBold.ttf",
+    "tamanho": 40,
+    "de": 24.792,
+    "ate": 26.792
+  },
+
+  "planos": [
+    {"n": 1,  "origem": [14.917, 17.375], "cena": "Selfie andando na rua: \"Buenos días, Barcelona!\""},
+    {"n": 2,  "origem": [3.000, 4.125],   "cena": "Diego no balcão do bar"},
+    {"n": 3,  "origem": [4.125, 6.958],   "cena": "Diego indo ao Arco do Triunfo"},
+    {"n": 4,  "origem": [6.958, 8.458],   "cena": "Selfie em Paris"},
+    {"n": 5,  "origem": [8.458, 10.750],  "cena": "Chegada ao Camp Nou / fila"},
+    {"n": 6,  "origem": [10.750, 12.375], "cena": "Brinde / patatas bravas"},
+    {"n": 7,  "origem": [12.375, 14.917], "cena": "Diego no Arco"},
+    {"n": 8,  "origem": [19.625, 22.125], "cena": "Amsterdam: Marina chega com a mala, câmera vira para Diego, \"Chegamos!\""},
+    {"n": 9,  "origem": [22.125, 24.000], "cena": "Selfie dos dois com a Torre Eiffel"},
+    {"n": 10, "origem": [24.708, 26.208], "cena": "Bruges: Diego morde o waffle"},
+    {"n": 11, "origem": [30.208, 34.750], "cena": "Selfie no bar: \"E agora eu acabei de pedir minha primeira tapa de Barcelona.\""},
+    {"n": 12, "origem": [38.625, 40.625], "cena": "Praia da Barceloneta / Hotel W"}
+  ],
+
+  "audio": {
+    "crossfade_s": 0.1,
+    "_crossfade": "equal-power, centrado na emenda, com 50 ms de material da própria origem de cada lado (sem mudar a duração)",
+    "emendas_novas_s": [2.458, 14.375, 18.750, 20.250, 24.792],
+    "declique_ms": 30,
+    "_declique": "rampa de 30 ms só na amostra inicial e final do arquivo (mesma entrada de 30 ms da REV6), para não começar/terminar em degrau",
+    "ganho_db": 0,
+    "pico_max_dbtp": -1.0
+  },
+
+  "legendas": [
+    {"texto": "Buenos días, Barcelona!",       "fonte_tempo": "onda", "janela_origem": [14.917, 17.375], "ref_rev6": [15.197, 16.977]},
+    {"texto": "Eu sou o Diego,",               "fonte_tempo": "srt", "srt": [1]},
+    {"texto": "sou *soteropolitano*",          "fonte_tempo": "srt", "srt": [2]},
+    {"texto": "e aqui eu te mostro",           "fonte_tempo": "srt", "srt": [3]},
+    {"texto": "o primeiro dia",                "fonte_tempo": "srt", "srt": [4]},
+    {"texto": "em cada cidade que eu visito,", "fonte_tempo": "srt", "srt": [5, 6]},
+    {"texto": "a chegada,",                    "fonte_tempo": "srt", "srt": [7]},
+    {"texto": "os meus *perrengues*",          "fonte_tempo": "srt", "srt": [8]},
+    {"texto": "e o que mais me surpreende,",   "fonte_tempo": "srt", "srt": [9, 10]},
+    {"texto": "até porque o primeiro dia\na gente nunca esquece.", "fonte_tempo": "srt", "srt": [11, 12]},
+    {"texto": "Chegamos!",                     "fonte_tempo": "onda", "janela_origem": [21.20, 22.125], "ref_rev6": [21.417, 21.917]},
+    {"texto": "E agora eu acabei",             "fonte_tempo": "onda", "grupo": "tapa", "janela_origem": [30.208, 34.750], "ref_rev6": [30.308, 31.428]},
+    {"texto": "de pedir minha primeira",       "fonte_tempo": "onda", "grupo": "tapa", "ref_rev6": [31.428, 33.008]},
+    {"texto": "tapa de Barcelona.",            "fonte_tempo": "onda", "grupo": "tapa", "ref_rev6": [33.008, 34.528]}
+  ],
+
+  "qa_tempos_s": [0.0, 0.5, 1.0, 1.5, 2.0, 2.4, 6.4, 14.3, 16.8, 20.2, 24.7, 25.5, 26.7],
+  "qa_quadros": [0, 1, 2, 3, 58, 59]
+}

@@ -1,0 +1,1239 @@
+{
+ "arquivo": "rev7/reel_apresentacao_rev7.mp4",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": "24/1",
+  "quadros": 643,
+  "duracao_video_s": 26.791667,
+  "duracao_audio_s": 26.791,
+  "duracao_container_s": 26.791667,
+  "codec_video": "h264 (High)",
+  "pix_fmt": "yuv420p",
+  "cor": "bt709/bt709/bt709/tv",
+  "codec_audio": "aac (LC)",
+  "sr_audio": 48000,
+  "canais": 2,
+  "tamanho_bytes": 54893365,
+  "tags": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  }
+ },
+ "audio": {
+  "lufs_integrado": -14.5,
+  "pico_verdadeiro_dbtp": -2.6,
+  "base_rev6": {
+   "lufs_integrado": -15.2,
+   "pico_verdadeiro_dbtp": -2.2
+  },
+  "emendas": [
+   {
+    "t": 2.458,
+    "rms_antes_db": "-18.8",
+    "rms_depois_db": "-22.3",
+    "salto_max_rel": 1.25,
+    "degrau_db": "-3.5"
+   },
+   {
+    "t": 14.375,
+    "rms_antes_db": "-22.0",
+    "rms_depois_db": "-33.7",
+    "salto_max_rel": 1.17,
+    "degrau_db": "-11.7"
+   },
+   {
+    "t": 18.75,
+    "rms_antes_db": "-22.1",
+    "rms_depois_db": "-22.8",
+    "salto_max_rel": 1.37,
+    "degrau_db": "-0.7"
+   },
+   {
+    "t": 20.25,
+    "rms_antes_db": "-24.4",
+    "rms_depois_db": "-23.8",
+    "salto_max_rel": 1.22,
+    "degrau_db": "0.6"
+   },
+   {
+    "t": 24.792,
+    "rms_antes_db": "-18.9",
+    "rms_depois_db": "-20.3",
+    "salto_max_rel": 1.31,
+    "degrau_db": "-1.4"
+   }
+  ],
+  "inicio_fim": {
+   "primeira_amostra": 0.0,
+   "ultima_amostra": 0.0,
+   "salto_max_rel_inicio": 1.05,
+   "salto_max_rel_fim": 1.07
+  },
+  "narracao": {
+   "origem_s": [
+    3.365,
+    14.875
+   ],
+   "rev7_s": [
+    2.823,
+    14.333
+   ],
+   "amostras_identicas_ate_s": 14.325,
+   "diferenca_max": 0.01675874375169137
+  },
+  "blocos_identicos_a_base": [
+   {
+    "planos": [
+     1
+    ],
+    "rev7_s": [
+     0.03,
+     2.408
+    ],
+    "diferenca_max": 0.0
+   },
+   {
+    "planos": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "rev7_s": [
+     2.508,
+     14.325
+    ],
+    "diferenca_max": 0.0
+   },
+   {
+    "planos": [
+     8,
+     9
+    ],
+    "rev7_s": [
+     14.425,
+     18.7
+    ],
+    "diferenca_max": 0.0
+   },
+   {
+    "planos": [
+     10
+    ],
+    "rev7_s": [
+     18.8,
+     20.2
+    ],
+    "diferenca_max": 0.0
+   },
+   {
+    "planos": [
+     11
+    ],
+    "rev7_s": [
+     20.3,
+     24.742
+    ],
+    "diferenca_max": 0.0
+   },
+   {
+    "planos": [
+     12
+    ],
+    "rev7_s": [
+     24.842,
+     26.762
+    ],
+    "diferenca_max": 0.0
+   }
+  ],
+  "falas_som_direto": [
+   {
+    "fala": "Buenos días, Barcelona!",
+    "origem_s": [
+     15.207,
+     16.727
+    ],
+    "rev7_s": [
+     0.29,
+     1.81
+    ]
+   },
+   {
+    "fala": "Chegamos!",
+    "origem_s": [
+     21.46,
+     21.89
+    ],
+    "rev7_s": [
+     16.21,
+     16.64
+    ]
+   },
+   {
+    "fala": "E agora … tapa de Barcelona.",
+    "origem_s": [
+     30.778,
+     34.678
+    ],
+    "rev7_s": [
+     20.82,
+     24.72
+    ]
+   }
+  ]
+ },
+ "video": {
+  "mapeamento_quadros_corretos": 643,
+  "de": 643,
+  "psnr_min_db": "48.9",
+  "psnr_mediana_db": 52.8,
+  "divergencias": [],
+  "quadros_estaticos_na_origem": 0,
+  "luma_media_min": 102.0,
+  "quadros_pretos": 0,
+  "diferenca_luma_max_vs_origem": 0.14,
+  "luma_inicio_fim": [
+   166.2,
+   165.5,
+   166.4,
+   167.0
+  ]
+ },
+ "graficos": {
+  "placa": {
+   "largura": 649,
+   "altura": 136,
+   "texto_tinta_px": 506.8,
+   "seta_altura_px": 78,
+   "seta_largura_px": 70,
+   "haste_px": 12.48,
+   "ponta_comprimento_px": 39.0,
+   "x": 72,
+   "y": 1104,
+   "x_final": 721,
+   "y_final": 1240,
+   "entrada_x_por_quadro": {
+    "0": -20,
+    "1": 60,
+    "2": 72
+   },
+   "sai_no_quadro": 59
+  },
+  "legendas": [
+   {
+    "texto": "Buenos días, Barcelona!",
+    "rect": [
+     210,
+     1272,
+     805,
+     1358
+    ],
+    "mini_placas": []
+   },
+   {
+    "texto": "Eu sou o Diego,",
+    "rect": [
+     311,
+     1272,
+     705,
+     1358
+    ],
+    "mini_placas": []
+   },
+   {
+    "texto": "sou *soteropolitano*",
+    "rect": [
+     261,
+     1272,
+     755,
+     1358
+    ],
+    "mini_placas": [
+     [
+      378.169921875,
+      1284.0,
+      730.408203125,
+      1346.4
+     ]
+    ]
+   },
+   {
+    "texto": "e aqui eu te mostro",
+    "rect": [
+     266,
+     1272,
+     750,
+     1358
+    ],
+    "mini_placas": []
+   },
+   {
+    "texto": "o primeiro dia",
+    "rect": [
+     327,
+     1272,
+     689,
+     1358
+    ],
+    "mini_placas": []
+   },
+   {
+    "texto": "em cada cidade que eu visito,",
+    "rect": [
+     149,
+     1272,
+     867,
+     1358
+    ],
+    "mini_placas": []
+   },
+   {
+    "texto": "a chegada,",
+    "rect": [
+     360,
+     1272,
+     655,
+     1358
+    ],
+    "mini_placas": []
+   },
+   {
+    "texto": "os meus *perrengues*",
+    "rect": [
+     245,
+     1272,
+     771,
+     1358
+    ],
+    "mini_placas": [
+     [
+      469.203125,
+      1284.0,
+      747.4453125,
+      1346.4
+     ]
+    ]
+   },
+   {
+    "texto": "e o que mais me surpreende,",
+    "rect": [
+     158,
+     1272,
+     857,
+     1358
+    ],
+    "mini_placas": []
+   },
+   {
+    "texto": "até porque o primeiro dia\na gente nunca esquece.",
+    "rect": [
+     199,
+     1272,
+     817,
+     1421
+    ],
+    "mini_placas": []
+   },
+   {
+    "texto": "Chegamos!",
+    "rect": [
+     355,
+     1272,
+     661,
+     1358
+    ],
+    "mini_placas": []
+   },
+   {
+    "texto": "E agora eu acabei",
+    "rect": [
+     283,
+     1272,
+     733,
+     1358
+    ],
+    "mini_placas": []
+   },
+   {
+    "texto": "de pedir minha primeira",
+    "rect": [
+     214,
+     1272,
+     802,
+     1358
+    ],
+    "mini_placas": []
+   },
+   {
+    "texto": "tapa de Barcelona.",
+    "rect": [
+     271,
+     1272,
+     745,
+     1358
+    ],
+    "mini_placas": []
+   }
+  ],
+  "fechamento": {
+   "texto": "@primeirodiaem",
+   "rect": [
+    338,
+    1272,
+    677,
+    1344
+   ],
+   "quadros": [
+    595,
+    643
+   ]
+  },
+  "estados_unicos": 19,
+  "fora_da_safe_zone": [],
+  "n_fora_da_safe_zone": 0,
+  "placa_sobreposta": [],
+  "n_placa_sobreposta": 0,
+  "estados_com_cor_fora_da_paleta": [],
+  "alfa_parcial_max_rel": 0.0015,
+  "distancia_placa_legenda_px": 32
+ },
+ "textos": {
+  "iguais_aos_aprovados": true,
+  "mini_placas": [
+   "soteropolitano",
+   "perrengues"
+  ],
+  "mini_placas_ok": true,
+  "max_caracteres_linha": 29,
+  "max_linhas": 2,
+  "placa": "PRIMEIRO DIA →",
+  "fechamento": "@primeirodiaem",
+  "sem_PRIMEIRO_DIA_EM": true,
+  "sem_simbolo_1o": true
+ },
+ "legendas": [
+  {
+   "texto": "Buenos días, Barcelona!",
+   "fonte_tempo": "onda",
+   "origem": [
+    15.207,
+    16.727
+   ],
+   "fala_rev7": [
+    0.29,
+    1.81
+   ],
+   "de": 0.292,
+   "ate": 2.458,
+   "q0": 7,
+   "q1": 59,
+   "ref_rev6_origem": [
+    15.197,
+    16.977
+   ]
+  },
+  {
+   "texto": "Eu sou o Diego,",
+   "fonte_tempo": "srt",
+   "origem": [
+    3.365,
+    4.125
+   ],
+   "fala_rev7": [
+    2.823,
+    3.583
+   ],
+   "de": 2.833,
+   "ate": 3.583,
+   "q0": 68,
+   "q1": 86
+  },
+  {
+   "texto": "sou *soteropolitano*",
+   "fonte_tempo": "srt",
+   "origem": [
+    4.33,
+    5.547
+   ],
+   "fala_rev7": [
+    3.788,
+    5.005
+   ],
+   "de": 3.792,
+   "ate": 5.0,
+   "q0": 91,
+   "q1": 120
+  },
+  {
+   "texto": "e aqui eu te mostro",
+   "fonte_tempo": "srt",
+   "origem": [
+    5.547,
+    6.3
+   ],
+   "fala_rev7": [
+    5.005,
+    5.758
+   ],
+   "de": 5.0,
+   "ate": 5.75,
+   "q0": 120,
+   "q1": 138
+  },
+  {
+   "texto": "o primeiro dia",
+   "fonte_tempo": "srt",
+   "origem": [
+    6.3,
+    6.958
+   ],
+   "fala_rev7": [
+    5.758,
+    6.416
+   ],
+   "de": 5.75,
+   "ate": 6.417,
+   "q0": 138,
+   "q1": 154
+  },
+  {
+   "texto": "em cada cidade que eu visito,",
+   "fonte_tempo": "srt",
+   "origem": [
+    6.958,
+    8.375
+   ],
+   "fala_rev7": [
+    6.416,
+    7.833
+   ],
+   "de": 6.417,
+   "ate": 7.917,
+   "q0": 154,
+   "q1": 190
+  },
+  {
+   "texto": "a chegada,",
+   "fonte_tempo": "srt",
+   "origem": [
+    8.64,
+    9.515
+   ],
+   "fala_rev7": [
+    8.098,
+    8.973
+   ],
+   "de": 8.083,
+   "ate": 9.083,
+   "q0": 194,
+   "q1": 218
+  },
+  {
+   "texto": "os meus *perrengues*",
+   "fonte_tempo": "srt",
+   "origem": [
+    9.634,
+    10.695
+   ],
+   "fala_rev7": [
+    9.092,
+    10.153
+   ],
+   "de": 9.083,
+   "ate": 10.208,
+   "q0": 218,
+   "q1": 245
+  },
+  {
+   "texto": "e o que mais me surpreende,",
+   "fonte_tempo": "srt",
+   "origem": [
+    10.875,
+    12.26
+   ],
+   "fala_rev7": [
+    10.333,
+    11.718
+   ],
+   "de": 10.333,
+   "ate": 11.833,
+   "q0": 248,
+   "q1": 284
+  },
+  {
+   "texto": "até porque o primeiro dia\na gente nunca esquece.",
+   "fonte_tempo": "srt",
+   "origem": [
+    12.54,
+    14.875
+   ],
+   "fala_rev7": [
+    11.998,
+    14.333
+   ],
+   "de": 12.0,
+   "ate": 14.375,
+   "q0": 288,
+   "q1": 345
+  },
+  {
+   "texto": "Chegamos!",
+   "fonte_tempo": "onda",
+   "origem": [
+    21.46,
+    21.89
+   ],
+   "fala_rev7": [
+    16.21,
+    16.64
+   ],
+   "de": 16.208,
+   "ate": 16.875,
+   "q0": 389,
+   "q1": 405,
+   "ref_rev6_origem": [
+    21.417,
+    21.917
+   ]
+  },
+  {
+   "texto": "E agora eu acabei",
+   "fonte_tempo": "onda",
+   "origem": [
+    30.778,
+    null
+   ],
+   "fala_rev7": [
+    20.82,
+    null
+   ],
+   "de": 20.833,
+   "ate": 21.417,
+   "q0": 500,
+   "q1": 514,
+   "ref_rev6_origem": [
+    30.308,
+    31.428
+   ]
+  },
+  {
+   "texto": "de pedir minha primeira",
+   "fonte_tempo": "onda",
+   "origem": [
+    31.378,
+    null
+   ],
+   "fala_rev7": [
+    21.42,
+    null
+   ],
+   "de": 21.417,
+   "ate": 22.833,
+   "q0": 514,
+   "q1": 548,
+   "ref_rev6_origem": [
+    31.428,
+    33.008
+   ]
+  },
+  {
+   "texto": "tapa de Barcelona.",
+   "fonte_tempo": "onda",
+   "origem": [
+    32.798,
+    34.678
+   ],
+   "fala_rev7": [
+    22.84,
+    24.72
+   ],
+   "de": 22.833,
+   "ate": 24.792,
+   "q0": 548,
+   "q1": 595,
+   "ref_rev6_origem": [
+    33.008,
+    34.528
+   ]
+  }
+ ],
+ "medidas_onda": [
+  {
+   "fala": "Buenos días, Barcelona!",
+   "inicio_origem": 15.207,
+   "fim_origem": 16.727,
+   "trechos_vozeados": [
+    [
+     15.207,
+     15.257
+    ],
+    [
+     15.267,
+     15.337
+    ],
+    [
+     15.347,
+     15.427
+    ],
+    [
+     15.587,
+     15.787
+    ],
+    [
+     15.797,
+     15.807
+    ],
+    [
+     15.997,
+     16.087
+    ],
+    [
+     16.297,
+     16.347
+    ],
+    [
+     16.357,
+     16.407
+    ],
+    [
+     16.477,
+     16.557
+    ],
+    [
+     16.567,
+     16.587
+    ],
+    [
+     16.637,
+     16.647
+    ],
+    [
+     16.677,
+     16.687
+    ],
+    [
+     16.717,
+     16.727
+    ]
+   ]
+  },
+  {
+   "fala": "Chegamos!",
+   "inicio_origem": 21.46,
+   "fim_origem": 21.89,
+   "trechos_vozeados": [
+    [
+     21.46,
+     21.57
+    ],
+    [
+     21.61,
+     21.89
+    ]
+   ]
+  },
+  {
+   "fala": "plano 11 (frase inteira, voz do Diego)",
+   "inicio_origem": 30.778,
+   "fim_origem": 34.678,
+   "trechos_vozeados": [
+    [
+     30.778,
+     30.908
+    ],
+    [
+     30.958,
+     31.028
+    ],
+    [
+     31.048,
+     31.158
+    ],
+    [
+     31.378,
+     31.478
+    ],
+    [
+     31.638,
+     31.698
+    ],
+    [
+     31.718,
+     31.788
+    ],
+    [
+     31.808,
+     31.828
+    ],
+    [
+     31.838,
+     32.028
+    ],
+    [
+     32.198,
+     32.238
+    ],
+    [
+     32.798,
+     32.808
+    ],
+    [
+     32.828,
+     32.918
+    ],
+    [
+     32.928,
+     33.088
+    ],
+    [
+     33.278,
+     33.298
+    ],
+    [
+     33.368,
+     33.378
+    ],
+    [
+     33.558,
+     33.628
+    ],
+    [
+     33.678,
+     33.688
+    ],
+    [
+     33.738,
+     33.758
+    ],
+    [
+     33.878,
+     33.928
+    ],
+    [
+     34.008,
+     34.098
+    ],
+    [
+     34.248,
+     34.378
+    ],
+    [
+     34.398,
+     34.438
+    ],
+    [
+     34.488,
+     34.538
+    ],
+    [
+     34.568,
+     34.648
+    ],
+    [
+     34.668,
+     34.678
+    ]
+   ]
+  },
+  {
+   "fala": "fronteira antes de 'de pedir minha primeira'",
+   "inicio_origem": 31.378,
+   "pausa_antes_s": 0.22,
+   "ref_rev6_origem": 31.428
+  },
+  {
+   "fala": "fronteira antes de 'tapa de Barcelona.'",
+   "inicio_origem": 32.798,
+   "pausa_antes_s": 0.56,
+   "ref_rev6_origem": 33.008
+  }
+ ],
+ "planos": [
+  {
+   "n": 1,
+   "origem": [
+    14.917,
+    17.375
+   ],
+   "cena": "Selfie andando na rua: \"Buenos días, Barcelona!\"",
+   "o0": 358,
+   "o1": 417,
+   "r0": 0,
+   "r1": 59,
+   "rev7_s": [
+    0.0,
+    2.458
+   ]
+  },
+  {
+   "n": 2,
+   "origem": [
+    3.0,
+    4.125
+   ],
+   "cena": "Diego no balcão do bar",
+   "o0": 72,
+   "o1": 99,
+   "r0": 59,
+   "r1": 86,
+   "rev7_s": [
+    2.458,
+    3.583
+   ]
+  },
+  {
+   "n": 3,
+   "origem": [
+    4.125,
+    6.958
+   ],
+   "cena": "Diego indo ao Arco do Triunfo",
+   "o0": 99,
+   "o1": 167,
+   "r0": 86,
+   "r1": 154,
+   "rev7_s": [
+    3.583,
+    6.417
+   ]
+  },
+  {
+   "n": 4,
+   "origem": [
+    6.958,
+    8.458
+   ],
+   "cena": "Selfie em Paris",
+   "o0": 167,
+   "o1": 203,
+   "r0": 154,
+   "r1": 190,
+   "rev7_s": [
+    6.417,
+    7.917
+   ]
+  },
+  {
+   "n": 5,
+   "origem": [
+    8.458,
+    10.75
+   ],
+   "cena": "Chegada ao Camp Nou / fila",
+   "o0": 203,
+   "o1": 258,
+   "r0": 190,
+   "r1": 245,
+   "rev7_s": [
+    7.917,
+    10.208
+   ]
+  },
+  {
+   "n": 6,
+   "origem": [
+    10.75,
+    12.375
+   ],
+   "cena": "Brinde / patatas bravas",
+   "o0": 258,
+   "o1": 297,
+   "r0": 245,
+   "r1": 284,
+   "rev7_s": [
+    10.208,
+    11.833
+   ]
+  },
+  {
+   "n": 7,
+   "origem": [
+    12.375,
+    14.917
+   ],
+   "cena": "Diego no Arco",
+   "o0": 297,
+   "o1": 358,
+   "r0": 284,
+   "r1": 345,
+   "rev7_s": [
+    11.833,
+    14.375
+   ]
+  },
+  {
+   "n": 8,
+   "origem": [
+    19.625,
+    22.125
+   ],
+   "cena": "Amsterdam: Marina chega com a mala, câmera vira para Diego, \"Chegamos!\"",
+   "o0": 471,
+   "o1": 531,
+   "r0": 345,
+   "r1": 405,
+   "rev7_s": [
+    14.375,
+    16.875
+   ]
+  },
+  {
+   "n": 9,
+   "origem": [
+    22.125,
+    24.0
+   ],
+   "cena": "Selfie dos dois com a Torre Eiffel",
+   "o0": 531,
+   "o1": 576,
+   "r0": 405,
+   "r1": 450,
+   "rev7_s": [
+    16.875,
+    18.75
+   ]
+  },
+  {
+   "n": 10,
+   "origem": [
+    24.708,
+    26.208
+   ],
+   "cena": "Bruges: Diego morde o waffle",
+   "o0": 593,
+   "o1": 629,
+   "r0": 450,
+   "r1": 486,
+   "rev7_s": [
+    18.75,
+    20.25
+   ]
+  },
+  {
+   "n": 11,
+   "origem": [
+    30.208,
+    34.75
+   ],
+   "cena": "Selfie no bar: \"E agora eu acabei de pedir minha primeira tapa de Barcelona.\"",
+   "o0": 725,
+   "o1": 834,
+   "r0": 486,
+   "r1": 595,
+   "rev7_s": [
+    20.25,
+    24.792
+   ]
+  },
+  {
+   "n": 12,
+   "origem": [
+    38.625,
+    40.625
+   ],
+   "cena": "Praia da Barceloneta / Hotel W",
+   "o0": 927,
+   "o1": 975,
+   "r0": 595,
+   "r1": 643,
+   "rev7_s": [
+    24.792,
+    26.792
+   ]
+  }
+ ],
+ "blocos_audio": [
+  {
+   "planos": [
+    1
+   ],
+   "origem_s": [
+    14.916666666666666,
+    17.375
+   ],
+   "rev7_s": [
+    0.0,
+    2.458
+   ]
+  },
+  {
+   "planos": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "origem_s": [
+    3.0,
+    14.916666666666666
+   ],
+   "rev7_s": [
+    2.458,
+    14.375
+   ]
+  },
+  {
+   "planos": [
+    8,
+    9
+   ],
+   "origem_s": [
+    19.625,
+    24.0
+   ],
+   "rev7_s": [
+    14.375,
+    18.75
+   ]
+  },
+  {
+   "planos": [
+    10
+   ],
+   "origem_s": [
+    24.708333333333332,
+    26.208333333333332
+   ],
+   "rev7_s": [
+    18.75,
+    20.25
+   ]
+  },
+  {
+   "planos": [
+    11
+   ],
+   "origem_s": [
+    30.208333333333332,
+    34.75
+   ],
+   "rev7_s": [
+    20.25,
+    24.792
+   ]
+  },
+  {
+   "planos": [
+    12
+   ],
+   "origem_s": [
+    38.625,
+    40.625
+   ],
+   "rev7_s": [
+    24.792,
+    26.792
+   ]
+  }
+ ],
+ "frames_qa": [
+  [
+   "t00_00s",
+   0,
+   "qa_frames/rev7_t00_00s_quadro000.jpg"
+  ],
+  [
+   "t00_50s",
+   12,
+   "qa_frames/rev7_t00_50s_quadro012.jpg"
+  ],
+  [
+   "t01_00s",
+   24,
+   "qa_frames/rev7_t01_00s_quadro024.jpg"
+  ],
+  [
+   "t01_50s",
+   36,
+   "qa_frames/rev7_t01_50s_quadro036.jpg"
+  ],
+  [
+   "t02_00s",
+   48,
+   "qa_frames/rev7_t02_00s_quadro048.jpg"
+  ],
+  [
+   "t02_40s",
+   58,
+   "qa_frames/rev7_t02_40s_quadro058.jpg"
+  ],
+  [
+   "t06_40s",
+   154,
+   "qa_frames/rev7_t06_40s_quadro154.jpg"
+  ],
+  [
+   "t14_30s",
+   343,
+   "qa_frames/rev7_t14_30s_quadro343.jpg"
+  ],
+  [
+   "t16_80s",
+   403,
+   "qa_frames/rev7_t16_80s_quadro403.jpg"
+  ],
+  [
+   "t20_20s",
+   485,
+   "qa_frames/rev7_t20_20s_quadro485.jpg"
+  ],
+  [
+   "t24_70s",
+   593,
+   "qa_frames/rev7_t24_70s_quadro593.jpg"
+  ],
+  [
+   "t25_50s",
+   612,
+   "qa_frames/rev7_t25_50s_quadro612.jpg"
+  ],
+  [
+   "t26_70s",
+   641,
+   "qa_frames/rev7_t26_70s_quadro641.jpg"
+  ],
+  [
+   "q000",
+   0,
+   "qa_frames/rev7_q000_quadro000.jpg"
+  ],
+  [
+   "q001",
+   1,
+   "qa_frames/rev7_q001_quadro001.jpg"
+  ],
+  [
+   "q002",
+   2,
+   "qa_frames/rev7_q002_quadro002.jpg"
+  ],
+  [
+   "q003",
+   3,
+   "qa_frames/rev7_q003_quadro003.jpg"
+  ],
+  [
+   "q058",
+   58,
+   "qa_frames/rev7_q058_quadro058.jpg"
+  ],
+  [
+   "q059",
+   59,
+   "qa_frames/rev7_q059_quadro059.jpg"
+  ]
+ ],
+ "sha256": "188867893caed4a5baffaea8b47715cfd8e964a33989a1881f1abb7ee29068f8",
+ "fontes": {
+  "Barlow-SemiBold.ttf": "86577cb32f8abe3673db53ca0f4221e6856751a4f6730c867e00f720f8bb1fc5",
+  "BarlowCondensed-ExtraBold.ttf": "724c9c25952d5f4a2d87185d9767aa006144c5f0d944dc05bf7d5d603551c260"
+ }
+}
