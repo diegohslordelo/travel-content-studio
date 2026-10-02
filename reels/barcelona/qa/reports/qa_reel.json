@@ -3,11 +3,11 @@
   "largura": 1080,
   "altura": 1920,
   "fps": "30/1",
-  "quadros": 810,
-  "duracao_s": 27.0,
+  "quadros": 795,
+  "duracao_s": 26.5,
   "video": "h264 High",
   "pix_fmt": "yuv420p",
-  "bitrate_video_kbps": 13594,
+  "bitrate_video_kbps": 13559,
   "audio": "aac",
   "audio_hz": 48000,
   "audio_canais": 2
@@ -15,8 +15,8 @@
  "ok_formato": true,
  "loudness": {
   "integrado_lufs": -14.1,
-  "true_peak_dbtp": -1.5,
-  "lra_lu": 2.7
+  "true_peak_dbtp": -1.4,
+  "lra_lu": 3.9
  },
  "ok_loudness": true,
  "quadros_guia": [
@@ -70,8 +70,8 @@
   },
   {
    "tempo_s": 27.5,
-   "quadro": 809,
-   "arquivo": "qa/frames/quadros/q809_27.5s.png",
+   "quadro": 794,
+   "arquivo": "qa/frames/quadros/q794_27.5s.png",
    "obs": "último quadro (o vídeo tem 27,0 s)"
   }
  ],
@@ -83,13 +83,13 @@
    3,
    4,
    5,
-   109,
-   110,
-   111,
-   112,
-   120,
-   277,
-   493
+   95,
+   96,
+   97,
+   98,
+   106,
+   247,
+   469
   ],
   "detalhe_primeiros": [
    [
@@ -118,53 +118,53 @@
     808
    ],
    [
-    109,
+    95,
     "direita",
     388
    ],
    [
-    110,
+    96,
     "direita",
     32096
    ],
    [
-    111,
+    97,
     "direita",
     32096
    ],
    [
-    112,
+    98,
     "direita",
     32096
    ],
    [
-    120,
+    106,
     "esquerda",
     1108
    ],
    [
-    277,
+    247,
     "esquerda",
     1108
    ],
    [
-    493,
+    469,
     "esquerda",
     1108
    ]
   ]
  },
  "area_objetos_max": {
-  "quadro": 91,
-  "fracao": 0.1026
+  "quadro": 77,
+  "fracao": 0.1024
  },
  "amarelo_max_fora_transicao": {
-  "quadro": 24,
+  "quadro": 21,
   "fracao": 0.0469
  },
  "ticket_sai_antes_da_emocional": {
-  "ultimo_quadro_ticket": 697,
-  "primeiro_quadro_emocional": 703,
+  "ultimo_quadro_ticket": 677,
+  "primeiro_quadro_emocional": 680,
   "ok": true
  },
  "contagens": {
@@ -181,7 +181,7 @@
   "cortes_secos": 9
  },
  "loop": {
-  "diferenca_media_rgb": 111.5,
+  "diferenca_media_rgb": 122.2,
   "imagem": "qa/frames/loop_q0_x_ultimo.png"
  }
 }

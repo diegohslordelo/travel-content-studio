@@ -4,10 +4,10 @@ Este diretório é **exclusivo do Reel de Barcelona**. Nada de outro Reel entra 
 
 ### Status
 
-**Reel "Só 3 coisas de Barcelona? Difícil." produzido (02/10/2026).** Arquivo final: `exports/2026-10-02_reel_3-coisas-barcelona.mp4` (1080 × 1920, 30 fps, 27,0 s, −14,1 LUFS). O relatório está em `exports/relatorio.md`, e o projeto para re-renderizar está em `project/` (`project/timeline.json` é a fonte única).
+**Reel "Só 3 coisas de Barcelona? Difícil." produzido (02/10/2026).** Arquivo final: `exports/2026-10-02_reel_3-coisas-barcelona.mp4` (1080 × 1920, 30 fps, 26,5 s, −14,1 LUFS). O relatório está em `exports/relatorio.md`, e o projeto para re-renderizar está em `project/` (`project/timeline.json` é a fonte única).
 
 - Footage: 56 vídeos em `footage/`, inventário em `qa/reports/FOOTAGE_INVENTORY.md`.
-- Narração: `narration/envio_2/` (vigente). O envio 1 continua em `narration/`, sem uso.
+- Narração: `narration/envio_3/` (vigente). Os envios 1 e 2 continuam em `narration/` e `narration/envio_2/`, sem uso.
 
 ## Estrutura
 

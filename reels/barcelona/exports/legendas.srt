@@ -1,74 +1,87 @@
 1
-00:00:00,233 --> 00:00:01,567
-É impossível só pensar
+00:00:00,133 --> 00:00:01,367
+É impossível você escolher
 
 2
-00:00:01,567 --> 00:00:03,667
-em três coisas boas
-para Barcelona.
+00:00:01,367 --> 00:00:03,167
+três coisas para falar
+de Barcelona.
 
 3
-00:00:03,933 --> 00:00:05,133
+00:00:03,500 --> 00:00:04,767
 Em primeiro, com certeza
 
 4
-00:00:05,133 --> 00:00:07,100
-a comida, tem muita
-diversidade,
+00:00:04,767 --> 00:00:05,433
+é a comida.
 
 5
-00:00:07,100 --> 00:00:09,000
-as tapas são realmente
-muito boas.
+00:00:05,433 --> 00:00:06,433
+As tapas são muito boas
 
 6
-00:00:09,133 --> 00:00:09,933
-Em segundo lugar,
+00:00:06,433 --> 00:00:08,000
+e a paella é sensacional.
 
 7
-00:00:09,933 --> 00:00:11,500
-a variedade de atrações.
+00:00:08,133 --> 00:00:09,000
+Em segundo, a quantidade
 
 8
-00:00:11,500 --> 00:00:13,100
-Se quiser relaxar,
-tem praia.
+00:00:09,000 --> 00:00:10,033
+de coisas pra fazer.
 
 9
-00:00:13,100 --> 00:00:14,133
-Mas se quiser história,
+00:00:10,033 --> 00:00:11,033
+Se você quer descansar,
 
 10
-00:00:14,133 --> 00:00:15,100
-pode se perder nas ruas
+00:00:11,033 --> 00:00:12,167
+você vai pra praia.
 
 11
-00:00:15,100 --> 00:00:16,200
-no bairro gótico.
+00:00:12,167 --> 00:00:13,433
+Aí se você quer história,
 
 12
-00:00:16,367 --> 00:00:18,733
-Em terceiro, Gaudí
-realmente toma conta
+00:00:13,433 --> 00:00:14,233
+é só você se perder
 
 13
-00:00:18,733 --> 00:00:20,033
-da arquitetura da cidade.
+00:00:14,100 --> 00:00:15,400
+nas ruas do bairro gótico.
 
 14
-00:00:20,367 --> 00:00:21,567
-Entrar na Sagrada Família
+00:00:15,633 --> 00:00:16,267
+Em terceiro,
 
 15
-00:00:21,567 --> 00:00:23,133
-foi o que mais
-me surpreendeu.
+00:00:16,267 --> 00:00:17,367
+Gaudí está em todo lugar
 
 16
-00:00:23,433 --> 00:00:25,333
-que IMPACTO
+00:00:17,367 --> 00:00:18,267
+e realmente toma conta
 
 17
-00:00:25,333 --> 00:00:27,000
+00:00:18,267 --> 00:00:19,333
+da arquitetura da cidade,
+
+18
+00:00:19,733 --> 00:00:20,900
+mas entrar na
+Sagrada Família
+
+19
+00:00:20,900 --> 00:00:22,467
+foi o que mais
+me surpreendeu,
+
+20
+00:00:22,667 --> 00:00:24,533
+é SURREAL
+
+21
+00:00:24,533 --> 00:00:26,500
 @primeirodiaem
 

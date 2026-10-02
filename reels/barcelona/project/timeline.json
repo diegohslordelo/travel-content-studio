@@ -1,76 +1,739 @@
 {
-  "_sobre": "Fonte única da montagem do Reel '3 coisas de Barcelona'. Quadros a 30 fps. Lido por scripts/preparar_clipes.py, scripts/montar_audio.py e src/ (Remotion). Escolhas aprovadas pelo Diego em 02/10/2026: gancho A, coisa 1 B, coisa 2 A, coisa 3a A, coisa 3b A.",
-  "fps": 30,
-  "largura": 1080,
-  "altura": 1920,
-  "duracao_quadros": 810,
-  "dia_sagrada": "Dia 3",
-  "planos": [
-    {"id": "s01", "bloco": "gancho",  "arquivo": "IMG_1286.MOV",      "entrada_s": 0.0,  "de": 0,   "quadros": 113, "centro_x": 0.5},
-    {"id": "s02", "bloco": "coisa1",  "arquivo": "IMG_0997.MOV",      "entrada_s": 0.0,  "de": 113, "quadros": 48,  "centro_x": 0.48},
-    {"id": "s03", "bloco": "coisa1",  "arquivo": "IMG_1341.MOV",      "entrada_s": 0.0,  "de": 161, "quadros": 48,  "centro_x": 0.49},
-    {"id": "s04", "bloco": "coisa1",  "arquivo": "IMG_0816.MOV",      "entrada_s": 22.2, "de": 209, "quadros": 61,  "centro_x": 0.45},
-    {"id": "s05", "bloco": "coisa2",  "arquivo": "IMG_0697.MOV",      "entrada_s": 2.0,  "de": 270, "quadros": 72,  "centro_x": 0.37},
-    {"id": "s06", "bloco": "coisa2",  "arquivo": "IMG_0690 (1).MOV",  "entrada_s": 13.0, "de": 342, "quadros": 54,  "centro_x": 0.78},
-    {"id": "s07", "bloco": "coisa2",  "arquivo": "IMG_0935.MOV",      "entrada_s": 0.0,  "de": 396, "quadros": 45,  "centro_x": 0.5},
-    {"id": "s08", "bloco": "coisa2",  "arquivo": "IMG_0955.MOV",      "entrada_s": 0.5,  "de": 441, "quadros": 45,  "centro_x": 0.5},
-    {"id": "s09", "bloco": "coisa3a", "arquivo": "IMG_1093.MOV",      "entrada_s": 0.0,  "de": 486, "quadros": 60,  "centro_x": 0.5},
-    {"id": "s10", "bloco": "coisa3a", "arquivo": "IMG_0864.MOV",      "entrada_s": 0.0,  "de": 546, "quadros": 55,  "centro_x": 0.5},
-    {"id": "s11", "bloco": "coisa3b", "arquivo": "IMG_1152.MOV",      "entrada_s": 0.0,  "de": 601, "quadros": 97,  "centro_x": 0.45},
-    {"id": "s12", "bloco": "coisa3b", "arquivo": "IMG_1174.MOV",      "entrada_s": 0.5,  "de": 698, "quadros": 112, "centro_x": 0.62}
-  ],
-  "voz": [
-    {"bloco": "gancho",  "arquivo": "envio_2/Goldwind_Plant.m4a",   "reel_s": 0.0,   "entrada_s": 0.45, "saida_s": 4.217},
-    {"bloco": "coisa1",  "arquivo": "envio_2/Goldwind_Plant_2.m4a", "reel_s": 3.767, "entrada_s": 0.20, "saida_s": 5.433},
-    {"bloco": "coisa2",  "arquivo": "envio_2/Via_Parafuso_2.m4a",   "reel_s": 9.0,   "entrada_s": 0.15, "saida_s": 7.35},
-    {"bloco": "coisa3",  "arquivo": "envio_2/Goldwind_Plant_3.m4a", "reel_s": 16.2,  "entrada_s": 0.10, "saida_s": 8.90}
-  ],
-  "ambiente_cinema": {"arquivo": "IMG_1152.MOV", "entrada_s": 0.0, "reel_s": 19.733, "duracao_s": 0.767, "rel_voz_db": -6},
-  "eventos": {
-    "placa_hook": {"de": 0, "saida_de": 105, "rotulo": "3 COISAS EM", "destino": "BARCELONA"},
-    "numeros": [
-      {"n": 1, "de": 119, "ate": 269},
-      {"n": 2, "de": 276, "ate": 485},
-      {"n": 3, "de": 492, "ate": 600}
-    ],
-    "snap": {"de": 270},
-    "cinema": {"de": 592, "escurece": 9, "preto": 2, "abre": 12},
-    "vinheta": {"de": 601, "ate": 809},
-    "ticket": {"de": 615, "saida_de": 690, "rodape": "ACIMA DA EXPECTATIVA · DIA 3"},
-    "emocional": {"de": 703, "saida_de": 756, "texto_leve": "que", "texto_forte": "IMPACTO"},
-    "fechamento": {"de": 760, "texto": "@primeirodiaem", "_estilo": "legenda Padrão (Barlow 700 56, sem caixa), base y 1420, entrando como grupo — mesmo tratamento da REV8; pedido do Diego em 02/10/2026 no lugar do símbolo 1º"}
+ "_sobre": "Fonte única da montagem do Reel '3 coisas de Barcelona'. Quadros a 30 fps. Lido por scripts/preparar_clipes.py, scripts/montar_audio.py e src/ (Remotion). Escolhas do Diego (02/10/2026): gancho A, coisa 1 B, coisa 2 A, coisa 3a A, coisa 3b A. Revisão: narração do envio 3 (falas e tempos novos; frase de impacto 'é surreal'); coisa 1 reordenada para a paella aparecer quando é dita.",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "duracao_quadros": 795,
+ "dia_sagrada": "Dia 3",
+ "planos": [
+  {
+   "id": "s01",
+   "bloco": "gancho",
+   "arquivo": "IMG_1286.MOV",
+   "entrada_s": 0.0,
+   "de": 0,
+   "quadros": 99,
+   "centro_x": 0.5
   },
-  "legendas": [
-    {"bloco": "gancho",  "off": -0.45, "linhas": ["É impossível só pensar"],
-     "palavras": [["É",0.68],["impossível",0.76],["só",1.50],["pensar",1.76]]},
-    {"bloco": "gancho",  "off": -0.45, "sai": 106, "linhas": ["em três coisas boas", "para Barcelona."],
-     "palavras": [["em",2.02],["três",2.22],["coisas",2.46],["boas",2.82],["para",3.18],["Barcelona.",3.32]]},
-    {"bloco": "coisa1",  "off": 3.567, "linhas": ["Em primeiro, com certeza"],
-     "palavras": [["Em",0.38],["primeiro,",0.46],["com",0.80],["certeza",1.08]]},
-    {"bloco": "coisa1",  "off": 3.567, "linhas": ["a comida, tem muita", "diversidade,"],
-     "palavras": [["a",1.58],["comida,",1.80],["tem",2.24],["muita",2.38],["diversidade,",2.68]]},
-    {"bloco": "coisa1",  "off": 3.567, "sai": 266, "linhas": ["as tapas são realmente", "muito boas."], "destaque": "tapas",
-     "palavras": [["as",3.52],["tapas",3.62],["são",3.96],["realmente",4.10],["muito",4.50],["boas.",4.78]]},
-    {"bloco": "coisa2",  "off": 8.85, "linhas": ["Em segundo lugar,"],
-     "palavras": [["Em",0.30],["segundo",0.38],["lugar,",0.62]]},
-    {"bloco": "coisa2",  "off": 8.85, "linhas": ["a variedade de atrações."],
-     "palavras": [["a",1.10],["variedade",1.14],["de",1.54],["atrações.",1.66]]},
-    {"bloco": "coisa2",  "off": 8.85, "linhas": ["Se quiser relaxar,", "tem praia."], "destaque": "praia",
-     "palavras": [["Se",2.64],["quiser",2.86],["relaxar,",3.08],["tem",3.60],["praia.",3.68]]},
-    {"bloco": "coisa2",  "off": 8.85, "linhas": ["Mas se quiser história,"],
-     "palavras": [["Mas",4.26],["se",4.36],["quiser",4.50],["história,",4.62]]},
-    {"bloco": "coisa2",  "off": 8.85, "linhas": ["pode se perder nas ruas"],
-     "palavras": [["pode",5.28],["se",5.42],["perder",5.56],["nas",5.78],["ruas",6.00]]},
-    {"bloco": "coisa2",  "off": 8.85, "sai": 482, "linhas": ["no bairro gótico."],
-     "palavras": [["no",6.26],["bairro",6.32],["gótico.",6.56]]},
-    {"bloco": "coisa3",  "off": 16.10, "linhas": ["Em terceiro, Gaudí", "realmente toma conta"], "destaque": "Gaudí",
-     "palavras": [["Em",0.26],["terceiro,",0.38],["Gaudí",1.40],["realmente",1.68],["toma",1.96],["conta",2.26]]},
-    {"bloco": "coisa3",  "off": 16.10, "sai": 597, "linhas": ["da arquitetura da cidade."],
-     "palavras": [["da",2.62],["arquitetura",2.78],["da",3.30],["cidade.",3.42]]},
-    {"bloco": "coisa3",  "off": 16.10, "linhas": ["Entrar na Sagrada Família"],
-     "palavras": [["Entrar",4.28],["na",4.62],["Sagrada",4.72],["Família",5.02]]},
-    {"bloco": "coisa3",  "off": 16.10, "sai": 690, "linhas": ["foi o que mais", "me surpreendeu."],
-     "palavras": [["foi",5.46],["o",5.60],["que",5.68],["mais",5.76],["me",5.94],["surpreendeu.",6.08]]}
+  {
+   "id": "s02",
+   "bloco": "coisa1",
+   "arquivo": "IMG_1341.MOV",
+   "entrada_s": 0.0,
+   "de": 99,
+   "quadros": 48,
+   "centro_x": 0.49
+  },
+  {
+   "id": "s03",
+   "bloco": "coisa1",
+   "arquivo": "IMG_0816.MOV",
+   "entrada_s": 22.4,
+   "de": 147,
+   "quadros": 46,
+   "centro_x": 0.45
+  },
+  {
+   "id": "s04",
+   "bloco": "coisa1",
+   "arquivo": "IMG_0997.MOV",
+   "entrada_s": 0.0,
+   "de": 193,
+   "quadros": 47,
+   "centro_x": 0.48
+  },
+  {
+   "id": "s05",
+   "bloco": "coisa2",
+   "arquivo": "IMG_0697.MOV",
+   "entrada_s": 2.0,
+   "de": 240,
+   "quadros": 61,
+   "centro_x": 0.37
+  },
+  {
+   "id": "s06",
+   "bloco": "coisa2",
+   "arquivo": "IMG_0690 (1).MOV",
+   "entrada_s": 13.0,
+   "de": 301,
+   "quadros": 56,
+   "centro_x": 0.78
+  },
+  {
+   "id": "s07",
+   "bloco": "coisa2",
+   "arquivo": "IMG_0935.MOV",
+   "entrada_s": 0.0,
+   "de": 357,
+   "quadros": 45,
+   "centro_x": 0.5
+  },
+  {
+   "id": "s08",
+   "bloco": "coisa2",
+   "arquivo": "IMG_0955.MOV",
+   "entrada_s": 0.5,
+   "de": 402,
+   "quadros": 60,
+   "centro_x": 0.5
+  },
+  {
+   "id": "s09",
+   "bloco": "coisa3a",
+   "arquivo": "IMG_1093.MOV",
+   "entrada_s": 0.0,
+   "de": 462,
+   "quadros": 60,
+   "centro_x": 0.5
+  },
+  {
+   "id": "s10",
+   "bloco": "coisa3a",
+   "arquivo": "IMG_0864.MOV",
+   "entrada_s": 0.0,
+   "de": 522,
+   "quadros": 63,
+   "centro_x": 0.5
+  },
+  {
+   "id": "s11",
+   "bloco": "coisa3b",
+   "arquivo": "IMG_1152.MOV",
+   "entrada_s": 0.0,
+   "de": 585,
+   "quadros": 93,
+   "centro_x": 0.45
+  },
+  {
+   "id": "s12",
+   "bloco": "coisa3b",
+   "arquivo": "IMG_1174.MOV",
+   "entrada_s": 0.5,
+   "de": 678,
+   "quadros": 117,
+   "centro_x": 0.62
+  }
+ ],
+ "voz": [
+  {
+   "bloco": "gancho",
+   "arquivo": "envio_3/Goldwind Plant 4.m4a",
+   "reel_s": 0.0,
+   "entrada_s": 0.4,
+   "saida_s": 3.7
+  },
+  {
+   "bloco": "coisa1",
+   "arquivo": "envio_3/Via Parafuso 4.m4a",
+   "reel_s": 3.3,
+   "entrada_s": 0.4,
+   "saida_s": 5.1
+  },
+  {
+   "bloco": "coisa2",
+   "arquivo": "envio_3/Goldwind Plant 6.m4a",
+   "reel_s": 8.0,
+   "entrada_s": 0.3,
+   "saida_s": 7.7
+  },
+  {
+   "bloco": "coisa3",
+   "arquivo": "envio_3/Via Parafuso 3.m4a",
+   "reel_s": 15.4,
+   "entrada_s": 0.4,
+   "saida_s": 9.07
+  }
+ ],
+ "ambiente_cinema": {
+  "arquivo": "IMG_1152.MOV",
+  "entrada_s": 0.0,
+  "reel_s": 19.2,
+  "duracao_s": 0.767,
+  "rel_voz_db": -6
+ },
+ "eventos": {
+  "placa_hook": {
+   "de": 0,
+   "saida_de": 91,
+   "rotulo": "3 COISAS EM",
+   "destino": "BARCELONA"
+  },
+  "numeros": [
+   {
+    "n": 1,
+    "de": 105,
+    "ate": 239
+   },
+   {
+    "n": 2,
+    "de": 246,
+    "ate": 461
+   },
+   {
+    "n": 3,
+    "de": 468,
+    "ate": 584
+   }
   ],
-  "capa": {"arquivo": "IMG_1174.MOV", "tempo_s": 2.2, "centro_x": 0.62, "linhas": ["3 COISAS", "BARCELONA"]}
+  "snap": {
+   "de": 240
+  },
+  "cinema": {
+   "de": 576,
+   "escurece": 9,
+   "preto": 2,
+   "abre": 12
+  },
+  "vinheta": {
+   "de": 585,
+   "ate": 794
+  },
+  "ticket": {
+   "de": 599,
+   "saida_de": 670,
+   "rodape": "ACIMA DA EXPECTATIVA · DIA 3"
+  },
+  "emocional": {
+   "de": 680,
+   "saida_de": 732,
+   "texto_leve": "é",
+   "texto_forte": "SURREAL"
+  },
+  "fechamento": {
+   "de": 736,
+   "texto": "@primeirodiaem",
+   "_estilo": "legenda Padrão (Barlow 700 56, sem caixa), base y 1420, entrando como grupo — mesmo tratamento da REV8; pedido do Diego em 02/10/2026 no lugar do símbolo 1º"
+  }
+ },
+ "legendas": [
+  {
+   "bloco": "gancho",
+   "off": -0.4,
+   "linhas": [
+    "É impossível você escolher"
+   ],
+   "palavras": [
+    [
+     "É",
+     0.54
+    ],
+    [
+     "impossível",
+     0.68
+    ],
+    [
+     "você",
+     1.28
+    ],
+    [
+     "escolher",
+     1.42
+    ]
+   ]
+  },
+  {
+   "bloco": "gancho",
+   "off": -0.4,
+   "linhas": [
+    "três coisas para falar",
+    "de Barcelona."
+   ],
+   "palavras": [
+    [
+     "três",
+     1.76
+    ],
+    [
+     "coisas",
+     2.02
+    ],
+    [
+     "para",
+     2.24
+    ],
+    [
+     "falar",
+     2.44
+    ],
+    [
+     "de",
+     2.64
+    ],
+    [
+     "Barcelona.",
+     2.8
+    ]
+   ],
+   "sai": 91
+  },
+  {
+   "bloco": "coisa1",
+   "off": 2.9,
+   "linhas": [
+    "Em primeiro, com certeza"
+   ],
+   "palavras": [
+    [
+     "Em",
+     0.6
+    ],
+    [
+     "primeiro,",
+     0.86
+    ],
+    [
+     "com",
+     1.2
+    ],
+    [
+     "certeza",
+     1.44
+    ]
+   ]
+  },
+  {
+   "bloco": "coisa1",
+   "off": 2.9,
+   "linhas": [
+    "é a comida."
+   ],
+   "palavras": [
+    [
+     "é",
+     1.86
+    ],
+    [
+     "a",
+     2.02
+    ],
+    [
+     "comida.",
+     2.14
+    ]
+   ]
+  },
+  {
+   "bloco": "coisa1",
+   "off": 2.9,
+   "linhas": [
+    "As tapas são muito boas"
+   ],
+   "palavras": [
+    [
+     "As",
+     2.54
+    ],
+    [
+     "tapas",
+     2.6
+    ],
+    [
+     "são",
+     2.78
+    ],
+    [
+     "muito",
+     2.96
+    ],
+    [
+     "boas",
+     3.32
+    ]
+   ],
+   "destaque": "tapas"
+  },
+  {
+   "bloco": "coisa1",
+   "off": 2.9,
+   "linhas": [
+    "e a paella é sensacional."
+   ],
+   "palavras": [
+    [
+     "e",
+     3.52
+    ],
+    [
+     "a",
+     3.62
+    ],
+    [
+     "paella",
+     3.74
+    ],
+    [
+     "é",
+     3.98
+    ],
+    [
+     "sensacional.",
+     4.24
+    ]
+   ],
+   "sai": 236
+  },
+  {
+   "bloco": "coisa2",
+   "off": 7.7,
+   "linhas": [
+    "Em segundo, a quantidade"
+   ],
+   "palavras": [
+    [
+     "Em",
+     0.42
+    ],
+    [
+     "segundo,",
+     0.62
+    ],
+    [
+     "a",
+     0.84
+    ],
+    [
+     "quantidade",
+     0.9
+    ]
+   ]
+  },
+  {
+   "bloco": "coisa2",
+   "off": 7.7,
+   "linhas": [
+    "de coisas pra fazer."
+   ],
+   "palavras": [
+    [
+     "de",
+     1.3
+    ],
+    [
+     "coisas",
+     1.55
+    ],
+    [
+     "pra",
+     1.72
+    ],
+    [
+     "fazer.",
+     1.92
+    ]
+   ]
+  },
+  {
+   "bloco": "coisa2",
+   "off": 7.7,
+   "linhas": [
+    "Se você quer descansar,"
+   ],
+   "palavras": [
+    [
+     "Se",
+     2.34
+    ],
+    [
+     "você",
+     2.4
+    ],
+    [
+     "quer",
+     2.62
+    ],
+    [
+     "descansar,",
+     2.74
+    ]
+   ]
+  },
+  {
+   "bloco": "coisa2",
+   "off": 7.7,
+   "linhas": [
+    "você vai pra praia."
+   ],
+   "palavras": [
+    [
+     "você",
+     3.34
+    ],
+    [
+     "vai",
+     3.4
+    ],
+    [
+     "pra",
+     3.52
+    ],
+    [
+     "praia.",
+     3.7
+    ]
+   ],
+   "destaque": "praia"
+  },
+  {
+   "bloco": "coisa2",
+   "off": 7.7,
+   "linhas": [
+    "Aí se você quer história,"
+   ],
+   "palavras": [
+    [
+     "Aí",
+     4.48
+    ],
+    [
+     "se",
+     4.56
+    ],
+    [
+     "você",
+     4.7
+    ],
+    [
+     "quer",
+     4.88
+    ],
+    [
+     "história,",
+     5.02
+    ]
+   ]
+  },
+  {
+   "bloco": "coisa2",
+   "off": 7.7,
+   "linhas": [
+    "é só você se perder"
+   ],
+   "palavras": [
+    [
+     "é",
+     5.72
+    ],
+    [
+     "só",
+     5.78
+    ],
+    [
+     "você",
+     5.94
+    ],
+    [
+     "se",
+     6.08
+    ],
+    [
+     "perder",
+     6.28
+    ]
+   ],
+   "sai": 423
+  },
+  {
+   "bloco": "coisa2",
+   "off": 7.7,
+   "linhas": [
+    "nas ruas do bairro gótico."
+   ],
+   "palavras": [
+    [
+     "nas",
+     6.4
+    ],
+    [
+     "ruas",
+     6.58
+    ],
+    [
+     "do",
+     6.78
+    ],
+    [
+     "bairro",
+     6.92
+    ],
+    [
+     "gótico.",
+     7.2
+    ]
+   ],
+   "sai": 458
+  },
+  {
+   "bloco": "coisa3",
+   "off": 15.0,
+   "linhas": [
+    "Em terceiro,"
+   ],
+   "palavras": [
+    [
+     "Em",
+     0.62
+    ],
+    [
+     "terceiro,",
+     0.82
+    ]
+   ]
+  },
+  {
+   "bloco": "coisa3",
+   "off": 15.0,
+   "linhas": [
+    "Gaudí está em todo lugar"
+   ],
+   "palavras": [
+    [
+     "Gaudí",
+     1.28
+    ],
+    [
+     "está",
+     1.62
+    ],
+    [
+     "em",
+     1.74
+    ],
+    [
+     "todo",
+     1.88
+    ],
+    [
+     "lugar",
+     2.06
+    ]
+   ],
+   "destaque": "Gaudí"
+  },
+  {
+   "bloco": "coisa3",
+   "off": 15.0,
+   "linhas": [
+    "e realmente toma conta"
+   ],
+   "palavras": [
+    [
+     "e",
+     2.36
+    ],
+    [
+     "realmente",
+     2.52
+    ],
+    [
+     "toma",
+     2.82
+    ],
+    [
+     "conta",
+     3.02
+    ]
+   ]
+  },
+  {
+   "bloco": "coisa3",
+   "off": 15.0,
+   "linhas": [
+    "da arquitetura da cidade,"
+   ],
+   "palavras": [
+    [
+     "da",
+     3.26
+    ],
+    [
+     "arquitetura",
+     3.4
+    ],
+    [
+     "da",
+     3.86
+    ],
+    [
+     "cidade,",
+     4.02
+    ]
+   ],
+   "sai": 576
+  },
+  {
+   "bloco": "coisa3",
+   "off": 15.0,
+   "linhas": [
+    "mas entrar na",
+    "Sagrada Família"
+   ],
+   "palavras": [
+    [
+     "mas",
+     4.72
+    ],
+    [
+     "entrar",
+     4.86
+    ],
+    [
+     "na",
+     5.08
+    ],
+    [
+     "Sagrada",
+     5.24
+    ],
+    [
+     "Família",
+     5.58
+    ]
+   ]
+  },
+  {
+   "bloco": "coisa3",
+   "off": 15.0,
+   "linhas": [
+    "foi o que mais",
+    "me surpreendeu,"
+   ],
+   "palavras": [
+    [
+     "foi",
+     5.9
+    ],
+    [
+     "o",
+     6.02
+    ],
+    [
+     "que",
+     6.14
+    ],
+    [
+     "mais",
+     6.28
+    ],
+    [
+     "me",
+     6.44
+    ],
+    [
+     "surpreendeu,",
+     6.72
+    ]
+   ],
+   "sai": 670
+  }
+ ],
+ "capa": {
+  "arquivo": "IMG_1174.MOV",
+  "tempo_s": 2.2,
+  "centro_x": 0.62,
+  "linhas": [
+   "3 COISAS",
+   "BARCELONA"
+  ]
+ }
 }

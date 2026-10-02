@@ -24,7 +24,16 @@ def sh(cmd, cwd=None):
 
 
 def quadro_export(q, out):
-    sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{q / FPS:.4f}", "-i", EXPORT, "-frames:v", "1", out])
+    if q >= N - 3:  # perto do fim, o seek por tempo pode cair fora do arquivo: decodifica o último 1 s e conta do fim
+        tmp = "/tmp/_fim"
+        os.makedirs(tmp, exist_ok=True)
+        for f in glob.glob(tmp + "/*.png"):
+            os.remove(f)
+        sh(["ffmpeg", "-v", "error", "-y", "-sseof", "-1", "-i", EXPORT, f"{tmp}/%04d.png"])
+        fs = sorted(glob.glob(tmp + "/*.png"))
+        os.replace(fs[len(fs) - (N - q)], out)
+    else:
+        sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{q / FPS:.4f}", "-i", EXPORT, "-frames:v", "1", out])
     return Image.open(out).convert("RGB")
 
 

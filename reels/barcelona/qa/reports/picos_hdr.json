@@ -5,24 +5,24 @@
   "pico_nits": 444
  },
  "s02": {
-  "arquivo": "IMG_0997.MOV",
-  "pico_linear": 3.849,
-  "pico_nits": 781
- },
- "s03": {
   "arquivo": "IMG_1341.MOV",
   "pico_linear": 3.685,
   "pico_nits": 748
  },
- "s04": {
+ "s03": {
   "arquivo": "IMG_0816.MOV",
-  "pico_linear": 4.979,
-  "pico_nits": 1011
+  "pico_linear": 4.954,
+  "pico_nits": 1006
+ },
+ "s04": {
+  "arquivo": "IMG_0997.MOV",
+  "pico_linear": 3.849,
+  "pico_nits": 781
  },
  "s05": {
   "arquivo": "IMG_0697.MOV",
-  "pico_linear": 4.473,
-  "pico_nits": 908
+  "pico_linear": 4.441,
+  "pico_nits": 902
  },
  "s06": {
   "arquivo": "IMG_0690 (1).MOV",

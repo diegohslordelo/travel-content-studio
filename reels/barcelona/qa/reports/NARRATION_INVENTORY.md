@@ -68,3 +68,36 @@ Os 4 arquivos têm o mesmo formato: AAC-LC, 48 kHz, 2 canais.
 - **Tomadas:** 1 por bloco, e não 2 como no briefing. A 3a e a 3b estão no mesmo arquivo, separadas por uma pausa de 0,38 s.
 
 `M4A recebido — atualmente fora do LFS — decisão necessária antes do commit.`
+
+---
+
+# Envio 3 (02/10/2026): narração vigente
+
+**Origem:** 4 arquivos novos na pasta do Google Drive do Diego. Eles substituem o envio 2 no Reel; o envio 2 continua em `narration/envio_2/`, sem alteração.
+**Tratamento:** nenhum. Os arquivos ficam em `narration/envio_3/` com os nomes originais (com espaços).
+**Transcrição:** `NARRATION_TRANSCRIPTS_envio_3.json` (faster-whisper `small`). Os trechos duvidosos foram conferidos com o modelo `medium`, com e sem dica de vocabulário.
+
+Os 4 arquivos têm o mesmo formato: AAC-LC, 48 kHz, 2 canais. Todos decodificam do início ao fim e dão `filter: lfs`.
+
+| Bloco | Arquivo | Duração (s) | Fala útil (s) | Loudness | True peak | SHA-256 |
+|---|---|---:|---|---:|---:|---|
+| gancho | `envio_3/Goldwind Plant 4.m4a` | 3,904 | 0,54–3,36 (2,82) | −21,4 LUFS | −9,3 dBFS | `d50d2e9394464838ee9032f252529f48238e821011ea7697849759a3c33d2ffa` |
+| coisa 1 | `envio_3/Via Parafuso 4.m4a` | 5,611 | 0,60–4,72 (4,12) | −23,6 LUFS | −6,0 dBFS | `941203da0df6196450e0ad8dfa1521744c84aacb2fb569d6c9779bb9fca8ff68` |
+| coisa 2 | `envio_3/Goldwind Plant 6.m4a` | 8,171 | 0,42–7,32 (6,90) | −22,7 LUFS | −8,7 dBFS | `69e24042d2732cebff43ff68bc78e91c0050d0d39657c6b61289e074882de12b` |
+| coisa 3 | `envio_3/Via Parafuso 3.m4a` | 9,109 | 0,62–8,10 (7,48) | −23,6 LUFS | −9,1 dBFS | `426ded792d7904e0bfe0f7cd4975f01a8eed5dfa770fa7b16053691c87dcd7a1` |
+
+**Soma da fala útil:** 21,32 s.
+
+| Bloco | Fala (como ficou na legenda) |
+|---|---|
+| gancho | "É impossível você escolher três coisas para falar de Barcelona." |
+| coisa 1 | "Em primeiro, com certeza é a comida. As tapas são muito boas e a paella é sensacional." |
+| coisa 2 | "Em segundo, a quantidade de coisas pra fazer. Se você quer descansar, você vai pra praia. Aí se você quer história, é só você se perder nas ruas do bairro gótico." |
+| coisa 3 | "Em terceiro, Gaudí está em todo lugar e realmente toma conta da arquitetura da cidade, mas entrar na Sagrada Família foi o que mais me surpreendeu, (lá) é surreal." |
+
+**Pontos a conferir de ouvido:**
+- **gancho, "você escolher":** o modelo `small` ouviu "só escolher"; o `medium` ouviu "você" nas duas passadas. A legenda usa "você".
+- **coisa 1, "paella":** o `small` ouviu "país" e o `medium` sem dica ouviu "parede". Com a dica, sai "paella" (confiança 0,30). O contexto e a imagem (IMG_0997) indicam paella.
+- **coisa 2, "Em segundo":** os dois modelos ouvem "Em segunda". A legenda usa "Em segundo", a forma correta.
+- **coisa 3, "está":** o `medium` com dica ouviu "tá" (confiança 0,42); sem dica, "está". A legenda usa "está".
+- **coisa 3, "lá é surreal":** a frase de impacto é "é surreal" (Diego). O "lá" (7,56 s) fica fora da legenda Emocional "é SURREAL", que entra no "é" (7,66 s).
