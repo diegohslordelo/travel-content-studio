@@ -10,7 +10,7 @@ Cada vídeo mostra o primeiro dia numa cidade nova: a chegada, os perrengues e o
 travel-content-studio/
 ├── README.md
 ├── CLAUDE.md            regras do projeto (leia antes de editar)
-├── design-system/       Design System REV 2 (brand book, tokens, bundle; fontes pendentes)
+├── design-system/       Design System REV 2 (brand book, tokens, bundle e fontes)
 ├── docs/                referências de conteúdo e de marca
 └── reels/
     └── apresentacao/    Reel de apresentação do canal (REV3 a REV8)
@@ -46,10 +46,10 @@ Sem o `git lfs pull`, os `.mp4` aparecem como arquivos de texto pequenos (pontei
 
 Requisitos: Python 3, Pillow, numpy, scipy e FFmpeg 6.1.
 
-Fontes (SIL OFL, Google Fonts), numa pasta qualquer:
+Fontes (SIL OFL, Google Fonts):
 
-- REV8: `Barlow-Bold.ttf` e `BarlowCondensed-ExtraBold.ttf`
-- REV7: `Barlow-SemiBold.ttf` e `BarlowCondensed-ExtraBold.ttf`
+- REV8: `Barlow-Bold.ttf` e `BarlowCondensed-ExtraBold.ttf`, já em `design-system/fonts/`
+- REV7: `Barlow-SemiBold.ttf` e `BarlowCondensed-ExtraBold.ttf`. O SemiBold é da V1 e não está no repositório: baixe numa pasta à parte
 
 Rode sempre de dentro de `reels/apresentacao/`:
 
@@ -57,10 +57,10 @@ Rode sempre de dentro de `reels/apresentacao/`:
 cd reels/apresentacao
 
 # Reel REV8 (lê cortes, textos e áudio de rev7/rev7.json)
-python3 rev8/scripts/rev8.py --fontes PASTA_DAS_FONTES
+python3 rev8/scripts/rev8.py --fontes ../../design-system/fonts
 
 # Capa REV8 (quadro 402 da base REV6)
-python3 rev8/scripts/capa.py --fontes PASTA_DAS_FONTES --quadro 402
+python3 rev8/scripts/capa.py --fontes ../../design-system/fonts --quadro 402
 ```
 
 A REV7 e a REV8 partem de `reel_apresentacao_sem_texto_rev6.mp4`, que está no repositório.

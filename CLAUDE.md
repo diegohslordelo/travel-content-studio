@@ -71,7 +71,7 @@ Este arquivo **não** descreve a identidade visual. Cores, fontes, componentes, 
 | 6 | QA / revN | `reels/<reel>/revN/QA_REVN.md` e `revN.json` | Decisões específicas de uma revisão |
 | Apoio | Instrução-base | `docs/design-system-marca-viagens.md` | Método e teoria (o porquê). As cores e fontes "sugeridas" dele não valem como identidade |
 
-As fontes do DS V2 ainda não estão no repositório (seção 14).
+As fontes públicas do DS V2 estão em `design-system/fonts/` (origem e licença em `SOURCES.md`). PD Placar e Caneta Diego ainda faltam (seção 14).
 
 **Em caso de conflito:**
 - Uma regra específica de Reel não altera o Design System.
@@ -208,7 +208,7 @@ travel-content-studio/
 
 Questões em aberto. Esta seção não cria regras.
 
-1. **Fontes ausentes:** `design-system/fonts/` está vazia. Nenhum arquivo de fonte do DS V2 (Barlow, Barlow Condensed, `PDPlacar-Bold.ttf`, IBM Plex Mono) está no repositório. O render da REV8 depende de `Barlow-Bold.ttf` e `BarlowCondensed-ExtraBold.ttf`.
+1. **Fontes ausentes:** `PDPlacar-Bold.ttf` e a fonte Caneta Diego não estão no repositório. As demais fontes do DS V2 estão em `design-system/fonts/`, inclusive as do render da REV8 (`Barlow-Bold.ttf` e `BarlowCondensed-ExtraBold.ttf`). `fonts/candidatas/Caveat-Regular.ttf` é só candidata para a Caneta Diego, não oficial.
 2. **Tokens × brand book:** o DS V2 (Governança) diz que, se divergirem, o JSON vale. A hierarquia da seção 5 põe o DS acima dos tokens. Decisão do Diego.
 3. **Bundle × brand book:** o DS V2 ("Como usar") diz que os tempos da prévia valem no CapCut, mas a Governança deixa o bundle fora da fonte única. Os dois divergem em vários valores (por exemplo, duração da Chegada, largura do módulo de seta, extensão do scrim, fonte da mini-placa). Decisão do Diego.
 4. **Defeitos no DS V2:** o token `blur-glass`, citado no brand book, não existe no JSON; a numeração das seções 1 a 4 se repete. Correção a cargo do Diego.

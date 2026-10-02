@@ -1,2 +1,16 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mov filter=lfs diff=lfs merge=lfs -text
+
+# Reel de Barcelona: footage, narração e exports.
+# Escopo restrito a reels/barcelona/ para não afetar os .flac da REV6, que já estão no Git normal.
+# Maiúsculas: os brutos do iPhone saem como IMG_XXXX.MOV / .MP4, e as regras acima diferenciam maiúsculas no Linux.
+reels/barcelona/**/*.MOV filter=lfs diff=lfs merge=lfs -text
+reels/barcelona/**/*.MP4 filter=lfs diff=lfs merge=lfs -text
+reels/barcelona/**/*.m4v filter=lfs diff=lfs merge=lfs -text
+reels/barcelona/**/*.M4V filter=lfs diff=lfs merge=lfs -text
+reels/barcelona/**/*.wav filter=lfs diff=lfs merge=lfs -text
+reels/barcelona/**/*.WAV filter=lfs diff=lfs merge=lfs -text
+reels/barcelona/**/*.flac filter=lfs diff=lfs merge=lfs -text
+reels/barcelona/**/*.FLAC filter=lfs diff=lfs merge=lfs -text
+reels/barcelona/**/*.m4a filter=lfs diff=lfs merge=lfs -text
+reels/barcelona/**/*.M4A filter=lfs diff=lfs merge=lfs -text

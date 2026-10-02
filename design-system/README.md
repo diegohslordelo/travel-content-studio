@@ -12,7 +12,7 @@ As regras visuais estão nos arquivos abaixo e não são repetidas aqui.
 | `primeiro-dia-tokens-v2.json` | **Tokens** V2 (W3C DTCG): os valores técnicos oficiais |
 | `bundle/pd-bundle.css` | Estilos dos componentes usados nas prévias |
 | `bundle/pd-bundle.js` | Funções auxiliares das prévias (`window.PD`) |
-| `fonts/` | Fontes do sistema. **Está vazia:** nenhum arquivo de fonte do DS V2 estava disponível na migração |
+| `fonts/` | Fontes do sistema: as públicas e licenciadas do DS V2, validadas. Origem e licença em `fonts/SOURCES.md` |
 
 Os arquivos foram copiados sem alteração. A única exceção é a correção de implementação registrada abaixo.
 
@@ -28,12 +28,11 @@ Os documentos de apoio ficam em `../docs/`:
 
 ## Fontes pendentes
 
-O DS V2 usa estas fontes, mas nenhuma está nesta pasta:
-- Barlow (Bold, SemiBold)
-- Barlow Condensed (ExtraBold)
+Barlow, Barlow Condensed, IBM Plex Mono e Reenie Beanie (provisória da Caneta Diego) estão em `fonts/`. Ainda faltam:
 - `PDPlacar-Bold.ttf`
-- IBM Plex Mono
-- Caneta Diego (provisória: Reenie Beanie)
+- Caneta Diego
+
+`fonts/candidatas/Caveat-Regular.ttf` é só **candidata para a Caneta Diego, não oficial**.
 
 O `pd-bundle.css` carrega Barlow, Barlow Condensed, IBM Plex Mono e Reenie Beanie pelo Google Fonts. Ele não carrega "PD Placar" nem "Caneta Diego".
 
