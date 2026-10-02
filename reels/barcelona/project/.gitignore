@@ -1,0 +1,4 @@
+# Dependências e arquivos gerados do projeto Remotion (reproduzíveis)
+node_modules/
+public/
+out/

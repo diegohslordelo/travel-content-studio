@@ -1,0 +1,67 @@
+{
+ "s01": {
+  "arquivo": "IMG_1286.MOV",
+  "pico_linear": 2.188,
+  "pico_nits": 444
+ },
+ "s02": {
+  "arquivo": "IMG_0997.MOV",
+  "pico_linear": 3.849,
+  "pico_nits": 781
+ },
+ "s03": {
+  "arquivo": "IMG_1341.MOV",
+  "pico_linear": 3.685,
+  "pico_nits": 748
+ },
+ "s04": {
+  "arquivo": "IMG_0816.MOV",
+  "pico_linear": 4.979,
+  "pico_nits": 1011
+ },
+ "s05": {
+  "arquivo": "IMG_0697.MOV",
+  "pico_linear": 4.473,
+  "pico_nits": 908
+ },
+ "s06": {
+  "arquivo": "IMG_0690 (1).MOV",
+  "pico_linear": 4.319,
+  "pico_nits": 877
+ },
+ "s07": {
+  "arquivo": "IMG_0935.MOV",
+  "pico_linear": 4.395,
+  "pico_nits": 892
+ },
+ "s08": {
+  "arquivo": "IMG_0955.MOV",
+  "pico_linear": 4.172,
+  "pico_nits": 847
+ },
+ "s09": {
+  "arquivo": "IMG_1093.MOV",
+  "pico_linear": 4.335,
+  "pico_nits": 880
+ },
+ "s10": {
+  "arquivo": "IMG_0864.MOV",
+  "pico_linear": 4.624,
+  "pico_nits": 939
+ },
+ "s11": {
+  "arquivo": "IMG_1152.MOV",
+  "pico_linear": 4.65,
+  "pico_nits": 944
+ },
+ "s12": {
+  "arquivo": "IMG_1174.MOV",
+  "pico_linear": 4.966,
+  "pico_nits": 1008
+ },
+ "capa": {
+  "arquivo": "IMG_1174.MOV",
+  "pico_linear": 4.907,
+  "pico_nits": 996
+ }
+}

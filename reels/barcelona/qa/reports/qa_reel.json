@@ -1,0 +1,187 @@
+{
+ "ffprobe": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": "30/1",
+  "quadros": 810,
+  "duracao_s": 27.0,
+  "video": "h264 High",
+  "pix_fmt": "yuv420p",
+  "bitrate_video_kbps": 13594,
+  "audio": "aac",
+  "audio_hz": 48000,
+  "audio_canais": 2
+ },
+ "ok_formato": true,
+ "loudness": {
+  "integrado_lufs": -14.1,
+  "true_peak_dbtp": -1.5,
+  "lra_lu": 2.7
+ },
+ "ok_loudness": true,
+ "quadros_guia": [
+  {
+   "tempo_s": 0.3,
+   "quadro": 9,
+   "arquivo": "qa/frames/quadros/q009_0.3s.png",
+   "obs": ""
+  },
+  {
+   "tempo_s": 0.6,
+   "quadro": 18,
+   "arquivo": "qa/frames/quadros/q018_0.6s.png",
+   "obs": ""
+  },
+  {
+   "tempo_s": 1.5,
+   "quadro": 45,
+   "arquivo": "qa/frames/quadros/q045_1.5s.png",
+   "obs": ""
+  },
+  {
+   "tempo_s": 5,
+   "quadro": 150,
+   "arquivo": "qa/frames/quadros/q150_5.0s.png",
+   "obs": ""
+  },
+  {
+   "tempo_s": 12,
+   "quadro": 360,
+   "arquivo": "qa/frames/quadros/q360_12.0s.png",
+   "obs": ""
+  },
+  {
+   "tempo_s": 18,
+   "quadro": 540,
+   "arquivo": "qa/frames/quadros/q540_18.0s.png",
+   "obs": ""
+  },
+  {
+   "tempo_s": 22,
+   "quadro": 660,
+   "arquivo": "qa/frames/quadros/q660_22.0s.png",
+   "obs": ""
+  },
+  {
+   "tempo_s": 24,
+   "quadro": 720,
+   "arquivo": "qa/frames/quadros/q720_24.0s.png",
+   "obs": ""
+  },
+  {
+   "tempo_s": 27.5,
+   "quadro": 809,
+   "arquivo": "qa/frames/quadros/q809_27.5s.png",
+   "obs": "último quadro (o vídeo tem 27,0 s)"
+  }
+ ],
+ "zonas_proibidas": {
+  "quadros_com_invasao_fora_de_animacao": [],
+  "quadros_com_invasao_em_animacao_de_entrada_ou_saida": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   109,
+   110,
+   111,
+   112,
+   120,
+   277,
+   493
+  ],
+  "detalhe_primeiros": [
+   [
+    1,
+    "esquerda",
+    16088
+   ],
+   [
+    2,
+    "esquerda",
+    16128
+   ],
+   [
+    3,
+    "esquerda",
+    16128
+   ],
+   [
+    4,
+    "esquerda",
+    8252
+   ],
+   [
+    5,
+    "esquerda",
+    808
+   ],
+   [
+    109,
+    "direita",
+    388
+   ],
+   [
+    110,
+    "direita",
+    32096
+   ],
+   [
+    111,
+    "direita",
+    32096
+   ],
+   [
+    112,
+    "direita",
+    32096
+   ],
+   [
+    120,
+    "esquerda",
+    1108
+   ],
+   [
+    277,
+    "esquerda",
+    1108
+   ],
+   [
+    493,
+    "esquerda",
+    1108
+   ]
+  ]
+ },
+ "area_objetos_max": {
+  "quadro": 91,
+  "fracao": 0.1026
+ },
+ "amarelo_max_fora_transicao": {
+  "quadro": 24,
+  "fracao": 0.0469
+ },
+ "ticket_sai_antes_da_emocional": {
+  "ultimo_quadro_ticket": 697,
+  "primeiro_quadro_emocional": 703,
+  "ok": true
+ },
+ "contagens": {
+  "tickets": 1,
+  "carimbos": 0,
+  "bilhetes": 0,
+  "legendas_emocionais": 1,
+  "transicoes": {
+   "Snap": 1,
+   "Cinema": 1
+  },
+  "familias_de_transicao": 2,
+  "cortes": 11,
+  "cortes_secos": 9
+ },
+ "loop": {
+  "diferenca_media_rgb": 111.5,
+  "imagem": "qa/frames/loop_q0_x_ultimo.png"
+ }
+}

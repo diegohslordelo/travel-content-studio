@@ -1,0 +1,15 @@
+{
+  "name": "reel-3-coisas-barcelona",
+  "private": true,
+  "description": "Reel 'Só 3 coisas de Barcelona? Difícil.' — Primeiro Dia (DS V2)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Reel out/video_sem_audio.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.532",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.532"
+  }
+}

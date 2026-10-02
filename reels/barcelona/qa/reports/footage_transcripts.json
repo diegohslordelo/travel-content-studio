@@ -1,0 +1,325 @@
+{
+ "IMG_0635.MP4": {
+  "loudness_lufs": -25.7,
+  "true_peak_dbfs": -12.6,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_0690.MP4": {
+  "loudness_lufs": -16.0,
+  "true_peak_dbfs": -3.6,
+  "tem_fala_provavel": false,
+  "segmentos": [
+   {
+    "inicio": 0.0,
+    "fim": 2.0,
+    "texto": "Bairro Gótico",
+    "prob_fala": 0.17,
+    "logprob": -0.97
+   }
+  ]
+ },
+ "IMG_0697.MP4": {
+  "loudness_lufs": -22.2,
+  "true_peak_dbfs": -3.9,
+  "tem_fala_provavel": true,
+  "segmentos": [
+   {
+    "inicio": 0.78,
+    "fim": 19.56,
+    "texto": "Nós decidimos sentar aqui para a discussão da paletada que a gente está dando e apreciar a vista de Barceloneta e do seu famoso Hotel Vela.",
+    "prob_fala": 0.93,
+    "logprob": -0.33
+   }
+  ]
+ },
+ "IMG_0706.MP4": {
+  "loudness_lufs": -34.9,
+  "true_peak_dbfs": -11.1,
+  "tem_fala_provavel": false,
+  "segmentos": [
+   {
+    "inicio": 3.31,
+    "fim": 4.27,
+    "texto": "Psssssssssssssssssssssssss",
+    "prob_fala": 0.22,
+    "logprob": -0.92
+   }
+  ]
+ },
+ "IMG_0722.MP4": {
+  "loudness_lufs": -24.0,
+  "true_peak_dbfs": -12.0,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_0816.MOV": {
+  "loudness_lufs": -17.1,
+  "true_peak_dbfs": -0.2,
+  "tem_fala_provavel": true,
+  "segmentos": [
+   {
+    "inicio": 0.0,
+    "fim": 6.7,
+    "texto": "Chegamos no nosso último bichão do dia, muito cansados, hoje a gente andou demais.",
+    "prob_fala": 1.0,
+    "logprob": -0.47
+   },
+   {
+    "inicio": 9.7,
+    "fim": 11.2,
+    "texto": "Vamos de 8 quilômetros.",
+    "prob_fala": 1.0,
+    "logprob": -0.47
+   },
+   {
+    "inicio": 13.5,
+    "fim": 17.5,
+    "texto": "E agora eu acabei de pedir minha primeira tapa de Barcelona.",
+    "prob_fala": 1.0,
+    "logprob": -0.47
+   },
+   {
+    "inicio": 18.5,
+    "fim": 23.5,
+    "texto": "Pediu uma papa brava, tomando uma cerveza para acompanhar.",
+    "prob_fala": 1.0,
+    "logprob": -0.47
+   }
+  ]
+ },
+ "IMG_0819.MP4": {
+  "loudness_lufs": -16.8,
+  "true_peak_dbfs": 0.2,
+  "tem_fala_provavel": true,
+  "segmentos": [
+   {
+    "inicio": 0.24,
+    "fim": 14.12,
+    "texto": "Para fechar, pegamos esse mini, esse mini entrecote, estilo Tataqui.",
+    "prob_fala": 0.97,
+    "logprob": -0.6
+   },
+   {
+    "inicio": 14.12,
+    "fim": 17.28,
+    "texto": "E aí, amor, dá para dois?",
+    "prob_fala": 0.97,
+    "logprob": -0.6
+   }
+  ]
+ },
+ "IMG_0862.MP4": {
+  "loudness_lufs": -40.8,
+  "true_peak_dbfs": -22.4,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_0864.MOV": {
+  "loudness_lufs": -35.7,
+  "true_peak_dbfs": -22.1,
+  "tem_fala_provavel": false,
+  "segmentos": [
+   {
+    "inicio": 3.15,
+    "fim": 7.94,
+    "texto": "Bairro, Gaudí, Sagrada Família, bairro gótico, tapas, Barceloneta, Park Güell, Casa Batlló.",
+    "prob_fala": 0.12,
+    "logprob": -0.58
+   }
+  ]
+ },
+ "IMG_0864.MP4": {
+  "loudness_lufs": -35.5,
+  "true_peak_dbfs": -22.1,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_0900.MOV": {
+  "loudness_lufs": -20.8,
+  "true_peak_dbfs": -3.0,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_0912.MP4": {
+  "loudness_lufs": -22.2,
+  "true_peak_dbfs": -10.2,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_0929.MP4": {
+  "loudness_lufs": -23.1,
+  "true_peak_dbfs": -10.5,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_0935.MP4": {
+  "loudness_lufs": -21.6,
+  "true_peak_dbfs": -8.8,
+  "tem_fala_provavel": false,
+  "segmentos": [
+   {
+    "inicio": 1.71,
+    "fim": 3.71,
+    "texto": "Bairro, Gaudí, Sagrada Família, bairro gótico, tapas, Barceloneta, Park Güell, Casa Batlló.",
+    "prob_fala": 0.13,
+    "logprob": -0.57
+   }
+  ]
+ },
+ "IMG_0955.MP4": {
+  "loudness_lufs": -35.5,
+  "true_peak_dbfs": -23.0,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_0997.MP4": {
+  "loudness_lufs": -31.8,
+  "true_peak_dbfs": -19.8,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_1029.MOV": {
+  "loudness_lufs": -27.6,
+  "true_peak_dbfs": -13.2,
+  "tem_fala_provavel": true,
+  "segmentos": [
+   {
+    "inicio": 11.41,
+    "fim": 12.41,
+    "texto": "Para de gravar.",
+    "prob_fala": 0.58,
+    "logprob": -0.74
+   }
+  ]
+ },
+ "IMG_1093.MP4": {
+  "loudness_lufs": -22.2,
+  "true_peak_dbfs": -10.0,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_1100.MP4": {
+  "loudness_lufs": -24.5,
+  "true_peak_dbfs": -11.0,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_1152.MP4": {
+  "loudness_lufs": -33.7,
+  "true_peak_dbfs": -22.8,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_1154.MP4": {
+  "loudness_lufs": -32.9,
+  "true_peak_dbfs": -19.5,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_1174.MP4": {
+  "loudness_lufs": -29.1,
+  "true_peak_dbfs": -11.7,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_1192.MP4": {
+  "loudness_lufs": -25.4,
+  "true_peak_dbfs": -4.4,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_1208.MP4": {
+  "loudness_lufs": -24.3,
+  "true_peak_dbfs": -10.9,
+  "tem_fala_provavel": false,
+  "segmentos": [
+   {
+    "inicio": 0.05,
+    "fim": 2.05,
+    "texto": "Bairro Gótico",
+    "prob_fala": 0.09,
+    "logprob": -0.94
+   }
+  ]
+ },
+ "IMG_1221.MP4": {
+  "loudness_lufs": -21.0,
+  "true_peak_dbfs": -7.0,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_1243.MP4": {
+  "loudness_lufs": -39.5,
+  "true_peak_dbfs": -25.1,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_1246.MOV": {
+  "loudness_lufs": -22.5,
+  "true_peak_dbfs": -6.2,
+  "tem_fala_provavel": true,
+  "segmentos": [
+   {
+    "inicio": 0.0,
+    "fim": 2.0,
+    "texto": "E eu pedi de... Tomarão.",
+    "prob_fala": 0.74,
+    "logprob": -0.64
+   },
+   {
+    "inicio": 2.0,
+    "fim": 4.0,
+    "texto": "Vamos comprovar.",
+    "prob_fala": 0.74,
+    "logprob": -0.64
+   }
+  ]
+ },
+ "IMG_1286.MP4": {
+  "loudness_lufs": -28.8,
+  "true_peak_dbfs": -13.6,
+  "tem_fala_provavel": false,
+  "segmentos": [
+   {
+    "inicio": 0.0,
+    "fim": 2.0,
+    "texto": "Bairro Gótico",
+    "prob_fala": 0.14,
+    "logprob": -0.96
+   }
+  ]
+ },
+ "IMG_1320.MP4": {
+  "loudness_lufs": -30.0,
+  "true_peak_dbfs": -17.3,
+  "tem_fala_provavel": false,
+  "segmentos": [
+   {
+    "inicio": 6.9,
+    "fim": 8.9,
+    "texto": "Bairro, Gaudí, Sagrada Família, bairro gótico, tapas, Barceloneta, Park Güell, Casa Batlló.",
+    "prob_fala": 0.09,
+    "logprob": -0.57
+   }
+  ]
+ },
+ "IMG_1331.MP4": {
+  "loudness_lufs": -31.5,
+  "true_peak_dbfs": -18.5,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_1339.MOV": {
+  "loudness_lufs": -28.5,
+  "true_peak_dbfs": -13.9,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ },
+ "IMG_1341.MP4": {
+  "loudness_lufs": -26.3,
+  "true_peak_dbfs": -14.1,
+  "tem_fala_provavel": false,
+  "segmentos": []
+ }
+}
