@@ -1,0 +1,166 @@
+{
+ "saida": "rev1/previa/previa_sem_marca_540x960.mp4",
+ "quadros": 660,
+ "fps": 30,
+ "w": 540,
+ "h": 960,
+ "linha_do_tempo": [
+  {
+   "espaco": 1,
+   "tipo": "gancho",
+   "arquivo": "material/extras/IMG_0777.MOV",
+   "inicio_fonte": 9.0,
+   "duracao": 2.0,
+   "no_reel": [
+    0.0,
+    2.0
+   ],
+   "proposta": false,
+   "audio": "proprio"
+  },
+  {
+   "espaco": 2,
+   "tipo": "pov caminhando",
+   "arquivo": "material/extras/IMG_1031.MOV",
+   "inicio_fonte": 1.8,
+   "duracao": 3.0,
+   "no_reel": [
+    2.0,
+    5.0
+   ],
+   "proposta": false,
+   "audio": "proprio"
+  },
+  {
+   "espaco": 3,
+   "tipo": "transporte",
+   "arquivo": "material/extras/IMG_0804.MOV",
+   "inicio_fonte": 0.75,
+   "duracao": 3.0,
+   "no_reel": [
+    5.0,
+    8.0
+   ],
+   "proposta": false,
+   "audio": "proprio"
+  },
+  {
+   "espaco": 4,
+   "tipo": "comida",
+   "arquivo": "material/extras/IMG_1026.MOV",
+   "inicio_fonte": 4.25,
+   "duracao": 3.0,
+   "no_reel": [
+    8.0,
+    11.0
+   ],
+   "proposta": true,
+   "audio": "proprio"
+  },
+  {
+   "espaco": 5,
+   "tipo": "arquitetura",
+   "arquivo": "material/extras/IMG_1083.MOV",
+   "inicio_fonte": 5.55,
+   "duracao": 3.0,
+   "no_reel": [
+    11.0,
+    14.0
+   ],
+   "proposta": false,
+   "audio": "proprio"
+  },
+  {
+   "espaco": 6,
+   "tipo": "pov caminhando",
+   "arquivo": "material/extras/IMG_0895.MOV",
+   "inicio_fonte": 1.5,
+   "duracao": 3.0,
+   "no_reel": [
+    14.0,
+    17.0
+   ],
+   "proposta": false,
+   "audio": "proprio"
+  },
+  {
+   "espaco": 7,
+   "tipo": "arquitetura ou vista",
+   "arquivo": "material/extras/IMG_0586.MOV",
+   "inicio_fonte": 1.75,
+   "duracao": 5.0,
+   "no_reel": [
+    17.0,
+    22.0
+   ],
+   "proposta": false,
+   "audio": "substituir"
+  }
+ ],
+ "audio": {
+  "lufs_antes": -27.66,
+  "lufs_alvo": -14.0,
+  "lufs_final": -14.01,
+  "tp_antes_limitador_dbtp": 0.85,
+  "teto_dbtp": -1.5,
+  "nivelamento": 0.7,
+  "fontes": [
+   {
+    "espaco": 1,
+    "audio_de": "material/extras/IMG_0777.MOV",
+    "inicio_fonte": 9.0,
+    "substituto": false,
+    "lufs_trecho": -32.1,
+    "ganho_nivelamento_db": 2.9
+   },
+   {
+    "espaco": 2,
+    "audio_de": "material/extras/IMG_1031.MOV",
+    "inicio_fonte": 1.8,
+    "substituto": false,
+    "lufs_trecho": -23.9,
+    "ganho_nivelamento_db": -2.8
+   },
+   {
+    "espaco": 3,
+    "audio_de": "material/extras/IMG_0804.MOV",
+    "inicio_fonte": 0.75,
+    "substituto": false,
+    "lufs_trecho": -18.4,
+    "ganho_nivelamento_db": -6.7
+   },
+   {
+    "espaco": 4,
+    "audio_de": "material/extras/IMG_1026.MOV",
+    "inicio_fonte": 4.25,
+    "substituto": false,
+    "lufs_trecho": -28.9,
+    "ganho_nivelamento_db": 0.7
+   },
+   {
+    "espaco": 5,
+    "audio_de": "material/extras/IMG_1083.MOV",
+    "inicio_fonte": 5.55,
+    "substituto": false,
+    "lufs_trecho": -22.5,
+    "ganho_nivelamento_db": -3.8
+   },
+   {
+    "espaco": 6,
+    "audio_de": "material/extras/IMG_0895.MOV",
+    "inicio_fonte": 1.5,
+    "substituto": false,
+    "lufs_trecho": -32.6,
+    "ganho_nivelamento_db": 3.3
+   },
+   {
+    "espaco": 7,
+    "audio_de": "material/extras/IMG_0569.MOV",
+    "inicio_fonte": 2.04,
+    "substituto": true,
+    "lufs_trecho": -36.9,
+    "ganho_nivelamento_db": 6.3
+   }
+  ]
+ }
+}

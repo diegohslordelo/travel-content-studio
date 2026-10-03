@@ -1,0 +1,183 @@
+_nota: 'Gerado por rev1/scripts/selecionar.py. inicio/duracao em s no arquivo de origem. reenquadre_x: canto esquerdo (px)
+  do recorte 1215×2160 na fonte 3840×2160, escalado para 1080×1920 sem upscale; ausente = fonte vertical. audio: proprio |
+  substituir (ambiente sem fala de outro trecho).'
+espacos:
+- espaco: 1
+  tempo: 0–2s
+  tipo: gancho
+  vencedor:
+    arquivo: material/extras/IMG_0777.MOV
+    inicio: 9.0
+    duracao: 2.0
+    pontuacao: 82.7
+    audio: proprio
+    reenquadre_x: 1197
+  alternativas:
+  - arquivo: material/extras/IMG_0631.MOV
+    inicio: 0.75
+    duracao: 2.0
+    pontuacao: 79.9
+    audio: proprio
+    reenquadre_x: 1504
+  - arquivo: material/extras/IMG_1026.MOV
+    inicio: 5.25
+    duracao: 2.0
+    pontuacao: 79.0
+    audio: proprio
+    reenquadre_x: 1312
+  aprovadas: 78
+  avaliadas: 175
+- espaco: 2
+  tempo: 2–5s
+  tipo: pov caminhando
+  vencedor:
+    arquivo: material/extras/IMG_1031.MOV
+    inicio: 1.8
+    duracao: 3.0
+    pontuacao: 87.5
+    audio: proprio
+    reenquadre_x: 1312
+  alternativas:
+  - arquivo: material/extras/IMG_0866.MOV
+    inicio: 2.0
+    duracao: 3.0
+    pontuacao: 78.3
+    audio: proprio
+    reenquadre_x: 1312
+  - arquivo: material/extras/IMG_1032.mov
+    inicio: 2.3
+    duracao: 3.0
+    pontuacao: 75.3
+    audio: substituir
+    audio_motivo: Música ou tom sustentado no áudio (periodicidade mediana 0.62, p90 0.78; limites 0.4 / 0.6)
+  aprovadas: 61
+  avaliadas: 78
+- espaco: 3
+  tempo: 5–8s
+  tipo: transporte
+  vencedor:
+    arquivo: material/extras/IMG_0804.MOV
+    inicio: 0.75
+    duracao: 3.0
+    pontuacao: 81.6
+    audio: proprio
+    reenquadre_x: 429
+  alternativas: []
+  aprovadas: 6
+  avaliadas: 6
+- espaco: 4
+  tempo: 8–11s
+  tipo: comida
+  vencedor: null
+  alternativas: []
+  aprovadas: 0
+  avaliadas: 0
+  vazio: nenhuma janela aprovada para este tipo
+  proposta:
+    tipo: vista em movimento de um lugar ainda não usado
+    motivo: Nenhum dos 21 arquivos tem comida, balcão ou mão pegando algo. A troca mais próxima da função do espaço (pausa
+      sensorial no meio, plano diferente dos vizinhos) é uma vista em movimento de um lugar que ainda não aparece no Reel.
+    trecho:
+      arquivo: material/extras/IMG_1026.MOV
+      inicio: 4.25
+      duracao: 3.0
+      pontuacao: 83.6
+      audio: proprio
+      reenquadre_x: 1312
+- espaco: 5
+  tempo: 11–14s
+  tipo: arquitetura
+  vencedor:
+    arquivo: material/extras/IMG_1083.MOV
+    inicio: 5.55
+    duracao: 3.0
+    pontuacao: 97.6
+    audio: proprio
+    reenquadre_x: 1312
+  alternativas:
+  - arquivo: material/extras/IMG_0929.MOV
+    inicio: 0.75
+    duracao: 3.0
+    pontuacao: 81.1
+    audio: substituir
+    reenquadre_x: 1197
+    audio_motivo: Música ou tom sustentado no áudio (periodicidade mediana 0.37, p90 0.61; limites 0.4 / 0.6)
+  - arquivo: material/extras/IMG_0631.MOV
+    inicio: 0.0
+    duracao: 3.0
+    pontuacao: 79.7
+    audio: proprio
+    reenquadre_x: 1504
+  aprovadas: 60
+  avaliadas: 60
+- espaco: 6
+  tempo: 14–17s
+  tipo: pov caminhando
+  vencedor:
+    arquivo: material/extras/IMG_0895.MOV
+    inicio: 1.5
+    duracao: 3.0
+    pontuacao: 80.5
+    audio: proprio
+    reenquadre_x: 1504
+  alternativas:
+  - arquivo: material/extras/IMG_0866.MOV
+    inicio: 2.0
+    duracao: 3.0
+    pontuacao: 78.3
+    audio: proprio
+    reenquadre_x: 1312
+  - arquivo: material/extras/IMG_0919.MOV
+    inicio: 3.25
+    duracao: 3.0
+    pontuacao: 74.3
+    audio: substituir
+    reenquadre_x: 1773
+    audio_motivo: Música ou tom sustentado no áudio (periodicidade mediana 0.49, p90 0.72; limites 0.4 / 0.6)
+  aprovadas: 61
+  avaliadas: 78
+- espaco: 7
+  tempo: 17–20s
+  tipo: arquitetura ou vista
+  vencedor:
+    arquivo: material/extras/IMG_0586.MOV
+    inicio: 1.75
+    duracao: 3.0
+    pontuacao: 88.2
+    audio: substituir
+    fechamento:
+      inicio: 4.75
+      duracao: 2.0
+      _nota: mesmo plano continua sob o símbolo 1º
+    reenquadre_x: 1773
+    audio_motivo: 'Cantor de rua com violão em es (''llevo mi guitarra en brazo…''): voz e música em primeiro plano (F1)'
+    audio_substituto:
+      arquivo: material/extras/IMG_0569.MOV
+      inicio: 2.0
+      distancia_m: 296
+      periodicidade:
+      - 0.28
+      - 0.41
+  alternativas:
+  - arquivo: material/extras/IMG_1026.MOV
+    inicio: 2.25
+    duracao: 3.0
+    pontuacao: 87.9
+    audio: proprio
+    fechamento:
+      inicio: 5.25
+      duracao: 2.0
+      _nota: mesmo plano continua sob o símbolo 1º
+    reenquadre_x: 1312
+  - arquivo: material/extras/IMG_0569.MOV
+    inicio: 2.0
+    duracao: 3.0
+    pontuacao: 77.2
+    audio: proprio
+    fechamento:
+      inicio: 5.0
+      duracao: 2.0
+      _nota: mesmo plano continua sob o símbolo 1º
+    reenquadre_x: 1389
+  aprovadas: 34
+  avaliadas: 34

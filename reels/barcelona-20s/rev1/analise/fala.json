@@ -1,0 +1,1294 @@
+{
+ "IMG_0498": {
+  "silero": [
+   [
+    3.22,
+    17.71
+   ],
+   [
+    19.54,
+    25.68
+   ],
+   [
+    27.28,
+    31.63
+   ]
+  ],
+  "palavras": {
+   "pt": [
+    {
+     "ini": 3.46,
+     "fim": 3.64,
+     "palavra": "acho",
+     "prob": 0.95
+    },
+    {
+     "ini": 3.64,
+     "fim": 3.84,
+     "palavra": "que",
+     "prob": 0.8
+    },
+    {
+     "ini": 3.84,
+     "fim": 4.24,
+     "palavra": "bonitinho",
+     "prob": 0.8
+    },
+    {
+     "ini": 6.12,
+     "fim": 7.02,
+     "palavra": "arvores",
+     "prob": 0.67
+    },
+    {
+     "ini": 7.72,
+     "fim": 7.9,
+     "palavra": "folham",
+     "prob": 0.55
+    },
+    {
+     "ini": 9.36,
+     "fim": 9.76,
+     "palavra": "cima",
+     "prob": 1.0
+    },
+    {
+     "ini": 9.76,
+     "fim": 10.06,
+     "palavra": "de",
+     "prob": 0.91
+    },
+    {
+     "ini": 11.24,
+     "fim": 11.5,
+     "palavra": "fora",
+     "prob": 0.97
+    },
+    {
+     "ini": 11.5,
+     "fim": 11.68,
+     "palavra": "do",
+     "prob": 0.97
+    },
+    {
+     "ini": 11.68,
+     "fim": 11.88,
+     "palavra": "país.",
+     "prob": 0.97
+    },
+    {
+     "ini": 12.98,
+     "fim": 13.58,
+     "palavra": "É",
+     "prob": 0.56
+    },
+    {
+     "ini": 13.58,
+     "fim": 13.7,
+     "palavra": "por",
+     "prob": 0.55
+    },
+    {
+     "ini": 13.7,
+     "fim": 13.8,
+     "palavra": "causa",
+     "prob": 0.7
+    },
+    {
+     "ini": 13.8,
+     "fim": 13.96,
+     "palavra": "da",
+     "prob": 0.9
+    },
+    {
+     "ini": 13.96,
+     "fim": 14.08,
+     "palavra": "época",
+     "prob": 1.0
+    },
+    {
+     "ini": 14.08,
+     "fim": 14.32,
+     "palavra": "do",
+     "prob": 0.99
+    },
+    {
+     "ini": 14.32,
+     "fim": 14.46,
+     "palavra": "ano,",
+     "prob": 1.0
+    },
+    {
+     "ini": 14.48,
+     "fim": 14.66,
+     "palavra": "né?",
+     "prob": 0.72
+    },
+    {
+     "ini": 16.32,
+     "fim": 16.84,
+     "palavra": "treinando.",
+     "prob": 0.96
+    },
+    {
+     "ini": 19.76,
+     "fim": 20.06,
+     "palavra": "É",
+     "prob": 0.68
+    },
+    {
+     "ini": 21.22,
+     "fim": 21.52,
+     "palavra": "Dali",
+     "prob": 0.56
+    },
+    {
+     "ini": 21.52,
+     "fim": 21.7,
+     "palavra": "vão",
+     "prob": 0.9
+    },
+    {
+     "ini": 21.7,
+     "fim": 21.86,
+     "palavra": "ser",
+     "prob": 0.87
+    },
+    {
+     "ini": 21.86,
+     "fim": 22.02,
+     "palavra": "os",
+     "prob": 0.96
+    },
+    {
+     "ini": 22.02,
+     "fim": 22.4,
+     "palavra": "futuros",
+     "prob": 0.99
+    },
+    {
+     "ini": 22.4,
+     "fim": 22.92,
+     "palavra": "jogadores",
+     "prob": 1.0
+    },
+    {
+     "ini": 22.92,
+     "fim": 24.58,
+     "palavra": "de",
+     "prob": 0.92
+    },
+    {
+     "ini": 24.58,
+     "fim": 25.16,
+     "palavra": "futebol.",
+     "prob": 0.98
+    },
+    {
+     "ini": 27.62,
+     "fim": 27.72,
+     "palavra": "dar",
+     "prob": 0.83
+    },
+    {
+     "ini": 27.82,
+     "fim": 27.88,
+     "palavra": "o",
+     "prob": 0.82
+    },
+    {
+     "ini": 27.88,
+     "fim": 28.12,
+     "palavra": "Barcelona",
+     "prob": 0.98
+    },
+    {
+     "ini": 28.12,
+     "fim": 28.46,
+     "palavra": "ali?",
+     "prob": 0.91
+    },
+    {
+     "ini": 28.46,
+     "fim": 29.14,
+     "palavra": "Vamos",
+     "prob": 0.5
+    },
+    {
+     "ini": 29.14,
+     "fim": 29.36,
+     "palavra": "ver.",
+     "prob": 0.96
+    }
+   ],
+   "es": [
+    {
+     "ini": 3.76,
+     "fim": 4.1,
+     "palavra": "bonitos,",
+     "prob": 0.5
+    },
+    {
+     "ini": 4.98,
+     "fim": 5.14,
+     "palavra": "que",
+     "prob": 0.92
+    },
+    {
+     "ini": 5.26,
+     "fim": 5.48,
+     "palavra": "bonitos",
+     "prob": 0.91
+    },
+    {
+     "ini": 7.48,
+     "fim": 7.7,
+     "palavra": "que",
+     "prob": 0.53
+    },
+    {
+     "ini": 7.84,
+     "fim": 7.98,
+     "palavra": "a",
+     "prob": 0.97
+    },
+    {
+     "ini": 9.7,
+     "fim": 10.02,
+     "palavra": "de",
+     "prob": 0.86
+    },
+    {
+     "ini": 11.22,
+     "fim": 11.52,
+     "palavra": "fuera",
+     "prob": 0.88
+    },
+    {
+     "ini": 11.52,
+     "fim": 11.66,
+     "palavra": "del",
+     "prob": 0.65
+    },
+    {
+     "ini": 11.66,
+     "fim": 11.9,
+     "palavra": "país.",
+     "prob": 0.98
+    },
+    {
+     "ini": 13.7,
+     "fim": 13.82,
+     "palavra": "a",
+     "prob": 0.69
+    },
+    {
+     "ini": 13.92,
+     "fim": 14.06,
+     "palavra": "época",
+     "prob": 0.88
+    },
+    {
+     "ini": 14.06,
+     "fim": 14.28,
+     "palavra": "del",
+     "prob": 0.85
+    },
+    {
+     "ini": 14.28,
+     "fim": 14.46,
+     "palavra": "año,",
+     "prob": 0.96
+    },
+    {
+     "ini": 14.56,
+     "fim": 14.62,
+     "palavra": "¿no?",
+     "prob": 0.83
+    },
+    {
+     "ini": 20.08,
+     "fim": 20.44,
+     "palavra": "de",
+     "prob": 0.7
+    },
+    {
+     "ini": 20.54,
+     "fim": 20.84,
+     "palavra": "salón?",
+     "prob": 0.6
+    },
+    {
+     "ini": 21.68,
+     "fim": 21.84,
+     "palavra": "a",
+     "prob": 0.96
+    },
+    {
+     "ini": 21.84,
+     "fim": 21.84,
+     "palavra": "ser",
+     "prob": 0.89
+    },
+    {
+     "ini": 21.84,
+     "fim": 22.04,
+     "palavra": "los",
+     "prob": 0.75
+    },
+    {
+     "ini": 22.04,
+     "fim": 22.4,
+     "palavra": "futuros",
+     "prob": 0.96
+    },
+    {
+     "ini": 22.4,
+     "fim": 22.92,
+     "palavra": "jugadores",
+     "prob": 0.99
+    },
+    {
+     "ini": 22.92,
+     "fim": 24.56,
+     "palavra": "de",
+     "prob": 0.76
+    },
+    {
+     "ini": 24.56,
+     "fim": 25.04,
+     "palavra": "fútbol.",
+     "prob": 0.85
+    },
+    {
+     "ini": 27.58,
+     "fim": 27.72,
+     "palavra": "a",
+     "prob": 0.99
+    },
+    {
+     "ini": 27.72,
+     "fim": 27.72,
+     "palavra": "dar",
+     "prob": 0.62
+    },
+    {
+     "ini": 27.82,
+     "fim": 28.18,
+     "palavra": "salón",
+     "prob": 0.99
+    },
+    {
+     "ini": 29.14,
+     "fim": 29.34,
+     "palavra": "a",
+     "prob": 0.83
+    },
+    {
+     "ini": 29.34,
+     "fim": 29.38,
+     "palavra": "ver.",
+     "prob": 0.85
+    }
+   ],
+   "ca": [
+    {
+     "ini": 4.42,
+     "fim": 4.96,
+     "palavra": "Està",
+     "prob": 0.58
+    },
+    {
+     "ini": 4.96,
+     "fim": 5.28,
+     "palavra": "bé.",
+     "prob": 0.81
+    },
+    {
+     "ini": 5.86,
+     "fim": 5.88,
+     "palavra": "Està",
+     "prob": 0.59
+    },
+    {
+     "ini": 5.88,
+     "fim": 5.98,
+     "palavra": "bé.",
+     "prob": 0.84
+    },
+    {
+     "ini": 5.98,
+     "fim": 6.56,
+     "palavra": "Està",
+     "prob": 0.71
+    },
+    {
+     "ini": 6.56,
+     "fim": 6.86,
+     "palavra": "bé.",
+     "prob": 0.87
+    },
+    {
+     "ini": 6.86,
+     "fim": 6.86,
+     "palavra": "Està",
+     "prob": 0.82
+    },
+    {
+     "ini": 6.86,
+     "fim": 6.92,
+     "palavra": "bé.",
+     "prob": 0.8
+    },
+    {
+     "ini": 8.62,
+     "fim": 9.48,
+     "palavra": "Està",
+     "prob": 0.89
+    },
+    {
+     "ini": 9.48,
+     "fim": 9.68,
+     "palavra": "bé.",
+     "prob": 0.87
+    },
+    {
+     "ini": 10.62,
+     "fim": 11.26,
+     "palavra": "Està",
+     "prob": 0.93
+    },
+    {
+     "ini": 11.26,
+     "fim": 11.46,
+     "palavra": "bé.",
+     "prob": 0.91
+    },
+    {
+     "ini": 12.78,
+     "fim": 13.64,
+     "palavra": "Està",
+     "prob": 0.93
+    },
+    {
+     "ini": 13.64,
+     "fim": 13.64,
+     "palavra": "bé.",
+     "prob": 0.91
+    },
+    {
+     "ini": 13.82,
+     "fim": 14.0,
+     "palavra": "Està",
+     "prob": 0.94
+    },
+    {
+     "ini": 14.0,
+     "fim": 14.0,
+     "palavra": "bé.",
+     "prob": 0.94
+    },
+    {
+     "ini": 14.62,
+     "fim": 14.86,
+     "palavra": "Està",
+     "prob": 0.94
+    },
+    {
+     "ini": 14.86,
+     "fim": 15.0,
+     "palavra": "bé.",
+     "prob": 0.95
+    },
+    {
+     "ini": 15.34,
+     "fim": 16.2,
+     "palavra": "Està",
+     "prob": 0.95
+    },
+    {
+     "ini": 16.2,
+     "fim": 16.2,
+     "palavra": "bé.",
+     "prob": 0.96
+    },
+    {
+     "ini": 16.3,
+     "fim": 16.48,
+     "palavra": "de",
+     "prob": 0.77
+    },
+    {
+     "ini": 16.48,
+     "fim": 16.74,
+     "palavra": "treure",
+     "prob": 0.78
+    },
+    {
+     "ini": 20.6,
+     "fim": 21.46,
+     "palavra": "'allà",
+     "prob": 0.56
+    },
+    {
+     "ini": 21.46,
+     "fim": 21.68,
+     "palavra": "van",
+     "prob": 0.59
+    },
+    {
+     "ini": 21.68,
+     "fim": 21.86,
+     "palavra": "ser",
+     "prob": 0.97
+    },
+    {
+     "ini": 21.86,
+     "fim": 22.04,
+     "palavra": "els",
+     "prob": 0.98
+    },
+    {
+     "ini": 22.04,
+     "fim": 22.4,
+     "palavra": "futurs",
+     "prob": 0.88
+    },
+    {
+     "ini": 22.4,
+     "fim": 22.9,
+     "palavra": "jugadors",
+     "prob": 0.94
+    },
+    {
+     "ini": 22.9,
+     "fim": 24.58,
+     "palavra": "de",
+     "prob": 0.83
+    },
+    {
+     "ini": 24.58,
+     "fim": 25.14,
+     "palavra": "futbol.",
+     "prob": 0.89
+    },
+    {
+     "ini": 27.64,
+     "fim": 27.66,
+     "palavra": "'allà?",
+     "prob": 0.92
+    },
+    {
+     "ini": 28.56,
+     "fim": 29.12,
+     "palavra": "No",
+     "prob": 0.79
+    },
+    {
+     "ini": 29.12,
+     "fim": 29.24,
+     "palavra": "ho",
+     "prob": 0.89
+    },
+    {
+     "ini": 29.24,
+     "fim": 29.34,
+     "palavra": "sé.",
+     "prob": 0.99
+    }
+   ],
+   "en": [
+    {
+     "ini": 4.26,
+     "fim": 4.86,
+     "palavra": "I",
+     "prob": 0.74
+    },
+    {
+     "ini": 4.86,
+     "fim": 5.06,
+     "palavra": "think",
+     "prob": 0.64
+    },
+    {
+     "ini": 5.22,
+     "fim": 5.34,
+     "palavra": "pretty,",
+     "prob": 0.88
+    },
+    {
+     "ini": 6.48,
+     "fim": 6.82,
+     "palavra": "little",
+     "prob": 0.5
+    },
+    {
+     "ini": 7.52,
+     "fim": 7.52,
+     "palavra": "that,",
+     "prob": 0.54
+    },
+    {
+     "ini": 11.46,
+     "fim": 11.64,
+     "palavra": "of",
+     "prob": 0.92
+    },
+    {
+     "ini": 11.66,
+     "fim": 11.92,
+     "palavra": "country.",
+     "prob": 0.89
+    },
+    {
+     "ini": 13.6,
+     "fim": 13.8,
+     "palavra": "the",
+     "prob": 0.9
+    },
+    {
+     "ini": 13.8,
+     "fim": 14.02,
+     "palavra": "time",
+     "prob": 0.88
+    },
+    {
+     "ini": 14.02,
+     "fim": 14.26,
+     "palavra": "of",
+     "prob": 0.96
+    },
+    {
+     "ini": 14.26,
+     "fim": 14.28,
+     "palavra": "the",
+     "prob": 0.93
+    },
+    {
+     "ini": 14.28,
+     "fim": 14.46,
+     "palavra": "year,",
+     "prob": 0.95
+    },
+    {
+     "ini": 14.54,
+     "fim": 14.64,
+     "palavra": "right?",
+     "prob": 0.77
+    },
+    {
+     "ini": 21.4,
+     "fim": 21.52,
+     "palavra": "the",
+     "prob": 0.77
+    },
+    {
+     "ini": 21.92,
+     "fim": 22.86,
+     "palavra": "players",
+     "prob": 0.63
+    },
+    {
+     "ini": 22.86,
+     "fim": 24.36,
+     "palavra": "of",
+     "prob": 0.7
+    },
+    {
+     "ini": 28.44,
+     "fim": 29.12,
+     "palavra": "don't",
+     "prob": 0.85
+    },
+    {
+     "ini": 29.12,
+     "fim": 29.34,
+     "palavra": "know.",
+     "prob": 0.99
+    },
+    {
+     "ini": 29.58,
+     "fim": 29.8,
+     "palavra": "you.",
+     "prob": 0.96
+    }
+   ]
+  },
+  "duracao": 33.41
+ },
+ "IMG_0569": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 7.55
+ },
+ "IMG_0571": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 2.19
+ },
+ "IMG_0586": {
+  "silero": [
+   [
+    0.34,
+    11.26
+   ]
+  ],
+  "palavras": {
+   "pt": [
+    {
+     "ini": 0.78,
+     "fim": 1.64,
+     "palavra": "autos,",
+     "prob": 0.8
+    },
+    {
+     "ini": 1.86,
+     "fim": 2.8,
+     "palavra": "passageiros,",
+     "prob": 0.72
+    },
+    {
+     "ini": 3.44,
+     "fim": 3.74,
+     "palavra": "-me",
+     "prob": 0.66
+    },
+    {
+     "ini": 3.74,
+     "fim": 4.5,
+     "palavra": "guitarra",
+     "prob": 0.66
+    },
+    {
+     "ini": 4.5,
+     "fim": 4.64,
+     "palavra": "em",
+     "prob": 0.67
+    },
+    {
+     "ini": 4.64,
+     "fim": 5.3,
+     "palavra": "braço",
+     "prob": 0.95
+    },
+    {
+     "ini": 6.74,
+     "fim": 7.08,
+     "palavra": "mate",
+     "prob": 0.53
+    },
+    {
+     "ini": 7.08,
+     "fim": 7.44,
+     "palavra": "-se",
+     "prob": 0.55
+    },
+    {
+     "ini": 9.02,
+     "fim": 9.18,
+     "palavra": "que",
+     "prob": 0.94
+    },
+    {
+     "ini": 9.18,
+     "fim": 9.6,
+     "palavra": "eles",
+     "prob": 0.78
+    },
+    {
+     "ini": 9.6,
+     "fim": 10.3,
+     "palavra": "canta",
+     "prob": 0.75
+    },
+    {
+     "ini": 10.38,
+     "fim": 10.82,
+     "palavra": "canto",
+     "prob": 0.88
+    }
+   ],
+   "es": [
+    {
+     "ini": 0.52,
+     "fim": 0.78,
+     "palavra": "esos",
+     "prob": 0.91
+    },
+    {
+     "ini": 0.78,
+     "fim": 1.64,
+     "palavra": "autos",
+     "prob": 0.92
+    },
+    {
+     "ini": 1.64,
+     "fim": 2.78,
+     "palavra": "pasajeros",
+     "prob": 0.95
+    },
+    {
+     "ini": 2.78,
+     "fim": 3.44,
+     "palavra": "llevo",
+     "prob": 0.67
+    },
+    {
+     "ini": 3.44,
+     "fim": 3.78,
+     "palavra": "mi",
+     "prob": 0.95
+    },
+    {
+     "ini": 3.78,
+     "fim": 4.5,
+     "palavra": "guitarra",
+     "prob": 0.98
+    },
+    {
+     "ini": 4.5,
+     "fim": 4.64,
+     "palavra": "en",
+     "prob": 0.89
+    },
+    {
+     "ini": 4.64,
+     "fim": 5.3,
+     "palavra": "brazo",
+     "prob": 0.92
+    },
+    {
+     "ini": 7.36,
+     "fim": 7.52,
+     "palavra": "y",
+     "prob": 0.53
+    },
+    {
+     "ini": 7.88,
+     "fim": 9.0,
+     "palavra": "quieran",
+     "prob": 0.85
+    },
+    {
+     "ini": 9.0,
+     "fim": 9.2,
+     "palavra": "que",
+     "prob": 0.89
+    },
+    {
+     "ini": 9.2,
+     "fim": 9.6,
+     "palavra": "les",
+     "prob": 0.93
+    },
+    {
+     "ini": 9.6,
+     "fim": 10.28,
+     "palavra": "canto,",
+     "prob": 0.59
+    },
+    {
+     "ini": 10.36,
+     "fim": 10.82,
+     "palavra": "canto",
+     "prob": 0.94
+    }
+   ],
+   "ca": [
+    {
+     "ini": 0.52,
+     "fim": 0.78,
+     "palavra": "esos",
+     "prob": 0.63
+    },
+    {
+     "ini": 0.78,
+     "fim": 1.64,
+     "palavra": "autos",
+     "prob": 0.95
+    },
+    {
+     "ini": 1.64,
+     "fim": 2.78,
+     "palavra": "pasajeros",
+     "prob": 0.96
+    },
+    {
+     "ini": 2.78,
+     "fim": 3.44,
+     "palavra": "llevo",
+     "prob": 0.78
+    },
+    {
+     "ini": 3.44,
+     "fim": 3.78,
+     "palavra": "mi",
+     "prob": 0.89
+    },
+    {
+     "ini": 3.78,
+     "fim": 4.5,
+     "palavra": "guitarra",
+     "prob": 0.97
+    },
+    {
+     "ini": 4.5,
+     "fim": 4.64,
+     "palavra": "en",
+     "prob": 0.76
+    },
+    {
+     "ini": 4.64,
+     "fim": 5.3,
+     "palavra": "brazo",
+     "prob": 0.69
+    },
+    {
+     "ini": 6.46,
+     "fim": 6.68,
+     "palavra": "los",
+     "prob": 0.98
+    },
+    {
+     "ini": 7.14,
+     "fim": 7.52,
+     "palavra": "y",
+     "prob": 0.85
+    },
+    {
+     "ini": 7.86,
+     "fim": 9.0,
+     "palavra": "quieran",
+     "prob": 0.81
+    },
+    {
+     "ini": 9.0,
+     "fim": 9.2,
+     "palavra": "que",
+     "prob": 0.94
+    },
+    {
+     "ini": 9.2,
+     "fim": 9.6,
+     "palavra": "les",
+     "prob": 0.96
+    },
+    {
+     "ini": 9.6,
+     "fim": 10.28,
+     "palavra": "canto",
+     "prob": 0.72
+    },
+    {
+     "ini": 10.28,
+     "fim": 10.84,
+     "palavra": "canto",
+     "prob": 0.67
+    }
+   ],
+   "en": [
+    {
+     "ini": 3.36,
+     "fim": 3.8,
+     "palavra": "my",
+     "prob": 0.82
+    },
+    {
+     "ini": 3.8,
+     "fim": 4.36,
+     "palavra": "guitar",
+     "prob": 0.94
+    },
+    {
+     "ini": 4.66,
+     "fim": 4.76,
+     "palavra": "my",
+     "prob": 0.68
+    },
+    {
+     "ini": 4.76,
+     "fim": 5.04,
+     "palavra": "arms",
+     "prob": 0.96
+    },
+    {
+     "ini": 5.79,
+     "fim": 6.18,
+     "palavra": "I",
+     "prob": 0.54
+    },
+    {
+     "ini": 6.42,
+     "fim": 6.64,
+     "palavra": "the",
+     "prob": 0.5
+    },
+    {
+     "ini": 7.86,
+     "fim": 8.34,
+     "palavra": "they",
+     "prob": 0.58
+    },
+    {
+     "ini": 8.34,
+     "fim": 8.82,
+     "palavra": "want",
+     "prob": 0.9
+    },
+    {
+     "ini": 8.82,
+     "fim": 9.22,
+     "palavra": "me",
+     "prob": 0.74
+    },
+    {
+     "ini": 9.22,
+     "fim": 9.3,
+     "palavra": "to",
+     "prob": 0.95
+    },
+    {
+     "ini": 9.3,
+     "fim": 10.16,
+     "palavra": "sing",
+     "prob": 0.97
+    },
+    {
+     "ini": 10.36,
+     "fim": 10.64,
+     "palavra": "them",
+     "prob": 0.64
+    }
+   ]
+  },
+  "duracao": 11.26
+ },
+ "IMG_0631": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 6.42
+ },
+ "IMG_0634": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 4.71
+ },
+ "IMG_0777": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 11.18
+ },
+ "IMG_0795": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 7.29
+ },
+ "IMG_0804": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 4.44
+ },
+ "IMG_0866": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 6.06
+ },
+ "IMG_0895": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 6.33
+ },
+ "IMG_0908": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 12.09
+ },
+ "IMG_0916": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 12.14
+ },
+ "IMG_0919": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 6.38
+ },
+ "IMG_0929": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 3.97
+ },
+ "IMG_0935": {
+  "silero": [
+   [
+    1.71,
+    2.75
+   ]
+  ],
+  "palavras": {
+   "pt": [
+    {
+     "ini": 1.7,
+     "fim": 1.84,
+     "palavra": "aí",
+     "prob": 0.99
+    },
+    {
+     "ini": 2.26,
+     "fim": 2.54,
+     "palavra": "E",
+     "prob": 0.91
+    },
+    {
+     "ini": 2.54,
+     "fim": 2.68,
+     "palavra": "aí",
+     "prob": 0.99
+    },
+    {
+     "ini": 2.68,
+     "fim": 2.7,
+     "palavra": "E",
+     "prob": 0.93
+    },
+    {
+     "ini": 2.7,
+     "fim": 2.7,
+     "palavra": "aí",
+     "prob": 0.99
+    },
+    {
+     "ini": 2.7,
+     "fim": 2.72,
+     "palavra": "E",
+     "prob": 0.94
+    },
+    {
+     "ini": 2.72,
+     "fim": 2.72,
+     "palavra": "aí",
+     "prob": 0.99
+    }
+   ],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 2.75
+ },
+ "IMG_0952": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 7.38
+ },
+ "IMG_1026": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 7.85
+ },
+ "IMG_1031": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 4.84
+ },
+ "IMG_1032": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 13.61
+ },
+ "IMG_1083": {
+  "silero": [],
+  "palavras": {
+   "pt": [],
+   "es": [],
+   "ca": [],
+   "en": []
+  },
+  "duracao": 9.26
+ }
+}

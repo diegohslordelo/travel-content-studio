@@ -1,0 +1,187 @@
+# Classificação visual manual (Etapa 1), feita quadro a quadro nas folhas de 2 fps
+# (_tmp/folhas/*.jpg) e conferida nas grades de recorte. É a parte do ranking que não é medida
+# por algoritmo: tipo de plano, quem aparece, lugar e reprovações dos filtros 2 e 3.
+#
+# Campos
+#   local      agrupamento por lugar (GPS do arquivo + o que aparece). Dois espaços não usam o mesmo local.
+#   cx         centro do recorte 9:16 na fonte horizontal (fração da largura). Vertical: null.
+#   icone      quanto o plano "diz Barcelona sem explicação" (0–1). Julgamento editorial, usado no gancho,
+#              na arquitetura e na vista.
+#   marina     a Marina aparece (de costas ou de perfil). Permitido (CLAUDE.md, "Quem aparece"),
+#              mas o conceito é POV: penaliza no ranking.
+#   reprova    trechos reprovados com o filtro (F1 a F7) e o motivo.
+#   audio      "proprio" | "substituir" (fala ou música no áudio do trecho; visual pode entrar com
+#              ambiente de outro trecho).
+#
+# Todos os 21 arquivos: iPhone 17 Pro, GPS em Barcelona, 09–10/03/2026, sem marca d'água nem texto
+# sobreposto (F7 aprovado), resolução 3840×2160 (F6: recorte 9:16 sem upscale) ou vertical
+# 1214×2160 / 2160×3840 (≥ 1080×1920).
+
+IMG_0498:
+  local: les-corts
+  descricao: Calçada em Les Corts (perto do Camp Nou), atrás da Marina; campo de treino de futebol
+  segmentos: []
+  reprova:
+    - {ini: 3.2, fim: 33.4, filtro: F1, motivo: "Conversa Diego e Marina em pt (Whisper: 'galera treinando', 'é do Barcelona?')"}
+    - {ini: 9.0, fim: 15.5, filtro: F2, motivo: "Marina olha para a câmera"}
+    - {ini: 0.0, fim: 3.2, filtro: F2, motivo: "Câmera apontada para a Marina; único trecho sem fala tem 3,2 s com ela em destaque e transeunte em close"}
+
+IMG_0569:
+  local: montjuic
+  descricao: Caminhando pela Font Màgica em direção ao MNAC e às quatro colunas
+  segmentos:
+    - {ini: 0.0, fim: 2.0, tipos: [vista, arquitetura], cx: 0.55, icone: 0.8, marina: false, nota: "tilt do céu para o MNAC"}
+    - {ini: 2.0, fim: 7.54, tipos: [arquitetura, vista, pov], cx: 0.52, icone: 0.8, marina: true, nota: "Marina de costas à direita"}
+  audio: proprio
+
+IMG_0571:
+  local: montjuic
+  descricao: MNAC sob galhos (vertical)
+  segmentos:
+    - {ini: 0.0, fim: 2.18, tipos: [arquitetura, vista], cx: null, icone: 0.7, marina: false}
+  audio: proprio
+
+IMG_0586:
+  local: montjuic
+  descricao: Mirante do MNAC sobre a Plaça d'Espanya e a cidade, pan para a direita
+  segmentos:
+    - {ini: 0.0, fim: 8.2, tipos: [vista], cx: 0.62, icone: 0.9, marina: false}
+  reprova:
+    - {ini: 8.2, fim: 11.25, filtro: F3, motivo: "Desconhecidos passam em primeiro plano"}
+  audio: substituir
+  audio_motivo: "Cantor de rua com violão em es ('llevo mi guitarra en brazo…'): voz e música em primeiro plano (F1)"
+
+IMG_0631:
+  local: port
+  descricao: Monumento a Colom contra o céu, câmera andando
+  segmentos:
+    - {ini: 0.0, fim: 6.41, tipos: [arquitetura], cx: 0.55, icone: 0.7, marina: false}
+  audio: proprio
+
+IMG_0634:
+  local: port
+  descricao: Palmeiras do Port Vell, tilt do céu para a passarela
+  segmentos:
+    - {ini: 0.0, fim: 4.7, tipos: [vista], cx: 0.5, icone: 0.4, marina: false}
+  audio: proprio
+
+IMG_0777:
+  local: arc-triomf
+  descricao: Passeig de Lluís Companys, palmeiras e Arc de Triomf, caminhando
+  segmentos:
+    - {ini: 0.0, fim: 4.5, tipos: [vista], cx: 0.5, icone: 0.4, marina: false, nota: "palmeiras contra o céu"}
+    - {ini: 4.5, fim: 8.0, tipos: [arquitetura, vista], cx: 0.57, icone: 0.85, marina: false}
+    - {ini: 8.0, fim: 11.16, tipos: [arquitetura, vista], cx: 0.47, icone: 0.85, marina: false, nota: "o arco anda para a esquerda com a caminhada"}
+  audio: proprio
+
+IMG_0795:
+  local: eixample-gran-via
+  descricao: Atravessando a rua atrás da Marina (Eixample)
+  segmentos:
+    - {ini: 0.0, fim: 7.29, tipos: [pov], cx: 0.6, icone: 0.4, marina: true}
+  reprova:
+    - {ini: 3.0, fim: 4.6, filtro: F3, motivo: "Desconhecido cruza em primeiro plano"}
+  audio: proprio
+
+IMG_0804:
+  local: eixample-gran-via
+  descricao: Ônibus TMB passando na rua, câmera na mão parada na calçada
+  segmentos:
+    - {ini: 0.0, fim: 4.41, tipos: [transporte], cx: 0.27, icone: 0.4, marina: false, nota: "ônibus visto de fora; não há plano dentro de metrô, ônibus ou estação"}
+  audio: proprio
+
+IMG_0866:
+  local: gracia
+  descricao: Rua estreita com fachada em relevo (Gràcia), caminhando
+  segmentos:
+    - {ini: 0.0, fim: 6.04, tipos: [pov, arquitetura], cx: 0.5, icone: 0.3, marina: false, nota: "reflexo de sol no topo de 0 a 1,5 s"}
+  audio: proprio
+
+IMG_0895:
+  local: ciutat-vella-portal
+  descricao: Rua de pedestres na Ciutat Vella, caminhando com pan para a direita
+  segmentos:
+    - {ini: 0.0, fim: 6.33, tipos: [pov], cx: 0.55, icone: 0.4, marina: false}
+  audio: proprio
+
+IMG_0908:
+  local: gotic
+  descricao: Plaça Nova cheia de gente, pan rápido
+  segmentos:
+    - {ini: 0.0, fim: 4.5, tipos: [vista], cx: 0.5, icone: 0.3, marina: false, nota: "prédio com andaime; pan rápido"}
+  reprova:
+    - {ini: 4.5, fim: 12.08, filtro: F3, motivo: "Desconhecidos em close fotografando"}
+  audio: proprio
+
+IMG_0916:
+  local: gotic
+  descricao: Guitarrista na escadaria e tilt até a fachada da Catedral (vertical)
+  segmentos:
+    - {ini: 9.6, fim: 12.12, tipos: [arquitetura], cx: null, icone: 0.7, marina: false}
+  reprova:
+    - {ini: 0.0, fim: 9.6, filtro: F3, motivo: "Guitarrista desconhecido em destaque (rosto é o assunto)"}
+  audio: substituir
+  audio_motivo: "Música do guitarrista em primeiro plano em todo o arquivo"
+
+IMG_0919:
+  local: gotic
+  descricao: Beco do Bairro Gótico, caminhando em direção à praça
+  segmentos:
+    - {ini: 0.0, fim: 6.37, tipos: [pov], cx: 0.62, icone: 0.6, marina: false}
+  audio: proprio
+
+IMG_0929:
+  local: gotic
+  descricao: Pont del Bisbe, câmera avançando
+  segmentos:
+    - {ini: 0.0, fim: 3.95, tipos: [arquitetura], cx: 0.47, icone: 0.85, marina: false}
+  audio: proprio
+
+IMG_0935:
+  local: gotic
+  descricao: Pont del Bisbe com tilt até turistas (vertical 4K)
+  segmentos: []
+  reprova:
+    - {ini: 0.85, fim: 2.75, filtro: F1, motivo: "Fala em pt ('aí… e aí'), Silero + Whisper"}
+    - {ini: 0.0, fim: 0.85, filtro: F1, motivo: "Sobra 0,85 s sem fala, abaixo do mínimo de 2 s"}
+
+IMG_0952:
+  local: gotic
+  descricao: Saxofonista sentado no chão
+  segmentos: []
+  reprova:
+    - {ini: 0.0, fim: 7.37, filtro: F3, motivo: "Músico desconhecido é o assunto do plano; câmera parada nele (não é POV, F2)"}
+
+IMG_1026:
+  local: port
+  descricao: Moll de la Fusta, palmeiras e marina, câmera em deslocamento lateral e elevada, com guarda-corpo no rodapé (pode ter sido filmado de veículo; não confirmado)
+  segmentos:
+    - {ini: 0.0, fim: 7.83, tipos: [vista], cx: 0.5, icone: 0.45, marina: false, nota: "palmeiras e veleiros: bonito, mas não diz Barcelona sozinho; movimento lateral, não é caminhada para a frente"}
+  audio: proprio
+
+IMG_1031:
+  local: rambla
+  descricao: La Rambla, tilt das árvores para o calçadão com quiosques, caminhando
+  segmentos:
+    - {ini: 0.0, fim: 1.8, tipos: [vista], cx: 0.5, icone: 0.4, marina: false, nota: "tilt das copas para a rua"}
+    - {ini: 1.8, fim: 4.83, tipos: [pov], cx: 0.5, icone: 0.6, marina: false}
+  audio: proprio
+
+IMG_1032:
+  local: rambla
+  descricao: La Rambla (vertical), caminhando contra o fluxo de pedestres
+  segmentos:
+    - {ini: 1.8, fim: 6.5, tipos: [pov], cx: null, icone: 0.6, marina: false, nota: "0–1,8 s: tilt das copas"}
+  reprova:
+    - {ini: 6.5, fim: 8.8, filtro: F3, motivo: "Desconhecido de terno em close, falando ao telefone"}
+    - {ini: 9.6, fim: 12.7, filtro: F3, motivo: "Desconhecidos em close (jaqueta azul, camisa verde)"}
+  audio: proprio
+
+IMG_1083:
+  local: eixample-batllo
+  descricao: Fachada da Casa Batlló, câmera em movimento
+  segmentos:
+    - {ini: 2.8, fim: 9.25, tipos: [arquitetura, vista], cx: 0.5, icone: 1.0, marina: false}
+  reprova:
+    - {ini: 0.0, fim: 2.8, filtro: F3, motivo: "Desconhecidas em primeiro plano diante da fachada"}
+  audio: proprio

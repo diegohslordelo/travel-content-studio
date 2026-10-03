@@ -14,3 +14,6 @@ __pycache__/
 # Sistema
 .DS_Store
 Thumbs.db
+
+# Material bruto baixado do Drive (fora do git, como fonte/)
+material/
