@@ -1,0 +1,160 @@
+{
+  "iterations": 3,
+  "fonts": {
+    "check800": true,
+    "check300i": true,
+    "faces": [
+      {
+        "family": "Barlow Condensed",
+        "style": "normal",
+        "weight": "800",
+        "status": "loaded"
+      },
+      {
+        "family": "Barlow Condensed",
+        "style": "italic",
+        "weight": "300",
+        "status": "loaded"
+      }
+    ]
+  },
+  "plate": {
+    "left": 721.265625,
+    "top": 551.765625,
+    "right": 1838.74609375,
+    "bottom": 768.25,
+    "width": 1117.48046875,
+    "height": 216.484375
+  },
+  "face": {
+    "left": 721.265625,
+    "top": 551.765625,
+    "right": 1622.49609375,
+    "bottom": 768.25,
+    "width": 901.23046875,
+    "height": 216.484375
+  },
+  "module": {
+    "left": 1622.49609375,
+    "top": 551.765625,
+    "right": 1838.74609375,
+    "bottom": 768.25,
+    "width": 216.25,
+    "height": 216.484375
+  },
+  "tagline": {
+    "left": 721.265625,
+    "top": 800.25,
+    "right": 1563.03125,
+    "bottom": 880.25,
+    "width": 841.765625,
+    "height": 80
+  },
+  "taglineInk": {
+    "left": 726.265625,
+    "right": 1559.7451782226562,
+    "top": 815.25,
+    "bottom": 888.25,
+    "baseline": 872.25
+  },
+  "group": {
+    "left": 721.265625,
+    "right": 1838.74609375,
+    "top": 551.765625,
+    "bottom": 888.25
+  },
+  "groupLineBoxes": {
+    "left": 721.265625,
+    "right": 1838.74609375,
+    "top": 551.765625,
+    "bottom": 880.25
+  },
+  "plateFontPx": 160,
+  "plateFontBase": 128,
+  "plateFontWeight": "800",
+  "plateFontFamily": "\"Barlow Condensed\", \"Arial Narrow\", sans-serif",
+  "taglineFontPx": 80,
+  "taglineFontStyle": "italic",
+  "taglineFontWeight": "300",
+  "taglineLetterSpacing": "-0.8px",
+  "taglineLineHeight": "80px",
+  "gapPlateTagline": 32,
+  "taglineLeftMinusFaceLeft": 0,
+  "yP": 660,
+  "yPmeasured": 660.0078125,
+  "xL": 721.265625,
+  "xR": 1838.74609375,
+  "routePoints": [
+    [
+      0,
+      560
+    ],
+    [
+      230,
+      560
+    ],
+    [
+      330,
+      660
+    ],
+    [
+      1968.74609375,
+      660
+    ],
+    [
+      2068.74609375,
+      760
+    ],
+    [
+      2330,
+      760
+    ]
+  ],
+  "routeD": "M0 560 L230 560 L330 660 L1968.74609375 660 L2068.74609375 760 L2330 760",
+  "routeStroke": 16,
+  "routeBBox": {
+    "left": 0,
+    "top": 552,
+    "right": 2330,
+    "bottom": 768
+  },
+  "pin": {
+    "wrapper": {
+      "left": 2271.99609375,
+      "top": 620,
+      "right": 2387.97265625,
+      "bottom": 760,
+      "width": 115.9765625,
+      "height": 140
+    },
+    "drop": {
+      "left": 2247.9765625,
+      "top": 595.98046875,
+      "right": 2411.9921875,
+      "bottom": 759.99609375,
+      "width": 164.015625,
+      "height": 164.015625
+    },
+    "sun": {
+      "left": 2303.8896484375,
+      "top": 641.8905639648438,
+      "right": 2356.0791015625,
+      "bottom": 694.0800170898438,
+      "width": 52.189453125,
+      "height": 52.189453125
+    },
+    "bar": {
+      "left": 2299.888427734375,
+      "top": 704.5179443359375,
+      "right": 2359.90625,
+      "bottom": 714.0859985351562,
+      "width": 60.017822265625,
+      "height": 9.56805419921875
+    },
+    "tipX": 2330,
+    "tipY": 760,
+    "heightPx": 140,
+    "s0": 92.78383797157329
+  },
+  "blockedRequests": []
+}

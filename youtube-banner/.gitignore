@@ -1,0 +1,2 @@
+# Render bruto sem perfil ICC (o entregável é o PNG final com sRGB)
+out/_render.png

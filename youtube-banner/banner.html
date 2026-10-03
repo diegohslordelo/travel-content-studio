@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Primeiro Dia · banner YouTube 2560 × 1440</title>
+<!-- Sem rede: fontes locais (fonts.css) e cópia do pd-bundle sem o @import do Google Fonts. -->
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="vendor/pd-bundle.css">
+<style>
+html,body{margin:0;padding:0;background:var(--pd-p)}
+/* Canvas fixo do banner */
+#banner{position:relative;width:2560px;height:1440px;overflow:hidden;background:var(--pd-p)}
+/* Fibra do papel: técnica do pd-bundle (.pd-paper::after), opacidade op-fiber 0.04 */
+#fiber{position:absolute;inset:0;background:var(--pd-grain);opacity:.04;mix-blend-mode:multiply;pointer-events:none;z-index:1}
+/* Rota: linha contínua signal-500, 16 px, opacidade 100%, atrás da placa */
+#route{position:absolute;left:0;top:0;z-index:2;overflow:visible}
+#route path{fill:none;stroke:var(--pd-y);stroke-width:16;stroke-linejoin:round;stroke-linecap:butt}
+#banner .pd-plate{z-index:3}
+/* Placa, versão Estática: brilho de esmalte congelado a 30% do percurso
+   (pd-sheen vai de translateX(-160%) a 420%: -160 + 0,30 × 580 = 14%) */
+#banner .pd-sheen{transform:translateX(14%) skewX(-14deg)}
+/* Filete: brand book 2.1 (grafite 2 px a 25%, inset 10, raio 8). O bundle usa 22%. */
+#banner .pd-plate__face::before{border-color:rgba(18,19,23,.25)}
+/* Rebites: brand book 2.1 (10 px, a 22 px da borda esquerda, grafite 35% com ponto de luz).
+   O bundle usa #9a7a1a, que não é token. Ponto de luz e sombra interna mantidos do bundle. */
+#banner .pd-rivet{width:10px;height:10px;left:22px;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.4) 0 2px,rgba(255,255,255,0) 3px),rgba(18,19,23,.35)}
+/* Tagline: estilo Editorial (Condensed 300 itálico, minúsculas, tracking -1%), 80 px, entrelinha 1,0 */
+#tagline{position:absolute;z-index:3;margin:0;white-space:nowrap;color:var(--pd-n);font:italic 300 80px/1 var(--pd-fd);letter-spacing:-.01em}
+/* Pin 1º: gota grafite construída na escala base (112 px) e ampliada 1,25 (140 px), como a placa */
+#pin{position:absolute;z-index:4;transform-origin:50% 100%;scale:1.25}
+#pin .drop{position:absolute;left:0;top:0;background:var(--pd-n);border-radius:50% 50% 50% 0;transform:rotate(-45deg);
+  /* shadow-paper (0 1px 1px .20, 0 14px 26px -10px .50) com o deslocamento girado +45° para a luz continuar vindo de cima */
+  box-shadow:-0.7071px 0.7071px 1px rgba(0,0,0,.20),-9.8995px 9.8995px 26px -10px rgba(0,0,0,.50)}
+#pin svg{position:absolute;left:0;top:0;display:block;overflow:visible}
+</style>
+</head>
+<body>
+<div id="banner">
+  <div id="fiber"></div>
+  <svg id="route" width="2560" height="1440" viewBox="0 0 2560 1440" aria-hidden="true"><path d=""/></svg>
+  <p id="tagline">toda cidade tem um primeiro dia.</p>
+  <div id="pin" aria-hidden="true">
+    <div class="drop"></div>
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <!-- Proporção do símbolo 1º (pd-bundle.js, PD.one): sol r 15 em (76,17); barra 34,5 × 5,5 com topo em y 38 (21 abaixo do centro do sol). Sem o número. -->
+      <g transform="translate(50 50) scale(1.5) translate(-76 -22.75)">
+        <circle cx="76" cy="17" r="15" fill="#FFC21A"/>
+        <rect x="58.7" y="38" width="34.5" height="5.5" fill="#FFC21A"/>
+      </g>
+    </svg>
+  </div>
+</div>
+<script src="vendor/pd-bundle.js"></script>
+<script>
+(async function(){
+  var CX=1280, CY=720;          // centro da zona segura 1546 × 423
+  var SCALE=1.25, GAP=32;       // escala da placa sobre a base; tagline 32 px abaixo da placa
+  var PIN_H0=112;               // altura base do pin (× 1,25 = 140 px)
+  var banner=document.getElementById('banner');
+  var R=function(el){var r=el.getBoundingClientRect();return {left:r.left,top:r.top,right:r.right,bottom:r.bottom,width:r.width,height:r.height};};
+
+  // 1) Fontes: carregar e validar antes de qualquer medida. Sem fallback.
+  var specs=['800 128px "Barlow Condensed"','italic 300 80px "Barlow Condensed"'];
+  try{ for(var i=0;i<specs.length;i++) await document.fonts.load(specs[i], 'PRIMEIRO DIA toda cidade'); await document.fonts.ready; }catch(e){}
+  var fonts={
+    check800:document.fonts.check(specs[0]),
+    check300i:document.fonts.check(specs[1]),
+    faces:Array.from(document.fonts).map(function(f){return {family:f.family,style:f.style,weight:f.weight,status:f.status};})
+  };
+  var loaded=fonts.faces.filter(function(f){return f.status==='loaded';}).length;
+  if(!fonts.check800||!fonts.check300i||loaded<2){ window.__layout={error:'fontes não carregaram',fonts:fonts}; return; }
+
+  // 2) Placa variante Marca, pelo componente oficial
+  banner.insertAdjacentHTML('beforeend', PD.plate({dest:'PRIMEIRO DIA',mod:'arrow',x:0,y:0,scale:SCALE}));
+  var plate=banner.querySelector('.pd-plate'), face=plate.querySelector('.pd-plate__face'), mod=plate.querySelector('.pd-plate__mod');
+  var tag=document.getElementById('tagline');
+
+  // 3) Posicionar medindo. A caixa de linha da tagline (entrelinha 1,0) não contém o descendente do "p",
+  //    então o grupo usa a TINTA real da tagline: linha de base medida no DOM + measureText() na mesma fonte.
+  var probe=document.createElement('span'); probe.style.cssText='display:inline-block;width:0;height:0;vertical-align:baseline';
+  tag.appendChild(probe);
+  var ctx=document.createElement('canvas').getContext('2d');
+  ctx.font='italic 300 80px "Barlow Condensed"'; ctx.letterSpacing='-0.8px';
+  var tm=ctx.measureText(tag.textContent);
+  var ink=function(){var b=R(probe).bottom, l=R(tag).left;
+    return {left:l-tm.actualBoundingBoxLeft,right:l+tm.actualBoundingBoxRight,top:b-tm.actualBoundingBoxAscent,bottom:b+tm.actualBoundingBoxDescent,baseline:b};};
+  var px=0, py=0, it=0, pr, fr, tr, ti;
+  for(it=0; it<6; it++){
+    plate.style.left=px+'px'; plate.style.top=py+'px';
+    pr=R(plate); fr=R(face);
+    tag.style.left=(parseFloat(tag.style.left||0)+(fr.left-R(tag).left))+'px';
+    tag.style.top=(parseFloat(tag.style.top||0)+(pr.bottom+GAP-R(tag).top))+'px';
+    ti=ink();
+    var gl=Math.min(pr.left,ti.left), gr=Math.max(pr.right,ti.right), gt=Math.min(pr.top,ti.top), gb=Math.max(pr.bottom,ti.bottom);
+    var dx=CX-(gl+gr)/2, dy=CY-(gt+gb)/2;
+    if(Math.abs(dx)<0.01&&Math.abs(dy)<0.01) break;
+    px+=dx; py+=dy;
+  }
+  pr=R(plate); fr=R(face); tr=R(tag); ti=ink(); var mr=R(mod);
+
+  // 4) Rota a partir das medidas reais: yP = centro vertical da placa, xR = borda direita do módulo
+  var yP=Math.round(pr.top+pr.height/2), xL=fr.left, xR=mr.right;
+  var END_X=2330;
+  var pts=[[0,yP-100],[230,yP-100],[330,yP],[xR+130,yP],[xR+230,yP+100],[END_X,yP+100]];
+  var d='M'+pts.map(function(p){return p[0]+' '+p[1];}).join(' L');
+  document.querySelector('#route path').setAttribute('d',d);
+
+  // 5) Pin: ponta exatamente no fim da rota
+  var s=PIN_H0/(0.5+Math.SQRT1_2);   // lado do quadrado girado: raio s/2 + ponta a s/√2 do centro
+  var pin=document.getElementById('pin'), drop=pin.querySelector('.drop'), psvg=pin.querySelector('svg');
+  pin.style.width=s+'px'; pin.style.height=PIN_H0+'px';
+  drop.style.width=drop.style.height=s+'px'; psvg.setAttribute('width',s); psvg.setAttribute('height',s);
+  pin.style.left=(END_X-s/2)+'px'; pin.style.top=(yP+100-PIN_H0)+'px';
+  var pinR=R(pin), dropR=R(drop), sunR=R(psvg.querySelector('circle')), barR=R(psvg.querySelector('rect'));
+  var routeBox=document.querySelector('#route path').getBBox();
+
+  var cs=getComputedStyle(plate.querySelector('.pd-plate__dest')), ts=getComputedStyle(tag);
+  window.__layout={
+    iterations:it+1, fonts:fonts,
+    plate:pr, face:fr, module:mr, tagline:tr, taglineInk:ti,
+    group:{left:Math.min(pr.left,ti.left),right:Math.max(pr.right,ti.right),top:Math.min(pr.top,ti.top),bottom:Math.max(pr.bottom,ti.bottom)},
+    groupLineBoxes:{left:Math.min(pr.left,tr.left),right:Math.max(pr.right,tr.right),top:Math.min(pr.top,tr.top),bottom:Math.max(pr.bottom,tr.bottom)},
+    plateFontPx:parseFloat(cs.fontSize)*SCALE, plateFontBase:parseFloat(cs.fontSize), plateFontWeight:cs.fontWeight, plateFontFamily:cs.fontFamily,
+    taglineFontPx:parseFloat(ts.fontSize), taglineFontStyle:ts.fontStyle, taglineFontWeight:ts.fontWeight, taglineLetterSpacing:ts.letterSpacing, taglineLineHeight:ts.lineHeight,
+    gapPlateTagline:tr.top-pr.bottom, taglineLeftMinusFaceLeft:tr.left-fr.left,
+    yP:yP, yPmeasured:pr.top+pr.height/2, xL:xL, xR:xR, routePoints:pts, routeD:d, routeStroke:16,
+    routeBBox:{left:routeBox.x,top:routeBox.y-8,right:routeBox.x+routeBox.width,bottom:routeBox.y+routeBox.height+8},
+    pin:{wrapper:pinR, drop:dropR, sun:sunR, bar:barR, tipX:END_X, tipY:yP+100, heightPx:pinR.height, s0:s}
+  };
+})();
+</script>
+</body>
+</html>
