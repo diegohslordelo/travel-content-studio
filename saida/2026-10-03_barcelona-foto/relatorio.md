@@ -1,95 +1,114 @@
 # Foto única · Barcelona · sáb., 03/10/2026, 11:00
 
-**Status: ajustar.** A arte está pronta. A legenda depende dos dados da seção 2, que vieram vazios.
+**Status: pronto para você escolher entre A e B.** A legenda é a mesma para as duas. Falta só uma confirmação (seção 8, item 1).
 
-## 1. Foto usada
+## 1. Dados fornecidos pelo Diego
 
-**Praia da Barceloneta com o Hotel W ao fundo** (arquivo original 1718 × 2576 px, proporção 2:3).
+| Campo | Valor |
+|---|---|
+| Lugar | Praia da Barceloneta, depois do almoço num restaurante nas ruas de dentro da Barceloneta |
+| Data e hora | 9 de março, 15:43 |
+| É do primeiro dia? | **Não informado** |
+| Momento | Ver a legenda |
 
-- **Recorte para 3:4:** 1684 × 2245 px a partir de x 34 · y 331, depois redução para 1080 × 1440. Saem só céu (topo) e uma faixa de 34 px na borda esquerda, onde aparecia um poste cortado.
-- **Por que esta:** está nítida, a base esquerda é areia limpa para a placa e ninguém tem rosto reconhecível (todos estão pequenos ou de costas). A silhueta do W identifica Barcelona mesmo na miniatura.
+## 2. As duas opções
 
-## 2. Descartadas
+| | **A: Barceloneta (primeira escolha)** | **B: Barceloneta (foto nova)** |
+|---|---|---|
+| Arquivo | `foto_A_1080x1440.png` | `foto_B_1080x1440.png` |
+| Original | 1718 × 2576 (2:3) | 1932 × 2576 (já em 3:4) |
+| Recorte | 1684 × 2245 a partir de x 34 · y 331 (sai céu e um poste na borda esquerda) | Nenhum, só redução |
+| Luz e cor | Céu escurecido e contraste puxado já no original; nuvem dramática | Natural e neutra |
+| Hotel W | Menor, no terço direito | Maior e mais nítido, se reconhece de imediato |
+| Base esquerda | Areia; grupo sentado logo acima da placa | Areia limpa. A placa cobre um rapaz deitado e uma parte da cabeça dele aparece acima da borda (x ≈ 330) |
+| Rostos de terceiros | Nenhum reconhecível | Nenhum reconhecível. O homem deitado à direita está de capuz e virado; os pés ficam a uns 30 px da placa |
+| Miniatura 25% | Placa legível; W pequeno | Placa legível; W bem claro |
+| **Recomendação** | — | **B**, por cor real, ausência de recorte e W mais forte |
+
+**Descartadas da primeira leva:**
 
 | Foto | Motivo |
 |---|---|
-| Casa Batlló | Subexposta (crepúsculo) e com cabeças de terceiros cortadas na base, que é a zona da placa |
-| Carrer del Bisbe | Era a reserva. A placa encostaria numa mulher com o rosto parcialmente visível, e a cena fica escura a 25% |
-| La Boqueria | Rostos de terceiros reconhecíveis na base esquerda. A base também é poluída (placa "1897", barracas) |
-| MNAC / Montjuïc | Uns 60% do quadro são céu chapado. O prédio fica pequeno demais na miniatura |
+| Casa Batlló | Subexposta e com cabeças de terceiros cortadas na base |
+| Carrer del Bisbe | A placa encostaria num rosto parcialmente visível; escura a 25% |
+| La Boqueria | Rostos de terceiros reconhecíveis na base esquerda; base poluída |
+| MNAC | Uns 60% de céu chapado; prédio pequeno na miniatura |
 
-## 3. Peça
+## 3. Peça (igual em A e B)
 
 | Item | Valor aplicado | Origem |
 |---|---|---|
 | Canvas | 1080 × 1440, foto em sangria | DS V2, 1.3 (3:4) |
-| Placa | **Variante Marca** `PRIMEIRO DIA` + módulo de seta, estática, escala 75% (`PD.plate`, `scale:.75`) | DS V2, 2.1 (variantes Marca, Pequena e Estática) |
-| Por que Marca, e não Abertura | O campo "é do primeiro dia?" veio vazio. Pela sua regra, não posso usar `PRIMEIRO DIA EM / BARCELONA` sem um "sim" | Seu pedido, seção 4 |
+| Placa | **Variante Marca** `PRIMEIRO DIA` + seta, estática, escala 75% (`PD.plate`, `scale:.75`) | DS V2, 2.1 |
+| Por que Marca | Não há confirmação de que 9/3 foi o primeiro dia | Seu pedido, seção 4 |
 | Posição | x 80 · topo y 1110 · base y 1240 · borda direita x 750 | DS V2, 5.3 (capa) |
-| Brilho de esmalte | Congelado a 30% do percurso: translateX(−160% → 420%), ou seja, 14% | DS V2, 2.1 (Estática) · bundle `pd-sheen` |
-| Sombra | `shadow-paper`, com o relevo `shadow-plate-bevel` mantido na face | Tokens V2 · DS V2, 2.1 (Carrossel) |
-| Grão | `op-grain` 0,05 na peça e no esmalte | Tokens V2 |
-| Scrim | Não usado: o único texto está na placa, grafite sobre amarelo, 11,48:1 | DS V2, 7.2 |
-| Tratamento de cor | **Nenhum.** O preset PD Chegada v1 só existe no CapCut | Seu pedido, seção 4 |
-| Fonte | Barlow Condensed 600/800 oficial (Google Fonts, OFL), baixada só para o render e não salva no repositório | CLAUDE.md, seção 14, pendência 1 |
+| Brilho de esmalte | Congelado a 30% do percurso (translateX 14%) | DS V2, 2.1 (Estática) |
+| Sombra | `shadow-paper` + `shadow-plate-bevel` na face | Tokens V2 · DS V2, 2.1 (Carrossel) |
+| Grão | `op-grain` 0,05 | Tokens V2 |
+| Scrim | Não usado: o único texto é grafite sobre amarelo, 11,48:1 | DS V2, 7.2 |
+| Tratamento de cor | **Nenhum.** O preset PD Chegada v1 só existe no CapCut | Seu pedido |
+| Fonte | Barlow Condensed 600/800 oficial (Google Fonts, OFL), usada só no render | CLAUDE.md, seção 14, pendência 1 |
 
-## 4. Checklist de conformidade (DS V2, 7.3)
+## 4. Legenda (`legenda.txt`)
+
+- **Primeira linha:** "Barcelona, Barceloneta." Usei o formato "outra foto" porque o dia 1 não foi confirmado, então a hora não entra.
+- **Corpo:** são as suas palavras. Mexi só em ortografia e pontuação, sem mudar o conteúdo:
+  - almocar → almoçar · tinhha → tinha · entao → então · ceu → céu
+  - "de barceloneta" → "da Barceloneta"
+  - "descansar o almoço da praia" → "descansar o almoço **na** praia"
+  - ar condicionado → ar-condicionado
+- **Palavras-chave e CTA:** exatamente os textos que você deu. Sem emoji.
+
+## 5. Checklist de conformidade (DS V2, 7.3)
 
 | Item | Status | Nota |
 |---|---|---|
-| Só tokens oficiais | **OK, com ressalva** | Cor, sombra, grão e fonte vêm dos tokens. O componente do bundle foi usado como está, e nele o padding da face (58/40 px) e o filete (22%) divergem do brand book (36 px, 25%). Divergência já registrada: CLAUDE.md, seção 14, pendência 3 |
-| Placa em x 72 · y 640 (Reel) ou símbolo 1º (estáticos) | **Pendente (sua decisão)** | Usei a placa Marca na posição da capa de carrossel (DS V2, 5.3), como você pediu. Para estáticos, o 7.3 cita o símbolo 1º. Os dois trechos do DS não batem |
-| Placar | N/A | É Reel |
-| Carimbo / ticket / bilhete | N/A | Nenhum usado |
+| Só tokens oficiais | **OK, com ressalva** | O componente do bundle tem padding da face (58/40 px) e filete (22%) diferentes do brand book. Divergência já registrada: CLAUDE.md, seção 14, pendência 3 |
+| Placa em x 72 · y 640 (Reel) ou símbolo 1º (estáticos) | **Pendente (sua decisão)** | Usei a placa na posição da capa (DS V2, 5.3), como você pediu. O 7.3 cita o símbolo 1º para estáticos. Os dois trechos do DS não batem |
+| Placar · carimbo · ticket · transições · fechamento | N/A | Peça estática |
 | Legendas com scrim | N/A | Não há legenda na imagem |
-| Transições | N/A | Peça estática |
 | ≤ 3 efeitos simultâneos | OK | Só o grão |
-| Nada na UI / zona segura | OK | Placa dentro da margem 80 (x 80–750 · y 1110–1240) |
+| Nada fora da zona segura | OK | Placa dentro da margem 80 |
 | Valores com € e R$ | N/A | Sem valores |
-| Teste de miniatura | **OK, com ressalva** | Ver seção 6 |
-| Bordão e placa de fechamento | N/A | É Reel |
+| Teste de miniatura | **OK, com ressalva** | A placa não tem cidade (variante Marca); o W identifica Barcelona |
 
-## 5. Checklist pré-publicação (referência Instagram, seção 4)
+## 6. Checklist pré-publicação (referência Instagram, seção 4)
 
 | Item | Status | Nota |
 |---|---|---|
-| 100% original, sem marca d'água | OK | Foto sua, sem marca d'água |
-| Gancho nos 3 primeiros segundos | **Pendente** | Numa foto, quem faz o gancho é a primeira linha da legenda (3.4), que depende do lugar |
-| Funciona sem áudio | OK | Imagem |
-| Uma única ideia | **Pendente** | Depende das suas 2 a 3 linhas |
+| 100% original, sem marca d'água | OK | |
+| Gancho | OK | A primeira linha, "Barcelona, Barceloneta.", situa na hora |
+| Funciona sem áudio | OK | |
+| Uma única ideia | OK | Descansar o almoço na praia no fim do inverno |
 | < 3 minutos | N/A | Foto |
-| Dentro do nicho | OK | Viagem, Barcelona |
-| "Para quem alguém enviaria?" | **Falhou, por enquanto** | A foto sozinha é bonita, mas não dá motivo de envio. Suas linhas são o que pode criar esse motivo (dica, custo, surpresa) |
-| Palavras-chave na legenda | OK | "Barcelona, Espanha: roteiro e custos reais de viagem" |
+| Dentro do nicho | OK | |
+| "Para quem alguém enviaria?" | **Fraco** | Para quem vai a Barcelona entre fevereiro e março ("dá para curtir praia no inverno"). A legenda sugere isso, mas não diz com todas as letras. Ver a seção 8 |
+| Palavras-chave | OK | |
 | CTA único | OK | "Comenta se você já foi." |
-
-## 6. Teste de miniatura a 25% (270 × 360)
-
-Arquivo: `miniatura_270x360.png`.
-
-- **Placa:** "PRIMEIRO DIA" lê com folga, com cerca de 13 px de altura de letra.
-- **Cidade:** **não há cidade na placa**, porque a variante é Marca. Barcelona se reconhece pela silhueta do Hotel W. Se você confirmar "sim, é do dia 1", troco pela variante Abertura com `BARCELONA` e refaço o teste.
-- **Observação:** o DS V2 (7.2) descreve o teste em 270 × 480 (9:16). Usei 270 × 360, como você pediu, que é o equivalente em 3:4.
 
 ## 7. Texto alternativo (1 linha)
 
+**A:**
 ```
-Praia da Barceloneta em Barcelona, com céu azul, pessoas na areia, o Hotel W ao fundo e a placa amarela "Primeiro Dia" na base.
+Praia da Barceloneta em Barcelona, com céu azul e nuvens, pessoas na areia, o Hotel W ao fundo e a placa amarela "Primeiro Dia" na base.
 ```
 
-O lugar no texto alternativo saiu da minha identificação visual (Hotel W). Confirme antes de usar.
+**B:**
+```
+Praia da Barceloneta em Barcelona numa tarde de fim de inverno, céu azul, pessoas descansando na areia, o Hotel W ao fundo e a placa amarela "Primeiro Dia" na base.
+```
 
 ## 8. Improvisado ou pendente
 
-1. **Seção 2 vazia:** sem confirmação do dia 1, lugar, hora e linhas.
-   - Por isso a placa é a variante Marca.
-   - Na `legenda.txt`, a primeira linha e o corpo estão marcados com `[preencher]`. **Não poste com os colchetes.**
-   - Sugestão para o lugar, se você confirmar: "Barcelona, Barceloneta."
-2. **Sem tratamento de cor:** o preset PD Chegada v1 não foi aplicado.
-3. **Largura da placa:** 670 px a 75%, o que equivale a 894 px a 100%. O DS diz que a largura máxima é 872 px. A diferença vem do padding do bundle (pendência 3): com o padding do brand book, ficaria em cerca de 868 px. Não corrigi para não escolher um valor por conta própria.
-4. **Grão:** o `.pd-grain` do bundle usa opacidade 0,12 e o esmalte usa 0,22. Substituí os dois pelo token `op-grain` 0,05, que é a fonte única e o valor que você pediu.
-5. **Fonte:** só o subconjunto latino da Barlow Condensed 600/800, baixado do Google Fonts para uma pasta temporária. `design-system/fonts/` continua vazia.
-6. **Coordenadas em Plex Mono** acima da placa (opcional na capa, DS V2, 5.3): não entraram, porque você não forneceu esse dado.
-7. **Fonte do render:** o HTML que gerou a peça ficou fora do repositório, na pasta temporária da sessão. Ele usa o `pd-bundle.css` e o `pd-bundle.js` sem alteração, mais 4 regras de override (sombra, grão ×2, brilho).
+1. **9 de março foi o primeiro dia em Barcelona?** Se foi:
+   - a placa vira `PRIMEIRO DIA EM / BARCELONA`;
+   - a primeira linha vira "Primeiro dia em Barcelona, 15:43.";
+   - e eu refaço a miniatura.
+2. **Legenda da opção A:** supus que a foto A é do mesmo momento (mesma praia, mesmo dia). Se não for, a legenda vale só para a B.
+3. **Envio (opcional, decisão sua):** dá para tornar explícito o motivo de envio sem mudar o conteúdo, só reforçando a primeira linha (por exemplo, citando "fim de inverno"). Não fiz isso porque a referência pede só o formato "Barcelona, [lugar]."
+4. **Sem preset de cor.**
+5. **Largura da placa:** 894 px a 100%, acima do máximo de 872 px. Vem do padding do bundle (pendência 3).
+6. **Grão:** substituí o 0,12/0,22 do bundle pelo token 0,05.
+7. **Coordenadas em Plex Mono:** não entraram (dado não fornecido).
 
 Nada foi publicado.
