@@ -1,0 +1,412 @@
+{
+ "arquivo": "barcelona20s_rev1_versao_a.mp4",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": "24/1",
+  "quadros": 528,
+  "duracao_s": 22.0,
+  "codec": "h264 High",
+  "pix_fmt": "yuv420p",
+  "audio": "aac 48000 Hz 2 canais",
+  "tamanho_mb": 89.2
+ },
+ "audio": {
+  "lufs_integrado": -14.5,
+  "pico_real_dbtp": -1.5,
+  "planos": [
+   {
+    "plano": 1,
+    "lufs_bruto": -21.5,
+    "ganho_db": 0.9
+   },
+   {
+    "plano": 2,
+    "lufs_bruto": -14.3,
+    "ganho_db": -3.4
+   },
+   {
+    "plano": 3,
+    "lufs_bruto": -17.7,
+    "ganho_db": -1.4
+   },
+   {
+    "plano": 4,
+    "lufs_bruto": -18.9,
+    "ganho_db": -0.6
+   },
+   {
+    "plano": 5,
+    "lufs_bruto": -23.2,
+    "ganho_db": 1.9
+   },
+   {
+    "plano": 6,
+    "lufs_bruto": -24.2,
+    "ganho_db": 2.5
+   },
+   {
+    "plano": 7,
+    "lufs_bruto": -15.5,
+    "ganho_db": -2.7
+   },
+   {
+    "plano": 8,
+    "lufs_bruto": -22.2,
+    "ganho_db": 1.3
+   }
+  ],
+  "lufs_antes_do_master": -19.7,
+  "ganho_master_db": 5.2
+ },
+ "montagem": {
+  "planos": 8,
+  "cortes": 7,
+  "cortes_s": [
+   2.0,
+   4.5,
+   6.75,
+   9.0,
+   11.5,
+   14.0,
+   17.0
+  ],
+  "duracao_planos_s": [
+   2.0,
+   2.5,
+   2.25,
+   2.25,
+   2.5,
+   2.5,
+   3.0,
+   5.0
+  ],
+  "duracao_media_s": 2.75,
+  "arrastos": 2,
+  "arrastos_s": [
+   4.5,
+   14.0
+  ],
+  "transicoes_total": 2,
+  "cortes_secos_pct": 71.4,
+  "loop": "corte seco do último quadro para o quadro 0 (o Instagram repete o Reel)",
+  "quadros_arrasto": {
+   "105": [
+    "arrasto_sai",
+    50.6
+   ],
+   "106": [
+    "arrasto_sai",
+    165.8
+   ],
+   "107": [
+    "arrasto_sai",
+    324.0
+   ],
+   "108": [
+    "arrasto_entra",
+    324.0
+   ],
+   "109": [
+    "arrasto_entra",
+    17.5
+   ],
+   "333": [
+    "arrasto_sai",
+    50.6
+   ],
+   "334": [
+    "arrasto_sai",
+    165.8
+   ],
+   "335": [
+    "arrasto_sai",
+    324.0
+   ],
+   "336": [
+    "arrasto_entra",
+    324.0
+   ],
+   "337": [
+    "arrasto_entra",
+    17.5
+   ]
+  }
+ },
+ "planos": [
+  {
+   "n": 1,
+   "arquivo": "IMG_1083.MOV",
+   "entrada_s": 3.0,
+   "saida_s": 5.0,
+   "no_reel_s": [
+    0.0,
+    2.0
+   ],
+   "categoria": "gancho (arquitetura)",
+   "descricao": "Casa Batlló, câmera subindo pela fachada",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1313,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 2,
+   "arquivo": "IMG_1032.mov",
+   "entrada_s": 2.5,
+   "saida_s": 5.0,
+   "no_reel_s": [
+    2.0,
+    4.5
+   ],
+   "categoria": "caminhada",
+   "descricao": "Andando pela Rambla, gente vindo na direção da câmera",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2158,
+    0,
+    1
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    1214,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 3,
+   "arquivo": "IMG_0493.MOV",
+   "entrada_s": 0.1,
+   "saida_s": 2.35,
+   "no_reel_s": [
+    4.5,
+    6.75
+   ],
+   "categoria": "transporte",
+   "descricao": "Dentro do metrô, painel da linha e passageiros",
+   "transicao": "arrasto",
+   "recorte": [
+    2160,
+    3840,
+    0,
+    0
+   ],
+   "escala": 0.5,
+   "hdr": "hlg",
+   "fps_bruto": 23.976,
+   "resolucao_bruto": [
+    2160,
+    3840
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 4,
+   "arquivo": "IMG_1221.MOV",
+   "entrada_s": 0.0,
+   "saida_s": 2.25,
+   "no_reel_s": [
+    6.75,
+    9.0
+   ],
+   "categoria": "comida",
+   "descricao": "Balcão com doces e churros",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1313,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 5,
+   "arquivo": "IMG_0929.MOV",
+   "entrada_s": 0.3,
+   "saida_s": 2.8,
+   "no_reel_s": [
+    9.0,
+    11.5
+   ],
+   "categoria": "arquitetura",
+   "descricao": "Pont del Bisbe, Bairro Gótico",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1313,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": "hlg",
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 6,
+   "arquivo": "IMG_0919.MOV",
+   "entrada_s": 1.0,
+   "saida_s": 3.5,
+   "no_reel_s": [
+    11.5,
+    14.0
+   ],
+   "categoria": "caminhada no Gótico",
+   "descricao": "Rua de pedra do Gótico, coral ao fundo",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1313,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 7,
+   "arquivo": "IMG_0916.mov",
+   "entrada_s": 0.5,
+   "saida_s": 3.5,
+   "no_reel_s": [
+    14.0,
+    17.0
+   ],
+   "categoria": "música",
+   "descricao": "Violão flamenco na escadaria da Catedral",
+   "transicao": "arrasto",
+   "recorte": [
+    1214,
+    2158,
+    0,
+    1
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    1214,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 8,
+   "arquivo": "IMG_0586.MOV",
+   "entrada_s": 0.5,
+   "saida_s": 5.5,
+   "no_reel_s": [
+    17.0,
+    22.0
+   ],
+   "categoria": "ambiente + fechamento",
+   "descricao": "Mirante de Montjuïc com a cidade inteira",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1313,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  }
+ ],
+ "objetos": {
+  "placa": {
+   "face_largura": 694,
+   "modulo_largura": 176,
+   "altura": 176,
+   "largura_total": 870,
+   "texto_avanco_px": 622.3
+  },
+  "placa_abertura_quadros": [
+   0,
+   48
+  ],
+  "placa_fechamento_quadros": [
+   480,
+   528
+  ],
+  "legenda_gancho": {
+   "texto": "Barcelona em 20 segundos",
+   "quadros": [
+    0,
+    48
+   ],
+   "tinta": [
+    210.0,
+    1370.0,
+    872.0,
+    1422.0
+   ],
+   "caracteres": 24
+  }
+ },
+ "zona_segura_violacoes": [],
+ "zona_segura_ok": true,
+ "frames_qa": [
+  "barcelona20s_rev1_versao_a_q000.jpg",
+  "barcelona20s_rev1_versao_a_q004.jpg",
+  "barcelona20s_rev1_versao_a_q008.jpg",
+  "barcelona20s_rev1_versao_a_q012.jpg",
+  "barcelona20s_rev1_versao_a_q017.jpg",
+  "barcelona20s_rev1_versao_a_q024.jpg",
+  "barcelona20s_rev1_versao_a_q030.jpg",
+  "barcelona20s_rev1_versao_a_q045.jpg",
+  "barcelona20s_rev1_versao_a_q078.jpg",
+  "barcelona20s_rev1_versao_a_q135.jpg",
+  "barcelona20s_rev1_versao_a_q189.jpg",
+  "barcelona20s_rev1_versao_a_q246.jpg",
+  "barcelona20s_rev1_versao_a_q306.jpg",
+  "barcelona20s_rev1_versao_a_q372.jpg",
+  "barcelona20s_rev1_versao_a_q468.jpg",
+  "barcelona20s_rev1_versao_a_q484.jpg",
+  "barcelona20s_rev1_versao_a_q497.jpg",
+  "barcelona20s_rev1_versao_a_q505.jpg",
+  "barcelona20s_rev1_versao_a_q520.jpg",
+  "barcelona20s_rev1_versao_a_q527.jpg"
+ ],
+ "versao": "A",
+ "conceito": "Rambla, metrô e Bairro Gótico: o dia vai do movimento da Rambla ao violão flamenco na Catedral e termina no mirante de Montjuïc.",
+ "sha256": "df724e7923e20dbaab5323bb1f74c2794e07057b59959351a860710b9237dcd8"
+}

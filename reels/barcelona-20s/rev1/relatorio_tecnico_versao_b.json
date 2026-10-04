@@ -1,0 +1,412 @@
+{
+ "arquivo": "barcelona20s_rev1_versao_b.mp4",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": "24/1",
+  "quadros": 528,
+  "duracao_s": 22.0,
+  "codec": "h264 High",
+  "pix_fmt": "yuv420p",
+  "audio": "aac 48000 Hz 2 canais",
+  "tamanho_mb": 100.8
+ },
+ "audio": {
+  "lufs_integrado": -14.6,
+  "pico_real_dbtp": -1.4,
+  "planos": [
+   {
+    "plano": 1,
+    "lufs_bruto": -41.7,
+    "ganho_db": 8.0
+   },
+   {
+    "plano": 2,
+    "lufs_bruto": -33.8,
+    "ganho_db": 8.0
+   },
+   {
+    "plano": 3,
+    "lufs_bruto": -19.0,
+    "ganho_db": -0.6
+   },
+   {
+    "plano": 4,
+    "lufs_bruto": -24.7,
+    "ganho_db": 2.8
+   },
+   {
+    "plano": 5,
+    "lufs_bruto": -33.8,
+    "ganho_db": 8.0
+   },
+   {
+    "plano": 6,
+    "lufs_bruto": -30.5,
+    "ganho_db": 6.3
+   },
+   {
+    "plano": 7,
+    "lufs_bruto": -19.8,
+    "ganho_db": -0.1
+   },
+   {
+    "plano": 8,
+    "lufs_bruto": -25.7,
+    "ganho_db": 3.4
+   }
+  ],
+  "lufs_antes_do_master": -22.0,
+  "ganho_master_db": 7.5
+ },
+ "montagem": {
+  "planos": 8,
+  "cortes": 7,
+  "cortes_s": [
+   2.0,
+   4.5,
+   6.75,
+   9.0,
+   11.5,
+   14.0,
+   17.0
+  ],
+  "duracao_planos_s": [
+   2.0,
+   2.5,
+   2.25,
+   2.25,
+   2.5,
+   2.5,
+   3.0,
+   5.0
+  ],
+  "duracao_media_s": 2.75,
+  "arrastos": 2,
+  "arrastos_s": [
+   4.5,
+   14.0
+  ],
+  "transicoes_total": 2,
+  "cortes_secos_pct": 71.4,
+  "loop": "corte seco do último quadro para o quadro 0 (o Instagram repete o Reel)",
+  "quadros_arrasto": {
+   "105": [
+    "arrasto_sai",
+    50.6
+   ],
+   "106": [
+    "arrasto_sai",
+    165.8
+   ],
+   "107": [
+    "arrasto_sai",
+    324.0
+   ],
+   "108": [
+    "arrasto_entra",
+    324.0
+   ],
+   "109": [
+    "arrasto_entra",
+    17.5
+   ],
+   "333": [
+    "arrasto_sai",
+    50.6
+   ],
+   "334": [
+    "arrasto_sai",
+    165.8
+   ],
+   "335": [
+    "arrasto_sai",
+    324.0
+   ],
+   "336": [
+    "arrasto_entra",
+    324.0
+   ],
+   "337": [
+    "arrasto_entra",
+    17.5
+   ]
+  }
+ },
+ "planos": [
+  {
+   "n": 1,
+   "arquivo": "IMG_0862.MOV",
+   "entrada_s": 7.0,
+   "saida_s": 9.0,
+   "no_reel_s": [
+    0.0,
+    2.0
+   ],
+   "categoria": "gancho (arquitetura)",
+   "descricao": "Casa Vicens, fachada de azulejos",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1313,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": "hlg",
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 2,
+   "arquivo": "IMG_0795.MOV",
+   "entrada_s": 0.5,
+   "saida_s": 3.0,
+   "no_reel_s": [
+    2.0,
+    4.5
+   ],
+   "categoria": "caminhada",
+   "descricao": "Marina atravessando a rua no Eixample",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1505,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 3,
+   "arquivo": "IMG_0804.MOV",
+   "entrada_s": 1.3,
+   "saida_s": 3.55,
+   "no_reel_s": [
+    4.5,
+    6.75
+   ],
+   "categoria": "transporte",
+   "descricao": "Ônibus vermelho passando na avenida",
+   "transicao": "arrasto",
+   "recorte": [
+    1214,
+    2160,
+    737,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 4,
+   "arquivo": "IMG_1221.MOV",
+   "entrada_s": 2.2,
+   "saida_s": 4.45,
+   "no_reel_s": [
+    6.75,
+    9.0
+   ],
+   "categoria": "comida",
+   "descricao": "Churros no balcão",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    929,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 5,
+   "arquivo": "IMG_0894.MOV",
+   "entrada_s": 5.5,
+   "saida_s": 8.0,
+   "no_reel_s": [
+    9.0,
+    11.5
+   ],
+   "categoria": "caminhada",
+   "descricao": "Rua estreita com prédios de pedra",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1505,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": "hlg",
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 6,
+   "arquivo": "IMG_0776.MOV",
+   "entrada_s": 5.9,
+   "saida_s": 8.4,
+   "no_reel_s": [
+    11.5,
+    14.0
+   ],
+   "categoria": "arquitetura",
+   "descricao": "Palmeiras abrindo para o Arco do Triunfo",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1159,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": "hlg",
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 7,
+   "arquivo": "IMG_0952.MOV",
+   "entrada_s": 1.0,
+   "saida_s": 4.0,
+   "no_reel_s": [
+    14.0,
+    17.0
+   ],
+   "categoria": "música",
+   "descricao": "Saxofonista na rua de pedra",
+   "transicao": "arrasto",
+   "recorte": [
+    1214,
+    2160,
+    1236,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 8,
+   "arquivo": "IMG_1026.MOV",
+   "entrada_s": 1.0,
+   "saida_s": 6.0,
+   "no_reel_s": [
+    17.0,
+    22.0
+   ],
+   "categoria": "ambiente + fechamento",
+   "descricao": "Porto com palmeiras e veleiros",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1313,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  }
+ ],
+ "objetos": {
+  "placa": {
+   "face_largura": 694,
+   "modulo_largura": 176,
+   "altura": 176,
+   "largura_total": 870,
+   "texto_avanco_px": 622.3
+  },
+  "placa_abertura_quadros": [
+   0,
+   48
+  ],
+  "placa_fechamento_quadros": [
+   480,
+   528
+  ],
+  "legenda_gancho": {
+   "texto": "Barcelona em 20 segundos",
+   "quadros": [
+    0,
+    48
+   ],
+   "tinta": [
+    210.0,
+    1370.0,
+    872.0,
+    1422.0
+   ],
+   "caracteres": 24
+  }
+ },
+ "zona_segura_violacoes": [],
+ "zona_segura_ok": true,
+ "frames_qa": [
+  "barcelona20s_rev1_versao_b_q000.jpg",
+  "barcelona20s_rev1_versao_b_q004.jpg",
+  "barcelona20s_rev1_versao_b_q008.jpg",
+  "barcelona20s_rev1_versao_b_q012.jpg",
+  "barcelona20s_rev1_versao_b_q017.jpg",
+  "barcelona20s_rev1_versao_b_q024.jpg",
+  "barcelona20s_rev1_versao_b_q030.jpg",
+  "barcelona20s_rev1_versao_b_q045.jpg",
+  "barcelona20s_rev1_versao_b_q078.jpg",
+  "barcelona20s_rev1_versao_b_q135.jpg",
+  "barcelona20s_rev1_versao_b_q189.jpg",
+  "barcelona20s_rev1_versao_b_q246.jpg",
+  "barcelona20s_rev1_versao_b_q306.jpg",
+  "barcelona20s_rev1_versao_b_q372.jpg",
+  "barcelona20s_rev1_versao_b_q468.jpg",
+  "barcelona20s_rev1_versao_b_q484.jpg",
+  "barcelona20s_rev1_versao_b_q497.jpg",
+  "barcelona20s_rev1_versao_b_q505.jpg",
+  "barcelona20s_rev1_versao_b_q520.jpg",
+  "barcelona20s_rev1_versao_b_q527.jpg"
+ ],
+ "versao": "B",
+ "conceito": "Eixample, ônibus e Ciutadella: ruas largas, a fachada da Casa Vicens, o sax de rua e o fim no porto.",
+ "sha256": "e110658c0520b8849ceb07af59ac2838dfde41eb54660b6edae12e98a264aa7b"
+}
