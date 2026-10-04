@@ -1,0 +1,77 @@
+{
+ "versao": "B",
+ "conceito": "Eixample, ônibus e Ciutadella: ruas largas, a fachada da Casa Vicens, o sax de rua e o fim no porto.",
+ "planos": [
+  {
+   "arquivo": "IMG_0862.MOV",
+   "entrada": 7.0,
+   "duracao": 2.0,
+   "centro_x": 0.5,
+   "categoria": "gancho (arquitetura)",
+   "descricao": "Casa Vicens, fachada de azulejos"
+  },
+  {
+   "arquivo": "IMG_0795.MOV",
+   "entrada": 0.5,
+   "duracao": 2.5,
+   "centro_x": 0.55,
+   "categoria": "caminhada",
+   "descricao": "Marina atravessando a rua no Eixample"
+  },
+  {
+   "arquivo": "IMG_0804.MOV",
+   "entrada": 1.3,
+   "duracao": 2.25,
+   "transicao": "arrasto",
+   "centro_x": 0.35,
+   "categoria": "transporte",
+   "descricao": "Ônibus vermelho passando na avenida"
+  },
+  {
+   "arquivo": "IMG_1221.MOV",
+   "entrada": 2.2,
+   "duracao": 2.25,
+   "centro_x": 0.4,
+   "categoria": "comida",
+   "descricao": "Churros no balcão"
+  },
+  {
+   "arquivo": "IMG_0894.MOV",
+   "entrada": 5.5,
+   "duracao": 2.5,
+   "centro_x": 0.55,
+   "categoria": "caminhada",
+   "descricao": "Rua estreita com prédios de pedra"
+  },
+  {
+   "arquivo": "IMG_0776.MOV",
+   "entrada": 5.0,
+   "duracao": 2.5,
+   "centro_x": 0.55,
+   "categoria": "arquitetura",
+   "descricao": "Palmeiras abrindo para o Arco do Triunfo"
+  },
+  {
+   "arquivo": "IMG_0952.MOV",
+   "entrada": 1.0,
+   "duracao": 3.0,
+   "transicao": "arrasto",
+   "centro_x": 0.48,
+   "categoria": "música",
+   "descricao": "Saxofonista na rua de pedra"
+  },
+  {
+   "arquivo": "IMG_1026.MOV",
+   "entrada": 1.0,
+   "duracao": 5.0,
+   "centro_x": 0.5,
+   "categoria": "ambiente + fechamento",
+   "descricao": "Porto com palmeiras e veleiros"
+  }
+ ],
+ "capa": {
+  "arquivo": "IMG_0862.MOV",
+  "t": 8.0,
+  "centro_y": 0.5
+ }
+}

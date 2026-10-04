@@ -2,11 +2,11 @@
  "reel": "Barcelona em 20 segundos (POV)",
  "revisao": 1,
  "_o_que_e": "Configuração comum às duas versões (A e B). Os planos de cada versão ficam em versao_a.json e versao_b.json.",
- "fps": 30,
+ "fps": 24,
  "sr": 48000,
  "largura": 1080,
  "altura": 1920,
- "_fps": "30 fps: as receitas do DS (6.2) estão em 30 fps e os brutos de iPhone são 30 fps. Pendência 5 do CLAUDE.md (FPS de produção) continua aberta.",
+ "_fps": "24 fps: os brutos deste Reel são 24 fps (iPhone, 4K). Converter para 30 repetiria quadros (tremido). O Reel de apresentação também é 24 fps. Pendência 5 do CLAUDE.md (FPS de produção) continua aberta.",
  "crf": 14,
  "preset_x264": "slow",
  "tokens": {
@@ -322,8 +322,8 @@
   "semente": 20261001
  },
  "arrasto": {
-  "_fonte": "DS 4.4 Arrasto: 200 ms (6 quadros a 30 fps), as duas cenas deslizam 30% para a esquerda com desfoque direcional de 12 px. Centrado no corte: 3 quadros da cena que sai, 3 da que entra. O whoosh (−16 dB) não entra: o som PD ainda não foi gravado (pendência do DS).",
-  "quadros": 6,
+  "_fonte": "DS 4.4 Arrasto: 200 ms, as duas cenas deslizam 30% para a esquerda com desfoque direcional de 12 px. A 24 fps, 200 ms = 4,8 quadros → 5 quadros: 3 da cena que sai, 2 da que entra. O whoosh (−16 dB) não entra: o som PD ainda não foi gravado (pendência do DS).",
+  "quadros": 5,
   "desloc_frac": 0.3,
   "desfoque_px": 12
  },

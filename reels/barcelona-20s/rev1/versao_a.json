@@ -1,0 +1,15 @@
+{
+ "versao": "A",
+ "conceito": "Rambla, metrô e Bairro Gótico: o dia vai do movimento da Rambla ao violão flamenco na Catedral e termina no mirante de Montjuïc.",
+ "planos": [
+  {"arquivo": "IMG_1083.MOV", "entrada": 3.0, "duracao": 2.0, "centro_x": 0.5, "categoria": "gancho (arquitetura)", "descricao": "Casa Batlló, câmera subindo pela fachada"},
+  {"arquivo": "IMG_1032.mov", "entrada": 2.5, "duracao": 2.5, "categoria": "caminhada", "descricao": "Andando pela Rambla, gente vindo na direção da câmera"},
+  {"arquivo": "IMG_0493.MOV", "entrada": 0.1, "duracao": 2.25, "transicao": "arrasto", "categoria": "transporte", "descricao": "Dentro do metrô, painel da linha e passageiros"},
+  {"arquivo": "IMG_1221.MOV", "entrada": 0.0, "duracao": 2.25, "categoria": "comida", "descricao": "Balcão com doces e churros"},
+  {"arquivo": "IMG_0929.MOV", "entrada": 0.3, "duracao": 2.5, "categoria": "arquitetura", "descricao": "Pont del Bisbe, Bairro Gótico"},
+  {"arquivo": "IMG_0919.MOV", "entrada": 1.0, "duracao": 2.5, "categoria": "caminhada no Gótico", "descricao": "Rua de pedra do Gótico, coral ao fundo"},
+  {"arquivo": "IMG_0916.mov", "entrada": 0.5, "duracao": 3.0, "transicao": "arrasto", "categoria": "música", "descricao": "Violão flamenco na escadaria da Catedral"},
+  {"arquivo": "IMG_0586.MOV", "entrada": 0.5, "duracao": 5.0, "centro_x": 0.5, "categoria": "ambiente + fechamento", "descricao": "Mirante de Montjuïc com a cidade inteira"}
+ ],
+ "capa": {"arquivo": "IMG_1083.MOV", "t": 4.0, "centro_y": 0.5}
+}

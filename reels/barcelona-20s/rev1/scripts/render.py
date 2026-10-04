@@ -248,20 +248,20 @@ def deslizar(img, s, vizinho, lado):
 def quadro_base(fonte, planos, k):
     """quadro k da montagem, já com o Arrasto aplicado quando o corte pede."""
     A = CFG["arrasto"]
-    meio = A["quadros"] // 2
+    n_sai, n_entra = (A["quadros"] + 1) // 2, A["quadros"] // 2
     D = A["desloc_frac"] * W
     i = next(n for n, p in enumerate(planos) if p["r0"] <= k < p["r1"])
     p = planos[i]
     j = k - p["r0"]
     img = fonte.get(i, j)
     efeito = None
-    if i + 1 < len(planos) and planos[i + 1]["transicao"] == "arrasto" and j >= p["q"] - meio:
-        m = j - (p["q"] - meio)                            # 0..meio-1
-        s = D * pd.E_IN((m + 1) / meio)
+    if i + 1 < len(planos) and planos[i + 1]["transicao"] == "arrasto" and j >= p["q"] - n_sai:
+        m = j - (p["q"] - n_sai)                           # 0..n_sai-1
+        s = D * pd.E_IN((m + 1) / n_sai)
         img = deslizar(img, s, fonte.get(i + 1, 0), "sai")
         efeito = ("arrasto_sai", round(s, 1))
-    elif p["transicao"] == "arrasto" and i > 0 and j < meio:
-        s = D * (1 - pd.E_OUT(j / meio))
+    elif p["transicao"] == "arrasto" and i > 0 and j < n_entra:
+        s = D * (1 - pd.E_OUT(j / n_entra))
         img = deslizar(img, -s, fonte.get(i - 1, planos[i - 1]["q"] - 1), "entra")
         efeito = ("arrasto_entra", round(s, 1))
     if efeito:
@@ -465,7 +465,7 @@ def main():
     arrastos = [p for p in planos if p["transicao"] == "arrasto"]
     assert len(arrastos) <= 3, "DS 4.4 / pedido: no máximo 3 Arrastos"
     for p in arrastos:
-        assert p["n"] > 1 and p["q"] >= A["quadros"] // 2 and planos[p["n"] - 2]["q"] >= A["quadros"] // 2
+        assert p["n"] > 1 and p["q"] >= A["quadros"] and planos[p["n"] - 2]["q"] >= A["quadros"]
 
     ctx = {"scrim": pd.scrim_alfa(), "placa": pd.Placa(args.fontes, "seta"),
            "placa_fech": pd.Placa(args.fontes, "um")}
