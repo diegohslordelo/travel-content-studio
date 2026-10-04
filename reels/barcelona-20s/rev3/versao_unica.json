@@ -1,0 +1,43 @@
+{
+ "versao": "REV3",
+ "conceito": "Quatro janelas de Barcelona: ruas, metrô, música e comida, em planos longos e estáveis, com som real.",
+ "planos": [
+  {
+   "arquivo": "IMG_0702.MOV",
+   "entrada": 0.6,
+   "duracao": 7.5,
+   "centro_x": 0.45,
+   "categoria": "ruas",
+   "descricao": "Caminhando por uma rua arborizada, câmera na altura do peito",
+   "ganho_db": 3.0,
+   "_ganho_db": "A rua é bem mais baixa que os outros três (−31,8 LUFS); o equilíbrio automático para em +8 dB. +3 dB para a rua ficar audível ao lado do metrô e do sax."
+  },
+  {
+   "arquivo": "IMG_0493.MOV",
+   "entrada": 0.0,
+   "duracao": 2.458,
+   "categoria": "transporte",
+   "descricao": "Dentro do metrô (take inteiro)"
+  },
+  {
+   "arquivo": "IMG_0952.MOV",
+   "entrada": 0.0,
+   "duracao": 7.375,
+   "centro_x": 0.52,
+   "categoria": "música",
+   "descricao": "Saxofonista na rua de pedra, câmera parada"
+  },
+  {
+   "arquivo": "IMG_1221.MOV",
+   "entrada": 0.0,
+   "duracao": 4.5,
+   "centro_x": 0.4,
+   "categoria": "comida + fechamento",
+   "descricao": "Balcão de doces e churros (take inteiro)"
+  }
+ ],
+ "gancho": {
+  "ate_s": 2.0,
+  "_o_que_e": "A placa entra no quadro 0 (Chegada) e sai pela direita até 2,0 s; o plano continua sem nada na tela."
+ }
+}

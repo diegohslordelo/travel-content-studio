@@ -1,0 +1,357 @@
+{
+ "reel": "Barcelona em 20 segundos (POV)",
+ "revisao": 3,
+ "_o_que_e": "REV3: mesma montagem da REV2 (4 planos). Muda a abertura (placa variante Abertura com 'POV: 20s EM / BARCELONA') e o fechamento (módulo 1º do kit do DS com Chegada + Nascer, no lugar do símbolo solto).",
+ "fps": 24,
+ "sr": 48000,
+ "largura": 1080,
+ "altura": 1920,
+ "_fps": "24 fps: os brutos deste Reel são 24 fps (iPhone, 4K). Converter para 30 repetiria quadros (tremido). O Reel de apresentação também é 24 fps. Pendência 5 do CLAUDE.md (FPS de produção) continua aberta.",
+ "crf": 14,
+ "preset_x264": "slow",
+ "tokens": {
+  "_fonte": "primeiro-dia-tokens-v2.json (DS 2.0.0 REV 2)",
+  "signal_500": "#FFC21A",
+  "night_900": "#121317",
+  "paper_0": "#FCFBF8",
+  "paper_500": "#F6F3EC",
+  "safe": {
+   "x0": 72,
+   "x1": 944,
+   "y0": 256,
+   "y1": 1440
+  },
+  "radius_plate": 16,
+  "radius_tag": 10,
+  "op_grain": 0.05,
+  "op_scrim": 0.63,
+  "ease_arrive": [
+   0.16,
+   1.28,
+   0.36,
+   1.0
+  ],
+  "ease_out": [
+   0.2,
+   0.8,
+   0.2,
+   1.0
+  ],
+  "ease_exit": [
+   0.55,
+   0.0,
+   0.85,
+   0.35
+  ],
+  "ease_cinema": [
+   0.65,
+   0.0,
+   0.35,
+   1.0
+  ]
+ },
+ "placa": {
+  "_variante": "DS 2.1 variante Abertura: linha 1 rótulo (label, Condensed 600, 36 px, +8%) + linha 2 destino (h1, Condensed 800, 128 px) + módulo de seta. Texto pedido pelo Diego: 'POV: 20s EM BARCELONA' (21 caracteres, não cabe numa linha: DS 2.1 manda abreviar acima de 16 letras), dividido como o modelo do DS 'PRIMEIRO DIA EM / ROMA'.",
+  "_posicao": "DS 2.1 e 1.3: x 72 · topo y 640 (posição fixa da placa no Reel). Pedido do Diego: x 72 · y 640.",
+  "texto": "BARCELONA",
+  "fonte": "BarlowCondensed-ExtraBold.ttf",
+  "tamanho": 128,
+  "tracking_em": 0.005,
+  "x": 72,
+  "y": 640,
+  "padding_h": 36,
+  "seta_fracao": 0.54,
+  "filete_inset": 10,
+  "filete_px": 2,
+  "filete_alfa": 0.25,
+  "filete_raio": 8,
+  "rebite_px": 10,
+  "rebite_x": 22,
+  "rebite_y": 24,
+  "rebite_alfa": 0.35,
+  "bevel_luz": [
+   2,
+   0.45
+  ],
+  "bevel_sombra": [
+   4,
+   0.16
+  ],
+  "sombra_dura": [
+   3,
+   0.28
+  ],
+  "sombra_projetada": {
+   "y": 18,
+   "blur": 32,
+   "spread": -10,
+   "alfa": 0.55
+  },
+  "chegada": {
+   "_fonte": "DS 2.1 'Como animar — assinatura CHEGADA' e receita 6.2 (Q0/Q8/Q12/Q14/Q17 a 30 fps convertidos para ms)",
+   "face_x": [
+    [
+     0,
+     -1100
+    ],
+    [
+     267,
+     24
+    ],
+    [
+     345,
+     -4
+    ],
+    [
+     400,
+     0
+    ]
+   ],
+   "rotacao": [
+    [
+     0,
+     -3.0
+    ],
+    [
+     267,
+     0.6
+    ],
+    [
+     345,
+     -0.15
+    ],
+    [
+     400,
+     0.0
+    ]
+   ],
+   "desfoque_px": [
+    [
+     0,
+     12
+    ],
+    [
+     267,
+     0
+    ]
+   ],
+   "modulo_x": [
+    [
+     0,
+     -176
+    ],
+    [
+     400,
+     -176
+    ],
+    [
+     467,
+     10
+    ],
+    [
+     567,
+     0
+    ]
+   ],
+   "sombra_y": [
+    [
+     0,
+     40
+    ],
+    [
+     400,
+     18
+    ]
+   ],
+   "sombra_alfa": [
+    [
+     0,
+     0.15
+    ],
+    [
+     400,
+     0.55
+    ]
+   ],
+   "sombra_dura_alfa": [
+    [
+     0,
+     0.0
+    ],
+    [
+     400,
+     0.28
+    ]
+   ],
+   "brilho_ms": [
+    700,
+    1300
+   ],
+   "brilho_alfa": 0.4,
+   "brilho_largura": 0.34,
+   "brilho_inclinacao_graus": -14
+  },
+  "saida": {
+   "_fonte": "DS 2.1 'Saída (240 ms)': a seta empurra (80 ms) e a placa sai pela direita com ease-exit e desfoque direcional",
+   "duracao_ms": 240,
+   "modulo_x": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     10
+    ],
+    [
+     80,
+     0
+    ]
+   ],
+   "face_x": [
+    [
+     80,
+     0
+    ],
+    [
+     240,
+     1150
+    ]
+   ],
+   "desfoque_px": [
+    [
+     80,
+     0
+    ],
+    [
+     240,
+     12
+    ]
+   ]
+  },
+  "_fonte_medidas": "Medidas, material e keyframes copiados da REV8 do Reel de apresentação (rev8.json), que já implementa o DS 2.1.",
+  "rotulo": "POV: 20s EM",
+  "_rotulo": "'20s' com 's' minúsculo como o Diego escreveu: em caixa-alta ('20S') se leria como 'anos 20'. O resto em caixa-alta (DS 1.2: placa sempre em CAIXA-ALTA).",
+  "fonte_rotulo": "BarlowCondensed-SemiBold.ttf",
+  "tamanho_rotulo": 36,
+  "tracking_rotulo_em": 0.08,
+  "espaco_linhas": 12,
+  "_espaco_linhas": "pd-bundle.css .pd-plate__dest margin-top:12px",
+  "padding_v": 28,
+  "_padding": "DS 2.1 Anatomia: padding 28 px (vertical) × 36 px (horizontal). Altura = 28 + 36 + 12 + 128 × 0,9 + 28 = 219 px; o módulo de seta é quadrado com lado = altura (DS: 'lado = altura do conteúdo, face e módulo são uma peça só')."
+ },
+ "fechamento": {
+  "_o_que_e": "Pedido do Diego: só o símbolo 1º, sem texto. DS V2: no vídeo, o 1º é 'sol amarelo sobre grafite' (2.1, variante Fechamento) e nasce no módulo (4.3); o kit tem o módulo sozinho, 'PD_placa_modulo_1.png · Módulo com símbolo 1º · 176 × 176' (6.1). Entra como objeto da placa: Chegada (2.1) na posição fixa x 72 · y 640, e o 1º nasce dentro dele (Nascer, 700 ms, ease-cinema).",
+  "duracao_s": 2.0,
+  "modulo_1": {
+   "lado": 176,
+   "x": 72,
+   "y": 640,
+   "fracao": 0.7,
+   "cor_numero": "#FCFBF8",
+   "_cantos": "radius-plate 16 nos 4 cantos: sozinho, o módulo não encosta na face (na placa, só os cantos da direita são arredondados).",
+   "_material": "DS 1.4 Painel: grafite 900 + filete claro 2 px + shadow-plate.",
+   "nascer_inicio_ms": 400,
+   "_nascer_inicio": "O 1º nasce quando o módulo assenta (fim do retorno da Chegada, 400 ms)."
+  },
+  "nascer": {
+   "_fonte": "DS 4.3 Nascer (700 ms, ease-cinema) e pd-bundle.css: sol sobe de translateY(120%) a 0 em 700 ms (ease-cinema); barra cresce da esquerda em 300 ms (ease-out); o '1' entra (sobe 10 px + opacidade) em 240 ms com atraso de 500 ms. O sol nasce de trás da linha do horizonte (DS 4.3): fica recortado na base da barra.",
+   "inicio_ms": 0,
+   "sol_ms": 700,
+   "sol_desloc_frac": 1.2,
+   "barra_ms": 300,
+   "numero_atraso_ms": 500,
+   "numero_ms": 240,
+   "numero_sobe_px": 10
+  }
+ },
+ "legenda": {
+  "_estilo": "DS 3.2 Padrão: Barlow 700 56 px, entrelinha 1,15, #FCFBF8, sem caixa, scrim + sombra de texto, centralizada, base do bloco em y 1420.",
+  "fonte": "Barlow-Bold.ttf",
+  "tamanho": 56,
+  "entrelinha": 1.15,
+  "base_y": 1420,
+  "topo_min_y": 1250,
+  "centro_x": 540,
+  "max_caracteres": 26,
+  "max_linhas": 2,
+  "sombra_dura": [
+   2,
+   0.35
+  ],
+  "sombra_difusa": {
+   "blur": 24,
+   "alfa": 0.45
+  },
+  "palavra_ms": 160,
+  "palavra_sobe_px": 10,
+  "grupo_ms": 120,
+  "palavras_por_s_max_palavra_a_palavra": 3.0,
+  "saida_ms": 120,
+  "saida_sobe_px": 6,
+  "destaque": {
+   "_estilo": "DS 3.2 Destaque: mini-placa signal-500, radius-tag 10, padding 4/14, relevo + sombra; texto grafite; pula 0,85 → 1,06 → 1 em 240 ms (ease-arrive) quando a palavra é dita.",
+   "padding_v": 4,
+   "padding_h": 14,
+   "sombra_dura": [
+    3,
+    0.25
+   ],
+   "sombra_projetada": {
+    "y": 10,
+    "blur": 18,
+    "spread": -6,
+    "alfa": 0.5
+   },
+   "pop": [
+    [
+     0,
+     0.85
+    ],
+    [
+     144,
+     1.06
+    ],
+    [
+     240,
+     1.0
+    ]
+   ],
+   "opacidade_ms": 100
+  }
+ },
+ "scrim": {
+  "_fonte": "DS 1.1 e 3.1: gradiente grafite 0% em y 1150 → 63% em y 1500, sempre ligado no Reel",
+  "y0": 1150,
+  "y1": 1500,
+  "ligado": false,
+  "_ligado": "Desligado: o scrim do DS (3.1) existe para a legibilidade das legendas, e a REV2 não tem legenda nenhuma. DS princípio 6: efeito sem função sai."
+ },
+ "grao": {
+  "_fonte": "DS 4.5: grão 5% fixo no vídeo inteiro (blend overlay)",
+  "sigma_px": 0.7,
+  "semente": 20261001
+ },
+ "audio": {
+  "_o_que_e": "Só o som ambiente dos próprios brutos. Sem música. Crossfade curto em cada corte para não estalar; ganho por plano para equilibrar; limitador de pico no fim.",
+  "crossfade_ms": 80,
+  "equilibrio": {
+   "_o_que_e": "Cada plano é aproximado de alvo_lufs em 60% da diferença (preserva a dinâmica natural entre rua, metrô e restaurante), limitado a ±8 dB.",
+   "alvo_lufs": -20.0,
+   "fracao": 0.7,
+   "limite_db": 8.0
+  },
+  "master_lufs": -14.5,
+  "_master_lufs": "Mesmo nível da REV8 do Reel de apresentação. Pendência 6 do CLAUDE.md (loudness) continua aberta.",
+  "pico_dbtp": -1.5,
+  "fade_bordas_ms": 12
+ },
+ "tonemap": {
+  "_fonte": "Mesmo HLG → SDR Rec.709 já aprovado nos brutos de Barcelona (reels/apresentacao/scripts/render.py, REV6).",
+  "hlg": "zscale=tin=arib-std-b67:min=bt2020nc:pin=bt2020:rin=tv:t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=reinhard:param=0.5:peak=4.93:desat=0,zscale=t=bt709:m=bt709:r=tv:d=error_diffusion,format=yuv444p,eq=saturation=0.88",
+  "pq": "zscale=tin=smpte2084:min=bt2020nc:pin=bt2020:rin=tv:t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=reinhard:param=0.5:peak=4.93:desat=0,zscale=t=bt709:m=bt709:r=tv:d=error_diffusion,format=yuv444p,eq=saturation=0.88"
+ },
+ "preset_pd_chegada_v1": {
+  "_situacao": "NÃO DEFINIDO no repositório. O DS V2 (7.5, Pendências) lista 'calibrar preset PD Chegada v1' e não dá valores. Nenhuma correção de cor é aplicada além do tone mapping HDR→SDR e do grão de 5% (DS 4.5). Sinalizado ao Diego."
+ }
+}
