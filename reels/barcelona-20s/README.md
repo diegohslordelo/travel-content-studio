@@ -4,10 +4,11 @@ Publicação prevista: 04/10/2026, 21:00. Objetivo: retenção e identidade visu
 
 ## Situação
 
-- **REV1 entregue:** `rev1/barcelona20s_rev1_versao_a.mp4` e `rev1/barcelona20s_rev1_versao_b.mp4` (22,000 s cada), capas 3:4 e QA em `rev1/QA_REV1.md`.
+- **REV2 (atual):** `rev2/barcelona20s_rev2.mp4` (21,833 s). Quatro planos longos (ruas → metrô → sax → churros), só cortes secos, placa só na abertura e o símbolo 1º no fechamento. QA em `rev2/QA_REV2.md`. Render: `python3 rev2/scripts/render.py --fontes PASTA --brutos "fonte/drive/Reels 1"`.
+- **REV1 (substituída):** versões A e B com 8 planos cada, cortes a cada 2–3 s. QA em `rev1/QA_REV1.md`. O Diego pediu menos cortes; a estrutura abaixo é a da REV1.
 - Brutos: pasta do Drive "Reels 1" (35 arquivos), baixada em `fonte/drive/Reels 1/` (fora do git).
 
-## Estrutura (igual nas duas versões; muda só a escolha dos takes)
+## Estrutura da REV1 (igual nas duas versões; muda só a escolha dos takes)
 
 | Tempo | Bloco | Na tela | Som |
 |---|---|---|---|

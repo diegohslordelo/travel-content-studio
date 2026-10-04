@@ -1,0 +1,221 @@
+{
+ "arquivo": "barcelona20s_rev2.mp4",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": "24/1",
+  "quadros": 524,
+  "duracao_s": 21.833,
+  "codec": "h264 High",
+  "pix_fmt": "yuv420p",
+  "audio": "aac 48000 Hz 2 canais",
+  "tamanho_mb": 120.4
+ },
+ "audio": {
+  "lufs_integrado": -14.5,
+  "pico_real_dbtp": -1.4,
+  "planos": [
+   {
+    "plano": 1,
+    "lufs_bruto": -31.8,
+    "ganho_db": 11.0
+   },
+   {
+    "plano": 2,
+    "lufs_bruto": -17.7,
+    "ganho_db": -1.6
+   },
+   {
+    "plano": 3,
+    "lufs_bruto": -17.0,
+    "ganho_db": -2.1
+   },
+   {
+    "plano": 4,
+    "lufs_bruto": -21.1,
+    "ganho_db": 0.7
+   }
+  ],
+  "lufs_antes_do_master": -19.9,
+  "ganho_master_db": 5.4
+ },
+ "montagem": {
+  "planos": 4,
+  "cortes": 3,
+  "cortes_s": [
+   7.5,
+   9.958,
+   17.333
+  ],
+  "duracao_planos_s": [
+   7.5,
+   2.458,
+   7.375,
+   4.5
+  ],
+  "duracao_media_s": 5.46,
+  "arrastos": 0,
+  "arrastos_s": [],
+  "transicoes_total": 0,
+  "cortes_secos_pct": 100.0,
+  "loop": "corte seco do último quadro para o quadro 0 (o Instagram repete o Reel)",
+  "quadros_arrasto": {}
+ },
+ "planos": [
+  {
+   "n": 1,
+   "arquivo": "IMG_0702.MOV",
+   "entrada_s": 0.6,
+   "saida_s": 8.1,
+   "no_reel_s": [
+    0.0,
+    7.5
+   ],
+   "categoria": "ruas",
+   "descricao": "Caminhando por uma rua arborizada, câmera na altura do peito",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1121,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": "hlg",
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 2,
+   "arquivo": "IMG_0493.MOV",
+   "entrada_s": 0.0,
+   "saida_s": 2.458,
+   "no_reel_s": [
+    7.5,
+    9.958
+   ],
+   "categoria": "transporte",
+   "descricao": "Dentro do metrô (take inteiro)",
+   "transicao": "seco",
+   "recorte": [
+    2160,
+    3840,
+    0,
+    0
+   ],
+   "escala": 0.5,
+   "hdr": "hlg",
+   "fps_bruto": 23.976,
+   "resolucao_bruto": [
+    2160,
+    3840
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 3,
+   "arquivo": "IMG_0952.MOV",
+   "entrada_s": 0.0,
+   "saida_s": 7.375,
+   "no_reel_s": [
+    9.958,
+    17.333
+   ],
+   "categoria": "música",
+   "descricao": "Saxofonista na rua de pedra, câmera parada",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1389,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 4,
+   "arquivo": "IMG_1221.MOV",
+   "entrada_s": 0.0,
+   "saida_s": 4.5,
+   "no_reel_s": [
+    17.333,
+    21.833
+   ],
+   "categoria": "comida + fechamento",
+   "descricao": "Balcão de doces e churros (take inteiro)",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    929,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  }
+ ],
+ "objetos": {
+  "placa": {
+   "face_largura": 694,
+   "modulo_largura": 176,
+   "altura": 176,
+   "largura_total": 870,
+   "texto_avanco_px": 622.3
+  },
+  "placa_abertura_quadros": [
+   0,
+   48
+  ],
+  "simbolo_1_quadros": [
+   476,
+   524
+  ],
+  "simbolo_1_tinta": [
+   470,
+   873,
+   614,
+   1047
+  ],
+  "textos_na_tela": []
+ },
+ "zona_segura_violacoes": [],
+ "zona_segura_ok": true,
+ "frames_qa": [
+  "barcelona20s_rev2_q000.jpg",
+  "barcelona20s_rev2_q004.jpg",
+  "barcelona20s_rev2_q008.jpg",
+  "barcelona20s_rev2_q012.jpg",
+  "barcelona20s_rev2_q017.jpg",
+  "barcelona20s_rev2_q030.jpg",
+  "barcelona20s_rev2_q045.jpg",
+  "barcelona20s_rev2_q090.jpg",
+  "barcelona20s_rev2_q209.jpg",
+  "barcelona20s_rev2_q327.jpg",
+  "barcelona20s_rev2_q470.jpg",
+  "barcelona20s_rev2_q480.jpg",
+  "barcelona20s_rev2_q493.jpg",
+  "barcelona20s_rev2_q501.jpg",
+  "barcelona20s_rev2_q516.jpg",
+  "barcelona20s_rev2_q523.jpg"
+ ],
+ "versao": "REV2",
+ "conceito": "Quatro janelas de Barcelona: ruas, metrô, música e comida, em planos longos e estáveis, com som real.",
+ "sha256": "065b19b982e1fce192bd38ecba16fad20cb4cf5a1f4ee2445f059a13bf2a6812"
+}
