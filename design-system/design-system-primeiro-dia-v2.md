@@ -2,7 +2,7 @@
 
 Design system da marca de conteúdo de viagens **Primeiro Dia** (@primeirodiaem) — REV 2, "Objetos do Primeiro Dia".
 
-> **Versão:** 2.0.0 (MAJOR) · **Data:** 01/10/2026 · **Dono:** Diego · **Conceito:** "Objetos do Primeiro Dia"
+> **Versão:** 2.1.0 (MINOR) · **Data:** 05/10/2026 (2.0.0 em 01/10/2026) · **Dono:** Diego · **Conceito:** "Objetos do Primeiro Dia"
 > **Substitui:** `design-system-primeiro-dia-v1.md` e `primeiro-dia-tokens-v1.json` ("Placa & Caneta", v1.0.0), que ficam **aposentados**.
 > **Arquivos:** este brand book · `primeiro-dia-tokens-v2.json` (DTCG, fonte única dos valores) · `PDPlacar-Bold.ttf` (mantido) · componentes vivos neste sistema.
 > **Relação com os outros documentos:** `design-system-marca-viagens.md` continua sendo a instrução-base (como construir). `referencia-conteudo-instagram.md` continua governando formato e ritmo (gancho, duração, métricas). Este sistema governa forma, movimento e som.
@@ -26,7 +26,7 @@ Design system da marca de conteúdo de viagens **Primeiro Dia** (@primeirodiaem)
 
 ---
 
-## 1. O que mudou da v1, e por quê
+## 0.1 O que mudou da v1, e por quê
 
 A v1 acertou a **estratégia** (amarelo de chegada, placa, placar, letra do Diego, bordão) e errou a **execução**: tudo era retângulo chapado de cor sólida, sem material, sem profundidade e sem movimento próprio. O resultado parecia um conjunto de etiquetas de interface sobre o vídeo, e não uma marca.
 
@@ -50,9 +50,9 @@ A REV 2 mantém o que já é distintivo e refaz a forma inteira:
 
 ---
 
-## 2. Fundação da marca
+## 0.2 Fundação da marca
 
-### 2.1 Plataforma (mantida da v1)
+### 0.2.1 Plataforma (mantida da v1)
 
 | Campo | Definição |
 |---|---|
@@ -66,7 +66,7 @@ A REV 2 mantém o que já é distintivo e refaz a forma inteira:
 | **Personalidade** | Direto (mas não grosso) · Transparente (mas não reclamão) · Curioso (mas não deslumbrado) · Bem-humorado (mas não palhaço) |
 | **Tom** | Informal 4/5 · Divertido 3/5 · Leigo 4/5 · Contido 2/5. "Preciso nos números, simples nas palavras." |
 
-### 2.2 O conceito: Objetos do Primeiro Dia
+### 0.2.2 O conceito: Objetos do Primeiro Dia
 
 No primeiro dia numa cidade, você acumula objetos: lê placas, guarda recibos, ganha carimbos, guarda o ingresso do lugar que valeu, anota coisas. A marca mostra o dia **através desses objetos**. Cada um tem um papel narrativo fixo, um material e um jeito próprio de se mover:
 
@@ -82,7 +82,7 @@ No primeiro dia numa cidade, você acumula objetos: lê placas, guarda recibos, 
 
 **Teste dos 3 segundos (reconhecimento sem nome):** a pessoa reconhece o perfil pela **placa esmaltada com módulo de seta**, pelo **placar** no topo e por **um objeto de papel** (carimbo, ticket ou bilhete) no meio da história. Uma peça sem nenhum dos três não é Primeiro Dia.
 
-### 2.3 Ativos distintivos centrais (5, inalterados na essência)
+### 0.2.3 Ativos distintivos centrais (5, inalterados na essência)
 
 | # | Ativo | Posição fixa no Reel |
 |---|---|---|
@@ -96,7 +96,7 @@ No primeiro dia numa cidade, você acumula objetos: lê placas, guarda recibos, 
 
 ---
 
-## 3. Princípios de design
+## 0.3 Princípios de design
 
 | # | Princípio | Na prática |
 |---|---|---|
@@ -110,10 +110,10 @@ No primeiro dia numa cidade, você acumula objetos: lê placas, guarda recibos, 
 
 ---
 
-## 4. Como usar este sistema
+## 0.4 Como usar este sistema
 
 1. **Valores:** sempre pelos tokens (`primeiro-dia-tokens-v2.json`). Nunca "aquele amarelo".
-2. **Componentes:** cada componente deste sistema tem prévia viva com a animação real. Os tempos e as curvas da prévia são os que valem no CapCut (receitas na seção *Execução no CapCut*).
+2. **Componentes:** cada componente deste sistema tem prévia viva com a animação real. Os tempos e as curvas que valem no CapCut são os dos tokens e das receitas (seção *Execução no CapCut*); a prévia (`pd-bundle`) segue os mesmos valores e, se divergir, corrige-se a prévia.
 3. **Variação nasce no componente:** se a edição exigir quebrar uma regra, o componente é revisado (MINOR), nunca improvisado na edição.
 4. **Ordem de leitura:** Cartão de bolso → Fundamentos → Componentes → Legendas → Motion → Formatos → CapCut → Governança.
 ## 1. Fundamentos visuais
@@ -581,7 +581,7 @@ São os movimentos que **só a marca faz**. Depois de alguns vídeos, a pessoa r
 | 3 | **Subida** | Ticket | Sobe, brilha (foil), fura a estrela com 4 raios | *ding* + furador |
 | 4 | **Escrita** | Bilhete | A letra do Diego aparece da esquerda para a direita | 2 cliques de caneta |
 | 5 | **Giro** | Placar, preços | Dígitos rolam verticalmente até o valor | *tick* |
-| 6 | **Nascer** | Símbolo 1º | O sol amarelo sobe de trás da linha do horizonte (traço do ordinal) e o "1" aparece ao lado; 700 ms, `ease-cinema` | Nota grave suave (opcional) |
+| 6 | **Nascer** | Símbolo 1º | O sol amarelo sobe de trás da linha do horizonte (traço do ordinal) e o "1" aparece ao lado; 700 ms, `ease-cinema` | Nota grave suave (opcional, `PD_nascer_v1.wav`) |
 
 **Como o logo aparece:** sempre pelo Nascer (fechamento do Reel, fim do vlog, último slide quando animado). **Como uma informação é destacada:** pela mini-placa (legenda) ou pelo círculo de caneta (cena). **Como um vídeo termina:** placa de fechamento entra com Chegada, o 1º nasce no módulo da seta, bordão falado, corte seco para o início (loop).
 
@@ -591,7 +591,7 @@ Regra geral: **70% dos cortes são secos.** Transição é pontuação, não dec
 
 | Família | Conceito | Quando usar | Duração | Intensidade | Direção | Como é | Cota |
 |---|---|---|---|---|---|---|---|
-| **Varredura de Placa** (sinalização) | A placa passa e "leva" a cena | Mudança de lugar, de dia ou de capítulo | 320 ms (10 quadros) | Alta | → | Painel amarelo esmaltado com o módulo de seta na borda dianteira atravessa a tela da esquerda para a direita; a nova cena aparece atrás dele | 1 por Reel (2 em vlog por capítulo) |
+| **Varredura de Placa** (sinalização) | A placa passa e "leva" a cena | Mudança de lugar, de dia ou de capítulo | 320 ms (10 quadros) | Alta | → | Painel amarelo esmaltado com o módulo de seta na borda dianteira atravessa a tela da esquerda para a direita; a nova cena aparece atrás dele; *clack* (`PD_clack_v1.wav`) −10 dB quando o módulo cruza o centro (160 ms) | 1 por Reel (2 em vlog por capítulo) |
 | **Arrasto** (deslocamento) | Movimento de câmera rápido | Ir de um ponto a outro na mesma sequência (andando, de metrô) | 200 ms (6 quadros) | Média | → | Chicote horizontal: as duas cenas deslizam 30% para a esquerda com desfoque direcional 12 px; *whoosh* suave −16 dB | 3 por Reel |
 | **Carimbo** (o "passaporte" reinterpretado) | O problema "carimba" a cena | Entrar na cena do perrengue | 180 ms | Alta | ↓ | O carimbo cai sobre o último quadro da cena anterior; no impacto, corta para a cena do perrengue com tremor de 2 quadros | 1 por Reel, só com o selo PERRENGUE |
 | **Rota** (o "mapa" reinterpretado) | Ligar A a B | Roteiro, lista de lugares, "do aeroporto ao hotel" | 500 ms | Média | → ou ↘ | Uma linha amarela **contínua** de 8 px se desenha atravessando a tela; a nova cena se revela seguindo a linha (máscara); coordenadas Plex Mono aparecem no ponto final | 2 por Reel |
@@ -633,11 +633,21 @@ Cada efeito existe por um motivo narrativo. Sem o motivo, não entra.
 | Carimbo | *tum* | Borracha batendo em mesa de madeira | −6 dB | Impacto (160 ms) |
 | Ticket | *ding* + clique de furador | Sino pequeno + clique seco | −10 dB | Furo da estrela |
 | Bilhete | 2 cliques de caneta | `PD_clique_v1.wav` (gravado pelo Diego) | −8 dB | Início da escrita |
-| Placar / preço | *tick* | Clique mecânico baixo | −14 dB | Cada dígito que gira |
+| Placar / preço | *tick* | Clique mecânico baixo | −14 dB | 1 por giro (não 1 por dígito) |
 | Recibo | impressora térmica | Ruído curto de 300 ms | −14 dB | Impressão |
-| Snap | obturador | Clique de câmera | −12 dB | Corte |
+| Snap | obturador | Clique de câmera | −12 dB | Corte (em lista: só no 1º e no último item) |
 | Arrasto | *whoosh* suave | Ar, sem graves | −16 dB | Só no Arrasto |
+| Varredura de Placa | *clack* (o mesmo da placa) | Metal fino batendo | −10 dB | Quando o módulo cruza o centro |
+| Nascer do 1º | nota grave suave | Opcional | a calibrar na gravação | Fechamento |
 | Cinema | ambiente do lugar | Som real gravado no local | −6 dB | Sob a transição |
+
+**Arquivos (kit, seção 6.1):** `PD_clack_v1.wav` · `PD_tum_v1.wav` · `PD_ding_v1.wav` (sino + furador) · `PD_clique_v1.wav` · `PD_tick_v1.wav` · `PD_impressora_v1.wav` · `PD_obturador_v1.wav` · `PD_whoosh_v1.wav` · `PD_nascer_v1.wav` (opcional). O roteiro de gravação está em `design-system/sons/LISTA_DE_GRAVACAO.md`.
+
+**Sem som:** Rota, saída da placa, Placar ligando, mini-placa da legenda e Etiqueta de valor (o *tick* do Giro já marca o preço).
+
+**Referência de volume:** os valores da tabela são relativos à voz. Em cena sem fala, são relativos ao som ambiente da cena.
+
+**Master (arquivo final):** −14 LUFS integrados e pico verdadeiro ≤ −1 dBTP (EBU R128), medidos no arquivo exportado. É o padrão já usado na REV7 e na REV8 do Reel de apresentação.
 
 **Regras:** gravar os sons próprios (placa: bater uma chapa de metal fina; carimbo: carimbo de verdade em madeira; caneta: a caneta do bilhete) a 15 cm, 5 tomadas, e salvar como `PD_[evento]_v1.wav`. São ativos sonoros da marca (originalidade). Trilha: biblioteca do Instagram na hora de postar, 8 a 10 dB abaixo da voz. **Sem som de efeito em toda palavra de legenda.** No máximo 1 efeito sonoro a cada 1,5 s.
 ## 5. Formatos: hooks, Reels, carrossel, YouTube, thumbnails, Stories
@@ -684,6 +694,17 @@ O hook acontece em 0–2 s (o gancho falado pode ir até 3 s, conforme a referê
 | 16,0 | Cinema | — | ambiente |
 | 16,7–21,0 | Vista no fim da tarde | Ticket SURPREENDE (Subida) · legenda Emocional "eu não esperava **ISSO**" | *ding* |
 | 21,0–24,0 | Última cena | Placa de fechamento + Nascer do 1º · "E isso foi só o primeiro dia." | *clack* |
+
+### Níveis de edição (Reels)
+
+Dois níveis do mesmo sistema. O Nível B **não cria valor visual novo**: usa menos objetos, com os mesmos tokens, posições e cotas.
+
+| Nível | Quando | O que leva | Checklist |
+|---|---|---|---|
+| **A (completo)** | Reels de maior retorno: custo, primeiro dia, primeira hora, erro ("Não faça isso"), trailer, anúncio e similares | Estrutura completa da 5.2: Placa com Chegada no quadro 0, Placar (Reel de primeiro dia), objetos no pico, placa de fechamento + Nascer | 7.3 completo |
+| **B (leve)** | Volume e tempo real: diário de viagem, momento bruto, curiosidade, variação de gancho, comida, trajeto | Cortes secos, legenda Padrão com scrim e **1 objeto de marca** (Placa, Placar, Carimbo, Ticket ou Bilhete) na posição fixa, no momento de maior emoção ou utilidade | 7.3 com as exceções marcadas "Nível A" |
+
+**Regra:** na dúvida, é Nível A. O teste dos 3 segundos (Fundação da marca) continua valendo nos dois níveis: sem placa, placar ou objeto de papel, não é Primeiro Dia.
 
 ## 5.3 Carrossel (1080 × 1440)
 
@@ -755,11 +776,13 @@ O sistema só vale se der para fazer no editor que o Diego usa. A estratégia é
 | `PD_recibo_topo.png` / `PD_recibo_base_serrilhada.png` | Partes do recibo (o meio é um retângulo papel com texto do CapCut) | 600 px |
 | `PD_scrim_base.png` | Gradiente grafite 0 → 63% para a base do Reel | 1080 × 770 |
 | `PD_grao_5.mp4` ou efeito de grão do app a 5% | — | — |
-| `PD_[evento]_v1.wav` | Sons (seção 4.6) | — |
+| `PD_clack_v1.wav` · `PD_tum_v1.wav` · `PD_ding_v1.wav` · `PD_clique_v1.wav` · `PD_tick_v1.wav` · `PD_impressora_v1.wav` · `PD_obturador_v1.wav` · `PD_whoosh_v1.wav` · `PD_nascer_v1.wav` (opcional) | Sons (seção 4.6); como gravar em `design-system/sons/LISTA_DE_GRAVACAO.md` | WAV 48 kHz, 24 bits, mono |
 
 Texto variável (cidade, valores, data) fica em camada de texto do CapCut quando possível, para o projeto-modelo servir a qualquer cidade.
 
 ## 6.2 Receitas (30 fps)
+
+**Tempo manda, quadro converte:** os tempos em ms (seções 2 e 4) são a referência. Os quadros (Q) abaixo valem para 30 fps; em outro FPS, converta pelo tempo: Q = ms × fps ÷ 1000 (ex.: *clack* em 280 ms = Q8 a 30 fps, Q7 a 24 fps). O FPS de produção ainda não está definido.
 
 **Chegada (placa):**
 | Camada | Q0 | Q8 | Q12 | Q14 | Q17 |
@@ -768,7 +791,7 @@ Texto variável (cidade, valores, data) fica em camada de texto do CapCut quando
 | Módulo | atrás da face (X −176) | — | X −176 | X **+10** | X 0 |
 | Sombra | X −1100 · Y +40 · opac. 15 | — | X 0 · Y +18 · opac. 55 | — | — |
 | Brilho | — | — | — | — | Q21 X esq. → Q39 X dir. (máscara da face) |
-X relativo à posição final (x 72 · y 640). Som *clack* no Q8. Desfoque direcional: aplicar o efeito de desfoque de movimento nos Q0–Q8, se a versão tiver.
+X relativo à posição final (x 72 · y 640). Som *clack* no Q8 (280 ms). Desfoque direcional: aplicar o efeito de desfoque de movimento nos Q0–Q8, se a versão tiver.
 
 **Saída (placa):** Q0 módulo X +10 · Q2 X 0 · Q2→Q8 face e módulo X +1150 (aceleração: keyframe intermediário no Q5 em X +250).
 
@@ -842,20 +865,22 @@ X relativo à posição final (x 72 · y 640). Som *clack* no Q8. Desfoque direc
 ## 7.3 Checklist de conformidade (toda peça)
 
 - [ ] Só tokens oficiais (cor, fonte, sombra, curva, duração).
-- [ ] Placa em x 72 · y 640 com Chegada (Reel) ou símbolo 1º (estáticos).
-- [ ] Placar presente em todo Reel de primeiro dia (com registro de campo).
+- [ ] Placa em x 72 · y 640 com Chegada (Reel, Nível A) ou símbolo 1º (estáticos). Nível B: 1 objeto de marca (placa, placar, carimbo, ticket ou bilhete) na posição fixa, no pico.
+- [ ] Placar presente em todo Reel de primeiro dia de Nível A (com registro de campo).
 - [ ] No máx. 1 carimbo, 1 ticket, 2 bilhetes por Reel; carimbo e ticket em cenas diferentes.
 - [ ] Legendas: scrim ligado, ≤ 2 linhas, ≤ 1 destaque por grupo.
 - [ ] ≤ 3 famílias de transição, ≤ 5 transições; ≥ 70% de cortes secos.
 - [ ] ≤ 3 efeitos simultâneos (grão conta); nenhum efeito sem função.
 - [ ] Nenhum texto na UI do Instagram (topo 256 · base 480 · direita 136).
 - [ ] Valores com € e R$ + cotação com data na legenda do post.
+- [ ] Som: arquivos `PD_*` só nos eventos da 4.6, no máx. 1 efeito sonoro a cada 1,5 s; master −14 LUFS, pico ≤ −1 dBTP.
 - [ ] Teste de miniatura aprovado.
 - [ ] Bordão e placa de fechamento (Reels de primeiro dia).
 
 ## 7.4 Governança e versionamento
 
-- **Fonte única:** `primeiro-dia-tokens-v2.json` (valores) + este brand book (regras) + projetos-modelo do CapCut. Se divergirem, o JSON vale.
+- **Fonte única:** `primeiro-dia-tokens-v2.json` (valores) + este brand book (regras) + projetos-modelo do CapCut. Se divergirem, o JSON vale para valores e o brand book vale para regras.
+- **Prévia (`pd-bundle.css`/`.js`):** é implementação, não fonte. Segue os tokens e o brand book; se divergir, corrige-se o bundle (decisão do Diego, 05/10/2026).
 - **Dono e aprovador:** Diego.
 - **MAJOR:** muda ativo central ou assinatura de movimento (exige teste de reconhecimento). **MINOR:** novo componente, variante, transição, som. **PATCH:** ajuste de valor, calibração, texto.
 - **Congelamento:** nenhuma MAJOR antes do teste de fama × unicidade de **abril/2027**.
@@ -866,6 +891,7 @@ X relativo à posição final (x 72 · y 640). Som *clack* no Q8. Desfoque direc
 | 0.x | 29–30/09/2026 | "Primeira luz" (areia, petróleo, terracota, DM Serif) | Montagem rápida | Aposentada na v1 |
 | 1.0.0 | 01/10/2026 | "Placa & Caneta" | Unicidade frente à categoria | Aposentada na v2 (sem Reel publicado) |
 | **2.0.0** | **01/10/2026** | **REV 2 "Objetos do Primeiro Dia":** placa esmaltada com módulo de seta; Carimbo PERRENGUE (substitui placa torta); Ticket SURPREENDE (novo); Recibo, Etiqueta, Comanda, Quadro, Rota; 6 estilos de legenda (fim da faixa grafite); 6 assinaturas de movimento; 6 famílias de transição; efeitos com função; 8 sons; Barlow Condensed 300 itálico e IBM Plex Mono; grão 5%; Grafite `#16181D` → `#121317`; raio da placa 8 → 16 px | A v1 ficou crua: caixas chapadas, sem material, sem movimento próprio | Refazer projetos-modelo, banner do YouTube, capas e PNGs do kit. Placar, bilhete, símbolo 1º, bordão e posições fixas mantidos. |
+| **2.1.0** | **05/10/2026** | Níveis de edição A/B (5.2 e 7.3); sons: nomes dos arquivos, Varredura com *clack*, Nascer no kit, 1 *tick* por giro, obturador só no 1º e no último item da lista, referência sem voz, master −14 LUFS / ≤ −1 dBTP; tempos em ms como referência das receitas; tokens `blur`, `effect` e `sound` (cópia dos valores do brand book); introdução renumerada (0.1–0.4); bundle alinhado aos tokens | Pacote aprovado pelo Diego (pendências 2, 3, 4 e 6 do CLAUDE.md; auditoria de som e efeitos) | Nenhum valor visual novo; Reels de Nível B passam a ter checklist próprio |
 
 ### Migração da v1
 | Sai | Entra |
