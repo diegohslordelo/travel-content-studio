@@ -180,7 +180,7 @@ Não é fixa. O painel só usa as partes que o dia pede.
 | **Estimular DM** | Responder a quem respondeu; "chegou perto" ou "passou longe"; pedir permissão para mostrar nome |
 | **Evitar queda de retenção** | Máx. 1 sticker de alta fricção por dia; 1 ideia por Story; texto até 3 linhas; sem sequência acima de 7 |
 | **Repetição** | Nunca 2 Stories seguidos da mesma atração; nunca o Reel inteiro como Story |
-| **Casal** | Marina aparece quando está de fato na cena. O foco do perfil é Diego (CLAUDE.md, 2). Não há "Story de casal" como pilar |
+| **Casal** | Marina pode aparecer de vez em quando, quando está de fato na cena, sem frequência fixa (decisão do Diego, 05/10/2026). O foco do perfil é Diego (CLAUDE.md, 2). Não há "Story de casal" como pilar |
 | **Visual** | Só componentes do DS V2.1: placa P (50%), Placar mini, selo `AO VIVO DA VIAGEM`, etiqueta de série, legenda Narrativa em vidro, enquete "vale ou pula?". Zona segura: topo 256, base 320, laterais 72 (DS V2, 5.6). Capas de destaque pelo DS (círculo amarelo com IATA) |
 | **Análise** | Taxas da seção 6; ler nas semanas 3, 8 e 13; registrar em Aprendizados |
 
@@ -224,7 +224,7 @@ Grau de confiança: **Oficial** (Meta/Instagram), **Reportado** (jornalismo que 
 
 | # | Tema | Situação | Recomendação |
 |---|---|---|---|
-| S1 | **Marina nos Stories** | O pedido descreve o perfil como protagonizado por Diego e a namorada. O CLAUDE.md (seção 2) diz que ela é parceira de viagem, não coprotagonista, e que o perfil não é "canal de casal". Segui o CLAUDE.md | Confirmar se a decisão de 01/10 continua valendo. Se mudar, os 20 conteúdos "dos dois" do banco viram pilar |
+| S1 | **Marina nos Stories** | **Resolvido (05/10/2026):** Marina pode aparecer de vez em quando, sem frequência fixa e sem virar pilar. O foco continua sendo o Diego (CLAUDE.md, 2) | Nada a mudar. As ideias "casal e personalidade" entram quando ela está na cena |
 | S2 | **Template de Stories no DS** | O DS V2 (5.6) define zona segura, placa P, Placar mini, selo e capas de destaque, mas não define posição fixa de sticker nem modelo de Story pós-Reel (`SAIU AGORA / ROMA` está descrito só em texto) | Registrar a lacuna; não criei valor novo. Se quiser, o Diego aprova um modelo de Story pós-Reel pela governança do DS |
 | S3 | **Compartilhar Reel em Story** | O painel dizia "republique o Reel do dia". Mudei para "compartilhe com 1 frase que não está no vídeo" para evitar repetir o Reel | Aprovar ou voltar ao texto original |
 | S4 | **Custo de produção** | O plano não exige gravar nada só para Stories: usa edição, planejamento, acervo e a viagem | Manter assim até a Leitura 1 |

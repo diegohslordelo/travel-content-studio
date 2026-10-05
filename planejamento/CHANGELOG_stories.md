@@ -46,4 +46,7 @@ Copiar `versoes/painel-v2.1-2026-10-05.html` sobre `planejamento-postagens.html`
 
 ## Pendências desta camada
 
-S1 (Marina nos Stories), S2 (modelo de Story pós-Reel no DS), S3 (compartilhar Reel em vez de republicar), S4 e S5: ver `STORIES_ESTRATEGIA.md`, seção 12.
+S1 (Marina nos Stories) foi resolvida em 05/10/2026: ela pode aparecer de vez em quando, sem frequência fixa.
+
+
+S2 (modelo de Story pós-Reel no DS), S3 (compartilhar Reel em vez de republicar), S4 e S5: ver `STORIES_ESTRATEGIA.md`, seção 12.

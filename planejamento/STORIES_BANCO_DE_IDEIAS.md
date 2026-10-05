@@ -112,7 +112,7 @@
 
 ## 5. Casal e personalidade (20)
 
-O perfil é do Diego. Marina aparece quando está na cena, como parceira de viagem, sem virar pilar (CLAUDE.md, 2). Se a Marina não estiver, a ideia roda só com Diego. **Decisão pendente S1** (estratégia, seção 12).
+O perfil é do Diego. Marina aparece quando está na cena, como parceira de viagem, sem virar pilar (CLAUDE.md, 2). Se a Marina não estiver, a ideia roda só com Diego. Decisão do Diego (05/10/2026): ela pode aparecer de vez em quando, sem frequência fixa.
 
 | # | Ideia | Formato | Função | Quando |
 |---|---|---|---|---|
