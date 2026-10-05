@@ -68,3 +68,9 @@ Não vieram: interior do Panteão e foto no espelho.
 - Os "$" das anotações são euro; todos os valores são por pessoa; o € 1,00 do espelho de Sant'Ignazio foi pago.
 - O pai do Diego autoriza o uso da foto da capa.
 - **Música:** sim, da biblioteca do Instagram, adicionada no app na hora de postar. Motivo: carrossel com música pode aparecer na aba Reels (Mosseri, 17/10/2024). Critério: instrumental, sem letra competindo com a leitura, no tom da marca. O DS não cobre música em carrossel; registrar em Aprendizados ("carrossel com música") para comparar com os próximos.
+
+## Ajustes de 05/10/2026 (pedido do Diego)
+
+- **Slide 11 (Coliseu):** venda com arena 7 dias antes; subterrâneo e ático (Full Experience Attico, andares mais altos, com elevador panorâmico) 30 dias antes. O nome oficial do andar mais alto é "ático" (Attico), não "terraço": terraços panorâmicos já estão no ingresso padrão. 1º domingo do mês: entrada padrão grátis, sem arena, subterrâneo e níveis superiores (colosseo.it, aviso de entrada gratuita).
+- **Slide 14 (São Pedro):** dica de chegar cedo (fila) e Angelus aos domingos ao meio-dia, da janela do Palácio Apostólico (vatican.va).
+- **Slide 17:** dicas do site oficial e do Vaticano; símbolo 1º subiu para y 1168, acima da Rota.
