@@ -61,3 +61,9 @@ Não vieram: interior do Panteão e foto no espelho.
 - O € 1,00 do espelho de Sant'Ignazio foi pago (está no total).
 - Fatos de contexto: tradição da moeda na Trevi; Rafael, Vittorio Emanuele II, Umberto I e Margherita no Panteão; Vaticano como menor país; regras de venda do ingresso (7 e 30 dias antes) e preços de 2026.
 - Datas por dia vêm do EXIF das fotos (dia 1 = 25/12, dia 2 = 26/12, dia 3 = 27/12); saída em 28/12 deduzida das 4 noites.
+
+## Confirmações do Diego (05/10/2026)
+
+- Os "$" das anotações são euro; todos os valores são por pessoa; o € 1,00 do espelho de Sant'Ignazio foi pago.
+- O pai do Diego autoriza o uso da foto da capa.
+- **Música:** sim, da biblioteca do Instagram, adicionada no app na hora de postar. Motivo: carrossel com música pode aparecer na aba Reels (Mosseri, 17/10/2024). Critério: instrumental, sem letra competindo com a leitura, no tom da marca. O DS não cobre música em carrossel; registrar em Aprendizados ("carrossel com música") para comparar com os próximos.

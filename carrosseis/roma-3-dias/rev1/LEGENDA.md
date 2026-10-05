@@ -43,7 +43,7 @@ Salva pra viagem.
 
 ## Na hora de postar
 
-1. Postar direto no app (música da biblioteca só existe no app). **Música: decisão do Diego** (o DS não define música para carrossel).
+1. Postar direto no app, com música instrumental da biblioteca do Instagram (decisão do Diego, 05/10/2026).
 2. Stories do dia (painel): 16:00 palpite "Quanto você acha que custaram os dias em Roma?"; 18:05 compartilhar o carrossel com "Qual slide você mandaria para alguém que vai?".
 3. Responder todos os comentários na primeira hora (referência, seção 7).
 4. Em 48 h: anotar alcance, salvamentos, envios, curtidas e seguidores ganhos em Aprendizados.
