@@ -34,22 +34,47 @@ def quadro(arq, t, p):
 
 
 def texto(fontes):
+    """Bloco de texto Display centralizado no canvas pela tinta (x 540) e com o centro da tinta em
+    C["centro_y_tinta"]; as linhas ficam alinhadas à esquerda dentro do bloco (DS 1.2: Display alinhado à esquerda)."""
     S = pd.SS
     f = pd.fonte("BarlowCondensed-ExtraBold.ttf", C["tamanho"] * S, fontes)
     trk = C["tracking_em"] * C["tamanho"] * S
     lh = C["tamanho"] * C["entrelinha"]
     linhas = C["linhas"]
 
-    def desenho(d):
-        for i, ln in enumerate(linhas):
-            y = (C["base_y"] - (len(linhas) - 1 - i) * lh) * S
-            x = C["margem"] * S
-            for c in ln:
-                d.text((x, y), c, font=f, fill=255, anchor="ls")
-                x += f.getlength(c) + trk
-    m = pd.reduzir(pd.mascara((CW * S, CH * S), desenho)[..., None])[..., 0]
-    ys, xs = np.nonzero(m > 0.02)
-    return m, [int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1]
+    def mask(dx, dy):
+        def desenho(d):
+            for i, ln in enumerate(linhas):
+                y = (dy + i * lh) * S
+                x = dx * S
+                for c in ln:
+                    d.text((x, y), c, font=f, fill=255, anchor="ls")
+                    x += f.getlength(c) + trk
+        m = pd.reduzir(pd.mascara((CW * S, CH * S), desenho)[..., None])[..., 0]
+        ys, xs = np.nonzero(m > 0.02)
+        return m, [int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1]
+    _, cx = mask(100, 400)                      # 1ª passada: mede a tinta
+    dx = 100 + C["centro_x"] - (cx[0] + cx[2]) / 2
+    dy = 400 + C["centro_y_tinta"] - (cx[1] + cx[3]) / 2
+    return mask(dx, dy)
+
+
+def simular_instagram(arq, saida):
+    """Como a capa 3:4 aparece: (1) inteira, (2) como capa do Reel (a imagem preenche o 9:16 e perde as laterais),
+    (3) no grid do perfil (recorte 3:4 central do 9:16)."""
+    from PIL import Image as I, ImageDraw as D
+    c = I.open(arq).convert("RGB")
+    reel = c.resize((1440, 1920), I.LANCZOS).crop((180, 0, 1260, 1920))     # preenche 1080 × 1920
+    grid = reel.crop((0, 240, 1080, 1680))
+    h = 600
+    vs = [c.resize((450, 600)), reel.resize((338, 600)), grid.resize((450, 600)), c.resize((270, 360)).resize((450, 600))]
+    rot = ["capa 3:4 inteira", "capa do Reel (9:16)", "grid do perfil", "miniatura 25%"]
+    out = I.new("RGB", (sum(v.width for v in vs) + 30 * 3, h + 30), "white")
+    x = 0
+    d = D.Draw(out)
+    for v, r in zip(vs, rot):
+        out.paste(v, (x, 0)); d.text((x + 4, h + 8), r, fill=(0, 0, 0)); x += v.width + 30
+    out.save(saida, quality=88)
 
 
 def main():
@@ -81,6 +106,9 @@ def main():
         caixa[3] <= CH - C["margem"]
     mini = Image.open(saida).resize((CW // 4, CH // 4), Image.LANCZOS)
     mini.save(saida.replace(".jpg", "_miniatura25.jpg"), quality=90)
+    simular_instagram(saida, os.path.join(pd.REV, "_tmp", "capa_simulacao_instagram.jpg"))
+    seg = [135, 180, 945, 1260]   # área que sobra nos dois recortes (capa do Reel e grid), em coordenadas da capa
+    ok = ok and caixa[0] >= seg[0] and caixa[2] <= seg[2] and caixa[1] >= seg[1] and caixa[3] <= seg[3]
     print(json.dumps({"capa": saida, "texto_caixa": caixa, "dentro_da_margem_80": ok,
                       "palavras": sum(len(x.split()) for x in C["linhas"])}, ensure_ascii=False))
 

@@ -372,6 +372,9 @@
    "y1": 1440,
    "alfa": 0.63
   },
-  "_texto": "4 palavras (POV, 20s, EM, BARCELONA), o mesmo texto da placa de abertura. Painel p5: capa com até 4 palavras."
+  "_texto": "4 palavras (POV, 20s, EM, BARCELONA), o mesmo texto da placa de abertura. Painel p5: capa com até 4 palavras.",
+  "centro_x": 540,
+  "centro_y_tinta": 1000,
+  "_enquadramento": "Correção (pedido do Diego, capa desenquadrada): o bloco de texto é centralizado no canvas pela tinta (x 540; regra de centralização do CLAUDE.md) e fica dentro da área que sobrevive aos dois recortes do Instagram: capa do Reel 9:16 (a 3:4 perde 135 px de cada lado) e grid 3:4 do perfil (sobra x 135–945 · y 180–1260). As linhas continuam alinhadas à esquerda dentro do bloco (DS 1.2). Centro vertical da tinta em y 1000."
  }
 }

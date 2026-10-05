@@ -109,7 +109,7 @@ O clipe mais forte do material é o violonista (10/10), mas pela sua regra ele �
 | ≤ 3 efeitos simultâneos (grão conta) | Passa | Grão + desfoque da placa | Passa | Máx. 2: grão + desfoque de movimento da placa ou do módulo |
 | ≤ 1 carimbo, 1 ticket e 2 bilhetes | Passa | Nenhum | Passa | Nenhum |
 | Nada nas zonas da interface | Passa | Placa x 72–921 · y 640–859 | Passa | Placa x 72–921 · y 640–859; módulo x 72–248 · y 640–816; 0 violações em 528 quadros |
-| Capa até 4 palavras, área 3:4, miniatura 25% | **Falha** | A REV3 não tinha capa própria | Passa | "POV: 20s EM / BARCELONA" (4 palavras), texto em x 85–813 · y 972–1242 (margem 80 do DS); legível a 25% |
+| Capa até 4 palavras, área 3:4, miniatura 25% | **Falha** | A REV3 não tinha capa própria | Passa | "POV: 20s EM / BARCELONA" (4 palavras), centralizado (tinta em x 176–904 · y 865–1135, centro x 540), dentro da área que sobrevive aos recortes da capa do Reel 9:16 e do grid (x 135–945 · y 180–1260); legível a 25% |
 | Legenda do post p5 conforme o planejamento, palavras-chave, sem CTA | **Falha** | Não foi entregue | Passa | Texto abaixo, igual ao painel, sem CTA |
 | Duração dentro do limite; um único conceito | Passa | 21,83 s | Passa | 22,00 s (painel: até 30 s); conceito único: "20 s andando por Barcelona" |
 
