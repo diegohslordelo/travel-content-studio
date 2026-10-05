@@ -1,5 +1,5 @@
 {
-  "$description": "Primeiro Dia (@primeirodiaem) — tokens v2.0.0 (REV 2 'Objetos do Primeiro Dia'), 01/10/2026. W3C DTCG 2025.10. Primitivos → semânticos → componentes. Substitui primeiro-dia-tokens-v1.json.",
+  "$description": "Primeiro Dia (@primeirodiaem) — tokens v2.1.0 (REV 2 'Objetos do Primeiro Dia'), 05/10/2026 (2.0.0 em 01/10/2026). W3C DTCG 2025.10. Primitivos → semânticos → componentes. Substitui primeiro-dia-tokens-v1.json.",
   "color": {
     "signal": {
       "100": {
@@ -1392,6 +1392,202 @@
         "$type": "color",
         "$value": "{color.semantic.on-primary}"
       }
+    }
+  },
+  "blur": {
+    "$description": "Desfoques (brand book 1.4 e 4.5).",
+    "blur-glass": {
+      "$type": "dimension",
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      },
+      "$description": "Desfoque do vidro da legenda Narrativa (1.4, 4.5)."
+    },
+    "blur-motion": {
+      "$type": "dimension",
+      "$value": {
+        "value": 12,
+        "unit": "px"
+      },
+      "$description": "Desfoque direcional: Arrasto, entrada e saída da placa (2.1, 4.4, 4.5)."
+    }
+  },
+  "effect": {
+    "$description": "Efeitos de vídeo (brand book 4.5). Cópia dos valores do brand book; nenhum valor novo. Teto: 3 efeitos ao mesmo tempo, grão incluído.",
+    "max-simultaneous": {
+      "$type": "number",
+      "$value": 3,
+      "$description": "Máximo de efeitos ativos ao mesmo tempo (grão conta)."
+    },
+    "grain": {
+      "$type": "number",
+      "$value": "{opacity.op-grain}",
+      "$description": "Grão no vídeo inteiro, fixo."
+    },
+    "zoom-subtle": {
+      "$type": "number",
+      "$value": 1.04,
+      "$description": "Ken Burns: 100% → 104% ao longo do plano estático > 2 s."
+    },
+    "speed-ramp-peak": {
+      "$type": "number",
+      "$value": 3.0,
+      "$description": "Speed ramp: 100% → 300% → 100%."
+    },
+    "speed-ramp-frames": {
+      "$type": "number",
+      "$value": 6,
+      "$description": "Rampa de 6 quadros (30 fps)."
+    },
+    "freeze-min": {
+      "$type": "duration",
+      "$value": {
+        "value": 500,
+        "unit": "ms"
+      },
+      "$description": "Freeze frame mínimo (com carimbo ou recibo)."
+    },
+    "freeze-max": {
+      "$type": "duration",
+      "$value": {
+        "value": 1200,
+        "unit": "ms"
+      },
+      "$description": "Freeze frame máximo."
+    },
+    "shake-1": {
+      "$type": "dimension",
+      "$value": {
+        "value": 6,
+        "unit": "px"
+      },
+      "$description": "Camera shake, quadro 1 (só no impacto do carimbo)."
+    },
+    "shake-2": {
+      "$type": "dimension",
+      "$value": {
+        "value": 3,
+        "unit": "px"
+      },
+      "$description": "Camera shake, quadro 2."
+    },
+    "flash-opacity": {
+      "$type": "number",
+      "$value": 0.3,
+      "$description": "Flash papel de 1 quadro, só no Snap."
+    },
+    "light-leak-opacity": {
+      "$type": "number",
+      "$value": 0.08,
+      "$description": "Vazamento de luz quente, só no Cinema / SURPREENDE."
+    },
+    "vignette-opacity": {
+      "$type": "number",
+      "$value": 0.15,
+      "$description": "Vinheta, só em plano emocional."
+    },
+    "glow-opacity": {
+      "$type": "number",
+      "$value": 0.35,
+      "$description": "Glow amarelo 300 atrás do ticket SURPREENDE."
+    },
+    "glow-radius": {
+      "$type": "dimension",
+      "$value": {
+        "value": 40,
+        "unit": "px"
+      },
+      "$description": "Raio do glow do ticket."
+    },
+    "parallax-layers": {
+      "$type": "number",
+      "$value": 2,
+      "$description": "Parallax em estáticos: no máximo 2 camadas."
+    }
+  },
+  "sound": {
+    "$description": "Sons da marca (brand book 4.6). Ganhos em dB relativos à voz. Cópia dos valores do brand book.",
+    "clack": {
+      "$type": "number",
+      "$value": -10,
+      "$description": "Placa assenta (Chegada, 280 ms) e Varredura de Placa. Arquivo: PD_clack_v1.wav. dB relativo à voz (sem voz: relativo ao ambiente da cena)."
+    },
+    "tum": {
+      "$type": "number",
+      "$value": -6,
+      "$description": "Carimbo, no impacto (160 ms). Arquivo: PD_tum_v1.wav. dB relativo à voz (sem voz: relativo ao ambiente da cena)."
+    },
+    "ding": {
+      "$type": "number",
+      "$value": -10,
+      "$description": "Ticket: sino + clique de furador, no furo da estrela. Arquivo: PD_ding_v1.wav. dB relativo à voz (sem voz: relativo ao ambiente da cena)."
+    },
+    "clique": {
+      "$type": "number",
+      "$value": -8,
+      "$description": "Bilhete: 2 cliques de caneta no início da escrita. Arquivo: PD_clique_v1.wav. dB relativo à voz (sem voz: relativo ao ambiente da cena)."
+    },
+    "tick": {
+      "$type": "number",
+      "$value": -14,
+      "$description": "Placar / preço: 1 por giro. Arquivo: PD_tick_v1.wav. dB relativo à voz (sem voz: relativo ao ambiente da cena)."
+    },
+    "impressora": {
+      "$type": "number",
+      "$value": -14,
+      "$description": "Recibo: impressora térmica, 300 ms. Arquivo: PD_impressora_v1.wav. dB relativo à voz (sem voz: relativo ao ambiente da cena)."
+    },
+    "obturador": {
+      "$type": "number",
+      "$value": -12,
+      "$description": "Snap (em lista: só no 1º e no último item). Arquivo: PD_obturador_v1.wav. dB relativo à voz (sem voz: relativo ao ambiente da cena)."
+    },
+    "whoosh": {
+      "$type": "number",
+      "$value": -16,
+      "$description": "Só no Arrasto. Arquivo: PD_whoosh_v1.wav. dB relativo à voz (sem voz: relativo ao ambiente da cena)."
+    },
+    "cinema-ambient": {
+      "$type": "number",
+      "$value": -6,
+      "$description": "Cinema: som real do lugar sob a transição. dB relativo à voz."
+    },
+    "music-bed-min": {
+      "$type": "number",
+      "$value": -10,
+      "$description": "Trilha da biblioteca: 8 a 10 dB abaixo da voz (limite inferior)."
+    },
+    "music-bed-max": {
+      "$type": "number",
+      "$value": -8,
+      "$description": "Trilha da biblioteca: 8 a 10 dB abaixo da voz (limite superior)."
+    },
+    "min-interval": {
+      "$type": "duration",
+      "$value": {
+        "value": 1500,
+        "unit": "ms"
+      },
+      "$description": "No máximo 1 efeito sonoro a cada 1,5 s."
+    },
+    "clack-duration": {
+      "$type": "duration",
+      "$value": {
+        "value": 80,
+        "unit": "ms"
+      },
+      "$description": "Duração do clack."
+    },
+    "master-loudness": {
+      "$type": "number",
+      "$value": -14,
+      "$description": "Master: LUFS integrados (EBU R128), medido no arquivo exportado."
+    },
+    "master-true-peak": {
+      "$type": "number",
+      "$value": -1,
+      "$description": "Master: pico verdadeiro máximo em dBTP."
     }
   }
 }

@@ -76,13 +76,14 @@ As fontes do DS V2 ainda não estão no repositório (seção 14).
 **Em caso de conflito:**
 - Uma regra específica de Reel não altera o Design System.
 - Uma regra antiga da V1 (ou da v0) não prevalece sobre a V2.
+- **DS × tokens × bundle** (decisão do Diego, 05/10/2026): os tokens valem para **valores**; o brand book vale para **regras**; o bundle é só implementação de prévia e, se divergir, corrige-se o bundle.
 - **Não invente uma resolução** para conflitos entre documentos: registre a divergência e sinalize ao Diego quando for necessária uma decisão.
 
 ## 6. Design System V2
 
 **Regra central:** quando a tarefa envolver identidade visual, o Claude deve consultar o Design System V2 e seus tokens antes de decidir.
 
-- **Versão vigente:** a V2.0.0 "Objetos do Primeiro Dia".
+- **Versão vigente:** a V2.1.0 "Objetos do Primeiro Dia" (05/10/2026). A 2.1.0 acrescentou os níveis de edição A/B, as regras de som e os tokens de efeito e som, sem valor visual novo (DS V2, Changelog).
 - **Aposentadas:** a V1 "Placa & Caneta" e a v0 "Primeira luz". Não reutilize valores, componentes nem regras visuais delas.
 - **Valores visuais** (cor, fonte, tamanho, espaço, raio, sombra, posição, duração, curva, volume) vêm dos tokens e do DS V2. Não crie valores fora deles.
 - **Componentes novos ou variações** seguem a governança do DS V2 (Governança e versionamento), com aprovação do Diego. Não altere os documentos do DS sem pedido explícito dele.
@@ -147,6 +148,8 @@ Complementa esta lista o checklist pré-publicação da referência de conteúdo
 
 O acervo atual é de viagens que já aconteceram: **Barcelona** (3 dias) · **Amsterdam** (3 dias) · **Bruxelas** (1 dia) · **Bruges** (bate-volta de Bruxelas, 1 dia) · **Paris** (1 dia) · **Disney** (1 dia, 2 parques) · **Madrid** (2 dias) · **Lisboa** (1 dia).
 
+O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias em 4 cidades) apenas como **fotos e registro de custos, sem vídeo** (informado pelo Diego em 05/10/2026). Serve para carrosséis, não para Reels.
+
 - **Não é possível refilmar** essas viagens. Não presuma que o Diego possa voltar ou gravar uma cena contextual nova.
 - **Não crie cenas falsas** para representar acontecimentos que não foram gravados.
 - **Gravação atual do Diego:** não a insira num Reel de experiência passada se isso quebrar a continuidade temporal.
@@ -162,6 +165,7 @@ travel-content-studio/
 ├── CLAUDE.md        este manual
 ├── design-system/   DS V2, tokens, bundle e fontes (ver design-system/README.md)
 ├── docs/            referência de conteúdo Instagram e instrução-base do DS
+├── planejamento/    painel de conteúdo (planejamento-postagens.html), análise estratégica e versões
 └── reels/
     └── apresentacao/  Reel de apresentação do perfil (revisões, QA, scripts, análises)
 ```
@@ -209,15 +213,15 @@ travel-content-studio/
 Questões em aberto. Esta seção não cria regras.
 
 1. **Fontes ausentes:** `design-system/fonts/` está vazia. Nenhum arquivo de fonte do DS V2 (Barlow, Barlow Condensed, `PDPlacar-Bold.ttf`, IBM Plex Mono) está no repositório. O render da REV8 depende de `Barlow-Bold.ttf` e `BarlowCondensed-ExtraBold.ttf`.
-2. **Tokens × brand book:** o DS V2 (Governança) diz que, se divergirem, o JSON vale. A hierarquia da seção 5 põe o DS acima dos tokens. Decisão do Diego.
-3. **Bundle × brand book:** o DS V2 ("Como usar") diz que os tempos da prévia valem no CapCut, mas a Governança deixa o bundle fora da fonte única. Os dois divergem em vários valores (por exemplo, duração da Chegada, largura do módulo de seta, extensão do scrim, fonte da mini-placa). Decisão do Diego.
-4. **Defeitos no DS V2:** o token `blur-glass`, citado no brand book, não existe no JSON; a numeração das seções 1 a 4 se repete. Correção a cargo do Diego.
-5. **FPS de produção:** as receitas do DS estão em 30 fps, e o Reel de apresentação é 24 fps. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
-6. **Loudness (LUFS e pico):** não definido pelo material atual — consultar Diego antes de estabelecer como regra.
-7. **Assets do DS ainda inexistentes:** fonte Caneta Diego, sons `PD_*.wav`, kit de PNG, projetos-modelo do CapCut e calibração do preset.
+2. **Tokens × brand book:** resolvida em 05/10/2026 (seção 5, "Em caso de conflito").
+3. **Bundle × brand book:** resolvida em 05/10/2026. O bundle foi alinhado (Chegada 560 ms, scrim 0 → 63% de y 1150 a 1500, grão 5%, fibra 4%, padding da placa 28 × 36, rebites, mini-placa em Barlow com padding 4/14). Fica em aberto só o **módulo de seta**: o DS diz "lado = altura do conteúdo (≈ 176 px)", mas a altura real da placa de 2 linhas é ≈ 221 px, que é o que o bundle usa. O "≈ 176" (e o PNG de 176 × 176 do kit) precisa de decisão do Diego.
+4. **Defeitos no DS V2:** resolvida em 05/10/2026 (token `blur-glass` criado; introdução renumerada para 0.1–0.4).
+5. **FPS de produção:** as receitas do DS estão em 30 fps, e o Reel de apresentação é 24 fps. Desde a 2.1.0, os tempos em ms são a referência e os quadros se convertem pelo FPS (DS V2, 6.2). O FPS de produção continua não definido — consultar Diego antes de estabelecer como regra.
+6. **Loudness (LUFS e pico):** resolvida em 05/10/2026: master −14 LUFS integrados, pico ≤ −1 dBTP (DS V2, 4.6).
+7. **Assets do DS ainda inexistentes:** fonte Caneta Diego, sons `PD_*.wav` (roteiro de gravação em `design-system/sons/LISTA_DE_GRAVACAO.md`), kit de PNG, projetos-modelo do CapCut e calibração do preset.
 8. **Identidade verbal completa** (vocabulário, bordões recorrentes, regras de escrita) e **direção de imagem:** a V2 cobre só parte. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
 9. **Render pelo Claude:** o CLAUDE.md original dizia que o Claude entrega o plano e o Diego edita no CapCut. Mas a REV7 e a REV8 foram renderizadas por pipeline. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
 10. **Reels que não são de "primeiro dia":** o DS V2 define a estrutura e o checklist para Reels de primeiro dia, mas não para outros tipos, como o de apresentação. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
-11. **Planejamento:** `planejamento-postagens.html` não está neste repositório. Falta definir onde ele fica.
+11. **Planejamento:** resolvida em 05/10/2026. O painel está em `planejamento/planejamento-postagens.html` (v2), com a análise em `planejamento/ANALISE_ESTRATEGICA.md`.
 12. **Narração da REV7:** o CLAUDE.md original apontava `Reels/rev6-referencia/narracao.m4a`. Falta confirmar se é o mesmo arquivo que `reels/apresentacao/narracao/narracao.m4a`.
 13. **Largura da caixa centralizada:** no bundle, a legenda e a legenda emocional mantêm a largura de 872 px. Centrada em x 540, a caixa vai de x 104 a 976 e passa do limite direito da zona segura (944). Uma linha com mais de 808 px ultrapassaria x 944. A largura máxima de linha não está definida pelo material atual — consultar Diego antes de estabelecer como regra.
