@@ -1,6 +1,6 @@
-# Registro de alterações — painel v1 → v2 (05/10/2026)
+# Registro de alterações — painel v1 → v2.1 (05/10/2026)
 
-Gerado a partir da comparação entre `versoes/painel-v1-original-2026-10-05.html` e `planejamento-postagens.html`. Posts anteriores a 05/10/2026 não foram alterados (podem já ter sido publicados), exceto o Reel de apresentação (p1), alinhado ao CLAUDE.md, seção 13.
+Comparação entre `versoes/painel-v1-original-2026-10-05.html` e `planejamento-postagens.html`. `versoes/painel-v2-2026-10-05.html` é o estado intermediário (antes da Itália, dos carrosséis de fotos e dos níveis de edição). Posts anteriores a 05/10/2026 não foram alterados (podem já ter sido publicados), exceto o Reel de apresentação (p1).
 
 | Post | Alteração |
 |---|---|
@@ -79,3 +79,100 @@ Gerado a partir da comparação entre `versoes/painel-v1-original-2026-10-05.htm
 | n2 | novo Reel em 2027-01-29: Primeira hora em [cidade nova]: quanto gastei |
 | n3 | novo Reel em 2027-02-01: Primeira hora em [cidade nova]: quanto gastei |
 | n4 | novo Reel em 2027-02-05: Diário: o que eu não faria de novo |
+| p7 | Itália: “Roma em 3 dias: o que ver em cada dia.” → “Roma em 3 dias: € [total].” (carrossel com custo) |
+| p51 | Itália: “Florença em 2 dias: o que ver em cada dia.” → “Florença em 2 dias: € [total].” (carrossel com custo) |
+| p72 | Itália: “Veneza em 2 dias: o que ver em cada dia.” → “Veneza em 2 dias: € [total].” (carrossel com custo) |
+| p93 | Itália: “Milão em 2 dias: o que ver em cada dia.” → “Milão em 2 dias: € [total].” (carrossel com custo) |
+| p114 | Itália: “Itália: 9 dias em 4 cidades.” → “Itália em 9 dias: € [total].” (carrossel com custo) |
+| p24 | photo dump “Photo dump: Barcelona sem filtro” → carrossel “Barcelona: 8 fotos e o que cada uma custou” |
+| p45 | photo dump “Photo dump: Amsterdam sem filtro” → carrossel “Amsterdam: 8 fotos e o que cada uma custou” |
+| p66 | photo dump “Photo dump: Paris sem filtro” → carrossel “Paris: 8 fotos e o que cada uma custou” |
+| p87 | photo dump “Photo dump: Disneyland Paris sem filtro” → carrossel “Disneyland Paris: 8 fotos e o que cada uma custou” |
+| p108 | photo dump “Photo dump: Madrid sem filtro” → carrossel “Madrid: 8 fotos e o que cada uma custou” |
+| p129 | photo dump “Photo dump: Bruxelas sem filtro” → carrossel “Bruxelas: 8 fotos e o que cada uma custou” |
+| p150 | photo dump “Photo dump: Bruges sem filtro” → carrossel “Bruges: 8 fotos e o que cada uma custou” |
+| p174 | photo dump “Photo dump: Lisboa sem filtro” → carrossel “Lisboa: 8 fotos e o que cada uma custou” |
+| p181 | removido: photo dump semanal na viagem (regra: no máximo 1 a cada 2 semanas) |
+| p188 | photo dump “Photo dump: melhores fotos da viagem” → carrossel “Viagem de janeiro: 8 fotos e o que cada uma custou” |
+| p1 | Nível A |
+| p9 | Nível A |
+| p15 | Nível A |
+| p16 | Nível A |
+| p18 | Nível B |
+| p19 | Nível A |
+| p22 | Nível A |
+| p25 | Nível B |
+| p27 | Nível B |
+| p31 | Nível A |
+| p33 | Nível B |
+| p36 | Nível A |
+| p37 | Nível A |
+| p39 | Nível B |
+| p40 | Nível A |
+| p43 | Nível A |
+| p46 | Nível A |
+| p48 | Nível B |
+| p52 | Nível A |
+| p54 | Nível B |
+| p56 | Nível A |
+| p58 | Nível A |
+| p60 | Nível B |
+| p61 | Nível A |
+| p64 | Nível A |
+| p67 | Nível A |
+| p69 | Nível B |
+| p73 | Nível A |
+| p75 | Nível B |
+| p77 | Nível A |
+| p79 | Nível A |
+| p81 | Nível B |
+| p82 | Nível A |
+| p85 | Nível A |
+| p88 | Nível B |
+| p90 | Nível B |
+| p94 | Nível A |
+| p96 | Nível B |
+| p98 | Nível A |
+| p100 | Nível A |
+| p102 | Nível B |
+| p103 | Nível A |
+| p106 | Nível A |
+| p109 | Nível B |
+| p111 | Nível B |
+| p115 | Nível A |
+| p117 | Nível B |
+| p119 | Nível A |
+| p121 | Nível A |
+| p123 | Nível B |
+| p124 | Nível A |
+| p127 | Nível A |
+| p130 | Nível B |
+| p132 | Nível B |
+| p133 | Nível B |
+| p136 | Nível A |
+| p138 | Nível B |
+| p140 | Nível A |
+| p142 | Nível A |
+| p144 | Nível B |
+| p145 | Nível A |
+| p148 | Nível B |
+| p151 | Nível A |
+| p153 | Nível B |
+| p154 | Nível A |
+| p157 | Nível B |
+| p159 | Nível B |
+| p161 | Nível A |
+| p163 | Nível A |
+| p167 | Nível A |
+| p172 | Nível B |
+| p175 | Nível A |
+| p177 | Nível B |
+| n1 | Nível B |
+| p179 | Nível B |
+| n2 | Nível B |
+| p182 | Nível B |
+| n3 | Nível B |
+| p184 | Nível B |
+| p186 | Nível B |
+| n4 | Nível B |
+| p189 | Nível B |

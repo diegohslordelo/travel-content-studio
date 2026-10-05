@@ -147,6 +147,8 @@ Complementa esta lista o checklist pré-publicação da referência de conteúdo
 
 O acervo atual é de viagens que já aconteceram: **Barcelona** (3 dias) · **Amsterdam** (3 dias) · **Bruxelas** (1 dia) · **Bruges** (bate-volta de Bruxelas, 1 dia) · **Paris** (1 dia) · **Disney** (1 dia, 2 parques) · **Madrid** (2 dias) · **Lisboa** (1 dia).
 
+O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias em 4 cidades) apenas como **fotos e registro de custos, sem vídeo** (informado pelo Diego em 05/10/2026). Serve para carrosséis, não para Reels.
+
 - **Não é possível refilmar** essas viagens. Não presuma que o Diego possa voltar ou gravar uma cena contextual nova.
 - **Não crie cenas falsas** para representar acontecimentos que não foram gravados.
 - **Gravação atual do Diego:** não a insira num Reel de experiência passada se isso quebrar a continuidade temporal.

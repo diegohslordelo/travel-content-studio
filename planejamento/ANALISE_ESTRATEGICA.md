@@ -37,7 +37,7 @@
 
 | # | Tema | Situação | Minha recomendação |
 |---|---|---|---|
-| D1 | **Itália** (Roma, Florença, Veneza, Milão: 5 carrosséis) | Não consta do acervo do CLAUDE.md (seção 10). Pode ser material que existe e não foi listado | Confirmar. Se existir, manter, mas trocar "o que ver em cada dia" por promessa de marca ("quanto custou e o que valeu"). Se não, cortar |
+| D1 | **Itália** (Roma, Florença, Veneza, Milão: 5 carrosséis) | **Resolvido:** há fotos e custos, sem vídeo | Carrosséis com promessa de custo (ver abaixo) |
 | D2 | **12 posts "Foto"/photo dump** | Formato sem distribuição para não seguidores; custo de produção baixo | Manter no máximo 1 a cada 2 semanas e usar carrossel (salvamento). Não mexi: é trade-off de grid × tempo |
 | D3 | **Organização por cidade em ciclos de 2 semanas** | Quem não te segue não busca "Madrid em 2 dias" de um perfil novo; busca a dor ("quanto custa", "o que evitar") | Já corrigi o gancho. A decisão maior é manter a ordem cronológica das cidades ou intercalar séries (ex.: 1 Reel "Onde foi o dinheiro" por semana de cidades diferentes). Sugiro intercalar após a Leitura 1 |
 | D4 | **Carga de produção** | 80 Reels + 54 Shorts + 8 vídeos longos + 18 carrosséis, com checklist de 26 itens por post | Definir **Tier A** (hero, DS completo) e **Tier B** (corte seco + legenda Padrão + 1 objeto). Precisa de aprovação, pois mexe no checklist do DS |
@@ -53,6 +53,19 @@
 | Republicar vídeo quase idêntico reduz alcance; retrabalhar a própria ideia é permitido | [uCompares](https://ucompares.com/social-media/instagram/instagram-trial-reels/), [CreatorFlow](https://creatorflow.so/blog/instagram-algorithm-2026/) | Estimativa de mercado; consistente com a política de originalidade na ref. 2 |
 
 O painel v1 não usa hashtags nas legendas; se usar, no máximo 3 a 5, no fim.
+
+## Decisões do Diego e atualização v2.1 (05/10/2026)
+
+| Tema | Decisão | O que mudou no painel |
+|---|---|---|
+| D1 Itália | Há fotos e registro de custos, sem vídeo | Os 5 carrosséis viraram "[cidade] em N dias: € [total]", com slide de Custo. O Diego envia os custos por cidade (pendência no painel). Itália entra no acervo do CLAUDE.md como fotos e custos, não como vídeo |
+| D2 Valores | O Diego envia os valores na hora de editar cada vídeo | Os `[valores]` ficam como estão até lá |
+| D4 Níveis de edição | Aprovados | Cada Reel ganhou o rótulo **Nível A** (43 Reels: checklist completo do DS) ou **Nível B** (39: corte seco, legenda Padrão, 1 objeto de marca no pico). O B não cria valor visual novo e tem o checklist enxuto |
+| D2 Fotos | Aprovado | 8 photo dumps de cidade + o das fotos finais viraram carrossel "[cidade]: 8 fotos, 8 preços". O de 30/01 foi removido (no máximo 1 a cada 2 semanas). Ficam as 2 fotos únicas de Barcelona (03/10 e 09/10) |
+| D3 Intercalar | Aprovado, decidido pela Leitura 1 | Regra registrada na semana 3. Os vídeos longos seguem a ordem atual |
+
+**Nível A:** trailer, custo, primeiro dia, primeira hora (fora da viagem), erro, anúncio, orçamento, retrospectiva, hotel, filas e expectativa × realidade.
+**Nível B:** momento bruto, curiosidade, mala, escolha de hotel, comida, emoção, trajeto, variações do melhor Reel e todo o diário da viagem.
 
 ## Como usar a base
 
