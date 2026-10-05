@@ -14,6 +14,10 @@ USO = {  # foto original -> nome usado nos slides
     'IMG_6652.JPG': 'coliseu_noite.jpg',    # 24/12 22:01
     'IMG_6653.HEIC': 'sao_pedro.jpg',       # 27/12 08:25
     'IMG_6650.HEIC': 'santo_inacio.jpg',    # 27/12 12:31
+    # enviadas pelo Diego no chat em 05/10/2026 (sem EXIF):
+    'EXTRA_arena_pai.jpg': 'coliseu_arena.jpg',  # Diego e o pai na arena do Coliseu
+    'EXTRA_vila_natal.jpg': 'vila_natal.jpg',    # vila de Natal: árvore-carrossel (reserva)
+    'EXTRA_vila_natal_ampla.jpg': 'vila_natal_ampla.jpg',  # vila de Natal: vista ampla (usada)
 }
 src, dst = sys.argv[1], '../fonte'
 os.makedirs(dst, exist_ok=True)
