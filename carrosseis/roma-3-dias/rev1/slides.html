@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Carrossel Roma em 3 dias · REV1</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="../../../design-system/bundle/pd-bundle.css">
+<style>
+/* Só tokens do DS V2.1 (cores, fontes, tamanhos, espaços, raios, sombras). Canvas 1080 × 1440 (DS 3.x, 3:4). */
+body{margin:0;background:#26292F}
+.slide{position:relative;width:1080px;height:1440px;overflow:hidden;background:var(--pd-p);color:var(--pd-n);margin:0 0 40px}
+.slide.pd-paper::after{opacity:.04} /* fibra 4% */
+.grain{position:absolute;inset:0;background:var(--pd-grain);opacity:.05;mix-blend-mode:overlay;pointer-events:none;z-index:50}
+/* contador: x 1000 alinhado à direita · y 80 · Plex Mono 30 */
+.count{position:absolute;right:80px;top:64px;font:500 30px/1.3 var(--pd-fm);letter-spacing:.02em;color:var(--pd-n5);z-index:30}
+/* etiqueta de série: mini-placa 48 px, Condensed 600 28 px +8%, face amarela, sem módulo */
+.serie{position:absolute;left:80px;top:60px;height:48px;padding:0 16px;display:flex;align-items:center;background:var(--pd-y);border-radius:10px;box-shadow:var(--pd-bevel),0 3px 0 rgba(0,0,0,.25);font:600 28px/1 var(--pd-fd);letter-spacing:.08em;text-transform:uppercase;color:var(--pd-n);z-index:30}
+/* Rota: linha amarela contínua de 8 px em y 1360, atravessa a borda e continua no slide seguinte */
+.rota{position:absolute;left:0;right:0;top:1356px;height:8px;background:var(--pd-y);z-index:20}
+.on-photo{color:var(--pd-r);text-shadow:0 2px 0 rgba(0,0,0,.35),0 0 24px rgba(0,0,0,.45)}
+/* H2 · Body · micro */
+.h2{position:absolute;left:80px;top:168px;width:920px;font:700 80px/.95 var(--pd-fd);margin:0}
+.h2 small{display:block;font:500 30px/1.3 var(--pd-fm);letter-spacing:.02em;color:var(--pd-n5);text-transform:uppercase;margin-top:16px}
+.body{font:500 44px/1.3 var(--pd-ft)}
+.micro{font:500 30px/1.3 var(--pd-fm);letter-spacing:.02em;text-transform:uppercase}
+/* Fotografia: foto radius-photo com margem 80, legenda Barlow 500 40 abaixo */
+.photo{position:absolute;left:80px;top:160px;width:920px;height:920px;border-radius:24px;overflow:hidden;background:var(--pd-n)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.legenda{position:absolute;left:80px;top:1128px;width:920px;font:500 40px/1.3 var(--pd-ft);color:var(--pd-n)}
+.legenda b{font-weight:700}
+/* Placa P (50%) encostada na base esquerda da foto, sobrepondo 24 px */
+.placaP{left:104px!important;top:auto!important;bottom:336px;transform-origin:0 100%;scale:.75}
+/* Status VALE: ✓ verde sobre papel */
+.status{position:absolute;right:104px;top:184px;display:flex;align-items:center;gap:12px;padding:12px 20px;background:var(--pd-r);border-radius:10px;box-shadow:0 1px 1px rgba(0,0,0,.2),0 14px 26px -10px rgba(0,0,0,.5);font:700 40px/1 var(--pd-fd);letter-spacing:.06em;color:var(--pd-g);z-index:25}
+.status svg{width:40px;height:40px}
+/* Roteiro: rota vertical com paradas numeradas */
+.route{position:absolute;left:80px;top:400px;width:920px}
+.route:before{content:"";position:absolute;left:26px;top:30px;bottom:30px;width:8px;background:var(--pd-y)}
+.stop{position:relative;display:flex;gap:40px;align-items:flex-start;margin-bottom:56px}
+.stop .n{flex:none;width:60px;height:60px;border-radius:50%;background:var(--pd-n);color:var(--pd-y);display:grid;place-items:center;font:700 40px/1 var(--pd-fdata);position:relative;z-index:1}
+.stop h3{margin:2px 0 0;font:600 56px/1 var(--pd-fd);letter-spacing:.02em}
+.stop p{margin:10px 0 0;font:500 40px/1.25 var(--pd-ft);color:var(--pd-n5)}
+.stop p b{color:var(--pd-n);font-weight:700}
+.food{position:absolute;left:80px;top:1232px;width:920px;font:500 40px/1.3 var(--pd-ft)}
+.food b{font-weight:700}
+/* Comparação: dois recibos lado a lado */
+.cmp{position:absolute;top:400px;width:440px}
+.cmp .pd-receipt__body{padding:36px 36px 26px}
+.cmp .row{padding:18px 0 0}
+.cmp .row small{display:block;font:500 30px/1 var(--pd-fm);letter-spacing:.06em;color:var(--pd-n5);text-transform:uppercase}
+.cmp .row b{display:block;font:700 44px/1.1 var(--pd-ft);margin-top:6px}
+.cmp .row b.v{font:700 56px/1 var(--pd-fdata)}
+.cmp .pd-receipt__head{font-size:30px}
+.cmp .row em{font:500 32px/1 var(--pd-ft);font-style:normal;color:var(--pd-n5)}
+</style>
+</head>
+<body>
+
+<!-- 01 CAPA -->
+<section class="slide" id="s01">
+  <div class="photo" style="inset:0;width:auto;height:auto;border-radius:0"><img src="../fonte/coliseu_dia.jpg" style="object-position:50% 100%;transform:scale(1.3);transform-origin:50% 100%"></div>
+  <div class="pd-scrim"></div>
+  <div class="serie">Roteiro</div>
+  <div class="count on-photo">01 / 15</div>
+  <div style="position:absolute;left:80px;bottom:200px;display:flex;flex-direction:column;gap:24px;z-index:25">
+    <div class="micro on-photo">por pessoa · hotel incluso · dez/2024<br>41,8902° N · 12,4922° E</div>
+    <div class="pd-plate" style="position:relative;left:0;top:0">
+      <div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__label">Roma em 3 dias</div><div class="pd-plate__dest">€ 421,50</div></div>
+      <div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div>
+    </div>
+  </div>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 02 CUSTO -->
+<section class="slide pd-paper" id="s02">
+  <div class="serie">Roteiro</div><div class="count">02 / 15</div>
+  <h2 class="h2">Quanto custou, por pessoa<small>Roma · 24 a 28/12/2024 · 4 noites</small></h2>
+  <div class="pd-receipt" style="left:165px;top:380px;transform-origin:0 0;scale:1.25">
+    <div class="pd-receipt__body">
+      <div class="pd-receipt__head"><b>ROMA · 3 DIAS</b>valores em euro · por pessoa</div>
+      <div class="pd-receipt__line"><span>Ingressos</span><span>47,60</span></div>
+      <div class="pd-receipt__line"><span>Passe 72 h</span><span>22,00</span></div>
+      <div class="pd-receipt__line"><span>Comida e bebida</span><span>130,30</span></div>
+      <div class="pd-receipt__line"><span>Hotel · 4 noites</span><span>221,60</span></div>
+      <div class="pd-receipt__tot"><small>TOTAL</small><div><b>€ 421,50</b><em>≈ R$ 2.698</em></div></div>
+      <div class="pd-receipt__foot">SEM HOTEL: € 199,90 ≈ R$ 1.279<br>HOTEL: APTO P/ 5 NO MONTI<br>€ 1 = R$ 6,40 · 24/12/2024</div>
+    </div>
+    <div class="pd-receipt__teeth"></div>
+  </div>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 03 ROTEIRO DIA 1 (1/2) -->
+<section class="slide pd-paper" id="s03">
+  <div class="serie">Roteiro</div><div class="count">03 / 15</div>
+  <h2 class="h2">Dia 1 · Natal em Roma<small>25/12/2024 · parte 1 de 2</small></h2>
+  <div class="route">
+    <div class="stop"><span class="n">1</span><div><h3>Fontana di Trevi</h3><p>grátis</p></div></div>
+    <div class="stop"><span class="n">2</span><div><h3>Panteão</h3><p><b>€ 5,00</b> ≈ R$ 32</p></div></div>
+    <div class="stop"><span class="n">3</span><div><h3>Piazza Navona</h3><p>grátis</p></div></div>
+    <div class="stop"><span class="n">4</span><div><h3>Ponte Sisto</h3><p>grátis</p></div></div>
+    <div class="stop"><span class="n">5</span><div><h3>Piazza di Spagna</h3><p>grátis</p></div></div>
+  </div>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 04 TREVI -->
+<section class="slide pd-paper" id="s04">
+  <div class="serie">Roteiro</div><div class="count">04 / 15</div>
+  <div class="photo"><img src="../fonte/trevi.jpg" style="object-position:50% 50%"></div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Fontana di Trevi</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda"><b>Grátis.</b> A tradição: jogar a moeda de costas para voltar a Roma.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 05 PANTEÃO -->
+<section class="slide pd-paper" id="s05">
+  <div class="serie">Roteiro</div><div class="count">05 / 15</div>
+  <div class="photo"><img src="../fonte/panteao.jpg" style="object-position:50% 50%"></div>
+  <div class="status"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21l9 9 17-20"/></svg>VALE</div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Panteão</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda"><b>€ 5,00 ≈ R$ 32.</b> Rápido e lindo por dentro. Aqui estão Rafael, os reis Vittorio Emanuele II e Umberto I e a rainha Margherita.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 06 ROTEIRO DIA 1 (2/2) -->
+<section class="slide pd-paper" id="s06">
+  <div class="serie">Roteiro</div><div class="count">06 / 15</div>
+  <h2 class="h2">Dia 1 · Natal em Roma<small>25/12/2024 · parte 2 de 2</small></h2>
+  <div class="route">
+    <div class="stop"><span class="n">6</span><div><h3>Campo Marzio + Piazza del Popolo</h3><p>grátis</p></div></div>
+    <div class="stop"><span class="n">7</span><div><h3>Terrazza del Pincio</h3><p>grátis · pôr do sol</p></div></div>
+    <div class="stop"><span class="n">8</span><div><h3>Villa Borghese · vila de Natal</h3><p><b>€ 17,60</b> ≈ R$ 113 · valeu · só no Natal</p></div></div>
+  </div>
+  <p class="food">Comida no dia 1: <b>€ 42,90</b> ≈ R$ 275</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 07 PINCIO -->
+<section class="slide pd-paper" id="s07">
+  <div class="serie">Roteiro</div><div class="count">07 / 15</div>
+  <div class="photo"><img src="../fonte/pincio.jpg" style="object-position:50% 50%"></div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Pincio</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda"><b>Grátis.</b> Pôr do sol com vinho do mercado, olhando a Piazza del Popolo.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 08 ROTEIRO DIA 2 -->
+<section class="slide pd-paper" id="s08">
+  <div class="serie">Roteiro</div><div class="count">08 / 15</div>
+  <h2 class="h2">Dia 2 · Roma antiga<small>26/12/2024</small></h2>
+  <div class="route">
+    <div class="stop"><span class="n">1</span><div><h3>Coliseu + Fórum + Palatino</h3><p><b>€ 24,00</b> ≈ R$ 154 · com arena</p></div></div>
+    <div class="stop"><span class="n">2</span><div><h3>Teatro di Marcello</h3><p>grátis</p></div></div>
+    <div class="stop"><span class="n">3</span><div><h3>Vittoriano</h3><p>grátis</p></div></div>
+    <div class="stop"><span class="n">4</span><div><h3>Santa Maria in Aracoeli</h3><p>grátis</p></div></div>
+    <div class="stop"><span class="n">5</span><div><h3>Via del Corso</h3><p>grátis</p></div></div>
+  </div>
+  <p class="food">Comida no dia 2: <b>€ 41,00</b> ≈ R$ 262</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 09 FÓRUM -->
+<section class="slide pd-paper" id="s09">
+  <div class="serie">Roteiro</div><div class="count">09 / 15</div>
+  <div class="photo"><img src="../fonte/forum.jpg" style="object-position:50% 50%"></div>
+  <div class="status"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21l9 9 17-20"/></svg>VALE</div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Fórum Romano</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda">Não pule o Fórum, o Palatino e o Coliseu: a imaginação vai a mil. <b>Muita história e muita coisa preservada.</b></p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 10 COLISEU + DICA -->
+<section class="slide pd-paper" id="s10">
+  <div class="serie">Roteiro</div><div class="count">10 / 15</div>
+  <div class="photo"><img src="../fonte/coliseu_noite.jpg" style="object-position:50% 60%"></div>
+  <div class="pd-note pd-paper" style="left:400px;top:208px;z-index:25"><span class="pd-note__t">dica: compre cedo</span></div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Coliseu</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda">Ingresso com arena: abre <b>7 dias antes</b>. Com subterrâneo: <b>30 dias antes</b>, e eu não consegui. Compre em colosseo.it.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 11 COMPARAÇÃO -->
+<section class="slide pd-paper" id="s11">
+  <div class="serie">Roteiro</div><div class="count">11 / 15</div>
+  <h2 class="h2">Coliseu: qual ingresso?<small>preços de 2026 · colosseo.it</small></h2>
+  <div class="pd-receipt cmp" style="left:80px">
+    <div class="pd-receipt__body">
+      <div class="pd-receipt__head"><b>PADRÃO</b>24 h</div>
+      <div class="row"><small>preço</small><b class="v">€ 18,00</b><em>≈ R$ 106</em></div>
+      <div class="row"><small>entra</small><b>1º e 2º andar</b></div>
+      <div class="row"><small>tempo</small><b>75 min</b></div>
+    </div><div class="pd-receipt__teeth"></div>
+  </div>
+  <div class="pd-receipt cmp" style="left:560px">
+    <div class="pd-receipt__body">
+      <div class="pd-receipt__head"><b>ARENA</b>2 dias · o meu</div>
+      <div class="row"><small>preço</small><b class="v">€ 24,00</b><em>≈ R$ 141</em></div>
+      <div class="row"><small>entra</small><b>arena + andares</b></div>
+      <div class="row"><small>tempo</small><b>90 min</b></div>
+    </div><div class="pd-receipt__teeth"></div>
+    <svg class="mark" style="position:absolute;right:-30px;top:-46px;width:110px;height:110px;color:var(--pd-g);fill:none;stroke:currentColor;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;overflow:visible" viewBox="0 0 110 110"><path d="M22 58l20 22 46-56"/><path d="M55 4C20 4 4 30 6 56s26 50 54 48 46-24 44-52S84 2 50 6"/></svg>
+  </div>
+  <p class="micro" style="position:absolute;left:80px;top:1180px;width:920px;margin:0;color:var(--pd-n5)">Fórum e Palatino nos dois<br>1º domingo do mês: grátis<br>cotação € 1 = R$ 5,88 · 02/10/2026</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 12 ROTEIRO DIA 3 -->
+<section class="slide pd-paper" id="s12">
+  <div class="serie">Roteiro</div><div class="count">12 / 15</div>
+  <h2 class="h2">Dia 3 · Vaticano e Trastevere<small>27/12/2024</small></h2>
+  <div class="route">
+    <div class="stop"><span class="n">1</span><div><h3>Basílica de São Pedro</h3><p>grátis</p></div></div>
+    <div class="stop"><span class="n">2</span><div><h3>Castelo e Ponte Sant'Angelo</h3><p>grátis · só por fora</p></div></div>
+    <div class="stop"><span class="n">3</span><div><h3>Sant'Ignazio di Loyola</h3><p>grátis · espelho <b>€ 1,00</b> ≈ R$ 6</p></div></div>
+    <div class="stop"><span class="n">4</span><div><h3>Fontana dell'Acqua Paola</h3><p>grátis</p></div></div>
+    <div class="stop"><span class="n">5</span><div><h3>Piazzale Garibaldi</h3><p>grátis · fim de tarde</p></div></div>
+  </div>
+  <p class="food">Comida no dia 3: <b>€ 46,40</b> ≈ R$ 297</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 13 SÃO PEDRO -->
+<section class="slide pd-paper" id="s13">
+  <div class="serie">Roteiro</div><div class="count">13 / 15</div>
+  <div class="photo"><img src="../fonte/sao_pedro.jpg" style="object-position:50% 60%"></div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">São Pedro</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda"><b>Grátis.</b> Você está no Vaticano, o menor país do mundo, dentro de Roma.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 14 SANT'IGNAZIO -->
+<section class="slide pd-paper" id="s14">
+  <div class="serie">Roteiro</div><div class="count">14 / 15</div>
+  <div class="photo"><img src="../fonte/santo_inacio.jpg" style="object-position:50% 40%"></div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Sant'Ignazio</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda"><b>A igreja é grátis.</b> O espelho para ver o teto pintado custa € 1,00 ≈ R$ 6.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- 15 ENCERRAMENTO -->
+<section class="slide pd-paper" id="s15">
+  <div class="serie">Roteiro</div><div class="count">15 / 15</div>
+  <h2 class="h2">Roma em 3 dias: € 421,50<small>por pessoa · ≈ R$ 2.698 · hotel incluso</small></h2>
+  <div class="pd-note pd-paper" style="left:120px;top:540px"><span class="pd-note__t">o que não pula:</span><span class="pd-note__t">fórum, coliseu</span><span class="pd-note__t">e palatino.</span>
+    <svg class="mark" style="right:-74px;top:-40px;width:110px;height:110px;color:#147A44" viewBox="0 0 110 110"><path d="M22 58l20 22 46-56"/><path d="M55 4C20 4 4 30 6 56s26 50 54 48 46-24 44-52S84 2 50 6"/></svg></div>
+  <div class="pd-plate pd-plate--s pd-plate--one" style="left:80px;top:1000px;transform-origin:0 0;scale:.75">
+    <div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Salva pra viagem</div></div>
+    <div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div>
+  </div>
+  <svg class="pd-one" viewBox="0 0 100 100" style="position:absolute;left:904px;top:1264px;height:96px;z-index:25" aria-label="1º"><path class="num" fill="#121317" d="M26 4h22v96H26V30l-14 7V16z"/><g><circle class="sun" cx="76" cy="17" r="15" fill="#FFC21A"/></g><rect class="bar" x="58.7" y="38" width="34.5" height="5.5" fill="#FFC21A"/></svg>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+</body>
+</html>
