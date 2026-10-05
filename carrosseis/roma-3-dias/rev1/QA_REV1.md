@@ -6,7 +6,7 @@
 
 De dentro desta pasta:
 1. `python3 scripts/prep.py <pasta_com_as_fotos>` → converte as fotos para `../fonte/` (fora do git).
-2. `node scripts/render.mjs` → gera `out/01.jpg` a `out/16.jpg` a partir de `slides.html` (variáveis opcionais: `PLAYWRIGHT_MODULE`, `CHROMIUM`).
+2. `node scripts/render.mjs` → gera `out/01.jpg` a `out/17.jpg` a partir de `slides.html` (variáveis opcionais: `PLAYWRIGHT_MODULE`, `CHROMIUM`).
 
 `slides.html` usa o `pd-bundle.css` do DS e as fontes em `fonts/` (Barlow, Barlow Condensed, IBM Plex Mono e Reenie Beanie, OFL 1.1, subconjunto latin). O Chromium do ambiente não alcança o Google Fonts, por isso as fontes foram baixadas.
 
@@ -20,15 +20,16 @@ De dentro desta pasta:
 | 07 | IMG_5220 (Pincio) | 25/12 16:37 |
 | 08 | Vila de Natal, vista ampla (enviada no chat) | sem EXIF; dia 1, 25/12 |
 | 10 | IMG_5319 (Fórum) | 26/12 13:45 |
-| 11 | IMG_6652 (Coliseu à noite) | 24/12 22:01 |
+| 11 | IMG_6651 (Coliseu por fora, de manhã) | 26/12 08:52 |
 | 14 | IMG_6653 (São Pedro) | 27/12 08:25 |
 | 15 | IMG_6650 (Sant'Ignazio, Diego e Marina) | 27/12 12:31 |
+| 16 | IMG_5523 (pôr do sol no Gianicolo, Trastevere) | 27/12 16:45 |
 
 **Escolhas entre fotos:**
 - **Capa:** a da arena com o pai venceu a do Coliseu por fora (IMG_6651). Tem o Diego em primeiro plano (DS 5.3), mostra a arena, que é o que o ingresso de € 24,00 compra, e a camisa do Bahia reforça o "soteropolitano" da apresentação. O pai aparece com autorização do Diego.
 - **Villa Borghese:** a vista ampla venceu a árvore-carrossel. A árvore é mais colorida, mas a vista ampla prova a legenda: aparecem a Torre Eiffel de luzes e outras áreas temáticas. Recorte com zoom de 125% para tirar o céu preto.
 
-Não usadas (ficam para Stories): IMG_6651 (Coliseu por fora), árvore-carrossel da vila de Natal, IMG_5132 (Navona), IMG_5397 (selfie em São Pedro com o grupo: tem rosto de terceiros, pedir autorização antes de usar), IMG_5409 (interior de São Pedro), IMG_5523 (Gianicolo).
+Não usadas (ficam para Stories): IMG_6652 (Coliseu à noite, trocado pela foto de manhã a pedido do Diego), árvore-carrossel da vila de Natal, IMG_5132 (Navona), IMG_5397 (selfie em São Pedro com o grupo: tem rosto de terceiros, pedir autorização antes de usar), IMG_5409 (interior de São Pedro).
 
 Não vieram: interior do Panteão e foto no espelho.
 

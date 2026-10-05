@@ -1,6 +1,6 @@
 # Carrossel Roma em 3 dias · REV1 · publicação
 
-**Quando:** terça, 06/10/2026, 18:00 (painel, `p7`) · **Arquivos:** `out/01.jpg` a `out/16.jpg`, nessa ordem · **Formato:** 1080 × 1440 (3:4)
+**Quando:** terça, 06/10/2026, 18:00 (painel, `p7`) · **Arquivos:** `out/01.jpg` a `out/17.jpg`, nessa ordem · **Formato:** 1080 × 1440 (3:4)
 
 ## Legenda (copiar)
 
@@ -18,7 +18,7 @@ Roteiro e custos de Roma, Itália, para quem vai viajar.
 Salva pra viagem.
 ```
 
-1 CTA ("Salva pra viagem"), igual à placa do slide 16 (DS 2.7; referência, 3.4). Sem hashtag, como o resto do painel.
+1 CTA ("Salva pra viagem"), igual à placa do slide 17 (DS 2.7; referência, 3.4). Sem hashtag, como o resto do painel.
 
 ## Texto alternativo (acessibilidade, opcional)
 
@@ -34,12 +34,13 @@ Salva pra viagem.
 | 08 | Vila de Natal na Villa Borghese, com árvore iluminada e uma Torre Eiffel de luzes |
 | 09 | Roteiro do dia 2: Coliseu, Teatro di Marcello, Vittoriano, Aracoeli e Via del Corso |
 | 10 | Vista do Fórum Romano |
-| 11 | Coliseu à noite, com o bilhete "dica: compre cedo" |
+| 11 | Coliseu por fora, de manhã, com o bilhete "dica: compre cedo" |
 | 12 | Comparação entre o ingresso padrão e o ingresso com arena do Coliseu |
 | 13 | Roteiro do dia 3: São Pedro, Sant'Angelo, Sant'Ignazio, Acqua Paola e Piazzale Garibaldi |
 | 14 | Fachada da Basílica de São Pedro |
 | 15 | Diego e Marina sob o teto pintado de Sant'Ignazio |
-| 16 | Veredito "o que não pula: Fórum, Coliseu e Palatino" e a placa "Salva pra viagem" |
+| 16 | Pôr do sol no Gianicolo, no alto de Trastevere |
+| 17 | Veredito "o que não pula: Fórum, Coliseu e Palatino" e a placa "Salva pra viagem" |
 
 ## Na hora de postar
 
