@@ -162,6 +162,7 @@ travel-content-studio/
 ├── CLAUDE.md        este manual
 ├── design-system/   DS V2, tokens, bundle e fontes (ver design-system/README.md)
 ├── docs/            referência de conteúdo Instagram e instrução-base do DS
+├── planejamento/    painel de conteúdo (planejamento-postagens.html), análise estratégica e versões
 └── reels/
     └── apresentacao/  Reel de apresentação do perfil (revisões, QA, scripts, análises)
 ```
@@ -218,6 +219,6 @@ Questões em aberto. Esta seção não cria regras.
 8. **Identidade verbal completa** (vocabulário, bordões recorrentes, regras de escrita) e **direção de imagem:** a V2 cobre só parte. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
 9. **Render pelo Claude:** o CLAUDE.md original dizia que o Claude entrega o plano e o Diego edita no CapCut. Mas a REV7 e a REV8 foram renderizadas por pipeline. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
 10. **Reels que não são de "primeiro dia":** o DS V2 define a estrutura e o checklist para Reels de primeiro dia, mas não para outros tipos, como o de apresentação. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
-11. **Planejamento:** `planejamento-postagens.html` não está neste repositório. Falta definir onde ele fica.
+11. **Planejamento:** resolvida em 05/10/2026. O painel está em `planejamento/planejamento-postagens.html` (v2), com a análise em `planejamento/ANALISE_ESTRATEGICA.md`.
 12. **Narração da REV7:** o CLAUDE.md original apontava `Reels/rev6-referencia/narracao.m4a`. Falta confirmar se é o mesmo arquivo que `reels/apresentacao/narracao/narracao.m4a`.
 13. **Largura da caixa centralizada:** no bundle, a legenda e a legenda emocional mantêm a largura de 872 px. Centrada em x 540, a caixa vai de x 104 a 976 e passa do limite direito da zona segura (944). Uma linha com mais de 808 px ultrapassaria x 944. A largura máxima de linha não está definida pelo material atual — consultar Diego antes de estabelecer como regra.
