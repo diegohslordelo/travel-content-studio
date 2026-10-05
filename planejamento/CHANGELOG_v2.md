@@ -176,15 +176,3 @@ Comparação entre `versoes/painel-v1-original-2026-10-05.html` e `planejamento-
 | p186 | Nível B |
 | n4 | Nível B |
 | p189 | Nível B |
-
-## v2.2 — teaser semanal fixado (05/10/2026, pedido do Diego)
-
-Estado anterior salvo em `versoes/painel-v2.1-2026-10-05.html`. Detalhes e justificativa em `ESTUDO_TEASER.md`.
-
-| Post | Alteração |
-|---|---|
-| p9, p31, p52, p73, p94 | "Primeira hora [cidade]" → **Teaser** (Pergunta "[cidade] em N dias: quanto custou?", Nível A, fixar no perfil) |
-| t1, t2, t3 | novos: teaser de Bruxelas (17/12), Bruges (31/12) e Lisboa (14/01), 12:30 |
-| p15, p36, p56, p77, p98, p119, p140, p161 | trailer: observação do arco do custo e item "Atualizar o link da bio" antes de publicar |
-| Semanas 1, 3, 5, 7, 9, 11, 13, 15 | meta "Teaser do vídeo fixado no perfil (quinta)" |
-| 22/10, 05/11, 19/11, 03/12, 17/12, 31/12, 14/01 | Stories: compartilhar o teaser com figurinha de palpite |

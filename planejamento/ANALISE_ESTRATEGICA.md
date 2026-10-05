@@ -77,7 +77,3 @@ O painel v1 não usa hashtags nas legendas; se usar, no máximo 3 a 5, no fim.
 ## Limites desta análise
 
 Não há dados reais de desempenho (a conta tem 5 dias), então nada aqui prevê viralização. O que a v2 faz é aumentar as chances: hooks claros e curtos, Reels que funcionam sozinhos, utilidade que gera envio e um método para aprender com os primeiros 10 Reels. A pontuação das matrizes dos posts novos (9/10) é julgamento meu, não dado.
-
-## Atualização v2.2 (05/10/2026): teaser volta
-
-O Diego decidiu voltar com o teaser antes de cada vídeo do YouTube, fixado no perfil, porque o Reel "Primeira hora" ficaria parecido com o POV de 20 s. O problema 3 acima continua válido, então o novo teaser **não é só aviso**: entrega 3 preços reais e deixa o total em aberto. Estudo e regras em `ESTUDO_TEASER.md`; alterações em `CHANGELOG_v2.md` (v2.2).
