@@ -1,0 +1,331 @@
+{
+ "arquivo": "barcelona_pov_v2.mp4",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": "24/1",
+  "quadros": 528,
+  "duracao_s": 22.0,
+  "codec": "h264 High",
+  "pix_fmt": "yuv420p",
+  "audio": "aac 48000 Hz 2 canais",
+  "tamanho_mb": 111.8
+ },
+ "audio": {
+  "lufs_integrado": -14.5,
+  "pico_real_dbtp": -1.3,
+  "planos": [
+   {
+    "plano": 1,
+    "lufs_bruto": -33.9,
+    "ganho_db": 13.0
+   },
+   {
+    "plano": 2,
+    "lufs_bruto": -17.7,
+    "ganho_db": -1.6
+   },
+   {
+    "plano": 3,
+    "lufs_bruto": -15.1,
+    "ganho_db": -3.4
+   },
+   {
+    "plano": 4,
+    "lufs_bruto": -19.9,
+    "ganho_db": -0.1
+   },
+   {
+    "plano": 5,
+    "lufs_bruto": -30.4,
+    "ganho_db": 9.8
+   },
+   {
+    "plano": 6,
+    "lufs_bruto": -15.7,
+    "ganho_db": -3.0
+   },
+   {
+    "plano": 7,
+    "lufs_bruto": -21.9,
+    "ganho_db": 1.3
+   }
+  ],
+  "lufs_antes_do_master": -19.8,
+  "ganho_master_db": 5.3
+ },
+ "montagem": {
+  "planos": 7,
+  "cortes": 6,
+  "cortes_s": [
+   3.0,
+   5.458,
+   8.0,
+   11.0,
+   14.0,
+   17.0
+  ],
+  "duracao_planos_s": [
+   3.0,
+   2.458,
+   2.542,
+   3.0,
+   3.0,
+   3.0,
+   5.0
+  ],
+  "duracao_media_s": 3.14,
+  "arrastos": 0,
+  "arrastos_s": [],
+  "transicoes_total": 0,
+  "cortes_secos_pct": 100.0,
+  "loop": "corte seco do último quadro para o quadro 0 (o Instagram repete o Reel)",
+  "quadros_arrasto": {}
+ },
+ "planos": [
+  {
+   "n": 1,
+   "arquivo": "IMG_0894.MOV",
+   "entrada_s": 5.5,
+   "saida_s": 8.5,
+   "no_reel_s": [
+    0.0,
+    3.0
+   ],
+   "categoria": "ruas (abertura)",
+   "descricao": "Caminhando por rua estreita de pedra (Gótico/Born), luz de fim de tarde",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1505,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": "hlg",
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 2,
+   "arquivo": "IMG_0493.MOV",
+   "entrada_s": 0.0,
+   "saida_s": 2.458,
+   "no_reel_s": [
+    3.0,
+    5.458
+   ],
+   "categoria": "transporte",
+   "descricao": "Dentro do metrô (take inteiro)",
+   "transicao": "seco",
+   "recorte": [
+    2160,
+    3840,
+    0,
+    0
+   ],
+   "escala": 0.5,
+   "hdr": "hlg",
+   "fps_bruto": 23.976,
+   "resolucao_bruto": [
+    2160,
+    3840
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 3,
+   "arquivo": "IMG_1032.mov",
+   "entrada_s": 5.0,
+   "saida_s": 7.542,
+   "no_reel_s": [
+    5.458,
+    8.0
+   ],
+   "categoria": "ruas",
+   "descricao": "Andando pela Rambla, gente vindo na direção da câmera",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2158,
+    0,
+    1
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    1214,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 4,
+   "arquivo": "IMG_1221.MOV",
+   "entrada_s": 0.0,
+   "saida_s": 3.0,
+   "no_reel_s": [
+    8.0,
+    11.0
+   ],
+   "categoria": "comida (meio)",
+   "descricao": "Balcão de doces e churros",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    929,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 5,
+   "arquivo": "IMG_0776.MOV",
+   "entrada_s": 5.4,
+   "saida_s": 8.4,
+   "no_reel_s": [
+    11.0,
+    14.0
+   ],
+   "categoria": "arquitetura",
+   "descricao": "Palmeiras abrindo para o Arco do Triunfo",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1159,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": "hlg",
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 6,
+   "arquivo": "IMG_0916_novo_1tBPjG.mov",
+   "entrada_s": 2.5,
+   "saida_s": 5.5,
+   "no_reel_s": [
+    14.0,
+    17.0
+   ],
+   "categoria": "música",
+   "descricao": "Violão flamenco na escadaria da Catedral (vídeo novo do Drive)",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1505,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  },
+  {
+   "n": 7,
+   "arquivo": "IMG_1083.MOV",
+   "entrada_s": 3.0,
+   "saida_s": 8.0,
+   "no_reel_s": [
+    17.0,
+    22.0
+   ],
+   "categoria": "final (clipe que mais prende) + fechamento",
+   "descricao": "Casa Batlló: da calçada até a fachada inteira de Gaudí",
+   "transicao": "seco",
+   "recorte": [
+    1214,
+    2160,
+    1313,
+    0
+   ],
+   "escala": 0.89,
+   "hdr": null,
+   "fps_bruto": 24.0,
+   "resolucao_bruto": [
+    3840,
+    2160
+   ],
+   "quadros_repetidos": 0
+  }
+ ],
+ "objetos": {
+  "placa": {
+   "face_largura": 630,
+   "modulo_largura": 219,
+   "altura": 219,
+   "largura_total": 849,
+   "texto_avanco_px": 558.5
+  },
+  "placa_abertura_quadros": [
+   0,
+   48
+  ],
+  "modulo_1_quadros": [
+   480,
+   528
+  ],
+  "modulo_1": {
+   "lado": 176,
+   "x": 72,
+   "y": 640,
+   "fracao": 0.7,
+   "cor_numero": "#FCFBF8",
+   "_cantos": "radius-plate 16 nos 4 cantos: sozinho, o módulo não encosta na face (na placa, só os cantos da direita são arredondados).",
+   "_material": "DS 1.4 Painel: grafite 900 + filete claro 2 px + shadow-plate.",
+   "nascer_inicio_ms": 400,
+   "_nascer_inicio": "O 1º nasce quando o módulo assenta (fim do retorno da Chegada, 400 ms)."
+  },
+  "textos_na_tela": []
+ },
+ "zona_segura_violacoes": [],
+ "zona_segura_ok": true,
+ "frames_qa": [
+  "barcelona_pov_v2_q000.jpg",
+  "barcelona_pov_v2_q004.jpg",
+  "barcelona_pov_v2_q008.jpg",
+  "barcelona_pov_v2_q012.jpg",
+  "barcelona_pov_v2_q017.jpg",
+  "barcelona_pov_v2_q030.jpg",
+  "barcelona_pov_v2_q036.jpg",
+  "barcelona_pov_v2_q045.jpg",
+  "barcelona_pov_v2_q101.jpg",
+  "barcelona_pov_v2_q161.jpg",
+  "barcelona_pov_v2_q228.jpg",
+  "barcelona_pov_v2_q300.jpg",
+  "barcelona_pov_v2_q372.jpg",
+  "barcelona_pov_v2_q468.jpg",
+  "barcelona_pov_v2_q484.jpg",
+  "barcelona_pov_v2_q497.jpg",
+  "barcelona_pov_v2_q505.jpg",
+  "barcelona_pov_v2_q520.jpg",
+  "barcelona_pov_v2_q527.jpg"
+ ],
+ "versao": "v2 (REV4)",
+ "conceito": "Barcelona em 20 segundos de POV: ruas, metrô, Rambla, comida, Arco do Triunfo, violão na Catedral e Casa Batlló no fim.",
+ "sha256": "dcdb989157728b0add3af87e5c41c88e2217910e4916c2795faad18783930529"
+}

@@ -1,0 +1,72 @@
+{
+ "versao": "v2 (REV4)",
+ "conceito": "Barcelona em 20 segundos de POV: ruas, metrô, Rambla, comida, Arco do Triunfo, violão na Catedral e Casa Batlló no fim.",
+ "gancho": {
+  "ate_s": 2.0
+ },
+ "planos": [
+  {
+   "arquivo": "IMG_0894.MOV",
+   "entrada": 5.5,
+   "duracao": 3.0,
+   "centro_x": 0.55,
+   "categoria": "ruas (abertura)",
+   "descricao": "Caminhando por rua estreita de pedra (Gótico/Born), luz de fim de tarde",
+   "ganho_db": 5.0,
+   "_ganho_db": "Bruto a −33,9 LUFS; o equilíbrio automático para em +8 dB e a rua ficava 6–7 dB abaixo das outras cenas."
+  },
+  {
+   "arquivo": "IMG_0493.MOV",
+   "entrada": 0.0,
+   "duracao": 2.458,
+   "categoria": "transporte",
+   "descricao": "Dentro do metrô (take inteiro)"
+  },
+  {
+   "arquivo": "IMG_1032.mov",
+   "entrada": 5.0,
+   "duracao": 2.542,
+   "categoria": "ruas",
+   "descricao": "Andando pela Rambla, gente vindo na direção da câmera"
+  },
+  {
+   "arquivo": "IMG_1221.MOV",
+   "entrada": 0.0,
+   "duracao": 3.0,
+   "centro_x": 0.4,
+   "categoria": "comida (meio)",
+   "descricao": "Balcão de doces e churros"
+  },
+  {
+   "arquivo": "IMG_0776.MOV",
+   "entrada": 5.4,
+   "duracao": 3.0,
+   "centro_x": 0.46,
+   "categoria": "arquitetura",
+   "descricao": "Palmeiras abrindo para o Arco do Triunfo",
+   "ganho_db": 2.5,
+   "_ganho_db": "Bruto a −30,4 LUFS; +2,5 dB para ficar no nível das outras cenas."
+  },
+  {
+   "arquivo": "IMG_0916_novo_1tBPjG.mov",
+   "entrada": 2.5,
+   "duracao": 3.0,
+   "centro_x": 0.55,
+   "categoria": "música",
+   "descricao": "Violão flamenco na escadaria da Catedral (vídeo novo do Drive)"
+  },
+  {
+   "arquivo": "IMG_1083.MOV",
+   "entrada": 3.0,
+   "duracao": 5.0,
+   "centro_x": 0.5,
+   "categoria": "final (clipe que mais prende) + fechamento",
+   "descricao": "Casa Batlló: da calçada até a fachada inteira de Gaudí"
+  }
+ ],
+ "capa": {
+  "arquivo": "IMG_1083.MOV",
+  "t": 6.5,
+  "centro_y": 0.45
+ }
+}

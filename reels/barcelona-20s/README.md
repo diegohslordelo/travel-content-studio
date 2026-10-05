@@ -4,7 +4,8 @@ Publicação prevista: 04/10/2026, 21:00. Objetivo: retenção e identidade visu
 
 ## Situação
 
-- **REV3 (atual):** `rev3/barcelona20s_rev3.mp4` (21,833 s). Montagem da REV2; abertura com a placa Abertura `POV: 20s EM / BARCELONA →` e fechamento com o módulo 1º do kit do DS (Chegada + Nascer). QA em `rev3/QA_REV3.md`. Render: `python3 rev3/scripts/render.py --fontes PASTA --brutos "fonte/drive/Reels 1"` (fontes: Barlow-Bold, BarlowCondensed-ExtraBold e BarlowCondensed-SemiBold).
+- **REV4 = v2 (atual):** `rev4/barcelona_pov_v2.mp4` (22,000 s) e `rev4/capa_barcelona_pov_v2.jpg`. 7 planos (rua do Gótico → metrô → Rambla → churros → Arco do Triunfo → violão na Catedral → Casa Batlló), música e comida com 3 s, final com o clipe que mais prende. Catálogo dos 35 clipes, linha do tempo, conformidade e legenda do post em `rev4/ENTREGA_V2.md`. Render: `python3 rev4/scripts/render.py --fontes PASTA --brutos "fonte/drive/Reels 1"`.
+- **REV3 = v1:** `rev3/barcelona20s_rev3.mp4` (21,833 s). Montagem da REV2; abertura com a placa Abertura `POV: 20s EM / BARCELONA →` e fechamento com o módulo 1º do kit do DS (Chegada + Nascer). QA em `rev3/QA_REV3.md`. Render: `python3 rev3/scripts/render.py --fontes PASTA --brutos "fonte/drive/Reels 1"` (fontes: Barlow-Bold, BarlowCondensed-ExtraBold e BarlowCondensed-SemiBold).
 - **REV2 (substituída):** `rev2/barcelona20s_rev2.mp4` (21,833 s). Quatro planos longos (ruas → metrô → sax → churros), só cortes secos, placa só na abertura e o símbolo 1º no fechamento. QA em `rev2/QA_REV2.md`. Render: `python3 rev2/scripts/render.py --fontes PASTA --brutos "fonte/drive/Reels 1"`.
 - **REV1 (substituída):** versões A e B com 8 planos cada, cortes a cada 2–3 s. QA em `rev1/QA_REV1.md`. O Diego pediu menos cortes; a estrutura abaixo é a da REV1.
 - Brutos: pasta do Drive "Reels 1" (35 arquivos), baixada em `fonte/drive/Reels 1/` (fora do git).
