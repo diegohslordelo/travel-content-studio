@@ -1,0 +1,7 @@
+{
+  "peca": "Thumbnail do vlog 'Barcelona (3 dias)' no YouTube (planejamento p13, 10/10/2026)",
+  "canvas": [1280, 720],
+  "placa": {"rotulo": "3 DIAS EM", "destino": "BARCELONA"},
+  "recibo": {"total": "€ ???", "nota": "Trocar pelo total real dos 3 dias quando o Diego confirmar (ex.: \"€ 1.234,56\"). Nunca inventar."},
+  "fundo": {"recorte": [0.0, 0.0, 1.0, 0.39], "largura": 2600, "contraste": 10}
+}

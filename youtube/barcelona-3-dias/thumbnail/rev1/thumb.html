@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Thumbnail Barcelona 3 dias · REV1</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="../../../../design-system/bundle/pd-bundle.css">
+<style>
+/* DS V2, 5.5 Thumbnails: 1280 × 720, margem 48, zona proibida x > 1040 e y > 600.
+   Fórmula: lugar (placa) + emoção (rosto) + prova (recibo). Só valores dos tokens e do bundle. */
+body{margin:0;background:#26292F}
+.thumb{position:relative;width:1280px;height:720px;overflow:hidden;background:var(--pd-n)}
+/* Camada 1: fundo (Sagrada Família), frame real com contraste +10 */
+.fundo{position:absolute;left:-640px;top:-372px;width:2100px}
+/* Camada 2: Diego e Marina recortados, na frente da placa (parallax de 2 camadas, DS 4.5) */
+.pessoas{position:absolute;left:373px;top:112px;width:1102px;z-index:30;filter:drop-shadow(0 18px 32px rgba(0,0,0,.55));-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 160px);mask-image:linear-gradient(90deg,transparent 0,#000 160px)}
+/* Scrim da base (gradiente grafite 0 → 63%, op-scrim), atrás das pessoas: dá contraste ao recibo sobre o céu */
+.scrim{position:absolute;left:0;right:0;bottom:0;height:360px;background:linear-gradient(180deg,rgba(18,19,23,0) 0%,rgba(18,19,23,.63) 100%);z-index:10}
+/* Placa pequena (75%) no canto superior esquerdo, margem 48 (DS 2.1 e 5.5) */
+.placa{left:48px;top:48px;transform-origin:0 0;scale:.75;z-index:20}
+/* Recibo com o total (DS 2.6) a 70% (escala dos objetos na thumbnail, DS 2.2 e 2.3), na base esquerda (margem 48), na frente do braço.
+   Total em PD Placar 128 px, como no hook de Preço (DS 5.1). */
+.recibo{left:48px;bottom:48px;top:auto;width:600px;transform-origin:0 100%;scale:.7;z-index:40}
+.linha{ /* linhas de itens sem texto: a peça tem no máximo 4 palavras (DS 5.5) */
+  display:flex;justify-content:space-between;gap:24px;padding:16px 0 0}
+.linha i{display:block;height:18px;border-radius:2px;background:var(--pd-n3)}
+.recibo .pd-receipt__tot{justify-content:flex-end}
+.recibo .pd-receipt__tot b{font-size:128px}
+.grain{position:absolute;inset:0;background:var(--pd-grain);opacity:.05;mix-blend-mode:overlay;pointer-events:none;z-index:50}
+</style>
+</head>
+<body>
+<section class="thumb" id="thumb">
+  <img class="fundo" src="assets/fundo.jpg" alt="">
+  <div class="scrim"></div>
+  <div class="pd-plate placa">
+    <div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__label" id="rotulo">3 DIAS EM</div><div class="pd-plate__dest" id="destino">BARCELONA</div><div class="pd-sheen" style="transform:translateX(90%) skewX(-14deg)"></div></div>
+    <div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div>
+  </div>
+  <img class="pessoas" src="assets/pessoas.png" alt="">
+  <div class="pd-receipt recibo">
+    <div class="pd-receipt__body">
+      <div class="linha"><i style="width:44%"></i><i style="width:22%"></i></div>
+      <div class="linha"><i style="width:58%"></i><i style="width:18%"></i></div>
+      <div class="linha"><i style="width:36%"></i><i style="width:24%"></i></div>
+      <div class="linha"><i style="width:50%"></i><i style="width:20%"></i></div>
+      <div class="pd-receipt__tot"><b id="total">€ ???</b></div>
+    </div>
+    <div class="pd-receipt__teeth"></div>
+  </div>
+  <div class="grain"></div>
+</section>
+</body>
+</html>
