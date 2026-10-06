@@ -13,6 +13,7 @@ As regras visuais estão nos arquivos abaixo e não são repetidas aqui.
 | `bundle/pd-bundle.css` | Estilos dos componentes usados nas prévias |
 | `bundle/pd-bundle.js` | Funções auxiliares das prévias (`window.PD`) |
 | `sons/LISTA_DE_GRAVACAO.md` | Roteiro de gravação dos 9 sons da marca (`PD_*.wav`) |
+| `kit/youtube/` | Kit de PNG do YouTube (84 PNGs, manual de montagem no CapCut e gerador de lugares, valores e recibos). Ver `kit/youtube/LEIA-ME.md` |
 | `fonts/` | Fontes do sistema. **Está vazia:** nenhum arquivo de fonte do DS V2 estava disponível na migração |
 
 Os arquivos foram copiados sem alteração na migração. As mudanças posteriores estão registradas abaixo e no Changelog do brand book (7.4).
@@ -33,6 +34,8 @@ Os documentos de apoio ficam em `../docs/`:
 
 **Bundle alinhado aos tokens e ao brand book (05/10/2026):** Chegada 560 ms (passa +24 px em 280 ms, assenta em 400 ms, empurrão da seta 400–560 ms, brilho 700–1300 ms, desfoque 12 px); scrim inferior 0 → 63% de y 1150 a 1500 e superior a 63%; grão 5% e fibra 4%; face da placa com padding 28 × 36, filete a 25% e rebites de 10 px a 22 px; mini-placa em Barlow com padding 4/14. O **módulo de seta** já usava 221 px, valor oficializado na 2.2.0. Os componentes novos do YouTube ainda não têm prévia no bundle.
 
+**Bundle corrigido (06/10/2026):** valor da Etiqueta 68 → 64 px (DS 2.6) e caneta do Bilhete 76 → 72 px (DS 1.2, "vídeo 72"), divergências achadas ao gerar o kit do YouTube.
+
 ## Fontes
 
 `fonts/` tem Barlow, Barlow Condensed, IBM Plex Mono e Reenie Beanie (caneta provisória), em `.ttf` (detalhes em `fonts/LEIA-ME.md`). Faltam:
@@ -44,7 +47,7 @@ O `pd-bundle.css` carrega Barlow, Barlow Condensed, IBM Plex Mono e Reenie Beani
 ## Pendências do próprio DS (sem arquivo ainda)
 
 - Sons `PD_*.wav` (como gravar: `sons/LISTA_DE_GRAVACAO.md`)
-- Kit de PNG (incluindo os do YouTube, 6.1)
+- Kit de PNG dos Reels (o do YouTube está em `kit/youtube/`)
 - Projetos-modelo do CapCut
 - Prévia no bundle dos componentes do YouTube
 

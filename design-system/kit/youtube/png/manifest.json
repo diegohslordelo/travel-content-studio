@@ -1,0 +1,852 @@
+{
+  "margem_px": 64,
+  "gerado": "2026-10-06",
+  "arquivos": [
+    {
+      "arquivo": "placas/titulo/PD_placa_titulo_PRIMEIRO-DIA_1_face.png",
+      "w": 996,
+      "h": 299,
+      "ox": 64,
+      "oy": 64,
+      "ow": 868,
+      "oh": 171,
+      "nota": "Título de Marca (G). Posição: x 96, centro vertical em y 540."
+    },
+    {
+      "arquivo": "placas/titulo/PD_placa_titulo_PRIMEIRO-DIA_2_modulo.png",
+      "w": 996,
+      "h": 299,
+      "ox": 759,
+      "oy": 64,
+      "ow": 173,
+      "oh": 171,
+      "nota": "Mesmo tamanho de PNG da face: empilhe na mesma posição."
+    },
+    {
+      "arquivo": "placas/titulo/PD_placa_titulo_PRIMEIRO-DIA_3_sombra.png",
+      "w": 996,
+      "h": 299,
+      "ox": 64,
+      "oy": 64,
+      "ow": 868,
+      "oh": 171,
+      "nota": "Sombra isolada: camada abaixo da face."
+    },
+    {
+      "arquivo": "placas/titulo/PD_placa_titulo_PRIMEIRO-DIA_completa.png",
+      "w": 996,
+      "h": 299,
+      "ox": 64,
+      "oy": 64,
+      "ow": 868,
+      "oh": 171,
+      "nota": "Prévia / uso estático (sem animação de camadas)."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-1_1_face.png",
+      "w": 432,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 304,
+      "oh": 112,
+      "nota": "Capítulo (M). Posição: x 96 · y 96."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-1_2_modulo.png",
+      "w": 432,
+      "h": 240,
+      "ox": 254,
+      "oy": 64,
+      "ow": 114,
+      "oh": 112,
+      "nota": "Mesmo tamanho de PNG da face: empilhe na mesma posição."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-1_3_sombra.png",
+      "w": 432,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 304,
+      "oh": 112,
+      "nota": "Sombra isolada: camada abaixo da face."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-1_completa.png",
+      "w": 432,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 304,
+      "oh": 112,
+      "nota": "Prévia / uso estático (sem animação de camadas)."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-2_1_face.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Capítulo (M). Posição: x 96 · y 96."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-2_2_modulo.png",
+      "w": 444,
+      "h": 240,
+      "ox": 266,
+      "oy": 64,
+      "ow": 114,
+      "oh": 112,
+      "nota": "Mesmo tamanho de PNG da face: empilhe na mesma posição."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-2_3_sombra.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Sombra isolada: camada abaixo da face."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-2_completa.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Prévia / uso estático (sem animação de camadas)."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-3_1_face.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Capítulo (M). Posição: x 96 · y 96."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-3_2_modulo.png",
+      "w": 444,
+      "h": 240,
+      "ox": 266,
+      "oy": 64,
+      "ow": 114,
+      "oh": 112,
+      "nota": "Mesmo tamanho de PNG da face: empilhe na mesma posição."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-3_3_sombra.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Sombra isolada: camada abaixo da face."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-3_completa.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Prévia / uso estático (sem animação de camadas)."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-4_1_face.png",
+      "w": 449,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 321,
+      "oh": 112,
+      "nota": "Capítulo (M). Posição: x 96 · y 96."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-4_2_modulo.png",
+      "w": 449,
+      "h": 240,
+      "ox": 271,
+      "oy": 64,
+      "ow": 114,
+      "oh": 112,
+      "nota": "Mesmo tamanho de PNG da face: empilhe na mesma posição."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-4_3_sombra.png",
+      "w": 449,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 321,
+      "oh": 112,
+      "nota": "Sombra isolada: camada abaixo da face."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-4_completa.png",
+      "w": 449,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 321,
+      "oh": 112,
+      "nota": "Prévia / uso estático (sem animação de camadas)."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-5_1_face.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Capítulo (M). Posição: x 96 · y 96."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-5_2_modulo.png",
+      "w": 444,
+      "h": 240,
+      "ox": 266,
+      "oy": 64,
+      "ow": 114,
+      "oh": 112,
+      "nota": "Mesmo tamanho de PNG da face: empilhe na mesma posição."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-5_3_sombra.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Sombra isolada: camada abaixo da face."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-5_completa.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Prévia / uso estático (sem animação de camadas)."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-6_1_face.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Capítulo (M). Posição: x 96 · y 96."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-6_2_modulo.png",
+      "w": 444,
+      "h": 240,
+      "ox": 266,
+      "oy": 64,
+      "ow": 114,
+      "oh": 112,
+      "nota": "Mesmo tamanho de PNG da face: empilhe na mesma posição."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-6_3_sombra.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Sombra isolada: camada abaixo da face."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-6_completa.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Prévia / uso estático (sem animação de camadas)."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-7_1_face.png",
+      "w": 442,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 314,
+      "oh": 112,
+      "nota": "Capítulo (M). Posição: x 96 · y 96."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-7_2_modulo.png",
+      "w": 442,
+      "h": 240,
+      "ox": 264,
+      "oy": 64,
+      "ow": 114,
+      "oh": 112,
+      "nota": "Mesmo tamanho de PNG da face: empilhe na mesma posição."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-7_3_sombra.png",
+      "w": 442,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 314,
+      "oh": 112,
+      "nota": "Sombra isolada: camada abaixo da face."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-7_completa.png",
+      "w": 442,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 314,
+      "oh": 112,
+      "nota": "Prévia / uso estático (sem animação de camadas)."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-8_1_face.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Capítulo (M). Posição: x 96 · y 96."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-8_2_modulo.png",
+      "w": 444,
+      "h": 240,
+      "ox": 266,
+      "oy": 64,
+      "ow": 114,
+      "oh": 112,
+      "nota": "Mesmo tamanho de PNG da face: empilhe na mesma posição."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-8_3_sombra.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Sombra isolada: camada abaixo da face."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-8_completa.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Prévia / uso estático (sem animação de camadas)."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-9_1_face.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Capítulo (M). Posição: x 96 · y 96."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-9_2_modulo.png",
+      "w": 444,
+      "h": 240,
+      "ox": 266,
+      "oy": 64,
+      "ow": 114,
+      "oh": 112,
+      "nota": "Mesmo tamanho de PNG da face: empilhe na mesma posição."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-9_3_sombra.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Sombra isolada: camada abaixo da face."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-9_completa.png",
+      "w": 444,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 316,
+      "oh": 112,
+      "nota": "Prévia / uso estático (sem animação de camadas)."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-10_1_face.png",
+      "w": 468,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 340,
+      "oh": 112,
+      "nota": "Capítulo (M). Posição: x 96 · y 96."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-10_2_modulo.png",
+      "w": 468,
+      "h": 240,
+      "ox": 290,
+      "oy": 64,
+      "ow": 114,
+      "oh": 112,
+      "nota": "Mesmo tamanho de PNG da face: empilhe na mesma posição."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-10_3_sombra.png",
+      "w": 468,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 340,
+      "oh": 112,
+      "nota": "Sombra isolada: camada abaixo da face."
+    },
+    {
+      "arquivo": "placas/capitulo/PD_placa_capitulo_DIA-10_completa.png",
+      "w": 468,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 340,
+      "oh": 112,
+      "nota": "Prévia / uso estático (sem animação de camadas)."
+    },
+    {
+      "arquivo": "placas/cta/PD_placa_cta_INSCREVA-SE_1_face.png",
+      "w": 672,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 544,
+      "oh": 112,
+      "nota": "CTA (M). Posição: x 96 · base y 960, entre 30% e 40% do vídeo."
+    },
+    {
+      "arquivo": "placas/cta/PD_placa_cta_INSCREVA-SE_2_modulo.png",
+      "w": 672,
+      "h": 240,
+      "ox": 494,
+      "oy": 64,
+      "ow": 114,
+      "oh": 112,
+      "nota": "Mesmo tamanho de PNG da face: empilhe na mesma posição."
+    },
+    {
+      "arquivo": "placas/cta/PD_placa_cta_INSCREVA-SE_3_sombra.png",
+      "w": 672,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 544,
+      "oh": 112,
+      "nota": "Sombra isolada: camada abaixo da face."
+    },
+    {
+      "arquivo": "placas/cta/PD_placa_cta_INSCREVA-SE_completa.png",
+      "w": 672,
+      "h": 240,
+      "ox": 64,
+      "oy": 64,
+      "ow": 544,
+      "oh": 112,
+      "nota": "Prévia / uso estático (sem animação de camadas)."
+    },
+    {
+      "arquivo": "placas/PD_brilho.png",
+      "w": 200,
+      "h": 400,
+      "ox": -20,
+      "oy": -40,
+      "ow": 240,
+      "oh": 480,
+      "nota": "200 × 400, branco 40%. Modo de mesclagem: Luz suave. Atravessa a face da esquerda para a direita (700–1300 ms)."
+    },
+    {
+      "arquivo": "objetos/PD_carimbo_perrengue_sem-data.png",
+      "w": 841,
+      "h": 417,
+      "ox": 76,
+      "oy": 48,
+      "ow": 689,
+      "oh": 321,
+      "nota": "Rotação −7° já aplicada. A data (Plex Mono 28, vermelho) entra como texto no CapCut, na faixa de baixo."
+    },
+    {
+      "arquivo": "objetos/ticket/PD_ticket_surpreende_DIA-1.png",
+      "w": 947,
+      "h": 366,
+      "ox": 82,
+      "oy": 61,
+      "ow": 783,
+      "oh": 244,
+      "nota": "Sem estrela (rotação +4° aplicada). A estrela é a camada PD_ticket_estrela.png."
+    },
+    {
+      "arquivo": "objetos/ticket/(centro da estrela no PNG do ticket)",
+      "cx": 749,
+      "cy": 202,
+      "nota": "Centro da estrela dentro do PNG do ticket (px)."
+    },
+    {
+      "arquivo": "objetos/ticket/PD_ticket_surpreende_DIA-2.png",
+      "w": 947,
+      "h": 366,
+      "ox": 82,
+      "oy": 61,
+      "ow": 783,
+      "oh": 244,
+      "nota": "Sem estrela (rotação +4° aplicada). A estrela é a camada PD_ticket_estrela.png."
+    },
+    {
+      "arquivo": "objetos/ticket/PD_ticket_surpreende_DIA-3.png",
+      "w": 947,
+      "h": 366,
+      "ox": 82,
+      "oy": 61,
+      "ow": 783,
+      "oh": 244,
+      "nota": "Sem estrela (rotação +4° aplicada). A estrela é a camada PD_ticket_estrela.png."
+    },
+    {
+      "arquivo": "objetos/ticket/PD_ticket_surpreende_DIA-4.png",
+      "w": 947,
+      "h": 366,
+      "ox": 82,
+      "oy": 61,
+      "ow": 783,
+      "oh": 244,
+      "nota": "Sem estrela (rotação +4° aplicada). A estrela é a camada PD_ticket_estrela.png."
+    },
+    {
+      "arquivo": "objetos/ticket/PD_ticket_surpreende_DIA-5.png",
+      "w": 947,
+      "h": 366,
+      "ox": 82,
+      "oy": 61,
+      "ow": 783,
+      "oh": 244,
+      "nota": "Sem estrela (rotação +4° aplicada). A estrela é a camada PD_ticket_estrela.png."
+    },
+    {
+      "arquivo": "objetos/ticket/PD_ticket_surpreende_DIA-6.png",
+      "w": 947,
+      "h": 366,
+      "ox": 82,
+      "oy": 61,
+      "ow": 783,
+      "oh": 244,
+      "nota": "Sem estrela (rotação +4° aplicada). A estrela é a camada PD_ticket_estrela.png."
+    },
+    {
+      "arquivo": "objetos/ticket/PD_ticket_surpreende_DIA-7.png",
+      "w": 947,
+      "h": 366,
+      "ox": 82,
+      "oy": 61,
+      "ow": 783,
+      "oh": 244,
+      "nota": "Sem estrela (rotação +4° aplicada). A estrela é a camada PD_ticket_estrela.png."
+    },
+    {
+      "arquivo": "objetos/ticket/PD_ticket_surpreende_DIA-8.png",
+      "w": 947,
+      "h": 366,
+      "ox": 82,
+      "oy": 61,
+      "ow": 783,
+      "oh": 244,
+      "nota": "Sem estrela (rotação +4° aplicada). A estrela é a camada PD_ticket_estrela.png."
+    },
+    {
+      "arquivo": "objetos/ticket/PD_ticket_surpreende_DIA-9.png",
+      "w": 947,
+      "h": 366,
+      "ox": 82,
+      "oy": 61,
+      "ow": 783,
+      "oh": 244,
+      "nota": "Sem estrela (rotação +4° aplicada). A estrela é a camada PD_ticket_estrela.png."
+    },
+    {
+      "arquivo": "objetos/ticket/PD_ticket_surpreende_DIA-10.png",
+      "w": 965,
+      "h": 366,
+      "ox": 82,
+      "oy": 61,
+      "ow": 800,
+      "oh": 245,
+      "nota": "Sem estrela (rotação +4° aplicada). A estrela é a camada PD_ticket_estrela.png."
+    },
+    {
+      "arquivo": "objetos/ticket/PD_ticket_estrela.png",
+      "w": 132,
+      "h": 132,
+      "ox": 21,
+      "oy": 21,
+      "ow": 90,
+      "oh": 90,
+      "nota": "Estrela 84 px (rotação +4°). Furo: escala 0 → 115% → 100% em 160 ms."
+    },
+    {
+      "arquivo": "objetos/PD_bilhete_vazio.png",
+      "w": 785,
+      "h": 323,
+      "ox": 59,
+      "oy": 47,
+      "ow": 667,
+      "oh": 229,
+      "nota": "Papel para 2 linhas × 22 caracteres (rotação +3° aplicada). Texto no CapCut."
+    },
+    {
+      "arquivo": "gerados/bilhete/PD_bilhete_NO-FIM-VALE-OU-PULA.png",
+      "w": 538,
+      "h": 323,
+      "ox": 59,
+      "oy": 53,
+      "ow": 420,
+      "oh": 216,
+      "nota": "Bilhete pronto."
+    },
+    {
+      "arquivo": "gerados/bilhete/PD_bilhete_PROXIMO.png",
+      "w": 384,
+      "h": 249,
+      "ox": 61,
+      "oy": 57,
+      "ow": 262,
+      "oh": 135,
+      "nota": "Bilhete pronto."
+    },
+    {
+      "arquivo": "objetos/status/PD_status_vale.png",
+      "w": 300,
+      "h": 192,
+      "ox": 64,
+      "oy": 64,
+      "ow": 172,
+      "oh": 64,
+      "nota": "Preso na Placa de Lugar (encosta à direita, sobrepõe 24 px) ou no Recibo."
+    },
+    {
+      "arquivo": "objetos/status/PD_status_pula.png",
+      "w": 304,
+      "h": 192,
+      "ox": 64,
+      "oy": 64,
+      "ow": 176,
+      "oh": 64,
+      "nota": "Preso na Placa de Lugar (encosta à direita, sobrepõe 24 px) ou no Recibo."
+    },
+    {
+      "arquivo": "objetos/status/PD_status_depende.png",
+      "w": 314,
+      "h": 192,
+      "ox": 64,
+      "oy": 64,
+      "ow": 186,
+      "oh": 64,
+      "nota": "Preso na Placa de Lugar (encosta à direita, sobrepõe 24 px) ou no Recibo."
+    },
+    {
+      "arquivo": "objetos/PD_placar_painel.png",
+      "w": 635,
+      "h": 224,
+      "ox": 64,
+      "oy": 64,
+      "ow": 507,
+      "oh": 96,
+      "nota": "Textos (Barlow Condensed Bold 56, #FFC21A, algarismos tabulares): tempo começa em x 146, valor em x 350 (px dentro do PNG), y 84. Posição: x 96 · y 72."
+    },
+    {
+      "arquivo": "objetos/recibo/PD_recibo_topo.png",
+      "w": 600,
+      "h": 40,
+      "ox": 0,
+      "oy": 0,
+      "ow": 600,
+      "oh": 40,
+      "nota": "600 × 40, papel recibo."
+    },
+    {
+      "arquivo": "objetos/recibo/PD_recibo_base_serrilhada.png",
+      "w": 600,
+      "h": 22,
+      "ox": 0,
+      "oy": 0,
+      "ow": 600,
+      "oh": 22,
+      "nota": "600 × 22, dentes da borda de baixo."
+    },
+    {
+      "arquivo": "gerados/recibo/PD_recibo_viagem_ROMA.png",
+      "w": 728,
+      "h": 832,
+      "ox": 64,
+      "oy": 64,
+      "ow": 600,
+      "oh": 704,
+      "nota": "Recibo pronto. Posição: alinhado à direita em x 1824, topo y 96."
+    },
+    {
+      "arquivo": "gerados/valor/PD_valor_PANTEAO-INGRESSO-5-00.png",
+      "w": 788,
+      "h": 281,
+      "ox": 64,
+      "oy": 64,
+      "ow": 660,
+      "oh": 153,
+      "nota": "Etiqueta de valor. Posição: alinhada à direita em x 1824 · base y 960."
+    },
+    {
+      "arquivo": "gerados/lugar/PD_yt_lugar_FONTANA-DI-TREVI.png",
+      "w": 700,
+      "h": 279,
+      "ox": 64,
+      "oy": 64,
+      "ow": 572,
+      "oh": 151,
+      "nota": "Placa de Lugar. Posição: x 96 · base y 960. Fica 4 s."
+    },
+    {
+      "arquivo": "gerados/lugar/PD_yt_lugar_PANTEAO.png",
+      "w": 700,
+      "h": 279,
+      "ox": 64,
+      "oy": 64,
+      "ow": 572,
+      "oh": 151,
+      "nota": "Placa de Lugar. Posição: x 96 · base y 960. Fica 4 s."
+    },
+    {
+      "arquivo": "encerramento/PD_simbolo_1_1_numero_168.png",
+      "w": 216,
+      "h": 216,
+      "ox": 24,
+      "oy": 24,
+      "ow": 168,
+      "oh": 168,
+      "nota": "Símbolo 1º (168 px), camadas do mesmo tamanho. Encerramento: centro em x 960 · y 540, sobre grafite."
+    },
+    {
+      "arquivo": "encerramento/PD_simbolo_1_2_sol_168.png",
+      "w": 216,
+      "h": 216,
+      "ox": 24,
+      "oy": 24,
+      "ow": 168,
+      "oh": 168,
+      "nota": "Símbolo 1º (168 px), camadas do mesmo tamanho. Encerramento: centro em x 960 · y 540, sobre grafite."
+    },
+    {
+      "arquivo": "encerramento/PD_simbolo_1_3_horizonte_168.png",
+      "w": 216,
+      "h": 216,
+      "ox": 24,
+      "oy": 24,
+      "ow": 168,
+      "oh": 168,
+      "nota": "Símbolo 1º (168 px), camadas do mesmo tamanho. Encerramento: centro em x 960 · y 540, sobre grafite."
+    },
+    {
+      "arquivo": "encerramento/PD_simbolo_1_completo_168.png",
+      "w": 216,
+      "h": 216,
+      "ox": 24,
+      "oy": 24,
+      "ow": 168,
+      "oh": 168,
+      "nota": "Símbolo 1º (168 px), camadas do mesmo tamanho. Encerramento: centro em x 960 · y 540, sobre grafite."
+    },
+    {
+      "arquivo": "abertura/PD_yt_cursor.png",
+      "w": 34,
+      "h": 60,
+      "ox": 0,
+      "oy": 0,
+      "ow": 34,
+      "oh": 60,
+      "nota": "Cursor em bloco (Plex Mono 56). Pisca a cada 500 ms. Fundo: cor sólida #121317 no CapCut."
+    },
+    {
+      "arquivo": "youtube/PD_yt_scrim_base.png",
+      "w": 1920,
+      "h": 320,
+      "ox": 0,
+      "oy": 0,
+      "ow": 1920,
+      "oh": 320,
+      "nota": "Coloque em y 760 (base em 1080). Só enquanto houver texto na base; entra e sai em 240 ms."
+    },
+    {
+      "arquivo": "youtube/PD_yt_varredura.png",
+      "w": 2100,
+      "h": 1160,
+      "ox": 0,
+      "oy": 0,
+      "ow": 2100,
+      "oh": 1160,
+      "nota": "2100 × 1160: comece em X −2100 (fora à esquerda), y −40; atravesse até sair à direita em 320 ms; corte para a cena nova na metade."
+    },
+    {
+      "arquivo": "youtube/PD_yt_tela_final_fundo.png",
+      "w": 1920,
+      "h": 1080,
+      "ox": 0,
+      "oy": 0,
+      "ow": 1920,
+      "oh": 1080,
+      "nota": "1920 × 1080: grafite + grão 5% + 1º 96 px em x 96 · y 96. Últimos 5–20 s."
+    },
+    {
+      "arquivo": "youtube/PD_yt_tela_final_GUIA.png",
+      "w": 1920,
+      "h": 1080,
+      "ox": 0,
+      "oy": 0,
+      "ow": 1920,
+      "oh": 1080,
+      "nota": "Só guia: não exportar no vídeo."
+    },
+    {
+      "arquivo": "youtube/PD_yt_GUIA_zonas.png",
+      "w": 1920,
+      "h": 1080,
+      "ox": 0,
+      "oy": 0,
+      "ow": 1920,
+      "oh": 1080,
+      "nota": "Só guia de posicionamento no CapCut: desligar antes de exportar."
+    }
+  ]
+}

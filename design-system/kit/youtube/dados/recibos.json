@@ -1,0 +1,12 @@
+[
+  {
+    "arquivo": "PD_recibo_viagem_ROMA",
+    "_fonte": "Exemplo real: carrossel Roma REV1 (slide 02)",
+    "titulo": "ROMA · 3 DIAS",
+    "sub": "24 A 28/12/2024 · POR PESSOA",
+    "linhas": [["Ingressos", "47,60"], ["Passe 72 h", "22,00"], ["Comida e bebida", "130,30"], ["Hotel · 4 noites", "221,60"]],
+    "total": "€ 421,50",
+    "brl": "≈ R$ 2.698",
+    "rodape": "COTAÇÃO € 1 = R$ 6,40 · 24/12/2024"
+  }
+]

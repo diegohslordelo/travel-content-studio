@@ -5,7 +5,7 @@ Baixadas do repositório oficial `google/fonts` em 06/10/2026. Licença **OFL 1.
 | Arquivo | Uso no DS V2 |
 |---|---|
 | `Barlow-Medium.ttf` (500), `Barlow-SemiBold.ttf` (600), `Barlow-Bold.ttf` (700) | Legendas e texto |
-| `BarlowCondensed-Light.ttf`, `-LightItalic.ttf` (300 e 300 itálico), `-SemiBold.ttf` (600), `-Bold.ttf` (700), `-ExtraBold.ttf` (800) | Placa, títulos, editorial |
+| `BarlowCondensed-Light.ttf`, `-LightItalic.ttf` (300 e 300 itálico), `-SemiBold.ttf` (600), `-Bold.ttf` (700), `-ExtraBold.ttf` (800), `-ExtraBoldItalic.ttf` (800 itálico, Ticket SURPREENDE) | Placa, títulos, editorial |
 | `IBMPlexMono-Medium.ttf` (500) | Microcopy, recibo, coordenadas |
 | `ReenieBeanie.ttf` | Caneta Diego (provisória) |
 
