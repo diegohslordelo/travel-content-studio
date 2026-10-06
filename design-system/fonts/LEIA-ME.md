@@ -1,6 +1,6 @@
 # Fontes do DS V2
 
-Baixadas do repositório oficial `google/fonts` em 06/10/2026. Licença **OFL 1.1** (Barlow, Barlow Condensed, Reenie Beanie, IBM Plex Mono) e **Apache 2.0** (Reenie Beanie, conforme a pasta de origem). Uso livre, inclusive comercial.
+Baixadas do repositório oficial `google/fonts` em 06/10/2026. Licença **OFL 1.1** (todas as fontes desta pasta). Uso livre, inclusive comercial.
 
 | Arquivo | Uso no DS V2 |
 |---|---|
