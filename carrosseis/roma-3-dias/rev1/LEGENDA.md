@@ -5,22 +5,26 @@
 ## Legenda (copiar)
 
 ```
-Roma em 3 dias: € 421,50 por pessoa (≈ R$ 2.698), com hotel.
+Quer saber como gastar menos em Roma? 👇
 
-Quanto gastei em 3 dias em Roma, dia a dia, e o que valeu a pena: ingressos, passe de transporte, comida e hospedagem, com preço real de dezembro de 2024.
+Roma em 3 dias: € 421,50 por pessoa (≈ R$ 2.698), com hotel. Sem o hotel, foram € 199,90 (≈ R$ 1.279). Tudo com preço real de dezembro de 2024.
 
-Hotel: apartamento dividido por 5 pessoas no Monti, € 221,60 por pessoa em 4 noites. Quem for em 2 paga mais. Sem o hotel, foram € 199,90 (≈ R$ 1.279).
+🏠 Fomos em 5 pessoas e alugamos um apartamento no Monti: € 221,60 por pessoa em 4 noites. Dividir a hospedagem foi o que mais baixou o custo. Quem for em 2 paga mais.
 
-Cotação: € 1 = R$ 6,40 (PTAX, 24/12/2024). No slide 12, preços do Coliseu de 2026 (€ 1 = R$ 5,88, 02/10/2026).
+🥙 Como era fim de ano (e tudo fica mais caro), criamos uma regra: de dia, comida de rua, que também mostra o melhor da culinária italiana. 🍝 À noite, sentar e jantar com calma, gastando mais nos pratos.
+
+🛒 Toda manhã passávamos no mercado para comprar snacks e bebidas e levar na bolsa. Assim, água, refri e até o vinho do fim de tarde não pesavam no bolso.
+
+🎟️ Os passeios pagos variam muito de pessoa para pessoa. Fizemos poucos, só os que faziam sentido pra gente. Tem quem queira entrar no Castelo Sant'Angelo ou nos Museus do Vaticano. A gente bem que tentou a Capela Sistina, mas deixou para comprar tarde: no site oficial já não tinha ingresso, e nas empresas terceiras estava caro demais. Se ela estiver nos seus planos, compre com antecedência. Monte o seu roteiro pelo que te interessa! ✨
 
 O que mudou desde a nossa viagem: desde fevereiro de 2026, chegar perto da Fontana di Trevi custa € 2 (olhar de fora continua grátis), e desde julho de 2026 o Panteão custa € 7.
 
-Roteiro e custos de Roma, Itália, para quem vai viajar.
+Cotação: € 1 = R$ 6,40 (PTAX, 24/12/2024). No slide 12, preços do Coliseu de 2026 (€ 1 = R$ 5,88, 02/10/2026).
 
-Salva pra viagem.
+Salva esse post pra sua viagem a Roma! 🇮🇹
 ```
 
-1 CTA ("Salva pra viagem"), igual à placa do slide 17 (DS 2.7; referência, 3.4). Sem hashtag, como o resto do painel.
+1 CTA ("Salva pra viagem"), igual à placa do slide 17 (DS 2.7; referência, 3.4). Sem hashtag, como o resto do painel. Emojis só na legenda (na arte o DS não usa emoji).
 
 ## Texto alternativo (acessibilidade, opcional)
 
