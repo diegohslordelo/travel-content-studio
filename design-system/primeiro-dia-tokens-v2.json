@@ -1,5 +1,5 @@
 {
-  "$description": "Primeiro Dia (@primeirodiaem) — tokens v2.2.0 (proposta, 06/10/2026; vigente 2.1.0 até aprovação) (REV 2 'Objetos do Primeiro Dia'), 05/10/2026 (2.0.0 em 01/10/2026). W3C DTCG 2025.10. Primitivos → semânticos → componentes. Substitui primeiro-dia-tokens-v1.json.",
+  "$description": "Primeiro Dia (@primeirodiaem) — tokens v2.2.0 (06/10/2026, aprovada) (REV 2 'Objetos do Primeiro Dia'), 05/10/2026 (2.0.0 em 01/10/2026). W3C DTCG 2025.10. Primitivos → semânticos → componentes. Substitui primeiro-dia-tokens-v1.json.",
   "color": {
     "signal": {
       "100": {

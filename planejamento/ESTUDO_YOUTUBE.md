@@ -1,6 +1,6 @@
 # Estudo: vídeo longo no YouTube (base da DS 2.2.0)
 
-**Data:** 06/10/2026 · **Pedido do Diego:** levar os componentes dos Reels (perrengue, surpreende, vale/pula, valores, bilhetes) para o vídeo do YouTube, com a estrutura que ele já usa, e pesquisar o que ajuda e o que atrapalha. **Resultado:** seção 5.4 da `design-system-primeiro-dia-v2.md` (versão 2.2.0, proposta) e tokens `layout.yt` / `component.yt-*`.
+**Data:** 06/10/2026 · **Pedido do Diego:** levar os componentes dos Reels (perrengue, surpreende, vale/pula, valores, bilhetes) para o vídeo do YouTube, com a estrutura que ele já usa, e pesquisar o que ajuda e o que atrapalha. **Resultado:** seção 5.4 da `design-system-primeiro-dia-v2.md` (versão 2.2.0, aprovada em 06/10/2026) e tokens `layout.yt` / `component.yt-*`.
 
 Este estudo não cria regra. As regras ficam no DS depois da aprovação do Diego.
 

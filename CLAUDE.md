@@ -83,7 +83,7 @@ As fontes do DS V2 ainda não estão no repositório (seção 14).
 
 **Regra central:** quando a tarefa envolver identidade visual, o Claude deve consultar o Design System V2 e seus tokens antes de decidir.
 
-- **Versão vigente:** a V2.1.0 "Objetos do Primeiro Dia" (05/10/2026). A 2.1.0 acrescentou os níveis de edição A/B, as regras de som e os tokens de efeito e som, sem valor visual novo (DS V2, Changelog).
+- **Versão vigente:** a V2.2.0 "Objetos do Primeiro Dia" (06/10/2026, aprovada pelo Diego). A 2.2.0 acrescentou o sistema do YouTube (DS V2, 5.4: Abertura Datilografada, Título de Marca, Placa de Lugar, Recibo do Dia e da Viagem, Legenda de Fala, Encerramento com Nascer), 24 fps de produção e o módulo de seta de 221 × 221. Estudo de base: `planejamento/ESTUDO_YOUTUBE.md`. A 2.1.0 (05/10/2026) acrescentou os níveis de edição A/B, as regras de som e os tokens de efeito e som (DS V2, Changelog).
 - **Aposentadas:** a V1 "Placa & Caneta" e a v0 "Primeira luz". Não reutilize valores, componentes nem regras visuais delas.
 - **Valores visuais** (cor, fonte, tamanho, espaço, raio, sombra, posição, duração, curva, volume) vêm dos tokens e do DS V2. Não crie valores fora deles.
 - **Componentes novos ou variações** seguem a governança do DS V2 (Governança e versionamento), com aprovação do Diego. Não altere os documentos do DS sem pedido explícito dele.
@@ -212,11 +212,11 @@ travel-content-studio/
 
 Questões em aberto. Esta seção não cria regras.
 
-1. **Fontes ausentes:** `design-system/fonts/` está vazia. Nenhum arquivo de fonte do DS V2 (Barlow, Barlow Condensed, `PDPlacar-Bold.ttf`, IBM Plex Mono) está no repositório. O render da REV8 depende de `Barlow-Bold.ttf` e `BarlowCondensed-ExtraBold.ttf`.
+1. **Fontes:** parcialmente resolvida em 06/10/2026. `design-system/fonts/` tem Barlow, Barlow Condensed, IBM Plex Mono e Reenie Beanie (OFL, ver `fonts/LEIA-ME.md`). Falta só o `PDPlacar-Bold.ttf`, que o Diego não tem; até lá, usa-se Barlow Condensed Bold com algarismos tabulares (fallback do bundle).
 2. **Tokens × brand book:** resolvida em 05/10/2026 (seção 5, "Em caso de conflito").
-3. **Bundle × brand book:** resolvida em 05/10/2026. O bundle foi alinhado (Chegada 560 ms, scrim 0 → 63% de y 1150 a 1500, grão 5%, fibra 4%, padding da placa 28 × 36, rebites, mini-placa em Barlow com padding 4/14). Fica em aberto só o **módulo de seta**: o DS diz "lado = altura do conteúdo (≈ 176 px)", mas a altura real da placa de 2 linhas é ≈ 221 px, que é o que o bundle usa. O "≈ 176" (e o PNG de 176 × 176 do kit) precisa de decisão do Diego.
+3. **Bundle × brand book:** resolvida em 05/10/2026. O bundle foi alinhado (Chegada 560 ms, scrim 0 → 63% de y 1150 a 1500, grão 5%, fibra 4%, padding da placa 28 × 36, rebites, mini-placa em Barlow com padding 4/14). O **módulo de seta** foi resolvido em 06/10/2026 (DS 2.2.0): 221 × 221 px, a altura real da placa de 2 linhas, como o bundle já usava.
 4. **Defeitos no DS V2:** resolvida em 05/10/2026 (token `blur-glass` criado; introdução renumerada para 0.1–0.4).
-5. **FPS de produção:** as receitas do DS estão em 30 fps, e o Reel de apresentação é 24 fps. Desde a 2.1.0, os tempos em ms são a referência e os quadros se convertem pelo FPS (DS V2, 6.2). O FPS de produção continua não definido — consultar Diego antes de estabelecer como regra.
+5. **FPS de produção:** resolvida em 06/10/2026: **24 fps** (decisão do Diego). Os tempos em ms continuam a referência; os quadros-chave a 24 fps estão no DS V2, 6.2.
 6. **Loudness (LUFS e pico):** resolvida em 05/10/2026: master −14 LUFS integrados, pico ≤ −1 dBTP (DS V2, 4.6).
 7. **Assets do DS ainda inexistentes:** fonte Caneta Diego, sons `PD_*.wav` (roteiro de gravação em `design-system/sons/LISTA_DE_GRAVACAO.md`), kit de PNG, projetos-modelo do CapCut e calibração do preset.
 8. **Identidade verbal completa** (vocabulário, bordões recorrentes, regras de escrita) e **direção de imagem:** a V2 cobre só parte. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.

@@ -1,6 +1,6 @@
 # Design System: Primeiro Dia
 
-Esta pasta guarda o **Design System V2, "Objetos do Primeiro Dia" (v2.1.0, 05/10/2026)**, que é a versão vigente. A V1 "Placa & Caneta" e a v0 "Primeira luz" estão aposentadas.
+Esta pasta guarda o **Design System V2, "Objetos do Primeiro Dia" (v2.2.0, 06/10/2026)**, que é a versão vigente. A V1 "Placa & Caneta" e a v0 "Primeira luz" estão aposentadas.
 
 As regras visuais estão nos arquivos abaixo e não são repetidas aqui.
 
@@ -29,24 +29,24 @@ Os documentos de apoio ficam em `../docs/`:
 
 **Versão 2.1.0 (05/10/2026, aprovada pelo Diego):** níveis de edição A/B; regras de som (nomes dos arquivos, Varredura com *clack*, Nascer no kit, 1 *tick* por giro, master −14 LUFS e pico ≤ −1 dBTP); tempos em ms como referência das receitas; tokens `blur`, `effect` e `sound` copiados do brand book; introdução renumerada (0.1–0.4). **Hierarquia:** tokens valem para valores, o brand book para regras, e o bundle é só prévia.
 
-**Bundle alinhado aos tokens e ao brand book (05/10/2026):** Chegada 560 ms (passa +24 px em 280 ms, assenta em 400 ms, empurrão da seta 400–560 ms, brilho 700–1300 ms, desfoque 12 px); scrim inferior 0 → 63% de y 1150 a 1500 e superior a 63%; grão 5% e fibra 4%; face da placa com padding 28 × 36, filete a 25% e rebites de 10 px a 22 px; mini-placa em Barlow com padding 4/14. O **módulo de seta** não mudou (ver pendência 3 do CLAUDE.md).
+**Versão 2.2.0 (06/10/2026, aprovada pelo Diego):** sistema do YouTube na seção 5.4 (grade 16:9, estrutura do vídeo, Abertura Datilografada, Título de Marca, Placa de Lugar, Recibo do Dia e da Viagem, Status, Legenda de Fala para trechos com barulho, Encerramento com Nascer, tela final escura, cotas por capítulo, checklist); 24 fps de produção com quadros-chave (6.2); módulo de seta 221 × 221; tokens `layout.yt`, `font.style.mono-title`, `component.yt-caption`, `component.yt-typed-open`, `component.plate.arrow-module-size` e `production.fps`. Estudo: `../planejamento/ESTUDO_YOUTUBE.md`. Versão em HTML para consulta: `design-system-primeiro-dia-v2.html` (gerada do .md; em divergência, vale o .md).
 
-## Fontes pendentes
+**Bundle alinhado aos tokens e ao brand book (05/10/2026):** Chegada 560 ms (passa +24 px em 280 ms, assenta em 400 ms, empurrão da seta 400–560 ms, brilho 700–1300 ms, desfoque 12 px); scrim inferior 0 → 63% de y 1150 a 1500 e superior a 63%; grão 5% e fibra 4%; face da placa com padding 28 × 36, filete a 25% e rebites de 10 px a 22 px; mini-placa em Barlow com padding 4/14. O **módulo de seta** já usava 221 px, valor oficializado na 2.2.0. Os componentes novos do YouTube ainda não têm prévia no bundle.
 
-O DS V2 usa estas fontes, mas nenhuma está nesta pasta:
-- Barlow (Bold, SemiBold)
-- Barlow Condensed (ExtraBold)
-- `PDPlacar-Bold.ttf`
-- IBM Plex Mono
-- Caneta Diego (provisória: Reenie Beanie)
+## Fontes
+
+`fonts/` tem Barlow, Barlow Condensed, IBM Plex Mono e Reenie Beanie (caneta provisória), em `.ttf` (detalhes em `fonts/LEIA-ME.md`). Faltam:
+- `PDPlacar-Bold.ttf` (fallback: Barlow Condensed Bold com algarismos tabulares)
+- Caneta Diego (enquanto isso, Reenie Beanie)
 
 O `pd-bundle.css` carrega Barlow, Barlow Condensed, IBM Plex Mono e Reenie Beanie pelo Google Fonts. Ele não carrega "PD Placar" nem "Caneta Diego".
 
 ## Pendências do próprio DS (sem arquivo ainda)
 
 - Sons `PD_*.wav` (como gravar: `sons/LISTA_DE_GRAVACAO.md`)
-- Kit de PNG
+- Kit de PNG (incluindo os do YouTube, 6.1)
 - Projetos-modelo do CapCut
+- Prévia no bundle dos componentes do YouTube
 
 ## Conflitos que aguardam decisão do Diego
 
