@@ -11,3 +11,9 @@
 | | Checklist | **Não alterado** (o progresso salvo no navegador usa a posição de cada item) |
 
 Para desfazer: `git revert` do commit, ou restaurar `versoes/painel-v2.1-2026-10-05.html` (estado anterior a todas as mudanças de 05/10).
+
+## 06/10/2026 · p7 publicado
+
+- `done: true` (postagem feita, pedido do Diego).
+- Legenda e slides 04 e 05 com os preços de 2026: Fontana di Trevi € 2 (desde 02/02/2026) e Panteão € 7 (desde 01/07/2026). O total continua € 421,50, o gasto real de dez/2024.
+- Checklist não alterado.

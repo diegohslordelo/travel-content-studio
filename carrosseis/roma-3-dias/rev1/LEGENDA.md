@@ -13,6 +13,8 @@ Hotel: apartamento dividido por 5 pessoas no Monti, € 221,60 por pessoa em 4 n
 
 Cotação: € 1 = R$ 6,40 (PTAX, 24/12/2024). No slide 12, preços do Coliseu de 2026 (€ 1 = R$ 5,88, 02/10/2026).
 
+O que mudou desde a nossa viagem: desde fevereiro de 2026, chegar perto da Fontana di Trevi custa € 2 (olhar de fora continua grátis), e desde julho de 2026 o Panteão custa € 7.
+
 Roteiro e custos de Roma, Itália, para quem vai viajar.
 
 Salva pra viagem.

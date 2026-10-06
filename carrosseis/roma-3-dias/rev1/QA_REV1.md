@@ -74,3 +74,15 @@ Não vieram: interior do Panteão e foto no espelho.
 - **Slide 11 (Coliseu):** venda com arena 7 dias antes; subterrâneo e ático (Full Experience Attico, andares mais altos, com elevador panorâmico) 30 dias antes. O nome oficial do andar mais alto é "ático" (Attico), não "terraço": terraços panorâmicos já estão no ingresso padrão. 1º domingo do mês: entrada padrão grátis, sem arena, subterrâneo e níveis superiores (colosseo.it, aviso de entrada gratuita).
 - **Slide 14 (São Pedro):** dica de chegar cedo (fila) e Angelus aos domingos ao meio-dia, da janela do Palácio Apostólico (vatican.va).
 - **Slide 17:** dicas do site oficial e do Vaticano; símbolo 1º subiu para y 1168, acima da Rota.
+
+## Preços de 2026 nas atrações (06/10/2026)
+
+Conferido para todas as paradas que estavam como grátis ou pagas em 2024:
+- **Fontana di Trevi:** € 2 para entrar na área da bacia, das 9h às 22h, desde 02/02/2026 (Turismo Roma). Olhar de fora continua grátis. Slides 03 e 04.
+- **Panteão:** € 5 → € 7 desde 01/07/2026 (Il Post, RomaToday). Slides 03 e 05.
+- **Coliseu:** slide 12 já usa os preços de 2026.
+- **Sem mudança encontrada:** Navona, Ponte Sisto, Piazza di Spagna, Piazza del Popolo, Pincio, Teatro di Marcello, Vittoriano, Aracoeli, Via del Corso, Basílica de São Pedro, Ponte Sant'Angelo, Sant'Ignazio, Acqua Paola, Piazzale Garibaldi. A nova tabela de Roma (fev/2026) só passou a cobrar a Trevi e museus que não estão no roteiro.
+
+**Total:** mantido em € 421,50, porque é o gasto real de dez/2024 (CLAUDE.md, 9). A diferença de hoje (+€ 4 por pessoa: Trevi € 2 e Panteão € 2 a mais) aparece no rodapé do recibo (slide 02) e na legenda.
+
+**Status:** postagem considerada feita pelo Diego em 06/10/2026.
