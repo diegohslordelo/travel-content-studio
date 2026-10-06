@@ -2,7 +2,7 @@
 
 Design system da marca de conteúdo de viagens **Primeiro Dia** (@primeirodiaem) — REV 2, "Objetos do Primeiro Dia".
 
-> **Versão:** 2.1.0 (MINOR) · **Data:** 05/10/2026 (2.0.0 em 01/10/2026) · **Dono:** Diego · **Conceito:** "Objetos do Primeiro Dia"
+> **Versão:** 2.2.0 (MINOR) · **Status:** proposta, aguardando aprovação do Diego (a vigente segue sendo a 2.1.0 até a aprovação) · **Data:** 06/10/2026 (2.1.0 em 05/10/2026; 2.0.0 em 01/10/2026) · **Dono:** Diego · **Conceito:** "Objetos do Primeiro Dia"
 > **Substitui:** `design-system-primeiro-dia-v1.md` e `primeiro-dia-tokens-v1.json` ("Placa & Caneta", v1.0.0), que ficam **aposentados**.
 > **Arquivos:** este brand book · `primeiro-dia-tokens-v2.json` (DTCG, fonte única dos valores) · `PDPlacar-Bold.ttf` (mantido) · componentes vivos neste sistema.
 > **Relação com os outros documentos:** `design-system-marca-viagens.md` continua sendo a instrução-base (como construir). `referencia-conteudo-instagram.md` continua governando formato e ritmo (gancho, duração, métricas). Este sistema governa forma, movimento e som.
@@ -23,6 +23,7 @@ Design system da marca de conteúdo de viagens **Primeiro Dia** (@primeirodiaem)
 | **Proibido** | Texto solto sobre vídeo sem scrim/objeto · amarelo como texto sobre claro · branco sobre amarelo · azul caneta sobre grafite ou encostado no amarelo · vermelho carimbo sobre grafite ou direto no vídeo · aberração cromática, glitch, "teal & orange" · mais de 3 tipos de transição por Reel |
 | **Zona segura do Reel** | x 72–944 · y 256–1440 |
 | **Carrossel** | 1080 × 1440 (3:4), margem 80 |
+| **YouTube** | 1920 × 1080, margem de título 96. Abertura Datilografada (≤ 3 s) → Diego → montagem com o Título de Marca → vídeo → Recibo da Viagem → escurece e o 1º nasce (seção 5.4) |
 
 ---
 
@@ -234,6 +235,7 @@ Barlow + Barlow Condensed + PD Placar contam como **uma** superfamília; Plex Mo
 - Grid de 12 colunas, calha 24 px.
 - Lower third: x 96 · base y 960. Placar: x 96 · y 72. Placa de capítulo: x 96 · y 96.
 - Nada essencial nos últimos 20 s entre y 540 e 1080 (cartões de tela final).
+- Zonas completas, componentes e estrutura do vídeo: seção 5.4.
 
 ### 3:4 — Carrossel e feed (1080 × 1440) — formato principal
 - Margem 80 px · 4 colunas de 212 px · calha 24 px.
@@ -318,7 +320,7 @@ Cada componente responde a seis perguntas: **o que é · quando usar · como usa
 | Rebites | 2 círculos de 10 px a 22 px da borda esquerda, no topo e na base; grafite 35% com ponto de luz |
 | Linha 1 (rótulo) | `label`: Condensed 600, 36 px, +8%, CAIXA-ALTA |
 | Linha 2 (destino) | `h1`: Condensed 800, 128 px (104 px se 13–16 letras; > 16: abreviar) |
-| Módulo de seta | Quadrado grafite com lado = altura do conteúdo (≈ 176 px), `radius-tag`, seta amarela 96 px, encostado na face com 0 px de folga (face e módulo são uma peça só) |
+| Módulo de seta | Quadrado grafite com lado = altura do conteúdo: **221 px** na placa de 2 linhas (o "≈ 176" da 2.0.0 estava errado; decisão de 06/10/2026, 2.2.0), `radius-tag`, seta amarela 96 px, encostado na face com 0 px de folga (face e módulo são uma peça só) |
 | Material | `shadow-plate` + `shadow-plate-bevel` + grão 5% |
 | Largura máxima | 872 px |
 
@@ -725,17 +727,123 @@ O carrossel é uma **publicação editorial**: cada slide é uma página, com o 
 
 ## 5.4 YouTube (1920 × 1080)
 
-| Elemento | Construção | Regra |
+O vídeo longo é **onde a promessa inteira aparece**: o Reel mostra o primeiro dia; o YouTube mostra a viagem, com cada lugar, cada preço, cada perrengue e cada veredito. Usa **os mesmos objetos** do Reel (nada de identidade paralela), com posições, tamanhos e cotas próprios do 16:9. Base da seção: `planejamento/ESTUDO_YOUTUBE.md` (pesquisa de 06/10/2026, com fontes e o que é confirmado pelo YouTube × estimativa de mercado).
+
+**O que o YouTube mede (resumo do estudo):** retenção depois dos primeiros 30 s ("Intro" no Studio), quedas e picos ao longo do vídeo, e satisfação (pesquisas "valeu seu tempo?"). O teste de thumbnail/título escolhe o vencedor por **participação no tempo de exibição**. Por isso o sistema prioriza: chegar rápido ao conteúdo, cumprir a promessa do título, marcar o pico de cada dia com um objeto e pagar a promessa no fim (recibo).
+
+### 5.4.1 Grade e zonas (1920 × 1080)
+
+| Zona | Coordenadas | Uso |
 |---|---|---|
-| **Abertura** | Cold open (melhor momento, 5–15 s) → Placa `[N] DIAS EM / ROMA` com Chegada sobre a cena, no máx. em 0:20 | Nada de vinheta animada de logo |
-| **Lower third** (lugar) | Placa de direção pequena: lugar H3 + Plex Mono com bairro e coordenadas, x 96 · base y 960, entra com Chegada curta (320 ms), fica 4 s, sai → | 1 por lugar novo |
-| **Capítulos** | Placa de capítulo `DIA 2` em x 96 · y 96 + transição Varredura de Placa | Igual ao timestamp da descrição |
-| **Mapas** | Mapa simplificado próprio: fundo grafite 900, ruas em grafite 700, rio em grafite 800, Rota amarela contínua que se desenha, Pin 1º no destino | Nunca print de Google Maps com marca |
-| **Localização** | Pin 1º + nome do lugar Plex Mono | — |
-| **Preços** | Recibo entra pela direita (x 1400) e fica 4–6 s; placar no canto superior esquerdo (x 96 · y 72) nos dias de "primeiro dia" | Sempre € e R$ |
-| **Chamadas** | Placa CTA `INSCREVA-SE →` aparece 1 vez, em 30–40% do vídeo, 4 s | Sem animação de sininho |
-| **Transições** | As mesmas 6 famílias; Varredura entre capítulos, Cinema entre dias | Cota: 1 Varredura por capítulo |
-| **Encerramento** | Placa de fechamento + Nascer do 1º → tela final de 20 s: fundo papel com fibra, 2 espaços de vídeo à direita, bilhete com "próximo dia:" à esquerda | Bordão falado antes da tela final |
+| Margem de ação · de título | 64 · 96 px | Nada essencial fora de x 96–1824 · y 96–984 |
+| Grid | 12 colunas, calha 24 | Coluna esquerda: col. 1–4 (x 96–696) · coluna direita: col. 9–12 (x 1224–1824) |
+| Placar | x 96 · y 72 · altura 96 | Placar do Dia |
+| Placa de capítulo | x 96 · y 96 | `DIA 2` (o Placar desliga enquanto ela está na tela) |
+| Placa de título | x 96 · centro vertical em y 540 | Abertura Datilografada, Título de Marca |
+| Placa de Lugar (lower third) | x 96 · base y 960 | Nome do lugar |
+| Etiqueta de valor | alinhada à direita em x 1824 · base y 960 | Preço rápido |
+| Zona de objeto | coluna oposta ao rosto, y 240–840 | Carimbo, Ticket, Bilhete, Recibo, Comanda, Etiqueta de bagagem |
+| Legenda de Fala | centro em **x 960** (W / 2) · base y 984 | Só nos trechos de barulho (5.4.4) |
+| Legenda Emocional | centro em x 960 · y 540 | Pico de encanto |
+| Últimos 20 s | nada essencial em y 540–1080 | Elementos da tela final |
+| Scrim inferior | gradiente grafite 0 → 63% de y 760 a 1080 | **Só enquanto houver texto na base** (entra e sai com ele, 240 ms). No vídeo longo, scrim fixo escureceria a imagem por minutos |
+
+**Tamanhos:** os objetos usam os mesmos valores em px do Reel (o canvas tem 1080 px de altura). Exceção: a Placa usa **M (75%)** no capítulo e **G (100%)** só na placa de título. Teto de área: objetos ≤ 25% da tela (1.1), como no Reel.
+
+### 5.4.2 Estrutura do vídeo (linha do tempo modelo, 4 dias em Barcelona)
+
+| Tempo | Trecho | Na tela | Som |
+|---|---|---|---|
+| 0:00–0:03 | **Abertura Datilografada** | Grafite Noite; `BARCELONA, ESPANHA` e `9 A 12 DE MARÇO DE 2026` digitados | Som ambiente da 1ª cena já entra por baixo (corte em J) |
+| 0:03–0:15 | **Diego apresenta** | Rosto · legenda Padrão com **Destaque** no número de dias (`4` em mini-placa) · sem placa | Voz |
+| 0:15–0:35 | **Montagem de destaques** | Cortes de 1–2 s com 1 perrengue, 1 surpresa e 1 preço (sem revelar o desfecho) · **Título de Marca** `PRIMEIRO DIA →` entra com Chegada no pico da trilha, fica 2,4 s, sai → · Bilhete opcional `no fim: vale ou pula?` | Trilha · *clack* |
+| 0:35 | Volta para o Diego | Placar liga `+00:00 · € 0,00` (dias de primeiro dia) | *tick* |
+| Capítulos | Dia a dia | Placa de capítulo + Varredura · Placa de Lugar em cada lugar novo · Etiqueta de valor a cada gasto · objetos no pico · **Recibo do Dia** no fim de cada dia | Sons da 4.6 |
+| Final −1:00 | **Recibo da Viagem** | Recibo longo por categoria + total em € e ≈ R$ + cotação datada · Bilhete veredito (`vale.` / `pula.` / `depende:`) | Impressora |
+| Final −0:25 | **Encerramento** | Bordão falado → a imagem escurece até Grafite Noite (700 ms) → o 1º nasce no centro | Nota grave (opcional) |
+| Últimos 5–20 s | **Tela final** | Fundo grafite com grão · 1º no canto · Bilhete `próximo:` · espaços dos elementos do YouTube | Trilha baixa |
+
+**Capítulos na descrição:** o 1º marcador em 00:00, no mínimo 3, cada um com ≥ 10 s (regra do YouTube). O nome do capítulo na descrição é o mesmo da placa (`Dia 2 · Gòtic e Born`).
+
+**Teste de abertura (registrar no Registro de Aprendizados):** A = estrutura acima. B = montagem de 5–10 s **antes** da datilografia (*cold open*). Uma variável por vez, comparando a retenção em 30 s do Studio.
+
+### 5.4.3 Componentes do YouTube
+
+Cada componente reaproveita um objeto do sistema. Os novos (marcados ★) entram como variante MINOR.
+
+| Componente | Base | Construção | Posição | Animação | Cota |
+|---|---|---|---|---|---|
+| ★ **Abertura Datilografada** | Plex Mono (microcopy) | Fundo `night-900` com grão 5% (nunca preto puro) · linha 1: lugar, `mono-title` (Plex Mono 500, **56 px**, CAIXA-ALTA, `paper-500`) · linha 2: período, `micro` (Plex Mono 500, 30 px, `night-300`) · cursor: bloco `signal-500` do tamanho de 1 caractere | Alinhado à esquerda em x 96, bloco centrado em y 540 | **1 caractere por quadro** (24 fps ≈ 42 ms); a linha 2 começa 6 quadros depois da linha 1; o cursor pisca a cada 500 ms (≤ 3 vezes por segundo); fica 12 quadros parado e **corta seco** para a cena | 1 por vídeo · **≤ 3 s no total** |
+| ★ **Título de Marca** | Placa, variante Marca | Placa G `PRIMEIRO DIA` + módulo de seta | x 96 · centro em y 540 | Chegada (560 ms) · 2,4 s parada · saída pela direita (240 ms) | 1 por vídeo, **sempre sobre imagem em movimento** (nunca em tela preta) |
+| **Placa de Lugar** (lower third) | Painel (material do Placar) | Grafite 900, `radius-tag`, filete claro 2 px (8%), `shadow-plate`, padding 24/32 · linha 1: nome do lugar, H3 (Condensed 600, 56 px, CAIXA-ALTA, `paper-500`) · linha 2: bairro e cidade, `micro` (`night-300`) · seta de placa amarela 48 px à direita | x 96 · base y 960 | Chegada curta (320 ms) · fica 4 s · sai → (240 ms) · sem som | 1 por lugar novo; nunca junto com a Legenda de Fala (entra na próxima pausa de fala ≥ 1 s) |
+| **Etiqueta de valor** | Etiqueta de valor (2.6) | Mini-recibo de 1 linha: `€ 4,50` PD Placar 64 + `≈ R$ 29` Barlow 500 40 | Direita em x 1824 · base y 960 | Desliza da esquerda 160 ms · número gira (240 ms) · fica 4 s | 1 por gasto; nunca junto com a Legenda de Fala |
+| **Recibo** | Recibo (2.6) | 600 px, cabeçalho Plex Mono com lugar e hora, total PD Placar 96, `≈ R$`, cotação datada | Coluna direita: alinhado à direita em x 1824, topo y 96 (base ≤ y 960) | Impresso de cima para baixo (320 ms) · freeze opcional · fica 4–6 s | Compras com mais de 1 item |
+| ★ **Recibo do Dia** | Recibo longo (2.6) | Recibo com as categorias do dia e o total; cabeçalho `DIA 2 · BARCELONA` | Coluna direita (como o Recibo) | Impresso · total gira | 1 por capítulo, no fim do dia |
+| ★ **Recibo da Viagem** | Recibo longo (2.6) | Categorias (hospedagem, transporte, comida, ingressos) + total da viagem + cotação datada | Centro da coluna direita; o Diego à esquerda | Impresso · total gira · Bilhete veredito entra depois | 1 por vídeo, antes do encerramento |
+| **Status VALE / PULA / DEPENDE** | Status (2.7) e Ticket VALE (2.3) | `VALE` ✓ verde · `PULA` ✗ vermelho · `DEPENDE` grafite, sobre papel | Preso na Placa de Lugar (encosta à direita, sobrepõe 24 px) ou no Recibo | Entra 240 ms depois da placa, *pop* de 240 ms (escala 0,85 → 1,06 → 1) | 1 por lugar avaliado |
+| **Carimbo PERRENGUE** | Carimbo (2.2), principal | Igual ao Reel, data real `DIA 2 · 14H05 · BARCELONA` | Zona de objeto | Batida + freeze 0,5–1,2 s | **≤ 1 por capítulo**, nunca na mesma cena do Ticket |
+| **Ticket SURPREENDE** | Ticket (2.3), principal | Igual ao Reel | Zona de objeto | Subida (com Cinema antes, se for o pico do dia) | **≤ 1 por capítulo** |
+| **Bilhete** | Bilhete (2.4) | Opinião, dica, veredito | Zona de objeto | Escrita | ≤ 2 por capítulo |
+| **Placar do Dia** | Placar (2.5) | Igual ao Reel | x 96 · y 72 | Giro; **na troca de capítulo** desliga → entra a placa `DIA N` → religa em `+00:00 · € 0,00` | Só com registro de campo |
+| **Placa de capítulo** | Placa M, variante Capítulo | `DIA 2` | x 96 · y 96 | Varredura de Placa + Chegada | 1 por capítulo |
+| **Mapa** | Mapa próprio (nunca print do Google Maps com marca) | Grafite 900, ruas grafite 700, rio grafite 800, Rota amarela, Pin 1º | Tela cheia ou coluna direita | Rota se desenha (700 ms) | Entre cidades ou bairros |
+| **Legenda Emocional** | 3.2 | 88 px, 300 itálico + 1 palavra 800 | Centro x 960 · y 540 | 500 ms | 1 por capítulo |
+| **CTA** | CTA (2.7) | Placa pequena `INSCREVA-SE →` | x 96 · base y 960 (no lugar da Placa de Lugar) | Chegada curta · 4 s | 1 por vídeo, entre 30% e 40% da duração, sem sininho |
+| ★ **Encerramento** | Assinatura Nascer (4.3) | A imagem escurece até `night-900` (700 ms, `ease-cinema`) → o **1º** nasce (700 ms) no centro, com o "1" no tamanho Display (168 px) | Centro x 960 · y 540 | Nascer; fica 1,5 s; corte seco para a tela final | 1 por vídeo, depois do bordão |
+| **Tela final** | Grafite (fundo escuro da marca) | Fundo `night-900` + grão 5% · 1º 96 px em x 96 · y 96 · Bilhete `próximo:` na coluna esquerda, acima de y 540 · espaços para até 4 elementos do YouTube | — | Sem animação depois de montada | Últimos 5–20 s |
+
+**Não usar no YouTube:** vinheta de logo em tela preta, logo animado no início, Placa sozinha em tela preta, *lower third* de pacote pronto, sininho de inscrição animado, contagem regressiva, legenda queimada palavra a palavra no vídeo inteiro.
+
+### 5.4.4 Legenda de Fala (modelo para barulho)
+
+O YouTube tem legenda fechada (CC). **O vídeo inteiro leva arquivo de legenda revisado** (100% dos nomes de lugares e valores conferidos), enviado no Studio. A **legenda queimada** na imagem só entra onde a fala some:
+
+| Quando entra | Quando não entra |
+|---|---|
+| Barulho alto (metrô, rua, vento, show, multidão) · fala de outra pessoa com áudio fraco · fala em outro idioma que precisa de tradução · áudio com defeito | Fala limpa (fica só a CC) · narração em off (usa a legenda Narrativa) |
+
+| Parâmetro | Valor | Origem |
+|---|---|---|
+| Fonte | Barlow 700, 56 px, entrelinha 1,15, `caption-text` | Legenda Padrão (3.2) |
+| Fundo | Sem caixa: sombra de texto da 3.1 + scrim inferior do YouTube (5.4.1) | 3.1 |
+| Posição | Centro em x 960, base y 984 | 5.4.1 |
+| Linhas | Até 2, **≤ 42 caracteres por linha**, quebra por sentido | Padrão Netflix PT-BR |
+| Velocidade | **≤ 17 caracteres por segundo** | Padrão Netflix PT-BR |
+| Duração | De 5/6 s (20 quadros a 24 fps) a 7 s por legenda | Padrão Netflix |
+| Grupo | Frase inteira (não palavra a palavra) | Vídeo longo |
+| Entrada / saída | Opacidade 0 → 1 em 80 ms · 1 → 0 em 80 ms (`dur-tick`) | 4.1 |
+| Destaque | Mini-placa (3.2), no máximo 1 a cada 30 s | 3.2 |
+| Idioma estrangeiro | A mesma legenda, com o rótulo do idioma em `micro` (`ES`, `FR`, `IT`) colado à esquerda da 1ª linha | — |
+| Som descrito | Entre colchetes, em caixa-baixa, só quando muda a cena: `[metrô freando]` | CC |
+
+### 5.4.5 Cotas e ritmo (vídeo longo)
+
+| Item | Cota |
+|---|---|
+| Cortes secos | ≥ 70% |
+| Varredura de Placa | 1 por capítulo |
+| Cinema | 1 por capítulo (entre dias ou antes do Ticket) |
+| Arrasto | ≤ 3 por capítulo |
+| Snap | Só em listas |
+| Carimbo · Ticket | ≤ 1 de cada por capítulo, em cenas diferentes |
+| Bilhete | ≤ 2 por capítulo |
+| Objetos de marca na tela | ≤ 3 ao mesmo tempo (Placar conta) |
+| Calma | ≥ 1,5 s entre dois objetos entrando (4.2) |
+| Efeitos simultâneos | ≤ 3 (grão conta) (4.5) |
+| Trilha | 8–10 dB abaixo da voz; master −14 LUFS, pico ≤ −1 dBTP (4.6) |
+
+### 5.4.6 Checklist do YouTube (soma ao 7.3)
+
+- [ ] Abertura Datilografada ≤ 3 s, com o som da cena por baixo e sem logo.
+- [ ] Rosto do Diego antes de 0:05 e promessa dita antes de 0:15.
+- [ ] Título de Marca sobre imagem em movimento, 1 vez.
+- [ ] Placa de Lugar em cada lugar novo; Etiqueta ou Recibo em cada gasto, com € e ≈ R$.
+- [ ] Recibo do Dia em cada capítulo e Recibo da Viagem antes do encerramento, com cotação datada.
+- [ ] Capítulos na descrição (00:00, ≥ 3, ≥ 10 s) com os mesmos nomes das placas.
+- [ ] Legenda queimada só nos trechos de barulho; arquivo de CC revisado enviado.
+- [ ] Encerramento: bordão → escurece → Nascer do 1º → tela final escura (5–20 s).
+- [ ] Nada essencial em y 540–1080 nos últimos 20 s.
+- [ ] Teste A/B de thumbnail no Studio (vencedor por tempo de exibição).
 
 ## 5.5 Thumbnails (1280 × 720)
 
@@ -750,6 +858,8 @@ O carrossel é uma **publicação editorial**: cada slide é uma página, com o 
 | Teste | Reduzir para 168 × 94 px: a placa e o objeto precisam ser identificáveis |
 
 Fórmula: **lugar (placa) + emoção (rosto) + prova (objeto)**.
+
+**Teste:** usar o teste A/B do Studio (até 3 thumbnails ou títulos). O YouTube escolhe o vencedor por participação no tempo de exibição, não por clique: a thumbnail precisa prometer o que o vídeo entrega (estudo do YouTube, 06/10/2026). Registrar o resultado no Registro de Aprendizados.
 
 ## 5.6 Stories (1080 × 1920)
 
@@ -766,8 +876,8 @@ O sistema só vale se der para fazer no editor que o Diego usa. A estratégia é
 | Arquivo | Conteúdo | Tamanho |
 |---|---|---|
 | `PD_placa_face_[CIDADE].png` | Face amarela com texto, relevo, filete, rebites, grão | ≤ 872 px de largura, transparente |
-| `PD_placa_modulo_seta.png` | Módulo grafite com seta | 176 × 176 |
-| `PD_placa_modulo_1.png` | Módulo com símbolo 1º | 176 × 176 |
+| `PD_placa_modulo_seta.png` | Módulo grafite com seta | 221 × 221 |
+| `PD_placa_modulo_1.png` | Módulo com símbolo 1º | 221 × 221 |
 | `PD_placa_sombra.png` | Sombra da placa isolada (preto 55%, desfocada) | — |
 | `PD_brilho.png` | Faixa de luz branca 40% inclinada | 200 × 400 |
 | `PD_carimbo_perrengue.png` | Carimbo sobre papel, sem data | 600 × 230 |
@@ -775,20 +885,43 @@ O sistema só vale se der para fazer no editor que o Diego usa. A estratégia é
 | `PD_bilhete_vazio.png` | Papel do bilhete (o texto é digitado com a fonte Caneta) | — |
 | `PD_recibo_topo.png` / `PD_recibo_base_serrilhada.png` | Partes do recibo (o meio é um retângulo papel com texto do CapCut) | 600 px |
 | `PD_scrim_base.png` | Gradiente grafite 0 → 63% para a base do Reel | 1080 × 770 |
+| `PD_yt_scrim_base.png` | Gradiente grafite 0 → 63% para a base do YouTube (y 760–1080) | 1920 × 320 |
+| `PD_yt_lugar_painel.png` | Painel grafite da Placa de Lugar, sem texto (o texto é camada do CapCut) | largura variável, transparente |
+| `PD_yt_status_vale.png` · `PD_yt_status_pula.png` · `PD_yt_status_depende.png` | Status sobre papel | transparente |
+| `PD_simbolo_1.png` | Símbolo 1º em camadas ("1", sol, horizonte) para o Nascer | transparente |
 | `PD_grao_5.mp4` ou efeito de grão do app a 5% | — | — |
 | `PD_clack_v1.wav` · `PD_tum_v1.wav` · `PD_ding_v1.wav` · `PD_clique_v1.wav` · `PD_tick_v1.wav` · `PD_impressora_v1.wav` · `PD_obturador_v1.wav` · `PD_whoosh_v1.wav` · `PD_nascer_v1.wav` (opcional) | Sons (seção 4.6); como gravar em `design-system/sons/LISTA_DE_GRAVACAO.md` | WAV 48 kHz, 24 bits, mono |
 
 Texto variável (cidade, valores, data) fica em camada de texto do CapCut quando possível, para o projeto-modelo servir a qualquer cidade.
 
-## 6.2 Receitas (30 fps)
+## 6.2 Receitas
 
-**Tempo manda, quadro converte:** os tempos em ms (seções 2 e 4) são a referência. Os quadros (Q) abaixo valem para 30 fps; em outro FPS, converta pelo tempo: Q = ms × fps ÷ 1000 (ex.: *clack* em 280 ms = Q8 a 30 fps, Q7 a 24 fps). O FPS de produção ainda não está definido.
+**Tempo manda, quadro converte:** os tempos em ms (seções 2 e 4) são a referência. Converta pelo tempo: Q = ms × fps ÷ 1000 (ex.: *clack* em 280 ms = Q8 a 30 fps, Q7 a 24 fps). **FPS de produção: 24 fps** (decisão do Diego, 06/10/2026). A tabela de 24 fps está logo abaixo; as receitas detalhadas a seguir continuam em 30 fps como referência.
+
+**Quadros-chave a 24 fps (produção):**
+| Receita | Quadros a 24 fps |
+|---|---|
+| Chegada | Face: Q0 fora (X −1100, rot −3°) · **Q7** X +24 (passou) · **Q10** X 0 · Módulo: Q10 X −221 → **Q11** X +10 → **Q13** X 0 · Sombra assenta no Q10 · Brilho **Q17 → Q31** · *clack* no **Q7** |
+| Chegada curta (320 ms) | Q0 fora · **Q4** passou (+24) · **Q8** assentou |
+| Saída | Q0 módulo X +10 · **Q2** X 0 · Q2 → **Q6** saída (intermediário no **Q4** em X +250) |
+| Batida | Q0 escala 160% opac. 0 · **Q4** 96% · **Q5–Q6** tremor da cena · **Q7** 100% · data a partir do Q7 (240 ms = 6 quadros) |
+| Subida | Q0 Y +260 · **Q8** Y −8 escala 103% · **Q10** assenta · brilho **Q10 → Q22** · estrela **Q22** 0 → **Q24** 115% → **Q26** 100% |
+| Escrita | Papel Q0 → **Q6** · texto revela em 400 ms (**10 quadros**) |
+| Giro | Cada troca de dígito em **2 quadros** |
+| Varredura de Placa | Q0 X −1180 → **Q8** X +1180 · corte no **Q4** |
+| Rota | Desenha em **12 quadros** (500 ms) |
+| Cinema / Nascer | **17 quadros** (700 ms) |
+| Abertura Datilografada (YouTube) | 1 caractere por quadro · linha 2 começa 6 quadros depois da linha 1 · 12 quadros parada · corte seco (ex.: `BARCELONA, ESPANHA` + `9 A 12 DE MARÇO DE 2026` = 59 quadros ≈ 2,5 s) |
+| Placa de Lugar (YouTube) | Chegada curta · fica 96 quadros (4 s) · saída 6 quadros |
+| Legenda de Fala (YouTube) | Entra e sai em 2 quadros (80 ms) · mínimo 20 quadros na tela |
+
+**Receitas detalhadas (30 fps, referência):**
 
 **Chegada (placa):**
 | Camada | Q0 | Q8 | Q12 | Q14 | Q17 |
 |---|---|---|---|---|---|
 | Face | X −1100 · rot −3° · opac. 100 | X **+24** (passou) · rot +0,6° | X 0 · rot 0 | — | — |
-| Módulo | atrás da face (X −176) | — | X −176 | X **+10** | X 0 |
+| Módulo | atrás da face (X −221) | — | X −221 | X **+10** | X 0 |
 | Sombra | X −1100 · Y +40 · opac. 15 | — | X 0 · Y +18 · opac. 55 | — | — |
 | Brilho | — | — | — | — | Q21 X esq. → Q39 X dir. (máscara da face) |
 X relativo à posição final (x 72 · y 640). Som *clack* no Q8 (280 ms). Desfoque direcional: aplicar o efeito de desfoque de movimento nos Q0–Q8, se a versão tiver.
@@ -876,6 +1009,7 @@ X relativo à posição final (x 72 · y 640). Som *clack* no Q8 (280 ms). Desfo
 - [ ] Som: arquivos `PD_*` só nos eventos da 4.6, no máx. 1 efeito sonoro a cada 1,5 s; master −14 LUFS, pico ≤ −1 dBTP.
 - [ ] Teste de miniatura aprovado.
 - [ ] Bordão e placa de fechamento (Reels de primeiro dia).
+- [ ] YouTube: checklist 5.4.6.
 
 ## 7.4 Governança e versionamento
 
@@ -891,6 +1025,7 @@ X relativo à posição final (x 72 · y 640). Som *clack* no Q8 (280 ms). Desfo
 | 0.x | 29–30/09/2026 | "Primeira luz" (areia, petróleo, terracota, DM Serif) | Montagem rápida | Aposentada na v1 |
 | 1.0.0 | 01/10/2026 | "Placa & Caneta" | Unicidade frente à categoria | Aposentada na v2 (sem Reel publicado) |
 | **2.0.0** | **01/10/2026** | **REV 2 "Objetos do Primeiro Dia":** placa esmaltada com módulo de seta; Carimbo PERRENGUE (substitui placa torta); Ticket SURPREENDE (novo); Recibo, Etiqueta, Comanda, Quadro, Rota; 6 estilos de legenda (fim da faixa grafite); 6 assinaturas de movimento; 6 famílias de transição; efeitos com função; 8 sons; Barlow Condensed 300 itálico e IBM Plex Mono; grão 5%; Grafite `#16181D` → `#121317`; raio da placa 8 → 16 px | A v1 ficou crua: caixas chapadas, sem material, sem movimento próprio | Refazer projetos-modelo, banner do YouTube, capas e PNGs do kit. Placar, bilhete, símbolo 1º, bordão e posições fixas mantidos. |
+| **2.2.0** | **06/10/2026** | **Proposta.** YouTube (5.4 reescrita): grade e zonas 16:9, estrutura do vídeo (a abertura com *cold open* + placa `[N] DIAS EM` deu lugar à estrutura do Diego; o *cold open* virou a variante B de teste), componentes novos (Abertura Datilografada, Título de Marca, Recibo do Dia, Recibo da Viagem, Encerramento com escurecimento + Nascer, tela final escura), Placa de Lugar especificada, Status preso na Placa de Lugar, Legenda de Fala (modelo para barulho), cotas por capítulo, checklist; estilo `mono-title` (Plex Mono 56); scrim inferior do YouTube; FPS de produção 24 com quadros-chave; módulo de seta 221 × 221; teste A/B de thumbnail. Correções: o Recibo do YouTube estava em x 1400 com 600 px de largura (passava da tela) e "entrava pela direita" (contrariava 2.6); a placa de capítulo (y 96) se sobrepunha ao Placar (y 72); a tela final em papel virou grafite para seguir o escurecimento | Pedido do Diego (06/10/2026): levar os componentes do Reel para o YouTube com a estrutura que ele já usa; estudo em `planejamento/ESTUDO_YOUTUBE.md` | Valores novos: `mono-title` 56 px, posições do YouTube e scrim y 760–1080. Nenhum ativo central muda (por isso MINOR, e não "REV 3") |
 | **2.1.0** | **05/10/2026** | Níveis de edição A/B (5.2 e 7.3); sons: nomes dos arquivos, Varredura com *clack*, Nascer no kit, 1 *tick* por giro, obturador só no 1º e no último item da lista, referência sem voz, master −14 LUFS / ≤ −1 dBTP; tempos em ms como referência das receitas; tokens `blur`, `effect` e `sound` (cópia dos valores do brand book); introdução renumerada (0.1–0.4); bundle alinhado aos tokens | Pacote aprovado pelo Diego (pendências 2, 3, 4 e 6 do CLAUDE.md; auditoria de som e efeitos) | Nenhum valor visual novo; Reels de Nível B passam a ter checklist próprio |
 
 ### Migração da v1

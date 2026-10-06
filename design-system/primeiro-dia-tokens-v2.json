@@ -1,5 +1,5 @@
 {
-  "$description": "Primeiro Dia (@primeirodiaem) — tokens v2.1.0 (REV 2 'Objetos do Primeiro Dia'), 05/10/2026 (2.0.0 em 01/10/2026). W3C DTCG 2025.10. Primitivos → semânticos → componentes. Substitui primeiro-dia-tokens-v1.json.",
+  "$description": "Primeiro Dia (@primeirodiaem) — tokens v2.2.0 (proposta, 06/10/2026; vigente 2.1.0 até aprovação) (REV 2 'Objetos do Primeiro Dia'), 05/10/2026 (2.0.0 em 01/10/2026). W3C DTCG 2025.10. Primitivos → semânticos → componentes. Substitui primeiro-dia-tokens-v1.json.",
   "color": {
     "signal": {
       "100": {
@@ -710,6 +710,29 @@
           }
         },
         "$description": "Bilhete, veredito, humor. Sempre minúsculas, Azul Caneta, sobre papel."
+      },
+      "mono-title": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.mono}",
+          "fontSize": {
+            "$type": "dimension",
+            "$value": {
+              "value": 56,
+              "unit": "px"
+            }
+          },
+          "fontWeight": 500,
+          "lineHeight": 1.2,
+          "letterSpacing": {
+            "$type": "dimension",
+            "$value": {
+              "value": 0.02,
+              "unit": "em"
+            }
+          }
+        },
+        "$description": "Abertura Datilografada do YouTube (linha do lugar). CAIXA-ALTA, papel sobre grafite. Novo na 2.2.0."
       }
     }
   },
@@ -1222,6 +1245,155 @@
           "value": 64,
           "unit": "px"
         }
+      },
+      "grid-columns": {
+        "$type": "number",
+        "$value": 12,
+        "$description": "Grid de 12 colunas, calha 24 px (DS 1.3)."
+      },
+      "col-left-x1": {
+        "$type": "dimension",
+        "$value": {
+          "value": 696,
+          "unit": "px"
+        },
+        "$description": "Fim da coluna esquerda (col. 1–4: x 96–696)."
+      },
+      "col-right-x0": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1224,
+          "unit": "px"
+        },
+        "$description": "Início da coluna direita (col. 9–12: x 1224–1824)."
+      },
+      "scoreboard-x": {
+        "$type": "dimension",
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        },
+        "$description": "Placar do Dia: x."
+      },
+      "scoreboard-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 72,
+          "unit": "px"
+        },
+        "$description": "Placar do Dia: y (desliga durante a placa de capítulo)."
+      },
+      "chapter-x": {
+        "$type": "dimension",
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        },
+        "$description": "Placa de capítulo: x."
+      },
+      "chapter-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        },
+        "$description": "Placa de capítulo: y."
+      },
+      "title-center-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 540,
+          "unit": "px"
+        },
+        "$description": "Centro vertical da Abertura Datilografada e do Título de Marca."
+      },
+      "lower-third-x": {
+        "$type": "dimension",
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        },
+        "$description": "Placa de Lugar: x."
+      },
+      "lower-third-base-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 960,
+          "unit": "px"
+        },
+        "$description": "Placa de Lugar e Etiqueta de valor: base."
+      },
+      "price-right-x": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1824,
+          "unit": "px"
+        },
+        "$description": "Etiqueta de valor e Recibo: alinhados à direita."
+      },
+      "receipt-top-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        },
+        "$description": "Recibo na coluna direita: topo (base ≤ y 960)."
+      },
+      "object-zone-y0": {
+        "$type": "dimension",
+        "$value": {
+          "value": 240,
+          "unit": "px"
+        },
+        "$description": "Zona de objeto: topo."
+      },
+      "object-zone-y1": {
+        "$type": "dimension",
+        "$value": {
+          "value": 840,
+          "unit": "px"
+        },
+        "$description": "Zona de objeto: base."
+      },
+      "caption-center-x": {
+        "$type": "dimension",
+        "$value": {
+          "value": 960,
+          "unit": "px"
+        },
+        "$description": "Legenda de Fala e Legenda Emocional: centro do canvas (W / 2)."
+      },
+      "caption-base-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 984,
+          "unit": "px"
+        },
+        "$description": "Legenda de Fala: base."
+      },
+      "scrim-bottom-y0": {
+        "$type": "dimension",
+        "$value": {
+          "value": 760,
+          "unit": "px"
+        },
+        "$description": "Scrim inferior do YouTube: começa (0%)."
+      },
+      "scrim-bottom-y1": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1080,
+          "unit": "px"
+        },
+        "$description": "Scrim inferior do YouTube: termina (63%). Só enquanto houver texto na base."
+      },
+      "end-screen-free-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 540,
+          "unit": "px"
+        },
+        "$description": "Últimos 20 s: nada essencial entre y 540 e 1080."
       }
     },
     "yt-thumb": {
@@ -1295,6 +1467,14 @@
       "easing": {
         "$type": "cubicBezier",
         "$value": "{easing.ease-arrive}"
+      },
+      "arrow-module-size": {
+        "$type": "dimension",
+        "$value": {
+          "value": 221,
+          "unit": "px"
+        },
+        "$description": "Lado do módulo de seta na placa de 2 linhas (decisão de 06/10/2026; substitui o '≈ 176' do brand book 2.0.0)."
       }
     },
     "stamp": {
@@ -1391,6 +1571,72 @@
       "highlight-text": {
         "$type": "color",
         "$value": "{color.semantic.on-primary}"
+      }
+    },
+    "yt-caption": {
+      "max-chars-line": {
+        "$type": "number",
+        "$value": 42,
+        "$description": "Legenda de Fala: caracteres por linha (padrão Netflix PT-BR)."
+      },
+      "max-lines": {
+        "$type": "number",
+        "$value": 2,
+        "$description": "Legenda de Fala: linhas."
+      },
+      "max-cps": {
+        "$type": "number",
+        "$value": 17,
+        "$description": "Legenda de Fala: caracteres por segundo."
+      },
+      "min-duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 833,
+          "unit": "ms"
+        },
+        "$description": "Legenda de Fala: duração mínima (5/6 s = 20 quadros a 24 fps)."
+      },
+      "max-duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 7000,
+          "unit": "ms"
+        },
+        "$description": "Legenda de Fala: duração máxima."
+      },
+      "fade": {
+        "$type": "duration",
+        "$value": "{duration.dur-tick}",
+        "$description": "Entrada e saída por opacidade."
+      }
+    },
+    "yt-typed-open": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.night.900}",
+        "$description": "Fundo da Abertura Datilografada (Grafite Noite, nunca preto puro)."
+      },
+      "cursor": {
+        "$type": "color",
+        "$value": "{color.semantic.primary}",
+        "$description": "Cursor em bloco amarelo."
+      },
+      "max-duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 3000,
+          "unit": "ms"
+        },
+        "$description": "Duração máxima da Abertura Datilografada."
+      },
+      "cursor-blink": {
+        "$type": "duration",
+        "$value": {
+          "value": 500,
+          "unit": "ms"
+        },
+        "$description": "Intervalo do cursor (≤ 3 piscadas por segundo)."
       }
     }
   },
@@ -1588,6 +1834,13 @@
       "$type": "number",
       "$value": -1,
       "$description": "Master: pico verdadeiro máximo em dBTP."
+    }
+  },
+  "production": {
+    "fps": {
+      "$type": "number",
+      "$value": 24,
+      "$description": "FPS de produção (decisão do Diego, 06/10/2026). Quadros = ms × 24 ÷ 1000."
     }
   }
 }
