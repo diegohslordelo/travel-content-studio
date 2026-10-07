@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Carrossel Barcelona em 10 fotos · REV2</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="../../../design-system/bundle/pd-bundle.css">
+<style>
+/* Só tokens do DS V2.1. Canvas 1080 × 1440 (DS 3.x, 3:4). Base: carrossel de Roma REV2. */
+body{margin:0;background:#26292F}
+.slide{position:relative;width:1080px;height:1440px;overflow:hidden;background:var(--pd-p);color:var(--pd-n);margin:0 0 40px}
+.slide.pd-paper::after{opacity:.04} /* fibra 4% */
+.grain{position:absolute;inset:0;background:var(--pd-grain);opacity:.05;mix-blend-mode:overlay;pointer-events:none;z-index:50}
+/* contador: x 1000 alinhado à direita · y 80 · Plex Mono 30 */
+.count{position:absolute;right:80px;top:64px;font:500 30px/1.3 var(--pd-fm);letter-spacing:.02em;color:var(--pd-n5);z-index:30}
+/* etiqueta de série: mini-placa 48 px, Condensed 600 28 px +8%, face amarela, sem módulo */
+.serie{position:absolute;left:80px;top:60px;height:48px;padding:0 16px;display:flex;align-items:center;background:var(--pd-y);border-radius:10px;box-shadow:var(--pd-bevel),0 3px 0 rgba(0,0,0,.25);font:600 28px/1 var(--pd-fd);letter-spacing:.08em;text-transform:uppercase;color:var(--pd-n);z-index:30}
+/* Rota: linha amarela contínua de 8 px em y 1360, atravessa a borda e continua no slide seguinte */
+.rota{position:absolute;left:0;right:0;top:1356px;height:8px;background:var(--pd-y);z-index:20}
+.on-photo{color:var(--pd-r);text-shadow:0 2px 0 rgba(0,0,0,.35),0 0 24px rgba(0,0,0,.45)}
+/* Body · micro */
+.body{font:500 44px/1.3 var(--pd-ft)}
+.micro{font:500 30px/1.3 var(--pd-fm);letter-spacing:.02em;text-transform:uppercase}
+/* Fotografia: foto radius-photo com margem 80, legenda Barlow 500 40 abaixo */
+.photo{position:absolute;left:80px;top:160px;width:920px;height:920px;border-radius:24px;overflow:hidden;background:var(--pd-n)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.legenda{position:absolute;left:80px;top:1128px;width:920px;font:500 40px/1.3 var(--pd-ft);color:var(--pd-n)}
+.legenda b{font-weight:700}
+/* Fotografia (carrossel de fotos): foto 920 × 1000, Placa M (75%) na base esquerda sobrepondo 24 px, legenda + data abaixo */
+.photo.tall{height:1000px}
+.photo.tall~.legenda{top:1216px}
+.placaM{left:104px!important;top:auto!important;bottom:256px;transform-origin:0 100%;scale:.75;z-index:25}
+.legenda .micro{display:block;color:var(--pd-n5);margin-top:12px}
+
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<section class="slide" id="s01">
+  <div class="photo" style="inset:0;width:auto;height:auto;border-radius:0"><img src="../fonte/selfie_sagrada.jpg" style="object-position:50% 50%"></div>
+  <div class="pd-scrim"></div>
+  <div class="serie">Fotos</div>
+    <div style="position:absolute;left:80px;bottom:200px;display:flex;flex-direction:column;gap:24px;z-index:25">
+    <div class="micro on-photo">3 dias · 09 a 11/03/2026<br>41,4047° N · 2,1754° E</div>
+    <div class="pd-plate" style="position:relative;left:0;top:0">
+      <div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__label">Barcelona em</div><div class="pd-plate__dest">10 fotos</div></div>
+      <div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div>
+    </div>
+  </div>
+  <div class="grain"></div>
+</section>
+
+<!-- ENCERRAMENTO: SÓ CTA -->
+<section class="slide pd-paper" id="s11">
+  <div class="serie">Fotos</div>
+  <h2 style="position:absolute;left:80px;top:240px;width:920px;margin:0;font:700 80px/.95 var(--pd-fd)">Conhece alguém indo pra Barcelona?<small style="display:block;font:500 30px/1.3 var(--pd-fm);letter-spacing:.02em;color:var(--pd-n5);text-transform:uppercase;margin-top:24px">3 dias · 10 fotos · março de 2026</small></h2>
+  <p class="body" style="position:absolute;left:80px;top:580px;width:920px;margin:0">Manda esse post e ajuda a montar o roteiro.</p>
+  <div class="pd-note pd-paper" style="left:120px;top:780px"><span class="pd-note__t">toda cidade tem</span><span class="pd-note__t">um primeiro dia.</span></div>
+  <div class="pd-plate pd-plate--s pd-plate--one" style="left:80px;top:1100px;transform-origin:0 0;scale:.75"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Manda pra quem vai</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <svg class="pd-one" viewBox="0 0 100 100" style="position:absolute;left:904px;top:1168px;height:96px;z-index:25" aria-label="1º"><path class="num" fill="#121317" d="M26 4h22v96H26V30l-14 7V16z"/><g><circle class="sun" cx="76" cy="17" r="15" fill="#FFC21A"/></g><rect class="bar" x="58.7" y="38" width="34.5" height="5.5" fill="#FFC21A"/></svg>
+  <div class="grain"></div>
+</section>
+
+</body>
+</html>
