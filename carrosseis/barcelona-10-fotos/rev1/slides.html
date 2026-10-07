@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Carrossel Barcelona em 10 fotos · REV1</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="../../../design-system/bundle/pd-bundle.css">
+<style>
+/* Só tokens do DS V2.1. Canvas 1080 × 1440 (DS 3.x, 3:4). Base: carrossel de Roma REV1. */
+body{margin:0;background:#26292F}
+.slide{position:relative;width:1080px;height:1440px;overflow:hidden;background:var(--pd-p);color:var(--pd-n);margin:0 0 40px}
+.slide.pd-paper::after{opacity:.04} /* fibra 4% */
+.grain{position:absolute;inset:0;background:var(--pd-grain);opacity:.05;mix-blend-mode:overlay;pointer-events:none;z-index:50}
+/* contador: x 1000 alinhado à direita · y 80 · Plex Mono 30 */
+.count{position:absolute;right:80px;top:64px;font:500 30px/1.3 var(--pd-fm);letter-spacing:.02em;color:var(--pd-n5);z-index:30}
+/* etiqueta de série: mini-placa 48 px, Condensed 600 28 px +8%, face amarela, sem módulo */
+.serie{position:absolute;left:80px;top:60px;height:48px;padding:0 16px;display:flex;align-items:center;background:var(--pd-y);border-radius:10px;box-shadow:var(--pd-bevel),0 3px 0 rgba(0,0,0,.25);font:600 28px/1 var(--pd-fd);letter-spacing:.08em;text-transform:uppercase;color:var(--pd-n);z-index:30}
+/* Rota: linha amarela contínua de 8 px em y 1360, atravessa a borda e continua no slide seguinte */
+.rota{position:absolute;left:0;right:0;top:1356px;height:8px;background:var(--pd-y);z-index:20}
+.on-photo{color:var(--pd-r);text-shadow:0 2px 0 rgba(0,0,0,.35),0 0 24px rgba(0,0,0,.45)}
+/* Body · micro */
+.body{font:500 44px/1.3 var(--pd-ft)}
+.micro{font:500 30px/1.3 var(--pd-fm);letter-spacing:.02em;text-transform:uppercase}
+/* Fotografia: foto radius-photo com margem 80, legenda Barlow 500 40 abaixo */
+.photo{position:absolute;left:80px;top:160px;width:920px;height:920px;border-radius:24px;overflow:hidden;background:var(--pd-n)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.legenda{position:absolute;left:80px;top:1128px;width:920px;font:500 40px/1.3 var(--pd-ft);color:var(--pd-n)}
+.legenda b{font-weight:700}
+/* Fotografia (carrossel de fotos): foto 920 × 1000, Placa M (75%) na base esquerda sobrepondo 24 px, legenda + data abaixo */
+.photo.tall{height:1000px}
+.photo.tall~.legenda{top:1216px}
+.placaM{left:104px!important;top:auto!important;bottom:256px;transform-origin:0 100%;scale:.75;z-index:25}
+.legenda .micro{display:block;color:var(--pd-n5);margin-top:12px}
+
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<section class="slide" id="s01">
+  <div class="photo" style="inset:0;width:auto;height:auto;border-radius:0"><img src="../fonte/selfie_sagrada.jpg" style="object-position:50% 50%"></div>
+  <div class="pd-scrim"></div>
+  <div class="serie">Fotos</div>
+  <div class="count on-photo">01 / 10</div>
+  <div style="position:absolute;left:80px;bottom:200px;display:flex;flex-direction:column;gap:24px;z-index:25">
+    <div class="micro on-photo">3 dias · 09 a 11/03/2026<br>41,4047° N · 2,1754° E</div>
+    <div class="pd-plate" style="position:relative;left:0;top:0">
+      <div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__label">Barcelona em</div><div class="pd-plate__dest">10 fotos</div></div>
+      <div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div>
+    </div>
+  </div>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+<!-- MUSEU DO BARÇA -->
+<section class="slide pd-paper" id="s02">
+  <div class="serie">Fotos</div><div class="count">02 / 10</div>
+  <div class="photo tall"><img src="../fonte/museu_barca.jpg" style="object-position:50% 40%"></div>
+  <div class="pd-plate pd-plate--s pd-plate--one placaM" style=""><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Museu do Barça</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda">Soteropolitano, de camisa do Bahia, claro.<span class="micro">dia 1 · 09/03/2026</span></p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+<!-- BARCELONETA -->
+<section class="slide pd-paper" id="s03">
+  <div class="serie">Fotos</div><div class="count">03 / 10</div>
+  <div class="photo tall"><img src="../fonte/barceloneta.jpg" style="object-position:50% 60%"></div>
+  <div class="pd-plate pd-plate--s pd-plate--one placaM" style=""><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Barceloneta</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda">Praia dentro da cidade, com o Hotel W ao fundo.<span class="micro">dia 1 · 09/03/2026</span></p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+<!-- CIUTADELLA -->
+<section class="slide pd-paper" id="s04">
+  <div class="serie">Fotos</div><div class="count">04 / 10</div>
+  <div class="photo tall"><img src="../fonte/ciutadella_casal.jpg" style="object-position:50% 55%"></div>
+  <div class="pd-plate pd-plate--s pd-plate--one placaM" style=""><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Ciutadella</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda">A cascata do parque, no fim da tarde.<span class="micro">dia 1 · 09/03/2026</span></p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+<!-- BAIRRO GÓTICO -->
+<section class="slide pd-paper" id="s05">
+  <div class="serie">Fotos</div><div class="count">05 / 10</div>
+  <div class="photo tall"><img src="../fonte/gotico_diego.jpg" style="object-position:50% 60%"></div>
+  <div class="pd-plate pd-plate--s pd-plate--one placaM" style=""><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Bairro Gótico</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda">Ruelas de pedra no centro antigo.<span class="micro">dia 2 · 10/03/2026</span></p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+<!-- PAELLA -->
+<section class="slide pd-paper" id="s06">
+  <div class="serie">Fotos</div><div class="count">06 / 10</div>
+  <div class="photo tall"><img src="../fonte/paella.jpg" style="object-position:50% 55%"></div>
+  <div class="pd-plate pd-plate--s pd-plate--one placaM" style=""><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Paella</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda">De frutos do mar, no almoço.<span class="micro">dia 2 · 10/03/2026</span></p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+<!-- LA BOQUERIA -->
+<section class="slide pd-paper" id="s07">
+  <div class="serie">Fotos</div><div class="count">07 / 10</div>
+  <div class="photo tall"><img src="../fonte/boqueria.jpg" style="object-position:50% 60%"></div>
+  <div class="pd-plate pd-plate--s pd-plate--one placaM" style=""><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">La Boqueria</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda">O mercado da Rambla.<span class="micro">dia 2 · 10/03/2026</span></p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+<!-- CASA BATLLÓ -->
+<section class="slide pd-paper" id="s08">
+  <div class="serie">Fotos</div><div class="count">08 / 10</div>
+  <div class="photo tall"><img src="../fonte/batllo.jpg" style="object-position:50% 50%"></div>
+  <div class="pd-plate pd-plate--s pd-plate--one placaM" style=""><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Casa Batlló</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda">Gaudí no Passeig de Gràcia, no fim do dia.<span class="micro">dia 2 · 10/03/2026</span></p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+<!-- SAGRADA FAMÍLIA -->
+<section class="slide pd-paper" id="s09">
+  <div class="serie">Fotos</div><div class="count">09 / 10</div>
+  <div class="photo tall"><img src="../fonte/sagrada_teto.jpg" style="object-position:50% 50%"></div>
+  <div class="pd-plate pd-plate--s pd-plate--one placaM" style=""><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Sagrada Família</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda">Por dentro, o teto parece uma floresta.<span class="micro">dia 3 · 11/03/2026</span></p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+<!-- ENCERRAMENTO: PARK GÜELL + CTA -->
+<section class="slide pd-paper" id="s10">
+  <div class="serie">Fotos</div><div class="count">10 / 10</div>
+  <div class="photo" style="height:700px"><img src="../fonte/park_guell.jpg" style="object-position:50% 70%"></div>
+  <div class="pd-plate pd-plate--s pd-plate--one placaM" style="bottom:556px"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Park Güell</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda" style="top:908px">Último dia. Tem alguém indo pra Barcelona?<span class="micro">dia 3 · 11/03/2026</span></p>
+  <div class="pd-plate pd-plate--s pd-plate--one " style="left:80px;top:1064px;transform-origin:0 0;scale:.75"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Manda pra quem vai</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <svg class="pd-one" viewBox="0 0 100 100" style="position:absolute;left:904px;top:1168px;height:96px;z-index:25" aria-label="1º"><path class="num" fill="#121317" d="M26 4h22v96H26V30l-14 7V16z"/><g><circle class="sun" cx="76" cy="17" r="15" fill="#FFC21A"/></g><rect class="bar" x="58.7" y="38" width="34.5" height="5.5" fill="#FFC21A"/></svg>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+</body>
+</html>
