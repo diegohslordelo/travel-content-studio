@@ -23,3 +23,7 @@ Todos os slides são renderizados por `slides.html` (`node scripts/render.mjs`);
 
 - Nome do restaurante: "Momo" (informado pelo Diego).
 - Ainda em aberto: o museu ou tour do Camp Nou e o Hotel W (QA_REV1).
+
+## Aprovação do Diego (07/10/2026)
+
+"Está ótimo, está tudo certo": REV3 aprovada como versão oficial, incluindo os desvios 1 a 3 (só neste carrossel) e os pontos de conferência.
