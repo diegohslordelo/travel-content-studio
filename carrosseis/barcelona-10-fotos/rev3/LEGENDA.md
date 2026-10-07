@@ -5,18 +5,14 @@
 ## Legenda (copiar)
 
 ```
-Barcelona em 2027? Começa por essas 10 fotos 📸
+Barcelona em 2027? 👀
 
-Foram 3 dias nossos em Barcelona, em março de 2026: do museu do Barça (de camisa do Bahia, claro) à Sagrada Família por dentro, passando pela praia, pelo Bairro Gótico e pela paella do Momo.
+Passamos 3 dias lá em março deste ano e a cidade entrega muito: Gaudí pra todo lado, paella no almoço, praia dentro da cidade e, claro, um soteropolitano de camisa do Bahia no museu do Barça.
 
-📍 Museu do Barça · Barceloneta · Parc de la Ciutadella · Bairro Gótico · Restaurante Momo · Mercat de la Boqueria · Casa Batlló · Sagrada Família · Park Güell
-
-Fotos de Barcelona, Espanha.
-
-Conhece alguém indo pra Barcelona? Manda pra quem vai ✈️
+Tem alguém com Barcelona nos planos? Manda esse post pra essa pessoa ✈️
 ```
 
-A 1ª linha reforça o gancho da capa (referência, 3.4). "Março de 2026" fica só na legenda, para o "2027?" não parecer que as fotos são de 2027 (CLAUDE.md 9, contexto verdadeiro). 1 CTA, o mesmo do slide 11.
+Versão final, pedida pelo Diego em 07/10/2026: mais natural, sem listar as atrações de novo. A 1ª linha reforça o gancho da capa (referência, 3.4). "Março deste ano" (2026) fica só na legenda, para o "2027?" não parecer que as fotos são de 2027 (CLAUDE.md 9, contexto verdadeiro). 1 CTA, o mesmo do slide 11.
 
 ## Texto alternativo (opcional)
 
