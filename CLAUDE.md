@@ -69,6 +69,7 @@ Este arquivo **não** descreve a identidade visual. Cores, fontes, componentes, 
 | 4 | Referência Instagram | `docs/referencia-conteudo-instagram.md` | Estratégia, formato, ritmo, publicação e métricas |
 | 5 | CLAUDE.md | `CLAUDE.md` | Contexto e regras operacionais |
 | 6 | QA / revN | `reels/<reel>/revN/QA_REVN.md` e `revN.json` | Decisões específicas de uma revisão |
+| Procedimento | Padrão de revisão de áudio (YouTube) | `docs/AUDIO_REVIEW_STANDARD.md` | Método, checklist e relatório da revisão de áudio. Os requisitos do DS V2 e dos tokens prevalecem sobre ele |
 | Apoio | Instrução-base | `docs/design-system-marca-viagens.md` | Método e teoria (o porquê). As cores e fontes "sugeridas" dele não valem como identidade |
 
 As fontes do DS V2 ainda não estão no repositório (seção 14).
@@ -164,7 +165,7 @@ travel-content-studio/
 ├── README.md        visão geral, como baixar os vídeos (Git LFS) e como renderizar
 ├── CLAUDE.md        este manual
 ├── design-system/   DS V2, tokens, bundle e fontes (ver design-system/README.md)
-├── docs/            referência de conteúdo Instagram e instrução-base do DS
+├── docs/            referência de conteúdo Instagram, instrução-base do DS e padrão de revisão de áudio do YouTube
 ├── planejamento/    painel de conteúdo (planejamento-postagens.html), análise estratégica e versões
 └── reels/
     └── apresentacao/  Reel de apresentação do perfil (revisões, QA, scripts, análises)
@@ -181,6 +182,7 @@ travel-content-studio/
 - **Scripts:** usam caminhos relativos e rodam de dentro da pasta do Reel.
 - **Valores visuais no código:** vêm do DS V2 e dos tokens. Se o valor não existir no DS, não invente; registre a lacuna e pergunte ao Diego.
 - **Centro no código:** elemento centralizado calcula o centro a partir da largura do canvas (`W / 2`), nunca a partir da zona segura (`(x0 + x1) / 2`). Em CSS, centralize no canvas (por exemplo, `left:0; right:0; margin-inline:auto`), e não com `left:72px; width:872px`.
+- **Revisão de áudio de vídeo do YouTube:** leia `docs/AUDIO_REVIEW_STANDARD.md` **antes** de analisar ou processar qualquer áudio e siga o checklist e o modelo de relatório dele. O Claude não escuta áudio: a validação auditiva é humana e não pode ser declarada sem ter acontecido.
 - **Pedido só de design:** não muda conteúdo, cortes, narração ou mixagem sem justificativa registrada na QA da revisão.
 - **Documentos de referência, planejamento e material bruto:** só mude mediante solicitação do Diego.
 
