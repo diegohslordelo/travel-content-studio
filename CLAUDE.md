@@ -69,6 +69,7 @@ Este arquivo **não** descreve a identidade visual. Cores, fontes, componentes, 
 | 4 | Referência Instagram | `docs/referencia-conteudo-instagram.md` | Estratégia, formato, ritmo, publicação e métricas |
 | 5 | CLAUDE.md | `CLAUDE.md` | Contexto e regras operacionais |
 | 6 | QA / revN | `reels/<reel>/revN/QA_REVN.md` e `revN.json` | Decisões específicas de uma revisão |
+| Procedimento | Padrão de revisão de áudio (vídeos longos do YouTube) | `docs/AUDIO_REVIEW_STANDARD.md` | Método, checklist e relatório da revisão de áudio. Os requisitos do DS V2 e dos tokens prevalecem sobre ele |
 | Apoio | Instrução-base | `docs/design-system-marca-viagens.md` | Método e teoria (o porquê). As cores e fontes "sugeridas" dele não valem como identidade |
 
 As fontes do DS V2 ainda não estão no repositório (seção 14).
@@ -83,7 +84,7 @@ As fontes do DS V2 ainda não estão no repositório (seção 14).
 
 **Regra central:** quando a tarefa envolver identidade visual, o Claude deve consultar o Design System V2 e seus tokens antes de decidir.
 
-- **Versão vigente:** a V2.1.0 "Objetos do Primeiro Dia" (05/10/2026). A 2.1.0 acrescentou os níveis de edição A/B, as regras de som e os tokens de efeito e som, sem valor visual novo (DS V2, Changelog).
+- **Versão vigente:** a V2.2.0 "Objetos do Primeiro Dia" (08/10/2026). A 2.1.0 acrescentou os níveis de edição A/B, as regras de som e os tokens de efeito e som, sem valor visual novo. A 2.2.0 acrescentou as legendas do YouTube longo em 16:9 (seção 3.4), com tokens de posição, largura e tempo em `layout.yt` (DS V2, Changelog).
 - **Aposentadas:** a V1 "Placa & Caneta" e a v0 "Primeira luz". Não reutilize valores, componentes nem regras visuais delas.
 - **Valores visuais** (cor, fonte, tamanho, espaço, raio, sombra, posição, duração, curva, volume) vêm dos tokens e do DS V2. Não crie valores fora deles.
 - **Componentes novos ou variações** seguem a governança do DS V2 (Governança e versionamento), com aprovação do Diego. Não altere os documentos do DS sem pedido explícito dele.
@@ -164,7 +165,7 @@ travel-content-studio/
 ├── README.md        visão geral, como baixar os vídeos (Git LFS) e como renderizar
 ├── CLAUDE.md        este manual
 ├── design-system/   DS V2, tokens, bundle e fontes (ver design-system/README.md)
-├── docs/            referência de conteúdo Instagram e instrução-base do DS
+├── docs/            referência de conteúdo Instagram, instrução-base do DS e padrão de revisão de áudio do YouTube
 ├── planejamento/    painel de conteúdo (planejamento-postagens.html), análise estratégica e versões
 └── reels/
     └── apresentacao/  Reel de apresentação do perfil (revisões, QA, scripts, análises)
@@ -181,6 +182,7 @@ travel-content-studio/
 - **Scripts:** usam caminhos relativos e rodam de dentro da pasta do Reel.
 - **Valores visuais no código:** vêm do DS V2 e dos tokens. Se o valor não existir no DS, não invente; registre a lacuna e pergunte ao Diego.
 - **Centro no código:** elemento centralizado calcula o centro a partir da largura do canvas (`W / 2`), nunca a partir da zona segura (`(x0 + x1) / 2`). Em CSS, centralize no canvas (por exemplo, `left:0; right:0; margin-inline:auto`), e não com `left:72px; width:872px`.
+- **Revisão de áudio de vídeo longo do YouTube** (não vale para Shorts nem Reels): leia `docs/AUDIO_REVIEW_STANDARD.md` **antes** de analisar ou processar qualquer áudio e siga o checklist e o modelo de relatório dele. O Claude não escuta áudio: a validação auditiva é humana e não pode ser declarada sem ter acontecido.
 - **Pedido só de design:** não muda conteúdo, cortes, narração ou mixagem sem justificativa registrada na QA da revisão.
 - **Documentos de referência, planejamento e material bruto:** só mude mediante solicitação do Diego.
 

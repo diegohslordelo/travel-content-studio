@@ -2,7 +2,7 @@
 
 Design system da marca de conteúdo de viagens **Primeiro Dia** (@primeirodiaem) — REV 2, "Objetos do Primeiro Dia".
 
-> **Versão:** 2.1.0 (MINOR) · **Data:** 05/10/2026 (2.0.0 em 01/10/2026) · **Dono:** Diego · **Conceito:** "Objetos do Primeiro Dia"
+> **Versão:** 2.2.0 (MINOR) · **Data:** 08/10/2026 (2.1.0 em 05/10/2026; 2.0.0 em 01/10/2026) · **Dono:** Diego · **Conceito:** "Objetos do Primeiro Dia"
 > **Substitui:** `design-system-primeiro-dia-v1.md` e `primeiro-dia-tokens-v1.json` ("Placa & Caneta", v1.0.0), que ficam **aposentados**.
 > **Arquivos:** este brand book · `primeiro-dia-tokens-v2.json` (DTCG, fonte única dos valores) · `PDPlacar-Bold.ttf` (mantido) · componentes vivos neste sistema.
 > **Relação com os outros documentos:** `design-system-marca-viagens.md` continua sendo a instrução-base (como construir). `referencia-conteudo-instagram.md` continua governando formato e ritmo (gancho, duração, métricas). Este sistema governa forma, movimento e som.
@@ -234,6 +234,7 @@ Barlow + Barlow Condensed + PD Placar contam como **uma** superfamília; Plex Mo
 - Grid de 12 colunas, calha 24 px.
 - Lower third: x 96 · base y 960. Placar: x 96 · y 72. Placa de capítulo: x 96 · y 96.
 - Nada essencial nos últimos 20 s entre y 540 e 1080 (cartões de tela final).
+- Legenda embutida: Padrão centrada em x 960, Narrativa em x 96, ambas com base em y 984 e linha de até 1306 px (seção 3.4).
 
 ### 3:4 — Carrossel e feed (1080 × 1440) — formato principal
 - Margem 80 px · 4 colunas de 212 px · calha 24 px.
@@ -533,6 +534,72 @@ As legendas são o componente que mais aparece na tela, então são o lugar onde
 3. Não existe animação de legenda que dure mais que **500 ms**.
 4. Em fala rápida (> 3 palavras/s), o Padrão vira **grupo inteiro** (sem palavra a palavra), 120 ms.
 5. Se a cena tem movimento forte (câmera andando), a legenda fica mais calma (sem destaque).
+## 3.4 Legendas no YouTube (vídeo longo, 16:9)
+
+> **Adicionado na 2.2.0 (08/10/2026, pedido do Diego).** Vale para os vídeos longos do canal do YouTube (1920 × 1080). Não vale para Shorts (que seguem 3.1–3.3 com a grade 9:16). As seções 3.1 a 3.3 foram escritas para o Reel; esta seção adapta o sistema ao 16:9 usando os mesmos tokens de fonte, cor, sombra, scrim e movimento. Os valores novos são de **posição, largura e tempo** e estão em `layout.yt` nos tokens.
+
+No vídeo longo, a legenda tem **duas camadas com funções diferentes**:
+
+| Camada | O que é | Quando | Quem controla a aparência |
+|---|---|---|---|
+| **1. Legenda fechada (CC)** | Arquivo `.srt` enviado no YouTube Studio (Legendas), faixa **Português (Brasil)** | **Todo vídeo longo com fala**, do início ao fim | O player do YouTube e o espectador (liga/desliga, tamanho, cor). O `.srt` não aceita estilo nem posição |
+| **2. Legenda embutida de reforço** | Texto queimado na imagem, no estilo da marca | **Só** nos trechos em que a fala continua difícil depois da revisão de áudio, e na fala-chave (preço, nome, aviso) com dúvida de áudio | Este design system |
+
+A legenda embutida **não** acompanha a fala inteira no vídeo longo: quem quer a fala completa liga o CC. Assim a imagem fica limpa por minutos seguidos e a legenda queimada ganha peso quando aparece. A decisão de quais trechos recebem reforço vem do padrão de revisão de áudio (`docs/AUDIO_REVIEW_STANDARD.md`, seção 10).
+
+### 3.4.1 Camada 1: legenda fechada (`.srt`)
+
+| Regra | Valor | Base |
+|---|---|---|
+| Formato | SubRip `.srt`, texto simples em **UTF-8**, sem marcação de estilo | YouTube Help, "Supported subtitle and closed caption files" (o `.srt` básico não reconhece estilo; posição só em WebVTT/TTML) |
+| Idioma da faixa | Português (Brasil) | — |
+| Linhas | Máx. **2**; uma linha sempre que couber | Netflix Timed Text Style Guide; BBC |
+| Caracteres por linha | Máx. **42** | Mesmo valor de `layout.yt.caption-max-chars` (3.4.2) |
+| Duração de cada legenda | Mín. **833 ms** (5/6 s) · máx. **7 s** | Netflix Timed Text Style Guide |
+| Velocidade de leitura | Máx. **3 palavras/s** (180 palavras/min) | BBC: 160–180 palavras/min |
+| Quebra | Por sentido (regra da 3.1): nunca separar artigo do nome, nome do sobrenome, verbo do auxiliar ou da negação | DS 3.1; Netflix |
+| Texto | O que foi dito, sem completar nem "corrigir". Nomes de lugares e valores conferidos no registro da viagem | DS 6.3 (revisar 100%); CLAUDE.md, Regras editoriais |
+| Sons | Entre colchetes e em minúsculas, só quando informam: `[música]`, `[risos]`, `[sino da igreja]`. Nunca em todo ruído | Convenção dos exemplos do YouTube Help |
+| Quem fala | Só quando a pessoa não aparece ou não dá para saber: `Marina: …` | — |
+| Outro idioma | Fala que importa: `[em espanhol]` + tradução em português. Fala que não importa: só `[em espanhol]` | — |
+| Legenda automática do YouTube | Pode servir de rascunho, **nunca** de versão final | DS 6.3 |
+| Trechos com reforço embutido (camada 2) | O evento correspondente **sai** do `.srt`, para não haver dois textos sobrepostos na base da tela; o texto queimado já cobre a acessibilidade naquele trecho | Netflix: evitar sobreposição com texto na tela |
+
+### 3.4.2 Camada 2: legenda embutida de reforço (1920 × 1080)
+
+| Item | Padrão YouTube | Narrativa YouTube |
+|---|---|---|
+| **Para** | Reforço de fala difícil e fala-chave | Contexto e voz em off (o "Narrativa" da 3.2 adaptado ao 16:9) |
+| **Fonte** | Token `font.style.caption`: Barlow 700, 56 px, entrelinha 1,15 | Token `font.style.narrative`: Barlow 500, 44 px, entrelinha 1,25 |
+| **Cor** | `caption-text` `#FCFBF8` | papel |
+| **Fundo** | Sem caixa. Sombra de texto da 3.1 + scrim (abaixo) | Vidro da 3.2 (`blur-glass`) |
+| **Alinhamento** | Centro do canvas, **x 960** (`W / 2`) | Esquerda, **x 96** (margem de título) |
+| **Base do bloco** | **y 984** (= 1080 − margem de título 96) | **y 984** |
+| **Largura máx. de linha** | **1306 px** (68% de 1920: x 307–1613) | **1306 px** (x 96–1402) |
+| **Caracteres por linha** | Máx. **42** | Máx. 34 (3.2) |
+| **Linhas** | Máx. **2** | Máx. 3 |
+| **Scrim** | Gradiente grafite **0% em y 730 → 63% em y 1080** (os mesmos 350 px de altura e 63% do Reel), **só enquanto a legenda está na tela** | — (o vidro já dá contraste) |
+| **Entrada** | Grupo inteiro: opacidade 0 → 1 + sobe 10 px, 120 ms, `ease-out` | Vidro abre 200 ms; linhas com 120 ms de intervalo (3.2) |
+| **Saída** | Grupo inteiro: 1 → 0 + sobe 6 px, 120 ms; o scrim sai junto | Igual à 3.3 |
+| **Destaque** | Mini-placa (3.2) só em **número** confirmado (preço, tempo, distância), máx. 1 por grupo | Não usar |
+| **Tempo** | Entra no início da primeira palavra (nunca antes); 833 ms a 7 s por grupo; máx. 3 palavras/s | Igual |
+
+**Por que esses valores:**
+- **Tamanho:** o vídeo longo é visto em tela pequena (celular deitado) e em TV. A 56 px num quadro de 1080 de altura, a linha tem cerca de 5% da altura da imagem, acima do mínimo de legenda da 1.2 (52 px). Não há tamanho novo.
+- **Posição:** a margem de título de 96 px (1.3) já existe. A base em y 984 deixa a faixa de 96 px de baixo livre, onde o player mostra a barra de progresso e os controles. A BBC recomenda não sair dos 90% centrais na vertical (y 54–1026): y 984 cumpre.
+- **Largura:** a BBC limita a linha a 68% da largura em 16:9 (1306 px) e manda não sair dos 75% centrais (x 240–1680). Linhas longas em tela larga obrigam o olho a viajar demais.
+- **Movimento:** palavra a palavra cansa num vídeo de vários minutos; o grupo inteiro é o modo calmo que a 3.3 já prevê (freio 4).
+- **Scrim só com legenda:** no Reel o scrim fica sempre ligado; no vídeo longo, ele escureceria a base da imagem por minutos sem função.
+
+**Proibido no vídeo longo:**
+- legenda embutida em toda a fala (essa função é do `.srt`);
+- legenda embutida nos **últimos 20 s** (tela final, cartões entre y 540 e 1080; 1.3); o bordão é falado antes da tela final (5.4);
+- legenda embutida ao mesmo tempo que o **lower third** (base y 960): quando coincidirem, o lower third entra depois da fala;
+- Padrão YouTube e Narrativa YouTube na mesma tela;
+- todos os proibidos da 3.2 (contorno preto, CAIXA-ALTA, emoji, cor solta).
+
+**Pendências:** os valores de tempo e largura vêm de guias de legenda de TV e streaming (BBC e Netflix), não de dados do canal; revisar depois dos primeiros vídeos. A área ocupada pelos controles do player não tem número oficial do YouTube: conferir num envio de teste (não listado) antes de publicar o primeiro vídeo. O bundle ainda não tem prévia desta seção.
+
 ## 4. Motion, Brand Motion, transições, efeitos e som
 
 ## 4.1 Tokens de movimento
@@ -735,6 +802,7 @@ O carrossel é uma **publicação editorial**: cada slide é uma página, com o 
 | **Preços** | Recibo entra pela direita (x 1400) e fica 4–6 s; placar no canto superior esquerdo (x 96 · y 72) nos dias de "primeiro dia" | Sempre € e R$ |
 | **Chamadas** | Placa CTA `INSCREVA-SE →` aparece 1 vez, em 30–40% do vídeo, 4 s | Sem animação de sininho |
 | **Transições** | As mesmas 6 famílias; Varredura entre capítulos, Cinema entre dias | Cota: 1 Varredura por capítulo |
+| **Legendas** | Faixa `.srt` revisada em todo vídeo com fala + legenda embutida de reforço só nos trechos difíceis (3.4) | Sem legenda embutida na tela final nem junto do lower third |
 | **Encerramento** | Placa de fechamento + Nascer do 1º → tela final de 20 s: fundo papel com fibra, 2 espaços de vídeo à direita, bilhete com "próximo dia:" à esquerda | Bordão falado antes da tela final |
 
 ## 5.5 Thumbnails (1280 × 720)
@@ -875,6 +943,7 @@ X relativo à posição final (x 72 · y 640). Som *clack* no Q8 (280 ms). Desfo
 - [ ] Valores com € e R$ + cotação com data na legenda do post.
 - [ ] Som: arquivos `PD_*` só nos eventos da 4.6, no máx. 1 efeito sonoro a cada 1,5 s; master −14 LUFS, pico ≤ −1 dBTP.
 - [ ] Teste de miniatura aprovado.
+- [ ] YouTube longo: `.srt` revisado enviado; legenda embutida só nos trechos de reforço, na posição da 3.4.
 - [ ] Bordão e placa de fechamento (Reels de primeiro dia).
 
 ## 7.4 Governança e versionamento
@@ -892,6 +961,7 @@ X relativo à posição final (x 72 · y 640). Som *clack* no Q8 (280 ms). Desfo
 | 1.0.0 | 01/10/2026 | "Placa & Caneta" | Unicidade frente à categoria | Aposentada na v2 (sem Reel publicado) |
 | **2.0.0** | **01/10/2026** | **REV 2 "Objetos do Primeiro Dia":** placa esmaltada com módulo de seta; Carimbo PERRENGUE (substitui placa torta); Ticket SURPREENDE (novo); Recibo, Etiqueta, Comanda, Quadro, Rota; 6 estilos de legenda (fim da faixa grafite); 6 assinaturas de movimento; 6 famílias de transição; efeitos com função; 8 sons; Barlow Condensed 300 itálico e IBM Plex Mono; grão 5%; Grafite `#16181D` → `#121317`; raio da placa 8 → 16 px | A v1 ficou crua: caixas chapadas, sem material, sem movimento próprio | Refazer projetos-modelo, banner do YouTube, capas e PNGs do kit. Placar, bilhete, símbolo 1º, bordão e posições fixas mantidos. |
 | **2.1.0** | **05/10/2026** | Níveis de edição A/B (5.2 e 7.3); sons: nomes dos arquivos, Varredura com *clack*, Nascer no kit, 1 *tick* por giro, obturador só no 1º e no último item da lista, referência sem voz, master −14 LUFS / ≤ −1 dBTP; tempos em ms como referência das receitas; tokens `blur`, `effect` e `sound` (cópia dos valores do brand book); introdução renumerada (0.1–0.4); bundle alinhado aos tokens | Pacote aprovado pelo Diego (pendências 2, 3, 4 e 6 do CLAUDE.md; auditoria de som e efeitos) | Nenhum valor visual novo; Reels de Nível B passam a ter checklist próprio |
+| **2.2.0** | **08/10/2026** | Legendas do YouTube longo (3.4): faixa `.srt` em todo vídeo com fala + legenda embutida de reforço (Padrão YouTube em x 960, Narrativa YouTube em x 96, base y 984, linha ≤ 1306 px e ≤ 42 caracteres, 833 ms a 7 s, ≤ 3 palavras/s, scrim só com legenda); tokens `layout.yt.caption-*`, `layout.yt.narrative-x`, `layout.yt.scrim-top-y`; linha no checklist 7.3 e na tabela 5.4 | Pedido do Diego: o DS não definia legenda em 16:9. Valores derivados das margens já existentes e de guias públicos (BBC, Netflix, YouTube Help), consultados em 08/10/2026 | Nenhuma fonte, cor, sombra ou curva nova. Bundle sem prévia da 3.4 |
 
 ### Migração da v1
 | Sai | Entra |
@@ -932,3 +1002,5 @@ X relativo à posição final (x 72 · y 640). Som *clack* no Q8 (280 ms). Desfo
 
 ## 7.6 Referências
 Base teórica em `design-system-marca-viagens.md` (seção 14): Kapferer, Sharp e Romaniuk (ativos distintivos), Berger e Milkman (STEPPS, alta ativação), Frost (Atomic Design), W3C DTCG 2025.10, WCAG 2.2. Pesquisa da v1 (Schiphol/Wissing 1967, Barlow, zonas seguras, grid 3:4, CapCut, Calligraphr) continua válida. IBM Plex Mono: OFL 1.1 (Google Fonts). Pictogramas AIGA/DOT: domínio público.
+
+**Legendas do YouTube (3.4), consultadas em 08/10/2026:** YouTube Help, "Supported subtitle and closed caption files" (support.google.com/youtube/answer/2734698) e "Add subtitles & captions" (answer/2734796); Netflix, "Timed Text Style Guide: General Requirements" (partnerhelp.netflixstudios.com, artigo 215758617): 2 linhas, 5/6 s a 7 s, centralizado, evitar texto na tela; BBC Subtitle Guidelines, via resumo de clevercast.com (a página da BBC não abriu): linha ≤ 68% da largura em 16:9, área central de 90% × 75%, 160–180 palavras/min. O número de 42 caracteres é a convenção de streaming para legenda em 16:9; o Netflix o define nos guias por idioma, não conferidos aqui.
