@@ -1,0 +1,589 @@
+{
+  "revisao": 1,
+  "_o_que_e": "Reel trailer do vlog de Barcelona: 'vídeo no ar'. Postagem no Instagram em 10/10/2026, 18:30 (p15 do planejamento), depois do vlog no YouTube às 11h. Voz do próprio vlog (Diego e Marina), 3 imagens de Barcelona e a placa 'VÍDEO COMPLETO NO YOUTUBE / SAIU HOJE'. Não repete os preços do teaser. Nível A (DS V2, 5.2).",
+  "master": "../fonte/Barcelona_3dias.MOV",
+  "_master": "Vlog completo, 34:10, 3840 × 2160, HEVC 10 bits HLG, 24 fps. Fora do git (Google Drive do Diego, arquivo Barcelona_3dias.MOV). Caminho alternativo: --master.",
+  "saida": "reel_trailer_barcelona_rev1.mp4",
+  "saida_previa": "reel_trailer_barcelona_rev1_previa_leve.mp4",
+  "capa": "capa_reel_trailer_barcelona_rev1.jpg",
+  "fps": 24,
+  "sr": 48000,
+  "largura": 1080,
+  "altura": 1920,
+  "crf": 16,
+  "planos": [
+    {
+      "n": 1,
+      "cena": "Gancho: fachada do Nascimento da Sagrada Família (dia 3) com a fala do Diego no Park Güell",
+      "origem": [
+        1792.38,
+        1795.5
+      ],
+      "video_origem": 1464.17,
+      "centro_x": 0.5,
+      "audio": "fala",
+      "_video": "Imagem da fachada (master 1464,12–1467,29 s, sem pessoas em primeiro plano); a fala 'Barcelona é praticamente de Gaudí.' é do Park Güell (29:52, dia 3). A Sagrada Família é obra de Gaudí: a frase não muda o sentido da cena."
+    },
+    {
+      "n": 2,
+      "cena": "Passeig de Lluís Companys, perto do Arco do Triunfo (dia 1): Marina",
+      "origem": [
+        543.28,
+        547.2
+      ],
+      "centro_x": 0.45,
+      "audio": "fala"
+    },
+    {
+      "n": 3,
+      "cena": "Bairro Gótico (dia 2), com a fala da Marina continuando",
+      "origem": [
+        547.2,
+        547.82
+      ],
+      "video_origem": 870.6,
+      "centro_x": 0.5,
+      "audio": "fala"
+    },
+    {
+      "n": 4,
+      "cena": "Casa Batlló (dia 2), com a fala da Marina continuando",
+      "origem": [
+        547.82,
+        548.44
+      ],
+      "video_origem": 1265.0,
+      "centro_x": 0.58,
+      "audio": "fala"
+    },
+    {
+      "n": 5,
+      "cena": "Passeig de Gràcia e La Pedrera (dia 2), com a fala da Marina continuando",
+      "origem": [
+        548.44,
+        549.2
+      ],
+      "video_origem": 1336.3,
+      "centro_x": 0.6,
+      "audio": "fala",
+      "_crop": "Crop no prédio de La Pedrera (Casa Milà). Trecho 1336,3–1337,1 s do master: o mais nítido do plano (câmera parada; em 1346 s ela está virando e borra). Zoom 1,2 com crop pelo alto (y 0–1803 do master) para deixar de fora o texto queimado do vlog '(La Pedrera)' na base.",
+      "zoom": 1.2,
+      "centro_y": 0.42
+    },
+    {
+      "n": 6,
+      "cena": "Saindo do Park Güell (dia 3): Diego",
+      "origem": [
+        1925.2,
+        1929.7
+      ],
+      "centro_x": 0.45,
+      "audio": "fala"
+    },
+    {
+      "n": 7,
+      "cena": "Aeroporto de Barcelona (fim da viagem): o veredito",
+      "origem": [
+        2022.7,
+        2025.66
+      ],
+      "centro_x": 0.42,
+      "audio": "fala",
+      "_crop": "Crop no Diego (quem fala); a Marina aparece ao lado."
+    },
+    {
+      "n": 8,
+      "cena": "Fechamento: Sagrada Família por fora (dia 3), sem fala",
+      "origem": [
+        1548.55,
+        1551.3
+      ],
+      "centro_x": 0.55,
+      "audio": "mudo"
+    }
+  ],
+  "legendas": [
+    {
+      "texto": "Barcelona é\npraticamente de *Gaudí*",
+      "palavras": [
+        1792.42,
+        1792.94,
+        1793.46,
+        1794.42,
+        1794.9
+      ]
+    },
+    {
+      "texto": "Eu juro,",
+      "palavras": [
+        543.34,
+        543.64
+      ]
+    },
+    {
+      "texto": "todo canto daqui",
+      "palavras": [
+        544.38,
+        544.66,
+        545.08
+      ]
+    },
+    {
+      "texto": "é sem nenhum defeito.",
+      "palavras": [
+        545.38,
+        546.14,
+        546.36,
+        546.72
+      ]
+    },
+    {
+      "texto": "As ruas são",
+      "palavras": [
+        547.24,
+        547.66,
+        547.82
+      ]
+    },
+    {
+      "texto": "lindas, lindas, lindas.",
+      "palavras": [
+        548.0,
+        548.44,
+        548.76
+      ]
+    },
+    {
+      "texto": "Eu nunca tinha vindo aqui,",
+      "palavras": [
+        1925.26,
+        1925.72,
+        1925.9,
+        1926.08,
+        1926.26
+      ]
+    },
+    {
+      "texto": "ela já tinha vindo.",
+      "palavras": [
+        1926.58,
+        1926.74,
+        1926.9,
+        1927.04
+      ]
+    },
+    {
+      "texto": "Eu achei *surreal*",
+      "palavras": [
+        1927.32,
+        1927.48,
+        1927.66
+      ]
+    },
+    {
+      "texto": "Surreal, de verdade.",
+      "palavras": [
+        1928.82,
+        1929.28,
+        1929.32
+      ]
+    },
+    {
+      "texto": "*Vale* muito a pena.",
+      "palavras": [
+        2022.8,
+        2023.68,
+        2023.9,
+        2024.02
+      ]
+    },
+    {
+      "texto": "Saiba que você",
+      "palavras": [
+        2024.22,
+        2024.62,
+        2024.74
+      ]
+    },
+    {
+      "texto": "não vai se arrepender.",
+      "palavras": [
+        2024.84,
+        2024.96,
+        2025.1,
+        2025.22
+      ]
+    }
+  ],
+  "etiquetas": [],
+  "placas": [
+    {
+      "nome": "hook",
+      "_variante": "DS 2.1 variante de abertura do vídeo longo (DS 5.4 '[N] DIAS EM / ROMA'): rótulo + destino + módulo de seta",
+      "rotulo": "3 DIAS EM",
+      "destino": "BARCELONA",
+      "modulo": "seta",
+      "plano": 1,
+      "saida": true
+    },
+    {
+      "nome": "fechamento",
+      "_variante": "DS 2.7 CTA: placa de direção 'VÍDEO COMPLETO NO YOUTUBE →', com 'SAIU HOJE' no destino",
+      "rotulo": "VÍDEO COMPLETO NO YOUTUBE",
+      "destino": "SAIU HOJE",
+      "modulo": "seta",
+      "plano": 8,
+      "saida": false
+    }
+  ],
+  "tokens": {
+    "_fonte": "primeiro-dia-tokens-v2.json (DS 2.1.0)",
+    "signal_500": "#FFC21A",
+    "signal_300": "#FFE291",
+    "night_900": "#121317",
+    "night_500": "#5B606B",
+    "night_300": "#C8CBD1",
+    "paper_0": "#FCFBF8",
+    "paper_500": "#F6F3EC",
+    "safe": {
+      "x0": 72,
+      "x1": 944,
+      "y0": 256,
+      "y1": 1440
+    },
+    "radius_plate": 16,
+    "radius_tag": 10,
+    "radius_paper": 3,
+    "op_grain": 0.05,
+    "op_fiber": 0.04,
+    "op_scrim": 0.63,
+    "ease_arrive": [
+      0.16,
+      1.28,
+      0.36,
+      1.0
+    ],
+    "ease_out": [
+      0.2,
+      0.8,
+      0.2,
+      1.0
+    ],
+    "ease_exit": [
+      0.55,
+      0.0,
+      0.85,
+      0.35
+    ],
+    "ease_cinema": [
+      0.65,
+      0.0,
+      0.35,
+      1.0
+    ],
+    "dur_fast": 160,
+    "dur_base": 240
+  },
+  "placa": {
+    "_fonte": "DS 2.1 (anatomia) e pd-bundle.css (.pd-plate: padding 28 × 36, rótulo 36/1, destino 128/0,9 com 12 px acima). Módulo quadrado com lado = altura da placa (≈ 219 px; pendência 3 do CLAUDE.md: o DS diz ≈ 176, o bundle usa a altura real).",
+    "x": 72,
+    "y": 640,
+    "rotulo_fonte": "BarlowCondensed-SemiBold.ttf",
+    "rotulo_px": 36,
+    "rotulo_tracking_em": 0.08,
+    "destino_fonte": "BarlowCondensed-ExtraBold.ttf",
+    "destino_px": 128,
+    "destino_px_longo": 104,
+    "destino_tracking_em": 0.005,
+    "destino_entrelinha": 0.9,
+    "espaco_rotulo_destino": 12,
+    "padding_v": 28,
+    "padding_h": 36,
+    "largura_max": 872,
+    "seta_fracao": 0.54,
+    "filete_inset": 10,
+    "filete_px": 2,
+    "filete_alfa": 0.25,
+    "filete_raio": 8,
+    "rebite_px": 10,
+    "rebite_x": 22,
+    "rebite_y": 22,
+    "rebite_alfa": 0.35,
+    "bevel_luz": [
+      2,
+      0.45
+    ],
+    "bevel_sombra": [
+      4,
+      0.16
+    ],
+    "sombra_dura": [
+      3,
+      0.28
+    ],
+    "sombra_projetada": {
+      "y": 18,
+      "blur": 32,
+      "spread": -10,
+      "alfa": 0.55
+    },
+    "chegada": {
+      "_fonte": "DS 2.1 assinatura CHEGADA (560 ms) e receita 6.2; os mesmos keyframes da REV8 do Reel de apresentação",
+      "face_x": [
+        [
+          0,
+          -1100
+        ],
+        [
+          267,
+          24
+        ],
+        [
+          345,
+          -4
+        ],
+        [
+          400,
+          0
+        ]
+      ],
+      "rotacao": [
+        [
+          0,
+          -3.0
+        ],
+        [
+          267,
+          0.6
+        ],
+        [
+          345,
+          -0.15
+        ],
+        [
+          400,
+          0.0
+        ]
+      ],
+      "desfoque_px": [
+        [
+          0,
+          12
+        ],
+        [
+          267,
+          0
+        ]
+      ],
+      "modulo_x": [
+        [
+          0,
+          -1.0
+        ],
+        [
+          400,
+          -1.0
+        ],
+        [
+          467,
+          10
+        ],
+        [
+          567,
+          0
+        ]
+      ],
+      "sombra_y": [
+        [
+          0,
+          40
+        ],
+        [
+          400,
+          18
+        ]
+      ],
+      "sombra_alfa": [
+        [
+          0,
+          0.15
+        ],
+        [
+          400,
+          0.55
+        ]
+      ],
+      "sombra_dura_alfa": [
+        [
+          0,
+          0.0
+        ],
+        [
+          400,
+          0.28
+        ]
+      ],
+      "brilho_ms": [
+        700,
+        1300
+      ],
+      "brilho_alfa": 0.4,
+      "brilho_largura": 0.34,
+      "brilho_inclinacao_graus": -14
+    },
+    "saida": {
+      "_fonte": "DS 2.1 'Saída (240 ms)': a seta empurra (80 ms) e a placa sai pela direita com ease-exit e desfoque direcional",
+      "duracao_ms": 240,
+      "modulo_x": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          10
+        ],
+        [
+          80,
+          0
+        ]
+      ],
+      "face_x": [
+        [
+          80,
+          0
+        ],
+        [
+          240,
+          1150
+        ]
+      ],
+      "desfoque_px": [
+        [
+          80,
+          0
+        ],
+        [
+          240,
+          12
+        ]
+      ]
+    }
+  },
+  "etiqueta": {
+    "_fonte": "DS 2.6 'Preço rápido (vídeo): Etiqueta de valor' e 3.2 'Informação': rótulo Plex Mono 30 px night-500, número PD Placar 64 px grafite, '≈ R$' Barlow 500 40 px, papel recibo com picote no topo, x 72 acima da legenda, desliza da esquerda em 160 ms, número gira até o valor em 240 ms. Padding do bundle (.pd-price 20/30/18). Picote DS 1.6 (furos de 6 px a cada 16 px).",
+    "x": 72,
+    "base_y": 1226,
+    "rotulo_fonte": "IBMPlexMono-Medium.ttf",
+    "rotulo_px": 30,
+    "rotulo_tracking_em": 0.08,
+    "numero_fonte": "BarlowCondensed-Bold.ttf",
+    "numero_px": 64,
+    "brl_fonte": "Barlow-Medium.ttf",
+    "brl_px": 40,
+    "padding": [
+      20,
+      30,
+      18,
+      30
+    ],
+    "espaco_rotulo_numero": 10,
+    "espaco_numero_brl": 16,
+    "picote_furo": 6,
+    "picote_passo": 16,
+    "picote_y": 9,
+    "sombra": [
+      {
+        "y": 1,
+        "blur": 1,
+        "spread": 0,
+        "alfa": 0.2
+      },
+      {
+        "y": 14,
+        "blur": 26,
+        "spread": -10,
+        "alfa": 0.5
+      }
+    ],
+    "entrada_dx": -140,
+    "saida_dx": 140
+  },
+  "legenda": {
+    "_estilo": "DS 3.2 Padrão: Barlow 700 56 px, entrelinha 1,15, #FCFBF8, sem caixa, scrim + sombra de texto, centralizada no canvas (x 540), base do bloco em y 1420.",
+    "fonte": "Barlow-Bold.ttf",
+    "tamanho": 56,
+    "entrelinha": 1.15,
+    "base_y": 1420,
+    "topo_min_y": 1250,
+    "centro_x": 540,
+    "max_caracteres": 26,
+    "max_linhas": 2,
+    "sombra_dura": [
+      2,
+      0.35
+    ],
+    "sombra_difusa": {
+      "blur": 24,
+      "alfa": 0.45
+    },
+    "palavra_ms": 160,
+    "palavra_sobe_px": 10,
+    "grupo_ms": 120,
+    "palavras_por_s_max_palavra_a_palavra": 3.0,
+    "saida_ms": 120,
+    "saida_sobe_px": 6,
+    "destaque": {
+      "padding_v": 4,
+      "padding_h": 14,
+      "sombra_dura": [
+        3,
+        0.25
+      ],
+      "sombra_projetada": {
+        "y": 10,
+        "blur": 18,
+        "spread": -6,
+        "alfa": 0.5
+      },
+      "pop": [
+        [
+          0,
+          0.85
+        ],
+        [
+          144,
+          1.06
+        ],
+        [
+          240,
+          1.0
+        ]
+      ],
+      "opacidade_ms": 100
+    }
+  },
+  "capa_quadro": {
+    "_o_que_e": "Quadro do plano 1 (fachada) com a placa de abertura parada (DS 2.1, Estática).",
+    "plano": 1,
+    "quadro_no_plano": 40
+  },
+  "scrim": {
+    "_fonte": "DS 1.1 e 3.1: gradiente grafite 0% em y 1150 → 63% em y 1500, sempre ligado no Reel",
+    "y0": 1150,
+    "y1": 1500
+  },
+  "grao": {
+    "_fonte": "DS 4.5: grão 5% fixo no vídeo inteiro (blend overlay)",
+    "sigma_px": 0.7,
+    "semente": 20261010
+  },
+  "audio": {
+    "_fonte": "DS 4.6: master −14 LUFS integrados, pico verdadeiro ≤ −1 dBTP. Som direto do vlog; nenhum efeito sonoro (os PD_*.wav ainda não existem, pendência 7).",
+    "lufs_alvo": -14.0,
+    "pico_max_dbtp": -1.0,
+    "_mudo": "O plano 8 (fechamento) fica sem som: a música entra pela biblioteca do Instagram.",
+    "crossfade_ms": 20,
+    "declique_ms": 15
+  }
+}

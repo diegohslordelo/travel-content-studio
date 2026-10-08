@@ -46,3 +46,12 @@ Pedido do Diego: a imagem parava na troca do plano do Camp Nou para o restaurant
 - **REV3:** sai o freeze de 1 s dos planos 2 (€ 31) e 3 (€ 19); todos os cortes ficam secos. Duração: 27,5 s → 25,5 s.
 - **Etiquetas de € 31 e € 19:** passam a entrar no começo da frase do preço ("a gente pagou…", "por…"), para continuar ~1,4 s na tela.
 - **p9 e p11:** apontam para `reels/teaser-barcelona/rev3/`, com os tempos novos de cada cena.
+
+## 08/10/2026 (4ª alteração) · trailer de sábado (p15) pronto
+
+Pedido do Diego: deixar pronto o trailer do vídeo de Barcelona (10/10, 18:30).
+
+- **Arquivo:** `reels/trailer-barcelona/rev1/` (19,25 s). Só voz do vlog, 3 imagens de Barcelona e a placa `VÍDEO COMPLETO NO YOUTUBE / SAIU HOJE`.
+- **Gancho:** o `€ [total]` saiu, porque o vlog não mostra o total dos 3 dias. Entra a fala "Barcelona é praticamente de Gaudí." (tipo Afirmação) sobre a fachada da Sagrada Família, com a placa `3 DIAS EM / BARCELONA`.
+- **Sem repetir o teaser:** nenhum preço e nenhum plano do teaser.
+- **p15:** gancho, como, legenda (no tom do Diego), cenas, materiais e origem atualizados. Checklist não alterado.

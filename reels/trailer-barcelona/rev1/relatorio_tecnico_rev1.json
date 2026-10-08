@@ -1,0 +1,654 @@
+{
+ "arquivo": "reel_trailer_barcelona_rev1.mp4",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": "24/1",
+  "quadros": 462,
+  "esperado": 462,
+  "duracao_video_s": 19.25,
+  "duracao_audio_s": 19.25,
+  "codec_video": "h264 (High)",
+  "cor": "bt709/bt709/bt709/tv",
+  "codec_audio": "aac (LC)",
+  "sr_audio": 48000,
+  "tamanho_bytes": 72217934
+ },
+ "previa": {
+  "arquivo": "reel_trailer_barcelona_rev1_previa_leve.mp4",
+  "tamanho_bytes": 9773392
+ },
+ "audio": {
+  "lufs_integrado": -14.2,
+  "pico_verdadeiro_dbtp": -1.0,
+  "bruto_lufs": -22.3,
+  "bruto_pico_dbtp": -4.8,
+  "ganho_db": 9.5,
+  "limitador_dbfs": -1.5,
+  "wav_lufs": -14.2,
+  "wav_pico_dbtp": -1.5
+ },
+ "objetos": {
+  "placas": {
+   "hook": {
+    "face_largura": 630,
+    "modulo_lado": 219,
+    "altura": 219,
+    "largura_total": 849,
+    "rotulo_px": 36,
+    "destino_px": 128,
+    "rotulo_avanco_px": 144.9,
+    "destino_avanco_px": 558.5,
+    "x": 72,
+    "y": 640,
+    "x_final": 921,
+    "y_final": 859,
+    "quadros": [
+     0,
+     75
+    ]
+   },
+   "fechamento": {
+    "face_largura": 556,
+    "modulo_lado": 219,
+    "altura": 219,
+    "largura_total": 775,
+    "rotulo_px": 36,
+    "destino_px": 128,
+    "rotulo_avanco_px": 449.2,
+    "destino_avanco_px": 484.1,
+    "x": 72,
+    "y": 640,
+    "x_final": 847,
+    "y_final": 859,
+    "quadros": [
+     396,
+     462
+    ]
+   }
+  },
+  "etiquetas": [],
+  "n_fora_da_zona_segura_parado": 0,
+  "fora_da_zona_segura_parado": [],
+  "n_legenda_sobre_objeto": 0,
+  "legenda_sobre_objeto": []
+ },
+ "textos": {
+  "legendas": [
+   [
+    "Barcelona é",
+    "praticamente de Gaudí"
+   ],
+   [
+    "Eu juro,"
+   ],
+   [
+    "todo canto daqui"
+   ],
+   [
+    "é sem nenhum defeito."
+   ],
+   [
+    "As ruas são"
+   ],
+   [
+    "lindas, lindas, lindas."
+   ],
+   [
+    "Eu nunca tinha vindo aqui,"
+   ],
+   [
+    "ela já tinha vindo."
+   ],
+   [
+    "Eu achei surreal"
+   ],
+   [
+    "Surreal, de verdade."
+   ],
+   [
+    "Vale muito a pena."
+   ],
+   [
+    "Saiba que você"
+   ],
+   [
+    "não vai se arrepender."
+   ]
+  ],
+  "max_caracteres_linha": 26,
+  "max_linhas": 2,
+  "topo_min_bloco_y": 1291.2,
+  "mini_placas": [
+   "Gaudí",
+   "surreal",
+   "Vale"
+  ]
+ },
+ "legendas": [
+  {
+   "texto": "Barcelona é\npraticamente de *Gaudí*",
+   "plano": 1,
+   "de": 0.042,
+   "ate": 3.125,
+   "q0": 1,
+   "q1": 75,
+   "modo": "palavra",
+   "palavras_por_s": 1.8,
+   "palavras_q": [
+    1,
+    14,
+    26,
+    49,
+    61
+   ]
+  },
+  {
+   "texto": "Eu juro,",
+   "plano": 2,
+   "de": 3.167,
+   "ate": 4.208,
+   "q0": 76,
+   "q1": 101,
+   "modo": "grupo",
+   "palavras_por_s": 3.33,
+   "palavras_q": [
+    76,
+    83
+   ]
+  },
+  {
+   "texto": "todo canto daqui",
+   "plano": 2,
+   "de": 4.208,
+   "ate": 5.208,
+   "q0": 101,
+   "q1": 125,
+   "modo": "palavra",
+   "palavras_por_s": 3.0,
+   "palavras_q": [
+    101,
+    108,
+    118
+   ]
+  },
+  {
+   "texto": "é sem nenhum defeito.",
+   "plano": 2,
+   "de": 5.208,
+   "ate": 7.083,
+   "q0": 125,
+   "q1": 170,
+   "modo": "palavra",
+   "palavras_por_s": 2.44,
+   "palavras_q": [
+    125,
+    143,
+    149,
+    157
+   ]
+  },
+  {
+   "texto": "As ruas são",
+   "plano": 3,
+   "de": 7.083,
+   "ate": 7.833,
+   "q0": 170,
+   "q1": 188,
+   "modo": "grupo",
+   "palavras_por_s": 3.41,
+   "palavras_q": [
+    170,
+    180,
+    184
+   ]
+  },
+  {
+   "texto": "lindas, lindas, lindas.",
+   "plano": 4,
+   "de": 7.833,
+   "ate": 9.042,
+   "q0": 188,
+   "q1": 217,
+   "modo": "palavra",
+   "palavras_por_s": 2.83,
+   "palavras_q": [
+    188,
+    199,
+    206
+   ]
+  },
+  {
+   "texto": "Eu nunca tinha vindo aqui,",
+   "plano": 6,
+   "de": 9.083,
+   "ate": 10.417,
+   "q0": 218,
+   "q1": 250,
+   "modo": "grupo",
+   "palavras_por_s": 3.85,
+   "palavras_q": [
+    218,
+    229,
+    234,
+    238,
+    242
+   ]
+  },
+  {
+   "texto": "ela já tinha vindo.",
+   "plano": 6,
+   "de": 10.417,
+   "ate": 11.167,
+   "q0": 250,
+   "q1": 268,
+   "modo": "grupo",
+   "palavras_por_s": 5.26,
+   "palavras_q": [
+    250,
+    254,
+    258,
+    261
+   ]
+  },
+  {
+   "texto": "Eu achei *surreal*",
+   "plano": 6,
+   "de": 11.167,
+   "ate": 12.667,
+   "q0": 268,
+   "q1": 304,
+   "modo": "grupo",
+   "palavras_por_s": 4.69,
+   "palavras_q": [
+    268,
+    272,
+    276
+   ]
+  },
+  {
+   "texto": "Surreal, de verdade.",
+   "plano": 6,
+   "de": 12.667,
+   "ate": 13.542,
+   "q0": 304,
+   "q1": 325,
+   "modo": "grupo",
+   "palavras_por_s": 3.75,
+   "palavras_q": [
+    304,
+    315,
+    316
+   ]
+  },
+  {
+   "texto": "*Vale* muito a pena.",
+   "plano": 7,
+   "de": 13.625,
+   "ate": 15.042,
+   "q0": 327,
+   "q1": 361,
+   "modo": "palavra",
+   "palavras_por_s": 2.63,
+   "palavras_q": [
+    327,
+    348,
+    354,
+    356
+   ]
+  },
+  {
+   "texto": "Saiba que você",
+   "plano": 7,
+   "de": 15.042,
+   "ate": 15.667,
+   "q0": 361,
+   "q1": 376,
+   "modo": "grupo",
+   "palavras_por_s": 3.66,
+   "palavras_q": [
+    361,
+    371,
+    374
+   ]
+  },
+  {
+   "texto": "não vai se arrepender.",
+   "plano": 7,
+   "de": 15.667,
+   "ate": 16.5,
+   "q0": 376,
+   "q1": 396,
+   "modo": "grupo",
+   "palavras_por_s": 5.88,
+   "palavras_q": [
+    376,
+    379,
+    382,
+    385
+   ]
+  }
+ ],
+ "planos": [
+  {
+   "n": 1,
+   "cena": "Gancho: fachada do Nascimento da Sagrada Família (dia 3) com a fala do Diego no Park Güell",
+   "origem_s": [
+    1792.38,
+    1795.5
+   ],
+   "quadros_origem": [
+    43017,
+    43092
+   ],
+   "reel_s": [
+    0.0,
+    3.125
+   ],
+   "audio": "fala",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.5,
+   "video_origem_s": 1464.17,
+   "delogo": null
+  },
+  {
+   "n": 2,
+   "cena": "Passeig de Lluís Companys, perto do Arco do Triunfo (dia 1): Marina",
+   "origem_s": [
+    543.28,
+    547.2
+   ],
+   "quadros_origem": [
+    13039,
+    13133
+   ],
+   "reel_s": [
+    3.125,
+    7.042
+   ],
+   "audio": "fala",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.45,
+   "video_origem_s": null,
+   "delogo": null
+  },
+  {
+   "n": 3,
+   "cena": "Bairro Gótico (dia 2), com a fala da Marina continuando",
+   "origem_s": [
+    547.2,
+    547.82
+   ],
+   "quadros_origem": [
+    13133,
+    13148
+   ],
+   "reel_s": [
+    7.042,
+    7.667
+   ],
+   "audio": "fala",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.5,
+   "video_origem_s": 870.6,
+   "delogo": null
+  },
+  {
+   "n": 4,
+   "cena": "Casa Batlló (dia 2), com a fala da Marina continuando",
+   "origem_s": [
+    547.82,
+    548.44
+   ],
+   "quadros_origem": [
+    13148,
+    13163
+   ],
+   "reel_s": [
+    7.667,
+    8.292
+   ],
+   "audio": "fala",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.58,
+   "video_origem_s": 1265.0,
+   "delogo": null
+  },
+  {
+   "n": 5,
+   "cena": "Passeig de Gràcia e La Pedrera (dia 2), com a fala da Marina continuando",
+   "origem_s": [
+    548.44,
+    549.2
+   ],
+   "quadros_origem": [
+    13163,
+    13181
+   ],
+   "reel_s": [
+    8.292,
+    9.042
+   ],
+   "audio": "fala",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.6,
+   "video_origem_s": 1336.3,
+   "delogo": null
+  },
+  {
+   "n": 6,
+   "cena": "Saindo do Park Güell (dia 3): Diego",
+   "origem_s": [
+    1925.2,
+    1929.7
+   ],
+   "quadros_origem": [
+    46205,
+    46313
+   ],
+   "reel_s": [
+    9.042,
+    13.542
+   ],
+   "audio": "fala",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.45,
+   "video_origem_s": null,
+   "delogo": null
+  },
+  {
+   "n": 7,
+   "cena": "Aeroporto de Barcelona (fim da viagem): o veredito",
+   "origem_s": [
+    2022.7,
+    2025.66
+   ],
+   "quadros_origem": [
+    48545,
+    48616
+   ],
+   "reel_s": [
+    13.542,
+    16.5
+   ],
+   "audio": "fala",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.42,
+   "video_origem_s": null,
+   "delogo": null
+  },
+  {
+   "n": 8,
+   "cena": "Fechamento: Sagrada Família por fora (dia 3), sem fala",
+   "origem_s": [
+    1548.55,
+    1551.3
+   ],
+   "quadros_origem": [
+    37165,
+    37231
+   ],
+   "reel_s": [
+    16.5,
+    19.25
+   ],
+   "audio": "mudo",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.55,
+   "video_origem_s": null,
+   "delogo": null
+  }
+ ],
+ "video": {
+  "quadros_pretos": 0,
+  "luma_media_min": 96.1,
+  "cortes_s": [
+   3.125,
+   7.042,
+   7.667,
+   8.292,
+   9.042,
+   13.542,
+   16.5
+  ]
+ },
+ "frames_qa": [
+  [
+   "p1_ini",
+   0,
+   "qa_frames/rev1_p1_ini_quadro000.jpg"
+  ],
+  [
+   "p1_meio",
+   37,
+   "qa_frames/rev1_p1_meio_quadro037.jpg"
+  ],
+  [
+   "p1_fim",
+   72,
+   "qa_frames/rev1_p1_fim_quadro072.jpg"
+  ],
+  [
+   "p2_ini",
+   75,
+   "qa_frames/rev1_p2_ini_quadro075.jpg"
+  ],
+  [
+   "p2_meio",
+   122,
+   "qa_frames/rev1_p2_meio_quadro122.jpg"
+  ],
+  [
+   "p2_fim",
+   166,
+   "qa_frames/rev1_p2_fim_quadro166.jpg"
+  ],
+  [
+   "p3_ini",
+   169,
+   "qa_frames/rev1_p3_ini_quadro169.jpg"
+  ],
+  [
+   "p3_meio",
+   176,
+   "qa_frames/rev1_p3_meio_quadro176.jpg"
+  ],
+  [
+   "p3_fim",
+   183,
+   "qa_frames/rev1_p3_fim_quadro183.jpg"
+  ],
+  [
+   "p4_ini",
+   184,
+   "qa_frames/rev1_p4_ini_quadro184.jpg"
+  ],
+  [
+   "p4_meio",
+   191,
+   "qa_frames/rev1_p4_meio_quadro191.jpg"
+  ],
+  [
+   "p4_fim",
+   198,
+   "qa_frames/rev1_p4_fim_quadro198.jpg"
+  ],
+  [
+   "p5_ini",
+   199,
+   "qa_frames/rev1_p5_ini_quadro199.jpg"
+  ],
+  [
+   "p5_meio",
+   208,
+   "qa_frames/rev1_p5_meio_quadro208.jpg"
+  ],
+  [
+   "p5_fim",
+   216,
+   "qa_frames/rev1_p5_fim_quadro216.jpg"
+  ],
+  [
+   "p6_ini",
+   217,
+   "qa_frames/rev1_p6_ini_quadro217.jpg"
+  ],
+  [
+   "p6_meio",
+   271,
+   "qa_frames/rev1_p6_meio_quadro271.jpg"
+  ],
+  [
+   "p6_fim",
+   321,
+   "qa_frames/rev1_p6_fim_quadro321.jpg"
+  ],
+  [
+   "p7_ini",
+   325,
+   "qa_frames/rev1_p7_ini_quadro325.jpg"
+  ],
+  [
+   "p7_meio",
+   360,
+   "qa_frames/rev1_p7_meio_quadro360.jpg"
+  ],
+  [
+   "p7_fim",
+   393,
+   "qa_frames/rev1_p7_fim_quadro393.jpg"
+  ],
+  [
+   "p8_ini",
+   396,
+   "qa_frames/rev1_p8_ini_quadro396.jpg"
+  ],
+  [
+   "p8_meio",
+   429,
+   "qa_frames/rev1_p8_meio_quadro429.jpg"
+  ],
+  [
+   "p8_fim",
+   460,
+   "qa_frames/rev1_p8_fim_quadro460.jpg"
+  ],
+  [
+   "placa_hook_assentada",
+   12,
+   "qa_frames/rev1_placa_hook_assentada_quadro012.jpg"
+  ]
+ ],
+ "cotacao": null,
+ "sha256": "1edf2eda7e2643c32e0c6af8445c7910da0ad10048e0bb314578be9c8c4ff887",
+ "fontes": {
+  "Barlow-Bold.ttf": "84e6a4d61e7c3e21",
+  "Barlow-Medium.ttf": "f8906f762cb73dca",
+  "BarlowCondensed-Bold.ttf": "e476562ec9c1e16c",
+  "BarlowCondensed-ExtraBold.ttf": "724c9c25952d5f4a",
+  "BarlowCondensed-ExtraBoldItalic.ttf": "331783dae9ec0c39",
+  "BarlowCondensed-LightItalic.ttf": "14aabc4936c54a3a",
+  "BarlowCondensed-SemiBold.ttf": "7b619d14bc232750",
+  "IBMPlexMono-Medium.ttf": "a9b4c49bb299e05b"
+ }
+}
