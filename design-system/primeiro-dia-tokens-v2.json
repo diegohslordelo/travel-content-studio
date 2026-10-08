@@ -1,5 +1,5 @@
 {
-  "$description": "Primeiro Dia (@primeirodiaem) — tokens v2.1.0 (REV 2 'Objetos do Primeiro Dia'), 05/10/2026 (2.0.0 em 01/10/2026). W3C DTCG 2025.10. Primitivos → semânticos → componentes. Substitui primeiro-dia-tokens-v1.json.",
+  "$description": "Primeiro Dia (@primeirodiaem) — tokens v2.2.0 (REV 2 'Objetos do Primeiro Dia'), 08/10/2026 (2.1.0 em 05/10/2026; 2.0.0 em 01/10/2026). W3C DTCG 2025.10. Primitivos → semânticos → componentes. Substitui primeiro-dia-tokens-v1.json.",
   "color": {
     "signal": {
       "100": {
@@ -1222,6 +1222,72 @@
           "value": 64,
           "unit": "px"
         }
+      },
+      "caption-center-x": {
+        "$type": "dimension",
+        "$value": {
+          "value": 960,
+          "unit": "px"
+        },
+        "$description": "Legenda Padrão YouTube embutida: eixo central do canvas (W / 2). Brand book 3.4."
+      },
+      "caption-base-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 984,
+          "unit": "px"
+        },
+        "$description": "Base do bloco de legenda embutida (Padrão e Narrativa YouTube) = altura 1080 − title-safe 96. Brand book 3.4."
+      },
+      "caption-max-width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1306,
+          "unit": "px"
+        },
+        "$description": "Largura máxima de linha da legenda embutida: 68% de 1920 (BBC). Padrão: x 307–1613; Narrativa: x 96–1402. Brand book 3.4."
+      },
+      "caption-max-chars": {
+        "$type": "number",
+        "$value": 42,
+        "$description": "Máx. caracteres por linha: legenda embutida Padrão YouTube e faixa .srt. Brand book 3.4."
+      },
+      "caption-max-words-per-second": {
+        "$type": "number",
+        "$value": 3,
+        "$description": "Velocidade máx. de leitura (180 palavras/min, BBC). Brand book 3.4."
+      },
+      "caption-min-duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 833,
+          "unit": "ms"
+        },
+        "$description": "Duração mínima de cada legenda (5/6 s, Netflix). Embutida e .srt. Brand book 3.4."
+      },
+      "caption-max-duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 7000,
+          "unit": "ms"
+        },
+        "$description": "Duração máxima de cada legenda (Netflix). Embutida e .srt. Brand book 3.4."
+      },
+      "narrative-x": {
+        "$type": "dimension",
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        },
+        "$description": "Legenda Narrativa YouTube: alinhada à esquerda na margem de título. Brand book 3.4."
+      },
+      "scrim-top-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 730,
+          "unit": "px"
+        },
+        "$description": "Scrim da legenda Padrão YouTube: 0% em y 730 → 63% em y 1080 (cor/opacidade do scrim do Reel), só enquanto há legenda. Brand book 3.4."
       }
     },
     "yt-thumb": {

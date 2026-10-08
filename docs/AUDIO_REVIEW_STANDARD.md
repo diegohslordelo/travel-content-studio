@@ -2,18 +2,18 @@
 
 | Campo | Valor |
 |---|---|
-| **Versão do padrão** | 1.0.0 |
+| **Versão do padrão** | 1.1.0 |
 | **Data** | 08/10/2026 |
 | **Status** | Padrão novo. **Não foi testado em nenhum vídeo real.** A primeira execução é também a validação do procedimento |
 | **Aprovador de mudanças** | Diego (CLAUDE.md, seção 1) |
-| **Escopo** | Revisão e tratamento de áudio dos vídeos do YouTube (vlog longo e Short). Não define edição de imagem, cortes, trilha nem identidade visual |
+| **Escopo** | Revisão e tratamento de áudio dos **vídeos longos publicados no canal do YouTube** (16:9, 1920 × 1080). **Não vale para Shorts** nem para Reels (decisão do Diego, 08/10/2026). Não define edição de imagem, cortes, trilha nem identidade visual |
 | **Onde fica** | `docs/AUDIO_REVIEW_STANDARD.md` (não existe pasta `main/` no repositório: `main` é o nome do branch; ver CLAUDE.md, seção 11) |
 
 ---
 
 ## 0. Como usar este documento
 
-1. Leia o `CLAUDE.md`, este padrão e, no Design System V2, as seções 3 (Legendas), 4.6 (Som) e 5.4 (YouTube) **antes** de abrir o vídeo.
+1. Leia o `CLAUDE.md`, este padrão e, no Design System V2, as seções 3.4 (Legendas no YouTube), 4.6 (Som) e 5.4 (YouTube) **antes** de abrir o vídeo.
 2. Copie o **Anexo A** (checklist) e o **Anexo B** (relatório) para a pasta do vídeo e preencha durante o trabalho, não depois.
 3. Siga as seções 4 a 12 na ordem. Os campos do checklist têm a mesma ordem.
 4. O vídeo só chega a "Aprovado" com escuta humana registrada (seção 11.1) e aprovação do Diego (seção 12).
@@ -73,8 +73,8 @@ Todo número deste padrão tem uma etiqueta. Não trate uma referência como req
 |---|---|---|---|
 | Loudness do master | −14 LUFS integrados, medidos no arquivo exportado | [PROJETO] | DS V2 4.6; token `sound.master-loudness` |
 | Pico verdadeiro do master | ≤ −1 dBTP, medido no arquivo exportado | [PROJETO] | DS V2 4.6; token `sound.master-true-peak` |
-| Tolerância do loudness | não definida. A REV8 entregou −14,5 LUFS | [A DEFINIR] | README.md; CLAUDE.md, seção 14 |
-| Trilha sob a voz | 8 a 10 dB abaixo da voz (a regra cita "biblioteca do Instagram na hora de postar") | [PROJETO] para Reels; [A DEFINIR] para YouTube | DS V2 4.6; tokens `sound.music-bed-min/max` |
+| Tolerância do loudness | **±1 LU** em torno de −14 LUFS (−15 a −13 LUFS): dentro da faixa, cumpre; fora dela, só com ressalva justificada e aceita pelo Diego. O pico ≤ −1 dBTP não tem tolerância | [PROJETO] | Decisão do Diego, 08/10/2026 |
+| Trilha sob a voz | 8 a 10 dB abaixo da voz (a regra cita "biblioteca do Instagram na hora de postar") | [PROJETO] para o nível; a fonte da trilha no YouTube está [A DEFINIR] | DS V2 4.6; tokens `sound.music-bed-min/max` |
 | Som ambiente do lugar sob transição | −6 dB relativo à voz | [PROJETO] | DS V2 4.6; token `sound.cinema-ambient` |
 | Máx. 1 efeito sonoro a cada 1,5 s | | [PROJETO] | DS V2 4.6 |
 | Passa-altas de 80 Hz em voz | 2 polos | [PRECEDENTE] | REV6 (`corrigir.py`; `render.py`, `cadeia_voz`) |
@@ -83,7 +83,7 @@ Todo número deste padrão tem uma etiqueta. Não trate uma referência como req
 | Simulação de alto-falante de celular | passa-altas de 300 Hz + passa-baixas de 10 kHz | [PRECEDENTE] | REV6, seção 4 |
 | Piso de ruído | percentil 10 do RMS em janelas de 20 ms | [PRECEDENTE] | `render.py`; `medir.py` |
 | Métrica de abafamento | energia de 4–12 kHz contra 0,3–4 kHz, comparada com o cru | [PRECEDENTE] | REV6, tabela de timbre |
-| Comportamento do YouTube com loudness | **não verificado nesta tarefa** | [A DEFINIR] | Confirme na web, com data e fonte, antes de depender disso (CLAUDE.md, seção 4) |
+| Comportamento do YouTube com loudness | Referência de reprodução de −14 LUFS desde 2019: o YouTube **abaixa** vídeos mais altos e **não sobe** vídeos mais baixos. Consequência: master abaixo de −15 LUFS chega mais baixo ao espectador | [REF] — estimativa de mercado, **não** confirmada em documentação oficial do YouTube | meterplugs.com (2019), frame.io e violetrecording.com, consultados em 08/10/2026. O painel "Estatísticas para nerds" (content loudness) mostra a diferença; o sinal do número é lido de formas diferentes pelas fontes, então confira com o próprio medidor |
 
 ---
 
@@ -111,7 +111,7 @@ Registre no checklist, nesta ordem.
 
 | # | Passo | Como |
 |---|---|---|
-| 4.1 | Identificar o vídeo | Nome, plataforma e formato (vlog 16:9 ou Short 9:16), viagem/dia, data de gravação, quem fala (Diego, Marina, terceiros, idioma) |
+| 4.1 | Identificar o vídeo | Nome do vídeo longo (16:9), viagem/dia, data de gravação, quem fala (Diego, Marina, terceiros, idioma) |
 | 4.2 | Localizar o original | Caminho real (os brutos ficam em `fonte/`, fora do git). Não presuma o caminho: verifique que o arquivo existe e abre |
 | 4.3 | Congelar o original | `sha256sum` do arquivo. Marcar como somente leitura quando possível. Nunca trabalhar nele |
 | 4.4 | Registrar as características técnicas | `ffprobe`: contêiner, duração (vídeo e áudio separadas), codec de áudio, taxa de amostragem, canais, bitrate, fps, resolução, espaço de cor/HDR, rotação. Essa tabela é o "antes" da seção 11.3 |
@@ -413,7 +413,11 @@ Depois de tratar, confira o **nível de fala entre trechos** (LUFS de curto praz
 
 A legenda de áudio-revisão é **recurso complementar** para o trecho que continuou difícil **depois do tratamento seguro**. Ela não corrige áudio ruim e não se aplica a todos os trechos com ruído.
 
-> Nota de escopo: este capítulo orienta as legendas que nascem da revisão de áudio. Regras gerais de legenda do vídeo (por exemplo, "legenda em 100% dos Reels com fala", DS V2 7.2) continuam valendo onde se aplicam e não são alteradas aqui. Ver pendência 13.4 sobre Shorts e YouTube longo.
+> **Duas camadas (DS V2, 3.4):**
+> 1. **Faixa `.srt` (legenda fechada):** obrigatória em todo vídeo longo com fala, do início ao fim, revisada 100%. Ela **não** depende da revisão de áudio, mas a revisão a alimenta: os trechos duvidosos passam pelo fluxo 10.3 e as palavras `[CONFIRMAR]` não entram no `.srt` sem confirmação.
+> 2. **Legenda embutida de reforço:** é a legenda deste capítulo. Só nos trechos que continuam difíceis depois do tratamento. Nesses trechos, o evento correspondente sai do `.srt` (DS V2, 3.4.1).
+>
+> Quando este capítulo diz "legenda", sem outra indicação, fala da camada 2.
 
 ### 10.2 Quando usar
 
@@ -452,16 +456,26 @@ Transcrição automática sozinha **nunca** basta.
 
 ### 10.5 Aparência: Design System V2
 
-- A legenda segue o DS V2, seção 3: estilos **Padrão** (80% do tempo) e **Narrativa** ("nos vlogs"), com Barlow, `caption-text`, scrim e sombra, sem caixa no Padrão, no máximo 2 linhas, destaque só com mini-placa. Valores nos tokens.
-- Entrada de palavra **quando é dita** (DS 3.3). Em fala rápida (> 3 palavras/s), grupo inteiro (freio 4).
-- **Lacuna:** o DS V2 define a posição da legenda em 9:16 (base em y 1420, x 72 para a Narrativa). Para 16:9 (1920 × 1080), ele define apenas margens e posições de outros elementos (DS 1.3, 5.4). **Posição, tamanho e largura da legenda em 16:9 não estão definidos.** Não invente: registre e pergunte ao Diego antes de legendar um vlog 16:9 (pendência 13.1).
-- Em Short 9:16, use as posições do DS 3 e as zonas seguras do formato.
+A legenda embutida segue o **DS V2, seção 3.4.2** (valores em `layout.yt` nos tokens). Resumo para conferência; em caso de diferença, vale o DS:
+
+| Item | Padrão YouTube (reforço) | Narrativa YouTube (voz em off) |
+|---|---|---|
+| Fonte | `font.style.caption`: Barlow 700, 56 px | `font.style.narrative`: Barlow 500, 44 px |
+| Posição | Centro x 960, base y 984 | Esquerda x 96, base y 984 |
+| Linha | ≤ 1306 px e ≤ 42 caracteres, ≤ 2 linhas | ≤ 1306 px e ≤ 34 caracteres, ≤ 3 linhas |
+| Fundo | Sombra + scrim 0% (y 730) → 63% (y 1080), só com a legenda na tela | Vidro |
+| Movimento | Grupo inteiro, 120 ms entrada e saída | Vidro 200 ms, linhas a cada 120 ms |
+| Tempo | Entra na primeira palavra (nunca antes); 833 ms a 7 s; ≤ 3 palavras/s | Igual |
+| Destaque | Mini-placa só em número confirmado | Não usar |
+
+Proibido (DS 3.4.2): legenda embutida na fala inteira, nos últimos 20 s (tela final) e junto com o lower third.
 
 ### 10.6 Verificação da legenda
 
-- [ ] **Sincronia:** a palavra entra quando é dita. Verificar no mínimo no início, no meio e no fim do trecho, quadro a quadro quando preciso. Tolerância de referência [REF]: até cerca de 2 quadros; legenda nunca antes da fala.
+- [ ] **Sincronia:** o grupo entra na primeira palavra, nunca antes, e sai depois da última. Verificar no mínimo no início, no meio e no fim do trecho, quadro a quadro quando preciso. Tolerância de referência [REF]: até cerca de 2 quadros; legenda nunca antes da fala.
 - [ ] **Legibilidade:** contraste e scrim cumprem o DS 3.1 e 7.2; testar também em miniatura/tela pequena.
-- [ ] **Posicionamento:** zona segura do formato; não cobre rosto, preço nem a placa.
+- [ ] **Posicionamento:** posições do DS 3.4.2; fora da faixa dos controles do player; não cobre rosto, preço, lower third nem a placa; nada nos últimos 20 s.
+- [ ] **Faixa `.srt`:** eventos dos trechos com reforço embutido retirados; nenhuma palavra `[CONFIRMAR]` publicada.
 - [ ] **Texto:** confere com a fala, sem palavras a mais; nomes e valores conferidos.
 - [ ] **Marcações `[CONFIRMAR]`** resolvidas ou o trecho segue como ressalva.
 
@@ -508,13 +522,19 @@ Compare "antes" (original) e "depois" (exportado) com `ffprobe` e registre em ta
 | Fluxo de imagem | Igual ao original (codec, resolução, fps, espaço de cor/HDR, rotação). Idealmente copiado sem recodificar |
 | Áudio | Codec/bitrate/taxa/canais conforme o projeto (precedente: AAC 192 kbps, 48 kHz); estéreo ou mono conforme a fonte, sem perda de canal sem motivo |
 | Capítulos/metadados | Não perdidos sem motivo |
-| Loudness | [PROJETO] −14 LUFS integrados, medido no exportado. Registrar o valor exato e o desvio |
+| Loudness | [PROJETO] −14 LUFS integrados ± 1 LU, medido no exportado. Registrar o valor exato e o desvio (tabela abaixo) |
 | Pico verdadeiro | [PROJETO] ≤ −1 dBTP no exportado |
 | Clipping | Nenhuma amostra no teto introduzida pelo processamento |
 | Início e fim | Sem estalo nem degrau (REV6, erro 7) |
 | Emendas | Nível contínuo (sem salto) |
 
-Se o loudness do exportado ficar fora de −14 LUFS, o registro **diz o desvio**. A tolerância não está definida no DS; a sugestão a confirmar com o Diego é registrar qualquer desvio acima de ±1 LU como ressalva (pendência 13.2).
+Registre sempre o valor exato e o desvio em relação a −14 LUFS. Tolerância (decisão do Diego, 08/10/2026):
+
+| Loudness integrado no exportado | Resultado |
+|---|---|
+| −15,0 a −13,0 LUFS (desvio ≤ 1 LU) | Cumpre |
+| Fora dessa faixa | **Ressalva**: o vídeo fica no máximo em "Aprovado com ressalvas", com o motivo do desvio e o aceite do Diego. Abaixo de −15 LUFS, corrija se der: o YouTube não sobe vídeos baixos ([REF], seção 2) |
+| Pico verdadeiro acima de −1 dBTP | Não cumpre ("Revisão necessária"). Sem tolerância |
 
 ---
 
@@ -530,9 +550,9 @@ Para recomendar "Aprovado" ou "Aprovado com ressalvas", a escuta humana (11.1) p
 
 | Estado | Quando | Critérios verificáveis (todos) |
 |---|---|---|
-| **Aprovado** | Qualidade adequada, fala inteligível, nenhum problema relevante | • Escuta humana registrada (corrida, A/B, críticos, celular e mono) <br>• Nenhum problema G3 ou G4 aberto <br>• Nenhum artefato da tabela 8.1 confirmado <br>• Requisitos [PROJETO] cumpridos no exportado (−14 LUFS, ≤ −1 dBTP) <br>• Sincronia conferida nos pontos mínimos <br>• Integridade (11.3) sem falhas <br>• Original intacto (SHA-256) <br>• Checklist e relatório completos |
-| **Aprovado com ressalvas** | Limitações residuais aceitáveis, documentadas | • Todas as condições de "Aprovado", **exceto** limitações residuais G1–G2 (ou G3 com legenda cobrindo o trecho) <br>• Cada limitação tem: ID, timestamp, causa, motivo da aceitação e, se aplicável, legenda <br>• Nenhum artefato do processamento audível <br>• Desvio de loudness, se houver, registrado e aceito pelo Diego <br>• **Aceite explícito do Diego** das ressalvas |
-| **Revisão necessária** | Problemas relevantes | Qualquer um: <br>• fala-chave ou trecho importante sem inteligibilidade e sem solução <br>• artefato do processamento confirmado em escuta <br>• sincronia fora do aceitável <br>• requisito [PROJETO] não cumprido <br>• clipping ou distorção novos <br>• falha de integridade (duração, imagem, decodificação) <br>• original alterado <br>• legenda com palavra `[CONFIRMAR]` não resolvida sobre fala-chave |
+| **Aprovado** | Qualidade adequada, fala inteligível, nenhum problema relevante | • Escuta humana registrada (corrida, A/B, críticos, celular e mono) <br>• Nenhum problema G3 ou G4 aberto <br>• Nenhum artefato da tabela 8.1 confirmado <br>• Requisitos [PROJETO] cumpridos no exportado (−14 LUFS ± 1 LU, ≤ −1 dBTP) <br>• Sincronia conferida nos pontos mínimos <br>• Integridade (11.3) sem falhas <br>• Original intacto (SHA-256) <br>• Checklist e relatório completos |
+| **Aprovado com ressalvas** | Limitações residuais aceitáveis, documentadas | • Todas as condições de "Aprovado", **exceto** limitações residuais G1–G2 (ou G3 com legenda cobrindo o trecho) <br>• Cada limitação tem: ID, timestamp, causa, motivo da aceitação e, se aplicável, legenda <br>• Nenhum artefato do processamento audível <br>• Loudness fora de −14 ± 1 LU, se houver, registrado, justificado e aceito pelo Diego <br>• **Aceite explícito do Diego** das ressalvas |
+| **Revisão necessária** | Problemas relevantes | Qualquer um: <br>• fala-chave ou trecho importante sem inteligibilidade e sem solução <br>• artefato do processamento confirmado em escuta <br>• sincronia fora do aceitável <br>• requisito [PROJETO] não cumprido (pico acima de −1 dBTP; loudness fora de −14 ± 1 LU sem aceite do Diego) <br>• clipping ou distorção novos <br>• falha de integridade (duração, imagem, decodificação) <br>• original alterado <br>• legenda com palavra `[CONFIRMAR]` não resolvida sobre fala-chave |
 
 ### 12.3 Regras
 
@@ -549,15 +569,16 @@ Questões em aberto. Esta seção não cria regras (mesma convenção do CLAUDE.
 
 | # | Pendência | Efeito |
 |---|---|---|
-| 13.1 | **Legenda em 16:9:** o DS V2 não define posição, tamanho e largura da legenda para YouTube 1920 × 1080 | Não legendar vlogs 16:9 sem decisão do Diego |
-| 13.2 | **Tolerância do loudness:** o DS fixa −14 LUFS e ≤ −1 dBTP sem tolerância; a REV8 saiu em −14,5 LUFS | Registrar o desvio exato; confirmar tolerância |
-| 13.3 | **Comportamento do YouTube com loudness:** não verificado | Se for relevante, pesquisar na web e registrar data e fonte |
-| 13.4 | **Legenda 100% em Shorts:** o DS 7.2 diz "legenda em 100% dos Reels com fala". Não está dito se vale para Shorts e se este capítulo 10 a substitui | Este padrão não decide. Perguntar ao Diego |
+| 13.1 | ~~Legenda em 16:9~~ **Resolvida em 08/10/2026:** DS V2 2.2.0, seção 3.4 | — |
+| 13.2 | ~~Tolerância do loudness~~ **Resolvida em 08/10/2026:** ±1 LU (seções 2 e 11.3) | — |
+| 13.3 | **Comportamento do YouTube com loudness:** pesquisado em 08/10/2026 só em fontes de mercado (seção 2) | Reconfirmar se o YouTube publicar documentação oficial |
+| 13.4 | ~~Shorts~~ **Fora do escopo** desde a v1.1.0: o padrão vale só para vídeo longo | — |
 | 13.5 | **Pasta dos vídeos do YouTube:** o repositório ainda não tem estrutura para eles (só `reels/`) | Definir onde ficam checklist e relatório; até lá, a pasta do vídeo indicada pelo Diego |
 | 13.6 | **Trilha em vídeos do YouTube:** o DS fala da "biblioteca do Instagram"; não define fonte de trilha do YouTube | Perguntar antes de mexer em trilha |
+| 13.10 | **Área dos controles do player:** o YouTube não publica a altura da faixa de controles; a base da legenda em y 984 é derivada da margem de título | Conferir num envio de teste não listado antes do primeiro vídeo (DS V2, 3.4) |
 | 13.7 | **Fontes do DS ausentes** (`design-system/fonts/` vazia) | Impede renderizar legenda oficial; ver CLAUDE.md, seção 14, item 1 |
 | 13.8 | **Dependências Python:** só `numpy` e `Pillow` estavam no ambiente de 08/10/2026 | Conferir antes de medir; não instalar sem necessidade |
-| 13.9 | **Padrão não testado:** nenhum parâmetro foi validado em vídeo real | A primeira execução deve gerar ajustes à v1.0.0 (com aprovação do Diego) |
+| 13.9 | **Padrão não testado:** nenhum parâmetro foi validado em vídeo real | A primeira execução deve gerar ajustes à v1.1.0 (com aprovação do Diego) |
 
 ---
 
@@ -568,7 +589,8 @@ Questões em aberto. Esta seção não cria regras (mesma convenção do CLAUDE.
 
 | Versão | Data | Mudança | Aprovado por |
 |---|---|---|---|
-| 1.0.0 | 08/10/2026 | Criação | Pendente |
+| 1.0.0 | 08/10/2026 | Criação | Substituída pela 1.1.0 |
+| 1.1.0 | 08/10/2026 | Escopo só vídeo longo do canal (sem Shorts); tolerância de loudness ±1 LU; legenda pela seção 3.4 do DS V2 2.2.0 (faixa `.srt` + reforço embutido); comportamento de loudness do YouTube pesquisado | Pedido do Diego, 08/10/2026 |
 
 ---
 
@@ -578,10 +600,10 @@ Legenda: `[ ]` não feito · `[x]` feito · `[n/a]` não necessário (com **just
 
 ```
 CHECKLIST DE REVISÃO DE ÁUDIO · YouTube · Primeiro Dia
-Versão do padrão: 1.0.0   ·   Data de início: ____/____/______   ·   Responsável: ______________
+Versão do padrão: 1.1.0   ·   Data de início: ____/____/______   ·   Responsável: ______________
 
 1. IDENTIFICAÇÃO
- Título do vídeo: ______________________________   Formato: [ ] Vlog 16:9  [ ] Short 9:16
+ Título do vídeo longo (16:9): _____________________________________________
  Viagem / dia / local: __________________________  Data de gravação: ____/____/______
  Arquivo de origem (caminho real): ______________________________________________
  SHA-256 do original (antes): ____________________________________________________
@@ -589,11 +611,11 @@ Versão do padrão: 1.0.0   ·   Data de início: ____/____/______   ·   Respon
  Falantes e idioma: _____________________________________________________________
 
 2. PREPARAÇÃO
- [ ] Documentos lidos: CLAUDE.md · AUDIO_REVIEW_STANDARD.md · DS V2 (3, 4.6, 5.4)
+ [ ] Documentos lidos: CLAUDE.md · AUDIO_REVIEW_STANDARD.md · DS V2 (3.4, 4.6, 5.4)
  [ ] Original preservado (nenhuma operação no arquivo original)
  [ ] ffprobe do original registrado (tabela "antes" no relatório)
  [ ] Faixa de análise extraída sem perda
- [ ] Requisitos [PROJETO] anotados: −14 LUFS · ≤ −1 dBTP
+ [ ] Requisitos [PROJETO] anotados: −14 LUFS ± 1 LU · ≤ −1 dBTP
  [ ] Fala-chave listada (preços, nomes, avisos): ________________________________
 
 3. DIAGNÓSTICO
@@ -647,8 +669,9 @@ Versão do padrão: 1.0.0   ·   Data de início: ____/____/______   ·   Respon
  [ ] Cada palavra marcada: CONFIRMADO / PROVÁVEL / [CONFIRMAR]
  [ ] Nada inventado ou completado sem evidência
  [ ] Nomes e valores conferidos com o registro real da viagem
- [ ] Estilo do DS V2 respeitado
- [ ] Posição em 16:9 definida pelo Diego  [n/a] Short 9:16  [ ] PENDENTE
+ [ ] Estilo e posição do DS V2 3.4.2 (x 960 / x 96 · base y 984 · ≤ 1306 px · ≤ 42 car.)
+ [ ] Nada nos últimos 20 s nem junto do lower third
+ [ ] Faixa .srt (DS 3.4.1): revisada 100% · eventos com reforço embutido retirados · sem [CONFIRMAR]
  [ ] Sincronia, legibilidade e posição verificadas
 
 8. LIMITAÇÕES RESIDUAIS
@@ -660,7 +683,7 @@ Versão do padrão: 1.0.0   ·   Data de início: ____/____/______   ·   Respon
  [ ] Duração de vídeo e áudio igual ao original
  [ ] Fluxo de imagem igual (codec, resolução, fps, cor/HDR, rotação)
  [ ] Áudio: codec ______ taxa ______ canais ______ bitrate ______
- [ ] LUFS integrado: ______ (alvo −14)   desvio: ______
+ [ ] LUFS integrado: ______ (alvo −14 ± 1 LU)   desvio: ______   [ ] cumpre  [ ] ressalva
  [ ] Pico verdadeiro: ______ dBTP (limite −1)
  [ ] Nenhuma amostra no teto introduzida
  [ ] Início e fim sem estalo; emendas contínuas
@@ -688,7 +711,7 @@ Versão do padrão: 1.0.0   ·   Data de início: ____/____/______   ·   Respon
 
 | Campo | Valor |
 |---|---|
-| Padrão aplicado | AUDIO_REVIEW_STANDARD.md v1.0.0 |
+| Padrão aplicado | AUDIO_REVIEW_STANDARD.md v1.1.0 |
 | Vídeo / formato | |
 | Viagem / dia / local | |
 | Arquivo de origem | |
@@ -706,7 +729,7 @@ Estado recomendado, principais problemas, o que foi feito, o que ficou, o que de
 | Contêiner / duração vídeo / duração áudio | | | |
 | Fluxo de imagem (codec, resolução, fps, cor/HDR) | | | |
 | Áudio (codec, taxa, canais, bitrate) | | | |
-| LUFS integrado | | | alvo [PROJETO]: −14 |
+| LUFS integrado | | | alvo [PROJETO]: −14 ± 1 LU |
 | Pico verdadeiro (dBTP) | | | limite [PROJETO]: −1 |
 | Piso de ruído (dBFS) | | | |
 

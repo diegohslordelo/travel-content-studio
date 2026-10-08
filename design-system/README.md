@@ -1,6 +1,6 @@
 # Design System: Primeiro Dia
 
-Esta pasta guarda o **Design System V2, "Objetos do Primeiro Dia" (v2.1.0, 05/10/2026)**, que é a versão vigente. A V1 "Placa & Caneta" e a v0 "Primeira luz" estão aposentadas.
+Esta pasta guarda o **Design System V2, "Objetos do Primeiro Dia" (v2.2.0, 08/10/2026)**, que é a versão vigente. A V1 "Placa & Caneta" e a v0 "Primeira luz" estão aposentadas.
 
 As regras visuais estão nos arquivos abaixo e não são repetidas aqui.
 
@@ -28,6 +28,8 @@ Os documentos de apoio ficam em `../docs/`:
 - `design-system-marca-viagens.md`: instrução-base, método e teoria.
 
 **Versão 2.1.0 (05/10/2026, aprovada pelo Diego):** níveis de edição A/B; regras de som (nomes dos arquivos, Varredura com *clack*, Nascer no kit, 1 *tick* por giro, master −14 LUFS e pico ≤ −1 dBTP); tempos em ms como referência das receitas; tokens `blur`, `effect` e `sound` copiados do brand book; introdução renumerada (0.1–0.4). **Hierarquia:** tokens valem para valores, o brand book para regras, e o bundle é só prévia.
+
+**Versão 2.2.0 (08/10/2026, pedido do Diego):** legendas do YouTube longo, 16:9 (brand book 3.4): faixa `.srt` revisada em todo vídeo com fala e legenda embutida de reforço só nos trechos difíceis; tokens novos em `layout.yt` (posição, largura e tempo da legenda). Nenhuma fonte, cor, sombra ou curva nova. O bundle ainda não tem prévia dessa seção.
 
 **Bundle alinhado aos tokens e ao brand book (05/10/2026):** Chegada 560 ms (passa +24 px em 280 ms, assenta em 400 ms, empurrão da seta 400–560 ms, brilho 700–1300 ms, desfoque 12 px); scrim inferior 0 → 63% de y 1150 a 1500 e superior a 63%; grão 5% e fibra 4%; face da placa com padding 28 × 36, filete a 25% e rebites de 10 px a 22 px; mini-placa em Barlow com padding 4/14. O **módulo de seta** não mudou (ver pendência 3 do CLAUDE.md).
 
