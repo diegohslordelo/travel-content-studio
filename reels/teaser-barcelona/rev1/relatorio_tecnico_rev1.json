@@ -1,0 +1,708 @@
+{
+ "arquivo": "reel_teaser_barcelona_rev1.mp4",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": "24/1",
+  "quadros": 660,
+  "esperado": 660,
+  "duracao_video_s": 27.5,
+  "duracao_audio_s": 27.5,
+  "codec_video": "h264 (High)",
+  "cor": "bt709/bt709/bt709/tv",
+  "codec_audio": "aac (LC)",
+  "sr_audio": 48000,
+  "tamanho_bytes": 84406604
+ },
+ "previa": {
+  "arquivo": "reel_teaser_barcelona_rev1_previa_leve.mp4",
+  "tamanho_bytes": 9167719
+ },
+ "audio": {
+  "lufs_integrado": -14.1,
+  "pico_verdadeiro_dbtp": -1.3,
+  "bruto_lufs": -20.0,
+  "bruto_pico_dbtp": -2.7,
+  "ganho_db": 6.5,
+  "limitador_dbfs": -1.5,
+  "wav_lufs": -14.1,
+  "wav_pico_dbtp": -1.5
+ },
+ "objetos": {
+  "placas": {
+   "hook": {
+    "face_largura": 630,
+    "modulo_lado": 219,
+    "altura": 219,
+    "largura_total": 849,
+    "rotulo_px": 36,
+    "destino_px": 128,
+    "rotulo_avanco_px": 222.2,
+    "destino_avanco_px": 558.5,
+    "x": 72,
+    "y": 640,
+    "x_final": 921,
+    "y_final": 859,
+    "quadros": [
+     0,
+     60
+    ]
+   },
+   "fechamento": {
+    "face_largura": 642,
+    "modulo_lado": 219,
+    "altura": 219,
+    "largura_total": 861,
+    "rotulo_px": 36,
+    "destino_px": 128,
+    "rotulo_avanco_px": 449.2,
+    "destino_avanco_px": 569.6,
+    "x": 72,
+    "y": 640,
+    "x_final": 933,
+    "y_final": 859,
+    "quadros": [
+     588,
+     660
+    ]
+   }
+  },
+  "etiquetas": [
+   {
+    "rotulo": "TOUR DO CAMP NOU",
+    "valor": "€ 31 ≈ R$ 174",
+    "w": 384,
+    "h": 142,
+    "x": 560,
+    "y": 1084,
+    "lado": "direita",
+    "quadros": [
+     127,
+     173
+    ],
+    "entra_s": 5.292
+   },
+   {
+    "rotulo": "5 TAPAS + PAELLA + BEBIDA",
+    "valor": "€ 19 ≈ R$ 107",
+    "w": 568,
+    "h": 142,
+    "x": 72,
+    "y": 1084,
+    "lado": "esquerda",
+    "quadros": [
+     322,
+     365
+    ],
+    "entra_s": 13.417
+   },
+   {
+    "rotulo": "SAGRADA FAMÍLIA · POR PESSOA",
+    "valor": "€ 25 ≈ R$ 140",
+    "w": 629,
+    "h": 142,
+    "x": 72,
+    "y": 1084,
+    "lado": "esquerda",
+    "quadros": [
+     445,
+     485
+    ],
+    "entra_s": 18.542
+   },
+   {
+    "rotulo": "MONTADITO · QUARTA-FEIRA",
+    "valor": "€ 1 ≈ R$ 5,61",
+    "w": 548,
+    "h": 142,
+    "x": 72,
+    "y": 1084,
+    "lado": "esquerda",
+    "quadros": [
+     552,
+     588
+    ],
+    "entra_s": 23.0
+   }
+  ],
+  "n_fora_da_zona_segura_parado": 0,
+  "fora_da_zona_segura_parado": [],
+  "n_legenda_sobre_objeto": 0,
+  "legenda_sobre_objeto": []
+ },
+ "textos": {
+  "legendas": [
+   [
+    "4 preços que a gente pagou"
+   ],
+   [
+    "A gente comprou",
+    "esses ingressos"
+   ],
+   [
+    "aqui no site",
+    "oficial deles,"
+   ],
+   [
+    "a gente pagou 31 euros."
+   ],
+   [
+    "5 tapas,"
+   ],
+   [
+    "uma paella e uma bebida"
+   ],
+   [
+    "por 19 euros."
+   ],
+   [
+    "Se programem,"
+   ],
+   [
+    "abre as vendas",
+    "um mês antes,"
+   ],
+   [
+    "foi 25 euros por pessoa."
+   ],
+   [
+    "Hoje é quarta-feira"
+   ],
+   [
+    "e quarta-feira é 1 euro"
+   ],
+   [
+    "cada montadinho."
+   ]
+  ],
+  "max_caracteres_linha": 26,
+  "max_linhas": 2,
+  "topo_min_bloco_y": 1291.2,
+  "mini_placas": [
+   "4",
+   "31",
+   "19",
+   "25",
+   "1"
+  ]
+ },
+ "legendas": [
+  {
+   "texto": "*4* preços que a gente pagou",
+   "plano": 1,
+   "de": 0.0,
+   "ate": 2.5,
+   "q0": 0,
+   "q1": 60,
+   "modo": "grupo",
+   "palavras_por_s": null,
+   "palavras_q": null
+  },
+  {
+   "texto": "A gente comprou\nesses ingressos",
+   "plano": 2,
+   "de": 2.583,
+   "ate": 3.542,
+   "q0": 62,
+   "q1": 85,
+   "modo": "grupo",
+   "palavras_por_s": 5.68,
+   "palavras_q": [
+    62,
+    63,
+    64,
+    72,
+    76
+   ]
+  },
+  {
+   "texto": "aqui no site\noficial deles,",
+   "plano": 2,
+   "de": 3.542,
+   "ate": 4.792,
+   "q0": 85,
+   "q1": 115,
+   "modo": "grupo",
+   "palavras_por_s": 4.1,
+   "palavras_q": [
+    85,
+    88,
+    91,
+    96,
+    107
+   ]
+  },
+  {
+   "texto": "a gente pagou *31* euros.",
+   "plano": 2,
+   "de": 4.792,
+   "ate": 7.208,
+   "q0": 115,
+   "q1": 173,
+   "modo": "grupo",
+   "palavras_por_s": 4.03,
+   "palavras_q": [
+    115,
+    118,
+    120,
+    127,
+    138
+   ]
+  },
+  {
+   "texto": "5 tapas,",
+   "plano": 3,
+   "de": 7.375,
+   "ate": 9.542,
+   "q0": 177,
+   "q1": 229,
+   "modo": "palavra",
+   "palavras_por_s": 2.22,
+   "palavras_q": [
+    177,
+    191
+   ]
+  },
+  {
+   "texto": "uma paella e uma bebida",
+   "plano": 3,
+   "de": 9.542,
+   "ate": 12.833,
+   "q0": 229,
+   "q1": 308,
+   "modo": "palavra",
+   "palavras_por_s": 1.62,
+   "palavras_q": [
+    229,
+    251,
+    263,
+    292,
+    296
+   ]
+  },
+  {
+   "texto": "por *19* euros.",
+   "plano": 3,
+   "de": 12.833,
+   "ate": 15.208,
+   "q0": 308,
+   "q1": 365,
+   "modo": "palavra",
+   "palavras_por_s": 2.5,
+   "palavras_q": [
+    308,
+    322,
+    329
+   ]
+  },
+  {
+   "texto": "Se programem,",
+   "plano": 4,
+   "de": 15.25,
+   "ate": 16.208,
+   "q0": 366,
+   "q1": 389,
+   "modo": "grupo",
+   "palavras_por_s": 4.76,
+   "palavras_q": [
+    366,
+    369
+   ]
+  },
+  {
+   "texto": "abre as vendas\num mês antes,",
+   "plano": 4,
+   "de": 16.208,
+   "ate": 18.292,
+   "q0": 389,
+   "q1": 439,
+   "modo": "grupo",
+   "palavras_por_s": 4.17,
+   "palavras_q": [
+    389,
+    396,
+    401,
+    407,
+    411,
+    416
+   ]
+  },
+  {
+   "texto": "foi *25* euros por pessoa.",
+   "plano": 4,
+   "de": 18.292,
+   "ate": 20.208,
+   "q0": 439,
+   "q1": 485,
+   "modo": "grupo",
+   "palavras_por_s": 3.16,
+   "palavras_q": [
+    439,
+    445,
+    457,
+    464,
+    470
+   ]
+  },
+  {
+   "texto": "Hoje é quarta-feira",
+   "plano": 5,
+   "de": 20.25,
+   "ate": 21.167,
+   "q0": 486,
+   "q1": 508,
+   "modo": "grupo",
+   "palavras_por_s": 4.55,
+   "palavras_q": [
+    486,
+    491,
+    495
+   ]
+  },
+  {
+   "texto": "e quarta-feira é *1* euro",
+   "plano": 5,
+   "de": 21.167,
+   "ate": 23.458,
+   "q0": 508,
+   "q1": 563,
+   "modo": "palavra",
+   "palavras_por_s": 2.17,
+   "palavras_q": [
+    508,
+    510,
+    524,
+    552,
+    556
+   ]
+  },
+  {
+   "texto": "cada montadinho.",
+   "plano": 6,
+   "de": 23.458,
+   "ate": 24.5,
+   "q0": 563,
+   "q1": 588,
+   "modo": "grupo",
+   "palavras_por_s": 3.33,
+   "palavras_q": [
+    563,
+    570
+   ]
+  }
+ ],
+ "planos": [
+  {
+   "n": 1,
+   "cena": "Gancho: teto da Sagrada Família por dentro (dia 3), sem fala",
+   "origem_s": [
+    1523.25,
+    1525.75
+   ],
+   "quadros_origem": [
+    36558,
+    36618
+   ],
+   "reel_s": [
+    0.0,
+    2.5
+   ],
+   "audio": "mudo",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.5,
+   "video_origem_s": null,
+   "delogo": null
+  },
+  {
+   "n": 2,
+   "cena": "Tour do Camp Nou (dia 1): Diego conta quanto pagou",
+   "origem_s": [
+    63.2,
+    66.92
+   ],
+   "quadros_origem": [
+    1517,
+    1606
+   ],
+   "reel_s": [
+    2.5,
+    7.208
+   ],
+   "audio": "fala",
+   "freeze_s": 1.0,
+   "crop_centro_x": 0.26,
+   "video_origem_s": null,
+   "delogo": [
+    290,
+    1740,
+    585,
+    345
+   ]
+  },
+  {
+   "n": 3,
+   "cena": "Restaurante (dia 2): promoção de 5 tapas + paella + bebida",
+   "origem_s": [
+    993.3,
+    1000.3
+   ],
+   "quadros_origem": [
+    23839,
+    24007
+   ],
+   "reel_s": [
+    7.208,
+    15.208
+   ],
+   "audio": "fala",
+   "freeze_s": 1.0,
+   "crop_centro_x": 0.42,
+   "video_origem_s": null,
+   "delogo": null
+  },
+  {
+   "n": 4,
+   "cena": "Saída da Sagrada Família (dia 3): ingresso e dica de compra",
+   "origem_s": [
+    1557.4,
+    1562.4
+   ],
+   "quadros_origem": [
+    37378,
+    37498
+   ],
+   "reel_s": [
+    15.208,
+    20.208
+   ],
+   "audio": "fala",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.7,
+   "video_origem_s": null,
+   "delogo": null
+  },
+  {
+   "n": 5,
+   "cena": "100 Montaditos (dia 3): Diego explica a promoção de quarta",
+   "origem_s": [
+    1983.7,
+    1986.4
+   ],
+   "quadros_origem": [
+    47609,
+    47674
+   ],
+   "reel_s": [
+    20.208,
+    22.917
+   ],
+   "audio": "fala",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.62,
+   "video_origem_s": null,
+   "delogo": null
+  },
+  {
+   "n": 6,
+   "cena": "100 Montaditos (dia 3): os montaditos no prato (imagem de cobertura) com a fala do Diego continuando",
+   "origem_s": [
+    1986.4,
+    1988.0
+   ],
+   "quadros_origem": [
+    47674,
+    47712
+   ],
+   "reel_s": [
+    22.917,
+    24.5
+   ],
+   "audio": "fala",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.5,
+   "video_origem_s": 1996.0,
+   "delogo": null
+  },
+  {
+   "n": 7,
+   "cena": "Fechamento: vista de Barcelona do Park Güell (dia 3), sem fala",
+   "origem_s": [
+    1842.0,
+    1845.0
+   ],
+   "quadros_origem": [
+    44208,
+    44280
+   ],
+   "reel_s": [
+    24.5,
+    27.5
+   ],
+   "audio": "mudo",
+   "freeze_s": 0.0,
+   "crop_centro_x": 0.5,
+   "video_origem_s": null,
+   "delogo": null
+  }
+ ],
+ "video": {
+  "quadros_pretos": 0,
+  "luma_media_min": 80.2,
+  "cortes_s": [
+   2.5,
+   7.208,
+   15.208,
+   20.208,
+   22.917,
+   24.5
+  ]
+ },
+ "frames_qa": [
+  [
+   "p1_ini",
+   0,
+   "qa_frames/rev1_p1_ini_quadro000.jpg"
+  ],
+  [
+   "p1_meio",
+   30,
+   "qa_frames/rev1_p1_meio_quadro030.jpg"
+  ],
+  [
+   "p1_fim",
+   58,
+   "qa_frames/rev1_p1_fim_quadro058.jpg"
+  ],
+  [
+   "p2_ini",
+   60,
+   "qa_frames/rev1_p2_ini_quadro060.jpg"
+  ],
+  [
+   "p2_meio",
+   116,
+   "qa_frames/rev1_p2_meio_quadro116.jpg"
+  ],
+  [
+   "p2_fim",
+   169,
+   "qa_frames/rev1_p2_fim_quadro169.jpg"
+  ],
+  [
+   "p3_ini",
+   173,
+   "qa_frames/rev1_p3_ini_quadro173.jpg"
+  ],
+  [
+   "p3_meio",
+   269,
+   "qa_frames/rev1_p3_meio_quadro269.jpg"
+  ],
+  [
+   "p3_fim",
+   359,
+   "qa_frames/rev1_p3_fim_quadro359.jpg"
+  ],
+  [
+   "p4_ini",
+   365,
+   "qa_frames/rev1_p4_ini_quadro365.jpg"
+  ],
+  [
+   "p4_meio",
+   425,
+   "qa_frames/rev1_p4_meio_quadro425.jpg"
+  ],
+  [
+   "p4_fim",
+   481,
+   "qa_frames/rev1_p4_fim_quadro481.jpg"
+  ],
+  [
+   "p5_ini",
+   485,
+   "qa_frames/rev1_p5_ini_quadro485.jpg"
+  ],
+  [
+   "p5_meio",
+   517,
+   "qa_frames/rev1_p5_meio_quadro517.jpg"
+  ],
+  [
+   "p5_fim",
+   548,
+   "qa_frames/rev1_p5_fim_quadro548.jpg"
+  ],
+  [
+   "p6_ini",
+   550,
+   "qa_frames/rev1_p6_ini_quadro550.jpg"
+  ],
+  [
+   "p6_meio",
+   569,
+   "qa_frames/rev1_p6_meio_quadro569.jpg"
+  ],
+  [
+   "p6_fim",
+   586,
+   "qa_frames/rev1_p6_fim_quadro586.jpg"
+  ],
+  [
+   "p7_ini",
+   588,
+   "qa_frames/rev1_p7_ini_quadro588.jpg"
+  ],
+  [
+   "p7_meio",
+   624,
+   "qa_frames/rev1_p7_meio_quadro624.jpg"
+  ],
+  [
+   "p7_fim",
+   657,
+   "qa_frames/rev1_p7_fim_quadro657.jpg"
+  ],
+  [
+   "etiqueta_p2",
+   135,
+   "qa_frames/rev1_etiqueta_p2_quadro135.jpg"
+  ],
+  [
+   "etiqueta_p3",
+   330,
+   "qa_frames/rev1_etiqueta_p3_quadro330.jpg"
+  ],
+  [
+   "etiqueta_p4",
+   453,
+   "qa_frames/rev1_etiqueta_p4_quadro453.jpg"
+  ],
+  [
+   "etiqueta_p6",
+   560,
+   "qa_frames/rev1_etiqueta_p6_quadro560.jpg"
+  ],
+  [
+   "placa_hook_assentada",
+   12,
+   "qa_frames/rev1_placa_hook_assentada_quadro012.jpg"
+  ]
+ ],
+ "cotacao": {
+  "_fonte": "Banco Central do Brasil, PTAX do euro, boletim de fechamento de 08/10/2026 (venda 5,6093). Consultada em 08/10/2026 pela API Olinda do BCB.",
+  "eur_brl": 5.6093,
+  "data": "08/10/2026"
+ },
+ "sha256": "7d5a5f9a7de2efcc39745b3e2b1c25e8720213f004e66aaed31c659d2b0fab39",
+ "fontes": {
+  "Barlow-Bold.ttf": "84e6a4d61e7c3e21",
+  "Barlow-Medium.ttf": "f8906f762cb73dca",
+  "BarlowCondensed-Bold.ttf": "e476562ec9c1e16c",
+  "BarlowCondensed-ExtraBold.ttf": "724c9c25952d5f4a",
+  "BarlowCondensed-ExtraBoldItalic.ttf": "331783dae9ec0c39",
+  "BarlowCondensed-LightItalic.ttf": "14aabc4936c54a3a",
+  "BarlowCondensed-SemiBold.ttf": "7b619d14bc232750",
+  "IBMPlexMono-Medium.ttf": "a9b4c49bb299e05b"
+ }
+}
