@@ -27,3 +27,14 @@ A análise estratégica (achado 3) apontou que um Reel que só anuncia vídeo ge
 2. **p15 (trailer, 10/10, 18:30):** o gancho `Barcelona em 3 dias: € [total].` precisa do total real, que não está no vídeo. Sem esse número, o gancho tem de mudar.
 
 Para desfazer: `git revert` do commit.
+
+## 08/10/2026 (2ª alteração) · câmbio real da viagem
+
+Pedido do Diego: usar o câmbio que eles pagaram de verdade, ou seja, euro comprado na Wise em 09/03/2026, com IOF de 3,5%.
+
+- **Base:** PTAX de venda do Banco Central de 09/03/2026, R$ 6,0445.
+- **Custos:** a Wise cobra sobre o valor convertido o IOF (3,5%) e a tarifa de conversão dela (0,64%), num total de 4,14%. Os percentuais vêm da calculadora da Wise (BRL → EUR, Pix), consultada em 08/10/2026. A tarifa pode ter sido um pouco diferente em março.
+- **Câmbio final:** € 1 = 6,0445 × 1,0414 = **R$ 6,2947**.
+- **Valores:** € 31 ≈ R$ 195 · € 19 ≈ R$ 120 · € 25 ≈ R$ 157 · € 1 ≈ R$ 6,29 (antes: 174 · 107 · 140 · 5,61, com a PTAX de 08/10/2026).
+- **p9:** o arquivo passa a ser `reels/teaser-barcelona/rev2/` e a legenda traz o câmbio novo.
+- **p11:** o Short sobe a REV2 e a descrição traz o câmbio novo.
