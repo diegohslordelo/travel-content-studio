@@ -13,7 +13,7 @@ travel-content-studio/
 ├── design-system/       Design System REV 2 (brand book, tokens, bundle; fontes pendentes)
 ├── docs/                referências de conteúdo e de marca
 └── reels/
-    ├── teaser-barcelona/  Reel teaser do vlog de Barcelona (REV2: câmbio real da viagem; REV1: PTAX de 08/10)
+    ├── teaser-barcelona/  Reel teaser do vlog de Barcelona (REV3: cortes secos; REV2: freeze; REV1: PTAX de 08/10)
     └── apresentacao/    Reel de apresentação do canal (REV3 a REV8)
         ├── rev8/        versão atual (DS REV 2): vídeo, capa, QA e pipeline
         ├── rev7/        versão anterior (DS v1): cortes, textos e áudio aprovados

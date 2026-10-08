@@ -38,3 +38,11 @@ Pedido do Diego: usar o câmbio que eles pagaram de verdade, ou seja, euro compr
 - **Valores:** € 31 ≈ R$ 195 · € 19 ≈ R$ 120 · € 25 ≈ R$ 157 · € 1 ≈ R$ 6,29 (antes: 174 · 107 · 140 · 5,61, com a PTAX de 08/10/2026).
 - **p9:** o arquivo passa a ser `reels/teaser-barcelona/rev2/` e a legenda traz o câmbio novo.
 - **p11:** o Short sobe a REV2 e a descrição traz o câmbio novo.
+
+## 08/10/2026 (3ª alteração) · sem freeze
+
+Pedido do Diego: a imagem parava na troca do plano do Camp Nou para o restaurante, e ele quer o corte direto.
+
+- **REV3:** sai o freeze de 1 s dos planos 2 (€ 31) e 3 (€ 19); todos os cortes ficam secos. Duração: 27,5 s → 25,5 s.
+- **Etiquetas de € 31 e € 19:** passam a entrar no começo da frase do preço ("a gente pagou…", "por…"), para continuar ~1,4 s na tela.
+- **p9 e p11:** apontam para `reels/teaser-barcelona/rev3/`, com os tempos novos de cada cena.
