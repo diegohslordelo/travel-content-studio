@@ -1,0 +1,422 @@
+[
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "dia:2026-10-16"
+  ],
+  "data": "2026-10-16",
+  "antes": "Stories \"Planejamento da próxima viagem\" com 3 passos e 2 tarefas de interação",
+  "depois": "Stories \"Planejamento da próxima viagem + pós-Reel\" com 4 passos (inclui o pós-Reel às 19:05) e a tarefa de responder comentários em 60 minutos",
+  "motivo": "O dia ganhou um Reel; o padrão do painel liga o Story do dia ao Reel (pós-Reel que compartilha o Reel com 1 frase de contexto, decisão S3 de STORIES_ESTRATEGIA.md).",
+  "base": "planejamento/CHANGELOG_stories.md, regra 1 a 6; F05 (Stories servem a quem já segue).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Adicionar",
+  "ids": [
+   "p190"
+  ],
+  "data": "2026-10-16",
+  "antes": "—",
+  "depois": "Reel \"Barcelona: o primeiro olhar.\" (pilar 6, Nível B, 19:00, sexta)",
+  "motivo": "Não havia formato dedicado a desejo e descoberta; a amostra pública de 283 Shorts de estética tem mediana de 842 views e cauda longa, então entra em volume pequeno, com teste e sem retirar nenhum Reel de utilidade.",
+  "base": "Hipótese H-A1 (research/04, seção 3; research/07, E1); evidência F27, F28, F42. Aprovação do Diego pendente (research/03, D1).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "dia:2026-10-30"
+  ],
+  "data": "2026-10-30",
+  "antes": "Stories \"Planejamento da próxima viagem\" com 3 passos e 2 tarefas de interação",
+  "depois": "Stories \"Planejamento da próxima viagem + pós-Reel\" com 4 passos (inclui o pós-Reel às 19:05) e a tarefa de responder comentários em 60 minutos",
+  "motivo": "O dia ganhou um Reel; o padrão do painel liga o Story do dia ao Reel (pós-Reel que compartilha o Reel com 1 frase de contexto, decisão S3 de STORIES_ESTRATEGIA.md).",
+  "base": "planejamento/CHANGELOG_stories.md, regra 1 a 6; F05 (Stories servem a quem já segue).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Adicionar",
+  "ids": [
+   "p191"
+  ],
+  "data": "2026-10-30",
+  "antes": "—",
+  "depois": "Reel \"Amsterdam: o primeiro olhar.\" (pilar 6, Nível B, 19:00, sexta)",
+  "motivo": "Não havia formato dedicado a desejo e descoberta; a amostra pública de 283 Shorts de estética tem mediana de 842 views e cauda longa, então entra em volume pequeno, com teste e sem retirar nenhum Reel de utilidade.",
+  "base": "Hipótese H-A1 (research/04, seção 3; research/07, E1); evidência F27, F28, F42. Aprovação do Diego pendente (research/03, D1).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "dia:2026-11-13"
+  ],
+  "data": "2026-11-13",
+  "antes": "Stories \"Planejamento da próxima viagem\" com 3 passos e 2 tarefas de interação",
+  "depois": "Stories \"Planejamento da próxima viagem + pós-Reel\" com 4 passos (inclui o pós-Reel às 19:05) e a tarefa de responder comentários em 60 minutos",
+  "motivo": "O dia ganhou um Reel; o padrão do painel liga o Story do dia ao Reel (pós-Reel que compartilha o Reel com 1 frase de contexto, decisão S3 de STORIES_ESTRATEGIA.md).",
+  "base": "planejamento/CHANGELOG_stories.md, regra 1 a 6; F05 (Stories servem a quem já segue).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Adicionar",
+  "ids": [
+   "p192"
+  ],
+  "data": "2026-11-13",
+  "antes": "—",
+  "depois": "Reel \"Paris: o primeiro olhar.\" (pilar 6, Nível B, 19:00, sexta)",
+  "motivo": "Não havia formato dedicado a desejo e descoberta; a amostra pública de 283 Shorts de estética tem mediana de 842 views e cauda longa, então entra em volume pequeno, com teste e sem retirar nenhum Reel de utilidade.",
+  "base": "Hipótese H-A1 (research/04, seção 3; research/07, E1); evidência F27, F28, F42. Aprovação do Diego pendente (research/03, D1).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "dia:2026-11-27"
+  ],
+  "data": "2026-11-27",
+  "antes": "Stories \"Planejamento da próxima viagem\" com 3 passos e 2 tarefas de interação",
+  "depois": "Stories \"Planejamento da próxima viagem + pós-Reel\" com 4 passos (inclui o pós-Reel às 19:05) e a tarefa de responder comentários em 60 minutos",
+  "motivo": "O dia ganhou um Reel; o padrão do painel liga o Story do dia ao Reel (pós-Reel que compartilha o Reel com 1 frase de contexto, decisão S3 de STORIES_ESTRATEGIA.md).",
+  "base": "planejamento/CHANGELOG_stories.md, regra 1 a 6; F05 (Stories servem a quem já segue).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Adicionar",
+  "ids": [
+   "p193"
+  ],
+  "data": "2026-11-27",
+  "antes": "—",
+  "depois": "Reel \"Disneyland Paris: o primeiro olhar.\" (pilar 6, Nível B, 19:00, sexta)",
+  "motivo": "Não havia formato dedicado a desejo e descoberta; a amostra pública de 283 Shorts de estética tem mediana de 842 views e cauda longa, então entra em volume pequeno, com teste e sem retirar nenhum Reel de utilidade.",
+  "base": "Hipótese H-A1 (research/04, seção 3; research/07, E1); evidência F27, F28, F42. Aprovação do Diego pendente (research/03, D1).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "dia:2026-12-11"
+  ],
+  "data": "2026-12-11",
+  "antes": "Stories \"Planejamento da próxima viagem\" com 3 passos e 2 tarefas de interação",
+  "depois": "Stories \"Planejamento da próxima viagem + pós-Reel\" com 4 passos (inclui o pós-Reel às 19:05) e a tarefa de responder comentários em 60 minutos",
+  "motivo": "O dia ganhou um Reel; o padrão do painel liga o Story do dia ao Reel (pós-Reel que compartilha o Reel com 1 frase de contexto, decisão S3 de STORIES_ESTRATEGIA.md).",
+  "base": "planejamento/CHANGELOG_stories.md, regra 1 a 6; F05 (Stories servem a quem já segue).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Adicionar",
+  "ids": [
+   "p194"
+  ],
+  "data": "2026-12-11",
+  "antes": "—",
+  "depois": "Reel \"Madrid: o primeiro olhar.\" (pilar 6, Nível B, 19:00, sexta)",
+  "motivo": "Não havia formato dedicado a desejo e descoberta; a amostra pública de 283 Shorts de estética tem mediana de 842 views e cauda longa, então entra em volume pequeno, com teste e sem retirar nenhum Reel de utilidade.",
+  "base": "Hipótese H-A1 (research/04, seção 3; research/07, E1); evidência F27, F28, F42. Aprovação do Diego pendente (research/03, D1).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "dia:2026-12-25"
+  ],
+  "data": "2026-12-25",
+  "antes": "Stories \"Planejamento: Alemanha, Áustria e Praga\" com 3 passos e 2 tarefas de interação",
+  "depois": "Stories \"Planejamento: Alemanha, Áustria e Praga + pós-Reel\" com 4 passos (inclui o pós-Reel às 19:05) e a tarefa de responder comentários em 60 minutos",
+  "motivo": "O dia ganhou um Reel; o padrão do painel liga o Story do dia ao Reel (pós-Reel que compartilha o Reel com 1 frase de contexto, decisão S3 de STORIES_ESTRATEGIA.md).",
+  "base": "planejamento/CHANGELOG_stories.md, regra 1 a 6; F05 (Stories servem a quem já segue).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Adicionar",
+  "ids": [
+   "p195"
+  ],
+  "data": "2026-12-25",
+  "antes": "—",
+  "depois": "Reel \"Bruxelas: o primeiro olhar.\" (pilar 6, Nível B, 19:00, sexta)",
+  "motivo": "Não havia formato dedicado a desejo e descoberta; a amostra pública de 283 Shorts de estética tem mediana de 842 views e cauda longa, então entra em volume pequeno, com teste e sem retirar nenhum Reel de utilidade.",
+  "base": "Hipótese H-A1 (research/04, seção 3; research/07, E1); evidência F27, F28, F42. Aprovação do Diego pendente (research/03, D1).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "dia:2027-01-08"
+  ],
+  "data": "2027-01-08",
+  "antes": "Stories \"Planejamento: Alemanha, Áustria e Praga\" com 3 passos e 2 tarefas de interação",
+  "depois": "Stories \"Planejamento: Alemanha, Áustria e Praga + pós-Reel\" com 4 passos (inclui o pós-Reel às 19:05) e a tarefa de responder comentários em 60 minutos",
+  "motivo": "O dia ganhou um Reel; o padrão do painel liga o Story do dia ao Reel (pós-Reel que compartilha o Reel com 1 frase de contexto, decisão S3 de STORIES_ESTRATEGIA.md).",
+  "base": "planejamento/CHANGELOG_stories.md, regra 1 a 6; F05 (Stories servem a quem já segue).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Adicionar",
+  "ids": [
+   "p196"
+  ],
+  "data": "2027-01-08",
+  "antes": "—",
+  "depois": "Reel \"Bruges: o primeiro olhar.\" (pilar 6, Nível B, 19:00, sexta)",
+  "motivo": "Não havia formato dedicado a desejo e descoberta; a amostra pública de 283 Shorts de estética tem mediana de 842 views e cauda longa, então entra em volume pequeno, com teste e sem retirar nenhum Reel de utilidade.",
+  "base": "Hipótese H-A1 (research/04, seção 3; research/07, E1); evidência F27, F28, F42. Aprovação do Diego pendente (research/03, D1).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Substituir",
+  "ids": [
+   "p26"
+  ],
+  "data": "2026-10-19",
+  "antes": "Short: Uma coisa em Barcelona muito diferente do Brasil",
+  "depois": "Short: Primeiro olhar de Barcelona (mesmo corte do Reel de 16/10)",
+  "motivo": "O Short anterior repetia um Reel de Nível B (curiosidade, hotel, comida, expectativa × realidade ou Trial), o de menor valor próprio. Shorts de canais brasileiros de 100 a 500 mil inscritos têm mediana de 2,5 a 6 mil views, então o slot passa a medir o aspiracional no YouTube.",
+  "base": "Hipótese H-A2 (research/07, E5); benchmark F40. O Short continua sendo reaproveitamento do próprio Reel (conteúdo original, F01 e F08).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Substituir",
+  "ids": [
+   "p47"
+  ],
+  "data": "2026-11-02",
+  "antes": "Short: Nosso hotel em Amsterdam: valeu o preço?",
+  "depois": "Short: Primeiro olhar de Amsterdam (mesmo corte do Reel de 30/10)",
+  "motivo": "O Short anterior repetia um Reel de Nível B (curiosidade, hotel, comida, expectativa × realidade ou Trial), o de menor valor próprio. Shorts de canais brasileiros de 100 a 500 mil inscritos têm mediana de 2,5 a 6 mil views, então o slot passa a medir o aspiracional no YouTube.",
+  "base": "Hipótese H-A2 (research/07, E5); benchmark F40. O Short continua sendo reaproveitamento do próprio Reel (conteúdo original, F01 e F08).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Substituir",
+  "ids": [
+   "p68"
+  ],
+  "data": "2026-11-16",
+  "antes": "Short: Paris: expectativa x realidade",
+  "depois": "Short: Primeiro olhar de Paris (mesmo corte do Reel de 13/11)",
+  "motivo": "O Short anterior repetia um Reel de Nível B (curiosidade, hotel, comida, expectativa × realidade ou Trial), o de menor valor próprio. Shorts de canais brasileiros de 100 a 500 mil inscritos têm mediana de 2,5 a 6 mil views, então o slot passa a medir o aspiracional no YouTube.",
+  "base": "Hipótese H-A2 (research/07, E5); benchmark F40. O Short continua sendo reaproveitamento do próprio Reel (conteúdo original, F01 e F08).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Substituir",
+  "ids": [
+   "p89"
+  ],
+  "data": "2026-11-30",
+  "antes": "Short: O momento mais emocionante do dia",
+  "depois": "Short: Primeiro olhar de Disneyland Paris (mesmo corte do Reel de 27/11)",
+  "motivo": "O Short anterior repetia um Reel de Nível B (curiosidade, hotel, comida, expectativa × realidade ou Trial), o de menor valor próprio. Shorts de canais brasileiros de 100 a 500 mil inscritos têm mediana de 2,5 a 6 mil views, então o slot passa a medir o aspiracional no YouTube.",
+  "base": "Hipótese H-A2 (research/07, E5); benchmark F40. O Short continua sendo reaproveitamento do próprio Reel (conteúdo original, F01 e F08).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Substituir",
+  "ids": [
+   "p110"
+  ],
+  "data": "2026-12-14",
+  "antes": "Short: O que comemos em Madrid: minha nota",
+  "depois": "Short: Primeiro olhar de Madrid (mesmo corte do Reel de 11/12)",
+  "motivo": "O Short anterior repetia um Reel de Nível B (curiosidade, hotel, comida, expectativa × realidade ou Trial), o de menor valor próprio. Shorts de canais brasileiros de 100 a 500 mil inscritos têm mediana de 2,5 a 6 mil views, então o slot passa a medir o aspiracional no YouTube.",
+  "base": "Hipótese H-A2 (research/07, E5); benchmark F40. O Short continua sendo reaproveitamento do próprio Reel (conteúdo original, F01 e F08).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Substituir",
+  "ids": [
+   "p131"
+  ],
+  "data": "2026-12-28",
+  "antes": "Short: O que comi em Bruxelas: minha nota",
+  "depois": "Short: Primeiro olhar de Bruxelas (mesmo corte do Reel de 25/12)",
+  "motivo": "O Short anterior repetia um Reel de Nível B (curiosidade, hotel, comida, expectativa × realidade ou Trial), o de menor valor próprio. Shorts de canais brasileiros de 100 a 500 mil inscritos têm mediana de 2,5 a 6 mil views, então o slot passa a medir o aspiracional no YouTube.",
+  "base": "Hipótese H-A2 (research/07, E5); benchmark F40. O Short continua sendo reaproveitamento do próprio Reel (conteúdo original, F01 e F08).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Substituir",
+  "ids": [
+   "p152"
+  ],
+  "data": "2027-01-11",
+  "antes": "Short: Bruges: expectativa x realidade",
+  "depois": "Short: Primeiro olhar de Bruges (mesmo corte do Reel de 08/01)",
+  "motivo": "O Short anterior repetia um Reel de Nível B (curiosidade, hotel, comida, expectativa × realidade ou Trial), o de menor valor próprio. Shorts de canais brasileiros de 100 a 500 mil inscritos têm mediana de 2,5 a 6 mil views, então o slot passa a medir o aspiracional no YouTube.",
+  "base": "Hipótese H-A2 (research/07, E5); benchmark F40. O Short continua sendo reaproveitamento do próprio Reel (conteúdo original, F01 e F08).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "video:bcn"
+  ],
+  "data": "2026-10-10",
+  "antes": "3 opções de título",
+  "depois": "+ opção: Barcelona em 3 dias: quanto gastamos de verdade e o que eu faria diferente",
+  "motivo": "Os títulos do painel não repetiam a forma do trailer nem a forma de busca (\"[cidade] em N dias\"). A nova opção une cidade + custo + veredito, como os canais brasileiros de 40 a 140 mil views de mediana.",
+  "base": "research/02, padrões 1, 3 e 7; F40 e F41. As opções antigas ficam intactas.",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "video:ams"
+  ],
+  "data": "2026-10-24",
+  "antes": "3 opções de título",
+  "depois": "+ opção: Amsterdam em 3 dias: primeiro dia, hotel e quanto gastamos",
+  "motivo": "Os títulos do painel não repetiam a forma do trailer nem a forma de busca (\"[cidade] em N dias\"). A nova opção une cidade + custo + veredito, como os canais brasileiros de 40 a 140 mil views de mediana.",
+  "base": "research/02, padrões 1, 3 e 7; F40 e F41. As opções antigas ficam intactas.",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "video:par"
+  ],
+  "data": "2026-11-07",
+  "antes": "3 opções de título",
+  "depois": "+ opção: Paris em 1 dia: quanto gastamos e o que não deu para ver",
+  "motivo": "Os títulos do painel não repetiam a forma do trailer nem a forma de busca (\"[cidade] em N dias\"). A nova opção une cidade + custo + veredito, como os canais brasileiros de 40 a 140 mil views de mediana.",
+  "base": "research/02, padrões 1, 3 e 7; F40 e F41. As opções antigas ficam intactas.",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "video:dis"
+  ],
+  "data": "2026-11-21",
+  "antes": "3 opções de título",
+  "depois": "+ opção: Disneyland Paris em 1 dia: os 2 parques, as filas e quanto gastamos",
+  "motivo": "Os títulos do painel não repetiam a forma do trailer nem a forma de busca (\"[cidade] em N dias\"). A nova opção une cidade + custo + veredito, como os canais brasileiros de 40 a 140 mil views de mediana.",
+  "base": "research/02, padrões 1, 3 e 7; F40 e F41. As opções antigas ficam intactas.",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "video:mad"
+  ],
+  "data": "2026-12-05",
+  "antes": "3 opções de título",
+  "depois": "+ opção: Madrid em 2 dias: quanto gastamos e se vale a pena",
+  "motivo": "Os títulos do painel não repetiam a forma do trailer nem a forma de busca (\"[cidade] em N dias\"). A nova opção une cidade + custo + veredito, como os canais brasileiros de 40 a 140 mil views de mediana.",
+  "base": "research/02, padrões 1, 3 e 7; F40 e F41. As opções antigas ficam intactas.",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "video:bxl"
+  ],
+  "data": "2026-12-19",
+  "antes": "3 opções de título",
+  "depois": "+ opção: Bruxelas em 1 dia: vale parar? Quanto gastamos",
+  "motivo": "Os títulos do painel não repetiam a forma do trailer nem a forma de busca (\"[cidade] em N dias\"). A nova opção une cidade + custo + veredito, como os canais brasileiros de 40 a 140 mil views de mediana.",
+  "base": "research/02, padrões 1, 3 e 7; F40 e F41. As opções antigas ficam intactas.",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "video:brg"
+  ],
+  "data": "2027-01-02",
+  "antes": "3 opções de título",
+  "depois": "+ opção: Bruges em 1 dia: é bonita mesmo? Quanto gastamos",
+  "motivo": "Os títulos do painel não repetiam a forma do trailer nem a forma de busca (\"[cidade] em N dias\"). A nova opção une cidade + custo + veredito, como os canais brasileiros de 40 a 140 mil views de mediana.",
+  "base": "research/02, padrões 1, 3 e 7; F40 e F41. As opções antigas ficam intactas.",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "video:lis"
+  ],
+  "data": "2027-01-16",
+  "antes": "3 opções de título",
+  "depois": "+ opção: Lisboa em 1 noite e 1 manhã: o que dá para fazer e quanto gastamos",
+  "motivo": "Os títulos do painel não repetiam a forma do trailer nem a forma de busca (\"[cidade] em N dias\"). A nova opção une cidade + custo + veredito, como os canais brasileiros de 40 a 140 mil views de mediana.",
+  "base": "research/02, padrões 1, 3 e 7; F40 e F41. As opções antigas ficam intactas.",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "p13"
+  ],
+  "data": "2026-10-10",
+  "antes": "Observações sem pendência de conferência de capítulos e preços",
+  "depois": "+ observação: Capítulos e fatos de preço para a descrição saíram da transcrição automática do vlog (research/06_plano_8_videos.md, seção 3). Conferir cada horário e cada valor contra o vídeo final e o registro real antes de publicar.",
+  "motivo": "A transcrição disponível é automática (erros de grafia e de nome) e os preços são o que foi dito, não o registro.",
+  "base": "research/06, seção 3; CLAUDE.md, 9 (dados reais).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "semana:2"
+  ],
+  "data": "2026-10-12",
+  "antes": "—",
+  "depois": "+ observação da semana: Sexta (16/10): primeiro Reel aspiracional (Primeiro olhar de Barcelona). Registre envios por alcance, % de não seguidores e seguidores ganhos. Com 1 Reel não há conclusão (research/07, E1).",
+  "motivo": "Ligar a leitura dos dados às decisões já aprovadas (Leituras 1, 2 e 3) e avisar sobre eventos que distorcem o resultado.",
+  "base": "research/07; F21 (sazonalidade); datas de Carnaval e Black Friday no doc 01, seção 9.",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "semana:3"
+  ],
+  "data": "2026-10-19",
+  "antes": "—",
+  "depois": "+ observação da semana: LEITURA 1, aspiracionais: só 1 amostra (Barcelona, 16/10). Registre e não decida: o bloco só vale com 10 Reels (referência de conteúdo, 8.3).",
+  "motivo": "Ligar a leitura dos dados às decisões já aprovadas (Leituras 1, 2 e 3) e avisar sobre eventos que distorcem o resultado.",
+  "base": "research/07; F21 (sazonalidade); datas de Carnaval e Black Friday no doc 01, seção 9.",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "semana:8"
+  ],
+  "data": "2026-11-23",
+  "antes": "—",
+  "depois": "+ observação da semana: LEITURA 2, aspiracionais: 4 amostras (Barcelona, Amsterdam, Paris, Disneyland Paris). Ainda abaixo de 10: compare só a direção (envios por alcance e seguidores por Reel) e decida se segue. 27/11 é Black Friday: não tire conclusão deste dia isolado (hipótese: oferta de passagem e hotel concorre pela atenção).",
+  "motivo": "Ligar a leitura dos dados às decisões já aprovadas (Leituras 1, 2 e 3) e avisar sobre eventos que distorcem o resultado.",
+  "base": "research/07; F21 (sazonalidade); datas de Carnaval e Black Friday no doc 01, seção 9.",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "semana:13"
+  ],
+  "data": "2026-12-28",
+  "antes": "—",
+  "depois": "+ observação da semana: LEITURA 3, aspiracionais: 6 amostras até 25/12 (a 7ª sai em 08/01). Aplique o critério de E1 (research/07): manter, aumentar ou cortar; se ficar abaixo de 10, estenda o bloco com os Reels da viagem de janeiro.",
+  "motivo": "Ligar a leitura dos dados às decisões já aprovadas (Leituras 1, 2 e 3) e avisar sobre eventos que distorcem o resultado.",
+  "base": "research/07; F21 (sazonalidade); datas de Carnaval e Black Friday no doc 01, seção 9.",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar",
+  "ids": [
+   "semana:18"
+  ],
+  "data": "2027-02-01",
+  "antes": "—",
+  "depois": "+ observação da semana: 06 a 09/02/2027 é Carnaval (Cinzas 10/02): o balanço de 07/02 cai no domingo de Carnaval. Hipótese: menos atenção a planejamento de viagem. Compare com os domingos anteriores antes de concluir que o formato falhou.",
+  "motivo": "Ligar a leitura dos dados às decisões já aprovadas (Leituras 1, 2 e 3) e avisar sobre eventos que distorcem o resultado.",
+  "base": "research/07; F21 (sazonalidade); datas de Carnaval e Black Friday no doc 01, seção 9.",
+  "alterado_em": "08/10/2026"
+ }
+]
