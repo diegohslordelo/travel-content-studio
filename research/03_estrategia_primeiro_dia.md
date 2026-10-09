@@ -238,3 +238,15 @@ Detalhe em `08`. Ordem de prioridade: **(1)** vlog quinzenal no prazo; **(2)** R
 | D5 | Confirmar que o Trial Reel está disponível na conta | Verificar no app | O plano B (Reel normal com novo gancho) já está no painel |
 | D6 | Marcar como "publicado" no painel os posts de 02/10 a 08/10 que ainda estão sem marcação nos dados | Marcar no navegador ou autorizar a mudança do campo `done` | Cosmético, mas deixa a tela de "atrasados" correta |
 | D7 | Identidade verbal e direção de imagem (CLAUDE.md, 14.8) | Definir 5 a 7 palavras e 3 regras de imagem | Mantém consistência nos Reels aspiracionais |
+
+### Respostas do Diego (08/10/2026)
+
+| # | Resposta | Situação |
+|---|---|---|
+| D1 | Pediu para ver a lista dos 7 Reels | **Aguardando o sim ou não** |
+| D2 | Pediu explicação de "contemplativo" | Explicado: nada muda no DS por ora |
+| D3 | Pediu skills para "criar reels de hoje" e "criar vídeo do youtube de hoje" | **Feito**: `.claude/skills/reels-de-hoje` e `youtube-de-hoje` |
+| D4 | Enviará os valores no dia, quando a skill pedir | Combinado |
+| D5 | Ainda não tem Trial Reel | Vale o plano B do painel (Reel normal novo, nunca o mesmo vídeo) |
+| D6 | Publicou tudo até 08/10 | **Feito**: `done` de p2, p3, p4, p5, p6, p8 e p9 |
+| D7 | **Aprovou** as palavras da marca e as regras de imagem | **Feito**: `docs/identidade-verbal-e-imagem.md` v1.0.0 |

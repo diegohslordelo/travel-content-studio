@@ -26,6 +26,7 @@ python3 planejamento/scripts/post_do_dia.py 2026-10-16 --fmt Reel   # outra data
 1. `CLAUDE.md`: seções 2 (quem aparece), 6 (centralização x 540), 9 (dados reais), 10 (acervo: **não refilmar**, **não criar cena falsa**), 12.
 2. `design-system/design-system-primeiro-dia-v2.md`: 0 (cartão de bolso), componente usado no post (2.1 a 2.6), 3.2 (6 estilos de legenda), 5.1 (hooks), 5.2 (estrutura e níveis A e B), 7.3 (checklist). Valores sempre de `design-system/primeiro-dia-tokens-v2.json`; **não crie valor fora dele**.
 3. `docs/referencia-conteudo-instagram.md`: 3 (estrutura), 4 (checklist pré-publicação), 8 (métricas).
+   `docs/identidade-verbal-e-imagem.md` (aprovada em 08/10/2026): palavras da marca, como escrever e direção de imagem. Aplique em todo texto novo.
 4. `research/04_manual_de_formatos.md`: o formato do post (R01 a R13, A01 a A10) e as estruturas N1 a N6. `research/03_estrategia_primeiro_dia.md`: pilar e série. `research/07_metricas_e_experimentos.md`: o experimento ligado (E1, E5, E6…) e a regra de decisão.
 5. Para Reel de cidade com vlog: `research/06_plano_8_videos.md` (cenas já usadas, para **não repetir a cena de abertura**).
 

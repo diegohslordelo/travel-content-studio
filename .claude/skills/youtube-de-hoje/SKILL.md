@@ -23,6 +23,7 @@ python3 planejamento/scripts/post_do_dia.py 2026-10-24          # um dia especí
 ## 2. Ler as fontes (consulte, não copie de memória)
 
 1. `CLAUDE.md`: 2, 9 (dados reais), 10 (acervo), 12 (revisão de áudio de vídeo longo).
+   `docs/identidade-verbal-e-imagem.md` (aprovada em 08/10/2026): palavras da marca, como escrever e direção de imagem. Aplique em títulos, descrição e textos.
 2. `design-system/design-system-primeiro-dia-v2.md`: **3.4** (legendas do YouTube), **5.4** (abertura, lower third, capítulos, preços, tela final), **5.5** (miniaturas), 7.3 (checklist). Valores de `design-system/primeiro-dia-tokens-v2.json`.
 3. `research/04_manual_de_formatos.md` seções 7 e 9 (anatomia, títulos, SEO) e `research/06_plano_8_videos.md` (inventário do vídeo, capítulos sugeridos, **conferências antes de publicar**).
 4. `research/02_benchmark_criadores.md` (padrões de título e miniatura) e `research/07_metricas_e_experimentos.md` (E7: Test & Compare).
