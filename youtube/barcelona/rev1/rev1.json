@@ -1,0 +1,432 @@
+{
+ "versao": "rev1",
+ "video": "Barcelona (vlog longo, YouTube 16:9)",
+ "original": {
+  "arquivo_padrao": "fonte/barcelona_original.mov",
+  "variavel_ambiente": "BCN_ORIGINAL",
+  "sha256": "2011c5411461cbffcb7e21d40645e0ec611ccd328791cf93e278a26fe5938750",
+  "origem": "Google Drive, id 1caei0riSf82pYiGAhi_Zuhp6ByJLdi5k (copy_71526AEF-84EA-49ED-8F07-487197B471F9.mov)",
+  "fps": 24,
+  "quadros": 49213,
+  "largura": 3840,
+  "altura": 2160
+ },
+ "tokens": "../../../design-system/primeiro-dia-tokens-v2.json",
+ "escala": 2,
+ "cotacao": {
+  "eur_brl": "6.0433",
+  "data": "09/03/2026",
+  "tipo": "PTAX de fechamento (taxa de compra) do BCB",
+  "fontes": [
+   "https://www.numerando.com.br/cambio/euro/marco-2026 (2026-03-09: R$ 6,0433)",
+   "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='EUR'&@dataCotacao='03-09-2026' (Fechamento PTAX: compra 6,04330, venda 6,04450)"
+  ],
+  "consultado_em": "09/10/2026"
+ },
+ "tempos": {
+  "lugar_visivel_s": 4.0,
+  "preco_visivel_s": 5.0,
+  "recibo_visivel_s": 7.0,
+  "hospedagem_visivel_s": 7.0,
+  "humor_visivel_s": 4.0,
+  "minimo_visivel_s": 3.0,
+  "calma_entre_entradas_s": 1.5
+ },
+ "itens": [
+  {
+   "id": "P01",
+   "t": "01:04",
+   "tipo": "preco",
+   "rotulo": "INGRESSO · CAMP NOU",
+   "eur": "31.00",
+   "evidencia": "fala 01:02–01:06: 'a gente comprou esses ingressos aqui no site oficial deles, a gente pagou 31 euros'"
+  },
+  {
+   "id": "L01",
+   "t": "01:13",
+   "tipo": "lugar",
+   "nome": "CAMP NOU",
+   "micro": "BARCELONA",
+   "entrada": "01:17.75",
+   "evidencia": "imagem do estádio; o master já tem '📍 Camp Nou' (CapCut) de 01:13,0 a 01:16,75: a entrada foi adiada para 01:17,75"
+  },
+  {
+   "id": "H01",
+   "t": "02:45",
+   "tipo": "hospedagem",
+   "nome": "ONDE FICAMOS",
+   "micro": "BARCELONA · 4 NOITES",
+   "eur": "426.00",
+   "caneta": "link na descrição",
+   "evidencia": "briefing do Diego (4 noites, € 426,00); fala 02:44: 'a gente está num bairro chamado Gràcia' (bairro não usado no gráfico, a pedido do briefing)"
+  },
+  {
+   "id": "P02",
+   "t": "03:17",
+   "tipo": "preco",
+   "rotulo": "METRÔ E ÔNIBUS · 72 H",
+   "eur": "27.50",
+   "evidencia": "fala 03:04–03:15: 'a gente comprou um bilhete de metrô e ônibus pra utilizar por 72 horas… a gente vai pagar 27,50'"
+  },
+  {
+   "id": "L02",
+   "t": "03:30",
+   "tipo": "lugar",
+   "nome": "MONTJUÏC",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L03",
+   "t": "04:46",
+   "tipo": "lugar",
+   "nome": "MONUMENTO A COLOMBO",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L04",
+   "t": "05:19",
+   "tipo": "lugar",
+   "nome": "MCDONALD'S",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "R01a",
+   "t": "06:36",
+   "tipo": "preco",
+   "rotulo": "MCDONALD'S · PEDIDO 1",
+   "eur": "9.70",
+   "fim": "06:38.00",
+   "evidencia": "fala 06:28–06:38: 'Acabamos de sair aqui do McDonald's. O seu deu… 9,70. O meu foi 13,60.' Mesma refeição (alimentação). O recibo de 2 linhas cobria o rosto da Marina (06:38–06:43): trocado por 3 etiquetas no mesmo lugar"
+  },
+  {
+   "id": "R01b",
+   "t": "06:38",
+   "tipo": "preco",
+   "rotulo": "MCDONALD'S · PEDIDO 2",
+   "eur": "13.60",
+   "fim": "06:40.50",
+   "evidencia": "fala 06:28–06:38: 'Acabamos de sair aqui do McDonald's. O seu deu… 9,70. O meu foi 13,60.' Mesma refeição (alimentação). O recibo de 2 linhas cobria o rosto da Marina (06:38–06:43): trocado por 3 etiquetas no mesmo lugar"
+  },
+  {
+   "id": "R01c",
+   "t": "06:40.50",
+   "tipo": "preco",
+   "rotulo": "TOTAL DOS 2 PEDIDOS",
+   "eur": "23.30",
+   "fim": "06:45.50",
+   "evidencia": "fala 06:28–06:38: 'Acabamos de sair aqui do McDonald's. O seu deu… 9,70. O meu foi 13,60.' Mesma refeição (alimentação). O recibo de 2 linhas cobria o rosto da Marina (06:38–06:43): trocado por 3 etiquetas no mesmo lugar; total = 9,70 + 13,60"
+  },
+  {
+   "id": "L05",
+   "t": "06:53",
+   "tipo": "lugar",
+   "nome": "PRAIA DA BARCELONETA",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L06",
+   "t": "07:41",
+   "tipo": "lugar",
+   "nome": "EL VASO DE ORO",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "P03",
+   "t": "08:01",
+   "tipo": "preco",
+   "rotulo": "EL VASO DE ORO",
+   "eur": "4.70"
+  },
+  {
+   "id": "L07",
+   "t": "08:31",
+   "tipo": "lugar",
+   "nome": "PARC DE LA CIUTADELLA",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L08",
+   "t": "09:15",
+   "tipo": "lugar",
+   "nome": "ARC DE TRIOMF",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L09",
+   "t": "09:43",
+   "tipo": "lugar",
+   "nome": "MERCADONA",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "P04",
+   "t": "09:56",
+   "tipo": "preco",
+   "rotulo": "MERCADONA",
+   "eur": "13.45"
+  },
+  {
+   "id": "L10",
+   "t": "10:18",
+   "tipo": "lugar",
+   "nome": "L'ANXOVETA",
+   "micro": "BARCELONA",
+   "evidencia": "grafia de Time Out (Gràcia, Sant Domènec 14). A fachada não aparece no vídeo: [CONFIRMAR] com o Diego"
+  },
+  {
+   "id": "P05",
+   "t": "10:37",
+   "tipo": "preco",
+   "rotulo": "L'ANXOVETA",
+   "eur": "29.55"
+  },
+  {
+   "id": "L11",
+   "t": "11:19",
+   "tipo": "lugar",
+   "nome": "BAIRRO DE GRÀCIA",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L12",
+   "t": "11:47",
+   "tipo": "lugar",
+   "nome": "CASA VICENS",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L13",
+   "t": "12:42",
+   "tipo": "lugar",
+   "nome": "BAIRRO GÓTICO",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L14",
+   "t": "13:08",
+   "tipo": "lugar",
+   "nome": "MURAL DO BEIJO",
+   "micro": "EL MÓN NEIX EN CADA BESADA",
+   "evidencia": "fala 12:46 e 13:11; mosaico do beijo na imagem"
+  },
+  {
+   "id": "L15",
+   "t": "14:02",
+   "tipo": "lugar",
+   "nome": "CATEDRAL DE BARCELONA",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L16",
+   "t": "14:38",
+   "tipo": "lugar",
+   "nome": "PONT DEL BISBE",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L17",
+   "t": "14:51",
+   "tipo": "lugar",
+   "nome": "PLAÇA DE SANT JAUME",
+   "micro": "BARCELONA",
+   "entrada": "14:54.50",
+   "evidencia": "o master já tem '📍 Plaça de Sant Jaume' (CapCut) de 14:50,5 a 14:54,0: a entrada foi adiada para 14:54,5"
+  },
+  {
+   "id": "L18",
+   "t": "15:15",
+   "tipo": "lugar",
+   "nome": "PLAÇA REIAL",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L19",
+   "t": "16:21",
+   "tipo": "lugar",
+   "nome": "RESTAURANTE MOMO",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "P06",
+   "t": "16:40",
+   "tipo": "preco",
+   "rotulo": "RESTAURANTE MOMO",
+   "eur": "19.00",
+   "evidencia": "fala 16:28–16:38: 'uma promoção… 5 tapas, uma paella e uma bebida por 19 euros'. O master já tem um selo '19€' (CapCut) em 16:40 de 16:40,0 a 16:41,75: a etiqueta entra em 16:42,25 para não repetir o valor ao mesmo tempo",
+   "entrada": "16:42.25"
+  },
+  {
+   "id": "L20",
+   "t": "18:08",
+   "tipo": "lugar",
+   "nome": "PALAU GÜELL",
+   "micro": "BARCELONA",
+   "evidencia": "briefing; a fachada não é identificável nos quadros conferidos: [CONFIRMAR]"
+  },
+  {
+   "id": "L21",
+   "t": "18:41",
+   "tipo": "lugar",
+   "nome": "LA RAMBLA",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L22",
+   "t": "19:29",
+   "tipo": "lugar",
+   "nome": "MERCAT DE LA BOQUERIA",
+   "micro": "BARCELONA",
+   "evidencia": "fala 19:27: 'Acabamos de chegar aqui no mercado de La Boqueria, que é no meio da La Rambla'; bancas 'Alfonso Fruiteries' e 'Macedonies'. Não é o Mercado de la Barceloneta"
+  },
+  {
+   "id": "L23",
+   "t": "20:18",
+   "tipo": "lugar",
+   "nome": "PLAÇA DE CATALUNYA",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L24",
+   "t": "20:57",
+   "tipo": "lugar",
+   "nome": "CASA BATLLÓ",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L25",
+   "t": "22:14",
+   "tipo": "lugar",
+   "nome": "CASA MILÀ",
+   "micro": "LA PEDRERA"
+  },
+  {
+   "id": "L26",
+   "t": "22:20",
+   "tipo": "lugar",
+   "nome": "PASSEIG DE GRÀCIA",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "L27",
+   "t": "23:07",
+   "tipo": "lugar",
+   "nome": "RISTORANTE PIZZERIA EDEN",
+   "micro": "BARCELONA",
+   "evidencia": "fala 23:06: 'o nome do restaurante é Pizzaria do Éden'; grafia do briefing, fachada não aparece"
+  },
+  {
+   "id": "P07",
+   "t": "23:14",
+   "tipo": "preco",
+   "rotulo": "PIZZERIA EDEN",
+   "eur": "28.20"
+  },
+  {
+   "id": "L28",
+   "t": "23:46",
+   "tipo": "lugar",
+   "nome": "BASÍLICA DA SAGRADA FAMÍLIA",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "P08",
+   "t": "26:02",
+   "tipo": "preco",
+   "rotulo": "INGRESSO · POR PESSOA",
+   "eur": "25.00",
+   "evidencia": "fala 25:57: 'foi 25 euros por pessoa'"
+  },
+  {
+   "id": "L29",
+   "t": "26:46",
+   "tipo": "lugar",
+   "nome": "BARÇA STORE AND EXHIBITION",
+   "micro": "BARCELONA",
+   "evidencia": "briefing; fala 26:38: 'é um museu gratuito'. O nome não aparece legível nos quadros: [CONFIRMAR]"
+  },
+  {
+   "id": "L30",
+   "t": "27:31",
+   "tipo": "lugar",
+   "nome": "XURRERIA TREBOL",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "P09",
+   "t": "27:38",
+   "tipo": "preco",
+   "rotulo": "XURRERIA TREBOL",
+   "eur": "11.70"
+  },
+  {
+   "id": "L31",
+   "t": "28:46",
+   "tipo": "lugar",
+   "nome": "LA FÀBRICA",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "P10",
+   "t": "29:12",
+   "tipo": "preco",
+   "rotulo": "LA FÀBRICA",
+   "eur": "7.00"
+  },
+  {
+   "id": "U01",
+   "t": "29:20",
+   "tipo": "humor",
+   "linhas": [
+    "pequeno perrengue:",
+    "encarei de volta kkkk"
+   ],
+   "posicao": [
+    1210,
+    700
+   ],
+   "evidencia": "o master já tem a legenda '*Nesse momento eu cismei com o cara que passou encarando meu celular kkkkk' na base; o bilhete complementa sem repetir. Posição x 1210 · y 700 (sobre a camiseta do Diego): no alto, ele cobria a cabeça do homem que passa (29:23,6) e encostava no cabelo do Diego"
+  },
+  {
+   "id": "L32",
+   "t": "29:45",
+   "tipo": "lugar",
+   "nome": "PARK GÜELL",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "P11",
+   "t": "30:01",
+   "tipo": "preco",
+   "rotulo": "INGRESSO · POR PESSOA",
+   "eur": "18.00"
+  },
+  {
+   "id": "L33",
+   "t": "32:25",
+   "tipo": "lugar",
+   "nome": "TAPA TAPA BAR",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "P12",
+   "t": "32:29",
+   "tipo": "preco",
+   "rotulo": "TAPA TAPA BAR",
+   "eur": "26.20"
+  },
+  {
+   "id": "L34",
+   "t": "32:59",
+   "tipo": "lugar",
+   "nome": "100 MONTADITOS",
+   "micro": "BARCELONA"
+  },
+  {
+   "id": "P13",
+   "t": "33:16",
+   "tipo": "preco",
+   "rotulo": "100 MONTADITOS",
+   "eur": "6.50"
+  }
+ ]
+}

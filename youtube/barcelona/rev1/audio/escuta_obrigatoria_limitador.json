@@ -1,0 +1,125 @@
+{
+ "criterio": "janelas de 100 ms na fala com redução do limitador > 4 dB, unidas quando a menos de 3 s",
+ "trechos": [
+  {
+   "inicio": "07:40.00",
+   "fim": "07:49.80",
+   "reducao_max_dB": 8.4,
+   "fala": "Almoçamos, e aí Diego está em um parque de passões"
+  },
+  {
+   "inicio": "27:46.40",
+   "fim": "27:51.50",
+   "reducao_max_dB": 8.4,
+   "fala": "fome também São dois de peixe e tem dois croquetes de carne"
+  },
+  {
+   "inicio": "20:27.60",
+   "fim": "20:35.00",
+   "reducao_max_dB": 8.3,
+   "fala": "Eu acho que pode ser chamada também de praça dos pombos, né?"
+  },
+  {
+   "inicio": "10:32.00",
+   "fim": "10:40.30",
+   "reducao_max_dB": 8.3,
+   "fala": "E agora eu acabei de pedir a minha primeira tapa de Barcelona,"
+  },
+  {
+   "inicio": "18:13.70",
+   "fim": "18:22.70",
+   "reducao_max_dB": 8.1,
+   "fala": "pela cidade que você pode encher,"
+  },
+  {
+   "inicio": "21:23.80",
+   "fim": "21:27.30",
+   "reducao_max_dB": 8.0,
+   "fala": "Caveira."
+  },
+  {
+   "inicio": "08:03.20",
+   "fim": "08:07.20",
+   "reducao_max_dB": 8.0,
+   "fala": "e aí ele veio provar essa bendita cerveja está provado?"
+  },
+  {
+   "inicio": "07:57.50",
+   "fim": "08:02.00",
+   "reducao_max_dB": 7.9,
+   "fala": "a cervejaria é um vaso de"
+  },
+  {
+   "inicio": "22:26.50",
+   "fim": "22:30.40",
+   "reducao_max_dB": 7.7,
+   "fala": "Longchamp, Prada Tem várias lojas aqui"
+  },
+  {
+   "inicio": "19:44.40",
+   "fim": "19:48.20",
+   "reducao_max_dB": 7.6,
+   "fala": "Mas vamos dar um rolé aqui, conhecer Se vocês já foram no Mercadão São Paulo"
+  },
+  {
+   "inicio": "21:51.30",
+   "fim": "22:00.10",
+   "reducao_max_dB": 7.4,
+   "fala": "Mas Pra quem gosta, vale, né?"
+  },
+  {
+   "inicio": "18:09.30",
+   "fim": "18:12.50",
+   "reducao_max_dB": 7.4,
+   "fala": "Nós compramos essa garrafa aqui ontem e aqui"
+  },
+  {
+   "inicio": "22:01.50",
+   "fim": "22:03.90",
+   "reducao_max_dB": 7.2,
+   "fala": "entra naqueles pontos turísticos que é legal, lindo, a gente vê de fora"
+  },
+  {
+   "inicio": "19:02.70",
+   "fim": "19:08.10",
+   "reducao_max_dB": 7.1,
+   "fala": "está com britadeira, batismo no chão, enfim, quebra -quebra."
+  },
+  {
+   "inicio": "18:29.40",
+   "fim": "18:36.30",
+   "reducao_max_dB": 7.1,
+   "fala": "Você vai para o lugar, enche sua garrafa, guarda,"
+  },
+  {
+   "inicio": "02:01.20",
+   "fim": "02:06.90",
+   "reducao_max_dB": 7.1,
+   "fala": "aqui atrás da gente Já tinha visto alguns depoimentos que realmente tava"
+  },
+  {
+   "inicio": "10:20.10",
+   "fim": "10:22.60",
+   "reducao_max_dB": 6.9,
+   "fala": "Muito cansados, hoje a gente andou demais também."
+  },
+  {
+   "inicio": "15:46.40",
+   "fim": "15:48.50",
+   "reducao_max_dB": 6.8,
+   "fala": "do almoço vamos almoçar agora encher a barriga para continuar o nosso dia."
+  },
+  {
+   "inicio": "18:58.80",
+   "fim": "19:01.40",
+   "reducao_max_dB": 6.7,
+   "fala": "E em alguns lugares está, para quem se incomoda,"
+  },
+  {
+   "inicio": "06:19.90",
+   "fim": "06:24.80",
+   "reducao_max_dB": 6.7,
+   "fala": "Melou sua boca."
+  }
+ ]
+}

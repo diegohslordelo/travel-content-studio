@@ -14,3 +14,6 @@ __pycache__/
 # Sistema
 .DS_Store
 Thumbs.db
+
+# Vídeo final 4K dos vlogs do YouTube (acima do limite de 2 GB do Git LFS)
+youtube/*/rev*/barcelona_rev*.mp4

@@ -1,0 +1,239 @@
+{
+ "metodo": "AUDIO_REVIEW_STANDARD 8.2: A = original com ganho só para igualar o loudness do trecho; B = exportado. O ganho de A não vai para a entrega.",
+ "pares": [
+  {
+   "id": "AB01",
+   "inicio": "07:40.00",
+   "fim": "07:49.80",
+   "motivo": "limitador até 8.4 dB na fala: \"Almoçamos, e aí Diego está em um parque de passões\"",
+   "LUFS_original": -15.2,
+   "LUFS_tratado": -12.0,
+   "ganho_so_da_comparacao_dB": 3.2
+  },
+  {
+   "id": "AB02",
+   "inicio": "27:46.40",
+   "fim": "27:51.50",
+   "motivo": "limitador até 8.4 dB na fala: \"fome também São dois de peixe e tem dois croquetes de carne\"",
+   "LUFS_original": -16.8,
+   "LUFS_tratado": -12.9,
+   "ganho_so_da_comparacao_dB": 3.9
+  },
+  {
+   "id": "AB03",
+   "inicio": "20:27.60",
+   "fim": "20:35.00",
+   "motivo": "limitador até 8.3 dB na fala: \"Eu acho que pode ser chamada também de praça dos pombos, né?\"",
+   "LUFS_original": -14.4,
+   "LUFS_tratado": -13.2,
+   "ganho_so_da_comparacao_dB": 1.2
+  },
+  {
+   "id": "AB04",
+   "inicio": "10:32.00",
+   "fim": "10:40.30",
+   "motivo": "limitador até 8.3 dB na fala: \"E agora eu acabei de pedir a minha primeira tapa de Barcelona,\"",
+   "LUFS_original": -16.0,
+   "LUFS_tratado": -12.3,
+   "ganho_so_da_comparacao_dB": 3.7
+  },
+  {
+   "id": "AB05",
+   "inicio": "18:13.70",
+   "fim": "18:22.70",
+   "motivo": "limitador até 8.1 dB na fala: \"pela cidade que você pode encher,\"",
+   "LUFS_original": -18.4,
+   "LUFS_tratado": -14.4,
+   "ganho_so_da_comparacao_dB": 4.0
+  },
+  {
+   "id": "AB06",
+   "inicio": "21:23.80",
+   "fim": "21:27.30",
+   "motivo": "limitador até 8.0 dB na fala: \"Caveira.\"",
+   "LUFS_original": -15.8,
+   "LUFS_tratado": -12.4,
+   "ganho_so_da_comparacao_dB": 3.4
+  },
+  {
+   "id": "AB07",
+   "inicio": "08:03.20",
+   "fim": "08:07.20",
+   "motivo": "limitador até 8.0 dB na fala: \"e aí ele veio provar essa bendita cerveja está provado?\"",
+   "LUFS_original": -15.8,
+   "LUFS_tratado": -11.9,
+   "ganho_so_da_comparacao_dB": 3.9
+  },
+  {
+   "id": "AB08",
+   "inicio": "07:57.50",
+   "fim": "08:02.00",
+   "motivo": "limitador até 7.9 dB na fala: \"a cervejaria é um vaso de\"",
+   "LUFS_original": -17.6,
+   "LUFS_tratado": -12.9,
+   "ganho_so_da_comparacao_dB": 4.7
+  },
+  {
+   "id": "AB09",
+   "inicio": "22:26.50",
+   "fim": "22:30.40",
+   "motivo": "limitador até 7.7 dB na fala: \"Longchamp, Prada Tem várias lojas aqui\"",
+   "LUFS_original": -17.0,
+   "LUFS_tratado": -13.1,
+   "ganho_so_da_comparacao_dB": 3.9
+  },
+  {
+   "id": "AB10",
+   "inicio": "19:44.40",
+   "fim": "19:48.20",
+   "motivo": "limitador até 7.6 dB na fala: \"Mas vamos dar um rolé aqui, conhecer Se vocês já foram no Mercadão São Paulo\"",
+   "LUFS_original": -14.1,
+   "LUFS_tratado": -10.5,
+   "ganho_so_da_comparacao_dB": 3.6
+  },
+  {
+   "id": "AB11",
+   "inicio": "21:51.30",
+   "fim": "22:00.10",
+   "motivo": "limitador até 7.4 dB na fala: \"Mas Pra quem gosta, vale, né?\"",
+   "LUFS_original": -16.2,
+   "LUFS_tratado": -12.3,
+   "ganho_so_da_comparacao_dB": 3.9
+  },
+  {
+   "id": "AB12",
+   "inicio": "18:09.30",
+   "fim": "18:12.50",
+   "motivo": "limitador até 7.4 dB na fala: \"Nós compramos essa garrafa aqui ontem e aqui\"",
+   "LUFS_original": -16.8,
+   "LUFS_tratado": -13.4,
+   "ganho_so_da_comparacao_dB": 3.4
+  },
+  {
+   "id": "AB13",
+   "inicio": "22:01.50",
+   "fim": "22:03.90",
+   "motivo": "limitador até 7.2 dB na fala: \"entra naqueles pontos turísticos que é legal, lindo, a gente vê de fora\"",
+   "LUFS_original": -14.3,
+   "LUFS_tratado": -10.9,
+   "ganho_so_da_comparacao_dB": 3.4
+  },
+  {
+   "id": "AB14",
+   "inicio": "19:02.70",
+   "fim": "19:08.10",
+   "motivo": "limitador até 7.1 dB na fala: \"está com britadeira, batismo no chão, enfim, quebra -quebra.\"",
+   "LUFS_original": -16.7,
+   "LUFS_tratado": -12.8,
+   "ganho_so_da_comparacao_dB": 3.9
+  },
+  {
+   "id": "AB15",
+   "inicio": "18:29.40",
+   "fim": "18:36.30",
+   "motivo": "limitador até 7.1 dB na fala: \"Você vai para o lugar, enche sua garrafa, guarda,\"",
+   "LUFS_original": -18.2,
+   "LUFS_tratado": -14.2,
+   "ganho_so_da_comparacao_dB": 4.0
+  },
+  {
+   "id": "AB16",
+   "inicio": "02:01.20",
+   "fim": "02:06.90",
+   "motivo": "limitador até 7.1 dB na fala: \"aqui atrás da gente Já tinha visto alguns depoimentos que realmente tava\"",
+   "LUFS_original": -13.4,
+   "LUFS_tratado": -10.3,
+   "ganho_so_da_comparacao_dB": 3.1
+  },
+  {
+   "id": "AB17",
+   "inicio": "10:20.10",
+   "fim": "10:22.60",
+   "motivo": "limitador até 6.9 dB na fala: \"Muito cansados, hoje a gente andou demais também.\"",
+   "LUFS_original": -15.8,
+   "LUFS_tratado": -11.7,
+   "ganho_so_da_comparacao_dB": 4.1
+  },
+  {
+   "id": "AB18",
+   "inicio": "15:46.40",
+   "fim": "15:48.50",
+   "motivo": "limitador até 6.8 dB na fala: \"do almoço vamos almoçar agora encher a barriga para continuar o nosso dia.\"",
+   "LUFS_original": -21.6,
+   "LUFS_tratado": -16.1,
+   "ganho_so_da_comparacao_dB": 5.5
+  },
+  {
+   "id": "AB19",
+   "inicio": "18:58.80",
+   "fim": "19:01.40",
+   "motivo": "limitador até 6.7 dB na fala: \"E em alguns lugares está, para quem se incomoda,\"",
+   "LUFS_original": -17.0,
+   "LUFS_tratado": -13.2,
+   "ganho_so_da_comparacao_dB": 3.8
+  },
+  {
+   "id": "AB20",
+   "inicio": "06:19.90",
+   "fim": "06:24.80",
+   "motivo": "limitador até 6.7 dB na fala: \"Melou sua boca.\"",
+   "LUFS_original": -19.4,
+   "LUFS_tratado": -16.0,
+   "ganho_so_da_comparacao_dB": 3.4
+  },
+  {
+   "id": "AB21",
+   "inicio": "11:30.00",
+   "fim": "11:46.00",
+   "motivo": "P01a: inserção de música −6 dB e emendas",
+   "LUFS_original": -13.0,
+   "LUFS_tratado": -13.9,
+   "ganho_so_da_comparacao_dB": -0.9
+  },
+  {
+   "id": "AB22",
+   "inicio": "12:24.00",
+   "fim": "12:46.00",
+   "motivo": "P01b: inserção de música −6 dB e emendas",
+   "LUFS_original": -11.6,
+   "LUFS_tratado": -12.8,
+   "ganho_so_da_comparacao_dB": -1.2
+  },
+  {
+   "id": "AB23",
+   "inicio": "13:40.00",
+   "fim": "14:05.00",
+   "motivo": "P01d: inserção de música −6 dB e emendas",
+   "LUFS_original": -11.5,
+   "LUFS_tratado": -12.3,
+   "ganho_so_da_comparacao_dB": -0.8
+  },
+  {
+   "id": "AB24",
+   "inicio": "05:46.00",
+   "fim": "05:58.00",
+   "motivo": "P03a: fala baixa +5,5 dB (emendas nos cortes)",
+   "LUFS_original": -28.9,
+   "LUFS_tratado": -19.8,
+   "ganho_so_da_comparacao_dB": 9.1
+  },
+  {
+   "id": "AB25",
+   "inicio": "33:18.00",
+   "fim": "33:40.00",
+   "motivo": "P03c: aeroporto +6,5 dB",
+   "LUFS_original": -24.2,
+   "LUFS_tratado": -17.4,
+   "ganho_so_da_comparacao_dB": 6.8
+  },
+  {
+   "id": "AB26",
+   "inicio": "00:00.00",
+   "fim": "00:20.00",
+   "motivo": "amostra 'limpa' (início)",
+   "LUFS_original": -21.3,
+   "LUFS_tratado": -15.8,
+   "ganho_so_da_comparacao_dB": 5.5
+  }
+ ]
+}

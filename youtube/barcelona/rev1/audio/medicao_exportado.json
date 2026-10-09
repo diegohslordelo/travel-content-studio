@@ -1,0 +1,92 @@
+{
+ "original": {
+  "I_LUFS": -19.3,
+  "TP_dBTP": 0.5
+ },
+ "apos_nivel_2": {
+  "I_LUFS": -19.9,
+  "TP_dBTP": 0.2
+ },
+ "passes_nivel_8": [
+  {
+   "G_db": 5.9,
+   "I": -14.8,
+   "TP": -1.1
+  }
+ ],
+ "exportado": {
+  "arquivo": "audio_rev1.m4a",
+  "I_LUFS": -14.8,
+  "TP_dBTP": -1.1,
+  "LRA_LU": 9.7,
+  "amostras_no_teto": 0,
+  "desvio_LU": -0.8,
+  "ffprobe": {
+   "codec_name": "aac",
+   "sample_rate": "48000",
+   "channels": 2,
+   "duration": "2050.506000",
+   "bit_rate": "193711"
+  }
+ },
+ "limitador": {
+  "atraso_residual_amostras": 0,
+  "janelas_100ms_com_reducao": 2807,
+  "acima_1dB": 1827,
+  "acima_2dB": 1070,
+  "acima_3dB": 617,
+  "max_dB": 8.54,
+  "fracao_do_tempo_%": 13.69,
+  "maiores": [
+   {
+    "t": "05:53.30",
+    "dB": 8.54
+   },
+   {
+    "t": "17:34.10",
+    "dB": 8.42
+   },
+   {
+    "t": "07:43.90",
+    "dB": 8.4
+   },
+   {
+    "t": "24:29.90",
+    "dB": 8.38
+   },
+   {
+    "t": "27:50.30",
+    "dB": 8.38
+   },
+   {
+    "t": "07:41.00",
+    "dB": 8.38
+   },
+   {
+    "t": "23:45.20",
+    "dB": 8.37
+   },
+   {
+    "t": "07:44.10",
+    "dB": 8.35
+   },
+   {
+    "t": "20:30.00",
+    "dB": 8.34
+   },
+   {
+    "t": "24:31.90",
+    "dB": 8.34
+   },
+   {
+    "t": "20:29.40",
+    "dB": 8.34
+   },
+   {
+    "t": "17:39.50",
+    "dB": 8.33
+   }
+  ]
+ },
+ "cadeia_ffmpeg_nivel_8": "volume=5.900dB,aresample=176400,apad=pad_len=882,alimiter=limit=0.74989:attack=5:release=80:level=0:level_in=1:level_out=1,atrim=start_sample=882,asetpts=PTS-STARTPTS,aresample=48000"
+}

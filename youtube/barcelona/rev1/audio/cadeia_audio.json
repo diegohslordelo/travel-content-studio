@@ -1,0 +1,66 @@
+{
+ "padrao": "docs/AUDIO_REVIEW_STANDARD.md v1.1.0",
+ "origem": "faixa de áudio do original (AAC 44,1 kHz estéreo 128 kbps), decodificada sem outra conversão",
+ "nivel_2_ganho_por_trecho": [
+  {
+   "id": "P01a",
+   "inicio": 694.2,
+   "fim": 701.7,
+   "ganho_db": -6.0,
+   "motivo": "inserção de música sem fala 11:34,2–11:41,7, mediana −11,2 LUFS M (≈ 11 dB acima da fala)"
+  },
+  {
+   "id": "P01b",
+   "inicio": 748.4,
+   "fim": 760.9,
+   "ganho_db": -6.0,
+   "motivo": "inserção de música sem fala 12:28,4–12:40,9, mediana −10,7 LUFS M"
+  },
+  {
+   "id": "P01c",
+   "inicio": 787.6,
+   "fim": 791.7,
+   "ganho_db": -6.0,
+   "motivo": "inserção de música sem fala 13:07,6–13:11,7, mediana −11,2 LUFS M"
+  },
+  {
+   "id": "P01d",
+   "inicio": 823.3,
+   "fim": 840.6,
+   "ganho_db": -6.0,
+   "motivo": "inserção de música sem fala 13:43,3–14:00,6, mediana −10,7 LUFS M"
+  },
+  {
+   "id": "P03a",
+   "inicio": 347.96,
+   "fim": 356.25,
+   "ganho_db": 5.5,
+   "motivo": "B017 fala a −30,6 LUFS M (mediana da fala −22,6), piso −41,2 dBFS"
+  },
+  {
+   "id": "P03b",
+   "inicio": 1786.42,
+   "fim": 1795.96,
+   "ganho_db": 5.0,
+   "motivo": "B066 fala a −29,9 LUFS M, piso −47,4 dBFS"
+  },
+  {
+   "id": "P03c",
+   "inicio": 2000.42,
+   "fim": 2050.51,
+   "ganho_db": 6.5,
+   "motivo": "B074–B076 (aeroporto) fala a −30,1 a −32,9 LUFS M, piso ≤ −41,9 dBFS"
+  }
+ ],
+ "rampa_ms": 250,
+ "rampa_em_corte_ms": 50,
+ "nivel_8": {
+  "alvo_lufs": -14.0,
+  "teto_limitador_dbfs": -2.5,
+  "sobreamostragem": 4,
+  "limitador": "alimiter attack=5 ms, release=80 ms, level=0 (sem ganho automático) — [PRECEDENTE] REV6",
+  "saida": "AAC LC 48 kHz estéreo 192 kbps",
+  "motivo_teto": "1º passe com teto −1,5 dBFS: exportado em −0,3 dBTP (o AAC subiu ~1,2 dB). Teto −2,5 dBFS para cumprir ≤ −1 dBTP no exportado",
+  "latencia": "alimiter atrasa o sinal pelo attack (5 ms = 882 amostras a 176,4 kHz): apad + atrim compensam (medido: 220 amostras a 44,1 kHz sem compensação)"
+ }
+}
