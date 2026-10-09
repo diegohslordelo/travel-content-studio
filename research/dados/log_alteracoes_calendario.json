@@ -418,5 +418,89 @@
   "motivo": "Ligar a leitura dos dados às decisões já aprovadas (Leituras 1, 2 e 3) e avisar sobre eventos que distorcem o resultado.",
   "base": "research/07; F21 (sazonalidade); datas de Carnaval e Black Friday no doc 01, seção 9.",
   "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar (histórico, autorizado)",
+  "ids": [
+   "p2"
+  ],
+  "data": "2026-10-02",
+  "antes": "done: sem marcação nos dados",
+  "depois": "done: true",
+  "motivo": "O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais.",
+  "base": "Mensagem do Diego no chat (08/10/2026): \"todos os posts até hoje eu fiz\" (pendência D6 de research/03).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar (histórico, autorizado)",
+  "ids": [
+   "p3"
+  ],
+  "data": "2026-10-03",
+  "antes": "done: sem marcação nos dados",
+  "depois": "done: true",
+  "motivo": "O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais.",
+  "base": "Mensagem do Diego no chat (08/10/2026): \"todos os posts até hoje eu fiz\" (pendência D6 de research/03).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar (histórico, autorizado)",
+  "ids": [
+   "p4"
+  ],
+  "data": "2026-10-03",
+  "antes": "done: sem marcação nos dados",
+  "depois": "done: true",
+  "motivo": "O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais.",
+  "base": "Mensagem do Diego no chat (08/10/2026): \"todos os posts até hoje eu fiz\" (pendência D6 de research/03).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar (histórico, autorizado)",
+  "ids": [
+   "p5"
+  ],
+  "data": "2026-10-04",
+  "antes": "done: sem marcação nos dados",
+  "depois": "done: true",
+  "motivo": "O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais.",
+  "base": "Mensagem do Diego no chat (08/10/2026): \"todos os posts até hoje eu fiz\" (pendência D6 de research/03).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar (histórico, autorizado)",
+  "ids": [
+   "p6"
+  ],
+  "data": "2026-10-05",
+  "antes": "done: sem marcação nos dados",
+  "depois": "done: true",
+  "motivo": "O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais.",
+  "base": "Mensagem do Diego no chat (08/10/2026): \"todos os posts até hoje eu fiz\" (pendência D6 de research/03).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar (histórico, autorizado)",
+  "ids": [
+   "p8"
+  ],
+  "data": "2026-10-07",
+  "antes": "done: sem marcação nos dados",
+  "depois": "done: true",
+  "motivo": "O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais.",
+  "base": "Mensagem do Diego no chat (08/10/2026): \"todos os posts até hoje eu fiz\" (pendência D6 de research/03).",
+  "alterado_em": "08/10/2026"
+ },
+ {
+  "tipo": "Ajustar (histórico, autorizado)",
+  "ids": [
+   "p9"
+  ],
+  "data": "2026-10-08",
+  "antes": "done: sem marcação nos dados",
+  "depois": "done: true",
+  "motivo": "O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais.",
+  "base": "Mensagem do Diego no chat (08/10/2026): \"todos os posts até hoje eu fiz\" (pendência D6 de research/03).",
+  "alterado_em": "08/10/2026"
  }
 ]

@@ -13,13 +13,13 @@
 | Observação de conferência de capítulos e preços | 1 | p13 |
 | Observações de semana (Leituras 1, 2, 3, Black Friday, Carnaval) | 5 | semanas 2, 3, 8, 13 e 18 |
 
-Total: 35 registros. **Nenhum post removido.** A contagem de posts passou de 193 para 200.
+Total: 42 registros (35 da pesquisa + 7 marcações `done` autorizadas pelo Diego). **Nenhum post removido.** A contagem de posts passou de 193 para 200.
 
 ## O que foi preservado
 
-- Posts, dias e semanas **até 08/10/2026**: idênticos (comparação campo a campo por script).
+- Posts, dias e semanas **até 08/10/2026**: idênticos (exceto o `done` acima) (comparação campo a campo por script).
 - **Checklists** dos posts existentes: não mudaram (o progresso salvo no navegador usa a posição de cada item).
-- Campos `done`: não mudaram. Os posts de 02/10 a 08/10 (exceto p7) continuam sem `done` nos dados; ver D6 em `research/03_estrategia_primeiro_dia.md`.
+- Campos `done`: **só mudaram p2, p3, p4, p5, p6, p8 e p9, para `true`, por autorização expressa do Diego** ("todos os posts até hoje eu fiz"). Conteúdo e checklist desses posts ficaram iguais.
 - Fora do bloco `DATA`, o HTML (CSS, JavaScript, ícones) é idêntico byte a byte.
 - Design System, CLAUDE.md e referência de conteúdo: não alterados.
 

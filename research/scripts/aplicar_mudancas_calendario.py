@@ -5,6 +5,7 @@ Uso (da raiz do repositório):
     python3 research/scripts/aplicar_mudancas_calendario.py             # aplica (uma única vez)
     python3 research/scripts/aplicar_mudancas_calendario.py --verificar # só confere, sem gravar
     python3 research/scripts/aplicar_mudancas_calendario.py --regerar-log # refaz o log se o painel for exatamente o resultado do script
+    python3 research/scripts/aplicar_mudancas_calendario.py --aplicar-done # grava só o `done` autorizado pelo Diego (09/10), sobre um painel já alterado
 
 Regras que o script impõe:
   * parte SEMPRE de planejamento/versoes/painel-v2.2-2026-10-08.html (cópia de segurança);
@@ -25,6 +26,9 @@ LOG_MD = RAIZ / "research" / "13_log_alteracoes_calendario.md"
 LOG_JSON = RAIZ / "research" / "dados" / "log_alteracoes_calendario.json"
 CORTE = "2026-10-08"      # tudo até esta data (inclusive) é histórico e não pode mudar
 DATA_ALTERACAO = "08/10/2026"
+# Autorização do Diego no chat (08/10/2026, noite): "todos os posts até hoje eu fiz".
+# É a ÚNICA alteração em registros históricos: só o campo `done` destes 7 posts (p0, p1 e p7 já eram true).
+DONE_AUTORIZADO = ["p2", "p3", "p4", "p5", "p6", "p8", "p9"]
 MARCA = "const DATA = "
 FIM = ";\nconst P={}"
 
@@ -262,7 +266,22 @@ def aplicar(dados):
         registrar("Ajustar", ["semana:%d" % n], w["start"], "—", "+ observação da semana: " + texto,
                   "Ligar a leitura dos dados às decisões já aprovadas (Leituras 1, 2 e 3) e avisar sobre eventos que distorcem o resultado.",
                   "research/07; F21 (sazonalidade); datas de Carnaval e Black Friday no doc 01, seção 9.")
+    # 6. Histórico: só `done`, por autorização expressa do Diego
+    for pid in DONE_AUTORIZADO:
+        assert P[pid]["d"] <= CORTE and not P[pid].get("done"), pid
+        P[pid]["done"] = True
+        registrar("Ajustar (histórico, autorizado)", [pid], P[pid]["d"], "done: sem marcação nos dados", "done: true",
+                  "O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais.",
+                  "Mensagem do Diego no chat (08/10/2026): \"todos os posts até hoje eu fiz\" (pendência D6 de research/03).")
     return dados
+
+
+def sem_done(p, ids):
+    if p["id"] in ids:
+        q = dict(p)
+        q.pop("done", None)
+        return q
+    return p
 
 
 def verificar(orig, novo):
@@ -272,12 +291,15 @@ def verificar(orig, novo):
     pn = {p["id"]: p for p in novo["posts"]}
     # histórico de posts
     for pid, p in po.items():
-        if p["d"] <= CORTE and pn.get(pid) != p:
+        if p["d"] <= CORTE and sem_done(pn.get(pid, {"id": pid}), DONE_AUTORIZADO) != sem_done(p, DONE_AUTORIZADO):
             erros.append("post histórico alterado: " + pid)
     if set(pn) - set(po) and any(pn[i]["d"] <= CORTE for i in set(pn) - set(po)):
         erros.append("post novo com data histórica")
     for pid in set(po) - set(pn):
         erros.append("post removido: " + pid)
+    for pid in DONE_AUTORIZADO:
+        if pn[pid].get("done") is not True:
+            erros.append("done autorizado não aplicado: " + pid)
     # ordem de posts históricos
     ho = [p["id"] for p in orig["posts"] if p["d"] <= CORTE]
     hn = [p["id"] for p in novo["posts"] if p["d"] <= CORTE]
@@ -334,7 +356,7 @@ def gerar_log_md(orig=None, novo=None):
         "## Regras que valeram",
         "",
         "1. Tudo até **08/10/2026, inclusive**, é histórico e foi tratado como executado. Nenhum post, dia, semana ou campo dessas datas foi tocado (conferido por script: seção \"Verificação\").",
-        "2. Nenhuma publicação foi marcada como feita ou atrasada por este trabalho. Os campos `done` ficaram como estavam (ver pendência D6 em `03`).",
+        "2. **Única alteração em registro histórico, autorizada pelo Diego em 08/10/2026 (\"todos os posts até hoje eu fiz\"):** o campo `done` de p2, p3, p4, p5, p6, p8 e p9 passou a `true` (p0, p1 e p7 já eram). Conteúdo, checklist e ordem desses posts ficaram iguais.",
         "3. O checklist de cada post existente não mudou (o progresso salvo no navegador usa a posição de cada item). Os Reels novos copiam o checklist de um Reel de Nível B.",
         "4. Fora do bloco `DATA`, o HTML é idêntico byte a byte (CSS, JavaScript, ícones, painel).",
         "5. Nada foi publicado, apagado ou alterado fora do repositório.",
@@ -361,7 +383,7 @@ def gerar_log_md(orig=None, novo=None):
             "",
             "| Conferência | Resultado |",
             "|---|---|",
-            "| Posts históricos (data ≤ 08/10/2026) | %d, todos idênticos ao original (comparação campo a campo) |" % len(hist),
+            "| Posts históricos (data ≤ 08/10/2026) | %d, todos idênticos ao original campo a campo, **exceto** `done` dos 7 posts autorizados pelo Diego |" % len(hist),
             "| Dias do calendário até 08/10/2026 | idênticos |",
             "| Semana 0 (01 a 04/10) | idêntica; semana 1 (05 a 11/10): só dias futuros intactos e campos da semana inalterados |",
             "| Posts totais | %d → %d |" % (len(orig["posts"]), len(novo["posts"])),
@@ -399,6 +421,25 @@ def main():
         print("posts: %d → %d · semanas: %d → %d" % (len(orig["posts"]), len(novo["posts"]), len(orig["weeks"]), len(novo["weeks"])))
         print("OK: nenhum problema." if not erros else "PROBLEMAS:\n- " + "\n- ".join(erros))
         sys.exit(1 if erros else 0)
+    if "--aplicar-done" in sys.argv:
+        pref, dados, suf = ler_dados(base_txt)
+        original = copy.deepcopy(dados)
+        esperado = aplicar(dados)
+        _, vivo, _ = ler_dados(vivo_txt)
+        def neutro(d):
+            d = copy.deepcopy(d)
+            d["posts"] = [sem_done(p, DONE_AUTORIZADO) for p in d["posts"]]
+            return d
+        if neutro(vivo) != neutro(esperado):
+            raise SystemExit("O painel atual difere do esperado além do campo done: não grava.")
+        erros = verificar(original, esperado)
+        if erros:
+            raise SystemExit("Verificação falhou:\n- " + "\n- ".join(erros))
+        VIVO.write_text(pref + json.dumps(esperado, ensure_ascii=False) + suf, encoding="utf-8")
+        LOG_JSON.write_text(json.dumps(LOG, ensure_ascii=False, indent=1), encoding="utf-8")
+        LOG_MD.write_text(gerar_log_md(original, esperado), encoding="utf-8")
+        print("done gravado e log regerado (%d registros)." % len(LOG))
+        return
     if "--regerar-log" in sys.argv:
         pref, dados, suf = ler_dados(base_txt)
         original = copy.deepcopy(dados)

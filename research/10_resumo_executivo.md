@@ -4,7 +4,7 @@
 
 ## O que foi feito
 
-Pesquisa de mercado (fontes oficiais, estudos, dados públicos de 14 canais do YouTube), estratégia para o Primeiro Dia, auditoria do calendário futuro (183 posts), inventário dos oito vídeos e **aplicação de 35 registros de mudança no painel a partir de 09/10/2026** (v2.2 → v2.3). **Nada até 08/10/2026 foi alterado.** Nada foi publicado, apagado ou mexido fora do repositório.
+Pesquisa de mercado (fontes oficiais, estudos, dados públicos de 14 canais do YouTube), estratégia para o Primeiro Dia, auditoria do calendário futuro (183 posts), inventário dos oito vídeos e **aplicação de 35 registros de mudança (mais 7 marcações `done` autorizadas) no painel a partir de 09/10/2026** (v2.2 → v2.3). **Em registros até 08/10/2026 só mudou o campo `done` de 7 posts (p2 a p6, p8, p9), por autorização do Diego; conteúdo intacto.** Nada foi publicado, apagado ou mexido fora do repositório.
 
 ## Descobertas que mais importam
 
@@ -41,7 +41,7 @@ Falta de linha aspiracional (**aplicado**); 7 Shorts de menor valor (**trocados*
 
 ## O que foi aplicado em 09/10/2026 em diante
 
-7 Reels novos (p190 a p196, sextas 16/10, 30/10, 13/11, 27/11, 11/12, 25/12 e 08/01) · 7 Shorts de segunda trocados (p26, p47, p68, p89, p110, p131, p152) · 7 dias com pós-Reel nos Stories · 8 opções de título de vlog · 1 observação de conferência no p13 · 5 observações de semana (Leituras 1, 2, 3, Black Friday e Carnaval). **Total: 35 registros.** Detalhe em `13`; nada removido; checklists dos posts existentes intactos.
+7 Reels novos (p190 a p196, sextas 16/10, 30/10, 13/11, 27/11, 11/12, 25/12 e 08/01) · 7 Shorts de segunda trocados (p26, p47, p68, p89, p110, p131, p152) · 7 dias com pós-Reel nos Stories · 8 opções de título de vlog · 1 observação de conferência no p13 · 5 observações de semana (Leituras 1, 2, 3, Black Friday e Carnaval). **Total: 35 registros da pesquisa + 7 marcações `done`.** Detalhe em `13`; nada removido; checklists dos posts existentes intactos.
 
 ## Oito vídeos
 

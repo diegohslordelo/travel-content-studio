@@ -4,12 +4,12 @@
 **Cópia de segurança do estado anterior:** `planejamento/versoes/painel-v2.2-2026-10-08.html` (idêntica byte a byte ao painel antes de qualquer alteração; SHA-256 no fim deste arquivo)
 **Script que aplicou e verifica:** `research/scripts/aplicar_mudancas_calendario.py` (`--verificar` repete as conferências)
 
-Resumo: 35 registros (7 Adicionar · 21 Ajustar · 7 Substituir).
+Resumo: 42 registros (7 Adicionar · 21 Ajustar · 7 Ajustar (histórico, autorizado) · 7 Substituir).
 
 ## Regras que valeram
 
 1. Tudo até **08/10/2026, inclusive**, é histórico e foi tratado como executado. Nenhum post, dia, semana ou campo dessas datas foi tocado (conferido por script: seção "Verificação").
-2. Nenhuma publicação foi marcada como feita ou atrasada por este trabalho. Os campos `done` ficaram como estavam (ver pendência D6 em `03`).
+2. **Única alteração em registro histórico, autorizada pelo Diego em 08/10/2026 ("todos os posts até hoje eu fiz"):** o campo `done` de p2, p3, p4, p5, p6, p8 e p9 passou a `true` (p0, p1 e p7 já eram). Conteúdo, checklist e ordem desses posts ficaram iguais.
 3. O checklist de cada post existente não mudou (o progresso salvo no navegador usa a posição de cada item). Os Reels novos copiam o checklist de um Reel de Nível B.
 4. Fora do bloco `DATA`, o HTML é idêntico byte a byte (CSS, JavaScript, ícones, painel).
 5. Nada foi publicado, apagado ou alterado fora do repositório.
@@ -53,12 +53,19 @@ Resumo: 35 registros (7 Adicionar · 21 Ajustar · 7 Substituir).
 | 33 | Ajustar | semana:8 | 2026-11-23 | — | + observação da semana: LEITURA 2, aspiracionais: 4 amostras (Barcelona, Amsterdam, Paris, Disneyland Paris). Ainda abaixo de 10: compare só a direção (envios por alcance e seguidores por Reel) e decida se segue. 27/11 é Black Friday: não tire conclusão deste dia isolado (hipótese: oferta de passagem e hotel concorre pela atenção). | Ligar a leitura dos dados às decisões já aprovadas (Leituras 1, 2 e 3) e avisar sobre eventos que distorcem o resultado. | research/07; F21 (sazonalidade); datas de Carnaval e Black Friday no doc 01, seção 9. |
 | 34 | Ajustar | semana:13 | 2026-12-28 | — | + observação da semana: LEITURA 3, aspiracionais: 6 amostras até 25/12 (a 7ª sai em 08/01). Aplique o critério de E1 (research/07): manter, aumentar ou cortar; se ficar abaixo de 10, estenda o bloco com os Reels da viagem de janeiro. | Ligar a leitura dos dados às decisões já aprovadas (Leituras 1, 2 e 3) e avisar sobre eventos que distorcem o resultado. | research/07; F21 (sazonalidade); datas de Carnaval e Black Friday no doc 01, seção 9. |
 | 35 | Ajustar | semana:18 | 2027-02-01 | — | + observação da semana: 06 a 09/02/2027 é Carnaval (Cinzas 10/02): o balanço de 07/02 cai no domingo de Carnaval. Hipótese: menos atenção a planejamento de viagem. Compare com os domingos anteriores antes de concluir que o formato falhou. | Ligar a leitura dos dados às decisões já aprovadas (Leituras 1, 2 e 3) e avisar sobre eventos que distorcem o resultado. | research/07; F21 (sazonalidade); datas de Carnaval e Black Friday no doc 01, seção 9. |
+| 36 | Ajustar (histórico, autorizado) | p2 | 2026-10-02 | done: sem marcação nos dados | done: true | O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais. | Mensagem do Diego no chat (08/10/2026): "todos os posts até hoje eu fiz" (pendência D6 de research/03). |
+| 37 | Ajustar (histórico, autorizado) | p3 | 2026-10-03 | done: sem marcação nos dados | done: true | O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais. | Mensagem do Diego no chat (08/10/2026): "todos os posts até hoje eu fiz" (pendência D6 de research/03). |
+| 38 | Ajustar (histórico, autorizado) | p4 | 2026-10-03 | done: sem marcação nos dados | done: true | O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais. | Mensagem do Diego no chat (08/10/2026): "todos os posts até hoje eu fiz" (pendência D6 de research/03). |
+| 39 | Ajustar (histórico, autorizado) | p5 | 2026-10-04 | done: sem marcação nos dados | done: true | O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais. | Mensagem do Diego no chat (08/10/2026): "todos os posts até hoje eu fiz" (pendência D6 de research/03). |
+| 40 | Ajustar (histórico, autorizado) | p6 | 2026-10-05 | done: sem marcação nos dados | done: true | O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais. | Mensagem do Diego no chat (08/10/2026): "todos os posts até hoje eu fiz" (pendência D6 de research/03). |
+| 41 | Ajustar (histórico, autorizado) | p8 | 2026-10-07 | done: sem marcação nos dados | done: true | O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais. | Mensagem do Diego no chat (08/10/2026): "todos os posts até hoje eu fiz" (pendência D6 de research/03). |
+| 42 | Ajustar (histórico, autorizado) | p9 | 2026-10-08 | done: sem marcação nos dados | done: true | O Diego informou que publicou todos os posts até 08/10/2026. Só o campo done mudou; conteúdo, checklist e ordem ficaram iguais. | Mensagem do Diego no chat (08/10/2026): "todos os posts até hoje eu fiz" (pendência D6 de research/03). |
 
 ## Verificação (rodada pelo script em 08/10/2026)
 
 | Conferência | Resultado |
 |---|---|
-| Posts históricos (data ≤ 08/10/2026) | 10, todos idênticos ao original (comparação campo a campo) |
+| Posts históricos (data ≤ 08/10/2026) | 10, todos idênticos ao original campo a campo, **exceto** `done` dos 7 posts autorizados pelo Diego |
 | Dias do calendário até 08/10/2026 | idênticos |
 | Semana 0 (01 a 04/10) | idêntica; semana 1 (05 a 11/10): só dias futuros intactos e campos da semana inalterados |
 | Posts totais | 193 → 200 |

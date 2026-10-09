@@ -18,7 +18,7 @@ Pesquisa estratégica de marketing e plano editorial do Primeiro Dia, com **data
 | `09_fontes_e_bibliografia.md` | Todas as fontes (`F01`…), com data, link e o que foi ou não verificado |
 | `11_matriz_editorial.csv` | Formatos × pilares × plataformas × esforço × métricas (49 linhas) |
 | `12_matriz_experimentos.csv` | Os 14 experimentos em tabela |
-| `13_log_alteracoes_calendario.md` | Cada mudança no painel (35 registros), com verificação |
+| `13_log_alteracoes_calendario.md` | Cada mudança no painel (42 registros), com verificação |
 
 ## Dados e scripts
 
@@ -37,6 +37,10 @@ python3 research/scripts/aplicar_mudancas_calendario.py --verificar
 ```
 
 Compara `planejamento/planejamento-postagens.html` com a cópia de segurança `planejamento/versoes/painel-v2.2-2026-10-08.html`: posts, dias e semanas até 08/10/2026 idênticos, nenhum post removido, HTML fora do bloco `DATA` idêntico byte a byte.
+
+## Skills do projeto
+
+Criadas a pedido do Diego em 08/10/2026, em `.claude/skills/`: **`reels-de-hoje`** ("criar reels de hoje") e **`youtube-de-hoje`** ("criar vídeo do youtube de hoje"). Leem o painel com `planejamento/scripts/post_do_dia.py` e as regras do CLAUDE.md, do DS V2, da referência de conteúdo e desta pasta.
 
 ## O que esta pesquisa não é
 
