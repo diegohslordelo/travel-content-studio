@@ -57,7 +57,7 @@ Só a transcrição do vlog de Barcelona e quatro clipes de chegada estavam aces
 
 ## Próxima etapa
 
-1. Diego responde D1 a D7 de `03` (pilar 6, horas, valores reais, Trial, marcação do histórico).
+1. D1 a D7 de `03` respondidos em 08/10/2026 (pilar 6 aprovado, valores enviados no dia, sem Trial, histórico marcado, identidade verbal aprovada). Falta só informar as horas por semana (D3, parte das horas).
 2. Conferir o vlog de Barcelona antes de 10/10.
 3. Registrar métricas de 48 h desde o primeiro Reel.
 4. Na L1 (19 a 25/10): definir a meta pela mediana dos 10 primeiros Reels e decidir sobre intercalação.

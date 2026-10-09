@@ -32,6 +32,6 @@ Total: 42 registros (35 da pesquisa + 7 marcações `done` autorizadas pelo Dieg
 
 Copiar `versoes/painel-v2.2-2026-10-08.html` sobre `planejamento-postagens.html`, ou `git revert` do commit desta pesquisa.
 
-## Pendências desta mudança
+## Aprovação
 
-Os 7 Reels "Primeiro olhar" dependem da aprovação do pilar 6 pelo Diego (D1 em `research/03`). Se não aprovar, trocar cada um por outro Reel de série da cidade; os 7 Shorts de segunda seguem a mesma decisão.
+Os 7 Reels "Primeiro olhar" (pilar 6) e os 7 Shorts de segunda foram **aprovados pelo Diego em 08/10/2026** ("sim, pode usar os 7 primeiro olhar"). Nada pendente nesta mudança.

@@ -222,7 +222,7 @@ def aplicar(dados):
         registrar("Adicionar", [pid], sexta, "—",
                   "Reel \"%s: o primeiro olhar.\" (pilar 6, Nível B, 19:00, sexta)" % cidade,
                   "Não havia formato dedicado a desejo e descoberta; a amostra pública de 283 Shorts de estética tem mediana de 842 views e cauda longa, então entra em volume pequeno, com teste e sem retirar nenhum Reel de utilidade.",
-                  "Hipótese H-A1 (research/04, seção 3; research/07, E1); evidência F27, F28, F42. Aprovação do Diego pendente (research/03, D1).")
+                  "Hipótese H-A1 (research/04, seção 3; research/07, E1); evidência F27, F28, F42. Aprovado pelo Diego em 08/10/2026 (research/03, D1).")
 
     # 2. Shorts de segunda: troca do reaproveitamento de Reel Nível B por Primeiro olhar
     for pid, sexta, vk, cidade, short_id, _ in CIDADES:

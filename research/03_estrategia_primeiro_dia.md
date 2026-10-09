@@ -243,7 +243,7 @@ Detalhe em `08`. Ordem de prioridade: **(1)** vlog quinzenal no prazo; **(2)** R
 
 | # | Resposta | Situação |
 |---|---|---|
-| D1 | Pediu para ver a lista dos 7 Reels | **Aguardando o sim ou não** |
+| D1 | Viu a lista e **aprovou** os 7 Reels "Primeiro olhar" e o pilar 6 | **Feito** (08/10/2026) |
 | D2 | Pediu explicação de "contemplativo" | Explicado: nada muda no DS por ora |
 | D3 | Pediu skills para "criar reels de hoje" e "criar vídeo do youtube de hoje" | **Feito**: `.claude/skills/reels-de-hoje` e `youtube-de-hoje` |
 | D4 | Enviará os valores no dia, quando a skill pedir | Combinado |

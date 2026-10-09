@@ -55,7 +55,7 @@ Contagem de Reels por janela aproximada, em 5 por semana.
 | T1 | Conferir **capítulos, preços, trilha e revisão de áudio** do vlog de Barcelona (`06`, seção 5) | Antes de 10/10, 11:00 |
 | T2 | Enviar o **registro de valores** de Barcelona e Amsterdam (data, local, valor, moeda, cotação) | 13/10 para Barcelona; 17/10 para Amsterdam |
 | T3 | Informar as **horas por semana** disponíveis e quanto da edição fica no pipeline do Claude (D3 em `03`) | Até a L1 |
-| T4 | Aprovar ou ajustar o **pilar 6 "Cidade em Imagens"** (D1) | Antes de 16/10 |
+| T4 | ~~Aprovar o pilar 6 "Cidade em Imagens" (D1)~~ **Aprovado em 08/10/2026** | Feito |
 | T5 | Verificar **Trial Reel** na conta (D5) e **Test & Compare** no Studio | Antes de 12/10 e 24/10 |
 | T6 | Marcar no navegador os posts de 02 a 08/10 como publicados (D6) | Quando quiser |
 
