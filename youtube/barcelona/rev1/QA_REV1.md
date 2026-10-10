@@ -163,4 +163,16 @@ Para cada um dos 52 itens foram inspecionados 4 quadros 1920 × 1080 da composi�
 
 ## 9. Verificação do arquivo final
 
-(preenchida depois do render; ver seção 9 abaixo)
+`barcelona_rev1.mp4` (10.148.567.382 bytes, fora do git). Medido no próprio arquivo em 10/10/2026.
+
+| Item | Original | Final | Resultado |
+|---|---|---|---|
+| Vídeo | HEVC Main 10 · 3840 × 2160 · 24 qps · `yuv420p10le` · HLG / BT.2020 NCL, faixa limitada · DV 8.4 | HEVC Main 10 (`hvc1`) · 3840 × 2160 · 24 qps · `yuv420p10le` · HLG / BT.2020 NCL, faixa limitada | Igual (sem Dolby Vision, seção 8) |
+| Quadros | 49.213 | 49.213 | Igual |
+| Duração do vídeo | 2050,542 s | 2050,542 s | Igual |
+| Taxa de vídeo | 29,2 Mbps | 39,4 Mbps média (CRF 18, teto 45 Mbps) | Uma geração de recodificação |
+| Áudio | AAC 44,1 kHz 128 kbps · −19,3 LUFS · +0,5 dBTP | AAC LC 48 kHz estéreo 194 kbps · **−14,8 LUFS · −1,1 dBTP** · 2050,506 s | [PROJETO] cumprido (relatório de áudio) |
+| Emendas dos blocos | — | 5 emendas × 7 quadros comparados com o original: deslocamento 0 em todos | Sem quadro duplicado nem perdido |
+| Gráficos no final | — | Os 52 itens conferidos num quadro do próprio arquivo final (`qa_frames/FINAL_folha_52_itens.jpg`) | Todos presentes, nas posições da prévia |
+| Original | SHA-256 `2011c541…5938750` | Recalculado depois do render: igual | Intacto |
+| Decodificação completa | — | 49.213 quadros decodificados, nenhuma mensagem de erro | OK |

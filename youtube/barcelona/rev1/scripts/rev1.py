@@ -966,8 +966,8 @@ X265 = ("crf=18:vbv-maxrate=45000:vbv-bufsize=90000:keyint=48:min-keyint=24:colo
 BLOCOS = os.path.join(TMP, "blocos")
 
 
-def plano_blocos(itens, alvo_s=150):
-    """divide o vídeo em blocos de ~2,5 min com fronteira num quadro sem nenhum gráfico na tela (±1 s)."""
+def plano_blocos(itens, alvo_s=60):
+    """divide o vídeo em blocos de ~1 min com fronteira num quadro sem nenhum gráfico na tela (±1 s)."""
     ocupado = np.zeros(NQ + 1, bool)
     for i in itens:
         ocupado[max(i["q_in"] - FPS, 0):min(i["q_fim"] + FPS, NQ)] = True

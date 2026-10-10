@@ -6,7 +6,7 @@
 | Vídeo / formato | Vlog longo de Barcelona, YouTube 16:9 (3840 × 2160, HLG) |
 | Viagem / dia / local | Barcelona (vários dias; Diego e Marina; falas em português, trechos em espanhol de terceiros) |
 | Arquivo de origem | `copy_71526AEF-84EA-49ED-8F07-487197B471F9.mov` (Google Drive), cópia local somente leitura fora do git |
-| SHA-256 do original (antes / depois) | `2011c5411461cbffcb7e21d40645e0ec611ccd328791cf93e278a26fe5938750` / (conferido de novo na seção 10) |
+| SHA-256 do original (antes / depois) | `2011c5411461cbffcb7e21d40645e0ec611ccd328791cf93e278a26fe5938750` / `2011c5411461cbffcb7e21d40645e0ec611ccd328791cf93e278a26fe5938750` (recalculado em 10/10/2026, depois do render: igual) |
 | Data da revisão / responsável | 09/10/2026 · Claude Code (medição e tratamento); escuta: Diego (pendente) |
 | Ferramentas e versões | FFmpeg/ffprobe 6.1.1 (`ebur128`, `astats`, `alimiter`, `aresample`, AAC nativo) · Python 3.13 + numpy (sem scipy, pyloudnorm nem faster-whisper no ambiente; nada foi instalado) |
 | Estado | **AGUARDANDO ESCUTA** |
@@ -19,7 +19,7 @@ Estado: **AGUARDANDO ESCUTA** (o agente não escuta áudio; nenhuma aprovação 
 
 | Item | Original | Exportado | Observação |
 |---|---|---|---|
-| Contêiner / duração vídeo / duração áudio | MOV · 2050,542 s · 2050,507 s | MP4 · (seção 10) · 2050.506 s | Áudio entra copiado no MP4 final, sem nova perda |
+| Contêiner / duração vídeo / duração áudio | MOV · 2050,542 s · 2050,507 s | MP4 · 2050,542 s · 2050.506 s | Áudio entra copiado no MP4 final, sem nova perda |
 | Fluxo de imagem | HEVC Main 10 · 3840 × 2160 · 24 qps · HLG/BT.2020 · DV 8.4 | HEVC Main 10 · 3840 × 2160 · 24 qps · HLG/BT.2020 (sem DV) | Recodificado só por causa dos gráficos (QA_REV1, seção 8) |
 | Áudio | AAC LC · 44,1 kHz · estéreo · 128 kbps | AAC LC · 48 kHz · estéreo · 193 kbps | [PRECEDENTE] REV6/REV8: AAC 192 kbps, 48 kHz |
 | LUFS integrado | −19,3 | **-14.8** | alvo [PROJETO]: −14 ± 1 LU → cumpre |
@@ -219,11 +219,11 @@ Cadeia final (ordem completa, a partir do original; `audio/cadeia_audio.json`, `
 
 | Item (11.3) | Esperado | Obtido |
 |---|---|---|
-| Original intacto | SHA-256 igual | (preenchido após o render final, seção 9 do QA) |
-| Decodifica sem erros | sim | áudio: sim (decodificado inteiro na validação) |
+| Original intacto | SHA-256 igual | Igual (recalculado em 10/10/2026) |
+| Decodifica sem erros | sim | áudio e vídeo do MP4 final: sim |
 | Duração do áudio | = vídeo | 2050.506 s × vídeo 2050,542 s (o original já tinha 2050,507 s de áudio) |
 | Áudio | AAC 192 kbps, 48 kHz, estéreo | AAC LC, 48 kHz, 2 canais, 193 kbps |
-| Loudness | −14 ± 1 LU | -14.8 LUFS (desvio -0.8 LU) → cumpre |
+| Loudness (medido dentro do MP4 final: −14,8 LUFS, −1,1 dBTP) | −14 ± 1 LU | -14.8 LUFS (desvio -0.8 LU) → cumpre |
 | Pico verdadeiro | ≤ −1 dBTP | -1.1 dBTP → cumpre |
 | Clipping novo | nenhum | 0 amostras no teto |
 | Início e fim | sem estalo | início sem degrau novo; fim em silêncio |
