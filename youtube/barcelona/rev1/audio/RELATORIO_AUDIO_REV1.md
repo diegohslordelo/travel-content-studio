@@ -204,7 +204,17 @@ Cadeia final (ordem completa, a partir do original; `audio/cadeia_audio.json`, `
 
 ## 8. Legendas complementares (camada 2, DS 3.4.2)
 
-**Nenhum trecho recebeu legenda de reforço nesta revisão.** O fluxo 10.3 começa depois da escuta humana (passo 1), que ainda não aconteceu; a transcrição automática sozinha não basta (10.4). Candidatos para a escuta decidir: P04 (B053) e P08 (B033). A faixa `.srt` (3.4.1) segue pendente (QA_REV1, seção 8, item 10).
+Pedido do Diego (10/10/2026): legenda só onde o ruído ficou alto ou a voz baixa. Como a escuta ainda não aconteceu, os trechos foram escolhidos por medida no áudio tratado (voz/fundo e nível por frase) + discordância entre transcrições, e só entraram os de texto confiável. Detalhes e critérios: QA_REV1, seção 10.
+
+| ID | Início–fim | Frase | Evidência | Status | Estilo DS | Sincronia verificada |
+|---|---|---|---|---|---|---|
+| L01 (S01) | 00:00:34,840–00:00:44,100 | "Vamos conhecer a nossa primeira parada de hoje, a gente vai para o Camp Nou hoje." | voz/fundo −0,1 a 4,9 dB (metrô); 2 de 3 transcrições | PROVÁVEL | Padrão YouTube | Por tempo de palavra; visual: quadros de QA |
+| L02 (S02) | 00:10:26,370–00:10:28,050 | "Uns 18 quilômetros." | voz/fundo −2,3 dB; 2 de 3 | PROVÁVEL | Padrão YouTube | idem |
+| L03 (S03) | 00:16:28,500–00:16:39,450 | "E eles têm uma promoção aqui de 5 tapas, 5 tapas, uma paella e uma bebida por 19 euros." | voz/fundo 0,3 a 5,0 dB; 2 de 3; valor = briefing | PROVÁVEL | Padrão YouTube | idem |
+| L04 (S04) | 00:20:32,440–00:20:34,900 | "Nunca vi tanto pombo na minha vida." | voz/fundo 4,7 dB; 2 de 3 | PROVÁVEL | Padrão YouTube | idem |
+| L05 (S05) | 00:33:03,380–00:33:10,900 | "Porque hoje é quarta-feira e quarta-feira é um euro cada montadinho. Fica a dica aí pra quem vem pra cá." | voz/fundo 1,8 dB; 2 de 3 | PROVÁVEL | Padrão YouTube | idem |
+
+Ficaram **sem** legenda, por não haver texto confiável (nenhuma transcrição resolve) e o conteúdo não ser fala-chave: 07:41–07:51, 13:00–13:06, 17:22–17:25, 23:31 e 29:28–29:36. Eles entram na escuta: se o Diego disser o que foi falado, a legenda pode ser acrescentada. A faixa `.srt` completa não será feita (decisão do Diego).
 
 ## 9. Limitações residuais (ressalvas)
 

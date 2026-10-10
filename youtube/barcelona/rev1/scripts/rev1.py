@@ -546,9 +546,12 @@ def planejar(cortes):
             t_fim = cs[0]
             nota.append(f"encerra no corte de cena {tc(cs[0])}")
         itens.append({**it, "t_in": t_in, "t_fim": t_fim, "saida_s": saida, "notas": nota})
+    for lg in CFG.get("legendas_reforco", {}).get("itens", []):
+        itens.append({**lg, "tipo": "legenda", "t": tc(lg["eventos"][0]["i"]), "t_in": lg["eventos"][0]["i"],
+                      "t_fim": lg["eventos"][-1]["f"], "saida_s": 0.12, "notas": []})
     itens.sort(key=lambda i: i["t_in"])
     # mesma zona: o objeto anterior sai antes do próximo entrar, com a calma do DS (4.2) entre eles
-    zona = {"lugar": "esq", "hospedagem": "esq", "preco": "dir", "recibo": "dir", "humor": "topo"}
+    zona = {"lugar": "esq", "hospedagem": "esq", "preco": "dir", "recibo": "dir", "humor": "topo", "legenda": "base"}
     for i, a in enumerate(itens):
         for b in itens[i + 1:]:
             if "fim" not in a and zona[b["tipo"]] == zona[a["tipo"]] and b["t_in"] < a["t_fim"] + 0.3:
@@ -807,6 +810,84 @@ def caixa_humor(it):
     return (x * K - pad - marg * K, y * K - pad - marg * K, w + 2 * pad + 2 * marg * K, h + 2 * pad + 2 * marg * K + 50 * K)
 
 
+LG_Y0, LG_Y1 = 730, 1080   # scrim: 0% em y 730 → 63% em y 1080 (layout.yt.scrim-top-y)
+
+
+def legenda_camadas(linhas):
+    """texto da legenda Padrão YouTube: Barlow 700 56 px, caption-text, centro x 960, base do bloco y 984,
+    sombra de texto da 3.1 (0 2px 0 35% + 0 0 24px 45%). Devolve (imagem pré-multiplicada da faixa, sem scrim)."""
+    cap = estilo("caption")
+    lh = cap["px"] * cap["lh"]
+    h = int((LG_Y1 - LG_Y0) * K)
+    txt = tela(h, W)
+    base_bloco = (tok("layout.yt.caption-base-y")["value"] - LG_Y0) * K
+    cx = tok("layout.yt.caption-center-x")["value"] * K
+    alfa = np.zeros((h, W), np.float32)
+    for n, l in enumerate(reversed(linhas)):
+        m, w, b, c = texto(l, FT["b700"], cap["px"], cap["track"])
+        assert w <= tok("layout.yt.caption-max-width")["value"] * K, l
+        y_base_linha = base_bloco - n * lh * K - (lh - cap["px"]) / 2 * K - 0.22 * cap["px"] * K
+        x = cx - w / 2 - 2
+        y = y_base_linha - b
+        tmp = np.zeros((h, W), np.float32)
+        hh, ww = m.shape
+        y0, x0 = int(round(y)), int(round(x))
+        tmp[max(y0, 0):y0 + hh, x0:x0 + ww] = m[max(-y0, 0):h - y0, :]
+        alfa = np.maximum(alfa, tmp)
+    sombra = np.zeros_like(alfa)
+    s1 = deslocar(alfa, 2 * K) * 0.35
+    s2 = gauss(alfa, 12 * K) * 0.45 * 1.6
+    sombra = np.clip(np.maximum(s1, s2), 0, 0.8)
+    pintar(txt, sombra, PRETO, 0, 0)
+    pintar(txt, alfa, RECIBO, 0, 0)
+    return txt
+
+
+def scrim_faixa():
+    h = int((LG_Y1 - LG_Y0) * K)
+    g = np.linspace(0, tok("opacity.op-scrim"), h, dtype=np.float32)[:, None] * np.ones((1, W), np.float32)
+    sc = tela(h, W)
+    pintar(sc, g, GRAFITE, 0, 0)
+    return sc
+
+
+def quadros_legenda(it):
+    """Padrão YouTube (DS 3.4.2): grupo inteiro entra 120 ms (0 → 1 e sobe 10 px), sai 120 ms (1 → 0 e sobe 6 px);
+    o scrim entra e sai com a legenda e fica entre eventos seguidos."""
+    sc = scrim_faixa()
+    camadas = [legenda_camadas(e["linhas"]) for e in it["eventos"]]
+    n = it["q_fim"] - it["q_in"]
+    t0 = it["q_in"] / FPS
+    h = sc.shape[0]
+    cache = {}
+    for k in range(n):
+        t = t0 + k / FPS
+        q = tela(h, W)
+        # scrim do grupo
+        a_ini, a_fim = it["eventos"][0]["i"], it["eventos"][-1]["f"]
+        op_s = min(min((t - a_ini) / 0.12, 1), min((a_fim - t) / 0.12, 1))
+        op_s = max(op_s, 0)
+        txt_op, dy, idx = 0.0, 0.0, None
+        for j, e in enumerate(it["eventos"]):
+            if e["i"] <= t < e["f"]:
+                idx = j
+                if t - e["i"] < 0.12:
+                    p = E_OUT((t - e["i"]) / 0.12)
+                    txt_op, dy = p, 10 * (1 - p)
+                elif e["f"] - t < 0.12:
+                    p = 1 - (e["f"] - t) / 0.12
+                    txt_op, dy = 1 - p, -6 * p
+                else:
+                    txt_op, dy = 1.0, 0.0
+        chave = (round(op_s, 3), idx, round(txt_op, 3), round(dy, 1))
+        if chave not in cache:
+            sobre(q, sc * op_s, 0, 0)
+            if idx is not None and txt_op > 0:
+                sobre(q, camadas[idx] * txt_op, 0, dy * K)
+            cache = {chave: q}
+        yield cache[chave]
+
+
 # ---------------------------------------------------------------- sprites (FFV1 com alfa)
 
 def caixa_item(it):
@@ -814,6 +895,8 @@ def caixa_item(it):
         obj, info = lugar_obj(it["nome"], it["micro"])
         marg = MARG_PLACA
         return (0, int(960 * K - obj.shape[0] - marg * K), W, obj.shape[0] + 2 * marg * K)
+    if it["tipo"] == "legenda":
+        return (0, int(LG_Y0 * K), W, int((LG_Y1 - LG_Y0) * K))
     return {"preco": caixa_preco, "recibo": caixa_recibo, "hospedagem": caixa_hospedagem, "humor": caixa_humor}[it["tipo"]](it)
 
 
@@ -826,6 +909,8 @@ def gerar_quadros(it):
         yield from quadros_recibo(it)
     elif it["tipo"] == "humor":
         yield from quadros_humor(it)
+    elif it["tipo"] == "legenda":
+        yield from quadros_legenda(it)
     elif it["tipo"] == "hospedagem":
         for q, _ in quadros_hospedagem(it):
             yield q
@@ -969,7 +1054,7 @@ BLOCOS = os.path.join(TMP, "blocos")
 def plano_blocos(itens, alvo_s=60):
     """divide o vídeo em blocos de ~1 min com fronteira num quadro sem nenhum gráfico na tela (±1 s)."""
     ocupado = np.zeros(NQ + 1, bool)
-    for i in itens:
+    for i in [x for x in itens if x["tipo"] != "legenda"]:
         ocupado[max(i["q_in"] - FPS, 0):min(i["q_fim"] + FPS, NQ)] = True
     fronteiras, q = [0], 0
     while q + alvo_s * FPS < NQ - 30 * FPS:
@@ -1033,20 +1118,79 @@ def cmd_final(a):
     print("final:", saida, contar_quadros(saida), "quadros", flush=True)
 
 
+def cmd_remendar(a):
+    """recodifica (a partir do ORIGINAL) só os blocos que recebem legenda e monta o novo final: os demais blocos
+    são copiados do final anterior (concat com inpoint/outpoint nas fronteiras, que são quadros IDR)."""
+    itens = carregar_plano()
+    blocos = plano_blocos(itens)
+    leg = [i for i in itens if i["tipo"] == "legenda"]
+    alvo = sorted({n for n, (q0, q1) in enumerate(blocos, 1) for i in leg if i["q_in"] < q1 and i["q_fim"] > q0})
+    os.makedirs(BLOCOS, exist_ok=True)
+    antigo = os.path.join(REV, a.anterior)
+    for n in alvo:
+        q0, q1 = blocos[n - 1]
+        arq = os.path.join(BLOCOS, f"bloco_{n:03d}_leg.mp4")
+        if os.path.exists(arq) and contar_quadros(arq) == q1 - q0:
+            continue
+        viz = [i for i in itens if i["q_in"] < q1 and i["q_fim"] > q0]
+        for i in viz:
+            sprite(i)
+        t0 = q0 / FPS
+        ins = ["-ss", f"{t0:.6f}", "-i", ORIGINAL]
+        for i in viz:
+            ins += ["-i", os.path.join(TMP, f"sprite_{i['id']}.mkv")]
+        g, ult = grafo(viz, t0)
+        tmp = arq + ".parcial.mp4"
+        subprocess.run(["ffmpeg", "-v", "error", "-stats", "-y", *ins, "-filter_complex", g, "-map", f"[{ult}]",
+                        "-frames:v", str(q1 - q0), "-an", "-c:v", "libx265", "-preset", a.preset, "-pix_fmt", "yuv420p10le",
+                        "-x265-params", X265, "-tag:v", "hvc1", "-color_primaries", "bt2020", "-color_trc", "arib-std-b67",
+                        "-colorspace", "bt2020nc", "-color_range", "tv", "-map_metadata", "-1", tmp], check=True)
+        assert contar_quadros(tmp) == q1 - q0
+        os.replace(tmp, arq)
+        print(f"bloco {n} com legenda pronto", flush=True)
+    if a.so_blocos:
+        return
+    # blocos sem legenda: extraídos do final anterior por contagem de quadros (cada bloco é um encode fechado,
+    # então os N pacotes a partir do seu IDR são exatamente os seus quadros); concat de arquivos inteiros
+    lista = []
+    for n, (q0, q1) in enumerate(blocos, 1):
+        if n in alvo:
+            lista.append(os.path.join(BLOCOS, f"bloco_{n:03d}_leg.mp4"))
+            continue
+        arq = os.path.join(BLOCOS, f"bloco_{n:03d}_copia.mp4")
+        if not (os.path.exists(arq) and contar_quadros(arq) == q1 - q0):
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{q0 / FPS:.6f}", "-i", antigo, "-map", "0:v",
+                            "-frames:v", str(q1 - q0), "-c", "copy", "-tag:v", "hvc1", arq], check=True)
+            assert contar_quadros(arq) == q1 - q0, (arq, contar_quadros(arq), q1 - q0)
+        lista.append(arq)
+    if a.so_extrair:
+        print("blocos extraídos:", len(lista), flush=True)
+        return
+    txt = os.path.join(BLOCOS, "lista_remendo.txt")
+    open(txt, "w").write("".join(f"file '{l}'\n" for l in lista))
+    saida = os.path.join(REV, a.saida)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", txt, "-i", a.audio,
+                    "-map", "0:v", "-map", "1:a", "-c", "copy", "-tag:v", "hvc1", "-map_metadata", "-1", saida], check=True)
+    print("final com legendas:", saida, contar_quadros(saida), "quadros", flush=True)
+
+
 def main():
     global ARGS_FONTES
     ap = argparse.ArgumentParser()
-    ap.add_argument("etapa", choices=["plano", "sprites", "previa", "final"])
+    ap.add_argument("etapa", choices=["plano", "sprites", "previa", "final", "remendar"])
     ap.add_argument("--fontes", default=os.environ.get("PD_FONTES", ""))
     ap.add_argument("--cortes")
     ap.add_argument("--itens")
     ap.add_argument("--refazer", action="store_true")
     ap.add_argument("--preset", default="fast")
     ap.add_argument("--saida", default="barcelona_rev1.mp4")
+    ap.add_argument("--anterior", default="barcelona_rev1_sem_legenda.mp4")
+    ap.add_argument("--so-blocos", action="store_true")
+    ap.add_argument("--so-extrair", action="store_true")
     ap.add_argument("--audio", help="faixa de áudio tratada (.m4a); sem ela, o áudio original é copiado")
     a = ap.parse_args()
     ARGS_FONTES = a.fontes
-    {"plano": cmd_plano, "sprites": cmd_sprites, "previa": cmd_previa, "final": cmd_final}[a.etapa](a)
+    {"plano": cmd_plano, "sprites": cmd_sprites, "previa": cmd_previa, "final": cmd_final, "remendar": cmd_remendar}[a.etapa](a)
 
 
 ARGS_FONTES = ""

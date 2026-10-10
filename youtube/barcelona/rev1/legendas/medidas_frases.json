@@ -1,0 +1,3245 @@
+{
+"mediana_nivel_fala_dB": -19.15,
+"frases": [
+{
+"inicio": 0.18,
+"fim": 1.64,
+"texto": "Buenos dias Barcelona!",
+"nivel_fala_dB": -16.0,
+"voz_fundo_dB": 12.3,
+"prob_media": 0.58,
+"acordo_modelos": 1.0,
+"n_palavras": 3
+},
+{
+"inicio": 2.96,
+"fim": 4.78,
+"texto": "Chegamos ao nosso primeiro destino,",
+"nivel_fala_dB": -20.0,
+"voz_fundo_dB": 7.8,
+"prob_media": 0.91,
+"acordo_modelos": 1.0,
+"n_palavras": 5
+},
+{
+"inicio": 5.66,
+"fim": 11.66,
+"texto": "a gente chegou bem tarde ontem, uma da manhã, a gente tá aqui no bairro de Gràcia,",
+"nivel_fala_dB": -18.9,
+"voz_fundo_dB": 9.5,
+"prob_media": 0.86,
+"acordo_modelos": 0.94,
+"n_palavras": 17
+},
+{
+"inicio": 11.72,
+"fim": 15.82,
+"texto": "estamos a caminho do metrô pra começar nosso dia hoje, vamos lá.",
+"nivel_fala_dB": -16.3,
+"voz_fundo_dB": 14.5,
+"prob_media": 0.77,
+"acordo_modelos": 0.75,
+"n_palavras": 12
+},
+{
+"inicio": 17.72,
+"fim": 19.5,
+"texto": "E é isso, vamos que vamos.",
+"nivel_fala_dB": -20.8,
+"voz_fundo_dB": 3.7,
+"prob_media": 0.89,
+"acordo_modelos": 1.0,
+"n_palavras": 6
+},
+{
+"inicio": 20.54,
+"fim": 21.18,
+"texto": "Vamos",
+"nivel_fala_dB": -18.8,
+"voz_fundo_dB": 2.6,
+"prob_media": 0.12,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+},
+{
+"inicio": 31.74,
+"fim": 37.3,
+"texto": "descer aqui na estação de Palau Reial, vamos conhecer a nossa primeira",
+"nivel_fala_dB": -20.3,
+"voz_fundo_dB": -10.2,
+"prob_media": 0.75,
+"acordo_modelos": 0.92,
+"n_palavras": 12
+},
+{
+"inicio": 37.3,
+"fim": 38.14,
+"texto": "parada de noite.",
+"nivel_fala_dB": -15.9,
+"voz_fundo_dB": 4.9,
+"prob_media": 0.67,
+"acordo_modelos": 0.67,
+"n_palavras": 3
+},
+{
+"inicio": 38.98,
+"fim": 41.28,
+"texto": "A gente vai para o Camp",
+"nivel_fala_dB": -19.1,
+"voz_fundo_dB": -0.1,
+"prob_media": 0.7,
+"acordo_modelos": 0.67,
+"n_palavras": 6
+},
+{
+"inicio": 42.56,
+"fim": 48.14,
+"texto": "Nou hoje. A gente decidiu passar três dias aqui em Barcelona e hoje a gente",
+"nivel_fala_dB": -17.2,
+"voz_fundo_dB": 4.2,
+"prob_media": 0.95,
+"acordo_modelos": 1.0,
+"n_palavras": 15
+},
+{
+"inicio": 48.74,
+"fim": 54.7,
+"texto": "dividiu o roteiro para fazer as coisas mais distantes, antes de",
+"nivel_fala_dB": -17.8,
+"voz_fundo_dB": 10.1,
+"prob_media": 0.94,
+"acordo_modelos": 1.0,
+"n_palavras": 11
+},
+{
+"inicio": 54.7,
+"fim": 59.22,
+"texto": "ir para a parte histórica e tal. Estamos chegando aqui na Lambra del Barça.",
+"nivel_fala_dB": -16.4,
+"voz_fundo_dB": 19.8,
+"prob_media": 0.96,
+"acordo_modelos": 0.93,
+"n_palavras": 14
+},
+{
+"inicio": 61.74,
+"fim": 66.7,
+"texto": "E só pra falar, a gente comprou esses ingressos aqui no site oficial deles, a gente pagou 31 euros",
+"nivel_fala_dB": -19.2,
+"voz_fundo_dB": 1.7,
+"prob_media": 0.88,
+"acordo_modelos": 0.95,
+"n_palavras": 19
+},
+{
+"inicio": 83.53,
+"fim": 85.95,
+"texto": "Ronaldinho Gaúcho, velho, lindo aqui Nós",
+"nivel_fala_dB": -14.5,
+"voz_fundo_dB": 4.0,
+"prob_media": 0.56,
+"acordo_modelos": 0.5,
+"n_palavras": 6
+},
+{
+"inicio": 99.55,
+"fim": 101.41,
+"texto": "acabamos de sair aqui do",
+"nivel_fala_dB": -16.9,
+"voz_fundo_dB": -1.9,
+"prob_media": 0.98,
+"acordo_modelos": 1.0,
+"n_palavras": 5
+},
+{
+"inicio": 101.91,
+"fim": 103.29,
+"texto": "tour do Camp Nou",
+"nivel_fala_dB": -24.6,
+"voz_fundo_dB": -97.3,
+"prob_media": 0.83,
+"acordo_modelos": 1.0,
+"n_palavras": 4
+},
+{
+"inicio": 103.79,
+"fim": 104.59,
+"texto": "e",
+"nivel_fala_dB": -28.9,
+"voz_fundo_dB": -6.2,
+"prob_media": 0.39,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+},
+{
+"inicio": 105.37,
+"fim": 106.91,
+"texto": "foi muito show, velho",
+"nivel_fala_dB": -19.2,
+"voz_fundo_dB": 10.3,
+"prob_media": 0.88,
+"acordo_modelos": 0.5,
+"n_palavras": 4
+},
+{
+"inicio": 107.55,
+"fim": 113.51,
+"texto": "Massa demais, tipo assim, conta a história do estádio, tem várias camisas de híbridos lá Tem uma",
+"nivel_fala_dB": -19.9,
+"voz_fundo_dB": 11.6,
+"prob_media": 0.9,
+"acordo_modelos": 0.94,
+"n_palavras": 17
+},
+{
+"inicio": 113.51,
+"fim": 116.05,
+"texto": "parte 360 assim, que tipo, pô, é surreal a",
+"nivel_fala_dB": -21.5,
+"voz_fundo_dB": 12.4,
+"prob_media": 0.8,
+"acordo_modelos": 0.67,
+"n_palavras": 9
+},
+{
+"inicio": 116.63,
+"fim": 122.43,
+"texto": "gente não vai entrar no estádio porque está em reforma, dá até para ver aqui atrás da gente. Já tinha",
+"nivel_fala_dB": -18.6,
+"voz_fundo_dB": 14.2,
+"prob_media": 0.87,
+"acordo_modelos": 0.9,
+"n_palavras": 20
+},
+{
+"inicio": 122.43,
+"fim": 124.27,
+"texto": "visto alguns depoimentos que realmente estava",
+"nivel_fala_dB": -12.6,
+"voz_fundo_dB": 17.6,
+"prob_media": 0.93,
+"acordo_modelos": 0.83,
+"n_palavras": 6
+},
+{
+"inicio": 124.77,
+"fim": 126.37,
+"texto": "difícil acesso assim,",
+"nivel_fala_dB": -16.3,
+"voz_fundo_dB": 13.8,
+"prob_media": 0.65,
+"acordo_modelos": 1.0,
+"n_palavras": 3
+},
+{
+"inicio": 127.03,
+"fim": 130.53,
+"texto": "mas é isso, a gente vai para o final de agora, a gente vai lá para o Montjuic",
+"nivel_fala_dB": -15.1,
+"voz_fundo_dB": 11.2,
+"prob_media": 0.85,
+"acordo_modelos": 0.72,
+"n_palavras": 18
+},
+{
+"inicio": 132.01,
+"fim": 137.93,
+"texto": "e como eu falei, a gente está aproveitando para ir para os pontos que eram mais longe assim.",
+"nivel_fala_dB": -17.9,
+"voz_fundo_dB": 9.0,
+"prob_media": 0.91,
+"acordo_modelos": 0.78,
+"n_palavras": 18
+},
+{
+"inicio": 138.21,
+"fim": 144.03,
+"texto": "Estamos aqui na frente do maior estádio do mundo e eu estou com a camisa do maior clube do mundo,",
+"nivel_fala_dB": -17.3,
+"voz_fundo_dB": null,
+"prob_media": 0.96,
+"acordo_modelos": 0.95,
+"n_palavras": 20
+},
+{
+"inicio": 144.71,
+"fim": 150.57,
+"texto": "o Esporte Clube Bahia. Ah, inclusive, quando a gente chegou. Ia deixar isso aqui, 52 vezes campeão baiano. Quando a gente",
+"nivel_fala_dB": -16.4,
+"voz_fundo_dB": 17.8,
+"prob_media": 0.84,
+"acordo_modelos": 0.9,
+"n_palavras": 21
+},
+{
+"inicio": 150.57,
+"fim": 151.31,
+"texto": "chegou, o",
+"nivel_fala_dB": -22.3,
+"voz_fundo_dB": 11.7,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 2
+},
+{
+"inicio": 153.01,
+"fim": 159.01,
+"texto": "funcionário aqui do Museu do Barcelona, o Diego tava com o casaco, aí a gente foi tirar uma foto, aí o Diego tirou o casaco e ele",
+"nivel_fala_dB": -22.4,
+"voz_fundo_dB": 11.1,
+"prob_media": 0.88,
+"acordo_modelos": 0.78,
+"n_palavras": 27
+},
+{
+"inicio": 159.01,
+"fim": 163.35,
+"texto": "fez assim, ah, Bahia. Aí eu fiquei tipo, como é que ele sabe? Bahia é o mundo.",
+"nivel_fala_dB": -17.2,
+"voz_fundo_dB": 14.3,
+"prob_media": 0.91,
+"acordo_modelos": 0.59,
+"n_palavras": 17
+},
+{
+"inicio": 164.63,
+"fim": 170.63,
+"texto": "Uma coisa interessante pra falar é que a gente tá num bairro chamado Gracia, é um local mais residencial,",
+"nivel_fala_dB": -14.2,
+"voz_fundo_dB": 17.7,
+"prob_media": 0.97,
+"acordo_modelos": 1.0,
+"n_palavras": 19
+},
+{
+"inicio": 170.63,
+"fim": 172.03,
+"texto": "Ele é um pouco mais distante da",
+"nivel_fala_dB": -15.6,
+"voz_fundo_dB": 16.8,
+"prob_media": 0.8,
+"acordo_modelos": 1.0,
+"n_palavras": 7
+},
+{
+"inicio": 172.99,
+"fim": 176.83,
+"texto": "agonia do centro Foi o que a gente preferiu Tem duas",
+"nivel_fala_dB": -16.7,
+"voz_fundo_dB": 14.9,
+"prob_media": 0.93,
+"acordo_modelos": 1.0,
+"n_palavras": 11
+},
+{
+"inicio": 178.11,
+"fim": 181.17,
+"texto": "cafeterias, um mercado bem do lado da nossa casa",
+"nivel_fala_dB": -14.1,
+"voz_fundo_dB": 17.4,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 9
+},
+{
+"inicio": 182.17,
+"fim": 187.99,
+"texto": "E aí, por isso, a gente comprou um bilhete de metrô e",
+"nivel_fala_dB": -14.5,
+"voz_fundo_dB": 17.5,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 12
+},
+{
+"inicio": 187.99,
+"fim": 193.95,
+"texto": "ônibus Para utilizar por 72 horas, que é o período que a gente vai ficar aqui Está facilitando muito",
+"nivel_fala_dB": -14.8,
+"voz_fundo_dB": 1.7,
+"prob_media": 0.96,
+"acordo_modelos": 0.89,
+"n_palavras": 19
+},
+{
+"inicio": 193.95,
+"fim": 197.11,
+"texto": "a nossa vida A gente vai pagar R$ 27,50",
+"nivel_fala_dB": -15.5,
+"voz_fundo_dB": 0.5,
+"prob_media": 0.86,
+"acordo_modelos": 0.78,
+"n_palavras": 9
+},
+{
+"inicio": 197.93,
+"fim": 203.87,
+"texto": "Mas com certeza a gente usaria muito mais E agora a gente está chegando aqui no Monjuic O",
+"nivel_fala_dB": -15.1,
+"voz_fundo_dB": 1.2,
+"prob_media": 0.87,
+"acordo_modelos": 0.89,
+"n_palavras": 18
+},
+{
+"inicio": 203.87,
+"fim": 209.69,
+"texto": "metrô deixou a gente bem na estação aqui E a gente vai subir andando Para ver o castelo que já está ali",
+"nivel_fala_dB": -17.0,
+"voz_fundo_dB": -0.3,
+"prob_media": 0.95,
+"acordo_modelos": 0.91,
+"n_palavras": 22
+},
+{
+"inicio": 209.69,
+"fim": 211.01,
+"texto": "atrás O",
+"nivel_fala_dB": -15.8,
+"voz_fundo_dB": 0.8,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 2
+},
+{
+"inicio": 221.28,
+"fim": 227.24,
+"texto": "Monjuic é chamado assim porque é na verdade o monte dos judeus Ele ficou famoso em 1929",
+"nivel_fala_dB": -20.8,
+"voz_fundo_dB": -1.9,
+"prob_media": 0.88,
+"acordo_modelos": 0.88,
+"n_palavras": 17
+},
+{
+"inicio": 227.24,
+"fim": 233.16,
+"texto": "com a exposição que teve aqui Foi quando foram inaugurados os espetáculos da fonte E hoje",
+"nivel_fala_dB": -19.8,
+"voz_fundo_dB": null,
+"prob_media": 0.92,
+"acordo_modelos": 1.0,
+"n_palavras": 16
+},
+{
+"inicio": 233.16,
+"fim": 239.14,
+"texto": "está desativado Acho que ainda tem hora para acontecer não coincidiu o período que a gente vai estar",
+"nivel_fala_dB": -19.1,
+"voz_fundo_dB": 5.0,
+"prob_media": 0.78,
+"acordo_modelos": 0.78,
+"n_palavras": 18
+},
+{
+"inicio": 239.14,
+"fim": 242.28,
+"texto": "aqui mas fica a dica aí agora",
+"nivel_fala_dB": -22.3,
+"voz_fundo_dB": -11.3,
+"prob_media": 0.84,
+"acordo_modelos": 0.86,
+"n_palavras": 7
+},
+{
+"inicio": 255.82,
+"fim": 258.26,
+"texto": "nós estamos descendo todo Monjuíque andando",
+"nivel_fala_dB": -19.9,
+"voz_fundo_dB": 6.0,
+"prob_media": 0.89,
+"acordo_modelos": 0.83,
+"n_palavras": 6
+},
+{
+"inicio": 258.78,
+"fim": 261.94,
+"texto": "para chegar na Barceloneta",
+"nivel_fala_dB": -22.4,
+"voz_fundo_dB": 14.9,
+"prob_media": 0.69,
+"acordo_modelos": 0.5,
+"n_palavras": 4
+},
+{
+"inicio": 262.44,
+"fim": 268.34,
+"texto": "onde a gente vai procurar algo para comer porque meu dragãozinho aqui tem que",
+"nivel_fala_dB": -22.0,
+"voz_fundo_dB": 15.5,
+"prob_media": 0.95,
+"acordo_modelos": 0.93,
+"n_palavras": 14
+},
+{
+"inicio": 268.34,
+"fim": 274.1,
+"texto": "ser alimentado antes que comece a ficar de mau humor que eu já conheço",
+"nivel_fala_dB": -21.8,
+"voz_fundo_dB": null,
+"prob_media": 0.96,
+"acordo_modelos": 1.0,
+"n_palavras": 14
+},
+{
+"inicio": 274.1,
+"fim": 279.06,
+"texto": "Chegamos em mais um ponto turístico E pra mim é um dos mais bonitos",
+"nivel_fala_dB": -20.8,
+"voz_fundo_dB": 8.0,
+"prob_media": 0.89,
+"acordo_modelos": 1.0,
+"n_palavras": 14
+},
+{
+"inicio": 280.42,
+"fim": 286.38,
+"texto": "Chegamos em Barceloneta Que é tipo a orla daqui É muito lindo o lugar E atrás da gente tem esse",
+"nivel_fala_dB": -17.3,
+"voz_fundo_dB": 11.9,
+"prob_media": 0.95,
+"acordo_modelos": 1.0,
+"n_palavras": 20
+},
+{
+"inicio": 286.38,
+"fim": 287.2,
+"texto": "pequenininho aqui",
+"nivel_fala_dB": -22.1,
+"voz_fundo_dB": -26.4,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 2
+},
+{
+"inicio": 287.9,
+"fim": 293.84,
+"texto": "Nosso amigo Colombo Bem de frente A Barceloneta E aí vamos caminhar aqui agora Pois",
+"nivel_fala_dB": -17.2,
+"voz_fundo_dB": 9.2,
+"prob_media": 0.9,
+"acordo_modelos": 0.93,
+"n_palavras": 15
+},
+{
+"inicio": 293.84,
+"fim": 297.06,
+"texto": "é, e as más riuas dizem que o dedo dele tá apontando pra América",
+"nivel_fala_dB": -20.0,
+"voz_fundo_dB": 6.6,
+"prob_media": 0.88,
+"acordo_modelos": 0.79,
+"n_palavras": 14
+},
+{
+"inicio": 298.22,
+"fim": 303.92,
+"texto": "Ele tá apontando a gente, não sei se vocês viram Mas a gente agora vai a gente vai parar pra comer que eu tô morrendo de",
+"nivel_fala_dB": -16.2,
+"voz_fundo_dB": 11.0,
+"prob_media": 0.85,
+"acordo_modelos": 0.85,
+"n_palavras": 26
+},
+{
+"inicio": 303.92,
+"fim": 308.4,
+"texto": "fome e aí depois seguir andando aí pro barcelonês é",
+"nivel_fala_dB": -17.6,
+"voz_fundo_dB": -2.9,
+"prob_media": 0.7,
+"acordo_modelos": 0.8,
+"n_palavras": 10
+},
+{
+"inicio": 318.38,
+"fim": 323.9,
+"texto": "que eu tenho uma tradição que toda vez que eu viajo eu tenho que comer um Mc",
+"nivel_fala_dB": -21.0,
+"voz_fundo_dB": 1.2,
+"prob_media": 0.85,
+"acordo_modelos": 0.88,
+"n_palavras": 17
+},
+{
+"inicio": 323.9,
+"fim": 325.06,
+"texto": "Donald's de cada lugar",
+"nivel_fala_dB": -20.8,
+"voz_fundo_dB": 11.9,
+"prob_media": 0.89,
+"acordo_modelos": 0.75,
+"n_palavras": 4
+},
+{
+"inicio": 325.88,
+"fim": 330.02,
+"texto": "e aí, Diego não vai só viajar comigo, ele vai entrar na onda também",
+"nivel_fala_dB": -20.3,
+"voz_fundo_dB": 13.1,
+"prob_media": 0.85,
+"acordo_modelos": 0.86,
+"n_palavras": 14
+},
+{
+"inicio": 330.66,
+"fim": 336.62,
+"texto": "o da Espanha eu já tinha comido, só que tem muito tempo e ele nunca comeu",
+"nivel_fala_dB": -23.3,
+"voz_fundo_dB": 10.0,
+"prob_media": 0.96,
+"acordo_modelos": 1.0,
+"n_palavras": 16
+},
+{
+"inicio": 336.62,
+"fim": 342.6,
+"texto": "e aí eu queria ver como é que é E esse Mc Crispy Korean Barbecue aqui, e essa",
+"nivel_fala_dB": -19.1,
+"voz_fundo_dB": null,
+"prob_media": 0.74,
+"acordo_modelos": 1.0,
+"n_palavras": 18
+},
+{
+"inicio": 342.6,
+"fim": 346.12,
+"texto": "batatinha, que é bem diferente da do Brasil e muito gostosa, porque eu já peguei o cheiro.",
+"nivel_fala_dB": -23.9,
+"voz_fundo_dB": 7.7,
+"prob_media": 0.77,
+"acordo_modelos": 0.82,
+"n_palavras": 17
+},
+{
+"inicio": 346.74,
+"fim": 347.46,
+"texto": "Olha isso.",
+"nivel_fala_dB": -24.7,
+"voz_fundo_dB": 5.7,
+"prob_media": 0.29,
+"acordo_modelos": 0.5,
+"n_palavras": 2
+},
+{
+"inicio": 350.9,
+"fim": 352.1,
+"texto": "Porra. Pera aí.",
+"nivel_fala_dB": -23.2,
+"voz_fundo_dB": 6.3,
+"prob_media": 0.66,
+"acordo_modelos": 0.0,
+"n_palavras": 3
+},
+{
+"inicio": 353.02,
+"fim": 354.2,
+"texto": "É enorme. Você não quer comer, né?",
+"nivel_fala_dB": -17.2,
+"voz_fundo_dB": 12.7,
+"prob_media": 0.49,
+"acordo_modelos": 0.0,
+"n_palavras": 7
+},
+{
+"inicio": 355.18,
+"fim": 355.8,
+"texto": "Eles não querem comer.",
+"nivel_fala_dB": -18.5,
+"voz_fundo_dB": 10.9,
+"prob_media": 0.61,
+"acordo_modelos": 0.0,
+"n_palavras": 4
+},
+{
+"inicio": 360.0,
+"fim": 360.72,
+"texto": "É enorme.",
+"nivel_fala_dB": -14.8,
+"voz_fundo_dB": 18.8,
+"prob_media": 0.92,
+"acordo_modelos": 0.5,
+"n_palavras": 2
+},
+{
+"inicio": 361.42,
+"fim": 362.22,
+"texto": "Um, dois, três, hein?",
+"nivel_fala_dB": -23.0,
+"voz_fundo_dB": 10.6,
+"prob_media": 0.81,
+"acordo_modelos": 0.0,
+"n_palavras": 4
+},
+{
+"inicio": 365.18,
+"fim": 366.52,
+"texto": "E aí, bom? O",
+"nivel_fala_dB": -20.5,
+"voz_fundo_dB": 14.5,
+"prob_media": 0.96,
+"acordo_modelos": 0.0,
+"n_palavras": 4
+},
+{
+"inicio": 371.96,
+"fim": 375.92,
+"texto": "hambúrguer tem algum molho aí especial, que é do chefe Pedro Jimenez.",
+"nivel_fala_dB": -19.6,
+"voz_fundo_dB": 14.1,
+"prob_media": 0.79,
+"acordo_modelos": 0.67,
+"n_palavras": 12
+},
+{
+"inicio": 380.5,
+"fim": 386.36,
+"texto": "Melou sua boca Toda a boca Bom? É bom, parece barbecue",
+"nivel_fala_dB": -19.0,
+"voz_fundo_dB": 12.8,
+"prob_media": 0.66,
+"acordo_modelos": 1.0,
+"n_palavras": 11
+},
+{
+"inicio": 387.26,
+"fim": 388.02,
+"texto": "Mas é bom",
+"nivel_fala_dB": -24.7,
+"voz_fundo_dB": 7.9,
+"prob_media": 0.82,
+"acordo_modelos": 1.0,
+"n_palavras": 3
+},
+{
+"inicio": 388.7,
+"fim": 393.62,
+"texto": "Acabamos de sair aqui do McDonald's O seu deu 10,60? Não,",
+"nivel_fala_dB": -20.3,
+"voz_fundo_dB": 12.3,
+"prob_media": 0.9,
+"acordo_modelos": 1.0,
+"n_palavras": 11
+},
+{
+"inicio": 394.32,
+"fim": 399.78,
+"texto": "9,70 9,70 O meu foi 13,60 Ele pediu um Big Combo também",
+"nivel_fala_dB": -20.1,
+"voz_fundo_dB": 10.4,
+"prob_media": 0.94,
+"acordo_modelos": 1.0,
+"n_palavras": 12
+},
+{
+"inicio": 399.78,
+"fim": 405.66,
+"texto": "Mas no final das contas, valeu Deu pra encher a barriga Pra gente continuar o dia",
+"nivel_fala_dB": -16.2,
+"voz_fundo_dB": 18.9,
+"prob_media": 0.96,
+"acordo_modelos": 1.0,
+"n_palavras": 16
+},
+{
+"inicio": 405.66,
+"fim": 408.38,
+"texto": "E aí? Melhor do Brasil. Vamos aqui.",
+"nivel_fala_dB": -19.2,
+"voz_fundo_dB": 14.6,
+"prob_media": 0.68,
+"acordo_modelos": 1.0,
+"n_palavras": 7
+},
+{
+"inicio": 409.36,
+"fim": 411.46,
+"texto": "Ainda do Brasil ganha pra mim. É, pra mim também.",
+"nivel_fala_dB": -23.0,
+"voz_fundo_dB": 10.0,
+"prob_media": 0.87,
+"acordo_modelos": 1.0,
+"n_palavras": 10
+},
+{
+"inicio": 412.5,
+"fim": 414.74,
+"texto": "Chegamos à Praia de La Barça 90.",
+"nivel_fala_dB": -18.4,
+"voz_fundo_dB": 14.0,
+"prob_media": 0.69,
+"acordo_modelos": 0.86,
+"n_palavras": 7
+},
+{
+"inicio": 415.48,
+"fim": 415.88,
+"texto": "Sim.",
+"nivel_fala_dB": -29.2,
+"voz_fundo_dB": -2.5,
+"prob_media": 0.68,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+},
+{
+"inicio": 416.8,
+"fim": 418.32,
+"texto": "E aí, tudo o que você tem pra falar, mano?",
+"nivel_fala_dB": -20.2,
+"voz_fundo_dB": 11.6,
+"prob_media": 0.78,
+"acordo_modelos": 0.8,
+"n_palavras": 10
+},
+{
+"inicio": 419.04,
+"fim": 424.98,
+"texto": "O que eu tenho pra falar? Porque tá frio pra caramba. E eu tenho certeza. Ali eu já vi o",
+"nivel_fala_dB": -24.1,
+"voz_fundo_dB": 7.6,
+"prob_media": 0.87,
+"acordo_modelos": 0.75,
+"n_palavras": 20
+},
+{
+"inicio": 424.98,
+"fim": 430.26,
+"texto": "jet ski mesmo no mar. A galera daqui... Beleza, eles estão acostumados, né? Mas a galera daqui não se sente fria.",
+"nivel_fala_dB": -22.9,
+"voz_fundo_dB": 9.6,
+"prob_media": 0.86,
+"acordo_modelos": 0.9,
+"n_palavras": 21
+},
+{
+"inicio": 430.64,
+"fim": 434.72,
+"texto": "Mas é uma praia bonita pra caramba. É muito bonita. É um dos pontos principais aqui.",
+"nivel_fala_dB": -24.6,
+"voz_fundo_dB": 7.0,
+"prob_media": 0.84,
+"acordo_modelos": 1.0,
+"n_palavras": 16
+},
+{
+"inicio": 435.58,
+"fim": 440.74,
+"texto": "Muito bonito, é bom você andar aqui, sentar, relaxar, tomar uma cerveja,",
+"nivel_fala_dB": -17.5,
+"voz_fundo_dB": 11.7,
+"prob_media": 0.94,
+"acordo_modelos": 1.0,
+"n_palavras": 12
+},
+{
+"inicio": 440.8,
+"fim": 443.34,
+"texto": "ficar vendo e apreciando a paisagem.",
+"nivel_fala_dB": -19.9,
+"voz_fundo_dB": 5.7,
+"prob_media": 0.98,
+"acordo_modelos": 1.0,
+"n_palavras": 6
+},
+{
+"inicio": 460.89,
+"fim": 464.91,
+"texto": "Almoçamos, e aí o Diego pegou mais um parque de bações.",
+"nivel_fala_dB": -15.0,
+"voz_fundo_dB": 5.0,
+"prob_media": 0.68,
+"acordo_modelos": 0.45,
+"n_palavras": 11
+},
+{
+"inicio": 466.09,
+"fim": 471.11,
+"texto": "Aí, ao invés dele escolher uma sobremesa, a sobremesa dele foi diferente.",
+"nivel_fala_dB": -15.8,
+"voz_fundo_dB": 5.1,
+"prob_media": 0.82,
+"acordo_modelos": 0.67,
+"n_palavras": 12
+},
+{
+"inicio": 509.9,
+"fim": 515.44,
+"texto": "Chegamos aqui agora na cascata do Parque da Cigazela, mais um daqueles monumentos",
+"nivel_fala_dB": -20.2,
+"voz_fundo_dB": 4.3,
+"prob_media": 0.87,
+"acordo_modelos": 0.92,
+"n_palavras": 13
+},
+{
+"inicio": 515.44,
+"fim": 517.08,
+"texto": "enormes Que existem",
+"nivel_fala_dB": -19.5,
+"voz_fundo_dB": 12.5,
+"prob_media": 0.58,
+"acordo_modelos": 0.67,
+"n_palavras": 3
+},
+{
+"inicio": 517.94,
+"fim": 519.0,
+"texto": "por aqui",
+"nivel_fala_dB": -23.5,
+"voz_fundo_dB": 8.2,
+"prob_media": 0.9,
+"acordo_modelos": 1.0,
+"n_palavras": 2
+},
+{
+"inicio": 519.96,
+"fim": 522.9,
+"texto": "E é isso, vamos aproveitar Quando",
+"nivel_fala_dB": -23.9,
+"voz_fundo_dB": -98.0,
+"prob_media": 0.94,
+"acordo_modelos": 0.83,
+"n_palavras": 6
+},
+{
+"inicio": 538.16,
+"fim": 544.12,
+"texto": "eu falo que Barcelona É uma cidade maravilhosa Acho que eu juro",
+"nivel_fala_dB": -22.7,
+"voz_fundo_dB": -1.1,
+"prob_media": 0.92,
+"acordo_modelos": 0.92,
+"n_palavras": 12
+},
+{
+"inicio": 544.12,
+"fim": 550.12,
+"texto": "Todo canto daqui é sem nenhum defeito As ruas são lindas, lindas, lindas E agora",
+"nivel_fala_dB": -21.1,
+"voz_fundo_dB": null,
+"prob_media": 0.9,
+"acordo_modelos": 1.0,
+"n_palavras": 15
+},
+{
+"inicio": 550.12,
+"fim": 555.92,
+"texto": "estamos aqui Quase no finalzinho de tarde No finalzinho de tarde, né? E viemos ver o Arco do",
+"nivel_fala_dB": -20.1,
+"voz_fundo_dB": 10.0,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 18
+},
+{
+"inicio": 555.92,
+"fim": 557.52,
+"texto": "Triunfo Daqui de Barcelona Que é",
+"nivel_fala_dB": -23.2,
+"voz_fundo_dB": 7.3,
+"prob_media": 0.86,
+"acordo_modelos": 1.0,
+"n_palavras": 6
+},
+{
+"inicio": 558.22,
+"fim": 561.36,
+"texto": "lindíssimo Olhem o visual A gente",
+"nivel_fala_dB": -20.5,
+"voz_fundo_dB": 14.8,
+"prob_media": 0.81,
+"acordo_modelos": 0.83,
+"n_palavras": 6
+},
+{
+"inicio": 583.15,
+"fim": 584.73,
+"texto": "vem pra cá",
+"nivel_fala_dB": -29.1,
+"voz_fundo_dB": -7.4,
+"prob_media": 0.55,
+"acordo_modelos": 0.67,
+"n_palavras": 3
+},
+{
+"inicio": 585.37,
+"fim": 591.37,
+"texto": "Tentar economizar no café da manhã É uma refeição que a gente acorda, tá em casa e tal No hotel, né? E a gente prefere",
+"nivel_fala_dB": -26.6,
+"voz_fundo_dB": -0.6,
+"prob_media": 0.92,
+"acordo_modelos": 1.0,
+"n_palavras": 25
+},
+{
+"inicio": 591.37,
+"fim": 591.87,
+"texto": "comer no hotel",
+"nivel_fala_dB": -25.3,
+"voz_fundo_dB": 9.5,
+"prob_media": 1.0,
+"acordo_modelos": 1.0,
+"n_palavras": 3
+},
+{
+"inicio": 592.73,
+"fim": 595.73,
+"texto": "E aí a gente tá aqui no mercado agora Fazendo o nosso café da manhã",
+"nivel_fala_dB": -24.0,
+"voz_fundo_dB": 12.3,
+"prob_media": 0.96,
+"acordo_modelos": 1.0,
+"n_palavras": 15
+},
+{
+"inicio": 597.01,
+"fim": 602.63,
+"texto": "Mata aqui, ó Pega minhas croissants pra gente comer Aí a gente vai comprar queijo,",
+"nivel_fala_dB": -25.9,
+"voz_fundo_dB": 10.6,
+"prob_media": 0.89,
+"acordo_modelos": 0.73,
+"n_palavras": 15
+},
+{
+"inicio": 602.65,
+"fim": 603.05,
+"texto": "presunto",
+"nivel_fala_dB": -18.0,
+"voz_fundo_dB": 9.5,
+"prob_media": 0.94,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+},
+{
+"inicio": 603.61,
+"fim": 607.19,
+"texto": "Tem um sanduíche de frango também Que a gente vai levar pra comer no próximo dia",
+"nivel_fala_dB": -22.1,
+"voz_fundo_dB": 10.3,
+"prob_media": 0.96,
+"acordo_modelos": 0.94,
+"n_palavras": 16
+},
+{
+"inicio": 607.69,
+"fim": 609.19,
+"texto": "Deixa na geladeira e come depois",
+"nivel_fala_dB": -22.4,
+"voz_fundo_dB": 10.6,
+"prob_media": 0.96,
+"acordo_modelos": 0.83,
+"n_palavras": 6
+},
+{
+"inicio": 610.35,
+"fim": 616.33,
+"texto": "E é isso A gente tenta economizar no café da manhã Pra poder gastar um pouco mais nas outras refeições do dia E comer um pouco",
+"nivel_fala_dB": -22.1,
+"voz_fundo_dB": 10.2,
+"prob_media": 0.89,
+"acordo_modelos": 1.0,
+"n_palavras": 26
+},
+{
+"inicio": 616.33,
+"fim": 616.67,
+"texto": "melhor",
+"nivel_fala_dB": -19.5,
+"voz_fundo_dB": 0.6,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+},
+{
+"inicio": 617.49,
+"fim": 620.27,
+"texto": "Chegamos no nosso último destino do dia Muito",
+"nivel_fala_dB": -16.2,
+"voz_fundo_dB": 4.7,
+"prob_media": 0.97,
+"acordo_modelos": 1.0,
+"n_palavras": 8
+},
+{
+"inicio": 620.85,
+"fim": 623.79,
+"texto": "cansados Hoje a gente andou demais Deu",
+"nivel_fala_dB": -16.1,
+"voz_fundo_dB": 4.1,
+"prob_media": 0.87,
+"acordo_modelos": 0.86,
+"n_palavras": 7
+},
+{
+"inicio": 625.13,
+"fim": 625.93,
+"texto": "uns",
+"nivel_fala_dB": -19.3,
+"voz_fundo_dB": -101.7,
+"prob_media": 0.89,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+},
+{
+"inicio": 626.63,
+"fim": 627.95,
+"texto": "18 quilômetros",
+"nivel_fala_dB": -16.3,
+"voz_fundo_dB": -2.3,
+"prob_media": 0.89,
+"acordo_modelos": 0.0,
+"n_palavras": 2
+},
+{
+"inicio": 629.83,
+"fim": 634.43,
+"texto": "E agora eu acabei de pedir Minha primeira tapa De Barcelona",
+"nivel_fala_dB": -16.5,
+"voz_fundo_dB": -0.5,
+"prob_media": 0.92,
+"acordo_modelos": 1.0,
+"n_palavras": 11
+},
+{
+"inicio": 635.47,
+"fim": 637.11,
+"texto": "Pedi uma papa brava",
+"nivel_fala_dB": -13.3,
+"voz_fundo_dB": 8.7,
+"prob_media": 0.86,
+"acordo_modelos": 1.0,
+"n_palavras": 4
+},
+{
+"inicio": 638.03,
+"fim": 640.53,
+"texto": "Com uma cerveja Para acompanhar",
+"nivel_fala_dB": -13.9,
+"voz_fundo_dB": 8.0,
+"prob_media": 0.9,
+"acordo_modelos": 0.8,
+"n_palavras": 5
+},
+{
+"inicio": 642.81,
+"fim": 643.39,
+"texto": "Bom",
+"nivel_fala_dB": -15.4,
+"voz_fundo_dB": 5.6,
+"prob_media": 0.14,
+"acordo_modelos": 0.0,
+"n_palavras": 1
+},
+{
+"inicio": 657.98,
+"fim": 663.34,
+"texto": "dia, estamos aqui mais um dia em Barcelona, hoje",
+"nivel_fala_dB": -20.2,
+"voz_fundo_dB": 11.7,
+"prob_media": 0.94,
+"acordo_modelos": 1.0,
+"n_palavras": 9
+},
+{
+"inicio": 663.96,
+"fim": 669.92,
+"texto": "temos uma programação mais a pé novamente, ontem andamos em torno de",
+"nivel_fala_dB": -24.3,
+"voz_fundo_dB": 15.4,
+"prob_media": 0.9,
+"acordo_modelos": 1.0,
+"n_palavras": 12
+},
+{
+"inicio": 669.92,
+"fim": 671.98,
+"texto": "20 km, foi bem cansativo,",
+"nivel_fala_dB": -24.0,
+"voz_fundo_dB": 16.1,
+"prob_media": 0.84,
+"acordo_modelos": 0.8,
+"n_palavras": 5
+},
+{
+"inicio": 673.18,
+"fim": 678.92,
+"texto": "foi o primeiro dia, mas vamos nessa, acabamos de sair do hotel aqui e o legal do bairro de",
+"nivel_fala_dB": -22.8,
+"voz_fundo_dB": 18.3,
+"prob_media": 0.93,
+"acordo_modelos": 1.0,
+"n_palavras": 19
+},
+{
+"inicio": 678.92,
+"fim": 684.72,
+"texto": "Gràcia aqui é porque na rua que a gente está, E duas cafecerias, tem várias coisas Tem",
+"nivel_fala_dB": -17.0,
+"voz_fundo_dB": null,
+"prob_media": 0.78,
+"acordo_modelos": 0.94,
+"n_palavras": 17
+},
+{
+"inicio": 684.72,
+"fim": 690.56,
+"texto": "restaurante, inclusive a gente tava passando por lá de uma Isso Restaurante mais caro, cafeceria Barbearia Barbearia",
+"nivel_fala_dB": -18.6,
+"voz_fundo_dB": null,
+"prob_media": 0.67,
+"acordo_modelos": 0.12,
+"n_palavras": 17
+},
+{
+"inicio": 690.56,
+"fim": 694.46,
+"texto": "para os fios É, tem muita coisa aqui Então é bem legal",
+"nivel_fala_dB": -15.5,
+"voz_fundo_dB": 12.2,
+"prob_media": 0.81,
+"acordo_modelos": 0.75,
+"n_palavras": 12
+},
+{
+"inicio": 695.86,
+"fim": 696.42,
+"texto": "Já",
+"nivel_fala_dB": -22.3,
+"voz_fundo_dB": -0.0,
+"prob_media": 0.94,
+"acordo_modelos": 0.0,
+"n_palavras": 1
+},
+{
+"inicio": 702.28,
+"fim": 706.06,
+"texto": "peguei meu cafezinho Viemos aqui na nossa primeira parada do dia",
+"nivel_fala_dB": -25.2,
+"voz_fundo_dB": 6.4,
+"prob_media": 0.96,
+"acordo_modelos": 1.0,
+"n_palavras": 11
+},
+{
+"inicio": 707.3,
+"fim": 713.1,
+"texto": "Casa Rinsens Uma das primeiras obras do arquiteto Gaudí Que vai ser pouco",
+"nivel_fala_dB": -24.0,
+"voz_fundo_dB": 13.3,
+"prob_media": 0.93,
+"acordo_modelos": 1.0,
+"n_palavras": 13
+},
+{
+"inicio": 713.1,
+"fim": 714.42,
+"texto": "falado nessa viagem, né amor?",
+"nivel_fala_dB": -21.5,
+"voz_fundo_dB": 16.0,
+"prob_media": 0.84,
+"acordo_modelos": 0.8,
+"n_palavras": 5
+},
+{
+"inicio": 715.68,
+"fim": 721.26,
+"texto": "É E é uma arquitetura surreal, bem diferente, oriental, assim.",
+"nivel_fala_dB": -23.9,
+"voz_fundo_dB": 13.4,
+"prob_media": 0.84,
+"acordo_modelos": 1.0,
+"n_palavras": 10
+},
+{
+"inicio": 721.5,
+"fim": 725.14,
+"texto": "Em 2005 ela foi considerada como patrimônio mundial da Unesco.",
+"nivel_fala_dB": -22.6,
+"voz_fundo_dB": 10.4,
+"prob_media": 0.89,
+"acordo_modelos": 0.9,
+"n_palavras": 10
+},
+{
+"inicio": 726.48,
+"fim": 731.28,
+"texto": "E ela tem uma visita interna que a gente não vai fazer, porque não é muito nossa praia.",
+"nivel_fala_dB": -19.0,
+"voz_fundo_dB": 14.2,
+"prob_media": 0.97,
+"acordo_modelos": 1.0,
+"n_palavras": 18
+},
+{
+"inicio": 731.96,
+"fim": 737.76,
+"texto": "E a gente escolheu os pontos turísticos que a gente queria visitar internamente, que seria mais a ver com a gente.",
+"nivel_fala_dB": -18.9,
+"voz_fundo_dB": 9.4,
+"prob_media": 0.96,
+"acordo_modelos": 1.0,
+"n_palavras": 21
+},
+{
+"inicio": 738.82,
+"fim": 743.26,
+"texto": "E é isso. É bonito demais, mas vamos partir pro próximo.",
+"nivel_fala_dB": -20.5,
+"voz_fundo_dB": 6.3,
+"prob_media": 0.92,
+"acordo_modelos": 0.91,
+"n_palavras": 11
+},
+{
+"inicio": 744.1,
+"fim": 745.3,
+"texto": "Algo pra falar mal, né?",
+"nivel_fala_dB": -20.9,
+"voz_fundo_dB": 3.4,
+"prob_media": 0.85,
+"acordo_modelos": 0.4,
+"n_palavras": 5
+},
+{
+"inicio": 761.54,
+"fim": 767.5,
+"texto": "Chegamos no bairro Gótico, estamos chegando no M-Money em cada",
+"nivel_fala_dB": -23.0,
+"voz_fundo_dB": -0.1,
+"prob_media": 0.81,
+"acordo_modelos": 0.9,
+"n_palavras": 10
+},
+{
+"inicio": 767.5,
+"fim": 771.82,
+"texto": "berçada, será que foi até? O famoso mundo do beijo, pessoal. Mural do beijo.",
+"nivel_fala_dB": -24.1,
+"voz_fundo_dB": 13.5,
+"prob_media": 0.76,
+"acordo_modelos": 0.86,
+"n_palavras": 14
+},
+{
+"inicio": 773.22,
+"fim": 774.26,
+"texto": "Estamos chegando",
+"nivel_fala_dB": -24.3,
+"voz_fundo_dB": 13.3,
+"prob_media": 1.0,
+"acordo_modelos": 1.0,
+"n_palavras": 2
+},
+{
+"inicio": 774.9,
+"fim": 778.96,
+"texto": "em um dos bairros com a arquitetura mais icônica aqui de Barcelona.",
+"nivel_fala_dB": -26.7,
+"voz_fundo_dB": 10.4,
+"prob_media": 0.91,
+"acordo_modelos": 0.92,
+"n_palavras": 12
+},
+{
+"inicio": 780.7,
+"fim": 786.52,
+"texto": "Meu louco, vem, a homenagem é essa, bairro Gótico, hoje é todo gótico. Você tá motoqueira hoje?",
+"nivel_fala_dB": -26.1,
+"voz_fundo_dB": 8.0,
+"prob_media": 0.68,
+"acordo_modelos": 0.65,
+"n_palavras": 17
+},
+{
+"inicio": 786.7,
+"fim": 787.38,
+"texto": "Pronto, pronto.",
+"nivel_fala_dB": -25.1,
+"voz_fundo_dB": -4.9,
+"prob_media": 0.98,
+"acordo_modelos": 1.0,
+"n_palavras": 2
+},
+{
+"inicio": 791.82,
+"fim": 797.82,
+"texto": "Gente, a gente chegou aqui agora no Muro do Beijo, aí Diego pra me ajudar virou quando a gente tava vindo e fez",
+"nivel_fala_dB": -23.9,
+"voz_fundo_dB": -1.5,
+"prob_media": 0.86,
+"acordo_modelos": 0.91,
+"n_palavras": 23
+},
+{
+"inicio": 797.82,
+"fim": 798.0,
+"texto": "assim",
+"nivel_fala_dB": -24.4,
+"voz_fundo_dB": 6.0,
+"prob_media": 0.98,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+},
+{
+"inicio": 799.04,
+"fim": 804.84,
+"texto": "Vamos tirar uma foto do seu beijando no Muro do Beijo, aí eu virei pra ele e falei assim, você vai achar que eu vou tirar uma foto",
+"nivel_fala_dB": -24.8,
+"voz_fundo_dB": 6.3,
+"prob_media": 0.83,
+"acordo_modelos": 0.79,
+"n_palavras": 28
+},
+{
+"inicio": 804.84,
+"fim": 808.14,
+"texto": "dessa A gente pisou aqui, no caso ela tava fazendo o que?",
+"nivel_fala_dB": -21.4,
+"voz_fundo_dB": 9.8,
+"prob_media": 0.77,
+"acordo_modelos": 0.75,
+"n_palavras": 12
+},
+{
+"inicio": 809.44,
+"fim": 811.32,
+"texto": "Na frente do Muro do Beijo, eu tô morta",
+"nivel_fala_dB": -22.6,
+"voz_fundo_dB": 8.1,
+"prob_media": 0.97,
+"acordo_modelos": 0.89,
+"n_palavras": 9
+},
+{
+"inicio": 812.72,
+"fim": 818.7,
+"texto": "Ou seja, chegamos no Muro do Beijo, ele tá bem aqui atrás E a gente vai tirar uma foto",
+"nivel_fala_dB": -18.4,
+"voz_fundo_dB": 10.8,
+"prob_media": 0.86,
+"acordo_modelos": 1.0,
+"n_palavras": 19
+},
+{
+"inicio": 818.7,
+"fim": 821.46,
+"texto": "lá já já, né amor? Dá um beijinho, dá um beijinho",
+"nivel_fala_dB": -18.5,
+"voz_fundo_dB": 10.4,
+"prob_media": 0.76,
+"acordo_modelos": 0.82,
+"n_palavras": 11
+},
+{
+"inicio": 841.26,
+"fim": 846.84,
+"texto": "Chegamos na famosa Catedral de Barcelona aqui no bairro gótico Mais um lugar com uma estrutura surreal",
+"nivel_fala_dB": -14.8,
+"voz_fundo_dB": 11.5,
+"prob_media": 0.93,
+"acordo_modelos": 1.0,
+"n_palavras": 17
+},
+{
+"inicio": 846.84,
+"fim": 852.54,
+"texto": "Muito linda mesmo Muito linda A praça também é muito linda, muito movimentada, tem muita gente aqui hoje",
+"nivel_fala_dB": -16.8,
+"voz_fundo_dB": -107.8,
+"prob_media": 0.92,
+"acordo_modelos": 1.0,
+"n_palavras": 18
+},
+{
+"inicio": 852.54,
+"fim": 853.96,
+"texto": "É, essa",
+"nivel_fala_dB": -17.4,
+"voz_fundo_dB": -107.8,
+"prob_media": 0.68,
+"acordo_modelos": 0.5,
+"n_palavras": 2
+},
+{
+"inicio": 854.84,
+"fim": 860.82,
+"texto": "catedral é bem famosa, ela tem um estilo meio medieval assim Game of Thrones Mas é",
+"nivel_fala_dB": -14.3,
+"voz_fundo_dB": 4.5,
+"prob_media": 0.86,
+"acordo_modelos": 0.94,
+"n_palavras": 16
+},
+{
+"inicio": 860.82,
+"fim": 862.88,
+"texto": "bem bonita mesmo E super famosa também",
+"nivel_fala_dB": -17.6,
+"voz_fundo_dB": 0.5,
+"prob_media": 0.89,
+"acordo_modelos": 1.0,
+"n_palavras": 7
+},
+{
+"inicio": 872.89,
+"fim": 878.29,
+"texto": "Acabamos de chegar nos lugares mais famosos Do bairro gótico A Ponte do Bisco",
+"nivel_fala_dB": -16.2,
+"voz_fundo_dB": 7.0,
+"prob_media": 0.86,
+"acordo_modelos": 0.93,
+"n_palavras": 14
+},
+{
+"inicio": 887.57,
+"fim": 893.49,
+"texto": "Seguindo nosso rumo aqui A gente está passando na Praça São Jaime Que fica na prefeitura de",
+"nivel_fala_dB": -17.6,
+"voz_fundo_dB": 15.2,
+"prob_media": 0.9,
+"acordo_modelos": 0.88,
+"n_palavras": 17
+},
+{
+"inicio": 893.49,
+"fim": 893.79,
+"texto": "Barcelona",
+"nivel_fala_dB": -14.1,
+"voz_fundo_dB": 10.2,
+"prob_media": 1.0,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+},
+{
+"inicio": 894.81,
+"fim": 897.33,
+"texto": "E a sede do governo catalão Aqui atrás",
+"nivel_fala_dB": -16.3,
+"voz_fundo_dB": 10.0,
+"prob_media": 0.92,
+"acordo_modelos": 1.0,
+"n_palavras": 8
+},
+{
+"inicio": 914.59,
+"fim": 920.53,
+"texto": "Chegamos aqui na Praça Real Um lugar lindíssimo Uma praça linda, linda, linda E",
+"nivel_fala_dB": -24.7,
+"voz_fundo_dB": 4.3,
+"prob_media": 0.92,
+"acordo_modelos": 0.93,
+"n_palavras": 14
+},
+{
+"inicio": 920.53,
+"fim": 926.41,
+"texto": "é um clima muito gostoso Ela é rodeada por restaurantes, construções lindíssimas.",
+"nivel_fala_dB": -22.3,
+"voz_fundo_dB": null,
+"prob_media": 0.87,
+"acordo_modelos": 1.0,
+"n_palavras": 12
+},
+{
+"inicio": 926.59,
+"fim": 932.49,
+"texto": "Muitas lindas mesmo. Inclusive tem um posto aqui que foi uma das primeiras obras de",
+"nivel_fala_dB": -21.3,
+"voz_fundo_dB": 7.3,
+"prob_media": 0.88,
+"acordo_modelos": 0.87,
+"n_palavras": 15
+},
+{
+"inicio": 932.49,
+"fim": 932.87,
+"texto": "Gaudí.",
+"nivel_fala_dB": -14.7,
+"voz_fundo_dB": 16.3,
+"prob_media": 0.87,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+},
+{
+"inicio": 933.41,
+"fim": 935.87,
+"texto": "Ele fez quando ele era adolescente ainda.",
+"nivel_fala_dB": -18.4,
+"voz_fundo_dB": 12.9,
+"prob_media": 0.9,
+"acordo_modelos": 1.0,
+"n_palavras": 7
+},
+{
+"inicio": 937.25,
+"fim": 942.17,
+"texto": "E é muito lindo, muito bonito. Essa fonte aqui a gente sentou aqui pra dar uma descansada",
+"nivel_fala_dB": -18.4,
+"voz_fundo_dB": 13.6,
+"prob_media": 0.92,
+"acordo_modelos": 1.0,
+"n_palavras": 17
+},
+{
+"inicio": 942.81,
+"fim": 948.07,
+"texto": "e esperar o horário do almoço. Vamos almoçar agora, encher a barriga pra continuar o nosso dia.",
+"nivel_fala_dB": -16.6,
+"voz_fundo_dB": 9.2,
+"prob_media": 0.97,
+"acordo_modelos": 1.0,
+"n_palavras": 17
+},
+{
+"inicio": 961.8,
+"fim": 964.26,
+"texto": "Enquanto a gente procura alguma coisa pra comer aqui, E aqui,",
+"nivel_fala_dB": -15.6,
+"voz_fundo_dB": 4.7,
+"prob_media": 0.85,
+"acordo_modelos": 0.91,
+"n_palavras": 11
+},
+{
+"inicio": 965.16,
+"fim": 969.6,
+"texto": "acabou de passar por mais uma obra de Gaudí, Palácio Gual.",
+"nivel_fala_dB": -17.1,
+"voz_fundo_dB": 10.7,
+"prob_media": 0.85,
+"acordo_modelos": 0.82,
+"n_palavras": 11
+},
+{
+"inicio": 973.9,
+"fim": 979.74,
+"texto": "Oi pessoal, a gente tava procurando um restaurante pra comer, aí vimos",
+"nivel_fala_dB": -21.7,
+"voz_fundo_dB": 6.0,
+"prob_media": 0.82,
+"acordo_modelos": 0.83,
+"n_palavras": 12
+},
+{
+"inicio": 979.74,
+"fim": 983.34,
+"texto": "esse aqui na rua, o nome dele é Monro, né? Monro.",
+"nivel_fala_dB": -23.7,
+"voz_fundo_dB": 5.5,
+"prob_media": 0.82,
+"acordo_modelos": 0.73,
+"n_palavras": 11
+},
+{
+"inicio": 984.02,
+"fim": 989.9,
+"texto": "E aí a gente procurou a avaliação do Google e tava boa a avaliação. E eles tem uma promoção aqui",
+"nivel_fala_dB": -22.4,
+"voz_fundo_dB": 3.8,
+"prob_media": 0.89,
+"acordo_modelos": 0.85,
+"n_palavras": 20
+},
+{
+"inicio": 989.9,
+"fim": 990.8,
+"texto": "de cinco tapas.",
+"nivel_fala_dB": -23.4,
+"voz_fundo_dB": 0.3,
+"prob_media": 0.82,
+"acordo_modelos": 0.67,
+"n_palavras": 3
+},
+{
+"inicio": 993.37,
+"fim": 994.57,
+"texto": "Cinco tapas",
+"nivel_fala_dB": -21.6,
+"voz_fundo_dB": 5.0,
+"prob_media": 0.88,
+"acordo_modelos": 0.5,
+"n_palavras": 2
+},
+{
+"inicio": 995.65,
+"fim": 1001.55,
+"texto": "Uma paella E uma bebida Por 19 euros Eu roubei a bebida",
+"nivel_fala_dB": -21.2,
+"voz_fundo_dB": 7.0,
+"prob_media": 0.9,
+"acordo_modelos": 1.0,
+"n_palavras": 12
+},
+{
+"inicio": 1001.55,
+"fim": 1004.71,
+"texto": "da promoção Pra pedir minha cerveja Eu",
+"nivel_fala_dB": -27.4,
+"voz_fundo_dB": 4.6,
+"prob_media": 0.95,
+"acordo_modelos": 0.86,
+"n_palavras": 7
+},
+{
+"inicio": 1020.55,
+"fim": 1025.77,
+"texto": "odeio cerveja, tipo assim, eu odeio Já tentei gostar, já tentei beber Eu inclusive",
+"nivel_fala_dB": -19.0,
+"voz_fundo_dB": 11.1,
+"prob_media": 0.98,
+"acordo_modelos": 1.0,
+"n_palavras": 14
+},
+{
+"inicio": 1026.55,
+"fim": 1032.49,
+"texto": "Odeio eu não gostar de cerveja Porque o meu custo pra beber é sempre muito alto E aí ontem a gente tava no",
+"nivel_fala_dB": -17.3,
+"voz_fundo_dB": 10.0,
+"prob_media": 0.95,
+"acordo_modelos": 0.87,
+"n_palavras": 23
+},
+{
+"inicio": 1032.49,
+"fim": 1036.05,
+"texto": "restaurante A gente tava bebendo uma cerveja Eu peguei pra provar Horrível horrível,",
+"nivel_fala_dB": -17.4,
+"voz_fundo_dB": 11.4,
+"prob_media": 0.83,
+"acordo_modelos": 0.77,
+"n_palavras": 13
+},
+{
+"inicio": 1036.79,
+"fim": 1041.99,
+"texto": "horrível, eu vou provar isso agora, só que a gente não gravou ontem, eu vou provar isso agora,",
+"nivel_fala_dB": -19.6,
+"voz_fundo_dB": 11.2,
+"prob_media": 0.9,
+"acordo_modelos": 1.0,
+"n_palavras": 18
+},
+{
+"inicio": 1042.15,
+"fim": 1044.67,
+"texto": "eu bebi o cheiro",
+"nivel_fala_dB": -25.3,
+"voz_fundo_dB": 6.6,
+"prob_media": 0.6,
+"acordo_modelos": 0.25,
+"n_palavras": 4
+},
+{
+"inicio": 1046.04,
+"fim": 1049.6,
+"texto": "de cerveja e o cheiro de cerveja é horrível, sabe",
+"nivel_fala_dB": -21.6,
+"voz_fundo_dB": 9.6,
+"prob_media": 0.9,
+"acordo_modelos": 1.0,
+"n_palavras": 10
+},
+{
+"inicio": 1062.47,
+"fim": 1066.93,
+"texto": "aquele comprimido de remédio que você morde sem querer ver o gosto, nós",
+"nivel_fala_dB": -17.5,
+"voz_fundo_dB": 9.5,
+"prob_media": 0.93,
+"acordo_modelos": 0.69,
+"n_palavras": 13
+},
+{
+"inicio": 1085.85,
+"fim": 1088.73,
+"texto": "compramos essa garrafa aqui ontem e",
+"nivel_fala_dB": -17.7,
+"voz_fundo_dB": 11.6,
+"prob_media": 0.82,
+"acordo_modelos": 1.0,
+"n_palavras": 6
+},
+{
+"inicio": 1089.61,
+"fim": 1095.03,
+"texto": "aqui em Barcelona tem várias fontes espalhadas pela cidade que você pode encher porque",
+"nivel_fala_dB": -18.1,
+"voz_fundo_dB": 9.0,
+"prob_media": 0.95,
+"acordo_modelos": 1.0,
+"n_palavras": 14
+},
+{
+"inicio": 1095.03,
+"fim": 1098.01,
+"texto": "tem várias fontes para pra galera beber água mesmo.",
+"nivel_fala_dB": -17.3,
+"voz_fundo_dB": null,
+"prob_media": 0.85,
+"acordo_modelos": 0.89,
+"n_palavras": 9
+},
+{
+"inicio": 1098.63,
+"fim": 1104.37,
+"texto": "E aí a gente comprou essa daqui e fica repondo. Tem um aplicativo que a gente baixou chamado",
+"nivel_fala_dB": -17.5,
+"voz_fundo_dB": 13.5,
+"prob_media": 0.96,
+"acordo_modelos": 1.0,
+"n_palavras": 18
+},
+{
+"inicio": 1104.37,
+"fim": 1105.11,
+"texto": "Fontes App.",
+"nivel_fala_dB": -19.4,
+"voz_fundo_dB": 11.5,
+"prob_media": 0.42,
+"acordo_modelos": 0.0,
+"n_palavras": 2
+},
+{
+"inicio": 1105.79,
+"fim": 1111.75,
+"texto": "E nesse aplicativo tem a localização das fontes espalhadas pela cidade. Você vai pro lugar, enche sua",
+"nivel_fala_dB": -17.2,
+"voz_fundo_dB": 13.8,
+"prob_media": 0.97,
+"acordo_modelos": 1.0,
+"n_palavras": 17
+},
+{
+"inicio": 1111.75,
+"fim": 1115.49,
+"texto": "garrafa, guarda, e aí quando esvaziar você procura outra fonte pra encher de novo.",
+"nivel_fala_dB": -17.0,
+"voz_fundo_dB": 11.1,
+"prob_media": 0.95,
+"acordo_modelos": 1.0,
+"n_palavras": 14
+},
+{
+"inicio": 1116.45,
+"fim": 1122.37,
+"texto": "Almoçamos. E estamos aqui agora na La Rambla. Pra comprar. Pra",
+"nivel_fala_dB": -17.3,
+"voz_fundo_dB": 10.9,
+"prob_media": 0.88,
+"acordo_modelos": 1.0,
+"n_palavras": 11
+},
+{
+"inicio": 1122.37,
+"fim": 1122.63,
+"texto": "comprar.",
+"nivel_fala_dB": -17.5,
+"voz_fundo_dB": 10.8,
+"prob_media": 0.96,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+},
+{
+"inicio": 1124.13,
+"fim": 1129.45,
+"texto": "Que é a via que liga O Monumento de Cristóvão Colombo A Praça da Catalunha",
+"nivel_fala_dB": -15.0,
+"voz_fundo_dB": 13.5,
+"prob_media": 0.88,
+"acordo_modelos": 1.0,
+"n_palavras": 15
+},
+{
+"inicio": 1129.45,
+"fim": 1135.01,
+"texto": "E aí é isso, a gente vai andar aqui Apreciar a paisagem que Tá toda em obra",
+"nivel_fala_dB": -14.7,
+"voz_fundo_dB": 14.0,
+"prob_media": 0.92,
+"acordo_modelos": 0.94,
+"n_palavras": 17
+},
+{
+"inicio": 1135.83,
+"fim": 1137.47,
+"texto": "Toda em obra",
+"nivel_fala_dB": -25.7,
+"voz_fundo_dB": 0.2,
+"prob_media": 0.98,
+"acordo_modelos": 1.0,
+"n_palavras": 3
+},
+{
+"inicio": 1138.47,
+"fim": 1141.49,
+"texto": "Em alguns lugares Pra quem se incomoda",
+"nivel_fala_dB": -14.0,
+"voz_fundo_dB": 14.8,
+"prob_media": 0.9,
+"acordo_modelos": 0.86,
+"n_palavras": 7
+},
+{
+"inicio": 1142.35,
+"fim": 1144.97,
+"texto": "Tá com britadeira Batendo no chão",
+"nivel_fala_dB": -14.5,
+"voz_fundo_dB": 15.0,
+"prob_media": 0.95,
+"acordo_modelos": 0.83,
+"n_palavras": 6
+},
+{
+"inicio": 1145.51,
+"fim": 1146.97,
+"texto": "Enfim, quebra-quebra",
+"nivel_fala_dB": -15.9,
+"voz_fundo_dB": 13.6,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 2
+},
+{
+"inicio": 1148.05,
+"fim": 1150.13,
+"texto": "Mas nós vamos aproveitar aqui",
+"nivel_fala_dB": -15.6,
+"voz_fundo_dB": 9.4,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 5
+},
+{
+"inicio": 1166.87,
+"fim": 1171.45,
+"texto": "Acabamos de chegar aqui no mercado de La Burqueria, que é no meio da Laramba,",
+"nivel_fala_dB": -14.2,
+"voz_fundo_dB": 7.3,
+"prob_media": 0.79,
+"acordo_modelos": 0.93,
+"n_palavras": 15
+},
+{
+"inicio": 1171.97,
+"fim": 1175.89,
+"texto": "a gente tava passando, já tava no roteiro a gente vindo ao pulo aqui.",
+"nivel_fala_dB": -14.1,
+"voz_fundo_dB": 4.6,
+"prob_media": 0.8,
+"acordo_modelos": 0.79,
+"n_palavras": 14
+},
+{
+"inicio": 1176.55,
+"fim": 1179.47,
+"texto": "É um mercado muito famoso conhecido por pega turista.",
+"nivel_fala_dB": -13.2,
+"voz_fundo_dB": 6.4,
+"prob_media": 0.87,
+"acordo_modelos": 0.89,
+"n_palavras": 9
+},
+{
+"inicio": 1180.05,
+"fim": 1183.87,
+"texto": "É porque os preços aqui são muito caros, eles aumentam muito. É isso.",
+"nivel_fala_dB": -17.5,
+"voz_fundo_dB": 1.6,
+"prob_media": 0.85,
+"acordo_modelos": 0.85,
+"n_palavras": 13
+},
+{
+"inicio": 1184.73,
+"fim": 1187.33,
+"texto": "Mas vamos dar um rolê aqui, conhecer.",
+"nivel_fala_dB": -10.9,
+"voz_fundo_dB": 11.0,
+"prob_media": 0.88,
+"acordo_modelos": 1.0,
+"n_palavras": 7
+},
+{
+"inicio": 1188.01,
+"fim": 1193.43,
+"texto": "Se vocês já foram no mercado em São Paulo, certamente vocês vão se sentir em um ambiente",
+"nivel_fala_dB": -18.2,
+"voz_fundo_dB": 2.9,
+"prob_media": 0.89,
+"acordo_modelos": 0.94,
+"n_palavras": 17
+},
+{
+"inicio": 1193.43,
+"fim": 1199.27,
+"texto": "familiarizado aqui, porque é a mesma vibe. São várias barraquinhas Vendendo várias coisas",
+"nivel_fala_dB": -17.3,
+"voz_fundo_dB": null,
+"prob_media": 0.9,
+"acordo_modelos": 0.92,
+"n_palavras": 13
+},
+{
+"inicio": 1199.27,
+"fim": 1204.25,
+"texto": "É bem legal, mas é caro pra caramba Então a gente só vai dar uma olhada E vamos seguir nosso",
+"nivel_fala_dB": -18.1,
+"voz_fundo_dB": 0.9,
+"prob_media": 0.95,
+"acordo_modelos": 1.0,
+"n_palavras": 20
+},
+{
+"inicio": 1204.25,
+"fim": 1205.37,
+"texto": "rumo E",
+"nivel_fala_dB": -19.1,
+"voz_fundo_dB": -2.3,
+"prob_media": 0.62,
+"acordo_modelos": 1.0,
+"n_palavras": 2
+},
+{
+"inicio": 1206.67,
+"fim": 1207.47,
+"texto": "finalmente",
+"nivel_fala_dB": -17.1,
+"voz_fundo_dB": -3.5,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+},
+{
+"inicio": 1213.71,
+"fim": 1217.75,
+"texto": "Chegamos no fim da Laramba Aqui na Praça da Catalunya",
+"nivel_fala_dB": -16.8,
+"voz_fundo_dB": 6.3,
+"prob_media": 0.91,
+"acordo_modelos": 0.9,
+"n_palavras": 10
+},
+{
+"inicio": 1218.65,
+"fim": 1224.21,
+"texto": "Depois de uma longa Caminhada, uma longa jornada Em várias lojas Pra conhecer",
+"nivel_fala_dB": -15.5,
+"voz_fundo_dB": 13.9,
+"prob_media": 0.98,
+"acordo_modelos": 0.92,
+"n_palavras": 13
+},
+{
+"inicio": 1225.59,
+"fim": 1226.43,
+"texto": "Chegamos aqui",
+"nivel_fala_dB": -15.9,
+"voz_fundo_dB": 13.9,
+"prob_media": 1.0,
+"acordo_modelos": 1.0,
+"n_palavras": 2
+},
+{
+"inicio": 1228.05,
+"fim": 1231.59,
+"texto": "Eu acho que pode ser chamada também De Praça dos Pombos muito famoso né eu",
+"nivel_fala_dB": -15.2,
+"voz_fundo_dB": 13.3,
+"prob_media": 0.79,
+"acordo_modelos": 0.8,
+"n_palavras": 15
+},
+{
+"inicio": 1232.33,
+"fim": 1235.21,
+"texto": "nunca vi tanto povo da minha vida é",
+"nivel_fala_dB": -14.7,
+"voz_fundo_dB": 4.7,
+"prob_media": 0.81,
+"acordo_modelos": 0.62,
+"n_palavras": 8
+},
+{
+"inicio": 1252.74,
+"fim": 1255.76,
+"texto": "o nosso último ponto turístico do dia",
+"nivel_fala_dB": -17.1,
+"voz_fundo_dB": 2.0,
+"prob_media": 0.66,
+"acordo_modelos": 1.0,
+"n_palavras": 7
+},
+{
+"inicio": 1256.32,
+"fim": 1261.06,
+"texto": "a casa batom um dos mais famosos de belgique a",
+"nivel_fala_dB": -22.7,
+"voz_fundo_dB": 0.0,
+"prob_media": 0.61,
+"acordo_modelos": 0.8,
+"n_palavras": 10
+},
+{
+"inicio": 1261.6,
+"fim": 1267.6,
+"texto": "casa batom e o parque igual são mais famosos e a Sagrada Família né é verdade eu sou um top",
+"nivel_fala_dB": -18.8,
+"voz_fundo_dB": null,
+"prob_media": 0.72,
+"acordo_modelos": 0.9,
+"n_palavras": 20
+},
+{
+"inicio": 1267.6,
+"fim": 1273.1,
+"texto": "trader mais famosos de belgique é uma casa que tem uma arquitetura diferente né ela parece que foi feita assim,",
+"nivel_fala_dB": -17.7,
+"voz_fundo_dB": 6.3,
+"prob_media": 0.72,
+"acordo_modelos": 0.8,
+"n_palavras": 20
+},
+{
+"inicio": 1273.84,
+"fim": 1279.66,
+"texto": "estirada no mar, oceano, e várias pessoas enxergam várias coisas nessas janelas",
+"nivel_fala_dB": -16.9,
+"voz_fundo_dB": 7.3,
+"prob_media": 0.91,
+"acordo_modelos": 0.92,
+"n_palavras": 12
+},
+{
+"inicio": 1279.66,
+"fim": 1283.82,
+"texto": "dela aí. Eu enxergo máscara de carnaval, eu não sei o que você vê, eu já ouvi falar de tubarão,",
+"nivel_fala_dB": -14.9,
+"voz_fundo_dB": 6.4,
+"prob_media": 0.91,
+"acordo_modelos": 0.95,
+"n_palavras": 20
+},
+{
+"inicio": 1284.4,
+"fim": 1289.64,
+"texto": "caveira, isso pra mim parece uma máscara de carnaval, mas é isso aí, mais um ponto aí pra gente.",
+"nivel_fala_dB": -15.0,
+"voz_fundo_dB": 4.9,
+"prob_media": 0.92,
+"acordo_modelos": 1.0,
+"n_palavras": 19
+},
+{
+"inicio": 1299.88,
+"fim": 1305.68,
+"texto": "Estamos saindo aqui da Casa Badu e o legal é que ela tem um passeio dentro dela,",
+"nivel_fala_dB": -16.2,
+"voz_fundo_dB": 11.1,
+"prob_media": 0.93,
+"acordo_modelos": 0.94,
+"n_palavras": 17
+},
+{
+"inicio": 1305.78,
+"fim": 1309.64,
+"texto": "não sei exatamente quanto custa, acho que é em torno de 15 euros por pessoa,",
+"nivel_fala_dB": -15.2,
+"voz_fundo_dB": 9.3,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 15
+},
+{
+"inicio": 1311.28,
+"fim": 1313.22,
+"texto": "mas pra quem gosta vale né",
+"nivel_fala_dB": -11.5,
+"voz_fundo_dB": 13.1,
+"prob_media": 0.68,
+"acordo_modelos": 1.0,
+"n_palavras": 6
+},
+{
+"inicio": 1313.78,
+"fim": 1315.96,
+"texto": "mas pra gente não",
+"nivel_fala_dB": -16.1,
+"voz_fundo_dB": 8.1,
+"prob_media": 0.72,
+"acordo_modelos": 0.75,
+"n_palavras": 4
+},
+{
+"inicio": 1316.58,
+"fim": 1321.88,
+"texto": "é muito nossa praia acaba não valendo a pena e entra naqueles pontos turísticos que é",
+"nivel_fala_dB": -13.2,
+"voz_fundo_dB": 12.2,
+"prob_media": 0.92,
+"acordo_modelos": 1.0,
+"n_palavras": 16
+},
+{
+"inicio": 1321.88,
+"fim": 1324.24,
+"texto": "legal lindo a gente vê de fora",
+"nivel_fala_dB": -12.8,
+"voz_fundo_dB": 13.5,
+"prob_media": 0.87,
+"acordo_modelos": 1.0,
+"n_palavras": 7
+},
+{
+"inicio": 1324.92,
+"fim": 1327.08,
+"texto": "mas pra gente não vale a pena entrar",
+"nivel_fala_dB": -16.3,
+"voz_fundo_dB": 9.7,
+"prob_media": 0.97,
+"acordo_modelos": 1.0,
+"n_palavras": 8
+},
+{
+"inicio": 1327.94,
+"fim": 1333.8,
+"texto": "e na mesma avenida que estava a gente acabou passando por mais uma obra de gaudí e dessa",
+"nivel_fala_dB": -13.3,
+"voz_fundo_dB": 13.0,
+"prob_media": 0.9,
+"acordo_modelos": 1.0,
+"n_palavras": 18
+},
+{
+"inicio": 1333.8,
+"fim": 1339.7,
+"texto": "vez foi a casa milá ela também aqui atrás a gente achou que não ia passar mas A gente estava caminhando na avenida Passeio de",
+"nivel_fala_dB": -14.2,
+"voz_fundo_dB": null,
+"prob_media": 0.82,
+"acordo_modelos": 0.92,
+"n_palavras": 25
+},
+{
+"inicio": 1339.7,
+"fim": 1345.7,
+"texto": "Grácia Que inclusive é uma avenida que tem várias lojas de grife Tem Hugo Boys, Cartier, Versace,",
+"nivel_fala_dB": -14.8,
+"voz_fundo_dB": 15.9,
+"prob_media": 0.89,
+"acordo_modelos": 1.0,
+"n_palavras": 17
+},
+{
+"inicio": 1345.84,
+"fim": 1347.68,
+"texto": "Fendi, Longchamp, Prada",
+"nivel_fala_dB": -17.1,
+"voz_fundo_dB": 13.7,
+"prob_media": 0.98,
+"acordo_modelos": 1.0,
+"n_palavras": 3
+},
+{
+"inicio": 1348.26,
+"fim": 1349.8,
+"texto": "Tem várias lojas aqui",
+"nivel_fala_dB": -12.6,
+"voz_fundo_dB": 18.3,
+"prob_media": 1.0,
+"acordo_modelos": 1.0,
+"n_palavras": 4
+},
+{
+"inicio": 1350.54,
+"fim": 1356.54,
+"texto": "Então você que tem dinheiro, você que tem bala na agulha Pode vir pra cá que você vai aproveitar A",
+"nivel_fala_dB": -15.1,
+"voz_fundo_dB": 15.8,
+"prob_media": 0.97,
+"acordo_modelos": 0.95,
+"n_palavras": 20
+},
+{
+"inicio": 1356.54,
+"fim": 1362.48,
+"texto": "gente vai dar mais um rolê aqui, esperar anoitecer Que está bem no final de tarde Vai procurar alguma coisa pra comer E vamos",
+"nivel_fala_dB": -13.4,
+"voz_fundo_dB": null,
+"prob_media": 0.96,
+"acordo_modelos": 0.96,
+"n_palavras": 24
+},
+{
+"inicio": 1362.48,
+"fim": 1367.0,
+"texto": "descansar Porque amanhã tem o maior ponto turístico dessa cidade",
+"nivel_fala_dB": -14.1,
+"voz_fundo_dB": 12.8,
+"prob_media": 0.98,
+"acordo_modelos": 1.0,
+"n_palavras": 10
+},
+{
+"inicio": 1379.53,
+"fim": 1385.27,
+"texto": "Viemos ao nosso restaurante da Jota, não deu nem tempo da gente gravar antes E a comida já",
+"nivel_fala_dB": -15.2,
+"voz_fundo_dB": 12.3,
+"prob_media": 0.85,
+"acordo_modelos": 1.0,
+"n_palavras": 18
+},
+{
+"inicio": 1385.27,
+"fim": 1391.25,
+"texto": "chegou, foi muito rápido O nome do restaurante é Pizzaria do Éden E a gente vai provar a pizza agora desse tal Éden aí,",
+"nivel_fala_dB": -15.0,
+"voz_fundo_dB": null,
+"prob_media": 0.92,
+"acordo_modelos": 1.0,
+"n_palavras": 24
+},
+{
+"inicio": 1391.25,
+"fim": 1396.01,
+"texto": "pra ver se é bom mesmo Vou provar agora, eu pedi a Diabola, a Má pediu a Marguerita Vamos ver se é bom",
+"nivel_fala_dB": -15.5,
+"voz_fundo_dB": 5.6,
+"prob_media": 0.89,
+"acordo_modelos": 0.96,
+"n_palavras": 23
+},
+{
+"inicio": 1402.88,
+"fim": 1403.34,
+"texto": "Tô com",
+"nivel_fala_dB": -14.5,
+"voz_fundo_dB": 7.8,
+"prob_media": 0.62,
+"acordo_modelos": 0.0,
+"n_palavras": 2
+},
+{
+"inicio": 1411.05,
+"fim": 1412.21,
+"texto": "essa caixa aqui pra viagem",
+"nivel_fala_dB": -32.1,
+"voz_fundo_dB": 6.5,
+"prob_media": 0.97,
+"acordo_modelos": 0.0,
+"n_palavras": 5
+},
+{
+"inicio": 1413.33,
+"fim": 1417.29,
+"texto": "E é isso, viemos mais cedo hoje, deve ser umas 8h30 aqui ainda",
+"nivel_fala_dB": -32.6,
+"voz_fundo_dB": 14.1,
+"prob_media": 0.96,
+"acordo_modelos": 0.92,
+"n_palavras": 13
+},
+{
+"inicio": 1417.79,
+"fim": 1422.97,
+"texto": "Mas a gente vai descansar, porque amanhã o dia vai ser longo também A gente tá bem cansado de ontem e de hoje,",
+"nivel_fala_dB": -32.7,
+"voz_fundo_dB": -8.2,
+"prob_media": 0.87,
+"acordo_modelos": 0.96,
+"n_palavras": 23
+},
+{
+"inicio": 1423.01,
+"fim": 1424.61,
+"texto": "então é isso, até amanhã!",
+"nivel_fala_dB": -34.8,
+"voz_fundo_dB": -96.2,
+"prob_media": 0.97,
+"acordo_modelos": 1.0,
+"n_palavras": 5
+},
+{
+"inicio": 1435.8,
+"fim": 1441.8,
+"texto": "Acabamos de entrar aqui na Sagrada Família e logo de cara já demos com a primeira curiosidade que cada torre",
+"nivel_fala_dB": -20.8,
+"voz_fundo_dB": 8.5,
+"prob_media": 0.9,
+"acordo_modelos": 0.95,
+"n_palavras": 20
+},
+{
+"inicio": 1441.8,
+"fim": 1442.88,
+"texto": "dela é dedicada a alguém.",
+"nivel_fala_dB": -19.9,
+"voz_fundo_dB": 10.7,
+"prob_media": 0.95,
+"acordo_modelos": 1.0,
+"n_palavras": 5
+},
+{
+"inicio": 1443.44,
+"fim": 1448.9,
+"texto": "A maior delas é dedicada a Jesus Cristo, porque é mais próxima ao céu, a segunda é a Virgem Maria.",
+"nivel_fala_dB": -19.3,
+"voz_fundo_dB": 10.8,
+"prob_media": 0.91,
+"acordo_modelos": 1.0,
+"n_palavras": 20
+},
+{
+"inicio": 1449.52,
+"fim": 1455.24,
+"texto": "É muito grande, né? É enorme, enorme, enorme. E cheio de detalhes também. Muito cheio de",
+"nivel_fala_dB": -20.8,
+"voz_fundo_dB": 7.5,
+"prob_media": 0.85,
+"acordo_modelos": 0.94,
+"n_palavras": 16
+},
+{
+"inicio": 1455.24,
+"fim": 1461.06,
+"texto": "detalhes. E muito cheio de gente também. Muito cheio de gente, pra quem tem curiosidade, são 9h30 da manhã e tá muito cedo. E tá",
+"nivel_fala_dB": -19.1,
+"voz_fundo_dB": 10.3,
+"prob_media": 0.85,
+"acordo_modelos": 0.88,
+"n_palavras": 25
+},
+{
+"inicio": 1461.06,
+"fim": 1462.26,
+"texto": "muito cheio, olha isso aqui.",
+"nivel_fala_dB": -20.9,
+"voz_fundo_dB": 8.2,
+"prob_media": 0.82,
+"acordo_modelos": 1.0,
+"n_palavras": 5
+},
+{
+"inicio": 1465.66,
+"fim": 1466.18,
+"texto": "Dentro",
+"nivel_fala_dB": -20.6,
+"voz_fundo_dB": 4.2,
+"prob_media": 0.89,
+"acordo_modelos": 0.0,
+"n_palavras": 1
+},
+{
+"inicio": 1476.93,
+"fim": 1480.45,
+"texto": "da Sagrada Família, falando bem baixinho, porque aqui é um lugar espiritual.",
+"nivel_fala_dB": -22.1,
+"voz_fundo_dB": -4.4,
+"prob_media": 0.96,
+"acordo_modelos": 1.0,
+"n_palavras": 12
+},
+{
+"inicio": 1482.11,
+"fim": 1488.01,
+"texto": "Mas essa música que eu tô voando no fundo, ela toca de tempos em tempos aqui. Isso foi projetado",
+"nivel_fala_dB": -20.2,
+"voz_fundo_dB": 2.5,
+"prob_media": 0.86,
+"acordo_modelos": 0.79,
+"n_palavras": 19
+},
+{
+"inicio": 1488.01,
+"fim": 1492.49,
+"texto": "por Valdir também, faz parte da experiência do local.",
+"nivel_fala_dB": -20.3,
+"voz_fundo_dB": -1.0,
+"prob_media": 0.92,
+"acordo_modelos": 1.0,
+"n_palavras": 9
+},
+{
+"inicio": 1493.51,
+"fim": 1499.41,
+"texto": "Inclusive a própria arquitetura, ela foi feita pra que os sons ecoem pelas",
+"nivel_fala_dB": -21.9,
+"voz_fundo_dB": -6.3,
+"prob_media": 0.83,
+"acordo_modelos": 0.92,
+"n_palavras": 13
+},
+{
+"inicio": 1499.41,
+"fim": 1504.91,
+"texto": "colunas E aí se espalha por toda a igreja A igreja não foi projetada como floresta",
+"nivel_fala_dB": -21.4,
+"voz_fundo_dB": -9.4,
+"prob_media": 0.81,
+"acordo_modelos": 0.88,
+"n_palavras": 16
+},
+{
+"inicio": 1504.91,
+"fim": 1507.33,
+"texto": "Então as pilastras dela",
+"nivel_fala_dB": -20.5,
+"voz_fundo_dB": -4.1,
+"prob_media": 0.78,
+"acordo_modelos": 1.0,
+"n_palavras": 4
+},
+{
+"inicio": 1508.31,
+"fim": 1513.95,
+"texto": "Elas tem uma pilastra principal E várias que se rubificam Como uma",
+"nivel_fala_dB": -20.4,
+"voz_fundo_dB": -3.8,
+"prob_media": 0.77,
+"acordo_modelos": 0.92,
+"n_palavras": 12
+},
+{
+"inicio": 1513.95,
+"fim": 1519.03,
+"texto": "árvore E elas se encontram No teto da igreja Surreal aqui",
+"nivel_fala_dB": -21.4,
+"voz_fundo_dB": -2.4,
+"prob_media": 0.91,
+"acordo_modelos": 1.0,
+"n_palavras": 11
+},
+{
+"inicio": 1550.9,
+"fim": 1556.9,
+"texto": "Acabamos de sair daqui Da Sagrada Família Surreal o passeio Recomendo demais mais,",
+"nivel_fala_dB": -19.7,
+"voz_fundo_dB": -2.0,
+"prob_media": 0.9,
+"acordo_modelos": 0.92,
+"n_palavras": 13
+},
+{
+"inicio": 1557.16,
+"fim": 1562.12,
+"texto": "se programem, abre as vendas um mês antes, foi vinte e cinco euros por pessoa,",
+"nivel_fala_dB": -18.1,
+"voz_fundo_dB": 12.5,
+"prob_media": 0.96,
+"acordo_modelos": 0.8,
+"n_palavras": 15
+},
+{
+"inicio": 1562.76,
+"fim": 1568.76,
+"texto": "mas show de bola, velho, muito, muito, muito bonito, tem um museu lá dentro também, tem muita coisa pra",
+"nivel_fala_dB": -19.1,
+"voz_fundo_dB": 18.5,
+"prob_media": 0.97,
+"acordo_modelos": 0.95,
+"n_palavras": 19
+},
+{
+"inicio": 1568.76,
+"fim": 1570.88,
+"texto": "fazer, muita coisa mesmo, surreal, velho.",
+"nivel_fala_dB": -24.4,
+"voz_fundo_dB": 9.1,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 6
+},
+{
+"inicio": 1587.83,
+"fim": 1593.33,
+"texto": "Depois da nossa visita, Sagrada Família, que é bem aqui, na frente, eu",
+"nivel_fala_dB": -19.2,
+"voz_fundo_dB": -103.0,
+"prob_media": 0.93,
+"acordo_modelos": 1.0,
+"n_palavras": 13
+},
+{
+"inicio": 1593.33,
+"fim": 1599.11,
+"texto": "mostrei a ele que aqui tinha um museu do Barcelona, que eu vim da última vez, é um",
+"nivel_fala_dB": -20.2,
+"voz_fundo_dB": null,
+"prob_media": 0.98,
+"acordo_modelos": 1.0,
+"n_palavras": 18
+},
+{
+"inicio": 1599.11,
+"fim": 1605.01,
+"texto": "museu gratuito, aí Aí vocês já sabem, né? Ele ficou louco, quis entrar e tá aqui.",
+"nivel_fala_dB": -19.8,
+"voz_fundo_dB": 8.3,
+"prob_media": 0.87,
+"acordo_modelos": 1.0,
+"n_palavras": 16
+},
+{
+"inicio": 1618.7,
+"fim": 1623.98,
+"texto": "Nosso último dia aqui e eu tenho certeza que eu vou sentir falta de ficar andando aqui por essas ruas.",
+"nivel_fala_dB": -16.9,
+"voz_fundo_dB": 6.8,
+"prob_media": 0.92,
+"acordo_modelos": 1.0,
+"n_palavras": 20
+},
+{
+"inicio": 1625.0,
+"fim": 1626.9,
+"texto": "Agora a gente tá indo ali comer.",
+"nivel_fala_dB": -14.6,
+"voz_fundo_dB": 12.3,
+"prob_media": 0.96,
+"acordo_modelos": 0.86,
+"n_palavras": 7
+},
+{
+"inicio": 1627.52,
+"fim": 1628.28,
+"texto": "Olha lá atrás.",
+"nivel_fala_dB": -17.7,
+"voz_fundo_dB": 9.5,
+"prob_media": 0.93,
+"acordo_modelos": 1.0,
+"n_palavras": 3
+},
+{
+"inicio": 1629.14,
+"fim": 1630.4,
+"texto": "A sagradora da família.",
+"nivel_fala_dB": -17.7,
+"voz_fundo_dB": 9.0,
+"prob_media": 0.72,
+"acordo_modelos": 0.5,
+"n_palavras": 4
+},
+{
+"inicio": 1631.26,
+"fim": 1634.3,
+"texto": "E aí eu falei com ela, tem que comer de ônibus e tem que comer andando.",
+"nivel_fala_dB": -12.8,
+"voz_fundo_dB": 13.7,
+"prob_media": 0.93,
+"acordo_modelos": 1.0,
+"n_palavras": 16
+},
+{
+"inicio": 1634.94,
+"fim": 1637.32,
+"texto": "Falei, mas a gente vai andando porque eu quero andar.",
+"nivel_fala_dB": -12.4,
+"voz_fundo_dB": 12.9,
+"prob_media": 0.98,
+"acordo_modelos": 0.9,
+"n_palavras": 10
+},
+{
+"inicio": 1638.18,
+"fim": 1641.16,
+"texto": "Quero gastar a minha perna aqui, que vale muito a pena.",
+"nivel_fala_dB": -15.7,
+"voz_fundo_dB": 7.4,
+"prob_media": 0.9,
+"acordo_modelos": 1.0,
+"n_palavras": 11
+},
+{
+"inicio": 1650.34,
+"fim": 1656.16,
+"texto": "E aí, chegamos aqui na churreria Trebol, que a gente já queria comer um churros, e aí a gente",
+"nivel_fala_dB": -24.8,
+"voz_fundo_dB": -98.4,
+"prob_media": 0.87,
+"acordo_modelos": 0.95,
+"n_palavras": 19
+},
+{
+"inicio": 1656.16,
+"fim": 1659.86,
+"texto": "pediu um desses normais que vem com chocolate quente, que é o tradicional daqui.",
+"nivel_fala_dB": -23.3,
+"voz_fundo_dB": 7.3,
+"prob_media": 0.89,
+"acordo_modelos": 1.0,
+"n_palavras": 14
+},
+{
+"inicio": 1660.94,
+"fim": 1666.78,
+"texto": "Esse daqui é de Kinder Bueno, né? E a gente pediu uns salgadinhos aqui porque a gente tava com fome",
+"nivel_fala_dB": -20.7,
+"voz_fundo_dB": 10.2,
+"prob_media": 0.92,
+"acordo_modelos": 0.95,
+"n_palavras": 20
+},
+{
+"inicio": 1666.78,
+"fim": 1672.68,
+"texto": "também. São dois de peixe e tem dois croquetes de carne pra gente provar. Dois de bacalhau, né? É, dois de bacalhau e dois",
+"nivel_fala_dB": -18.3,
+"voz_fundo_dB": 9.4,
+"prob_media": 0.93,
+"acordo_modelos": 0.92,
+"n_palavras": 24
+},
+{
+"inicio": 1672.68,
+"fim": 1673.66,
+"texto": "de carne pra gente provar.",
+"nivel_fala_dB": -22.5,
+"voz_fundo_dB": 4.1,
+"prob_media": 1.0,
+"acordo_modelos": 0.4,
+"n_palavras": 5
+},
+{
+"inicio": 1698.02,
+"fim": 1702.88,
+"texto": "Comemos o churros e hoje estamos mais soltos, porque a gente já matou quase tudo que a gente queria ver.",
+"nivel_fala_dB": -14.3,
+"voz_fundo_dB": 8.1,
+"prob_media": 0.95,
+"acordo_modelos": 0.9,
+"n_palavras": 20
+},
+{
+"inicio": 1704.04,
+"fim": 1709.76,
+"texto": "Só temos planos para mais tarde. É hora marcada, três e meia, a partir do zero. É,",
+"nivel_fala_dB": -16.7,
+"voz_fundo_dB": 6.4,
+"prob_media": 0.76,
+"acordo_modelos": 0.76,
+"n_palavras": 17
+},
+{
+"inicio": 1709.86,
+"fim": 1715.28,
+"texto": "e enquanto a gente não vai pra lá... A gente vai comer. A gente vai comer. Vamos fazer um tour",
+"nivel_fala_dB": -18.0,
+"voz_fundo_dB": null,
+"prob_media": 0.91,
+"acordo_modelos": 0.95,
+"n_palavras": 20
+},
+{
+"inicio": 1715.28,
+"fim": 1721.22,
+"texto": "gastronômico com as comidas típicas aqui de Barcelona. Já foi churros e agora vamos comer",
+"nivel_fala_dB": -16.9,
+"voz_fundo_dB": 11.6,
+"prob_media": 0.95,
+"acordo_modelos": 1.0,
+"n_palavras": 15
+},
+{
+"inicio": 1721.22,
+"fim": 1724.48,
+"texto": "uma saltenha. Empanada. Empanada. Vamos nessa.",
+"nivel_fala_dB": -19.0,
+"voz_fundo_dB": 6.0,
+"prob_media": 0.9,
+"acordo_modelos": 1.0,
+"n_palavras": 6
+},
+{
+"inicio": 1735.2,
+"fim": 1740.32,
+"texto": "Pegamos as nossas empanadas, voltamos aqui no bairro Góes. Essa é uma fábrica.",
+"nivel_fala_dB": -20.6,
+"voz_fundo_dB": 4.7,
+"prob_media": 0.84,
+"acordo_modelos": 0.85,
+"n_palavras": 13
+},
+{
+"inicio": 1740.32,
+"fim": 1745.4,
+"texto": "Elas são de uma loja argentina, mas são daqui",
+"nivel_fala_dB": -20.2,
+"voz_fundo_dB": null,
+"prob_media": 0.88,
+"acordo_modelos": 1.0,
+"n_palavras": 9
+},
+{
+"inicio": 1745.4,
+"fim": 1746.34,
+"texto": "e",
+"nivel_fala_dB": -25.7,
+"voz_fundo_dB": null,
+"prob_media": 0.29,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+},
+{
+"inicio": 1746.94,
+"fim": 1752.88,
+"texto": "a nota estava muito boa no Super Advisor, então a gente foi lá provar. Ela pediu de... o que é",
+"nivel_fala_dB": -20.2,
+"voz_fundo_dB": 0.3,
+"prob_media": 0.78,
+"acordo_modelos": 0.95,
+"n_palavras": 20
+},
+{
+"inicio": 1752.88,
+"fim": 1754.6,
+"texto": "mesmo? Foi de frango,",
+"nivel_fala_dB": -21.8,
+"voz_fundo_dB": -3.8,
+"prob_media": 0.72,
+"acordo_modelos": 0.5,
+"n_palavras": 4
+},
+{
+"inicio": 1755.26,
+"fim": 1760.46,
+"texto": "limão, leite de coco e... não lembro o resto.",
+"nivel_fala_dB": -23.1,
+"voz_fundo_dB": 2.7,
+"prob_media": 0.84,
+"acordo_modelos": 0.78,
+"n_palavras": 9
+},
+{
+"inicio": 1760.82,
+"fim": 1763.46,
+"texto": "E eu pedi de camarão.",
+"nivel_fala_dB": -17.6,
+"voz_fundo_dB": 9.4,
+"prob_media": 0.95,
+"acordo_modelos": 1.0,
+"n_palavras": 5
+},
+{
+"inicio": 1768.54,
+"fim": 1769.68,
+"texto": "Boa? Não",
+"nivel_fala_dB": -20.1,
+"voz_fundo_dB": 3.3,
+"prob_media": 0.35,
+"acordo_modelos": 0.0,
+"n_palavras": 2
+},
+{
+"inicio": 1771.95,
+"fim": 1772.57,
+"texto": "é quebrada.",
+"nivel_fala_dB": -20.8,
+"voz_fundo_dB": 1.9,
+"prob_media": 0.61,
+"acordo_modelos": 0.0,
+"n_palavras": 2
+},
+{
+"inicio": 1774.93,
+"fim": 1775.57,
+"texto": "Boa mesmo.",
+"nivel_fala_dB": -19.3,
+"voz_fundo_dB": 4.5,
+"prob_media": 0.76,
+"acordo_modelos": 0.0,
+"n_palavras": 2
+},
+{
+"inicio": 1779.82,
+"fim": 1780.86,
+"texto": "É trocante, hein?",
+"nivel_fala_dB": -22.6,
+"voz_fundo_dB": 0.8,
+"prob_media": 0.77,
+"acordo_modelos": 0.67,
+"n_palavras": 3
+},
+{
+"inicio": 1781.86,
+"fim": 1782.6,
+"texto": "É boa.",
+"nivel_fala_dB": -20.9,
+"voz_fundo_dB": 4.3,
+"prob_media": 0.66,
+"acordo_modelos": 1.0,
+"n_palavras": 2
+},
+{
+"inicio": 1784.1,
+"fim": 1790.08,
+"texto": "Nós estamos aqui no Parque Igual, mais um daqueles lugares que a gente vai falar de Gaudí de novo, porque",
+"nivel_fala_dB": -18.3,
+"voz_fundo_dB": 10.0,
+"prob_media": 0.96,
+"acordo_modelos": 1.0,
+"n_palavras": 20
+},
+{
+"inicio": 1790.08,
+"fim": 1791.26,
+"texto": "foi ele que projetou isso aqui.",
+"nivel_fala_dB": -22.7,
+"voz_fundo_dB": 11.6,
+"prob_media": 1.0,
+"acordo_modelos": 1.0,
+"n_palavras": 6
+},
+{
+"inicio": 1791.78,
+"fim": 1797.38,
+"texto": "E em Barcelona é praticamente de Gaudí. E aí é praticamente nosso último ponto",
+"nivel_fala_dB": -21.0,
+"voz_fundo_dB": 13.5,
+"prob_media": 0.88,
+"acordo_modelos": 0.93,
+"n_palavras": 14
+},
+{
+"inicio": 1797.38,
+"fim": 1803.32,
+"texto": "turístico aqui na cidade, e a gente vai fechar da mesma forma que a gente abriu, que foi pro Gaudí. então",
+"nivel_fala_dB": -22.8,
+"voz_fundo_dB": 18.5,
+"prob_media": 0.93,
+"acordo_modelos": 0.95,
+"n_palavras": 21
+},
+{
+"inicio": 1803.32,
+"fim": 1804.68,
+"texto": "vamos nessa",
+"nivel_fala_dB": -29.2,
+"voz_fundo_dB": 8.0,
+"prob_media": 0.79,
+"acordo_modelos": 1.0,
+"n_palavras": 2
+},
+{
+"inicio": 1826.39,
+"fim": 1832.25,
+"texto": "aqui é o lugar que eles usavam pra descansar, por isso que tem um monte de banquinho de pedra, lá",
+"nivel_fala_dB": -24.1,
+"voz_fundo_dB": 8.1,
+"prob_media": 0.9,
+"acordo_modelos": 0.9,
+"n_palavras": 20
+},
+{
+"inicio": 1832.25,
+"fim": 1833.07,
+"texto": "embaixo também tem",
+"nivel_fala_dB": -19.9,
+"voz_fundo_dB": 15.9,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 3
+},
+{
+"inicio": 1833.77,
+"fim": 1834.77,
+"texto": "tem uma vista",
+"nivel_fala_dB": -23.8,
+"voz_fundo_dB": 11.7,
+"prob_media": 0.95,
+"acordo_modelos": 1.0,
+"n_palavras": 3
+},
+{
+"inicio": 1836.61,
+"fim": 1838.13,
+"texto": "animal de Barcelona",
+"nivel_fala_dB": -18.9,
+"voz_fundo_dB": 14.9,
+"prob_media": 0.98,
+"acordo_modelos": 1.0,
+"n_palavras": 3
+},
+{
+"inicio": 1873.74,
+"fim": 1879.5,
+"texto": "pegamos agora a nação da hipóstola o interessante dela é que todas essas colunas foram projetadas por Valdir",
+"nivel_fala_dB": -21.7,
+"voz_fundo_dB": 0.7,
+"prob_media": 0.91,
+"acordo_modelos": 0.83,
+"n_palavras": 18
+},
+{
+"inicio": 1879.5,
+"fim": 1884.88,
+"texto": "isso mostra um pouco do lado engenheiro dele, ele projetou pra que a água da chuva que está em cima da",
+"nivel_fala_dB": -20.6,
+"voz_fundo_dB": null,
+"prob_media": 0.95,
+"acordo_modelos": 0.95,
+"n_palavras": 21
+},
+{
+"inicio": 1884.88,
+"fim": 1890.56,
+"texto": "praça que a gente estava agora, a praça de la natura Ela escorra por dentro de tubos que tem dentro das",
+"nivel_fala_dB": -20.6,
+"voz_fundo_dB": null,
+"prob_media": 0.88,
+"acordo_modelos": 1.0,
+"n_palavras": 21
+},
+{
+"inicio": 1890.56,
+"fim": 1896.5,
+"texto": "colunas E vai para o armazenamento de água que está embaixo da gente aqui E essa água é usada para irrigar todo",
+"nivel_fala_dB": -19.7,
+"voz_fundo_dB": 13.8,
+"prob_media": 0.9,
+"acordo_modelos": 0.95,
+"n_palavras": 22
+},
+{
+"inicio": 1896.5,
+"fim": 1898.98,
+"texto": "o parque que é construído aqui",
+"nivel_fala_dB": -23.5,
+"voz_fundo_dB": 6.6,
+"prob_media": 0.93,
+"acordo_modelos": 0.83,
+"n_palavras": 6
+},
+{
+"inicio": 1915.88,
+"fim": 1917.56,
+"texto": "Acabamos de sair aqui do Parque Güell",
+"nivel_fala_dB": -14.7,
+"voz_fundo_dB": 16.3,
+"prob_media": 0.93,
+"acordo_modelos": 0.86,
+"n_palavras": 7
+},
+{
+"inicio": 1918.86,
+"fim": 1923.76,
+"texto": "E fechamos todos os pontos turísticos que a gente queria conhecer aqui em Barcelona",
+"nivel_fala_dB": -16.1,
+"voz_fundo_dB": 16.9,
+"prob_media": 0.98,
+"acordo_modelos": 0.86,
+"n_palavras": 14
+},
+{
+"inicio": 1925.2,
+"fim": 1927.9,
+"texto": "Eu nunca tinha vindo aqui, ela já tinha vindo, eu achei surreal",
+"nivel_fala_dB": -13.0,
+"voz_fundo_dB": 18.2,
+"prob_media": 0.99,
+"acordo_modelos": 1.0,
+"n_palavras": 12
+},
+{
+"inicio": 1928.78,
+"fim": 1933.0,
+"texto": "De verdade, é uma cidade... Eu não sei ainda ainda mas",
+"nivel_fala_dB": -16.4,
+"voz_fundo_dB": 15.7,
+"prob_media": 0.83,
+"acordo_modelos": 1.0,
+"n_palavras": 11
+},
+{
+"inicio": 1934.12,
+"fim": 1940.04,
+"texto": "surreal surreal surreal é só a primeira das cidades que a gente vai conhecer aqui na Europa nesse período de tempo",
+"nivel_fala_dB": -16.3,
+"voz_fundo_dB": 15.7,
+"prob_media": 0.93,
+"acordo_modelos": 1.0,
+"n_palavras": 21
+},
+{
+"inicio": 1940.04,
+"fim": 1943.16,
+"texto": "que a gente vai passar aqui estamos voltando para o centro agora vamos nessa",
+"nivel_fala_dB": -15.5,
+"voz_fundo_dB": 13.7,
+"prob_media": 0.92,
+"acordo_modelos": 1.0,
+"n_palavras": 14
+},
+{
+"inicio": 1944.5,
+"fim": 1949.8,
+"texto": "chegamos um bar aqui agora chamado Tapa Tapa a gente veio para cá para tomar uma cerveja e",
+"nivel_fala_dB": -20.1,
+"voz_fundo_dB": 8.7,
+"prob_media": 0.8,
+"acordo_modelos": 0.94,
+"n_palavras": 18
+},
+{
+"inicio": 1949.8,
+"fim": 1955.74,
+"texto": "comer umas tapas enquanto não chega a hora do jantar depois a gente vai dar mais um e provavelmente",
+"nivel_fala_dB": -19.6,
+"voz_fundo_dB": 15.1,
+"prob_media": 0.83,
+"acordo_modelos": 0.68,
+"n_palavras": 19
+},
+{
+"inicio": 1955.74,
+"fim": 1956.56,
+"texto": "comer em outro lugar.",
+"nivel_fala_dB": -17.7,
+"voz_fundo_dB": 13.7,
+"prob_media": 0.87,
+"acordo_modelos": 1.0,
+"n_palavras": 4
+},
+{
+"inicio": 1978.62,
+"fim": 1984.1,
+"texto": "Viemos agora aqui na cervejaria ser montaditos e eu pedi uns montaditos pra provar porque hoje é",
+"nivel_fala_dB": -14.2,
+"voz_fundo_dB": 14.4,
+"prob_media": 0.82,
+"acordo_modelos": 0.94,
+"n_palavras": 17
+},
+{
+"inicio": 1984.1,
+"fim": 1989.9,
+"texto": "quarta-feira e quarta de julho então é um euro cada montadito. Fica a dica aí pra quem vier pra cá. E",
+"nivel_fala_dB": -14.5,
+"voz_fundo_dB": 1.8,
+"prob_media": 0.77,
+"acordo_modelos": 0.62,
+"n_palavras": 21
+},
+{
+"inicio": 1989.9,
+"fim": 1993.36,
+"texto": "eu pedi uma cerveja pra acompanhar porque eu não posso deixar de tomar a minha cerveja.",
+"nivel_fala_dB": -14.5,
+"voz_fundo_dB": 2.3,
+"prob_media": 0.92,
+"acordo_modelos": 0.81,
+"n_palavras": 16
+},
+{
+"inicio": 1995.56,
+"fim": 1996.04,
+"texto": "É",
+"nivel_fala_dB": -17.1,
+"voz_fundo_dB": -3.1,
+"prob_media": 0.56,
+"acordo_modelos": 0.0,
+"n_palavras": 1
+},
+{
+"inicio": 2001.03,
+"fim": 2004.13,
+"texto": "pessoal, já estamos no aeroporto de Barcelona.",
+"nivel_fala_dB": -25.1,
+"voz_fundo_dB": -100.1,
+"prob_media": 0.94,
+"acordo_modelos": 1.0,
+"n_palavras": 7
+},
+{
+"inicio": 2005.93,
+"fim": 2007.79,
+"texto": "Infelizmente, foi bom enquanto durou.",
+"nivel_fala_dB": -23.4,
+"voz_fundo_dB": 13.6,
+"prob_media": 0.97,
+"acordo_modelos": 1.0,
+"n_palavras": 5
+},
+{
+"inicio": 2008.43,
+"fim": 2014.37,
+"texto": "Cidade surreal Energia muito boa Já virou sua preferida? Ainda não Não é possível, gente",
+"nivel_fala_dB": -24.1,
+"voz_fundo_dB": 13.0,
+"prob_media": 0.9,
+"acordo_modelos": 0.8,
+"n_palavras": 15
+},
+{
+"inicio": 2014.37,
+"fim": 2020.31,
+"texto": "Eu vou esperar a nossa tripzinha acabar Não é possível E é isso Quem estiver planejando vir pra Barcelona",
+"nivel_fala_dB": -23.2,
+"voz_fundo_dB": null,
+"prob_media": 0.9,
+"acordo_modelos": 0.74,
+"n_palavras": 19
+},
+{
+"inicio": 2020.31,
+"fim": 2026.23,
+"texto": "Ou já estiver com viagem marcada Vale muito a pena Saiba que você não vai se arrepender A",
+"nivel_fala_dB": -21.4,
+"voz_fundo_dB": null,
+"prob_media": 1.0,
+"acordo_modelos": 1.0,
+"n_palavras": 18
+},
+{
+"inicio": 2026.23,
+"fim": 2032.03,
+"texto": "gente conseguiu conhecer várias coisas em três dias E comida boa, cidade",
+"nivel_fala_dB": -21.2,
+"voz_fundo_dB": null,
+"prob_media": 0.9,
+"acordo_modelos": 0.92,
+"n_palavras": 12
+},
+{
+"inicio": 2032.03,
+"fim": 2037.59,
+"texto": "boa Energia massa Pessoas muito gente boa Então é isso E para quem",
+"nivel_fala_dB": -24.0,
+"voz_fundo_dB": null,
+"prob_media": 0.88,
+"acordo_modelos": 1.0,
+"n_palavras": 13
+},
+{
+"inicio": 2037.59,
+"fim": 2043.53,
+"texto": "não tem Barcelona nos planos, coloque. Adicione. Porque realmente não é à toa que é a minha",
+"nivel_fala_dB": -24.3,
+"voz_fundo_dB": 12.0,
+"prob_media": 0.94,
+"acordo_modelos": 0.88,
+"n_palavras": 17
+},
+{
+"inicio": 2043.53,
+"fim": 2046.45,
+"texto": "cidade preferida, porque realmente é muito especial.",
+"nivel_fala_dB": -28.1,
+"voz_fundo_dB": 43.9,
+"prob_media": 1.0,
+"acordo_modelos": 1.0,
+"n_palavras": 7
+},
+{
+"inicio": 2047.75,
+"fim": 2048.31,
+"texto": "Valeu.",
+"nivel_fala_dB": -22.0,
+"voz_fundo_dB": 50.0,
+"prob_media": 1.0,
+"acordo_modelos": 1.0,
+"n_palavras": 1
+}
+]
+}

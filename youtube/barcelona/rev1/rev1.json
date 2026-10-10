@@ -428,5 +428,99 @@
    "rotulo": "100 MONTADITOS",
    "eur": "6.50"
   }
- ]
+ ],
+ "legendas_reforco": {
+  "_regra": "DS V2 3.4.2 (Padrão YouTube) e AUDIO_REVIEW_STANDARD 10: só onde, no áudio tratado, a voz ficou baixa ou o ruído alto (medidas em legendas/medidas_frases.json) e o texto é confiável (≥ 2 de 3 reconhecedores concordam). Pedido do Diego (10/10/2026): sem legenda no resto do vídeo.",
+  "itens": [
+   {
+    "id": "S01",
+    "motivo": "ruído do metrô (voz/fundo −0,1 a 4,9 dB); fala-chave: lugar",
+    "eventos": [
+     {
+      "i": 34.84,
+      "f": 38.6,
+      "linhas": [
+       "Vamos conhecer a nossa",
+       "primeira parada de hoje,"
+      ]
+     },
+     {
+      "i": 39.62,
+      "f": 44.1,
+      "linhas": [
+       "a gente vai para o Camp Nou hoje."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "S02",
+    "motivo": "ruído do bar (voz/fundo −2,3 dB); fala-chave: distância",
+    "eventos": [
+     {
+      "i": 626.37,
+      "f": 628.05,
+      "linhas": [
+       "Uns 18 quilômetros."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "S03",
+    "motivo": "ruído do restaurante (voz/fundo 0,3 a 5,0 dB); fala-chave: preço. Sai em 16:39,45, antes do selo '19€' do master, que ocupa a mesma faixa e mostra o valor",
+    "eventos": [
+     {
+      "i": 988.5,
+      "f": 993.3,
+      "linhas": [
+       "E eles têm uma promoção aqui de 5 tapas,"
+      ]
+     },
+     {
+      "i": 993.4,
+      "f": 999.45,
+      "linhas": [
+       "5 tapas, uma paella",
+       "e uma bebida por 19 euros."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "S04",
+    "motivo": "ruído da praça (voz/fundo 4,7 dB)",
+    "eventos": [
+     {
+      "i": 1232.44,
+      "f": 1234.9,
+      "linhas": [
+       "Nunca vi tanto pombo na minha vida."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "S05",
+    "motivo": "ruído do bar (voz/fundo 1,8 dB); fala-chave: preço",
+    "eventos": [
+     {
+      "i": 1983.38,
+      "f": 1987.85,
+      "linhas": [
+       "Porque hoje é quarta-feira e quarta-feira",
+       "é um euro cada montadinho."
+      ]
+     },
+     {
+      "i": 1987.9,
+      "f": 1990.9,
+      "linhas": [
+       "Fica a dica aí pra quem vem pra cá."
+      ]
+     }
+    ]
+   }
+  ]
+ }
 }

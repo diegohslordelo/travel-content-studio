@@ -1,6 +1,36 @@
 {
  "itens": [
   {
+   "id": "S01",
+   "motivo": "ruído do metrô (voz/fundo −0,1 a 4,9 dB); fala-chave: lugar",
+   "eventos": [
+    {
+     "i": 34.84,
+     "f": 38.6,
+     "linhas": [
+      "Vamos conhecer a nossa",
+      "primeira parada de hoje,"
+     ]
+    },
+    {
+     "i": 39.62,
+     "f": 44.1,
+     "linhas": [
+      "a gente vai para o Camp Nou hoje."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "00:34.840",
+   "t_in": 34.84,
+   "t_fim": 44.1,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 836,
+   "q_fim": 1058,
+   "visivel_s": 9.25
+  },
+  {
    "id": "P01",
    "t": "01:04",
    "tipo": "preco",
@@ -283,6 +313,28 @@
    "visivel_s": 4.25
   },
   {
+   "id": "S02",
+   "motivo": "ruído do bar (voz/fundo −2,3 dB); fala-chave: distância",
+   "eventos": [
+    {
+     "i": 626.37,
+     "f": 628.05,
+     "linhas": [
+      "Uns 18 quilômetros."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "10:26.370",
+   "t_in": 626.37,
+   "t_fim": 628.05,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 15033,
+   "q_fim": 15073,
+   "visivel_s": 1.667
+  },
+  {
    "id": "P05",
    "t": "10:37",
    "tipo": "preco",
@@ -432,6 +484,36 @@
    "visivel_s": 4.25
   },
   {
+   "id": "S03",
+   "motivo": "ruído do restaurante (voz/fundo 0,3 a 5,0 dB); fala-chave: preço. Sai em 16:39,45, antes do selo '19€' do master, que ocupa a mesma faixa e mostra o valor",
+   "eventos": [
+    {
+     "i": 988.5,
+     "f": 993.3,
+     "linhas": [
+      "E eles têm uma promoção aqui de 5 tapas,"
+     ]
+    },
+    {
+     "i": 993.4,
+     "f": 999.45,
+     "linhas": [
+      "5 tapas, uma paella",
+      "e uma bebida por 19 euros."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "16:28.500",
+   "t_in": 988.5,
+   "t_fim": 999.45,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 23724,
+   "q_fim": 23987,
+   "visivel_s": 10.958
+  },
+  {
    "id": "P06",
    "t": "16:40",
    "tipo": "preco",
@@ -504,6 +586,28 @@
    "q_in": 29232,
    "q_fim": 29334,
    "visivel_s": 4.25
+  },
+  {
+   "id": "S04",
+   "motivo": "ruído da praça (voz/fundo 4,7 dB)",
+   "eventos": [
+    {
+     "i": 1232.44,
+     "f": 1234.9,
+     "linhas": [
+      "Nunca vi tanto pombo na minha vida."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "20:32.440",
+   "t_in": 1232.44,
+   "t_fim": 1234.9,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 29579,
+   "q_fim": 29638,
+   "visivel_s": 2.458
   },
   {
    "id": "L24",
@@ -770,6 +874,36 @@
    "q_in": 47496,
    "q_fim": 47598,
    "visivel_s": 4.25
+  },
+  {
+   "id": "S05",
+   "motivo": "ruído do bar (voz/fundo 1,8 dB); fala-chave: preço",
+   "eventos": [
+    {
+     "i": 1983.38,
+     "f": 1987.85,
+     "linhas": [
+      "Porque hoje é quarta-feira e quarta-feira",
+      "é um euro cada montadinho."
+     ]
+    },
+    {
+     "i": 1987.9,
+     "f": 1990.9,
+     "linhas": [
+      "Fica a dica aí pra quem vem pra cá."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "33:03.380",
+   "t_in": 1983.38,
+   "t_fim": 1990.9,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 47601,
+   "q_fim": 47782,
+   "visivel_s": 7.542
   },
   {
    "id": "P13",

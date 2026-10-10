@@ -158,12 +158,12 @@ Para cada um dos 52 itens foram inspecionados 4 quadros 1920 × 1080 da composi�
 7. **Durações abaixo de 3 s:** R01a (2,0 s) e R01b (2,5 s), por serem a sequência pedido 1 → pedido 2 → total no mesmo lugar.
 8. **Dolby Vision:** o original traz metadados DV 8.4; a recodificação gera HLG puro (a camada base do DV 8.4 já é HLG). O YouTube usa o HLG.
 9. **Recodificação:** inevitável para queimar os gráficos. Uma geração só: x265 Main 10, CRF 18, teto de 45 Mbps (recomendação do YouTube para 4K HDR 24 qps: 44–56 Mbps), em blocos com emenda verificada quadro a quadro.
-10. **Faixa `.srt` (DS 3.4.1):** é obrigatória para publicar vídeo longo com fala, mas não foi feita (o briefing pediu para não criar legenda de fala). A transcrição automática antiga (`reels/apresentacao/transcricao.srt`) tem erros e só serve de rascunho.
+10. **Faixa `.srt` (DS 3.4.1):** não será feita, por decisão do Diego (10/10/2026): legenda só nos trechos difíceis (seção 10).
 11. **Pasta do YouTube:** o repositório não tinha estrutura para vídeo longo (padrão de áudio, 13.5). Criei `youtube/barcelona/rev1/`, espelhando `reels/<reel>/revN/`.
 
 ## 9. Verificação do arquivo final
 
-`barcelona_rev1.mp4` (10.148.567.382 bytes, fora do git). Medido no próprio arquivo em 10/10/2026.
+`barcelona_rev1.mp4` (10.140.162.738 bytes, fora do git), **versão com as legendas de reforço** (seção 10). Medido no próprio arquivo em 10/10/2026.
 
 | Item | Original | Final | Resultado |
 |---|---|---|---|
@@ -172,7 +172,36 @@ Para cada um dos 52 itens foram inspecionados 4 quadros 1920 × 1080 da composi�
 | Duração do vídeo | 2050,542 s | 2050,542 s | Igual |
 | Taxa de vídeo | 29,2 Mbps | 39,4 Mbps média (CRF 18, teto 45 Mbps) | Uma geração de recodificação |
 | Áudio | AAC 44,1 kHz 128 kbps · −19,3 LUFS · +0,5 dBTP | AAC LC 48 kHz estéreo 194 kbps · **−14,8 LUFS · −1,1 dBTP** · 2050,506 s | [PROJETO] cumprido (relatório de áudio) |
-| Emendas dos blocos | — | 5 emendas × 7 quadros comparados com o original: deslocamento 0 em todos | Sem quadro duplicado nem perdido |
-| Gráficos no final | — | Os 52 itens conferidos num quadro do próprio arquivo final (`qa_frames/FINAL_folha_52_itens.jpg`) | Todos presentes, nas posições da prévia |
+| Emendas dos blocos | — | Render: 5 emendas × 7 quadros comparados com o original, deslocamento 0. Versão com legendas: os 29 blocos copiados são idênticos à versão anterior (início e fim conferidos) e os 5 blocos novos, idênticos aos seus arquivos dentro do final | Sem quadro duplicado nem perdido |
+| Gráficos no final | — | Os 52 itens conferidos num quadro do arquivo final (`qa_frames/FINAL_folha_52_itens.jpg`); as 5 legendas em `qa_frames/FINAL_legendas_reforco.jpg` | Todos presentes, nas posições da prévia |
 | Original | SHA-256 `2011c541…5938750` | Recalculado depois do render: igual | Intacto |
-| Decodificação completa | — | 49.213 quadros decodificados, nenhuma mensagem de erro | OK |
+| Decodificação completa | — | 49.213 quadros decodificados, nenhuma mensagem de erro (repetida na versão com legendas) | OK |
+
+## 10. Legendas de reforço (pedido do Diego, 10/10/2026)
+
+**Decisão do Diego:** legenda **só** onde o ruído ficou alto ou a voz baixa depois do tratamento; no resto, nada. Isso é a camada 2 do DS V2 (3.4.2, legenda embutida de reforço). A faixa `.srt` completa (camada 1, 3.4.1) **não** será feita: decisão do Diego registrada aqui como desvio do checklist 7.3.
+
+**Como os trechos foram escolhidos** (`legendas/scripts/selecionar_trechos.py`, `legendas/medidas_frases.json`):
+1. Transcrição de apoio com dois modelos (faster-whisper `large-v3` e `large-v3-turbo`, tempos por palavra) + a transcrição antiga do master. Só apoio, nunca texto final sozinho (padrão de áudio, 10.4).
+2. No **áudio tratado**, por frase (324 frases): relação voz/fundo na faixa da voz (300 Hz–3,4 kHz) e nível da fala.
+3. Candidatas: voz/fundo < 6 dB **ou** fala 6 dB abaixo da mediana, **e** reconhecedores incertos ou discordando → 30 frases.
+4. Revisão uma a uma: ficaram só as frases em que o texto é confiável (2 de 3 transcrições concordam palavra a palavra) e que carregam informação (lugar, preço, distância) ou uma frase inteira. Saíram 25: interjeições ("é", "bom", "já"), falas que nenhuma transcrição resolve (07:41 "parque de…", 13:00 "homenagem…", 17:22, 29:28–29:36, 23:31) e trechos já claros na escuta medida.
+
+| ID | Tempo | Texto | Por quê |
+|---|---|---|---|
+| S01 | 00:00:34,840–00:00:38,600 | Vamos conhecer a nossa / primeira parada de hoje, | ruído do metrô (voz/fundo −0,1 a 4,9 dB); fala-chave: lugar |
+|  | 00:00:39,620–00:00:44,100 | a gente vai para o Camp Nou hoje. |  |
+| S02 | 00:10:26,370–00:10:28,050 | Uns 18 quilômetros. | ruído do bar (voz/fundo −2,3 dB); fala-chave: distância |
+| S03 | 00:16:28,500–00:16:33,300 | E eles têm uma promoção aqui de 5 tapas, | ruído do restaurante (voz/fundo 0,3 a 5,0 dB); fala-chave: preço. Sai em 16:39,45, antes do selo '19€' do master, que ocupa a mesma faixa e mostra o valor |
+|  | 00:16:33,400–00:16:39,450 | 5 tapas, uma paella / e uma bebida por 19 euros. |  |
+| S04 | 00:20:32,440–00:20:34,900 | Nunca vi tanto pombo na minha vida. | ruído da praça (voz/fundo 4,7 dB) |
+| S05 | 00:33:03,380–00:33:07,850 | Porque hoje é quarta-feira e quarta-feira / é um euro cada montadinho. | ruído do bar (voz/fundo 1,8 dB); fala-chave: preço |
+|  | 00:33:07,900–00:33:10,900 | Fica a dica aí pra quem vem pra cá. |  |
+
+**Estilo (DS V2 3.4.2, Padrão YouTube):** Barlow 700 56 px (`font.style.caption`), `caption-text` #FCFBF8, sombra de texto da 3.1, centro x 960, base do bloco y 984, ≤ 2 linhas, ≤ 42 caracteres e ≤ 1306 px por linha; scrim grafite 0% (y 730) → 63% (y 1080) só enquanto há legenda; grupo inteiro entra (120 ms, sobe 10 px) e sai (120 ms, sobe 6 px); 1,67 a 6,05 s por evento; ≤ 3 palavras/s. Sem destaque (mini-placa): os valores já aparecem nas etiquetas de preço ou no selo do master. Nenhuma coincide com lower third nem fica nos últimos 20 s.
+
+**Verificação visual:** quadros de entrada, meio e fim de cada uma em `qa_frames/S0*_*.jpg` (nenhuma cobre rosto; S03 sai em 16:39,45, antes do selo "19€" do master).
+
+**Pendente (padrão de áudio, 10.3–10.4):** o texto está como **PROVÁVEL** (transcrições concordam e batem com o contexto/briefing), não como CONFIRMADO: falta a escuta do Diego desses 5 trechos. Se a escuta achar outro trecho difícil, ele entra pela mesma configuração (`rev1.json`, `legendas_reforco`).
+
+**Render:** só os 5 blocos de 1 min com legenda foram recodificados (a partir do original, mesmos parâmetros); os outros 29 foram copiados do final anterior sem recodificar.

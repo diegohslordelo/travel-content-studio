@@ -72,16 +72,15 @@ Versão do padrão: 1.1.0   ·   Data de início: 09/10/2026   ·   Responsável
  [x] Reversões feitas e registradas
 
 7. LEGENDAS (complementares)
- [ ] Trechos que continuam difíceis listados (L01…): depende da escuta (candidatos P04, P08)
- [n/a] Nenhum trecho exige legenda — não declarado: falta a escuta
- [n/a] Transcrição de apoio rodada (original + processado) — faster-whisper ausente; usada a transcrição existente do master só como apoio
- [ ] Cada palavra marcada: CONFIRMADO / PROVÁVEL / [CONFIRMAR]
+ [x] Trechos que continuam difíceis listados (L01…L05), por medida no áudio tratado (escuta pendente)
+ [x] Transcrição de apoio rodada — faster-whisper large-v3 e large-v3-turbo no original (o processado só muda o nível) + transcrição antiga
+ [x] Cada palavra marcada: as 5 legendas estão PROVÁVEL (aguardam a escuta para CONFIRMADO)
  [x] Nada inventado ou completado sem evidência
  [x] Nomes e valores conferidos com o registro real da viagem (briefing do Diego + falas)
- [n/a] Estilo e posição do DS V2 3.4.2 — nenhuma legenda de reforço aplicada
- [n/a] Nada nos últimos 20 s nem junto do lower third — nenhuma legenda de reforço aplicada
- [ ] Faixa .srt (DS 3.4.1): pendente
- [n/a] Sincronia, legibilidade e posição verificadas — sem legenda de reforço
+ [x] Estilo e posição do DS V2 3.4.2 (x 960 · base y 984 · ≤ 1306 px · ≤ 42 car.)
+ [x] Nada nos últimos 20 s nem junto do lower third
+ [n/a] Faixa .srt (DS 3.4.1): não será feita, decisão do Diego (10/10/2026)
+ [x] Sincronia (tempos por palavra), legibilidade e posição verificadas nos quadros de QA
 
 8. LIMITAÇÕES RESIDUAIS
  P04 · 00:23:28,58–00:23:55,38 · fala baixa sob música · G2 · mixagem · aguarda decisão

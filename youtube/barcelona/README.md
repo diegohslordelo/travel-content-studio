@@ -4,7 +4,7 @@ Vlog longo de Barcelona (16:9, 4K HLG) com os gráficos do Design System V2 (lug
 
 | Revisão | O que é | Estado |
 |---|---|---|
-| `rev1/` | Primeira edição: 52 gráficos nos 51 pontos do briefing; áudio tratado para −14 LUFS | QA visual feito; áudio **aguardando escuta**; aprovação do Diego pendente |
+| `rev1/` | Primeira edição: 52 gráficos nos 51 pontos do briefing; 5 legendas de reforço só nos trechos de ruído alto; áudio tratado para −14 LUFS | QA visual feito; áudio **aguardando escuta**; aprovação do Diego pendente |
 
 Comece por `rev1/QA_REV1.md` (decisões, tempos, verificações) e `rev1/audio/RELATORIO_AUDIO_REV1.md`.
 
@@ -44,6 +44,12 @@ python3 rev1/audio/scripts/tratar.py analise.flac rev1/_tmp/audio_rev1.m4a rev1/
 # 3. prévias e quadros de QA (SDR, só para revisão)
 python3 rev1/scripts/rev1.py previa
 
-# 4. vídeo final 4K HLG (em blocos retomáveis; ~6 h em 4 núcleos)
+# 4. vídeo final 4K HLG (em blocos retomáveis; ~6 h em 4 núcleos). Inclui as legendas de reforço
+#    (rev1.json, "legendas_reforco"); as fronteiras dos blocos não dependem delas.
 python3 rev1/scripts/rev1.py final --audio rev1/_tmp/audio_rev1.m4a
+
+# 4b. mudou só uma legenda? Recodifica só os blocos afetados e copia os outros de um final anterior
+python3 rev1/scripts/rev1.py remendar --anterior FINAL_ANTERIOR.mp4 --audio rev1/_tmp/audio_rev1.m4a
 ```
+
+Legendas de reforço: as transcrições de apoio (`rev1/legendas/transcricao_*.json`) saem de `rev1/legendas/scripts/transcrever.py` (faster-whisper, fora dos requisitos acima) e as medidas por frase, de `rev1/legendas/scripts/selecionar_trechos.py`.
