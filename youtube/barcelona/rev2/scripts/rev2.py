@@ -1522,10 +1522,108 @@ def cmd_remendar(a):
     print("final com legendas:", saida, contar_quadros(saida), "quadros", flush=True)
 
 
+GOP = 30   # o original tem IDR fechado (NAL 20, IDR_N_LP) a cada 30 quadros e nenhum B-frame
+
+
+def trechos_hibrido(itens):
+    """trechos [q0, q1) que precisam ser recodificados (gráfico, legenda ou zoom na tela), alinhados aos IDR do original
+    e unidos; o resto é cópia bit a bit do original."""
+    marcas = [(i["q_in"], i["q_fim"]) for i in itens]
+    marcas += [(int(round(z["de_s"] * FPS)), int(round(z["ate_s"] * FPS))) for z in CFG["zoom_cobertura"]["trechos"]]
+    al = sorted((q0 // GOP * GOP, min(-(-q1 // GOP) * GOP, NQ)) for q0, q1 in marcas)
+    unidos = []
+    for a, b in al:
+        if unidos and a <= unidos[-1][1]:
+            unidos[-1][1] = max(unidos[-1][1], b)
+        else:
+            unidos.append([a, b])
+    partes, q = [], 0
+    for a, b in unidos:
+        if a > q:
+            partes.append(("copia", q, a))
+        partes.append(("recodifica", a, b))
+        q = b
+    if q < NQ:
+        partes.append(("copia", q, NQ))
+    return partes
+
+
+X265_HIB = X265.replace("keyint=48:min-keyint=24", "keyint=30:min-keyint=30:open-gop=0:bframes=0:repeat-headers=1")
+
+
+def cmd_hibrido(a):
+    """vídeo final: os trechos com gráfico/zoom são recodificados (x265, Main 10, HLG, GOP fechado, sem B-frames, como o
+    original) e o resto é copiado bit a bit do original. Todos os trechos viram Annex B com VPS/SPS/PPS em cada IDR
+    (hevc_mp4toannexb) e sem as RPU de Dolby Vision (NAL 62, sem o registro de configuração na saída); os bytes são
+    concatenados e empacotados em MP4 (hev1, parâmetros na banda) com o áudio tratado."""
+    itens = carregar_plano()
+    for i in itens:
+        sprite(i)
+    partes = trechos_hibrido(itens)
+    pasta = os.path.join(TMP, "hibrido")
+    os.makedirs(pasta, exist_ok=True)
+    rec = sum(b - q for t, q, b in partes if t == "recodifica")
+    print(f"{len(partes)} partes; recodifica {rec} de {NQ} quadros ({100 * rec / NQ:.1f}%)", flush=True)
+    if a.so_listar:
+        for p in partes:
+            print(p)
+        return
+    lista = []
+    for n, (tipo, q0, q1) in enumerate(partes, 1):
+        arq = os.path.join(pasta, f"parte_{n:03d}_{tipo}.hevc")
+        lista.append(arq)
+        feito = arq + ".ok"
+        if os.path.exists(feito) and open(feito).read().strip() == f"{q0}-{q1}":
+            continue
+        t0 = q0 / FPS
+        if tipo == "copia":
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t0:.6f}", "-i", ORIGINAL, "-map", "0:v", "-frames:v", str(q1 - q0),
+                            "-c", "copy", "-bsf:v", "hevc_mp4toannexb,filter_units=remove_types=62", "-f", "hevc", arq], check=True)
+        else:
+            viz = [i for i in itens if i["q_in"] < q1 and i["q_fim"] > q0]
+            ins = ["-ss", f"{t0:.6f}", "-i", ORIGINAL]
+            for i in viz:
+                ins += ["-i", os.path.join(TMP, f"sprite_{i['id']}.mkv")]
+            g, ult = grafo(viz, t0, q1 / FPS)
+            fc, mapa = (["-filter_complex", g], ["-map", f"[{ult}]"]) if g else ([], ["-map", "0:v"])
+            subprocess.run(["ffmpeg", "-v", "error", "-y", *ins, *fc, *mapa, "-frames:v", str(q1 - q0), "-an",
+                            "-c:v", "libx265", "-preset", a.preset, "-pix_fmt", "yuv420p10le", "-x265-params", X265_HIB,
+                            "-color_primaries", "bt2020", "-color_trc", "arib-std-b67", "-colorspace", "bt2020nc",
+                            "-color_range", "tv", "-f", "hevc", arq], check=True)
+        nq = contar_quadros_hevc(arq)
+        assert nq == q1 - q0, (arq, nq, q1 - q0)
+        open(feito, "w").write(f"{q0}-{q1}")
+        print(f"parte {n}/{len(partes)} {tipo} {q0}-{q1} pronta", flush=True)
+    junto = os.path.join(pasta, "video.hevc")
+    with open(junto, "wb") as out:
+        for arq in lista:
+            with open(arq, "rb") as f:
+                while True:
+                    b = f.read(1 << 24)
+                    if not b:
+                        break
+                    out.write(b)
+    dur = NQ / FPS
+    saida = os.path.join(REV, a.saida)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-framerate", str(FPS), "-f", "hevc", "-i", junto, "-i", a.audio,
+                    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-tag:v", "hev1",
+                    "-color_primaries", "bt2020", "-color_trc", "arib-std-b67", "-colorspace", "bt2020nc", "-color_range", "tv",
+                    "-af", f"atrim=0:{dur:.6f},afade=t=out:st={dur - 0.08:.6f}:d=0.08,volume=-0.3dB", "-c:a", "aac", "-b:a", "192k",
+                    "-ar", "48000", "-map_metadata", "-1", "-movflags", "+faststart", saida], check=True)
+    os.remove(junto)
+    print("final:", saida, contar_quadros(saida), "quadros", flush=True)
+
+
+def contar_quadros_hevc(arq):
+    r = subprocess.run(["ffprobe", "-v", "error", "-f", "hevc", "-select_streams", "v", "-count_frames", "-show_entries",
+                        "stream=nb_read_frames", "-of", "csv=p=0", arq], capture_output=True, text=True)
+    return int(r.stdout.strip() or 0)
+
+
 def main():
     global ARGS_FONTES
     ap = argparse.ArgumentParser()
-    ap.add_argument("etapa", choices=["plano", "sprites", "previa", "final", "remendar"])
+    ap.add_argument("etapa", choices=["plano", "sprites", "previa", "final", "remendar", "hibrido"])
     ap.add_argument("--fontes", default=os.environ.get("PD_FONTES", ""))
     ap.add_argument("--cortes")
     ap.add_argument("--itens")
@@ -1535,10 +1633,12 @@ def main():
     ap.add_argument("--anterior", default="barcelona_rev1_sem_legenda.mp4")
     ap.add_argument("--so-blocos", action="store_true")
     ap.add_argument("--so-extrair", action="store_true")
+    ap.add_argument("--so-listar", action="store_true")
     ap.add_argument("--audio", help="faixa de áudio tratada (.m4a); sem ela, o áudio original é copiado")
     a = ap.parse_args()
     ARGS_FONTES = a.fontes
-    {"plano": cmd_plano, "sprites": cmd_sprites, "previa": cmd_previa, "final": cmd_final, "remendar": cmd_remendar}[a.etapa](a)
+    {"plano": cmd_plano, "sprites": cmd_sprites, "previa": cmd_previa, "final": cmd_final, "remendar": cmd_remendar,
+     "hibrido": cmd_hibrido}[a.etapa](a)
 
 
 ARGS_FONTES = ""
