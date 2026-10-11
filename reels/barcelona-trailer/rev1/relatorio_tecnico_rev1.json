@@ -1,0 +1,989 @@
+{
+ "quadros": 679,
+ "duracao_s": 28.292,
+ "lufs_antes": -14.4,
+ "ganho_db": 0.4,
+ "planos": [
+  {
+   "id": "P01",
+   "video": [
+    1425.3,
+    1428.1
+   ],
+   "k0": 0,
+   "k1": 67,
+   "cx": 0.45,
+   "recorte_x": 1120
+  },
+  {
+   "id": "P02",
+   "video": [
+    0.1,
+    1.75
+   ],
+   "k0": 67,
+   "k1": 107,
+   "cx": 0.53,
+   "recorte_x": 1426
+  },
+  {
+   "id": "P03",
+   "video": [
+    1280.25,
+    1281.95
+   ],
+   "k0": 107,
+   "k1": 148,
+   "cx": 0.42,
+   "recorte_x": 1004
+  },
+  {
+   "id": "P04",
+   "video": [
+    820.0,
+    821.5
+   ],
+   "k0": 148,
+   "k1": 184,
+   "cx": 0.47,
+   "recorte_x": 1196
+  },
+  {
+   "id": "P05",
+   "video": [
+    1231.45,
+    1234.7
+   ],
+   "k0": 184,
+   "k1": 262,
+   "cx": 0.5,
+   "recorte_x": 1312
+  },
+  {
+   "id": "P06",
+   "video": [
+    996.8,
+    1000.15
+   ],
+   "k0": 262,
+   "k1": 342,
+   "cx": 0.45,
+   "recorte_x": 1120
+  },
+  {
+   "id": "P07",
+   "video": [
+    1560.05,
+    1562.15
+   ],
+   "k0": 342,
+   "k1": 392,
+   "cx": 0.62,
+   "recorte_x": 1772
+  },
+  {
+   "id": "P08",
+   "video": [
+    1985.45,
+    1987.8
+   ],
+   "k0": 392,
+   "k1": 448,
+   "cx": 0.56,
+   "recorte_x": 1542
+  },
+  {
+   "id": "P09",
+   "video": [
+    1833.65,
+    1838.15
+   ],
+   "k0": 448,
+   "k1": 556,
+   "cx": 0.45,
+   "recorte_x": 1120
+  },
+  {
+   "id": "P10",
+   "video": [
+    2042.25,
+    2044.35
+   ],
+   "k0": 556,
+   "k1": 606,
+   "cx": 0.55,
+   "recorte_x": 1504
+  },
+  {
+   "id": "P11",
+   "video": [
+    1428.3,
+    1431.35
+   ],
+   "k0": 606,
+   "k1": 679,
+   "cx": 0.58,
+   "recorte_x": 1618
+  }
+ ],
+ "elementos_por_quadro": {
+  "0": [
+   [
+    "placa",
+    "abertura",
+    [
+     72,
+     640,
+     921.0,
+     859.0
+    ]
+   ],
+   [
+    "legenda",
+    "Surreal o passeio,\nrecomendo demais.",
+    [
+     295.0,
+     1291.2,
+     785.0,
+     1420
+    ]
+   ]
+  ],
+  "12": [
+   [
+    "placa",
+    "abertura",
+    [
+     72,
+     640,
+     921.0,
+     859.0
+    ]
+   ],
+   [
+    "legenda",
+    "Surreal o passeio,\nrecomendo demais.",
+    [
+     295.0,
+     1291.2,
+     785.0,
+     1420
+    ]
+   ]
+  ],
+  "24": [
+   [
+    "placa",
+    "abertura",
+    [
+     72,
+     640,
+     921.0,
+     859.0
+    ]
+   ],
+   [
+    "legenda",
+    "Surreal o passeio,\nrecomendo demais.",
+    [
+     295.0,
+     1291.2,
+     785.0,
+     1420
+    ]
+   ]
+  ],
+  "36": [
+   [
+    "placa",
+    "abertura",
+    [
+     72,
+     640,
+     921.0,
+     859.0
+    ]
+   ],
+   [
+    "legenda",
+    "Surreal o passeio,\nrecomendo demais.",
+    [
+     295.0,
+     1291.2,
+     785.0,
+     1420
+    ]
+   ]
+  ],
+  "48": [
+   [
+    "placa",
+    "abertura",
+    [
+     72,
+     640,
+     921.0,
+     859.0
+    ]
+   ],
+   [
+    "legenda",
+    "Surreal o passeio,\nrecomendo demais.",
+    [
+     295.0,
+     1291.2,
+     785.0,
+     1420
+    ]
+   ]
+  ],
+  "60": [
+   [
+    "placa",
+    "abertura",
+    [
+     72,
+     640,
+     921.0,
+     859.0
+    ]
+   ],
+   [
+    "legenda",
+    "Surreal o passeio,\nrecomendo demais.",
+    [
+     295.0,
+     1291.2,
+     785.0,
+     1420
+    ]
+   ]
+  ],
+  "72": [
+   [
+    "legenda",
+    "Buenos días, Barcelona!",
+    [
+     242.7,
+     1355.6,
+     837.3,
+     1420
+    ]
+   ]
+  ],
+  "84": [
+   [
+    "legenda",
+    "Buenos días, Barcelona!",
+    [
+     242.7,
+     1355.6,
+     837.3,
+     1420
+    ]
+   ]
+  ],
+  "96": [
+   [
+    "legenda",
+    "Buenos días, Barcelona!",
+    [
+     242.7,
+     1355.6,
+     837.3,
+     1420
+    ]
+   ]
+  ],
+  "108": [
+   [
+    "legenda",
+    "Eu enxergo\nmáscara de carnaval",
+    [
+     284.6,
+     1291.2,
+     795.4,
+     1420
+    ]
+   ]
+  ],
+  "120": [
+   [
+    "legenda",
+    "Eu enxergo\nmáscara de carnaval",
+    [
+     284.6,
+     1291.2,
+     795.4,
+     1420
+    ]
+   ]
+  ],
+  "132": [
+   [
+    "legenda",
+    "Eu enxergo\nmáscara de carnaval",
+    [
+     284.6,
+     1291.2,
+     795.4,
+     1420
+    ]
+   ]
+  ],
+  "144": [
+   [
+    "legenda",
+    "Eu enxergo\nmáscara de carnaval",
+    [
+     284.6,
+     1291.2,
+     795.4,
+     1420
+    ]
+   ]
+  ],
+  "156": [
+   [
+    "legenda",
+    "Dá um beijinho,\ndá um beijinho",
+    [
+     352.7,
+     1291.2,
+     727.3,
+     1420
+    ]
+   ]
+  ],
+  "168": [
+   [
+    "legenda",
+    "Dá um beijinho,\ndá um beijinho",
+    [
+     352.7,
+     1291.2,
+     727.3,
+     1420
+    ]
+   ]
+  ],
+  "180": [
+   [
+    "legenda",
+    "Dá um beijinho,\ndá um beijinho",
+    [
+     352.7,
+     1291.2,
+     727.3,
+     1420
+    ]
+   ]
+  ],
+  "192": [
+   [
+    "legenda",
+    "Nunca vi tanto pombo",
+    [
+     269.7,
+     1355.6,
+     810.3,
+     1420
+    ]
+   ]
+  ],
+  "204": [
+   [
+    "legenda",
+    "Nunca vi tanto pombo",
+    [
+     269.7,
+     1355.6,
+     810.3,
+     1420
+    ]
+   ]
+  ],
+  "216": [
+   [
+    "legenda",
+    "Nunca vi tanto pombo",
+    [
+     269.7,
+     1355.6,
+     810.3,
+     1420
+    ]
+   ]
+  ],
+  "228": [
+   [
+    "legenda",
+    "Nunca vi tanto pombo",
+    [
+     269.7,
+     1355.6,
+     810.3,
+     1420
+    ]
+   ]
+  ],
+  "240": [
+   [
+    "legenda",
+    "Nunca vi tanto pombo",
+    [
+     269.7,
+     1355.6,
+     810.3,
+     1420
+    ]
+   ]
+  ],
+  "252": [
+   [
+    "legenda",
+    "na minha vida.",
+    [
+     362.9,
+     1355.6,
+     717.1,
+     1420
+    ]
+   ]
+  ],
+  "264": [
+   [
+    "legenda",
+    "E uma bebida\npor 19 euros",
+    [
+     374.4,
+     1291.2,
+     705.6,
+     1420
+    ]
+   ]
+  ],
+  "276": [
+   [
+    "etiqueta",
+    [
+     72,
+     1067.0,
+     596.4000000000002,
+     1230
+    ]
+   ],
+   [
+    "legenda",
+    "E uma bebida\npor 19 euros",
+    [
+     374.4,
+     1291.2,
+     705.6,
+     1420
+    ]
+   ]
+  ],
+  "288": [
+   [
+    "etiqueta",
+    [
+     72,
+     1067.0,
+     596.4000000000002,
+     1230
+    ]
+   ],
+   [
+    "legenda",
+    "E uma bebida\npor 19 euros",
+    [
+     374.4,
+     1291.2,
+     705.6,
+     1420
+    ]
+   ]
+  ],
+  "300": [
+   [
+    "etiqueta",
+    [
+     72,
+     1067.0,
+     596.4000000000002,
+     1230
+    ]
+   ],
+   [
+    "legenda",
+    "E uma bebida\npor 19 euros",
+    [
+     374.4,
+     1291.2,
+     705.6,
+     1420
+    ]
+   ]
+  ],
+  "312": [
+   [
+    "etiqueta",
+    [
+     72,
+     1067.0,
+     596.4000000000002,
+     1230
+    ]
+   ],
+   [
+    "legenda",
+    "E uma bebida\npor 19 euros",
+    [
+     374.4,
+     1291.2,
+     705.6,
+     1420
+    ]
+   ]
+  ],
+  "324": [
+   [
+    "etiqueta",
+    [
+     72,
+     1067.0,
+     596.4000000000002,
+     1230
+    ]
+   ],
+   [
+    "legenda",
+    "E uma bebida\npor 19 euros",
+    [
+     374.4,
+     1291.2,
+     705.6,
+     1420
+    ]
+   ]
+  ],
+  "336": [
+   [
+    "etiqueta",
+    [
+     72,
+     1067.0,
+     596.4000000000002,
+     1230
+    ]
+   ],
+   [
+    "legenda",
+    "E uma bebida\npor 19 euros",
+    [
+     374.4,
+     1291.2,
+     705.6,
+     1420
+    ]
+   ]
+  ],
+  "348": [
+   [
+    "legenda",
+    "Foi *25* euros\npor pessoa",
+    [
+     376.7,
+     1291.2,
+     703.3,
+     1420
+    ]
+   ]
+  ],
+  "360": [
+   [
+    "legenda",
+    "Foi *25* euros\npor pessoa",
+    [
+     376.7,
+     1291.2,
+     703.3,
+     1420
+    ]
+   ]
+  ],
+  "372": [
+   [
+    "legenda",
+    "Foi *25* euros\npor pessoa",
+    [
+     376.7,
+     1291.2,
+     703.3,
+     1420
+    ]
+   ]
+  ],
+  "384": [
+   [
+    "legenda",
+    "Foi *25* euros\npor pessoa",
+    [
+     376.7,
+     1291.2,
+     703.3,
+     1420
+    ]
+   ]
+  ],
+  "396": [
+   [
+    "legenda",
+    "É 1 euro\ncada montadito",
+    [
+     345.3,
+     1291.2,
+     734.7,
+     1420
+    ]
+   ]
+  ],
+  "408": [
+   [
+    "legenda",
+    "É 1 euro\ncada montadito",
+    [
+     345.3,
+     1291.2,
+     734.7,
+     1420
+    ]
+   ]
+  ],
+  "420": [
+   [
+    "legenda",
+    "É 1 euro\ncada montadito",
+    [
+     345.3,
+     1291.2,
+     734.7,
+     1420
+    ]
+   ]
+  ],
+  "432": [
+   [
+    "legenda",
+    "É 1 euro\ncada montadito",
+    [
+     345.3,
+     1291.2,
+     734.7,
+     1420
+    ]
+   ]
+  ],
+  "444": [
+   [
+    "legenda",
+    "É 1 euro\ncada montadito",
+    [
+     345.3,
+     1291.2,
+     734.7,
+     1420
+    ]
+   ]
+  ],
+  "456": [
+   [
+    "legenda",
+    "Tem uma vista\nanimal de Barcelona",
+    [
+     290.3,
+     1291.2,
+     789.7,
+     1420
+    ]
+   ]
+  ],
+  "468": [
+   [
+    "legenda",
+    "Tem uma vista\nanimal de Barcelona",
+    [
+     290.3,
+     1291.2,
+     789.7,
+     1420
+    ]
+   ]
+  ],
+  "480": [
+   [
+    "legenda",
+    "Tem uma vista\nanimal de Barcelona",
+    [
+     290.3,
+     1291.2,
+     789.7,
+     1420
+    ]
+   ]
+  ],
+  "492": [
+   [
+    "legenda",
+    "Tem uma vista\nanimal de Barcelona",
+    [
+     290.3,
+     1291.2,
+     789.7,
+     1420
+    ]
+   ]
+  ],
+  "504": [
+   [
+    "legenda",
+    "Tem uma vista\nanimal de Barcelona",
+    [
+     290.3,
+     1291.2,
+     789.7,
+     1420
+    ]
+   ]
+  ],
+  "516": [
+   [
+    "legenda",
+    "Tem uma vista\nanimal de Barcelona",
+    [
+     290.3,
+     1291.2,
+     789.7,
+     1420
+    ]
+   ]
+  ],
+  "528": [
+   [
+    "legenda",
+    "Tem uma vista\nanimal de Barcelona",
+    [
+     290.3,
+     1291.2,
+     789.7,
+     1420
+    ]
+   ]
+  ],
+  "540": [
+   [
+    "legenda",
+    "Tem uma vista\nanimal de Barcelona",
+    [
+     290.3,
+     1291.2,
+     789.7,
+     1420
+    ]
+   ]
+  ],
+  "552": [
+   [
+    "legenda",
+    "Tem uma vista\nanimal de Barcelona",
+    [
+     290.3,
+     1291.2,
+     789.7,
+     1420
+    ]
+   ]
+  ],
+  "564": [
+   [
+    "legenda",
+    "Não é à toa que é",
+    [
+     330.6,
+     1355.6,
+     749.4,
+     1420
+    ]
+   ]
+  ],
+  "576": [
+   [
+    "legenda",
+    "Não é à toa que é",
+    [
+     330.6,
+     1355.6,
+     749.4,
+     1420
+    ]
+   ]
+  ],
+  "588": [
+   [
+    "legenda",
+    "a minha cidade\npreferida,",
+    [
+     354.2,
+     1291.2,
+     725.8,
+     1420
+    ]
+   ]
+  ],
+  "600": [
+   [
+    "legenda",
+    "a minha cidade\npreferida,",
+    [
+     354.2,
+     1291.2,
+     725.8,
+     1420
+    ]
+   ]
+  ],
+  "612": [
+   [
+    "placa",
+    "cta",
+    [
+     72,
+     640,
+     764.0,
+     820.0
+    ]
+   ],
+   [
+    "legenda",
+    "porque realmente\né muito especial.",
+    [
+     319.7,
+     1291.2,
+     760.3,
+     1420
+    ]
+   ]
+  ],
+  "624": [
+   [
+    "placa",
+    "cta",
+    [
+     72,
+     640,
+     764.0,
+     820.0
+    ]
+   ],
+   [
+    "legenda",
+    "porque realmente\né muito especial.",
+    [
+     319.7,
+     1291.2,
+     760.3,
+     1420
+    ]
+   ]
+  ],
+  "636": [
+   [
+    "placa",
+    "cta",
+    [
+     72,
+     640,
+     764.0,
+     820.0
+    ]
+   ],
+   [
+    "legenda",
+    "porque realmente\né muito especial.",
+    [
+     319.7,
+     1291.2,
+     760.3,
+     1420
+    ]
+   ]
+  ],
+  "648": [
+   [
+    "placa",
+    "cta",
+    [
+     72,
+     640,
+     764.0,
+     820.0
+    ]
+   ],
+   [
+    "legenda",
+    "porque realmente\né muito especial.",
+    [
+     319.7,
+     1291.2,
+     760.3,
+     1420
+    ]
+   ]
+  ],
+  "660": [
+   [
+    "placa",
+    "cta",
+    [
+     72,
+     640,
+     764.0,
+     820.0
+    ]
+   ],
+   [
+    "legenda",
+    "porque realmente\né muito especial.",
+    [
+     319.7,
+     1291.2,
+     760.3,
+     1420
+    ]
+   ]
+  ],
+  "672": [
+   [
+    "placa",
+    "cta",
+    [
+     72,
+     640,
+     764.0,
+     820.0
+    ]
+   ],
+   [
+    "legenda",
+    "porque realmente\né muito especial.",
+    [
+     319.7,
+     1291.2,
+     760.3,
+     1420
+    ]
+   ]
+  ]
+ }
+}

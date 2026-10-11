@@ -1,0 +1,307 @@
+{
+ "_sobre": "Reel trailer do vlog '3 dias em Barcelona' (YouTube, REV2). 1080 × 1920, 24 qps, SDR BT.709. Tempos em segundos do original (mesma linha do tempo do vídeo do YouTube). Nível A (DS 5.2, níveis de edição: trailer).",
+ "original_env": "BCN_ORIGINAL",
+ "audio_env": "BCN_AUDIO",
+ "_audio": "áudio do vídeo do YouTube antes do master (/home/user/audio_rev2.m4a: REV1 de áudio aplicada, mesma linha do tempo do original)",
+ "fps": 24,
+ "largura": 1080,
+ "altura": 1920,
+ "saida": "reel_barcelona_trailer_rev1.mp4",
+ "fade_corte_ms": 8,
+ "lufs_alvo": -14.0,
+ "pico_dbfs": -1.5,
+ "_recorte": "recorte 9:16 do quadro 4K (1216 × 2160) com o centro em 'cx' (fração da largura), escalado para 1080 × 1920",
+ "planos": [
+  {
+   "id": "P01",
+   "nota": "fachada da Sagrada Família (tomada 1) + voz do Diego na saída da visita (26:54)",
+   "video": [
+    1425.3,
+    1428.1
+   ],
+   "audio": [
+    1554.15,
+    1556.95
+   ],
+   "cx": 0.45,
+   "legendas": [
+    {
+     "texto": "Surreal o passeio,\nrecomendo demais.",
+     "palavras": [
+      1554.22,
+      1555.36,
+      1555.48,
+      1555.98,
+      1556.62
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P02",
+   "nota": "Gràcia, início do vlog",
+   "video": [
+    0.1,
+    1.75
+   ],
+   "cx": 0.53,
+   "legendas": [
+    {
+     "texto": "Buenos días, Barcelona!",
+     "palavras": [
+      0.18,
+      0.62,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P03",
+   "nota": "Casa Batlló",
+   "video": [
+    1280.25,
+    1281.95
+   ],
+   "cx": 0.42,
+   "legendas": [
+    {
+     "texto": "Eu enxergo\nmáscara de carnaval",
+     "palavras": [
+      1280.32,
+      1280.7,
+      1281.02,
+      1281.34,
+      1281.46
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P04",
+   "nota": "Mural do Beijo",
+   "video": [
+    820.0,
+    821.5
+   ],
+   "cx": 0.47,
+   "legendas": [
+    {
+     "texto": "Dá um beijinho,\ndá um beijinho",
+     "palavras": [
+      820.08,
+      820.54,
+      820.68,
+      821.08,
+      821.22,
+      821.24
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P05",
+   "nota": "Plaça de Catalunya (texto revisado da S04 da REV2 do YouTube)",
+   "video": [
+    1231.45,
+    1234.7
+   ],
+   "cx": 0.5,
+   "legendas": [
+    {
+     "texto": "Nunca vi tanto pombo",
+     "palavras": [
+      1231.59,
+      1233.13,
+      1233.33,
+      1233.59
+     ]
+    },
+    {
+     "texto": "na minha vida.",
+     "palavras": [
+      1233.99,
+      1234.17,
+      1234.31
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P06",
+   "nota": "Restaurante Momo; o gráfico '19€' do CapCut (canto inferior esquerdo, a partir de ≈ 16:40) fica fora do recorte",
+   "video": [
+    996.8,
+    1000.15
+   ],
+   "cx": 0.45,
+   "snap_depois": true,
+   "etiqueta": {
+    "rotulo": "5 TAPAS + PAELLA + BEBIDA",
+    "eur": "19.00",
+    "entra_s": 0.2
+   },
+   "legendas": [
+    {
+     "texto": "E uma bebida\npor 19 euros",
+     "palavras": [
+      996.85,
+      997.39,
+      998.33,
+      998.87,
+      999.31,
+      999.69
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P07",
+   "nota": "saída da Sagrada Família",
+   "video": [
+    1560.05,
+    1562.15
+   ],
+   "cx": 0.62,
+   "snap_depois": true,
+   "legendas": [
+    {
+     "texto": "Foi *25* euros\npor pessoa",
+     "palavras": [
+      1560.1,
+      1560.54,
+      1561.26,
+      1561.48,
+      1561.7
+     ]
+    }
+   ],
+   "_etiqueta": "sem etiqueta: o rosto do Diego (selfie de perto) ocupa a zona de objeto; o número vai em Destaque (mini-placa, DS 3.2)"
+  },
+  {
+   "id": "P08",
+   "nota": "100 Montaditos (quarta-feira: € 1 cada, fala do Diego)",
+   "video": [
+    1985.45,
+    1987.8
+   ],
+   "cx": 0.56,
+   "legendas": [
+    {
+     "texto": "É 1 euro\ncada montadito",
+     "palavras": [
+      1985.56,
+      1986.42,
+      1986.64,
+      1986.88,
+      1987.12
+     ]
+    }
+   ],
+   "_etiqueta": "sem etiqueta e sem destaque: rosto em close na zona de objeto; destaque só 1 a cada 3 s (DS 3.1) e o '25' veio 2,5 s antes"
+  },
+  {
+   "id": "P09",
+   "nota": "Park Güell",
+   "video": [
+    1833.65,
+    1838.15
+   ],
+   "cx": 0.45,
+   "legendas": [
+    {
+     "texto": "Tem uma vista\nanimal de Barcelona",
+     "palavras": [
+      1833.77,
+      1834.25,
+      1834.49,
+      1836.61,
+      1837.09,
+      1837.57
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P10",
+   "nota": "aeroporto, fala da Marina",
+   "video": [
+    2042.25,
+    2044.35
+   ],
+   "cx": 0.55,
+   "legendas": [
+    {
+     "texto": "Não é à toa que é",
+     "palavras": [
+      2042.35,
+      2042.87,
+      2043.01,
+      2043.09,
+      2043.33,
+      2043.35
+     ]
+    },
+    {
+     "texto": "a minha cidade\npreferida,",
+     "palavras": [
+      2043.43,
+      2043.47,
+      2043.53,
+      2043.73
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P11",
+   "nota": "fachada da Sagrada Família (tomada 2) + fim da fala da Marina; CTA",
+   "video": [
+    1428.3,
+    1431.35
+   ],
+   "audio": [
+    2044.35,
+    2047.4
+   ],
+   "cx": 0.58,
+   "legendas": [
+    {
+     "texto": "porque realmente\né muito especial.",
+     "palavras": [
+      2044.41,
+      2044.61,
+      2045.09,
+      2045.89,
+      2046.09
+     ]
+    }
+   ]
+  }
+ ],
+ "placas": [
+  {
+   "id": "abertura",
+   "variante": "abertura",
+   "linha1": "3 DIAS EM",
+   "linha2": "BARCELONA",
+   "plano": "P01",
+   "saida": true
+  },
+  {
+   "id": "cta",
+   "variante": "cta",
+   "linha1": "VÍDEO COMPLETO",
+   "linha2": "NO YOUTUBE",
+   "plano": "P11",
+   "entra_s": 0.0,
+   "saida": false
+  }
+ ],
+ "placa_xy": [
+  72,
+  640
+ ],
+ "etiqueta_x": 72,
+ "etiqueta_base_y": 1230
+}
