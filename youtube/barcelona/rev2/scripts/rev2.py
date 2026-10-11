@@ -1461,7 +1461,7 @@ def cmd_final(a):
     saida = os.path.join(REV, a.saida)
     dur = NQ / FPS   # áudio cortado no último quadro do vídeo (sem a vinheta do CapCut), fade de 80 ms
     subprocess.run(["ffmpeg", "-v", "error", "-y", *ins, "-map", "0:v", *audio, "-c:v", "copy", "-tag:v", "hvc1",
-                    "-af", f"atrim=0:{dur:.6f},afade=t=out:st={dur - 0.08:.6f}:d=0.08", "-c:a", "aac", "-b:a", "192k",
+                    "-af", f"atrim=0:{dur:.6f},afade=t=out:st={dur - 0.08:.6f}:d=0.08,volume=-0.3dB", "-c:a", "aac", "-b:a", "192k",
                     "-ar", "48000", "-map_metadata", "-1", saida], check=True)
     print("final:", saida, contar_quadros(saida), "quadros", flush=True)
 
