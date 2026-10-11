@@ -86,4 +86,21 @@ Feito no **arquivo final** (não só nas prévias): 1 quadro de cada um dos 66 i
 
 ## 7. Verificação do arquivo final
 
-[preenchido após o render]
+`barcelona_rev2.mp4`: 7.955.543.136 bytes, MD5 `f743248f58262ee3d15efdca6abaabaa`. Medido no próprio arquivo em 11/10/2026.
+
+| Item | Original | Final | Resultado |
+|---|---|---|---|
+| Vídeo | HEVC Main 10 · 3840 × 2160 · 24 qps · HLG / BT.2020 · DV 8.4 | HEVC Main 10 (`hev1`, parâmetros na banda) · 3840 × 2160 · 24 qps · `yuv420p10le` · HLG / BT.2020 NCL, faixa limitada | Igual, sem Dolby Vision (RPU removidas; o YouTube usa o HLG) |
+| Quadros | 49.213 (incluindo 50 da vinheta do CapCut) | **49.164** | Vinheta cortada; nenhum quadro perdido ou repetido |
+| Decodificação completa | — | 49.164 quadros, nenhum erro | OK |
+| Trechos copiados | — | Hash de quadro idêntico ao original (amostras 180, 500, 809) | Cópia bit a bit |
+| Trechos recodificados sem gráfico | — | PSNR 48–50 dB contra o original | Sem diferença visível |
+| Recodificado | — | 9.084 de 49.164 quadros (18,5%), x265 superfast, CRF 18, teto 45 Mbps, GOP 30 fechado, sem B-frames | Média final 30,8 Mbps |
+| Áudio | AAC 44,1 kHz · −19,3 LUFS | AAC LC 48 kHz estéreo **256 kbps** · **−14,8 LUFS · −1,4 dBTP** · 2048,500 s | [PROJETO] cumprido (±1 LU; pico ≤ −1 dBTP) |
+| Original | SHA-256 `2011c541…5938750` | Recalculado no fim: igual | Intacto |
+
+**Achado no áudio:** a 1ª montagem (AAC nativo do FFmpeg a 192 kbps) mediu −0,9 dBTP e um teste a 192 kbps chegou a +2,0 dBFS (estalo de codificação). O áudio foi refeito com limitador de pico verdadeiro (sobreamostragem 4×, teto −1,5 dBFS) e AAC a 256 kbps: −1,4 dBTP. O vídeo dessa versão é idêntico ao verificado (MD5 do fluxo `d866fe28…e13d` nas duas).
+
+**Entrega:** https://gofile.io/d/UbUXUL2p (vídeo e as 2 capas). Link público para quem o tiver; o gofile apaga arquivos sem download por alguns dias.
+
+**Pendências:** escuta do Diego (S01–S05 e os 26 pares A/B da REV1); link da hospedagem na descrição; conferir num envio não listado a área dos controles do player (DS 3.4.2).

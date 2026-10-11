@@ -1461,7 +1461,7 @@ def cmd_final(a):
     saida = os.path.join(REV, a.saida)
     dur = NQ / FPS   # áudio cortado no último quadro do vídeo (sem a vinheta do CapCut), fade de 80 ms
     subprocess.run(["ffmpeg", "-v", "error", "-y", *ins, "-map", "0:v", *audio, "-c:v", "copy", "-tag:v", "hvc1",
-                    "-af", f"atrim=0:{dur:.6f},afade=t=out:st={dur - 0.08:.6f}:d=0.08,volume=-0.3dB", "-c:a", "aac", "-b:a", "192k",
+                    "-af", f"atrim=0:{dur:.6f},afade=t=out:st={dur - 0.08:.6f}:d=0.08,volume=-0.3dB,aresample=192000,alimiter=limit=0.8414:attack=5:release=80:level=0,aresample=48000", "-c:a", "aac", "-b:a", "256k",
                     "-ar", "48000", "-map_metadata", "-1", saida], check=True)
     print("final:", saida, contar_quadros(saida), "quadros", flush=True)
 
@@ -1608,7 +1608,7 @@ def cmd_hibrido(a):
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-framerate", str(FPS), "-f", "hevc", "-i", junto, "-i", a.audio,
                     "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-tag:v", "hev1",
                     "-color_primaries", "bt2020", "-color_trc", "arib-std-b67", "-colorspace", "bt2020nc", "-color_range", "tv",
-                    "-af", f"atrim=0:{dur:.6f},afade=t=out:st={dur - 0.08:.6f}:d=0.08,volume=-0.3dB", "-c:a", "aac", "-b:a", "192k",
+                    "-af", f"atrim=0:{dur:.6f},afade=t=out:st={dur - 0.08:.6f}:d=0.08,volume=-0.3dB,aresample=192000,alimiter=limit=0.8414:attack=5:release=80:level=0,aresample=48000", "-c:a", "aac", "-b:a", "256k",
                     "-ar", "48000", "-map_metadata", "-1", "-movflags", "+faststart", saida], check=True)
     os.remove(junto)
     print("final:", saida, contar_quadros(saida), "quadros", flush=True)
