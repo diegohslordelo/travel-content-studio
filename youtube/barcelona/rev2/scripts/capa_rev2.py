@@ -1,7 +1,8 @@
 """Thumbnail da REV2 (DS V2 5.5, 1280 × 720): foto real (IMG_1198.HEIC, Drive), contraste +10, placa pequena (75%)
 `3 DIAS EM / BARCELONA` no canto superior esquerdo com margem 48, estática (brilho congelado a 30%).
 
-Uso (de dentro de youtube/barcelona/):  python3 rev2/scripts/capa_rev2.py FOTO.HEIC --fontes DIR
+Uso (de dentro de youtube/barcelona/):  python3 rev2/scripts/capa_rev2.py FOTO --fontes DIR [--recorte x0,y0,largura] [--saida ARQ]
+Capa 2 (foto da praça, corpo inteiro): --recorte 219,1470,1185 --saida capa_barcelona_rev2_b.jpg
 Saídas: rev2/capa_barcelona_rev2.jpg (1280 × 720) e rev2/qa_frames/capa_teste_168x94.png (teste de miniatura).
 """
 import argparse
@@ -17,6 +18,8 @@ sys.path.insert(0, AQUI)
 ap = argparse.ArgumentParser()
 ap.add_argument("foto")
 ap.add_argument("--fontes", default=os.environ.get("PD_FONTES", ""))
+ap.add_argument("--recorte", default="0,1480,3560", help="x0,y0,largura do recorte 16:9 na foto")
+ap.add_argument("--saida", default="capa_barcelona_rev2.jpg")
 a = ap.parse_args()
 
 import rev2  # noqa: E402  (tokens, cores e a placa do pipeline; K = 2 → desenho em 2560 × 1440)
@@ -29,7 +32,7 @@ TW, TH = 1280, 720
 # ---- foto: recorte 16:9 com o casal à direita do centro e a Sagrada Família ao fundo; contraste +10
 pillow_heif.register_heif_opener()
 foto = ImageOps.exif_transpose(Image.open(a.foto)).convert("RGB")      # 4284 × 5712
-x0, y0, cw = 0, 1480, 3560
+x0, y0, cw = (int(v) for v in a.recorte.split(","))
 recorte = foto.crop((x0, y0, x0 + cw, y0 + cw * 9 // 16)).resize((TW * K, TH * K), Image.LANCZOS)
 recorte = ImageEnhance.Contrast(recorte).enhance(1.10)
 base = np.asarray(recorte, np.float32) / 255
@@ -66,7 +69,7 @@ rev2.sobre(tela, out, m * K - pad, m * K - pad)
 img = Image.fromarray((np.clip(tela[..., :3], 0, 1) * 255 + 0.5).astype(np.uint8)).resize((TW, TH), Image.LANCZOS)
 assert (m + info["w_design"]) <= rev2.tok("layout.yt-thumb.timestamp-free-x")["value"]
 rev = os.path.dirname(AQUI)
-img.save(os.path.join(rev, "capa_barcelona_rev2.jpg"), quality=92)
+img.save(os.path.join(rev, a.saida), quality=92)
 os.makedirs(os.path.join(rev, "qa_frames"), exist_ok=True)
-img.resize((168, 94), Image.LANCZOS).save(os.path.join(rev, "qa_frames", "capa_teste_168x94.png"))
+img.resize((168, 94), Image.LANCZOS).save(os.path.join(rev, "qa_frames", a.saida.replace(".jpg", "_teste_168x94.png")))
 print("placa:", round(info["w_design"]), "×", round(info["h_design"]), "px na grade 1280")
