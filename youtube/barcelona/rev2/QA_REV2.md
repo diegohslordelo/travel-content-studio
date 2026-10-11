@@ -78,7 +78,11 @@ Referências (11/10/2026, blogs de mercado, não documentação do YouTube): ros
 
 ## 6. QA visual
 
-[preenchido após o render]
+Feito no **arquivo final** (não só nas prévias): 1 quadro de cada um dos 66 itens, mais quadros por segundo nos pontos críticos (abertura, coberturas do CapCut, Varreduras, chamada, recibos com rosto perto, fechamento).
+
+**Problema encontrado e corrigido:** o recibo da Sagrada Família (26:02–26:07) cobria a boca e o queixo do Diego na posição padrão (base y 960). Ele desceu para base y 1072: o topo fica abaixo do rosto nos 5 s. Correção feita recodificando só o trecho 37.470–37.620 (6,25 s) e emendando nos IDR (VPS/SPS/PPS + IDR completos nos dois lados).
+
+**Conferido sem problema:** nenhum gráfico do CapCut aparece (Camp Nou, Plaça de Sant Jaume, "19€" e a vinheta final); o recibo do McDonald's encosta na Marina sem cobrir o rosto; a placa de abertura, as placas DIA 2/DIA 3 e a chamada não cobrem rostos; o símbolo 1º fica sobre o teto do aeroporto; as legendas S01–S09 na base, centradas, sem colidir com lower third.
 
 ## 7. Verificação do arquivo final
 

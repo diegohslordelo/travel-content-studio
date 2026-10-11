@@ -464,7 +464,9 @@
      "eur": "25.00"
     }
    ],
-   "rotulo_total": "POR PESSOA"
+   "rotulo_total": "POR PESSOA",
+   "base_y": 1072,
+   "_base_y": "QA do final: na base y 960 o recibo cobria boca e queixo do Diego (26:02–26:07); base y 1072 deixa o topo do recibo abaixo do rosto (DS: nunca sobre o rosto)"
   },
   {
    "id": "L29",
