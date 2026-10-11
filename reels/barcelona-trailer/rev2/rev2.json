@@ -1,0 +1,300 @@
+{
+ "_sobre": "REV2 do Reel trailer do vlog '3 dias em Barcelona'. Parte da REV1: sem os 3 planos de preço (Sagrada Família, Momo, 100 Montaditos) nem o gancho que vinha do plano da Sagrada Família, já usados em outros Reels (Diego, 11/10/2026). Cortes e legendas pelos tempos medidos na voz (transcrição large-v3 por janela + envelope de energia), com folga antes e depois de cada fala. 1080 × 1920, 24 qps, SDR BT.709. Tempos em segundos do original.",
+ "original_env": "BCN_ORIGINAL",
+ "audio_env": "BCN_AUDIO",
+ "fps": 24,
+ "largura": 1080,
+ "altura": 1920,
+ "saida": "reel_barcelona_trailer_rev2.mp4",
+ "fade_corte_ms": 8,
+ "lufs_alvo": -14.0,
+ "pico_dbfs": -1.5,
+ "planos": [
+  {
+   "id": "P01",
+   "nota": "fachada da Sagrada Família (tomada 1, 23:45) + fala no aeroporto (33:28). Voz: 2008,94–2011,08; fala anterior termina em 2007,86 e a seguinte começa em 2011,28",
+   "video": [
+    1425.3,
+    1427.93
+   ],
+   "audio": [
+    2008.55,
+    2011.18
+   ],
+   "cx": 0.45,
+   "legendas": [
+    {
+     "texto": "Cidade surreal,\nenergia muito boa.",
+     "palavras": [
+      2008.94,
+      2009.4,
+      2009.94,
+      2010.2,
+      2010.68
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P02",
+   "nota": "Gràcia, início do vlog. Voz 0,58–2,42; próxima fala depois de 3,2. Texto aprovado na REV7 do Reel de apresentação",
+   "video": [
+    0.1,
+    2.7
+   ],
+   "cx": 0.53,
+   "legendas": [
+    {
+     "texto": "Buenos días, Barcelona!",
+     "palavras": [
+      0.58,
+      0.96,
+      1.36
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P03",
+   "nota": "Barceloneta, Monumento a Colombo (4:40). Voz 280,60–283,30; fala anterior termina em 279,22, a seguinte começa em 283,90",
+   "video": [
+    280.25,
+    283.75
+   ],
+   "cx": 0.5,
+   "legendas": [
+    {
+     "texto": "Chegamos em\nBarceloneta,",
+     "palavras": [
+      280.6,
+      280.92,
+      281.08
+     ]
+    },
+    {
+     "texto": "que é tipo\na orla daqui.",
+     "palavras": [
+      281.87,
+      282.42,
+      282.56,
+      282.68,
+      282.8,
+      283.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P04",
+   "nota": "Catedral de Barcelona (14:13). Voz 853,80–858,30 e 858,80–859,55; antes, 'hoje.' termina em 852,50; depois, silêncio até 860,45. Grupos inteiros: o tempo de cada palavra dentro da fala contínua é incerto. 'assim, como' (antes de 'Game of Thrones') confirmado em 2 modelos de transcrição; fica no fim da fala contínua, antes da pausa 858,30–858,80",
+   "video": [
+    853.5,
+    859.95
+   ],
+   "cx": 0.47,
+   "legendas": [
+    {
+     "texto": "Essa catedral\né bem famosa,",
+     "palavras": [
+      853.8,
+      854.64,
+      855.48,
+      855.58,
+      855.77
+     ],
+     "modo": "grupo"
+    },
+    {
+     "texto": "ela tem um estilo\nmeio medieval,",
+     "palavras": [
+      856.25,
+      856.44,
+      856.6,
+      856.7,
+      856.88,
+      857.06
+     ],
+     "modo": "grupo"
+    },
+    {
+     "texto": "assim, como\nGame of Thrones.",
+     "palavras": [
+      857.69,
+      857.85,
+      858.8,
+      859.0,
+      859.15
+     ],
+     "modo": "grupo"
+    }
+   ]
+  },
+  {
+   "id": "P05",
+   "nota": "Plaça de Catalunya (20:32). Voz 1232,96–1234,74; antes, 'né?' termina em 1230,90; depois, fala em 1235,38",
+   "video": [
+    1232.55,
+    1235.06
+   ],
+   "cx": 0.5,
+   "legendas": [
+    {
+     "texto": "Nunca vi tanto pombo",
+     "palavras": [
+      1232.96,
+      1233.32,
+      1233.48,
+      1233.62
+     ]
+    },
+    {
+     "texto": "na minha vida.",
+     "palavras": [
+      1233.98,
+      1234.12,
+      1234.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P06",
+   "nota": "Park Güell (30:34). Voz 1834,40–1835,00, 1836,46–1837,22, 1837,80–1838,46; antes, silêncio desde 1833,12; depois, silêncio até o fim da janela (1839,2)",
+   "video": [
+    1834.0,
+    1838.8
+   ],
+   "cx": [
+    [
+     1834.0,
+     0.39
+    ],
+    [
+     1835.6,
+     0.37
+    ],
+    [
+     1837.5,
+     0.41
+    ],
+    [
+     1838.0,
+     0.46
+    ],
+    [
+     1838.4,
+     0.5
+    ],
+    [
+     1838.8,
+     0.58
+    ]
+   ],
+   "legendas": [
+    {
+     "texto": "Tem uma vista",
+     "palavras": [
+      1834.4,
+      1834.5,
+      1834.66
+     ]
+    },
+    {
+     "texto": "animal\nde Barcelona.",
+     "palavras": [
+      1836.46,
+      1837.8,
+      1837.92
+     ]
+    }
+   ],
+   "_cx": "o recorte acompanha o rosto do Diego (posição medida em 9 quadros); a câmera dele se move para a direita no fim do plano"
+  },
+  {
+   "id": "P07",
+   "nota": "aeroporto, fala da Marina (34:01). Voz a partir de 2041,60; 'Adicione.' termina em 2041,16. Corte de imagem na pausa 2044,44–2044,76",
+   "video": [
+    2041.36,
+    2044.61
+   ],
+   "cx": 0.58,
+   "legendas": [
+    {
+     "texto": "Porque realmente",
+     "palavras": [
+      2041.62,
+      2041.85
+     ]
+    },
+    {
+     "texto": "não é à toa",
+     "palavras": [
+      2042.32,
+      2042.88,
+      2043.02,
+      2043.1
+     ]
+    },
+    {
+     "texto": "que é a minha\ncidade preferida,",
+     "palavras": [
+      2043.3,
+      2043.4,
+      2043.48,
+      2043.55,
+      2043.96,
+      2044.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P08",
+   "nota": "fachada da Sagrada Família (tomada 2, 23:48) + continuação da fala da Marina, sem emenda de áudio. Voz até ≈ 2046,44; 'Valeu.' só em 2048,08 (fica de fora). CTA",
+   "video": [
+    1428.3,
+    1431.4
+   ],
+   "audio_continua": true,
+   "cx": 0.58,
+   "legendas": [
+    {
+     "texto": "porque realmente\né muito especial.",
+     "palavras": [
+      2044.76,
+      2045.0,
+      2045.2,
+      2045.92,
+      2046.05
+     ]
+    }
+   ]
+  }
+ ],
+ "placas": [
+  {
+   "id": "abertura",
+   "variante": "abertura",
+   "linha1": "3 DIAS EM",
+   "linha2": "BARCELONA",
+   "plano": "P01",
+   "saida": true
+  },
+  {
+   "id": "cta",
+   "variante": "cta",
+   "linha1": "VÍDEO COMPLETO",
+   "linha2": "NO YOUTUBE",
+   "plano": "P08",
+   "entra_s": 0.0,
+   "saida": false
+  }
+ ],
+ "placa_xy": [
+  72,
+  640
+ ],
+ "etiqueta_x": 72,
+ "etiqueta_base_y": 1230,
+ "_sincronia": "Início de cada grupo: depois de silêncio, pelo envelope de energia (início real da voz); dentro de fala contínua, pela transcrição large-v3 (duas passadas independentes concordam: janela do original e áudio do Reel). A transcrição erra o início depois de silêncio (até 1,2 s adiantada nos pombos), por isso não é usada ali."
+}
