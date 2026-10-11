@@ -84,7 +84,7 @@ As fontes do DS V2 ainda não estão no repositório (seção 14).
 
 **Regra central:** quando a tarefa envolver identidade visual, o Claude deve consultar o Design System V2 e seus tokens antes de decidir.
 
-- **Versão vigente:** a V2.2.0 "Objetos do Primeiro Dia" (08/10/2026). A 2.1.0 acrescentou os níveis de edição A/B, as regras de som e os tokens de efeito e som, sem valor visual novo. A 2.2.0 acrescentou as legendas do YouTube longo em 16:9 (seção 3.4), com tokens de posição, largura e tempo em `layout.yt` (DS V2, Changelog).
+- **Versão vigente:** a V2.3.0 "Objetos do Primeiro Dia" (11/10/2026). A 2.1.0 acrescentou os níveis de edição A/B, as regras de som e os tokens de efeito e som, sem valor visual novo. A 2.2.0 acrescentou as legendas do YouTube longo em 16:9 (seção 3.4), com tokens de posição, largura e tempo em `layout.yt`. A 2.3.0 fixou as regras do YouTube longo na 5.4 (abertura, lower third com bairro, recibo, capítulo, chamada, encerramento só com o 1º), sem valor visual novo (DS V2, Changelog).
 - **Aposentadas:** a V1 "Placa & Caneta" e a v0 "Primeira luz". Não reutilize valores, componentes nem regras visuais delas.
 - **Valores visuais** (cor, fonte, tamanho, espaço, raio, sombra, posição, duração, curva, volume) vêm dos tokens e do DS V2. Não crie valores fora deles.
 - **Componentes novos ou variações** seguem a governança do DS V2 (Governança e versionamento), com aprovação do Diego. Não altere os documentos do DS sem pedido explícito dele.

@@ -1,0 +1,1196 @@
+{
+ "itens": [
+  {
+   "id": "A01",
+   "tipo": "placa",
+   "variante": "abertura",
+   "t": "00:00.60",
+   "fim": "00:07.20",
+   "linha1": "3 DIAS EM",
+   "linha2": "BARCELONA",
+   "linha3": "9 DE MARÇO DE 2026",
+   "posicao": "base",
+   "_posicao": "x 96 · base y 984: o rosto da selfie ocupa o centro-alto (x 780–1080 · y 120–480) e a placa em y 96 cairia sobre ele",
+   "t_in": 0.6,
+   "t_fim": 7.2,
+   "saida_s": 0.24,
+   "notas": [
+    "fim definido na configuração"
+   ],
+   "q_in": 14,
+   "q_fim": 173,
+   "visivel_s": 6.625
+  },
+  {
+   "id": "S01",
+   "eventos": [
+    {
+     "i": 34.84,
+     "f": 38.6,
+     "linhas": [
+      "Vamos conhecer a nossa",
+      "primeira parada de hoje,"
+     ]
+    },
+    {
+     "i": 39.62,
+     "f": 44.1,
+     "linhas": [
+      "a gente vai para o Camp Nou hoje."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "00:34.840",
+   "t_in": 34.84,
+   "t_fim": 44.1,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 836,
+   "q_fim": 1058,
+   "visivel_s": 9.25
+  },
+  {
+   "id": "R01",
+   "t": "01:04",
+   "tipo": "recibo",
+   "cabecalho": "CAMP NOU",
+   "micro": "LES CORTS · 09/03/2026",
+   "linhas": [
+    {
+     "item": "Ingresso",
+     "eur": "31.00"
+    }
+   ],
+   "rotulo_total": "TOTAL",
+   "t_in": 64.0,
+   "t_fim": 69.125,
+   "saida_s": 0.24,
+   "notas": [
+    "encerra no corte de cena 01:09.125"
+   ],
+   "q_in": 1536,
+   "q_fim": 1659,
+   "visivel_s": 5.125
+  },
+  {
+   "id": "L01",
+   "t": "01:13",
+   "tipo": "lugar",
+   "nome": "CAMP NOU",
+   "micro": "LES CORTS",
+   "entrada": "01:12.58",
+   "_entrada": "no lugar do '📍 Camp Nou' do CapCut (plano em zoom Z1)",
+   "t_in": 72.58,
+   "t_fim": 76.82,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 1742,
+   "q_fim": 1844,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "H01",
+   "t": "02:45",
+   "tipo": "hospedagem",
+   "nome": "ONDE FICAMOS",
+   "micro": "GRÀCIA · 4 NOITES",
+   "eur": "106.50",
+   "por_noite": true,
+   "caneta": "link na descrição",
+   "_valor": "€ 426,00 por 4 noites (Diego) = € 106,50 por noite",
+   "t_in": 165.0,
+   "t_fim": 172.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 3960,
+   "q_fim": 4134,
+   "visivel_s": 7.25
+  },
+  {
+   "id": "R02",
+   "t": "03:17",
+   "tipo": "recibo",
+   "cabecalho": "METRÔ E ÔNIBUS",
+   "micro": "BARCELONA · 09/03/2026",
+   "linhas": [
+    {
+     "item": "Bilhete 72 h",
+     "eur": "27.50"
+    }
+   ],
+   "rotulo_total": "TOTAL",
+   "t_in": 197.0,
+   "t_fim": 201.333,
+   "saida_s": 0.24,
+   "notas": [
+    "encerra no corte de cena 03:21.333"
+   ],
+   "q_in": 4728,
+   "q_fim": 4832,
+   "visivel_s": 4.333
+  },
+  {
+   "id": "L02",
+   "t": "03:30",
+   "tipo": "lugar",
+   "nome": "MONTJUÏC",
+   "micro": "SANTS-MONTJUÏC",
+   "t_in": 210.0,
+   "t_fim": 213.25,
+   "saida_s": 0.24,
+   "notas": [
+    "encerra no corte de cena 03:33.250"
+   ],
+   "q_in": 5040,
+   "q_fim": 5118,
+   "visivel_s": 3.25
+  },
+  {
+   "id": "L03",
+   "t": "04:46",
+   "tipo": "lugar",
+   "nome": "MONUMENTO A COLOMBO",
+   "micro": "CIUTAT VELLA",
+   "t_in": 286.0,
+   "t_fim": 290.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 6864,
+   "q_fim": 6966,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L04",
+   "t": "05:19",
+   "tipo": "lugar",
+   "nome": "MCDONALD'S",
+   "micro": "BARCELONA",
+   "t_in": 319.0,
+   "t_fim": 323.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 7656,
+   "q_fim": 7758,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "R03",
+   "t": "06:36",
+   "tipo": "recibo",
+   "cabecalho": "MCDONALD'S",
+   "micro": "BARCELONA · 09/03/2026",
+   "linhas": [
+    {
+     "item": "Pedido 1",
+     "eur": "9.70"
+    },
+    {
+     "item": "Pedido 2",
+     "eur": "13.60"
+    }
+   ],
+   "rotulo_total": "TOTAL",
+   "visivel_s": 5.75,
+   "t_in": 396.0,
+   "t_fim": 401.74,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 9504,
+   "q_fim": 9642
+  },
+  {
+   "id": "L05",
+   "t": "06:53",
+   "tipo": "lugar",
+   "nome": "PRAIA DA BARCELONETA",
+   "micro": "LA BARCELONETA",
+   "t_in": 413.0,
+   "t_fim": 417.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 9912,
+   "q_fim": 10014,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "S06",
+   "eventos": [
+    {
+     "i": 460.89,
+     "f": 465.95,
+     "linhas": [
+      "Almoçamos, e aí o Diego tá em mais um",
+      "parque de diversões e,"
+     ]
+    },
+    {
+     "i": 466.09,
+     "f": 471.6,
+     "linhas": [
+      "ao invés dele escolher uma sobremesa,",
+      "a sobremesa dele foi diferente hoje."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "07:40.890",
+   "t_in": 460.89,
+   "t_fim": 471.6,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 11061,
+   "q_fim": 11318,
+   "visivel_s": 10.708
+  },
+  {
+   "id": "L06",
+   "t": "07:41",
+   "tipo": "lugar",
+   "nome": "EL VASO DE ORO",
+   "micro": "LA BARCELONETA",
+   "entrada": "07:51.90",
+   "_entrada": "depois da legenda de 07:40,9–07:51,6 (DS 3.4.2: lower third entra depois da fala)",
+   "t_in": 471.9,
+   "t_fim": 476.14,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 11326,
+   "q_fim": 11427,
+   "visivel_s": 4.208
+  },
+  {
+   "id": "R04",
+   "t": "08:01",
+   "tipo": "recibo",
+   "cabecalho": "EL VASO DE ORO",
+   "micro": "LA BARCELONETA · 09/03/2026",
+   "linhas": [
+    {
+     "item": "Consumo",
+     "eur": "4.70"
+    }
+   ],
+   "rotulo_total": "TOTAL",
+   "t_in": 481.0,
+   "t_fim": 486.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 11544,
+   "q_fim": 11670,
+   "visivel_s": 5.25
+  },
+  {
+   "id": "L07",
+   "t": "08:31",
+   "tipo": "lugar",
+   "nome": "PARC DE LA CIUTADELLA",
+   "micro": "EL BORN",
+   "t_in": 511.0,
+   "t_fim": 515.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 12264,
+   "q_fim": 12366,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L08",
+   "t": "09:15",
+   "tipo": "lugar",
+   "nome": "ARC DE TRIOMF",
+   "micro": "CIUTAT VELLA",
+   "t_in": 555.0,
+   "t_fim": 559.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 13320,
+   "q_fim": 13422,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L09",
+   "t": "09:43",
+   "tipo": "lugar",
+   "nome": "MERCADONA",
+   "micro": "BARCELONA",
+   "t_in": 583.0,
+   "t_fim": 587.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 13992,
+   "q_fim": 14094,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "R05",
+   "t": "09:56",
+   "tipo": "recibo",
+   "cabecalho": "MERCADONA",
+   "micro": "BARCELONA · 09/03/2026",
+   "linhas": [
+    {
+     "item": "Compras",
+     "eur": "13.45"
+    }
+   ],
+   "rotulo_total": "TOTAL",
+   "t_in": 596.0,
+   "t_fim": 600.5,
+   "saida_s": 0.24,
+   "notas": [
+    "encerra no corte de cena 10:00.500"
+   ],
+   "q_in": 14304,
+   "q_fim": 14412,
+   "visivel_s": 4.5
+  },
+  {
+   "id": "L10",
+   "t": "10:18",
+   "tipo": "lugar",
+   "nome": "BAR ANXOITA",
+   "micro": "BARCELONA",
+   "_nome": "Diego, 11/10/2026",
+   "t_in": 618.0,
+   "t_fim": 622.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 14832,
+   "q_fim": 14934,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "S02",
+   "eventos": [
+    {
+     "i": 626.37,
+     "f": 628.05,
+     "linhas": [
+      "Uns 18 quilômetros."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "10:26.370",
+   "t_in": 626.37,
+   "t_fim": 628.05,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 15033,
+   "q_fim": 15073,
+   "visivel_s": 1.667
+  },
+  {
+   "id": "R06",
+   "t": "10:37",
+   "tipo": "recibo",
+   "cabecalho": "BAR ANXOITA",
+   "micro": "BARCELONA · 09/03/2026",
+   "linhas": [
+    {
+     "item": "Consumo",
+     "eur": "29.55"
+    }
+   ],
+   "rotulo_total": "TOTAL",
+   "t_in": 637.0,
+   "t_fim": 642.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 15288,
+   "q_fim": 15414,
+   "visivel_s": 5.25
+  },
+  {
+   "id": "V01",
+   "tipo": "varredura",
+   "corte_s": 642.875,
+   "t": "10:42.88",
+   "t_in": 642.7083333333334,
+   "t_fim": 643.0833333333334,
+   "saida_s": 0,
+   "notas": [
+    "4 quadros antes do corte, 5 depois"
+   ],
+   "q_in": 15425,
+   "q_fim": 15434,
+   "visivel_s": 0.375
+  },
+  {
+   "id": "C01",
+   "tipo": "placa",
+   "variante": "capitulo",
+   "t": "10:43.30",
+   "linha2": "DIA 2",
+   "posicao": "topo",
+   "t_in": 643.3,
+   "t_fim": 647.54,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 15439,
+   "q_fim": 15541,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L11",
+   "t": "11:19",
+   "tipo": "lugar",
+   "nome": "BAIRRO DE GRÀCIA",
+   "micro": "VILA DE GRÀCIA",
+   "t_in": 679.0,
+   "t_fim": 682.458,
+   "saida_s": 0.24,
+   "notas": [
+    "encerra no corte de cena 11:22.458"
+   ],
+   "q_in": 16296,
+   "q_fim": 16379,
+   "visivel_s": 3.458
+  },
+  {
+   "id": "L12",
+   "t": "11:47",
+   "tipo": "lugar",
+   "nome": "CASA VICENS",
+   "micro": "GRÀCIA",
+   "t_in": 707.0,
+   "t_fim": 711.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 16968,
+   "q_fim": 17070,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "K01",
+   "tipo": "placa",
+   "variante": "cta",
+   "t": "12:31.50",
+   "linha1": "DEIXA O LIKE E",
+   "linha2": "INSCREVA-SE",
+   "posicao": "topo",
+   "_tempo": "36,7% do vídeo (DS 5.4: 30–40%), em planos de rua sem rosto no alto",
+   "t_in": 751.5,
+   "t_fim": 755.74,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 18036,
+   "q_fim": 18138,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L13",
+   "t": "12:42",
+   "tipo": "lugar",
+   "nome": "BAIRRO GÓTICO",
+   "micro": "CIUTAT VELLA",
+   "t_in": 762.0,
+   "t_fim": 766.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 18288,
+   "q_fim": 18390,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "S07",
+   "eventos": [
+    {
+     "i": 780.7,
+     "f": 785.4,
+     "linhas": [
+      "Meu look foi em homenagem a ele hoje,",
+      "bairro gótico, hoje eu tô gótica."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "13:00.700",
+   "t_in": 780.7,
+   "t_fim": 785.4,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 18737,
+   "q_fim": 18850,
+   "visivel_s": 4.708
+  },
+  {
+   "id": "L14",
+   "t": "13:08",
+   "tipo": "lugar",
+   "nome": "MURAL DO BEIJO",
+   "micro": "EL GÒTIC",
+   "t_in": 788.0,
+   "t_fim": 791.833,
+   "saida_s": 0.24,
+   "notas": [
+    "encerra no corte de cena 13:11.833"
+   ],
+   "q_in": 18912,
+   "q_fim": 19004,
+   "visivel_s": 3.833
+  },
+  {
+   "id": "L15",
+   "t": "14:02",
+   "tipo": "lugar",
+   "nome": "CATEDRAL DE BARCELONA",
+   "micro": "EL GÒTIC",
+   "t_in": 842.0,
+   "t_fim": 846.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 20208,
+   "q_fim": 20310,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L16",
+   "t": "14:38",
+   "tipo": "lugar",
+   "nome": "PONT DEL BISBE",
+   "micro": "EL GÒTIC",
+   "t_in": 878.0,
+   "t_fim": 882.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 21072,
+   "q_fim": 21174,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L17",
+   "t": "14:51",
+   "tipo": "lugar",
+   "nome": "PLAÇA DE SANT JAUME",
+   "micro": "EL GÒTIC",
+   "entrada": "14:50.22",
+   "_entrada": "no lugar do '📍 Plaça de Sant Jaume' do CapCut (plano em zoom Z2)",
+   "t_in": 890.22,
+   "t_fim": 894.46,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 21365,
+   "q_fim": 21467,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L18",
+   "t": "15:15",
+   "tipo": "lugar",
+   "nome": "PLAÇA REIAL",
+   "micro": "EL GÒTIC",
+   "t_in": 915.0,
+   "t_fim": 919.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 21960,
+   "q_fim": 22062,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L19",
+   "t": "16:21",
+   "tipo": "lugar",
+   "nome": "RESTAURANTE MOMO",
+   "micro": "BARCELONA",
+   "t_in": 981.0,
+   "t_fim": 985.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 23544,
+   "q_fim": 23646,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "S03",
+   "eventos": [
+    {
+     "i": 988.5,
+     "f": 993.3,
+     "linhas": [
+      "E eles têm uma promoção aqui de 5 tapas,"
+     ]
+    },
+    {
+     "i": 993.4,
+     "f": 999.3,
+     "linhas": [
+      "5 tapas, uma paella",
+      "e uma bebida por 19 euros."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "16:28.500",
+   "t_in": 988.5,
+   "t_fim": 999.3,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 23724,
+   "q_fim": 23983,
+   "visivel_s": 10.792
+  },
+  {
+   "id": "R07",
+   "t": "16:40",
+   "tipo": "recibo",
+   "cabecalho": "RESTAURANTE MOMO",
+   "micro": "BARCELONA · 10/03/2026",
+   "linhas": [
+    {
+     "item": "5 tapas + paella + bebida",
+     "eur": "19.00"
+    }
+   ],
+   "rotulo_total": "TOTAL",
+   "entrada": "16:39.30",
+   "lado": "esq",
+   "entrada_tipo": "deslizar",
+   "visivel_s": 6.25,
+   "_cobertura": "cobre o selo '19€' do CapCut (16:39,52–16:41,94, x 150–440 · y 870–1050): fica à esquerda e entra deslizando (sem impressão) para estar inteiro antes do selo. Diego: 1 promoção para 1 pessoa, e só comeram uma",
+   "base_y": 1072,
+   "_base_y": "o selo do CapCut vai até y 1050: a base do recibo desce para y 1072 (corpo sólido até y 1056)",
+   "t_in": 999.3,
+   "t_fim": 1005.54,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 23983,
+   "q_fim": 24133
+  },
+  {
+   "id": "S08",
+   "eventos": [
+    {
+     "i": 1042.87,
+     "f": 1045.3,
+     "linhas": [
+      "O review da cerveja."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "17:22.870",
+   "t_in": 1042.87,
+   "t_fim": 1045.3,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 25029,
+   "q_fim": 25087,
+   "visivel_s": 2.417
+  },
+  {
+   "id": "L20",
+   "t": "18:08",
+   "tipo": "lugar",
+   "nome": "PALAU GÜELL",
+   "micro": "EL RAVAL",
+   "t_in": 1088.0,
+   "t_fim": 1092.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 26112,
+   "q_fim": 26214,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L21",
+   "t": "18:41",
+   "tipo": "lugar",
+   "nome": "LA RAMBLA",
+   "micro": "CIUTAT VELLA",
+   "t_in": 1121.0,
+   "t_fim": 1125.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 26904,
+   "q_fim": 27006,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L22",
+   "t": "19:29",
+   "tipo": "lugar",
+   "nome": "MERCAT DE LA BOQUERIA",
+   "micro": "EL RAVAL",
+   "t_in": 1169.0,
+   "t_fim": 1173.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 28056,
+   "q_fim": 28158,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L23",
+   "t": "20:18",
+   "tipo": "lugar",
+   "nome": "PLAÇA DE CATALUNYA",
+   "micro": "EIXAMPLE",
+   "t_in": 1218.0,
+   "t_fim": 1222.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 29232,
+   "q_fim": 29334,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "S04",
+   "eventos": [
+    {
+     "i": 1232.44,
+     "f": 1234.9,
+     "linhas": [
+      "Nunca vi tanto pombo na minha vida."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "20:32.440",
+   "t_in": 1232.44,
+   "t_fim": 1234.9,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 29579,
+   "q_fim": 29638,
+   "visivel_s": 2.458
+  },
+  {
+   "id": "L24",
+   "t": "20:57",
+   "tipo": "lugar",
+   "nome": "CASA BATLLÓ",
+   "micro": "EIXAMPLE",
+   "t_in": 1257.0,
+   "t_fim": 1261.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 30168,
+   "q_fim": 30270,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L25",
+   "t": "22:14",
+   "tipo": "lugar",
+   "nome": "CASA MILÀ",
+   "micro": "EIXAMPLE",
+   "t_in": 1334.0,
+   "t_fim": 1338.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 32016,
+   "q_fim": 32118,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L26",
+   "t": "22:20",
+   "tipo": "lugar",
+   "nome": "PASSEIG DE GRÀCIA",
+   "micro": "EIXAMPLE",
+   "t_in": 1340.0,
+   "t_fim": 1344.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 32160,
+   "q_fim": 32262,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L27",
+   "t": "23:07",
+   "tipo": "lugar",
+   "nome": "RISTORANTE PIZZERIA EDEN",
+   "micro": "EIXAMPLE",
+   "t_in": 1387.0,
+   "t_fim": 1391.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 33288,
+   "q_fim": 33390,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "R08",
+   "t": "23:14",
+   "tipo": "recibo",
+   "cabecalho": "PIZZERIA EDEN",
+   "micro": "EIXAMPLE · 10/03/2026",
+   "linhas": [
+    {
+     "item": "Pizzas",
+     "eur": "28.20"
+    }
+   ],
+   "rotulo_total": "TOTAL",
+   "t_in": 1394.0,
+   "t_fim": 1399.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 33456,
+   "q_fim": 33582,
+   "visivel_s": 5.25
+  },
+  {
+   "id": "S09",
+   "eventos": [
+    {
+     "i": 1402.88,
+     "f": 1407.4,
+     "linhas": [
+      "Pizzaria muito boa, a gente não",
+      "aguentou comer tudo,"
+     ]
+    },
+    {
+     "i": 1407.5,
+     "f": 1412.4,
+     "linhas": [
+      "a gente trouxe a caixa",
+      "aqui pra viagem."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "23:22.880",
+   "t_in": 1402.88,
+   "t_fim": 1412.4,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 33669,
+   "q_fim": 33898,
+   "visivel_s": 9.542
+  },
+  {
+   "id": "V02",
+   "tipo": "varredura",
+   "corte_s": 1425.208,
+   "t": "23:45.21",
+   "t_in": 1425.0416666666667,
+   "t_fim": 1425.4166666666667,
+   "saida_s": 0,
+   "notas": [
+    "4 quadros antes do corte, 5 depois"
+   ],
+   "q_in": 34201,
+   "q_fim": 34210,
+   "visivel_s": 0.375
+  },
+  {
+   "id": "C02",
+   "tipo": "placa",
+   "variante": "capitulo",
+   "t": "23:45.60",
+   "linha2": "DIA 3",
+   "posicao": "topo",
+   "t_in": 1425.6,
+   "t_fim": 1429.84,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 34214,
+   "q_fim": 34316,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "L28",
+   "t": "23:46",
+   "tipo": "lugar",
+   "nome": "BASÍLICA DA SAGRADA FAMÍLIA",
+   "micro": "SAGRADA FAMÍLIA",
+   "entrada": "23:47.80",
+   "_entrada": "1,5 s depois da placa DIA 3 (DS 4.2, Calma)",
+   "t_in": 1427.8,
+   "t_fim": 1431.79,
+   "saida_s": 0.24,
+   "notas": [
+    "encerra no corte de cena 23:51.790"
+   ],
+   "q_in": 34267,
+   "q_fim": 34363,
+   "visivel_s": 4.0
+  },
+  {
+   "id": "R09",
+   "t": "26:02",
+   "tipo": "recibo",
+   "cabecalho": "SAGRADA FAMÍLIA",
+   "micro": "SAGRADA FAMÍLIA · 11/03/2026",
+   "linhas": [
+    {
+     "item": "Ingresso",
+     "eur": "25.00"
+    }
+   ],
+   "rotulo_total": "POR PESSOA",
+   "t_in": 1562.0,
+   "t_fim": 1567.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 37488,
+   "q_fim": 37614,
+   "visivel_s": 5.25
+  },
+  {
+   "id": "L29",
+   "t": "26:46",
+   "tipo": "lugar",
+   "nome": "BARÇA STORE AND EXHIBITION",
+   "micro": "SAGRADA FAMÍLIA",
+   "t_in": 1606.0,
+   "t_fim": 1609.29,
+   "saida_s": 0.24,
+   "notas": [
+    "encerra no corte de cena 26:49.290"
+   ],
+   "q_in": 38544,
+   "q_fim": 38623,
+   "visivel_s": 3.292
+  },
+  {
+   "id": "L30",
+   "t": "27:31",
+   "tipo": "lugar",
+   "nome": "XURRERIA TREBOL",
+   "micro": "GRÀCIA",
+   "t_in": 1651.0,
+   "t_fim": 1655.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 39624,
+   "q_fim": 39726,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "R10",
+   "t": "27:38",
+   "tipo": "recibo",
+   "cabecalho": "XURRERIA TREBOL",
+   "micro": "GRÀCIA · 11/03/2026",
+   "linhas": [
+    {
+     "item": "Churros",
+     "eur": "11.70"
+    }
+   ],
+   "rotulo_total": "TOTAL",
+   "t_in": 1658.0,
+   "t_fim": 1663.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 39792,
+   "q_fim": 39918,
+   "visivel_s": 5.25
+  },
+  {
+   "id": "L31",
+   "t": "28:46",
+   "tipo": "lugar",
+   "nome": "LA FÀBRICA",
+   "micro": "BARCELONA",
+   "t_in": 1726.0,
+   "t_fim": 1730.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 41424,
+   "q_fim": 41526,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "R11",
+   "t": "29:12",
+   "tipo": "recibo",
+   "cabecalho": "LA FÀBRICA",
+   "micro": "BARCELONA · 11/03/2026",
+   "linhas": [
+    {
+     "item": "Empanadas",
+     "eur": "7.00"
+    }
+   ],
+   "rotulo_total": "TOTAL",
+   "t_in": 1752.0,
+   "t_fim": 1757.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 42048,
+   "q_fim": 42174,
+   "visivel_s": 5.25
+  },
+  {
+   "id": "U01",
+   "t": "29:20",
+   "tipo": "humor",
+   "linhas": [
+    "pequeno perrengue:",
+    "encarei de volta kkkk"
+   ],
+   "posicao": [
+    1210,
+    700
+   ],
+   "t_in": 1760.0,
+   "t_fim": 1764.2,
+   "saida_s": 0.2,
+   "notas": [],
+   "q_in": 42240,
+   "q_fim": 42341,
+   "visivel_s": 4.208
+  },
+  {
+   "id": "L32",
+   "t": "29:45",
+   "tipo": "lugar",
+   "nome": "PARK GÜELL",
+   "micro": "GRÀCIA",
+   "t_in": 1785.0,
+   "t_fim": 1789.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 42840,
+   "q_fim": 42942,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "R12",
+   "t": "30:01",
+   "tipo": "recibo",
+   "cabecalho": "PARK GÜELL",
+   "micro": "GRÀCIA · 11/03/2026",
+   "linhas": [
+    {
+     "item": "Ingresso",
+     "eur": "18.00"
+    }
+   ],
+   "rotulo_total": "POR PESSOA",
+   "t_in": 1801.0,
+   "t_fim": 1805.62,
+   "saida_s": 0.24,
+   "notas": [
+    "encerra no corte de cena 30:05.620"
+   ],
+   "q_in": 43224,
+   "q_fim": 43335,
+   "visivel_s": 4.625
+  },
+  {
+   "id": "L33",
+   "t": "32:25",
+   "tipo": "lugar",
+   "nome": "TAPA TAPA BAR",
+   "micro": "EIXAMPLE",
+   "t_in": 1945.0,
+   "t_fim": 1949.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 46680,
+   "q_fim": 46782,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "R13",
+   "t": "32:29",
+   "tipo": "recibo",
+   "cabecalho": "TAPA TAPA BAR",
+   "micro": "EIXAMPLE · 11/03/2026",
+   "linhas": [
+    {
+     "item": "Tapas",
+     "eur": "26.20"
+    }
+   ],
+   "rotulo_total": "TOTAL",
+   "t_in": 1949.0,
+   "t_fim": 1954.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 46776,
+   "q_fim": 46902,
+   "visivel_s": 5.25
+  },
+  {
+   "id": "L34",
+   "t": "32:59",
+   "tipo": "lugar",
+   "nome": "100 MONTADITOS",
+   "micro": "BARCELONA",
+   "t_in": 1979.0,
+   "t_fim": 1983.24,
+   "saida_s": 0.24,
+   "notas": [],
+   "q_in": 47496,
+   "q_fim": 47598,
+   "visivel_s": 4.25
+  },
+  {
+   "id": "S05",
+   "eventos": [
+    {
+     "i": 1983.38,
+     "f": 1987.85,
+     "linhas": [
+      "Porque hoje é quarta-feira e quarta-feira",
+      "é um euro cada montadinho."
+     ]
+    },
+    {
+     "i": 1987.9,
+     "f": 1990.9,
+     "linhas": [
+      "Fica a dica aí pra quem vem pra cá."
+     ]
+    }
+   ],
+   "tipo": "legenda",
+   "t": "33:03.380",
+   "t_in": 1983.38,
+   "t_fim": 1990.9,
+   "saida_s": 0.12,
+   "notas": [],
+   "q_in": 47601,
+   "q_fim": 47782,
+   "visivel_s": 7.542
+  },
+  {
+   "id": "R14",
+   "t": "33:16",
+   "tipo": "recibo",
+   "cabecalho": "100 MONTADITOS",
+   "micro": "BARCELONA · 11/03/2026",
+   "linhas": [
+    {
+     "item": "Montaditos",
+     "eur": "6.50"
+    }
+   ],
+   "rotulo_total": "TOTAL",
+   "t_in": 1996.0,
+   "t_fim": 2000.42,
+   "saida_s": 0.24,
+   "notas": [
+    "encerra no corte de cena 33:20.420"
+   ],
+   "q_in": 47904,
+   "q_fim": 48010,
+   "visivel_s": 4.417
+  },
+  {
+   "id": "N01",
+   "tipo": "um",
+   "t": "34:05.80",
+   "_regra": "Diego (11/10/2026): sem bordão e sem tela final; no fechamento fica só o símbolo 1º, com a assinatura Nascer (DS 4.3)",
+   "t_in": 2045.8,
+   "t_fim": 2048.5,
+   "saida_s": 0,
+   "notas": [
+    "fica até o último quadro"
+   ],
+   "q_in": 49099,
+   "q_fim": 49164,
+   "visivel_s": 2.708
+  }
+ ]
+}
