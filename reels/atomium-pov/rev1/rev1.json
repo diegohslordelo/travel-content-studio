@@ -1,0 +1,31 @@
+{
+ "_sobre": "REV1 do Reel POV 'POV: 15 segundos no Atomium' (pedido do Diego, 12/10/2026): sem falas, só som ambiente, cortes rápidos, chegando ao Atomium. DS V2 Nível B (5.2): cortes secos, legenda Padrão com scrim e 1 objeto de marca na posição fixa (placa de abertura com Chegada no quadro 0, é o primeiro dia real em Bruxelas). Planos na ordem real da gravação (15/03/2026, UTC): IMG_2169 11:15:22, IMG_2168 11:15:15, IMG_2167 11:15:04, IMG_2178 11:19:03, IMG_2180 11:20:59. Nenhum dos 5 arquivos tem fala (transcrição sem texto). Tempos em segundos de cada arquivo original.",
+ "fonte_env": "PD_BRUXELAS",
+ "fonte_origem": "Google Drive do Diego › Bruxelas (pasta 14wTdZ0qoIUBcu4qQyeisfLwvtsXbRnSh). Originais 3840 × 2160 HEVC 10 bits HLG / BT.2020, iPhone, 15/03/2026",
+ "fps": 24,
+ "largura": 1080,
+ "altura": 1920,
+ "saida": "reel_atomium_pov_rev1.mp4",
+ "saida_previa": "reel_atomium_pov_rev1_previa_leve.mp4",
+ "fade_corte_ms": 8,
+ "nivelar_planos": true,
+ "lufs_alvo": -14.0,
+ "pico_dbfs": -1.5,
+ "placa_xy": [72, 640],
+ "placas": [
+  {"id": "abertura", "variante": "abertura", "linha1": "PRIMEIRO DIA EM", "linha2": "BRUXELAS", "plano": "P01", "saida": true}
+ ],
+ "texto_fixo": {"texto": "POV:\n15 segundos no Atomium", "de_quadro": 0, "_nota": "legenda Padrão (DS 3.2) como título do POV, grupo inteiro, do quadro 0 até o fim; quebra com a linha de cima menor (DS 3.1)"},
+ "planos": [
+  {"id": "P01", "nota": "Gancho: o Atomium inteiro no fim da avenida", "video": ["IMG_2169.MOV", 0.00], "dur": 1.60, "cx": 0.46, "legendas": []},
+  {"id": "P02", "nota": "Avenida, outro eixo", "video": ["IMG_2168.MOV", 0.40], "dur": 1.20, "cx": 0.47, "legendas": []},
+  {"id": "P03", "nota": "Esfera do topo com a bandeira", "video": ["IMG_2167.MOV", 0.00], "dur": 1.10, "cx": 0.47, "legendas": []},
+  {"id": "P04", "nota": "A câmera sobe: o Atomium enche o quadro", "video": ["IMG_2169.MOV", 2.40], "dur": 1.20, "cx": 0.50, "legendas": []},
+  {"id": "P05", "nota": "Panorâmica revelando a estrutura", "video": ["IMG_2178.MOV", 0.70], "dur": 1.20, "cx": [[0.0, 0.33], [1.2, 0.42]], "legendas": []},
+  {"id": "P06", "nota": "Esfera do topo, nuvens passando", "video": ["IMG_2167.MOV", 2.20], "dur": 1.00, "cx": 0.50, "legendas": []},
+  {"id": "P07", "nota": "Atomium inteiro contra o céu", "video": ["IMG_2178.MOV", 2.60], "dur": 1.20, "cx": 0.47, "legendas": []},
+  {"id": "P08", "nota": "Avenida de novo, mais perto do eixo", "video": ["IMG_2168.MOV", 3.00], "dur": 1.20, "cx": 0.48, "legendas": []},
+  {"id": "P09", "nota": "Marina caminhando até o Atomium (o plano mais longo: a chegada)", "video": ["IMG_2180.MOV", 2.60], "dur": 3.90, "cx": [[0.0, 0.50], [2.0, 0.55], [3.9, 0.52]], "legendas": []},
+  {"id": "P10", "nota": "Fecha no Atomium inteiro (loop com o quadro 0)", "video": ["IMG_2178.MOV", 4.40], "dur": 1.40, "cx": 0.48, "legendas": []}
+ ]
+}

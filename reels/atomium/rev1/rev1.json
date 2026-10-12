@@ -1,0 +1,150 @@
+{
+ "_sobre": "REV1 do Reel 'Atomium: o cristal de ferro gigante de Bruxelas' (painel v4, p200, sáb 10/10/2026 11:00, Primeiro Dia (série), Nível A). Pedido do Diego (12/10/2026): fazer o Reel e montar também com os outros vídeos da pasta Bruxelas do Drive, não só os listados no planejamento. Entram, além dos planos do painel: IMG_2143 ('Bom dia, Bélgica!', 10:29 UTC) e as falas do IMG_2179 (Diego: dá para subir, não subimos pela correria). IMG_2181 é a parada do bonde às 11:45 UTC, 25 min depois da visita: entra na saída ('agora a gente vai continuar…'), não na chegada. Tempos em segundos de cada arquivo original. Falas medidas por 3 passadas independentes de transcrição (large-v3: arquivo inteiro, janela larga e janela exata do corte).",
+ "fonte_env": "PD_BRUXELAS",
+ "fonte_origem": "Google Drive do Diego › Bruxelas (pasta 14wTdZ0qoIUBcu4qQyeisfLwvtsXbRnSh). Originais 3840 × 2160 HEVC 10 bits HLG / BT.2020, iPhone, 15/03/2026",
+ "fps": 24,
+ "largura": 1080,
+ "altura": 1920,
+ "saida": "reel_atomium_rev1.mp4",
+ "saida_previa": "reel_atomium_rev1_previa_leve.mp4",
+ "fade_corte_ms": 8,
+ "lufs_alvo": -14.0,
+ "pico_dbfs": -1.5,
+ "placa_xy": [72, 640],
+ "placas": [
+  {"id": "abertura", "variante": "abertura", "linha1": "PRIMEIRO DIA EM", "linha2": "BRUXELAS", "plano": "P01", "saida": true}
+ ],
+ "ticket": {
+  "_fonte": "DS 2.3 (anatomia do ticket) e 2.6 (Curiosidade → Ticket 'SABIA?': variante sem estrela, com ? no canhoto, Subida curta). Posição: zona de objeto (DS 1.3, y 880–1220), num plano sem rosto.",
+  "plano": "P03",
+  "entra_s": 0.0,
+  "sai_no_fim_do_plano": true,
+  "x": 96,
+  "y": 940,
+  "palavra": "SABIA?",
+  "micro": "CURIOSIDADE · DIA 1"
+ },
+ "planos": [
+  {
+   "id": "P01",
+   "nota": "Gancho. Atomium inteiro no fim da avenida, com a voz da Marina (selfie IMG_2170) por cima: mesmo lugar e mesmo momento. 'basicamente' fica de fora (termina ≈ 38,84)",
+   "video": ["IMG_2169.MOV", 0.20],
+   "audio": ["IMG_2170.MOV", 38.84],
+   "dur": 2.40,
+   "cx": 0.48,
+   "legendas": [
+    {"texto": "Ele é um\ncristal de *ferro*", "palavras": [38.86, 39.02, 39.12, 39.16, 40.56, 40.64]}
+   ]
+  },
+  {
+   "id": "P02",
+   "nota": "Esfera do topo contra as nuvens. Áudio contínuo (mesma frase)",
+   "video": ["IMG_2167.MOV", 0.60],
+   "audio_continua": true,
+   "dur": 1.50,
+   "cx": 0.50,
+   "legendas": [
+    {"texto": "aumentado de\n165 bilhões de vezes", "palavras": [41.08, 42.42, 42.52, 43.20, 43.86, 44.02]}
+   ]
+  },
+  {
+   "id": "P03",
+   "nota": "Atomium inteiro contra o céu (fim da panorâmica). Áudio contínuo até 'vezes' (termina ≈ 44,26). Ticket SABIA? na zona de objeto (sem rosto no plano)",
+   "video": ["IMG_2178.MOV", 3.70],
+   "audio_continua": true,
+   "dur": 1.66,
+   "cx": 0.45,
+   "legendas": []
+  },
+  {
+   "id": "P04",
+   "nota": "Selfie dos dois com o Atomium atrás. 'ele foi feito com a experiência' fica de fora (incerto na transcrição)",
+   "video": ["IMG_2170.MOV", 45.40],
+   "dur": 2.90,
+   "cx": 0.49,
+   "legendas": [
+    {"texto": "pra uma\nexposição aqui em *1958*", "palavras": [45.50, 46.04, 46.24, 46.88, 47.22, 47.46]}
+   ]
+  },
+  {
+   "id": "P05",
+   "nota": "Reação da Marina. Começa em 'sério' (a fala anterior 'eu falei' termina ≈ 50,28)",
+   "video": ["IMG_2170.MOV", 50.28],
+   "dur": 3.72,
+   "cx": 0.50,
+   "legendas": [
+    {"texto": "Sério? 1958?", "palavras": [50.30, 50.74]},
+    {"texto": "Porque você\nolha de perto", "palavras": [51.44, 51.58, 51.74, 51.90, 52.12]},
+    {"texto": "e parece uma coisa", "palavras": [52.38, 52.48, 52.62, 52.78]},
+    {"texto": "tão moderna assim.", "palavras": [52.94, 53.08, 53.64]}
+   ]
+  },
+  {
+   "id": "P06",
+   "nota": "Mais cedo, no centro (10:29 UTC): chegada a Bruxelas",
+   "video": ["IMG_2143.MOV", 0.00],
+   "dur": 2.00,
+   "cx": null,
+   "legendas": [
+    {"texto": "Bom dia, Bélgica!", "palavras": [0.02, 0.58, 1.18]}
+   ]
+  },
+  {
+   "id": "P07",
+   "nota": "Marina caminhando até o Atomium, com a voz do início da selfie por cima",
+   "video": ["IMG_2180.MOV", 0.00],
+   "audio": ["IMG_2170.MOV", 0.00],
+   "dur": 2.50,
+   "cx": [[0.0, 0.42], [5.6, 0.52]],
+   "legendas": [
+    {"texto": "Primeira parada: Atomium.", "palavras": [0.02, 0.84, 1.42]}
+   ]
+  },
+  {
+   "id": "P08",
+   "nota": "Continuação da mesma tomada (corte só de áudio: 'aqui em Bruxelas' fica de fora)",
+   "video_continua": true,
+   "audio": ["IMG_2170.MOV", 4.42],
+   "dur": 3.20,
+   "cx": [[0.0, 0.42], [5.6, 0.52]],
+   "legendas": [
+    {"texto": "A gente\nveio de metrô,", "palavras": [4.48, 4.72, 4.86, 5.08, 5.30]},
+    {"texto": "acabamos de chegar.", "palavras": [6.50, 7.06, 7.22]}
+   ]
+  },
+  {
+   "id": "P09",
+   "nota": "Diego (selfie vertical): dá para subir, não subiram. 'se eu não me engano custa 18 euros' fica de fora (preço sem registro, painel: não citar preço da subida)",
+   "video": ["IMG_2179.MOV", 3.12],
+   "dur": 5.76,
+   "cx": null,
+   "legendas": [
+    {"texto": "Você pode subir", "palavras": [3.22, 3.42, 3.64]},
+    {"texto": "até aquela\núltima bola lá,", "palavras": [3.86, 4.12, 5.28, 5.54, 5.90]},
+    {"texto": "mas a gente optou", "palavras": [6.18, 6.52, 6.60, 6.72]},
+    {"texto": "por não fazer", "palavras": [7.00, 7.08, 7.22]},
+    {"texto": "por causa da\nnossa correria hoje.", "palavras": [7.50, 7.68, 7.88, 8.04, 8.18, 8.66]}
+   ]
+  },
+  {
+   "id": "P10",
+   "nota": "Parada do bonde perto do Atomium, 11:45 UTC (saída), com o fim da selfie por cima",
+   "video": ["IMG_2181.MOV", 0.00],
+   "audio": ["IMG_2170.MOV", 58.32],
+   "dur": 3.40,
+   "cx": 0.50,
+   "legendas": [
+    {"texto": "Agora a gente\nvai continuar", "palavras": [58.42, 58.62, 58.74, 58.84, 58.92]},
+    {"texto": "a nossa\njornada por Bruxelas.", "palavras": [59.46, 59.96, 60.14, 60.84, 61.04]}
+   ]
+  },
+  {
+   "id": "P11",
+   "nota": "Loop: o Atomium no mesmo eixo do quadro 0, outro momento (som ambiente do próprio plano)",
+   "video": ["IMG_2168.MOV", 0.30],
+   "dur": 0.80,
+   "cx": 0.47,
+   "legendas": []
+  }
+ ]
+}

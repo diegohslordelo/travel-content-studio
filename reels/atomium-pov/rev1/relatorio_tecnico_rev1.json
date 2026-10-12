@@ -1,0 +1,601 @@
+{
+ "quadros": 361,
+ "duracao_s": 15.042,
+ "lufs_antes": -24.2,
+ "ganho_db": 10.2,
+ "planos": [
+  {
+   "id": "P01",
+   "video": [
+    "IMG_2169.MOV",
+    0.0
+   ],
+   "audio": [
+    "IMG_2169.MOV",
+    0.0
+   ],
+   "k0": 0,
+   "k1": 38,
+   "cx": 0.46,
+   "recorte_x": 1158
+  },
+  {
+   "id": "P02",
+   "video": [
+    "IMG_2168.MOV",
+    0.4
+   ],
+   "audio": [
+    "IMG_2168.MOV",
+    0.4
+   ],
+   "k0": 38,
+   "k1": 67,
+   "cx": 0.47,
+   "recorte_x": 1196
+  },
+  {
+   "id": "P03",
+   "video": [
+    "IMG_2167.MOV",
+    0.0
+   ],
+   "audio": [
+    "IMG_2167.MOV",
+    0.0
+   ],
+   "k0": 67,
+   "k1": 93,
+   "cx": 0.47,
+   "recorte_x": 1196
+  },
+  {
+   "id": "P04",
+   "video": [
+    "IMG_2169.MOV",
+    2.4
+   ],
+   "audio": [
+    "IMG_2169.MOV",
+    2.4
+   ],
+   "k0": 93,
+   "k1": 122,
+   "cx": 0.5,
+   "recorte_x": 1312
+  },
+  {
+   "id": "P05",
+   "video": [
+    "IMG_2178.MOV",
+    0.7
+   ],
+   "audio": [
+    "IMG_2178.MOV",
+    0.7
+   ],
+   "k0": 122,
+   "k1": 151,
+   "cx": [
+    [
+     0.0,
+     0.33
+    ],
+    [
+     1.2,
+     0.42
+    ]
+   ],
+   "recorte_x": [
+    659,
+    1005
+   ]
+  },
+  {
+   "id": "P06",
+   "video": [
+    "IMG_2167.MOV",
+    2.2
+   ],
+   "audio": [
+    "IMG_2167.MOV",
+    2.2
+   ],
+   "k0": 151,
+   "k1": 175,
+   "cx": 0.5,
+   "recorte_x": 1312
+  },
+  {
+   "id": "P07",
+   "video": [
+    "IMG_2178.MOV",
+    2.6
+   ],
+   "audio": [
+    "IMG_2178.MOV",
+    2.6
+   ],
+   "k0": 175,
+   "k1": 204,
+   "cx": 0.47,
+   "recorte_x": 1196
+  },
+  {
+   "id": "P08",
+   "video": [
+    "IMG_2168.MOV",
+    3.0
+   ],
+   "audio": [
+    "IMG_2168.MOV",
+    3.0
+   ],
+   "k0": 204,
+   "k1": 233,
+   "cx": 0.48,
+   "recorte_x": 1234
+  },
+  {
+   "id": "P09",
+   "video": [
+    "IMG_2180.MOV",
+    2.6
+   ],
+   "audio": [
+    "IMG_2180.MOV",
+    2.6
+   ],
+   "k0": 233,
+   "k1": 327,
+   "cx": [
+    [
+     0.0,
+     0.5
+    ],
+    [
+     2.0,
+     0.55
+    ],
+    [
+     3.9,
+     0.52
+    ]
+   ],
+   "recorte_x": [
+    1312,
+    1504,
+    1389
+   ]
+  },
+  {
+   "id": "P10",
+   "video": [
+    "IMG_2178.MOV",
+    4.4
+   ],
+   "audio": [
+    "IMG_2178.MOV",
+    4.4
+   ],
+   "k0": 327,
+   "k1": 361,
+   "cx": 0.48,
+   "recorte_x": 1234
+  }
+ ],
+ "elementos_por_quadro": {
+  "0": [
+   [
+    "placa",
+    "abertura",
+    [
+     72,
+     640,
+     850.0,
+     859.0
+    ]
+   ],
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "12": [
+   [
+    "placa",
+    "abertura",
+    [
+     72,
+     640,
+     850.0,
+     859.0
+    ]
+   ],
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "24": [
+   [
+    "placa",
+    "abertura",
+    [
+     72,
+     640,
+     850.0,
+     859.0
+    ]
+   ],
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "36": [
+   [
+    "placa",
+    "abertura",
+    [
+     72,
+     640,
+     850.0,
+     859.0
+    ]
+   ],
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "48": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "60": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "72": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "84": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "96": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "108": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "120": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "132": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "144": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "156": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "168": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "180": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "192": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "204": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "216": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "228": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "240": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "252": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "264": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "276": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "288": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "300": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "312": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "324": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "336": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "348": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ],
+  "360": [
+   [
+    "legenda",
+    "POV:\n15 segundos no Atomium",
+    [
+     233.3,
+     1291.2,
+     846.7,
+     1420
+    ]
+   ]
+  ]
+ }
+}
