@@ -1,0 +1,185 @@
+{
+ "_sobre": "REV2 do Reel do Atomium. Pedido do Diego (12/10/2026): a REV1 cortava falas antes de terminar e tinha muitos planos de 2–3 s, sem imersão. A REV2 usa UM trecho contínuo de áudio do IMG_2170 (36,85–62,14 s): a conversa inteira, do 'cristal de ferro' até 'vamos continuar a nossa jornada por Bruxelas', sem nenhuma emenda. A imagem muda só nas pausas medidas da voz (VAD Silero + energia na faixa da voz). 4 planos: 4,8 s · 12,7 s · 3,7 s · 4,1 s. Tempos em segundos de cada arquivo original.",
+ "medicao_voz": {
+  "metodo": "VAD Silero (limiar 0,5 e 0,35) e energia na faixa 250–3500 Hz em janelas de 40 ms, no IMG_2170. A transcrição (large-v3, medium, large-v2, turbo) dá o texto; o início de cada grupo depois de pausa vem do VAD",
+  "trechos_de_voz_IMG_2170": [
+   "36,19–36,58 (fala anterior, fica de fora)",
+   "37,28–39,62",
+   "40,06–41,38",
+   "41,98–54,05",
+   "54,62–57,60/57,89",
+   "58,34–59,78",
+   "59,97–61,89/61,95"
+  ],
+  "inicio_do_audio": "36,85: 0,45 s depois do fim da fala anterior (36,40) e 0,43 s antes da 1ª voz (37,28)",
+  "fim_do_audio": "62,14: a voz ('Bruxelas') some em 61,56–61,60 na energia; o VAD marca até 61,95. Nenhuma voz depois",
+  "cortes_de_imagem": [
+   "4,83 s do Reel = 41,68 no original, pausa 41,38–41,98",
+   "17,50 s = 54,35, pausa 54,05–54,62",
+   "21,17 s = 58,02, pausa 57,89–58,34"
+  ],
+  "legendas": "Início de cada grupo: depois de pausa, pelo VAD do áudio do Reel; dentro de fala contínua, pela transcrição large-v3 do áudio do Reel e da janela do original (as duas concordam em ±0,05 s), nunca antes da voz"
+ },
+ "fonte_env": "PD_BRUXELAS",
+ "fonte_origem": "Google Drive do Diego › Bruxelas (pasta 14wTdZ0qoIUBcu4qQyeisfLwvtsXbRnSh). Originais 3840 × 2160 HEVC 10 bits HLG / BT.2020, iPhone, 15/03/2026",
+ "fps": 24,
+ "largura": 1080,
+ "altura": 1920,
+ "saida": "reel_atomium_rev2.mp4",
+ "saida_previa": "reel_atomium_rev2_previa_leve.mp4",
+ "fade_corte_ms": 8,
+ "lufs_alvo": -14.0,
+ "pico_dbfs": -1.5,
+ "placa_xy": [
+  72,
+  640
+ ],
+ "placas": [
+  {
+   "id": "abertura",
+   "variante": "abertura",
+   "linha1": "PRIMEIRO DIA EM",
+   "linha2": "BRUXELAS",
+   "plano": "P01",
+   "saida": true,
+   "sai_s": 2.4,
+   "_nota": "DS 5.2: placa com Chegada no quadro 0 e saída pela direita no contexto (2–5 s), antes do ticket (DS 2.1)"
+  }
+ ],
+ "ticket": {
+  "_fonte": "DS 2.3 e 2.6 (Curiosidade → Ticket 'SABIA?'). Zona de objeto (DS 1.3, y 880–1220), num plano sem rosto, depois da saída da placa; permanência ≈ 2 s (DS 2.3: 1,5–3 s)",
+  "plano": "P01",
+  "entra_s": 2.62,
+  "sai_s": 4.75,
+  "x": 96,
+  "y": 940,
+  "palavra": "SABIA?",
+  "micro": "CURIOSIDADE · DIA 1"
+ },
+ "planos": [
+  {
+   "id": "P01",
+   "nota": "Gancho: o Atomium inteiro no fim da avenida (11:15 UTC), com a conversa da selfie (11:16) por baixo. Corte de imagem na pausa 41,38–41,98",
+   "video": [
+    "IMG_2169.MOV",
+    0.1
+   ],
+   "audio": [
+    "IMG_2170.MOV",
+    36.85
+   ],
+   "dur": 4.8333,
+   "cx": 0.47,
+   "legendas": [
+    {
+     "texto": "E aí, basicamente,",
+     "inicio": 37.29
+    },
+    {
+     "texto": "ele é um cristal",
+     "inicio": 38.9
+    },
+    {
+     "texto": "de ferro\naumentado",
+     "inicio": 40.09
+    }
+   ]
+  },
+  {
+   "id": "P02",
+   "nota": "A selfie dos dois, contínua (12,7 s), em sincronia com o áudio. Quem fala é a Marina: o recorte fica nela (cx 0,54; rostos medidos: Diego 0,31–0,48, Marina 0,51–0,67 da largura, que não cabem juntos em 9:16) e o Diego aparece em parte",
+   "video": [
+    "IMG_2170.MOV",
+    41.6833
+   ],
+   "audio_continua": true,
+   "dur": 12.6667,
+   "cx": 0.54,
+   "legendas": [
+    {
+     "texto": "de *165* bilhões de vezes.",
+     "inicio": 42.0
+    },
+    {
+     "texto": "Ele foi feito\ncom a experiência",
+     "inicio": 44.38
+    },
+    {
+     "texto": "pra uma\nexposição aqui em *1958*.",
+     "inicio": 45.51
+    },
+    {
+     "texto": "E eu já\nfalei pro Diego,",
+     "inicio": 48.95
+    },
+    {
+     "texto": "eu falei:\nsério, em 1958?",
+     "inicio": 49.89
+    },
+    {
+     "texto": "Porque você\nolha de perto",
+     "inicio": 51.32
+    },
+    {
+     "texto": "e parece uma coisa",
+     "inicio": 52.43
+    },
+    {
+     "texto": "tão moderna assim.",
+     "inicio": 52.97
+    }
+   ]
+  },
+  {
+   "id": "P03",
+   "nota": "O Atomium inteiro contra o céu (fim da panorâmica) enquanto o Diego diz que ele é enorme. Entra e sai nas pausas 54,05–54,62 e 57,89–58,34",
+   "video": [
+    "IMG_2178.MOV",
+    1.9
+   ],
+   "audio_continua": true,
+   "dur": 3.6667,
+   "cx": [
+    [
+     0.0,
+     0.43
+    ],
+    [
+     3.67,
+     0.49
+    ]
+   ],
+   "legendas": [
+    {
+     "texto": "É, ele é\nrealmente muito enorme,",
+     "inicio": 54.64
+    },
+    {
+     "texto": "muito moderno\ne muito bonito.",
+     "inicio": 55.83
+    }
+   ]
+  },
+  {
+   "id": "P04",
+   "nota": "Volta à selfie para a despedida (fala do Diego: recorte em cx 0,46); termina 0,58 s depois do fim da voz",
+   "video": [
+    "IMG_2170.MOV",
+    58.0167
+   ],
+   "audio_continua": true,
+   "dur": 4.125,
+   "cx": 0.46,
+   "legendas": [
+    {
+     "texto": "E aí agora a gente vai",
+     "inicio": 58.34
+    },
+    {
+     "texto": "continuar a nossa\njornada por Bruxelas.",
+     "inicio": 58.95
+    }
+   ]
+  }
+ ]
+}

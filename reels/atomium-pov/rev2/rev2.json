@@ -1,0 +1,120 @@
+{
+ "_sobre": "REV2 do Reel 'POV: 15 segundos no Atomium'. Pedido do Diego (12/10/2026): no máximo 4 vídeos (3 × 5 s ou 4 × 4 s), com imersão; a REV1 tinha 10 cortes de ≈ 1 s. Formato A02 'Rua com som' do manual de formatos (research/04, 3.1–3.2): sem música, som ambiente como protagonista, 2–3 planos, quase sem corte, 8–15 s, texto mínimo. 3 planos de ≈ 5 s, na ordem real da chegada (15/03/2026, UTC): IMG_2169 11:15:22 (a avenida, o Atomium inteiro, a câmera sobe), IMG_2178 11:19:03 (panorâmica: o Atomium entra no quadro), IMG_2180 11:20:59 (a Marina caminhando até ele). Nenhum dos 3 tem voz (VAD Silero e transcrição sem texto).",
+ "fonte_env": "PD_BRUXELAS",
+ "fonte_origem": "Google Drive do Diego › Bruxelas (pasta 14wTdZ0qoIUBcu4qQyeisfLwvtsXbRnSh). Originais 3840 × 2160 HEVC 10 bits HLG / BT.2020, iPhone, 15/03/2026",
+ "fps": 24,
+ "largura": 1080,
+ "altura": 1920,
+ "saida": "reel_atomium_pov_rev2.mp4",
+ "saida_previa": "reel_atomium_pov_rev2_previa_leve.mp4",
+ "fade_corte_ms": 40,
+ "nivelar_planos": true,
+ "lufs_alvo": -14.0,
+ "pico_dbfs": -1.5,
+ "placa_xy": [
+  72,
+  640
+ ],
+ "placas": [
+  {
+   "id": "abertura",
+   "variante": "abertura",
+   "linha1": "PRIMEIRO DIA EM",
+   "linha2": "BRUXELAS",
+   "plano": "P01",
+   "saida": true,
+   "sai_s": 2.4,
+   "_nota": "DS 5.2 e research/04 (A02): só a placa, com Chegada no quadro 0; sai pela direita em 2,4 s para a imagem respirar"
+  }
+ ],
+ "texto_fixo": {
+  "texto": "POV:\n15 segundos no Atomium",
+  "de_quadro": 0,
+  "_nota": "legenda Padrão (DS 3.2) como título do POV, do quadro 0 até o fim; linha de cima menor (DS 3.1)"
+ },
+ "planos": [
+  {
+   "id": "P01",
+   "nota": "A avenida: o Atomium inteiro no fim, a câmera sobe até ele encher o quadro (o arquivo inteiro)",
+   "video": [
+    "IMG_2169.MOV",
+    0.0
+   ],
+   "dur": 4.9167,
+   "cx": 0.47,
+   "legendas": []
+  },
+  {
+   "id": "P02",
+   "nota": "Panorâmica do Atomium contra o céu; o recorte acompanha a esfera do topo (medida: 0,15 → 0,44 da largura entre 0,8 e 5,0 s), então a estrutura fica no centro o tempo todo",
+   "video": [
+    "IMG_2178.MOV",
+    0.8
+   ],
+   "dur": 5.0417,
+   "cx": [
+    [
+     0,
+     0.16
+    ],
+    [
+     0.6,
+     0.22
+    ],
+    [
+     1.2,
+     0.27
+    ],
+    [
+     2.2,
+     0.37
+    ],
+    [
+     3.2,
+     0.42
+    ],
+    [
+     4.2,
+     0.44
+    ],
+    [
+     5.04,
+     0.45
+    ]
+   ],
+   "legendas": []
+  },
+  {
+   "id": "P03",
+   "nota": "A Marina caminhando até o Atomium: o recorte segue a Marina (cabeça em 0,30–0,34 da largura) e vira para o Atomium conforme ela chega (0,42–0,55), revelando o monumento no fim",
+   "video": [
+    "IMG_2180.MOV",
+    2.0
+   ],
+   "dur": 5.0417,
+   "cx": [
+    [
+     0,
+     0.33
+    ],
+    [
+     2.0,
+     0.36
+    ],
+    [
+     3.0,
+     0.45
+    ],
+    [
+     4.0,
+     0.52
+    ],
+    [
+     5.04,
+     0.54
+    ]
+   ],
+   "legendas": []
+  }
+ ]
+}
