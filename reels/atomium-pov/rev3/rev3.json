@@ -1,0 +1,84 @@
+{
+ "_sobre": "REV3 do Reel POV do Atomium. Pedido do Diego (12/10/2026): 'POV: você chegou no Atomium'. 2 takes (no máximo 3, ideal 2): (1) a Marina caminhando até o Atomium, do ponto de vista do Diego gravando; (2) um take só do Atomium. Sem a placa amarela no vídeo (só na capa). Texto 'POV: você chegou no Atomium' na fonte do DS, mais embaixo, sem ocupar o meio da tela. No fim, o símbolo 1º do DS aparece com o Atomium ao fundo, sem escurecer a tela, e o vídeo volta ao início (loop) para puxar o gancho. Nenhum dos 2 arquivos tem voz (VAD Silero).",
+ "fonte_env": "PD_BRUXELAS",
+ "fonte_origem": "Google Drive do Diego › Bruxelas (pasta 14wTdZ0qoIUBcu4qQyeisfLwvtsXbRnSh). Originais 3840 × 2160 HEVC 10 bits HLG / BT.2020, iPhone, 15/03/2026",
+ "fps": 24,
+ "largura": 1080,
+ "altura": 1920,
+ "saida": "reel_atomium_pov_rev3.mp4",
+ "saida_previa": "reel_atomium_pov_rev3_previa_leve.mp4",
+ "fade_corte_ms": 40,
+ "nivelar_planos": true,
+ "lufs_alvo": -14.0,
+ "pico_dbfs": -1.5,
+ "placa_xy": [
+  72,
+  640
+ ],
+ "placas": [],
+ "texto_fixo": {
+  "texto": "POV:\nvocê chegou no Atomium",
+  "de_quadro": 0,
+  "_nota": "legenda Padrão (DS 3.2: Barlow 700 56, base y 1420, centro x 540), do quadro 0 até o fim; 27 caracteres não cabem numa linha (máx. 26), e a linha de cima fica menor (DS 3.1)"
+ },
+ "simbolo": {
+  "_fonte": "DS 0.2.3 (ativo nº 4, fechamento), 4.3 (assinatura Nascer: o sol sobe de trás do traço e o 1 aparece; 700 ms, ease-cinema) e bundle PD.one (desenho, cores padrão: 1 grafite, sol e traço amarelos). Sem módulo grafite e sem escurecer a cena (pedido do Diego). Altura 176 px = lado do módulo da placa (DS 2.1, ≈ 176 px). O '1' na cor papel (variante do bundle usada no módulo, num #FCFBF8) com a sombra de texto da legenda (DS 3.1), porque o grafite some sobre as esferas metálicas",
+  "plano": "P02",
+  "entra_s": 2.7,
+  "altura": 176,
+  "centro": [
+   540,
+   960
+  ],
+  "num": "papel"
+ },
+ "planos": [
+  {
+   "id": "P01",
+   "nota": "A Marina caminhando até o Atomium, do ponto de vista do Diego (2,40–7,03 do arquivo). O recorte segue a Marina (centro medido 0,30 → 0,48) e vira para o Atomium, que entra no quadro em ≈ 1,5 s (gancho nos 3 primeiros segundos, referência 3.2)",
+   "video": [
+    "IMG_2180.MOV",
+    2.4
+   ],
+   "dur": 4.625,
+   "cx": [
+    [
+     0.0,
+     0.34
+    ],
+    [
+     0.6,
+     0.34
+    ],
+    [
+     1.6,
+     0.4
+    ],
+    [
+     2.6,
+     0.48
+    ],
+    [
+     3.6,
+     0.52
+    ],
+    [
+     4.62,
+     0.54
+    ]
+   ],
+   "legendas": []
+  },
+  {
+   "id": "P02",
+   "nota": "O Atomium na avenida: a câmera sobe até ele inteiro na vertical (o arquivo inteiro). O símbolo 1º nasce em 2,7 s e fica até o fim; o corte volta ao início",
+   "video": [
+    "IMG_2169.MOV",
+    0.0
+   ],
+   "dur": 4.9167,
+   "cx": 0.47,
+   "legendas": []
+  }
+ ]
+}
