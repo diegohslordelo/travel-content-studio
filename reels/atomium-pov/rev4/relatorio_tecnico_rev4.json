@@ -1,0 +1,427 @@
+{
+ "quadros": 290,
+ "duracao_s": 12.083,
+ "lufs_antes": -24.5,
+ "ganho_db": 10.5,
+ "planos": [
+  {
+   "id": "P01",
+   "video": [
+    "IMG_2180.MOV",
+    0.0
+   ],
+   "audio": [
+    "IMG_2180.MOV",
+    0.0
+   ],
+   "k0": 0,
+   "k1": 171,
+   "cx": [
+    [
+     0.0,
+     0.47
+    ],
+    [
+     1.4,
+     0.4
+    ],
+    [
+     2.2,
+     0.33
+    ],
+    [
+     2.4,
+     0.33
+    ],
+    [
+     3.4,
+     0.68
+    ],
+    [
+     4.0,
+     0.64
+    ],
+    [
+     4.5,
+     0.6
+    ],
+    [
+     5.5,
+     0.55
+    ],
+    [
+     6.5,
+     0.53
+    ],
+    [
+     7.125,
+     0.54
+    ]
+   ],
+   "recorte_x": [
+    1197,
+    928,
+    659,
+    659,
+    2003,
+    1850,
+    1696,
+    1504,
+    1427,
+    1466
+   ]
+  },
+  {
+   "id": "P02",
+   "video": [
+    "IMG_2169.MOV",
+    0.0
+   ],
+   "audio": [
+    "IMG_2169.MOV",
+    0.0
+   ],
+   "k0": 171,
+   "k1": 290,
+   "cx": 0.47,
+   "recorte_x": 1196
+  }
+ ],
+ "elementos_por_quadro": {
+  "0": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "12": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "24": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "36": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "48": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "60": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "72": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "84": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "96": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "108": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "120": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "132": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "144": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "156": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "168": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "180": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "192": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "204": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "216": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "228": [
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "240": [
+   [
+    "simbolo_1o",
+    [
+     399,
+     820
+    ]
+   ],
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "252": [
+   [
+    "simbolo_1o",
+    [
+     399,
+     820
+    ]
+   ],
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "264": [
+   [
+    "simbolo_1o",
+    [
+     399,
+     820
+    ]
+   ],
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "276": [
+   [
+    "simbolo_1o",
+    [
+     399,
+     820
+    ]
+   ],
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ],
+  "288": [
+   [
+    "simbolo_1o",
+    [
+     399,
+     820
+    ]
+   ],
+   [
+    "legenda",
+    "POV:\nvocê chegou no Atomium",
+    [
+     227.9,
+     1291.2,
+     852.1,
+     1420
+    ]
+   ]
+  ]
+ }
+}

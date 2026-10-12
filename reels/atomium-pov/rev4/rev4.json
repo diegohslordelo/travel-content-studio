@@ -1,0 +1,100 @@
+{
+ "_sobre": "REV4 do Reel 'POV: você chegou no Atomium'. Pedido do Diego (12/10/2026): estender o take da Marina, porque o corte para o Atomium ficou rápido, com mais ≈ 2 s de Atomium nesse take, se houver. Não há filmagem depois: o IMG_2180 tem 7,125 s (171 quadros, todos válidos e diferentes entre si, conferido por hash) e a REV3 já ia até 7,03 (é a única cópia no Drive). Por isso a REV4 usa o take inteiro, do quadro 0 ao 170 (0,000–7,125, +2,5 s; inclui os 2 últimos quadros que a REV3 deixava de folga, pedido do Diego) e o recorte vira para o Atomium mais cedo (2,4–3,4 s do take, em vez de ≈ 5 s): o Atomium fica ≈ 4,0 s na tela nesse take (eram ≈ 3,1 s). O take do Atomium (IMG_2169) também vai até o último quadro (119, +1 quadro). O resto é a REV3 sem mudança (2 takes, título, símbolo 1º, som). Nenhum dos 2 arquivos tem voz.",
+ "fonte_env": "PD_BRUXELAS",
+ "fonte_origem": "Google Drive do Diego › Bruxelas (pasta 14wTdZ0qoIUBcu4qQyeisfLwvtsXbRnSh). Originais 3840 × 2160 HEVC 10 bits HLG / BT.2020, iPhone, 15/03/2026",
+ "fps": 24,
+ "largura": 1080,
+ "altura": 1920,
+ "saida": "reel_atomium_pov_rev4.mp4",
+ "saida_previa": "reel_atomium_pov_rev4_previa_leve.mp4",
+ "fade_corte_ms": 40,
+ "nivelar_planos": true,
+ "lufs_alvo": -14.0,
+ "pico_dbfs": -1.5,
+ "placa_xy": [
+  72,
+  640
+ ],
+ "placas": [],
+ "texto_fixo": {
+  "texto": "POV:\nvocê chegou no Atomium",
+  "de_quadro": 0,
+  "_nota": "legenda Padrão (DS 3.2: Barlow 700 56, base y 1420, centro x 540), do quadro 0 até o fim; 27 caracteres não cabem numa linha (máx. 26), e a linha de cima fica menor (DS 3.1)"
+ },
+ "simbolo": {
+  "_fonte": "DS 0.2.3 (ativo nº 4, fechamento), 4.3 (assinatura Nascer: o sol sobe de trás do traço e o 1 aparece; 700 ms, ease-cinema) e bundle PD.one (desenho, cores padrão: 1 grafite, sol e traço amarelos). Sem módulo grafite e sem escurecer a cena (pedido do Diego). Altura 176 px = lado do módulo da placa (DS 2.1, ≈ 176 px). O '1' na cor papel (variante do bundle usada no módulo, num #FCFBF8) com a sombra de texto da legenda (DS 3.1), porque o grafite some sobre as esferas metálicas",
+  "plano": "P02",
+  "entra_s": 2.7,
+  "altura": 176,
+  "centro": [
+   540,
+   960
+  ],
+  "num": "papel"
+ },
+ "planos": [
+  {
+   "id": "P01",
+   "nota": "O take inteiro do IMG_2180, do quadro 0 ao último (0,000–7,125): o Diego filma a Marina caminhando e o Atomium. O recorte segue a Marina até 2,2 s (centro medido 0,47 → 0,33), vira para o Atomium em 1 s (2,4–3,4 s; centro da estrutura medido 0,70 → 0,55) e o acompanha até o fim; a Marina volta ao quadro, embaixo do Atomium, a partir de ≈ 5 s",
+   "video": [
+    "IMG_2180.MOV",
+    0.0
+   ],
+   "dur": 7.125,
+   "cx": [
+    [
+     0.0,
+     0.47
+    ],
+    [
+     1.4,
+     0.4
+    ],
+    [
+     2.2,
+     0.33
+    ],
+    [
+     2.4,
+     0.33
+    ],
+    [
+     3.4,
+     0.68
+    ],
+    [
+     4.0,
+     0.64
+    ],
+    [
+     4.5,
+     0.6
+    ],
+    [
+     5.5,
+     0.55
+    ],
+    [
+     6.5,
+     0.53
+    ],
+    [
+     7.125,
+     0.54
+    ]
+   ],
+   "legendas": []
+  },
+  {
+   "id": "P02",
+   "nota": "O Atomium na avenida: a câmera sobe até ele inteiro na vertical (o arquivo inteiro, do quadro 0 ao último, 119 quadros). O símbolo 1º nasce em 2,7 s e fica até o fim; o corte volta ao início",
+   "video": [
+    "IMG_2169.MOV",
+    0.0
+   ],
+   "dur": 4.9583,
+   "cx": 0.47,
+   "legendas": []
+  }
+ ]
+}
