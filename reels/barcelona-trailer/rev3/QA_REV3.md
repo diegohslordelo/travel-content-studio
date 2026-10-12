@@ -34,3 +34,18 @@
 
 1. **Escuta do Diego antes de postar.** O Claude não escuta áudio: cortes e sincronia foram verificados por medição e transcrição.
 2. **Trilha:** biblioteca do Instagram, 8 a 10 dB abaixo da voz (DS 4.6).
+
+## Capa do Reel
+
+**Entrega:** `capa_reel_barcelona_trailer_rev3.jpg` (1080 × 1920). Prévia do grid e das miniaturas: `qa_frames/capa_grid_e_miniaturas.jpg`. Script: `scripts/capa_trailer.py`.
+
+| Item | Decisão |
+|---|---|
+| Fórmula | Lugar (placa) + emoção (rosto), DS 5.5. Fundo: quadro real do Park Güell (30:36,6 do original), sem filtro; ao fundo as colunas de Gaudí |
+| Placa | `3 DIAS EM / BARCELONA` na variante Estática (brilho de esmalte congelado a 30%), 849 × 219 px, em x 72 · **y 1136** |
+| Exceção de posição | A placa não fica no padrão (y 640): ali ela cobriria a boca e o queixo, porque o rosto ocupa y 330–1100. Mesma ideia da exceção da capa do Reel de apresentação (REV8, y 1104), com 32 px a mais para folgar do queixo. É exceção só desta capa, e a regra do DS não muda |
+| Zona segura | Placa x 72–921 · y 1136–1355, dentro de x 72–944 · y 256–1440 |
+| Grid do perfil (3:4, recorte y 240–1680) | Rosto e placa inteiros dentro do recorte |
+| Miniatura | A 25% (270 × 480) e a 8% (90 × 160) a placa e o rosto continuam identificáveis |
+| Texto | Só a placa. Sem objeto de prova (recibo) porque o Reel não mostra preço |
+| Scrim e grão | Os do DS (scrim 0% → 63% de y 1150 a 1500; grão 5%) |
