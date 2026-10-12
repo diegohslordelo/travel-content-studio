@@ -37,15 +37,15 @@
 
 ## Capa do Reel
 
-**Entrega:** `capa_reel_barcelona_trailer_rev3.jpg` (1080 × 1920). Prévia do grid e das miniaturas: `qa_frames/capa_grid_e_miniaturas.jpg`. Script: `scripts/capa_trailer.py`.
+**Entrega:** `capa_reel_barcelona_trailer_rev3.jpg` (1080 × 1920). Alternativa: `capa_reel_barcelona_trailer_rev3_alt_arco.jpg`. Prévia do grid e das miniaturas: `qa_frames/capa_grid_e_miniaturas.jpg`. Script: `scripts/capa_trailer.py`.
+
+**Histórico:** a 1ª capa (Diego sorrindo no Park Güell, com a placa em y 1136 por causa do rosto) foi reprovada pelo Diego em 12/10/2026 e substituída. Esta é de monumento, sem rosto, e não precisa vir do trailer.
 
 | Item | Decisão |
 |---|---|
-| Fórmula | Lugar (placa) + emoção (rosto), DS 5.5. Fundo: quadro real do Park Güell (30:36,6 do original), sem filtro; ao fundo as colunas de Gaudí |
-| Placa | `3 DIAS EM / BARCELONA` na variante Estática (brilho de esmalte congelado a 30%), 849 × 219 px, em x 72 · **y 1136** |
-| Exceção de posição | A placa não fica no padrão (y 640): ali ela cobriria a boca e o queixo, porque o rosto ocupa y 330–1100. Mesma ideia da exceção da capa do Reel de apresentação (REV8, y 1104), com 32 px a mais para folgar do queixo. É exceção só desta capa, e a regra do DS não muda |
-| Zona segura | Placa x 72–921 · y 1136–1355, dentro de x 72–944 · y 256–1440 |
-| Grid do perfil (3:4, recorte y 240–1680) | Rosto e placa inteiros dentro do recorte |
-| Miniatura | A 25% (270 × 480) e a 8% (90 × 160) a placa e o rosto continuam identificáveis |
-| Texto | Só a placa. Sem objeto de prova (recibo) porque o Reel não mostra preço |
+| Imagem | Fachada da Sagrada Família de baixo para cima, céu azul (tomada de 23:47 do original), recorte 9:16 sem filtro. As torres sobem e preenchem a vertical |
+| Placa | `3 DIAS EM / BARCELONA` na variante Estática (brilho congelado a 30%), 849 × 219 px, na posição padrão do DS (x 72 · y 640). Sem exceção de posição, porque não há rosto |
+| Zona segura | Placa x 72–921 · y 640–859, dentro de x 72–944 · y 256–1440 |
+| Texto | Só a placa. Sem recibo, porque o Reel não mostra preço |
 | Scrim e grão | Os do DS (scrim 0% → 63% de y 1150 a 1500; grão 5%) |
+| Alternativa | Arco do Triunfo (9:30 do original). Perde para a Sagrada: o scrim escurece o céu dentro do arco |

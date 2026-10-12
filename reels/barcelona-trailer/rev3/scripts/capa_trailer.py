@@ -1,14 +1,11 @@
 """Capa do Reel trailer de Barcelona: capa_reel_barcelona_trailer_rev3.jpg (1080 × 1920).
 
-Fórmula de capa do DS (5.5): lugar (placa) + emoção (rosto). Fundo: quadro real do Park Güell (30:36,6 do original), recorte 9:16
-com o rosto do Diego centrado, sem filtro. Placa `3 DIAS EM / BARCELONA` na variante Estática do DS 2.1 (brilho de esmalte
-congelado a 30% do percurso), scrim inferior e grão de 5%. Nenhum outro texto.
-
-Exceção de posição (só nesta capa): placa em x 72 · y 1136 (mesma ideia da exceção da capa do Reel de apresentação, y 1104, com 32 px a mais para folgar do queixo), e não em y 640,
-porque o rosto ocupa y 330–1100 e a placa cobriria o queixo e a boca. A regra geral do DS não muda.
+Capa de monumento (sem rosto): quadro real do original, recorte 9:16 sem filtro, placa `3 DIAS EM / BARCELONA` na variante Estática
+do DS 2.1 (brilho de esmalte congelado a 30% do percurso) na posição padrão do Reel (x 72 · y 640), scrim inferior e grão de 5% do DS.
+Nenhum outro texto. Como não há rosto, não há exceção de posição.
 
 Uso (de dentro de reels/barcelona-trailer/):
-  BCN_ORIGINAL=… python3 rev3/scripts/capa_trailer.py --fontes PASTA_TTF [--t 1836.6] [--cx 0.42]
+  BCN_ORIGINAL=… python3 rev3/scripts/capa_trailer.py --fontes PASTA_TTF [--t 1427.2] [--cx 0.45] [--saida ARQ] [--py 640]
 """
 import argparse
 import os
@@ -24,9 +21,10 @@ REV = os.path.dirname(AQUI)
 RAIZ = os.path.normpath(os.path.join(REV, "..", "..", ".."))
 ap = argparse.ArgumentParser()
 ap.add_argument("--fontes", default=os.environ.get("PD_FONTES", ""))
-ap.add_argument("--t", type=float, default=1836.6, help="instante do original (s)")
-ap.add_argument("--cx", type=float, default=0.42, help="centro do recorte 9:16 (fração da largura do quadro 4K)")
+ap.add_argument("--t", type=float, default=1427.2, help="instante do original (s)")
+ap.add_argument("--cx", type=float, default=0.45, help="centro do recorte 9:16 (fração da largura do quadro 4K)")
 ap.add_argument("--saida", default="capa_reel_barcelona_trailer_rev3.jpg")
+ap.add_argument("--py", type=int, default=640, help="y da placa (padrão do DS: 640)")
 A = ap.parse_args()
 
 sys.path.insert(0, os.path.join(RAIZ, "youtube", "barcelona", "rev2", "scripts"))
@@ -68,7 +66,7 @@ s2 = ndimage.gaussian_filter(yt._desl(ndimage.grey_erosion(alfa, size=(21, 21)),
 out = yt._premult(np.zeros(alfa.shape + (3,), np.float32), 1 - (1 - s1) * (1 - s2))
 yt.sobre(out, c, 0, 0)
 
-PX, PY = 72, 1136
+PX, PY = 72, A.py
 img = rl.overlay_blend(base, rl.grao(0), rl.T["op_grain"])
 s = rl.scrim_alfa()
 img = img * (1 - s) + rl.GRAFITE * s
