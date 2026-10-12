@@ -5,7 +5,7 @@ Status: **plano, não renderizado.** Os arquivos de vídeo não estão acessíve
 As minutagens do master (`reels/apresentacao/analise/transcricao_palavras.tsv`, 24 fps, tempo por palavra) servem só para achar cada fala no bruto correspondente.
 Ainda falta ouvir cada trecho e conferir se o corte é natural.
 
-## Roteiro de corte (master, em segundos)
+## Roteiro de corte (minutagem de referência no master, em segundos; o render usa o bruto correspondente)
 
 | # | Tempo no Reel | Cena | Fonte | Entrada → saída | Dur. | Fala | Texto na tela |
 |---|---|---|---|---|---|---|---|
