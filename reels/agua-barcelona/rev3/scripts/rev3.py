@@ -294,7 +294,7 @@ def placa_pecas(spec, pasta):
     P = CFG["placa"]
     e, S = spec["escala"], SS
     rot, dest = spec["rotulo"], spec["destino"]
-    r_px, d_px = P["rotulo_px"] * e * S, P["destino_px"] * e * S
+    r_px, d_px = P["rotulo_px"] * e * S, spec.get("destino_px", P["destino_px"]) * e * S  # 104 px se 13–16 letras (DS 1.2)
     fd = fonte(P["fonte_destino"], d_px, pasta)
     fr = fonte(P["fonte_rotulo"], r_px, pasta) if rot else None
     trk_d, trk_r = P["destino_tracking_em"] * d_px, P["rotulo_tracking_em"] * r_px

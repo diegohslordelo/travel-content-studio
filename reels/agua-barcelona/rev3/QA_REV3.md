@@ -21,3 +21,13 @@
 **Checagens automáticas:** todas passaram. É o mesmo conjunto da REV2: legendas, zona segura, legenda sem sobrepor objeto, calma entre entradas, bilhete, CTA, print, 0 transições e loudness.
 
 **Render:** de dentro de `reels/agua-barcelona/`, rode `python3 rev3/scripts/baixar_trecho_master.py` e depois `python3 rev3/scripts/rev3.py --fontes PASTA --master rev3/_tmp/master_esparso.mov`.
+
+## Capa e legenda do post
+
+- **Capa:** `capa_reel_agua_barcelona_rev3.jpg`, feita com `scripts/capa.py`.
+  - Texto do painel ("ÁGUA DE GRAÇA") na Placa Estática (DS 2.1): rótulo `BARCELONA`, destino `ÁGUA DE GRAÇA` em 104 px (13 caracteres, DS 1.2) e seta. Largura de 872 px, o máximo do DS, em x 72 · y 640.
+  - Fundo: quadro de 1112,0 s do master (rosto + garrafa), a fórmula da DS 5.5.
+  - Prévia do grid 3:4 e da miniatura em `qa_frames/capa_grid_e_miniatura.jpg`.
+- **Legenda do post:** `LEGENDA_POST.txt`.
+  - "Mais de 1.700 fontes" vem do contrato de manutenção 2022–2026 do Ajuntament, que cobre 1.718 fontes de beber (sostenible.cat, consultado em 13/10/2026).
+  - **CTA único:** salvar (referência de conteúdo, 3.4).
