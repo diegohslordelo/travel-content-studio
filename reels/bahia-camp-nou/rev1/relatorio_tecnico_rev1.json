@@ -4,9 +4,9 @@
   "largura": 1080,
   "altura": 1920,
   "fps": "24/1",
-  "quadros": 469,
-  "duracao_video_s": 19.541667,
-  "duracao_audio_s": 19.541,
+  "quadros": 493,
+  "duracao_video_s": 20.541667,
+  "duracao_audio_s": 20.541,
   "codec_video": "h264 (High)",
   "pix_fmt": "yuv420p",
   "cor": [
@@ -15,8 +15,8 @@
    "bt709"
   ],
   "audio": "aac 48000 Hz 2 canais",
-  "bitrate_kbps": 20223,
-  "tamanho_mb": 49.4,
+  "bitrate_kbps": 20583,
+  "tamanho_mb": 52.9,
   "tags": {
    "major_brand": "isom",
    "minor_version": "512",
@@ -26,7 +26,7 @@
  },
  "audio": {
   "lufs_integrado": -14.0,
-  "pico_verdadeiro_dbtp": -1.3,
+  "pico_verdadeiro_dbtp": -1.4,
   "atraso_filtro_amostras": {
    "IMG_0552.MOV": 1197,
    "IMG_0537.MOV": 1199,
@@ -36,21 +36,21 @@
    "fala_gancho": -21.47,
    "fala_museu": -18.75,
    "fala_marina": -22.79,
-   "ambiente_museu": -26.93
+   "ambiente_museu": -18.47
   },
   "ganhos_db": {
    "fala_gancho": 5.47,
    "fala_museu": 2.75,
    "fala_marina": 6.79,
-   "ambiente_museu": 2.93
+   "ambiente_museu": -5.53
   },
   "emendas_s": [
    4.25,
-   7.25,
-   9.417,
-   10.625,
-   13.042,
-   18.917
+   8.25,
+   10.417,
+   11.625,
+   14.042,
+   19.917
   ],
   "limitador": true,
   "ok_lufs": true,
@@ -102,8 +102,8 @@
   },
   {
    "texto": "É a bola de ouro",
-   "de": 7.5,
-   "ate": 8.208,
+   "de": 8.5,
+   "ate": 9.208,
    "modo": "grupo",
    "palavras_por_s": 6.94,
    "caracteres": 16,
@@ -115,8 +115,8 @@
   },
   {
    "texto": "de Ronaldinho Gaúcho.",
-   "de": 8.208,
-   "ate": 9.417,
+   "de": 9.208,
+   "ate": 10.417,
    "modo": "palavra",
    "palavras_por_s": 2.88,
    "caracteres": 21,
@@ -128,8 +128,8 @@
   },
   {
    "texto": "o funcionário aqui",
-   "de": 10.708,
-   "ate": 11.708,
+   "de": 11.708,
+   "ate": 12.708,
    "modo": "grupo",
    "palavras_por_s": 3.06,
    "caracteres": 18,
@@ -141,8 +141,8 @@
   },
   {
    "texto": "do Museu do Barcelona,",
-   "de": 11.708,
-   "ate": 13.042,
+   "de": 12.708,
+   "ate": 14.042,
    "modo": "grupo",
    "palavras_por_s": 3.64,
    "caracteres": 22,
@@ -154,8 +154,8 @@
   },
   {
    "texto": "o Diego tirou o casaco",
-   "de": 13.083,
-   "ate": 13.917,
+   "de": 14.083,
+   "ate": 14.917,
    "modo": "grupo",
    "palavras_por_s": 6.1,
    "caracteres": 22,
@@ -167,8 +167,8 @@
   },
   {
    "texto": "e ele fez assim:",
-   "de": 13.917,
-   "ate": 14.583,
+   "de": 14.917,
+   "ate": 15.583,
    "modo": "grupo",
    "palavras_por_s": 6.67,
    "caracteres": 16,
@@ -180,8 +180,8 @@
   },
   {
    "texto": "“Ah, Bahia!”",
-   "de": 14.583,
-   "ate": 15.75,
+   "de": 15.583,
+   "ate": 16.75,
    "modo": "palavra",
    "palavras_por_s": 2.86,
    "caracteres": 12,
@@ -193,8 +193,8 @@
   },
   {
    "texto": "Aí eu fiquei tipo:",
-   "de": 15.75,
-   "ate": 16.625,
+   "de": 16.75,
+   "ate": 17.625,
    "modo": "grupo",
    "palavras_por_s": 5.56,
    "caracteres": 18,
@@ -206,8 +206,8 @@
   },
   {
    "texto": "como é que ele sabe?",
-   "de": 16.625,
-   "ate": 17.75,
+   "de": 17.625,
+   "ate": 18.75,
    "modo": "grupo",
    "palavras_por_s": 6.41,
    "caracteres": 20,
@@ -219,8 +219,8 @@
   },
   {
    "texto": "“Bahia é o *mundo*!”",
-   "de": 17.75,
-   "ate": 18.917,
+   "de": 18.75,
+   "ate": 19.917,
    "modo": "grupo",
    "palavras_por_s": 4.82,
    "caracteres": 18,
@@ -281,17 +281,17 @@
    "n": 2,
    "cena": "Dentro do museu",
    "arquivo": "IMG_0537.MOV",
-   "inicio": 12.4,
-   "fim": 15.4,
-   "nq": 72,
+   "inicio": 26.0,
+   "fim": 30.0,
+   "nq": 96,
    "r0": 102,
-   "r1": 174,
+   "r1": 198,
    "recorte": {
     "fonte": [
      3840,
      2160
     ],
-    "x": 1542,
+    "x": 1426,
     "y": 0,
     "w": 1216,
     "h": 2160
@@ -304,8 +304,8 @@
    "inicio": 0.92,
    "fim": 3.0867,
    "nq": 52,
-   "r0": 174,
-   "r1": 226,
+   "r0": 198,
+   "r1": 250,
    "recorte": {
     "fonte": [
      3840,
@@ -324,8 +324,8 @@
    "inicio": 4.9,
    "fim": 6.1083,
    "nq": 29,
-   "r0": 226,
-   "r1": 255,
+   "r0": 250,
+   "r1": 279,
    "recorte": {
     "fonte": [
      3840,
@@ -344,8 +344,8 @@
    "inicio": 16.05,
    "fim": 18.4667,
    "nq": 58,
-   "r0": 255,
-   "r1": 313,
+   "r0": 279,
+   "r1": 337,
    "recorte": {
     "fonte": [
      3838,
@@ -364,8 +364,8 @@
    "inicio": 21.02,
    "fim": 26.895,
    "nq": 141,
-   "r0": 313,
-   "r1": 454,
+   "r0": 337,
+   "r1": 478,
    "recorte": {
     "fonte": [
      3838,
@@ -384,8 +384,8 @@
    "inicio": 4.415,
    "fim": 5.04,
    "nq": 15,
-   "r0": 454,
-   "r1": 469,
+   "r0": 478,
+   "r1": 493,
    "recorte": {
     "fonte": [
      3838,
@@ -403,14 +403,14 @@
  },
  "frames_qa": [
   [
-   "q000",
-   0,
-   "rev1/qa_frames/rev1_q000_quadro000.jpg"
-  ],
-  [
    "t00_00s",
    0,
    "rev1/qa_frames/rev1_t00_00s_quadro000.jpg"
+  ],
+  [
+   "q000",
+   0,
+   "rev1/qa_frames/rev1_q000_quadro000.jpg"
   ],
   [
    "q003",
@@ -418,14 +418,14 @@
    "rev1/qa_frames/rev1_q003_quadro003.jpg"
   ],
   [
-   "t00_25s",
-   6,
-   "rev1/qa_frames/rev1_t00_25s_quadro006.jpg"
-  ],
-  [
    "q006",
    6,
    "rev1/qa_frames/rev1_q006_quadro006.jpg"
+  ],
+  [
+   "t00_25s",
+   6,
+   "rev1/qa_frames/rev1_t00_25s_quadro006.jpg"
   ],
   [
    "q009",
@@ -559,53 +559,53 @@
   ],
   [
    "t19_80s",
-   468,
-   "rev1/qa_frames/rev1_t19_80s_quadro468.jpg"
+   475,
+   "rev1/qa_frames/rev1_t19_80s_quadro475.jpg"
   ],
   [
-   "q468",
-   468,
-   "rev1/qa_frames/rev1_q468_quadro468.jpg"
+   "q492",
+   492,
+   "rev1/qa_frames/rev1_q492_quadro492.jpg"
   ]
  ],
  "transcricao_render": [
   {
    "de": 0.0,
    "ate": 2.24,
-   "texto": "E eu tô com a camisa do maior clube do mundo"
+   "texto": "E eu to com a camisa do maior clube do mundo"
   },
   {
    "de": 2.24,
-   "ate": 4.0,
-   "texto": "O Esporte Clube Bahia"
+   "ate": 8.14,
+   "texto": "O esporte clube da Bahia"
   },
   {
-   "de": 7.34,
-   "ate": 9.28,
-   "texto": "É a bola de hoje, Ronaldinho Gaúcho"
+   "de": 8.14,
+   "ate": 10.26,
+   "texto": "É a bola de ouro de Ronaldinho Gaúcho"
   },
   {
-   "de": 10.6,
-   "ate": 12.82,
+   "de": 11.6,
+   "ate": 13.82,
    "texto": "Um funcionário aqui do Museu do Barcelona"
   },
   {
-   "de": 12.82,
-   "ate": 14.56,
+   "de": 13.82,
+   "ate": 15.54,
    "texto": "Deve ter o casaco e ele fez assim"
   },
   {
-   "de": 14.56,
-   "ate": 15.82,
+   "de": 15.54,
+   "ate": 16.78,
    "texto": "Ah, Bahia!"
   },
   {
-   "de": 17.62,
-   "ate": 18.6,
+   "de": 18.6,
+   "ate": 19.6,
    "texto": "Bahia é o mundo"
   }
  ],
- "sha256": "2b91067eedfb3b9871a264163cf80593e21c29e0e2d6e980a737bfedda347742",
+ "sha256": "4710aeaaf974117726cb7695f0fcc46609beb34370df374979873c77f6b01759",
  "fontes": {
   "Barlow-Bold.ttf": "74103fd6d41bc32c63aa2e6eb3db619ddb80ce9ca1b1420d5548a23b8ee5d154",
   "Barlow-Medium.ttf": "91c841fdfa8e7b94ffedbb983a363947ba6ed720f3bbf0c71d48b618053655bc",

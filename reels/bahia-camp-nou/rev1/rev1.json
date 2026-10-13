@@ -71,12 +71,12 @@
    "n": 2,
    "cena": "Dentro do museu",
    "arquivo": "IMG_0537.MOV",
-   "inicio": 12.4,
-   "fim": 15.4,
-   "centro_x": 0.56,
+   "inicio": 26.0,
+   "fim": 30.0,
+   "centro_x": 0.53,
    "audio": "ambiente_museu",
    "fala": null,
-   "_porque": "pedido do Diego (13/10/2026): trocar a chegada do lado de fora (IMG_0502) por ele andando dentro do museu. Começa depois do palavrão em 11,7–12,3 s."
+   "_porque": "Diego andando dentro do museu (pedido de 13/10). Trocado a pedido do Diego (13/10, 'menos trêmulo' e 1 s a mais): 12,4–15,4 s → 26,0–30,0 s. Tremor medido (scripts/medir_tremor.py, resíduo do deslocamento global em px a 1080): 2,7 contra 3,7 do trecho anterior (e 7+ se só esticasse para 4 s)."
   },
   {
    "n": 3,
