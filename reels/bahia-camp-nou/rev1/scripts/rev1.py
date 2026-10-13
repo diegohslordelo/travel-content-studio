@@ -739,7 +739,12 @@ def montar_audio():
         r0, r1 = p["r0"] * SPF, p["r1"] * SPF
         ha = h if i > 0 else 0
         hb = h if i < len(PL) - 1 else 0
-        trecho = src[o0 - ha:o0 + (r1 - r0) + hb].copy()
+        # alças da emenda: se o plano começa/termina rente ao bruto, completa com silêncio
+        pre = max(0, ha - o0)
+        trecho = np.vstack([np.zeros((pre, 2)), src[max(0, o0 - ha):o0 + (r1 - r0) + hb]])
+        falta = (r1 - r0) + ha + hb - len(trecho)
+        if falta > 0:
+            trecho = np.vstack([trecho, np.zeros((falta, 2))])
         env = np.ones(len(trecho))
         if ha:
             env[:2 * ha] = np.sin(np.linspace(0, np.pi / 2, 2 * ha))

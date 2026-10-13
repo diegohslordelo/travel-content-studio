@@ -15,8 +15,8 @@
    "bt709"
   ],
   "audio": "aac 48000 Hz 2 canais",
-  "bitrate_kbps": 20583,
-  "tamanho_mb": 52.9,
+  "bitrate_kbps": 21475,
+  "tamanho_mb": 55.1,
   "tags": {
    "major_brand": "isom",
    "minor_version": "512",
@@ -26,26 +26,27 @@
  },
  "audio": {
   "lufs_integrado": -14.0,
-  "pico_verdadeiro_dbtp": -1.4,
+  "pico_verdadeiro_dbtp": -1.3,
   "atraso_filtro_amostras": {
    "IMG_0552.MOV": 1197,
-   "IMG_0537.MOV": 1199,
+   "IMG_0518.MOV": 1199,
    "IMG_0513.MOV": 1197
   },
   "lufs_grupos_antes": {
    "fala_gancho": -21.47,
    "fala_museu": -18.75,
    "fala_marina": -22.79,
-   "ambiente_museu": -18.47
+   "ambiente_museu": -21.63
   },
   "ganhos_db": {
    "fala_gancho": 5.47,
    "fala_museu": 2.75,
    "fala_marina": 6.79,
-   "ambiente_museu": -5.53
+   "ambiente_museu": -2.37
   },
   "emendas_s": [
    4.25,
+   6.25,
    8.25,
    10.417,
    11.625,
@@ -279,19 +280,39 @@
   },
   {
    "n": 2,
-   "cena": "Dentro do museu",
-   "arquivo": "IMG_0537.MOV",
-   "inicio": 26.0,
-   "fim": 30.0,
-   "nq": 96,
+   "cena": "Entre os troféus (a)",
+   "arquivo": "IMG_0518.MOV",
+   "inicio": 0.0,
+   "fim": 2.0,
+   "nq": 48,
    "r0": 102,
+   "r1": 150,
+   "recorte": {
+    "fonte": [
+     3840,
+     2160
+    ],
+    "x": 236,
+    "y": 0,
+    "w": 1216,
+    "h": 2160
+   }
+  },
+  {
+   "n": 8,
+   "cena": "Entre os troféus (b)",
+   "arquivo": "IMG_0518.MOV",
+   "inicio": 10.17,
+   "fim": 12.17,
+   "nq": 48,
+   "r0": 150,
    "r1": 198,
    "recorte": {
     "fonte": [
      3840,
      2160
     ],
-    "x": 1426,
+    "x": 928,
     "y": 0,
     "w": 1216,
     "h": 2160
@@ -433,14 +454,14 @@
    "rev1/qa_frames/rev1_q009_quadro009.jpg"
   ],
   [
-   "t00_50s",
-   12,
-   "rev1/qa_frames/rev1_t00_50s_quadro012.jpg"
-  ],
-  [
    "q012",
    12,
    "rev1/qa_frames/rev1_q012_quadro012.jpg"
+  ],
+  [
+   "t00_50s",
+   12,
+   "rev1/qa_frames/rev1_t00_50s_quadro012.jpg"
   ],
   [
    "q017",
@@ -576,36 +597,36 @@
   },
   {
    "de": 2.24,
-   "ate": 8.14,
-   "texto": "O esporte clube da Bahia"
+   "ate": 4.0,
+   "texto": "O Esporte Clube Bahia"
   },
   {
-   "de": 8.14,
-   "ate": 10.26,
-   "texto": "É a bola de ouro de Ronaldinho Gaúcho"
+   "de": 8.16,
+   "ate": 10.28,
+   "texto": "É a bola de Ordi Ronaldinho Gaúcho"
   },
   {
-   "de": 11.6,
+   "de": 11.28,
    "ate": 13.82,
    "texto": "Um funcionário aqui do Museu do Barcelona"
   },
   {
    "de": 13.82,
-   "ate": 15.54,
-   "texto": "Deve ter o casaco e ele fez assim"
+   "ate": 15.56,
+   "texto": "Dele o casaco e ele fez assim"
   },
   {
-   "de": 15.54,
+   "de": 15.56,
    "ate": 16.78,
-   "texto": "Ah, Bahia!"
+   "texto": "Ah Bahia!"
   },
   {
-   "de": 18.6,
+   "de": 18.46,
    "ate": 19.6,
    "texto": "Bahia é o mundo"
   }
  ],
- "sha256": "4710aeaaf974117726cb7695f0fcc46609beb34370df374979873c77f6b01759",
+ "sha256": "06211df01ebd130ddcdc61d43fdb0b272af96e44b102d7284f3d3753730310f2",
  "fontes": {
   "Barlow-Bold.ttf": "74103fd6d41bc32c63aa2e6eb3db619ddb80ce9ca1b1420d5548a23b8ee5d154",
   "Barlow-Medium.ttf": "91c841fdfa8e7b94ffedbb983a363947ba6ed720f3bbf0c71d48b618053655bc",

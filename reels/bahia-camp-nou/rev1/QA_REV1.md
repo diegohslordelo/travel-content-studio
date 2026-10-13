@@ -13,7 +13,7 @@
 | `rev1/rev1.json` · `rev1/scripts/rev1.py` · `rev1/scripts/capa.py` | Projeto reproduzível (cortes, textos, áudio, tokens) |
 | `rev1/relatorio_tecnico_rev1.json` · `rev1/qa_frames/` | Medidas, quadros de QA, folha de contato, miniatura, emenda do loop |
 
-**Formato:** 1080 × 1920, 24 fps, 493 quadros = 20,542 s (vídeo e áudio iguais), H.264 High (CRF 16, preset slow), yuv420p, BT.709, AAC 48 kHz 192 kbps estéreo, 52,9 MB (≈ 21 Mbit/s), sem marca d'água. Áudio: −14,0 LUFS integrados, pico verdadeiro −1,4 dBTP.
+**Formato:** 1080 × 1920, 24 fps, 493 quadros = 20,542 s (vídeo e áudio iguais), H.264 High (CRF 16, preset slow), yuv420p, BT.709, AAC 48 kHz 192 kbps estéreo, 55,1 MB (≈ 21,5 Mbit/s), sem marca d'água. Áudio: −14,0 LUFS integrados, pico verdadeiro −1,3 dBTP.
 
 **Como renderizar** (de dentro de `reels/bahia-camp-nou/`, com os brutos em `fonte/brutos/`):
 ```bash
@@ -29,7 +29,8 @@ Todos são brutos 4K HLG originais da pasta Barcelona do Drive: 3840 × 2160 ou 
 | # | Reel (s) | Cena | Bruto | Trecho no bruto (s) | Recorte 9:16 (x no 4K) | Fala |
 |---|---|---|---|---|---|---|
 | 1 | 0,000–4,250 | Gancho | IMG_0552 | 5,040–9,290 | 1618 (1214 × 2158) | "eu tô com a camisa do maior clube do mundo, o Esporte Clube Bahia." |
-| 2 | 4,250–8,250 | Dentro do museu | IMG_0537 | 26,000–30,000 | 1426 | — (som da sala imersiva) |
+| 2 | 4,250–6,250 | Entre os troféus (a) | IMG_0518 | 0,000–2,000 | 236 (1214 × 2158) | — (som do museu) |
+| 2b | 6,250–8,250 | Entre os troféus (b) | IMG_0518 | 10,170–12,170 | 928 | — (som do museu) |
 | 3 | 8,250–10,417 | Bola de Ouro | IMG_0513 | 0,920–3,087 | 658 | "É a bola de ouro de Ronaldinho Gaúcho, velho." |
 | 4 | 10,417–11,625 | Bola de Ouro (close) | IMG_0513 | 4,900–6,108 | 1388 | — |
 | 5 | 11,625–14,042 | Pico (a) | IMG_0552 | 16,050–18,467 | 1312 | "o funcionário aqui do Museu do Barcelona," |
@@ -52,8 +53,9 @@ Os tempos exatos de cada plano (em quadros) estão em `relatorio_tecnico_rev1.js
 | 12/10 | Tirar a parte "não vamos entrar no estádio" | Cena da reforma removida |
 | 13/10 | "primeira parada" logo no primeiro quadro | Narrativa aberta desde o quadro 0, durante todo o gancho |
 | 13/10 | Tirar a vinheta (placa entrando) | Placa removida (versão intermediária, não entregue) |
-| 13/10 | Trocar a cena andando do lado de fora por uma dentro do museu | IMG_0502 → IMG_0537 (sala imersiva) |
+| 13/10 | Trocar a cena andando do lado de fora por uma dentro do museu | IMG_0502 → IMG_0537 (sala imersiva), depois substituída (linha abaixo) |
 | 13/10 | Take andando mais estável e 1 s mais longo | IMG_0537 12,4–15,4 s → 26,0–30,0 s (4 s). Tremor medido com `scripts/medir_tremor.py`: 2,7 px contra 3,7 do trecho anterior (e mais de 7 se só esticasse). O IMG_0541 (36–40 s, 1,7) era mais estável, mas o Diego aparece só como silhueta escura |
+| 13/10 | Trocar a sala imersiva por você andando entre os troféus | IMG_0518 (vitrine do futebol feminino): 2 s de você caminhando até a vitrine (0–2 s) + 2 s andando ao longo dela (10,17–12,17 s) = 4 s com você em quadro. Um take contínuo de 4 s perdia você de vista em 2 s. Tremor: 3,1 px (primeiro take: 3,7; sala imersiva: 2,7) |
 | 13/10 | Placa de volta, em cima, sem cobrir o rosto, com "Primeiro dia em Barcelona" + "Primeira parada: o Barça!", dentro do DS | Placa variante Abertura `PRIMEIRO DIA EM / BARCELONA` com Chegada no quadro 0, em x 72 · y 296; "Primeira parada: o Barça!" na Narrativa (vidro), junto, desde o quadro 0 |
 
 ## Camada visual (DS V2, Nível B)
@@ -70,10 +72,10 @@ Os tempos exatos de cada plano (em quadros) estão em `relatorio_tecnico_rev1.js
 ## Áudio
 
 - **Origem:** som direto da faixa AAC 0 de cada bruto, com passa-altas de 80 Hz e redução de ruído leve (`afftdn` 6 dB). O atraso de 25 ms do filtro foi compensado (1197 amostras).
-- **Ganho por grupo:** a voz vai a −16 LUFS antes do master, e o ambiente do museu a −24 LUFS. Ganhos aplicados: gancho +5,5 dB, museu (fala) +2,8 dB, Marina +6,8 dB, ambiente da sala imersiva −5,5 dB (o trecho é alto, com o som da própria instalação).
+- **Ganho por grupo:** a voz vai a −16 LUFS antes do master, e o ambiente do museu a −24 LUFS. Ganhos aplicados: gancho +5,5 dB, museu (fala) +2,8 dB, Marina +6,8 dB, ambiente do museu −2,4 dB.
 - **Emendas:** de 20 ms, potência constante.
 - **Master:** −14 LUFS integrados e pico verdadeiro ≤ −1 dBTP (DS 4.6), com limitador de 5 ms nos picos.
-- **Música:** nenhuma. Os brutos não têm violão embutido, só o som ambiente real. Na sala imersiva (plano 2) há o som da própria instalação.
+- **Música:** nenhuma. Os brutos não têm violão embutido, só o som ambiente real. O som do plano 2 é o do museu (IMG_0518), com ambiente e vozes ao longe.
 - **Validação auditiva:** não foi feita por mim (CLAUDE.md, 12). A fala do render foi conferida por transcrição automática (Whisper medium e large-v3), e as três dúvidas estão abaixo.
 
 ### A conferir de ouvido (Diego)

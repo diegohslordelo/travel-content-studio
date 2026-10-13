@@ -69,14 +69,25 @@
   },
   {
    "n": 2,
-   "cena": "Dentro do museu",
-   "arquivo": "IMG_0537.MOV",
-   "inicio": 26.0,
-   "fim": 30.0,
-   "centro_x": 0.53,
+   "cena": "Entre os troféus (a)",
+   "arquivo": "IMG_0518.MOV",
+   "inicio": 0.0,
+   "fim": 2.0,
+   "centro_x": 0.22,
    "audio": "ambiente_museu",
    "fala": null,
-   "_porque": "Diego andando dentro do museu (pedido de 13/10). Trocado a pedido do Diego (13/10, 'menos trêmulo' e 1 s a mais): 12,4–15,4 s → 26,0–30,0 s. Tremor medido (scripts/medir_tremor.py, resíduo do deslocamento global em px a 1080): 2,7 contra 3,7 do trecho anterior (e 7+ se só esticasse para 4 s)."
+   "_porque": "Diego andando entre os troféus (pedido de 13/10: 'não gostei de eu nessa sala', a sala imersiva do IMG_0537). Vitrine das taças e camisas do futebol feminino, câmera atrás dele; dura 4 s (o pedido anterior era 1 s a mais). Tremor medido (scripts/medir_tremor.py): 3,1 px, contra 3,7 do primeiro take e 2,7 da sala imersiva."
+  },
+  {
+   "n": 8,
+   "cena": "Entre os troféus (b)",
+   "arquivo": "IMG_0518.MOV",
+   "inicio": 10.17,
+   "fim": 12.17,
+   "centro_x": 0.4,
+   "audio": "ambiente_museu",
+   "fala": null,
+   "_porque": "continuação do plano 2: Diego andando ao longo da mesma vitrine (10,0–12,0 s). Dois cortes de 2 s do IMG_0518 somam os 4 s pedidos com Diego em quadro o tempo todo (o take contínuo de 4 s perdia ele de vista em 2 s)."
   },
   {
    "n": 3,
