@@ -175,7 +175,7 @@ Leitura da tabela:
 
 1. **Falas 07, 11 e 12 carregam o resto do tratamento da rev. 5** (redução de ruído em nível baixo e compressão 2,5:1 com ataque de 12 ms).
    - Os agudos foram devolvidos.
-   - Para ficarem 100% como na rev. 1, refaço do bruto, sem tratamento, se você liberar o download do gofile ou mandar os arquivos: master (0–6 s), IMG_2693 e IMG_0816.
+   - Para ficarem 100% como na rev. 1, refaço do bruto, sem tratamento, a partir dos arquivos da pasta do Google Drive do projeto: master (0–6 s), IMG_2693 e IMG_0816.
 2. **Fim da fala 12:**
    - "Barcelona." termina em ~34,87 s, e não em 34,74 como dizia a lista de cortes da rev. 5;
    - a folga até o corte (34,958 s) fica em ~0,09 s, abaixo dos 0,15 s;

@@ -173,6 +173,7 @@ travel-content-studio/
 
 - **Vídeos** (`.mp4`, `.mov`): ficam no Git LFS.
 - **Fora do git:** `fonte/` (master e brutos) e os temporários (`_tmp/`, `__pycache__/`).
+- **Arquivos brutos:** estão todos na pasta do Google Drive do projeto (https://drive.google.com/drive/folders/1pDDNmhFAbXzdg5Pbb3b1gx0J5zQCC30o): o master `Barcelona_3dias` na raiz e os brutos numa subpasta por cidade (Barcelona, Amsterdam, Bruxelas, Bruges, Paris, Disney, Madrid, Lisboa, Italia).
 - **Vídeos das revisões aposentadas** do Reel de apresentação: não foram migrados. Estão só no repositório `diegohslordelo/desktop-tutorial`, branch `claude/wonderful-meitner-1mioxg`.
 
 ## 12. Regras de desenvolvimento e edição

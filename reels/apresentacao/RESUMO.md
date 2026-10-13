@@ -3,7 +3,7 @@
 ## Contexto
 - Canal de viagens **Primeiro Dia** (Instagram @primeirodiaem e YouTube), apresentado pelo Diego, soteropolitano (de Salvador). O conceito é mostrar como foi o primeiro dia em cada cidade.
 - Este Reel apresenta o perfil e vai ficar **fixado no topo do Instagram**. Postagem: **01/10, 19h**. O primeiro vídeo do canal sai em **10/10**.
-- Fonte: o vlog master de Barcelona (34min08s, 4K HDR/HLG, 24 fps), no gofile: https://gofile.io/d/W2Is29mH
+- Fonte: o vlog master de Barcelona (34min08s, 4K HDR/HLG, 24 fps), arquivo `Barcelona_3dias` na pasta do Google Drive do projeto: https://drive.google.com/drive/folders/1pDDNmhFAbXzdg5Pbb3b1gx0J5zQCC30o
 - A viagem foi a dois: a namorada do Diego (nome não informado) aparece de forma natural, sem virar pauta de casal.
 
 ## O que foi entregue (renderizado e aprovado)
@@ -40,7 +40,7 @@
 
 ## Revisão 3 (30/09, aprovada e renderizada)
 - **Dias:** em Barcelona o dia 2 começa em 10:57,64. A apresentação e a montagem usam só 0:00–10:57,5; o gancho é a exceção.
-- **Outras cidades:** brutos do primeiro dia em https://gofile.io/d/uSi8dQj6 (12 vídeos, nenhuma foto), baixados em `fonte/outras_cidades/`.
+- **Outras cidades:** brutos do primeiro dia na pasta do Google Drive (https://drive.google.com/drive/folders/1pDDNmhFAbXzdg5Pbb3b1gx0J5zQCC30o, uma subpasta por cidade; 12 vídeos usados, nenhuma foto), baixados em `fonte/outras_cidades/`.
   Amsterdam (IMG_1375, 1384, 1393), Bruxelas (IMG_2170, 2178), Bruges (IMG_2690–2693) e Paris (IMG_2730, 2761, 3134), todos com certeza alta.
 - **Montagem:** 8 cenas, 4 de Barcelona e 4 de outras cidades. Ela aparece em 3 cenas (Amsterdam ao fundo, metrô, Torre Eiffel).
   Cada cena tem o nome da cidade ao lado do selo ("DIA 1 · PARIS").
@@ -49,7 +49,7 @@
   só faz tone mapping nos brutos HDR, usa a faixa AAC do iPhone e iguala o ambiente das outras cidades ao de Barcelona.
 
 ## Revisão 4 (01/10, renderizada; substituída pela 5)
-- **Brutos de Barcelona** (https://gofile.io/d/UKhCf0Vi, em `fonte/brutos_bcn/`): IMG_0502 (Camp Nou), IMG_0520 (museu), IMG_0586 (Montjuïc),
+- **Brutos de Barcelona** (Google Drive, subpasta Barcelona de https://drive.google.com/drive/folders/1pDDNmhFAbXzdg5Pbb3b1gx0J5zQCC30o; em `fonte/brutos_bcn/`): IMG_0502 (Camp Nou), IMG_0520 (museu), IMG_0586 (Montjuïc),
   IMG_0690 (Barceloneta), IMG_0781 (Arco), IMG_0816 (bar à noite) e IMG_1192 (Sagrada, dia 3). Todos casam quadro a quadro com o master, menos a Sagrada.
 - **Som real das cenas, sem música:** Montjuïc saiu (músico de rua o tempo todo) e o metrô saiu (violão por baixo da fala no master, sem bruto).
   O fechamento usa a imagem do bruto da Barceloneta, mas continua com o ambiente de pausas, porque o bruto tem violão.

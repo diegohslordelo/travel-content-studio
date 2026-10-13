@@ -45,7 +45,7 @@ Relatório de qualidade: `REVISAO_5.md`.
 ## Render
 
 O master de 10 GB e os brutos das outras cidades não vão para o git. O master fica em `fonte/` (ou na variável `REEL_MASTER`)
-os brutos das outras cidades em `fonte/outras_cidades/` e os brutos de Barcelona em `fonte/brutos_bcn/` (links do gofile no `RESUMO.md`). Depois rode:
+os brutos das outras cidades em `fonte/outras_cidades/` e os brutos de Barcelona em `fonte/brutos_bcn/` (todos na pasta do Google Drive do projeto: https://drive.google.com/drive/folders/1pDDNmhFAbXzdg5Pbb3b1gx0J5zQCC30o). Depois rode:
 
 ```bash
 python3 scripts/render.py lista_de_cortes.json            # video, texto, audio, final, capa, verificar

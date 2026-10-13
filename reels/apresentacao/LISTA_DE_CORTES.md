@@ -12,7 +12,7 @@ Imagens de apoio nesta pasta:
 - `teste_voz.mp4` e `teste_voz_lufs.txt`: os trechos com voz já tratados e o loudness medido.
 - `analise_outras/folhas_brutos/`: folhas de frames dos 7 brutos de Barcelona.
 
-## 1. Correspondência com os brutos (https://gofile.io/d/UKhCf0Vi)
+## 1. Correspondência com os brutos (Google Drive, subpasta Barcelona de https://drive.google.com/drive/folders/1pDDNmhFAbXzdg5Pbb3b1gx0J5zQCC30o)
 
 Pela data de gravação, os 7 brutos são de 09/03, o dia 1 (o master tem o dia 1 até 10:57). A exceção é a Sagrada Família, de 11/03, usada só no gancho.
 Achei o trecho exato de cada cena comparando quadro a quadro (correlação de 0,996 a 0,998). A única exceção é o gancho.

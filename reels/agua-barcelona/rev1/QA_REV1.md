@@ -2,7 +2,7 @@
 
 Reel 03 do painel (13/10/2026, 18:30) · série Chegar sabendo · Nível A · teste T5, variante A.
 
-**Estado: pipeline pronto e testado; vídeo final NÃO renderizado.** O master de Barcelona (10 GB, gofile) não estava acessível nesta sessão. A camada de design foi validada sobre um fundo provisório (`--teste`), sem áudio.
+**Estado: pipeline pronto e testado; vídeo final NÃO renderizado.** O master de Barcelona (10 GB, `Barcelona_3dias` na pasta do Google Drive do projeto) não estava acessível nesta sessão. Substituída pela REV2. A camada de design foi validada sobre um fundo provisório (`--teste`), sem áudio.
 
 ## Como renderizar
 

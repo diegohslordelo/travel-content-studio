@@ -67,7 +67,7 @@ A REV7 e a REV8 partem de `reel_apresentacao_sem_texto_rev6.mp4`, que está no r
 
 ## O que não está neste repositório
 
-- **Master e brutos:** o vlog completo (34 min, 10 GB, 4K HDR/HLG) e os brutos das outras cidades ficam em `reels/apresentacao/fonte/`, ignorada pelo git. Os links estão em `reels/apresentacao/RESUMO.md`. O caminho do master pode ser indicado pela variável `REEL_MASTER`.
+- **Master e brutos:** o vlog completo (34 min, 10 GB, 4K HDR/HLG) e os brutos das outras cidades ficam em `reels/apresentacao/fonte/`, ignorada pelo git. Todos os arquivos brutos (o master `Barcelona_3dias` e os brutos de cada cidade, numa subpasta por cidade) estão na pasta do Google Drive do projeto: https://drive.google.com/drive/folders/1pDDNmhFAbXzdg5Pbb3b1gx0J5zQCC30o. Para usar só um trecho do master sem baixar os 10 GB, veja `reels/agua-barcelona/rev2/scripts/baixar_trecho_master.py`. O caminho do master pode ser indicado pela variável `REEL_MASTER`.
 - **Vídeos das revisões aposentadas:** REV5 (`reel_apresentacao.mp4`, `reel_apresentacao_sem_texto.mp4`), REV6 com texto (`reel_apresentacao_rev6.mp4`), as prévias leves antigas e os testes de voz (`teste_voz*.mp4`). Eles continuam no repositório `diegohslordelo/desktop-tutorial`, branch `claude/wonderful-meitner-1mioxg`, pasta `primeiro-dia-reel-apresentacao/`.
   - Por isso, `scripts/montar_video_rev6.py`, `revisao_6_audio/scripts/teste_voz_v2.py` e `revisao_6_audio/scripts/sincronia.py` não rodam sem esses arquivos. Eles só servem para refazer a REV6, o que também exige o master.
 - **Design System REV 2:** veja `design-system/README.md`.
