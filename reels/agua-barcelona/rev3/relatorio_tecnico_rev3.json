@@ -1,0 +1,630 @@
+{
+ "arquivo": "rev3/reel_agua_barcelona_rev3.mp4",
+ "modo": "final (master)",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": "24/1",
+  "quadros": 471,
+  "duracao_s": 19.625,
+  "duracao_audio_s": 19.625,
+  "codec_video": "h264 (High)",
+  "cor": "bt709/bt709/bt709/tv",
+  "tamanho_bytes": 56364111
+ },
+ "audio": {
+  "bruto": {
+   "lufs": -18.5,
+   "pico_dbtp": -1.0
+  },
+  "iteracoes": [
+   {
+    "ganho_db": 4.5,
+    "limitador": true,
+    "lufs": -14.6,
+    "pico_dbtp": -1.5
+   },
+   {
+    "ganho_db": 5.1,
+    "limitador": true,
+    "lufs": -14.2,
+    "pico_dbtp": -1.5
+   },
+   {
+    "ganho_db": 5.3,
+    "limitador": true,
+    "lufs": -14.1,
+    "pico_dbtp": -1.5
+   }
+  ],
+  "final": {
+   "lufs": -14.1,
+   "pico_dbtp": -1.5
+  },
+  "arquivo_final": {
+   "lufs": -14.1,
+   "pico_dbtp": -1.3,
+   "ok": true
+  }
+ },
+ "planos": [
+  {
+   "n": 1,
+   "video_s": [
+    1079.35,
+    1083.2
+   ],
+   "audio_s": [
+    1090.45,
+    1094.3
+   ],
+   "reel_s": [
+    0.0,
+    3.875
+   ],
+   "centro_x": 0.52
+  },
+  {
+   "n": 2,
+   "video_s": [
+    1096.84,
+    1098.04
+   ],
+   "audio_s": [
+    1096.84,
+    1098.04
+   ],
+   "reel_s": [
+    3.875,
+    5.083
+   ],
+   "centro_x": 0.5
+  },
+  {
+   "n": 3,
+   "video_s": [
+    1085.9,
+    1087.98
+   ],
+   "audio_s": [
+    1085.9,
+    1087.98
+   ],
+   "reel_s": [
+    5.083,
+    7.167
+   ],
+   "centro_x": 0.5
+  },
+  {
+   "n": 4,
+   "video_s": [
+    1102.34,
+    1105.28
+   ],
+   "audio_s": [
+    1102.34,
+    1105.28
+   ],
+   "reel_s": [
+    7.167,
+    10.125
+   ],
+   "centro_x": 0.52
+  },
+  {
+   "n": 5,
+   "video_s": [
+    1106.44,
+    1108.8
+   ],
+   "audio_s": [
+    1106.44,
+    1108.8
+   ],
+   "reel_s": [
+    10.125,
+    12.458
+   ],
+   "centro_x": 0.52
+  },
+  {
+   "n": 6,
+   "video_s": [
+    1110.0,
+    1111.04
+   ],
+   "audio_s": [
+    1110.0,
+    1111.04
+   ],
+   "reel_s": [
+    12.458,
+    13.5
+   ],
+   "centro_x": 0.48
+  },
+  {
+   "n": 7,
+   "video_s": [
+    1111.58,
+    1115.62
+   ],
+   "audio_s": [
+    1111.58,
+    1115.62
+   ],
+   "reel_s": [
+    13.5,
+    17.542
+   ],
+   "centro_x": 0.48
+  },
+  {
+   "n": 8,
+   "video_s": [
+    1083.2,
+    1085.3
+   ],
+   "audio_s": [
+    [
+     1115.58,
+     1115.94
+    ],
+    [
+     1098.04,
+     1098.76
+    ],
+    [
+     1105.28,
+     1105.88
+    ],
+    [
+     1111.04,
+     1111.58
+    ]
+   ],
+   "reel_s": [
+    17.542,
+    19.625
+   ],
+   "centro_x": 0.52
+  }
+ ],
+ "cortes_s": [
+  3.875,
+  5.083,
+  7.167,
+  10.125,
+  12.458,
+  13.5,
+  17.542
+ ],
+ "objetos": {
+  "placa_nao_faca": {
+   "face_largura": 630,
+   "modulo_lado": 219,
+   "altura": 219,
+   "largura_total": 849,
+   "destino_px": 128.0,
+   "rotulo_px": 36.0,
+   "x": 72,
+   "y": 640,
+   "chegada_s": 0.0,
+   "saida_s": [
+    2.583,
+    2.833
+   ],
+   "area_pct": 9.0
+  },
+  "placa_cta": {
+   "face_largura": 733,
+   "modulo_lado": 128,
+   "altura": 128,
+   "largura_total": 861,
+   "destino_px": 96.0,
+   "rotulo_px": null,
+   "x": 72,
+   "y": 640,
+   "chegada_s": 17.542,
+   "x_final": 933,
+   "largura_max_ds_872": true
+  },
+  "print_app": {
+   "de_s": 9.292,
+   "ate_s": 12.458,
+   "duracao_s": 3.167,
+   "caixa": [
+    72,
+    320,
+    944,
+    1168
+   ],
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "revela_ms": 400
+  },
+  "bilhete": {
+   "de_s": 13.5,
+   "ate_s": 15.75,
+   "x": 476,
+   "y": 900,
+   "largura": 463,
+   "altura": 200,
+   "linhas": [
+    "dica: garrafa +",
+    "app de fontes."
+   ],
+   "max_caracteres_linha": 15
+  },
+  "entradas_de_objetos_s": {
+   "placa_nao_faca": 0.0,
+   "bilhete": 13.5,
+   "placa_cta": 17.542
+  },
+  "intervalo_min_entre_entradas_s": 4.042,
+  "n_fora_da_zona_segura_parado": 0,
+  "fora_da_zona_segura_parado": [],
+  "n_legenda_sobre_objeto": 0,
+  "legenda_sobre_objeto": []
+ },
+ "legendas": {
+  "grupos": [
+   {
+    "texto_tela": "Em Barcelona\ntem várias fontes",
+    "de": 0.042,
+    "ate": 1.417,
+    "fala_rev": [
+     0.062,
+     1.402
+    ],
+    "palavras_por_s": 3.73,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "espalhadas pela cidade",
+    "de": 1.417,
+    "ate": 2.333,
+    "fala_rev": [
+     1.402,
+     2.322
+    ],
+    "palavras_por_s": 3.26,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "que você pode encher,",
+    "de": 2.333,
+    "ate": 3.875,
+    "fala_rev": [
+     2.322,
+     3.842
+    ],
+    "palavras_por_s": 2.63,
+    "modo": "palavra",
+    "palavras_q": [
+     56,
+     63,
+     68,
+     76
+    ]
+   },
+   {
+    "texto_tela": "para a galera\nbeber água mesmo.",
+    "de": 3.875,
+    "ate": 5.125,
+    "fala_rev": [
+     3.882,
+     5.082
+    ],
+    "palavras_por_s": 5.0,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "Compramos essa\ngarrafa aqui ontem.",
+    "de": 5.125,
+    "ate": 7.167,
+    "fala_rev": [
+     5.127,
+     7.147
+    ],
+    "palavras_por_s": 2.48,
+    "modo": "palavra",
+    "palavras_q": [
+     123,
+     141,
+     146,
+     158,
+     161
+    ]
+   },
+   {
+    "texto_tela": "Tem um aplicativo",
+    "de": 7.167,
+    "ate": 8.333,
+    "fala_rev": [
+     7.173,
+     8.333
+    ],
+    "palavras_por_s": 2.59,
+    "modo": "palavra",
+    "palavras_q": [
+     172,
+     183,
+     186
+    ]
+   },
+   {
+    "texto_tela": "que a gente baixou",
+    "de": 8.333,
+    "ate": 9.0,
+    "fala_rev": [
+     8.333,
+     9.013
+    ],
+    "palavras_por_s": 5.88,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "chamado Fonts BCN.",
+    "de": 9.0,
+    "ate": 10.125,
+    "fala_rev": [
+     9.013,
+     10.113
+    ],
+    "palavras_por_s": 2.73,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "nesse aplicativo",
+    "de": 10.125,
+    "ate": 11.167,
+    "fala_rev": [
+     10.125,
+     11.167
+    ],
+    "palavras_por_s": 1.92,
+    "modo": "palavra",
+    "palavras_q": [
+     243,
+     254
+    ]
+   },
+   {
+    "texto_tela": "tem a localização",
+    "de": 11.167,
+    "ate": 11.875,
+    "fala_rev": [
+     11.167,
+     11.887
+    ],
+    "palavras_por_s": 4.17,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "das fontes.",
+    "de": 11.875,
+    "ate": 12.458,
+    "fala_rev": [
+     11.887,
+     12.467
+    ],
+    "palavras_por_s": 3.45,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "Você vai para o lugar,",
+    "de": 12.458,
+    "ate": 13.5,
+    "fala_rev": [
+     12.458,
+     13.498
+    ],
+    "palavras_por_s": 4.81,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "enche sua garrafa, guarda,",
+    "de": 13.5,
+    "ate": 14.792,
+    "fala_rev": [
+     13.5,
+     14.697
+    ],
+    "palavras_por_s": 3.34,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "e aí, quando esvaziar,",
+    "de": 14.792,
+    "ate": 15.75,
+    "fala_rev": [
+     14.797,
+     15.757
+    ],
+    "palavras_por_s": 4.17,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "você procura outra fonte",
+    "de": 15.75,
+    "ate": 16.833,
+    "fala_rev": [
+     15.757,
+     16.817
+    ],
+    "palavras_por_s": 3.77,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "para encher de novo.",
+    "de": 16.833,
+    "ate": 18.083,
+    "fala_rev": [
+     16.817,
+     17.497
+    ],
+    "palavras_por_s": 5.88,
+    "modo": "grupo",
+    "palavras_q": null
+   }
+  ],
+  "max_caracteres_linha": 26,
+  "max_linhas": 2,
+  "max_palavras_grupo": 6,
+  "topo_min_bloco_y": 1291.2,
+  "x_min": 210.1,
+  "x_max": 869.9
+ },
+ "checagens": {
+  "legenda_ate_26_caracteres": true,
+  "legenda_ate_2_linhas": true,
+  "legenda_ate_6_palavras": true,
+  "legenda_topo_maior_igual_1250": true,
+  "objetos_parados_na_zona_segura": true,
+  "legenda_sem_sobrepor_objeto": true,
+  "calma_1_5_s_entre_entradas": true,
+  "bilhete_ate_22_caracteres": true,
+  "cta_ate_872_px": true,
+  "print_acima_da_legenda": true,
+  "transicoes": 0
+ },
+ "frames_qa": [
+  [
+   0.0,
+   0,
+   "qa_frames/rev3_t00_00s_quadro000.jpg"
+  ],
+  [
+   0.25,
+   6,
+   "qa_frames/rev3_t00_25s_quadro006.jpg"
+  ],
+  [
+   0.5,
+   12,
+   "qa_frames/rev3_t00_50s_quadro012.jpg"
+  ],
+  [
+   1.0,
+   24,
+   "qa_frames/rev3_t01_00s_quadro024.jpg"
+  ],
+  [
+   1.5,
+   36,
+   "qa_frames/rev3_t01_50s_quadro036.jpg"
+  ],
+  [
+   2.3,
+   55,
+   "qa_frames/rev3_t02_30s_quadro055.jpg"
+  ],
+  [
+   2.6,
+   62,
+   "qa_frames/rev3_t02_60s_quadro062.jpg"
+  ],
+  [
+   4.0,
+   96,
+   "qa_frames/rev3_t04_00s_quadro096.jpg"
+  ],
+  [
+   6.5,
+   156,
+   "qa_frames/rev3_t06_50s_quadro156.jpg"
+  ],
+  [
+   8.5,
+   204,
+   "qa_frames/rev3_t08_50s_quadro204.jpg"
+  ],
+  [
+   9.3,
+   223,
+   "qa_frames/rev3_t09_30s_quadro223.jpg"
+  ],
+  [
+   9.45,
+   227,
+   "qa_frames/rev3_t09_45s_quadro227.jpg"
+  ],
+  [
+   9.6,
+   230,
+   "qa_frames/rev3_t09_60s_quadro230.jpg"
+  ],
+  [
+   10.5,
+   252,
+   "qa_frames/rev3_t10_50s_quadro252.jpg"
+  ],
+  [
+   12.3,
+   295,
+   "qa_frames/rev3_t12_30s_quadro295.jpg"
+  ],
+  [
+   13.6,
+   326,
+   "qa_frames/rev3_t13_60s_quadro326.jpg"
+  ],
+  [
+   14.0,
+   336,
+   "qa_frames/rev3_t14_00s_quadro336.jpg"
+  ],
+  [
+   15.0,
+   360,
+   "qa_frames/rev3_t15_00s_quadro360.jpg"
+  ],
+  [
+   15.6,
+   374,
+   "qa_frames/rev3_t15_60s_quadro374.jpg"
+  ],
+  [
+   16.9,
+   406,
+   "qa_frames/rev3_t16_90s_quadro406.jpg"
+  ],
+  [
+   17.3,
+   415,
+   "qa_frames/rev3_t17_30s_quadro415.jpg"
+  ],
+  [
+   17.6,
+   422,
+   "qa_frames/rev3_t17_60s_quadro422.jpg"
+  ],
+  [
+   18.5,
+   444,
+   "qa_frames/rev3_t18_50s_quadro444.jpg"
+  ]
+ ],
+ "sha256": "1361d1f331d9f731210f4aadffd7d3ce96feb0a683bb31c200a2386740bfa3f4",
+ "fontes": {
+  "Barlow-Bold.ttf": "84e6a4d61e7c3e21f3c50ea6a4f7e5303a3467864c038be6ea3759bab8d547f9",
+  "BarlowCondensed-SemiBold.ttf": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9",
+  "BarlowCondensed-ExtraBold.ttf": "724c9c25952d5f4a2d87185d9767aa006144c5f0d944dc05bf7d5d603551c260",
+  "ReenieBeanie.ttf": "0ea608aa325bf9e11c9590cc0b63dcf7cd215e270784f1ebbe6fad4927b31ff8"
+ }
+}
