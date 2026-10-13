@@ -1,0 +1,534 @@
+{
+ "arquivo": "rev4/reel_agua_barcelona_rev4.mp4",
+ "modo": "final (master)",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": "24/1",
+  "quadros": 482,
+  "duracao_s": 20.083,
+  "duracao_audio_s": 20.083,
+  "codec_video": "h264 (High)",
+  "cor": "bt709/bt709/bt709/tv",
+  "tamanho_bytes": 52246404
+ },
+ "audio": {
+  "bruto": {
+   "lufs": -18.5,
+   "pico_dbtp": -1.0
+  },
+  "iteracoes": [
+   {
+    "ganho_db": 4.5,
+    "limitador": true,
+    "lufs": -14.9,
+    "pico_dbtp": -1.5
+   },
+   {
+    "ganho_db": 5.4,
+    "limitador": true,
+    "lufs": -14.2,
+    "pico_dbtp": -1.5
+   },
+   {
+    "ganho_db": 5.6,
+    "limitador": true,
+    "lufs": -14.1,
+    "pico_dbtp": -1.5
+   }
+  ],
+  "final": {
+   "lufs": -14.1,
+   "pico_dbtp": -1.5
+  },
+  "arquivo_final": {
+   "lufs": -14.1,
+   "pico_dbtp": -1.4,
+   "ok": true
+  }
+ },
+ "planos": [
+  {
+   "n": 1,
+   "video_s": [
+    1079.35,
+    1084.01
+   ],
+   "audio_s": [
+    1090.22,
+    1094.88
+   ],
+   "reel_s": [
+    0.0,
+    4.667
+   ],
+   "centro_x": 0.52
+  },
+  {
+   "n": 2,
+   "video_s": [
+    1102.4,
+    1115.62
+   ],
+   "audio_s": [
+    1102.4,
+    1115.62
+   ],
+   "reel_s": [
+    4.667,
+    17.875
+   ],
+   "centro_x": 0.5
+  },
+  {
+   "n": 3,
+   "video_s": [
+    1076.1,
+    1078.3
+   ],
+   "audio_s": [
+    [
+     1102.12,
+     1102.58
+    ],
+    [
+     1105.45,
+     1106.05
+    ],
+    [
+     1098.3,
+     1098.7
+    ]
+   ],
+   "reel_s": [
+    17.875,
+    20.083
+   ],
+   "centro_x": 0.5
+  }
+ ],
+ "cortes_s": [
+  4.667,
+  17.875
+ ],
+ "objetos": {
+  "placa_nao_faca": {
+   "face_largura": 630,
+   "modulo_lado": 219,
+   "altura": 219,
+   "largura_total": 849,
+   "destino_px": 128.0,
+   "rotulo_px": 36.0,
+   "x": 72,
+   "y": 640,
+   "chegada_s": 0.0,
+   "saida_s": [
+    2.583,
+    2.833
+   ],
+   "area_pct": 9.0
+  },
+  "placa_cta": {
+   "face_largura": 733,
+   "modulo_lado": 128,
+   "altura": 128,
+   "largura_total": 861,
+   "destino_px": 96.0,
+   "rotulo_px": null,
+   "x": 72,
+   "y": 640,
+   "chegada_s": 17.875,
+   "x_final": 933,
+   "largura_max_ds_872": true
+  },
+  "print_app": {
+   "de_s": 6.792,
+   "ate_s": 12.292,
+   "duracao_s": 5.5,
+   "caixa": [
+    72,
+    320,
+    944,
+    1168
+   ],
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "revela_ms": 400
+  },
+  "bilhete": {
+   "de_s": 13.833,
+   "ate_s": 16.208,
+   "x": 476,
+   "y": 900,
+   "largura": 463,
+   "altura": 200,
+   "linhas": [
+    "dica: garrafa +",
+    "app de fontes."
+   ],
+   "max_caracteres_linha": 15
+  },
+  "entradas_de_objetos_s": {
+   "placa_nao_faca": 0.0,
+   "bilhete": 13.833,
+   "placa_cta": 17.875
+  },
+  "intervalo_min_entre_entradas_s": 4.042,
+  "n_fora_da_zona_segura_parado": 0,
+  "fora_da_zona_segura_parado": [],
+  "n_legenda_sobre_objeto": 0,
+  "legenda_sobre_objeto": []
+ },
+ "legendas": {
+  "grupos": [
+   {
+    "texto_tela": "Aqui em Barcelona\ntem várias fontes",
+    "de": 0.083,
+    "ate": 1.75,
+    "fala_rev": [
+     0.072,
+     1.732
+    ],
+    "palavras_por_s": 3.61,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "espalhadas pela cidade",
+    "de": 1.75,
+    "ate": 2.792,
+    "fala_rev": [
+     1.732,
+     2.772
+    ],
+    "palavras_por_s": 2.88,
+    "modo": "palavra",
+    "palavras_q": [
+     42,
+     51,
+     56
+    ]
+   },
+   {
+    "texto_tela": "que você pode encher,",
+    "de": 2.792,
+    "ate": 4.667,
+    "fala_rev": [
+     2.772,
+     4.612
+    ],
+    "palavras_por_s": 2.17,
+    "modo": "palavra",
+    "palavras_q": [
+     67,
+     72,
+     78,
+     95
+    ]
+   },
+   {
+    "texto_tela": "Tem um aplicativo",
+    "de": 5.042,
+    "ate": 5.792,
+    "fala_rev": [
+     5.03,
+     5.81
+    ],
+    "palavras_por_s": 3.85,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "que a gente baixou",
+    "de": 5.792,
+    "ate": 6.542,
+    "fala_rev": [
+     5.81,
+     6.55
+    ],
+    "palavras_por_s": 5.41,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "chamado Fonts BCN.",
+    "de": 6.542,
+    "ate": 8.958,
+    "fala_rev": [
+     6.55,
+     7.61
+    ],
+    "palavras_por_s": 2.83,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "E nesse aplicativo",
+    "de": 8.958,
+    "ate": 9.833,
+    "fala_rev": [
+     8.97,
+     9.83
+    ],
+    "palavras_por_s": 3.49,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "tem a localização",
+    "de": 9.833,
+    "ate": 10.583,
+    "fala_rev": [
+     9.83,
+     10.57
+    ],
+    "palavras_por_s": 4.05,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "das fontes",
+    "de": 10.583,
+    "ate": 11.125,
+    "fala_rev": [
+     10.57,
+     11.13
+    ],
+    "palavras_por_s": 3.57,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "espalhadas pela cidade.",
+    "de": 11.125,
+    "ate": 12.417,
+    "fala_rev": [
+     11.13,
+     12.19
+    ],
+    "palavras_por_s": 2.83,
+    "modo": "palavra",
+    "palavras_q": [
+     267,
+     278,
+     282
+    ]
+   },
+   {
+    "texto_tela": "Você vai para o lugar,",
+    "de": 12.417,
+    "ate": 13.833,
+    "fala_rev": [
+     12.43,
+     13.43
+    ],
+    "palavras_por_s": 5.0,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "enche sua garrafa, guarda,",
+    "de": 13.833,
+    "ate": 15.375,
+    "fala_rev": [
+     13.85,
+     15.37
+    ],
+    "palavras_por_s": 2.63,
+    "modo": "palavra",
+    "palavras_q": [
+     332,
+     335,
+     339,
+     352
+    ]
+   },
+   {
+    "texto_tela": "e quando esvaziar,",
+    "de": 15.375,
+    "ate": 16.208,
+    "fala_rev": [
+     15.37,
+     16.19
+    ],
+    "palavras_por_s": 3.66,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "você procura outra fonte",
+    "de": 16.208,
+    "ate": 17.208,
+    "fala_rev": [
+     16.19,
+     17.21
+    ],
+    "palavras_por_s": 3.92,
+    "modo": "grupo",
+    "palavras_q": null
+   },
+   {
+    "texto_tela": "para encher de novo.",
+    "de": 17.208,
+    "ate": 17.875,
+    "fala_rev": [
+     17.21,
+     17.75
+    ],
+    "palavras_por_s": 7.41,
+    "modo": "grupo",
+    "palavras_q": null
+   }
+  ],
+  "max_caracteres_linha": 26,
+  "max_linhas": 2,
+  "max_palavras_grupo": 6,
+  "topo_min_bloco_y": 1291.2,
+  "x_min": 210.1,
+  "x_max": 869.9
+ },
+ "checagens": {
+  "legenda_ate_26_caracteres": true,
+  "legenda_ate_2_linhas": true,
+  "legenda_ate_6_palavras": true,
+  "legenda_topo_maior_igual_1250": true,
+  "objetos_parados_na_zona_segura": true,
+  "legenda_sem_sobrepor_objeto": true,
+  "calma_1_5_s_entre_entradas": true,
+  "bilhete_ate_22_caracteres": true,
+  "cta_ate_872_px": true,
+  "print_acima_da_legenda": true,
+  "transicoes": 0
+ },
+ "frames_qa": [
+  [
+   0.0,
+   0,
+   "qa_frames/rev4_t00_00s_quadro000.jpg"
+  ],
+  [
+   0.5,
+   12,
+   "qa_frames/rev4_t00_50s_quadro012.jpg"
+  ],
+  [
+   1.0,
+   24,
+   "qa_frames/rev4_t01_00s_quadro024.jpg"
+  ],
+  [
+   2.0,
+   48,
+   "qa_frames/rev4_t02_00s_quadro048.jpg"
+  ],
+  [
+   2.6,
+   62,
+   "qa_frames/rev4_t02_60s_quadro062.jpg"
+  ],
+  [
+   3.0,
+   72,
+   "qa_frames/rev4_t03_00s_quadro072.jpg"
+  ],
+  [
+   4.0,
+   96,
+   "qa_frames/rev4_t04_00s_quadro096.jpg"
+  ],
+  [
+   4.6,
+   110,
+   "qa_frames/rev4_t04_60s_quadro110.jpg"
+  ],
+  [
+   4.7,
+   113,
+   "qa_frames/rev4_t04_70s_quadro113.jpg"
+  ],
+  [
+   5.5,
+   132,
+   "qa_frames/rev4_t05_50s_quadro132.jpg"
+  ],
+  [
+   6.8,
+   163,
+   "qa_frames/rev4_t06_80s_quadro163.jpg"
+  ],
+  [
+   7.0,
+   168,
+   "qa_frames/rev4_t07_00s_quadro168.jpg"
+  ],
+  [
+   8.0,
+   192,
+   "qa_frames/rev4_t08_00s_quadro192.jpg"
+  ],
+  [
+   10.0,
+   240,
+   "qa_frames/rev4_t10_00s_quadro240.jpg"
+  ],
+  [
+   11.5,
+   276,
+   "qa_frames/rev4_t11_50s_quadro276.jpg"
+  ],
+  [
+   12.4,
+   298,
+   "qa_frames/rev4_t12_40s_quadro298.jpg"
+  ],
+  [
+   12.6,
+   302,
+   "qa_frames/rev4_t12_60s_quadro302.jpg"
+  ],
+  [
+   13.6,
+   326,
+   "qa_frames/rev4_t13_60s_quadro326.jpg"
+  ],
+  [
+   14.5,
+   348,
+   "qa_frames/rev4_t14_50s_quadro348.jpg"
+  ],
+  [
+   16.0,
+   384,
+   "qa_frames/rev4_t16_00s_quadro384.jpg"
+  ],
+  [
+   17.5,
+   420,
+   "qa_frames/rev4_t17_50s_quadro420.jpg"
+  ],
+  [
+   18.0,
+   432,
+   "qa_frames/rev4_t18_00s_quadro432.jpg"
+  ],
+  [
+   18.6,
+   446,
+   "qa_frames/rev4_t18_60s_quadro446.jpg"
+  ],
+  [
+   19.5,
+   468,
+   "qa_frames/rev4_t19_50s_quadro468.jpg"
+  ]
+ ],
+ "sha256": "a21c2de07b075f374d8d267b9796e2a6812fafa0cda45a7439d9fe46ae9920e5",
+ "fontes": {
+  "Barlow-Bold.ttf": "84e6a4d61e7c3e21f3c50ea6a4f7e5303a3467864c038be6ea3759bab8d547f9",
+  "BarlowCondensed-SemiBold.ttf": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9",
+  "BarlowCondensed-ExtraBold.ttf": "724c9c25952d5f4a2d87185d9767aa006144c5f0d944dc05bf7d5d603551c260",
+  "ReenieBeanie.ttf": "0ea608aa325bf9e11c9590cc0b63dcf7cd215e270784f1ebbe6fad4927b31ff8"
+ }
+}

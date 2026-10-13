@@ -1,0 +1,353 @@
+{
+  "revisao": 4,
+  "_o_que_e": "REV4 do Reel 03: refeita para ficar fluida, com menos cortes (pedido do Diego, 13/10/2026). Sai o take 'Compramos essa garrafa aqui ontem' (voz da Marina ao fundo entre 'ontem' e 'aqui', 1088,7–1090,2 s). A fala vira 2 trechos contínuos com 1 só emenda de áudio, numa pausa. Gancho, print do app, bilhete e CTA iguais à REV3; o fechamento passa para as palmeiras do Port Vell.",
+  "saida": "reel_agua_barcelona_rev4.mp4",
+  "saida_previa": "reel_agua_barcelona_rev4_previa_leve.mp4",
+  "saida_teste": "_tmp/teste_sem_master.mp4",
+  "fps": 24,
+  "sr": 48000,
+  "largura": 1080,
+  "altura": 1920,
+  "crf": 16,
+  "tokens": {
+    "_fonte": "primeiro-dia-tokens-v2.json (DS 2.2.0)",
+    "signal_500": "#FFC21A",
+    "night_900": "#121317",
+    "paper_0": "#FCFBF8",
+    "paper_500": "#F6F3EC",
+    "stamp_500": "#C4302A",
+    "ink_500": "#1F3BB3",
+    "safe": {
+      "x0": 72,
+      "x1": 944,
+      "y0": 256,
+      "y1": 1440
+    },
+    "radius_plate": 16,
+    "radius_tag": 10,
+    "radius_paper": 3,
+    "radius_photo": 24,
+    "rot_note": 3.0,
+    "op_grain": 0.05,
+    "op_fiber": 0.04,
+    "op_scrim": 0.63,
+    "zoom_subtle": 1.04,
+    "dur_base": 240,
+    "dur_slow": 400,
+    "ease_arrive": [0.16, 1.28, 0.36, 1.0],
+    "ease_out": [0.2, 0.8, 0.2, 1.0],
+    "ease_exit": [0.55, 0.0, 0.85, 0.35],
+    "ease_cinema": [0.65, 0.0, 0.35, 1.0],
+    "shadow_paper": {
+      "_css": "0 1px 1px rgba(0,0,0,.20), 0 14px 26px -10px rgba(0,0,0,.50)",
+      "dura": [1, 0.2],
+      "projetada": {
+        "y": 14,
+        "blur": 26,
+        "spread": -10,
+        "alfa": 0.5
+      }
+    },
+    "shadow_plate": {
+      "_css": "0 3px 0 rgba(0,0,0,.28), 0 18px 32px -10px rgba(0,0,0,.55)",
+      "dura": [3, 0.28],
+      "projetada": {
+        "y": 18,
+        "blur": 32,
+        "spread": -10,
+        "alfa": 0.55
+      }
+    }
+  },
+  "planos": {
+    "_fonte": "Plano de cortes REV4 (13/10). 'video' e 'audio' em segundos do master. Pontos de corte medidos no sinal (energia e altura da voz, passo de 20 ms) e conferidos com 2 transcrições por palavra: 'aqui' começa em 1090,28 s; 'encher,' termina em 1094,82 s; 'Tem' começa depois de 1102,58 s (silêncio de −33 a −38 dB entre 1102,12 e 1102,58 s); 'novo.' termina em 1115,50 s.",
+    "lista": [
+      {
+        "n": 1,
+        "video": [1079.35, 1084.01],
+        "audio": [1090.22, 1094.88],
+        "centro_x": 0.52,
+        "fala": "(B-roll: Diego enchendo a garrafa na fonte) Aqui em Barcelona tem várias fontes espalhadas pela cidade que você pode encher,"
+      },
+      {
+        "n": 2,
+        "video": [1102.4, 1115.62],
+        "centro_x": 0.5,
+        "fala": "Tem um aplicativo que a gente baixou chamado Fonts BCN. E nesse aplicativo tem a localização das fontes espalhadas pela cidade. Você vai para o lugar, enche sua garrafa, guarda, e aí, quando esvaziar, você procura outra fonte para encher de novo. (take contínuo; o print do app cobre a imagem de 1104,55 a 1110,05 s)"
+      },
+      {
+        "n": 3,
+        "video": [1076.1, 1078.3],
+        "ambiente": [[1102.12, 1102.58], [1105.45, 1106.05], [1098.3, 1098.7]],
+        "centro_x": 0.5,
+        "fala": "(B-roll: palmeiras do Port Vell, mesma tarde, antes da fonte; som de fundo das pausas da fala) fechamento com o CTA"
+      }
+    ]
+  },
+  "audio": {
+    "_fonte": "Som direto do master; o plano 2 usa a fala do plano seguinte (corte em L sobre o B-roll da fonte); o plano 8 usa o som de fundo das pausas da fala. Emendas com crossfade de potência constante; fade-out no fim. Master final −14 LUFS e pico verdadeiro ≤ −1 dBTP (DS 4.6).",
+    "crossfade_ms": 20,
+    "fade_out_ms": 300,
+    "lufs_alvo": -14.0,
+    "pico_max_dbtp": -1.0,
+    "limitador_amplitude": 0.84
+  },
+  "placa_nao_faca": {
+    "_variante": "DS 2.1 variante 'Não faça' (linha 1 rótulo, linha 2 assunto, módulo ✗ vermelho sobre papel) com o texto do gancho escolhido pelo Diego: NÃO COMPRE ÁGUA EM / BARCELONA (5 palavras, DS 5.1 ≤ 7). Abertura em x 72 · y 640 com Chegada no quadro 0, sobre a fonte; sai pela direita de 2,60 a 2,85 s.",
+    "rotulo": "NÃO COMPRE ÁGUA EM",
+    "destino": "BARCELONA",
+    "modulo": "x",
+    "x": 72,
+    "y": 640,
+    "escala": 1.0,
+    "inicio_s": 0.0,
+    "saida_inicio_s": 2.6
+  },
+  "placa_cta": {
+    "_variante": "DS 2.7 CTA 'Placa pequena com o verbo + módulo de seta' = variante Pequena (75%) da 2.1, em x 72 · y 640. Mesmo verbo da legenda do post ('Salva pra sua viagem a Barcelona'). Fica até o fim, sobre as palmeiras do Port Vell (corte seco para o início).",
+    "rotulo": null,
+    "destino": "SALVA PRA VIAGEM",
+    "modulo": "seta",
+    "x": 72,
+    "y": 640,
+    "escala": 0.75,
+    "saida_inicio_s": null,
+    "inicio_plano": 3,
+    "_inicio": "Entra no corte para o plano 3 (palmeiras): sobre o plano de fala, a placa em y 640–768 encostaria no queixo do Diego (DS 0.3)."
+  },
+  "placa": {
+    "_fonte": "DS 2.1 anatomia + pd-bundle.css (.pd-plate). Valores em px a 1080, escala 1,0.",
+    "fonte_rotulo": "BarlowCondensed-SemiBold.ttf",
+    "fonte_destino": "BarlowCondensed-ExtraBold.ttf",
+    "rotulo_px": 36,
+    "rotulo_tracking_em": 0.08,
+    "rotulo_entrelinha": 1.0,
+    "destino_px": 128,
+    "destino_tracking_em": 0.005,
+    "destino_entrelinha": 0.9,
+    "destino_margem_topo": 12,
+    "padding_v": 28,
+    "padding_h": 36,
+    "seta_fracao": 0.54,
+    "x_fracao": 0.54,
+    "x_traco": 16,
+    "filete_inset": 10,
+    "filete_px": 2,
+    "filete_alfa": 0.25,
+    "filete_raio": 8,
+    "rebite_px": 10,
+    "rebite_x": 22,
+    "rebite_y": 24,
+    "rebite_alfa": 0.35,
+    "bevel_luz": [2, 0.45],
+    "bevel_sombra": [4, 0.16],
+    "_modulo_lado": "Lado do módulo = altura da face (pd-bundle: 221 px na placa de 2 linhas). O DS diz '≈ 176 px': divergência aberta (CLAUDE.md, pendência 3).",
+    "chegada": {
+      "_fonte": "DS 2.1 assinatura CHEGADA (560 ms) e receita 6.2; mesmos keyframes da REV8 do Reel de apresentação",
+      "face_x": [[0, -1100], [267, 24], [345, -4], [400, 0]],
+      "rotacao": [[0, -3.0], [267, 0.6], [345, -0.15], [400, 0.0]],
+      "desfoque_px": [[0, 12], [267, 0]],
+      "modulo_x_px": [[0, null], [400, null], [467, 10], [567, 0]],
+      "_modulo_x_px": "null = −lado do módulo (escondido atrás da face); +10 px = empurrão da seta (DS 2.1)",
+      "sombra_y": [[0, 40], [400, 18]],
+      "sombra_alfa": [[0, 0.15], [400, 0.55]],
+      "sombra_dura_alfa": [[0, 0.0], [400, 0.28]],
+      "brilho_ms": [700, 1300],
+      "brilho_alfa": 0.4,
+      "brilho_largura": 0.34,
+      "brilho_inclinacao_graus": -14
+    },
+    "saida": {
+      "_fonte": "DS 2.1 'Saída (240 ms)': a seta empurra (80 ms) e a placa sai pela direita com ease-exit e desfoque direcional",
+      "duracao_ms": 240,
+      "modulo_x": [[0, 0], [40, 10], [80, 0]],
+      "face_x": [[80, 0], [240, 1150]],
+      "desfoque_px": [[80, 0], [240, 12]]
+    }
+  },
+  "insercao_app": {
+    "_o_que_e": "Print da App Store (Fonts BCN, Ajuntament de Barcelona) enviado pelo Diego em 13/10. Entra quando ele diz o nome do app e fica até o fim de 'a localização das fontes'.",
+    "_componente": "Recorte de foto (DS 2.6, linha Destino: foto radius-photo que revela por máscara em 400 ms) sobre fundo Grafite Noite em tela cheia. Efeito: zoom sutil 100 → 104% ao longo do plano (DS 4.5, plano estático > 2 s). Filete claro 2 px 8% + sombra (DS 1.1, objeto escuro sobre fundo escuro). Entra e sai com corte seco.",
+    "arquivo": "../rev1/assets/print_app_store_fonts_bcn.png",
+    "recorte_px": [22, 782, 1184, 1912],
+    "x": 72,
+    "y": 320,
+    "largura": 872,
+    "filete": {
+      "px": 2,
+      "alfa": 0.08
+    },
+    "revela_ms": 400,
+    "inicio_origem": 1104.55,
+    "fim_origem": 1110.05,
+    "_quando": "Entra em 'Fonts BCN' e fica até o fim de 'das fontes espalhadas pela cidade.' (o mapa do app mostra isso); volta para o Diego em 'Você vai para o lugar'."
+  },
+  "bilhete": {
+    "_fonte": "DS 2.4 Bilhete (dica = Bilhete com 'dica:', DS 2.6): papel paper-500, radius-paper, padding 24/32, shadow-paper, rotação +3°, Caneta 72 px (provisória Reenie Beanie), máx. 2 linhas × 22 caracteres, minúsculas. Zona de objeto y 880–1220, lado oposto ao rosto.",
+    "linhas": ["dica: garrafa +", "app de fontes."],
+    "fonte": "ReenieBeanie.ttf",
+    "tamanho": 72,
+    "entrelinha": 1.05,
+    "padding_v": 24,
+    "padding_h": 32,
+    "lado": "direita",
+    "_lado": "Rosto do Diego não conferido no master: 'direita' encosta o bilhete em x 944; 'esquerda' em x 72.",
+    "y": 900,
+    "inicio_origem": 1111.6,
+    "fim_origem": 1113.94,
+    "entra_ms": 240,
+    "escreve_ms": 400,
+    "sai_ms": 200
+  },
+  "legenda": {
+    "_estilo": "DS 3.2 Padrão: Barlow 700 56 px, entrelinha 1,15, #FCFBF8, sem caixa, scrim + sombra de texto, centralizada no canvas (x 540), base do bloco em y 1420.",
+    "fonte": "Barlow-Bold.ttf",
+    "tamanho": 56,
+    "entrelinha": 1.15,
+    "base_y": 1420,
+    "topo_min_y": 1250,
+    "centro_x": 540,
+    "max_caracteres": 26,
+    "max_linhas": 2,
+    "max_palavras": 6,
+    "sombra_dura": [2, 0.35],
+    "sombra_difusa": {
+      "blur": 24,
+      "alfa": 0.45
+    },
+    "palavra_ms": 160,
+    "palavra_sobe_px": 10,
+    "grupo_ms": 120,
+    "palavras_por_s_max_palavra_a_palavra": 3.0,
+    "saida_ms": 120,
+    "saida_sobe_px": 6,
+    "destaque": {
+      "_estilo": "DS 3.2 Destaque (não usado nesta revisão; mantido para o componente Legenda)",
+      "padding_v": 4,
+      "padding_h": 14,
+      "sombra_dura": [3, 0.25],
+      "sombra_projetada": {
+        "y": 10,
+        "blur": 18,
+        "spread": -6,
+        "alfa": 0.5
+      },
+      "pop": [[0, 0.85], [144, 1.06], [240, 1.0]],
+      "opacidade_ms": 100
+    }
+  },
+  "grupos": {
+    "_fonte": "REV4: tempos de cada palavra pela transcrição Whisper medium por palavra (13/10) cruzada com a transcrição anterior e com o sinal; 'aqui' (1090,28) e o fim de 'novo.' (1115,50) medidos no sinal. 'e quando esvaziar' sem 'aí': 2 de 3 transcrições não ouvem o 'aí' (na dúvida, a legenda não mostra palavra que pode não ter sido dita). Conferir de ouvido: 'para o lugar' (uma transcrição ouviu 'para um lugar').",
+    "lista": [
+      {
+        "texto": "Aqui em Barcelona\ntem várias fontes",
+        "palavras": [1090.28, 1090.6, 1090.7, 1091.1, 1091.3, 1091.62],
+        "fim": 1091.94
+      },
+      {
+        "texto": "espalhadas pela cidade",
+        "palavras": [1091.94, 1092.34, 1092.54],
+        "fim": 1092.98
+      },
+      {
+        "texto": "que você pode encher,",
+        "palavras": [1092.98, 1093.2, 1093.44, 1094.18],
+        "fim": 1094.82,
+        "segura_s": 0.06,
+        "_segura_s": "sai no corte para o take da fala"
+      },
+      {
+        "texto": "Tem um aplicativo",
+        "palavras": [1102.78, 1102.86, 1103.02],
+        "fim": 1103.56
+      },
+      {
+        "texto": "que a gente baixou",
+        "palavras": [1103.56, 1103.7, 1103.72, 1103.88],
+        "fim": 1104.3
+      },
+      {
+        "texto": "chamado Fonts BCN.",
+        "palavras": [1104.3, 1104.6, 1104.6],
+        "fim": 1105.36,
+        "modo": "grupo",
+        "_modo": "a transcrição junta 'Fonts BCN' numa palavra; o grupo entra inteiro"
+      },
+      {
+        "texto": "E nesse aplicativo",
+        "palavras": [1106.72, 1106.86, 1106.96],
+        "fim": 1107.58
+      },
+      {
+        "texto": "tem a localização",
+        "palavras": [1107.58, 1107.76, 1107.86],
+        "fim": 1108.32
+      },
+      {
+        "texto": "das fontes",
+        "palavras": [1108.32, 1108.58],
+        "fim": 1108.88
+      },
+      {
+        "texto": "espalhadas pela cidade.",
+        "palavras": [1108.88, 1109.32, 1109.52],
+        "fim": 1109.94
+      },
+      {
+        "texto": "Você vai para o lugar,",
+        "palavras": [1110.18, 1110.36, 1110.62, 1110.74, 1110.82],
+        "fim": 1111.18
+      },
+      {
+        "texto": "enche sua garrafa, guarda,",
+        "palavras": [1111.6, 1111.72, 1111.88, 1112.4],
+        "fim": 1113.12
+      },
+      {
+        "texto": "e quando esvaziar,",
+        "palavras": [1113.12, 1113.34, 1113.48],
+        "fim": 1113.94
+      },
+      {
+        "texto": "você procura outra fonte",
+        "palavras": [1113.94, 1114.14, 1114.48, 1114.72],
+        "fim": 1114.96
+      },
+      {
+        "texto": "para encher de novo.",
+        "palavras": [1114.96, 1115.12, 1115.28, 1115.4],
+        "fim": 1115.5,
+        "segura_s": 0.11,
+        "_segura_s": "sai no corte para as palmeiras"
+      }
+    ]
+  },
+  "scrim": {
+    "_fonte": "DS 1.1 e 3.1: gradiente grafite 0% em y 1150 → 63% em y 1500, sempre ligado no Reel",
+    "y0": 1150,
+    "y1": 1500
+  },
+  "grao": {
+    "_fonte": "DS 4.5: grão 5% fixo no vídeo inteiro (blend overlay)",
+    "sigma_px": 0.7,
+    "semente": 20261013
+  },
+  "teste": {
+    "_o_que_e": "Sem o master, o pipeline roda com um fundo provisório (vídeo de Barcelona já no repositório) para validar a camada de design: placa, legendas, print do app, bilhete e CTA. O áudio do teste é silêncio.",
+    "fundo": "../../apresentacao/reel_apresentacao_sem_texto_rev6.mp4",
+    "fundo_inicio_s": 0.0
+  },
+  "qa_tempos_s": [0.0, 0.5, 1.0, 2.0, 2.6, 3.0, 4.0, 4.6, 4.7, 5.5, 6.8, 7.0, 8.0, 10.0, 11.5, 12.4, 12.6, 13.6, 14.5, 16.0, 17.5, 18.0, 18.6, 19.5],
+  "master": {
+    "_fonte": "Google Drive, pasta Youtube (https://drive.google.com/drive/folders/1pDDNmhFAbXzdg5Pbb3b1gx0J5zQCC30o), arquivo Barcelona_3dias (10,1 GB, 4K HLG, 24 fps). scripts/baixar_trecho_master.py baixa só o índice e o trecho usado (cópia local esparsa).",
+    "drive_id": "1696LJW7mvgoBnOF3uYhxLscWNKpOTEdu",
+    "tamanho_bytes": 10137720126,
+    "trecho_s": [1075.0, 1120.0],
+    "cortes_do_master_s": {
+      "palmeiras": [1075.875, 1079.292],
+      "fonte": [1079.292, 1085.333],
+      "fala": [1085.333, 1115.958],
+      "la_rambla_com_etiqueta": [1115.958, null]
+    }
+  }
+}
