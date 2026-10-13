@@ -1,0 +1,614 @@
+{
+ "revisao": 1,
+ "_o_que_e": "Reel p201 'Camisa do Bahia no Camp Nou' (Primeiro Dia · Nível B). Só brutos 4K HLG da pasta Barcelona (decisão do Diego, 12/10/2026); sem o master; sem a cena da reforma.",
+ "saida": "rev1/reel_bahia_camp_nou_rev1.mp4",
+ "saida_previa": "rev1/reel_bahia_camp_nou_rev1_previa_leve.mp4",
+ "fps": 24,
+ "sr": 48000,
+ "largura": 1080,
+ "altura": 1920,
+ "crf": 16,
+ "tonemap": {
+  "_fonte": "Mesmo HLG → SDR Rec.709 aprovado no Reel de apresentação (scripts/render.py): zscale npl 203, tonemap Reinhard pico 4,93 sem dessaturar, saturação 0,88.",
+  "npl": 203,
+  "peak": 4.93,
+  "param": 0.5,
+  "saturacao": 0.88
+ },
+ "tokens": {
+  "_fonte": "primeiro-dia-tokens-v2.json (DS 2.0.0 REV 2)",
+  "signal_500": "#FFC21A",
+  "night_900": "#121317",
+  "paper_0": "#FCFBF8",
+  "paper_500": "#F6F3EC",
+  "safe": {
+   "x0": 72,
+   "x1": 944,
+   "y0": 256,
+   "y1": 1440
+  },
+  "radius_plate": 16,
+  "radius_tag": 10,
+  "op_grain": 0.05,
+  "op_scrim": 0.63,
+  "ease_arrive": [
+   0.16,
+   1.28,
+   0.36,
+   1.0
+  ],
+  "ease_out": [
+   0.2,
+   0.8,
+   0.2,
+   1.0
+  ],
+  "ease_exit": [
+   0.55,
+   0.0,
+   0.85,
+   0.35
+  ],
+  "ease_cinema": [
+   0.65,
+   0.0,
+   0.35,
+   1.0
+  ]
+ },
+ "planos": [
+  {
+   "n": 1,
+   "cena": "Gancho",
+   "arquivo": "IMG_0552.MOV",
+   "inicio": 5.04,
+   "fim": 9.3,
+   "centro_x": 0.58,
+   "audio": "fala_gancho",
+   "fala": "eu tô com a camisa do maior clube do mundo, o Esporte Clube Bahia."
+  },
+  {
+   "n": 2,
+   "cena": "Dentro do museu",
+   "arquivo": "IMG_0537.MOV",
+   "inicio": 12.4,
+   "fim": 15.4,
+   "centro_x": 0.56,
+   "audio": "ambiente_museu",
+   "fala": null,
+   "_porque": "pedido do Diego (13/10/2026): trocar a chegada do lado de fora (IMG_0502) por ele andando dentro do museu. Começa depois do palavrão em 11,7–12,3 s."
+  },
+  {
+   "n": 3,
+   "cena": "Bola de Ouro (fala)",
+   "arquivo": "IMG_0513.MOV",
+   "inicio": 0.92,
+   "fim": 3.1,
+   "centro_x": 0.33,
+   "audio": "fala_museu",
+   "fala": "É a bola de ouro de Ronaldinho Gaúcho, velho.",
+   "_porque": "termina logo depois de 'velho,': o que vem depois (3,1–3,8 s) não é inteligível com segurança (Whisper medium: 'a camisa dele'; large-v3: 'que visa ver'; render: 'camisa feia, mano')"
+  },
+  {
+   "n": 4,
+   "cena": "Bola de Ouro (close)",
+   "arquivo": "IMG_0513.MOV",
+   "inicio": 4.9,
+   "fim": 6.1,
+   "centro_x": 0.52,
+   "audio": "fala_museu",
+   "fala": null
+  },
+  {
+   "n": 5,
+   "cena": "Pico (a)",
+   "arquivo": "IMG_0552.MOV",
+   "inicio": 16.05,
+   "fim": 18.45,
+   "centro_x": 0.5,
+   "audio": "fala_marina",
+   "fala": "o funcionário aqui do Museu do Barcelona,"
+  },
+  {
+   "n": 6,
+   "cena": "Pico (b)",
+   "arquivo": "IMG_0552.MOV",
+   "inicio": 21.02,
+   "fim": 26.9,
+   "centro_x": 0.53,
+   "audio": "fala_marina",
+   "fala": "o Diego tirou o casaco e ele fez assim, ah, Bahia. Aí eu fiquei tipo, como é que ele sabe? Bahia é o mundo."
+  },
+  {
+   "n": 7,
+   "cena": "Loop",
+   "arquivo": "IMG_0552.MOV",
+   "inicio": 4.4,
+   "fim": 5.04,
+   "centro_x": 0.58,
+   "audio": "fala_gancho",
+   "fala": null,
+   "_porque": "pausa sem fala logo antes do quadro de entrada do plano 1: o último quadro emenda no primeiro (mesmo plano, mesmo recorte)"
+  }
+ ],
+ "audio": {
+  "_fonte": "DS 4.6: master −14 LUFS integrados, pico ≤ −1 dBTP. Som direto dos brutos (faixa AAC 0), sem música.",
+  "faixa": 0,
+  "filtro_voz": "highpass=f=80,afftdn=nr=6:nf=-40:tn=1",
+  "_filtro_porque": "redução de ruído leve (6 dB), para não deixar a voz metálica; validação auditiva é humana (CLAUDE.md 12)",
+  "grupos_lufs": {
+   "fala_gancho": -16.0,
+   "fala_museu": -16.0,
+   "fala_marina": -16.0,
+   "ambiente_museu": -24.0
+  },
+  "crossfade_ms": 20,
+  "declique_ms": 5,
+  "master_lufs": -14.0,
+  "master_tp": -1.5
+ },
+ "legenda": {
+  "_estilo": "DS 3.2 Padrão: Barlow 700 56 px, entrelinha 1,15, #FCFBF8, sem caixa, scrim + sombra de texto, centralizada, base do bloco em y 1420.",
+  "fonte": "Barlow-Bold.ttf",
+  "tamanho": 56,
+  "entrelinha": 1.15,
+  "base_y": 1420,
+  "topo_min_y": 1250,
+  "centro_x": 540,
+  "max_caracteres": 26,
+  "max_linhas": 2,
+  "sombra_dura": [
+   2,
+   0.35
+  ],
+  "sombra_difusa": {
+   "blur": 24,
+   "alfa": 0.45
+  },
+  "palavra_ms": 160,
+  "palavra_sobe_px": 10,
+  "grupo_ms": 120,
+  "palavras_por_s_max_palavra_a_palavra": 3.0,
+  "saida_ms": 120,
+  "saida_sobe_px": 6,
+  "destaque": {
+   "_estilo": "DS 3.2 Destaque: mini-placa signal-500, radius-tag 10, padding 4/14, relevo + sombra; texto grafite; pula 0,85 → 1,06 → 1 em 240 ms (ease-arrive) quando a palavra é dita.",
+   "padding_v": 4,
+   "padding_h": 14,
+   "sombra_dura": [
+    3,
+    0.25
+   ],
+   "sombra_projetada": {
+    "y": 10,
+    "blur": 18,
+    "spread": -6,
+    "alfa": 0.5
+   },
+   "pop": [
+    [
+     0,
+     0.85
+    ],
+    [
+     144,
+     1.06
+    ],
+    [
+     240,
+     1.0
+    ]
+   ],
+   "opacidade_ms": 100
+  }
+ },
+ "scrim": {
+  "_fonte": "DS 1.1 e 3.1: gradiente grafite 0% em y 1150 → 63% em y 1500, sempre ligado no Reel",
+  "y0": 1150,
+  "y1": 1500
+ },
+ "grao": {
+  "_fonte": "DS 4.5: grão 5% fixo no vídeo inteiro (blend overlay)",
+  "sigma_px": 0.7,
+  "semente": 20261001
+ },
+ "placa": {
+  "_variante": "DS 2.1 variante Abertura: rótulo 'PRIMEIRO DIA EM' (label: Condensed 600, 36 px, +8%) + destino 'BARCELONA' (h1: Condensed 800, 128 px, 9 letras) + módulo de seta. Material, Chegada e saída da REV8 do Reel de apresentação.",
+  "texto": "BARCELONA",
+  "fonte": "BarlowCondensed-ExtraBold.ttf",
+  "tamanho": 128,
+  "tracking_em": 0.005,
+  "x": 72,
+  "y": 296,
+  "altura": 176,
+  "padding_h": 36,
+  "modulo": 176,
+  "seta_fracao": 0.54,
+  "filete_inset": 10,
+  "filete_px": 2,
+  "filete_alfa": 0.25,
+  "filete_raio": 8,
+  "rebite_px": 10,
+  "rebite_x": 22,
+  "rebite_y": 24,
+  "rebite_alfa": 0.35,
+  "bevel_luz": [
+   2,
+   0.45
+  ],
+  "bevel_sombra": [
+   4,
+   0.16
+  ],
+  "sombra_dura": [
+   3,
+   0.28
+  ],
+  "sombra_projetada": {
+   "y": 18,
+   "blur": 32,
+   "spread": -10,
+   "alfa": 0.55
+  },
+  "chegada": {
+   "_fonte": "DS 2.1 'Como animar — assinatura CHEGADA' e receita 6.2 (Q0/Q8/Q12/Q14/Q17 a 30 fps convertidos para ms)",
+   "face_x": [
+    [
+     0,
+     -1100
+    ],
+    [
+     267,
+     24
+    ],
+    [
+     345,
+     -4
+    ],
+    [
+     400,
+     0
+    ]
+   ],
+   "rotacao": [
+    [
+     0,
+     -3.0
+    ],
+    [
+     267,
+     0.6
+    ],
+    [
+     345,
+     -0.15
+    ],
+    [
+     400,
+     0.0
+    ]
+   ],
+   "desfoque_px": [
+    [
+     0,
+     12
+    ],
+    [
+     267,
+     0
+    ]
+   ],
+   "modulo_x": [
+    [
+     0,
+     -176
+    ],
+    [
+     400,
+     -176
+    ],
+    [
+     467,
+     10
+    ],
+    [
+     567,
+     0
+    ]
+   ],
+   "sombra_y": [
+    [
+     0,
+     40
+    ],
+    [
+     400,
+     18
+    ]
+   ],
+   "sombra_alfa": [
+    [
+     0,
+     0.15
+    ],
+    [
+     400,
+     0.55
+    ]
+   ],
+   "sombra_dura_alfa": [
+    [
+     0,
+     0.0
+    ],
+    [
+     400,
+     0.28
+    ]
+   ],
+   "brilho_ms": [
+    700,
+    1300
+   ],
+   "brilho_alfa": 0.4,
+   "brilho_largura": 0.34,
+   "brilho_inclinacao_graus": -14
+  },
+  "saida": {
+   "_fonte": "DS 2.1 'Saída (240 ms)': a seta empurra (80 ms) e a placa sai pela direita com ease-exit e desfoque direcional",
+   "duracao_ms": 240,
+   "modulo_x": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     10
+    ],
+    [
+     80,
+     0
+    ]
+   ],
+   "face_x": [
+    [
+     80,
+     0
+    ],
+    [
+     240,
+     1150
+    ]
+   ],
+   "desfoque_px": [
+    [
+     80,
+     0
+    ],
+    [
+     240,
+     12
+    ]
+   ],
+   "_quando": "sai pela direita em 240 ms terminando no corte do gancho (fim do plano 1)"
+  },
+  "_posicao": "Exceção deste Reel, pedida pelo Diego (13/10/2026): x 72 · y 296 (topo), acima da cabeça (DS 1.3/2.1: y 640, que cobre os olhos na selfie do gancho). y 296 fica 40 px abaixo da UI do topo (0–256) e na grade de 8 px.",
+  "ativa": true,
+  "_ativa": "Pedido do Diego (13/10/2026): a placa volta, em cima, para não cobrir o rosto, com a frase 'Primeiro dia em Barcelona'.",
+  "entrelinha": 0.9,
+  "padding_v": 28,
+  "rotulo": {
+   "texto": "PRIMEIRO DIA EM",
+   "fonte": "BarlowCondensed-SemiBold.ttf",
+   "tamanho": 36,
+   "tracking_em": 0.08,
+   "espaco_px": 12
+  },
+  "_modulo": "Lado do módulo = altura do conteúdo (219 px), regra do DS 2.1 e valor do bundle. O '≈ 176 px' do DS segue em aberto (CLAUDE.md, pendência 3)."
+ },
+ "narrativa": {
+  "_estilo": "DS 3.2 Narrativa: Barlow 500 44 px, entrelinha 1,25, papel, vidro (grafite 55% + desfoque 24 px + filete 1 px claro, radius-tag), base y 1420, x 72, 3 linhas × 34 car. Vidro abre 0 → altura em 200 ms; linhas entram com 120 ms de intervalo.",
+  "_bundle": "Padding 26/34/28 px, filete inset 1 px branco 14%, linha sobe 8 px em 160 ms: pd-bundle.css .pd-glass (o DS não fixa esses três valores).",
+  "fonte": "Barlow-Medium.ttf",
+  "tamanho": 44,
+  "entrelinha": 1.25,
+  "x": 72,
+  "base_y": 1332,
+  "padding": [
+   26,
+   34,
+   28
+  ],
+  "vidro_alfa": 0.55,
+  "desfoque_px": 24,
+  "filete_alfa": 0.14,
+  "abre_ms": 200,
+  "abre_escala_inicial": 0.2,
+  "linha_ms": 160,
+  "linha_intervalo_ms": 120,
+  "linha_sobe_px": 8,
+  "texto": "Primeira parada: o Barça!",
+  "plano": 1,
+  "entra_s_no_plano": -0.4,
+  "_quando": "Pedido do Diego (13/10/2026): junto com a placa, já aberta no primeiro quadro, durante todo o gancho.",
+  "_posicao": "Exceção deste Reel: base em y 1332 (DS 3.2: y 1420), para não sobrepor a legenda Padrão do gancho, que também tem base em y 1420. Precisa de aprovação do Diego."
+ },
+ "legendas": [
+  {
+   "plano": 1,
+   "texto": "eu tô com a camisa",
+   "palavras": [
+    5.13,
+    5.3,
+    5.4,
+    5.54,
+    5.62
+   ],
+   "fim_fala": 5.82
+  },
+  {
+   "plano": 1,
+   "texto": "do maior clube do mundo,",
+   "palavras": [
+    5.82,
+    6.0,
+    6.38,
+    6.68,
+    6.94
+   ],
+   "fim_fala": 7.3
+  },
+  {
+   "plano": 1,
+   "texto": "o Esporte Clube *Bahia*.",
+   "palavras": [
+    7.92,
+    8.06,
+    8.58,
+    8.86
+   ],
+   "fim_fala": 9.18
+  },
+  {
+   "plano": 3,
+   "texto": "É a bola de ouro",
+   "palavras": [
+    1.16,
+    1.4,
+    1.52,
+    1.64,
+    1.76
+   ],
+   "fim_fala": 1.88
+  },
+  {
+   "plano": 3,
+   "texto": "de Ronaldinho Gaúcho.",
+   "palavras": [
+    1.88,
+    2.0,
+    2.52
+   ],
+   "fim_fala": 2.92,
+   "_porque": "'velho,' (interjeição) fica no áudio e sai da tela: com ele a linha teria 28 caracteres (DS 3.2 Padrão: máx. 26) e a quebra partiria o nome"
+  },
+  {
+   "plano": 5,
+   "texto": "o funcionário aqui",
+   "palavras": [
+    16.14,
+    16.32,
+    16.9
+   ],
+   "fim_fala": 17.12
+  },
+  {
+   "plano": 5,
+   "texto": "do Museu do Barcelona,",
+   "palavras": [
+    17.12,
+    17.24,
+    17.54,
+    17.72
+   ],
+   "fim_fala": 18.22
+  },
+  {
+   "plano": 6,
+   "texto": "o Diego tirou o casaco",
+   "palavras": [
+    21.08,
+    21.26,
+    21.3,
+    21.44,
+    21.56
+   ],
+   "fim_fala": 21.9
+  },
+  {
+   "plano": 6,
+   "texto": "e ele fez assim:",
+   "palavras": [
+    21.9,
+    22.0,
+    22.14,
+    22.24
+   ],
+   "fim_fala": 22.5
+  },
+  {
+   "plano": 6,
+   "texto": "“Ah, Bahia!”",
+   "palavras": [
+    22.56,
+    22.88
+   ],
+   "fim_fala": 23.26
+  },
+  {
+   "plano": 6,
+   "texto": "Aí eu fiquei tipo:",
+   "palavras": [
+    23.72,
+    23.9,
+    24.0,
+    24.16
+   ],
+   "fim_fala": 24.44
+  },
+  {
+   "plano": 6,
+   "texto": "como é que ele sabe?",
+   "palavras": [
+    24.62,
+    24.8,
+    24.95,
+    25.06,
+    25.2
+   ],
+   "fim_fala": 25.4
+  },
+  {
+   "plano": 6,
+   "texto": "“Bahia é o *mundo*!”",
+   "palavras": [
+    25.72,
+    25.96,
+    26.04,
+    26.18
+   ],
+   "fim_fala": 26.55
+  }
+ ],
+ "_legendas_fonte": "Texto: faster-whisper large-v3 e medium no áudio cru dos brutos (scripts/conferir_trechos.py; analise/palavras_brutos_*.tsv). Tempos: início de cada grupo pela energia do sinal (o large-v3 adianta ~0,2 s neste material). A conferir de ouvido: 'tô' (bruto: medium e large-v3 'tô'; áudio processado: 'estou'), 'como é que ele sabe?' (render: 'como é que é isso?').",
+ "capa": {
+  "texto": "BAHIA NO CAMP NOU"
+ },
+ "qa_tempos_s": [
+  0.0,
+  0.25,
+  0.5,
+  1.0,
+  2.0,
+  3.5,
+  4.1,
+  4.3,
+  5.0,
+  6.5,
+  7.6,
+  8.3,
+  9.1,
+  10.2,
+  11.0,
+  12.5,
+  14.0,
+  15.0,
+  16.0,
+  17.0,
+  17.8,
+  18.5,
+  19.2,
+  19.8
+ ]
+}

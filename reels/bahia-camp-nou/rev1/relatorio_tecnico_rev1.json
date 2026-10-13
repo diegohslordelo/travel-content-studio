@@ -1,0 +1,614 @@
+{
+ "arquivo": "rev1/reel_bahia_camp_nou_rev1.mp4",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": "24/1",
+  "quadros": 469,
+  "duracao_video_s": 19.541667,
+  "duracao_audio_s": 19.541,
+  "codec_video": "h264 (High)",
+  "pix_fmt": "yuv420p",
+  "cor": [
+   "bt709",
+   "bt709",
+   "bt709"
+  ],
+  "audio": "aac 48000 Hz 2 canais",
+  "bitrate_kbps": 20223,
+  "tamanho_mb": 49.4,
+  "tags": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  }
+ },
+ "audio": {
+  "lufs_integrado": -14.0,
+  "pico_verdadeiro_dbtp": -1.3,
+  "atraso_filtro_amostras": {
+   "IMG_0552.MOV": 1197,
+   "IMG_0537.MOV": 1199,
+   "IMG_0513.MOV": 1197
+  },
+  "lufs_grupos_antes": {
+   "fala_gancho": -21.47,
+   "fala_museu": -18.75,
+   "fala_marina": -22.79,
+   "ambiente_museu": -26.93
+  },
+  "ganhos_db": {
+   "fala_gancho": 5.47,
+   "fala_museu": 2.75,
+   "fala_marina": 6.79,
+   "ambiente_museu": 2.93
+  },
+  "emendas_s": [
+   4.25,
+   7.25,
+   9.417,
+   10.625,
+   13.042,
+   18.917
+  ],
+  "limitador": true,
+  "ok_lufs": true,
+  "ok_pico": true
+ },
+ "zona_segura": {
+  "violacoes": [],
+  "ok": true
+ },
+ "legendas": [
+  {
+   "texto": "eu tô com a camisa",
+   "de": 0.083,
+   "ate": 0.792,
+   "modo": "grupo",
+   "palavras_por_s": 7.25,
+   "caracteres": 18,
+   "x": [
+    303.4,
+    776.6
+   ],
+   "centro_x": 540.0
+  },
+  {
+   "texto": "do maior clube do mundo,",
+   "de": 0.792,
+   "ate": 2.875,
+   "modo": "grupo",
+   "palavras_por_s": 3.38,
+   "caracteres": 24,
+   "x": [
+    222.6,
+    857.4
+   ],
+   "centro_x": 540.0
+  },
+  {
+   "texto": "o Esporte Clube *Bahia*.",
+   "de": 2.875,
+   "ate": 4.25,
+   "modo": "grupo",
+   "palavras_por_s": 3.17,
+   "caracteres": 22,
+   "x": [
+    248.1,
+    831.9
+   ],
+   "centro_x": 540.0
+  },
+  {
+   "texto": "É a bola de ouro",
+   "de": 7.5,
+   "ate": 8.208,
+   "modo": "grupo",
+   "palavras_por_s": 6.94,
+   "caracteres": 16,
+   "x": [
+    345.5,
+    734.5
+   ],
+   "centro_x": 540.0
+  },
+  {
+   "texto": "de Ronaldinho Gaúcho.",
+   "de": 8.208,
+   "ate": 9.417,
+   "modo": "palavra",
+   "palavras_por_s": 2.88,
+   "caracteres": 21,
+   "x": [
+    258.9,
+    821.1
+   ],
+   "centro_x": 540.0
+  },
+  {
+   "texto": "o funcionário aqui",
+   "de": 10.708,
+   "ate": 11.708,
+   "modo": "grupo",
+   "palavras_por_s": 3.06,
+   "caracteres": 18,
+   "x": [
+    317.5,
+    762.5
+   ],
+   "centro_x": 540.0
+  },
+  {
+   "texto": "do Museu do Barcelona,",
+   "de": 11.708,
+   "ate": 13.042,
+   "modo": "grupo",
+   "palavras_por_s": 3.64,
+   "caracteres": 22,
+   "x": [
+    247.9,
+    832.1
+   ],
+   "centro_x": 540.0
+  },
+  {
+   "texto": "o Diego tirou o casaco",
+   "de": 13.083,
+   "ate": 13.917,
+   "modo": "grupo",
+   "palavras_por_s": 6.1,
+   "caracteres": 22,
+   "x": [
+    267.4,
+    812.6
+   ],
+   "centro_x": 540.0
+  },
+  {
+   "texto": "e ele fez assim:",
+   "de": 13.917,
+   "ate": 14.583,
+   "modo": "grupo",
+   "palavras_por_s": 6.67,
+   "caracteres": 16,
+   "x": [
+    349.0,
+    731.0
+   ],
+   "centro_x": 540.0
+  },
+  {
+   "texto": "“Ah, Bahia!”",
+   "de": 14.583,
+   "ate": 15.75,
+   "modo": "palavra",
+   "palavras_por_s": 2.86,
+   "caracteres": 12,
+   "x": [
+    395.6,
+    684.4
+   ],
+   "centro_x": 540.0
+  },
+  {
+   "texto": "Aí eu fiquei tipo:",
+   "de": 15.75,
+   "ate": 16.625,
+   "modo": "grupo",
+   "palavras_por_s": 5.56,
+   "caracteres": 18,
+   "x": [
+    336.3,
+    743.7
+   ],
+   "centro_x": 540.0
+  },
+  {
+   "texto": "como é que ele sabe?",
+   "de": 16.625,
+   "ate": 17.75,
+   "modo": "grupo",
+   "palavras_por_s": 6.41,
+   "caracteres": 20,
+   "x": [
+    274.8,
+    805.2
+   ],
+   "centro_x": 540.0
+  },
+  {
+   "texto": "“Bahia é o *mundo*!”",
+   "de": 17.75,
+   "ate": 18.917,
+   "modo": "grupo",
+   "palavras_por_s": 4.82,
+   "caracteres": 18,
+   "x": [
+    293.8,
+    786.2
+   ],
+   "centro_x": 540.0
+  }
+ ],
+ "narrativa": {
+  "texto": "Primeira parada: o Barça!",
+  "quadros": [
+   0,
+   102
+  ],
+  "caixa": [
+   72,
+   1223,
+   630,
+   1332
+  ]
+ },
+ "placa": {
+  "face_largura": 630,
+  "modulo_largura": 219,
+  "altura": 219,
+  "largura_total": 849,
+  "x": 72,
+  "y": 296,
+  "quadros": [
+   0,
+   102
+  ]
+ },
+ "planos": [
+  {
+   "n": 1,
+   "cena": "Gancho",
+   "arquivo": "IMG_0552.MOV",
+   "inicio": 5.04,
+   "fim": 9.29,
+   "nq": 102,
+   "r0": 0,
+   "r1": 102,
+   "recorte": {
+    "fonte": [
+     3838,
+     2158
+    ],
+    "x": 1618,
+    "y": 0,
+    "w": 1214,
+    "h": 2158
+   }
+  },
+  {
+   "n": 2,
+   "cena": "Dentro do museu",
+   "arquivo": "IMG_0537.MOV",
+   "inicio": 12.4,
+   "fim": 15.4,
+   "nq": 72,
+   "r0": 102,
+   "r1": 174,
+   "recorte": {
+    "fonte": [
+     3840,
+     2160
+    ],
+    "x": 1542,
+    "y": 0,
+    "w": 1216,
+    "h": 2160
+   }
+  },
+  {
+   "n": 3,
+   "cena": "Bola de Ouro (fala)",
+   "arquivo": "IMG_0513.MOV",
+   "inicio": 0.92,
+   "fim": 3.0867,
+   "nq": 52,
+   "r0": 174,
+   "r1": 226,
+   "recorte": {
+    "fonte": [
+     3840,
+     2160
+    ],
+    "x": 658,
+    "y": 0,
+    "w": 1216,
+    "h": 2160
+   }
+  },
+  {
+   "n": 4,
+   "cena": "Bola de Ouro (close)",
+   "arquivo": "IMG_0513.MOV",
+   "inicio": 4.9,
+   "fim": 6.1083,
+   "nq": 29,
+   "r0": 226,
+   "r1": 255,
+   "recorte": {
+    "fonte": [
+     3840,
+     2160
+    ],
+    "x": 1388,
+    "y": 0,
+    "w": 1216,
+    "h": 2160
+   }
+  },
+  {
+   "n": 5,
+   "cena": "Pico (a)",
+   "arquivo": "IMG_0552.MOV",
+   "inicio": 16.05,
+   "fim": 18.4667,
+   "nq": 58,
+   "r0": 255,
+   "r1": 313,
+   "recorte": {
+    "fonte": [
+     3838,
+     2158
+    ],
+    "x": 1312,
+    "y": 0,
+    "w": 1214,
+    "h": 2158
+   }
+  },
+  {
+   "n": 6,
+   "cena": "Pico (b)",
+   "arquivo": "IMG_0552.MOV",
+   "inicio": 21.02,
+   "fim": 26.895,
+   "nq": 141,
+   "r0": 313,
+   "r1": 454,
+   "recorte": {
+    "fonte": [
+     3838,
+     2158
+    ],
+    "x": 1426,
+    "y": 0,
+    "w": 1214,
+    "h": 2158
+   }
+  },
+  {
+   "n": 7,
+   "cena": "Loop",
+   "arquivo": "IMG_0552.MOV",
+   "inicio": 4.415,
+   "fim": 5.04,
+   "nq": 15,
+   "r0": 454,
+   "r1": 469,
+   "recorte": {
+    "fonte": [
+     3838,
+     2158
+    ],
+    "x": 1618,
+    "y": 0,
+    "w": 1214,
+    "h": 2158
+   }
+  }
+ ],
+ "loop": {
+  "psnr_db_y256-640": "16.88"
+ },
+ "frames_qa": [
+  [
+   "q000",
+   0,
+   "rev1/qa_frames/rev1_q000_quadro000.jpg"
+  ],
+  [
+   "t00_00s",
+   0,
+   "rev1/qa_frames/rev1_t00_00s_quadro000.jpg"
+  ],
+  [
+   "q003",
+   3,
+   "rev1/qa_frames/rev1_q003_quadro003.jpg"
+  ],
+  [
+   "t00_25s",
+   6,
+   "rev1/qa_frames/rev1_t00_25s_quadro006.jpg"
+  ],
+  [
+   "q006",
+   6,
+   "rev1/qa_frames/rev1_q006_quadro006.jpg"
+  ],
+  [
+   "q009",
+   9,
+   "rev1/qa_frames/rev1_q009_quadro009.jpg"
+  ],
+  [
+   "t00_50s",
+   12,
+   "rev1/qa_frames/rev1_t00_50s_quadro012.jpg"
+  ],
+  [
+   "q012",
+   12,
+   "rev1/qa_frames/rev1_q012_quadro012.jpg"
+  ],
+  [
+   "q017",
+   17,
+   "rev1/qa_frames/rev1_q017_quadro017.jpg"
+  ],
+  [
+   "t01_00s",
+   24,
+   "rev1/qa_frames/rev1_t01_00s_quadro024.jpg"
+  ],
+  [
+   "t02_00s",
+   48,
+   "rev1/qa_frames/rev1_t02_00s_quadro048.jpg"
+  ],
+  [
+   "t03_50s",
+   84,
+   "rev1/qa_frames/rev1_t03_50s_quadro084.jpg"
+  ],
+  [
+   "t04_10s",
+   98,
+   "rev1/qa_frames/rev1_t04_10s_quadro098.jpg"
+  ],
+  [
+   "q098",
+   98,
+   "rev1/qa_frames/rev1_q098_quadro098.jpg"
+  ],
+  [
+   "q101",
+   101,
+   "rev1/qa_frames/rev1_q101_quadro101.jpg"
+  ],
+  [
+   "t04_30s",
+   103,
+   "rev1/qa_frames/rev1_t04_30s_quadro103.jpg"
+  ],
+  [
+   "t05_00s",
+   120,
+   "rev1/qa_frames/rev1_t05_00s_quadro120.jpg"
+  ],
+  [
+   "t06_50s",
+   156,
+   "rev1/qa_frames/rev1_t06_50s_quadro156.jpg"
+  ],
+  [
+   "t07_60s",
+   182,
+   "rev1/qa_frames/rev1_t07_60s_quadro182.jpg"
+  ],
+  [
+   "t08_30s",
+   199,
+   "rev1/qa_frames/rev1_t08_30s_quadro199.jpg"
+  ],
+  [
+   "t09_10s",
+   218,
+   "rev1/qa_frames/rev1_t09_10s_quadro218.jpg"
+  ],
+  [
+   "t10_20s",
+   245,
+   "rev1/qa_frames/rev1_t10_20s_quadro245.jpg"
+  ],
+  [
+   "t11_00s",
+   264,
+   "rev1/qa_frames/rev1_t11_00s_quadro264.jpg"
+  ],
+  [
+   "t12_50s",
+   300,
+   "rev1/qa_frames/rev1_t12_50s_quadro300.jpg"
+  ],
+  [
+   "t14_00s",
+   336,
+   "rev1/qa_frames/rev1_t14_00s_quadro336.jpg"
+  ],
+  [
+   "t15_00s",
+   360,
+   "rev1/qa_frames/rev1_t15_00s_quadro360.jpg"
+  ],
+  [
+   "t16_00s",
+   384,
+   "rev1/qa_frames/rev1_t16_00s_quadro384.jpg"
+  ],
+  [
+   "t17_00s",
+   408,
+   "rev1/qa_frames/rev1_t17_00s_quadro408.jpg"
+  ],
+  [
+   "t17_80s",
+   427,
+   "rev1/qa_frames/rev1_t17_80s_quadro427.jpg"
+  ],
+  [
+   "t18_50s",
+   444,
+   "rev1/qa_frames/rev1_t18_50s_quadro444.jpg"
+  ],
+  [
+   "t19_20s",
+   461,
+   "rev1/qa_frames/rev1_t19_20s_quadro461.jpg"
+  ],
+  [
+   "t19_80s",
+   468,
+   "rev1/qa_frames/rev1_t19_80s_quadro468.jpg"
+  ],
+  [
+   "q468",
+   468,
+   "rev1/qa_frames/rev1_q468_quadro468.jpg"
+  ]
+ ],
+ "transcricao_render": [
+  {
+   "de": 0.0,
+   "ate": 2.24,
+   "texto": "E eu tô com a camisa do maior clube do mundo"
+  },
+  {
+   "de": 2.24,
+   "ate": 4.0,
+   "texto": "O Esporte Clube Bahia"
+  },
+  {
+   "de": 7.34,
+   "ate": 9.28,
+   "texto": "É a bola de hoje, Ronaldinho Gaúcho"
+  },
+  {
+   "de": 10.6,
+   "ate": 12.82,
+   "texto": "Um funcionário aqui do Museu do Barcelona"
+  },
+  {
+   "de": 12.82,
+   "ate": 14.56,
+   "texto": "Deve ter o casaco e ele fez assim"
+  },
+  {
+   "de": 14.56,
+   "ate": 15.82,
+   "texto": "Ah, Bahia!"
+  },
+  {
+   "de": 17.62,
+   "ate": 18.6,
+   "texto": "Bahia é o mundo"
+  }
+ ],
+ "sha256": "2b91067eedfb3b9871a264163cf80593e21c29e0e2d6e980a737bfedda347742",
+ "fontes": {
+  "Barlow-Bold.ttf": "74103fd6d41bc32c63aa2e6eb3db619ddb80ce9ca1b1420d5548a23b8ee5d154",
+  "Barlow-Medium.ttf": "91c841fdfa8e7b94ffedbb983a363947ba6ed720f3bbf0c71d48b618053655bc",
+  "BarlowCondensed-ExtraBold.ttf": "73bc9e17231e9073780d3c81574c7253cecd5645c93544df1a935054b39a364f"
+ }
+}

@@ -1,6 +1,6 @@
 # Reel p201 · Camisa do Bahia no Camp Nou — plano de corte (pré-render)
 
-Status: **plano, não renderizado.** Os arquivos de vídeo não estão acessíveis nesta sessão (ver "Bloqueio").
+Status: **substituído pela REV1** (`rev1/QA_REV1.md`). Este plano foi feito antes de ter acesso aos brutos, a partir da transcrição do master. Os cortes finais vêm dos brutos e estão na QA da REV1.
 **Fonte de imagem e som: só os brutos da pasta Barcelona no Drive** (decisão do Diego, 12/10/2026). O master de 7,5 GB não entra no render.
 As minutagens do master (`reels/apresentacao/analise/transcricao_palavras.tsv`, 24 fps, tempo por palavra) servem só para achar cada fala no bruto correspondente.
 Ainda falta ouvir cada trecho e conferir se o corte é natural.
