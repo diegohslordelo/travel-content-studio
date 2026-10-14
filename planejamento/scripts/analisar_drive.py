@@ -201,6 +201,56 @@ def gerar_leve(path, dur, destino):
     return os.path.exists(destino) and os.path.getsize(destino) < 9.9e6
 
 
+CIDADES_GPS = [  # (nome, lat, lon, raio_km) usadas na detecção automática (Itália)
+    ('Roma', 41.9028, 12.4964, 30), ('Florença', 43.7696, 11.2558, 25),
+    ('Veneza', 45.4408, 12.3155, 20), ('Milão', 45.4642, 9.1900, 30),
+]
+
+
+def parse_gps(g):
+    m = re.match(r'^([+-]\d+(?:\.\d+)?)([+-]\d+(?:\.\d+)?)', g or '')
+    return (float(m.group(1)), float(m.group(2))) if m else None
+
+
+def dist_km(a, b):
+    import math
+    la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 12742 * math.asin(math.sqrt(h))
+
+
+def cidade_por_gps(gps):
+    pos = parse_gps(gps)
+    if not pos:
+        return None, None
+    melhor = min(CIDADES_GPS, key=lambda c: dist_km(pos, c[1:3]))
+    d = dist_km(pos, melhor[1:3])
+    if d <= melhor[3]:
+        return melhor[0], 'gps'
+    return 'Outra (%.2f, %.2f)' % pos, 'gps'
+
+
+def inferir_pela_hora(clips, janela_h=3):
+    """Quem não tem GPS recebe a cidade do clipe com GPS mais próximo no tempo (até 3 h). Marca como 'hora'."""
+    from datetime import datetime
+    def t(c):
+        try:
+            return datetime.fromisoformat((c.get('criado') or '')[:19])
+        except Exception:
+            return None
+    com = [(t(c), c['cidade_detectada']) for c in clips if c.get('cidade_origem') == 'gps' and t(c)]
+    for c in clips:
+        if c.get('cidade_origem') in ('gps', 'pasta') or c.get('cidade_detectada') not in (None, 'indefinida'):
+            continue
+        tc = t(c)
+        if tc and com:
+            dt, cid = min(((abs((tc - x).total_seconds()), n) for x, n in com), key=lambda z: z[0])
+            if dt <= janela_h * 3600:
+                c['cidade_detectada'], c['cidade_origem'] = cid, 'hora'
+                continue
+        c['cidade_detectada'], c['cidade_origem'] = 'indefinida', None
+
+
 def listar_videos(origem, incluir_copias):
     achados = []
     for raiz, _, nomes in os.walk(origem):
@@ -257,7 +307,14 @@ def montar_folhas(saida):
             clips.append(json.load(open(f, encoding='utf-8')))
         except Exception:
             pass
-    clips.sort(key=lambda c: ((c.get('criado') or ''), c['arquivo']))
+    if any(c.get('cidade_detectada') for c in clips):
+        inferir_pela_hora(clips)
+        for c in clips:
+            try:
+                json.dump(c, open(os.path.join(saida, 'clips', c['id'] + '.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+            except OSError:
+                pass
+    clips.sort(key=lambda c: ((c.get('cidade_detectada') or ''), (c.get('criado') or ''), c['arquivo']))
     os.makedirs(os.path.join(saida, 'folhas'), exist_ok=True)
     for velha in glob.glob(os.path.join(saida, 'folhas', 'folha_*.jpg')):
         os.remove(velha)
@@ -282,6 +339,8 @@ def montar_folhas(saida):
         for c, lp, h in g:
             fala = ' '.join(s[2] for s in c.get('fala', []) if s[3] < 0.6)
             txt = '%s\n%ss %sx%s\n%s\n' % (c['arquivo'], c['dur'], c.get('w'), c.get('h'), (c.get('criado') or '')[:16].replace('T', ' '))
+            if c.get('cidade_detectada'):
+                txt += '[%s%s]\n' % (c['cidade_detectada'], '' if c.get('cidade_origem') == 'gps' else ' ?' if c.get('cidade_origem') else '')
             linha, linhas = '', []
             for w in fala.split():
                 if len(linha) + len(w) > 32:
@@ -299,12 +358,12 @@ def montar_folhas(saida):
 
 def escrever_tabelas(saida, clips):
     with open(os.path.join(saida, 'indice.tsv'), 'w', encoding='utf-8') as f:
-        f.write('arquivo\tcriado\tdur_s\tlargura\taltura\tgiro\tfps\tcodec\tcor\taudio\tvolume_db\tgps\taparelho\tfala\n')
+        f.write('arquivo\tcriado\tdur_s\tlargura\taltura\tgiro\tfps\tcodec\tcor\taudio\tvolume_db\tgps\taparelho\tcidade_detectada\tcidade_origem\tfala\n')
         for c in clips:
             fala = ' '.join(s[2] for s in c.get('fala', []) if s[3] < 0.6)
             f.write('\t'.join(str(x if x is not None else '') for x in [
                 c['arquivo'], c.get('criado'), c['dur'], c.get('w'), c.get('h'), c.get('rot'), c.get('fps'), c.get('codec'),
-                c.get('cor'), c.get('audio'), c.get('volume_db'), c.get('gps'), c.get('aparelho'), fala]) + '\n')
+                c.get('cor'), c.get('audio'), c.get('volume_db'), c.get('gps'), c.get('aparelho'), c.get('cidade_detectada'), c.get('cidade_origem'), fala]) + '\n')
     with open(os.path.join(saida, 'transcricoes.tsv'), 'w', encoding='utf-8') as f:
         f.write('arquivo\tinicio_s\tfim_s\ttexto\tprob_sem_fala\n')
         for c in clips:
@@ -322,6 +381,7 @@ def main():
     ap.add_argument('--leve', action='store_true', help='gera também uma cópia 720p com menos de 10 MB em saida/leve/')
     ap.add_argument('--incluir-copias', action='store_true', help='não pula .MP4 que têm .MOV com o mesmo nome')
     ap.add_argument('--refazer-quadros-girados', action='store_true', help='refaz só os quadros dos clipes com rotação (folhas antigas saíram deitadas), sem retranscrever')
+    ap.add_argument('--detectar-cidade', action='store_true', help='separa por cidade usando o GPS do vídeo (pasta Italia solta); sem GPS, usa a subpasta ou a hora do clipe vizinho')
     ap.add_argument('--sem-fala', action='store_true', help='não transcreve (mais rápido)')
     ap.add_argument('--sem-copia', action='store_true', help='lê o arquivo no lugar, sem copiar para a pasta temporária')
     a = ap.parse_args()
@@ -397,6 +457,11 @@ def main():
                 raise RuntimeError('arquivo ilegível ou sem vídeo (confira se o download terminou)')
             info.update({'id': cid, 'arquivo': os.path.basename(p), 'tamanho_mb': round(os.path.getsize(p) / 1e6, 1),
                          'cidade': a.cidade, 'caminho': os.path.relpath(p, origem)})
+            if a.detectar_cidade:
+                info['cidade_detectada'], info['cidade_origem'] = cidade_por_gps(info.get('gps'))
+                sub = os.path.relpath(p, origem).split(os.sep)
+                if not info['cidade_detectada'] and len(sub) > 1 and sub[0] != 'Postagem':
+                    info['cidade_detectada'], info['cidade_origem'] = sub[0], 'pasta'
             quadros = extrair_quadros(local, info['dur'] or 1, tmp, info.get('rot'))
             montar_linha(quadros, os.path.join(saida, 'linhas', cid + '.jpg'))
             info['quadros'] = [t for t, _ in quadros]

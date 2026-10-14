@@ -46,7 +46,7 @@ drive.mount('/content/drive')
 # 4 · Escolher a cidade e conferir a pasta
 import os
 
-CIDADE = 'Madrid'      # Madrid, Disney, Paris, Lisboa, Amsterdam, Bruxelas, Bruges
+CIDADE = 'Madrid'      # Madrid, Disney, Paris, Lisboa, Amsterdam, Bruxelas, Bruges ou Italia (solta: separa Roma/Florença/Veneza/Milão pelo GPS)
 LIMITE = 5             # 5 = teste rápido. Troque para 0 para analisar todos os vídeos.
 SEM_FALA = False       # True = não transcreve (bem mais rápido, só quadros e metadados)
 REFAZER_GIRADOS = False  # True = só refaz os quadros dos vídeos verticais que saíram deitados (sem retranscrever)
@@ -66,7 +66,7 @@ if not os.path.isdir(ORIGEM):
     ORIGEM = achadas[0]
 
 SAIDA = f'{RAIZ}/Youtube/analise/{CIDADE}'
-EXTRA = (f'--limite {LIMITE} ' if LIMITE else '') + ('--sem-fala ' if SEM_FALA else '') + ('--refazer-quadros-girados ' if REFAZER_GIRADOS else '')
+EXTRA = (f'--limite {LIMITE} ' if LIMITE else '') + ('--sem-fala ' if SEM_FALA else '') + ('--refazer-quadros-girados ' if REFAZER_GIRADOS else '') + ('--detectar-cidade ' if CIDADE.lower() in ('italia', 'itália') else '')
 
 videos = [f for _, _, fs in os.walk(ORIGEM) for f in fs if f.lower().endswith(('.mov', '.mp4', '.m4v'))]
 print('Origem:', ORIGEM)

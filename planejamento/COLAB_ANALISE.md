@@ -46,3 +46,14 @@ Madrid (361 vídeos), Disney (244), Paris (237) e Lisboa (146): são as quatro c
 - **Cores:** vídeos 4K HDR do iPhone podem aparecer lavados nos quadros (sem conversão de HDR). Serve para decupar, não para escolher cor.
 - **Política da empresa:** use só se abrir o Colab no navegador do computador for permitido. Os vídeos são pessoais e ficam na conta pessoal; essa checagem é sua.
 - **Opcional:** `--leve` (na célula 5, dentro de `EXTRA`) gera também cópias 720p de menos de 10 MB em `analise/<cidade>/leve/`.
+
+## Pasta Italia (arquivos soltos, sem separar por cidade)
+
+Na célula 4, use `CIDADE = 'Italia'`. O caderno liga sozinho o modo `--detectar-cidade`:
+
+1. **GPS do vídeo** decide a cidade (Roma, Florença, Veneza, Milão; raio de 20 a 30 km). GPS fora dessas quatro vira `Outra (lat, lon)`.
+2. **Sem GPS:** vale a subpasta (Roma, Florença...) se o vídeo estiver numa.
+3. **Sem GPS e sem subpasta:** recebe a cidade do vídeo com GPS mais próximo no tempo, até 3 h. Aparece como `cidade_origem = hora` e com `?` nas folhas (é palpite).
+4. **Exportações de editor** (nomes com código, `.mp4`) e gravações de tela têm a data da exportação: ficam `indefinida`.
+
+O `indice.tsv` ganha as colunas `cidade_detectada` e `cidade_origem` (`gps`, `pasta`, `hora` ou vazio), e as folhas saem agrupadas por cidade. Só vídeos entram (fotos não). Rode primeiro com `LIMITE = 5`, depois `0`. O material bruto não é alterado.
