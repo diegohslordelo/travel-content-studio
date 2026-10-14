@@ -36,6 +36,7 @@ Madrid (361 vídeos), Disney (244), Paris (237) e Lisboa (146): são as quatro c
 
 - **Só lê a pasta da cidade.** Cada vídeo é copiado para uma pasta temporária do Colab, analisado e apagado de lá. O caderno recusa gravar a saída dentro da pasta de origem. Nada é movido, renomeado ou apagado no Drive.
 - **Cópias `.MP4` de Amsterdam:** o caderno pula o `.MP4` quando existe um `.MOV` com o mesmo nome (são cópias 720p) e lista os pulados em `resumo.json`.
+- **Drive desconectado (erro 107 "Transport endpoint is not connected"):** acontece no Colab. A célula 5 detecta, reconecta o Drive sozinha (pode pedir autorização de novo) e continua de onde parou.
 - **Retomar:** se a sessão do Colab cair ou fechar, rode as células 3 a 5 de novo. Ele pula o que já tem resultado.
 - **Tempo:** depende da GPU e do tamanho dos vídeos. Meça no teste de 5 vídeos antes de rodar a cidade inteira. A versão gratuita do Colab pode desconectar por inatividade.
 - **Transcrição automática:** não foi ouvida por ninguém. A hora vem da data de criação do arquivo; nas cópias `.MP4` ela pode não bater com a cena.

@@ -188,6 +188,30 @@ def listar_videos(origem, incluir_copias):
     return uteis, copias
 
 
+class DriveCaiu(Exception):
+    pass
+
+
+def queda_do_drive(e):
+    return isinstance(e, OSError) and (getattr(e, 'errno', None) in (107, 5, 103, 108, 112) or 'Transport endpoint' in str(e))
+
+
+def copiar_com_tentativas(origem, destino, tentativas=3):
+    """Copia o vídeo do Drive montado. Se o Drive cair (erro 107 etc.), tenta de novo e, no fim, avisa para reconectar."""
+    for t in range(1, tentativas + 1):
+        try:
+            shutil.copyfile(origem, destino)
+            return
+        except OSError as e:
+            if not queda_do_drive(e):
+                raise
+            if os.path.exists(destino):
+                os.remove(destino)
+            if t == tentativas:
+                raise DriveCaiu(str(e))
+            time.sleep(5 * t)
+
+
 def nome_seguro(p):
     return re.sub(r'[^\w.\-() ]+', '_', os.path.basename(p))
 
@@ -284,7 +308,7 @@ def main():
     print('%s: %d vídeos para analisar, %d cópias .MP4 puladas (têm .MOV igual)' % (a.cidade or origem, len(videos), len(copias)), flush=True)
 
     work = tempfile.mkdtemp(prefix='analise_')
-    t0, feitos, pulados, erros = time.time(), 0, 0, []
+    t0, feitos, pulados, erros, caiu = time.time(), 0, 0, [], False
     for i, p in enumerate(videos, 1):
         nome = nome_seguro(p)
         cid = os.path.splitext(nome)[0] + ('' if not nome.lower().endswith('.mp4') else '_mp4')
@@ -299,7 +323,7 @@ def main():
             local = p
             if not a.sem_copia:
                 local = os.path.join(tmp, 'v' + os.path.splitext(p)[1])
-                shutil.copyfile(p, local)
+                copiar_com_tentativas(p, local)
             info = probe(local)
             if not info['w'] or not info['dur']:
                 raise RuntimeError('arquivo ilegível ou sem vídeo (confira se o download terminou)')
@@ -321,15 +345,33 @@ def main():
             sp = ' '.join(s[2] for s in info['fala'] if s[3] < 0.6)[:70]
             print('[%d/%d] %s  %ss  %sx%s  %s  %s' % (i, len(videos), info['arquivo'], info['dur'], info['w'], info['h'],
                                                       (info['criado'] or '')[:16], sp), flush=True)
+        except DriveCaiu as e:
+            caiu = True
+            print('DRIVE_CAIU: %s' % e, flush=True)
+            break
         except Exception as e:
+            if queda_do_drive(e):
+                caiu = True
+                print('DRIVE_CAIU: %s' % e, flush=True)
+                break
             erros.append((os.path.basename(p), str(e)[:200]))
             print('ERRO em %s: %s' % (p, e), flush=True)
         finally:
             shutil.rmtree(tmp, ignore_errors=True)
         if feitos and feitos % 25 == 0:
-            clips, n = montar_folhas(saida)
-            escrever_tabelas(saida, clips)
+            try:
+                clips, n = montar_folhas(saida)
+                escrever_tabelas(saida, clips)
+            except OSError as e:
+                if queda_do_drive(e):
+                    caiu = True
+                    print('DRIVE_CAIU: %s' % e, flush=True)
+                    break
+                raise
     shutil.rmtree(work, ignore_errors=True)
+    if caiu:
+        print('O Drive desconectou no meio da análise. Reconecte (force_remount) e rode de novo: o que já foi analisado é pulado.', flush=True)
+        sys.exit(75)
 
     clips, nfolhas = montar_folhas(saida)
     escrever_tabelas(saida, clips)

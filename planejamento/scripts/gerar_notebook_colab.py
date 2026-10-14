@@ -23,7 +23,7 @@ cells = [
 Este caderno **lê** os vídeos da pasta da cidade no seu Google Drive e grava, numa pasta separada (`Youtube/analise/<cidade>`), só arquivos pequenos: quadros do vídeo, data e hora, GPS, formato e a transcrição do áudio.
 
 - **Não mexe nos vídeos.** Cada vídeo é copiado para uma pasta temporária do Colab, analisado e apagado de lá. Nada é movido, renomeado ou apagado no Drive.
-- **Dá para parar e continuar.** Se a sessão cair, rode de novo as células 3 a 5: ele pula o que já foi analisado.
+- **Dá para parar e continuar.** Se o Drive desconectar (acontece no Colab), a célula 5 reconecta sozinha e continua. Se a sessão inteira cair, rode de novo as células 3 a 5: ele pula o que já foi analisado.
 - **A transcrição é automática** e ninguém ouviu o áudio. Confira as falas antes de usar.
 
 **Passo a passo:** rode as células na ordem (botão de play, ou Shift+Enter). Na célula 3, o Google vai pedir permissão para acessar o Drive: use a sua conta pessoal. Na célula 4, deixe `LIMITE = 5` na primeira vez (teste). Depois troque para `LIMITE = 0` e rode a célula 5 de novo para analisar todos.
@@ -73,8 +73,28 @@ print('Saída :', SAIDA)
 print('Vídeos na pasta:', len(videos))
 """),
     code("""
-# 5 · Analisar (pode demorar; o progresso aparece abaixo)
-!python -u analisar_drive.py --origem "{ORIGEM}" --saida "{SAIDA}" --cidade "{CIDADE}" {EXTRA}
+# 5 · Analisar. Se o Drive cair (erro 107), reconecta sozinho e continua de onde parou.
+import subprocess, time
+from google.colab import drive
+
+cmd = ['python', '-u', 'analisar_drive.py', '--origem', ORIGEM, '--saida', SAIDA, '--cidade', CIDADE] + EXTRA.split()
+for tentativa in range(1, 41):
+    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1)
+    for linha in p.stdout:
+        if 'unauthenticated requests to the HF Hub' in linha:
+            continue   # aviso inofensivo do Hugging Face
+        print(linha, end='')
+    p.wait()
+    if p.returncode == 0:
+        break
+    if p.returncode == 75:
+        print(f'>>> O Drive desconectou (tentativa {tentativa}). Reconectando e retomando...')
+        time.sleep(10)
+        drive.mount('/content/drive', force_remount=True)
+        time.sleep(5)
+        continue
+    print('>>> Parou por outro erro (veja as linhas acima).')
+    break
 """),
     md("""
 ## Quando terminar
