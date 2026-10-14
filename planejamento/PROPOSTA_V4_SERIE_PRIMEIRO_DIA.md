@@ -1,6 +1,6 @@
 # Proposta v4 · A série "Primeiro dia em X" como espinha do perfil
 
-**Data:** 14/10/2026 · **Status:** proposta, aguarda aprovação do Diego (o painel ainda não foi alterado) · **Parte de:** `ESTRATEGIA_EDITORIAL_V3.md`, `DIAGNOSTICO_V3.md`, `INVENTARIO_ACERVO.md` e o calendário v3 (`planejamento-postagens.html`)
+**Data:** 14/10/2026 · **Status:** aplicada no painel em 14/10/2026 (`CHANGELOG_v4.md`) · **Parte de:** `ESTRATEGIA_EDITORIAL_V3.md`, `DIAGNOSTICO_V3.md`, `INVENTARIO_ACERVO.md` e o calendário v3 (`planejamento-postagens.html`)
 
 **Pedido do Diego (14/10):**
 - Recolocar o Reel "Primeiro dia em X" no centro do perfil.
