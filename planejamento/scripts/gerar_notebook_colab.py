@@ -33,7 +33,7 @@ Este caderno **lê** os vídeos da pasta da cidade no seu Google Drive e grava, 
     code("%%writefile analisar_drive.py\n" + script),
     code("""
 # 2 · Instalar o transcritor e ver se há GPU
-!pip -q install faster-whisper
+!pip -q install faster-whisper nvidia-cublas-cu12 "nvidia-cudnn-cu12==9.*"
 !nvidia-smi -L || echo "Sem GPU: vai funcionar, só que mais devagar."
 !ffmpeg -version | head -1
 """),
@@ -74,12 +74,16 @@ print('Vídeos na pasta:', len(videos))
 """),
     code("""
 # 5 · Analisar. Se o Drive cair (erro 107), reconecta sozinho e continua de onde parou.
-import subprocess, time
+import glob, os, site, subprocess, time
 from google.colab import drive
+
+# bibliotecas CUDA que o transcritor precisa na GPU (se mesmo assim falhar, o script usa a CPU)
+libs = [p for sp in site.getsitepackages() for p in glob.glob(sp + '/nvidia/*/lib')]
+ENV = dict(os.environ, LD_LIBRARY_PATH=':'.join(libs + [os.environ.get('LD_LIBRARY_PATH', '')]))
 
 cmd = ['python', '-u', 'analisar_drive.py', '--origem', ORIGEM, '--saida', SAIDA, '--cidade', CIDADE] + EXTRA.split()
 for tentativa in range(1, 41):
-    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1)
+    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1, env=ENV)
     for linha in p.stdout:
         if 'unauthenticated requests to the HF Hub' in linha:
             continue   # aviso inofensivo do Hugging Face

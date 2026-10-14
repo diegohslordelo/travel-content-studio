@@ -123,18 +123,39 @@ def ler_wav(path):
 _modelo = {}
 
 
-def modelo(nome):
+def modelo(nome, forcar_cpu=False):
+    if forcar_cpu:
+        _modelo.pop('m', None)
     if 'm' not in _modelo:
         from faster_whisper import WhisperModel
-        try:
-            import ctranslate2
-            gpu = ctranslate2.get_cuda_device_count() > 0
-        except Exception:
-            gpu = False
+        gpu = False
+        if not forcar_cpu and not _modelo.get('sem_gpu'):
+            try:
+                import ctranslate2
+                gpu = ctranslate2.get_cuda_device_count() > 0
+            except Exception:
+                gpu = False
         _modelo['m'] = WhisperModel(nome, device='cuda' if gpu else 'cpu',
                                     compute_type='float16' if gpu else 'int8', cpu_threads=4)
         _modelo['gpu'] = gpu
     return _modelo['m']
+
+
+def _transcrever_array(a, nome_modelo):
+    """Tenta na GPU; se faltar biblioteca CUDA (erro comum no Colab), cai para a CPU e segue."""
+    def rodar():
+        segs, _ = modelo(nome_modelo).transcribe(a, language='pt', vad_filter=True, beam_size=1,
+                                                  condition_on_previous_text=False)
+        return list(segs)
+    try:
+        return rodar()
+    except Exception as e:
+        if _modelo.get('gpu'):
+            print('Aviso: GPU indisponível para a transcrição (%s). Usando a CPU.' % str(e)[:90], flush=True)
+            _modelo['sem_gpu'] = True
+            modelo(nome_modelo, forcar_cpu=True)
+            return rodar()
+        raise
 
 
 def transcrever(path, tmp, nome_modelo):
@@ -150,8 +171,7 @@ def transcrever(path, tmp, nome_modelo):
     rms = float(np.sqrt(np.mean(a ** 2)))
     db = round(20 * np.log10(rms + 1e-9), 1)
     pico = round(20 * np.log10(float(np.max(np.abs(a))) + 1e-9), 1)
-    segs, _ = modelo(nome_modelo).transcribe(a, language='pt', vad_filter=True, beam_size=1,
-                                              condition_on_previous_text=False)
+    segs = _transcrever_array(a, nome_modelo)
     fala = [[round(s.start, 1), round(s.end, 1), s.text.strip(), round(s.no_speech_prob, 2)] for s in segs]
     return fala, db, pico
 
@@ -314,8 +334,15 @@ def main():
         cid = os.path.splitext(nome)[0] + ('' if not nome.lower().endswith('.mp4') else '_mp4')
         cj = os.path.join(saida, 'clips', cid + '.json')
         if os.path.exists(cj):
-            pulados += 1
-            continue
+            refazer = False
+            try:
+                antigo = json.load(open(cj, encoding='utf-8'))
+                refazer = bool(antigo.get('erro_fala')) and not a.sem_fala
+            except Exception:
+                refazer = True   # json vazio ou quebrado (queda do Drive no meio da gravação)
+            if not refazer:
+                pulados += 1
+                continue
         tmp = os.path.join(work, 'c')
         shutil.rmtree(tmp, ignore_errors=True)
         os.makedirs(tmp)
