@@ -732,3 +732,38 @@ TROCAS_FINAIS += [
 TROCAS_FINAIS += [('Master 25:51–26:05 (cortar antes de “foi 25 euros”)', 'Master 25:51–26:05 (cortar antes da frase sobre o preço do ingresso)')]
 
 SAEM['p223'] = 'Cedeu a quarta de 18/11 ao carrossel de Roma sem valores (p627) e dependia de dados seus (trajeto e horários). Volta ao banco (BANCO_DE_IDEIAS_V5.md, E4).'
+
+
+# ───────────── v5, decupagem de Madrid (14/10, análise do Colab; DECUPAGEM_MADRID.md) ─────────────
+_R5 = {
+    'p221': dict(
+        gancho='Buenos días, Madrid!', gt='Afirmação',
+        como='Nível B (revisão v5: sem Placar). Sai no sábado 05/12 com o vlog de Madrid. Dia 1 = 19/03/2026 (arquivos de 15h05 a 22h49). Chegada ao hotel às 15h05 (IMG_3617).',
+        tela='buenos días, madrid! · 15h05 · plaza mayor · puerta del sol · palácio real · templo de debod',
+        leg='Buenos días, Madrid! ☀️\n\nChegamos ao hotel perto da Plaza Mayor às 15h05 do dia 19/03 e saímos andando: tapas ao lado do hotel, Puerta del Sol, Plaza Mayor, Palácio Real por fora e o Templo de Debod no fim da tarde.\n\nA hora de cada lugar é a do arquivo.\n\nManda pra quem vai pra Madrid.',
+        sc=_sc(('0–2 s', 'Gancho', 'IMG_3617 (de 0,5 a 2,5 s): “Buenos días! Estamos aqui em Madrid” + Placa `PRIMEIRO DIA EM / MADRID` com a Chegada.'),
+               ('2–5 s', 'Contexto', 'Legenda Narrativa: “madrid, dia 1. 15h05.” sobre o resto da fala de abertura.'),
+               ('5–9 s', 'Hora', 'Tapas ao lado do hotel (IMG_3620 a 3624, 15h14). Legenda Informação com a hora real do arquivo em cada lugar (sem Placar e sem valores nesta revisão).'),
+               ('9–14 s', 'Entrega', 'Puerta del Sol (IMG_3630 a 3633, 15h47), Plaza Mayor (IMG_3648, 16h11 e o selfie `C368E0CF…` até 18 s).'),
+               ('14–19 s', 'Entrega', 'Palácio Real por fora (IMG_3727, 17h11) e a Catedral da Almudena (IMG_3715, 17h02).'),
+               ('19–23 s', 'Pico', 'Ticket SURPREENDE: Templo de Debod vazio, sem água (IMG_3771, 19h25), se o plano confirmar a surpresa na decupagem.'),
+               ('23–26 s', 'Fechamento', 'Placa `E ISSO FOI SÓ O / PRIMEIRO DIA.` + Nascer do 1º + bordão.')),
+        mat=['Madrid, dia 1 (19/03/2026, hora do arquivo, fuso de Madrid): IMG_3617 (15:05, 33 s, vertical 4K, fala de abertura), IMG_3620 a 3624 (tapas, 15:14), IMG_3630 a 3634 (Puerta del Sol, 15:47), IMG_3638 (Sol, 15:53), IMG_3648 (Plaza Mayor, 16:11), IMG_3686 (Mercado de San Miguel, 16:30), IMG_3715 (Almudena, 17:02), IMG_3727 (Palácio Real, 17:11), IMG_3771 (Debod, 19:25); `C368E0CF….mp4` (selfie na Plaza Mayor, 29 s). Transcrição e metadados lidos; quadros das folhas 01 e 02 vistos (DECUPAGEM_MADRID.md)'],
+        pend=['Revisão v5: nenhum valor em € ou R$ na peça, na legenda ou na tela (custos ficam para depois).',
+              'Cortar fora os trechos com preço: `C368E0CF…` (18 a 24 s), IMG_3627 (9 a 23 s), IMG_3686 (11 a 18 s), IMG_3727 (15 a 18 s)',
+              'Não usar a frase “nossa última parada dessa EuroTrip” (IMG_3617, 15 a 20 s): Lisboa vem depois',
+              'Não citar o nome do bar do primeiro almoço: a transcrição o deturpa (“Maestro Tabarriro”)',
+              'Ver na folha os planos de San Miguel, Almudena, Palácio Real e Debod antes do corte (só as folhas 01 e 02 foram vistas)',
+              'Confirmar com o Diego que o Debod vazio foi a surpresa do dia (a fala diz “achei que ia estar com água”)',
+              'Sai no mesmo dia do vlog de Madrid (05/12)']),
+}
+for _k, _v in _R5.items():
+    REVISAO.setdefault(_k, {}).update(_v)
+
+# Avisos de corte de preço nas outras peças de Madrid (anexados ao fim das pendências)
+PEND_EXTRA = {
+    'p605': ['Cortar fora o valor do ingresso em IMG_4130 (33 a 42 s). A fala sobre o jogo adiado está em IMG_4131 (DECUPAGEM_MADRID.md)'],
+    'p606': ['Decupagem: Cibeles, Alcalá e Retiro às 12h05 a 12h59; o Retiro está nublado às 12h46 (IMG_3909) e a chuva começa às 13h48 (IMG_3935)'],
+    'p607': ['O show é na praça Pedro Zerolo, às 19h45 de 20/03 (IMG_3963, GPS 40,4207 −3,6993). Fala real: “a gente não entendeu muito bem o que é”. Não explicar o que era o evento sem confirmar'],
+    'p622': ['Horários de Madrid vêm do índice do Colab (DECUPAGEM_MADRID.md): dia 1 de 15h05 a 22h49, dia 2 de 10h20 a 22h23, dia 3 de 09h47 a 21h49'],
+}

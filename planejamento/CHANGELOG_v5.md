@@ -41,6 +41,12 @@ Não foram alterados: o Design System, os tokens, o bundle, a referência de con
 - **p401 (Short de 14/10):** sem confirmação de publicação; a observação foi registrada.
 - Regra de cidades: continua com 0 violações. T4 continua com 8 carrosséis A e 6 B.
 
+## 2c. Madrid analisada pelo Colab (14/10 à noite)
+
+- 361 vídeos de Madrid analisados pelo caderno do Colab (`scripts/colab_analise_drive.ipynb`, `scripts/analisar_drive.py`), 0 erros, 51 min. Resultado em `DECUPAGEM_MADRID.md`.
+- **p221** (Primeiro dia em Madrid) atualizado com a decupagem real: chegada ao hotel às 15h05 (IMG_3617), cenas e horários, e os trechos com preço que precisam ficar fora do corte. **p605, p606, p607 e p622** ganharam avisos de decupagem.
+- O caderno agora corrige a rotação dos vídeos verticais (os 90 clipes de Madrid saíram girados nas folhas) e tem a opção `REFAZER_GIRADOS`.
+
 ## 3. Testes rodados
 
 | Teste | Resultado |

@@ -79,14 +79,27 @@ def n_quadros(dur):
     return int(min(48, max(12, dur // 10)))
 
 
-def extrair_quadros(path, dur, tmp):
+def filtro_rotacao(rot):
+    """Aplica na mão a rotação do iPhone (display matrix): o ffmpeg do Colab nem sempre gira sozinho."""
+    r = int(rot or 0)
+    if r in (-90, 270):
+        return 'transpose=1'
+    if r in (90, -270):
+        return 'transpose=2'
+    if abs(r) == 180:
+        return 'hflip,vflip'
+    return None
+
+
+def extrair_quadros(path, dur, tmp, rot=0):
     n = n_quadros(dur)
     out = []
+    cadeia = ','.join(x for x in (filtro_rotacao(rot), 'scale=%d:%d:force_original_aspect_ratio=decrease' % (TW, TH)) if x)
     for k in range(n):
         t = round(dur * (k + 0.5) / n, 2)
         f = os.path.join(tmp, 'q%02d.jpg' % k)
-        run(['ffmpeg', '-v', 'error', '-y', '-ss', str(t), '-i', path, '-frames:v', '1',
-             '-vf', 'scale=%d:%d:force_original_aspect_ratio=decrease' % (TW, TH), '-q:v', '5', f])
+        run(['ffmpeg', '-v', 'error', '-y', '-noautorotate', '-ss', str(t), '-i', path, '-frames:v', '1',
+             '-vf', cadeia, '-q:v', '5', f])
         if os.path.exists(f):
             out.append((t, f))
     return out
@@ -308,6 +321,7 @@ def main():
     ap.add_argument('--modelo', default='small', help='modelo do Whisper (small, medium...)')
     ap.add_argument('--leve', action='store_true', help='gera também uma cópia 720p com menos de 10 MB em saida/leve/')
     ap.add_argument('--incluir-copias', action='store_true', help='não pula .MP4 que têm .MOV com o mesmo nome')
+    ap.add_argument('--refazer-quadros-girados', action='store_true', help='refaz só os quadros dos clipes com rotação (folhas antigas saíram deitadas), sem retranscrever')
     ap.add_argument('--sem-fala', action='store_true', help='não transcreve (mais rápido)')
     ap.add_argument('--sem-copia', action='store_true', help='lê o arquivo no lugar, sem copiar para a pasta temporária')
     a = ap.parse_args()
@@ -340,6 +354,33 @@ def main():
                 refazer = bool(antigo.get('erro_fala')) and not a.sem_fala
             except Exception:
                 refazer = True   # json vazio ou quebrado (queda do Drive no meio da gravação)
+            if not refazer and a.refazer_quadros_girados and antigo.get('rot') and not antigo.get('quadros_upright'):
+                try:
+                    tmpq = os.path.join(work, 'q')
+                    shutil.rmtree(tmpq, ignore_errors=True)
+                    os.makedirs(tmpq)
+                    localq = os.path.join(tmpq, 'v' + os.path.splitext(p)[1])
+                    copiar_com_tentativas(p, localq)
+                    qs = extrair_quadros(localq, antigo['dur'] or 1, tmpq, antigo.get('rot'))
+                    montar_linha(qs, os.path.join(saida, 'linhas', cid + '.jpg'))
+                    antigo['quadros'] = [t for t, _ in qs]
+                    antigo['quadros_upright'] = True
+                    json.dump(antigo, open(cj, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+                    feitos += 1
+                    print('[%d/%d] quadros refeitos: %s (giro %s)' % (i, len(videos), nome, antigo.get('rot')), flush=True)
+                except DriveCaiu as e:
+                    caiu = True
+                    print('DRIVE_CAIU: %s' % e, flush=True)
+                    break
+                except Exception as e:
+                    if queda_do_drive(e):
+                        caiu = True
+                        print('DRIVE_CAIU: %s' % e, flush=True)
+                        break
+                    erros.append((nome, str(e)[:200]))
+                finally:
+                    shutil.rmtree(os.path.join(work, 'q'), ignore_errors=True)
+                continue
             if not refazer:
                 pulados += 1
                 continue
@@ -356,9 +397,10 @@ def main():
                 raise RuntimeError('arquivo ilegível ou sem vídeo (confira se o download terminou)')
             info.update({'id': cid, 'arquivo': os.path.basename(p), 'tamanho_mb': round(os.path.getsize(p) / 1e6, 1),
                          'cidade': a.cidade, 'caminho': os.path.relpath(p, origem)})
-            quadros = extrair_quadros(local, info['dur'] or 1, tmp)
+            quadros = extrair_quadros(local, info['dur'] or 1, tmp, info.get('rot'))
             montar_linha(quadros, os.path.join(saida, 'linhas', cid + '.jpg'))
             info['quadros'] = [t for t, _ in quadros]
+            info['quadros_upright'] = True
             info['fala'], info['volume_db'], info['pico_db'] = [], None, None
             if info['audio'] and not a.sem_fala:
                 try:

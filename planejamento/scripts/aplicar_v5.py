@@ -262,6 +262,8 @@ for p in futuro_fixo + feed + shorts:
             p[k] = trocar(p[k])
     if isinstance(p.get('pend'), list):
         p['pend'] = [x for x in p['pend'] if x not in V.REMOVER_PEND]
+    if p['id'] in V.PEND_EXTRA and isinstance(p.get('pend'), list):
+        p['pend'] = p['pend'] + [x for x in V.PEND_EXTRA[p['id']] if x not in p['pend']]
     if p['kind'] == 'long' and V.PEND_VLOG not in p.get('pend', []):
         p['pend'] = (p.get('pend') or []) + [V.PEND_VLOG]
 

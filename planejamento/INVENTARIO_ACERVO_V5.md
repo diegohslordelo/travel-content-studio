@@ -23,7 +23,7 @@
 | Pasta | Arquivos | Tamanho | Até 10 MB | Datas de gravação (arquivos analisados) | Situação |
 |---|---:|---:|---:|---|---|
 | Amsterdam | 571 (444 .MOV + 127 .MP4; 117 pares MOV + MP4 do mesmo plano) | 18,8 GB | 194 | 13 e 14/03/2026 (prováveis) | Decupada por miniatura (11/10) + 13 cópias MP4 analisadas |
-| Madrid | 361 | 13,6 GB | 48 | 19 a 21/03/2026 | Enviada em 14/10 · 17 clipes analisados |
+| Madrid | 361 | 13,6 GB | 48 | 19 a 22/03/2026 | **Analisada por inteiro pelo Colab (361 de 361, 14/10)**: ver `DECUPAGEM_MADRID.md` |
 | Disney | 244 | 7,6 GB | 40 | 18/03/2026 | Enviada em 14/10 · 13 clipes analisados |
 | Paris | 237 | 7,8 GB | 38 | 17/03/2026 | Enviada em 14/10 · 6 clipes analisados |
 | Bruges | 154 | 5,6 GB | 29 | 16/03/2026 | Decupada por miniatura (11/10) + 3 analisados |
