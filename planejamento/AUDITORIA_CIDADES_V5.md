@@ -61,7 +61,7 @@
 | Data | Dia | Cidade | Itens | Dias da cidade na semana | OK |
 |---|---|---|---|---:|:-:|
 | 17/11 | ter | Lisboa | Reel p227, Short p707, Stories | 1 | ✓ |
-| 18/11 | qua | Bruges | Carrossel p223, Stories | 1 | ✓ |
+| 18/11 | qua | Roma | Carrossel p627, Stories | 1 | ✓ |
 | 19/11 | qui | Bruxelas | Reel p249, Stories | 1 | ✓ |
 | 21/11 | sáb | Disneyland Paris | Vídeo longo p76, Reel p215, Stories p78, Stories | 1 | ✓ |
 | 22/11 | dom | Madrid | Reel p606, Stories | 1 | ✓ |
@@ -186,10 +186,10 @@ Verificado para todas as cidades, de 15/10/2026 a 07/02/2027, contando o domingo
 |---|---:|
 | Barcelona | 16 |
 | Amsterdam | 11 |
-| Bruges | 9 |
 | Paris | 8 |
+| Bruges | 8 |
 | Madrid | 8 |
-| Roma | 6 |
+| Roma | 7 |
 | Bruxelas | 6 |
 | Disneyland Paris | 6 |
 | Lisboa | 5 |

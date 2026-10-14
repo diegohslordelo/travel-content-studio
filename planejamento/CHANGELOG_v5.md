@@ -33,6 +33,14 @@ Não foram alterados: o Design System, os tokens, o bundle, a referência de con
 9. **Histórico:** p201 (11/10) e p202 (13/10) marcados como publicados, com a evidência citada na observação de cada um. Nada mais do histórico mudou (conferido por script).
 10. **Pendências novas** no painel: k 50 a 56 (Drive, Itália, o que saiu de 10 a 14/10, D3, viagem de janeiro, noite em Lisboa e o show de Madrid); k 41 reescrita (D1).
 
+## 2b. Ajuste de 14/10 à tarde (pedido do Diego)
+
+- **p218 (carrossel "Roma de graça", 14/10 18:00) marcado como adiado.** O conteúdo original fica preservado; o painel mostra o aviso e o motivo (valores, cotação e etiqueta `QUANTO CUSTOU`; valores de Trevi e Panteão sem reconferência).
+- **Novo p627, "Roma em 3 dias: o roteiro pela hora das fotos" (carrossel, 12 slides, 18/11 18:00):** a versão sem valores. Usa só fotos verificadas do repositório, com a hora do arquivo. Capa de papel com a Rota (T4, variante B). Ocupa a quarta de 18/11, que era do p223 (Bruxelas a Bruges, que dependia de dados do Diego e foi para o banco).
+- **Stories de 14/10:** dia sem post, com a enquete "Qual cidade você quer ver primeiro aqui?" (sem cidade central).
+- **p401 (Short de 14/10):** sem confirmação de publicação; a observação foi registrada.
+- Regra de cidades: continua com 0 violações. T4 continua com 8 carrosséis A e 6 B.
+
 ## 3. Testes rodados
 
 | Teste | Resultado |

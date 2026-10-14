@@ -443,6 +443,37 @@ NOVAS = [
          fonte='Drive · Barcelona', trecho='IMG_0892–1007'),
 ]
 
+
+# ───────────── v5, 14/10: carrossel de Roma sem valores (substitui o p218 adiado) ─────────────
+NOVAS.append(dict(
+    id='p627', fmt='Carrossel', vk='ita', pilar='Chegar sabendo', titulo='Roma em 3 dias: o roteiro pela hora das fotos',
+    gancho='Roma em 3 dias: o nosso roteiro.', gt='Lista curta', prod='ok', teste={'id': 'T4', 'var': 'B'}, cid=['ita'],
+    obj='Salvamento: o roteiro real de 3 dias em Roma, com a hora de cada foto. Versão sem valores do carrossel de Roma adiado em 14/10 (p218).',
+    motiv='Quem vai a Roma e quem planeja as férias de fim de ano. Salva para montar o roteiro; envia para quem vai junto.',
+    sl=['Capa (papel, variante B do T4): Placa G Série `ROTEIRO` / `ROMA` + “3 dias · o nosso roteiro” e a Rota dos 3 dias.',
+        'Rota (segunda capa, funciona sozinha): DIA 25/12: Trevi 10h08 → Panteão (por fora) 10h50 → Piazza Navona → Pincio 16h37 · DIA 26/12: Coliseu por fora 8h52 → Fórum Romano 13h45 · DIA 27/12: São Pedro 8h25 → Sant\'Ignazio 12h31 → Gianicolo 16h45.',
+        'Foto + informação: Fontana di Trevi, 10h08 do dia 25 (IMG_5064).',
+        'Foto + informação: Panteão, por fora, 10h50 (IMG_5108).',
+        'Foto + informação: Terrazza del Pincio ao pôr do sol, 16h37 (IMG_5220).',
+        'Foto + informação: Coliseu por fora, 8h52 do dia 26 (IMG_6651).',
+        'Foto + informação: Fórum Romano, 13h45 (IMG_5319).',
+        'Foto + informação: Basílica de São Pedro, 8h25 do dia 27 (IMG_6653).',
+        'Foto + informação: Sant\'Ignazio, 12h31 (IMG_6650). Os dois sob o teto pintado.',
+        'Foto + informação: Gianicolo ao pôr do sol, 16h45 (IMG_5523).',
+        'Dica (Bilhete): “em dezembro, o sol se põe cedo em roma.”',
+        'Encerramento: Placa CTA `SALVA PRA VIAGEM →` + símbolo 1º.'],
+    leg='Roma em 3 dias: o nosso roteiro. 🇮🇹\n\nDia 25/12: Fontana di Trevi às 10h08, Panteão por fora às 10h50, Piazza Navona e o pôr do sol no Pincio às 16h37.\nDia 26/12: Coliseu por fora às 8h52 e Fórum Romano às 13h45.\nDia 27/12: São Pedro às 8h25, Sant\'Ignazio às 12h31 e o pôr do sol no Gianicolo às 16h45.\n\nA hora de cada foto é a do arquivo (dezembro de 2024). Em dezembro, o sol se põe cedo em Roma.\n\nSalva pra sua viagem a Roma.',
+    cta='Salva pra sua viagem a Roma (salvamento).', capa='Rota dos 3 dias em papel com a Placa G `ROTEIRO` / `ROMA`.',
+    som='Música instrumental da biblioteca ao postar.', met='Salvamentos por alcance',
+    hip='Roteiro de 3 dias com a hora real de cada foto é a dúvida de quem planeja Roma e vira salvamento; a capa de papel com a Rota é a variante B do T4.',
+    mat=['Roma, fotos verificadas no repositório (EXIF de dezembro de 2024): IMG_5064 (25/12 10:08), IMG_5108 (25/12 10:50), IMG_5132 (sem hora), IMG_5220 (25/12 16:37), IMG_6651 (26/12 08:52), IMG_5319 (26/12 13:45), IMG_6653 (27/12 08:25), IMG_6650 (27/12 12:31), IMG_5523 (27/12 16:45)'],
+    pend=['Sem valores: não citar ingresso, passe, cotação nem “grátis” (custos fora desta revisão; ideia em OPORTUNIDADES_CUSTOS.md)',
+          'IMG_5132 (Piazza Navona) não tem hora no arquivo: não citar hora',
+          'Confirmar que o Panteão foi visto por fora em 25/12 (a foto das 10h50 é da fachada)',
+          'IMG_5397 tem rostos de terceiros: não usar sem autorização',
+          'O Natal em Roma (p248, 16/12) repete o dia 25 em mais detalhe: se preferir, o p248 vira Reel ou sai'],
+    fonte='Fotos da Itália', trecho='Roma, 25 a 27/12/2024'))
+
 # ───────────────────────── calendário do feed ─────────────────────────
 # (data, hora, id). Cidades centrais vêm da peça (cid) ou do vk.
 CAL = [
@@ -451,7 +482,7 @@ CAL = [
     ('2026-10-27', '18:30', 'p603'), ('2026-10-28', '18:00', 'p203'), ('2026-10-29', '12:30', 'p611'), ('2026-10-31', '11:00', 'p246'), ('2026-11-01', '19:00', 'p217'),
     ('2026-11-03', '18:30', 'p222'), ('2026-11-04', '18:00', 'p621'), ('2026-11-05', '12:30', 'p211'), ('2026-11-07', '11:00', 'p234'), ('2026-11-08', '19:00', 'p601'),
     ('2026-11-10', '18:30', 'p604'), ('2026-11-11', '18:00', 'p213'), ('2026-11-12', '12:30', 'p224'), ('2026-11-14', '11:00', 'p608'), ('2026-11-15', '19:00', 'p612'),
-    ('2026-11-17', '18:30', 'p227'), ('2026-11-18', '18:00', 'p223'), ('2026-11-19', '12:30', 'p249'), ('2026-11-21', '11:00', 'p215'), ('2026-11-22', '19:00', 'p606'),
+    ('2026-11-17', '18:30', 'p227'), ('2026-11-18', '18:00', 'p627'), ('2026-11-19', '12:30', 'p249'), ('2026-11-21', '11:00', 'p215'), ('2026-11-22', '19:00', 'p606'),
     ('2026-11-24', '18:30', 'p231'), ('2026-11-25', '18:00', 'p228'), ('2026-11-26', '12:30', 'p220'), ('2026-11-28', '11:00', 'p610'), ('2026-11-29', '19:00', 'p214'),
     ('2026-12-01', '18:30', 'p251'), ('2026-12-02', '18:00', 'p620'), ('2026-12-03', '12:30', 'p239'), ('2026-12-05', '11:00', 'p221'), ('2026-12-06', '19:00', 'p242'),
     ('2026-12-08', '18:30', 'p607'), ('2026-12-09', '18:00', 'p273'), ('2026-12-10', '12:30', 'p244'), ('2026-12-12', '11:00', 'p245'), ('2026-12-13', '19:00', 'p241'),
@@ -699,3 +730,5 @@ TROCAS_FINAIS += [
     ('Sai no dia seguinte ao vlog de Lisboa (16/01)', 'Sai no mesmo dia do vlog de Lisboa (16/01)'),
 ]
 TROCAS_FINAIS += [('Master 25:51–26:05 (cortar antes de “foi 25 euros”)', 'Master 25:51–26:05 (cortar antes da frase sobre o preço do ingresso)')]
+
+SAEM['p223'] = 'Cedeu a quarta de 18/11 ao carrossel de Roma sem valores (p627) e dependia de dados seus (trajeto e horários). Volta ao banco (BANCO_DE_IDEIAS_V5.md, E4).'

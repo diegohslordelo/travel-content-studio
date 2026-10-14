@@ -52,3 +52,4 @@
 | E1 | p210 · Sagrada Família: projetada como uma floresta | Barcelona já tem 13 peças no período | Trocar por outra peça de Barcelona ou entrar no próximo ciclo |
 | E2 | p212 · Amsterdam: imagina morar nessa rua | Amsterdam ganhou peças com material verificado do Drive | O mesmo |
 | E3 | p235 · Madrid em planos (sem informação) | Substituído por peças com arquivos verificados (Retiro, show, Bernabéu) | Usar como Reel sem texto do teste T2, se faltar peça |
+| E4 | p223 · Bate-volta de Bruxelas a Bruges: como fizemos | Cedeu a quarta de 18/11 ao carrossel de Roma sem valores (p627) e dependia de dados seus (trajeto e horários) | Seus dados do trajeto e a decupagem de Bruges (IMG_2417–2705) |

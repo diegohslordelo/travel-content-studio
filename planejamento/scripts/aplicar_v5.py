@@ -45,6 +45,19 @@ hist = [p for p in D['posts'] if p['d'] <= HOJE]
 futuro_fixo = [p for p in D['posts'] if p['d'] > HOJE and p['kind'] in FICA_FUTURO]
 saem_v4 = [p for p in D['posts'] if p['d'] > HOJE and p['kind'] not in FICA_FUTURO]
 
+# ───────────── 1b. ajustes do dia 14/10 (autorizados pelo Diego em 14/10) ─────────────
+P['p218']['adiado'] = True
+P['p218']['pend'] = ['ADIADO em 14/10 por decisão do Diego: o carrossel traz valores, cotação e a etiqueta `QUANTO CUSTOU`, e os valores de Trevi e Panteão não foram reconferidos. Não publicar como está.',
+                     'A versão sem valores é o p627 (Roma em 3 dias: o roteiro pela hora das fotos), em 18/11.'] + P['p218'].get('pend', [])
+P['p218']['obs'] = P['p218']['obs'] + ['Adiado na revisão v5 (14/10/2026): peça de custo fora desta revisão. Conteúdo original preservado acima; ideia guardada em OPORTUNIDADES_CUSTOS.md.']
+P['p401']['pend'] = ['Sem confirmação de publicação em 14/10 (pendência k 52). Se não subiu, deixar de lado: Barcelona já apareceu em 13 e 14/10.'] + P['p401'].get('pend', [])
+for _w in D['weeks']:
+    for _d in _w['days']:
+        if _d['date'] == '2026-10-14':
+            _d['stories'] = {'t': 'Dia sem post: pergunta', 'cid': [],
+                             'steps': ['Parte 01 · NOITE · ENGAJAMENTO: enquete nativa “Qual cidade você quer ver primeiro aqui?” (sem cidade central e sem anunciar o que vem).',
+                                       'Métrica do dia: taxa de resposta (respostas ÷ alcance) e saídas do 1º Story.']}
+
 # Publicações com evidência registrada em PROPOSTA_V4_SERIE_PRIMEIRO_DIA.md (14/10): 11/10 publicado; 13/10 "saiu".
 for pid, ev in (('p201', 'publicado em 11/10 (PROPOSTA_V4, seção 5: “11/10 ✓”)'),
                 ('p202', 'publicado em 13/10 (PROPOSTA_V4, seção 6: “em 13/10 saiu Barcelona”)')):
@@ -331,7 +344,7 @@ SEM = {
     4: ('Leitura 1 (01/11)', "Tony's, o roteiro de Barcelona, a Grand Place de dia e à noite, Paris sem texto e o trailer da série"),
     5: ('Vlog de Paris', 'Roma (o teto que engana), as comidas de Amsterdam, Bruges sem texto, o primeiro dia em Paris no sábado e o céu rosa de Amsterdam'),
     6: ('Comparações', 'Beijo escondido, Paris em 1 dia, Barcelona ou Madrid (T5), o castelo que muda de cor e a primeira mordida'),
-    7: ('Vlog da Disney', 'Lisboa, o bate-volta a Bruges, Bruxelas em planos, o primeiro dia na Disney e o Retiro'),
+    7: ('Vlog da Disney', 'Lisboa, o roteiro de Roma, Bruxelas em planos, o primeiro dia na Disney e o Retiro'),
     8: ('Fim de novembro', 'Boqueria, o dia da Disney em carrossel, a Torre que pisca, os cisnes de Bruges e a janela da Casa Batlló'),
     9: ('Vlog de Madrid · Leitura 2 (06/12)', 'Amsterdam, o roteiro de Bruxelas, o Park Güell, o primeiro dia em Madrid e Roma iluminada'),
     10: ('Madrid em destaque', 'O show em Madrid, o roteiro de Amsterdam, Madrid em 2 dias, o McDonald\'s e os canais'),
@@ -455,7 +468,7 @@ D['saem_v5'] = [{'id': k, 'titulo': P[k]['titulo'], 'motivo': v} for k, v in V.S
 NOVAS_PEND = [
     {'k': 50, 't': 'Drive: o conector só baixa arquivos de até 10 MB (397 dos 1.851 vídeos das pastas de cidade; fora as cópias MP4 de Amsterdam, quase todos têm menos de 3 s). Para a decupagem completa: enviar cópias leves (720p) numa pasta “leve/” por cidade ou liberar outro acesso (INVENTARIO_ACERVO_V5.md, seção 1)', 'type': 'text'},
     {'k': 51, 't': 'Florença, Veneza e Milão: as pastas existem desde 14/10, mas estão vazias. Subir fotos e vídeos para as peças italianas voltarem (BANCO_DE_IDEIAS_V5.md)', 'type': 'text'},
-    {'k': 52, 't': 'Confirmar o que saiu de 10 a 14/10: Atomium (10/10), POV do Atomium (pedido de 12/10), Short de 11/10, Roma de graça (14/10)', 'type': 'text'},
+    {'k': 52, 't': 'Confirmar o que saiu de 10 a 14/10: Atomium (10/10), POV do Atomium (pedido de 12/10), Short de 11/10 e Short de 14/10. O carrossel “Roma de graça” (14/10) foi adiado por decisão do Diego: a versão sem valores é o p627, em 18/11', 'type': 'text'},
     {'k': 53, 't': 'D3: Stories ao vivo durante a viagem mostram a cidade onde você está todos os dias. Aceitar como exceção da regra de cidades ou limitar a 2 dias por cidade? (REVISAO_V5.md)', 'type': 'text'},
     {'k': 54, 't': 'Viagem de janeiro: cidades e ordem (as peças usam “cidade 1, 2 e 3”); a auditoria é refeita quando chegarem', 'type': 'text'},
     {'k': 55, 't': 'Lisboa: confirmar se houve noite em 22/03 (os arquivos verificados são de 23/03 de manhã); o Reel “Primeira noite em Lisboa” depende disso', 'type': 'text'},
