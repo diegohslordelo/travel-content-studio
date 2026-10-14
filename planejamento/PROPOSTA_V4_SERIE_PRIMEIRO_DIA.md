@@ -112,41 +112,115 @@ Base: a linha do tempo modelo do DS V2 (5.2, "Reel de primeiro dia, 24 s"), em N
 
 O T2 fica com 4 peças A e 3 peças B. Se ele precisar de mais 1 peça B na Leitura 2, a candidata é "Bruges vista do canal" (24/01).
 
-### Mudam de lugar (os deslocados pelos domingos)
+### Regra de diversidade (decisão do Diego, 14/10)
 
-| Peça | De | Para |
-|---|---|---|
-| Vale ou pula: waffle em Bruges (p206) | 18/10 dom | 20/10 ter |
-| Bruges em 15 segundos (p211, T2-B) | 25/10 dom | 03/11 ter |
-| Paris de dia, sem informação (p246, T1-A) | 13/12 dom | 31/10 sáb |
-| Vale ou pula: La Boqueria (p231, T5-A) | 22/11 dom | 26/11 qui |
-| Expectativa × realidade: Amsterdam (p251) | 20/12 dom | 05/12 sáb |
-| Canais: Amsterdam ou Bruges? (p241) | 06/12 dom | 15/12 ter |
-| Por que ficamos em Gràcia (p271) | 17/01 dom | 16/01 sáb |
+1. **Nenhuma cidade em 2 posts seguidos no feed,** contando Reel e carrossel.
+2. **No máximo 2 posts da mesma cidade por semana,** de segunda a domingo.
+3. **Roma, Florença, Veneza e Milão contam como cidades separadas.** Disney e Paris também.
+4. **Ficam fora da regra:** as peças de várias cidades e as da viagem de janeiro ao vivo, que são a cobertura da própria viagem.
+5. **O que se aplica hoje:** em 13/10 saiu Barcelona ("Não compre água"), então **o carrossel de hoje (14/10) passa a ser "Roma de graça (ou quase)"**, que estava em 04/11. É a única quarta pronta, com material verificado, que não é de Barcelona. O Gaudí vai para 04/11, na mesma variante do T4 (A).
 
-### Carrosséis reposicionados para a quarta depois do Reel
+Todo o calendário abaixo foi conferido por script: nenhuma cidade em 2 posts seguidos e nenhuma com 3 ou mais posts na mesma semana. As datas foram escolhidas pelo **menor deslocamento possível** em relação à v3 (otimização), com duas restrições:
+- **Peças com material pendente** não entram antes de 24/10, para dar tempo de produzir.
+- **As peças sazonais e a série** (Natal, Black Friday, fim de ano e viagem de janeiro) ficaram fixas.
 
-São trocas entre quartas. As variantes do T4 continuam com as mesmas contagens.
+**Por que diversificar ajuda.** Cada Reel é mostrado a quem se interessa pelo tema dele (referência, P3). Alternar cidades amplia o leque de pessoas que o perfil alcança, e quem chega vê que o perfil é de várias cidades. Esse era o objetivo da semana 2 da v3 ("Rodízio de cidades"). Repetir a mesma cidade em sequência cansa quem já segue e reforça a ideia de "perfil de Barcelona".
 
-| Carrossel | De | Para | Logo depois do Reel de |
-|---|---|---|---|
-| Barcelona: Gaudí de graça (p208, T4-A) | 21/10 | **14/10 (hoje)** | — |
-| **Roteiro do primeiro dia em Barcelona** (p203, T4-A) | **14/10 (hoje)** | **21/10** | Barcelona (18/10) |
-| Paris em 1 dia: o que deu e o que faltou (p213) | 28/10 | 11/11 | Paris (08/11) |
-| Bate-volta de Bruxelas a Bruges (p223) | 11/11 | 28/10 | — |
-| Florença em 2 dias: € [total] (p233) | 25/11 | 18/11 | Florença (15/11) |
-| 2 parques da Disney: como dividimos o dia (p228) | 18/11 | 25/11 | Disney (22/11) |
-| Veneza em 2 dias: € [total] (p243) | 09/12 | 02/12 | Veneza (29/11) |
-| Amsterdam em 3 dias: o roteiro (p273) | 20/01 | 09/12 | — |
-| Lisboa em 1 noite e 1 manhã (p238) | 02/12 | 20/01 | Lisboa (17/01) |
+### Calendário completo do feed (Instagram, 14/10 a 07/02)
 
-**Por que o carrossel de hoje não é descartado.** Ele e o Reel têm o mesmo dia, mas funções diferentes:
-- **O Reel** leva a quem não segue e converte em seguidor.
-- **O carrossel** é guardado para a viagem.
+Em **negrito**, os Reels da série. As peças "fica" estão na mesma data da v3.
 
-Publicar o carrossel 4 dias antes do Reel gasta o melhor dado ("18 km") antes do episódio. Na ordem Reel → carrossel, o Reel cria o interesse e o carrossel vira o "salva o roteiro completo".
+| Data | Dia | Formato | Cidade | Peça | Em relação à v3 |
+|---|---|---|---|---|---|
+| 14/10 | qua | Carrossel | Roma | Roma de graça (ou quase): o que vimos sem pagar | vem de 04/11 |
+| 15/10 | qui | Reel | Paris | Paris: chegamos e o jardim estava fechado | fica |
+| 17/10 | sáb | Reel | Roma | Dois pores do sol de graça em Roma | fica |
+| 18/10 | dom | Reel | Barcelona | **Primeiro dia em Barcelona** | **novo** |
+| 20/10 | ter | Reel | Bruges | Vale ou pula: waffle de rua em Bruges | vem de 18/10 |
+| 21/10 | qua | Carrossel | Barcelona | Roteiro do primeiro dia em Barcelona: 18 km a pé | vem de 14/10 |
+| 22/10 | qui | Reel | Roma | Roma agora cobra pra ver isso | fica |
+| 24/10 | sáb | Reel | Barcelona | Casa Batlló: o que você vê nessa janela? | vem de 29/10 |
+| 25/10 | dom | Reel | Amsterdam | **Primeiro dia em Amsterdam** | vem de 20/10 |
+| 27/10 | ter | Reel | Barcelona | Sagrada Família: projetada como uma floresta | vem de 24/10 |
+| 28/10 | qua | Carrossel | Bruges | Bate-volta de Bruxelas a Bruges: como fizemos | vem de 11/11 |
+| 29/10 | qui | Reel | Amsterdam | Amsterdam: imagina morar nessa rua | vem de 27/10 |
+| 31/10 | sáb | Reel | Paris | Paris de dia, sem informação | vem de 13/12 |
+| 01/11 | dom | Reel | Várias | **12 cidades, 12 primeiros dias** | vem de 03/11 |
+| 03/11 | ter | Reel | Bruges | Bruges em 15 segundos (sem texto) | vem de 25/10 |
+| 04/11 | qua | Carrossel | Barcelona | Barcelona: o Gaudí que dá pra ver de graça (e o que pagamos) | vem de 21/10 |
+| 05/11 | qui | Reel | Paris | A Torre Eiffel pisca de hora em hora | vem de 07/11 |
+| 07/11 | sáb | Reel | Barcelona | € 1 cada, só às quartas: 100 Montaditos | vem de 05/11 |
+| 08/11 | dom | Reel | Paris | **Primeiro dia em Paris (e era o único)** | vem de 26/11 |
+| 10/11 | ter | Reel | Roma | € 1 pra ver esse teto em Roma | fica |
+| 11/11 | qua | Carrossel | Paris | Paris em 1 dia: o que deu e o que faltou | vem de 28/10 |
+| 12/11 | qui | Reel | Várias | Barcelona ou Madrid: qual escolher? | fica |
+| 14/11 | sáb | Reel | Disney | Disneyland Paris: o castelo ao vivo | fica |
+| 15/11 | dom | Reel | Florença | **Primeiro dia em Florença** | **novo** |
+| 17/11 | ter | Reel | Lisboa | Vale ou pula: a primeira comida em Lisboa | fica |
+| 18/11 | qua | Carrossel | Florença | Florença em 2 dias: € [total] | vem de 25/11 |
+| 19/11 | qui | Reel | Amsterdam | Amsterdam em 3 dias: € [total] | fica |
+| 21/11 | sáb | Reel | Veneza | Veneza: sem carro, sem moto, só barco | fica |
+| 22/11 | dom | Reel | Disney | **Primeiro dia na Disneyland Paris** | vem de 31/10 |
+| 24/11 | ter | Reel | Várias | A passagem é só o começo (antes da Black Friday) | fica |
+| 25/11 | qua | Carrossel | Disney | 2 parques da Disney em 1 dia: como dividimos o dia | vem de 18/11 |
+| 26/11 | qui | Reel | Barcelona | Vale ou pula: La Boqueria | vem de 22/11 |
+| 28/11 | sáb | Reel | Madrid | Madrid em planos (sem informação) | fica |
+| 29/11 | dom | Reel | Veneza | **Primeiro dia em Veneza** | **novo** |
+| 01/12 | ter | Reel | Roma | Comida em Roma: a regra que segurou o orçamento | fica |
+| 02/12 | qua | Carrossel | Veneza | Veneza em 2 dias: € [total] | vem de 09/12 |
+| 03/12 | qui | Reel | Barcelona | Park Güell (sem texto) | fica |
+| 05/12 | sáb | Reel | Amsterdam | Expectativa × realidade: Amsterdam | vem de 20/12 |
+| 06/12 | dom | Reel | Madrid | **Primeiro dia em Madrid** | vem de 08/11 |
+| 08/12 | ter | Reel | Roma | Roma iluminada no Natal | fica |
+| 09/12 | qua | Carrossel | Amsterdam | Amsterdam em 3 dias: o roteiro que fizemos | vem de 20/01 |
+| 10/12 | qui | Reel | Madrid | Madrid em 2 dias: o que deu pra fazer | fica |
+| 12/12 | sáb | Reel | Barcelona | McDonald's da Espanha × do Brasil | fica |
+| 13/12 | dom | Reel | Milão | **Primeiro dia em Milão** | **novo** |
+| 15/12 | ter | Reel | Várias | Canais: Amsterdam ou Bruges? | vem de 06/12 |
+| 16/12 | qua | Carrossel | Roma | Natal em Roma: o que fizemos no dia 25 | fica |
+| 17/12 | qui | Reel | Bruxelas | Bruxelas em planos | fica |
+| 19/12 | sáb | Reel | Barcelona | Metrô ilimitado em Barcelona: € 27,50 por 3 dias | fica |
+| 20/12 | dom | Reel | Bruxelas | **Primeiro dia em Bruxelas** | **novo** |
+| 22/12 | ter | Reel | Roma | 52% do custo de Roma foi isso | fica |
+| 23/12 | qua | Carrossel | Disney | Disneyland Paris em 1 dia: € [total] | fica |
+| 24/12 | qui | Reel | Roma | **Nosso primeiro dia em Roma foi no Natal** | fica |
+| 26/12 | sáb | Reel | Barcelona | Vista de Barcelona do alto do Montjuïc | fica |
+| 27/12 | dom | Reel | Várias | **12 primeiros dias: qual foi o melhor?** | vem de 15/12 |
+| 29/12 | ter | Reel | Várias | Ninguém avisou desse frio | fica |
+| 30/12 | qua | Carrossel | Milão | Milão em 2 dias: € [total] | fica |
+| 31/12 | qui | Reel | Itália | Réveillon na Itália: como foi | fica |
+| 02/01 | sáb | Reel | Disney | Paris + Disney em 2 dias: dá? | fica |
+| 03/01 | dom | Reel | Bruges | **Primeiro dia em Bruges** | **novo** |
+| 05/01 | ter | Reel | Barcelona | Sagrada Família: o ingresso que precisa de antecedência | fica |
+| 06/01 | qua | Carrossel | Várias | Quanto custou cada cidade (por dia, por pessoa) | fica |
+| 07/01 | qui | Reel | Várias | 2 erros que a gente não repete | fica |
+| 09/01 | sáb | Reel | Barcelona | Vale a pena ir a Barcelona? A resposta no aeroporto | fica |
+| 10/01 | dom | Reel | Várias | **Próximo primeiro dia: [cidade 1]** | fica |
+| 12/01 | ter | Reel | Madrid | Madrid de graça: o que vimos sem pagar | fica |
+| 13/01 | qua | Carrossel | Itália | Itália em 9 dias: € [total] | fica |
+| 14/01 | qui | Reel | Amsterdam | Amsterdam de bicicleta e canal | fica |
+| 16/01 | sáb | Reel | Barcelona | Por que ficamos em Gràcia (e não no centro) | vem de 17/01 |
+| 17/01 | dom | Reel | Lisboa | **Primeira noite em Lisboa** | vem de 16/01 |
+| 19/01 | ter | Reel | Paris | Onde ver a Torre Eiffel de graça | fica |
+| 20/01 | qua | Carrossel | Lisboa | Lisboa em 1 noite e 1 manhã: o que coube | vem de 02/12 |
+| 21/01 | qui | Reel | Bruges | Bruges vista do canal | vem de 24/01 |
+| 23/01 | sáb | Reel | Viagem de jan. | Primeiro dia em [cidade 1], ao vivo | fica |
+| 24/01 | dom | Reel | Lisboa | Lisboa de manhã, com 1 informação | vem de 21/01 |
+| 26/01 | ter | Reel | Viagem de jan. | Primeira hora em [cidade 2]: € [valor real] | fica |
+| 27/01 | qua | Carrossel | Madrid | Madrid em 2 dias: € [total] | fica |
+| 28/01 | qui | Reel | Disney | Disney: o momento em que valeu | fica |
+| 30/01 | sáb | Reel | Viagem de jan. | Primeiro dia em [cidade 2 ou 3], ao vivo | fica |
+| 31/01 | dom | Reel | Várias | Qual dessas você visitaria primeiro? (sem texto) | fica |
+| 02/02 | ter | Reel | Viagem de jan. | Vale ou pula: [atração da viagem], ao vivo | fica |
+| 03/02 | qua | Carrossel | Viagem de jan. | [Cidade 1]: o primeiro dia em números | fica |
+| 04/02 | qui | Reel | Várias | Qual cidade foi a mais barata? | fica |
+| 06/02 | sáb | Reel | Viagem de jan. | Primeiro dia em [cidade 3], ao vivo | fica |
+| 07/02 | dom | Reel | Viagem de jan. | 3 países, [N] primeiros dias: o balanço | fica |
 
-**Se o carrossel do Gaudí não estiver pronto para hoje,** publique o do roteiro como estava. Nesse caso, o Reel de domingo troca o gancho para `Gastamos € [total] no primeiro dia.`, para não repetir os "18 km".
+O T2 fica com 4 peças A e 3 peças B. Se ele precisar de mais 1 peça B na Leitura 2, a candidata é "Bruges vista do canal".
+
+**Por que o carrossel do roteiro não é descartado.** Ele e o Reel de Barcelona têm o mesmo dia, mas funções diferentes: o Reel leva a quem não segue e converte em seguidor, e o carrossel é guardado para a viagem. Na ordem Reel (18/10) → carrossel (21/10), o Reel cria o interesse e o carrossel vira o "salva o roteiro completo".
+
 
 ## 7. Peças que os seus valores destravam
 
@@ -176,7 +250,7 @@ As cidades de 1 dia têm o primeiro dia igual à visita inteira. Com os seus val
 2. **Gastos do dia 1, na ordem:** o que foi, o valor, a moeda e se é por pessoa ou do casal.
 3. **Data do dia 1.** É para a cotação (PTAX do dia) e para a legenda.
 4. **Itália:** fotos de Florença, Veneza e Milão, com a data de cada primeiro dia e a cidade do Réveillon.
-5. **Para domingo (18/10):** os itens 1 a 3 de Barcelona e a resposta se o carrossel do Gaudí está pronto para hoje.
+5. **Para domingo (18/10):** os itens 1 a 3 de Barcelona.
 
 ## 10. Divergências a decidir (não resolvi por conta própria)
 
