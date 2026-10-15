@@ -113,9 +113,10 @@ A referência de conteúdo Instagram é a fonte destas regras. Consulte o docume
 5. **Calendário e testes:** planos antes, durante e depois de cada viagem.
 6. **Métricas:** interpretação dos Insights e recomendação do próximo teste.
 
-**Planejamento operacional:** o painel antigo (`planejamento/`) foi removido em 15/10/2026 (fica no commit `77585d3`). O novo painel será o HTML que o Diego enviar.
+**Planejamento operacional** (`planejamento/planejamento-primeiro-dia-v5.html`, V5 de 15/10/2026, feita sobre a V4 que o Diego enviou; a V4 fica em `planejamento/versoes/`):
 - É o painel do que publicar, quando, onde e com quais orientações. É mutável e não é regra permanente. Os documentos de referência têm precedência sobre ele, e ele não é autoridade visual.
-- Antes de propor uma produção a partir dele, confira o acervo (seção 10). Só altere o planejamento a pedido explícito do Diego.
+- Antes de propor uma produção a partir dele, confira o acervo (seção 10). Só altere o planejamento a pedido explícito do Diego. Para mudar a grade: `planejamento/scripts/` (montar com `montar_v5.py` e conferir com `validar_v5.py`).
+- O painel antigo (até a v5 de 14/10) fica no commit `77585d3`.
 
 ## 8. Critérios de qualidade
 
@@ -168,10 +169,11 @@ travel-content-studio/
 ├── CLAUDE.md        este manual
 ├── design-system/   DS V2, tokens, bundle e fontes (ver design-system/README.md)
 ├── docs/            referência de conteúdo Instagram, instrução-base do DS e padrão de revisão de áudio do YouTube
-└── acervo/          base de acervo: índice, transcrição e linha do tempo de cada cidade (Colab, 15/10/2026)
+├── acervo/          base de acervo: índice, transcrição e linha do tempo de cada cidade (Colab, 15/10/2026)
+└── planejamento/    painel V5, auditoria criativa, banco de ideias, CSVs de auditoria, scripts e versões
 ```
 
-Em 15/10/2026 o repositório foi reduzido ao básico (decisão do Diego): `planejamento/`, `carrosseis/` e `reels/apresentacao/` foram removidos e continuam no commit `77585d3`. Novos Reels voltam a usar `reels/<reel>/`.
+Em 15/10/2026 o repositório foi reduzido ao básico (decisão do Diego): o planejamento antigo, `carrosseis/` e `reels/apresentacao/` foram removidos e continuam no commit `77585d3`. O `planejamento/` atual começou com a V4 do Diego (15/10/2026). Novos Reels voltam a usar `reels/<reel>/`.
 
 - **Vídeos** (`.mp4`, `.mov`): ficam no Git LFS.
 - **Fora do git:** `fonte/` (master e brutos) e os temporários (`_tmp/`, `__pycache__/`).
@@ -226,6 +228,6 @@ Questões em aberto. Esta seção não cria regras.
 8. **Identidade verbal completa** (vocabulário, bordões recorrentes, regras de escrita) e **direção de imagem:** a V2 cobre só parte. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
 9. **Render pelo Claude:** o CLAUDE.md original dizia que o Claude entrega o plano e o Diego edita no CapCut. Mas a REV7 e a REV8 foram renderizadas por pipeline. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
 10. **Reels que não são de "primeiro dia":** o DS V2 define a estrutura e o checklist para Reels de primeiro dia, mas não para outros tipos, como o de apresentação. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
-11. **Planejamento:** o painel antigo foi removido em 15/10/2026 (commit `77585d3`). Aguarda o novo HTML do Diego.
+11. **Planejamento:** V5 em `planejamento/planejamento-primeiro-dia-v5.html` (15/10/2026). Decisões pendentes do Diego em `planejamento/AUDITORIA_CRIATIVA_V5.md`, seção 11 (destinos dos vlogs, série "Nota de soteropolitano", vereditos, familiares nos vídeos da Itália, dados de custos).
 12. **Narração da REV7:** o CLAUDE.md original apontava `Reels/rev6-referencia/narracao.m4a`. Falta confirmar se é o mesmo arquivo que `reels/apresentacao/narracao/narracao.m4a`.
 13. **Largura da caixa centralizada:** no bundle, a legenda e a legenda emocional mantêm a largura de 872 px. Centrada em x 540, a caixa vai de x 104 a 976 e passa do limite direito da zona segura (944). Uma linha com mais de 808 px ultrapassaria x 944. A largura máxima de linha não está definida pelo material atual — consultar Diego antes de estabelecer como regra.

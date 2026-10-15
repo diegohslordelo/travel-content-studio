@@ -1,0 +1,311 @@
+cenario,data,hora,id,formato,cidades,paises,resultado,detalhe
+confirmado,2026-10-15,09:00,V5-20261015-LIS-peixinhos,Reel,Lisboa,Portugal,OK,Espanha → Portugal
+confirmado,2026-10-16,12:30,V5-20261016-STO-w0,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-10-16,19:00,V5-20261016-BRU-xixi,Reel,Bruxelas,Bélgica,OK,nova sequência
+confirmado,2026-10-17,19:00,V5-20261017-MAD-show,Reel,Madrid,Espanha,OK,Bélgica → Espanha
+confirmado,2026-10-18,20:30,V5-20261018-PAR-arco,Reel,Paris,França,OK,Espanha → França
+confirmado,2026-10-19,12:30,V5-20261019-STO-w1a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-10-19,18:30,V5-20261019-CAR-lisboa-manha,Carrossel,Lisboa,Portugal,OK,nova sequência
+confirmado,2026-10-20,19:00,IG-20261020-REE-amsterdam-trailer,Reel,Amsterdam,Países Baixos,OK,Portugal → Países Baixos
+confirmado,2026-10-21,18:00,V5-20261021-GER-chegamos,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-10-22,09:00,V5-20261022-MAD-churros,Reel,Madrid,Espanha,OK,nova sequência
+confirmado,2026-10-23,12:30,V5-20261023-STO-w1b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-10-24,,YT-20261024-LONG-amsterdam,Vídeo longo (marco fixo),Amsterdam,Países Baixos,OK,nova sequência
+confirmado,2026-10-25,20:30,V5-20261025-DIS-castelo-cor,Reel,Disneyland Paris,França,OK,Países Baixos → França
+confirmado,2026-10-26,12:30,V5-20261026-STO-w2a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-10-26,18:30,IG-20261108-CAR-geral-022,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-10-27,19:00,V5-20261027-BRG-batata,Reel,Bruges,Bélgica,OK,nova sequência
+confirmado,2026-10-28,18:00,IG-20261028-REE-amsterdam-first-day,Reel,Amsterdam,Países Baixos,OK,Bélgica → Países Baixos
+confirmado,2026-10-29,09:00,V5-20261029-LIS-chuveirinho,Reel,Lisboa,Portugal,OK,Países Baixos → Portugal
+confirmado,2026-10-30,12:30,V5-20261030-STO-w2b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-10-30,18:30,V5-20261030-FOTO-cristal,Foto,Madrid,Espanha,OK,nova sequência
+confirmado,2026-11-01,20:30,V5-20261101-VEN-malas,Reel,Veneza,Itália,OK,Espanha → Itália
+confirmado,2026-11-02,12:30,V5-20261102-STO-w3a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-11-02,18:30,V5-20261102-CAR-bruges-rota,Carrossel,Bruges,Bélgica,OK,nova sequência
+confirmado,2026-11-03,19:00,V5-20261103-DIS-comece-studios,Reel,Disneyland Paris,França,OK,Bélgica → França
+confirmado,2026-11-04,18:00,V5-20261104-GER-imigracao,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-11-05,09:00,V5-20261105-AMS-febo,Reel,Amsterdam,Países Baixos,OK,nova sequência
+confirmado,2026-11-06,12:30,V5-20261106-STO-w3b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-11-07,,YT-20261107-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Geral,—,PENDENTE,Vídeo longo sem destino confirmado
+confirmado,2026-11-08,20:30,V5-20261108-MAD-debod,Reel,Madrid,Espanha,PENDENTE,Peça anterior é vídeo longo sem destino
+confirmado,2026-11-09,12:30,V5-20261109-STO-w4a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-11-09,18:30,V5-20261109-CAR-paris-rota,Carrossel,Paris,França,OK,nova sequência
+confirmado,2026-11-10,19:00,V5-20261110-ROM-batedor,Reel,Roma,Itália,OK,França → Itália
+confirmado,2026-11-11,18:00,V5-20261111-PAR-primeiro-dia,Reel,Paris,França,OK,Itália → França
+confirmado,2026-11-12,09:00,V5-20261112-BRG-cheiro,Reel,Bruges,Bélgica,OK,França → Bélgica
+confirmado,2026-11-13,12:30,V5-20261113-STO-w4b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-11-13,18:30,V5-20261113-FOTO-munttoren,Foto,Amsterdam,Países Baixos,OK,nova sequência
+confirmado,2026-11-15,20:30,V5-20261115-LIS-pastel-nata,Reel,Lisboa,Portugal,OK,Países Baixos → Portugal
+confirmado,2026-11-16,12:30,V5-20261116-STO-w5a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-11-16,18:30,V5-20261116-CAR-notas-comida,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-11-17,19:00,V5-20261117-PAR-luxemburgo,Reel,Paris,França,OK,nova sequência
+confirmado,2026-11-18,18:00,V5-20261118-BCN-sagrada-ingresso,Reel,Barcelona,Espanha,OK,França → Espanha
+confirmado,2026-11-19,09:00,V5-20261119-AMS-vondelpark,Reel,Amsterdam,Países Baixos,OK,Espanha → Países Baixos
+confirmado,2026-11-20,12:30,V5-20261120-STO-w5b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-11-21,,YT-20261121-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Geral,—,PENDENTE,Vídeo longo sem destino confirmado
+confirmado,2026-11-22,20:30,V5-20261122-BRU-atomium,Reel,Bruxelas,Bélgica,PENDENTE,Peça anterior é vídeo longo sem destino
+confirmado,2026-11-23,12:30,V5-20261123-STO-w6a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-11-23,18:30,V5-20261123-CAR-confira-antes,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-11-24,19:00,V5-20261124-MIL-sforzesco,Reel,Milão,Itália,OK,nova sequência
+confirmado,2026-11-25,18:00,V5-20261125-DIS-primeiro-dia,Reel,Disneyland Paris,França,OK,Itália → França
+confirmado,2026-11-26,09:00,V5-20261126-MAD-bernabeu,Reel,Madrid,Espanha,OK,França → Espanha
+confirmado,2026-11-27,12:30,V5-20261127-STO-w6b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-11-27,18:30,V5-20261127-FOTO-santa-luzia,Foto,Lisboa,Portugal,OK,nova sequência
+confirmado,2026-11-29,20:30,IG-20261126-REE-paris-037,Reel,Paris,França,OK,Portugal → França
+confirmado,2026-11-30,12:30,V5-20261130-STO-w7a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-11-30,18:30,V5-20261130-CAR-bruxelas-rota,Carrossel,Bruxelas,Bélgica,OK,nova sequência
+confirmado,2026-12-01,19:00,V5-20261201-AMS-bicicleta,Reel,Amsterdam,Países Baixos,OK,Bélgica → Países Baixos
+confirmado,2026-12-02,18:00,V5-20261202-GER-fechado,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-12-03,09:00,V5-20261203-PAR-torre-brilha,Reel,Paris,França,OK,nova sequência
+confirmado,2026-12-04,12:30,V5-20261204-STO-w7b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-12-05,,YT-20261205-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Geral,—,PENDENTE,Vídeo longo sem destino confirmado
+confirmado,2026-12-06,20:30,V5-20261206-LIS-miradouros,Reel,Lisboa,Portugal,PENDENTE,Peça anterior é vídeo longo sem destino
+confirmado,2026-12-07,12:30,V5-20261207-STO-w8a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-12-07,18:30,V5-20261207-CAR-madrid-rota,Carrossel,Madrid,Espanha,OK,nova sequência
+confirmado,2026-12-08,19:00,V5-20261208-FLO-duomo,Reel,Florença,Itália,OK,Espanha → Itália
+confirmado,2026-12-09,18:00,V5-20261209-MAD-primeiro-dia,Reel,Madrid,Espanha,OK,Itália → Espanha
+confirmado,2026-12-10,09:00,V5-20261210-DIS-aposta,Reel,Disneyland Paris,França,OK,Espanha → França
+confirmado,2026-12-11,12:30,V5-20261211-STO-w8b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-12-11,18:30,V5-20261211-FOTO-canal-bruges,Foto,Bruges,Bélgica,OK,nova sequência
+confirmado,2026-12-13,20:30,V5-20261213-AMS-de-pijp,Reel,Amsterdam,Países Baixos,OK,Bélgica → Países Baixos
+confirmado,2026-12-14,12:30,V5-20261214-STO-w9a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-12-14,18:30,V5-20261214-CAR-roma-natal,Carrossel,Roma,Itália,OK,nova sequência
+confirmado,2026-12-15,19:00,V5-20261215-PAR-notre-dame,Reel,Paris,França,OK,Itália → França
+confirmado,2026-12-16,18:00,V5-20261216-GER-ees,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-12-17,09:00,V5-20261217-BCN-primeiro-dia,Reel,Barcelona,Espanha,OK,nova sequência
+confirmado,2026-12-18,12:30,V5-20261218-STO-w9b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-12-19,,YT-20261219-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Geral,—,PENDENTE,Vídeo longo sem destino confirmado
+confirmado,2026-12-20,20:30,V5-20261220-MAD-sol,Reel,Madrid,Espanha,PENDENTE,Peça anterior é vídeo longo sem destino
+confirmado,2026-12-21,12:30,V5-20261221-STO-w10a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-12-21,18:30,V5-20261221-CAR-frio-marco,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-12-22,19:00,V5-20261222-PAR-maior,Reel,Paris,França,OK,nova sequência
+confirmado,2026-12-23,18:00,V5-20261223-BRU-primeiro-dia,Reel,Bruxelas,Bélgica,OK,França → Bélgica
+confirmado,2026-12-24,09:00,V5-20261224-ROM-natal,Reel,Roma,Itália,OK,Bélgica → Itália
+confirmado,2026-12-25,12:30,V5-20261225-STO-w10b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-12-27,20:30,V5-20261227-AMS-stroopwafel,Reel,Amsterdam,Países Baixos,OK,nova sequência
+confirmado,2026-12-28,12:30,V5-20261228-STO-w11a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-12-28,18:30,V5-20261228-CAR-italia-rota,Carrossel,Roma + Florença + Veneza + Milão,Itália,OK,nova sequência
+confirmado,2026-12-29,19:00,V5-20261229-GER-primeira-mordida,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2026-12-30,18:00,V5-20261230-DIS-single-rider,Reel,Disneyland Paris,França,OK,nova sequência
+confirmado,2026-12-31,09:00,V5-20261231-VEN-reveillon,Reel,Veneza,Itália,OK,França → Itália
+confirmado,2027-01-01,12:30,V5-20270101-STO-w11b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-02,,YT-20270102-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Geral,—,PENDENTE,Vídeo longo sem destino confirmado
+confirmado,2027-01-03,20:30,V5-20270103-BCN-park-guell,Reel,Barcelona,Espanha,PENDENTE,Peça anterior é vídeo longo sem destino
+confirmado,2027-01-04,12:30,V5-20270104-STO-w12a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-04,18:30,V5-20270104-CAR-chegadas,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-05,19:00,V5-20270105-FLO-por-do-sol,Reel,Florença,Itália,OK,nova sequência
+confirmado,2027-01-06,18:00,V5-20270106-BRG-primeiro-dia,Reel,Bruges,Bélgica,OK,Itália → Bélgica
+confirmado,2027-01-07,09:00,V5-20270107-GER-metodo,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-08,12:30,V5-20270108-STO-w12b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-08,18:30,V5-20270108-FOTO-castelo-rosa,Foto,Disneyland Paris,França,OK,nova sequência
+confirmado,2027-01-10,20:30,V5-20270110-LIS-alfama,Reel,Lisboa,Portugal,OK,França → Portugal
+confirmado,2027-01-11,12:30,V5-20270111-STO-w13a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-11,18:30,V5-20270111-CAR-quantos-dias,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-12,19:00,V5-20270112-GER-batata-3,Reel,Amsterdam + Bruxelas + Bruges,Bélgica + Países Baixos,OK,nova sequência
+confirmado,2027-01-13,18:00,V5-20270113-MAD-hamburguer,Reel,Madrid,Espanha,OK,Bélgica/Países Baixos → Espanha
+confirmado,2027-01-14,09:00,V5-20270114-VEN-cannaregio,Reel,Veneza,Itália,OK,Espanha → Itália
+confirmado,2027-01-15,12:30,V5-20270115-STO-w13b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-16,,YT-20270116-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Geral,—,PENDENTE,Vídeo longo sem destino confirmado
+confirmado,2027-01-17,20:30,V5-20270117-PAR-ficou-de-fora,Reel,Paris,França,PENDENTE,Peça anterior é vídeo longo sem destino
+confirmado,2027-01-18,12:30,V5-20270118-STO-w14a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-18,18:30,V5-20270118-CAR-amsterdam-rota,Carrossel,Amsterdam,Países Baixos,OK,nova sequência
+confirmado,2027-01-19,19:00,V5-20270119-ROM-vittoriano,Reel,Roma,Itália,OK,Países Baixos → Itália
+confirmado,2027-01-20,18:00,V5-20270120-LIS-primeira-noite,Reel,Lisboa,Portugal,OK,Itália → Portugal
+confirmado,2027-01-21,09:00,V5-20270121-AMS-heineken,Reel,Amsterdam,Países Baixos,OK,Portugal → Países Baixos
+confirmado,2027-01-22,12:30,V5-20270122-STO-w14b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-24,20:30,V5-20270124-BRG-santo-sangue,Reel,Bruges,Bélgica,OK,nova sequência
+confirmado,2027-01-25,12:30,V5-20270125-STO-w15a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-25,18:30,V5-20270125-CAR-rota-europa,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-26,19:00,V5-20270126-MAD-cristal,Reel,Madrid,Espanha,OK,nova sequência
+confirmado,2027-01-27,18:00,V5-20270127-GER-qual-primeiro,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-28,09:00,V5-20270128-LIS-metro-aeroporto,Reel,Lisboa,Portugal,OK,nova sequência
+confirmado,2027-01-29,12:30,V5-20270129-STO-w15b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-01-30,,YT-20270130-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Geral,—,PENDENTE,Vídeo longo sem destino confirmado
+confirmado,2027-01-31,20:30,V5-20270131-BRU-doce,Reel,Bruxelas,Bélgica,PENDENTE,Peça anterior é vídeo longo sem destino
+confirmado,2027-02-01,12:30,V5-20270201-STO-w16a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-02-01,18:30,V5-20270201-CAR-disney-rota,Carrossel,Disneyland Paris,França,OK,nova sequência
+confirmado,2027-02-02,19:00,V5-20270202-AMS-brasil,Reel,Amsterdam,Países Baixos,OK,França → Países Baixos
+confirmado,2027-02-03,18:00,V5-20270203-BCN-boqueria,Reel,Barcelona,Espanha,OK,Países Baixos → Espanha
+confirmado,2027-02-04,09:00,V5-20270204-PAR-galeries,Reel,Paris,França,OK,Espanha → França
+confirmado,2027-02-05,12:30,V5-20270205-STO-w16b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-02-05,18:30,V5-20270205-FOTO-atomium,Foto,Bruxelas,Bélgica,OK,nova sequência
+confirmado,2027-02-07,20:30,V5-20270207-LIS-castelo,Reel,Lisboa,Portugal,OK,Bélgica → Portugal
+confirmado,2027-02-08,12:30,V5-20270208-STO-w17a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-02-08,18:30,V5-20270208-CAR-vale-ou-pula,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-02-09,19:00,V5-20270209-GER-mcdonalds,Reel,Amsterdam + Bruges + Barcelona,Bélgica + Espanha + Países Baixos,OK,nova sequência
+confirmado,2027-02-10,18:00,V5-20270210-DIS-rer,Reel,Disneyland Paris,França,OK,Bélgica/Espanha/Países Baixos → França
+confirmado,2027-02-11,09:00,IG-20270211-REE-amsterdam-103,Reel,Amsterdam,Países Baixos,OK,França → Países Baixos
+confirmado,2027-02-12,12:30,V5-20270212-STO-w17b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-02-13,,YT-20270213-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Geral,—,PENDENTE,Vídeo longo sem destino confirmado
+confirmado,2027-02-14,20:30,V5-20270214-BRG-waffle,Reel,Bruges,Bélgica,PENDENTE,Peça anterior é vídeo longo sem destino
+confirmado,2027-02-15,12:30,V5-20270215-STO-w18a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-02-15,18:30,IG-20261231-REE-lisboa-067,Carrossel,Lisboa,Portugal,OK,nova sequência
+confirmado,2027-02-16,19:00,V5-20270216-MAD-palacio-real,Reel,Madrid,Espanha,OK,Portugal → Espanha
+confirmado,2027-02-17,18:00,V5-20270217-BRG-minnewater,Reel,Bruges,Bélgica,OK,Espanha → Bélgica
+confirmado,2027-02-18,09:00,IG-20261021-REEL-general-04,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-02-19,12:30,V5-20270219-STO-w18b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-02-19,18:30,V5-20270219-FOTO-notre-dame,Foto,Paris,França,OK,nova sequência
+confirmado,2027-02-21,20:30,V5-20270221-GER-despedidas,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-02-22,12:30,V5-20270222-STO-w19a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-02-22,18:30,V5-20270222-CAR-onde-comecar,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-02-23,19:00,V5-20270223-AMS-chuva,Reel,Amsterdam,Países Baixos,OK,nova sequência
+confirmado,2027-02-24,18:00,V5-20270224-BRU-grand-place,Reel,Bruxelas,Bélgica,OK,Países Baixos → Bélgica
+confirmado,2027-02-25,09:00,V5-20270225-LIS-17-graus,Reel,Lisboa,Portugal,OK,Bélgica → Portugal
+confirmado,2027-02-26,12:30,V5-20270226-STO-w19b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+confirmado,2027-02-27,,YT-20270227-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Geral,—,PENDENTE,Vídeo longo sem destino confirmado
+confirmado,2027-02-28,20:30,V5-20270228-VEN-trem,Reel,Veneza,Itália,PENDENTE,Peça anterior é vídeo longo sem destino
+provável,2026-10-15,09:00,V5-20261015-LIS-peixinhos,Reel,Lisboa,Portugal,OK,Espanha → Portugal
+provável,2026-10-16,12:30,V5-20261016-STO-w0,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-10-16,19:00,V5-20261016-BRU-xixi,Reel,Bruxelas,Bélgica,OK,nova sequência
+provável,2026-10-17,19:00,V5-20261017-MAD-show,Reel,Madrid,Espanha,OK,Bélgica → Espanha
+provável,2026-10-18,20:30,V5-20261018-PAR-arco,Reel,Paris,França,OK,Espanha → França
+provável,2026-10-19,12:30,V5-20261019-STO-w1a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-10-19,18:30,V5-20261019-CAR-lisboa-manha,Carrossel,Lisboa,Portugal,OK,nova sequência
+provável,2026-10-20,19:00,IG-20261020-REE-amsterdam-trailer,Reel,Amsterdam,Países Baixos,OK,Portugal → Países Baixos
+provável,2026-10-21,18:00,V5-20261021-GER-chegamos,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-10-22,09:00,V5-20261022-MAD-churros,Reel,Madrid,Espanha,OK,nova sequência
+provável,2026-10-23,12:30,V5-20261023-STO-w1b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-10-24,,YT-20261024-LONG-amsterdam,Vídeo longo (marco fixo),Amsterdam,Países Baixos,OK,nova sequência
+provável,2026-10-25,20:30,V5-20261025-DIS-castelo-cor,Reel,Disneyland Paris,França,OK,Países Baixos → França
+provável,2026-10-26,12:30,V5-20261026-STO-w2a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-10-26,18:30,IG-20261108-CAR-geral-022,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-10-27,19:00,V5-20261027-BRG-batata,Reel,Bruges,Bélgica,OK,nova sequência
+provável,2026-10-28,18:00,IG-20261028-REE-amsterdam-first-day,Reel,Amsterdam,Países Baixos,OK,Bélgica → Países Baixos
+provável,2026-10-29,09:00,V5-20261029-LIS-chuveirinho,Reel,Lisboa,Portugal,OK,Países Baixos → Portugal
+provável,2026-10-30,12:30,V5-20261030-STO-w2b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-10-30,18:30,V5-20261030-FOTO-cristal,Foto,Madrid,Espanha,OK,nova sequência
+provável,2026-11-01,20:30,V5-20261101-VEN-malas,Reel,Veneza,Itália,OK,Espanha → Itália
+provável,2026-11-02,12:30,V5-20261102-STO-w3a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-11-02,18:30,V5-20261102-CAR-bruges-rota,Carrossel,Bruges,Bélgica,OK,nova sequência
+provável,2026-11-03,19:00,V5-20261103-DIS-comece-studios,Reel,Disneyland Paris,França,OK,Bélgica → França
+provável,2026-11-04,18:00,V5-20261104-GER-imigracao,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-11-05,09:00,V5-20261105-AMS-febo,Reel,Amsterdam,Países Baixos,OK,nova sequência
+provável,2026-11-06,12:30,V5-20261106-STO-w3b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-11-07,,YT-20261107-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Paris,França,OK,nova sequência
+provável,2026-11-08,20:30,V5-20261108-MAD-debod,Reel,Madrid,Espanha,OK,França → Espanha
+provável,2026-11-09,12:30,V5-20261109-STO-w4a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-11-09,18:30,V5-20261109-CAR-paris-rota,Carrossel,Paris,França,OK,nova sequência
+provável,2026-11-10,19:00,V5-20261110-ROM-batedor,Reel,Roma,Itália,OK,França → Itália
+provável,2026-11-11,18:00,V5-20261111-PAR-primeiro-dia,Reel,Paris,França,OK,Itália → França
+provável,2026-11-12,09:00,V5-20261112-BRG-cheiro,Reel,Bruges,Bélgica,OK,França → Bélgica
+provável,2026-11-13,12:30,V5-20261113-STO-w4b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-11-13,18:30,V5-20261113-FOTO-munttoren,Foto,Amsterdam,Países Baixos,OK,nova sequência
+provável,2026-11-15,20:30,V5-20261115-LIS-pastel-nata,Reel,Lisboa,Portugal,OK,Países Baixos → Portugal
+provável,2026-11-16,12:30,V5-20261116-STO-w5a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-11-16,18:30,V5-20261116-CAR-notas-comida,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-11-17,19:00,V5-20261117-PAR-luxemburgo,Reel,Paris,França,OK,nova sequência
+provável,2026-11-18,18:00,V5-20261118-BCN-sagrada-ingresso,Reel,Barcelona,Espanha,OK,França → Espanha
+provável,2026-11-19,09:00,V5-20261119-AMS-vondelpark,Reel,Amsterdam,Países Baixos,OK,Espanha → Países Baixos
+provável,2026-11-20,12:30,V5-20261120-STO-w5b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-11-21,,YT-20261121-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Disneyland Paris,França,OK,nova sequência
+provável,2026-11-22,20:30,V5-20261122-BRU-atomium,Reel,Bruxelas,Bélgica,OK,França → Bélgica
+provável,2026-11-23,12:30,V5-20261123-STO-w6a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-11-23,18:30,V5-20261123-CAR-confira-antes,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-11-24,19:00,V5-20261124-MIL-sforzesco,Reel,Milão,Itália,OK,nova sequência
+provável,2026-11-25,18:00,V5-20261125-DIS-primeiro-dia,Reel,Disneyland Paris,França,OK,Itália → França
+provável,2026-11-26,09:00,V5-20261126-MAD-bernabeu,Reel,Madrid,Espanha,OK,França → Espanha
+provável,2026-11-27,12:30,V5-20261127-STO-w6b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-11-27,18:30,V5-20261127-FOTO-santa-luzia,Foto,Lisboa,Portugal,OK,nova sequência
+provável,2026-11-29,20:30,IG-20261126-REE-paris-037,Reel,Paris,França,OK,Portugal → França
+provável,2026-11-30,12:30,V5-20261130-STO-w7a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-11-30,18:30,V5-20261130-CAR-bruxelas-rota,Carrossel,Bruxelas,Bélgica,OK,nova sequência
+provável,2026-12-01,19:00,V5-20261201-AMS-bicicleta,Reel,Amsterdam,Países Baixos,OK,Bélgica → Países Baixos
+provável,2026-12-02,18:00,V5-20261202-GER-fechado,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-12-03,09:00,V5-20261203-PAR-torre-brilha,Reel,Paris,França,OK,nova sequência
+provável,2026-12-04,12:30,V5-20261204-STO-w7b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-12-05,,YT-20261205-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Madrid,Espanha,OK,nova sequência
+provável,2026-12-06,20:30,V5-20261206-LIS-miradouros,Reel,Lisboa,Portugal,OK,Espanha → Portugal
+provável,2026-12-07,12:30,V5-20261207-STO-w8a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-12-07,18:30,V5-20261207-CAR-madrid-rota,Carrossel,Madrid,Espanha,OK,nova sequência
+provável,2026-12-08,19:00,V5-20261208-FLO-duomo,Reel,Florença,Itália,OK,Espanha → Itália
+provável,2026-12-09,18:00,V5-20261209-MAD-primeiro-dia,Reel,Madrid,Espanha,OK,Itália → Espanha
+provável,2026-12-10,09:00,V5-20261210-DIS-aposta,Reel,Disneyland Paris,França,OK,Espanha → França
+provável,2026-12-11,12:30,V5-20261211-STO-w8b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-12-11,18:30,V5-20261211-FOTO-canal-bruges,Foto,Bruges,Bélgica,OK,nova sequência
+provável,2026-12-13,20:30,V5-20261213-AMS-de-pijp,Reel,Amsterdam,Países Baixos,OK,Bélgica → Países Baixos
+provável,2026-12-14,12:30,V5-20261214-STO-w9a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-12-14,18:30,V5-20261214-CAR-roma-natal,Carrossel,Roma,Itália,OK,nova sequência
+provável,2026-12-15,19:00,V5-20261215-PAR-notre-dame,Reel,Paris,França,OK,Itália → França
+provável,2026-12-16,18:00,V5-20261216-GER-ees,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-12-17,09:00,V5-20261217-BCN-primeiro-dia,Reel,Barcelona,Espanha,OK,nova sequência
+provável,2026-12-18,12:30,V5-20261218-STO-w9b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-12-19,,YT-20261219-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Bruxelas,Bélgica,OK,nova sequência
+provável,2026-12-20,20:30,V5-20261220-MAD-sol,Reel,Madrid,Espanha,OK,Bélgica → Espanha
+provável,2026-12-21,12:30,V5-20261221-STO-w10a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-12-21,18:30,V5-20261221-CAR-frio-marco,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-12-22,19:00,V5-20261222-PAR-maior,Reel,Paris,França,OK,nova sequência
+provável,2026-12-23,18:00,V5-20261223-BRU-primeiro-dia,Reel,Bruxelas,Bélgica,OK,França → Bélgica
+provável,2026-12-24,09:00,V5-20261224-ROM-natal,Reel,Roma,Itália,OK,Bélgica → Itália
+provável,2026-12-25,12:30,V5-20261225-STO-w10b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-12-27,20:30,V5-20261227-AMS-stroopwafel,Reel,Amsterdam,Países Baixos,OK,nova sequência
+provável,2026-12-28,12:30,V5-20261228-STO-w11a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-12-28,18:30,V5-20261228-CAR-italia-rota,Carrossel,Roma + Florença + Veneza + Milão,Itália,OK,nova sequência
+provável,2026-12-29,19:00,V5-20261229-GER-primeira-mordida,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2026-12-30,18:00,V5-20261230-DIS-single-rider,Reel,Disneyland Paris,França,OK,nova sequência
+provável,2026-12-31,09:00,V5-20261231-VEN-reveillon,Reel,Veneza,Itália,OK,França → Itália
+provável,2027-01-01,12:30,V5-20270101-STO-w11b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-02,,YT-20270102-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Bruges,Bélgica,OK,nova sequência
+provável,2027-01-03,20:30,V5-20270103-BCN-park-guell,Reel,Barcelona,Espanha,OK,Bélgica → Espanha
+provável,2027-01-04,12:30,V5-20270104-STO-w12a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-04,18:30,V5-20270104-CAR-chegadas,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-05,19:00,V5-20270105-FLO-por-do-sol,Reel,Florença,Itália,OK,nova sequência
+provável,2027-01-06,18:00,V5-20270106-BRG-primeiro-dia,Reel,Bruges,Bélgica,OK,Itália → Bélgica
+provável,2027-01-07,09:00,V5-20270107-GER-metodo,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-08,12:30,V5-20270108-STO-w12b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-08,18:30,V5-20270108-FOTO-castelo-rosa,Foto,Disneyland Paris,França,OK,nova sequência
+provável,2027-01-10,20:30,V5-20270110-LIS-alfama,Reel,Lisboa,Portugal,OK,França → Portugal
+provável,2027-01-11,12:30,V5-20270111-STO-w13a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-11,18:30,V5-20270111-CAR-quantos-dias,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-12,19:00,V5-20270112-GER-batata-3,Reel,Amsterdam + Bruxelas + Bruges,Bélgica + Países Baixos,OK,nova sequência
+provável,2027-01-13,18:00,V5-20270113-MAD-hamburguer,Reel,Madrid,Espanha,OK,Bélgica/Países Baixos → Espanha
+provável,2027-01-14,09:00,V5-20270114-VEN-cannaregio,Reel,Veneza,Itália,OK,Espanha → Itália
+provável,2027-01-15,12:30,V5-20270115-STO-w13b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-16,,YT-20270116-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Lisboa,Portugal,OK,nova sequência
+provável,2027-01-17,20:30,V5-20270117-PAR-ficou-de-fora,Reel,Paris,França,OK,Portugal → França
+provável,2027-01-18,12:30,V5-20270118-STO-w14a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-18,18:30,V5-20270118-CAR-amsterdam-rota,Carrossel,Amsterdam,Países Baixos,OK,nova sequência
+provável,2027-01-19,19:00,V5-20270119-ROM-vittoriano,Reel,Roma,Itália,OK,Países Baixos → Itália
+provável,2027-01-20,18:00,V5-20270120-LIS-primeira-noite,Reel,Lisboa,Portugal,OK,Itália → Portugal
+provável,2027-01-21,09:00,V5-20270121-AMS-heineken,Reel,Amsterdam,Países Baixos,OK,Portugal → Países Baixos
+provável,2027-01-22,12:30,V5-20270122-STO-w14b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-24,20:30,V5-20270124-BRG-santo-sangue,Reel,Bruges,Bélgica,OK,nova sequência
+provável,2027-01-25,12:30,V5-20270125-STO-w15a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-25,18:30,V5-20270125-CAR-rota-europa,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-26,19:00,V5-20270126-MAD-cristal,Reel,Madrid,Espanha,OK,nova sequência
+provável,2027-01-27,18:00,V5-20270127-GER-qual-primeiro,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-28,09:00,V5-20270128-LIS-metro-aeroporto,Reel,Lisboa,Portugal,OK,nova sequência
+provável,2027-01-29,12:30,V5-20270129-STO-w15b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-01-30,,YT-20270130-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Geral,—,PENDENTE,Vídeo longo sem destino confirmado
+provável,2027-01-31,20:30,V5-20270131-BRU-doce,Reel,Bruxelas,Bélgica,PENDENTE,Peça anterior é vídeo longo sem destino
+provável,2027-02-01,12:30,V5-20270201-STO-w16a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-02-01,18:30,V5-20270201-CAR-disney-rota,Carrossel,Disneyland Paris,França,OK,nova sequência
+provável,2027-02-02,19:00,V5-20270202-AMS-brasil,Reel,Amsterdam,Países Baixos,OK,França → Países Baixos
+provável,2027-02-03,18:00,V5-20270203-BCN-boqueria,Reel,Barcelona,Espanha,OK,Países Baixos → Espanha
+provável,2027-02-04,09:00,V5-20270204-PAR-galeries,Reel,Paris,França,OK,Espanha → França
+provável,2027-02-05,12:30,V5-20270205-STO-w16b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-02-05,18:30,V5-20270205-FOTO-atomium,Foto,Bruxelas,Bélgica,OK,nova sequência
+provável,2027-02-07,20:30,V5-20270207-LIS-castelo,Reel,Lisboa,Portugal,OK,Bélgica → Portugal
+provável,2027-02-08,12:30,V5-20270208-STO-w17a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-02-08,18:30,V5-20270208-CAR-vale-ou-pula,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-02-09,19:00,V5-20270209-GER-mcdonalds,Reel,Amsterdam + Bruges + Barcelona,Bélgica + Espanha + Países Baixos,OK,nova sequência
+provável,2027-02-10,18:00,V5-20270210-DIS-rer,Reel,Disneyland Paris,França,OK,Bélgica/Espanha/Países Baixos → França
+provável,2027-02-11,09:00,IG-20270211-REE-amsterdam-103,Reel,Amsterdam,Países Baixos,OK,França → Países Baixos
+provável,2027-02-12,12:30,V5-20270212-STO-w17b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-02-13,,YT-20270213-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Geral,—,PENDENTE,Vídeo longo sem destino confirmado
+provável,2027-02-14,20:30,V5-20270214-BRG-waffle,Reel,Bruges,Bélgica,PENDENTE,Peça anterior é vídeo longo sem destino
+provável,2027-02-15,12:30,V5-20270215-STO-w18a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-02-15,18:30,IG-20261231-REE-lisboa-067,Carrossel,Lisboa,Portugal,OK,nova sequência
+provável,2027-02-16,19:00,V5-20270216-MAD-palacio-real,Reel,Madrid,Espanha,OK,Portugal → Espanha
+provável,2027-02-17,18:00,V5-20270217-BRG-minnewater,Reel,Bruges,Bélgica,OK,Espanha → Bélgica
+provável,2027-02-18,09:00,IG-20261021-REEL-general-04,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-02-19,12:30,V5-20270219-STO-w18b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-02-19,18:30,V5-20270219-FOTO-notre-dame,Foto,Paris,França,OK,nova sequência
+provável,2027-02-21,20:30,V5-20270221-GER-despedidas,Reel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-02-22,12:30,V5-20270222-STO-w19a,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-02-22,18:30,V5-20270222-CAR-onde-comecar,Carrossel,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-02-23,19:00,V5-20270223-AMS-chuva,Reel,Amsterdam,Países Baixos,OK,nova sequência
+provável,2027-02-24,18:00,V5-20270224-BRU-grand-place,Reel,Bruxelas,Bélgica,OK,Países Baixos → Bélgica
+provável,2027-02-25,09:00,V5-20270225-LIS-17-graus,Reel,Lisboa,Portugal,OK,Bélgica → Portugal
+provável,2027-02-26,12:30,V5-20270226-STO-w19b,Stories,Geral,—,NEUTRO,Geral ou panorama: quebra a sequência
+provável,2027-02-27,,YT-20270227-LONG-destino-a-confirmar,Vídeo longo (marco fixo),Geral,—,PENDENTE,Vídeo longo sem destino confirmado
+provável,2027-02-28,20:30,V5-20270228-VEN-trem,Reel,Veneza,Itália,PENDENTE,Peça anterior é vídeo longo sem destino
