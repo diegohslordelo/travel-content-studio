@@ -1,10 +1,12 @@
 # Publicação · Reel "Lisboa: uma manhã" · REV1
 
-**Data planejada:** quinta-feira, 15/10/2026 · **País:** Portugal · **Cidade:** Lisboa · **Tipo:** Reel Nível B (DS V2, 5.2), pilar "Vontade de ir" com informação de lugar e hora.
+**Data planejada:** quinta-feira, 15/10/2026 · **País:** Portugal · **Cidade:** Lisboa · **Tipo:** Reel de inspiração, Nível B (DS V2, 5.2), pilar "Vontade de ir".
+
+**Decisão do Diego (15/10/2026):** o Reel inspirador não leva horário nem nome dos locais na tela. Os textos abaixo também não trazem horários. O nome da cidade e de um bairro fica só na legenda do post, como palavra-chave de busca.
 
 **Mesmo vídeo nas três plataformas:** `reels/lisboa-uma-manha/rev1/reel_lisboa_uma_manha_rev1.mp4` (1080 × 1920, 24 fps, sem marca d'água; exportado direto do pipeline, não de app de edição). O texto na tela não tem CTA nem nada específico de uma plataforma, então o arquivo serve para as três. O que muda é o texto de cada plataforma, abaixo.
 
-Os fatos de todos os textos vêm do acervo (`acervo/lisboa/`): hora de cada arquivo, GPS e falas do Diego. Nenhum valor em dinheiro (CORTES_DE_CUSTO.md).
+Os fatos de todos os textos vêm do acervo (`acervo/lisboa/`) e das falas do Diego. Nenhum valor em dinheiro (CORTES_DE_CUSTO.md).
 
 ---
 
@@ -13,21 +15,19 @@ Os fatos de todos os textos vêm do acervo (`acervo/lisboa/`): hora de cada arqu
 **Legenda (copiar):**
 
 ```
-Uma manhã em Lisboa: das 8h49 às 10h30.
+Uma manhã em Lisboa. Foi o que a gente teve.
 
-Era o que a gente tinha antes de voltar pro Brasil. Saímos da Baixa, provamos pastel de nata, passamos pela Praça do Comércio e pela Sé, subimos pro Miradouro de Santa Luzia e pras Portas do Sol, e às 10h30 a gente estava nas escadarias de Alfama, na entrada do Castelo de São Jorge.
-
-O legal de Lisboa: é tudo pertinho.
+E foi o suficiente pra eu já querer voltar: ladeira, azulejo, elétrico amarelo, pastel de nata e as escadinhas de Alfama.
 
 Manda pra quem vai pra Lisboa.
 
-#lisboa #portugal #roteirolisboa #alfama #viagemportugal
+#lisboa #portugal #alfama #viagemportugal
 ```
 
 | Item | Escolha | Por quê |
 |---|---|---|
-| 1ª linha | "Uma manhã em Lisboa: das 8h49 às 10h30." | Reforça o gancho falado ("uma manhã, praticamente") com o dado que a peça prova (referência, 3.4) |
-| Palavras-chave | Lisboa, Portugal, Baixa, Praça do Comércio, Sé, Miradouro de Santa Luzia, Portas do Sol, Alfama, Castelo de São Jorge, pastel de nata | Nomes que as pessoas buscam; todos aparecem no vídeo ou na fala do Diego |
+| 1ª linha | "Uma manhã em Lisboa. Foi o que a gente teve." | Reforça o gancho falado ("uma manhã, praticamente") (referência, 3.4) |
+| Palavras-chave | Lisboa, Portugal, Alfama, pastel de nata, elétrico, azulejo | Termos de busca que aparecem no vídeo, sem virar roteiro |
 | CTA (único) | "Manda pra quem vai pra Lisboa." (envio) | Envios são o sinal nº 2 para alcançar não seguidores (referência, 2); mesmo verbo da placa de CTA do DS (2.7) |
 | Capa | Quadro do plano 11 (Marina subindo ao lado do mural de olhos) ou do plano 8 (vista de Santa Luzia), escolhido no render | Imagem reconhecível de Lisboa, sem texto essencial na faixa que o grid corta |
 | Áudio | Original (fala do gancho + som de cada lugar). Se quiser trilha, da biblioteca do Instagram, 8 a 10 dB abaixo da voz e sem cobrir a fala do gancho (DS 4.6) | Não recomendo áudio "em alta": não verifiquei nenhum hoje |
@@ -36,16 +36,16 @@ Manda pra quem vai pra Lisboa.
 
 ## YouTube Shorts
 
-**Título (copiar, 73 caracteres):**
+**Título (copiar, 41 caracteres):**
 
 ```
-Uma manhã em Lisboa: Baixa, Sé, miradouros e Alfama (das 8h49 às 10h30)
+Uma manhã em Lisboa (e eu já quero voltar)
 ```
 
 **Descrição (copiar):**
 
 ```
-A gente tinha só uma manhã em Lisboa antes de voltar pro Brasil. Das 8h49 às 10h30: Baixa, Praça do Comércio, Sé de Lisboa, Miradouro de Santa Luzia, Portas do Sol e as escadarias de Alfama até a entrada do Castelo de São Jorge.
+A gente tinha só uma manhã em Lisboa antes de voltar pro Brasil. Foi o suficiente pra eu já querer voltar.
 
 Inscreva-se pra ver o primeiro dia em cada cidade.
 
@@ -54,8 +54,8 @@ Inscreva-se pra ver o primeiro dia em cada cidade.
 
 | Item | Escolha | Por quê |
 |---|---|---|
-| Título | Lugar + o que tem + o dado | No YouTube a busca pesa: o título diz o que a pessoa vai ver, sem depender do Instagram |
-| Abertura | A mesma: a fala "o máximo que a gente vai conhecer: uma manhã, praticamente" e a etiqueta LISBOA 08:49 no quadro 6 | Funciona sem o contexto do perfil |
+| Título | Cidade + a emoção do fecho | No YouTube a busca pesa: "Lisboa" no título; o resto promete o sentimento, não um roteiro |
+| Abertura | A mesma: a fala "o máximo que a gente vai conhecer: uma manhã, praticamente" | Funciona sem o contexto do perfil |
 | CTA (único) | Inscrição | O "manda pra quem…" é verbo do Instagram (mesma adaptação do Short p707 no planejamento) |
 | Arquivo de origem | Ver tabela "Origem" abaixo | Pedido da produção |
 
@@ -66,23 +66,23 @@ Inscreva-se pra ver o primeiro dia em cada cidade.
 **Legenda (copiar):**
 
 ```
-a gente tinha UMA manhã em lisboa antes de voltar pro brasil. das 8h49 às 10h30 deu pra isso tudo 👇 qual desses lugares entraria no seu roteiro?
+a gente tinha UMA manhã em lisboa antes de voltar pro brasil. e já deu vontade de voltar. você iria? 👇
 
-#lisboa #portugal #roteirodeviagem #oquefazeremlisboa #alfama
+#lisboa #portugal #viagem #alfama
 ```
 
 | Item | Escolha | Por quê |
 |---|---|---|
 | Tom | Minúsculas, conversa, 1 emoji só na legenda (nunca na tela: DS 3.2) | Linguagem do TikTok, mesma voz da marca |
 | Gancho | O mesmo do vídeo; a legenda repete "UMA manhã" | Consumo rápido: a tensão está na 1ª linha |
-| CTA (único) | Comentário ("qual desses lugares entraria no seu roteiro?") | Pergunta fácil de responder com um nome de lugar |
+| CTA (único) | Comentário ("você iria?") | Pergunta de sim ou não, fácil de responder |
 | Áudio | Original. Não usar som em alta sem conferir disponibilidade e pertinência no dia | Pedido da produção |
 
 ---
 
 ## Origem (arquivos e trechos)
 
-Todos os arquivos estão no Drive em `Youtube/Lisboa/` e foram gravados em 23/03/2026 (hora do arquivo, fuso de Lisboa = UTC+0 nessa data). Os trechos abaixo são os do arquivo original; os cortes que o render usa estão em `Youtube/cortes/lisboa_uma_manha/`.
+Registro interno (não vai para a tela nem para as legendas). Todos os arquivos estão no Drive em `Youtube/Lisboa/` e foram gravados em 23/03/2026 (hora do arquivo, fuso de Lisboa = UTC+0 nessa data). Os trechos abaixo são os do arquivo original; os cortes que o render usa estão em `Youtube/cortes/lisboa_uma_manha/`.
 
 | Plano | Arquivo | Hora | Trecho no original | No Reel | Lugar (GPS) |
 |---:|---|---|---|---|---|

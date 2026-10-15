@@ -1,6 +1,6 @@
 {
   "revisao": 1,
-  "_o_que_e": "Reel 'Lisboa: uma manhã'. A manhã de 23/03/2026 em Lisboa, da Baixa (08:49) ao Castelo de São Jorge (10:30), com a hora real de cada arquivo. Gancho na fala real do Diego (IMG_4282, 08:49): 'o máximo que a gente vai conhecer, uma manhã praticamente'. Nível B (DS 5.2): cortes secos, legenda Padrão, etiquetas Informação com lugar e hora, 1 objeto de marca (Bilhete) e a legenda Emocional no fecho.",
+  "_o_que_e": "Reel 'Lisboa: uma manhã', de inspiração. A manhã de 23/03/2026 em Lisboa, da Baixa ao Castelo de São Jorge, em 12 planos reais na ordem em que foram gravados. Gancho na fala real do Diego (IMG_4282, 08:49): 'o máximo que a gente vai conhecer, uma manhã praticamente'. Nível B (DS 5.2): cortes secos, legenda Padrão, 1 objeto de marca (Bilhete) e a legenda Emocional no fecho. Sem nome de lugar nem hora na tela (decisão do Diego, 15/10/2026).",
   "saida": "reel_lisboa_uma_manha_rev1.mp4",
   "saida_previa": "reel_lisboa_uma_manha_rev1_previa_leve.mp4",
   "cortes_dir": "../cortes",
@@ -299,57 +299,8 @@
     "giro_ms": 240,
     "saida_ms": 240,
     "saida_dx": 140,
-    "etiquetas": [
-      {
-        "plano": 1,
-        "rotulo": "LISBOA",
-        "hora": "08:49",
-        "de_s": 0.25,
-        "dur_s": 3.0
-      },
-      {
-        "plano": 4,
-        "rotulo": "PRAÇA DO COMÉRCIO",
-        "hora": "09:14",
-        "de_s": 0.0,
-        "dur_s": 1.9
-      },
-      {
-        "plano": 6,
-        "rotulo": "SÉ DE LISBOA",
-        "hora": "09:52",
-        "de_s": 0.0,
-        "dur_s": 1.75
-      },
-      {
-        "plano": 7,
-        "rotulo": "MIRADOURO DE SANTA LUZIA",
-        "hora": "10:03",
-        "de_s": 0.0,
-        "dur_s": 1.6
-      },
-      {
-        "plano": 9,
-        "rotulo": "PORTAS DO SOL",
-        "hora": "10:17",
-        "de_s": 0.0,
-        "dur_s": 1.55
-      },
-      {
-        "plano": 10,
-        "rotulo": "ALFAMA",
-        "hora": "10:26",
-        "de_s": 0.0,
-        "dur_s": 1.45
-      },
-      {
-        "plano": 12,
-        "rotulo": "CASTELO DE S. JORGE",
-        "hora": "10:30",
-        "de_s": 0.0,
-        "dur_s": 1.5
-      }
-    ]
+    "etiquetas": [],
+    "_decisao": "15/10/2026, Diego: o Reel inspirador não leva horário nem nome dos locais na tela. Nenhuma etiqueta Informação nesta revisão."
   },
   "bilhete": {
     "_estilo": "DS 2.4 Bilhete: papel paper-500, radius-paper, padding 24/32, shadow-paper, fibra 4%, rotação +3°, Caneta 72 px em Azul Caneta, minúsculas, máx. 2 linhas × 22 caracteres. Fonte Caneta Diego ainda não existe: provisória Reenie Beanie (DS 1.2; CLAUDE.md, pendência 7). Assinatura Escrita: o papel sobe 24 px com rotação 0 → 3° em 240 ms (ease-arrive), a letra é revelada da esquerda para a direita em 400 ms; sai descendo 40 px em 200 ms.",
