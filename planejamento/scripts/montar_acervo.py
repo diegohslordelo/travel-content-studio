@@ -101,7 +101,7 @@ def main():
     G += ['', 'Limites: a transcrição não foi ouvida por ninguém; só algumas folhas de contato foram vistas por mim (ver `planejamento/DECUPAGEM_*.md`); a Itália foi separada por cidade pelo GPS do vídeo (ou subpasta, ou hora do vizinho: `[cidade por hora]` é palpite).']
     open(os.path.join(saida, 'INDICE_GERAL.md'), 'w', encoding='utf-8').write('\n'.join(G) + '\n')
     C = ['# Cortes de custo · trechos com fala de valor, preço ou "grátis"', '',
-         'Lista automática (palavras-chave) de falas que podem conter valor. **Regra desta revisão:** nenhum valor em peça futura (`planejamento/OPORTUNIDADES_CUSTOS.md`). Estes trechos ficam fora dos cortes. A lista pode ter falso positivo (ex.: "caro" como adjetivo) e pode **não** pegar todos os valores: a transcrição erra números.', '',
+         'Lista automática (palavras-chave) de falas que podem conter valor. **Regra (CLAUDE.md, 7, Custos, 15/10/2026):** esta lista não é fonte de custo. Valores vêm do Diego na produção de cada peça; trechos com preço falado só entram num corte com os dados dele. A lista pode ter falso positivo (ex.: "caro" como adjetivo) e pode **não** pegar todos os valores: a transcrição erra números.', '',
          '| Cidade | Arquivo | De (s) | Até (s) | Fala |', '|---|---|---:|---:|---|']
     for p, f, i, j, t in cortes:
         C.append('| %s | %s | %s | %s | %s |' % (p, f, i, j, t.replace('|', '/')))

@@ -113,6 +113,20 @@ A referência de conteúdo Instagram é a fonte destas regras. Consulte o docume
 5. **Calendário e testes:** planos antes, durante e depois de cada viagem.
 6. **Métricas:** interpretação dos Insights e recomendação do próximo teste.
 
+**Posicionamento** (decisão do Diego, 15/10/2026): o Primeiro Dia não é só um perfil de vlogs. Combina vlogs e experiências pessoais, inspiração e dicas práticas (custos, roteiros, documentação, locomoção) para transformar a vontade de viajar numa viagem real. O calendário mistura esses pilares ao longo das semanas, sem blocos de um tipo só; formatos populares entram de forma seletiva. Dica geral fica separada de relato vivido.
+
+**Regra de cidades** (decisão do Diego, 14 e 15/10/2026; vale para todo planejamento):
+- Cada cidade aparece no máximo **2 dias por semana** (seg a dom) e **nunca em dias seguidos**, inclusive na virada de semana e de mês.
+- Vale para todo o ecossistema: Reels, carrosséis, Stories próprios, YouTube Shorts, TikTok, vídeos longos, trailers, teasers, conteúdos de custo e de locomoção. Stories não têm exceção automática.
+- A mesma peça criativa distribuída no mesmo dia em várias plataformas (Reel + Short + TikTok + a repercussão dela nos Stories) é **um pacote** e conta 1 aparição. Peças diferentes da mesma cidade contam separado, mesmo em formatos diferentes.
+- Toda revisão do calendário roda a auditoria (`planejamento/scripts/aplicar_v6.py` gera `AUDITORIA_CIDADES_V6.md`) e corrige as violações antes de gravar.
+
+**Custos** (decisão do Diego, 15/10/2026; substitui a suspensão de 14/10): conteúdos de custo voltam ao calendário, em equilíbrio com os outros pilares. No planejamento, a peça registra a ideia, a data, o formato e **quais dados serão necessários**, com o status "Aguardando dados de custos do Diego". Os valores são fornecidos pelo Diego **na produção de cada peça**. O Claude não extrai valores falados nos vídeos, não estima, não completa lacunas e não usa valores de outras pessoas. Cálculos sobre valores fornecidos são feitos na produção e apresentados para validação. Os registros originais de custo são preservados.
+
+**Lançamentos do YouTube** (decisão do Diego, 15/10/2026): as datas dos vídeos longos não mudam por causa das redes. Cada vídeo longo tem trailer (antes), Reel "Primeiro dia em…" (no dia) e teaser (depois, corte do próprio vídeo), com funções diferentes. O Reel "Primeiro dia em…" ligado a um vídeo longo e o próprio vídeo longo têm o **Placar** de custos (DS V2, 2.5), coerentes entre si, e o vídeo longo termina com o resumo de gastos por dia e o total sem passagens aéreas. Sem os dados do Diego, fica a pendência; nunca número inferido.
+
+**Plataformas:** Instagram (Reels, carrosséis, Stories), YouTube (vídeos longos e Shorts) e TikTok, cada um com função própria; reaproveitar a mesma edição quando servir e especificar a adaptação quando for melhor. Áudio ou tendência do TikTok só depois de conferir no dia.
+
 **Planejamento operacional** (`planejamento-postagens.html`):
 - É o painel do que publicar, quando, onde e com quais orientações. É mutável e não é regra permanente. Os documentos de referência têm precedência sobre ele, e ele não é autoridade visual.
 - Antes de propor uma produção a partir dele, confira o acervo (seção 10). Só altere o planejamento a pedido explícito do Diego.
@@ -149,9 +163,9 @@ Complementa esta lista o checklist pré-publicação da referência de conteúdo
 
 O acervo atual é de viagens que já aconteceram: **Barcelona** (3 dias) · **Amsterdam** (3 dias) · **Bruxelas** (1 dia) · **Bruges** (bate-volta de Bruxelas, 1 dia) · **Paris** (1 dia) · **Disney** (1 dia, 2 parques) · **Madrid** (2 dias) · **Lisboa** (1 dia).
 
-O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias em 4 cidades, de 23/12/2024 a 04/01/2025). Em 05/10/2026 o Diego informou só fotos e registro de custos; em 14/10/2026 ele enviou ao Drive **214 vídeos** da Itália (Roma 72, Florença 83, Veneza 37, Milão 18, mais 4 sem cidade), separados por cidade pelo GPS. O uso de vídeo da Itália em Reels depende de decisão do Diego (pendência D1 em `planejamento/REVISAO_V5.md`).
+O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias em 4 cidades, de 23/12/2024 a 04/01/2025). Em 05/10/2026 o Diego informou só fotos e registro de custos; em 14/10/2026 ele enviou ao Drive **214 vídeos** da Itália (Roma 72, Florença 83, Veneza 37, Milão 18, mais 4 sem cidade), separados por cidade pelo GPS. Regra (decisão do Diego, 15/10/2026): **fotos da Itália só em carrossel**, não em Reel de fotos; os **vídeos** reais da Itália podem ir para Reels, Shorts, Stories e TikTok. A viagem foi em família (5 pessoas): outras pessoas só aparecem com a autorização confirmada pelo Diego.
 
-**Base de acervo** (decisão do Diego, 15/10/2026): o conteúdo de todas as viagens está catalogado em `acervo/` (índice geral, e por cidade o índice dos vídeos, a transcrição automática e a linha do tempo dia a dia), gerado da análise do Colab. É a **primeira fonte para saber o que existe** antes de propor uma pauta. Limites: a transcrição não foi ouvida por ninguém e erra nomes; a hora é a do arquivo; arquivos com nome de código são exportações (data não confiável); `acervo/CORTES_DE_CUSTO.md` lista as falas com possível valor, que ficam fora de peças enquanto não houver revisão de custos. Os vídeos e as folhas de contato ficam no Drive. Para refazer: `planejamento/COLAB_ANALISE.md`.
+**Base de acervo** (decisão do Diego, 15/10/2026): o conteúdo de todas as viagens está catalogado em `acervo/` (índice geral, e por cidade o índice dos vídeos, a transcrição automática e a linha do tempo dia a dia), gerado da análise do Colab. É a **primeira fonte para saber o que existe** antes de propor uma pauta. Limites: a transcrição não foi ouvida por ninguém e erra nomes; a hora é a do arquivo; arquivos com nome de código são exportações (data não confiável); `acervo/CORTES_DE_CUSTO.md` lista as falas com possível valor (lista automática): elas não são fonte de custo; valores vêm do Diego na produção (seção 7, Custos). Os vídeos e as folhas de contato ficam no Drive. Para refazer: `planejamento/COLAB_ANALISE.md`.
 
 - **Não é possível refilmar** essas viagens. Não presuma que o Diego possa voltar ou gravar uma cena contextual nova.
 - **Não crie cenas falsas** para representar acontecimentos que não foram gravados.

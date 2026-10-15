@@ -2,7 +2,9 @@
 
 **Data:** 14/10/2026 · **Entrega G da revisão v5** (`REVISAO_V5.md`)
 
-**Decisão do Diego (14/10):** nesta revisão não há peças de custo. Este documento só guarda as ideias e diz onde estão os registros. Ele **não traz valores, cálculos, estimativas nem datas reservadas**. Nenhum registro original foi alterado.
+**Atualização de 15/10/2026 (v6, decisão do Diego):** os custos voltaram ao calendário. As peças de custo agora têm data e ficam com o status **“Aguardando dados de custos do Diego”**: o painel lista, em cada uma, os dados necessários; os valores são fornecidos pelo Diego na produção de cada peça. Este documento continua **sem valores, cálculos ou estimativas**, e nenhum registro original foi alterado.
+
+**Decisão anterior (14/10, substituída):** nesta revisão não há peças de custo.
 
 ## 1. Onde estão os registros (só referência)
 
@@ -46,3 +48,20 @@
 2. Conferir cada valor no registro original. Sem registro, não há Placar (DS V2, 2.5).
 3. Escolher as peças desta lista e encaixá-las respeitando a regra de cidades (rodar `scripts/aplicar_v5.py`).
 4. Os vlogs (24/10, 07/11, 21/11, 05/12, 19/12, 02/01, 16/01) são editados pelo Diego. Se tiverem um trecho de gastos, a decisão de publicar é dele (pendência registrada em cada vlog no painel).
+
+## 5. No calendário v6 (15/10/2026)
+
+| ID | Data | Formato | Peça | Dados que o Diego fornece na produção |
+|---|---|---|---|---|
+| p851 | 11/11 | Carrossel | Roma: o que foi de graça e o que foi pago (sucede o p218 adiado) | Confirmação dos valores do registro de Roma (dez/2024, por pessoa) e das regras de 2026 |
+| p229 | 17/11 | Reel | Amsterdam em 3 dias: quanto gastamos | Gastos de 12 a 15/03 por categoria, escopo e cotação |
+| p250 | 06/12 | Reel | Metrô de Barcelona: passe ou avulso? | O que vocês compraram e quanto pagaram; tarifa atual conferida em fonte oficial |
+| p253 | 07/01 | Reel | Quanto custa um dia nos 2 parques da Disney | Ingresso, trem, comida, compras, por pessoa ou casal |
+| p278 | 26/01 | Reel | Madrid: quanto custou comer em 3 dias | Gastos de comida de 19 a 21/03 |
+| p237 | 03/02 | Carrossel | Comida em Roma: a regra que segurou o orçamento | Confirmação de “comida e bebida” do registro de Roma |
+| p829 | 13/02 | Reel | Amsterdam: o passe de transporte | O passe que compraram e o valor |
+| p232 | 17/02 | Carrossel | A passagem é só o começo (categorias da viagem de março) | Totais por categoria, sem passagem aérea internacional |
+| p263 | 24/02 | Carrossel | Quanto custou cada cidade por dia | Total por cidade e dias, mesmo critério |
+| Reels “Primeiro dia” ligados a vlog e os 7 vlogs | ver AUDITORIA_LANCAMENTOS_V6.md | Placar e resumo final | Hora de chegada e cada gasto do dia com a hora; total por dia, do episódio e da viagem sem aéreo |
+
+A planilha “Custos de Viagens - Europa” (Drive) tem totais por categoria e parcelas, mas mistura valores pagos e orçamento: serve de ponto de partida para o Diego, não como fonte final.
