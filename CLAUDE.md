@@ -113,7 +113,7 @@ A referência de conteúdo Instagram é a fonte destas regras. Consulte o docume
 5. **Calendário e testes:** planos antes, durante e depois de cada viagem.
 6. **Métricas:** interpretação dos Insights e recomendação do próximo teste.
 
-**Planejamento operacional** (`planejamento-postagens.html`):
+**Planejamento operacional:** o painel antigo (`planejamento/`) foi removido em 15/10/2026 (fica no commit `77585d3`). O novo painel será o HTML que o Diego enviar.
 - É o painel do que publicar, quando, onde e com quais orientações. É mutável e não é regra permanente. Os documentos de referência têm precedência sobre ele, e ele não é autoridade visual.
 - Antes de propor uma produção a partir dele, confira o acervo (seção 10). Só altere o planejamento a pedido explícito do Diego.
 
@@ -149,9 +149,9 @@ Complementa esta lista o checklist pré-publicação da referência de conteúdo
 
 O acervo atual é de viagens que já aconteceram: **Barcelona** (3 dias) · **Amsterdam** (3 dias) · **Bruxelas** (1 dia) · **Bruges** (bate-volta de Bruxelas, 1 dia) · **Paris** (1 dia) · **Disney** (1 dia, 2 parques) · **Madrid** (2 dias) · **Lisboa** (1 dia).
 
-O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias em 4 cidades, de 23/12/2024 a 04/01/2025). Em 05/10/2026 o Diego informou só fotos e registro de custos; em 14/10/2026 ele enviou ao Drive **214 vídeos** da Itália (Roma 72, Florença 83, Veneza 37, Milão 18, mais 4 sem cidade), separados por cidade pelo GPS. O uso de vídeo da Itália em Reels depende de decisão do Diego (pendência D1 em `planejamento/REVISAO_V5.md`).
+O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias em 4 cidades, de 23/12/2024 a 04/01/2025). Em 05/10/2026 o Diego informou só fotos e registro de custos; em 14/10/2026 ele enviou ao Drive **214 vídeos** da Itália (Roma 72, Florença 83, Veneza 37, Milão 18, mais 4 sem cidade), separados por cidade pelo GPS. O uso de vídeo da Itália em Reels depende de decisão do Diego (pendência D1 do planejamento antigo, commit `77585d3`).
 
-**Base de acervo** (decisão do Diego, 15/10/2026): o conteúdo de todas as viagens está catalogado em `acervo/` (índice geral, e por cidade o índice dos vídeos, a transcrição automática e a linha do tempo dia a dia), gerado da análise do Colab. É a **primeira fonte para saber o que existe** antes de propor uma pauta. Limites: a transcrição não foi ouvida por ninguém e erra nomes; a hora é a do arquivo; arquivos com nome de código são exportações (data não confiável); `acervo/CORTES_DE_CUSTO.md` lista as falas com possível valor, que ficam fora de peças enquanto não houver revisão de custos. Os vídeos e as folhas de contato ficam no Drive. Para refazer: `planejamento/COLAB_ANALISE.md`.
+**Base de acervo** (decisão do Diego, 15/10/2026): o conteúdo de todas as viagens está catalogado em `acervo/` (índice geral, e por cidade o índice dos vídeos, a transcrição automática e a linha do tempo dia a dia), gerado da análise do Colab. É a **primeira fonte para saber o que existe** antes de propor uma pauta. Limites: a transcrição não foi ouvida por ninguém e erra nomes; a hora é a do arquivo; arquivos com nome de código são exportações (data não confiável); `acervo/CORTES_DE_CUSTO.md` lista as falas com possível valor, que ficam fora de peças enquanto não houver revisão de custos. Os vídeos e as folhas de contato ficam no Drive. Para refazer: `planejamento/COLAB_ANALISE.md` no commit `77585d3`.
 
 - **Não é possível refilmar** essas viagens. Não presuma que o Diego possa voltar ou gravar uma cena contextual nova.
 - **Não crie cenas falsas** para representar acontecimentos que não foram gravados.
@@ -164,15 +164,14 @@ O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias 
 
 ```
 travel-content-studio/
-├── README.md        visão geral, como baixar os vídeos (Git LFS) e como renderizar
+├── README.md        visão geral e como recuperar o que foi removido
 ├── CLAUDE.md        este manual
 ├── design-system/   DS V2, tokens, bundle e fontes (ver design-system/README.md)
 ├── docs/            referência de conteúdo Instagram, instrução-base do DS e padrão de revisão de áudio do YouTube
-├── acervo/          base de acervo: índice, transcrição e linha do tempo de cada cidade (Colab, 15/10/2026)
-├── planejamento/    painel de conteúdo (planejamento-postagens.html), análise estratégica e versões
-└── reels/
-    └── apresentacao/  Reel de apresentação do perfil (revisões, QA, scripts, análises)
+└── acervo/          base de acervo: índice, transcrição e linha do tempo de cada cidade (Colab, 15/10/2026)
 ```
+
+Em 15/10/2026 o repositório foi reduzido ao básico (decisão do Diego): `planejamento/`, `carrosseis/` e `reels/apresentacao/` foram removidos e continuam no commit `77585d3`. Novos Reels voltam a usar `reels/<reel>/`.
 
 - **Vídeos** (`.mp4`, `.mov`): ficam no Git LFS.
 - **Fora do git:** `fonte/` (master e brutos) e os temporários (`_tmp/`, `__pycache__/`).
@@ -191,7 +190,7 @@ travel-content-studio/
 
 ## 13. Decisões específicas do Reel de apresentação
 
-> **Estas decisões pertencem ao Reel de apresentação e não são regras gerais da marca.** Os detalhes estão em `reels/apresentacao/rev7/QA_REV7.md` e `reels/apresentacao/rev8/QA_REV8.md`.
+> **Estas decisões pertencem ao Reel de apresentação e não são regras gerais da marca.** Os detalhes estão em `reels/apresentacao/rev7/QA_REV7.md` e `reels/apresentacao/rev8/QA_REV8.md`, removidos do branch atual em 15/10/2026 e disponíveis no commit `77585d3`.
 
 **Natureza:** é um Reel de **apresentação do perfil**, e não um Reel de "primeiro dia em Barcelona".
 
@@ -227,6 +226,6 @@ Questões em aberto. Esta seção não cria regras.
 8. **Identidade verbal completa** (vocabulário, bordões recorrentes, regras de escrita) e **direção de imagem:** a V2 cobre só parte. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
 9. **Render pelo Claude:** o CLAUDE.md original dizia que o Claude entrega o plano e o Diego edita no CapCut. Mas a REV7 e a REV8 foram renderizadas por pipeline. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
 10. **Reels que não são de "primeiro dia":** o DS V2 define a estrutura e o checklist para Reels de primeiro dia, mas não para outros tipos, como o de apresentação. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
-11. **Planejamento:** resolvida em 05/10/2026. O painel está em `planejamento/planejamento-postagens.html` (v2), com a análise em `planejamento/ANALISE_ESTRATEGICA.md`.
+11. **Planejamento:** o painel antigo foi removido em 15/10/2026 (commit `77585d3`). Aguarda o novo HTML do Diego.
 12. **Narração da REV7:** o CLAUDE.md original apontava `Reels/rev6-referencia/narracao.m4a`. Falta confirmar se é o mesmo arquivo que `reels/apresentacao/narracao/narracao.m4a`.
 13. **Largura da caixa centralizada:** no bundle, a legenda e a legenda emocional mantêm a largura de 872 px. Centrada em x 540, a caixa vai de x 104 a 976 e passa do limite direito da zona segura (944). Uma linha com mais de 808 px ultrapassaria x 944. A largura máxima de linha não está definida pelo material atual — consultar Diego antes de estabelecer como regra.
