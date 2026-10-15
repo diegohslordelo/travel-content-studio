@@ -468,8 +468,8 @@ D['dest'].update({'ita': 'Roma (Itália)'})
 D['stmat']['dec'] = 'Decupagem pendente'
 D['saem_v5'] = [{'id': k, 'titulo': P[k]['titulo'], 'motivo': v} for k, v in V.SAEM.items() if k in P]
 NOVAS_PEND = [
-    {'k': 50, 't': 'Drive: o conector só baixa arquivos de até 10 MB (397 dos 1.851 vídeos das pastas de cidade; fora as cópias MP4 de Amsterdam, quase todos têm menos de 3 s). Para a decupagem completa: enviar cópias leves (720p) numa pasta “leve/” por cidade ou liberar outro acesso (INVENTARIO_ACERVO_V5.md, seção 1)', 'type': 'text'},
-    {'k': 51, 't': 'Florença, Veneza e Milão: as pastas existem desde 14/10, mas estão vazias. Subir fotos e vídeos para as peças italianas voltarem (BANCO_DE_IDEIAS_V5.md)', 'type': 'text'},
+    {'k': 50, 't': 'Acervo: a análise do Colab de 15/10 cobre 1.945 vídeos de 8 cidades e está em acervo/ (índice, transcrição e linha do tempo). Só algumas folhas de contato foram vistas: cada peça marca o que foi visto e o que falta ver', 'type': 'text'},
+    {'k': 51, 't': 'Florença, Veneza e Milão reabertas em 15/10 com os vídeos da pasta Itália (p301, p302, p303, p230 e p259). Em Veneza aparecem outras pessoas além de vocês dois: confirmar se podem aparecer. Milão tem pouco vídeo e não tem “primeiro dia” gravado', 'type': 'text'},
     {'k': 52, 't': 'Confirmar o que saiu de 10 a 14/10: Atomium (10/10), POV do Atomium (pedido de 12/10), Short de 11/10 e Short de 14/10. O carrossel “Roma de graça” (14/10) foi adiado por decisão do Diego: a versão sem valores é o p627, em 18/11', 'type': 'text'},
     {'k': 53, 't': 'D3: Stories ao vivo durante a viagem mostram a cidade onde você está todos os dias. Aceitar como exceção da regra de cidades ou limitar a 2 dias por cidade? (REVISAO_V5.md)', 'type': 'text'},
     {'k': 54, 't': 'Viagem de janeiro: cidades e ordem (as peças usam “cidade 1, 2 e 3”); a auditoria é refeita quando chegarem', 'type': 'text'},
@@ -479,7 +479,7 @@ NOVAS_PEND = [
 D['pend'] = [x for x in D['pend'] if x['k'] not in (32, 34, 40, 42)] + NOVAS_PEND
 for x in D['pend']:
     if x['k'] == 41:
-        x['t'] = 'D1: atualizar o CLAUDE.md, seção 10 (Itália: fotos de Roma viram Reels de fotos; Florença, Veneza e Milão sem arquivo no Drive em 14/10)'
+        x['t'] = 'D1: a Itália tem 214 vídeos (CLAUDE.md, seção 10, atualizado em 15/10). Confirmar que vídeo da Itália pode virar Reel, e se os Reels de fotos de Roma continuam'
 out = html[:m.start(1)] + json.dumps(D, ensure_ascii=False) + html[m.end(1):]
 out = out.replace("' peças no plano v4'", "' peças no plano v5'").replace('painel de conteúdo (v3)', 'painel de conteúdo (v5)')
 open(PAINEL, 'w', encoding='utf-8').write(out)

@@ -54,6 +54,14 @@ Não foram alterados: o Design System, os tokens, o bundle, a referência de con
 - Banco de ideias: seção F (F1 a F6). Regra de cidades: 0 violações.
 - O caderno agora aceita `CIDADE = 'Italia'` (pasta solta, cidade por GPS, subpasta ou hora).
 
+## 2e. Itália reaberta: Florença, Veneza e Milão (15/10, pedido do Diego)
+
+- Com os 214 vídeos da pasta Itália (acervo/italia/, separados por GPS), voltaram p301 (Primeiro dia em Florença, 12/12), p302 (Primeiro dia em Veneza, 01/12), p303 (agora “Milão em uma tarde: o Castelo Sforzesco”, 26/12), p230 (Veneza: sem carro, sem moto, só barco, 22/12) e p259 (Réveillon, 31/12).
+- **A cidade do Réveillon de 2024 é Veneza** (fogos às 00h11 e 00h12). Fatos, horas e cenas vêm do arquivo e dos quadros das folhas 01, 12, 23, 25 e 26; o que falta ver está em cada peça.
+- Para abrir as vagas, saíram p245, p251, p255, p249 e p269 (ver BANCO_DE_IDEIAS_V5.md, E5 a E9); o p609 (Lisboa) foi de 31/12 para 19/11. Três cidades novas na regra: Florença, Veneza e Milão. **0 violações.**
+- Testes: T1 A 4 e B 6; T2 A 1 e B 5 (p230 entrou como T2 A; **falta um Reel visual com texto no gancho** para equilibrar o T2); Shorts passaram de 25 para 21 (os das peças que saíram).
+- Atenção: em Veneza aparecem outras pessoas além do Diego e da Marina; Milão não tem “primeiro dia” gravado.
+
 ## 3. Testes rodados
 
 | Teste | Resultado |

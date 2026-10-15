@@ -60,9 +60,9 @@
 
 | Data | Dia | Cidade | Itens | Dias da cidade na semana | OK |
 |---|---|---|---|---:|:-:|
-| 17/11 | ter | Lisboa | Reel p227, Short p707, Stories | 1 | ✓ |
+| 17/11 | ter | Lisboa | Reel p227, Short p707, Stories | 2 | ✓ |
 | 18/11 | qua | Roma | Carrossel p627, Stories | 1 | ✓ |
-| 19/11 | qui | Bruxelas | Reel p249, Stories | 1 | ✓ |
+| 19/11 | qui | Lisboa | Reel p609, Stories | 2 | ✓ |
 | 21/11 | sáb | Disneyland Paris | Vídeo longo p76, Reel p215, Stories p78, Stories | 1 | ✓ |
 | 22/11 | dom | Madrid | Reel p606, Stories | 1 | ✓ |
 
@@ -80,7 +80,7 @@
 
 | Data | Dia | Cidade | Itens | Dias da cidade na semana | OK |
 |---|---|---|---|---:|:-:|
-| 01/12 | ter | Amsterdam | Reel p251, Short p710, Stories | 1 | ✓ |
+| 01/12 | ter | Veneza | Reel p302, Stories | 1 | ✓ |
 | 02/12 | qua | Bruxelas | Carrossel p620, Stories | 1 | ✓ |
 | 03/12 | qui | Barcelona | Reel p239, Stories | 1 | ✓ |
 | 05/12 | sáb | Madrid | Vídeo longo p97, Reel p221, Stories p99, Stories | 1 | ✓ |
@@ -90,10 +90,10 @@
 
 | Data | Dia | Cidade | Itens | Dias da cidade na semana | OK |
 |---|---|---|---|---:|:-:|
-| 08/12 | ter | Madrid | Reel p607, Short p711, Stories | 2 | ✓ |
+| 08/12 | ter | Madrid | Reel p607, Short p710, Stories | 2 | ✓ |
 | 09/12 | qua | Amsterdam | Carrossel p273, Stories | 2 | ✓ |
 | 10/12 | qui | Madrid | Reel p244, Stories | 2 | ✓ |
-| 12/12 | sáb | Barcelona | Reel p245, Short p712, Stories | 1 | ✓ |
+| 12/12 | sáb | Florença | Reel p301, Stories | 1 | ✓ |
 | 13/12 | dom | Amsterdam | Reel p241, Stories | 2 | ✓ |
 | 13/12 | dom | Bruges | Reel p241, Stories | 1 | ✓ |
 
@@ -101,7 +101,7 @@
 
 | Data | Dia | Cidade | Itens | Dias da cidade na semana | OK |
 |---|---|---|---|---:|:-:|
-| 15/12 | ter | Bruxelas | Reel p600, Short p713, Stories | 2 | ✓ |
+| 15/12 | ter | Bruxelas | Reel p600, Short p711, Stories | 2 | ✓ |
 | 16/12 | qua | Roma | Carrossel p248, Stories | 1 | ✓ |
 | 17/12 | qui | Disneyland Paris | Reel p260, Stories | 1 | ✓ |
 | 17/12 | qui | Paris | Reel p260, Stories | 1 | ✓ |
@@ -113,20 +113,20 @@
 
 | Data | Dia | Cidade | Itens | Dias da cidade na semana | OK |
 |---|---|---|---|---:|:-:|
-| 22/12 | ter | Amsterdam | Reel p269, Short p714, Stories | 1 | ✓ |
+| 22/12 | ter | Veneza | Reel p230, Stories | 1 | ✓ |
 | 23/12 | qua | Bruges | Carrossel p623, Stories | 1 | ✓ |
 | 24/12 | qui | Roma | Reel p254, Stories | 1 | ✓ |
-| 26/12 | sáb | Barcelona | Reel p255, Short p715, Stories | 1 | ✓ |
+| 26/12 | sáb | Milão | Reel p303, Stories | 1 | ✓ |
 
 ### Semana de 28/12 a 03/01/2027
 
 | Data | Dia | Cidade | Itens | Dias da cidade na semana | OK |
 |---|---|---|---|---:|:-:|
-| 29/12 | ter | Amsterdam | Reel p257, Short p716, Stories | 1 | ✓ |
-| 29/12 | ter | Barcelona | Reel p257, Short p716, Stories | 1 | ✓ |
-| 29/12 | ter | Bruges | Reel p257, Short p716, Stories | 2 | ✓ |
+| 29/12 | ter | Amsterdam | Reel p257, Short p712, Stories | 1 | ✓ |
+| 29/12 | ter | Barcelona | Reel p257, Short p712, Stories | 1 | ✓ |
+| 29/12 | ter | Bruges | Reel p257, Short p712, Stories | 2 | ✓ |
 | 30/12 | qua | Madrid | Carrossel p622, Stories | 1 | ✓ |
-| 31/12 | qui | Lisboa | Reel p609, Stories | 1 | ✓ |
+| 31/12 | qui | Veneza | Reel p259, Stories | 1 | ✓ |
 | 02/01 | sáb | Bruges | Vídeo longo p139, Reel p305, Stories p141, Stories | 2 | ✓ |
 | 03/01 | dom | Disneyland Paris | Reel p279, Stories | 1 | ✓ |
 
@@ -134,16 +134,16 @@
 
 | Data | Dia | Cidade | Itens | Dias da cidade na semana | OK |
 |---|---|---|---|---:|:-:|
-| 05/01 | ter | Barcelona | Reel p262, Short p717, Stories | 2 | ✓ |
+| 05/01 | ter | Barcelona | Reel p262, Short p713, Stories | 2 | ✓ |
 | 06/01 | qua | Disneyland Paris | Carrossel p624, Stories | 1 | ✓ |
 | 07/01 | qui | Amsterdam | Reel p602, Stories | 1 | ✓ |
-| 09/01 | sáb | Barcelona | Reel p265, Short p718, Stories | 2 | ✓ |
+| 09/01 | sáb | Barcelona | Reel p265, Short p714, Stories | 2 | ✓ |
 
 ### Semana de 11/01 a 17/01/2027
 
 | Data | Dia | Cidade | Itens | Dias da cidade na semana | OK |
 |---|---|---|---|---:|:-:|
-| 12/01 | ter | Madrid | Reel p267, Short p719, Stories | 1 | ✓ |
+| 12/01 | ter | Madrid | Reel p267, Short p715, Stories | 1 | ✓ |
 | 13/01 | qua | Lisboa | Carrossel p238, Stories | 2 | ✓ |
 | 14/01 | qui | Bruxelas | Reel p613, Stories | 1 | ✓ |
 | 16/01 | sáb | Lisboa | Vídeo longo p160, Reel p270, Stories p162, Stories | 2 | ✓ |
@@ -153,7 +153,7 @@
 
 | Data | Dia | Cidade | Itens | Dias da cidade na semana | OK |
 |---|---|---|---|---:|:-:|
-| 19/01 | ter | Bruges | Reel p276, Short p720, Stories | 1 | ✓ |
+| 19/01 | ter | Bruges | Reel p276, Short p716, Stories | 1 | ✓ |
 | 21/01 | qui | Lisboa | Reel p274, Stories | 1 | ✓ |
 | 23/01 | sáb | Viagem de janeiro · cidade 1 | Reel p275, Stories | 1 | ✓ |
 | 24/01 | dom | Paris | Reel p614, Stories | 1 | ✓ |
@@ -162,19 +162,19 @@
 
 | Data | Dia | Cidade | Itens | Dias da cidade na semana | OK |
 |---|---|---|---|---:|:-:|
-| 26/01 | ter | Viagem de janeiro · cidade 2 | Reel p277, Short p721, Stories | 2 | ✓ |
+| 26/01 | ter | Viagem de janeiro · cidade 2 | Reel p277, Short p717, Stories | 2 | ✓ |
 | 27/01 | qua | Barcelona | Carrossel p626, Stories | 1 | ✓ |
 | 28/01 | qui | Roma | Reel p615, Stories | 1 | ✓ |
-| 30/01 | sáb | Viagem de janeiro · cidade 2 | Reel p280, Short p722, Stories | 2 | ✓ |
+| 30/01 | sáb | Viagem de janeiro · cidade 2 | Reel p280, Short p718, Stories | 2 | ✓ |
 
 ### Semana de 01/02 a 07/02/2027
 
 | Data | Dia | Cidade | Itens | Dias da cidade na semana | OK |
 |---|---|---|---|---:|:-:|
-| 02/02 | ter | Viagem de janeiro · cidade 2 | Reel p282, Short p723, Stories | 1 | ✓ |
+| 02/02 | ter | Viagem de janeiro · cidade 2 | Reel p282, Short p719, Stories | 1 | ✓ |
 | 03/02 | qua | Viagem de janeiro · cidade 1 | Carrossel p283, Stories | 1 | ✓ |
 | 04/02 | qui | Amsterdam | Reel p616, Stories | 1 | ✓ |
-| 06/02 | sáb | Viagem de janeiro · cidade 3 | Reel p285, Short p724, Stories | 1 | ✓ |
+| 06/02 | sáb | Viagem de janeiro · cidade 3 | Reel p285, Short p720, Stories | 1 | ✓ |
 
 ## Dias seguidos e virada de semana
 
@@ -184,15 +184,18 @@ Verificado para todas as cidades, de 15/10/2026 a 07/02/2027, contando o domingo
 
 | Cidade | Dias |
 |---|---:|
-| Barcelona | 16 |
-| Amsterdam | 11 |
+| Barcelona | 14 |
+| Amsterdam | 9 |
 | Paris | 8 |
 | Bruges | 8 |
 | Madrid | 8 |
 | Roma | 7 |
-| Bruxelas | 6 |
 | Disneyland Paris | 6 |
+| Bruxelas | 5 |
 | Lisboa | 5 |
+| Veneza | 3 |
 | Viagem de janeiro · cidade 2 | 3 |
 | Viagem de janeiro · cidade 1 | 2 |
+| Florença | 1 |
+| Milão | 1 |
 | Viagem de janeiro · cidade 3 | 1 |
