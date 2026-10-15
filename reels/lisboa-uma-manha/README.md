@@ -10,13 +10,13 @@
 
 ## Por que este ângulo e não o "POV: você chega e quer explorar cada rua"
 
-O acervo tem uma fala real do Diego que é o gancho pronto: *"o máximo que a gente vai conhecer, uma manhã praticamente"* (IMG_4282, 08:49). Os planos seguem a ordem real da manhã (Baixa, Praça do Comércio, Sé, miradouros, Alfama, castelo), sem rótulos: as imagens contam. O POV seria uma frase genérica sobre imagens bonitas; este ângulo é próprio e verdadeiro. A outra fala real da mesma manhã, *"eu já queria voltar pra cá desde o momento que eu pisei aqui"* (IMG_4282, 27–33 s), fecha a peça como legenda Emocional.
+O acervo tem uma fala real do Diego que é o gancho pronto: *"o máximo que a gente vai conseguir conhecer em uma manhã praticamente"* (IMG_4282, 08:49). Os planos seguem a ordem real da manhã (Baixa, Praça do Comércio, Sé, miradouros, Alfama, castelo), sem rótulos: as imagens contam. O POV seria uma frase genérica sobre imagens bonitas; este ângulo é próprio e verdadeiro. A outra fala real da mesma manhã, *"eu já queria voltar pra cá desde o momento que eu pisei aqui"* (IMG_4282, 27–33 s), fecha a peça como legenda Emocional.
 
 ## Estrutura
 
 | Tempo | Etapa | Plano | Na tela |
 |---|---|---|---|
-| 0,0–3,9 s | Gancho | Selfie dos dois andando na Baixa, fala do Diego | Legenda Padrão "o máximo que / a gente vai conhecer: / uma **manhã**, praticamente." |
+| 0,0–3,9 s | Gancho | Selfie dos dois andando na Baixa, fala do Diego | Legenda Padrão "o máximo que a gente / vai conseguir conhecer / em uma **manhã**, praticamente." |
 | 3,9–22,3 s | Entrega | 10 planos, cortes secos de 1,1 a 2,5 s, na ordem real | Bilhete "o legal daqui? / é tudo pertinho." na vista de Santa Luzia |
 | 22,3–25,9 s | Fecho e loop | Arco na entrada do Castelo de São Jorge | Legenda Emocional "e eu já queria / **VOLTAR.**"; corte seco de volta ao gancho |
 

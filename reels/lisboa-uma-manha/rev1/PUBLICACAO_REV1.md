@@ -55,7 +55,7 @@ Inscreva-se pra ver o primeiro dia em cada cidade.
 | Item | Escolha | Por quê |
 |---|---|---|
 | Título | Cidade + a emoção do fecho | No YouTube a busca pesa: "Lisboa" no título; o resto promete o sentimento, não um roteiro |
-| Abertura | A mesma: a fala "o máximo que a gente vai conhecer: uma manhã, praticamente" | Funciona sem o contexto do perfil |
+| Abertura | A mesma: a fala "o máximo que a gente vai conseguir conhecer em uma manhã, praticamente" | Funciona sem o contexto do perfil |
 | CTA (único) | Inscrição | O "manda pra quem…" é verbo do Instagram (mesma adaptação do Short p707 no planejamento) |
 | Arquivo de origem | Ver tabela "Origem" abaixo | Pedido da produção |
 
@@ -100,3 +100,21 @@ Registro interno (não vai para a tela nem para as legendas). Todos os arquivos 
 | 12 | `IMG_4478.MOV` | 10:30:31 | 0.40–3.98 s | 22.29–25.88 s | Entrada do Castelo de São Jorge (+38.7122, -009.1327) |
 
 Duração total: 25.875 s (621 quadros a 24 fps). Se o render final ajustar algum trecho, a tabela de `QA_REV1.md` vale.
+
+
+## Lista de cortes final (render de 15/10/2026, `relatorio_tecnico_rev1.json`)
+
+| Plano | Arquivo | Trecho no original (s) | No Reel (s) | Cena |
+|---:|---|---|---|---|
+| 1 | `IMG_4282.MOV` | 12.27–15.10 | 0.00–2.83 | Diego e Marina andando na Baixa, selfie; fala do gancho |
+| 2 | `IMG_4284.MOV` | 0.90–2.40 | 2.83–4.33 | Marina entrando na rua |
+| 3 | `IMG_4292.MOV` | 1.20–2.28 | 4.33–5.42 | bandeja de pastéis de nata |
+| 4 | `IMG_4309.MOV` | 0.80–3.01 | 5.42–7.62 | elétrico amarelo na Praça do Comércio |
+| 5 | `IMG_4367.MOV` | 2.60–4.02 | 7.62–9.04 | estátua equestre da Praça do Comércio |
+| 6 | `IMG_4402.MOV` | 1.60–3.60 | 9.04–11.04 | Sé de Lisboa com o elétrico |
+| 7 | `IMG_4412.MOV` | 0.80–2.59 | 11.04–12.83 | violões no miradouro de Santa Luzia |
+| 8 | `IMG_4423.MOV` | 4.80–7.30 | 12.83–15.33 | telhados e o rio vistos de Santa Luzia |
+| 9 | `IMG_4461.MOV` | 0.70–2.49 | 15.33–17.12 | vista das Portas do Sol |
+| 10 | `IMG_4472.MOV` | 2.00–3.71 | 17.12–18.83 | placa 'Castelo de S. Jorge' na escadaria de Alfama |
+| 11 | `IMG_4476.MOV` | 2.60–4.60 | 18.83–20.83 | Marina subindo ao lado do mural de olhos |
+| 12 | `IMG_4478.MOV` | 0.40–3.98 | 20.83–24.42 | arco na entrada do Castelo de São Jorge |

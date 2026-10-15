@@ -27,17 +27,17 @@ import sys
 
 # arquivo, início (s), fim (s), centro do recorte (fração da largura), plano
 CORTES = [
-    ("IMG_4282.MOV", 11.0, 15.6, 0.52, "P1 gancho: 'o máximo que a gente vai conhecer, uma manhã praticamente'"),
+    ("IMG_4282.MOV", 11.0, 15.6, 0.52, "P1 gancho: 'o máximo que a gente vai conseguir conhecer em uma manhã praticamente'"),
     ("IMG_4284.MOV", 0.6, 2.6, 0.40, "P2 Marina entrando na rua (08:51)"),
     ("IMG_4292.MOV", 1.0, 2.6, 0.50, "P3 bandeja de pastéis de nata (08:58)"),
     ("IMG_4309.MOV", 0.6, 3.4, 0.45, "P4 elétrico na Praça do Comércio (09:14)"),
-    ("IMG_4367.MOV", 2.5, 7.0, 0.50, "P5 estátua e arco da Praça do Comércio (09:23)"),
+    ("IMG_4367.MOV", 2.5, 8.5, 0.60, "P5 estátua e arco da Praça do Comércio (09:23)"),
     ("IMG_4402.MOV", 1.0, 4.4, 0.48, "P6 Sé com o elétrico (09:52)"),
     ("IMG_4412.MOV", 0.5, 3.0, 0.45, "P7 violões no miradouro de Santa Luzia (10:03)"),
-    ("IMG_4423.MOV", 1.0, 5.0, 0.50, "P8 azulejos e vista de Santa Luzia (10:05)"),
+    ("IMG_4423.MOV", 3.5, 8.5, 0.50, "P8 azulejos e vista de Santa Luzia (10:05)"),
     ("IMG_4461.MOV", 0.5, 3.0, 0.50, "P9 vista das Portas do Sol (10:17)"),
     ("IMG_4472.MOV", 1.5, 4.5, 0.50, "P10 placa 'Castelo de S. Jorge' na escadaria (10:26)"),
-    ("IMG_4476.MOV", 1.0, 4.0, 0.52, "P11 Marina e o mural de olhos (10:27)"),
+    ("IMG_4476.MOV", 2.5, 7.0, 0.55, "P11 Marina e o mural de olhos (10:27)"),
     ("IMG_4478.MOV", 0.0, 4.6, 0.45, "P12 arco do castelo (10:30)"),
 ]
 PEDACO_S = 2.0

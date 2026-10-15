@@ -1,6 +1,6 @@
 {
   "revisao": 1,
-  "_o_que_e": "Reel 'Lisboa: uma manhã', de inspiração. A manhã de 23/03/2026 em Lisboa, da Baixa ao Castelo de São Jorge, em 12 planos reais na ordem em que foram gravados. Gancho na fala real do Diego (IMG_4282, 08:49): 'o máximo que a gente vai conhecer, uma manhã praticamente'. Nível B (DS 5.2): cortes secos, legenda Padrão, 1 objeto de marca (Bilhete) e a legenda Emocional no fecho. Sem nome de lugar nem hora na tela (decisão do Diego, 15/10/2026).",
+  "_o_que_e": "Reel 'Lisboa: uma manhã', de inspiração. A manhã de 23/03/2026 em Lisboa, da Baixa ao Castelo de São Jorge, em 12 planos reais na ordem em que foram gravados. Gancho na fala real do Diego (IMG_4282, 08:49): 'o máximo que a gente vai conseguir conhecer em uma manhã praticamente'. Nível B (DS 5.2): cortes secos, legenda Padrão, 1 objeto de marca (Bilhete) e a legenda Emocional no fecho. Sem nome de lugar nem hora na tela (decisão do Diego, 15/10/2026).",
   "saida": "reel_lisboa_uma_manha_rev1.mp4",
   "saida_previa": "reel_lisboa_uma_manha_rev1_previa_leve.mp4",
   "cortes_dir": "../cortes",
@@ -76,8 +76,8 @@
     {
       "n": 1,
       "arquivo": "IMG_4282.MOV",
-      "in": 11.35,
-      "out": 15.25,
+      "in": 12.27,
+      "out": 15.12,
       "x": 67,
       "hora": "08:49",
       "cena": "Diego e Marina andando na Baixa, selfie; fala do gancho",
@@ -108,7 +108,7 @@
       "arquivo": "IMG_4309.MOV",
       "in": 0.8,
       "out": 3.0,
-      "x": 67,
+      "x": 120,
       "hora": "09:14",
       "cena": "elétrico amarelo na Praça do Comércio",
       "audio": "ambiente"
@@ -116,11 +116,11 @@
     {
       "n": 5,
       "arquivo": "IMG_4367.MOV",
-      "in": 3.2,
-      "out": 4.8,
+      "in": 2.6,
+      "out": 4.0,
       "x": 67,
       "hora": "09:23",
-      "cena": "estátua e arco da Praça do Comércio",
+      "cena": "estátua equestre da Praça do Comércio",
       "audio": "ambiente"
     },
     {
@@ -146,11 +146,11 @@
     {
       "n": 8,
       "arquivo": "IMG_4423.MOV",
-      "in": 1.4,
-      "out": 3.9,
+      "in": 4.8,
+      "out": 7.3,
       "x": 67,
       "hora": "10:05",
-      "cena": "azulejos e a vista de Santa Luzia",
+      "cena": "telhados e o rio vistos de Santa Luzia",
       "audio": "ambiente"
     },
     {
@@ -176,8 +176,8 @@
     {
       "n": 11,
       "arquivo": "IMG_4476.MOV",
-      "in": 1.4,
-      "out": 3.6,
+      "in": 2.6,
+      "out": 4.6,
       "x": 67,
       "hora": "10:27",
       "cena": "Marina subindo ao lado do mural de olhos",
@@ -256,22 +256,23 @@
     },
     "grupos": [
       {
-        "texto": "o máximo que",
-        "de_fonte": 11.4,
-        "ate_fonte": 12.3
-      },
-      {
-        "texto": "a gente vai conhecer:",
+        "texto": "o máximo que a gente",
         "de_fonte": 12.3,
-        "ate_fonte": 13.6
+        "ate_fonte": 12.96
       },
       {
-        "texto": "uma *manhã*, praticamente.",
-        "de_fonte": 13.6,
-        "ate_fonte": 15.25,
-        "destaque_fonte": 13.85
+        "texto": "vai conseguir conhecer",
+        "de_fonte": 12.96,
+        "ate_fonte": 13.8
+      },
+      {
+        "texto": "em uma *manhã*, praticamente.",
+        "de_fonte": 13.8,
+        "ate_fonte": 15.12,
+        "destaque_fonte": 14.06
       }
-    ]
+    ],
+    "_tempos": "Início de cada palavra medido com faster-whisper medium (word_timestamps) no áudio do IMG_4282.MOV, 15/10/2026: o 12,30 · máximo 12,46 · … · vai 12,96 · … · em 13,80 · uma 13,96 · manhã 14,06 · praticamente 14,38–15,02. A transcrição 'small' do acervo tinha omitido 'conseguir' e 'em'."
   },
   "informacao": {
     "_estilo": "DS 3.2 Informação: etiqueta de papel (mini-recibo, paper-0) com picote no topo (furos de 6 px a cada 16 px, DS 1.6), rótulo Plex Mono 500 30 px night-500 em CAIXA-ALTA, número PD Placar 700 64 px grafite, x 72, acima da legenda; desliza da esquerda em 160 ms (ease-out) e o número gira até o valor em 240 ms. Sai pela direita em 240 ms (ease-exit). PD Placar = Barlow Condensed Bold com algarismos tabulares (DS 1.2).",

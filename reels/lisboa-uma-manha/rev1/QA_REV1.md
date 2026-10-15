@@ -1,10 +1,21 @@
 # QA · Reel "Lisboa: uma manhã" · REV1
 
-**Estado em 15/10/2026:** edição, textos, render e QA automático **prontos e testados**; o vídeo final **ainda não foi renderizado** com as imagens reais. Falta um passo do Diego: rodar o caderno `../scripts/colab_cortes.ipynb` no Colab (5 a 10 min), porque o conector do Drive não baixa os vídeos de Lisboa (4K, 13 a 134 MB cada; na prática só passam arquivos de ~2,5 MB). Assim que os 25 pedaços estiverem em `Youtube/cortes/lisboa_uma_manha/`, o Claude baixa, renderiza, confere e completa este documento.
+**Arquivo:** `rev1/reel_lisboa_uma_manha_rev1.mp4` · prévia leve `rev1/reel_lisboa_uma_manha_rev1_previa_leve.mp4` · capa `rev1/capa_reel_lisboa_uma_manha_rev1.jpg` (plano 11, sem texto).
 
-**Veredito atual:** **ajustar** (falta o render com as imagens reais e as conferências que dependem delas, seção 4).
+**Veredito: pronto**, com uma ressalva: a escuta do áudio é humana e ainda não aconteceu (o Claude não escuta).
 
----
+**Como foi feito (15/10/2026):** o Diego compartilhou a pasta `Youtube/Lisboa` por link; os 12 originais foram baixados (tamanhos iguais aos do Drive) para `fonte/lisboa/` (fora do git), os cortes saíram de `scripts/colab_cortes.py` rodado localmente e o render, de `rev1/scripts/rev1.py`. Enquadramento e trechos conferidos nas imagens reais; P5, P8 e P11 foram reajustados depois da conferência.
+
+**Decisão do Diego (15/10/2026):** sem horário nem nome de lugar na tela.
+
+| Medida | Resultado |
+|---|---|
+| Formato | 1080 × 1920, 24 fps, 586 quadros, 24.417 s, H.264 High BT.709 + AAC 48 kHz, 75.6 MB |
+| Áudio | -14.1 LUFS integrados, pico verdadeiro -1.1 dBTP (alvo −14 / ≤ −1) |
+| Quadros pretos | 0 |
+| Objetos fora da zona segura | 0 |
+| Rostos | Nenhum texto sobre rosto: a legenda do gancho fica no peito do Diego (base y 1420); Bilhete sobre céu e telhados; Emocional sobre o arco |
+| Gancho (fala exata, medida com faster-whisper medium por palavra) | "o máximo que a gente / vai conseguir conhecer / em uma **manhã**, praticamente." (0,04–2,83 s) |
 
 ## 1. Decisão editorial
 
@@ -58,16 +69,16 @@ O render de teste usou uma fonte provisória (o IMG_4479 em loop, 4K HLG, passad
 | Áudio | Master −14 LUFS, pico ≤ −1 dBTP | −14,0 LUFS, −1,1 dBTP (com a fonte de teste) | ✅ |
 | Sons `PD_*` | Só nos eventos (DS 4.6) | Nenhum: os arquivos ainda não existem (pendência 7 do CLAUDE.md). O Bilhete sai sem os 2 cliques de caneta | ⚠️ |
 
-## 4. O que só se confere com as imagens reais (fazer no render final)
+## 4. O que só se confere com as imagens reais (conferido no render final, 15/10/2026)
 
-- [ ] Enquadramento de cada plano (centro do recorte; os valores do Colab vieram das folhas de contato).
-- [ ] **Rosto:** nenhum texto sobre o rosto do Diego ou da Marina, em especial a legenda no plano 1.
-- [ ] Tempo exato das palavras do gancho (os grupos e o destaque em "manhã" estão estimados pela transcrição automática; medir na forma de onda, como na REV8).
-- [ ] Início e fim de cada plano no movimento certo (elétrico entrando no plano 4 e 6, giro dos azulejos para a vista no plano 8).
-- [ ] Nenhuma marca d'água, tela preta ou quadro congelado.
+- [x] Enquadramento de cada plano (centro do recorte; os valores do Colab vieram das folhas de contato).
+- [x] **Rosto:** nenhum texto sobre o rosto do Diego ou da Marina, em especial a legenda no plano 1.
+- [x] Tempo exato das palavras do gancho (os grupos e o destaque em "manhã" estão estimados pela transcrição automática; medir na forma de onda, como na REV8).
+- [x] Início e fim de cada plano no movimento certo (elétrico entrando no plano 4 e 6, giro dos azulejos para a vista no plano 8).
+- [x] Nenhuma marca d'água, tela preta ou quadro congelado.
 - [ ] Áudio: nível da fala do gancho, som ambiente de cada plano e os violões do plano 7. **Validação auditiva humana pendente** (o Claude não escuta áudio).
-- [ ] Teste de miniatura (270 × 480): legenda, Bilhete e Emocional legíveis.
-- [ ] Capa: escolher o quadro (plano 8 ou 11).
+- [x] Teste de miniatura (270 × 480): legenda, Bilhete e Emocional legíveis.
+- [x] Capa: escolher o quadro (plano 8 ou 11).
 
 ## 5. Pendências e conflitos registrados (sem decisão inventada)
 
@@ -77,3 +88,21 @@ O render de teste usou uma fonte provisória (o IMG_4479 em loop, 4K HLG, passad
 4. **Sons da marca:** sem `PD_*.wav` (pendência 7 do CLAUDE.md).
 5. **FPS:** 24 fps, igual ao Reel de apresentação (pendência 5 do CLAUDE.md continua aberta).
 6. **Sem nome de cidade na tela:** por decisão do Diego (15/10), nem "Lisboa" aparece no vídeo; a fala do gancho também não diz a cidade. Quem vê sem ler a legenda do post reconhece pelas imagens (elétrico, azulejos, Alfama). A legenda do post leva "Lisboa" na 1ª linha.
+
+
+## Lista de cortes final (render de 15/10/2026, `relatorio_tecnico_rev1.json`)
+
+| Plano | Arquivo | Trecho no original (s) | No Reel (s) | Cena |
+|---:|---|---|---|---|
+| 1 | `IMG_4282.MOV` | 12.27–15.10 | 0.00–2.83 | Diego e Marina andando na Baixa, selfie; fala do gancho |
+| 2 | `IMG_4284.MOV` | 0.90–2.40 | 2.83–4.33 | Marina entrando na rua |
+| 3 | `IMG_4292.MOV` | 1.20–2.28 | 4.33–5.42 | bandeja de pastéis de nata |
+| 4 | `IMG_4309.MOV` | 0.80–3.01 | 5.42–7.62 | elétrico amarelo na Praça do Comércio |
+| 5 | `IMG_4367.MOV` | 2.60–4.02 | 7.62–9.04 | estátua equestre da Praça do Comércio |
+| 6 | `IMG_4402.MOV` | 1.60–3.60 | 9.04–11.04 | Sé de Lisboa com o elétrico |
+| 7 | `IMG_4412.MOV` | 0.80–2.59 | 11.04–12.83 | violões no miradouro de Santa Luzia |
+| 8 | `IMG_4423.MOV` | 4.80–7.30 | 12.83–15.33 | telhados e o rio vistos de Santa Luzia |
+| 9 | `IMG_4461.MOV` | 0.70–2.49 | 15.33–17.12 | vista das Portas do Sol |
+| 10 | `IMG_4472.MOV` | 2.00–3.71 | 17.12–18.83 | placa 'Castelo de S. Jorge' na escadaria de Alfama |
+| 11 | `IMG_4476.MOV` | 2.60–4.60 | 18.83–20.83 | Marina subindo ao lado do mural de olhos |
+| 12 | `IMG_4478.MOV` | 0.40–3.98 | 20.83–24.42 | arco na entrada do Castelo de São Jorge |
