@@ -149,7 +149,9 @@ Complementa esta lista o checklist pré-publicação da referência de conteúdo
 
 O acervo atual é de viagens que já aconteceram: **Barcelona** (3 dias) · **Amsterdam** (3 dias) · **Bruxelas** (1 dia) · **Bruges** (bate-volta de Bruxelas, 1 dia) · **Paris** (1 dia) · **Disney** (1 dia, 2 parques) · **Madrid** (2 dias) · **Lisboa** (1 dia).
 
-O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias em 4 cidades) apenas como **fotos e registro de custos, sem vídeo** (informado pelo Diego em 05/10/2026). Serve para carrosséis, não para Reels.
+O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias em 4 cidades, de 23/12/2024 a 04/01/2025). Em 05/10/2026 o Diego informou só fotos e registro de custos; em 14/10/2026 ele enviou ao Drive **214 vídeos** da Itália (Roma 72, Florença 83, Veneza 37, Milão 18, mais 4 sem cidade), separados por cidade pelo GPS. O uso de vídeo da Itália em Reels depende de decisão do Diego (pendência D1 em `planejamento/REVISAO_V5.md`).
+
+**Base de acervo** (decisão do Diego, 15/10/2026): o conteúdo de todas as viagens está catalogado em `acervo/` (índice geral, e por cidade o índice dos vídeos, a transcrição automática e a linha do tempo dia a dia), gerado da análise do Colab. É a **primeira fonte para saber o que existe** antes de propor uma pauta. Limites: a transcrição não foi ouvida por ninguém e erra nomes; a hora é a do arquivo; arquivos com nome de código são exportações (data não confiável); `acervo/CORTES_DE_CUSTO.md` lista as falas com possível valor, que ficam fora de peças enquanto não houver revisão de custos. Os vídeos e as folhas de contato ficam no Drive. Para refazer: `planejamento/COLAB_ANALISE.md`.
 
 - **Não é possível refilmar** essas viagens. Não presuma que o Diego possa voltar ou gravar uma cena contextual nova.
 - **Não crie cenas falsas** para representar acontecimentos que não foram gravados.
@@ -166,6 +168,7 @@ travel-content-studio/
 ├── CLAUDE.md        este manual
 ├── design-system/   DS V2, tokens, bundle e fontes (ver design-system/README.md)
 ├── docs/            referência de conteúdo Instagram, instrução-base do DS e padrão de revisão de áudio do YouTube
+├── acervo/          base de acervo: índice, transcrição e linha do tempo de cada cidade (Colab, 15/10/2026)
 ├── planejamento/    painel de conteúdo (planejamento-postagens.html), análise estratégica e versões
 └── reels/
     └── apresentacao/  Reel de apresentação do perfil (revisões, QA, scripts, análises)

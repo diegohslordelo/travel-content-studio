@@ -30,7 +30,8 @@ def main():
     ent, saida = os.path.abspath(a.entrada), os.path.abspath(a.saida)
     idx = list(csv.DictReader(open(os.path.join(ent, 'acervo_indice.tsv'), encoding='utf-8', newline=''), delimiter='\t'))
     trs = list(csv.DictReader(open(os.path.join(ent, 'acervo_transcricoes.tsv'), encoding='utf-8', newline=''), delimiter='\t'))
-    resumos = json.load(open(os.path.join(ent, 'acervo_resumos.json'), encoding='utf-8')).get('resumos', {})
+    rp = os.path.join(ent, 'acervo_resumos.json')
+    resumos = json.load(open(rp, encoding='utf-8')).get('resumos', {}) if os.path.isfile(rp) else {}
     fala = defaultdict(list)
     for t in trs:
         fala[(t['pasta'], t['arquivo'])].append(t)
@@ -71,7 +72,7 @@ def main():
                 if cid:
                     L += ['## Cidade detectada: %s' % cid, '']
             tempo = sum(float(r['dur_s'] or 0) for r in grp)
-            L += ['### %s %s · %d vídeos · %.0f min' % (dia, dia_semana(dia), len(grp), tempo / 60), '',
+            L += ['### %s %s · %d vídeos · %.0f min' % (dia or 'sem data no arquivo', dia_semana(dia), len(grp), tempo / 60), '',
                   '| Hora | Arquivo | Dur. | Fala (automática) |', '|---|---|---:|---|']
             for r in grp:
                 ft = fala[(pasta, r['arquivo'])]
@@ -89,7 +90,7 @@ def main():
                                                           (txt[:170] + '…') if len(txt) > 170 else txt, flag))
             L.append('')
         open(os.path.join(d, 'linha_do_tempo.md'), 'w', encoding='utf-8').write('\n'.join(L))
-        dias = sorted({(r.get('criado') or '')[:10] for r in rows if not GUID.match(r['arquivo'])})
+        dias = sorted({(r.get('criado') or '')[:10] for r in rows if not GUID.match(r['arquivo']) and (r.get('criado') or '')[:10]})
         geral.append((pasta, len(rows), sum(float(r['dur_s'] or 0) for r in rows) / 60, sum(1 for r in rows if fala[(pasta, r['arquivo'])]),
                       sum(1 for r in rows if GUID.match(r['arquivo'])), dias[0] if dias else '', dias[-1] if dias else ''))
     G = ['# Acervo de conteúdo · índice geral', '',
