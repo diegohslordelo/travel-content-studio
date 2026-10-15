@@ -6,6 +6,7 @@ import json, os
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 script = open(os.path.join(AQUI, 'analisar_drive.py'), encoding='utf-8').read()
+consolidar = open(os.path.join(AQUI, 'consolidar_analises.py'), encoding='utf-8').read()
 
 
 def md(t):
@@ -100,6 +101,16 @@ for tentativa in range(1, 41):
         continue
     print('>>> Parou por outro erro (veja as linhas acima).')
     break
+"""),
+    md("""
+## 8 · Consolidar tudo para o Claude (rode uma vez, quando todas as cidades terminarem)
+
+As duas células abaixo juntam as análises de todas as cidades em 3 arquivos em `Youtube/analise/_acervo/`. Não analisam nada de novo e não mexem nos vídeos.
+"""),
+    code("%%writefile consolidar_analises.py\n" + consolidar),
+    code("""
+# 8b · Rodar a consolidação (precisa do Drive montado, célula 3)
+!python consolidar_analises.py --base /content/drive/MyDrive/Youtube/analise
 """),
     md("""
 ## Quando terminar

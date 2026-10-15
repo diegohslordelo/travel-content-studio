@@ -57,3 +57,7 @@ Na célula 4, use `CIDADE = 'Italia'`. O caderno liga sozinho o modo `--detectar
 4. **Exportações de editor** (nomes com código, `.mp4`) e gravações de tela têm a data da exportação: ficam `indefinida`.
 
 O `indice.tsv` ganha as colunas `cidade_detectada` e `cidade_origem` (`gps`, `pasta`, `hora` ou vazio), e as folhas saem agrupadas por cidade. Só vídeos entram (fotos não). Rode primeiro com `LIMITE = 5`, depois `0`. O material bruto não é alterado.
+
+## Consolidar para o acervo do repositório
+
+Depois de analisar todas as cidades, rode as células 8 e 8b do caderno (`consolidar_analises.py`). Elas gravam em `Youtube/analise/_acervo/`: `acervo_indice.tsv`, `acervo_transcricoes.tsv` e `acervo_resumos.json`. O Claude lê esses 3 arquivos e roda `scripts/montar_acervo.py` para gerar `acervo/` no repositório (índice por cidade, transcrição, linha do tempo dia a dia e a lista de cortes de custo).
