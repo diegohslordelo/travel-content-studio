@@ -26,6 +26,7 @@ O acervo tem uma fala real do Diego que é o gancho pronto: *"o máximo que a ge
 |---|---|
 | `scripts/colab_cortes.py` e `scripts/colab_cortes.ipynb` | Gera no Colab os cortes de cada plano (pedaços de até 2 s e 2,8 MB, HEVC 10 bits HLG, 1214 × 1920) em `Youtube/cortes/lisboa_uma_manha/`, porque o conector do Drive não baixa arquivos grandes |
 | `cortes/` | Os cortes baixados do Drive (entrada do render) |
+| `rev2/` | Revisão 2 (vigente, 15/10/2026): sem fala, muda, gancho com a placa `UMA MANHÃ EM / LISBOA →`; ver `rev2/QA_REV2.md` |
 | `rev1/` | Revisão 1: `rev1.json` (lista de cortes, textos, posições), `scripts/rev1.py` (render), `QA_REV1.md`, `PUBLICACAO_REV1.md` (textos das 3 plataformas) |
 
 ## Como renderizar

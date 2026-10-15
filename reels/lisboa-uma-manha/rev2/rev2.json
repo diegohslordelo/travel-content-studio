@@ -1,0 +1,522 @@
+{
+  "revisao": 2,
+  "_o_que_e": "REV2 do Reel 'Lisboa: uma manhã' (pedido do Diego, 15/10/2026): sem a fala e sem o plano da selfie (IMG_4282), vídeo mudo para receber música no app, gancho com a placa de abertura do DS ('UMA MANHÃ EM / LISBOA →', assinatura Chegada) sobre a vista das Portas do Sol. Mantém o Bilhete e a frase final. Parte da REV1, que não foi alterada.",
+  "saida": "reel_lisboa_uma_manha_rev2.mp4",
+  "saida_previa": "reel_lisboa_uma_manha_rev2_previa_leve.mp4",
+  "cortes_dir": "../cortes",
+  "fps": 24,
+  "sr": 48000,
+  "largura": 1080,
+  "altura": 1920,
+  "crf": 16,
+  "tokens": {
+    "_fonte": "design-system/primeiro-dia-tokens-v2.json (DS 2.2.0)",
+    "signal_500": "#FFC21A",
+    "night_900": "#121317",
+    "night_500": "#5B606B",
+    "night_300": "#C8CBD1",
+    "paper_0": "#FCFBF8",
+    "paper_500": "#F6F3EC",
+    "ink_500": "#1F3BB3",
+    "safe": {
+      "x0": 72,
+      "x1": 944,
+      "y0": 256,
+      "y1": 1440
+    },
+    "radius_paper": 3,
+    "radius_tag": 10,
+    "op_grain": 0.05,
+    "op_fiber": 0.04,
+    "op_scrim": 0.63,
+    "rot_note": 3.0,
+    "ease_arrive": [
+      0.16,
+      1.28,
+      0.36,
+      1.0
+    ],
+    "ease_out": [
+      0.2,
+      0.8,
+      0.2,
+      1.0
+    ],
+    "ease_exit": [
+      0.55,
+      0.0,
+      0.85,
+      0.35
+    ],
+    "ease_cinema": [
+      0.65,
+      0.0,
+      0.35,
+      1.0
+    ],
+    "shadow_paper": {
+      "_css": "0 1px 1px rgba(0,0,0,.20), 0 14px 26px -10px rgba(0,0,0,.50)",
+      "dura": [
+        1,
+        0.2
+      ],
+      "projetada": {
+        "y": 14,
+        "blur": 26,
+        "spread": -10,
+        "alfa": 0.5
+      }
+    }
+  },
+  "tone_mapping": {
+    "_fonte": "Método aprovado no Reel de apresentação (reels/apresentacao/scripts/render.py e RESUMO.md, Cor): HLG -> SDR Rec.709, zscale + tonemap Reinhard (pico 4,93, sem dessaturar realces) e saturação 0,88.",
+    "filtro": "zscale=tin=arib-std-b67:min=bt2020nc:pin=bt2020:rin=tv:t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=reinhard:param=0.5:peak=4.93:desat=0,zscale=t=bt709:m=bt709:r=tv:d=error_diffusion,format=yuv444p,eq=saturation=0.88"
+  },
+  "planos": [
+    {
+      "n": 1,
+      "arquivo": "IMG_4461.MOV",
+      "in": 0.5,
+      "out": 3.0,
+      "x": 67,
+      "hora": "10:17",
+      "cena": "vista das Portas do Sol (gancho, com a placa)",
+      "audio": "mudo"
+    },
+    {
+      "n": 2,
+      "arquivo": "IMG_4284.MOV",
+      "in": 0.9,
+      "out": 2.4,
+      "x": 67,
+      "hora": "08:51",
+      "cena": "Marina entrando na rua",
+      "audio": "mudo"
+    },
+    {
+      "n": 3,
+      "arquivo": "IMG_4292.MOV",
+      "in": 1.2,
+      "out": 2.28,
+      "x": 67,
+      "hora": "08:58",
+      "cena": "bandeja de pastéis de nata",
+      "audio": "mudo"
+    },
+    {
+      "n": 4,
+      "arquivo": "IMG_4309.MOV",
+      "in": 0.8,
+      "out": 3.0,
+      "x": 120,
+      "hora": "09:14",
+      "cena": "elétrico amarelo na Praça do Comércio",
+      "audio": "mudo"
+    },
+    {
+      "n": 5,
+      "arquivo": "IMG_4367.MOV",
+      "in": 2.6,
+      "out": 4.0,
+      "x": 67,
+      "hora": "09:23",
+      "cena": "estátua equestre da Praça do Comércio",
+      "audio": "mudo"
+    },
+    {
+      "n": 6,
+      "arquivo": "IMG_4402.MOV",
+      "in": 1.6,
+      "out": 3.6,
+      "x": 67,
+      "hora": "09:52",
+      "cena": "Sé de Lisboa com o elétrico",
+      "audio": "mudo"
+    },
+    {
+      "n": 7,
+      "arquivo": "IMG_4412.MOV",
+      "in": 0.8,
+      "out": 2.6,
+      "x": 67,
+      "hora": "10:03",
+      "cena": "violões no miradouro de Santa Luzia",
+      "audio": "mudo"
+    },
+    {
+      "n": 8,
+      "arquivo": "IMG_4423.MOV",
+      "in": 4.8,
+      "out": 7.3,
+      "x": 67,
+      "hora": "10:05",
+      "cena": "telhados e o rio vistos de Santa Luzia",
+      "audio": "mudo"
+    },
+    {
+      "n": 9,
+      "arquivo": "IMG_4472.MOV",
+      "in": 2.0,
+      "out": 3.7,
+      "x": 67,
+      "hora": "10:26",
+      "cena": "placa 'Castelo de S. Jorge' na escadaria de Alfama",
+      "audio": "mudo"
+    },
+    {
+      "n": 10,
+      "arquivo": "IMG_4476.MOV",
+      "in": 2.6,
+      "out": 4.6,
+      "x": 67,
+      "hora": "10:27",
+      "cena": "Marina subindo ao lado do mural de olhos",
+      "audio": "mudo"
+    },
+    {
+      "n": 11,
+      "arquivo": "IMG_4478.MOV",
+      "in": 0.4,
+      "out": 4.0,
+      "x": 67,
+      "hora": "10:30",
+      "cena": "arco na entrada do Castelo de São Jorge",
+      "audio": "mudo"
+    }
+  ],
+  "audio": {
+    "_porque": "Vídeo mudo: o Diego coloca a música no app de cada plataforma. O arquivo leva uma faixa de áudio em silêncio (AAC 48 kHz) para nenhuma plataforma estranhar o arquivo.",
+    "mudo": true
+  },
+  "legendas": {
+    "_estilo": "DS 3.2 Padrão: Barlow 700 56 px, entrelinha 1,15, #FCFBF8, sem caixa, scrim + sombra de texto, centro do canvas (x 540), base do bloco em y 1420. Grupos de 2 a 6 palavras.",
+    "fonte": "Barlow-Bold.ttf",
+    "tamanho": 56,
+    "entrelinha": 1.15,
+    "base_y": 1420,
+    "topo_min_y": 1250,
+    "centro_x": 540,
+    "max_caracteres": 26,
+    "max_linhas": 2,
+    "sombra_dura": [
+      2,
+      0.35
+    ],
+    "sombra_difusa": {
+      "blur": 24,
+      "alfa": 0.45
+    },
+    "palavra_ms": 160,
+    "palavra_sobe_px": 10,
+    "grupo_ms": 120,
+    "saida_ms": 120,
+    "saida_sobe_px": 6,
+    "destaque": {
+      "padding_v": 4,
+      "padding_h": 14,
+      "sombra_dura": [
+        3,
+        0.25
+      ],
+      "sombra_projetada": {
+        "y": 10,
+        "blur": 18,
+        "spread": -6,
+        "alfa": 0.5
+      },
+      "pop": [
+        [
+          0,
+          0.85
+        ],
+        [
+          144,
+          1.06
+        ],
+        [
+          240,
+          1.0
+        ]
+      ],
+      "opacidade_ms": 100
+    },
+    "grupos": [],
+    "_tempos": "Início de cada palavra medido com faster-whisper medium (word_timestamps) no áudio do IMG_4282.MOV, 15/10/2026: o 12,30 · máximo 12,46 · … · vai 12,96 · … · em 13,80 · uma 13,96 · manhã 14,06 · praticamente 14,38–15,02. A transcrição 'small' do acervo tinha omitido 'conseguir' e 'em'.",
+    "_rev2": "Sem legenda de fala: a fala do Diego saiu (pedido de 15/10/2026)."
+  },
+  "informacao": {
+    "_estilo": "DS 3.2 Informação: etiqueta de papel (mini-recibo, paper-0) com picote no topo (furos de 6 px a cada 16 px, DS 1.6), rótulo Plex Mono 500 30 px night-500 em CAIXA-ALTA, número PD Placar 700 64 px grafite, x 72, acima da legenda; desliza da esquerda em 160 ms (ease-out) e o número gira até o valor em 240 ms. Sai pela direita em 240 ms (ease-exit). PD Placar = Barlow Condensed Bold com algarismos tabulares (DS 1.2).",
+    "fonte_rotulo": "IBMPlexMono-Medium.ttf",
+    "fonte_numero": "BarlowCondensed-Bold.ttf",
+    "rotulo_px": 30,
+    "rotulo_tracking_em": 0.02,
+    "numero_px": 64,
+    "padding": [
+      26,
+      30,
+      18,
+      30
+    ],
+    "gap_px": 6,
+    "x": 72,
+    "base_y": 1220,
+    "picote": {
+      "furo_px": 6,
+      "passo_px": 16,
+      "y_px": 10
+    },
+    "entrada_ms": 160,
+    "entrada_dx": -140,
+    "giro_ms": 240,
+    "saida_ms": 240,
+    "saida_dx": 140,
+    "etiquetas": [],
+    "_decisao": "15/10/2026, Diego: o Reel inspirador não leva horário nem nome dos locais na tela. Nenhuma etiqueta Informação nesta revisão."
+  },
+  "bilhete": {
+    "_estilo": "DS 2.4 Bilhete: papel paper-500, radius-paper, padding 24/32, shadow-paper, fibra 4%, rotação +3°, Caneta 72 px em Azul Caneta, minúsculas, máx. 2 linhas × 22 caracteres. Fonte Caneta Diego ainda não existe: provisória Reenie Beanie (DS 1.2; CLAUDE.md, pendência 7). Assinatura Escrita: o papel sobe 24 px com rotação 0 → 3° em 240 ms (ease-arrive), a letra é revelada da esquerda para a direita em 400 ms; sai descendo 40 px em 200 ms.",
+    "texto": [
+      "o legal daqui?",
+      "é tudo pertinho."
+    ],
+    "_origem_do_texto": "Fala real do Diego em IMG_4289 (08:55): 'E o legal aqui de Portugal é que é tudo muito pertinho' e IMG_4290 (08:56): 'E o legal é que aqui é tudo perto, né?'",
+    "fonte": "ReenieBeanie.ttf",
+    "tamanho": 72,
+    "entrelinha": 1.05,
+    "padding": [
+      24,
+      32
+    ],
+    "x": 520,
+    "topo_y": 930,
+    "plano": 8,
+    "de_s": 0.3,
+    "ate_fim_do_plano_s": 0.0,
+    "entrada_ms": 240,
+    "escrita_ms": 400,
+    "saida_ms": 200
+  },
+  "emocional": {
+    "_estilo": "DS 3.2 Emocional: Barlow Condensed 88 px 300 itálico + 1 palavra 800, papel, scrim radial leve no centro (35%), centro em y 960, máx. 2 linhas × 18 caracteres, 1 por Reel. Entrada: tracking +12% → −1% e desfoque 6 → 0 px em 500 ms (ease-cinema); a palavra 800 entra 120 ms depois.",
+    "linhas": [
+      {
+        "texto": "e eu já queria",
+        "peso": 300
+      },
+      {
+        "texto": "VOLTAR.",
+        "peso": 800
+      }
+    ],
+    "_origem_do_texto": "Fala real do Diego em IMG_4282 (08:49, 27,1–33,1 s): 'eu já queria voltar pra cá, desde o momento que eu pisei aqui'.",
+    "fonte_300": "BarlowCondensed-LightItalic.ttf",
+    "fonte_800": "BarlowCondensed-ExtraBold.ttf",
+    "tamanho": 88,
+    "entrelinha": 1.0,
+    "centro_y": 960,
+    "plano": 11,
+    "de_s": 1.6,
+    "scrim_radial": {
+      "alfa": 0.35,
+      "raio_x": 560,
+      "raio_y": 300
+    }
+  },
+  "scrim": {
+    "_fonte": "DS 1.1 e 3.1: gradiente grafite 0% em y 1150 → 63% em y 1500, sempre ligado no Reel",
+    "y0": 1150,
+    "y1": 1500
+  },
+  "grao": {
+    "_fonte": "DS 4.5: grão 5% fixo no vídeo inteiro (blend overlay)",
+    "sigma_px": 0.7,
+    "semente": 20261015
+  },
+  "placa": {
+    "_estilo": "DS 2.1 Placa, estrutura da variante Abertura (linha 1 rótulo + linha 2 destino + módulo de seta), com o texto pedido pelo Diego: 'UMA MANHÃ EM' / 'LISBOA'. Face amarela esmaltada (relevo, filete, 2 rebites, grão 5%), padding 28 × 36, rótulo Condensed 600 36 px +8%, destino Condensed 800 128 px +0,5% (entrelinha 0,9, 12 px abaixo do rótulo), módulo de seta grafite quadrado com o lado = altura da placa (221 px, como no bundle; CLAUDE.md pendência 3), sombra de duas camadas. Posição fixa x 72 · y 640. Chegada (560 ms) no quadro 0 e saída pela direita (240 ms) no fim do plano do gancho. Mesmos keyframes da REV8 do Reel de apresentação.",
+    "rotulo": "UMA MANHÃ EM",
+    "destino": "LISBOA",
+    "fonte_rotulo": "BarlowCondensed-SemiBold.ttf",
+    "fonte_destino": "BarlowCondensed-ExtraBold.ttf",
+    "rotulo_px": 36,
+    "rotulo_tracking_em": 0.08,
+    "destino_px": 128,
+    "destino_tracking_em": 0.005,
+    "destino_entrelinha": 0.9,
+    "gap_px": 12,
+    "padding": [
+      28,
+      36
+    ],
+    "x": 72,
+    "y": 640,
+    "seta_fracao": 0.54,
+    "filete_inset": 10,
+    "filete_px": 2,
+    "filete_alfa": 0.25,
+    "filete_raio": 8,
+    "rebite_px": 10,
+    "rebite_x": 22,
+    "rebite_y": 24,
+    "rebite_alfa": 0.35,
+    "bevel_luz": [
+      2,
+      0.45
+    ],
+    "bevel_sombra": [
+      4,
+      0.16
+    ],
+    "sombra_dura": [
+      3,
+      0.28
+    ],
+    "sombra_projetada": {
+      "y": 18,
+      "blur": 32,
+      "spread": -10,
+      "alfa": 0.55
+    },
+    "chegada": {
+      "face_x": [
+        [
+          0,
+          -1100
+        ],
+        [
+          267,
+          24
+        ],
+        [
+          345,
+          -4
+        ],
+        [
+          400,
+          0
+        ]
+      ],
+      "rotacao": [
+        [
+          0,
+          -3.0
+        ],
+        [
+          267,
+          0.6
+        ],
+        [
+          345,
+          -0.15
+        ],
+        [
+          400,
+          0.0
+        ]
+      ],
+      "desfoque_px": [
+        [
+          0,
+          12
+        ],
+        [
+          267,
+          0
+        ]
+      ],
+      "modulo_x": [
+        [
+          0,
+          -221
+        ],
+        [
+          400,
+          -221
+        ],
+        [
+          467,
+          10
+        ],
+        [
+          567,
+          0
+        ]
+      ],
+      "sombra_y": [
+        [
+          0,
+          40
+        ],
+        [
+          400,
+          18
+        ]
+      ],
+      "sombra_alfa": [
+        [
+          0,
+          0.15
+        ],
+        [
+          400,
+          0.55
+        ]
+      ],
+      "sombra_dura_alfa": [
+        [
+          0,
+          0.0
+        ],
+        [
+          400,
+          0.28
+        ]
+      ],
+      "brilho_ms": [
+        700,
+        1300
+      ],
+      "brilho_alfa": 0.4,
+      "brilho_largura": 0.34,
+      "brilho_inclinacao_graus": -14
+    },
+    "saida": {
+      "plano": 1,
+      "duracao_ms": 240,
+      "modulo_x": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          10
+        ],
+        [
+          80,
+          0
+        ]
+      ],
+      "face_x": [
+        [
+          80,
+          0
+        ],
+        [
+          240,
+          1150
+        ]
+      ],
+      "desfoque_px": [
+        [
+          80,
+          0
+        ],
+        [
+          240,
+          12
+        ]
+      ]
+    }
+  }
+}
