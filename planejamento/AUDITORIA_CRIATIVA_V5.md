@@ -17,7 +17,7 @@ O caminho sugerido no prompt (`docs/auditoria-criativa-calendario-v5.md`) foi ad
 
 ## Atualização de 15/10/2026 (respostas do Diego)
 
-- **Ordem dos vlogs confirmada:** Amsterdam 24/10, Bruxelas 07/11, Bruges 21/11, Paris 05/12, Disney 19/12, Madrid 02/01, Lisboa 16/01. 30/01, 13/02 e 27/02 continuam sem destino. A ordem é diferente da do painel de 05/10 usada como "provável" abaixo; a grade foi refeita: os 5 Reels "Primeiro dia em X" e 4 carrosséis de roteiro foram trocados de data para cair na semana do vlog da cidade, e 9 Reels mudaram de dia para manter as regras. Resultado: 0 violações de cidade e de país; 6 transições de país pendentes (só as dos 3 vlogs sem destino).
+- **Ordem dos vlogs confirmada:** Amsterdam 24/10, Bruxelas 07/11, Bruges 21/11, Paris 05/12, Disney 19/12, Madrid 02/01, Lisboa 16/01. 30/01, 13/02 e 27/02 continuam sem destino. A ordem é diferente da do painel de 05/10 usada como "provável" abaixo; a grade foi refeita: os 5 Reels "Primeiro dia em X" e 4 carrosséis de roteiro foram trocados de data para cair na semana do vlog da cidade, e 11 Reels mudaram de dia para manter as regras. Resultado: 0 violações de cidade e de país; 6 transições de país pendentes (só as dos 3 vlogs sem destino).
 - **Familiares nos vídeos da Itália:** liberados.
 - **Dados de custos:** o Diego envia na montagem de cada peça. As peças de custo continuam como "Aguardando dados de custos do Diego".
 - Itens 1, 5 e 6 da seção 11 resolvidos. O texto das seções 1 a 10 descreve a primeira montagem; os números atuais estão no painel e nos CSVs.

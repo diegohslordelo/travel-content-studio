@@ -56,6 +56,6 @@
 
 - Ordem dos vlogs confirmada: Amsterdam 24/10, Bruxelas 07/11, Bruges 21/11, Paris 05/12, Disney 19/12, Madrid 02/01, Lisboa 16/01 (30/01, 13/02 e 27/02 sem destino).
 - Os 5 Reels "Primeiro dia em X" foram para a quarta seguinte ao vlog da cidade (Bruxelas 11/11, Bruges 25/11, Paris 09/12, Disney 23/12, Madrid 06/01; Lisboa já estava em 20/01). Os carrosséis de roteiro de Bruxelas, Bruges, Paris, Disney e Madrid foram para a semana do vlog ou para perto dela.
-- 9 Reels trocaram de dia para manter cidade e país: LIS-pastel-nata 12/11, BRG-cheiro 15/11, MIL-sforzesco 22/11, PAR-ficou-de-fora 24/11, AMS-de-pijp 10/12, DIS-aposta 13/12, AMS-stroopwafel 22/12, PAR-maior 27/12, LIS-alfama 03/01, BCN-park-guell 10/01, BRU-atomium 17/01.
+- 11 Reels trocaram de dia para manter cidade e país: LIS-pastel-nata 12/11, BRG-cheiro 15/11, MIL-sforzesco 22/11, PAR-ficou-de-fora 24/11, AMS-de-pijp 10/12, DIS-aposta 13/12, AMS-stroopwafel 22/12, PAR-maior 27/12, LIS-alfama 03/01, BCN-park-guell 10/01, BRU-atomium 17/01.
 - Familiares nos vídeos da Itália liberados.
 - Validação: 0 erros; 0 violações de cidade e de país; 6 transições de país pendentes (vlogs sem destino).
