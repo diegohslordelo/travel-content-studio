@@ -760,10 +760,58 @@ _R5 = {
 for _k, _v in _R5.items():
     REVISAO.setdefault(_k, {}).update(_v)
 
+# ───────────── v5, decupagem de Disney e Paris (15/10, análise do Colab; DECUPAGEM_DISNEY_PARIS.md) ─────────────
+_R6 = {
+    'p608': dict(
+        sc=[('0–3 s', 'Gancho', 'Tela dividida: IMG_3359 (14:35) × IMG_3538 (19:11, selfie dos dois com o castelo rosado, visto na folha). Legenda Informação com as horas.'),
+               ('3–8 s', 'Tarde', 'IMG_3356 a 3358 (14:34, castelo de dia; a 3358 tem 17 s de fala).'),
+               ('8–13 s', 'Entardecer', 'IMG_3537 (19:08, 6,3 s, 4K horizontal): castelo iluminado com céu azul, visto na folha. Se faltar plano, IMG_3538.'),
+               ('13–15 s', 'Fecho', 'Bilhete: “fica até o pôr do sol.”')],
+        mat=['Disney, 18/03/2026: IMG_3356 a 3360 (14:34–14:35, castelo de dia), IMG_3537 (19:08, 6,3 s, castelo ao entardecer, visto na folha), IMG_3538 (19:11, 1 s, selfie com o castelo rosado, visto na folha)'],
+        pend=['O rosado do castelo às 19h08 e 19h11 foi conferido na folha de contato (folha 28)',
+              'Vídeos 4K em HLG (HDR): converter para SDR antes de misturar com exportações em bt709, senão a cor muda',
+              'Não usar música da Disney (direitos)']),
+    'p614': dict(
+        sc=[('0–2 s', 'Gancho', 'Fachada (IMG_3110, 17:32, 4K horizontal, vista na folha) com o gancho.'),
+               ('2–7 s', 'Chegada', 'Planos da praça (IMG_3101 a 3108, 17:22–17:27).'),
+               ('7–13 s', 'Por dentro', 'Interior (IMG_3114 a 3117, 17:42–17:43, nave com vitrais e lustres, visto na folha).'),
+               ('13–15 s', 'Fecho', 'Bilhete: “reaberta em dezembro de 2024.”')],
+        leg='A gente viu a Notre-Dame de volta. 🇫🇷\n\nDepois do incêndio de 2019, a catedral reabriu em dezembro de 2024. Passamos pela fachada às 17h22 e entramos às 17h42 do nosso único dia em Paris.\n\nManda pra quem lembra daquele incêndio.',
+        tela='a gente viu a notre-dame de volta. · reaberta em dezembro de 2024 · paris, 17h22',
+        mat=['Paris, 17/03/2026: IMG_3101 a 3108 (praça, 17:22–17:27), IMG_3109 (17:30, 100 s, os dois sentados em frente, com fala), IMG_3110 e 3111 (17:32, fachada), IMG_3114 a 3119 (17:42–17:44, interior), IMG_3121 a 3125 (17:47–17:51): todos no índice do Colab; fachada e interior vistos na folha 25'],
+        pend=['Entraram: sim (interior em IMG_3114 a 3119, 17:42–17:44, visto na folha)',
+              'IMG_3113 (17:34): a fala diz que a entrada é gratuita; cortar essa frase (regra de “grátis”)',
+              'Não repetir as falas da IMG_3109 sobre o incêndio como fato novo: confirmar os dados em fonte oficial antes de falar',
+              'Os quadros dos clipes verticais de Paris saíram girados na folha (rodada antiga); o vídeo em si está certo']),
+    'p624': dict(
+        gancho='Disney das 10h às 22h.',
+        sl=['Capa (papel): Placa G `ROTEIRO` / `DISNEY` + “10h → 22h”.',
+            'Rota (segunda capa): 10h04 primeira atração · 11h27 Tower of Terror · 12h58 Vingadores · 14h21 troca de parque · 14h34 castelo · 19h11 castelo no entardecer · 22h19 saída.',
+            '10h04: a primeira atração, no Walt Disney Studios (IMG_3220 e 3227).',
+            '11h27: Hollywood Tower (IMG_3266) e a fila às 11h51 (IMG_3269).',
+            '12h58: a montanha-russa dos Vingadores, “a mais rápida do parque” (IMG_3297).',
+            '14h21: troca para o Disneyland Park (IMG_3326).',
+            '14h34: o castelo de dia (IMG_3358).',
+            '19h11: o castelo no entardecer (IMG_3537 e 3538).',
+            'Dica (Bilhete): “comece pelo Studios, termine no outro parque.” (fala do Diego em IMG_3326, 14h21).',
+            'Encerramento: `SALVA PRA VIAGEM →`.'],
+        leg='Disneyland Paris das 10h às 22h: como foi o nosso dia. 🏰\n\nComeçamos pelo Walt Disney Studios, trocamos de parque às 14h21 e passamos a noite no Disneyland Park, com o castelo às 19h11.\n\nA ordem importa. Salva pra planejar o seu.',
+        mat=['Disney, 18/03/2026 (244 vídeos analisados, de 08h56 a 23h26): IMG_3210 (09:47, entrada), IMG_3220 e 3227 (10:04–10:49, primeira atração), IMG_3266 (11:27), IMG_3269 (11:51), IMG_3297 (12:58), IMG_3303 (13:05), IMG_3326 (14:21, troca de parque), IMG_3358 (14:34), IMG_3383 e 3387 (15:21, Pirates), IMG_3411 (16:01), IMG_3537 e 3538 (19:08–19:11), IMG_3608 (22:19, saída)'],
+        pend=['Nomes das atrações vêm da fala transcrita automaticamente (ex.: “Crush Pusta”): conferir cada nome antes de publicar',
+              'Cortar valores falados: IMG_3201 (15 a 18 s, o valor do trem) e IMG_3451 (10 a 14 s, o valor da sobremesa)',
+              'Saída às 22h19 (IMG_3608): conferir se o título “10h → 22h” é o que o Diego quer',
+              'Não citar o que o show da noite era sem confirmar na edição (a fala de IMG_3210 aposta que a Marina chora no show de fogos; a reação está em IMG_3608)']),
+}
+for _p in NOVAS:
+    if _p['id'] in _R6:
+        _p.update(_R6[_p['id']])
+
 # Avisos de corte de preço nas outras peças de Madrid (anexados ao fim das pendências)
 PEND_EXTRA = {
     'p605': ['Cortar fora o valor do ingresso em IMG_4130 (33 a 42 s). A fala sobre o jogo adiado está em IMG_4131 (DECUPAGEM_MADRID.md)'],
     'p606': ['Decupagem: Cibeles, Alcalá e Retiro às 12h05 a 12h59; o Retiro está nublado às 12h46 (IMG_3909) e a chuva começa às 13h48 (IMG_3935)'],
     'p607': ['O show é na praça Pedro Zerolo, às 19h45 de 20/03 (IMG_3963, GPS 40,4207 −3,6993). Fala real: “a gente não entendeu muito bem o que é”. Não explicar o que era o evento sem confirmar'],
+    'p234': ['Cortar o valor falado do almoço em IMG_3082 (29 a 32 s) e o preço do ônibus turístico em IMG_2778 (8,7 a 18,7 s) (DECUPAGEM_DISNEY_PARIS.md)'],
+    'p264': ['Jardim de Luxemburgo: IMG_3134, 17/03 às 18h53 (65 s), fala “fica aberto até as 18h30”; Conferir o horário da estação no site oficial antes de citar'],
     'p622': ['Horários de Madrid vêm do índice do Colab (DECUPAGEM_MADRID.md): dia 1 de 15h05 a 22h49, dia 2 de 10h20 a 22h23, dia 3 de 09h47 a 21h49'],
 }

@@ -53,3 +53,16 @@
 | E2 | p212 · Amsterdam: imagina morar nessa rua | Amsterdam ganhou peças com material verificado do Drive | O mesmo |
 | E3 | p235 · Madrid em planos (sem informação) | Substituído por peças com arquivos verificados (Retiro, show, Bernabéu) | Usar como Reel sem texto do teste T2, se faltar peça |
 | E4 | p223 · Bate-volta de Bruxelas a Bruges: como fizemos | Cedeu a quarta de 18/11 ao carrossel de Roma sem valores (p627) e dependia de dados seus (trajeto e horários) | Seus dados do trajeto e a decupagem de Bruges (IMG_2417–2705) |
+
+## F. Ideias novas de Disney e Paris (decupagem de 15/10, `DECUPAGEM_DISNEY_PARIS.md`)
+
+Nenhuma é de custo. Entram trocando uma peça do mesmo formato e pilar e rodando `scripts/aplicar_v5.py`.
+
+| # | Ideia | Formato e pilar | Gancho (até 7 palavras) | Material | Condição |
+|---|---|---|---|---|---|
+| F1 | **Dois parques em 1 dia: comece pelo Studios** | Reel · Chegar sabendo | `Comece pelo parque menor.` | IMG_3319 (14:16, 33 s) e IMG_3326 (14:21, 32 s): a dica falada pelo Diego | O p624 já usa a mesma dica em 1 slide. Só entra se o p624 sair ou for em outra semana de Disney |
+| F2 | **O brinquedo estava fechado** | Reel · Como foi de verdade | `Chegamos e estava fechado.` | IMG_3232 e 3235 (18/03 10:51, "está em reforma, era o do Ratatouille") | Surpresa real, hora real. Conferir o nome do brinquedo na tela |
+| F3 | **Single rider: a fila de 30 minutos** | Reel curto · Chegar sabendo | `Pegamos o single rider.` | IMG_3227 (10:49, 21 s) | Conferir no site da Disney o que é single rider antes de explicar |
+| F4 | **Paris em 10 pontos, hora por hora** | Carrossel · Chegar sabendo | `10 pontos em 1 dia, em Paris.` | Linha do tempo da seção 3 (Champ de Mars 11h41 a Torre 19h59) | Hoje há o p246 (Paris de dia, sem pressa). Trocar um dos dois, não os dois |
+| F5 | **A Torre Eiffel brilha às 20h** | Reel · Vontade de ir | `A Torre brilha às 20h.` | IMG_3153, 3154 (19:48) e IMG_3170 a 3185 (19:59 a 20:02) | Conferir o horário na fonte oficial. IMG_3170 tem giro +90 |
+| F6 | **A vista de Paris do terraço da Galeries Lafayette** | Reel · Vontade de ir | `Paris de cima, às 15h.` | IMG_3038, 3058, 3059 (14:51 a 15:06) | Não dizer se é grátis sem conferir (regra de "grátis") |

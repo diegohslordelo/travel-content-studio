@@ -47,6 +47,13 @@ Não foram alterados: o Design System, os tokens, o bundle, a referência de con
 - **p221** (Primeiro dia em Madrid) atualizado com a decupagem real: chegada ao hotel às 15h05 (IMG_3617), cenas e horários, e os trechos com preço que precisam ficar fora do corte. **p605, p606, p607 e p622** ganharam avisos de decupagem.
 - O caderno agora corrige a rotação dos vídeos verticais (os 90 clipes de Madrid saíram girados nas folhas) e tem a opção `REFAZER_GIRADOS`.
 
+## 2d. Disney e Paris analisadas pelo Colab (15/10)
+
+- 244 vídeos de Disney e 238 de Paris, 0 erros. Resultado em `DECUPAGEM_DISNEY_PARIS.md`.
+- **p608:** o castelo rosado às 19h08 e 19h11 foi conferido na folha de contato; entrou IMG_3537 (6,3 s). **p614:** a decupagem mostra que entraram na Notre-Dame (interior em IMG_3114 a 3119); cenas e legenda reescritas. **p624:** roteiro refeito com as horas reais, gancho "Disney das 10h às 22h.", saem os palpites "personagens" e "interior às 16h57". **p234 e p264:** avisos de corte de preço e confirmação do Jardim de Luxemburgo (IMG_3134, 18h53).
+- Banco de ideias: seção F (F1 a F6). Regra de cidades: 0 violações.
+- O caderno agora aceita `CIDADE = 'Italia'` (pasta solta, cidade por GPS, subpasta ou hora).
+
 ## 3. Testes rodados
 
 | Teste | Resultado |
