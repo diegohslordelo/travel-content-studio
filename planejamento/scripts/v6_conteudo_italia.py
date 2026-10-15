@@ -22,7 +22,7 @@ GPS_ROMA = ('Vídeos de Roma não foram vistos nas folhas de contato: o lugar ve
             'Conferir na folha de contato (Drive, Youtube/analise/…/folhas/) o que aparece em cada trecho antes do corte.')
 GPS = 'Lugar deduzido do GPS do arquivo (acervo/italia/indice.tsv), não do quadro: conferir na folha de contato.'
 SEM_VALOR = 'Nenhum valor em € ou R$ na peça, na legenda ou na tela; trechos com fala de preço ficam fora (acervo/CORTES_DE_CUSTO.md).'
-D1 = 'Pendência D1 (planejamento/REVISAO_V5.md): uso de vídeo da Itália em Reels depende de decisão do Diego.'
+D1 = None  # D1 resolvida pelo Diego em 15/10: vídeo da Itália pode ir para Reel; fotos da Itália só em carrossel
 
 
 PECAS = {

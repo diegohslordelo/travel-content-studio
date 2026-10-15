@@ -139,7 +139,7 @@ def nova(pid, n):
         'v3': True, 'v6': True, 'motiv': n.get('motiv', ''), 'q0': n.get('q0', ''),
         'tela': n.get('tela', 'Slides acima.' if car else ''), 'nar': n.get('nar', 'Não se aplica (carrossel).' if car else 'Sem narração.'),
         'capa': n.get('capa', ''), 'som': n.get('som', ''), 'hip': n.get('hip', ''), 'teste': n.get('teste'),
-        'pend': cus_pend(n) + list(n.get('pend', [])), 'nivel': nivel, 'prod': n.get('prod', 'dec'),
+        'pend': cus_pend(n) + [x for x in n.get('pend', []) if x], 'nivel': nivel, 'prod': n.get('prod', 'dec'),
     }
     for k in ('cus', 'video_longo', 'tipo'):
         if n.get(k):
@@ -156,7 +156,7 @@ def revisar(p, r):
         elif k == 'sl':
             p['sl'] = sl_dicts(v)
         elif k == 'pend':
-            p['pend'] = list(v)
+            p['pend'] = [x for x in v if x]
         else:
             p[k] = v
     if r.get('pilar'):

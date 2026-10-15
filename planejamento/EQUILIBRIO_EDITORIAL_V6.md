@@ -8,8 +8,8 @@ Contagem das peças de 16/10/2026 sex a 28/02/2027 dom (gerada por scripts/aplic
 |---|---|---:|
 | Instagram | Carrossel | 19 |
 | Instagram | Reel | 78 |
-| TikTok | TikTok | 49 |
-| YouTube | Short | 31 |
+| TikTok | TikTok | 60 |
+| YouTube | Short | 40 |
 | YouTube | Vídeo longo | 7 |
 | Instagram | Stories (dias com sequência) | 126 de 136 dias |
 
@@ -17,10 +17,10 @@ Contagem das peças de 16/10/2026 sex a 28/02/2027 dom (gerada por scripts/aplic
 
 | Eixo | Peças | % do feed |
 |---|---:|---:|
-| Vlog e experiência pessoal | 31 | 32% |
+| Vlog e experiência pessoal | 32 | 33% |
 | Roteiro e organização | 24 | 25% |
 | Formato popular | 23 | 24% |
-| Inspiração e desejo | 20 | 21% |
+| Inspiração e desejo | 19 | 20% |
 | Lançamento do YouTube | 15 | 15% |
 | Série Primeiro Dia | 14 | 14% |
 | Locomoção e logística | 11 | 11% |
@@ -32,13 +32,13 @@ Contagem das peças de 16/10/2026 sex a 28/02/2027 dom (gerada por scripts/aplic
 
 | Pilar | Peças |
 |---|---:|
-| Vontade de ir | 39 |
+| Vontade de ir | 24 |
 | Chegar sabendo | 21 |
+| Como foi de verdade | 19 |
 | Primeiro Dia (série) | 15 |
-| Como foi de verdade | 14 |
+| Como se mover | 8 |
+| Quanto custa | 7 |
 | Antes de ir | 3 |
-| Quanto custa | 3 |
-| Como se mover | 2 |
 
 ## Por cidade (feed)
 
@@ -65,7 +65,7 @@ Contagem das peças de 16/10/2026 sex a 28/02/2027 dom (gerada por scripts/aplic
 | 12/10 | p272 · p205 | rot 1, pop 1, ins 1 |  |
 | 19/10 | p206 · p208 · p801 · p207 · p300 | exp 3, pop 2, ser 2, rot 1, ins 1, lan 1 |  |
 | 26/10 | p802 · p203 · p264 · p830 · p611 | exp 2, rot 2, lan 1, loc 1, aut 1, doc 1, ins 1, pop 1 |  |
-| 02/11 | p217 · p621 · p803 · p234 · p222 | ser 2, pop 2, aut 1, rot 1, lan 1, exp 1, ins 1 |  |
+| 02/11 | p217 · p621 · p803 · p234 · p222 | ser 2, pop 2, exp 2, aut 1, rot 1, lan 1 |  |
 | 09/11 | p804 · p851 · p246 · p601 · p224 | rot 2, ins 2, lan 1, exp 1, cus 1, pop 1 |  |
 | 16/11 | p229 · p213 · p805 · p215 · p603 | pop 2, cus 1, rot 1, lan 1, ser 1, exp 1 |  |
 | 23/11 | p806 · p627 · p608 · p612 · p227 | exp 3, lan 1, rot 1, ins 1, aut 1, pop 1 |  |

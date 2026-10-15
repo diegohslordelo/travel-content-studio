@@ -78,3 +78,17 @@ Nenhuma é de custo. Entram trocando uma peça do mesmo formato e pilar e rodand
 | E7 | p251 · Expectativa × realidade: Amsterdam | Cedeu 01/12 a Veneza; Amsterdam tinha 9 peças | Dados do Diego |
 | E8 | p255 · Vista de Barcelona do alto do Montjuïc | Cedeu 26/12 a Milão | Outra data de Barcelona |
 | E9 | p269 · Amsterdam de bicicleta e canal | Cedeu 22/12 a Veneza | Outra data de Amsterdam |
+
+## G. Banco v6 (15/10/2026): boas ideias que não entraram no calendário até 28/02/2027
+
+| # | Ideia | Material | Por que ficou de fora |
+|---|---|---|---|
+| G1 | Veneza no 1º de janeiro (Reel de desejo, p841) | IMG_6165–6187 (01/01/2025) | Veneza já tinha 4 peças; sem vaga na janela de janeiro |
+| G2 | TikTok: Florença, o pôr do sol de 29/12 | IMG_5808–5812 | Virou o Reel p840 (16/02) |
+| G3 | TikTok: Bruges, a primeira parada correndo de fome | IMG_2430 (cortar 19,8 a 24,0 s, preço) | Sem sexta livre para Bruges |
+| G4 | Stories: Disney, 5 telas do castelo + quiz | IMG_3537, IMG_3574 | Sem segunda livre para a Disney |
+| G5 | Stories: Barcelona, 5 telas do master | master do vlog | Sem segunda livre para Barcelona |
+| G6 | Saíram do calendário v6 | p211, p239, p604, p613, p276, p267, p610, p602, p228, p626 | Vagas para lançamentos, custos, locomoção e preparação (motivo de cada uma no painel, `saem_v6`) |
+| G7 | Custos: “O jantar que quase não pedimos” (Lisboa, 22/03) | IMG_4264, IMG_4268 | Depende dos dados do Diego; o p813 já usa o perrengue dos restaurantes |
+| G8 | Bate-volta Bruxelas → Bruges de trem (p223) | IMG_2417–2427 | Depende de horários e trajeto do Diego |
+| G9 | Documentação: tomada, chip e dinheiro na Europa | — | Só como dica geral, com fonte; sem relato registrado |
