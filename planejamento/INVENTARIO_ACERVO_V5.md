@@ -32,7 +32,7 @@
 | Barcelona | 357 (segundo o inventário de 11/10) | — | — | 09 a 11/03/2026 | Master e transcrição no repositório (09/10) |
 | Barcelona › Youtube | 4 (master `Barcelona_3dias`, 10,1 GB; `copy_71526AEF…mov`, 7,5 GB; 1 foto HEIC; 1 JPG) | 17,7 GB | 2 | — | Listada |
 | Itália › Roma | 12 fotos (10 HEIC + 2 JPG: IMG_5064 a IMG_6653) + subpasta `Postagem` (17 JPG, `01.jpg` a `17.jpg`) | 0,05 GB | todas | 25 a 27/12/2024 (EXIF, fotos do repositório) | As fotos já estão no repositório e no carrossel de Roma |
-| Itália › Florença, Veneza, Milão | **0** | — | — | — | Pastas criadas em 14/10, **vazias** |
+| Itália › Florença, Veneza, Milão (e vídeos soltos da pasta Itália) | **214** vídeos no total | — | — | 23/12/2024 a 04/01/2025 | Analisada pelo Colab em 15/10 e separada por GPS: Florença 83, Roma 72, Veneza 37, Milão 18, 4 sem cidade (acervo/italia/). As pastas de cidade dentro de Itália seguem vazias |
 | Raiz do Drive | Planilhas de custo ("Custos de Viagens - Europa", "California", "Disney2027") e outros arquivos pessoais | — | — | — | Só as planilhas de custo interessam, e ficam para `OPORTUNIDADES_CUSTOS.md` |
 
 **Total nas pastas de cidade:** 1.851 vídeos, ≈ 81,7 GB (sem contar Barcelona).
