@@ -113,7 +113,11 @@ def montar():
         elif not cidade:
             e['notes'] = 'Destino a confirmar no calendário do canal; o painel original de 05/10/2026 não chegava a esta data. Não planejar peça que dependa da viagem de janeiro de 2027.'
         else:
-            e['notes'] = 'Data fixa confirmada. Peças de apoio: AMS-casas-tortas (20/10, função de trailer) e AMS-primeiro-dia (28/10). Stories do dia são o pacote do lançamento (mesma aparição).'
+            e['notes'] = ('Data fixa confirmada. Peças de apoio: AMS-casas-tortas (20/10, função de trailer) e AMS-primeiro-dia (28/10). Stories do dia são o pacote do lançamento (mesma aparição).'
+                          if cidade == 'Amsterdam' else
+                          f'Destino confirmado pelo Diego em 15/10/2026: {cidade}. O Reel "Primeiro dia em" da cidade sai na quarta seguinte. Stories do dia são o pacote do lançamento (mesma aparição).')
+            e['title'] = e['title'] if cidade == 'Amsterdam' else f'Lançamento do vídeo longo — {cidade}'
+            e['status'] = e['status'] if cidade == 'Amsterdam' else 'Data fixa — destino confirmado'
         e['v4Ref'], e['v4Decision'] = e['id'], 'manter'
         e['weekStart'] = semana(data)
         e['structure'] = e.get('structure') or []

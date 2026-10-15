@@ -5,10 +5,10 @@ V = ['Várias']  # panorama: 4+ cidades, neutro
 G = []          # geral
 R, C, F, S, Y = 'Reel', 'Carrossel', 'Foto', 'Stories', 'Vídeo longo (marco fixo)'
 
-# Vídeos longos: datas fixas; destino provável = painel original do Diego (05/10/2026), a confirmar.
-LONGOS = [('2026-10-24', AMS, AMS), ('2026-11-07', None, PAR), ('2026-11-21', None, DIS),
-          ('2026-12-05', None, MAD), ('2026-12-19', None, BRU), ('2027-01-02', None, BRG),
-          ('2027-01-16', None, LIS), ('2027-01-30', None, None), ('2027-02-13', None, None),
+# Vídeos longos: datas fixas; ordem dos destinos confirmada pelo Diego em 15/10/2026 (Amsterdam, Bruxelas, Bruges, Paris, Disney, Madrid, Lisboa).
+LONGOS = [('2026-10-24', AMS, AMS), ('2026-11-07', BRU, BRU), ('2026-11-21', BRG, BRG),
+          ('2026-12-05', PAR, PAR), ('2026-12-19', DIS, DIS), ('2027-01-02', MAD, MAD),
+          ('2027-01-16', LIS, LIS), ('2027-01-30', None, None), ('2027-02-13', None, None),
           ('2027-02-27', None, None)]
 
 GRADE = [
@@ -37,7 +37,7 @@ GRADE = [
     ('2026-11-01', '20:30', R, 'VEN-malas', [VEN]),
     # 02/11 · vlog provável Paris (07/11)
     ('2026-11-02', '12:30', S, 'STO-w3a', G),
-    ('2026-11-02', '18:30', C, 'CAR-bruges-rota', [BRG]),
+    ('2026-11-02', '18:30', C, 'CAR-confira-antes', G),
     ('2026-11-03', '19:00', R, 'DIS-comece-studios', [DIS]),
     ('2026-11-04', '18:00', R, 'GER-imigracao', G),
     ('2026-11-05', '09:00', R, 'AMS-febo', [AMS]),
@@ -45,13 +45,13 @@ GRADE = [
     ('2026-11-08', '20:30', R, 'MAD-debod', [MAD]),
     # 09/11
     ('2026-11-09', '12:30', S, 'STO-w4a', G),
-    ('2026-11-09', '18:30', C, 'CAR-paris-rota', [PAR]),
+    ('2026-11-09', '18:30', C, 'CAR-bruxelas-rota', [BRU]),
     ('2026-11-10', '19:00', R, 'ROM-batedor', [ROM]),
-    ('2026-11-11', '18:00', R, 'PAR-primeiro-dia', [PAR]),
-    ('2026-11-12', '09:00', R, 'BRG-cheiro', [BRG]),
+    ('2026-11-11', '18:00', R, 'BRU-primeiro-dia', [BRU]),
+    ('2026-11-12', '09:00', R, 'LIS-pastel-nata', [LIS]),
     ('2026-11-13', '12:30', S, 'STO-w4b', G),
     ('2026-11-13', '18:30', F, 'FOTO-munttoren', [AMS]),
-    ('2026-11-15', '20:30', R, 'LIS-pastel-nata', [LIS]),
+    ('2026-11-15', '20:30', R, 'BRG-cheiro', [BRG]),
     # 16/11 · vlog provável Disney (21/11)
     ('2026-11-16', '12:30', S, 'STO-w5a', G),
     ('2026-11-16', '18:30', C, 'CAR-notas-comida', V),
@@ -59,19 +59,19 @@ GRADE = [
     ('2026-11-18', '18:00', R, 'BCN-sagrada-ingresso', [BCN]),
     ('2026-11-19', '09:00', R, 'AMS-vondelpark', [AMS]),
     ('2026-11-20', '12:30', S, 'STO-w5b', G),
-    ('2026-11-22', '20:30', R, 'BRU-atomium', [BRU]),
+    ('2026-11-22', '20:30', R, 'MIL-sforzesco', [MIL]),
     # 23/11
     ('2026-11-23', '12:30', S, 'STO-w6a', G),
-    ('2026-11-23', '18:30', C, 'CAR-confira-antes', G),
-    ('2026-11-24', '19:00', R, 'MIL-sforzesco', [MIL]),
-    ('2026-11-25', '18:00', R, 'DIS-primeiro-dia', [DIS]),
+    ('2026-11-23', '18:30', C, 'CAR-bruges-rota', [BRG]),
+    ('2026-11-24', '19:00', R, 'PAR-ficou-de-fora', [PAR]),
+    ('2026-11-25', '18:00', R, 'BRG-primeiro-dia', [BRG]),
     ('2026-11-26', '09:00', R, 'MAD-bernabeu', [MAD]),
     ('2026-11-27', '12:30', S, 'STO-w6b', G),
     ('2026-11-27', '18:30', F, 'FOTO-santa-luzia', [LIS]),
     ('2026-11-29', '20:30', R, 'PAR-custo', [PAR]),
     # 30/11 · vlog provável Madrid (05/12)
     ('2026-11-30', '12:30', S, 'STO-w7a', G),
-    ('2026-11-30', '18:30', C, 'CAR-bruxelas-rota', [BRU]),
+    ('2026-11-30', '18:30', C, 'CAR-madrid-rota', [MAD]),
     ('2026-12-01', '19:00', R, 'AMS-bicicleta', [AMS]),
     ('2026-12-02', '18:00', R, 'GER-fechado', V),
     ('2026-12-03', '09:00', R, 'PAR-torre-brilha', [PAR]),
@@ -79,13 +79,13 @@ GRADE = [
     ('2026-12-06', '20:30', R, 'LIS-miradouros', [LIS]),
     # 07/12
     ('2026-12-07', '12:30', S, 'STO-w8a', G),
-    ('2026-12-07', '18:30', C, 'CAR-madrid-rota', [MAD]),
+    ('2026-12-07', '18:30', C, 'CAR-paris-rota', [PAR]),
     ('2026-12-08', '19:00', R, 'FLO-duomo', [FLO]),
-    ('2026-12-09', '18:00', R, 'MAD-primeiro-dia', [MAD]),
-    ('2026-12-10', '09:00', R, 'DIS-aposta', [DIS]),
+    ('2026-12-09', '18:00', R, 'PAR-primeiro-dia', [PAR]),
+    ('2026-12-10', '09:00', R, 'AMS-de-pijp', [AMS]),
     ('2026-12-11', '12:30', S, 'STO-w8b', G),
     ('2026-12-11', '18:30', F, 'FOTO-canal-bruges', [BRG]),
-    ('2026-12-13', '20:30', R, 'AMS-de-pijp', [AMS]),
+    ('2026-12-13', '20:30', R, 'DIS-aposta', [DIS]),
     # 14/12 · vlog provável Bruxelas (19/12)
     ('2026-12-14', '12:30', S, 'STO-w9a', G),
     ('2026-12-14', '18:30', C, 'CAR-roma-natal', [ROM]),
@@ -96,12 +96,12 @@ GRADE = [
     ('2026-12-20', '20:30', R, 'MAD-sol', [MAD]),
     # 21/12 · Natal
     ('2026-12-21', '12:30', S, 'STO-w10a', G),
-    ('2026-12-21', '18:30', C, 'CAR-frio-marco', V),
-    ('2026-12-22', '19:00', R, 'PAR-maior', [PAR]),
-    ('2026-12-23', '18:00', R, 'BRU-primeiro-dia', [BRU]),
+    ('2026-12-21', '18:30', C, 'CAR-disney-rota', [DIS]),
+    ('2026-12-22', '19:00', R, 'AMS-stroopwafel', [AMS]),
+    ('2026-12-23', '18:00', R, 'DIS-primeiro-dia', [DIS]),
     ('2026-12-24', '09:00', R, 'ROM-natal', [ROM]),
     ('2026-12-25', '12:30', S, 'STO-w10b', G),
-    ('2026-12-27', '20:30', R, 'AMS-stroopwafel', [AMS]),
+    ('2026-12-27', '20:30', R, 'PAR-maior', [PAR]),
     # 28/12 · Réveillon; vlog provável Bruges (02/01)
     ('2026-12-28', '12:30', S, 'STO-w11a', G),
     ('2026-12-28', '18:30', C, 'CAR-italia-rota', [ROM, FLO, VEN, MIL]),
@@ -109,16 +109,16 @@ GRADE = [
     ('2026-12-30', '18:00', R, 'DIS-single-rider', [DIS]),
     ('2026-12-31', '09:00', R, 'VEN-reveillon', [VEN]),
     ('2027-01-01', '12:30', S, 'STO-w11b', G),
-    ('2027-01-03', '20:30', R, 'BCN-park-guell', [BCN]),
+    ('2027-01-03', '20:30', R, 'LIS-alfama', [LIS]),
     # 04/01
     ('2027-01-04', '12:30', S, 'STO-w12a', G),
     ('2027-01-04', '18:30', C, 'CAR-chegadas', V),
     ('2027-01-05', '19:00', R, 'FLO-por-do-sol', [FLO]),
-    ('2027-01-06', '18:00', R, 'BRG-primeiro-dia', [BRG]),
+    ('2027-01-06', '18:00', R, 'MAD-primeiro-dia', [MAD]),
     ('2027-01-07', '09:00', R, 'GER-metodo', G),
     ('2027-01-08', '12:30', S, 'STO-w12b', G),
     ('2027-01-08', '18:30', F, 'FOTO-castelo-rosa', [DIS]),
-    ('2027-01-10', '20:30', R, 'LIS-alfama', [LIS]),
+    ('2027-01-10', '20:30', R, 'BCN-park-guell', [BCN]),
     # 11/01 · vlog provável Lisboa (16/01)
     ('2027-01-11', '12:30', S, 'STO-w13a', G),
     ('2027-01-11', '18:30', C, 'CAR-quantos-dias', V),
@@ -126,7 +126,7 @@ GRADE = [
     ('2027-01-13', '18:00', R, 'MAD-hamburguer', [MAD]),
     ('2027-01-14', '09:00', R, 'VEN-cannaregio', [VEN]),
     ('2027-01-15', '12:30', S, 'STO-w13b', G),
-    ('2027-01-17', '20:30', R, 'PAR-ficou-de-fora', [PAR]),
+    ('2027-01-17', '20:30', R, 'BRU-atomium', [BRU]),
     # 18/01
     ('2027-01-18', '12:30', S, 'STO-w14a', G),
     ('2027-01-18', '18:30', C, 'CAR-amsterdam-rota', [AMS]),
@@ -145,7 +145,7 @@ GRADE = [
     ('2027-01-31', '20:30', R, 'BRU-doce', [BRU]),
     # 01/02
     ('2027-02-01', '12:30', S, 'STO-w16a', G),
-    ('2027-02-01', '18:30', C, 'CAR-disney-rota', [DIS]),
+    ('2027-02-01', '18:30', C, 'CAR-frio-marco', V),
     ('2027-02-02', '19:00', R, 'AMS-brasil', [AMS]),
     ('2027-02-03', '18:00', R, 'BCN-boqueria', [BCN]),
     ('2027-02-04', '09:00', R, 'PAR-galeries', [PAR]),

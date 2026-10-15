@@ -15,6 +15,13 @@ O caminho sugerido no prompt (`docs/auditoria-criativa-calendario-v5.md`) foi ad
 
 ---
 
+## Atualização de 15/10/2026 (respostas do Diego)
+
+- **Ordem dos vlogs confirmada:** Amsterdam 24/10, Bruxelas 07/11, Bruges 21/11, Paris 05/12, Disney 19/12, Madrid 02/01, Lisboa 16/01. 30/01, 13/02 e 27/02 continuam sem destino. A ordem é diferente da do painel de 05/10 usada como "provável" abaixo; a grade foi refeita: os 5 Reels "Primeiro dia em X" e 4 carrosséis de roteiro foram trocados de data para cair na semana do vlog da cidade, e 9 Reels mudaram de dia para manter as regras. Resultado: 0 violações de cidade e de país; 6 transições de país pendentes (só as dos 3 vlogs sem destino).
+- **Familiares nos vídeos da Itália:** liberados.
+- **Dados de custos:** o Diego envia na montagem de cada peça. As peças de custo continuam como "Aguardando dados de custos do Diego".
+- Itens 1, 5 e 6 da seção 11 resolvidos. O texto das seções 1 a 10 descreve a primeira montagem; os números atuais estão no painel e nos CSVs.
+
 ## 1. Resumo
 
 - **80 Reels de Instagram** em 20 semanas: 4 por semana, com Reel em **toda quinta e todo domingo**. Mais 19 carrosséis, 7 fotos únicas, 39 sequências de Stories e os 10 vídeos longos nas datas fixas.
@@ -146,11 +153,11 @@ Nenhuma peça ficou abaixo de 5. As notas são da revisão; o painel deixa o Die
 
 | # | Decisão | O que a V5 faz até lá |
 |---|---|---|
-| 1 | Confirmar os destinos dos vlogs de 07/11 a 27/02 | Usa a ordem do painel de 05/10 como provável; o calendário passa nos dois cenários |
+| 1 | ~~Confirmar os destinos dos vlogs~~ | **Resolvido em 15/10:** ordem confirmada; faltam 30/01, 13/02 e 27/02 |
 | 2 | Aprovar a série editorial "Nota de soteropolitano" (nome e rótulo) | As peças usam só o Bilhete, sem rótulo novo na tela |
 | 3 | Aprovar a variante de Placa "PRIMEIRA NOITE EM / LISBOA" | Sem aprovação, usa "PRIMEIRO DIA EM / LISBOA" |
 | 4 | Vereditos e opiniões (La Boqueria, Palácio Real, quantos dias por cidade, por onde começar, a "melhor primeira mordida", as 4 regras do método) | 9 peças com "Aguardando decisão do Diego" |
-| 5 | Autorização para mostrar familiares nos clipes da Itália | Planos sem terceiros |
+| 5 | ~~Familiares nos clipes da Itália~~ | **Resolvido em 15/10:** pode mostrar |
 | 6 | Enviar os dados de custos (Paris, Amsterdam, Lisboa e o Placar das séries) | "Aguardando dados de custos do Diego" |
 | 7 | Gravações novas curtas (talking head do método, da imigração, do EES; tela da planilha) | Marcadas como material futuro; não travam o resto |
 | 8 | Itália em Reel | O prompt de 15/10 libera vídeo da Itália em Reel depois de verificado (resolve a pendência D1 para vídeo); fotos italianas só em carrossel |

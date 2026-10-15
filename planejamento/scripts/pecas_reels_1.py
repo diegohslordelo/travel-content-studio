@@ -301,7 +301,7 @@ REELS_1 = {
     duration='14–17 s', cover='Mala no degrau da ponte com Carimbo.',
     caption='Em Veneza não tem carro, e a sua mala sobe a ponte.\n\n31 de dezembro, 11h05: 90% do caminho foi com duas malas na mão. Antes de reservar, olhe quantas pontes tem entre a estação e o hotel.\n\nManda para quem vai a Veneza.\n\n#Veneza #Itália #dicasdeviagem #viagemitalia #PrimeiroDia',
     metric='Envios e salvamentos por alcance.',
-    risks=TRANSCRICAO + ' Vídeo da Itália em Reel: liberado pelo prompt de revisão de 15/10 após verificar o material (resolve a pendência D1 para vídeo). Outras pessoas da família aparecem nos clipes de Veneza ("vira aí, mãe"): usar só planos sem terceiros ou com autorização do Diego.',
+    risks=TRANSCRICAO + ' Vídeo da Itália em Reel: liberado pelo prompt de revisão de 15/10 após verificar o material (resolve a pendência D1 para vídeo). Familiares aparecem nos clipes de Veneza ("vira aí, mãe"): liberado pelo Diego em 15/10/2026.',
     score=(2, 2, 2, 2, 2), scoreNote='Problema real, solução prática, humor.',
     shorts='Veneza não tem carro: sua mala sobe a ponte', ds='Nível B: Carimbo PERRENGUE + Bilhete dica.'),
 

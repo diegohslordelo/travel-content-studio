@@ -17,7 +17,7 @@ REELS_3 = {
     overlay='Hora em Plex Mono; Placa pequena.', assets='acervo/italia (Florença): IMG_5808 (29/12/2024 17:04, 17 s), IMG_5809–5814 (17:05–17:19).',
     timestamps='Verificar; confirmar o mirante pelo GPS do arquivo (indice.tsv).', duration='15–18 s', cover='Vista + "17H04".',
     caption='Em dezembro, o sol se põe por volta das 17h em Florença.\n\n29 de dezembro, 17h04. [Nome do mirante conferido pelo GPS.] Se for no inverno, chegue antes.\n\nSalva para a sua viagem à Itália.\n\n#Florença #Itália #pordosol #viagemitalia #PrimeiroDia',
-    metric='Salvamentos.', risks=TRANSCRICAO + ' Família/amigos aparecem ("Gabriel"): planos sem terceiros ou com autorização.', score=(1, 2, 2, 1, 2), scoreNote='Visual com dado prático.',
+    metric='Salvamentos.', risks=TRANSCRICAO + ' Familiares e amigos aparecem ("Gabriel"): familiares liberados pelo Diego em 15/10/2026; amigos, confirmar.', score=(1, 2, 2, 1, 2), scoreNote='Visual com dado prático.',
     shorts='Florença: o pôr do sol às 17h04', ds='Nível B.'),
 
 'BRG-primeiro-dia': reel(

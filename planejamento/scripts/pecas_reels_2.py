@@ -221,7 +221,7 @@ REELS_2 = {
     overlay='Legenda Padrão.', assets='acervo/italia (Florença, GPS): IMG_5554 (28/12/2024 12:32, 16,6 s), IMG_5555 (12:35), IMG_5560 (12:38), IMG_5570 (12:56, 30 s).',
     timestamps='Verificar (folha 01 vista).', duration='12–15 s', cover='Fachada + Placa.',
     caption='Tentei filmar a catedral de Florença inteira. Não coube.\n\n28 de dezembro, 12h32. A praça estava cheia, e mesmo assim é ela que domina tudo.\n\nManda para quem vai à Itália.\n\n#Florença #Itália #Duomo #viagemitalia #PrimeiroDia',
-    metric='Retenção e envios.', risks=TRANSCRICAO + ' Família aparece nos clipes: usar planos sem terceiros ou com autorização do Diego.', score=(1, 2, 2, 1, 2),
+    metric='Retenção e envios.', risks=TRANSCRICAO + ' Familiares aparecem nos clipes: liberado pelo Diego em 15/10/2026.', score=(1, 2, 2, 1, 2),
     scoreNote='Visual forte; ângulo de escala.', shorts='A catedral de Florença não cabe na tela', ds='Nível B.'),
 
 'MAD-primeiro-dia': reel(
@@ -377,7 +377,7 @@ REELS_2 = {
     structure=['0–3 s · rua.', '3–9 s · corredores (IMG_5061, 09h01).', '9–14 s · planos da manhã (IMG_5058–5073).', '14–16 s · legenda Emocional.'],
     overlay='Data em Plex Mono; legenda Emocional.', assets='acervo/italia (Roma): IMG_5058 (25/12/2024 08:44), IMG_5060–5062 (08:59–09:02), IMG_5067–5073 (10:09–10:14).',
     timestamps='Verificar.', duration='14–16 s', cover='Rua + data.', caption='25 de dezembro, 9h da manhã, Roma.\n\nFoi o nosso primeiro dia em Roma: a cidade acordando no Natal.\n\nManda para quem você quer levar a Roma.\n\n#Roma #NatalnaEuropa #Itália #Natal #PrimeiroDia',
-    metric='Envios.', risks=TRANSCRICAO + ' "Primeiro dia em Roma foi o 25/12" vem do inventário de 09/10 (Roma de 24 a 28/12; dia 1 = 25/12). Família pode aparecer.', score=(2, 2, 2, 1, 2),
+    metric='Envios.', risks=TRANSCRICAO + ' "Primeiro dia em Roma foi o 25/12" vem do inventário de 09/10 (Roma de 24 a 28/12; dia 1 = 25/12). Familiares podem aparecer (liberado pelo Diego em 15/10/2026).', score=(2, 2, 2, 1, 2),
     scoreNote='Sazonal e verdadeiro.', shorts='Roma na manhã de Natal', ds='Nível B: legenda Emocional.'),
 
 'AMS-stroopwafel': reel(
@@ -436,7 +436,7 @@ REELS_2 = {
     structure=['0–3 s · fogos.', '3–7 s · espera (95891C02…mp4, 22h21, cidade por hora).', '7–10 s · 00h00 (IMG_6135).', '10–18 s · fogos (IMG_6156, 00h11; IMG_6157).'],
     overlay='"31/12 → 01/01" em Plex Mono; legenda Emocional.', assets='acervo/italia (Veneza): IMG_6128 (31/12/2024 22:04), 95891C02….mp4 (exportação), IMG_6135 (01/01/2025 00:00), IMG_6156 (00:11, 56,8 s), IMG_6157 (00:12).',
     timestamps='IMG_6156 0–20 s. Vistos na folha 25 (15/10).', duration='16–19 s', cover='Fogos + Placa "VENEZA".', caption='A nossa última virada foi em Veneza.\n\n31 de dezembro de 2024: a espera, a meia-noite e os fogos às 00h11.\n\nManda para quem vai passar a virada com você.\n\n#Réveillon #Veneza #Itália #anonovo #PrimeiroDia',
-    metric='Envios.', risks='Público e família podem aparecer: escolher planos dos fogos. ' + TRANSCRICAO, score=(2, 2, 2, 1, 2), scoreNote='Data perfeita, material real.',
+    metric='Envios.', risks='Familiares podem aparecer (liberado em 15/10/2026); público desconhecido: preferir planos dos fogos. ' + TRANSCRICAO, score=(2, 2, 2, 1, 2), scoreNote='Data perfeita, material real.',
     shorts='Réveillon em Veneza: os fogos às 00h11', ds='Nível B: legenda Emocional.', notes='Era a peça B5 do banco da v5 antiga (Réveillon em Veneza), agora com os arquivos do acervo.'),
 
 'BCN-park-guell': reel(
