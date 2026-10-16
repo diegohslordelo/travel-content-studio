@@ -1,0 +1,90 @@
+{
+ "reel": "bruxelas-xixi",
+ "revisao": 3,
+ "data": "2026-10-16",
+ "parte_de": "rev2: mesma narração (alinhamento lido de ../rev2/narracao_alinhada.json), cenas, recortes, legendas, contadores, Ticket e capa; muda só o som",
+ "planejamento": "V5-20261016-BRU-xixi (16/10/2026, 19:00)",
+ "formato": "narração do Diego (voz em off) sobre o material de 15/03/2026; só a voz no áudio (pedido do Diego, 16/10/2026)",
+ "nivel_ds": "B",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "fontes": {
+  "IMG_2255": {"arquivo": "IMG_2255.MOV", "drive_id": "1BDX-0sUsTh4qBCVS79Hcab9mwOEySwXD", "hdr": true, "girar": "auto", "criado": "2026-03-15T16:10:10+01:00", "o_que": "multidão na frente do Manneken Pis"},
+  "IMG_2186": {"arquivo": "IMG_2186.MOV", "drive_id": "1FsIP7CfibWjO_OwtI9QcHcCijCIGAGGI", "hdr": true, "girar": 180, "criado": "2026-03-15T13:16:51+01:00", "o_que": "Diego apontando, Marina ao lado (rua do Zinneke)", "nota": "gravado na horizontal; o metadado de rotação (-90) está errado"},
+  "IMG_2187": {"arquivo": "IMG_2187.MOV", "drive_id": "1-gXbUlzszko8Xf8WqiikRn4d3qEPKqwL", "hdr": true, "girar": "auto", "criado": "2026-03-15T13:17:14+01:00", "o_que": "Zinneke Pis (cachorro)"},
+  "IMG_2226": {"arquivo": "IMG_2226.MOV", "drive_id": "1CxFd9plKKug6O2wX3y4aPTJVWGb8vsmL", "hdr": true, "girar": 180, "criado": "2026-03-15T14:26:46+01:00", "o_que": "Diego na rua dos restaurantes ao lado do beco da Jeanneke (GPS a ≈ 35 m dela)", "nota": "gravado na horizontal; o metadado de rotação (-90) está errado"},
+  "IMG_2224": {"arquivo": "IMG_2224.MOV", "drive_id": "1ATgpig5MDRjPRM2yV8bvrJTq_eF8XQ73", "hdr": true, "girar": "auto", "criado": "2026-03-15T14:24:58+01:00", "o_que": "Jeanneke Pis (menina)"},
+  "IMG_2258": {"arquivo": "IMG_2258.MOV", "drive_id": "199ODmBCVJp6-ARg6KUfpcf-lfmps6oeA", "hdr": true, "girar": 180, "criado": "2026-03-15T16:12:06+01:00", "o_que": "Diego (e Marina) com a multidão do Manneken Pis", "nota": "gravado na horizontal; o metadado de rotação (-90) está errado"},
+  "IMG_2253": {"arquivo": "IMG_2253.MOV", "drive_id": "1xEHeA9g5hEe68Ii7eopiH9sS9d1XM6mg", "hdr": true, "girar": "auto", "criado": "2026-03-15T16:09:52+01:00", "o_que": "Manneken Pis de jogador de futebol (close, horizontal)"},
+  "IMG_2251": {"arquivo": "IMG_2251.MOV", "drive_id": "1zwczvU29OExCQMl4wbofhdY-AchNywfW", "hdr": true, "girar": "auto", "criado": "2026-03-15T16:09:06+01:00", "o_que": "Manneken Pis de jogador de futebol (close, vertical)"},
+  "IMG_2188": {"arquivo": "IMG_2188.MOV", "drive_id": "1CK8fBCxTZ2V8foVlLLYgJt8Z7JGHHvPB", "hdr": true, "girar": 180, "criado": "2026-03-15T13:17:51+01:00", "o_que": "Diego e Marina rindo numa rua de sol, a caminho das outras estátuas", "nota": "gravado na horizontal; o metadado de rotação (-90) está errado"}
+ },
+ "narracao": {
+  "tomadas": [
+   {"arquivo": "Prac_a_Ernesto_Lebram.m4a", "pausa_depois_s": 0.3, "fala": "Você sabia que Bruxelas tem três pontos turísticos inusitados?"},
+   {"arquivo": "Prac_a_Ernesto_Lebram_2.m4a", "pausa_depois_s": 0.45, "fala": "São três estátuas fazendo xixi e a primeira é um cachorro que tá com a perna levantada desde 99."},
+   {"arquivo": "Prac_a_Ernesto_Lebram_3.m4a", "pausa_depois_s": 0.45, "fala": "A segunda é uma menina que fica num beco e tá fazendo agachamento desde 1987."},
+   {"arquivo": "Prac_a_Ernesto_Lebram_5.m4a", "pausa_depois_s": 0.4, "fala": "E a terceira é a mais famosa, o Manneken Pis. Reza a lenda que esse menino salvou a cidade fazendo xixi em uma bomba."},
+   {"arquivo": "Prac_a_Ernesto_Lebram_6.m4a", "fala": "E o melhor é que dá pra ver as três em uma tarde. Já salva pro seu roteiro de Bruxelas."}
+  ],
+  "nota_tomadas": "Não há tomada 4. Cada tomada é cortada no começo e no fim da fala (energia do sinal), igualada a −18 LUFS e emendada com a pausa indicada. Texto de cada tomada: consenso de 3 modelos Whisper (large-v3, large-v3-turbo, medium); divergências em QA_REV2.md.",
+  "primeira_palavra_s": 0.2,
+  "cauda_s": 0.8,
+  "corte_antes_da_fala_s": 0.1,
+  "falas": [
+   {"id": "f1", "fala": "Você sabia que Bruxelas tem *três", "texto": "você sabia que|Bruxelas tem *3*"},
+   {"id": "f2", "fala": "pontos turísticos inusitados?", "texto": "pontos turísticos|inusitados?"},
+   {"id": "f3", "fala": "São três estátuas fazendo xixi", "texto": "são 3 estátuas|fazendo xixi"},
+   {"id": "f4", "fala": "e a primeira é um cachorro", "texto": "e a primeira|é um cachorro"},
+   {"id": "f5", "fala": "que tá com a perna levantada", "texto": "que tá com|a perna levantada"},
+   {"id": "f6", "fala": "desde *99", "texto": "desde *1999*"},
+   {"id": "f7", "fala": "A segunda é uma menina", "texto": "a segunda é uma menina"},
+   {"id": "f8", "fala": "que fica num beco", "texto": "que fica num beco"},
+   {"id": "f9", "fala": "e tá fazendo agachamento", "texto": "e tá fazendo agachamento"},
+   {"id": "f10", "fala": "desde *1987", "texto": "desde *1987*"},
+   {"id": "f11", "fala": "E a terceira é a mais famosa", "texto": "e a terceira|é a mais famosa"},
+   {"id": "f12", "fala": "o Manneken Pis", "texto": "o Manneken Pis"},
+   {"id": "f13", "fala": "Reza a lenda que esse menino", "texto": "reza a lenda|que esse menino"},
+   {"id": "f14", "fala": "salvou a cidade", "texto": "salvou a cidade"},
+   {"id": "f15", "fala": "fazendo xixi em uma *bomba", "texto": "fazendo xixi|em uma *bomba*"},
+   {"id": "f16", "fala": "E o melhor é que dá pra ver as três", "texto": "e o melhor é que|dá pra ver as 3", "nota": "9 palavras num grupo: separado, \"e o melhor é que\" ficaria 0,4 s na tela (fala rápida)"},
+   {"id": "f17", "fala": "em uma tarde", "texto": "em uma tarde"},
+   {"id": "f18", "fala": "Já salva", "texto": "já salva"},
+   {"id": "f19", "fala": "pro seu roteiro de Bruxelas", "texto": "pro seu|roteiro de Bruxelas"}
+  ]
+ },
+ "cenas": [
+  {"id": "gancho", "fonte": "IMG_2255", "ancora": "f1", "in": 0.0, "audio": "mudo", "recorte_x": [[0, 1272], [1, 1112], [2, 992], [3, 792], [3.6, 560]], "nota": "a câmera anda; o recorte acompanha o nicho"},
+  {"id": "cachorro_diego", "fonte": "IMG_2186", "ancora": "f3", "in": 1.8, "audio": "mudo", "recorte_x": [[0, 966]], "nota": "Diego aponta enquanto fala das 3 estátuas e do cachorro"},
+  {"id": "cachorro", "fonte": "IMG_2187", "ancora": "f5", "in": 0.3, "audio": "mudo", "recorte_x": [[0, 240], ["fim", 1600]], "nota": "panorâmica da cabeça até a perna levantada (a piada)"},
+  {"id": "menina_diego", "fonte": "IMG_2226", "ancora": "f7", "in": 7.5, "audio": "mudo", "recorte_x": [[0, 812]], "nota": "a rua estreita dos restaurantes, ao lado do beco"},
+  {"id": "menina", "fonte": "IMG_2224", "ancora": "f9", "in": 0.0, "audio": "mudo", "kenburns": true, "recorte_x": [[0, 1592]], "nota": "o corte cai em \"agachamento\": a estátua agachada é a piada"},
+  {"id": "famoso_diego", "fonte": "IMG_2258", "ancora": "f11", "in": 0.9, "audio": "mudo", "recorte_x": [[0, 560], [1.4, 760]]},
+  {"id": "famoso", "fonte": "IMG_2253", "ancora": "f12", "in": 0.0, "audio": "mudo", "recorte_x": [[0, 1178]], "nota": "close: a estátua fica acima da legenda"},
+  {"id": "lenda", "fonte": "IMG_2251", "ancora": "f14", "in": 0.2, "audio": "mudo", "kenburns": true, "nota": "o menino em close enquanto a lenda é contada; nenhuma cena encenada da bomba"},
+  {"id": "passeio", "fonte": "IMG_2188", "ancora": "f16", "in": 21.6, "audio": "mudo", "recorte_x": [[0, 1043]], "nota": "Diego e Marina rindo na rua de sol: \"o melhor\" e \"uma tarde\""},
+  {"id": "fim", "fonte": "IMG_2255", "ancora": "f18", "in": 3.6, "audio": "mudo", "recorte_x": [[0, 552], [0.4, 352], [1.4, 32], [2.4, 0]], "nota": "a mesma multidão do gancho: o corte seco para o início fecha o loop"}
+ ],
+ "audios": [],
+ "transicoes": [
+  {"tipo": "snap", "entra": "cachorro", "motivo": "lista de 3 (DS 4.4): 1º item"},
+  {"tipo": "snap", "entra": "famoso", "motivo": "lista de 3 (DS 4.4): último item"}
+ ],
+ "informacao": [
+  {"de": "f5", "ate": "f6", "rotulo": "15/03 · 13H17", "numero": "1/3", "fonte_do_dado": "IMG_2187 (o cachorro) criado 15/03/2026 13:17:14 (+01:00) + 0,3 s do trecho"},
+  {"de": "f9", "ate": "f10", "rotulo": "15/03 · 14H24", "numero": "2/3", "fonte_do_dado": "IMG_2224 (a menina) criado 15/03/2026 14:24:58 (+01:00), trecho desde 0,0 s"},
+  {"de": "f12", "ate": "f15", "rotulo": "15/03 · 16H09", "numero": "3/3", "fonte_do_dado": "IMG_2253 (o menino) criado 15/03/2026 16:09:52 (+01:00), trecho desde 0,0 s; IMG_2251 16:09:06"}
+ ],
+ "ticket": {"de": "f18", "desloc_s": 0.15, "dur_s": 2.9, "variante": "sabia", "micro": "ZINNEKE · JEANNEKE · MANNEKEN", "x": 72, "y": 900, "fonte_do_dado": "nomes oficiais em visit.brussels (Manneken-Pis, Jeanneke-Pis, Zinneke-Pis), consultado em 16/10/2026; o SABIA? responde ao \"Você sabia…?\" do gancho"},
+ "sons": [],
+ "capa": {"cena": "gancho", "t": 1.0, "placa": {"rotulo": "XIXI EM BRUXELAS", "destino": "3 ESTÁTUAS", "modulo": "interrogacao", "tamanho": "M"}, "origem": "planejamento V5: multidão no Manneken Pis com Placa pequena \"3 ESTÁTUAS\" e o \"?\" no módulo (mesma da rev1)"},
+ "mix": {
+  "voz_lufs": -16,
+  "ambiente_lufs": -30,
+  "master_lufs": -14,
+  "master_pico_dbtp": -1
+ },
+ "trilha": "nenhuma no arquivo; sugestão na legenda_post.md (biblioteca do Instagram, 8 a 10 dB abaixo da voz, DS 4.6)",
+ "som": "só a voz do Diego: vídeos de fundo mudos, sem ambiente e sem os obturadores do Snap (pedido do Diego, 16/10/2026)"
+}
