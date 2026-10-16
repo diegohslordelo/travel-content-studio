@@ -63,10 +63,10 @@
   "pico_dbfs": -6.6
  },
  "PD_moeda_v1.wav": {
-  "evento": "Fora da tabela 4.6: evento a definir pelo Diego",
-  "duracao_ref": "≈ 400 ms",
-  "duracao_s": 0.502,
+  "evento": "Máquina de moeda: todo Recibo e toda soma do Placar (decisão do Diego, 16/10/2026)",
+  "duracao_ref": "≈ 1,3 s",
+  "duracao_s": 1.302,
   "lufs_50ms": -14.0,
-  "pico_dbfs": -7.2
+  "pico_dbfs": -9.3
  }
 }

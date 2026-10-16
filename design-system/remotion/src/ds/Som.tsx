@@ -9,7 +9,6 @@ import React from "react";
 import { Audio } from "@remotion/media";
 import { Sequence, useVideoConfig } from "remotion";
 import { db, quadros } from "./tempo";
-import { SOM } from "./tokens";
 import niveis from "../../../sons/sons_v1.json";
 import clack from "../../../sons/PD_clack_v1.wav";
 import tum from "../../../sons/PD_tum_v1.wav";
@@ -62,18 +61,14 @@ export const Som: React.FC<{
   );
 };
 
+/** Volume da máquina de moeda: −10 dB da voz, o mesmo da linha do *ding* na 4.6. Valor provisório (o DS ainda não tem linha para ela): calibrar depois da escuta. */
+export const VOLUME_MOEDA_DB = -10;
+
 /**
- * Evento do Recibo (decisão do Diego, 16/10/2026): sempre que o Recibo aparece, a impressora imprime e a
- * moeda cai quando o total assenta (320 ms depois, o fim da impressão), para dar a sensação de "gastar
- * dinheiro". Conta como UM efeito sonoro, como o ding + furador do Ticket. A moeda usa o volume da linha
- * do Recibo na 4.6 (−14 dB da voz); calibrar depois da escuta.
+ * Máquina de moeda (decisão do Diego, 16/10/2026): toca em TODO Recibo e em TODA soma de gasto do Placar,
+ * no lugar da impressora e do tick. Os componentes `Recibo` e `Placar` já chamam este som sozinhos.
  */
-export const SomRecibo: React.FC<{ em: number; refLufs: number }> = ({
+export const SomMoeda: React.FC<{ em: number; refLufs: number }> = ({
   em,
   refLufs,
-}) => (
-  <>
-    <Som nome="impressora" em={em} relDb={SOM.impressora} refLufs={refLufs} />
-    <Som nome="moeda" em={em + 320} relDb={SOM.impressora} refLufs={refLufs} />
-  </>
-);
+}) => <Som nome="moeda" em={em} relDb={VOLUME_MOEDA_DB} refLufs={refLufs} />;

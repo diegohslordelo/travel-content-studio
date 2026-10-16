@@ -22,7 +22,7 @@ import { EtiquetaValor, Recibo } from "../ds/Cards";
 import { Cinema, FlashSnap, Varredura } from "../ds/Transicoes";
 import { Fibra, ScrimBase } from "../ds/material";
 import { Seta } from "../ds/icones";
-import { Som, SomRecibo } from "../ds/Som";
+import { Som } from "../ds/Som";
 import { useMs } from "../ds/tempo";
 import { COR, RAIO, SOMBRA } from "../ds/tokens";
 
@@ -337,7 +337,7 @@ const ITENS: Item[] = [
     som: { nome: "clack", em: 580, rel: -10 },
   },
   {
-    nome: "2.5 Placar · Giro",
+    nome: "2.5 Placar · Giro + máquina de moeda",
     dur: 3.4,
     el: (
       <Placar
@@ -348,7 +348,6 @@ const ITENS: Item[] = [
         ]}
       />
     ),
-    som: { nome: "tick", em: 1900, rel: -14 },
   },
   {
     nome: "2.2 Carimbo · Batida",
@@ -413,27 +412,24 @@ const ITENS: Item[] = [
     ),
   },
   {
-    nome: "2.6 Recibo · impressora + moeda",
+    nome: "2.6 Recibo · máquina de moeda",
     dur: 3.4,
     el: (
-      <>
-        <Recibo
-          lugar="BAR DO EXEMPLO"
-          cabecalho="13H52 · 20/03/2026"
-          linhas={[
-            ["espresso", "1,20"],
-            ["cornetto", "1,50"],
-          ]}
-          total="€ 2,70"
-          real="≈ R$ 17"
-          rodape="cotação € 1 = R$ 6,30 · 20/03 (exemplo)"
-          ini={300}
-          fim={3000}
-          x={240}
-          y={420}
-        />
-        <SomRecibo em={300} refLufs={-16} />
-      </>
+      <Recibo
+        lugar="BAR DO EXEMPLO"
+        cabecalho="13H52 · 20/03/2026"
+        linhas={[
+          ["espresso", "1,20"],
+          ["cornetto", "1,50"],
+        ]}
+        total="€ 2,70"
+        real="≈ R$ 17"
+        rodape="cotação € 1 = R$ 6,30 · 20/03 (exemplo)"
+        ini={300}
+        fim={3000}
+        x={240}
+        y={420}
+      />
     ),
   },
   {

@@ -248,18 +248,50 @@ def nascer():
 
 
 def moeda():
-    """Moeda caindo no balcão: tilintar metálico com 2 quiques (pedido do Diego, 16/10/2026)."""
-    def batida(ganho, dur, brilho=1.0):
-        metal = sum(
-            a * parcial(f * brilho, dur, tau, ataque=0.0003)
-            for f, a, tau in [(3620, 1.0, 0.16), (5870, 0.7, 0.11), (8140, 0.45, 0.07),
-                              (10250, 0.25, 0.05), (2190, 0.3, 0.09)]
+    """Máquina de moeda (decisão do Diego, 16/10/2026): "ka" mecânico da gaveta, sino "ching" de caixa
+    registradora e uma cascata de moedas caindo na bandeja de metal, como um caça-níquel pagando. ≈ 1,3 s.
+    Toca em todo Recibo e em toda soma de gasto do Placar."""
+    d = 1.3
+
+    # 1) "ka": baque grave da gaveta + 3 cliques de catraca
+    tt = t(0.14)
+    f = 105 + 95 * np.exp(-tt / 0.012)
+    baque = np.sin(2 * np.pi * np.cumsum(f) / SR) * env_exp(0.14, 0.032, 0.0012)
+    catraca = mix(*[(p, transiente(0.004, 1200, 7000, 0.0011) * g) for p, g in [(0.0, 1.0), (0.019, 0.7), (0.037, 0.5)]])
+    caixa = ressoador(ruido(0.14) * env_exp(0.14, 0.018, 0.0008), 320, 5) * 0.5
+    ka = mix((0, baque * 0.9), (0, catraca * 0.8), (0, caixa))
+
+    # 2) "ching": sino de metal, parciais inarmônicos, brilho que dura
+    f0 = 2350.0
+    sino = sum(
+        a * parcial(f0 * r, d, tau, ataque=0.0006, detune=0.004)
+        for r, a, tau in [(1.0, 1.0, 0.55), (1.004, 0.55, 0.50), (1.505, 0.45, 0.30), (2.76, 0.40, 0.22), (4.07, 0.22, 0.12), (5.4, 0.12, 0.07)]
+    )
+    sino = mix((0, sino * 0.55), (0, transiente(0.004, 2500, 14000, 0.0009) * 0.35))
+
+    # 3) cascata: moedas caindo na bandeja; começam densas e vão espaçando
+    n = 15
+    moedas = np.zeros(int(d * SR))
+    inicio = 0.085
+    gap = 0.014
+    for k in range(n):
+        base = rng.uniform(2900, 6300)
+        amp = rng.uniform(0.35, 0.85) * (1.0 - 0.35 * k / n)
+        tau = rng.uniform(0.035, 0.085)
+        one = sum(
+            a * parcial(base * r, 0.30, tau * c, ataque=0.0004)
+            for r, a, c in [(1.0, 1.0, 1.0), (2.31, 0.5, 0.6), (3.94, 0.25, 0.35)]
         )
-        golpe = transiente(0.003, 3000, 16000, 0.0007) * 0.8
-        return mix((0, metal * 0.5), (0, golpe)) * ganho
-    x = mix((0, batida(1.0, 0.5)), (0.115, batida(0.55, 0.35, 1.01)), (0.19, batida(0.3, 0.3, 1.015)),
-            (0.235, batida(0.14, 0.25, 1.02)))
-    return fade_out(passa_alta(x, 600), 0.15)
+        one = mix((0, one * 0.5), (0, transiente(0.003, 2500, 15000, 0.0007) * 0.6))
+        i = int(inicio * SR)
+        moedas[i:i + len(one)] += one[: len(moedas) - i] * amp
+        inicio += gap * rng.uniform(0.7, 1.3)
+        gap *= 1.11
+    bandeja = ressoador(moedas, 820, 4) * 0.22
+
+    x = mix((0, ka * 1.0), (0.058, sino * 0.9), (0, moedas * 0.55), (0, bandeja))
+    x = colocar(x, d)
+    return fade_out(passa_baixa(passa_alta(x, 90), 15000), 0.25)
 
 
 SONS = {
@@ -273,7 +305,7 @@ SONS = {
     "obturador": (obturador, "Transição Snap", "≈ 100 ms"),
     "whoosh": (whoosh, "Só na transição Arrasto", "200 ms"),
     "nascer": (nascer, "Fechamento: o 1º nasce (opcional)", "≈ 700 ms"),
-    "moeda": (moeda, "Fora da tabela 4.6: evento a definir pelo Diego", "≈ 400 ms"),
+    "moeda": (moeda, "Máquina de moeda: todo Recibo e toda soma do Placar (decisão do Diego, 16/10/2026)", "≈ 1,3 s"),
 }
 
 

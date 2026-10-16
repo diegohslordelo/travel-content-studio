@@ -4,7 +4,7 @@ Arquivos prontos para editar no CapCut, gerados pelo projeto `../remotion/` em 1
 
 ## Catálogo
 
-`catalogo_ds_v2.mp4` (47 s, com som): todas as animações do DS em sequência, cada uma com o rótulo da seção e o seu som da 4.6 (no Recibo, a impressora seguida da moeda, decisão do Diego de 16/10/2026). Os sons estão no volume relativo a uma voz de −16 LUFS, e o conjunto foi subido depois por ganho linear e limitador; a relação entre eles é a do DS.
+`catalogo_ds_v2.mp4` (47 s, com som): todas as animações do DS em sequência, cada uma com o rótulo da seção e o seu som da 4.6 (no Recibo e na soma do Placar, a máquina de moeda no lugar da impressora e do *tick*, decisão do Diego de 16/10/2026). Os sons estão no volume relativo a uma voz de −16 LUFS, e o conjunto foi subido depois por ganho linear e limitador; a relação entre eles é a do DS.
 
 ## Animações com fundo transparente (`mov/`)
 
