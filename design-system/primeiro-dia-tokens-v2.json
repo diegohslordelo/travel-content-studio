@@ -1,5 +1,5 @@
 {
-  "$description": "Primeiro Dia (@primeirodiaem) — tokens v2.2.0 (REV 2 'Objetos do Primeiro Dia'), 08/10/2026 (2.1.0 em 05/10/2026; 2.0.0 em 01/10/2026). W3C DTCG 2025.10. Primitivos → semânticos → componentes. Substitui primeiro-dia-tokens-v1.json.",
+  "$description": "Primeiro Dia (@primeirodiaem) — tokens v2.3.0 (REV 2 'Objetos do Primeiro Dia'), 16/10/2026 (2.2.0 em 08/10/2026; 2.1.0 em 05/10/2026; 2.0.0 em 01/10/2026). W3C DTCG 2025.10. Primitivos → semânticos → componentes. Substitui primeiro-dia-tokens-v1.json.",
   "color": {
     "signal": {
       "100": {
@@ -365,6 +365,86 @@
           "alpha": 0.55
         },
         "$description": "Vidro de trem: grafite 55% + desfoque 24px (legenda narrativa)."
+      }
+    },
+    "map": {
+      "land": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.949,
+            0.9373,
+            0.9137
+          ],
+          "hex": "#F2EFE9"
+        },
+        "$description": "Mapa (5.4): terreno. Cores naturais de mapa, decisão do Diego em 16/10/2026."
+      },
+      "water": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6667,
+            0.8275,
+            0.8745
+          ],
+          "hex": "#AAD3DF"
+        },
+        "$description": "Mapa (5.4): água (rios, canais, lagos)."
+      },
+      "park": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8039,
+            0.9216,
+            0.6902
+          ],
+          "hex": "#CDEBB0"
+        },
+        "$description": "Mapa (5.4): parques e áreas verdes."
+      },
+      "road": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "hex": "#FFFFFF"
+        },
+        "$description": "Mapa (5.4): ruas."
+      },
+      "road-casing": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8392,
+            0.8196,
+            0.7882
+          ],
+          "hex": "#D6D1C9"
+        },
+        "$description": "Mapa (5.4): contorno das ruas."
+      },
+      "road-major": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9882,
+            0.8902,
+            0.7059
+          ],
+          "hex": "#FCE3B4"
+        },
+        "$description": "Mapa (5.4): avenidas e vias principais."
       }
     }
   },

@@ -68,6 +68,13 @@ export const COR = {
   legenda: cor("semantic.caption-text"),
   scrim: cor("semantic.scrim"),
   vidro: cor("semantic.glass"),
+  /** Mapa do vídeo longo em cores naturais (DS V2 2.3.0, 5.4): só no mapa. */
+  mapaTerra: cor("map.land"),
+  mapaAgua: cor("map.water"),
+  mapaParque: cor("map.park"),
+  mapaRua: cor("map.road"),
+  mapaRuaContorno: cor("map.road-casing"),
+  mapaVia: cor("map.road-major"),
 } as const;
 
 export const FONTE = {

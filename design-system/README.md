@@ -1,6 +1,6 @@
 # Design System: Primeiro Dia
 
-Esta pasta guarda o **Design System V2, "Objetos do Primeiro Dia" (v2.2.0, 08/10/2026)**, que é a versão vigente. A V1 "Placa & Caneta" e a v0 "Primeira luz" estão aposentadas.
+Esta pasta guarda o **Design System V2, "Objetos do Primeiro Dia" (v2.3.0, 16/10/2026)**, que é a versão vigente. A V1 "Placa & Caneta" e a v0 "Primeira luz" estão aposentadas.
 
 As regras visuais estão nos arquivos abaixo e não são repetidas aqui.
 
@@ -32,6 +32,8 @@ Os documentos de apoio ficam em `../docs/`:
 **Versão 2.1.0 (05/10/2026, aprovada pelo Diego):** níveis de edição A/B; regras de som (nomes dos arquivos, Varredura com *clack*, Nascer no kit, 1 *tick* por giro, master −14 LUFS e pico ≤ −1 dBTP); tempos em ms como referência das receitas; tokens `blur`, `effect` e `sound` copiados do brand book; introdução renumerada (0.1–0.4). **Hierarquia:** tokens valem para valores, o brand book para regras, e o bundle é só prévia.
 
 **Versão 2.2.0 (08/10/2026, pedido do Diego):** legendas do YouTube longo, 16:9 (brand book 3.4): faixa `.srt` revisada em todo vídeo com fala e legenda embutida de reforço só nos trechos difíceis; tokens novos em `layout.yt` (posição, largura e tempo da legenda). Nenhuma fonte, cor, sombra ou curva nova. O bundle ainda não tem prévia dessa seção.
+
+**Versão 2.3.0 (16/10/2026, pedido do Diego):** mapa do vídeo longo (brand book 5.4) em cores naturais de mapa, a partir do OpenStreetMap, no lugar dos tons de grafite; tokens novos em `color.map`. As cores novas valem só para o mapa.
 
 **Remotion, kit e sons v1 (16/10/2026, pedido do Diego):** o DS V2 ganhou uma implementação animada em Remotion (`remotion/`), que lê os tokens direto do JSON e exporta o kit (`kit/`); os 9 sons do kit e o som de moeda foram gerados por síntese (`sons/`). Nenhum valor visual novo. As interpretações de implementação estão em `remotion/README.md` ("Decisões de implementação").
 

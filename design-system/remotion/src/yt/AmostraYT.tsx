@@ -9,19 +9,19 @@ import { AbsoluteFill, Sequence, staticFile, useVideoConfig } from "remotion";
 import { Placa, LIKE_APERTA, LIKE_INSCRITO } from "../ds/Placa";
 import { Placar } from "../ds/Placar";
 import { Recibo } from "../ds/Cards";
-import { Varredura } from "../ds/Transicoes";
 import { Grao } from "../ds/material";
 import { Som } from "../ds/Som";
 import { SOM, YT } from "../ds/tokens";
-import { ChamadaInstagram, EtiquetaLugar, LOWER_BASE, MapaRota } from "./Objetos16x9";
+import { ChamadaInstagram, DUR_PAGINA, EtiquetaLugar, LOWER_BASE, MapaRota, VOLUME_PAGINA_DB, VirarPagina } from "./Objetos16x9";
 
 const REF = -16; // loudness de referência da voz (LUFS) para os volumes da 4.6
 
-type Clipe = { arquivo: string; de: number; ate: number; inicio: number };
+/** `pagina`: a cena sai virando como página (troca de dia), por cima da cena seguinte. */
+type Clipe = { arquivo: string; de: number; ate: number; inicio: number; pagina?: boolean };
 
 // ms na linha do tempo da amostra; `inicio` = ms dentro do clipe
 const CLIPES: Clipe[] = [
-  { arquivo: "clipes/IMG_1375.mp4", de: 0, ate: 4000, inicio: 800 },
+  { arquivo: "clipes/IMG_1375.mp4", de: 0, ate: 4000, inicio: 800, pagina: true },
   { arquivo: "clipes/IMG_1406.mp4", de: 4000, ate: 10000, inicio: 300 },
   { arquivo: "clipes/IMG_1449.mp4", de: 15000, ate: 22000, inicio: 1000 },
   { arquivo: "clipes/IMG_1440.mp4", de: 22000, ate: 30000, inicio: 1500 },
@@ -30,18 +30,18 @@ const CLIPES: Clipe[] = [
 const ClipeFundo: React.FC<{ c: Clipe }> = ({ c }) => {
   const { fps } = useVideoConfig();
   const q = (ms: number) => Math.round((ms * fps) / 1000);
+  const video = <Video src={staticFile(c.arquivo)} trimBefore={q(c.inicio)} objectFit="cover" style={{ width: "100%", height: "100%" }} volume={0.8} />;
   return (
-    <Sequence from={q(c.de)} durationInFrames={q(c.ate - c.de)} name={c.arquivo}>
-      <AbsoluteFill>
-        <Video src={staticFile(c.arquivo)} trimBefore={q(c.inicio)} objectFit="cover" style={{ width: "100%", height: "100%" }} volume={0.8} />
-      </AbsoluteFill>
+    <Sequence from={q(c.de)} durationInFrames={q(c.ate - c.de + (c.pagina ? DUR_PAGINA : 0))} name={c.arquivo}>
+      {c.pagina ? <VirarPagina corte={c.ate - c.de}>{video}</VirarPagina> : <AbsoluteFill>{video}</AbsoluteFill>}
     </Sequence>
   );
 };
 
 export const AmostraYT: React.FC = () => (
   <AbsoluteFill style={{ background: "#000" }}>
-    {CLIPES.map((c) => (
+    {/* de trás para a frente: a cena que vira a página fica por cima da seguinte */}
+    {[...CLIPES].reverse().map((c) => (
       <ClipeFundo key={c.arquivo} c={c} />
     ))}
 
@@ -49,25 +49,25 @@ export const AmostraYT: React.FC = () => (
     <Placa rotulo="3 DIAS EM" destino="AMSTERDAM" tamanho="M" x={YT.margemTitulo} y={LOWER_BASE - 166} entrada={300} saida={3000} />
     <Som nome="clack" em={300 + 280} relDb={SOM.clack} refLufs={REF} />
 
-    {/* 0:04 início do dia: Varredura + Placa de capítulo; o clack da Varredura marca os dois */}
-    <Varredura corte={4000} largura={1920} />
-    <Som nome="clack" em={4000} relDb={SOM.clack} refLufs={REF} />
-    <Placa rotulo="QUINTA · 12/03" destino="DIA 1" tamanho="M" x={YT.margemTitulo} y={YT.margemTitulo} entrada={4200} saida={6500} />
+    {/* 0:04 início do dia: transição Página (folha virando) + Placa de capítulo depois que a folha assenta */}
+    <Som nome="pagina" em={4000} relDb={VOLUME_PAGINA_DB} refLufs={REF} />
+    <Placa rotulo="QUINTA · 12/03" destino="DIA 1" tamanho="M" x={YT.margemTitulo} y={YT.margemTitulo} entrada={4700} saida={6900} />
+    <Som nome="clack" em={4700 + 280} relDb={SOM.clack} refLufs={REF} />
 
     {/* Placar do dia: liga depois que o capítulo sai (mesmo canto), sem som; soma com moeda */}
     <Placar
       x={YT.margemTitulo}
       y={72}
-      ligar={6900}
+      ligar={7300}
       valores={[
-        { em: 6900, tempo: "+02:00", gasto: "€ 0,00" },
+        { em: 7300, tempo: "+02:00", gasto: "€ 0,00" },
         { em: 18000, tempo: "+03:06", gasto: "€ 6,50" },
       ]}
       refLufs={REF}
     />
 
     {/* lugar */}
-    <EtiquetaLugar lugar="DAMRAK" detalhe="CENTRUM · 16H30" ini={6400} fim={9600} />
+    <EtiquetaLugar lugar="DAMRAK" detalhe="CENTRUM · 16H30" ini={6600} fim={9700} />
 
     {/* 0:10 mapa do dia com a Rota */}
     <MapaRota arquivo="mapa_centro.json" ini={10000} fim={15000} refLufs={REF} />

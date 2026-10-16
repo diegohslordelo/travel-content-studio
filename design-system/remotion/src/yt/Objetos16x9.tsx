@@ -4,15 +4,16 @@
  * as posições vêm da grade 16:9 do DS V2 (1.3): margem de título 96, lower third com base em y 960.
  */
 import React, { useEffect, useState } from "react";
-import { continueRender, delayRender, staticFile } from "remotion";
+import { AbsoluteFill, continueRender, delayRender, staticFile } from "remotion";
 import { Fibra } from "../ds/material";
 import { GlifoInstagram, Seta } from "../ds/icones";
 import { Som } from "../ds/Som";
 import { kf, useMs } from "../ds/tempo";
 import { COR, DUR, EASE, FONTE, RAIO, SOM, SOMBRA, TIPO, YT, rgba } from "../ds/tokens";
 
-/** Volume da nota do Pin no destino (rel. à voz): provisório, o mesmo do clack. */
-const VOLUME_PIN_DB = -10;
+/** Volumes (rel. à voz) dos sons novos do vídeo longo: provisórios, o mesmo do clack, a calibrar na escuta. */
+const VOLUME_PLIM_DB = -10;
+export const VOLUME_PAGINA_DB = -10;
 
 /** Base do lower third (DS V2, 1.3). */
 export const LOWER_BASE = 960;
@@ -103,6 +104,7 @@ type DadosMapa = {
   minor: string[];
   agua: string[];
   canal: string[];
+  parque: string[];
   rota: [number, number][];
   paradas: { n: number; nome: string; hora: string; xy: [number, number] }[];
 };
@@ -124,9 +126,9 @@ const Pin: React.FC<{ x: number; y: number; t: number }> = ({ x, y, t }) => {
 };
 
 /**
- * Mapa do dia (DS 5.4): mapa próprio a partir do OpenStreetMap (fundo grafite 900, ruas grafite 700,
- * água grafite 800), Rota amarela contínua de 8 px que se desenha, paradas numeradas com a hora e Pin 1º
- * no destino. Som (decisão de 16/10/2026): whoosh suave quando a Rota começa e a nota do Nascer quando o Pin
+ * Mapa do dia (DS 5.4, 2.3.0): mapa próprio a partir do OpenStreetMap em cores naturais (tokens `color.map`),
+ * Rota amarela contínua de 8 px com contorno grafite que se desenha, paradas numeradas com a hora e Pin 1º
+ * no destino. Som (decisões de 16/10/2026): whoosh suave quando a Rota começa e o "plim" quando o Pin
  * assenta no destino. Crédito do OSM na tela.
  */
 export const MapaRota: React.FC<{ arquivo: string; ini: number; fim: number; desenho?: number; refLufs?: number }> = ({ arquivo, ini, fim, desenho = 2000, refLufs = -16 }) => {
@@ -152,12 +154,26 @@ export const MapaRota: React.FC<{ arquivo: string; ini: number; fim: number; des
   return (
     <>
       {visivel && (
-        <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{ position: "absolute", inset: 0, background: COR.grafite, opacity: opac }}>
+        <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{ position: "absolute", inset: 0, background: COR.mapaTerra, opacity: opac }}>
           <g transform={`translate(960 565) scale(${zoom}) translate(-960 -540)`}>
-            {dados.agua.map((d, i) => <path key={`a${i}`} d={d} fill={COR.grafite800} />)}
-            {dados.canal.map((d, i) => <path key={`c${i}`} d={d} fill="none" stroke={COR.grafite800} strokeWidth={10} strokeLinecap="round" />)}
-            {dados.minor.map((d, i) => <path key={`m${i}`} d={d} fill="none" stroke={COR.grafite700} strokeWidth={2.5} strokeLinecap="round" />)}
-            {dados.major.map((d, i) => <path key={`M${i}`} d={d} fill="none" stroke={COR.grafite700} strokeWidth={6} strokeLinecap="round" />)}
+            <rect x={-400} y={-400} width={2720} height={1880} fill={COR.mapaTerra} />
+            {dados.parque.map((d, i) => <path key={`p${i}`} d={d} fill={COR.mapaParque} />)}
+            {dados.agua.map((d, i) => <path key={`a${i}`} d={d} fill={COR.mapaAgua} />)}
+            {dados.canal.map((d, i) => <path key={`c${i}`} d={d} fill="none" stroke={COR.mapaAgua} strokeWidth={10} strokeLinecap="round" />)}
+            {dados.minor.map((d, i) => <path key={`mc${i}`} d={d} fill="none" stroke={COR.mapaRuaContorno} strokeWidth={6} strokeLinecap="round" />)}
+            {dados.major.map((d, i) => <path key={`Mc${i}`} d={d} fill="none" stroke={COR.mapaRuaContorno} strokeWidth={11} strokeLinecap="round" />)}
+            {dados.minor.map((d, i) => <path key={`m${i}`} d={d} fill="none" stroke={COR.mapaRua} strokeWidth={3.5} strokeLinecap="round" />)}
+            {dados.major.map((d, i) => <path key={`M${i}`} d={d} fill="none" stroke={COR.mapaVia} strokeWidth={8} strokeLinecap="round" />)}
+            <polyline
+              points={dados.rota.map((q) => q.join(",")).join(" ")}
+              fill="none"
+              stroke={COR.grafite}
+              strokeWidth={14 / zoom}
+              strokeLinejoin="round"
+              strokeLinecap="round"
+              strokeDasharray={L}
+              strokeDashoffset={L * (1 - p)}
+            />
             <polyline
               points={dados.rota.map((q) => q.join(",")).join(" ")}
               fill="none"
@@ -185,7 +201,7 @@ export const MapaRota: React.FC<{ arquivo: string; ini: number; fim: number; des
                     </text>
                   )}
                   <g transform={`translate(${x + 30} ${labelY}) scale(${1 / zoom})`}>
-                    <rect x={0} y={0} width={34 + 16.2 * (s.nome.length + s.hora.length + 3)} height={48} rx={RAIO.tag} fill={COR.grafite} stroke={rgba(COR.papel, 0.15)} />
+                    <rect x={0} y={0} width={40 + 17.6 * (s.nome.length + s.hora.length + 3)} height={48} rx={RAIO.tag} fill={COR.grafite} stroke={rgba(COR.papel, 0.15)} />
                     <text x={18} y={33} fontFamily={FONTE.mono} fontWeight={500} fontSize={27} letterSpacing="0.04em" fill={COR.papel}>
                       {s.nome} <tspan fill={COR.amarelo}>· {s.hora}</tspan>
                     </text>
@@ -198,14 +214,47 @@ export const MapaRota: React.FC<{ arquivo: string; ini: number; fim: number; des
               return <g transform={`translate(${s.xy[0]} ${s.xy[1]}) scale(${1 / zoom}) translate(${-s.xy[0]} ${-s.xy[1]})`}><Pin x={s.xy[0]} y={s.xy[1]} t={te - fimRota} /></g>;
             })()}
           </g>
-          <text x={1920 - YT.margemAcao} y={1080 - YT.margemAcao + 20} textAnchor="end" fontFamily={FONTE.mono} fontSize={18} fill={COR.poeira}>
+          <text x={1920 - YT.margemAcao} y={1080 - YT.margemAcao + 20} textAnchor="end" fontFamily={FONTE.mono} fontSize={18} fill={COR.asfalto}>
             © OpenStreetMap contributors
           </text>
         </svg>
       )}
       <Som nome="whoosh" em={ini + 300} relDb={SOM.whoosh} refLufs={refLufs} />
-      {/* chegada no destino (decisão do Diego, 16/10/2026): a nota do Nascer quando o Pin 1º assenta; −10 dB provisório, a calibrar */}
-      <Som nome="nascer" em={ini + 300 + desenho} relDb={VOLUME_PIN_DB} refLufs={refLufs} />
+      {/* chegada no destino (pedido do Diego, 16/10/2026): "plim" quando o Pin 1º assenta */}
+      <Som nome="plim" em={ini + 300 + desenho} relDb={VOLUME_PLIM_DB} refLufs={refLufs} />
     </>
+  );
+};
+
+/**
+ * Transição Página (pedido do Diego, 16/10/2026, troca de dia no vídeo longo): a cena que sai vira como a
+ * folha de um caderno, presa na borda esquerda, mostrando o verso de papel (fibra), e revela a cena nova
+ * por baixo, com a sombra da folha passando sobre ela. 700 ms com `ease-cinema`. Som: folha virando,
+ * no início do giro (`PD_pagina_v1.wav`). Envolve a cena que SAI; a cena que entra fica por baixo, já tocando.
+ */
+export const DUR_PAGINA = 700;
+
+export const VirarPagina: React.FC<{ corte: number; children: React.ReactNode }> = ({ corte, children }) => {
+  const t = useMs() - corte;
+  const p = kf(t, [0, DUR_PAGINA], [0, 1], EASE.cinema);
+  if (t >= DUR_PAGINA) return null;
+  const ang = -180 * p;
+  const sombra = Math.sin(Math.PI * p);
+  return (
+    <AbsoluteFill style={{ perspective: 2600, perspectiveOrigin: "0 50%" }}>
+      {t >= 0 && (
+        <AbsoluteFill style={{ background: `linear-gradient(90deg, ${rgba(COR.grafite, 0.55 * sombra)}, ${rgba(COR.grafite, 0)} ${30 + 60 * p}%)` }} />
+      )}
+      <AbsoluteFill style={{ transformOrigin: "0 50%", transform: `rotateY(${ang}deg)`, transformStyle: "preserve-3d" }}>
+        <AbsoluteFill style={{ backfaceVisibility: "hidden", overflow: "hidden" }}>
+          {children}
+          <AbsoluteFill style={{ background: `linear-gradient(90deg, ${rgba(COR.grafite, 0)} 40%, ${rgba(COR.grafite, 0.45 * sombra)})` }} />
+        </AbsoluteFill>
+        <AbsoluteFill style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)", background: COR.recibo, overflow: "hidden" }}>
+          <Fibra opacidade={0.08} semente={21} />
+          <AbsoluteFill style={{ background: `linear-gradient(270deg, ${rgba(COR.grafite, 0.25 * sombra)}, ${rgba(COR.grafite, 0)} 60%)` }} />
+        </AbsoluteFill>
+      </AbsoluteFill>
+    </AbsoluteFill>
   );
 };

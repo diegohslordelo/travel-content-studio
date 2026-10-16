@@ -22,9 +22,9 @@ Vídeo: "BARCELONA BARATA! QUANTO CUSTA 3 DIAS NA CIDADE?" (publicado em 11/10/2
 |---|---|---|---|---|
 | Gancho | 0:00–~0:25 | Narração gravada do Diego sobre 5 a 7 momentos fortes (3 a 5 s cada), com 1 ou 2 falas reais curtas. Diz a promessa do título antes de 0:30 e deixa uma pergunta que só o fim responde (o total) | Só imagem | Som real dos clipes por baixo |
 | Marca | ~0:25–0:27 | Primeira cena do Dia 1, sem parar o vídeo | Placa `[N] DIAS EM / CIDADE →` com Chegada (DS 5.4). É a "vinheta" | *clack* |
-| Início de cada dia | — | Hora real do primeiro clipe | Placa de capítulo `DIA N` com Varredura; depois o Placar do dia liga zerado | *clack*; Placar liga sem som |
+| Início de cada dia | — | Hora real do primeiro clipe | Transição **Página**: a última cena do dia anterior vira como folha de caderno (700 ms, verso de papel) e revela o dia novo; depois a Placa de capítulo `DIA N` e o Placar do dia, zerado | Folha virando (`PD_pagina_v1.wav`); *clack* na placa; Placar liga sem som |
 | Cada lugar novo | — | Chegada no lugar | Etiqueta de lugar (lower third, x 96 · base y 960, 4 s): lugar + bairro + **hora** (Plex Mono), sem coordenadas | Sem som |
-| Deslocamento entre lugares | — | Quando ajuda a entender o dia | Mapa próprio com a Rota amarela se desenhando (DS 5.4, base OpenStreetMap, crédito na tela e na descrição) e Pin 1º no destino | *whoosh* suave na Rota; nota do Nascer quando o Pin assenta |
+| Deslocamento entre lugares | — | Quando ajuda a entender o dia | Mapa próprio em cores naturais (DS 5.4, versão 2.3.0, tokens `color.map`, base OpenStreetMap, crédito na tela e na descrição), Rota amarela com contorno grafite se desenhando e Pin 1º no destino | *whoosh* suave na Rota; "plim" (`PD_plim_v1.wav`) quando o Pin chega ao destino |
 | Cada compra | — | Hora em que paga ou mostra o que comprou | Recibo pela direita (x 1400, 4–6 s) + soma no Placar | Máquina de moeda, uma vez só |
 | Perrengue ou surpresa | — | Só se aconteceu de verdade | Carimbo PERRENGUE ou Ticket SURPREENDE | *tum* · *ding* |
 | Reengajamento | ~a cada 3 min | Pergunta ou antecipação na fala | — | — |
@@ -34,7 +34,9 @@ Vídeo: "BARCELONA BARATA! QUANTO CUSTA 3 DIAS NA CIDADE?" (publicado em 11/10/2
 | Fechamento | últimos ~45–60 s | Narração de fechamento (30–45 s) sobre os últimos planos: total da viagem (2 pessoas e por pessoa, € e R$), veredito, pedido de like e Instagram, "o próximo primeiro dia é em [cidade]". Texto escrito como lembrança, nunca como se estivesse no local | Recibo da viagem → Bilhete com o veredito → animação de like e inscrição → Instagram → Placa de fechamento + Nascer do 1º | Moeda · cliques · *ding* · *clack* + Nascer |
 | Tela final | últimos 20 s | Próximo vídeo | Papel com fibra, 2 espaços de vídeo, Bilhete "próximo dia:" (DS 5.4) | Clique |
 
-**Regras de som:** no máximo 1 efeito a cada 1,5 s (DS 4.6). Saídas de objeto não têm som. Os sons `PD_*_v1.wav` são sintetizados e ninguém ouviu: a escuta entra na aprovação final.
+**Regras de som:** no máximo 1 efeito a cada 1,5 s (DS 4.6). Saídas de objeto não têm som. Os sons `PD_*_v1.wav` são sintetizados (os do vídeo longo, `PD_plim_v1.wav` e `PD_pagina_v1.wav`, em `design-system/sons/gerar_sons.py`, volume provisório de −10 dB da voz) e a escuta entra na aprovação final.
+
+**Mapa:** o brand book foi atualizado para a 2.3.0 a pedido do Diego (16/10/2026): o mapa usa cores naturais de mapa (`color.map`) em vez dos tons de grafite.
 
 **Legenda:** **nenhuma legenda gravada na imagem** (decisão do Diego, 16/10/2026). Só o arquivo `.srt` revisado (Português do Brasil), que o espectador liga e desliga no CC. Regras do `.srt`: DS 3.4.1. A transcrição é feita com o Whisper maior, com os nomes conferidos no acervo e no registro, e as palavras duvidosas vão numa lista para o Diego ouvir antes do envio. A legenda automática do YouTube não é usada.
 
@@ -76,7 +78,8 @@ Também: custos (item, valor em €, dia, hora, por pessoa ou do casal) e, opcio
 | Placar (5.4) | Nos dias de "primeiro dia" | Em todos os dias, zerando a cada `DIA N`; Recibo da viagem soma tudo |
 | Placa de capítulo × Placar (1.3) | x 96 · y 96 e x 96 · y 72 (mesmo canto) | Em sequência: o capítulo sai antes de o Placar ligar |
 | Lower third (5.4) | Lugar + bairro + coordenadas | Lugar + bairro + hora |
-| Rota (4.6) | Sem som | *whoosh* suave quando animada no mapa |
+| Rota (4.6) | Sem som | *whoosh* suave quando animada no mapa; "plim" na chegada do Pin |
+| Troca de dia (5.4) | Varredura de Placa entre capítulos | Transição Página (folha virando), com som próprio |
 | CTA (5.4) | `INSCREVA-SE →` 1 vez, em 30–40% | Animação `DEIXA O LIKE E SE INSCREVE →` (meio e fechamento) — componente novo |
 | Instagram | Não previsto | `@primeirodiaem` + logo do Instagram, 3 vezes — componente novo |
 | Trilha (4.6) | Biblioteca do Instagram | Biblioteca de áudio do YouTube ou biblioteca licenciada |
