@@ -20,6 +20,8 @@ import obturador from "../../../sons/PD_obturador_v1.wav";
 import whoosh from "../../../sons/PD_whoosh_v1.wav";
 import nascer from "../../../sons/PD_nascer_v1.wav";
 import moeda from "../../../sons/PD_moeda_v1.wav";
+import plim from "../../../sons/PD_plim_v1.wav";
+import pagina from "../../../sons/PD_pagina_v1.wav";
 
 export const ARQUIVOS = {
   clack,
@@ -32,6 +34,8 @@ export const ARQUIVOS = {
   whoosh,
   nascer,
   moeda,
+  plim,
+  pagina,
 } as const;
 export type NomeSom = keyof typeof ARQUIVOS;
 

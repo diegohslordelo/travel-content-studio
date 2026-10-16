@@ -64,3 +64,26 @@ export const Relogio: React.FC<P> = ({ tamanho, cor, style }) => (
     <path d="M20 10v11l7 5" fill="none" stroke={cor} strokeWidth={4} strokeLinecap="round" />
   </svg>
 );
+
+/** Polegar de "gostei" genérico (não imita o botão do YouTube): mão em silhueta cheia. */
+export const Polegar: React.FC<P> = ({ tamanho, cor, style }) => (
+  <svg viewBox="0 0 100 100" width={tamanho} height={tamanho} style={style} aria-hidden>
+    <path fill={cor} d="M10 44h16v44H10z M32 46l16-32c6-2 12 2 11 9l-3 17h24c7 0 11 6 9 12l-8 28c-2 6-6 8-11 8H32z" />
+  </svg>
+);
+
+/** ✓ desenhado (1.2), mesmo peso de traço do ✗. */
+export const Visto: React.FC<P> = ({ tamanho, cor, style }) => (
+  <svg viewBox="0 0 100 100" width={tamanho} height={tamanho} style={style} aria-hidden>
+    <path d="M16 54l22 22 46-50" fill="none" stroke={cor} strokeWidth={14} strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+/** Glifo do Instagram (forma oficial, sem distorcer; cor sólida única, conforme as regras de marca da Meta). */
+export const GlifoInstagram: React.FC<P> = ({ tamanho, cor, style }) => (
+  <svg viewBox="0 0 100 100" width={tamanho} height={tamanho} style={style} aria-hidden>
+    <rect x="8" y="8" width="84" height="84" rx="24" fill="none" stroke={cor} strokeWidth={8} />
+    <circle cx="50" cy="50" r="19" fill="none" stroke={cor} strokeWidth={8} />
+    <circle cx="73" cy="27" r="5.5" fill={cor} />
+  </svg>
+);

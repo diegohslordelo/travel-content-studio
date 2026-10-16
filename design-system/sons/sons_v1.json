@@ -68,5 +68,19 @@
   "duracao_s": 1.302,
   "lufs_50ms": -14.0,
   "pico_dbfs": -9.3
+ },
+ "PD_plim_v1.wav": {
+  "evento": "Pin chega ao destino no mapa do vídeo longo (pedido do Diego, 16/10/2026)",
+  "duracao_ref": "≈ 800 ms",
+  "duracao_s": 0.892,
+  "lufs_50ms": -14.0,
+  "pico_dbfs": -9.1
+ },
+ "PD_pagina_v1.wav": {
+  "evento": "Transição Página: troca de dia no vídeo longo (pedido do Diego, 16/10/2026)",
+  "duracao_ref": "≈ 600 ms",
+  "duracao_s": 0.602,
+  "lufs_50ms": -14.0,
+  "pico_dbfs": -6.0
  }
 }

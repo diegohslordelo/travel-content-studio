@@ -68,6 +68,13 @@ export const COR = {
   legenda: cor("semantic.caption-text"),
   scrim: cor("semantic.scrim"),
   vidro: cor("semantic.glass"),
+  /** Mapa do vídeo longo em cores naturais (DS V2 2.3.0, 5.4): só no mapa. */
+  mapaTerra: cor("map.land"),
+  mapaAgua: cor("map.water"),
+  mapaParque: cor("map.park"),
+  mapaRua: cor("map.road"),
+  mapaRuaContorno: cor("map.road-casing"),
+  mapaVia: cor("map.road-major"),
 } as const;
 
 export const FONTE = {
@@ -195,4 +202,12 @@ export const REEL = {
   objetoY: px("layout.reel.zone-object-y"),
   legendaTopoY: px("layout.reel.zone-caption-y"),
   legendaLimiteY: px("layout.reel.caption-limit-y"),
+} as const;
+
+/** Vídeo longo do YouTube, 16:9 (DS V2, 1.3 e 3.4; tokens `layout.yt`). */
+export const YT = {
+  largura: px("layout.yt.width"),
+  altura: px("layout.yt.height"),
+  margemTitulo: px("layout.yt.title-safe"),
+  margemAcao: px("layout.yt.action-safe"),
 } as const;

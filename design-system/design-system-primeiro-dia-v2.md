@@ -2,7 +2,7 @@
 
 Design system da marca de conteúdo de viagens **Primeiro Dia** (@primeirodiaem) — REV 2, "Objetos do Primeiro Dia".
 
-> **Versão:** 2.2.0 (MINOR) · **Data:** 08/10/2026 (2.1.0 em 05/10/2026; 2.0.0 em 01/10/2026) · **Dono:** Diego · **Conceito:** "Objetos do Primeiro Dia"
+> **Versão:** 2.3.0 (MINOR) · **Data:** 16/10/2026 (2.2.0 em 08/10/2026; 2.1.0 em 05/10/2026; 2.0.0 em 01/10/2026) · **Dono:** Diego · **Conceito:** "Objetos do Primeiro Dia"
 > **Substitui:** `design-system-primeiro-dia-v1.md` e `primeiro-dia-tokens-v1.json` ("Placa & Caneta", v1.0.0), que ficam **aposentados**.
 > **Arquivos:** este brand book · `primeiro-dia-tokens-v2.json` (DTCG, fonte única dos valores) · `PDPlacar-Bold.ttf` (mantido) · componentes vivos neste sistema.
 > **Relação com os outros documentos:** `design-system-marca-viagens.md` continua sendo a instrução-base (como construir). `referencia-conteudo-instagram.md` continua governando formato e ritmo (gancho, duração, métricas). Este sistema governa forma, movimento e som.
@@ -797,7 +797,7 @@ O carrossel é uma **publicação editorial**: cada slide é uma página, com o 
 | **Abertura** | Cold open (melhor momento, 5–15 s) → Placa `[N] DIAS EM / ROMA` com Chegada sobre a cena, no máx. em 0:20 | Nada de vinheta animada de logo |
 | **Lower third** (lugar) | Placa de direção pequena: lugar H3 + Plex Mono com bairro e coordenadas, x 96 · base y 960, entra com Chegada curta (320 ms), fica 4 s, sai → | 1 por lugar novo |
 | **Capítulos** | Placa de capítulo `DIA 2` em x 96 · y 96 + transição Varredura de Placa | Igual ao timestamp da descrição |
-| **Mapas** | Mapa simplificado próprio: fundo grafite 900, ruas em grafite 700, rio em grafite 800, Rota amarela contínua que se desenha, Pin 1º no destino | Nunca print de Google Maps com marca |
+| **Mapas** | Mapa próprio a partir do OpenStreetMap, em cores naturais de mapa (tokens `color.map`: terreno, água, parque, ruas com contorno e vias principais), Rota amarela contínua com contorno grafite que se desenha, paradas numeradas com a hora, Pin 1º no destino e o crédito "© OpenStreetMap contributors" na tela | Nunca print de Google Maps com marca. Cores do mapa só no mapa (2.3.0) |
 | **Localização** | Pin 1º + nome do lugar Plex Mono | — |
 | **Preços** | Recibo entra pela direita (x 1400) e fica 4–6 s; placar no canto superior esquerdo (x 96 · y 72) nos dias de "primeiro dia" | Sempre € e R$ |
 | **Chamadas** | Placa CTA `INSCREVA-SE →` aparece 1 vez, em 30–40% do vídeo, 4 s | Sem animação de sininho |
@@ -962,6 +962,7 @@ X relativo à posição final (x 72 · y 640). Som *clack* no Q8 (280 ms). Desfo
 | **2.0.0** | **01/10/2026** | **REV 2 "Objetos do Primeiro Dia":** placa esmaltada com módulo de seta; Carimbo PERRENGUE (substitui placa torta); Ticket SURPREENDE (novo); Recibo, Etiqueta, Comanda, Quadro, Rota; 6 estilos de legenda (fim da faixa grafite); 6 assinaturas de movimento; 6 famílias de transição; efeitos com função; 8 sons; Barlow Condensed 300 itálico e IBM Plex Mono; grão 5%; Grafite `#16181D` → `#121317`; raio da placa 8 → 16 px | A v1 ficou crua: caixas chapadas, sem material, sem movimento próprio | Refazer projetos-modelo, banner do YouTube, capas e PNGs do kit. Placar, bilhete, símbolo 1º, bordão e posições fixas mantidos. |
 | **2.1.0** | **05/10/2026** | Níveis de edição A/B (5.2 e 7.3); sons: nomes dos arquivos, Varredura com *clack*, Nascer no kit, 1 *tick* por giro, obturador só no 1º e no último item da lista, referência sem voz, master −14 LUFS / ≤ −1 dBTP; tempos em ms como referência das receitas; tokens `blur`, `effect` e `sound` (cópia dos valores do brand book); introdução renumerada (0.1–0.4); bundle alinhado aos tokens | Pacote aprovado pelo Diego (pendências 2, 3, 4 e 6 do CLAUDE.md; auditoria de som e efeitos) | Nenhum valor visual novo; Reels de Nível B passam a ter checklist próprio |
 | **2.2.0** | **08/10/2026** | Legendas do YouTube longo (3.4): faixa `.srt` em todo vídeo com fala + legenda embutida de reforço (Padrão YouTube em x 960, Narrativa YouTube em x 96, base y 984, linha ≤ 1306 px e ≤ 42 caracteres, 833 ms a 7 s, ≤ 3 palavras/s, scrim só com legenda); tokens `layout.yt.caption-*`, `layout.yt.narrative-x`, `layout.yt.scrim-top-y`; linha no checklist 7.3 e na tabela 5.4 | Pedido do Diego: o DS não definia legenda em 16:9. Valores derivados das margens já existentes e de guias públicos (BBC, Netflix, YouTube Help), consultados em 08/10/2026 | Nenhuma fonte, cor, sombra ou curva nova. Bundle sem prévia da 3.4 |
+| **2.3.0** | **16/10/2026** | Mapa do vídeo longo (5.4) em cores naturais de mapa a partir do OpenStreetMap, no lugar dos tons de grafite; tokens `color.map.*` (terreno, água, parque, rua, contorno da rua, via principal); Rota com contorno grafite para contraste no fundo claro | Pedido do Diego: o mapa escuro deixava a cidade irreconhecível (canais quase invisíveis). Ele aceitou perder um pouco da identidade nesse objeto | Cores novas só no mapa; Rota amarela, Pin 1º e paradas mantidos |
 
 ### Migração da v1
 | Sai | Entra |

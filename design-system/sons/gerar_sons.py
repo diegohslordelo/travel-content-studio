@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Sons da marca Primeiro Dia (DS V2, 4.6), gerados por síntese.
 
-Gera os 9 sons do kit (`PD_*_v1.wav`) e o som de moeda (`PD_moeda_v1.wav`, pedido do
-Diego em 16/10/2026, fora da tabela 4.6). Cada som imita o objeto da lista de gravação
+Gera os 9 sons do kit (`PD_*_v1.wav`), o som de moeda (`PD_moeda_v1.wav`, pedido do
+Diego em 16/10/2026, fora da tabela 4.6) e, para o vídeo longo, o plim do destino do mapa e a
+folha virando da transição Página (`PD_plim_v1.wav` e `PD_pagina_v1.wav`, 16/10/2026). Cada som imita o objeto da lista de gravação
 (LISTA_DE_GRAVACAO.md): assadeira + régua, carimbo na madeira, taça + furador etc.
 
 Formato: WAV 48 kHz, 24 bits, mono (DS V2, 6.1).
@@ -12,7 +13,7 @@ fica no pico de −1 dBFS e o relatório (sons_v1.json) mostra o nível real. O 
 à voz (−10 dB do clack, −6 dB do tum…) é aplicado na mixagem, não no arquivo.
 
 Uso (de dentro desta pasta):
-    python3 gerar_sons.py            # gera os 10 arquivos aqui
+    python3 gerar_sons.py            # gera os 12 arquivos aqui
     python3 gerar_sons.py --saida X  # gera em outra pasta
 
 Dependências: numpy, scipy, soundfile, pyloudnorm.
@@ -294,6 +295,38 @@ def moeda():
     return fade_out(passa_baixa(passa_alta(x, 90), 15000), 0.25)
 
 
+def plim():
+    """Chegada no destino do mapa (pedido do Diego, 16/10/2026): "plim" de dois sinos agudos subindo
+    (Sol6 → Dó7, 90 ms entre eles), brilhante e curto, como um "chegamos". ≈ 800 ms."""
+    d = 0.8
+
+    def sino(f0, ganho):
+        return ganho * sum(
+            a * parcial(f0 * r, d, tau, ataque=0.0006)
+            for r, a, tau in [(1.0, 1.0, 0.30), (2.0, 0.30, 0.16), (3.01, 0.12, 0.08), (4.17, 0.06, 0.05)]
+        )
+    x = mix((0, sino(1567.98, 0.8)), (0.09, sino(2093.0, 1.0)))
+    return fade_out(passa_alta(x, 400), 0.2)
+
+
+def pagina():
+    """Transição Página (pedido do Diego, 16/10/2026): folha de papel virando. Sopro de papel que cresce
+    e some, estalos secos de papel no meio e o "flap" grave da folha assentando no fim. ≈ 600 ms."""
+    d = 0.6
+    tt = t(d)
+    env = np.sin(np.pi * np.clip(tt / 0.5, 0, 1)) ** 1.6
+    sopro = banda(ruido(d), 1200, 7000) * env * 0.5
+    estalos = np.zeros(int(d * SR))
+    for _ in range(26):
+        pos = rng.beta(2.2, 2.2) * 0.45
+        i = int(pos * SR)
+        one = transiente(0.004, 2500, 11000, 0.0009) * rng.uniform(0.15, 0.6)
+        estalos[i:i + len(one)] += one[: len(estalos) - i]
+    flap = passa_baixa(ruido(0.09) * env_exp(0.09, 0.018), 420) * 1.6
+    x = mix((0, sopro), (0, estalos), (0.47, flap))
+    return fade_out(passa_alta(x, 90), 0.05)
+
+
 SONS = {
     # nome: (função, evento, duração final de referência na lista de gravação)
     "clack": (clack, "Placa assenta (Chegada, 280 ms) e Varredura de Placa", "80 ms + cauda curta"),
@@ -306,6 +339,8 @@ SONS = {
     "whoosh": (whoosh, "Só na transição Arrasto", "200 ms"),
     "nascer": (nascer, "Fechamento: o 1º nasce (opcional)", "≈ 700 ms"),
     "moeda": (moeda, "Máquina de moeda: todo Recibo e toda soma do Placar (decisão do Diego, 16/10/2026)", "≈ 1,3 s"),
+    "plim": (plim, "Pin chega ao destino no mapa do vídeo longo (pedido do Diego, 16/10/2026)", "≈ 800 ms"),
+    "pagina": (pagina, "Transição Página: troca de dia no vídeo longo (pedido do Diego, 16/10/2026)", "≈ 600 ms"),
 }
 
 

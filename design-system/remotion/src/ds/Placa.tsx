@@ -9,12 +9,30 @@
  */
 import React from "react";
 import { Fibra, useDesfoqueX } from "./material";
-import { Interrogacao, Seta, Xis } from "./icones";
+import { Interrogacao, Polegar, Seta, Visto, Xis } from "./icones";
 import { Simbolo1 } from "./Simbolo1";
 import { kf, useMs } from "./tempo";
 import { BLUR, COR, DUR, EASE, FONTE, RAIO, REEL, SOMBRA, TIPO, rgba } from "./tokens";
 
-export type Modulo = "seta" | "interrogacao" | "um" | "xis";
+export type Modulo = "seta" | "interrogacao" | "um" | "xis" | "like";
+
+/** Momentos do módulo de like (ms desde o início da Chegada): o polegar é "apertado" e depois vira ✓ (inscrito). */
+export const LIKE_APERTA = 700;
+export const LIKE_INSCRITO = 2300;
+
+/** Módulo da chamada "DEIXA O LIKE E SE INSCREVE": aperta (82% → 112% → 100%, 360 ms) e troca por ✓ com o mesmo giro. */
+const ModuloLike: React.FC<{ t: number; lado: number }> = ({ t, lado }) => {
+  const d = t - LIKE_APERTA;
+  const escala = d < 0 ? 1 : kf(d, [0, 80, 200, 360], [1, 0.82, 1.12, 1], [EASE.out, EASE.out, EASE.out]);
+  const di = t - LIKE_INSCRITO;
+  const inscrito = di >= DUR.base / 2;
+  const giro = di < 0 ? 0 : di < DUR.base / 2 ? kf(di, [0, DUR.base / 2], [0, 90], EASE.cinema) : kf(di, [DUR.base / 2, DUR.base], [90, 0], EASE.cinema);
+  return (
+    <div style={{ scale: String(escala), transform: `perspective(600px) rotateY(${giro}deg)` }}>
+      {inscrito ? <Visto tamanho={lado} cor={COR.amarelo} /> : <Polegar tamanho={lado} cor={COR.amarelo} />}
+    </div>
+  );
+};
 
 export type PlacaProps = {
   rotulo?: string;
@@ -129,6 +147,8 @@ export const Placa: React.FC<PlacaProps> = ({
     switch (modulo) {
       case "interrogacao":
         return <Interrogacao tamanho={LADO_SETA} cor={COR.amarelo} />;
+      case "like":
+        return <ModuloLike t={estatica ? Infinity : te} lado={LADO_SETA} />;
       case "xis":
         return <Xis tamanho={LADO_SETA} cor={COR.vermelho} />;
       case "um":
