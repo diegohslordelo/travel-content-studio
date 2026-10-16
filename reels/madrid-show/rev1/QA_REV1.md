@@ -83,7 +83,7 @@ Se 1 ou 2 estiverem errados: corrigir o texto em `rev1.json` (`legendas`) e roda
 - **HLG → SDR:** os 3 clipes do iPhone são HDR (HLG). Conversão com tone mapping Möbius (o mais natural no comparativo com Hable, Reinhard e conversão direta). O laranja dos rostos é a luz de sódio da rua (DS 0.3, "Real antes de bonito").
 - **Hora na etiqueta: 19H42.** É a hora do arquivo `IMG_3959` (19:41:46, +01:00) mais 19,4 s do trecho. O planejamento dizia 19h45 (hora do `IMG_3963`); a legenda do post foi ajustada para 19h42.
 - **Placa em tamanho G** no gancho. O planejamento pedia "Placa pequena"; o DS reserva a pequena (75%) para thumbnail e Stories, e a placa do Reel é G. Na capa ficou a pequena, como o planejamento pede.
-- **Telão legível:** em 4,8–7,7 s aparece "CUPRA ELECTRIC MUSIC LAPS". Ficou de propósito: é a imagem real, e quem ler o telão tende a comentar a resposta (a métrica desta peça é comentário). Se preferir manter o mistério, recortar o `palco` mais à direita (`recorte_x` em `rev1.json`).
+- **Telão legível (aprovado pelo Diego em 16/10/2026):** em 4,8–7,7 s aparece "CUPRA ELECTRIC MUSIC LAPS". Ficou de propósito: é a imagem real, e quem ler o telão tende a comentar a resposta (a métrica desta peça é comentário).
 - **Sem trilha:** a música do próprio show é o som do Reel.
 - **30 fps:** o FPS de produção ainda não está definido (CLAUDE.md, pendência 5); 30 é o das receitas do DS.
 

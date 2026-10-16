@@ -9,6 +9,7 @@ import React from "react";
 import { Audio } from "@remotion/media";
 import { Sequence, useVideoConfig } from "remotion";
 import { db, quadros } from "./tempo";
+import { SOM } from "./tokens";
 import niveis from "../../../sons/sons_v1.json";
 import clack from "../../../sons/PD_clack_v1.wav";
 import tum from "../../../sons/PD_tum_v1.wav";
@@ -21,15 +22,37 @@ import whoosh from "../../../sons/PD_whoosh_v1.wav";
 import nascer from "../../../sons/PD_nascer_v1.wav";
 import moeda from "../../../sons/PD_moeda_v1.wav";
 
-export const ARQUIVOS = { clack, tum, ding, clique, tick, impressora, obturador, whoosh, nascer, moeda } as const;
+export const ARQUIVOS = {
+  clack,
+  tum,
+  ding,
+  clique,
+  tick,
+  impressora,
+  obturador,
+  whoosh,
+  nascer,
+  moeda,
+} as const;
 export type NomeSom = keyof typeof ARQUIVOS;
 
-export const nivelArquivo = (nome: NomeSom): number => (niveis as Record<string, { lufs_50ms: number }>)[`PD_${nome}_v1.wav`].lufs_50ms;
+export const nivelArquivo = (nome: NomeSom): number =>
+  (niveis as Record<string, { lufs_50ms: number }>)[`PD_${nome}_v1.wav`]
+    .lufs_50ms;
 
 /** Ganho (dB) para o som soar `relDb` abaixo da referência `refLufs`. */
-export const ganhoSom = (nome: NomeSom, relDb: number, refLufs: number): number => refLufs + relDb - nivelArquivo(nome);
+export const ganhoSom = (
+  nome: NomeSom,
+  relDb: number,
+  refLufs: number,
+): number => refLufs + relDb - nivelArquivo(nome);
 
-export const Som: React.FC<{ nome: NomeSom; em: number; relDb: number; refLufs: number }> = ({ nome, em, relDb, refLufs }) => {
+export const Som: React.FC<{
+  nome: NomeSom;
+  em: number;
+  relDb: number;
+  refLufs: number;
+}> = ({ nome, em, relDb, refLufs }) => {
   const { fps } = useVideoConfig();
   const g = Math.min(1, db(ganhoSom(nome, relDb, refLufs)));
   return (
@@ -38,3 +61,19 @@ export const Som: React.FC<{ nome: NomeSom; em: number; relDb: number; refLufs: 
     </Sequence>
   );
 };
+
+/**
+ * Evento do Recibo (decisão do Diego, 16/10/2026): sempre que o Recibo aparece, a impressora imprime e a
+ * moeda cai quando o total assenta (320 ms depois, o fim da impressão), para dar a sensação de "gastar
+ * dinheiro". Conta como UM efeito sonoro, como o ding + furador do Ticket. A moeda usa o volume da linha
+ * do Recibo na 4.6 (−14 dB da voz); calibrar depois da escuta.
+ */
+export const SomRecibo: React.FC<{ em: number; refLufs: number }> = ({
+  em,
+  refLufs,
+}) => (
+  <>
+    <Som nome="impressora" em={em} relDb={SOM.impressora} refLufs={refLufs} />
+    <Som nome="moeda" em={em + 320} relDb={SOM.impressora} refLufs={refLufs} />
+  </>
+);

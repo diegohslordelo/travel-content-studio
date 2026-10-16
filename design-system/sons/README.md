@@ -19,7 +19,7 @@ As gravações reais da `LISTA_DE_GRAVACAO.md` continuam sendo o plano: quando o
 | `PD_obturador_v1.wav` | Transição Snap (em lista: só no 1º e no último item) | −12 dB | 0,13 s (2 cortinas) | −20,4 LUFS | −1,0 dBFS |
 | `PD_whoosh_v1.wav` | Só na transição Arrasto | −16 dB | 0,20 s | −14,0 LUFS | −5,7 dBFS |
 | `PD_nascer_v1.wav` | Fechamento: o 1º nasce (opcional), Dó3 suave | a calibrar | 1,40 s (soa até sumir) | −14,0 LUFS | −6,6 dBFS |
-| `PD_moeda_v1.wav` | **Fora da 4.6: evento a definir** (ver abaixo) | — | 0,50 s (moeda + 3 quiques) | −14,0 LUFS | −7,2 dBFS |
+| `PD_moeda_v1.wav` | Recibo: toca 320 ms depois da impressora (ver abaixo; ainda fora da tabela 4.6) | −14 dB (linha do Recibo) | 0,50 s (moeda + 3 quiques) | −14,0 LUFS | −7,2 dBFS |
 
 Formato de todos: WAV 48 kHz, 24 bits, mono (DS 6.1). O relatório completo está em `sons_v1.json`.
 
@@ -29,9 +29,14 @@ Formato de todos: WAV 48 kHz, 24 bits, mono (DS 6.1). O relatório completo est�
 
 O Remotion faz essa conta sozinho (`design-system/remotion/src/ds/Som.tsx`). No CapCut, use a coluna "Loudness do evento" para acertar o volume de cada camada.
 
-## Som de moeda (pendente de decisão)
+## Som de moeda no Recibo (decisão do Diego, 16/10/2026)
 
-O Diego pediu um som de moeda em 16/10/2026. A tabela 4.6 não tem evento para ele, e a 4.6 diz que a Etiqueta de valor **não leva som** ("o *tick* do Giro já marca o preço"). Por isso o `PD_moeda_v1.wav` existe no kit, mas **não entra em nenhuma peça** até o Diego definir o evento. Som novo é MINOR (DS 7.4). Candidatos: total do Recibo, fechamento de um Reel de custo ou o selo de economia de um carrossel animado.
+Sempre que o **Recibo** aparece, a impressora imprime (`PD_impressora_v1.wav`, 0 ms) e a moeda cai (`PD_moeda_v1.wav`, 320 ms depois, quando o total assenta): a sensação de "gastar dinheiro". Os dois contam como **um** efeito sonoro, como o *ding* + furador do Ticket. A moeda usa o volume da linha do Recibo na 4.6 (−14 dB da voz); como o DS não tem valor próprio para ela, é um primeiro palpite a calibrar depois da escuta.
+
+- No Remotion: `SomRecibo` (`design-system/remotion/src/ds/Som.tsx`); num `revN.json`, `{"nome": "recibo", "cena": "...", "t": 0.5}` na lista `sons`.
+- No CapCut: `PD_impressora_v1.wav` no quadro em que o Recibo começa a sair e `PD_moeda_v1.wav` 320 ms depois, os dois a −14 dB da voz.
+- A **Etiqueta de valor** continua sem som (4.6). Se o Diego quiser a moeda nela também, é outra decisão.
+- O brand book (4.6) ainda não tem essa linha: incluir na próxima versão MINOR, a pedido do Diego.
 
 ## Refazer ou ajustar
 

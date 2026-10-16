@@ -47,7 +47,7 @@ O arquivo sai em `../kit/mov/` com o nome da composição. Todos têm 1080 × 19
 | `src/ds/Legendas.tsx` | 3.2, 3.3 | Legenda Padrão (palavra a palavra ou grupo) com Destaque, Emocional, Narrativa e Informação |
 | `src/ds/Cards.tsx` | 2.6 | Etiqueta de valor e Recibo |
 | `src/ds/Transicoes.tsx` | 4.4 | Varredura de Placa, Arrasto, Snap, Cinema e Rota |
-| `src/ds/Som.tsx` | 4.6 | Sons `PD_*_v1.wav` no volume relativo à voz |
+| `src/ds/Som.tsx` | 4.6 | Sons `PD_*_v1.wav` no volume relativo à voz; `SomRecibo` (impressora + moeda) |
 | `src/kit/Kit.tsx` | 6.1 | Composições do kit, PNGs e catálogo |
 | `src/reel/Reel.tsx` | 5.2 | Reel montado a partir de `revN.json` |
 | `scripts/kit.mjs` | 6.1 | Exportação do kit |
@@ -59,7 +59,8 @@ Pontos em que o DS não fixa um número e o código precisou de um. Nenhum cria 
 | Ponto | O que o código faz | Por quê |
 |---|---|---|
 | Overshoot da Chegada | Keyframes explícitos (−1100 → +24 → −4 → 0 px) com `ease-out`, em vez de `ease-arrive` até +24 | A curva `ease-arrive` passa ≈ 2,6% do percurso inteiro (≈ 29 px além dos +24), e o DS limita metal a 24 px (4.2). As receitas do CapCut (6.2) também fazem o overshoot com keyframes extras |
-| Destino da placa acima de 872 px | Cai para 104 px (tamanho alternativo do 2.1) | "PRIMEIRO DIA." em 128 px dá 944 px com o módulo, acima da largura máxima de 872 px. **Confirmar com o Diego** (ver CLAUDE.md, pendências) |
+| Destino da placa acima de 872 px | Cai para 104 px (tamanho alternativo do 2.1) | "PRIMEIRO DIA." em 128 px dá 944 px com o módulo, acima da largura máxima de 872 px. **Aprovado pelo Diego em 16/10/2026** (CLAUDE.md, pendência 15) |
+| Som do Recibo | Impressora + moeda 320 ms depois, como um só evento (`SomRecibo`), a −14 dB da voz | Decisão do Diego em 16/10/2026 (CLAUDE.md, pendência 14). O volume é o da linha do Recibo na 4.6; calibrar depois da escuta |
 | Lado do módulo de seta | Igual à altura da face (≈ 219 px na placa de 2 linhas) | Segue a regra "lado = altura do conteúdo", como o bundle. O "≈ 176 px" do DS continua em aberto (pendência 3) e por isso o kit **não** tem `PD_placa_modulo_seta.png` avulso |
 | Distância rótulo → destino | 12 px | Valor do bundle; o DS não define |
 | Arrasto | As duas cenas ficam deslocadas 30% no corte e cada uma tem alça de 100 ms do outro lado | Sem a alça, a cena que entra a +30% deixa uma faixa preta. Duração (200 ms) e desfoque (12 px) são os do DS |

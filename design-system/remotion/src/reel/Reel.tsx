@@ -25,7 +25,7 @@ import {
   Varredura,
   useSnapZoom,
 } from "../ds/Transicoes";
-import { NomeSom, Som } from "../ds/Som";
+import { NomeSom, Som, SomRecibo } from "../ds/Som";
 import { kf, useMs } from "../ds/tempo";
 import { EFEITO } from "../ds/tokens";
 
@@ -87,7 +87,12 @@ export type PropsReel = {
     complemento?: string;
   }[];
   legendas: LegendaBloco[];
-  sons: { nome: NomeSom; cena: string; t: number; rel_db: number }[];
+  sons: {
+    nome: NomeSom | "recibo";
+    cena: string;
+    t: number;
+    rel_db?: number;
+  }[];
   mix: { voz_lufs: number; ambiente_lufs: number };
   capa?: {
     cena: string;
@@ -301,15 +306,19 @@ export const Reel: React.FC<PropsReel> = (p) => {
 
       <LegendaPadrao grupos={grupos} modo={modo} />
 
-      {p.sons.map((s, i) => (
-        <Som
-          key={i}
-          nome={s.nome}
-          em={ms(s.cena, s.t)}
-          relDb={s.rel_db}
-          refLufs={refLufs(s.cena)}
-        />
-      ))}
+      {p.sons.map((s, i) =>
+        s.nome === "recibo" ? (
+          <SomRecibo key={i} em={ms(s.cena, s.t)} refLufs={refLufs(s.cena)} />
+        ) : (
+          <Som
+            key={i}
+            nome={s.nome}
+            em={ms(s.cena, s.t)}
+            relDb={s.rel_db ?? 0}
+            refLufs={refLufs(s.cena)}
+          />
+        ),
+      )}
 
       <Grao />
     </AbsoluteFill>
