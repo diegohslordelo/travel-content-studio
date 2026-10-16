@@ -1,6 +1,6 @@
 # QA · Carrossel Transporte em Barcelona · REV1 (16/10/2026)
 
-**Veredito:** **ajustar**. Falta a foto da capa e a aprovação do Diego para o nome da série e para os textos dos bilhetes. O resto está pronto para revisão.
+**Veredito:** **pronto para revisão do Diego**. Falta só a aprovação do nome da série e a confirmação de quanto foi pago no Hola (máquina ou online).
 
 **Pedido do Diego (16/10/2026):** série de carrosséis sobre transporte, uma cidade por post (Barcelona primeiro; depois Roma, Madrid, Paris e Amsterdam). Cada post mostra quanto custa e como ir do aeroporto ao centro, quanto custam o bilhete unitário e os passes de 24, 48 e 72 h, e se o passe vale a pena. A ideia original de gancho era "você sabia desses custos?".
 
@@ -10,7 +10,7 @@
 
 De dentro desta pasta: `node scripts/render.mjs` gera `out/01.jpg` a `out/09.jpg` a partir de `slides.html`. Variáveis opcionais: `PLAYWRIGHT_MODULE` (neste ambiente, `/opt/node22/lib/node_modules/playwright`) e `CHROMIUM`. O script também confere a largura da placa (≤ 872 px), a margem de 80, a Rota e as palavras por slide. `out/contato.jpg` é a folha de contato a 25% (teste de miniatura).
 
-A foto da capa vai em `../fonte/capa.jpg` (fora do git). Sem ela, o slide 01 sai com o aviso "foto da capa (pendente)".
+A foto da capa vai em `../fonte/capa.jpg` (fora do git): IMG_1198 redimensionada para 1080 × 1440. Para refazer: baixar a IMG_1198.HEIC do Drive (`Barcelona/Youtube`, ID `1DJLn7FpJsQJRbCnhiYq-xnbXjxl8PO7N`), converter com `pillow-heif` e redimensionar sem corte (a foto já é 3:4).
 
 `slides.html` usa o `pd-bundle.css` do DS e as fontes em `fonts/` (as mesmas do carrossel de Roma: Barlow, Barlow Condensed, IBM Plex Mono e Reenie Beanie, OFL 1.1).
 
@@ -23,10 +23,10 @@ A foto da capa vai em `../fonte/capa.jpg` (fora do git). Sem ela, o slide 01 sai
 | 03 | Do aeroporto ao centro | Informação | Quadro (DS 2.6, Ranking) |
 | 04 | Qual pegar? | Informação | Pictogramas (DS 1.5) |
 | 05 | Quanto custa andar | Custo | Recibo (DS 2.6) |
-| 06 | 3 dias: T-casual ou Hola? | Comparação | Dois recibos + ✓ de caneta |
+| 06 | A gente pagou a mais (história real) | Comparação | Dois recibos + ✓ de caneta |
 | 07 | Quando o passe compensa | Informação | Quadro |
 | 08 | Dica: T-casual não vale no metrô L9 | Dica | Bilhete + Etiqueta de valor |
-| 09 | Do aeroporto ao centro por € 1,30 | Encerramento | Bilhete veredito + CTA `SALVA PRA VIAGEM →` + símbolo 1º |
+| 09 | Do aeroporto ao centro por € 1,30 | Encerramento | Bilhete "da próxima vez: t-casual." + CTA `SALVA PRA VIAGEM →` + símbolo 1º |
 
 ## Gancho
 
@@ -40,11 +40,11 @@ Enviabilidade 2 (dá para dizer para quem mandar: quem vai a Barcelona) · Ganch
 
 ## Fotos
 
-| Slide | Foto | Situação |
+| Slide | Foto | Data e hora (EXIF) |
 |---|---|---|
-| 01 | Diego (pode ser com a Marina) em Barcelona, em foto vertical | **pendente**, a pedir ao Diego |
+| 01 | IMG_1198 (Drive, `Barcelona/Youtube`): Diego e Marina em frente à Sagrada Família, selfie | 11/03/2026 11:41 (+01:00); GPS 41,4047° N · 2,1754° E, as coordenadas da capa |
 
-O DS pede foto em sangria na capa com o Diego em primeiro plano (5.3). A placa ocupa a base esquerda (x 80, de y ≈ 1020 a 1240), então o rosto precisa ficar no centro ou à direita, acima de y 1000.
+**Escolha:** no Drive de Barcelona só há duas fotos (o resto são vídeos): a IMG_1198 e a thumbnail do vlog, que é a mesma foto com arte por cima. Não há foto da Casa Batlló, só vídeos brutos sem catálogo (Barcelona não tem pasta de análise nem acervo). A IMG_1198 cumpre o DS 5.3: o Diego em primeiro plano, um marco reconhecível (a Sagrada Família), luz de dia e o formato 3:4 nativo, sem corte. Os rostos ficam entre y ≈ 600 e 780, acima da placa (y 1021 a 1240). É também a foto da thumbnail do vlog no YouTube, o que liga o post ao CTA da bio. A Marina aparece, o que é o padrão (CLAUDE.md, 2). Para usar a Casa Batlló, dá para tirar um quadro de um dos vídeos, se o Diego disser qual é o arquivo.
 
 ## Dados e fontes (conferidos em 16/10/2026)
 
@@ -68,9 +68,12 @@ O DS pede foto em sangria na capa com o Diego em primeiro plano (5.3). A placa o
 - **Táxi € 30–40:** conta pela tarifa AMB 2026 com distância estimada de 13 a 16 km até o centro (≈ € 25 a € 34 sem trânsito, mais o tempo de espera), conferida com guias de mercado que dão € 35–45. Não há preço fixo para o centro.
 - **Metrô L9 "mais lento":** a L9 leva ≈ 32 min do aeroporto até Zona Universitària (guias da UAB e do ISEA, não oficiais) e exige baldeação para o centro. A arte não dá o tempo total.
 
+**História real do slide 06 (Diego, 16/10/2026):** compraram o Hola 72 h; não chegaram pelo aeroporto; ficaram em Gràcia, um pouco mais longe do centro; usaram umas 4 viagens por dia e, no centro, andaram quase tudo a pé. A viagem foi em março de 2026 (EXIF da IMG_1198), já com as tarifas atuais: TMB desde 15/01/2026 e Hola desde 01/01/2026. Então a comparação usa os preços que valiam na viagem.
+
 **Contas dos slides 06 e 07:**
 - Preço por viagem na T-casual: € 13,00 ÷ 10 = € 1,30.
-- Slide 06 (1 pessoa, 3 dias, 3 viagens por dia + trem ida e volta = 11 viagens): T-casual € 13,00 + 1 bilhete simples € 2,90 = **€ 15,90** contra Hola 72 h **€ 27,30**. Diferença **€ 11,40 ≈ R$ 65**.
+- Slide 06 (história real, por pessoa, 3 dias × ≈ 4 viagens = ≈ 12 viagens, sem aeroporto): T-casual € 13,00 + 2 bilhetes simples € 5,80 = **€ 18,80 ≈ R$ 106** contra Hola 72 h **€ 27,30 ≈ R$ 155** (preço de tabela). Diferença € 8,50 por pessoa; **casal € 17,00 ≈ R$ 96**. Mesmo com 2 T-casual por pessoa (20 viagens, € 26,00), ainda sairia mais barato que o Hola.
+- **A confirmar com o Diego:** se o Hola foi comprado online, com o desconto de 10%, o preço pago foi € 24,57; aí a diferença cai para € 5,77 por pessoa e € 11,54 para o casal (≈ R$ 65). A arte e a legenda usam o preço de tabela.
 - Slide 07 (viagens para o passe empatar com a T-casual): T-dia 12,00 ÷ 1,30 = 9,2 → **10+**; Hola 48 h 18,70 ÷ 1,30 = 14,4 → **15+**; Hola 72 h 27,30 ÷ 1,30 = 21,0 (empata) → **22+**.
 - Com metrô L9 ida e volta ao aeroporto dentro do passe (o passe "paga" 2 × € 5,90 = € 11,80): 48 h (18,70 − 11,80) ÷ 1,30 = 5,3 → **6 viagens**; 72 h (27,30 − 11,80) ÷ 1,30 = 11,9 → **12 viagens**.
 - Comprando o Hola online (10% a menos), os limites caem para 13 (48 h) e 19 (72 h). Está na legenda só como "10% mais barato online", sem mudar os números da arte.
@@ -82,29 +85,30 @@ O DS pede foto em sangria na capa com o Diego em primeiro plano (5.3). A placa o
 - [x] Canvas 3:4, margem 80, contador Plex Mono 30 no canto superior direito, etiqueta de série no superior esquerdo, Rota amarela de 8 px em y 1360 em todos os slides; no último, ela termina numa parada grafite de 24 px (DS 1.6).
 - [x] ≤ 40 palavras por slide (o script conta: 12 a 40).
 - [x] Valores com € e ≈ R$, cotação datada nos slides 03, 05 e 06 e na legenda (7.1 e 7.3).
-- [x] 1 CTA (`SALVA PRA VIAGEM →`), mesmo verbo da legenda (2.7).
+- [x] História real no slide 06 e na legenda, com os dados que o Diego deu (≈ 4 viagens por dia marcado como aproximado).
+- [x] 1 CTA na arte (`SALVA PRA VIAGEM →`), mesmo verbo da legenda (2.7). A legenda tem um segundo CTA (vlog no YouTube), a pedido do Diego (desvio 9).
 - [x] Placa da capa com 849 px (≤ 872), destino em 128 px (9 letras), de y 1021 a 1240.
 - [x] Símbolo 1º 96 px em x 904 · y 1168 no encerramento (mesma posição aprovada no carrossel de Roma).
 - [x] Grão 5% em tudo; fibra 4% no papel.
 - [x] Teste de miniatura: placa da capa e valores legíveis a 25% (`out/contato.jpg`).
 - [x] Seta, `?` e ✓ desenhados em SVG, nunca digitados (1.2).
-- [ ] Capa com foto (pendente).
+- [x] Capa com foto em sangria e o Diego em primeiro plano (IMG_1198).
 
 ## Desvios e decisões tomadas (precisam de aprovação do Diego)
 
 1. **Nome da série "Chegar sabendo"** (etiqueta de série em todos os slides). Vem da promessa da marca ("Chegar sabendo: quanto custa, o que evitar e o que vale a pena"). Rótulo novo de série depende de aprovação (DS 7.4; mesmo caso da "Nota de soteropolitano" no banco de ideias). Alternativa mais literal: "Do aeroporto ao centro".
-2. **Textos dos bilhetes na letra do Diego** (slide 08 "dica: t-casual não vale no metrô l9." e slide 09 "pra maioria: trem + t-casual."): são propostas do Claude a partir das contas, não opinião registrada do Diego.
+2. **Textos dos bilhetes na letra do Diego:** slide 08 "dica: t-casual não vale no metrô l9." (proposta do Claude, a partir das regras da TMB) e slide 09 "da próxima vez: t-casual." (a conclusão que o Diego tirou da própria viagem, 16/10/2026).
 3. **Ticket "SABIA?":** o DS cita a variante (2.6, Curiosidade: sem estrela e com `?` no canhoto), mas não dá medidas. Usei a anatomia do ticket do bundle, com o `?` do módulo da placa e microcópia de 30 px (mínimo do carrossel).
 4. **Quadro no carrossel:** 920 px de largura, linhas de 128 px (DS: 104) para caber o valor em € e o ≈ R$ embaixo, e nomes em 56 px (H3). No slide 07 o Quadro não é ranking: os números 1, 2 e 3 são os dias do passe.
 5. **Recibo e Etiqueta de valor a 125%**, como no carrossel de Roma, para a microcópia chegar a 30 px. No recibo, o ≈ R$ de cada linha vai em Barlow 24 px (30 px na tela) e a linha de total mostra "1 viagem na T-casual", não uma soma.
 6. **Pictogramas do slide 04** (trem, ônibus, metrô e táxi): desenhados seguindo a regra do DS 1.5 (cheio, amarelo, em quadrado grafite com raio de etiqueta), a 150% da grade 48/36. Ainda não existem no kit (pendência 7 do CLAUDE.md).
 7. **Scrim na capa** (componente de Reel), como no carrossel de Roma, para a microcópia ficar legível sobre a foto.
 8. **Fonte PD Placar** não existe no repositório: os números usam Barlow Condensed (fallback do bundle; pendência 1 do CLAUDE.md).
-9. **Slide 09 anuncia a ordem da série** ("Roma, Madrid, Paris e Amsterdam"). Confirmar a ordem ou tirar a linha.
+9. **Dois CTAs na legenda** (salvar e ver o vlog no YouTube pela bio), a pedido do Diego (16/10/2026). A arte mantém 1 CTA. A referência (3.4) e o DS (2.7) pedem 1 CTA por peça: exceção deste post, a registrar em Aprendizados para comparar.
 
 ## Pendências
 
-- Foto da capa.
+- Confirmar o preço pago no Hola 72 h (máquina € 27,30 ou online € 24,57).
 - A série não está no painel V5. Encaixar exige pedido do Diego (CLAUDE.md, 7): por exemplo, trocar carrosséis de segunda (18h30) ou somar à grade.
 - **Futuro:** a nova linha R-Aeroport (FGC, a cada 15 min, ≈ 20 min do Passeig de Gràcia) está prevista para 2027 e deve tirar o R2 Nord do aeroporto ([NacióDigital, 15/05/2026](https://naciodigital.cat/societat/que-es-lr-aeroport-i-per-que-genera-polemica.html)). Quando entrar em operação, este carrossel fica desatualizado.
 - **Rodalies em 2026:** R2 e R2 Nord tiveram cortes ao norte de Barcelona (Montcada, julho e setembro de 2026); o trecho do aeroporto seguiu a partir de Sant Andreu ([3Cat](https://www.3cat.cat/3catinfo/sense-data-de-represa-a-lr2-r2-nord-i-r11-tallades-per-lesvoranc-de-montcada-com-queda-el-servei/noticia/3421774/), [Metrópoli Abierta](https://www.metropoliabierta.cat/mobilitat/20260722/tallades-linies-r2-nord-r11-rodalies-despreniment-obres-montcada/1003742781621_0.html)). Por isso o aviso "confira no app Rodalies".

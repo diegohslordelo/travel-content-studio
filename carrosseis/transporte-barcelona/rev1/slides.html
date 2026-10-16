@@ -29,10 +29,9 @@ body{margin:0;background:#26292F}
 .body p{margin:0 0 24px}
 .micro{font:500 30px/1.3 var(--pd-fm);letter-spacing:.02em;text-transform:uppercase}
 .nota{position:absolute;left:80px;width:920px;margin:0;color:var(--pd-n5)}
-/* Capa: foto em sangria (pendente) */
+/* Capa: foto em sangria (IMG_1198) */
 .photo{position:absolute;inset:0;overflow:hidden;background:var(--pd-n7)}
 .photo img{width:100%;height:100%;object-fit:cover;display:block}
-.photo .falta{position:absolute;left:0;right:0;top:420px;text-align:center;color:var(--pd-n3)}
 /* Quadro (DS 2.6, Ranking) em largura de carrossel */
 .quadro{left:80px;width:920px;box-sizing:border-box}
 .quadro .pd-board__row b{font-size:56px}
@@ -75,14 +74,15 @@ body{margin:0;background:#26292F}
 </head>
 <body>
 
-<!-- 01 · CAPA (foto pendente: ../fonte/capa.jpg) -->
+<!-- 01 · CAPA -->
 <section class="slide" id="s01">
-  <div class="photo"><div class="falta micro">foto da capa<br>(pendente)</div><img src="../fonte/capa.jpg" alt="" onerror="this.remove()" style="object-position:50% 50%"></div>
+  <!-- capa: IMG_1198 (Drive, Barcelona/Youtube), 11/03/2026 11h41, Sagrada Família; ../fonte/capa.jpg fora do git -->
+  <div class="photo"><img src="../fonte/capa.jpg" alt="" style="object-position:50% 50%"></div>
   <div class="pd-scrim"></div>
   <div class="serie">Chegar sabendo</div>
   <div class="count on-photo">01 / 09</div>
   <div style="position:absolute;left:80px;bottom:200px;display:flex;flex-direction:column;gap:24px;z-index:25">
-    <div class="micro on-photo">aeroporto, metrô e passes · 2026<br>41,3874° N · 2,1686° E</div>
+    <div class="micro on-photo">aeroporto, metrô e passes · 2026<br>41,4047° N · 2,1754° E</div>
     <div class="pd-plate" style="position:relative;left:0;top:0">
       <div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__label">Quanto custa andar em</div><div class="pd-plate__dest">Barcelona</div></div>
       <div class="pd-plate__mod"><svg viewBox="0 0 100 100" aria-hidden="true"><text x="50" y="94" text-anchor="middle" font-family="Barlow Condensed,Arial Narrow,sans-serif" font-weight="800" font-size="128" fill="currentColor">?</text></svg></div>
@@ -155,26 +155,26 @@ body{margin:0;background:#26292F}
   <div class="rota"></div><div class="grain"></div>
 </section>
 
-<!-- 06 · 3 DIAS: T-CASUAL × HOLA -->
+<!-- 06 · NOSSO CASO (história real: Hola 72 h em março de 2026) -->
 <section class="slide pd-paper" id="s06">
   <div class="serie">Chegar sabendo</div><div class="count">06 / 09</div>
-  <h2 class="h2">3 dias: T-casual ou Hola?<small>1 pessoa · 3 viagens por dia<br>+ trem ida e volta ao aeroporto</small></h2>
+  <h2 class="h2">A gente pagou a mais<small>3 dias em Gràcia · ≈ 4 viagens por dia<br>sem aeroporto · por pessoa</small></h2>
   <div class="pd-receipt cmp" style="left:80px">
     <div class="pd-receipt__body">
-      <div class="pd-receipt__head"><b>T-CASUAL</b>11 viagens</div>
-      <div class="row"><small>paga</small><b class="v">€&nbsp;15,90</b><em>≈ R$&nbsp;90</em></div>
-      <div class="row"><small>compra</small><b>T-casual + 1 bilhete simples</b></div>
+      <div class="pd-receipt__head"><b>HOLA 72 H</b>o que a gente comprou</div>
+      <div class="row"><small>custa</small><b class="v">€&nbsp;27,30</b><em>≈ R$&nbsp;155</em></div>
+      <div class="row"><small>usamos</small><b>≈ 12 viagens</b></div>
     </div><div class="pd-receipt__teeth"></div>
-    <svg class="mark" style="right:-30px;top:-46px;width:110px;height:110px;color:var(--pd-g)" viewBox="0 0 110 110"><path d="M22 58l20 22 46-56"/><path d="M55 4C20 4 4 30 6 56s26 50 54 48 46-24 44-52S84 2 50 6"/></svg>
   </div>
   <div class="pd-receipt cmp" style="left:560px">
     <div class="pd-receipt__body">
-      <div class="pd-receipt__head"><b>HOLA 72 H</b>viagens ilimitadas</div>
-      <div class="row"><small>paga</small><b class="v">€&nbsp;27,30</b><em>≈ R$&nbsp;155</em></div>
-      <div class="row"><small>compra</small><b>1 passe de 3 dias</b></div>
+      <div class="pd-receipt__head"><b>T-CASUAL</b>o que bastava</div>
+      <div class="row"><small>custa</small><b class="v">€&nbsp;18,80</b><em>≈ R$&nbsp;106</em></div>
+      <div class="row"><small>compra</small><b>T-casual + 2 bilhetes simples</b></div>
     </div><div class="pd-receipt__teeth"></div>
+    <svg class="mark" style="right:24px;top:150px;width:110px;height:110px;color:var(--pd-g)" viewBox="0 0 110 110"><path d="M22 58l20 22 46-56"/><path d="M55 4C20 4 4 30 6 56s26 50 54 48 46-24 44-52S84 2 50 6"/></svg>
   </div>
-  <p class="nota micro" style="top:1100px">economia: €&nbsp;11,40 ≈ R$&nbsp;65<br>T-casual: 1 pessoa por vez, casal compra 2<br>€&nbsp;1 = R$&nbsp;5,66 · PTAX 15/10/2026</p>
+  <p class="nota micro" style="top:1100px">casal: €&nbsp;17,00 ≈ R$&nbsp;96 a mais<br>no resto, a gente foi a pé<br>€&nbsp;1 = R$&nbsp;5,66 · PTAX 15/10/2026</p>
   <div class="rota"></div><div class="grain"></div>
 </section>
 
@@ -205,9 +205,9 @@ body{margin:0;background:#26292F}
 <section class="slide pd-paper" id="s09">
   <div class="serie">Chegar sabendo</div><div class="count">09 / 09</div>
   <h2 class="h2">Do aeroporto ao centro por €&nbsp;1,30<small>≈ R$&nbsp;7 · preços oficiais de out/2026</small></h2>
-  <div class="pd-note pd-paper" style="left:120px;top:440px"><span class="pd-note__t">pra maioria:</span><span class="pd-note__t">trem + t-casual.</span>
+  <div class="pd-note pd-paper" style="left:120px;top:440px"><span class="pd-note__t">da próxima vez:</span><span class="pd-note__t">t-casual.</span>
     <svg class="mark" style="right:-74px;top:-40px;width:110px;height:110px;color:#147A44" viewBox="0 0 110 110"><path d="M22 58l20 22 46-56"/><path d="M55 4C20 4 4 30 6 56s26 50 54 48 46-24 44-52S84 2 50 6"/></svg></div>
-  <div class="body" style="top:760px;font-size:40px"><p>O Hola só compensa com <b>7+ viagens por dia</b> ou com metrô até o aeroporto.</p><p>Próximas da série: Roma, Madrid, Paris e Amsterdam.</p></div>
+  <div class="body" style="top:760px;font-size:40px"><p>O Hola só compensa com <b>7+ viagens por dia</b> ou com metrô até o aeroporto.</p><p>A gente fez ≈ 4 por dia e andou o resto a pé.</p></div>
   <div class="pd-plate pd-plate--s pd-plate--one" style="left:80px;top:1060px;transform-origin:0 0;scale:.75">
     <div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Salva pra viagem</div></div>
     <div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div>
