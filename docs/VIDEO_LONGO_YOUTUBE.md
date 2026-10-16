@@ -24,7 +24,7 @@ Vídeo: "BARCELONA BARATA! QUANTO CUSTA 3 DIAS NA CIDADE?" (publicado em 11/10/2
 | Marca | ~0:25–0:27 | Primeira cena do Dia 1, sem parar o vídeo | Placa `[N] DIAS EM / CIDADE →` com Chegada (DS 5.4). É a "vinheta" | *clack* |
 | Início de cada dia | — | Hora real do primeiro clipe | Placa de capítulo `DIA N` com Varredura; depois o Placar do dia liga zerado | *clack*; Placar liga sem som |
 | Cada lugar novo | — | Chegada no lugar | Etiqueta de lugar (lower third, x 96 · base y 960, 4 s): lugar + bairro + **hora** (Plex Mono), sem coordenadas | Sem som |
-| Deslocamento entre lugares | — | Quando ajuda a entender o dia | Mapa próprio com a Rota amarela se desenhando (DS 5.4, base OpenStreetMap, crédito na descrição) | *whoosh* suave |
+| Deslocamento entre lugares | — | Quando ajuda a entender o dia | Mapa próprio com a Rota amarela se desenhando (DS 5.4, base OpenStreetMap, crédito na tela e na descrição) e Pin 1º no destino | *whoosh* suave na Rota; nota do Nascer quando o Pin assenta |
 | Cada compra | — | Hora em que paga ou mostra o que comprou | Recibo pela direita (x 1400, 4–6 s) + soma no Placar | Máquina de moeda, uma vez só |
 | Perrengue ou surpresa | — | Só se aconteceu de verdade | Carimbo PERRENGUE ou Ticket SURPREENDE | *tum* · *ding* |
 | Reengajamento | ~a cada 3 min | Pergunta ou antecipação na fala | — | — |
@@ -96,5 +96,6 @@ Atualizar o brand book (MINOR) depende de pedido do Diego.
 O prazo de 24/10 depende do pacote chegar até 19/10.
 
 **Do Claude:**
-- [ ] Composição 16:9 no Remotion: Placa de abertura, Placa de capítulo, etiqueta de lugar com hora, Placar diário, Recibo, mapa com Rota animada, Instagram, like e inscrição, tela final e sons. Amostra de 30 s para o Diego.
+- [x] Grafismos 16:9 no Remotion (`design-system/remotion/src/yt/`) e amostra de 30 s (`reels/amostra-yt/`), aprovada pelo Diego em 16/10/2026.
+- [ ] Tela final de 20 s e placa de fechamento em 16:9 (ainda não estão na amostra).
 - [ ] Conferir as regras de uso do logo do Instagram na página oficial da Meta antes do render (as consultadas em 16/10/2026 eram de terceiros).

@@ -11,6 +11,9 @@ import { Som } from "../ds/Som";
 import { kf, useMs } from "../ds/tempo";
 import { COR, DUR, EASE, FONTE, RAIO, SOM, SOMBRA, TIPO, YT, rgba } from "../ds/tokens";
 
+/** Volume da nota do Pin no destino (rel. à voz): provisório, o mesmo do clack. */
+const VOLUME_PIN_DB = -10;
+
 /** Base do lower third (DS V2, 1.3). */
 export const LOWER_BASE = 960;
 
@@ -123,7 +126,8 @@ const Pin: React.FC<{ x: number; y: number; t: number }> = ({ x, y, t }) => {
 /**
  * Mapa do dia (DS 5.4): mapa próprio a partir do OpenStreetMap (fundo grafite 900, ruas grafite 700,
  * água grafite 800), Rota amarela contínua de 8 px que se desenha, paradas numeradas com a hora e Pin 1º
- * no destino. Som: whoosh suave quando a Rota começa (decisão de 16/10/2026). Crédito do OSM na tela.
+ * no destino. Som (decisão de 16/10/2026): whoosh suave quando a Rota começa e a nota do Nascer quando o Pin
+ * assenta no destino. Crédito do OSM na tela.
  */
 export const MapaRota: React.FC<{ arquivo: string; ini: number; fim: number; desenho?: number; refLufs?: number }> = ({ arquivo, ini, fim, desenho = 2000, refLufs = -16 }) => {
   const t = useMs();
@@ -200,6 +204,8 @@ export const MapaRota: React.FC<{ arquivo: string; ini: number; fim: number; des
         </svg>
       )}
       <Som nome="whoosh" em={ini + 300} relDb={SOM.whoosh} refLufs={refLufs} />
+      {/* chegada no destino (decisão do Diego, 16/10/2026): a nota do Nascer quando o Pin 1º assenta; −10 dB provisório, a calibrar */}
+      <Som nome="nascer" em={ini + 300 + desenho} relDb={VOLUME_PIN_DB} refLufs={refLufs} />
     </>
   );
 };
