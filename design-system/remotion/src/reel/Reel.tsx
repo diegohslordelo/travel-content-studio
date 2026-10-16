@@ -16,6 +16,7 @@ import {
   useVideoConfig,
 } from "remotion";
 import { Placa, Modulo } from "../ds/Placa";
+import { PlacaDirecao } from "../ds/PlacaDirecao";
 import { Grao, ScrimBase } from "../ds/material";
 import { LegendaInformacao, LegendaPadrao } from "../ds/Legendas";
 import {
@@ -77,6 +78,15 @@ export type PropsReel = {
     destino: string;
     modulo?: Modulo;
     tamanho?: "G" | "M" | "P";
+  };
+  /** Placa de direção (2.6): destino H3 + linha em Plex Mono + seta de direção. */
+  placa_direcao?: {
+    cena: string;
+    t: number;
+    saida?: { cena: string; t: number };
+    destino: string;
+    linha: string;
+    seta?: "diagonal" | "cima";
   };
   informacao?: {
     cena: string;
@@ -288,6 +298,20 @@ export const Reel: React.FC<PropsReel> = (p) => {
           saida={
             p.placa.saida !== undefined
               ? ms(p.placa.cena, p.placa.saida)
+              : undefined
+          }
+        />
+      )}
+
+      {p.placa_direcao && (
+        <PlacaDirecao
+          destino={p.placa_direcao.destino}
+          linha={p.placa_direcao.linha}
+          seta={p.placa_direcao.seta}
+          entrada={ms(p.placa_direcao.cena, p.placa_direcao.t)}
+          saida={
+            p.placa_direcao.saida
+              ? ms(p.placa_direcao.saida.cena, p.placa_direcao.saida.t)
               : undefined
           }
         />

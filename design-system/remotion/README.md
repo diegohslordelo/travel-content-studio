@@ -46,6 +46,7 @@ O arquivo sai em `../kit/mov/` com o nome da composição. Todos têm 1080 × 19
 | `src/ds/Bilhete.tsx` | 2.4 | Bilhete com Escrita, veredito (✓/✗) e círculo de caneta |
 | `src/ds/Legendas.tsx` | 3.2, 3.3 | Legenda Padrão (palavra a palavra ou grupo) com Destaque, Emocional, Narrativa e Informação |
 | `src/ds/Cards.tsx` | 2.6 | Etiqueta de valor e Recibo (o Recibo toca a máquina de moeda) |
+| `src/ds/PlacaDirecao.tsx` | 2.6 | Placa de direção (destino H3 + linha em Plex Mono amarelo + seta ↗ ou ↑) com Chegada curta (320 ms) e saída pela direita; composição `Kit-Placa-Direcao` |
 | `src/ds/Transicoes.tsx` | 4.4 | Varredura de Placa, Arrasto, Snap, Cinema e Rota |
 | `src/ds/Som.tsx` | 4.6 | Sons `PD_*_v1.wav` no volume relativo à voz; `SomMoeda` (máquina de moeda) |
 | `src/kit/Kit.tsx` | 6.1 | Composições do kit, PNGs e catálogo |
@@ -66,6 +67,8 @@ Pontos em que o DS não fixa um número e o código precisou de um. Nenhum cria 
 | Arrasto | As duas cenas ficam deslocadas 30% no corte e cada uma tem alça de 100 ms do outro lado | Sem a alça, a cena que entra a +30% deixa uma faixa preta. Duração (200 ms) e desfoque (12 px) são os do DS |
 | Legenda centralizada | Caixa de 872 px centrada em x 540 | Decisão do Diego (CLAUDE.md, 6); a largura máxima de linha segue em aberto (pendência 13) |
 | FPS | Composições a 30 fps; os tempos dos componentes estão em ms | FPS de produção não definido (pendência 5); 30 é o das receitas (6.2) |
+| Placa de direção (2.6) | Material Painel (grafite 900, filete claro de 2 px a 8%, `shadow-plate`), raio da placa, padding 28 × 36 e módulo quadrado com lado = altura do conteúdo, como a Placa; destino em H3 (papel), linha em `micro` (Plex Mono 30 px, amarelo), seta de 72 px (a da Placa pequena). Tamanho 100% | O DS só diz "placa pequena grafite com destino H3 + Plex Mono amarelo + seta ↗". "Pequena" foi lida como "menor que a Placa" (H3 no lugar do H1): a 75% o destino cairia para 42 px, abaixo do mínimo de 52 px de texto sobre vídeo (1.2). Sem rebites e sem brilho de esmalte, que são do esmalte amarelo |
+| Chegada curta (2.6) | Os tempos da Chegada (2.1) comprimidos para 320 ms: passa +24 px aos 160 ms, assenta aos 229 ms, a seta empurra 10 px na direção dela até 320 ms; *clack* no assentamento | O DS diz "Chegada (versão curta 320 ms)" sem receita. O som segue a assinatura Chegada (4.3: *clack*) |
 | Fontes ausentes | "PD Placar" cai para Barlow Condensed 700 com algarismos tabulares; "Caneta Diego" cai para Reenie Beanie | Fallbacks dos próprios tokens (`font.family`) |
 
 ## Requisitos

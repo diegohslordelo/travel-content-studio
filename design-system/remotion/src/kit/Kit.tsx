@@ -7,6 +7,7 @@
 import React from "react";
 import { AbsoluteFill, Composition, Folder, Sequence, Still } from "remotion";
 import { Placa } from "../ds/Placa";
+import { PlacaDirecao } from "../ds/PlacaDirecao";
 import { Placar, ValorPlacar } from "../ds/Placar";
 import { Carimbo } from "../ds/Carimbo";
 import { Ticket } from "../ds/Ticket";
@@ -52,6 +53,19 @@ const KitPlaca: React.FC<PPlaca> = ({
       entrada={0}
       saida={saida}
     />
+  </AbsoluteFill>
+);
+
+/* ---------- Placa de direção (2.6) ---------- */
+type PDirecao = {
+  destino: string;
+  linha: string;
+  seta?: "diagonal" | "cima";
+  saida?: number;
+};
+const KitPlacaDirecao: React.FC<PDirecao> = ({ destino, linha, seta, saida }) => (
+  <AbsoluteFill>
+    <PlacaDirecao destino={destino} linha={linha} seta={seta} entrada={0} saida={saida} />
   </AbsoluteFill>
 );
 
@@ -609,6 +623,20 @@ export const KitComposicoes: React.FC = () => (
           rotulo: "E ISSO FOI SÓ O",
           destino: "PRIMEIRO DIA.",
           modulo: "um" as const,
+        }}
+      />
+      <Composition
+        id="Kit-Placa-Direcao"
+        component={KitPlacaDirecao}
+        width={W}
+        height={H}
+        fps={FPS}
+        durationInFrames={s(2.6)}
+        defaultProps={{
+          destino: "COLISEU",
+          linha: "1,2 KM · 15 MIN",
+          seta: "diagonal" as const,
+          saida: 2300,
         }}
       />
       <Composition

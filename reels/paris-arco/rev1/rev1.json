@@ -1,0 +1,336 @@
+{
+ "reel": "paris-arco",
+ "revisao": 1,
+ "data": "2026-10-16",
+ "planejamento": "V5-20261018-PAR-arco (sábado, 18/10/2026, 20:30)",
+ "nivel_ds": "B",
+ "fps": 24,
+ "largura": 1080,
+ "altura": 1920,
+ "tonemap_npl": 203,
+ "grade_musical": {
+  "musica": "Les Champs-Élysées · Joe Dassin (1969)",
+  "bpm": 112,
+  "inicio_da_musica": "quadro 0 = ataque da voz no 'Aux' do refrão 'Aux Champs-Élysées' (o 'Aux' cai num tempo)",
+  "medicao": "prévia pública de 30 s (iTunes), librosa 0.11: 112,3 BPM; tempos medidos a partir do 'Aux' (12,25 s da prévia). A prévia não fica no repositório",
+  "tempos_medidos_s": [
+   0.028,
+   0.596,
+   1.136,
+   1.676,
+   2.21,
+   2.75,
+   3.278,
+   3.812,
+   4.364,
+   4.904,
+   5.438,
+   5.966,
+   6.512,
+   7.034,
+   7.562,
+   8.085,
+   8.59,
+   9.159,
+   9.681,
+   10.244,
+   10.744,
+   11.318,
+   11.852,
+   12.398,
+   12.92,
+   13.454
+  ],
+  "cortes": [
+   {
+    "quadro": 14,
+    "s": 0.583,
+    "tempo": 1,
+    "desvio_ms": -13
+   },
+   {
+    "quadro": 130,
+    "s": 5.417,
+    "tempo": 10,
+    "desvio_ms": -21
+   },
+   {
+    "quadro": 168,
+    "s": 7.0,
+    "tempo": 13,
+    "desvio_ms": -34
+   },
+   {
+    "quadro": 194,
+    "s": 8.083,
+    "tempo": 15,
+    "desvio_ms": -2
+   },
+   {
+    "quadro": 245,
+    "s": 10.208,
+    "tempo": 19,
+    "desvio_ms": -36
+   },
+   {
+    "quadro": 297,
+    "s": 12.375,
+    "tempo": 23,
+    "desvio_ms": -23
+   }
+  ]
+ },
+ "fontes": {
+  "IMG_2811": {
+   "arquivo": "IMG_2811.MOV",
+   "drive_id": "1FMKgAfgkf7ovC3-AIzNbrnQT4dJo4HGy",
+   "hdr": true,
+   "girar": 180,
+   "criado": "2026-03-17T12:37:03+01:00",
+   "gps": "+48.8747+002.2954",
+   "nota": "selfie gravada na horizontal de cabeça para baixo; o metadado de rotação (-90) está errado"
+  },
+  "IMG_2815": {
+   "arquivo": "IMG_2815.MOV",
+   "drive_id": "1RkVOT19X0ecnbRgkBBgJYi2L-f6NSA7w",
+   "hdr": true,
+   "girar": 0,
+   "criado": "2026-03-17T12:40:19+01:00"
+  },
+  "IMG_2813": {
+   "arquivo": "IMG_2813.MOV",
+   "drive_id": "1SJaszKs-Av58LQPpSCtM_z8lKXZ6thJg",
+   "hdr": true,
+   "girar": 0,
+   "criado": "2026-03-17T12:37:36+01:00",
+   "nota": "placa real do ponto de ônibus 'Ch. de Gaulle - Étoile / Wagram' com o Arco atrás"
+  },
+  "IMG_2859": {
+   "arquivo": "IMG_2859.MOV",
+   "drive_id": "1d3P0CORtjL3qB_wC7kM0yF0EdY1pxF9P",
+   "hdr": true,
+   "girar": 0,
+   "criado": "2026-03-17T12:49:48+01:00"
+  }
+ },
+ "cenas": [
+  {
+   "id": "escada",
+   "fonte": "IMG_2811",
+   "in": 0.0,
+   "out": 0.5833,
+   "audio": "voz",
+   "recorte_x": [
+    [
+     0,
+     2624
+    ]
+   ],
+   "nota": "quadros 0 a 13: degraus da saída do metrô → balaustrada → sol → céu azul com a copa de uma árvore (o mesmo céu e os mesmos galhos do começo da revelação)"
+  },
+  {
+   "id": "revelacao",
+   "fonte": "IMG_2815",
+   "in": 0.0,
+   "out": 4.8333,
+   "audio": "ambiente",
+   "lufs": -24,
+   "recorte_x": [
+    [
+     0,
+     2050
+    ],
+    [
+     3.2,
+     1350
+    ]
+   ],
+   "nota": "começa no sol e nos galhos (o mesmo céu do fim da escada) e desce até o Arco; o recorte acompanha da direita para a fachada"
+  },
+  {
+   "id": "reacao1",
+   "fonte": "IMG_2811",
+   "in": 7.95,
+   "out": 9.5333,
+   "audio": "voz",
+   "recorte_x": [
+    [
+     0,
+     1000
+    ]
+   ]
+  },
+  {
+   "id": "reacao2",
+   "fonte": "IMG_2811",
+   "in": 10.55,
+   "out": 11.6333,
+   "audio": "voz",
+   "recorte_x": [
+    [
+     0,
+     800
+    ]
+   ]
+  },
+  {
+   "id": "estacao",
+   "fonte": "IMG_2813",
+   "in": 0.1,
+   "out": 2.225,
+   "audio": "ambiente",
+   "kenburns": true,
+   "recorte_x": [
+    [
+     0,
+     2300
+    ]
+   ],
+   "lufs": -23
+  },
+  {
+   "id": "cartao",
+   "fonte": "IMG_2859",
+   "in": 0.3,
+   "out": 2.4667,
+   "audio": "ambiente",
+   "recorte_x": [
+    [
+     0,
+     1318
+    ],
+    [
+     2.17,
+     1186
+    ]
+   ],
+   "nota": "o Arco inteiro com o sol; o recorte acompanha o pan da câmera",
+   "lufs": -23
+  }
+ ],
+ "audios": [
+  {
+   "id": "v1a",
+   "fonte": "IMG_2811",
+   "in": 0.8,
+   "out": 2.75,
+   "tipo": "voz",
+   "inicio": {
+    "cena": "revelacao",
+    "t": 0.837
+   },
+   "nota": "'saindo da estação do metrô' (J-cut sobre a revelação; atrasada 0,62 s para o gancho escrito respirar)"
+  },
+  {
+   "id": "v1b",
+   "fonte": "IMG_2811",
+   "in": 3.4,
+   "out": 5.15,
+   "tipo": "voz",
+   "inicio": {
+    "cena": "revelacao",
+    "t": 2.787
+   },
+   "nota": "'já dou de cara com o homem aqui': emenda direto em v1a, sem a pausa de 0,65 s entre as frases"
+  }
+ ],
+ "transicoes": [],
+ "placa_direcao": {
+  "cena": "estacao",
+  "t": 0.37,
+  "saida": {
+   "cena": "cartao",
+   "t": 1.379
+  },
+  "destino": "CHARLES DE GAULLE–ÉTOILE",
+  "linha": "SAÍDA DO METRÔ · 12H37",
+  "seta": "cima",
+  "fonte_do_dado": "estação: GPS do IMG_2811 (48.8747, 2.2954, a ~100 m do centro do Arco, lado da Av. de Wagram) + placa real 'Ch. de Gaulle - Étoile / Wagram' no IMG_2813; hora: IMG_2811 criado 12:37:03 (+01:00), a escada está nos quadros 0 a 10",
+  "nota": "assenta (clack) no tempo 16 da grade (8,571 s); sai até o tempo 22 (11,786 s)"
+ },
+ "legendas": [
+  {
+   "cena": "escada",
+   "modo": "grupo",
+   "grupos": [
+    {
+     "texto": "POV: saindo|do metrô em *Paris*",
+     "ini": -0.12,
+     "fim": 1.4,
+     "destaque_em": 0.62
+    }
+   ]
+  },
+  {
+   "audio": "v1a",
+   "modo": "grupo",
+   "grupos": [
+    {
+     "texto": "saindo da estação do metrô",
+     "ini": 0.88,
+     "fim": 2.75
+    }
+   ]
+  },
+  {
+   "audio": "v1b",
+   "modo": "grupo",
+   "grupos": [
+    {
+     "texto": "já dou de cara|com o homem aqui",
+     "ini": 3.5,
+     "fim": 5.15
+    }
+   ]
+  },
+  {
+   "audio": "reacao1",
+   "modo": "grupo",
+   "grupos": [
+    {
+     "texto": "Arco do Triunfo!",
+     "ini": 8.17,
+     "fim": 9.5
+    }
+   ]
+  },
+  {
+   "audio": "reacao2",
+   "modo": "grupo",
+   "grupos": [
+    {
+     "texto": "Chegamos!",
+     "ini": 10.64,
+     "fim": 11.55
+    }
+   ]
+  }
+ ],
+ "sons": [
+  {
+   "nome": "clack",
+   "cena": "estacao",
+   "t": 0.53,
+   "rel_db": -10,
+   "motivo": "Placa de direção assenta (Chegada curta, 160 ms)"
+  }
+ ],
+ "capa": {
+  "cena": "cartao",
+  "t": 0.9,
+  "placa": {
+   "rotulo": "PARIS",
+   "destino": "SAIU DO METRÔ",
+   "modulo": "seta",
+   "tamanho": "M"
+  },
+  "origem": "planejamento V5: Arco do Triunfo com céu azul e a Placa pequena \"SAIU DO METRÔ\"; quadro do Arco inteiro com o sol (a pontinha da Torre Eiffel aparece à direita)"
+ },
+ "mix": {
+  "voz_lufs": -16,
+  "ambiente_lufs": -19,
+  "master_lufs": -14,
+  "master_pico_dbtp": -1
+ },
+ "trilha": "a pôr no Instagram na hora de postar (biblioteca), 8 a 10 dB abaixo da voz (DS 4.6): ver musica.md"
+}
