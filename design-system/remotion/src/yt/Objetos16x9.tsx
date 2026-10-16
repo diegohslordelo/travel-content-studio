@@ -296,7 +296,7 @@ export const TelaFinal: React.FC<{ ini: number; proximo: string; refLufs?: numbe
             </div>
             <span style={{ fontFamily: FONTE.texto, fontWeight: 700, fontSize: 40, color: COR.grafite }}>@primeirodiaem</span>
           </div>
-          <EspacoVideo x={xSlot} y={YT.margemTitulo - 10} w={larg} rotulo="PRÓXIMO VÍDEO" t={t - 200} />
+          <EspacoVideo x={xSlot} y={YT.margemTitulo - 10} w={larg} rotulo="ASSISTA AGORA" t={t - 200} />
           <EspacoVideo x={xSlot} y={YT.margemTitulo + 470} w={larg} rotulo="ASSISTA TAMBÉM" t={t - 350} />
         </AbsoluteFill>
       )}
