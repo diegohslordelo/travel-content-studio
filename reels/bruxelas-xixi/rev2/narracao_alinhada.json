@@ -1,0 +1,173 @@
+{
+ "arquivo": "../narracao/narracao_rev2.wav",
+ "modelo": "large-v3",
+ "duracao_s": 24.85,
+ "voz_s": [
+  0.06,
+  24.65
+ ],
+ "descartado": "",
+ "texto_ouvido": "Você sabia que Bruxelas tem três pontos turísticos inusitados? São três estátuas fazendo xixi e a primeira é um cachorro que tá com a perna levantada desde 99 A segunda é uma menina que fica num beco e tá fazendo agachamento desde 1987 E a terceira é a mais famosa o Manneken Pis Reza a lenda que esse menino salvou a cidade fazendo xixi em uma bomba E o melhor é que dá pra ver as três em uma tarde Já salva pro seu roteiro de Bruxelas Tchau, tchau",
+ "falas": [
+  {
+   "id": "f1",
+   "ini": 0.06,
+   "fim": 1.44,
+   "destaque": 1.16,
+   "cobertura": "6/6 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram.m4a"
+  },
+  {
+   "id": "f2",
+   "ini": 1.46,
+   "fim": 3.13,
+   "destaque": null,
+   "cobertura": "3/3 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram.m4a"
+  },
+  {
+   "id": "f3",
+   "ini": 3.51,
+   "fim": 5.2,
+   "destaque": null,
+   "cobertura": "5/5 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_2.m4a"
+  },
+  {
+   "id": "f4",
+   "ini": 5.22,
+   "fim": 6.36,
+   "destaque": null,
+   "cobertura": "6/6 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_2.m4a"
+  },
+  {
+   "id": "f5",
+   "ini": 6.38,
+   "fim": 7.58,
+   "destaque": null,
+   "cobertura": "6/6 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_2.m4a"
+  },
+  {
+   "id": "f6",
+   "ini": 7.6,
+   "fim": 8.47,
+   "destaque": 7.82,
+   "cobertura": "4/4 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_2.m4a"
+  },
+  {
+   "id": "f7",
+   "ini": 9.05,
+   "fim": 9.88,
+   "destaque": null,
+   "cobertura": "5/5 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_3.m4a"
+  },
+  {
+   "id": "f8",
+   "ini": 9.9,
+   "fim": 10.77,
+   "destaque": null,
+   "cobertura": "4/4 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_3.m4a"
+  },
+  {
+   "id": "f9",
+   "ini": 10.79,
+   "fim": 11.68,
+   "destaque": null,
+   "cobertura": "4/4 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_3.m4a"
+  },
+  {
+   "id": "f10",
+   "ini": 11.7,
+   "fim": 13.75,
+   "destaque": 12.06,
+   "cobertura": "7/7 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_3.m4a"
+  },
+  {
+   "id": "f11",
+   "ini": 14.34,
+   "fim": 15.54,
+   "destaque": null,
+   "cobertura": "7/7 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_5.m4a"
+  },
+  {
+   "id": "f12",
+   "ini": 15.56,
+   "fim": 16.32,
+   "destaque": null,
+   "cobertura": "3/3 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_5.m4a"
+  },
+  {
+   "id": "f13",
+   "ini": 16.34,
+   "fim": 17.82,
+   "destaque": null,
+   "cobertura": "6/6 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_5.m4a"
+  },
+  {
+   "id": "f14",
+   "ini": 17.84,
+   "fim": 18.54,
+   "destaque": null,
+   "cobertura": "3/3 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_5.m4a"
+  },
+  {
+   "id": "f15",
+   "ini": 18.56,
+   "fim": 20.21,
+   "destaque": 19.72,
+   "cobertura": "5/5 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_5.m4a"
+  },
+  {
+   "id": "f16",
+   "ini": 20.75,
+   "fim": 21.86,
+   "destaque": null,
+   "cobertura": "10/10 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_6.m4a"
+  },
+  {
+   "id": "f17",
+   "ini": 21.88,
+   "fim": 22.7,
+   "destaque": null,
+   "cobertura": "3/3 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_6.m4a"
+  },
+  {
+   "id": "f18",
+   "ini": 22.72,
+   "fim": 23.5,
+   "destaque": null,
+   "cobertura": "2/2 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_6.m4a"
+  },
+  {
+   "id": "f19",
+   "ini": 23.52,
+   "fim": 24.77,
+   "destaque": null,
+   "cobertura": "5/5 palavras",
+   "tomada": "Prac_a_Ernesto_Lebram_6.m4a"
+  }
+ ],
+ "diferencas": [
+  {
+   "tipo": "a mais no áudio",
+   "roteiro": "",
+   "audio": "tchau tchau",
+   "em_s": 24.56
+  }
+ ]
+}
