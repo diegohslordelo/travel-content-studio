@@ -29,7 +29,7 @@ Mudanças em relação ao planejamento:
 
 | Item | O que fazer |
 |---|---|
-| Áudio | Original do vídeo: só a sua voz, masterizada em −14 LUFS (sem som dos vídeos e sem efeitos) |
+| Áudio | Original do vídeo: sua voz + os 2 obturadores, masterizada em −14 LUFS (sem som dos vídeos) |
 | Música (opcional) | Biblioteca do Instagram, algo leve e cômico (busque "funny", "comedy" ou "pizzicato"). Bem baixa: a voz tem de ficar clara (DS 4.6: 8 a 10 dB abaixo da voz). Confira no fone |
 | Capa | `capa_bruxelas-xixi_rev3.jpg` (no grid 3:4 a placa fica dentro do recorte, entre y 240 e 1680) |
 | Primeira hora | Responder todo comentário. Se perguntarem da lenda, use o comentário abaixo |

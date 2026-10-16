@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Reel "Bruxelas tem 3 estátuas fazendo xixi" · REV3 · narração do Diego, só a voz no áudio.
+"""Reel "Bruxelas tem 3 estátuas fazendo xixi" · REV3 · narração do Diego, vídeos sem som.
 
-A REV3 é a REV2 com o som trocado: vídeos de fundo mudos, sem ambiente e sem efeitos (pedido do Diego).
+A REV3 é a REV2 com os vídeos mudos: sem ambiente; a voz e os efeitos da marca continuam (pedido do Diego).
 A narração e o alinhamento vêm da REV2 (../narracao/narracao_rev2.wav e ../rev2/narracao_alinhada.json);
 para refazê-los, use `python3 ../rev2/rev2.py montar` e `python3 ../rev2/rev2.py narracao`.
 

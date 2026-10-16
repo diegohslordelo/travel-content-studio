@@ -2,9 +2,9 @@
  "reel": "bruxelas-xixi",
  "revisao": 3,
  "data": "2026-10-16",
- "parte_de": "rev2: mesma narração (alinhamento lido de ../rev2/narracao_alinhada.json), cenas, recortes, legendas, contadores, Ticket e capa; muda só o som",
+ "parte_de": "rev2: mesma narração (alinhamento lido de ../rev2/narracao_alinhada.json), cenas, recortes, legendas, contadores, Ticket, sons de efeito e capa; muda só o som dos vídeos",
  "planejamento": "V5-20261016-BRU-xixi (16/10/2026, 19:00)",
- "formato": "narração do Diego (voz em off) sobre o material de 15/03/2026; só a voz no áudio (pedido do Diego, 16/10/2026)",
+ "formato": "narração do Diego (voz em off) sobre o material de 15/03/2026; vídeos sem som (pedido do Diego, 16/10/2026)",
  "nivel_ds": "B",
  "fps": 30,
  "largura": 1080,
@@ -77,7 +77,10 @@
   {"de": "f12", "ate": "f15", "rotulo": "15/03 · 16H09", "numero": "3/3", "fonte_do_dado": "IMG_2253 (o menino) criado 15/03/2026 16:09:52 (+01:00), trecho desde 0,0 s; IMG_2251 16:09:06"}
  ],
  "ticket": {"de": "f18", "desloc_s": 0.15, "dur_s": 2.9, "variante": "sabia", "micro": "ZINNEKE · JEANNEKE · MANNEKEN", "x": 72, "y": 900, "fonte_do_dado": "nomes oficiais em visit.brussels (Manneken-Pis, Jeanneke-Pis, Zinneke-Pis), consultado em 16/10/2026; o SABIA? responde ao \"Você sabia…?\" do gancho"},
- "sons": [],
+ "sons": [
+  {"nome": "obturador", "cena": "cachorro", "t": 0, "rel_db": -12, "motivo": "Snap, 1º item da lista"},
+  {"nome": "obturador", "cena": "famoso", "t": 0, "rel_db": -12, "motivo": "Snap, último item da lista"}
+ ],
  "capa": {"cena": "gancho", "t": 1.0, "placa": {"rotulo": "XIXI EM BRUXELAS", "destino": "3 ESTÁTUAS", "modulo": "interrogacao", "tamanho": "M"}, "origem": "planejamento V5: multidão no Manneken Pis com Placa pequena \"3 ESTÁTUAS\" e o \"?\" no módulo (mesma da rev1)"},
  "mix": {
   "voz_lufs": -16,
@@ -86,5 +89,5 @@
   "master_pico_dbtp": -1
  },
  "trilha": "nenhuma no arquivo; sugestão na legenda_post.md (biblioteca do Instagram, 8 a 10 dB abaixo da voz, DS 4.6)",
- "som": "só a voz do Diego: vídeos de fundo mudos, sem ambiente e sem os obturadores do Snap (pedido do Diego, 16/10/2026)"
+ "som": "voz do Diego + efeitos da marca (obturador nos 2 Snaps); todos os vídeos mudos, sem ambiente (pedido do Diego, 16/10/2026)"
 }
