@@ -1,0 +1,85 @@
+{
+ "reel": "bruxelas-xixi",
+ "revisao": 1,
+ "data": "2026-10-16",
+ "planejamento": "V5-20261016-BRU-xixi (16/10/2026, 19:00)",
+ "formato": "narração do Diego (voz em off) sobre o material de 15/03/2026",
+ "nivel_ds": "B",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "fontes": {
+  "IMG_2255": {"arquivo": "IMG_2255.MOV", "drive_id": "1BDX-0sUsTh4qBCVS79Hcab9mwOEySwXD", "hdr": true, "girar": "auto", "criado": "2026-03-15T16:10:10+01:00", "o_que": "multidão na frente do Manneken Pis"},
+  "IMG_2186": {"arquivo": "IMG_2186.MOV", "drive_id": "1FsIP7CfibWjO_OwtI9QcHcCijCIGAGGI", "hdr": true, "girar": 180, "criado": "2026-03-15T13:16:51+01:00", "o_que": "Diego apontando, Marina ao lado (rua do Zinneke)", "nota": "gravado na horizontal; o metadado de rotação (-90) está errado"},
+  "IMG_2187": {"arquivo": "IMG_2187.MOV", "drive_id": "1-gXbUlzszko8Xf8WqiikRn4d3qEPKqwL", "hdr": true, "girar": "auto", "criado": "2026-03-15T13:17:14+01:00", "o_que": "Zinneke Pis (cachorro)"},
+  "IMG_2224": {"arquivo": "IMG_2224.MOV", "drive_id": "1ATgpig5MDRjPRM2yV8bvrJTq_eF8XQ73", "hdr": true, "girar": "auto", "criado": "2026-03-15T14:24:58+01:00", "o_que": "Jeanneke Pis (menina)"},
+  "IMG_2223": {"arquivo": "IMG_2223.MOV", "drive_id": "1jNLFWtfHF6lguapfNKFNhhabXLF7Ho40", "hdr": true, "girar": "auto", "criado": "2026-03-15T14:24:54+01:00", "o_que": "Jeanneke Pis, reserva se a fala da menina passar de 3,9 s"},
+  "IMG_2258": {"arquivo": "IMG_2258.MOV", "drive_id": "199ODmBCVJp6-ARg6KUfpcf-lfmps6oeA", "hdr": true, "girar": 180, "criado": "2026-03-15T16:12:06+01:00", "o_que": "Diego (e Marina) com a multidão do Manneken Pis", "nota": "gravado na horizontal; o metadado de rotação (-90) está errado"},
+  "IMG_2253": {"arquivo": "IMG_2253.MOV", "drive_id": "1xEHeA9g5hEe68Ii7eopiH9sS9d1XM6mg", "hdr": true, "girar": "auto", "criado": "2026-03-15T16:09:52+01:00", "o_que": "Manneken Pis de jogador de futebol (close, horizontal)"},
+  "IMG_2251": {"arquivo": "IMG_2251.MOV", "drive_id": "1zwczvU29OExCQMl4wbofhdY-AchNywfW", "hdr": true, "girar": "auto", "criado": "2026-03-15T16:09:06+01:00", "o_que": "Manneken Pis de jogador de futebol (close, vertical)"}
+ },
+ "narracao": {
+  "nota": "Sem narracao_alinhada.json, o preparar usa os tempos-guia de cada fala e o render sai como guia de leitura. Com o áudio do Diego: python3 rev1.py narracao <arquivo> (copia para ../narracao/ e alinha).",
+  "primeira_palavra_s": 0.2,
+  "cauda_s": 0.6,
+  "corte_antes_da_fala_s": 0.1,
+  "falas": [
+   {"id": "f1", "fala": "Bruxelas tem *três estátuas", "texto": "Bruxelas tem *3* estátuas", "guia": [0.2, 1.35]},
+   {"id": "f2", "fala": "fazendo xixi", "texto": "fazendo xixi", "guia": [1.35, 2.15]},
+   {"id": "f3", "fala": "A primeira é um cachorro", "texto": "a primeira é um cachorro", "guia": [2.7, 3.95]},
+   {"id": "f4", "fala": "Perna levantada desde *noventa e nove", "texto": "perna levantada desde *1999*", "guia": [4.05, 6.1]},
+   {"id": "f5", "fala": "A segunda é uma menina", "texto": "a segunda é uma menina", "guia": [6.5, 7.65]},
+   {"id": "f6", "fala": "num beco. Agachada desde *oitenta e sete", "texto": "num beco,|agachada desde *1987*", "guia": [7.75, 9.9]},
+   {"id": "f7", "fala": "E a terceira é a famosa", "texto": "e a terceira é a famosa", "guia": [10.3, 11.55]},
+   {"id": "f8", "fala": "faz xixi desde *mil seiscentos e dezenove", "texto": "faz xixi desde *1619*", "guia": [11.65, 13.6]},
+   {"id": "f9", "fala": "Tem mais de mil roupas", "texto": "tem mais de mil roupas", "guia": [13.8, 15.0]},
+   {"id": "f10", "fala": "Mais roupa que eu", "texto": "mais roupa que eu", "guia": [15.05, 16.1]},
+   {"id": "f11", "fala": "Dá pra ver as três", "texto": "dá pra ver as três", "guia": [16.55, 17.5]},
+   {"id": "f12", "fala": "a pé, numa tarde", "texto": "a pé, numa tarde", "guia": [17.5, 18.5]},
+   {"id": "f13", "fala": "Salva pro seu roteiro de Bruxelas", "texto": "salva pro seu|roteiro de Bruxelas", "guia": [18.75, 20.4]}
+  ]
+ },
+ "cenas": [
+  {"id": "gancho", "fonte": "IMG_2255", "ancora": "f1", "in": 0.0, "audio": "ambiente", "recorte_x": [[0, 1272], [1, 1112], [2, 992], [3, 792]], "nota": "a câmera anda; o recorte acompanha o nicho"},
+  {"id": "cachorro_diego", "fonte": "IMG_2186", "ancora": "f3", "in": 2.0, "audio": "mudo", "recorte_x": [[0, 966]]},
+  {"id": "cachorro", "fonte": "IMG_2187", "ancora": "f4", "in": 0.3, "audio": "mudo", "recorte_x": [[0, 240], ["fim", 1600]], "nota": "panorâmica da cabeça até a perna levantada (a piada)"},
+  {"id": "menina", "fonte": "IMG_2224", "ancora": "f5", "in": 0.0, "audio": "mudo", "kenburns": true, "recorte_x": [[0, 1592]]},
+  {"id": "famoso_diego", "fonte": "IMG_2258", "ancora": "f7", "in": 0.9, "audio": "mudo", "recorte_x": [[0, 560], [1.4, 760]]},
+  {"id": "famoso", "fonte": "IMG_2253", "ancora": "f8", "in": 0.0, "audio": "ambiente", "recorte_x": [[0, 1178]], "nota": "close: a estátua fica acima da legenda (no plano aberto IMG_2254 a legenda cobria o menino)"},
+  {"id": "roupa", "fonte": "IMG_2251", "ancora": "f9", "in": 0.2, "audio": "ambiente", "kenburns": true},
+  {"id": "fim", "fonte": "IMG_2255", "ancora": "f11", "in": 3.2, "audio": "mudo", "recorte_x": [[0, 600], [0.8, 352], [1.8, 32], [2.8, 0]], "nota": "mesma multidão do gancho: o corte seco para o início fecha o loop"}
+ ],
+ "audios": [],
+ "transicoes": [
+  {"tipo": "snap", "entra": "cachorro", "motivo": "lista de 3 (DS 4.4): 1º item"},
+  {"tipo": "snap", "entra": "famoso", "motivo": "lista de 3 (DS 4.4): último item"}
+ ],
+ "informacao": [
+  {"de": "f3", "ate": "f4", "rotulo": "15/03 · 13H16", "numero": "1/3", "fonte_do_dado": "IMG_2186 criado 15/03/2026 13:16:51 (+01:00) + 2,0 s do trecho"},
+  {"de": "f5", "ate": "f6", "rotulo": "15/03 · 14H24", "numero": "2/3", "fonte_do_dado": "IMG_2224 criado 15/03/2026 14:24:58 (+01:00), trecho desde 0,0 s"},
+  {"de": "f7", "ate": "f10", "rotulo": "15/03 · 16H12", "numero": "3/3", "fonte_do_dado": "IMG_2258 criado 15/03/2026 16:12:06 (+01:00) + 0,9 s do trecho"}
+ ],
+ "ticket": {"de": "f13", "antes_s": 0.4, "dur_s": 2.9, "variante": "sabia", "micro": "ZINNEKE · JEANNEKE · MANNEKEN", "x": 72, "y": 900, "fonte_do_dado": "nomes oficiais em visit.brussels (Manneken-Pis, Jeanneke-Pis, Zinneke-Pis), consultado em 16/10/2026"},
+ "sons": [
+  {"nome": "obturador", "cena": "cachorro", "t": 0, "rel_db": -12, "motivo": "Snap, 1º item da lista"},
+  {"nome": "obturador", "cena": "famoso", "t": 0, "rel_db": -12, "motivo": "Snap, último item da lista"}
+ ],
+ "capa": {
+  "cena": "gancho",
+  "t": 1.0,
+  "placa": {
+   "rotulo": "XIXI EM BRUXELAS",
+   "destino": "3 ESTÁTUAS",
+   "modulo": "interrogacao",
+   "tamanho": "M"
+  },
+  "origem": "planejamento V5: multidão no Manneken Pis com Placa pequena \"3 ESTÁTUAS\" e o \"?\" no módulo"
+ },
+ "mix": {
+  "voz_lufs": -16,
+  "ambiente_lufs": -30,
+  "master_lufs": -14,
+  "master_pico_dbtp": -1
+ },
+ "trilha": "nenhuma no arquivo; sugestão na legenda_post.md (biblioteca do Instagram, 8 a 10 dB abaixo da voz, DS 4.6)"
+}

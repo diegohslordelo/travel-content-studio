@@ -16,6 +16,7 @@ import {
   useVideoConfig,
 } from "remotion";
 import { Placa, Modulo } from "../ds/Placa";
+import { Ticket, TicketProps } from "../ds/Ticket";
 import { Grao, ScrimBase } from "../ds/material";
 import { LegendaInformacao, LegendaPadrao } from "../ds/Legendas";
 import {
@@ -86,6 +87,17 @@ export type PropsReel = {
     numero: string;
     complemento?: string;
   }[];
+  /** Ticket (DS 2.3; SABIA? da 2.6): no máx. 1 por Reel. */
+  ticket?: {
+    cena: string;
+    t: number;
+    saida: number;
+    variante: TicketProps["variante"];
+    palavra?: string;
+    micro?: string;
+    x?: number;
+    y?: number;
+  };
   legendas: LegendaBloco[];
   sons: {
     nome: NomeSom;
@@ -169,8 +181,16 @@ export const Reel: React.FC<PropsReel> = (p) => {
   const tr = (id: string) => p.transicoes.find((x) => x.entra === id);
   const proximo = (i: number) => p.cenas[i + 1]?.id;
 
-  // referência de loudness em cada ponto (para os sons da 4.6)
-  const refLufs = (cena: string): number => {
+  // referência de loudness em cada ponto (para os sons da 4.6): a voz, quando há voz tocando (ex.: narração)
+  const refLufs = (cena: string, t: number): number => {
+    const m = ms(cena, t);
+    const voz = p.audios.find(
+      (a) =>
+        a.tipo === "voz" &&
+        m >= inicioAudio(a) &&
+        m <= inicioAudio(a) + a.dur * 1000,
+    );
+    if (voz) return p.mix.voz_lufs;
     const c = p.cenas.find((x) => x.id === cena);
     if (c && c.audio !== "mudo") return p.mix[`${c.audio}_lufs`];
     const a = p.audios.find((x) => x.inicio.cena === cena);
@@ -304,6 +324,18 @@ export const Reel: React.FC<PropsReel> = (p) => {
         />
       ))}
 
+      {p.ticket && (
+        <Ticket
+          variante={p.ticket.variante}
+          palavra={p.ticket.palavra}
+          micro={p.ticket.micro}
+          x={p.ticket.x}
+          y={p.ticket.y}
+          entrada={ms(p.ticket.cena, p.ticket.t)}
+          saida={ms(p.ticket.cena, p.ticket.saida)}
+        />
+      )}
+
       <LegendaPadrao grupos={grupos} modo={modo} />
 
       {p.sons.map((s, i) => (
@@ -312,7 +344,7 @@ export const Reel: React.FC<PropsReel> = (p) => {
           nome={s.nome}
           em={ms(s.cena, s.t)}
           relDb={s.rel_db}
-          refLufs={refLufs(s.cena)}
+          refLufs={refLufs(s.cena, s.t)}
         />
       ))}
 

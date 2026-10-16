@@ -49,7 +49,7 @@ O arquivo sai em `../kit/mov/` com o nome da composição. Todos têm 1080 × 19
 | `src/ds/Transicoes.tsx` | 4.4 | Varredura de Placa, Arrasto, Snap, Cinema e Rota |
 | `src/ds/Som.tsx` | 4.6 | Sons `PD_*_v1.wav` no volume relativo à voz; `SomMoeda` (máquina de moeda) |
 | `src/kit/Kit.tsx` | 6.1 | Composições do kit, PNGs e catálogo |
-| `src/reel/Reel.tsx` | 5.2 | Reel montado a partir de `revN.json` |
+| `src/reel/Reel.tsx` | 5.2 | Reel montado a partir de `revN.json`: cenas, transições, Placa, Informação, Ticket, legendas, voz (inclusive narração) e sons |
 | `scripts/kit.mjs` | 6.1 | Exportação do kit |
 
 ## Decisões de implementação (registradas, não são regra nova)
