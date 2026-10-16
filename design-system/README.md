@@ -12,8 +12,10 @@ As regras visuais estão nos arquivos abaixo e não são repetidas aqui.
 | `primeiro-dia-tokens-v2.json` | **Tokens** V2 (W3C DTCG): os valores técnicos oficiais |
 | `bundle/pd-bundle.css` | Estilos dos componentes usados nas prévias |
 | `bundle/pd-bundle.js` | Funções auxiliares das prévias (`window.PD`) |
-| `sons/LISTA_DE_GRAVACAO.md` | Roteiro de gravação dos 9 sons da marca (`PD_*.wav`) |
-| `fonts/` | Fontes do sistema. **Está vazia:** nenhum arquivo de fonte do DS V2 estava disponível na migração |
+| `sons/` | Sons da marca `PD_*_v1.wav` (9 do kit + moeda), gerados por síntese em 16/10/2026, com `gerar_sons.py` e `README.md`; `LISTA_DE_GRAVACAO.md` é o roteiro para a gravação real (v2) |
+| `remotion/` | Implementação animada do DS em Remotion: objetos, assinaturas de movimento, legendas, transições e sons; exporta o kit e renderiza Reels (ver `remotion/README.md`) |
+| `kit/` | Kit 6.1 gerado pelo Remotion: animações com alfa (`mov/`), PNGs (`png/`) e o catálogo com som (`catalogo_ds_v2.mp4`) |
+| `fonts/` | Fontes do sistema. **Está vazia:** nenhum arquivo de fonte do DS V2 estava disponível na migração (o Remotion usa os pacotes `@fontsource` de Barlow, Barlow Condensed, IBM Plex Mono e Reenie Beanie) |
 
 Os arquivos foram copiados sem alteração na migração. As mudanças posteriores estão registradas abaixo e no Changelog do brand book (7.4).
 
@@ -31,6 +33,8 @@ Os documentos de apoio ficam em `../docs/`:
 
 **Versão 2.2.0 (08/10/2026, pedido do Diego):** legendas do YouTube longo, 16:9 (brand book 3.4): faixa `.srt` revisada em todo vídeo com fala e legenda embutida de reforço só nos trechos difíceis; tokens novos em `layout.yt` (posição, largura e tempo da legenda). Nenhuma fonte, cor, sombra ou curva nova. O bundle ainda não tem prévia dessa seção.
 
+**Remotion, kit e sons v1 (16/10/2026, pedido do Diego):** o DS V2 ganhou uma implementação animada em Remotion (`remotion/`), que lê os tokens direto do JSON e exporta o kit (`kit/`); os 9 sons do kit e o som de moeda foram gerados por síntese (`sons/`). Nenhum valor visual novo. As interpretações de implementação estão em `remotion/README.md` ("Decisões de implementação").
+
 **Bundle alinhado aos tokens e ao brand book (05/10/2026):** Chegada 560 ms (passa +24 px em 280 ms, assenta em 400 ms, empurrão da seta 400–560 ms, brilho 700–1300 ms, desfoque 12 px); scrim inferior 0 → 63% de y 1150 a 1500 e superior a 63%; grão 5% e fibra 4%; face da placa com padding 28 × 36, filete a 25% e rebites de 10 px a 22 px; mini-placa em Barlow com padding 4/14. O **módulo de seta** não mudou (ver pendência 3 do CLAUDE.md).
 
 ## Fontes pendentes
@@ -46,8 +50,8 @@ O `pd-bundle.css` carrega Barlow, Barlow Condensed, IBM Plex Mono e Reenie Beani
 
 ## Pendências do próprio DS (sem arquivo ainda)
 
-- Sons `PD_*.wav` (como gravar: `sons/LISTA_DE_GRAVACAO.md`)
-- Kit de PNG
+- Sons **gravados** (`PD_*_v2.wav`): os `v1` atuais são sintetizados (como gravar: `sons/LISTA_DE_GRAVACAO.md`)
+- Kit de PNG: parte saiu em `kit/png/` (16/10/2026); faltam os módulos avulsos (pendência 3 do CLAUDE.md), a estrela separada e as partes do recibo
 - Projetos-modelo do CapCut
 
 ## Conflitos que aguardam decisão do Diego
