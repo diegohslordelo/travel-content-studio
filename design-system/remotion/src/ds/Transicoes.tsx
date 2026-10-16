@@ -11,12 +11,13 @@ import { kf, useMs } from "./tempo";
 import { BLUR, COR, EASE, EFEITO, FONTE, SOMBRA, TIPO } from "./tokens";
 
 /** Varredura de Placa (320 ms): painel amarelo com o módulo de seta na borda dianteira atravessa → ; corte aos 160 ms. */
-export const Varredura: React.FC<{ corte: number }> = ({ corte }) => {
+export const Varredura: React.FC<{ corte: number; largura?: number }> = ({ corte, largura = 1080 }) => {
   const t = useMs() - (corte - 160);
   if (t < 0 || t > 320) return null;
-  const x = kf(t, [0, 320], [-1180, 1180], EASE.cinema);
+  const L = largura + 100;
+  const x = kf(t, [0, 320], [-L, L], EASE.cinema);
   return (
-    <div style={{ position: "absolute", top: -40, bottom: -40, left: 0, width: 1180, translate: `${x}px 0`, background: COR.amarelo, boxShadow: SOMBRA.relevo, overflow: "hidden" }}>
+    <div style={{ position: "absolute", top: -40, bottom: -40, left: 0, width: L, translate: `${x}px 0`, background: COR.amarelo, boxShadow: SOMBRA.relevo, overflow: "hidden" }}>
       <Fibra opacidade={0.05} semente={13} />
       <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 180, background: COR.grafite, display: "grid", placeItems: "center" }}>
         <Seta tamanho={110} cor={COR.amarelo} />

@@ -14,3 +14,7 @@ __pycache__/
 # Sistema
 .DS_Store
 Thumbs.db
+
+# Amostra do YouTube: proxies 1080p derivados dos brutos e dados brutos do OSM
+reels/amostra-yt/public/clipes/
+reels/amostra-yt/mapa/
