@@ -43,7 +43,7 @@ Primeira linha reforça o gancho da capa (referência, 3.4). Palavras-chave na l
 
 | Slide | Texto alternativo |
 |---|---|
-| 01 | Diego e Marina sorrindo de óculos escuros em frente à Sagrada Família, com a placa amarela "Quanto custa andar em Barcelona?" |
+| 01 | Fachada da Casa Batlló, de Gaudí, ao entardecer, com a placa amarela "Quanto custa andar em Barcelona?" |
 | 02 | Ticket "Sabia?": o trem do aeroporto aceita a T-casual, € 1,30 por viagem |
 | 03 | Painel com as 4 opções do aeroporto ao centro: trem € 1,30, metrô € 5,90, Aerobús € 7,75 e táxi € 30 a € 40 |
 | 04 | Qual pegar: trem no T2, Aerobús no T1 ou de madrugada, metrô com passe, táxi dividido em 4 pessoas |

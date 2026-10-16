@@ -10,7 +10,7 @@
 
 De dentro desta pasta: `node scripts/render.mjs` gera `out/01.jpg` a `out/09.jpg` a partir de `slides.html`. Variáveis opcionais: `PLAYWRIGHT_MODULE` (neste ambiente, `/opt/node22/lib/node_modules/playwright`) e `CHROMIUM`. O script também confere a largura da placa (≤ 872 px), a margem de 80, a Rota e as palavras por slide. `out/contato.jpg` é a folha de contato a 25% (teste de miniatura).
 
-A foto da capa vai em `../fonte/capa.jpg` (fora do git): IMG_1198 redimensionada para 1080 × 1440. Para refazer: baixar a IMG_1198.HEIC do Drive (`Barcelona/Youtube`, ID `1DJLn7FpJsQJRbCnhiYq-xnbXjxl8PO7N`), converter com `pillow-heif` e redimensionar sem corte (a foto já é 3:4).
+A foto da capa vai em `../fonte/capa.jpg` (fora do git): a foto da Casa Batlló enviada pelo Diego (`../fonte/casa_batllo_chat.jpg`), cortada em 3:4 pelo topo e redimensionada para 1080 × 1440.
 
 `slides.html` usa o `pd-bundle.css` do DS e as fontes em `fonts/` (as mesmas do carrossel de Roma: Barlow, Barlow Condensed, IBM Plex Mono e Reenie Beanie, OFL 1.1).
 
@@ -40,11 +40,13 @@ Enviabilidade 2 (dá para dizer para quem mandar: quem vai a Barcelona) · Ganch
 
 ## Fotos
 
-| Slide | Foto | Data e hora (EXIF) |
+| Slide | Foto | Data e hora |
 |---|---|---|
-| 01 | IMG_1198 (Drive, `Barcelona/Youtube`): Diego e Marina em frente à Sagrada Família, selfie | 11/03/2026 11:41 (+01:00); GPS 41,4047° N · 2,1754° E, as coordenadas da capa |
+| 01 | Casa Batlló ao entardecer, fachada inteira (enviada pelo Diego no chat, 16/10/2026) | sem EXIF (a imagem do chat chega sem metadados) |
 
-**Escolha:** no Drive de Barcelona só há duas fotos (o resto são vídeos): a IMG_1198 e a thumbnail do vlog, que é a mesma foto com arte por cima. Não há foto da Casa Batlló, só vídeos brutos sem catálogo (Barcelona não tem pasta de análise nem acervo). A IMG_1198 cumpre o DS 5.3: o Diego em primeiro plano, um marco reconhecível (a Sagrada Família), luz de dia e o formato 3:4 nativo, sem corte. Os rostos ficam entre y ≈ 600 e 780, acima da placa (y 1021 a 1240). É também a foto da thumbnail do vlog no YouTube, o que liga o post ao CTA da bio. A Marina aparece, o que é o padrão (CLAUDE.md, 2). Para usar a Casa Batlló, dá para tirar um quadro de um dos vídeos, se o Diego disser qual é o arquivo.
+**Escolha do Diego (16/10/2026):** a Casa Batlló. Corte 3:4 pelo topo (1717 × 2289 de 1717 × 2576): mantém o céu (onde ficam a etiqueta e o contador), o telhado de dragão e as varandas, e tira a multidão da base (rostos de desconhecidos). A placa cobre as janelas do primeiro andar. Coordenadas da capa: as da Casa Batlló na Wikipédia (41,39158° N · 2,16492° E), arredondadas para 4 casas.
+
+**Desvio:** o DS (5.3) pede o Diego em primeiro plano na capa; esta não tem pessoa. A alternativa com o Diego e a Marina na Sagrada Família (IMG_1198, Drive `Barcelona/Youtube`, 11/03/2026 11:41) foi a REV anterior desta capa e fica registrada como opção para teste. A foto do chat tem 1717 px de largura: basta para 1080, mas o original do celular daria mais nitidez.
 
 ## Dados e fontes (conferidos em 16/10/2026)
 
@@ -92,7 +94,7 @@ Enviabilidade 2 (dá para dizer para quem mandar: quem vai a Barcelona) · Ganch
 - [x] Grão 5% em tudo; fibra 4% no papel.
 - [x] Teste de miniatura: placa da capa e valores legíveis a 25% (`out/contato.jpg`).
 - [x] Seta, `?` e ✓ desenhados em SVG, nunca digitados (1.2).
-- [x] Capa com foto em sangria e o Diego em primeiro plano (IMG_1198).
+- [x] Capa com foto em sangria (Casa Batlló, escolha do Diego). Sem o Diego em primeiro plano: desvio registrado em Fotos.
 
 ## Desvios e decisões tomadas (precisam de aprovação do Diego)
 
