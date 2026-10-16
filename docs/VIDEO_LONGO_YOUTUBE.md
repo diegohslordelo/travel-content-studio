@@ -100,5 +100,5 @@ O prazo de 24/10 depende do pacote chegar até 19/10.
 
 **Do Claude:**
 - [x] Grafismos 16:9 no Remotion (`design-system/remotion/src/yt/`) e amostra de 30 s (`reels/amostra-yt/`), aprovada pelo Diego em 16/10/2026.
-- [ ] Tela final de 20 s e placa de fechamento em 16:9 (ainda não estão na amostra).
+- [x] Placa de fechamento (`E ISSO FOI SÓ O / PRIMEIRO DIA.` + Nascer do 1º) e tela final de 20 s em 16:9: a última cena vira como página e revela a tela final (papel com fibra, Bilhete "próximo dia:", 1º + @primeirodiaem, 2 espaços de vídeo à direita). Amostra em `reels/amostra-yt/amostra_fechamento_yt_v1.mp4`.
 - [ ] Conferir as regras de uso do logo do Instagram na página oficial da Meta antes do render (as consultadas em 16/10/2026 eram de terceiros).

@@ -11,6 +11,7 @@ import { carregarFontes } from "./ds/fontes";
 import { KitComposicoes } from "./kit/Kit";
 import { CapaReel, Reel, metadadosReel, propsVazias } from "./reel/Reel";
 import { AmostraYT } from "./yt/AmostraYT";
+import { AmostraFimYT, DUR_AMOSTRA_FIM } from "./yt/AmostraFimYT";
 
 carregarFontes();
 
@@ -19,6 +20,7 @@ export const RemotionRoot: React.FC = () => (
     <KitComposicoes />
     <Composition id="Reel" component={Reel} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsVazias} calculateMetadata={metadadosReel} />
     <Composition id="AmostraYT" component={AmostraYT} durationInFrames={900} fps={30} width={1920} height={1080} />
+    <Composition id="AmostraFimYT" component={AmostraFimYT} durationInFrames={Math.round((DUR_AMOSTRA_FIM * 30) / 1000)} fps={30} width={1920} height={1080} />
     <Still id="CapaReel" component={CapaReel} width={1080} height={1920} defaultProps={propsVazias} />
   </>
 );

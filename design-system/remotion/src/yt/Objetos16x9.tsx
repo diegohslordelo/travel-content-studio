@@ -7,6 +7,8 @@ import React, { useEffect, useState } from "react";
 import { AbsoluteFill, continueRender, delayRender, staticFile } from "remotion";
 import { Fibra } from "../ds/material";
 import { GlifoInstagram, Seta } from "../ds/icones";
+import { Bilhete } from "../ds/Bilhete";
+import { Simbolo1 } from "../ds/Simbolo1";
 import { Som } from "../ds/Som";
 import { kf, useMs } from "../ds/tempo";
 import { COR, DUR, EASE, FONTE, RAIO, SOM, SOMBRA, TIPO, YT, rgba } from "../ds/tokens";
@@ -256,5 +258,49 @@ export const VirarPagina: React.FC<{ corte: number; children: React.ReactNode }>
         </AbsoluteFill>
       </AbsoluteFill>
     </AbsoluteFill>
+  );
+};
+
+/** Espaço de vídeo da tela final: moldura onde o YouTube coloca o elemento de vídeo (16:9). */
+const EspacoVideo: React.FC<{ x: number; y: number; w: number; rotulo: string; t: number }> = ({ x, y, w, rotulo, t }) => {
+  const o = kf(t, [0, DUR.base], [0, 1], EASE.out);
+  const h = (w * 9) / 16;
+  return (
+    <div style={{ position: "absolute", left: x, top: y, opacity: o, translate: `0 ${(1 - o) * 16}px` }}>
+      <div style={{ fontFamily: FONTE.mono, fontWeight: 500, fontSize: 24, letterSpacing: "0.08em", color: COR.asfalto, marginBottom: 12 }}>{rotulo}</div>
+      <div style={{ width: w, height: h, boxSizing: "border-box", borderRadius: RAIO.foto, border: `4px solid ${rgba(COR.grafite, 0.18)}`, background: rgba(COR.grafite, 0.06) }} />
+    </div>
+  );
+};
+
+/**
+ * Tela final do vídeo longo (DS 5.4): 20 s, fundo papel com fibra, 2 espaços de vídeo à direita (onde o
+ * YouTube põe os elementos da tela final, que vão nos últimos 5–20 s) e o Bilhete "próximo dia:" à esquerda,
+ * com o símbolo 1º. Nada de legenda. Som: os 2 cliques de caneta quando o Bilhete começa a ser escrito.
+ */
+export const TelaFinal: React.FC<{ ini: number; proximo: string; refLufs?: number }> = ({ ini, proximo, refLufs = -16 }) => {
+  const t = useMs() - ini;
+  const larg = 760;
+  const xSlot = 1920 - YT.margemTitulo - larg;
+  return (
+    <>
+      {t >= 0 && (
+        <AbsoluteFill style={{ background: COR.papel }}>
+          <Fibra semente={31} />
+          <div style={{ position: "absolute", left: YT.margemTitulo + 24, top: 250, scale: "1.35", transformOrigin: "0 0" }}>
+            <Bilhete texto={`próximo dia:|${proximo} →`} x={0} y={0} entrada={ini + 400} />
+          </div>
+          <div style={{ position: "absolute", left: YT.margemTitulo, bottom: YT.margemTitulo, display: "flex", alignItems: "center", gap: 20, opacity: kf(t, [900, 900 + DUR.base], [0, 1]) }}>
+            <div style={{ width: 96, height: 96, borderRadius: RAIO.placa, background: COR.grafite, display: "grid", placeItems: "center" }}>
+              <Simbolo1 altura={70} t={t - 900} corNumero={COR.recibo} />
+            </div>
+            <span style={{ fontFamily: FONTE.texto, fontWeight: 700, fontSize: 40, color: COR.grafite }}>@primeirodiaem</span>
+          </div>
+          <EspacoVideo x={xSlot} y={YT.margemTitulo - 10} w={larg} rotulo="PRÓXIMO VÍDEO" t={t - 200} />
+          <EspacoVideo x={xSlot} y={YT.margemTitulo + 470} w={larg} rotulo="ASSISTA TAMBÉM" t={t - 350} />
+        </AbsoluteFill>
+      )}
+      <Som nome="clique" em={ini + 400 + DUR.base} relDb={SOM.clique} refLufs={refLufs} />
+    </>
   );
 };
