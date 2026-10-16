@@ -66,6 +66,7 @@ Este arquivo **não** descreve a identidade visual. Cores, fontes, componentes, 
 | 1 | Design System V2 | `design-system/design-system-primeiro-dia-v2.md` | Identidade visual e regras da marca |
 | 2 | Tokens V2 | `design-system/primeiro-dia-tokens-v2.json` | Valores técnicos oficiais |
 | 3 | pd-bundle | `design-system/bundle/pd-bundle.css` e `pd-bundle.js` | Implementação e prévias dos componentes |
+| 3 | Remotion (DS V2) | `design-system/remotion/` | Implementação animada: objetos, movimento, legendas, transições e sons; exporta o kit (`design-system/kit/`) e renderiza Reels. Mesmo nível do bundle: se divergir dos tokens ou do brand book, corrige-se o código |
 | 4 | Referência Instagram | `docs/referencia-conteudo-instagram.md` | Estratégia, formato, ritmo, publicação e métricas |
 | 5 | CLAUDE.md | `CLAUDE.md` | Contexto e regras operacionais |
 | 6 | QA / revN | `reels/<reel>/revN/QA_REVN.md` e `revN.json` | Decisões específicas de uma revisão |
@@ -154,6 +155,14 @@ O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias 
 
 **Base de acervo** (decisão do Diego, 15/10/2026): o conteúdo de todas as viagens está catalogado em `acervo/` (índice geral, e por cidade o índice dos vídeos, a transcrição automática e a linha do tempo dia a dia), gerado da análise do Colab. É a **primeira fonte para saber o que existe** antes de propor uma pauta. Limites: a transcrição não foi ouvida por ninguém e erra nomes; a hora é a do arquivo; arquivos com nome de código são exportações (data não confiável); `acervo/CORTES_DE_CUSTO.md` lista as falas com possível valor, que ficam fora de peças enquanto não houver revisão de custos. Os vídeos e as folhas de contato ficam no Drive. Para refazer: `planejamento/COLAB_ANALISE.md` no commit `77585d3`.
 
+**Vídeos no Drive e fluxo de montagem** (decisão do Diego, 16/10/2026):
+- **Pasta com os vídeos de todas as cidades:** https://drive.google.com/drive/folders/1pDDNmhFAbXzdg5Pbb3b1gx0J5zQCC30o (vídeos em `Youtube/<cidade>`; folhas de contato e JSON da análise em `Youtube/analise/<cidade>`). Use sempre que for montar uma postagem.
+- **Fluxo de toda postagem:**
+  1. **Ler a análise** (planejamento, `acervo/<cidade>` e folhas de contato) e decidir quais vídeos entram.
+  2. **Baixar só esses vídeos** para `reels/<reel>/fonte/` (fora do git). O ID de cada arquivo sai da busca do conector do Drive; o download é `https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t`.
+  3. **Transcrever de novo** os vídeos baixados (modelo Whisper maior que o do acervo) e conferir com a transcrição do acervo antes de escrever qualquer legenda. Continua sendo transcrição automática: a validação auditiva é humana.
+  4. **Finalizar a edição.**
+
 - **Não é possível refilmar** essas viagens. Não presuma que o Diego possa voltar ou gravar uma cena contextual nova.
 - **Não crie cenas falsas** para representar acontecimentos que não foram gravados.
 - **Gravação atual do Diego:** não a insira num Reel de experiência passada se isso quebrar a continuidade temporal.
@@ -167,10 +176,11 @@ O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias 
 travel-content-studio/
 ├── README.md        visão geral e como recuperar o que foi removido
 ├── CLAUDE.md        este manual
-├── design-system/   DS V2, tokens, bundle e fontes (ver design-system/README.md)
+├── design-system/   DS V2, tokens, bundle, Remotion, kit, sons e fontes (ver design-system/README.md)
 ├── docs/            referência de conteúdo Instagram, instrução-base do DS e padrão de revisão de áudio do YouTube
 ├── acervo/          base de acervo: índice, transcrição e linha do tempo de cada cidade (Colab, 15/10/2026)
-└── planejamento/    painel V5, auditoria criativa, banco de ideias, CSVs de auditoria, scripts e versões
+├── planejamento/    painel V5, auditoria criativa, banco de ideias, CSVs de auditoria, scripts e versões
+└── reels/           um Reel por pasta, uma revisão por subpasta (brutos em reels/<reel>/fonte/, fora do git)
 ```
 
 Em 15/10/2026 o repositório foi reduzido ao básico (decisão do Diego): o planejamento antigo, `carrosseis/` e `reels/apresentacao/` foram removidos e continuam no commit `77585d3`. O `planejamento/` atual começou com a V4 do Diego (15/10/2026). Novos Reels voltam a usar `reels/<reel>/`.
@@ -224,10 +234,12 @@ Questões em aberto. Esta seção não cria regras.
 4. **Defeitos no DS V2:** resolvida em 05/10/2026 (token `blur-glass` criado; introdução renumerada para 0.1–0.4).
 5. **FPS de produção:** as receitas do DS estão em 30 fps, e o Reel de apresentação é 24 fps. Desde a 2.1.0, os tempos em ms são a referência e os quadros se convertem pelo FPS (DS V2, 6.2). O FPS de produção continua não definido — consultar Diego antes de estabelecer como regra.
 6. **Loudness (LUFS e pico):** resolvida em 05/10/2026: master −14 LUFS integrados, pico ≤ −1 dBTP (DS V2, 4.6).
-7. **Assets do DS ainda inexistentes:** fonte Caneta Diego, sons `PD_*.wav` (roteiro de gravação em `design-system/sons/LISTA_DE_GRAVACAO.md`), kit de PNG, projetos-modelo do CapCut e calibração do preset.
+7. **Assets do DS ainda inexistentes:** fonte Caneta Diego, sons **gravados** (os `PD_*_v1.wav` de 16/10/2026 são sintetizados e ainda não foram ouvidos; roteiro de gravação em `design-system/sons/LISTA_DE_GRAVACAO.md`), parte do kit de PNG (ver `design-system/kit/README.md`), projetos-modelo do CapCut e calibração do preset.
 8. **Identidade verbal completa** (vocabulário, bordões recorrentes, regras de escrita) e **direção de imagem:** a V2 cobre só parte. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
-9. **Render pelo Claude:** o CLAUDE.md original dizia que o Claude entrega o plano e o Diego edita no CapCut. Mas a REV7 e a REV8 foram renderizadas por pipeline. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
+9. **Render pelo Claude:** o CLAUDE.md original dizia que o Claude entrega o plano e o Diego edita no CapCut. Mas a REV7 e a REV8 foram renderizadas por pipeline, e em 16/10/2026 o Diego pediu o Reel de Madrid (MAD-show) renderizado pelo Remotion. Como regra geral, não definido pelo material atual — consultar Diego antes de estabelecer como regra.
 10. **Reels que não são de "primeiro dia":** o DS V2 define a estrutura e o checklist para Reels de primeiro dia, mas não para outros tipos, como o de apresentação. Não definido pelo material atual — consultar Diego antes de estabelecer como regra.
 11. **Planejamento:** V5 em `planejamento/planejamento-primeiro-dia-v5.html` (15/10/2026). Decisões pendentes do Diego em `planejamento/AUDITORIA_CRIATIVA_V5.md`, seção 11 (série "Nota de soteropolitano", vereditos e destinos dos vlogs de 30/01, 13/02 e 27/02). Ordem dos vlogs confirmada em 15/10/2026: Amsterdam, Bruxelas, Bruges, Paris, Disney, Madrid, Lisboa. Os dados de custos o Diego envia na montagem de cada peça.
 12. **Narração da REV7:** o CLAUDE.md original apontava `Reels/rev6-referencia/narracao.m4a`. Falta confirmar se é o mesmo arquivo que `reels/apresentacao/narracao/narracao.m4a`.
 13. **Largura da caixa centralizada:** no bundle, a legenda e a legenda emocional mantêm a largura de 872 px. Centrada em x 540, a caixa vai de x 104 a 976 e passa do limite direito da zona segura (944). Uma linha com mais de 808 px ultrapassaria x 944. A largura máxima de linha não está definida pelo material atual — consultar Diego antes de estabelecer como regra.
+14. **Som de moeda** (`design-system/sons/PD_moeda_v1.wav`, pedido do Diego em 16/10/2026): existe no kit, mas não tem evento na tabela 4.6, e a 4.6 diz que a Etiqueta de valor não leva som. Som novo é MINOR (DS 7.4): falta o Diego definir o evento antes de usar em peça.
+15. **Placa acima de 872 px:** "PRIMEIRO DIA." (fechamento) em 128 px dá ≈ 944 px com o módulo, acima da largura máxima do DS (2.1). O Remotion usa o tamanho alternativo de 104 px nesse caso. Confirmar com o Diego se a regra é essa ou se o fechamento deve ter outra solução.

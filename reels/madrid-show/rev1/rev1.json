@@ -1,0 +1,57 @@
+{
+ "reel": "madrid-show",
+ "revisao": 1,
+ "data": "2026-10-16",
+ "planejamento": "V5-20261017-MAD-show (17/10/2026, 19:00)",
+ "nivel_ds": "B",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "fontes": {
+  "FB3F63B4": {"arquivo": "FB3F63B4-F9C0-4ED1-A174-69E57F76B875.mp4", "drive_id": "1yvRyrErGLBUWXJAYEdNMkj4psBcTYs_v", "hdr": false, "girar": "auto"},
+  "FD2CF314": {"arquivo": "FD2CF314-30AE-46D6-B3AD-008640946373.mp4", "drive_id": "1P4VQYQbmQt6R-RvASmK-a3qX0MKipkrx", "hdr": false, "girar": "auto"},
+  "IMG_3959": {"arquivo": "IMG_3959.MOV", "drive_id": "14WL3ITEYtZ9cfrZBSgLEsehh9pRhN-Ms", "hdr": true, "girar": 0, "nota": "gravado na horizontal; o metadado de rotação (-90) está errado"},
+  "IMG_3961": {"arquivo": "IMG_3961.MOV", "drive_id": "1FirgkdMVHqotmbbhItJLeXg9kdoRhPqt", "hdr": true, "girar": 0},
+  "IMG_3963": {"arquivo": "IMG_3963.MOV", "drive_id": "1YeLbJShD6L2qxn8gmnsXZOBFhOtW9k8c", "hdr": true, "girar": 180, "nota": "gravado na horizontal de cabeça para baixo; o metadado de rotação (-90) está errado"}
+ },
+ "cenas": [
+  {"id": "gancho", "fonte": "FB3F63B4", "in": 2.20, "out": 4.30, "audio": "ambiente", "kenburns": true},
+  {"id": "porta", "fonte": "IMG_3959", "in": 19.35, "out": 22.02, "audio": "voz", "recorte_x": [[0, 1450]]},
+  {"id": "palco", "fonte": "IMG_3961", "in": 0.20, "out": 3.10, "audio": "mudo", "recorte_x": [[0, 900], [2.9, 0]]},
+  {"id": "fala", "fonte": "IMG_3963", "in": 13.50, "out": 16.12, "audio": "mudo", "recorte_x": [[0, 1250]]},
+  {"id": "fim", "fonte": "FD2CF314", "in": 1.50, "out": 3.10, "audio": "ambiente"}
+ ],
+ "audios": [
+  {"id": "fala", "fonte": "IMG_3963", "in": 10.60, "out": 16.12, "tipo": "voz", "inicio": {"cena": "palco", "t": 0}, "sincronia": "a imagem da cena fala começa em 13,50 s do mesmo arquivo: 13,50 − 2,90 (cena palco) = 10,60"}
+ ],
+ "transicoes": [
+  {"tipo": "arrasto", "entra": "palco", "motivo": "da porta do restaurante para a praça (deslocamento na mesma sequência, DS 4.4)"}
+ ],
+ "placa": {"cena": "gancho", "t": 0, "saida": 1.83, "variante": "hook", "rotulo": "O QUE ERA ISSO EM", "destino": "MADRID", "modulo": "interrogacao", "tamanho": "G"},
+ "informacao": [
+  {"cena": "porta", "t": 0.25, "fim": 2.30, "rotulo": "SEXTA · 20/03 · MADRID", "numero": "19H42", "fonte_do_dado": "IMG_3959 criado 20/03/2026 19:41:46 (+01:00) + 19,4 s do trecho"}
+ ],
+ "legendas": [
+  {"audio": "porta", "modo": "grupo", "grupos": [
+   {"texto": "tá tendo um *show* aqui", "ini": 19.44, "fim": 20.60, "destaque_em": 20.18},
+   {"texto": "de alguma coisa|na praça", "ini": 20.60, "fim": 22.02}
+  ]},
+  {"audio": "fala", "modo": "grupo", "grupos": [
+   {"texto": "parece ser um evento", "ini": 10.62, "fim": 11.38},
+   {"texto": "de música eletrônica", "ini": 11.38, "fim": 12.94},
+   {"texto": "tem um *carro*|parado ali", "ini": 13.50, "fim": 14.60, "destaque_em": 13.72},
+   {"texto": "a gente não entendeu", "ini": 14.60, "fim": 15.26},
+   {"texto": "muito bem o que é", "ini": 15.26, "fim": 16.12}
+  ]},
+  {"cena": "fim", "modo": "grupo", "grupos": [
+   {"texto": "você sabe|o que era?", "ini": 0.10, "fim": 1.60}
+  ]}
+ ],
+ "sons": [
+  {"nome": "clack", "cena": "gancho", "t": 0.28, "rel_db": -10, "motivo": "placa assenta (Chegada, 280 ms)"},
+  {"nome": "whoosh", "cena": "palco", "t": -0.10, "rel_db": -16, "motivo": "Arrasto"}
+ ],
+ "capa": {"cena": "gancho", "t": 1.20, "placa": {"destino": "O QUE ERA", "modulo": "interrogacao", "tamanho": "M"}, "origem": "planejamento V5: palco roxo com Placa pequena \"O QUE ERA?\""},
+ "mix": {"voz_lufs": -16, "ambiente_lufs": -19, "master_lufs": -14, "master_pico_dbtp": -1},
+ "trilha": "nenhuma: a música do próprio show é o som do Reel"
+}

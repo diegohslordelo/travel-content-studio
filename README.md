@@ -10,10 +10,11 @@ Cada vídeo mostra o primeiro dia numa cidade nova: a chegada, os perrengues e o
 travel-content-studio/
 ├── README.md
 ├── CLAUDE.md            regras do projeto (leia antes de editar)
-├── design-system/       Design System V2 (brand book, tokens, bundle, sons; fontes pendentes)
+├── design-system/       Design System V2 (brand book, tokens, bundle, Remotion, kit, sons; fontes pendentes)
 ├── docs/                referência de conteúdo Instagram, instrução-base do DS e padrão de revisão de áudio
 ├── acervo/              índice, transcrição e linha do tempo de cada cidade
-└── planejamento/        calendário editorial V5 (abrir planejamento-primeiro-dia-v5.html), auditoria e scripts
+├── planejamento/        calendário editorial V5 (abrir planejamento-primeiro-dia-v5.html), auditoria e scripts
+└── reels/               um Reel por pasta, uma revisão por subpasta (render pelo design-system/remotion)
 ```
 
 ## Histórico
