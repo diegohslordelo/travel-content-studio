@@ -87,6 +87,8 @@ export type PropsReel = {
     destino: string;
     linha: string;
     seta?: "diagonal" | "cima";
+    /** Topo da placa (px). Padrão: y 640 do DS; outro valor só como exceção registrada na QA do Reel. */
+    y?: number;
   };
   informacao?: {
     cena: string;
@@ -308,6 +310,7 @@ export const Reel: React.FC<PropsReel> = (p) => {
           destino={p.placa_direcao.destino}
           linha={p.placa_direcao.linha}
           seta={p.placa_direcao.seta}
+          y={p.placa_direcao.y}
           entrada={ms(p.placa_direcao.cena, p.placa_direcao.t)}
           saida={
             p.placa_direcao.saida

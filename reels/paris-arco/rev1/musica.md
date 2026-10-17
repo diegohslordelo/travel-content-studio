@@ -5,7 +5,7 @@
 Por que esta:
 - **A letra nomeia o lugar.** O Arco do Triunfo fica no alto da Champs-Élysées. O refrão "Aux Champs-Élysées" toca enquanto o Arco está na tela, e "il y a tout ce que vous voulez" ("tem tudo o que você quiser") é a vontade de ir.
 - **O tom é o do "Chegamos!":** alegre, leve e reconhecível em 1 segundo por qualquer brasileiro.
-- **O fim pede trilha.** Os últimos 4,3 s (a estação e o Arco ao sol) não têm fala; sem música, ficam só com o trânsito.
+- **O fim pede trilha.** Os últimos 5,4 s (a estação e o Arco ao sol) não têm fala; sem música, ficam só com o trânsito.
 - **Sincronia pronta:** os 6 cortes e a placa foram postos nos tempos dela (112 BPM).
 
 O arquivo `reel_paris-arco_rev1.mp4` **não tem música**. É de propósito: áudio protegido embutido pode ser silenciado, e a biblioteca do Instagram já é licenciada (DS 4.6: "Trilha: biblioteca do Instagram na hora de postar").
@@ -39,12 +39,12 @@ Adicionar áudio → a música → arraste o início do trecho até o "Aux" do r
 | 5,42 s | tempo 10 | corte para o Diego: "Arco do Triunfo!" |
 | 7,00 s | tempo 13 | "Chegamos!" |
 | 8,08 s | tempo 15 | corte para a placa real do ponto e o Arco |
-| ★ 8,61 s | tempo 16 | a Placa de direção assenta (*clack*) |
 | ★ 10,21 s | tempo 19 | corte para o Arco inteiro com o sol |
-| 11,83 s | tempo 22 | a placa termina de sair pela direita |
-| 12,38 s | tempo 23 | volta ao início (loop) |
+| ★ 10,74 s | tempo 20 | a Placa de direção assenta (*clack*) |
+| 12,92 s | tempo 24 | a placa termina de sair pela direita |
+| 13,46 s | tempo 25 | volta ao início (loop) |
 
-**Medição:** prévia pública de 30 s (iTunes), analisada com librosa 0.11: **112,3 BPM** (535,7 ms por tempo). É uma gravação de 1969 com bateria tocada: o intervalo entre batidas varia cerca de ±20 ms. Desvio dos cortes em relação às batidas medidas: **−2 a −36 ms** (a imagem chega um pouco antes do som). É o lado mais tolerado pelo olho (ITU-R BT.1359: o som atrasado em relação à imagem demora mais a ser percebido do que o adiantado). Os números estão em `rev1.json`, `grade_musical`. A prévia não fica no repositório.
+**Medição:** prévia pública de 30 s (iTunes), analisada com librosa 0.11: **112,3 BPM** (535,7 ms por tempo). É uma gravação de 1969 com bateria tocada: o intervalo entre batidas varia cerca de ±20 ms. Desvio dos cortes em relação às batidas medidas: **−36 a +4 ms** (a imagem chega um pouco antes do som). É o lado mais tolerado pelo olho (ITU-R BT.1359: o som atrasado em relação à imagem demora mais a ser percebido do que o adiantado). Os números estão em `rev1.json`, `grade_musical`. A prévia não fica no repositório.
 
 **Se o Instagram não tiver a música** (a biblioteca muda por país e por conta; não dá para conferir daqui) ou se preferir outra: me diga qual e eu refaço a grade dos cortes no andamento dela (é trocar o `bpm` e os quadros em `rev1.json` e renderizar de novo). As alternativas abaixo **não** batem com a grade atual.
 
