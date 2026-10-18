@@ -1,0 +1,62 @@
+{
+ "reel": "veredito-europa",
+ "revisao": 2,
+ "data": "2026-10-18",
+ "parte_de": "rev1 (reels/veredito-europa/rev1/rev1.json)",
+ "pedido": "Diego, 18/10/2026: trechos estáticos; vídeo sem som; \"voltaria com certeza: na legenda\" no formato das outras categorias; \"melhor energia: Barcelona\" com o vídeo IMG_1203 enviado no chat",
+ "nivel_ds": "B",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "fontes": {
+  "IMG_2787": {"arquivo": "IMG_2787.MOV", "drive_id": "1LwdNSuikU1bebCHnOr-F-lOgzjGBGxeZ", "hdr": true, "girar": "auto", "nota": "Paris, 17/03/2026 12:13, Torre Eiffel vista do Trocadéro"},
+  "FOTO_ROMA": {"arquivo": "foto_roma_osteria_da_fortunata.png", "tipo": "foto", "recorte": {"x": 0, "y": 198, "w": 1036, "h": 1842}, "foco": [551, 1102], "zoom_final": 1.04, "origem": "captura de tela de uma foto, enviada pelo Diego no chat em 18/10/2026; sem metadados de data e lugar; Diego informou que é de Roma", "nota": "tagliatelle no prato da Osteria da Fortunata (no prato: Roma, Milano, Bologna, Miami); recorte 9:16 sem a barra de status e as faixas pretas da captura; foco = centro da massa"},
+  "IMG_5855": {"arquivo": "IMG_5855.mov", "hdr": true, "girar": "auto", "origem": "enviado pelo Diego no chat em 18/10/2026", "nota": "metadado do arquivo: 30/12/2024 11:57, GPS 43.7717 N 11.2554 E = Florença (não Roma); crepe sendo feito na Venchi"},
+  "IMG_2639": {"arquivo": "IMG_2639.MOV", "drive_id": "1XCha4v0LElVUPms0GBAWTMviEfKAuxaN", "hdr": true, "girar": "auto", "nota": "Bruges, 16/03/2026 14:41, waffle com chocolate"},
+  "IMG_5255": {"arquivo": "IMG_5255.MOV", "drive_id": "1olw43snD4OIwD5LHYW_acF7rWB776Vmq", "hdr": true, "girar": "auto", "nota": "Roma, 26/12/2024 08:54, fachada do Coliseu com a Marina passando"},
+  "IMG_4416": {"arquivo": "IMG_4416.MOV", "drive_id": "1WOkpZgYy8JVgt9qTtUOsISyQ5vaIDjUZ", "hdr": true, "girar": "auto", "nota": "Lisboa, 23/03/2026 10:04, vista de Alfama até o Tejo (vertical)"},
+  "IMG_1203": {"arquivo": "IMG_1203.mov", "hdr": true, "girar": "auto", "origem": "enviado pelo Diego no chat em 18/10/2026 (não está no Drive analisado)", "nota": "Barcelona, 11/03/2026 11:47 (metadado do arquivo), GPS 41.4035 N 2.1734 E: Diego e Marina na Sagrada Família"},
+  "IMG_4402": {"arquivo": "IMG_4402.MOV", "drive_id": "1fnPAuJhkArBs1TckA5z4ukMCytXKt3pM", "hdr": true, "girar": "auto", "nota": "Lisboa, 23/03/2026 09:52, bonde 28 passando na frente da Sé"},
+  "IMG_2860": {"arquivo": "IMG_2860.MOV", "drive_id": "12eQme04ahAa7Fb5IrRKcnTg_kpihn6ry", "hdr": true, "girar": "auto", "nota": "Paris, 17/03/2026 12:53, Arco do Triunfo"},
+  "IMG_2213": {"arquivo": "IMG_2213.MOV", "drive_id": "1j9Q74r2ARs1p_5HemKlLj4lumvE4X2On", "hdr": true, "girar": "auto", "nota": "Bruxelas, 15/03/2026 14:10, Grand-Place"},
+  "IMG_3647": {"arquivo": "IMG_3647.MOV", "drive_id": "1G4iJjCR5DP51610WaHjVPV0_m33ofyxI", "hdr": true, "girar": "auto", "nota": "Madrid, 19/03/2026 16:11, Plaza Mayor"},
+  "IMG_1369": {"arquivo": "IMG_1369.MOV", "drive_id": "1IXN2h5DZkZxUAdUDP5FRVBLZHfauLSyZ", "hdr": true, "girar": "auto", "nota": "12/03/2026 11:33, janela do avião antes de pousar em Amsterdam"}
+ },
+ "cenas": [
+  {"id": "gancho", "fonte": "IMG_2787", "in": 0.00, "out": 2.20, "recorte_x": 1534, "movimento_px_q": 1.20},
+  {"id": "comida", "nota": "fonte, trecho e movimento vêm de \"variantes\""},
+  {"id": "doce", "fonte": "IMG_2639", "in": 0.58, "out": 3.347, "movimento_px_q": 1.54},
+  {"id": "passeio", "fonte": "IMG_5255", "in": 18.25, "out": 21.017, "movimento_px_q": 3.10, "nota": "câmera parada; o valor sobe por causa das pessoas andando perto da lente"},
+  {"id": "vista", "fonte": "IMG_4416", "in": 0.00, "out": 2.767, "recorte_retrato": {"fracao": 0.7, "x": 0.5, "y": 1.0}, "movimento_px_q": 0.85, "nota": "recorte parado de 70% ancorado embaixo: no quadro inteiro o céu ocupa mais da metade e a cidade fica atrás da legenda"},
+  {"id": "energia", "fonte": "IMG_1203", "in": 1.50, "out": 4.267, "movimento_px_q": 1.20, "nota": "trecho mais parado dos 4,6 s do vídeo enviado; antes de 1,5 s a câmera gira"},
+  {"id": "subestimada", "fonte": "IMG_4402", "in": 0.20, "out": 2.967, "recorte_x": 1312, "movimento_px_q": 0.21},
+  {"id": "surpreendente", "fonte": "IMG_2860", "in": 0.00, "out": 2.767, "recorte_x": 1430, "movimento_px_q": 1.98},
+  {"id": "decepcao", "fonte": "IMG_2213", "in": 0.00, "out": 2.767, "recorte_x": 1120, "movimento_px_q": 1.27},
+  {"id": "superestimada", "fonte": "IMG_3647", "in": 3.30, "out": 6.067, "recorte_x": 2200, "movimento_px_q": 1.80, "nota": "termina antes de um desconhecido entrar no recorte (≈ 6,3 s)"},
+  {"id": "voltaria", "fonte": "IMG_1369", "in": 2.62, "out": 5.387, "movimento_px_q": 0.28}
+ ],
+ "variantes": {
+  "foto": {"comida": {"fonte": "FOTO_ROMA", "in": 0.0, "out": 2.767, "nota": "foto parada com zoom lento de 100% a 104% na massa (DS 4.5, Ken Burns): não há vídeo de comida de Roma no acervo"}},
+  "video": {"comida": {"fonte": "IMG_5855", "in": 0.0, "out": 2.767, "movimento_px_q": 0.54, "nota": "vídeo de Florença (GPS do arquivo) usado em \"melhor comida: Roma\" por decisão do Diego em 18/10/2026 (\"não importa, faça como se fosse Roma\")"}}
+ },
+ "audios": [],
+ "transicoes": [],
+ "placas": [
+  {"cena": "gancho", "t": 0, "saida": 1.80, "rotulo": "MEU VEREDITO ATÉ AGORA", "destino": "EUROPA", "modulo": "seta", "tamanho": "G", "motivo": "hook declarativo no quadro 0 (DS 5.1, Afirmação); 5 palavras"}
+ ],
+ "legendas": [
+  {"cena": "comida", "modo": "grupo", "grupos": [{"texto": "melhor comida: *Roma*", "ini": 0.15, "fim": 2.62, "destaque_em": 0.45}]},
+  {"cena": "doce", "modo": "grupo", "grupos": [{"texto": "melhor doce: *Bruges*", "ini": 0.15, "fim": 2.62, "destaque_em": 0.45}]},
+  {"cena": "passeio", "modo": "grupo", "grupos": [{"texto": "melhor passeio: *Roma*", "ini": 0.15, "fim": 2.62, "destaque_em": 0.45}]},
+  {"cena": "vista", "modo": "grupo", "grupos": [{"texto": "melhor vista: *Lisboa*", "ini": 0.15, "fim": 2.62, "destaque_em": 0.45}]},
+  {"cena": "energia", "modo": "grupo", "grupos": [{"texto": "melhor energia: *Barcelona*", "ini": 0.15, "fim": 2.62, "destaque_em": 0.45}]},
+  {"cena": "subestimada", "modo": "grupo", "grupos": [{"texto": "mais subestimada: *Lisboa*", "ini": 0.15, "fim": 2.62, "destaque_em": 0.45}]},
+  {"cena": "surpreendente", "modo": "grupo", "grupos": [{"texto": "surpreendente: *Paris*", "ini": 0.15, "fim": 2.62, "destaque_em": 0.45}]},
+  {"cena": "decepcao", "modo": "grupo", "grupos": [{"texto": "decepção: *Bruxelas*", "ini": 0.15, "fim": 2.62, "destaque_em": 0.45}]},
+  {"cena": "superestimada", "modo": "grupo", "grupos": [{"texto": "superestimada: *Madrid*", "ini": 0.15, "fim": 2.62, "destaque_em": 0.45}]},
+  {"cena": "voltaria", "modo": "grupo", "grupos": [{"texto": "voltaria|com certeza: na *legenda*", "ini": 0.15, "fim": 2.62, "destaque_em": 0.45}], "nota": "2 linhas: a de cima menor que a de baixo (DS 3.1); Destaque em 1 palavra e sem caixa-alta (DS 3.2)"}
+ ],
+ "sons": [],
+ "capa": {"cena": "gancho", "t": 1.20, "placa": {"rotulo": "MEU VEREDITO ATÉ AGORA", "destino": "EUROPA", "modulo": "seta", "tamanho": "G"}},
+ "audio": "nenhum: o arquivo final sai sem faixa de áudio (pedido do Diego); a música entra pela biblioteca do Instagram ao postar"
+}
