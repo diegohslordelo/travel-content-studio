@@ -73,7 +73,8 @@ export const LegendaPadrao: React.FC<{ grupos: GrupoLegenda[]; modo?: "palavra" 
   if (!g) return null;
   const saida = kf(t, [g.fim, g.fim + 120], [0, 1], EASE.out);
   const entradaGrupo = kf(t, [g.ini, g.ini + 120], [0, 1], EASE.out);
-  const linhas = g.texto.split("|").map((l) => l.trim().split(/\s+/));
+  // só o espaço comum separa palavras: o espaço sem quebra (U+00A0) mantém 2 palavras na mesma mini-placa
+  const linhas = g.texto.split("|").map((l) => l.trim().split(/ +/));
   let idx = 0;
   return (
     <div
