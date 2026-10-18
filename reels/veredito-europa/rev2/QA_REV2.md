@@ -52,7 +52,7 @@ Cada legenda entra em +0,15 s da cena e sai em +2,62 s (+120 ms de saída); a mi
 ## Decisões desta revisão (valem só para este Reel)
 
 - **Foto em Reel:** a regra do acervo é que as fotos da Itália vão para carrossel (CLAUDE.md, 10); aqui a foto entra porque o Diego pediu (18/10/2026), já que não há vídeo de comida de Roma. Origem: captura de tela enviada no chat, sem metadados; o Diego informou que é de Roma.
-- **Vídeo de Florença como Roma** (versão 2): decisão do Diego em 18/10/2026.
+- **Vídeo de Florença como Roma** (versão 2): decisão do Diego em 18/10/2026. Fica em atrito com "Contexto verdadeiro" (CLAUDE.md, 9), porque o crepe parece ter sido feito em Roma, e é um doce logo antes de "melhor doce: Bruges". Recomendação do Claude: versão 1 (foto).
 - **Zoom da foto: 100% → 104%**, o Ken Burns do DS (4.5), centrado na massa e não no centro do quadro. Mais aproximação passaria do valor do DS.
 - **"Melhor energia: Barcelona" depois de "melhor vista: Lisboa"**: a posição não foi indicada; fica no grupo dos "melhores" e separa as duas cenas de Lisboa.
 - **Gancho 2,2 s** (era 2,4) e categorias de 2,77 s (eram 3,0) para caber 10 categorias em 30 s.
