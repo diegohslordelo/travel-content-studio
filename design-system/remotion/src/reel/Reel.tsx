@@ -55,6 +55,15 @@ type Transicao = {
   tipo: "arrasto" | "snap" | "cinema" | "varredura";
   entra: string;
 };
+type PlacaReel = {
+  cena: string;
+  t: number;
+  saida?: number;
+  rotulo?: string;
+  destino: string;
+  modulo?: Modulo;
+  tamanho?: "G" | "M" | "P";
+};
 type LegendaBloco = {
   audio?: string;
   cena?: string;
@@ -69,15 +78,9 @@ export type PropsReel = {
   cenas: Cena[];
   audios: AudioExtra[];
   transicoes: Transicao[];
-  placa?: {
-    cena: string;
-    t: number;
-    saida?: number;
-    rotulo?: string;
-    destino: string;
-    modulo?: Modulo;
-    tamanho?: "G" | "M" | "P";
-  };
+  placa?: PlacaReel;
+  /** Mais de uma placa no Reel (máx. 3, DS V2 2.1), cada uma com a própria Chegada e saída. */
+  placas?: PlacaReel[];
   informacao?: {
     cena: string;
     t: number;
@@ -278,20 +281,17 @@ export const Reel: React.FC<PropsReel> = (p) => {
         return null;
       })}
 
-      {p.placa && (
+      {[...(p.placa ? [p.placa] : []), ...(p.placas ?? [])].map((pl, i) => (
         <Placa
-          rotulo={p.placa.rotulo}
-          destino={p.placa.destino}
-          modulo={p.placa.modulo}
-          tamanho={p.placa.tamanho}
-          entrada={ms(p.placa.cena, p.placa.t)}
-          saida={
-            p.placa.saida !== undefined
-              ? ms(p.placa.cena, p.placa.saida)
-              : undefined
-          }
+          key={i}
+          rotulo={pl.rotulo}
+          destino={pl.destino}
+          modulo={pl.modulo}
+          tamanho={pl.tamanho}
+          entrada={ms(pl.cena, pl.t)}
+          saida={pl.saida !== undefined ? ms(pl.cena, pl.saida) : undefined}
         />
-      )}
+      ))}
 
       {p.informacao?.map((info, i) => (
         <LegendaInformacao

@@ -1,0 +1,57 @@
+{
+ "reel": "veredito-europa",
+ "revisao": 1,
+ "data": "2026-10-18",
+ "planejamento": "fora da grade V5: pedido do Diego em 18/10/2026 (categorias e vencedores dele; \"surpreendente: Paris\" acrescentada no mesmo dia)",
+ "nivel_ds": "B",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "fontes": {
+  "IMG_2750": {"arquivo": "IMG_2750.MOV", "drive_id": "1AJPVLajW2bi0wrD99ZRiTFJM3bYjknoh", "hdr": true, "girar": "auto", "nota": "Paris, 17/03/2026 11:42, Torre Eiffel do Campo de Marte"},
+  "IMG_5379": {"arquivo": "IMG_5379.MOV", "drive_id": "1OundK304MRmHd27vdA_MZDxEECJFf6W7", "hdr": true, "girar": "auto", "nota": "Roma, 26/12/2024 19:52, jantar com a família"},
+  "IMG_2639": {"arquivo": "IMG_2639.MOV", "drive_id": "1XCha4v0LElVUPms0GBAWTMviEfKAuxaN", "hdr": true, "girar": "auto", "nota": "Bruges, 16/03/2026 14:41, waffle com chocolate"},
+  "IMG_5252": {"arquivo": "IMG_5252.MOV", "drive_id": "1iz3nebBO-FTpnMyihiJ5MXyP629O7Yc3", "hdr": true, "girar": "auto", "nota": "Roma, 26/12/2024 08:49, Diego andando para o Coliseu"},
+  "IMG_4423": {"arquivo": "IMG_4423.MOV", "drive_id": "1UbMGn0UNfwUhrrwow2D3qzJps6ZTkBb7", "hdr": true, "girar": "auto", "nota": "Lisboa, 23/03/2026 10:05, Miradouro de Santa Luzia"},
+  "IMG_4367": {"arquivo": "IMG_4367.MOV", "drive_id": "14UJZQEQ9uRpIerQmo7IxVHnrcXbm4Ybh", "hdr": true, "girar": "auto", "nota": "Lisboa, 23/03/2026 09:23, Praça do Comércio e Arco da Rua Augusta"},
+  "IMG_2860": {"arquivo": "IMG_2860.MOV", "drive_id": "12eQme04ahAa7Fb5IrRKcnTg_kpihn6ry", "hdr": true, "girar": "auto", "nota": "Paris, 17/03/2026 12:53, Arco do Triunfo"},
+  "IMG_2213": {"arquivo": "IMG_2213.MOV", "drive_id": "1j9Q74r2ARs1p_5HemKlLj4lumvE4X2On", "hdr": true, "girar": "auto", "nota": "Bruxelas, 15/03/2026 14:10, Grand-Place"},
+  "IMG_3647": {"arquivo": "IMG_3647.MOV", "drive_id": "1G4iJjCR5DP51610WaHjVPV0_m33ofyxI", "hdr": true, "girar": "auto", "nota": "Madrid, 19/03/2026 16:11, Plaza Mayor"},
+  "IMG_1369": {"arquivo": "IMG_1369.MOV", "drive_id": "1IXN2h5DZkZxUAdUDP5FRVBLZHfauLSyZ", "hdr": true, "girar": "auto", "nota": "12/03/2026 11:33, janela do avião antes de pousar em Amsterdam"}
+ },
+ "cenas": [
+  {"id": "gancho", "fonte": "IMG_2750", "in": 0.30, "out": 2.70, "audio": "ambiente", "kenburns": true, "recorte_x": [[0, 1216]]},
+  {"id": "comida", "fonte": "IMG_5379", "in": 2.50, "out": 5.50, "audio": "mudo"},
+  {"id": "doce", "fonte": "IMG_2639", "in": 0.00, "out": 3.00, "audio": "ambiente", "kenburns": true},
+  {"id": "passeio", "fonte": "IMG_5252", "in": 0.00, "out": 3.00, "audio": "mudo"},
+  {"id": "vista", "fonte": "IMG_4423", "in": 5.00, "out": 8.00, "audio": "ambiente", "recorte_x": [[0, 100], [3.0, 1100]]},
+  {"id": "subestimada", "fonte": "IMG_4367", "in": 5.50, "out": 8.50, "audio": "ambiente", "recorte_x": [[0, 820], [3.0, 1080]]},
+  {"id": "surpreendente", "fonte": "IMG_2860", "in": 0.30, "out": 3.30, "audio": "ambiente", "recorte_x": [[0, 1150], [3.0, 1700]]},
+  {"id": "decepcao", "fonte": "IMG_2213", "in": 0.30, "out": 3.30, "audio": "ambiente", "kenburns": true, "recorte_x": [[0, 1100]]},
+  {"id": "superestimada", "fonte": "IMG_3647", "in": 5.40, "out": 8.40, "audio": "ambiente", "recorte_x": [[0, 2200]], "nota": "recorte à direita: um desconhecido passa em primeiro plano em x 0,25–0,55 de 5,4 a 6,8 s"},
+  {"id": "voltaria", "fonte": "IMG_1369", "in": 0.50, "out": 3.90, "audio": "ambiente", "kenburns": true}
+ ],
+ "audios": [],
+ "transicoes": [],
+ "placas": [
+  {"cena": "gancho", "t": 0, "saida": 2.00, "rotulo": "MEU VEREDITO ATÉ AGORA", "destino": "EUROPA", "modulo": "seta", "tamanho": "G", "motivo": "hook declarativo no quadro 0 (DS 5.1, Afirmação); 5 palavras"},
+  {"cena": "voltaria", "t": 0, "saida": 2.90, "rotulo": "VOLTARIA COM CERTEZA", "destino": "NA LEGENDA", "modulo": "seta", "tamanho": "G", "motivo": "8ª categoria e CTA único: a resposta está na legenda do post (DS 2.7, placa diz para onde ir)"}
+ ],
+ "legendas": [
+  {"cena": "comida", "modo": "grupo", "grupos": [{"texto": "melhor comida: *Roma*", "ini": 0.15, "fim": 2.85, "destaque_em": 0.45}]},
+  {"cena": "doce", "modo": "grupo", "grupos": [{"texto": "melhor doce: *Bruges*", "ini": 0.15, "fim": 2.85, "destaque_em": 0.45}]},
+  {"cena": "passeio", "modo": "grupo", "grupos": [{"texto": "melhor passeio: Roma", "ini": 0.15, "fim": 2.85}], "nota": "sem Destaque: câmera andando (DS 3.3, freio 5)"},
+  {"cena": "vista", "modo": "grupo", "grupos": [{"texto": "melhor vista: *Lisboa*", "ini": 0.15, "fim": 2.85, "destaque_em": 0.45}]},
+  {"cena": "subestimada", "modo": "grupo", "grupos": [{"texto": "mais subestimada: *Lisboa*", "ini": 0.15, "fim": 2.85, "destaque_em": 0.45}]},
+  {"cena": "surpreendente", "modo": "grupo", "grupos": [{"texto": "surpreendente: *Paris*", "ini": 0.15, "fim": 2.85, "destaque_em": 0.45}]},
+  {"cena": "decepcao", "modo": "grupo", "grupos": [{"texto": "decepção: *Bruxelas*", "ini": 0.15, "fim": 2.85, "destaque_em": 0.45}]},
+  {"cena": "superestimada", "modo": "grupo", "grupos": [{"texto": "superestimada: *Madrid*", "ini": 0.15, "fim": 2.85, "destaque_em": 0.45}]}
+ ],
+ "sons": [
+  {"nome": "clack", "cena": "gancho", "t": 0.28, "rel_db": -10, "motivo": "placa assenta (Chegada, quadro 8)"},
+  {"nome": "clack", "cena": "voltaria", "t": 0.28, "rel_db": -10, "motivo": "placa assenta (Chegada, quadro 8)"}
+ ],
+ "capa": {"cena": "gancho", "t": 1.20, "placa": {"rotulo": "MEU VEREDITO ATÉ AGORA", "destino": "EUROPA", "modulo": "seta", "tamanho": "G"}},
+ "mix": {"voz_lufs": -16, "ambiente_lufs": -19, "master_lufs": -14, "master_pico_dbtp": -1},
+ "trilha": "som ambiente dos clipes; música da biblioteca do Instagram na hora de postar (DS 4.6)"
+}
