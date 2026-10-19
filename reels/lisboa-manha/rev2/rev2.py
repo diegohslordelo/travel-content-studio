@@ -345,7 +345,10 @@ def preparar():
             r = p["recorte"]
             quadro = os.path.join(TMP, f"quadro_{cid}.png")
             vf += [f"crop={r['w']}:{r['h']}:{r['x']}:{r['y']}", f"scale={W}:{H}:flags=lanczos"]
-            sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{p.get('congelar', 0):.4f}", "-i", src, "-vf", ",".join(vf), "-frames:v", "1", "-pix_fmt", "rgb48be", quadro])
+            if os.path.exists(quadro):
+                os.remove(quadro)
+            busca = ["-ss", f"{p['congelar']:.4f}"] if "congelar" in p else []  # numa foto, -ss não gera quadro
+            sh(["ffmpeg", "-v", "error", "-y", *busca, "-i", src, "-vf", ",".join(vf), "-frames:v", "1", "-pix_fmt", "rgb48be", quadro])
             sh(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-framerate", str(fps), "-i", quadro, "-vf", "format=yuv420p,setsar=1",
                 "-frames:v", str(q), "-an", *cod])
         else:
