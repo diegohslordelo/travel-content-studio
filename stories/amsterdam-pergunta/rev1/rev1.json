@@ -5,23 +5,88 @@
  "planejamento": "V5-20261019-STO-w1a (19/10/2026, 12:30)",
  "formato": "Stories 1080 × 1920 (DS V2, 5.6: zona segura topo 256 · base 320 · laterais 72)",
  "fontes": {
-  "IMG_1403-1": {"arquivo": "IMG_1403-1.MOV", "pasta": "reels/amsterdam-casas-tortas/fonte", "drive_id": "1EOQbzmEXD7jcTBVe5hKlWgg2Hdu5FqWZ"},
-  "IMG_1408": {"arquivo": "IMG_1408.MOV", "pasta": "reels/amsterdam-casas-tortas/fonte", "drive_id": "1IwtlUm8g7UTH4mbPa3SshCPPkOYS60c_"},
-  "IMG_1403": {"arquivo": "IMG_1403.MOV", "pasta": "reels/amsterdam-casas-tortas/fonte", "drive_id": "1DEsnIxqWDA7R6GpFEG8ZuFmZoF6qyyiP"}
+  "IMG_1403-1": {
+   "arquivo": "IMG_1403-1.MOV",
+   "pasta": "reels/amsterdam-casas-tortas/fonte",
+   "drive_id": "1EOQbzmEXD7jcTBVe5hKlWgg2Hdu5FqWZ"
+  },
+  "IMG_1408": {
+   "arquivo": "IMG_1408.MOV",
+   "pasta": "reels/amsterdam-casas-tortas/fonte",
+   "drive_id": "1IwtlUm8g7UTH4mbPa3SshCPPkOYS60c_"
+  },
+  "IMG_1403": {
+   "arquivo": "IMG_1403.MOV",
+   "pasta": "reels/amsterdam-casas-tortas/fonte",
+   "drive_id": "1DEsnIxqWDA7R6GpFEG8ZuFmZoF6qyyiP"
+  },
+  "foto_ponte": {
+   "arquivo": "diego_ponte_amsterdam.jpg",
+   "pasta": "stories/amsterdam-pergunta/fonte",
+   "foto": true,
+   "nota": "foto do Diego numa ponte de Amsterdam (1717 × 2576), enviada por ele em 19/10/2026; fora do git (fonte/)"
+  }
  },
  "telas": [
-  {"id": "1", "fonte": "IMG_1403-1", "t": 1.5, "recorte_x": null,
-   "placa": {"rotulo": "SAI SÁBADO", "destino": "AMSTERDAM", "modulo": "seta", "tamanho": "M"},
-   "legenda": "o vlog completo|no YouTube, *24/10*"},
-  {"id": "2", "fonte": "IMG_1408", "t": 1.0, "recorte_x": 1150,
-   "placa": {"rotulo": "ME PERGUNTA", "destino": "AMSTERDAM", "modulo": "interrogacao", "tamanho": "M"},
-   "figurinha": "Caixa de perguntas: \"O que você quer saber de Amsterdam?\" (x ≈ 540, y ≈ 1100)"},
-  {"id": "3", "fonte": "IMG_1403", "t": 3.0, "recorte_x": 2000,
-   "bilhete": {"texto": "respondo aqui|na sexta, 23/10.", "x": 320, "y": 920}}
+  {
+   "id": "1",
+   "fonte": "foto_ponte",
+   "t": 0,
+   "recorte_x": null,
+   "placa": {
+    "rotulo": "SAI SÁBADO",
+    "destino": "AMSTERDAM",
+    "modulo": "seta",
+    "tamanho": "G"
+   },
+   "legenda": "o primeiro dia inteiro|no YouTube, *24/10*",
+   "recorte_foto": [
+    1080,
+    1920,
+    381,
+    0
+   ],
+   "legendaBaseY": 1580
+  },
+  {
+   "id": "2",
+   "fonte": "IMG_1408",
+   "t": 1.0,
+   "recorte_x": 1150,
+   "placa": {
+    "rotulo": "ME PERGUNTA",
+    "destino": "AMSTERDAM",
+    "modulo": "interrogacao",
+    "tamanho": "M"
+   },
+   "figurinha": "Caixa de perguntas: \"O que você quer saber de Amsterdam?\" (x ≈ 540, y ≈ 1100)"
+  },
+  {
+   "id": "3",
+   "fonte": "IMG_1403",
+   "t": 3.0,
+   "recorte_x": 2000,
+   "bilhete": {
+    "texto": "respondo aqui|na sexta, 23/10.",
+    "x": 320,
+    "y": 920
+   }
+  }
  ],
  "variantes": {
-  "sem-data": {"motivo": "se o vlog de Amsterdam não sair no sábado, 24/10", "telas": {
-   "1": {"placa": {"rotulo": "VEM AÍ", "destino": "AMSTERDAM", "modulo": "seta", "tamanho": "M"}, "legenda": "o vlog completo no YouTube"}
-  }}
+  "sem-data": {
+   "motivo": "se o vlog de Amsterdam não sair no sábado, 24/10",
+   "telas": {
+    "1": {
+     "placa": {
+      "rotulo": "VEM AÍ",
+      "destino": "AMSTERDAM",
+      "modulo": "seta",
+      "tamanho": "G"
+     },
+     "legenda": "o primeiro dia inteiro|no YouTube"
+    }
+   }
+  }
  }
 }

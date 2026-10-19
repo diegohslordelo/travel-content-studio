@@ -19,11 +19,13 @@ export type PropsStory = {
   /** Legenda Padrão (linhas separadas por "|"; *palavra* = Destaque). */
   legenda?: string;
   bilhete?: { texto: string; x: number; y: number; marca?: "vale" | "pula" | "circulo" };
+  /** y da base da legenda; padrão 1420 (3.1). Nos Stories pode descer até 1600 (1.3: base segura de 320 px). */
+  legendaBaseY?: number;
 };
 
 export const propsStoryVazias: PropsStory = { fundo: "" };
 
-export const Story: React.FC<PropsStory> = ({ fundo, placa, legenda, bilhete }) => (
+export const Story: React.FC<PropsStory> = ({ fundo, placa, legenda, bilhete, legendaBaseY = 1420 }) => (
   <AbsoluteFill style={{ background: "#000" }}>
     {fundo && <Img src={staticFile(fundo)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />}
     {legenda && <ScrimBase />}
@@ -33,6 +35,7 @@ export const Story: React.FC<PropsStory> = ({ fundo, placa, legenda, bilhete }) 
       <LegendaPadrao
         grupos={[{ texto: legenda, ini: 0, fim: 600000, palavras: legenda.split(/[\s|]+/).filter(Boolean).map(() => 0) }]}
         modo="grupo"
+        base={1920 - legendaBaseY}
       />
     )}
     <Grao />

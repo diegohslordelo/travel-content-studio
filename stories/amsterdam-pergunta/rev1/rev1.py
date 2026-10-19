@@ -45,9 +45,15 @@ def fundos():
         src = os.path.join(RAIZ, f["pasta"], f["arquivo"])
         if not os.path.exists(src):
             sys.exit(f"bruto ausente: {f['pasta']}/{f['arquivo']} (Drive id {f['drive_id']})")
-        recorte = "" if t["recorte_x"] is None else f",crop=1215:2160:{t['recorte_x']}:0"
-        vf = f"{TONEMAP}{recorte},scale=1080:1920:flags=lanczos"
-        sh(["ffmpeg", "-v", "error", "-y", "-ss", str(t["t"]), "-i", src, "-vf", vf, "-frames:v", "1", "-q:v", "1",
+        if f.get("foto"):  # foto do Diego: já é SDR, só recorta [largura, altura, x, y] na resolução original (1:1)
+            w, h, x, y = t["recorte_foto"]
+            vf = f"crop={w}:{h}:{x}:{y}"
+            entrada = ["-i", src]
+        else:
+            recorte = "" if t["recorte_x"] is None else f",crop=1215:2160:{t['recorte_x']}:0"
+            vf = f"{TONEMAP}{recorte},scale=1080:1920:flags=lanczos"
+            entrada = ["-ss", str(t["t"]), "-i", src]
+        sh(["ffmpeg", "-v", "error", "-y", *entrada, "-vf", vf, "-frames:v", "1", "-q:v", "1",
             os.path.join(PUBLIC, f"fundo_{t['id']}.jpg")])
 
 
@@ -65,7 +71,7 @@ def render_tela(props, saida):
 def telas():
     d = carregar()
     for t in d["telas"]:
-        props = {"fundo": f"fundo_{t['id']}.jpg", **{k: t[k] for k in ("placa", "legenda", "bilhete") if k in t}}
+        props = {"fundo": f"fundo_{t['id']}.jpg", **{k: t[k] for k in ("placa", "legenda", "bilhete", "legendaBaseY") if k in t}}
         render_tela(props, os.path.join(AQUI, f"story_amsterdam-pergunta_rev1_{t['id']}.jpg"))
         extra = d["variantes"]["sem-data"]["telas"].get(t["id"])
         if extra:
