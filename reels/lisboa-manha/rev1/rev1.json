@@ -1,0 +1,147 @@
+{
+ "reel": "lisboa-manha",
+ "revisao": 1,
+ "data": "2026-10-19",
+ "origem": "carrossel carrosseis/lisboa-manha/rev1 transformado em Reel narrado (pedido do Diego, 19/10/2026)",
+ "nivel_ds": "A",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "pasta_brutos": "carrosseis/lisboa-manha/fonte",
+ "horas": "arredondadas para os 10 minutos mais próximos (pedido do Diego, 19/10/2026); horas reais em QA_REV1.md",
+ "narracao": {
+  "arquivo": "narracao",
+  "nota": "gravação do Diego em reels/lisboa-manha/fonte/narracao.(m4a|wav|mp3); sem ela, o pipeline estima o tempo (prévia guia)",
+  "palavras_por_segundo_estimado": 3.0,
+  "pausa_entre_falas": 0.35,
+  "inicio": 0.15,
+  "cauda": 2.0
+ },
+ "fontes": {
+  "IMG_4282": {"arquivo": "IMG_4282.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4291": {"arquivo": "IMG_4291.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4292": {"arquivo": "IMG_4292.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4307": {"arquivo": "IMG_4307.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4309": {"arquivo": "IMG_4309.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4366": {"arquivo": "IMG_4366.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4384": {"arquivo": "IMG_4384.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4402": {"arquivo": "IMG_4402.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4411": {"arquivo": "IMG_4411.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4412": {"arquivo": "IMG_4412.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4416": {"arquivo": "IMG_4416.MOV", "hdr": true, "girar": "auto", "nota": "vertical"},
+  "IMG_4461": {"arquivo": "IMG_4461.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4464": {"arquivo": "IMG_4464.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4465": {"arquivo": "IMG_4465.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4470": {"arquivo": "IMG_4470.MOV", "hdr": true, "girar": "auto", "nota": "vertical"},
+  "IMG_4477": {"arquivo": "IMG_4477.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4487": {"arquivo": "IMG_4487.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4490": {"arquivo": "IMG_4490.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4506": {"arquivo": "IMG_4506.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4519": {"arquivo": "IMG_4519.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4522": {"arquivo": "IMG_4522.MOV", "hdr": true, "girar": "auto"},
+  "IMG_4525": {"arquivo": "IMG_4525.MOV", "hdr": true, "girar": "auto"}
+ },
+ "falas": [
+  {"id": "gancho",
+   "grupos": [
+    {"fala": "Isso é tudo", "tela": "isso é tudo"},
+    {"fala": "que a gente fez em Lisboa", "tela": "que a gente fez em Lisboa"},
+    {"fala": "em uma manhã.", "tela": "em uma manhã"}],
+   "planos": [{"fonte": "IMG_4416", "in": 0.5, "peso": 1}]},
+  {"id": "contexto",
+   "grupos": [
+    {"fala": "Foi um stopover da TAP:", "tela": "foi um stopover da TAP:"},
+    {"fala": "uma noite na cidade", "tela": "uma noite na cidade"},
+    {"fala": "e a manhã livre.", "tela": "e a manhã livre"}],
+   "planos": [
+    {"fonte": "IMG_4282", "in": 1.0, "peso": 1, "recorte_x": [[0, 800]],
+     "info": {"rotulo": "SEG · 23/03 · LISBOA", "numero": "08H50", "real": "08:49:38"}},
+    {"fonte": "IMG_4307", "in": 0.3, "peso": 1, "recorte_x": [[0, 1500]]}]},
+  {"id": "pastel",
+   "grupos": [
+    {"fala": "Primeira parada:", "tela": "primeira parada:"},
+    {"fala": "pastel de nata, quentinho.", "tela": "pastel de nata, quentinho"}],
+   "planos": [
+    {"fonte": "IMG_4292", "in": 0.5, "peso": 1, "recorte_x": [[0, 1300]],
+     "info": {"rotulo": "PASTEL DE NATA", "numero": "09H00", "real": "08:57:55"}},
+    {"fonte": "IMG_4291", "in": 0.3, "peso": 1, "recorte_x": [[0, 1300]]}]},
+  {"id": "praca", "snap": true,
+   "grupos": [
+    {"fala": "Praça do Comércio,", "tela": "Praça do Comércio,"},
+    {"fala": "às nove e meia:", "tela": "às 9h30:"},
+    {"fala": "sol e dezessete graus.", "tela": "sol e *17* graus", "destaque_fala": "dezessete"},
+    {"fala": "Em março.", "tela": "em março"}],
+   "planos": [
+    {"fonte": "IMG_4309", "in": 3.0, "peso": 1, "recorte_x": [[0, 730]]},
+    {"fonte": "IMG_4366", "in": 1.0, "peso": 1.3, "recorte_x": [[0, 1270]], "kenburns": true,
+     "info": {"rotulo": "PRAÇA DO COMÉRCIO", "numero": "09H30", "real": "09:31:11 (o \"17 graus\" do IMG_4395); plano das 09:23"}},
+    {"fonte": "IMG_4384", "in": 2.0, "peso": 1, "recorte_x": [[0, 1312]]}]},
+  {"id": "se",
+   "grupos": [
+    {"fala": "A Sé tava em obra,", "tela": "a Sé tava em obra,"},
+    {"fala": "então foi só por fora.", "tela": "então foi só por fora"}],
+   "planos": [
+    {"fonte": "IMG_4402", "in": 0.3, "peso": 1, "recorte_x": [[0, 1930]],
+     "info": {"rotulo": "SÉ DE LISBOA", "numero": "09H50", "real": "09:52:07"}}]},
+  {"id": "santa-luzia", "snap": true,
+   "grupos": [
+    {"fala": "Miradouro de Santa Luzia,", "tela": "Miradouro de Santa Luzia,"},
+    {"fala": "com música ao vivo,", "tela": "com música ao vivo,"}],
+   "planos": [
+    {"fonte": "IMG_4411", "in": 1.0, "peso": 1, "recorte_x": [[0, 1300]],
+     "info": {"rotulo": "MIRADOURO DE SANTA LUZIA", "numero": "10H00", "real": "10:02:45 (IMG_4410)"}},
+    {"fonte": "IMG_4412", "in": 1.5, "peso": 1, "recorte_x": [[0, 850]]}]},
+  {"id": "portas-do-sol",
+   "grupos": [
+    {"fala": "e, do lado, o Portas do Sol,", "tela": "e, do lado,|o Portas do Sol,"},
+    {"fala": "um pouco mais vazio.", "tela": "um pouco mais vazio"}],
+   "planos": [
+    {"fonte": "IMG_4461", "in": 0.5, "peso": 1.2, "recorte_x": [[0, 1300]],
+     "info": {"rotulo": "PORTAS DO SOL", "numero": "10H20", "real": "10:17:32"}},
+    {"fonte": "IMG_4464", "in": 1.0, "peso": 1, "recorte_x": [[0, 1040]]}]},
+  {"id": "manteigaria", "snap": true,
+   "grupos": [
+    {"fala": "Segundo pastel de nata", "tela": "segundo pastel de nata"},
+    {"fala": "do dia, claro.", "tela": "do dia, claro"}],
+   "planos": [
+    {"fonte": "IMG_4465", "in": 0.5, "peso": 1, "recorte_x": [[0, 1650]],
+     "info": {"rotulo": "MANTEIGARIA", "numero": "10H20", "real": "10:20:00"}},
+    {"fonte": "IMG_4470", "in": 0.5, "peso": 1.2}]},
+  {"id": "castelo", "snap": true,
+   "grupos": [
+    {"fala": "O castelo ficou pra próxima,", "tela": "o castelo ficou|pra próxima,"},
+    {"fala": "mas na frente dele", "tela": "mas na frente dele"},
+    {"fala": "tem pastel de bacalhau:", "tela": "tem pastel de bacalhau:"},
+    {"fala": "o nosso bolinho,", "tela": "o nosso bolinho,"},
+    {"fala": "só que maior.", "tela": "só que maior"}],
+   "planos": [
+    {"fonte": "IMG_4477", "in": 1.0, "peso": 1.2, "recorte_x": [[0, 1040]],
+     "info": {"rotulo": "CASTELO DE SÃO JORGE", "numero": "10H30", "real": "10:30:19"}},
+    {"fonte": "IMG_4487", "in": 1.0, "peso": 1, "recorte_x": [[0, 1300]],
+     "info": {"rotulo": "PASTEL DE BACALHAU", "numero": "10H40", "real": "10:37:54"}},
+    {"fonte": "IMG_4490", "in": 18.0, "peso": 1.3, "recorte_x": [[0, 1120]]}]},
+  {"id": "almoco", "snap": true,
+   "grupos": [
+    {"fala": "E pra fechar,", "tela": "e pra fechar,"},
+    {"fala": "almoço na Rua Augusta.", "tela": "almoço na Rua Augusta"},
+    {"fala": "Dessa vez, o peixinho", "tela": "dessa vez, o peixinho"},
+    {"fala": "era peixe mesmo.", "tela": "era peixe mesmo"}],
+   "planos": [
+    {"fonte": "IMG_4506", "in": 1.0, "peso": 1, "recorte_x": [[0, 1000]]},
+    {"fonte": "IMG_4519", "in": 1.0, "peso": 1, "recorte_x": [[0, 1100]],
+     "info": {"rotulo": "ALMOÇO · RUA AUGUSTA", "numero": "12H10", "real": "12:14:20 (IMG_4516)"}},
+    {"fonte": "IMG_4522", "in": 1.5, "peso": 1, "recorte_x": [[0, 1240]]}]},
+  {"id": "fim",
+   "grupos": [
+    {"fala": "Tudo a pé.", "tela": "tudo a *pé*", "destaque_fala": "pé"},
+    {"fala": "Salva pra sua escala em Lisboa.", "tela": "salva pra sua escala|em Lisboa"}],
+   "planos": [
+    {"fonte": "IMG_4525", "in": 8.0, "peso": 1, "recorte_x": [[0, 1550]]},
+    {"fonte": "IMG_4411", "in": 5.0, "peso": 1.6, "recorte_x": [[0, 1300], [3.2, 1700]], "cta": true}]}
+ ],
+ "placa": {"fala": "gancho", "t": 0, "saida": 2.6, "rotulo": "LISBOA EM", "destino": "1 MANHÃ", "modulo": "seta", "tamanho": "G"},
+ "placa_cta": {"t": 0.4, "destino": "SALVA PRA VIAGEM", "modulo": "seta", "tamanho": "M"},
+ "capa": {"t": 1.2, "placa": {"rotulo": "LISBOA EM", "destino": "1 MANHÃ", "modulo": "seta", "tamanho": "G"}},
+ "mix": {"voz_lufs": -16, "ambiente_lufs": -28, "master_lufs": -14, "master_pico_dbtp": -1},
+ "trilha": "biblioteca do Instagram na hora de postar, 8 a 10 dB abaixo da voz (DS V2, 4.6)"
+}
