@@ -10,6 +10,8 @@
 | 2 | `story_amsterdam-pergunta_rev1_2.jpg` | A viga com o gancho no topo da fachada (`IMG_1408`, prévia do Reel de terça) · Placa `ME PERGUNTA` / `AMSTERDAM` + `?` | Adicionar a figurinha **Perguntas** no centro (x ≈ 540, y ≈ 1100), com o texto abaixo |
 | 3 | `story_amsterdam-pergunta_rev1_3.jpg` | O canal de longe (`IMG_1403`) · Bilhete "respondo aqui / na sexta, 23/10." | Postar como está |
 
+**Alternativa à tela 1 (pedido do Diego, 19/10):** `story_amsterdam-pergunta_rev1_1-trilha.jpg`, com a foto do Diego apontando numa trilha. Placa G `O PRÓXIMO DESTINO` / `AMSTERDAM` + seta (a seta repete o braço apontando) e legenda "a espera acabou! / próximo **sábado**, 24/10". É a versão curta do texto dele: "Você mesmo que tava esperando o próximo destino, a espera acabou, próximo sábado vamos pra Amsterdam!" (o DS limita a legenda a 2 linhas de 26 caracteres). Exceção de posição só desta arte: a placa fica em y 440, e não em y 640, porque em y 640 ela cobriria a cabeça (precedente: REV7 do Reel de apresentação). Variante `_1-trilha_sem-data.jpg`: "a espera acabou! / Amsterdam vem aí". Escolha uma das duas para a tela 1; não poste as duas.
+
 Variante: `story_amsterdam-pergunta_rev1_1_sem-data.jpg` (Placa `VEM AÍ` / `AMSTERDAM`, legenda "o primeiro dia inteiro no YouTube", sem data).
 
 ### Texto da caixa de perguntas (tela 2)

@@ -25,6 +25,12 @@
    "pasta": "stories/amsterdam-pergunta/fonte",
    "foto": true,
    "nota": "foto do Diego numa ponte de Amsterdam (1717 × 2576), enviada por ele em 19/10/2026; fora do git (fonte/)"
+  },
+  "foto_trilha": {
+   "arquivo": "diego_trilha.jpg",
+   "pasta": "stories/amsterdam-pergunta/fonte",
+   "foto": true,
+   "nota": "foto do Diego apontando numa trilha (1717 × 2576), enviada por ele em 19/10/2026; fora do git (fonte/)"
   }
  },
  "telas": [
@@ -47,6 +53,28 @@
     0
    ],
    "legendaBaseY": 1580
+  },
+  {
+   "id": "1-trilha",
+   "fonte": "foto_trilha",
+   "t": 0,
+   "recorte_x": null,
+   "recorte_foto": [
+    1080,
+    1920,
+    415,
+    0
+   ],
+   "placa": {
+    "rotulo": "O PRÓXIMO DESTINO",
+    "destino": "AMSTERDAM",
+    "modulo": "seta",
+    "tamanho": "G",
+    "y": 440
+   },
+   "legenda": "a espera acabou!|próximo *sábado*, 24/10",
+   "legendaBaseY": 1580,
+   "nota": "alternativa de anúncio da tela 1; texto do Diego: \"Você mesmo que tava esperando o próximo destino, a espera acabou, próximo sábado vamos pra Amsterdam!\""
   },
   {
    "id": "2",
@@ -85,6 +113,9 @@
       "tamanho": "G"
      },
      "legenda": "o primeiro dia inteiro|no YouTube"
+    },
+    "1-trilha": {
+     "legenda": "a espera acabou!|Amsterdam vem aí"
     }
    }
   }
