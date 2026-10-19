@@ -7,7 +7,7 @@
 ```
 Quanto custa andar em Barcelona? Do aeroporto ao centro dá pra ir por € 1,30 👇
 
-🧾 A nossa história: em março, compramos o Hola Barcelona de 72 h. A gente não chegou pelo aeroporto e ficou em Gràcia, um bairro um pouco mais longe do centro, então usou bastante o transporte: umas 4 viagens por dia. Mesmo assim, pagamos a mais. Com a T-casual (10 viagens por € 13,00) e mais 2 bilhetes simples, teria saído € 18,80 por pessoa, contra € 27,30 do Hola. Para o casal, € 17 a mais (≈ R$ 96). E, uma vez no centro, a gente fazia quase tudo a pé, porque gosta de andar.
+🧾 A nossa história: em março, compramos o Hola Barcelona de 72 h. A gente não chegou pelo aeroporto e ficou em Gràcia, um bairro um pouco mais longe do centro, então usou bastante o transporte: umas 4 viagens por dia. Mesmo assim, pagamos a mais. Com a T-casual (10 viagens por € 13,00) e mais 2 bilhetes simples, teria saído € 18,80 por pessoa, contra € 27,30 do Hola. Para o casal, € 17 a mais (≈ R$ 96). No centro, a gente ia quase tudo a pé.
 
 ✈️ Do aeroporto ao centro (por pessoa, só ida):
 
@@ -15,7 +15,7 @@ Quanto custa andar em Barcelona? Do aeroporto ao centro dá pra ir por € 1,30 
 
 🚇 Metrô L9: € 5,90 (≈ R$ 33) com o bilhete Aeroport. É o mais lento: precisa trocar de linha para chegar ao centro.
 
-🚌 Aerobús: € 7,75 só ida ou € 13,30 ida e volta (≈ R$ 44 e R$ 75). Funciona 24 h e leva de 30 a 35 min até a Plaça Catalunya.
+🚌 Aerobús: € 7,75 só ida ou € 13,30 ida e volta (≈ R$ 44 e R$ 75). 24 h, de 30 a 35 min até a Plaça Catalunya.
 
 🚕 Táxi: é no taxímetro, sem preço fixo para o centro. Saindo do aeroporto, o mínimo é € 21; até o centro, conte com € 30 a € 40 (estimativa). Em 4 pessoas, dividido sai perto do Aerobús (€ 7,50 a € 10 cada).
 
@@ -25,11 +25,11 @@ T-casual (10 viagens): € 13,00
 T-dia (24 h): € 12,00
 Hola Barcelona: 24 h € 12,50 · 48 h € 18,70 · 72 h € 27,30
 
-🧮 Vale a pena o passe? Com a T-casual, cada viagem sai por € 1,30. O Hola de 48 h só compensa a partir de 15 viagens, e o de 72 h, a partir de 22 (mais de 7 por dia). Se você for e voltar do aeroporto de metrô dentro do período do passe, ele compensa antes: 6 viagens no de 48 h e 12 no de 72 h.
+🧮 Vale a pena o passe? Com a T-casual, cada viagem sai por € 1,30. O Hola de 48 h só compensa a partir de 15 viagens, e o de 72 h, a partir de 22 (mais de 7 por dia). Com ida e volta do aeroporto de metrô dentro do passe, compensa antes: 6 viagens no de 48 h e 12 no de 72 h.
 
 ⚠️ A T-casual não passa na catraca do metrô do aeroporto. E é de uma pessoa por vez: casal compra uma para cada um.
 
-Valores em reais pelo câmbio oficial (PTAX de 15/10/2026: € 1 = R$ 5,66), sem IOF e sem spread do cartão. Preços oficiais da TMB, do Hola Barcelona, do Aerobús e da AMB (táxi), conferidos em 16/10/2026; os do metrô e do Hola são os mesmos desde janeiro de 2026. No site oficial do Hola, a compra online estava 10% mais barata. A Rodalies (trem) teve interrupções em 2026: confira o app no dia.
+Reais pela PTAX de 15/10/2026 (€ 1 = R$ 5,66), sem IOF nem spread do cartão. Preços oficiais da TMB, do Hola, do Aerobús e da AMB (táxi), conferidos em 16/10/2026. Hola online: 10% a menos. A Rodalies teve interrupções em 2026: confira o app no dia.
 
 Salva esse post pra sua viagem a Barcelona! 🇪🇸
 E o vlog dos nossos 3 dias em Barcelona está no YouTube: link na bio. 🎥
@@ -74,7 +74,7 @@ Hashtags só no TikTok (3, para busca): a regra do painel é sem hashtag no Inst
 
 ### Instagram (carrossel de feed)
 
-É a legenda principal, acima (2369 caracteres, dentro do limite de 2.200).
+É a legenda principal, acima (2153 caracteres; limite do Instagram: 2.200).
 
 ### Música
 
