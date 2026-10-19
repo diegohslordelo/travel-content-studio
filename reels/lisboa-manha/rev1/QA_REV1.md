@@ -4,7 +4,7 @@
 
 | Item | Valor |
 |---|---|
-| Prévia guia | `reel_lisboa-manha_rev1_guia_previa.mp4` (540 × 960; o arquivo em 1080 × 1920 fica em `_tmp/`, fora do git) · · 30 fps · 48,9 s (estimado) · −14,1 LUFS · −1,3 dBTP |
+| Prévia guia | `reel_lisboa-manha_rev1_guia_previa.mp4` (540 × 960; o arquivo em 1080 × 1920 fica em `_tmp/`, fora do git) · 30 fps · 48,9 s (estimado) · −14,1 LUFS · −1,3 dBTP |
 | Capa | `capa_lisboa-manha_rev1.jpg` (telhados de Alfama + Placa `LISBOA EM / 1 MANHÃ`) |
 | Roteiro para gravar | `ROTEIRO_NARRACAO.md` |
 | Decisões | `rev1.json` (falas, legendas, planos, horas) · pipeline `rev1.py` · composição `Reel` |
