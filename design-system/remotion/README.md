@@ -49,7 +49,9 @@ O arquivo sai em `../kit/mov/` com o nome da composição. Todos têm 1080 × 19
 | `src/ds/Transicoes.tsx` | 4.4 | Varredura de Placa, Arrasto, Snap, Cinema e Rota |
 | `src/ds/Som.tsx` | 4.6 | Sons `PD_*_v1.wav` no volume relativo à voz; `SomMoeda` (máquina de moeda) |
 | `src/kit/Kit.tsx` | 6.1 | Composições do kit, PNGs e catálogo |
-| `src/reel/Reel.tsx` | 5.2 | Reel montado a partir de `revN.json` |
+| `src/reel/Reel.tsx` | 5.2 | Reel montado a partir de `revN.json` (uma ou mais placas, Ticket, Informação, legendas e sons) |
+| `src/carrossel/Carrossel.tsx` | 5.3 | Still `Carrossel` 1080 × 1440: capa, roteiro (Rota com paradas), fotografia, dica e encerramento, um slide por render (`carrosseis/<carrossel>/revN`) |
+| `src/stories/Story.tsx` | 5.6 | Tela de Stories 1080 × 1920: fundo, Placa, legenda Padrão e Bilhete (render do quadro 45; `stories/<sequência>/revN`) |
 | `scripts/kit.mjs` | 6.1 | Exportação do kit |
 
 ## Decisões de implementação (registradas, não são regra nova)
@@ -66,6 +68,10 @@ Pontos em que o DS não fixa um número e o código precisou de um. Nenhum cria 
 | Arrasto | As duas cenas ficam deslocadas 30% no corte e cada uma tem alça de 100 ms do outro lado | Sem a alça, a cena que entra a +30% deixa uma faixa preta. Duração (200 ms) e desfoque (12 px) são os do DS |
 | Legenda centralizada | Caixa de 872 px centrada em x 540 | Decisão do Diego (CLAUDE.md, 6); a largura máxima de linha segue em aberto (pendência 13) |
 | FPS | Composições a 30 fps; os tempos dos componentes estão em ms | FPS de produção não definido (pendência 5); 30 é o das receitas (6.2) |
+| Carrossel: nota e legenda | Body 44 px | O 5.3 diz "Body 40" e "Barlow 500 40 px"; a 1.2 e os tokens dizem 44. Tokens valem para valores (decisão do Diego, 05/10/2026) |
+| Carrossel: algarismo da parada | 36 px (tamanho do token `label`) na fonte de dados | O DS fixa o círculo (56 px) e a fonte, não o tamanho do algarismo |
+| Pictograma "a pé" | Desenhado no código (quadrado grafite `radius-tag`, figura amarela, grid 48 / ícone 36 em 2×) | O DS lista o pictograma (1.5) mas não tem o arquivo; aguarda aprovação do Diego ou o arquivo AIGA/DOT |
+| Placa nos Stories | M (75%) | O 2.1 diz "Pequena (75%): thumbnail, Stories"; o 2.8 diz "P (50%, Stories)". Divergência registrada, sem decisão |
 | Fontes ausentes | "PD Placar" cai para Barlow Condensed 700 com algarismos tabulares; "Caneta Diego" cai para Reenie Beanie | Fallbacks dos próprios tokens (`font.family`) |
 
 ## Requisitos

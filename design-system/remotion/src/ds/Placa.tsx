@@ -50,6 +50,8 @@ export type PlacaProps = {
   empurroes?: number[];
   /** Troca de texto com a placa na tela (ex.: DIA 1 → DIA 2). */
   trocas?: { em: number; rotulo?: string; destino: string }[];
+  /** Variante Carrossel (2.1): sobre papel ou foto, com `shadow-paper` (menos profunda). */
+  carrossel?: boolean;
 };
 
 const ESCALA = { G: 1, M: 0.75, P: 0.5 } as const;
@@ -92,6 +94,7 @@ export const Placa: React.FC<PlacaProps> = ({
   saida,
   empurroes = [],
   trocas = [],
+  carrossel = false,
 }) => {
   const t = useMs();
   const estatica = entrada === null;
@@ -141,7 +144,7 @@ export const Placa: React.FC<PlacaProps> = ({
   // sombra de duas camadas, deslocada 40 px a 15% no início e assentando em 18 px a 55%
   const yS = 40 + (18 - 40) * sombra;
   const aS = 0.15 + (0.55 - 0.15) * sombra;
-  const sombraPlaca = estatica ? SOMBRA.placa : `0 3px 0 rgba(0,0,0,${0.28 * sombra}), 0 ${yS}px 32px -10px rgba(0,0,0,${aS})`;
+  const sombraPlaca = carrossel ? SOMBRA.papel : estatica ? SOMBRA.placa : `0 3px 0 rgba(0,0,0,${0.28 * sombra}), 0 ${yS}px 32px -10px rgba(0,0,0,${aS})`;
 
   const iconeModulo = (() => {
     switch (modulo) {

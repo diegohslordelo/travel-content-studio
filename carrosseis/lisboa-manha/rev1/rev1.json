@@ -1,0 +1,37 @@
+{
+ "carrossel": "lisboa-manha",
+ "revisao": 1,
+ "data": "2026-10-19",
+ "planejamento": "V5-20261019-CAR-lisboa-manha (19/10/2026, 18:30)",
+ "formato": "1080 × 1440 (3:4, DS V2 5.3)",
+ "serie": "ROTEIRO",
+ "fotos": {
+  "capa.jpg": {"fonte": "IMG_4416.MOV", "drive_id": "1WOkpZgYy8JVgt9qTtUOsISyQ5vaIDjUZ", "t": 1.0, "recorte": [180, 1200, 1980, 2640], "nota": "Miradouro de Santa Luzia, 10:04:39; vertical (2160 × 3840 na exibição)"},
+  "praca.jpg": {"fonte": "IMG_4366.MOV", "drive_id": "1z-CS6qz1s_SfCIPAjTY8zYEL0CYPlBwk", "t": 2.0, "recorte": [800, 0, 2160, 2160], "nota": "Praça do Comércio, 09:23:35: arco da Rua Augusta e estátua de D. José I"},
+  "castelo.jpg": {"fonte": "IMG_4477.MOV", "drive_id": "1KHp08YofpRB-cJgzCAJ6FitOTSbzhOdm", "t": 3.5, "recorte": [560, 0, 2160, 2160], "nota": "portão do Castelo de São Jorge, 10:30:19"}
+ },
+ "slides": [
+  {"tipo": "capa", "foto": "capa.jpg", "rotulo": "LISBOA EM", "destino": "1 MANHÃ", "coordenadas": "38.7116° N  9.1300° W",
+   "fonte_do_dado": "GPS do IMG_4416 (+38.7116 −009.1300)"},
+  {"tipo": "roteiro", "titulo": "Das 08h49 às 11h23, a pé", "paradas": [
+   {"n": 1, "hora": "08H55", "lugar": "Elevador de Santa Justa", "nota": "Estava fechado.", "fonte_do_dado": "IMG_4289 (08:55:30): \"parece que tá fechado, a gente não vai conseguir subir\""},
+   {"n": 2, "hora": "08H57", "lugar": "Pastel de nata", "nota": "Bem em frente ao elevador.", "fonte_do_dado": "IMG_4291 (08:57:55); IMG_4290: \"bem na frente aqui do elevador… tem uma loja aqui de pastel de nata\""},
+   {"n": 3, "hora": "09H14", "lugar": "Praça do Comércio", "nota": "Aberta para o rio Tejo.", "fonte_do_dado": "IMG_4308 (09:14:30), primeiro plano da praça; rio nos IMG_4373–4383"},
+   {"n": 4, "hora": "09H52", "lugar": "Sé de Lisboa", "nota": "Em obras: vimos por fora.", "fonte_do_dado": "IMG_4402 (09:52:07); IMG_4405: \"ela está até em reforma… a gente não vai conseguir entrar, ela está até fechada\""}
+  ]},
+  {"tipo": "roteiro", "titulo": "Depois, os miradouros", "paradas": [
+   {"n": 5, "hora": "10H02", "lugar": "Miradouro de Santa Luzia", "nota": "Telhados, rio e música.", "fonte_do_dado": "IMG_4410 (10:02:45); IMG_4429: \"rola uma música aqui que a galera vem tocar\"; músicos no IMG_4412"},
+   {"n": 6, "hora": "10H17", "lugar": "Miradouro das Portas do Sol", "nota": "Logo ao lado, e mais vazio.", "fonte_do_dado": "IMG_4461 (10:17:32); IMG_4463: \"se você passar um pouquinho… é um pouco mais vazio\""},
+   {"hora": "10H30", "lugar": "Castelo de São Jorge", "nota": "Só por fora.", "fonte_do_dado": "IMG_4477 (10:30:19), portão; IMG_4489–4490"},
+   {"n": 7, "hora": "11H23", "lugar": "Rua Augusta", "nota": "Arco no fim da rua.", "fonte_do_dado": "IMG_4505 (11:23:29), primeiro plano da rua; IMG_4514: \"bem no final lá é a Praça do Comércio e o arco\""}
+  ]},
+  {"tipo": "foto", "foto": "praca.jpg", "legenda": "Praça do Comércio, 23 de março. Às 09h31: sol e 17 graus.",
+   "fonte_do_dado": "IMG_4395 (09:31:11): \"exatamente no dia 23… sol… 17 graus\""},
+  {"tipo": "dica", "pictograma": "a-pe", "texto": "dica: portas do sol,|mais vazio e logo ali.",
+   "fonte_do_dado": "IMG_4463: \"se você passar um pouquinho, tem o Miradouro de Portas do Sol… é um pouco mais vazio\"; GPS: 35 m entre os dois"},
+  {"tipo": "foto", "foto": "castelo.jpg", "legenda": "Castelo de São Jorge, 10h30. Ficou só por fora: de fora, não dá para ver a fortaleza.",
+   "fonte_do_dado": "IMG_4489: \"eu achava que tinha uma fachada pra gente ver… dava pra ver a fortaleza, mas não dá\"; IMG_4490: tempo corrido"},
+  {"tipo": "encerramento", "bilhete": "aqui é tudo perto.", "marca": "vale", "cta": "SALVA PRA VIAGEM",
+   "fonte_do_dado": "IMG_4290: \"o legal é que aqui é tudo perto\""}
+ ]
+}

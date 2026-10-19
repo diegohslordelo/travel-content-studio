@@ -204,6 +204,13 @@ export const REEL = {
   legendaLimiteY: px("layout.reel.caption-limit-y"),
 } as const;
 
+/** Carrossel e feed 3:4 (DS V2, 1.3 e 5.3; tokens `layout.carousel`). */
+export const CAR = {
+  largura: px("layout.carousel.width"),
+  altura: px("layout.carousel.height"),
+  margem: px("layout.carousel.margin"),
+} as const;
+
 /** Vídeo longo do YouTube, 16:9 (DS V2, 1.3 e 3.4; tokens `layout.yt`). */
 export const YT = {
   largura: px("layout.yt.width"),

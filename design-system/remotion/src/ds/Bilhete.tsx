@@ -21,11 +21,13 @@ export type BilheteProps = {
   y?: number;
   entrada?: number;
   saida?: number;
+  /** Tamanho da letra: 72 px no vídeo (padrão); 80 px no carrossel (2.4, token `pen`). */
+  tamanho?: number;
 };
 
 const TAM_VIDEO = 72; // 2.4: Caneta 72 px no vídeo
 
-export const Bilhete: React.FC<BilheteProps> = ({ texto, marca, segundo = false, semPapel = false, x = 520, y = 900, entrada = 0, saida }) => {
+export const Bilhete: React.FC<BilheteProps> = ({ texto, marca, segundo = false, semPapel = false, x = 520, y = 900, entrada = 0, saida, tamanho = TAM_VIDEO }) => {
   const agora = useMs();
   const t = agora - entrada;
   const ts = saida === undefined ? -Infinity : agora - saida;
@@ -79,7 +81,7 @@ export const Bilhete: React.FC<BilheteProps> = ({ texto, marca, segundo = false,
         color: COR.caneta,
         fontFamily: FONTE.caneta,
         fontWeight: 400,
-        fontSize: TAM_VIDEO,
+        fontSize: tamanho,
         lineHeight: 1.05,
         textTransform: "lowercase",
         whiteSpace: "nowrap",

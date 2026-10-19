@@ -16,6 +16,7 @@ import {
   useVideoConfig,
 } from "remotion";
 import { Placa, Modulo } from "../ds/Placa";
+import { Ticket } from "../ds/Ticket";
 import { Grao, ScrimBase } from "../ds/material";
 import { LegendaInformacao, LegendaPadrao } from "../ds/Legendas";
 import {
@@ -55,6 +56,15 @@ type Transicao = {
   tipo: "arrasto" | "snap" | "cinema" | "varredura";
   entra: string;
 };
+type PlacaReel = {
+  cena: string;
+  t: number;
+  saida?: number;
+  rotulo?: string;
+  destino: string;
+  modulo?: Modulo;
+  tamanho?: "G" | "M" | "P";
+};
 type LegendaBloco = {
   audio?: string;
   cena?: string;
@@ -69,15 +79,19 @@ export type PropsReel = {
   cenas: Cena[];
   audios: AudioExtra[];
   transicoes: Transicao[];
-  placa?: {
+  placa?: PlacaReel;
+  /** Placas além da primeira (ex.: CTA no fim). Máx. 3 por Reel (DS V2, 2.1). */
+  placas?: PlacaReel[];
+  /** Ticket (DS V2, 2.3 e 2.6): SURPREENDE, SABIA? ou VALE. Máx. 1 por Reel. */
+  tickets?: {
     cena: string;
     t: number;
-    saida?: number;
-    rotulo?: string;
-    destino: string;
-    modulo?: Modulo;
-    tamanho?: "G" | "M" | "P";
-  };
+    saida: number;
+    variante: "surpreende" | "sabia" | "vale";
+    micro?: string;
+    x?: number;
+    y?: number;
+  }[];
   informacao?: {
     cena: string;
     t: number;
@@ -278,20 +292,29 @@ export const Reel: React.FC<PropsReel> = (p) => {
         return null;
       })}
 
-      {p.placa && (
+      {[...(p.placa ? [p.placa] : []), ...(p.placas ?? [])].map((pl, i) => (
         <Placa
-          rotulo={p.placa.rotulo}
-          destino={p.placa.destino}
-          modulo={p.placa.modulo}
-          tamanho={p.placa.tamanho}
-          entrada={ms(p.placa.cena, p.placa.t)}
-          saida={
-            p.placa.saida !== undefined
-              ? ms(p.placa.cena, p.placa.saida)
-              : undefined
-          }
+          key={`placa-${i}`}
+          rotulo={pl.rotulo}
+          destino={pl.destino}
+          modulo={pl.modulo}
+          tamanho={pl.tamanho}
+          entrada={ms(pl.cena, pl.t)}
+          saida={pl.saida !== undefined ? ms(pl.cena, pl.saida) : undefined}
         />
-      )}
+      ))}
+
+      {p.tickets?.map((tk, i) => (
+        <Ticket
+          key={`ticket-${i}`}
+          variante={tk.variante}
+          micro={tk.micro}
+          x={tk.x}
+          y={tk.y}
+          entrada={ms(tk.cena, tk.t)}
+          saida={ms(tk.cena, tk.saida)}
+        />
+      ))}
 
       {p.informacao?.map((info, i) => (
         <LegendaInformacao
