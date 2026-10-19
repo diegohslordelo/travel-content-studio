@@ -30,7 +30,8 @@
   "limpeza": "passa-alta 80 Hz + redução de ruído FFT (afftdn) + cada tomada a −16 LUFS",
   "pausa_entre_tomadas": 0.3,
   "inicio": 0.15,
-  "cauda": 2.0
+  "cauda": 2.0,
+  "velocidade": 1.0
  },
  "placa": {
   "fala": "gancho",
@@ -218,16 +219,23 @@
    "hdr": true,
    "girar": "auto"
   },
+  "IMG_4433": {
+   "arquivo": "IMG_4433.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "FOTO_ELEVADOR": {
+   "arquivo": "../../../reels/lisboa-manha/fonte/foto_elevador_santa_justa.jpg",
+   "hdr": false,
+   "girar": 0,
+   "foto": true,
+   "nota": "foto do Elevador de Santa Justa enviada pelo Diego (19/10/2026), 1932 × 2576; fica em reels/lisboa-manha/fonte (fora do git)"
+  },
   "IMG_4289": {
    "arquivo": "IMG_4289.MOV",
    "hdr": true,
    "girar": 180,
    "nota": "gravado na horizontal de cabeça para baixo; o metadado de rotação (-90) está errado"
-  },
-  "IMG_4433": {
-   "arquivo": "IMG_4433.MOV",
-   "hdr": true,
-   "girar": "auto"
   }
  },
  "falas": [
@@ -332,13 +340,13 @@
       ]
      ],
      "corte_em": "Elevador",
+     "dur_max": 1.1,
      "nota": "o único plano em movimento do elevador: a torre no fim da rua, com o Diego apontando (6,1–7,2 s; depois a câmera gira e borra, por isso dur_max)",
      "info": {
       "rotulo": "ELEVADOR DE SANTA JUSTA",
       "numero": "09H00",
       "real": "08:55"
-     },
-     "dur_max": 1.1
+     }
     }
    ]
   },
@@ -362,16 +370,15 @@
    ],
    "planos": [
     {
-     "fonte": "IMG_4289",
-     "congelar": 6.4,
+     "fonte": "FOTO_ELEVADOR",
      "recorte": {
-      "x": 1890,
+      "x": 260,
       "y": 0,
-      "w": 600,
-      "h": 1067
+      "w": 1449,
+      "h": 2576
      },
      "kenburns": true,
-     "nota": "quadro congelado da torre (não há outro plano do elevador); aproximação lenta"
+     "nota": "a foto do Diego no lugar do quadro congelado: recortada em 9:16 na torre, com o Ken Burns do DS (100 → 104%), como a foto da comida no Reel do veredito da Europa"
     }
    ]
   },

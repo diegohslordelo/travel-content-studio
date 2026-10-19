@@ -56,7 +56,7 @@ Os dois modelos concordam em "**amassamos** mais um pastel de nata" (gíria de c
 | 0,0–3,2 | "Isso é tudo o que fizemos em uma manhã em Lisboa." | `IMG_4416` telhados de Alfama, vertical | Placa `LISBOA EM / 1 MANHÃ` + seta (Chegada no quadro 0, sai em 2,6 s) |
 | 3,2–6,8 | "Fizemos um stopover pela TAP, tivemos uma noite e uma manhã livre." | `IMG_4283` prédios da Baixa · `IMG_4307` bonde (corte em "tivemos") | `SEG · 23/03 · LISBOA` **08H50** |
 | 6,8–9,6 | "A nossa primeira parada foi o Elevador de Santa Justa." | `IMG_4285` rua da Baixa · `IMG_4289` a torre no fim da rua, o Diego apontando (corte em "Elevador", 1,1 s) | `ELEVADOR DE SANTA JUSTA` **09H00** |
-| 9,6–13,2 | "Ele é praticamente o Elevador Lacerda de Lisboa. Ele estava fechado," | `IMG_4289` quadro congelado da torre, com Ken Burns | Destaque em "Lacerda" |
+| 9,6–13,2 | "Ele é praticamente o Elevador Lacerda de Lisboa. Ele estava fechado," | **Foto do Diego** do elevador no fim da Rua de Santa Justa, recortada em 9:16 na torre, com o Ken Burns do DS (100 → 104%) | Destaque em "Lacerda" |
 | 13,2–19,8 | "mas bem na frente dele tinha um pastel de nata da Castro, que a gente não perdeu a oportunidade de provar, e estava muito bom." | `IMG_4294` fachada da Castro · `IMG_4299` pastéis indo para a forma (corte em "que") · `IMG_4291` pastéis no balcão (corte em "e estava") | `PASTEL DE NATA · CASTRO` **09H00** |
 | 19,8–26,8 | "Depois fomos direto pra Praça do Comércio. Tava um diazão, sol, 17 graus, parecia que tava com o ar-condicionado ligado." | Snap → `IMG_4308` arcadas amarelas · `IMG_4367` estátua de D. José (em "tava") · `IMG_4383` Cais das Colunas (em "sol") · `IMG_4384` letreiro LISBOA, lido de L a A (em "parecia") | `PRAÇA DO COMÉRCIO` **09H10** · Destaque em "17" |
 | 26,8–29,5 | "A Sé de Lisboa estava em obra, então só passamos por fora" | `IMG_4402` as duas torres da Sé com o bonde passando · `IMG_4404` fachada (em "então") | `SÉ DE LISBOA` **09H50** |
@@ -75,13 +75,10 @@ Cada plano entra 0,1 s antes da palavra que ilustra (`corte_em` em `rev2.json`).
 Revisei as folhas de contato dos 108 clipes da manhã (103 locais + 3 baixados agora: `IMG_4431–4433`) e escolhi as vistas mais limpas de cada parada:
 
 - **Prioridade:** monumento, vista e comida. Gente só onde ilustra a fala:
-  - `IMG_4289`: o Diego aponta para a torre, por 1,1 s; é o único plano do elevador.
+  - `IMG_4289`: o Diego aponta para a torre, por 1,1 s.
   - `IMG_4407`: o Diego de costas, caminhando, para "a pé".
   - Desconhecidos de longe em `IMG_4433` ("mais vazio") e os músicos de `IMG_4412` ("música ao vivo").
-- **Elevador:**
-  - A torre só aparece de 6,0 a 7,2 s do `IMG_4289`; depois a câmera gira e borra. Não há foto do elevador no Drive.
-  - Para "Ele é praticamente o Elevador Lacerda…", o quadro de 6,4 s é congelado e recortado na torre (600 × 1067 px do bruto em 4K). O Ken Burns do DS (100 → 104%) dá o movimento.
-  - Um plano em movimento da torre fica como **material futuro**.
+- **Elevador:** a torre só aparece 1,1 s em movimento (`IMG_4289`, 6,1–7,2 s; depois a câmera gira e borra). Na fala do "Elevador Lacerda" entra a foto que o Diego enviou em 19/10/2026 (1932 × 2576, em `reels/lisboa-manha/fonte/`, fora do git), recortada em 9:16 na torre, com zoom leve de 100 para 104%, o mesmo tratamento da foto da comida no Reel "meu veredito da Europa". Ela substitui o quadro congelado.
 - **Recortes ajustados em relação à REV1:**
   - O gancho começa em 3,0 s: antes disso, o rosto da Marina aparece na borda.
   - A estátua de D. José aparece inteira.
@@ -150,8 +147,7 @@ Regra: **10 minutos mais próximos**. As horas reais são as do arquivo; o local
 ## Para o Diego decidir
 
 1. **Escuta:** as palavras da tabela "Para conferir na escuta" e o narr_13.
-2. **Quadro congelado do elevador** (9,6–13,2 s): é a única imagem possível da torre para a fala do Lacerda. A alternativa é cobrir essa fala com a rua (`IMG_4285`) e deixar a torre só no plano em movimento.
-3. **Horas que mudaram** em relação ao carrossel (Portas do Sol 10H10, Praça 09H10): se o carrossel já foi publicado com 10H20 e 09H30, a diferença aparece para quem vir os dois.
+2. **Horas que mudaram** em relação ao carrossel (Portas do Sol 10H10, Praça 09H10): se o carrossel já foi publicado com 10H20 e 09H30, a diferença aparece para quem vir os dois.
 
 ## Como refazer
 

@@ -36,8 +36,11 @@ PUBLIC = os.path.join(TMP, "public")
 REMOTION = os.path.join(RAIZ, "design-system", "remotion")
 NARRACAO = os.path.join(TMP, "narracao.wav")
 SAIDA_BRUTA = os.path.join(TMP, "reel_sem_master.mov")
-SAIDA = os.path.join(AQUI, "reel_lisboa-manha_rev2.mp4")
-PREVIA = os.path.join(AQUI, "reel_lisboa-manha_rev2_previa.mp4")
+# VELOCIDADE=1.08 python3 rev2.py tudo  → versão com a voz levemente acelerada (tom preservado), arquivos com "_rapida"
+VELOCIDADE = float(os.environ.get("VELOCIDADE", "1"))
+SUFIXO = "" if VELOCIDADE == 1 else "_rapida"
+SAIDA = os.path.join(AQUI, f"reel_lisboa-manha_rev2{SUFIXO}.mp4")
+PREVIA = os.path.join(AQUI, f"reel_lisboa-manha_rev2{SUFIXO}_previa.mp4")
 CAPA = os.path.join(AQUI, "capa_lisboa-manha_rev2.jpg")
 CHROME = "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell"
 SR = 48000
@@ -116,7 +119,7 @@ def narracao():
     os.makedirs(TMP, exist_ok=True)
     pasta = os.path.join(RAIZ, n["pasta"])
     partes, marcas, t = [], [], 0.0
-    pausa = numpy.zeros(int(n["pausa_entre_tomadas"] * SR), dtype=numpy.float32)
+    pausa = numpy.zeros(int(n["pausa_entre_tomadas"] / VELOCIDADE * SR), dtype=numpy.float32)
     for i, nome in enumerate(n["tomadas"]):
         src = next((os.path.join(pasta, a) for a in sorted(os.listdir(pasta)) if os.path.splitext(a)[0] == nome), None)
         if not src:
@@ -126,10 +129,10 @@ def narracao():
         ini, fim = max(0.0, v0 - 0.08), min(len(bruto) / SR, v1 + 0.15)
         limpa = os.path.join(TMP, f"tomada_{nome}.wav")
         sh(["ffmpeg", "-v", "error", "-y", "-i", src, "-ac", "1", "-ar", str(SR),
-            "-af", f"atrim={ini:.3f}:{fim:.3f},asetpts=N/SR/TB,highpass=f=80,afftdn=nr=10:nf=-50", "-c:a", "pcm_f32le", limpa])
+            "-af", f"atrim={ini:.3f}:{fim:.3f},asetpts=N/SR/TB,highpass=f=80,afftdn=nr=10:nf=-50,atempo={VELOCIDADE}", "-c:a", "pcm_f32le", limpa])
         medido, _ = lufs(limpa)
         ganho = n.get("voz_lufs_tomada", d["mix"]["voz_lufs"]) - medido
-        dur = fim - ini
+        dur = (fim - ini) / VELOCIDADE
         final = os.path.join(TMP, f"tomada_{nome}_final.wav")
         sh(["ffmpeg", "-v", "error", "-y", "-i", limpa, "-af",
             f"volume={ganho:.2f}dB,alimiter=limit=0.708:attack=2:release=50:level=false,"
@@ -337,12 +340,12 @@ def preparar():
         arq_v = f"cena_{cid}.mp4"
         cod = ["-c:v", "libx264", "-preset", "medium", "-crf", "14", "-g", "15", "-pix_fmt", "yuv420p",
                "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", os.path.join(PUBLIC, arq_v)]
-        if "congelar" in p:
-            # quadro congelado: um quadro do bruto, recortado e repetido (o Ken Burns da cena dá o movimento)
+        if "congelar" in p or fonte.get("foto"):
+            # foto ou quadro congelado: uma imagem recortada e repetida (o Ken Burns da cena dá o movimento, 100 → 104%)
             r = p["recorte"]
             quadro = os.path.join(TMP, f"quadro_{cid}.png")
             vf += [f"crop={r['w']}:{r['h']}:{r['x']}:{r['y']}", f"scale={W}:{H}:flags=lanczos"]
-            sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{p['congelar']:.4f}", "-i", src, "-vf", ",".join(vf), "-frames:v", "1", "-pix_fmt", "rgb48be", quadro])
+            sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{p.get('congelar', 0):.4f}", "-i", src, "-vf", ",".join(vf), "-frames:v", "1", "-pix_fmt", "rgb48be", quadro])
             sh(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-framerate", str(fps), "-i", quadro, "-vf", "format=yuv420p,setsar=1",
                 "-frames:v", str(q), "-an", *cod])
         else:
