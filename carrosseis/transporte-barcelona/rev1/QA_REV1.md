@@ -96,6 +96,10 @@ Enviabilidade 2 (dá para dizer para quem mandar: quem vai a Barcelona) · Ganch
 - [x] Seta, `?` e ✓ desenhados em SVG, nunca digitados (1.2).
 - [x] Capa com foto em sangria (Casa Batlló, escolha do Diego). Sem o Diego em primeiro plano: desvio registrado em Fotos.
 
+## Confirmar antes de postar
+
+- **T-casual no trem do aeroporto (R2 Nord):** é a afirmação principal do post (€ 1,30). A TMB e a ATM confirmam que a T-casual não vale no metrô L9 e que se chega ao aeroporto de Rodalies, e a estação Aeroport T2 está na zona 1 da ATM (Wikipédia). Guias de viagem dizem que vale no R2 Nord, mas **não achei uma página oficial que diga isso com todas as letras**. Confirmar no app ou no telefone da Rodalies (900 41 00 41) ou numa máquina da estação antes de publicar.
+
 ## Desvios e decisões tomadas (precisam de aprovação do Diego)
 
 1. **Nome da série "Chegar sabendo"** (etiqueta de série em todos os slides). Vem da promessa da marca ("Chegar sabendo: quanto custa, o que evitar e o que vale a pena"). Rótulo novo de série depende de aprovação (DS 7.4; mesmo caso da "Nota de soteropolitano" no banco de ideias). Alternativa mais literal: "Do aeroporto ao centro".

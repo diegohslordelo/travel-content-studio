@@ -39,6 +39,57 @@ E o vlog dos nossos 3 dias em Barcelona está no YouTube: link na bio. 🎥
 
 Primeira linha reforça o gancho da capa (referência, 3.4). Palavras-chave na legenda: Barcelona, aeroporto, centro, metrô, trem, Aerobús, táxi, T-casual, Hola Barcelona, passe, transporte, Gràcia. Sem hashtag, como o resto do painel. Emojis só na legenda (na arte o DS não usa emoji).
 
+## Versões por plataforma (pedido de 19/10/2026)
+
+**Premissa:** o carrossel de feed é a peça principal (acima). Reels e TikTok são o mesmo conteúdo em vídeo: os 9 slides em sequência, cerca de 3 s cada (≈ 27 s, dentro dos 30 s da referência, 3.1), exportados limpos, sem marca d'água de outro app (referência, P4 e seção 9). No TikTok, também dá para postar os 9 slides como carrossel de fotos. Não repostar o mesmo vídeo idêntico em outra data (referência, seção 9).
+
+### Reels (Instagram) · 692 caracteres
+
+```
+Do aeroporto ao centro de Barcelona por € 1,30 (≈ R$ 7) 🚆 E a gente pagou € 17 a mais (casal) por comprar o passe errado.
+
+Compramos o Hola Barcelona de 72 h (€ 27,30). A T-casual (€ 13,00 por 10 viagens) + 2 bilhetes simples teria bastado: € 18,80 por pessoa. Fizemos umas 4 viagens por dia e o resto a pé.
+
+✈️ Do aeroporto ao centro, por pessoa:
+Trem R2 Nord: € 1,30
+Metrô L9: € 5,90
+Aerobús: € 7,75
+Táxi: € 30 a 40 (estimativa)
+
+⚠️ A T-casual vale no trem, mas não no metrô do aeroporto (L9).
+
+Valores em reais pela PTAX de 15/10/2026 (€ 1 = R$ 5,66). Preços oficiais conferidos em 16/10/2026.
+
+Salva pra sua viagem a Barcelona! 🇪🇸
+E o vlog dos nossos 3 dias está no YouTube: link na bio 🎥
+```
+
+### TikTok · 226 caracteres
+
+```
+Do aeroporto ao centro de Barcelona por € 1,30 🚆 A gente comprou o passe errado: Hola 72 h (€ 27,30) em vez da T-casual (€ 18,80). Salva pra sua viagem! Vlog completo no YouTube: link na bio 🎥 #barcelona #dicasdeviagem #europa
+```
+
+Hashtags só no TikTok (3, para busca): a regra do painel é sem hashtag no Instagram; no TikTok a busca interna pesa mais. Se preferir manter o padrão, tire a última linha.
+
+### Instagram (carrossel de feed)
+
+É a legenda principal, acima (2369 caracteres, dentro do limite de 2.200).
+
+### Música
+
+Decisão do carrossel de Roma (05/10/2026): instrumental, sem letra competindo com a leitura, da biblioteca do app na hora de postar. Sem narração, então o volume é livre; o DS manda a trilha 8 a 10 dB abaixo da voz quando há voz (4.6).
+
+| Ordem | Faixa | Por que | Cuidado |
+|---|---|---|---|
+| 1 | "Autumn Journey", Andrea Vanzo | Instrumental, aparece entre as mais usadas de outubro de 2026 para cenas de cidade e passeio | Confirmar no app que está disponível na sua conta |
+| 2 | "The Less I Know The Better", Tame Impala | Muito usada em montagens de viagem (≈ 532 mil Reels em um tracker) | Tem letra; pode competir com a leitura dos slides |
+| 3 | "About You", The 1975 | Cinematográfica, usada em destinos | Tem letra |
+
+Fontes: [Buffer, out/2026](https://buffer.com/resources/trending-audio-instagram/), [Dash Social, out/2026](https://www.dashsocial.com/blog/trending-instagram-reels-songs) e [SocialBee, 14/10/2026](https://socialbee.com/blog/trending-instagram-songs-this-week/). Os rankings divergem entre si e não são do Brasil: conferir a aba de áudios em alta do Reels no dia. Música em alta aumenta a chance de entrega, não garante alcance.
+
+**TikTok com conta comercial:** só aparece a Commercial Music Library, e faixas em alta fora dela podem ser silenciadas em conteúdo de marca ([Soundstripe](https://www.soundstripe.com/blogs/tiktok-music-licensing-rules), [Fox Music](https://www.foximusic.com/blog/commercial-music-licensing-tiktok-guide/)). Os guias não tratam do modo foto. Se a faixa não aparecer, a conta provavelmente é comercial: escolher uma faixa da biblioteca comercial.
+
 ## Texto alternativo (acessibilidade, opcional)
 
 | Slide | Texto alternativo |
