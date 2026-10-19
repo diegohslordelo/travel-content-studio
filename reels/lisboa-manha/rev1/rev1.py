@@ -2,7 +2,8 @@
 """Reel narrado "Isso é tudo que a gente fez em Lisboa em uma manhã" · REV1.
 
 O corte segue a narração: cada fala de rev1.json tem os seus planos, e a duração de cada plano sai do
-tempo da fala. Com a gravação do Diego em ../fonte/narracao.(m4a|wav|mp3|mov), os tempos vêm do
+tempo da fala. Uma fala `ao_vivo` é um trecho do bruto com a voz original (o Diego no elevador): a
+narração para, o trecho toca, e a narração continua depois. Com a gravação do Diego em ../fonte/narracao.(m4a|wav|mp3|mov), os tempos vêm do
 alinhamento da voz (faster-whisper, tempo por palavra). Sem ela, o pipeline estima o tempo (3 palavras
 por segundo) e gera uma prévia guia, sem voz, para o Diego gravar no ritmo das legendas.
 
@@ -90,6 +91,8 @@ def palavras_fala(d):
     """Lista de (fala, grupo, palavra) na ordem da narração."""
     out = []
     for fi, f in enumerate(d["falas"]):
+        if "ao_vivo" in f:
+            continue
         for gi, g in enumerate(f["grupos"]):
             for w in g["fala"].split():
                 out.append((fi, gi, w))
@@ -99,10 +102,10 @@ def palavras_fala(d):
 def tempos_estimados(d):
     n = d["narracao"]
     pps = n["palavras_por_segundo_estimado"]
-    t = n["inicio"]
+    t = 0.0
     tempos = []
-    for fi, f in enumerate(d["falas"]):
-        if fi:
+    for f in [f for f in d["falas"] if "ao_vivo" not in f]:
+        if tempos:
             t += n["pausa_entre_falas"]
         for g in f["grupos"]:
             for w in g["fala"].split():
@@ -141,40 +144,62 @@ def tempos_alinhados(d, arq):
             ant = next((tempos[j][1] for j in range(i - 1, -1, -1) if tempos[j]), 0.0)
             prox = next((tempos[j][0] for j in range(i + 1, len(tempos)) if tempos[j]), ant + 0.4)
             tempos[i] = (ant, max(ant + 0.05, prox))
-    off = d["narracao"]["inicio"]
-    return [(a + off, b + off) for a, b in tempos]
+    return tempos
 
 
 def tempos():
+    """Linha do tempo: blocos de narração (com o deslocamento de cada um) e falas ao vivo entre eles."""
     d = carregar()
+    n = d["narracao"]
     os.makedirs(TMP, exist_ok=True)
     arq = arquivo_narracao(d)
     ts = tempos_alinhados(d, arq) if arq else tempos_estimados(d)
     print("narração:", os.path.basename(arq) if arq else "não encontrada → tempos ESTIMADOS (prévia guia)")
     pw = palavras_fala(d)
-    falas = []
+    falas, blocos = [], []
+    fim_ant = None
+    desloc = None  # tempo na linha do tempo − tempo na gravação, por bloco de narração
     for fi, f in enumerate(d["falas"]):
+        if "ao_vivo" in f:
+            av = f["ao_vivo"]
+            ini = fim_ant + n["pausa_entre_falas"]
+            grupos = [{"texto": g["tela"], "ini": round(ini + g["ini"] - av["in"], 3), "fim": round(ini + g["fim"] - av["in"], 3)} for g in av["grupos"]]
+            fim = ini + av["out"] - av["in"]
+            falas.append({"id": f["id"], "ini": round(ini, 3), "fim": round(fim, 3), "grupos": grupos, "ao_vivo": True})
+            fim_ant, desloc = fim, None
+            continue
+        idx_fala = [i for i, (a, _, _) in enumerate(pw) if a == fi]
+        if desloc is None:  # começo de um bloco: logo depois da fala ao vivo (ou no início do Reel)
+            alvo = n["inicio"] if fim_ant is None else fim_ant + n["pausa_entre_falas"]
+            desloc = alvo - ts[idx_fala[0]][0]
+            blocos.append({"narr_ini": ts[idx_fala[0]][0], "narr_fim": None, "desloc": desloc})
+        blocos[-1]["narr_fim"] = ts[idx_fala[-1]][1]
         grupos = []
         for gi, g in enumerate(f["grupos"]):
-            idx = [i for i, (a, b, _) in enumerate(pw) if a == fi and b == gi]
-            ini, fim = ts[idx[0]][0], ts[idx[-1]][1]
-            item = {"texto": g["tela"], "ini": round(ini, 3), "fim": round(fim, 3)}
+            idx = [i for i in idx_fala if pw[i][1] == gi]
+            item = {"texto": g["tela"], "ini": round(ts[idx[0]][0] + desloc, 3), "fim": round(ts[idx[-1]][1] + desloc, 3)}
             if "destaque_fala" in g:
                 k = next(i for i in idx if normalizar(pw[i][2]) == normalizar(g["destaque_fala"]))
-                item["destaque_em"] = round(ts[k][0], 3)
+                item["destaque_em"] = round(ts[k][0] + desloc, 3)
             grupos.append(item)
         falas.append({"id": f["id"], "ini": grupos[0]["ini"], "fim": grupos[-1]["fim"], "grupos": grupos})
-    # legendas contínuas: cada grupo fica até o próximo começar (máx. 0,4 s de folga)
+        fim_ant = falas[-1]["fim"]
+    # legendas contínuas dentro de cada fala (máx. 0,4 s de folga); a fala ao vivo não herda folga
     todos = [g for f in falas for g in f["grupos"]]
     for a, b in zip(todos, todos[1:]):
         a["fim"] = round(min(b["ini"], a["fim"] + 0.4), 3)
     todos[-1]["fim"] = round(todos[-1]["fim"] + 0.4, 3)
+    # cada bloco de narração leva 0,1 s antes da primeira palavra e 0,25 s depois da última
+    for b in blocos:
+        b["narr_ini"] = max(0.0, b["narr_ini"] - 0.1)
+        b["narr_fim"] = b["narr_fim"] + 0.25
+        b["timeline_ini"] = round(b["narr_ini"] + b["desloc"], 3)
     fim_narracao = falas[-1]["fim"]
     with open(os.path.join(TMP, "tempos.json"), "w", encoding="utf-8") as fp:
-        json.dump({"narracao": arq, "falas": falas, "fim_narracao": fim_narracao}, fp, ensure_ascii=False, indent=1)
+        json.dump({"narracao": arq, "falas": falas, "blocos": blocos, "fim_narracao": fim_narracao}, fp, ensure_ascii=False, indent=1)
     for f in falas:
-        print(f"  {f['id']:14s} {f['ini']:6.2f} → {f['fim']:6.2f}")
-    print(f"fim da narração: {fim_narracao:.2f} s · Reel: {fim_narracao + d['narracao']['cauda']:.2f} s")
+        print(f"  {f['id']:14s} {f['ini']:6.2f} → {f['fim']:6.2f}" + ("  (ao vivo)" if f.get("ao_vivo") else ""))
+    print(f"fim da narração: {fim_narracao:.2f} s · Reel: {fim_narracao + n['cauda']:.2f} s")
 
 
 # ---------------------------------------------------------------- cenas e áudio
@@ -231,9 +256,12 @@ def preparar():
         fim = fim_total if fi == len(ids) - 1 else falas_t[ids[fi + 1]]["ini"]
         q_fim = round(fim * fps)
         q_ini = t_acum_q
-        pesos = [p["peso"] for p in f["planos"]]
+        planos = f["planos"] if "ao_vivo" not in f else [{**f["ao_vivo"], "peso": 1, "info": f.get("info")}]
+        if planos[0].get("info") is None:
+            planos[0].pop("info", None)
+        pesos = [p["peso"] for p in planos]
         restante = q_fim - q_ini
-        for pi, p in enumerate(f["planos"]):
+        for pi, p in enumerate(planos):
             q = restante if pi == len(pesos) - 1 else round((q_fim - q_ini) * p["peso"] / sum(pesos))
             restante -= q
             fonte = d["fontes"][p["fonte"]]
@@ -244,7 +272,12 @@ def preparar():
             if p["in"] + dur > duracao(src) - 0.05:
                 sys.exit(f"plano {p['fonte']} curto demais: precisa de {dur:.2f} s a partir de {p['in']} s (fala '{f['id']}')")
             cid = f"{f['id']}_{pi + 1}"
-            vf = [TONEMAP if fonte["hdr"] else "null"]
+            vf = []
+            if fonte["girar"] != "auto":
+                # o ffmpeg aplica o metadado de rotação ao decodificar; a correção leva ao giro pedido sobre o quadro bruto
+                correcao = (fonte["girar"] + rotacao_meta(src)) % 360
+                vf.append({0: "null", 90: "transpose=clock", 180: "hflip,vflip", 270: "transpose=cclock"}[correcao])
+            vf.append(TONEMAP if fonte["hdr"] else "null")
             if "recorte_x" in p:
                 w0, h0 = sonda(src)
                 giro = rotacao_meta(src) if fonte["girar"] == "auto" else fonte["girar"]
@@ -257,11 +290,12 @@ def preparar():
                 "-c:v", "libx264", "-preset", "medium", "-crf", "14", "-g", "15", "-pix_fmt", "yuv420p",
                 "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", os.path.join(PUBLIC, arq_v)])
             # som ambiente baixo sob a narração; selfies com fala ficam mudas (a voz delas brigaria com a narração)
-            mudo = p["fonte"] in ("IMG_4282", "IMG_4490", "IMG_4525")
+            mudo = bool(p.get("mudo"))  # planos com fala de alguém ficam mudos (a voz brigaria com a narração)
+            tipo = "voz" if "ao_vivo" in f else "mudo" if mudo else "ambiente"
             cena = {"id": cid, "fonte": p["fonte"], "in": p["in"], "arquivo": arq_v, "quadros": q, "dur": dur,
-                    "audio": "mudo" if mudo else "ambiente", "kenburns": bool(p.get("kenburns"))}
-            if not mudo:
-                cena.update(audio_trecho(src, p["in"], dur, f"cena_{cid}.wav", d["mix"]["ambiente_lufs"]))
+                    "audio": tipo, "kenburns": bool(p.get("kenburns"))}
+            if tipo != "mudo":
+                cena.update(audio_trecho(src, p["in"], dur, f"cena_{cid}.wav", d["mix"][f"{tipo}_lufs"]))
             cenas.append(cena)
             if pi == 0 and f.get("snap"):
                 transicoes.append({"tipo": "snap", "entra": cid})
@@ -275,6 +309,15 @@ def preparar():
             print(f"cena {cid}: {q} quadros ({dur:.2f} s)")
         t_acum_q = q_fim
 
+    # uma Informação sai antes de a próxima entrar (nunca duas na tela)
+    inicio_cena, t = {}, 0.0
+    for c in cenas:
+        inicio_cena[c["id"]] = t
+        t += c["dur"]
+    for a, b in zip(informacao, informacao[1:]):
+        folga = inicio_cena[b["cena"]] + b["t"] - inicio_cena[a["cena"]] - 0.1
+        a["fim"] = min(a["fim"], folga)
+
     pl = d["placa"]
     primeira = cenas[0]["id"]
     sons.insert(0, {"nome": "clack", "cena": primeira, "t": 0.28, "rel_db": -10})
@@ -285,10 +328,15 @@ def preparar():
     audios = []
     narr = tm["narracao"]
     if narr:
-        dur_n = duracao(narr)
-        a = {"id": "narracao", "fonte": "narracao", "in": 0.0, "dur": dur_n, "tipo": "voz", "inicio": {"cena": primeira, "t": d["narracao"]["inicio"]}}
-        a.update(audio_trecho(narr, 0.0, dur_n, "narracao.wav", d["mix"]["voz_lufs"]))
-        audios.append(a)
+        # a gravação inteira vai a −16 LUFS e depois é cortada em blocos (um antes e um depois de cada fala ao vivo)
+        audio_trecho(narr, 0.0, duracao(narr), "narracao.wav", d["mix"]["voz_lufs"])
+        for bi, b in enumerate(tm["blocos"]):
+            dur_b = b["narr_fim"] - b["narr_ini"]
+            nome = f"narracao_{bi + 1}.wav"
+            sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{b['narr_ini']:.3f}", "-i", os.path.join(PUBLIC, "narracao.wav"), "-t", f"{dur_b:.3f}",
+                "-af", f"afade=t=in:d=0.03,afade=t=out:st={max(0, dur_b - 0.08):.3f}:d=0.08", "-c:a", "pcm_s24le", os.path.join(PUBLIC, nome)])
+            audios.append({"id": f"narracao_{bi + 1}", "fonte": "narracao", "in": b["narr_ini"], "dur": dur_b, "tipo": "voz",
+                           "audio_arquivo": nome, "inicio": {"cena": primeira, "t": b["timeline_ini"]}})
 
     props = {
         "fps": fps, "largura": W, "altura": H, "cenas": cenas, "audios": audios, "transicoes": transicoes,

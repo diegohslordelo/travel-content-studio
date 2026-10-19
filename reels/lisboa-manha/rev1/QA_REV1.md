@@ -4,7 +4,7 @@
 
 | Item | Valor |
 |---|---|
-| Prévia guia | `reel_lisboa-manha_rev1_guia_previa.mp4` (540 × 960; o arquivo em 1080 × 1920 fica em `_tmp/`, fora do git) · 30 fps · 48,9 s (estimado) · −14,1 LUFS · −1,3 dBTP |
+| Prévia guia | `reel_lisboa-manha_rev1_guia_previa.mp4` (540 × 960; o arquivo em 1080 × 1920 fica em `_tmp/`, fora do git) · 30 fps · 53,4 s (estimado) · −14,0 LUFS · −1,2 dBTP |
 | Capa | `capa_lisboa-manha_rev1.jpg` (telhados de Alfama + Placa `LISBOA EM / 1 MANHÃ`) |
 | Roteiro para gravar | `ROTEIRO_NARRACAO.md` |
 | Decisões | `rev1.json` (falas, legendas, planos, horas) · pipeline `rev1.py` · composição `Reel` |
@@ -15,16 +15,17 @@
 | Fala | Narração | Planos | Na tela |
 |---|---|---|---|
 | gancho (0–4,5 s) | "Isso é tudo que a gente fez em Lisboa em uma manhã." | `IMG_4416` telhados de Alfama, vertical | Placa `LISBOA EM / 1 MANHÃ` + seta (Chegada no quadro 0, sai em 2,6 s) |
-| contexto | "Foi um stopover da TAP: uma noite na cidade e a manhã livre." | `IMG_4282` saindo do hotel · `IMG_4307` bonde na Baixa | `SEG · 23/03 · LISBOA` **08H50** |
-| pastel | "Primeira parada: pastel de nata, quentinho." | `IMG_4292` · `IMG_4291` pastéis no balcão | `PASTEL DE NATA` **09H00** |
+| contexto | "Foi um stopover da TAP: uma noite na cidade e a manhã livre." | `IMG_4283` prédio da Baixa · `IMG_4307` bonde na Baixa | `SEG · 23/03 · LISBOA` **08H50** |
+| parada | "Primeira parada: Elevador de Santa Justa." | `IMG_4285` rua da Baixa · `IMG_4289` a torre do elevador no fim da rua, com o Diego apontando (mudo) | `ELEVADOR DE SANTA JUSTA` **09H00** |
+| pastel | "Tava fechado. Mas, bem na frente dele, tinha pastel de nata quentinho." | `IMG_4294` fachada da loja · `IMG_4292` · `IMG_4291` pastéis no balcão | `PASTEL DE NATA` **09H00** |
 | praça (Snap) | "Praça do Comércio, às nove e meia: sol e dezessete graus. Em março." | `IMG_4309` bonde · `IMG_4366` estátua e arco (Ken Burns) · `IMG_4384` letreiro LISBOA | `PRAÇA DO COMÉRCIO` **09H30** · Destaque em "17" |
 | sé | "A Sé tava em obra, então foi só por fora." | `IMG_4402` Sé com o bonde passando | `SÉ DE LISBOA` **09H50** |
 | santa-luzia (Snap) | "Miradouro de Santa Luzia, com música ao vivo," | `IMG_4411` telhados · `IMG_4412` músicos | `MIRADOURO DE SANTA LUZIA` **10H00** |
 | portas-do-sol | "e, do lado, o Portas do Sol, um pouco mais vazio." | `IMG_4461` vista · `IMG_4464` estátua de São Vicente | `PORTAS DO SOL` **10H20** |
 | manteigaria (Snap) | "Segundo pastel de nata do dia, claro." | `IMG_4465` fachada · `IMG_4470` pastel na mão | `MANTEIGARIA` **10H20** |
-| castelo (Snap) | "O castelo ficou pra próxima, mas na frente dele tem pastel de bacalhau: o nosso bolinho, só que maior." | `IMG_4477` portão do castelo · `IMG_4487` vitrine · `IMG_4490` Marina comendo | `CASTELO DE SÃO JORGE` **10H30** · `PASTEL DE BACALHAU` **10H40** |
+| castelo (Snap) | "O castelo ficou pra próxima, mas na frente dele tem pastel de bacalhau: o nosso bolinho, só que maior." | `IMG_4477` portão do castelo · `IMG_4487` vitrine · `IMG_4490` Marina mostrando o tamanho (mudo) | `CASTELO DE SÃO JORGE` **10H30** · `PASTEL DE BACALHAU` **10H40** |
 | almoço (Snap) | "E pra fechar, almoço na Rua Augusta. Dessa vez, o peixinho era peixe mesmo." | `IMG_4506` Rua Augusta e o arco · `IMG_4519` peixe frito · `IMG_4522` arroz de bacalhau | `ALMOÇO · RUA AUGUSTA` **12H10** |
-| fim | "Tudo a pé. Salva pra sua escala em Lisboa." | `IMG_4525` Diego almoçando · `IMG_4411` telhados e o Tejo | Destaque em "pé" · Placa M `SALVA PRA VIAGEM` + seta |
+| fim | "Tudo a pé. Salva pra sua escala em Lisboa." | `IMG_4505` prédios da Baixa · `IMG_4411` telhados e o Tejo | Destaque em "pé" · Placa M `SALVA PRA VIAGEM` + seta |
 | loop | — | telhados → telhados do gancho | — |
 
 ## Horas: arredondadas (pedido do Diego, 19/10/2026)
@@ -34,7 +35,7 @@ Regra: **10 minutos mais próximos**. As horas reais (do arquivo, conferidas pel
 | Na tela | Real | Na tela | Real |
 |---|---|---|---|
 | 08H50 | 08:49 (saída do hotel) | 10H20 | 10:17 (Portas do Sol) |
-| 09H00 | 08:57 (pastel de nata) | 10H20 | 10:20 (Manteigaria) |
+| 09H00 | 08:55 (elevador) e 08:57 (pastel de nata) | 10H20 | 10:20 (Manteigaria) |
 | 09H30 | 09:31 (o "17 graus"; os planos da praça são de 09:14 a 09:29) | 10H30 | 10:30 (castelo) |
 | 09H50 | 09:52 (Sé) | 10H40 | 10:37 (pastel de bacalhau) |
 | 10H00 | 10:02 (Santa Luzia) | 12H10 | 12:14 (almoço) |
@@ -45,6 +46,8 @@ Regra: **10 minutos mais próximos**. As horas reais (do arquivo, conferidas pel
 |---|---|
 | Stopover da TAP, uma noite na cidade | Informação do Diego (19/10/2026); não aparece no material gravado |
 | Manhã livre, até o almoço e o aeroporto | `IMG_4282` ("o máximo que a gente vai conseguir conhecer em uma manhã"); `IMG_4516` ("pra poder depois ir pro hotel, pegar nossas malas e ir pro aeroporto") |
+| Elevador de Santa Justa fechado | `IMG_4289` ("me parece que tá fechado, a gente não vai conseguir subir") e `IMG_4290` ("tá quebrado… manutenção"), large-v3 e turbo |
+| Pastel de nata bem na frente do elevador | `IMG_4290`: "bem na frente aqui do elevador de Santa Justa… tem uma loja aqui de pastel de nata", large-v3 e turbo |
 | Pastel de nata quentinho | `IMG_4469` e `IMG_4290`, large-v3 e turbo |
 | 9h30, sol e 17 graus, em março | `IMG_4395` (09:31): "exatamente no dia 23… sol… 17 graus" |
 | A Sé em obra, só por fora | `IMG_4405`: "está até em reforma… não vai conseguir entrar" |
@@ -63,19 +66,20 @@ Regra: **10 minutos mais próximos**. As horas reais (do arquivo, conferidas pel
 |---|---|
 | Placa com Chegada no quadro 0 | ✅ `LISBOA EM / 1 MANHÃ`, x 72 · y 640; CTA no fim na mesma posição (2 placas) |
 | Legendas | ✅ Padrão com scrim, ≤ 2 linhas, ≤ 26 caracteres, ≤ 6 palavras, 2 Destaques ("17" e "pé") a mais de 3 s, centradas em x 540 |
-| Informação | ✅ 1 dado (a hora) em cada parada, acima da legenda em x 72 |
-| Transições | ✅ 1 família (Snap, "lista rápida"), 5 Snaps em 22 cortes (77% secos); obturador só no primeiro e no último (4.6) |
-| Som | ✅ *clack* nas 2 placas, obturador 2 vezes; ambiente a −28 LUFS sob a voz (−16); selfies com fala ficam mudas; master −14 LUFS e ≤ −1 dBTP |
+| Informação | ✅ 1 dado (a hora) em cada parada, acima da legenda em x 72; uma sai antes de a próxima entrar |
+| Transições | ✅ 1 família (Snap, "lista rápida"), 5 Snaps em 25 cortes (80% secos); obturador só no primeiro e no último (4.6) |
+| Som | ✅ *clack* nas 2 placas, obturador 2 vezes; ambiente a −28 LUFS sob a voz (−16); os 2 planos com fala de alguém ficam mudos; master −14 LUFS e ≤ −1 dBTP |
 | UI | ✅ Nada no topo (0–256), na base (1440–1920) nem na direita |
 | Hook | ✅ 4 palavras na placa; narração desde 0,15 s |
-| Duração | ⚠️ ≈ 49 s na estimativa (a referência de conteúdo recomenda 7–30 s na fase de crescimento; máximo < 3 min). Um "tudo que fizemos" com 9 paradas pede mais tempo; se quiser encurtar, as falas da Sé e do segundo pastel saem sem quebrar a história (−6 s) |
+| Duração | ⚠️ ≈ 53 s na estimativa (a referência de conteúdo recomenda 7–30 s na fase de crescimento; máximo < 3 min). Um "tudo que fizemos" com 9 paradas pede mais tempo; se quiser encurtar, as falas da Sé e do segundo pastel saem sem quebrar a história (−6 s) |
 
 ## Decisões desta revisão
 
 - **Narração do Diego, gravada agora sobre material de março.** Não quebra a continuidade: é uma narração no passado ("foi", "fez"), como a do Reel de apresentação. Fica registrada como gravação nova pedida pelo Diego.
 - **Sem voz sintética.** A prévia guia não tem voz; o Reel final só existe com a gravação dele.
 - **Corte preso à narração.** Cada fala tem os seus planos (`planos` com `peso`); a duração sai do tempo da voz. Se a fala ficar mais longa que o bruto disponível, o `rev1.py` avisa qual plano trocar.
-- **Paisagem e comida** em 20 dos 23 planos (pedido do Diego). Só 3 são selfies com fala (`IMG_4282`, `IMG_4490`, `IMG_4525`), e entram mudas.
+- **Paisagem e comida primeiro; gente só quando ilustra a fala** (pedido do Diego, 19/10/2026). 24 dos 26 planos são paisagem, rua ou comida. Ficam 2 com pessoas, ambos mudos: `IMG_4289`, o único registro do elevador (a torre aparece ao fundo e o Diego aponta para ela; de 7,2 s em diante a câmera gira e borra), e `IMG_4490`, a Marina mostrando o tamanho do pastel de bacalhau ("só que maior"). Saíram as selfies `IMG_4282` e `IMG_4525` e a fala ao vivo do elevador.
+- **Elevador:** não há plano só da torre no material; o recorte em x 1313 do `IMG_4289` é o que mais mostra a torre sem perder o gesto. Plano dedicado da torre fica como **material futuro**, se o Diego voltar a Lisboa.
 
 ## Como refazer
 

@@ -1,6 +1,6 @@
 # Roteiro da narração · "Isso é tudo que a gente fez em Lisboa em uma manhã"
 
-Para o Diego gravar. Leia em tom de conversa, como se contasse para um amigo, num ritmo animado mas sem correr. Duração esperada: **40 a 48 s**.
+Para o Diego gravar. Leia em tom de conversa, como se contasse para um amigo, num ritmo animado mas sem correr. Duração esperada: **48 a 54 s**.
 
 ## Texto para ler
 
@@ -9,7 +9,9 @@ Isso é tudo que a gente fez em Lisboa em uma manhã.
 
 Foi um stopover da TAP: uma noite na cidade e a manhã livre.
 
-Primeira parada: pastel de nata, quentinho.
+Primeira parada: Elevador de Santa Justa.
+
+Tava fechado. Mas, bem na frente dele, tinha pastel de nata quentinho.
 
 Praça do Comércio, às nove e meia: sol e dezessete graus. Em março.
 
