@@ -50,6 +50,7 @@ O arquivo sai em `../kit/mov/` com o nome da composição. Todos têm 1080 × 19
 | `src/ds/Som.tsx` | 4.6 | Sons `PD_*_v1.wav` no volume relativo à voz; `SomMoeda` (máquina de moeda) |
 | `src/kit/Kit.tsx` | 6.1 | Composições do kit, PNGs e catálogo |
 | `src/reel/Reel.tsx` | 5.2 | Reel montado a partir de `revN.json` |
+| `src/reels/casas-tortas/` | — | Reel narrado AMS-casas-tortas (REV1): montagem própria (`CasasTortas`, `CapaCasasTortas`) e o desenho animado do Reel (fileira, solo com estacas, gancho com o sofá). Ilustração só deste Reel, com cores e curvas dos tokens; não é componente da marca |
 | `scripts/kit.mjs` | 6.1 | Exportação do kit |
 
 ## Decisões de implementação (registradas, não são regra nova)

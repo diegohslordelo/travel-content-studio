@@ -1,0 +1,156 @@
+{
+ "reel": "amsterdam-casas-tortas",
+ "revisao": 1,
+ "data": "2026-10-20",
+ "planejamento": "V5 AMS-casas-tortas (IG-20261020-REE-amsterdam-trailer): trailer do vídeo longo de Amsterdam (estreia sábado, 24/10, no YouTube)",
+ "pedido": "Reel narrado sobre as Dancing Houses: sem a abertura do DS (só legenda), CTA para o YouTube no fim, planos estáticos de até 3 s, desenho animado simples no Remotion (subida dos móveis com o gancho) e animações para ilustrar a fala",
+ "nivel_ds": "B",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "fontes": {
+  "IMG_1403": {"arquivo": "IMG_1403.MOV", "drive_id": "1DEsnIxqWDA7R6GpFEG8ZuFmZoF6qyyiP", "hora": "12/03/2026 16:27:57", "nota": "Amstel visto da ponte, fileira das Dancing Houses em frente ao Waterlooplein (Ópera ao fundo)"},
+  "IMG_1404": {"arquivo": "IMG_1404.MOV", "drive_id": "17YmDDWHu16GCepIO_5BidSvT65GwnbQP", "hora": "12/03/2026 16:28:06", "nota": "Amstel contra o sol, Munttoren"},
+  "IMG_1407": {"arquivo": "IMG_1407.MOV", "drive_id": "19KXw09jJe8Qg7uDMvGQyDe7mfaJ6h2C4", "hora": "12/03/2026 16:32:06", "nota": "casas cinza e branca inclinadas, poste"},
+  "IMG_1408": {"arquivo": "IMG_1408.MOV", "drive_id": "1IwtlUm8g7UTH4mbPa3SshCPPkOYS60c_", "hora": "12/03/2026 16:32:16", "nota": "viga de içar com polia e gancho"},
+  "IMG_1410": {"arquivo": "IMG_1410.MOV", "drive_id": "1hTD87k0hDaRQ6lQVqUNn0mZObXd57JcJ", "hora": "12/03/2026 16:36:42", "nota": "rua com empenas inclinadas; Marina andando"},
+  "foto1": {"arquivo": "foto1.jpg", "origem": "enviada pelo Diego no chat em 20/10/2026 (WhatsApp, 960 × 1280)", "nota": "Amstel com barco, fileira à direita"},
+  "foto2": {"arquivo": "foto2.jpg", "origem": "enviada pelo Diego no chat em 20/10/2026 (WhatsApp, 960 × 1280)", "nota": "Amstel, prédio de tijolo à esquerda, poste"}
+ },
+ "narracao": {
+  "pasta_drive": "Amsterdam/Narrcao (1DqZ_OpJ4v83lfq522W_Zg8wE4eC9FQ_H)",
+  "takes": [
+   {"arquivo": "narracao_1.m4a", "drive_id": "1HpOSZH9c6ZjVZKONzIkmcHf-zBJMGKty", "nome_drive": "Praça Ernesto Lebram.m4a"},
+   {"arquivo": "narracao_2.m4a", "drive_id": "1QXK6_Q6b7cDCywfJpkTyQLjMvePpO_NO", "nome_drive": "Praça Ernesto Lebram 2.m4a"},
+   {"arquivo": "narracao_3.m4a", "drive_id": "1dRxJc2l_l-obKY4KA2MkJ8DM5s71tse3", "nome_drive": "Praça Ernesto Lebram 3.m4a"},
+   {"arquivo": "narracao_4.m4a", "drive_id": "1D4B2bXMc0VMjMnaY0tHENShX2BEqYjah", "nome_drive": "Praça Ernesto Lebram 4.m4a"},
+   {"arquivo": "narracao_5.m4a", "drive_id": "1DBvCpZxemmEtMDbGJqVVWyfEo4YXtZtL", "nome_drive": "Praça Ernesto Lebram 5.m4a"},
+   {"arquivo": "narracao_6.m4a", "drive_id": "1bbc7jpYquGe9fGldAwG2JGeDBvD-avFC", "nome_drive": "Praça Ernesto Lebram 6.m4a", "declip": true},
+   {"arquivo": "narracao_7.m4a", "drive_id": "1n3MgIVpjLEyYFc3nStNtTj6mHJgaDj_V", "nome_drive": "Praça Ernesto Lebram 7.m4a", "declip": true},
+   {"arquivo": "narracao_8.m4a", "drive_id": "1cB_laKyLa6OsC7bdOMG1Vty4e7MHbLoy", "nome_drive": "Praça Ernesto Lebram 8.m4a"},
+   {"arquivo": "narracao_9.m4a", "drive_id": "1DmgGLqspE7zSpu3LWVEAv0O9bMBtoFfg", "nome_drive": "Praça Ernesto Lebram 9.m4a", "declip": true}
+  ],
+  "pausas": [0.3, 0.3, 0.45, 0.25, 0.35, 0.3, 0.6, 0.3],
+  "pausa_motivo": "entre os takes: 0,45 s antes da Varredura (take 4) e 0,60 s antes do Cinema (take 8); 0,25 s dentro do desenho do solo (takes 4 → 5)",
+  "inicio": 0.0,
+  "cauda": 0.12
+ },
+ "legendas": [
+  {
+   "take": 1,
+   "grupos": [
+    "Essas casas de Amsterdã",
+    "parecem estar *dançando",
+    "e o mais curioso",
+    "é que algumas ficam tortas",
+    "por causa do",
+    "próprio *chão da cidade"
+   ]
+  },
+  {
+   "take": 2,
+   "grupos": [
+    "Opa, aí você imagina",
+    "uma cidade|cheia de casas *retas",
+    "mas aí do nada",
+    "parece que cada uma",
+    "resolveu|se inclinar para um lado"
+   ]
+  },
+  {
+   "take": 3,
+   "grupos": [
+    "É como se|elas quisessem ver",
+    "o que está|acontecendo na rua",
+    "ou elas foram *empurradas",
+    "e ficaram|assim para sempre"
+   ]
+  },
+  {
+   "take": 4,
+   "grupos": [
+    "Só que existe|uma explicação real",
+    "Amsterdã foi construída",
+    "sobre um terreno|macio e encharcado",
+    "e muitas|construções antigas",
+    "dependem|de estacas de *madeira",
+    "para sustentar|suas fundações"
+   ]
+  },
+  {
+   "take": 5,
+   "grupos": [
+    "Com o passar do tempo",
+    "o terreno foi cedendo",
+    "de maneira *desigual",
+    "e algumas|casas se inclinaram",
+    "Essa fileira aí",
+    "conhecida como|Dancing Houses",
+    "fica na rua Amstel",
+    "entre os|números 100 e 112"
+   ]
+  },
+  {"take": 6, "grupos": ["Mas aí tem um *detalhe", "nem todas|as casas de Amsterdã", "são tortas|pelo mesmo motivo"]},
+  {
+   "take": 7,
+   "grupos": [
+    "Algumas fachadas|foram projetadas para",
+    "se inclinar para *frente",
+    "facilitando|a entrada de móveis",
+    "pelos andares superiores"
+   ]
+  },
+  {"take": 8, "grupos": ["Pois é, e o que parecia", "um erro de construção", {"emocional": "virou parte do|*charme* da cidade"}]},
+  {
+   "take": 9,
+   "grupos": [
+    "E aí é que tá",
+    "a magia da viagem",
+    "você sai|procurando um lugar bonito",
+    "e no final",
+    "descobre que tudo tem",
+    "uma *história por trás"
+   ]
+  }
+ ],
+ "planos": [
+  {"id": "abertura", "em": "Essas@1", "tipo": "foto", "fonte": "IMG_1410", "t": 1.0, "recorte": [2700, 1150, 1000], "funcao": "gancho: empenas tortas em contra-plongée"},
+  {"id": "tortas", "em": "e@1", "tipo": "foto", "fonte": "IMG_1407", "t": 0.3, "recorte": [1450, 1080, 1215], "funcao": "\"algumas ficam tortas\": casas cinza e branca inclinadas"},
+  {"id": "chao", "em": "por@1", "tipo": "foto", "fonte": "foto2", "recorte": [480, 640, 720], "funcao": "\"chão da cidade\": água e cais"},
+  {"id": "retas", "em": "Opa@2", "tipo": "desenho", "desenho": "retas", "funcao": "\"imagina uma cidade cheia de casas retas\" → cada uma se inclina para um lado"},
+  {"id": "rua", "em": "É@3", "tipo": "foto", "fonte": "IMG_1410", "t": 3.6, "recorte": [1750, 1080, 1215], "funcao": "\"ver o que está acontecendo na rua\""},
+  {"id": "empurrao", "em": "ou@3", "tipo": "desenho", "desenho": "empurrao", "funcao": "\"ou elas foram empurradas\": a mão empurra a última casa reta"},
+  {"id": "solo", "em": "Só@4", "tipo": "desenho", "desenho": "solo", "transicao": "varredura", "funcao": "explicação: terreno macio, estacas de madeira, terreno cede, casas inclinam"},
+  {"id": "fileira", "em": "Essa@5", "tipo": "video", "fonte": "IMG_1403", "t": 0.0, "recorte": [1650, 1180, 900], "estabilizar": [0, 900, 3840, 1700], "funcao": "\"Essa fileira aí\": as Dancing Houses de verdade, com o barco passando"},
+  {"id": "amstel", "em": "rua@5", "tipo": "foto", "fonte": "foto1", "recorte": [480, 640, 720], "funcao": "\"rua Amstel, entre os números 100 e 112\""},
+  {"id": "detalhe", "em": "Mas@6", "tipo": "foto", "fonte": "IMG_1408", "t": 0.4, "recorte": [1650, 800, 860], "funcao": "\"tem um detalhe\": a viga de içar real, com polia e gancho, ocupa o quadro"},
+  {"id": "motivo", "em": "são@6", "tipo": "foto", "fonte": "IMG_1407", "t": 0.3, "recorte": [1250, 770, 860], "funcao": "\"são tortas pelo mesmo motivo\""},
+  {"id": "gancho", "em": "Algumas@7", "tipo": "desenho", "desenho": "gancho", "funcao": "fachada inclinada para a frente e o sofá subindo pelo gancho"},
+  {"id": "fim", "em": "Pois@8", "tipo": "video", "fonte": "IMG_1404", "t": 0.0, "recorte": [1900, 1080, 1100], "estabilizar": [0, 900, 3840, 1600], "transicao": "cinema", "funcao": "respiro antes da conclusão"},
+  {"id": "charme", "em": "virou@8", "tipo": "foto", "fonte": "foto2", "recorte": [560, 640, 720], "funcao": "legenda Emocional \"virou parte do CHARME da cidade\""},
+  {"id": "magia", "em": "E@9", "tipo": "video", "fonte": "IMG_1404", "t": 2.6, "recorte": [1450, 1080, 1100], "estabilizar": [0, 900, 3840, 1600], "funcao": "\"a magia da viagem\""},
+  {"id": "procurando", "em": "você@9", "tipo": "foto", "fonte": "IMG_1410", "t": 4.3, "recorte": [700, 1080, 1215], "funcao": "\"você sai procurando um lugar bonito\": a Marina andando na rua"},
+  {"id": "historia", "em": "e#2@9", "tipo": "foto", "fonte": "IMG_1403", "t": 2.6, "recorte": [2150, 1180, 900], "funcao": "\"no final descobre que tudo tem uma história por trás\": a Rota liga a caminhada às Dancing Houses", "transicao": "rota"},
+  {"id": "cta", "em": "fim@9+250", "tipo": "foto", "fonte": "IMG_1403", "t": 0.8, "recorte": [1800, 1080, 1215], "dur": 2.9, "funcao": "CTA para o vídeo completo no YouTube: a fileira das Dancing Houses com céu livre para a placa (y 640)"}
+ ],
+ "eventos": {"retas.sobe": "imagina@2", "retas.inclina": ["cada@2", "uma#2@2", "resolveu@2", "inclinar@2"], "empurrao.mao": "empurradas@3-350", "solo.terreno": "terreno@4", "solo.estacas": "estacas@4", "solo.fundacoes": "fundações@4", "solo.tempo": "Com@5", "solo.cede": "cedendo@5", "solo.inclina": "inclinaram@5-200", "gancho.sobe": "Algumas@7+150", "gancho.inclina": "inclinar@7-100", "gancho.sobe2": "facilitando@7", "gancho.entra": "superiores@7", "gancho.bate": "projetadas@7"},
+ "informacao": [
+  {"em": "Amstel@5", "fim": "fim@5+500", "rotulo": "AMSTEL · AMSTERDAM", "numero": "100–112", "fonte_do_dado": "amsterdam.nl, \"De dansende huizen\": Amstel 100 a 112, em frente ao Waterlooplein"}
+ ],
+ "cta": {"rotulo": "VÍDEO COMPLETO · SÁBADO 24/10", "destino": "NO YOUTUBE", "modulo": "seta", "tamanho": "M", "fonte_do_dado": "planejamento V5: estreia do vídeo longo de Amsterdam no sábado, 24/10/2026"},
+ "sons": [
+  {"nome": "rangido", "em": "cada@2", "rel_db": -14, "motivo": "primeira casa do desenho se inclina"},
+  {"nome": "tuc", "em": "empurradas@3", "rel_db": -12, "motivo": "a mão empurra a casa"},
+  {"nome": "clack", "em": "solo+0", "rel_db": -10, "motivo": "Varredura de Placa (DS 4.4 e 4.6)"},
+  {"nome": "estaca", "em": "estacas@4+350", "rel_db": -12, "motivo": "a primeira estaca crava"},
+  {"nome": "rangido", "em": "inclinaram@5-200", "rel_db": -14, "motivo": "as casas do desenho se inclinam com o terreno"},
+  {"nome": "tick", "em": "Amstel@5", "rel_db": -14, "motivo": "Giro do número na legenda Informação (DS 4.6)"},
+  {"nome": "tuc", "em": "projetadas@7", "rel_db": -12, "motivo": "o sofá bate na fachada reta"},
+  {"nome": "roldana", "em": "facilitando@7", "rel_db": -16, "motivo": "o sofá sobe livre"},
+  {"nome": "plim", "em": "superiores@7+250", "rel_db": -12, "motivo": "o sofá entra pela janela de cima (chegada ao destino)"},
+  {"nome": "clack", "em": "cta+280", "rel_db": -10, "motivo": "placa de CTA assenta (Chegada)"}
+ ],
+ "mix": {"voz_lufs": -16, "ambiente_lufs": -31, "cinema_ambiente_rel_db": -6, "master_lufs": -14, "master_pico_dbtp": -1},
+ "trilha": "nenhuma no arquivo: música da biblioteca do Instagram na hora de postar, 8 a 10 dB abaixo da voz (DS 4.6)",
+ "capa": {"plano": "abertura", "rotulo": "POR QUE AS CASAS DE AMSTERDAM", "destino": "DANÇAM", "modulo": "interrogacao", "tamanho": "M"}
+}
