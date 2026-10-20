@@ -4,8 +4,9 @@
 
 | Item | Valor |
 |---|---|
-| Arquivo | `reel_lisboa-manha_rev2.mp4` · 1080 × 1920 · 30 fps · 60,5 s · −14,0 LUFS · pico verdadeiro −3,1 dBTP · só voz e sons da marca (a trilha entra no Instagram) |
+| Arquivo | `reel_lisboa-manha_rev2.mp4` · 1080 × 1920 · 30 fps · 60,4 s · −14,0 LUFS · pico verdadeiro −2,8 dBTP · só voz e sons da marca (a trilha entra no Instagram) |
 | Prévia leve | `reel_lisboa-manha_rev2_previa.mp4` (540 × 960) |
+| Versão com a voz acelerada | `reel_lisboa-manha_rev2_rapida.mp4` (+ `_previa`): voz a 1,08× com o tom preservado (`atempo`), pausas na mesma proporção; o corte é refeito sobre a voz nova. 56,2 s · −14,0 LUFS · pico −3,1 dBTP. Gerada com `VELOCIDADE=1.08 python3 rev2.py tudo` |
 | Capa | `capa_lisboa-manha_rev2.jpg` (telhados de Alfama + Placa `LISBOA EM / 1 MANHÃ`) |
 | Folha de quadros | `qa_frames/planos_rev2.jpg` (um quadro de cada um dos 33 planos, com legendas e etiquetas) |
 | Legenda do post | `legenda_post.md` (o roteiro com as horas, para salvar) |
