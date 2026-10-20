@@ -1,0 +1,473 @@
+{
+ "reel": "amsterdam-casas-tortas",
+ "revisao": 2,
+ "data": "2026-10-20",
+ "planejamento": "IG-20261020-REE-amsterdam-trailer (20/10/2026, 19:00)",
+ "nivel_ds": "A",
+ "fps": 24,
+ "largura": 1080,
+ "altura": 1920,
+ "fontes": {
+  "IMG_1403-1": {
+   "arquivo": "IMG_1403-1.MOV",
+   "drive_id": "1EOQbzmEXD7jcTBVe5hKlWgg2Hdu5FqWZ",
+   "hdr": true,
+   "girar": "auto",
+   "nota": "versão vertical (1214 × 2160) do IMG_1403, feita no próprio iPhone"
+  },
+  "IMG_1403": {
+   "arquivo": "IMG_1403.MOV",
+   "drive_id": "1DEsnIxqWDA7R6GpFEG8ZuFmZoF6qyyiP",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_1406": {
+   "arquivo": "IMG_1406.MOV",
+   "drive_id": "1G6QRVm4RFXRCHKj3Vp3FcMEGACKvwXrW",
+   "hdr": true,
+   "girar": "auto",
+   "nota": "só o áudio (a imagem treme 6 a 10 px)"
+  },
+  "IMG_1407": {
+   "arquivo": "IMG_1407.MOV",
+   "drive_id": "19KXw09jJe8Qg7uDMvGQyDe7mfaJ6h2C4",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_1408": {
+   "arquivo": "IMG_1408.MOV",
+   "drive_id": "1IwtlUm8g7UTH4mbPa3SshCPPkOYS60c_",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_1409": {
+   "arquivo": "IMG_1409.MOV",
+   "drive_id": "1GWMu4sjl44VGECedDEJktclw0ZAF7fgS",
+   "hdr": true,
+   "girar": 180,
+   "nota": "gravado na horizontal de cabeça para baixo; o metadado de rotação (-90) está errado · só o áudio (a imagem treme 6 a 10 px)"
+  },
+  "IMG_1410": {
+   "arquivo": "IMG_1410.MOV",
+   "drive_id": "1hTD87k0hDaRQ6lQVqUNn0mZObXd57JcJ",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_1404": {
+   "arquivo": "IMG_1404.MOV",
+   "hdr": true,
+   "girar": "auto",
+   "nota": "local desde a rev1; drive_id não registrado"
+  },
+  "IMG_1437": {
+   "arquivo": "IMG_1437.MOV",
+   "hdr": true,
+   "girar": "auto",
+   "drive_id": "11R50r9kJVcaDZJiH3nVMsIsVVf6DLDI3"
+  }
+ },
+ "cenas": [
+  {
+   "id": "gancho",
+   "fonte": "IMG_1403-1",
+   "in": 1.0,
+   "out": 4.76,
+   "audio": "mudo"
+  },
+  {
+   "id": "solo_1",
+   "fonte": "IMG_1404",
+   "in": 1.96,
+   "out": 3.86,
+   "audio": "mudo",
+   "recorte_x": [
+    [
+     0,
+     2624
+    ]
+   ]
+  },
+  {
+   "id": "solo_2",
+   "fonte": "IMG_1437",
+   "in": 2.3,
+   "out": 4.23,
+   "audio": "mudo",
+   "recorte_x": [
+    [
+     0,
+     200
+    ]
+   ]
+  },
+  {
+   "id": "proposito_1",
+   "fonte": "IMG_1407",
+   "in": 0.3,
+   "out": 2.4,
+   "audio": "mudo",
+   "recorte_x": [
+    [
+     0,
+     520
+    ]
+   ],
+   "kenburns": true
+  },
+  {
+   "id": "proposito_2",
+   "fonte": "IMG_1410",
+   "in": 0.15,
+   "out": 2.27,
+   "audio": "mudo",
+   "recorte_x": [
+    [
+     0,
+     2560
+    ],
+    [
+     1.8,
+     2300
+    ]
+   ]
+  },
+  {
+   "id": "ganchos_1",
+   "fonte": "IMG_1404",
+   "in": 0.1,
+   "out": 1.6,
+   "audio": "mudo",
+   "recorte_x": [
+    [
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "id": "ganchos_2",
+   "fonte": "IMG_1408",
+   "in": 0.05,
+   "out": 1.98,
+   "audio": "mudo",
+   "recorte_x": [
+    [
+     0,
+     1150
+    ]
+   ]
+  },
+  {
+   "id": "fachada_1",
+   "fonte": "IMG_1410",
+   "in": 2.85,
+   "out": 5.05,
+   "audio": "mudo",
+   "recorte_x": [
+    [
+     0,
+     2352
+    ]
+   ]
+  },
+  {
+   "id": "fachada_2",
+   "fonte": "IMG_1403",
+   "in": 0.3,
+   "out": 2.55,
+   "audio": "mudo",
+   "recorte_x": [
+    [
+     0,
+     1100
+    ]
+   ]
+  },
+  {
+   "id": "fim",
+   "fonte": "IMG_1403",
+   "in": 2.3,
+   "out": 5.6,
+   "audio": "mudo",
+   "recorte_x": [
+    [
+     0,
+     1600
+    ],
+    [
+     3.0,
+     2190
+    ]
+   ]
+  }
+ ],
+ "audios": [
+  {
+   "id": "demos",
+   "fonte": "IMG_1406",
+   "in": 6.56,
+   "out": 10.22,
+   "tipo": "voz",
+   "inicio": {
+    "cena": "gancho",
+    "t": 0.0
+   }
+  },
+  {
+   "id": "solo",
+   "fonte": "IMG_1409",
+   "in": 0.92,
+   "out": 4.55,
+   "tipo": "voz",
+   "inicio": {
+    "cena": "solo_1",
+    "t": 0.08
+   }
+  },
+  {
+   "id": "proposito",
+   "fonte": "IMG_1409",
+   "in": 5.2,
+   "out": 9.22,
+   "tipo": "voz",
+   "inicio": {
+    "cena": "proposito_1",
+    "t": 0.08
+   }
+  },
+  {
+   "id": "ganchos",
+   "fonte": "IMG_1409",
+   "in": 9.82,
+   "out": 13.05,
+   "tipo": "voz",
+   "inicio": {
+    "cena": "ganchos_1",
+    "t": 0.08
+   }
+  },
+  {
+   "id": "fachada",
+   "fonte": "IMG_1409",
+   "in": 18.1,
+   "out": 22.35,
+   "tipo": "voz",
+   "inicio": {
+    "cena": "fachada_1",
+    "t": 0.08
+   }
+  },
+  {
+   "id": "torta",
+   "fonte": "IMG_1409",
+   "in": 23.88,
+   "out": 26.7,
+   "tipo": "voz",
+   "inicio": {
+    "cena": "fim",
+    "t": 0.1
+   }
+  }
+ ],
+ "transicoes": [],
+ "placa": {
+  "cena": "gancho",
+  "t": 0,
+  "saida": 2.0,
+  "variante": "hook",
+  "rotulo": "CASAS TORTAS EM AMSTERDAM",
+  "destino": "DE PROPÓSITO",
+  "modulo": "interrogacao",
+  "tamanho": "G"
+ },
+ "placas": [
+  {
+   "cena": "fim",
+   "t": 1.0,
+   "variante": "cta",
+   "rotulo": "O PRIMEIRO DIA INTEIRO",
+   "destino": "SÁBADO NO YOUTUBE",
+   "modulo": "seta",
+   "tamanho": "M"
+  }
+ ],
+ "tickets": [
+  {
+   "cena": "fachada_1",
+   "t": 0.5,
+   "saida": 3.3,
+   "variante": "sabia",
+   "micro": "CURIOSIDADE · DIA 1",
+   "x": 72,
+   "y": 1000
+  }
+ ],
+ "informacao": [
+  {
+   "cena": "solo_1",
+   "t": 0.1,
+   "fim": 2.4,
+   "rotulo": "QUINTA · 12/03 · AMSTERDAM",
+   "numero": "16H30",
+   "fonte_do_dado": "IMG_1406 criado 12/03/2026 16:30:26 (+01:00); IMG_1409 16:33:54"
+  }
+ ],
+ "legendas": [
+  {
+   "audio": "demos",
+   "modo": "grupo",
+   "grupos": [
+    {
+     "texto": "demos de cara com|as dancing houses",
+     "ini": 6.6,
+     "fim": 8.62
+    },
+    {
+     "texto": "aqui atrás de mim",
+     "ini": 8.62,
+     "fim": 10.22
+    }
+   ]
+  },
+  {
+   "audio": "solo",
+   "modo": "grupo",
+   "grupos": [
+    {
+     "texto": "essas casas, elas|foram ficando assim",
+     "ini": 0.94,
+     "fim": 2.62
+    },
+    {
+     "texto": "com o tempo",
+     "ini": 2.62,
+     "fim": 3.24
+    },
+    {
+     "texto": "por causa do solo macio",
+     "ini": 3.24,
+     "fim": 4.55
+    }
+   ]
+  },
+  {
+   "audio": "proposito",
+   "modo": "grupo",
+   "grupos": [
+    {
+     "texto": "mas elas são construídas",
+     "ini": 5.22,
+     "fim": 7.12
+    },
+    {
+     "texto": "inclinadas pra frente|de *propósito*",
+     "ini": 7.12,
+     "fim": 9.22,
+     "destaque_em": 8.34
+    }
+   ]
+  },
+  {
+   "audio": "ganchos",
+   "modo": "grupo",
+   "grupos": [
+    {
+     "texto": "porque há muito tempo atrás",
+     "ini": 9.84,
+     "fim": 10.92
+    },
+    {
+     "texto": "eles subiam móveis|pelos ganchos aí",
+     "ini": 10.92,
+     "fim": 13.05
+    }
+   ]
+  },
+  {
+   "audio": "fachada",
+   "modo": "grupo",
+   "grupos": [
+    {
+     "texto": "pras coisas|que forem subindo",
+     "ini": 18.12,
+     "fim": 20.44
+    },
+    {
+     "texto": "não batendo|a fachada do prédio",
+     "ini": 20.44,
+     "fim": 22.35
+    }
+   ]
+  },
+  {
+   "audio": "torta",
+   "modo": "grupo",
+   "grupos": [
+    {
+     "texto": "e aí, por isso que dá",
+     "ini": 23.9,
+     "fim": 25.18
+    },
+    {
+     "texto": "esse efeito de casa *torta*",
+     "ini": 25.18,
+     "fim": 26.7,
+     "destaque_em": 25.94
+    }
+   ]
+  }
+ ],
+ "sons": [
+  {
+   "nome": "clack",
+   "cena": "gancho",
+   "t": 0.28,
+   "rel_db": -10,
+   "motivo": "placa do gancho assenta (Chegada, 280 ms)"
+  },
+  {
+   "nome": "clack",
+   "cena": "fim",
+   "t": 1.28,
+   "rel_db": -10,
+   "motivo": "placa do CTA assenta (Chegada, 280 ms)"
+  }
+ ],
+ "capa": {
+  "cena": "gancho",
+  "t": 1.2,
+  "placa": {
+   "rotulo": "CASAS TORTAS EM AMSTERDAM",
+   "destino": "DE PROPÓSITO",
+   "modulo": "interrogacao",
+   "tamanho": "G"
+  },
+  "origem": "planejamento V5: fachadas tortas com Placa \"TORTAS DE PROPÓSITO?\" (Hook)"
+ },
+ "variantes": {
+  "sem-data": {
+   "motivo": "se o vlog de Amsterdam não sair no sábado, 24/10 (o pacote do Diego ainda não chegou ao Drive em 19/10)",
+   "placas": [
+    {
+     "cena": "fim",
+     "t": 1.0,
+     "variante": "cta",
+     "destino": "MANDA PRA QUEM VAI",
+     "modulo": "seta",
+     "tamanho": "M"
+    }
+   ]
+  }
+ },
+ "mix": {
+  "voz_lufs": -16,
+  "ambiente_lufs": -30,
+  "master_lufs": -14,
+  "master_pico_dbtp": -1
+ },
+ "trilha": "nenhuma no arquivo; se quiser, biblioteca do Instagram na hora de postar, 8 a 10 dB abaixo da voz (DS V2, 4.6)",
+ "origem": "rev1 sem os planos tremidos (pedido do Diego, 20/10/2026): a fala do Diego andando (IMG_1406/IMG_1409) vira só voz, coberta por planos estáveis das casas; 24 fps; fins de fala sem cortar a última palavra",
+ "fps_nota": "24 fps, igual aos brutos do iPhone (em 30 fps a conversão repete 1 quadro a cada 4 e as panorâmicas engasgam). Decisão desta revisão; o FPS de produção geral segue pendente (CLAUDE.md, 14.5)",
+ "audios_nota": "fins de fala 0,2–0,3 s depois de a voz acabar (na rev1 cortavam a última palavra)",
+ "audio": "só a voz do Diego e os sons de marca; a trilha entra no Instagram (DS V2, 4.6)"
+}

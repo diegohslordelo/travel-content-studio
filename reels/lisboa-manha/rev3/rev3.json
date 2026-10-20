@@ -1,0 +1,914 @@
+{
+ "reel": "lisboa-manha",
+ "revisao": 3,
+ "data": "2026-10-20",
+ "origem": "rev2 (versão em tempo normal, escolhida pelo Diego em 20/10/2026) com os planos tremidos trocados ou encurtados, o pastel da Castro centralizado e mais vistas nos miradouros",
+ "nivel_ds": "A",
+ "fps": 24,
+ "largura": 1080,
+ "altura": 1920,
+ "pasta_brutos": "carrosseis/lisboa-manha/fonte",
+ "horas": "arredondadas para os 10 minutos mais próximos (pedido do Diego, 19/10/2026); horas reais em info.real e no QA",
+ "narracao": {
+  "pasta": "reels/lisboa-manha/fonte/narracao_brutos",
+  "tomadas": [
+   "narr_06",
+   "narr_07",
+   "narr_08",
+   "narr_09",
+   "narr_10",
+   "narr_11",
+   "narr_12",
+   "narr_14",
+   "narr_15",
+   "narr_16"
+  ],
+  "fora": {
+   "narr_13": "0,8 s quase sem sinal (−49 LUFS); a transcrição automática leu \"Tchau\": sobra de gravação"
+  },
+  "origem_drive": "Praça Ernesto Lebram 6.m4a … 16.m4a (Drive, pasta Lisboa); narr_NN = arquivo NN",
+  "limpeza": "passa-alta 80 Hz + redução de ruído FFT (afftdn) + cada tomada a −16 LUFS",
+  "pausa_entre_tomadas": 0.3,
+  "inicio": 0.15,
+  "cauda": 2.0
+ },
+ "placa": {
+  "fala": "gancho",
+  "t": 0,
+  "saida": 2.6,
+  "rotulo": "LISBOA EM",
+  "destino": "1 MANHÃ",
+  "modulo": "seta",
+  "tamanho": "G"
+ },
+ "placa_cta": {
+  "t": 0.4,
+  "destino": "SALVA PRA VIAGEM",
+  "modulo": "seta",
+  "tamanho": "M"
+ },
+ "capa": {
+  "t": 1.2,
+  "placa": {
+   "rotulo": "LISBOA EM",
+   "destino": "1 MANHÃ",
+   "modulo": "seta",
+   "tamanho": "G"
+  }
+ },
+ "mix": {
+  "voz_lufs": -16,
+  "master_lufs": -14,
+  "master_pico_dbtp": -1
+ },
+ "trilha": "biblioteca do Instagram na hora de postar: instrumental, sem letra, 8 a 10 dB abaixo da voz (DS V2, 4.6)",
+ "fontes": {
+  "IMG_4416": {
+   "arquivo": "IMG_4416.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4283": {
+   "arquivo": "IMG_4283.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4307": {
+   "arquivo": "IMG_4307.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4285": {
+   "arquivo": "IMG_4285.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4286": {
+   "arquivo": "IMG_4286.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4294": {
+   "arquivo": "IMG_4294.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4299": {
+   "arquivo": "IMG_4299.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4291": {
+   "arquivo": "IMG_4291.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4308": {
+   "arquivo": "IMG_4308.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4367": {
+   "arquivo": "IMG_4367.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4383": {
+   "arquivo": "IMG_4383.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4384": {
+   "arquivo": "IMG_4384.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4402": {
+   "arquivo": "IMG_4402.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4404": {
+   "arquivo": "IMG_4404.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4410": {
+   "arquivo": "IMG_4410.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4412": {
+   "arquivo": "IMG_4412.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4423": {
+   "arquivo": "IMG_4423.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4461": {
+   "arquivo": "IMG_4461.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4465": {
+   "arquivo": "IMG_4465.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4470": {
+   "arquivo": "IMG_4470.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4472": {
+   "arquivo": "IMG_4472.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4478": {
+   "arquivo": "IMG_4478.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4485": {
+   "arquivo": "IMG_4485.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4477": {
+   "arquivo": "IMG_4477.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4506": {
+   "arquivo": "IMG_4506.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4522": {
+   "arquivo": "IMG_4522.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4519": {
+   "arquivo": "IMG_4519.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4411": {
+   "arquivo": "IMG_4411.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "IMG_4433": {
+   "arquivo": "IMG_4433.MOV",
+   "hdr": true,
+   "girar": "auto"
+  },
+  "FOTO_ELEVADOR": {
+   "arquivo": "../../../reels/lisboa-manha/fonte/foto_elevador_santa_justa.jpg",
+   "hdr": false,
+   "girar": 0,
+   "foto": true,
+   "nota": "foto do Elevador de Santa Justa enviada pelo Diego (19/10/2026), 1932 × 2576; fica em reels/lisboa-manha/fonte (fora do git)"
+  },
+  "IMG_4476": {
+   "arquivo": "IMG_4476.MOV",
+   "hdr": true,
+   "girar": "auto"
+  }
+ },
+ "falas": [
+  {
+   "id": "gancho",
+   "tomada": "narr_06",
+   "grupos": [
+    {
+     "fala": "Isso é tudo o que fizemos",
+     "tela": "isso é tudo o que fizemos"
+    },
+    {
+     "fala": "em uma manhã em Lisboa.",
+     "tela": "em uma manhã em Lisboa"
+    }
+   ],
+   "planos": [
+    {
+     "fonte": "IMG_4416",
+     "in": 3.0,
+     "nota": "antes de 2,5 s o rosto da Marina aparece na borda esquerda"
+    }
+   ]
+  },
+  {
+   "id": "contexto",
+   "tomada": "narr_07",
+   "grupos": [
+    {
+     "fala": "Fizemos um stopover pela TAP,",
+     "tela": "fizemos um stopover|pela TAP,"
+    },
+    {
+     "fala": "tivemos uma noite",
+     "tela": "tivemos uma noite"
+    },
+    {
+     "fala": "e uma manhã livre.",
+     "tela": "e uma manhã livre"
+    }
+   ],
+   "planos": [
+    {
+     "fonte": "IMG_4283",
+     "in": 1.08,
+     "recorte_x": [
+      [
+       0,
+       1100
+      ]
+     ],
+     "info": {
+      "rotulo": "SEG · 23/03 · LISBOA",
+      "numero": "08H50",
+      "real": "08:49 (saída do hotel)"
+     }
+    },
+    {
+     "fonte": "IMG_4307",
+     "in": 0.3,
+     "recorte_x": [
+      [
+       0,
+       1500
+      ]
+     ],
+     "corte_em": "tivemos"
+    }
+   ]
+  },
+  {
+   "id": "parada",
+   "tomada": "narr_07",
+   "grupos": [
+    {
+     "fala": "A nossa primeira parada",
+     "tela": "a nossa primeira parada"
+    },
+    {
+     "fala": "foi o Elevador de Santa Justa.",
+     "tela": "foi o Elevador|de Santa Justa"
+    },
+    {
+     "fala": "Ele é praticamente",
+     "tela": "ele é praticamente"
+    },
+    {
+     "fala": "o Elevador Lacerda de Lisboa.",
+     "tela": "o Elevador *Lacerda*|de Lisboa",
+     "destaque_fala": "Lacerda"
+    },
+    {
+     "fala": "Ele estava fechado,",
+     "tela": "ele estava fechado,"
+    }
+   ],
+   "planos": [
+    {
+     "fonte": "IMG_4285",
+     "in": 0.5,
+     "recorte_x": [
+      [
+       0,
+       1300
+      ]
+     ]
+    },
+    {
+     "fonte": "FOTO_ELEVADOR",
+     "recorte": {
+      "x": 260,
+      "y": 0,
+      "w": 1449,
+      "h": 2576
+     },
+     "kenburns": true,
+     "nota": "foto do Diego, recortada em 9:16 na torre, com o Ken Burns do DS (100 → 104%); substitui o IMG_4289, que tremia (8 px)",
+     "corte_em": "Elevador",
+     "info": {
+      "rotulo": "ELEVADOR DE SANTA JUSTA",
+      "numero": "09H00",
+      "real": "08:55"
+     }
+    }
+   ]
+  },
+  {
+   "id": "castro",
+   "tomada": "narr_08",
+   "grupos": [
+    {
+     "fala": "mas bem na frente dele",
+     "tela": "mas bem na frente dele"
+    },
+    {
+     "fala": "tinha um pastel de nata",
+     "tela": "tinha um pastel de nata"
+    },
+    {
+     "fala": "da Castro,",
+     "tela": "da Castro,"
+    },
+    {
+     "fala": "que a gente não perdeu",
+     "tela": "que a gente não perdeu"
+    },
+    {
+     "fala": "a oportunidade de provar,",
+     "tela": "a oportunidade de provar,"
+    },
+    {
+     "fala": "e estava muito bom.",
+     "tela": "e estava muito bom"
+    }
+   ],
+   "planos": [
+    {
+     "fonte": "IMG_4294",
+     "in": 0.5,
+     "recorte_x": [
+      [
+       0,
+       1300
+      ]
+     ],
+     "info": {
+      "rotulo": "PASTEL DE NATA · CASTRO",
+      "numero": "09H00",
+      "real": "08:57"
+     }
+    },
+    {
+     "fonte": "IMG_4299",
+     "in": 0.5,
+     "recorte_x": [
+      [
+       0,
+       1300
+      ]
+     ],
+     "corte_em": "que"
+    },
+    {
+     "fonte": "IMG_4291",
+     "in": 0.3,
+     "recorte_x": [
+      [
+       0,
+       2000
+      ]
+     ],
+     "corte_em": "e",
+     "nota": "um prato só (o da direita), centralizado"
+    }
+   ]
+  },
+  {
+   "id": "praca",
+   "tomada": "narr_09",
+   "snap": true,
+   "grupos": [
+    {
+     "fala": "Depois fomos direto",
+     "tela": "depois fomos direto"
+    },
+    {
+     "fala": "pra Praça do Comércio,",
+     "tela": "pra Praça do Comércio,"
+    },
+    {
+     "fala": "tava um diazão,",
+     "tela": "tava um diazão,"
+    },
+    {
+     "fala": "sol, 17 graus, parecia que tava",
+     "tela": "sol, *17* graus,|parecia que tava",
+     "destaque_fala": "17"
+    },
+    {
+     "fala": "com o ar condicionado ligado.",
+     "tela": "com o ar-condicionado|ligado"
+    }
+   ],
+   "planos": [
+    {
+     "fonte": "IMG_4308",
+     "in": 0.5,
+     "recorte_x": [
+      [
+       0,
+       1500
+      ]
+     ],
+     "info": {
+      "rotulo": "PRAÇA DO COMÉRCIO",
+      "numero": "09H10",
+      "real": "09:14 (chegada; o \"17 graus\" é das 09:31)"
+     }
+    },
+    {
+     "fonte": "IMG_4367",
+     "in": 2.5,
+     "recorte_x": [
+      [
+       0,
+       1650
+      ],
+      [
+       1.5,
+       2050
+      ]
+     ],
+     "corte_em": "tava",
+     "nota": "estátua de D. José inteira; o recorte acompanha a panorâmica"
+    },
+    {
+     "fonte": "IMG_4383",
+     "in": 0.3,
+     "recorte_x": [
+      [
+       0,
+       1912
+      ],
+      [
+       1.4,
+       1560
+      ]
+     ],
+     "corte_em": "sol",
+     "nota": "Cais das Colunas: a coluna no centro"
+    },
+    {
+     "fonte": "IMG_4384",
+     "in": 4.0,
+     "recorte_x": [
+      [
+       0,
+       900
+      ],
+      [
+       2.2,
+       1450
+      ]
+     ],
+     "corte_em": "parecia",
+     "nota": "o letreiro não cabe inteiro em 9:16: o recorte lê de L a A"
+    }
+   ]
+  },
+  {
+   "id": "se",
+   "tomada": "narr_10",
+   "grupos": [
+    {
+     "fala": "A Sé de Lisboa estava em obra,",
+     "tela": "a Sé de Lisboa|estava em obra,"
+    },
+    {
+     "fala": "então só passamos por fora",
+     "tela": "então só passamos por fora"
+    }
+   ],
+   "planos": [
+    {
+     "fonte": "IMG_4402",
+     "in": 1.5,
+     "recorte_x": [
+      [
+       0,
+       1350
+      ]
+     ],
+     "info": {
+      "rotulo": "SÉ DE LISBOA",
+      "numero": "09H50",
+      "real": "09:52"
+     },
+     "nota": "as duas torres da Sé com o bonde passando na frente"
+    },
+    {
+     "fonte": "IMG_4404",
+     "in": 0.5,
+     "recorte_x": [
+      [
+       0,
+       1300
+      ]
+     ],
+     "corte_em": "então"
+    }
+   ]
+  },
+  {
+   "id": "santa-luzia",
+   "tomada": "narr_10",
+   "snap": true,
+   "grupos": [
+    {
+     "fala": "e fomos direto",
+     "tela": "e fomos direto"
+    },
+    {
+     "fala": "para o Miradouro de Santa Luzia,",
+     "tela": "para o Miradouro|de Santa Luzia,"
+    },
+    {
+     "fala": "com direito à música ao vivo",
+     "tela": "com direito à música|ao vivo"
+    },
+    {
+     "fala": "e à melhor vista da cidade.",
+     "tela": "e à melhor vista|da cidade"
+    }
+   ],
+   "planos": [
+    {
+     "fonte": "IMG_4410",
+     "in": 0.5,
+     "recorte_x": [
+      [
+       0,
+       1600
+      ]
+     ],
+     "info": {
+      "rotulo": "MIRADOURO DE SANTA LUZIA",
+      "numero": "10H00",
+      "real": "10:02"
+     }
+    },
+    {
+     "fonte": "IMG_4412",
+     "in": 1.5,
+     "recorte_x": [
+      [
+       0,
+       850
+      ]
+     ],
+     "corte_em": "com"
+    },
+    {
+     "fonte": "IMG_4423",
+     "in": 6.0,
+     "recorte_x": [
+      [
+       0,
+       1300
+      ]
+     ],
+     "corte_em": "e"
+    }
+   ]
+  },
+  {
+   "id": "portas-do-sol",
+   "tomada": "narr_11",
+   "grupos": [
+    {
+     "fala": "E do lado tinha",
+     "tela": "e do lado tinha"
+    },
+    {
+     "fala": "um outro miradouro,",
+     "tela": "um outro miradouro,"
+    },
+    {
+     "fala": "Portas do Sol.",
+     "tela": "Portas do Sol"
+    },
+    {
+     "fala": "É um pouco mais vazio,",
+     "tela": "é um pouco mais vazio,"
+    },
+    {
+     "fala": "por isso paramos para tirar foto.",
+     "tela": "por isso paramos|para tirar foto"
+    }
+   ],
+   "planos": [
+    {
+     "fonte": "IMG_4461",
+     "in": 0.3,
+     "recorte_x": [
+      [
+       0,
+       1300
+      ]
+     ],
+     "info": {
+      "rotulo": "PORTAS DO SOL",
+      "numero": "10H10",
+      "real": "10:11 (IMG_4433, primeiro registro no local pelo GPS); a vista do IMG_4461 é das 10:17"
+     }
+    },
+    {
+     "fonte": "IMG_4433",
+     "in": 9.0,
+     "recorte_x": [
+      [
+       0,
+       0
+      ]
+     ],
+     "corte_em": "É",
+     "nota": "o terraço com pouca gente e a vista (GPS do Portas do Sol, 10:11)"
+    },
+    {
+     "fonte": "IMG_4461",
+     "in": 4.2,
+     "recorte_x": [
+      [
+       0,
+       880
+      ]
+     ],
+     "corte_em": "por",
+     "nota": "vista com a igreja, o Tejo e o navio, no lugar da estátua de São Vicente (pedido do Diego, 20/10/2026)"
+    }
+   ]
+  },
+  {
+   "id": "manteigaria",
+   "tomada": "narr_12",
+   "snap": true,
+   "grupos": [
+    {
+     "fala": "amassamos mais um pastel de nata",
+     "tela": "amassamos mais um|pastel de nata"
+    },
+    {
+     "fala": "no caminho do Castelo de São Jorge.",
+     "tela": "no caminho do Castelo|de São Jorge"
+    }
+   ],
+   "planos": [
+    {
+     "fonte": "IMG_4465",
+     "in": 0.5,
+     "recorte_x": [
+      [
+       0,
+       1650
+      ]
+     ],
+     "info": {
+      "rotulo": "MANTEIGARIA",
+      "numero": "10H20",
+      "real": "10:20"
+     }
+    },
+    {
+     "fonte": "IMG_4470",
+     "in": 0.4,
+     "corte_em": "pastel"
+    },
+    {
+     "fonte": "IMG_4472",
+     "in": 1.5,
+     "recorte_x": [
+      [
+       0,
+       1300
+      ]
+     ],
+     "corte_em": "no"
+    }
+   ]
+  },
+  {
+   "id": "castelo",
+   "tomada": "narr_14",
+   "snap": true,
+   "grupos": [
+    {
+     "fala": "Ele ficou para uma próxima,",
+     "tela": "ele ficou|para uma próxima,"
+    },
+    {
+     "fala": "mas provamos um pastel de bacalhau",
+     "tela": "mas provamos um|pastel de bacalhau"
+    },
+    {
+     "fala": "que estava sensacional",
+     "tela": "que estava *sensacional*",
+     "destaque_fala": "sensacional"
+    },
+    {
+     "fala": "na frente da entrada.",
+     "tela": "na frente da entrada"
+    }
+   ],
+   "planos": [
+    {
+     "fonte": "IMG_4478",
+     "in": 0.3,
+     "recorte_x": [
+      [
+       0,
+       1300
+      ]
+     ],
+     "info": {
+      "rotulo": "CASTELO DE SÃO JORGE",
+      "numero": "10H30",
+      "real": "10:30"
+     }
+    },
+    {
+     "fonte": "IMG_4485",
+     "in": 0.5,
+     "recorte_x": [
+      [
+       0,
+       1300
+      ]
+     ],
+     "corte_em": "mas",
+     "nota": "a fachada da Casa Portuguesa do Pastel de Bacalhau segue até \"na frente da entrada\" (a vitrine IMG_4487 saiu: 3,6 px de movimento no Reel)"
+    },
+    {
+     "fonte": "IMG_4477",
+     "in": 2.0,
+     "recorte_x": [
+      [
+       0,
+       1040
+      ]
+     ],
+     "corte_em": "na"
+    }
+   ]
+  },
+  {
+   "id": "almoco",
+   "tomada": "narr_15",
+   "snap": true,
+   "grupos": [
+    {
+     "fala": "Pra fechar,",
+     "tela": "pra fechar,"
+    },
+    {
+     "fala": "finalizamos com esse almoço",
+     "tela": "finalizamos com|esse almoço"
+    },
+    {
+     "fala": "aí na Rua Augusta,",
+     "tela": "aí na Rua Augusta,"
+    },
+    {
+     "fala": "que eu não preciso nem falar nada, né?",
+     "tela": "que eu não preciso|nem falar nada"
+    }
+   ],
+   "planos": [
+    {
+     "fonte": "IMG_4506",
+     "in": 1.0,
+     "recorte_x": [
+      [
+       0,
+       1000
+      ]
+     ],
+     "info": {
+      "rotulo": "ALMOÇO · RUA AUGUSTA",
+      "numero": "12H10",
+      "real": "12:14"
+     }
+    },
+    {
+     "fonte": "IMG_4522",
+     "in": 1.5,
+     "recorte_x": [
+      [
+       0,
+       1240
+      ]
+     ],
+     "corte_em": "com"
+    },
+    {
+     "fonte": "IMG_4519",
+     "in": 0.5,
+     "recorte_x": [
+      [
+       0,
+       1100
+      ]
+     ],
+     "corte_em": "que"
+    }
+   ]
+  },
+  {
+   "id": "fim",
+   "tomada": "narr_16",
+   "grupos": [
+    {
+     "fala": "Fizemos tudo isso a pé",
+     "tela": "fizemos tudo isso a *pé*",
+     "destaque_fala": "pé"
+    },
+    {
+     "fala": "em uma manhã,",
+     "tela": "em uma manhã,"
+    },
+    {
+     "fala": "já salva pra sua escala",
+     "tela": "já salva pra sua escala"
+    },
+    {
+     "fala": "em Lisboa.",
+     "tela": "em Lisboa"
+    }
+   ],
+   "planos": [
+    {
+     "fonte": "IMG_4476",
+     "in": 7.95,
+     "recorte_x": [
+      [
+       0,
+       1300
+      ]
+     ],
+     "nota": "a Marina subindo a escadaria do mural, em Alfama (trecho estável: 0,18 px); substitui o IMG_4407, que tremia"
+    },
+    {
+     "fonte": "IMG_4411",
+     "in": 5.0,
+     "recorte_x": [
+      [
+       0,
+       1300
+      ],
+      [
+       3.2,
+       1700
+      ]
+     ],
+     "corte_em": "já",
+     "cta": true
+    }
+   ]
+  }
+ ],
+ "legendas_texto": "transcrição de referência: large-v3 sobre cada tomada; onde large-v3 e large-v3-turbo discordam, vale o large-v3 (a validação auditiva é do Diego)",
+ "legendas_nota": "\"né?\" no fim da fala do almoço fica fora da legenda (6 palavras por grupo, DS V2)",
+ "audio": "só a voz e os sons de marca (clack nas placas, obturador no primeiro e no último Snap); sem som ambiente (decisão do Diego, 19/10/2026)",
+ "fps_nota": "24 fps, igual aos brutos do iPhone: em 30 fps a conversão repete 1 quadro a cada 4 e as panorâmicas engasgam (o tremor que o Diego viu na REV2). Decisão desta revisão; o FPS de produção geral segue pendente (CLAUDE.md, 14.5)"
+}
