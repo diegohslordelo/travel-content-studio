@@ -1,0 +1,14 @@
+{
+ "AMS_tambor_v1.wav": {
+  "evento": "McCrispy: rufar em crescendo de 4.03 s, para logo antes do \"não\"",
+  "duracao_s": 4.092,
+  "lufs_50ms": -14.0,
+  "pico_dbfs": -3.2
+ },
+ "AMS_fogos_murchos_v1.wav": {
+  "evento": "McCrispy: fogos murchos logo depois do \"não\"",
+  "duracao_s": 2.452,
+  "lufs_50ms": -14.0,
+  "pico_dbfs": -6.9
+ }
+}

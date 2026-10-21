@@ -1,0 +1,28 @@
+{
+ "fonte": "fonte/1016_sem_musica.mp4 (export do CapCut do Diego, sem música, 4K 24 fps, 32:43,8)",
+ "parametros": {
+  "silencio_acima_do_piso_db": 8,
+  "janela_piso_s": 10,
+  "pad_fim": 0.18,
+  "pad_ini": 0.12,
+  "pausa_max": 0.30,
+  "pausa_longa": 3.0,
+  "min_plano": 0.5
+ },
+ "cortes_manuais": [
+  {"de": 47.50, "ate": 47.96, "verificar_silencio": true, "motivo": "[visual] giro da câmera com a mão na frente da lente (tour do quarto, 0:47)"},
+  {"de": [356.55, 356.8], "ate": [367.0, 368.1], "motivo": "[pedido do Diego] trecho do 'daora' em que a Marina fala 'tira isso daí' (5:56–6:08); a fala segue 'A prioridade aqui é a bicicleta. / As casinhas aqui são muito bonitinhas. Muito massa.'"},
+  {"de": 608.25, "ate": 608.50, "motivo": "[visual] câmera encosta no rosto da Marina (10:08)"},
+  {"de": 786.375, "ate": 787.25, "motivo": "[visual] câmera passando de mão, borrada (13:06); sai junto o 'Segura aqui'"},
+  {"de": [810.6, 811.4], "ate": [814.2, 814.9], "motivo": "[McCrispy] encurta a mastigação antes do 'Não' para caber o rufar (ficam a mordida e ≈ 4,2 s de mastigação até o 'Não')"},
+  {"de": 1354.33, "ate": 1354.71, "motivo": "[visual] câmera girando de cabeça para baixo (22:34)"},
+  {"de": 1679.30, "ate": 1680.25, "motivo": "[visual] câmera vira para o chão e mostra os pés (27:59)"},
+  {"de": 1729.83, "ate": [1733.0, 1733.45], "motivo": "[pedido do Diego] 'Saímos, tomamos a cerveja e' (28:50): o trecho começa no 'agora estamos aqui'"}
+ ],
+ "congelar": [
+  {"de": 483.417, "ate": 483.667, "quadro": 483.667, "motivo": "[visual] câmera virando no começo do plano da Kalverstraat (8:03); o 'Ui' já começou, então a imagem congela no primeiro quadro bom em vez de cortar a palavra"}
+ ],
+ "zonas_protegidas": [
+  {"de": 807.6, "ate": 815.7, "motivo": "McCrispy: o tempo da mastigação é controlado pelo corte manual (rufar)"}
+ ]
+}

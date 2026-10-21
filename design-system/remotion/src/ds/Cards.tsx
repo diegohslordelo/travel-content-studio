@@ -99,6 +99,12 @@ export type ReciboProps = {
   som?: boolean;
   /** Loudness da voz na cena (LUFS), referência dos volumes da 4.6. Padrão: −16. */
   refLufs?: number;
+  /**
+   * Correção de valor falado errado (vídeo longo de Amsterdam, pedido do Diego, 21/10/2026): em `em` ms um
+   * traço de marcador risca o total e, embaixo, a correção é escrita à mão (revelada da esquerda para a direita).
+   * A cor vem da camada de efeitos (não é cor do DS).
+   */
+  correcao?: { em: number; nota: string; cor: string };
 };
 
 const DENTE = 16; // 1.4: borda inferior serrilhada, dentes de 16 px
@@ -117,6 +123,7 @@ export const Recibo: React.FC<ReciboProps> = ({
 );
 
 const ReciboVisual: React.FC<Omit<ReciboProps, "som" | "refLufs">> = ({
+  correcao,
   lugar,
   cabecalho,
   linhas,
@@ -231,7 +238,22 @@ const ReciboVisual: React.FC<Omit<ReciboProps, "som" | "refLufs">> = ({
           >
             TOTAL
           </span>
-          <div style={{ textAlign: "right" }}>
+          <div style={{ textAlign: "right", position: "relative" }}>
+            {correcao && t >= ini + correcao.em && (
+              <svg width={330} height={150} viewBox="0 0 330 150" style={{ position: "absolute", right: -14, top: -8, overflow: "visible" }}>
+                <path
+                  d="M6 92 C 90 70, 200 52, 322 30"
+                  fill="none"
+                  stroke={correcao.cor}
+                  strokeWidth={11}
+                  strokeLinecap="round"
+                  pathLength={1}
+                  strokeDasharray={1}
+                  strokeDashoffset={1 - kf(t - ini - correcao.em, [0, 220], [0, 1], EASE.out)}
+                  opacity={0.9}
+                />
+              </svg>
+            )}
             <div
               style={{
                 fontFamily: FONTE.dados,
@@ -255,6 +277,23 @@ const ReciboVisual: React.FC<Omit<ReciboProps, "som" | "refLufs">> = ({
             </div>
           </div>
         </div>
+        {correcao && (
+          <div
+            style={{
+              height: 74,
+              marginTop: 10,
+              fontFamily: FONTE.caneta,
+              fontSize: 54,
+              lineHeight: "74px",
+              color: correcao.cor,
+              whiteSpace: "nowrap",
+              rotate: "-2deg",
+              clipPath: `inset(0 ${100 - kf(t - ini - correcao.em - 260, [0, DUR.slow], [0, 100], EASE.out)}% 0 0)`,
+            }}
+          >
+            {correcao.nota}
+          </div>
+        )}
         <div
           style={{
             fontFamily: FONTE.mono,

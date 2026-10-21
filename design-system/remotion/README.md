@@ -50,6 +50,11 @@ O arquivo sai em `../kit/mov/` com o nome da composição. Todos têm 1080 × 19
 | `src/ds/Som.tsx` | 4.6 | Sons `PD_*_v1.wav` no volume relativo à voz; `SomMoeda` (máquina de moeda) |
 | `src/kit/Kit.tsx` | 6.1 | Composições do kit, PNGs e catálogo |
 | `src/reel/Reel.tsx` | 5.2 | Reel montado a partir de `revN.json` |
+| `src/yt/Objetos16x9.tsx` | 5.4 | Objetos do vídeo longo 16:9: Etiqueta de lugar, chamada do Instagram, Mapa com Rota, transição Página, tela final e Quadro (lista que acende item a item) |
+| `src/yt/VideoLongo.tsx` | 5.4 | Vídeo longo montado a partir de `reels/<video>/revN/props_revN.json`: trechos da fonte (decupagem, quadro congelado, Página) e eventos (objetos, efeitos, sons, zoom) |
+| `src/yt/Efeitos.tsx` | — | Camada de efeitos do vídeo longo, com cores livres (decisão do Diego, 21/10/2026; não é paleta do DS): Nota de aviso, Fogos murchos, Print de site e o guia de gravação da narração |
+| `scripts/videolongo.mjs` | — | Render do `VideoLongo`: quadros de conferência, trecho ou vídeo inteiro (`BUNDLE_DIR` reaproveita o bundle) |
+| `scripts/servir.mjs` | — | Servidor local com Range para o proxy do vídeo longo (fora da pasta pública: o bundle não copia gigabytes) |
 | `scripts/kit.mjs` | 6.1 | Exportação do kit |
 
 ## Decisões de implementação (registradas, não são regra nova)
@@ -66,6 +71,8 @@ Pontos em que o DS não fixa um número e o código precisou de um. Nenhum cria 
 | Arrasto | As duas cenas ficam deslocadas 30% no corte e cada uma tem alça de 100 ms do outro lado | Sem a alça, a cena que entra a +30% deixa uma faixa preta. Duração (200 ms) e desfoque (12 px) são os do DS |
 | Legenda centralizada | Caixa de 872 px centrada em x 540 | Decisão do Diego (CLAUDE.md, 6); a largura máxima de linha segue em aberto (pendência 13) |
 | FPS | Composições a 30 fps; os tempos dos componentes estão em ms | FPS de produção não definido (pendência 5); 30 é o das receitas (6.2) |
+| Vídeo longo a 24 fps | `VideoLongo` usa 24 fps, o da fonte (export do Diego); os componentes seguem em ms | A fonte é 24 fps; converter mudaria a cadência dos cortes |
+| Correção de valor no Recibo | `correcao`: traço de marcador sobre o total + a correção escrita à mão embaixo, na cor da camada de efeitos | Pedido do Diego no vlog de Amsterdam (21/10/2026), sem valor visual novo no DS |
 | Fontes ausentes | "PD Placar" cai para Barlow Condensed 700 com algarismos tabulares; "Caneta Diego" cai para Reenie Beanie | Fallbacks dos próprios tokens (`font.family`) |
 
 ## Requisitos
