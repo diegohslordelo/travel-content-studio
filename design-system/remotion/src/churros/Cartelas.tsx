@@ -48,19 +48,46 @@ const CORES = {
   },
 } as const;
 
-export const Veredito: React.FC<{ dur: number; paleta?: PaletaCartela; abaixo?: string }> = ({ dur, paleta = "cacau", abaixo = "desculpa, Barcelona." }) => {
+/** Momentos (ms) em que cada linha do veredito entra; com narração, casam com as palavras faladas. */
+export type TemposVeredito = { topo?: number; acima: number; principal: number; abaixo: number };
+
+export const Veredito: React.FC<{ dur: number; paleta?: PaletaCartela; abaixo?: string; topo?: string; tempos?: TemposVeredito }> = ({
+  dur,
+  paleta = "cacau",
+  abaixo = "desculpa, Barcelona.",
+  topo,
+  tempos = { acima: 0, principal: 420, abaixo: 1250 },
+}) => {
   const K = CORES[paleta];
   const t = useMs();
-  const a = kf(t, [0, 480], [0, 1], CURVA.sai);
-  const b = kf(t, [420, 900], [0, 1], CURVA.mola);
-  const faixa = kf(t, [620, 1100], [0, 1], CURVA.sai);
-  const c = kf(t, [1250, 1700], [0, 1], CURVA.sai);
+  const tp = kf(t, [tempos.topo ?? 0, (tempos.topo ?? 0) + 420], [0, 1], CURVA.sai);
+  const a = kf(t, [tempos.acima, tempos.acima + 480], [0, 1], CURVA.sai);
+  const b = kf(t, [tempos.principal, tempos.principal + 480], [0, 1], CURVA.mola);
+  const faixa = kf(t, [tempos.principal + 200, tempos.principal + 680], [0, 1], CURVA.sai);
+  const c = kf(t, [tempos.abaixo, tempos.abaixo + 450], [0, 1], CURVA.sai);
   const saida = kf(t, [dur - 200, dur], [0, 1], CURVA.entra);
   // leve "respiração" do bloco depois do impacto
-  const resp = 1 + 0.025 * kf(t, [900, dur], [0, 1], CURVA.suave);
+  const resp = 1 + 0.025 * kf(t, [tempos.principal + 480, dur], [0, 1], CURVA.suave);
   return (
     <AbsoluteFill style={{ background: K.veredito, alignItems: "center", justifyContent: "center" }}>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", scale: String(resp), opacity: 1 - saida, marginTop: -120 }}>
+        {topo && (
+          <div
+            style={{
+              fontFamily: F.rotulo,
+              fontWeight: 800,
+              fontSize: 44,
+              letterSpacing: "0.12em",
+              textTransform: "uppercase",
+              color: K.abaixo,
+              marginBottom: 34,
+              opacity: tp,
+              translate: `0 ${(1 - tp) * 16}px`,
+            }}
+          >
+            {topo}
+          </div>
+        )}
         <div style={{ overflow: "hidden" }}>
           <div style={{ fontFamily: F.serifa, fontStyle: "italic", fontSize: 124, color: K.acima, translate: `0 ${(1 - a) * 100}%`, lineHeight: 1.05 }}>
             A gente prefere
@@ -173,23 +200,28 @@ const Rotulo: React.FC<{ texto: string; cores: string[] }> = ({ texto, cores }) 
   </div>
 );
 
-export const Comparacao: React.FC<{ dur: number; paleta?: PaletaCartela; direita?: string; acucarDireita?: number }> = ({
+/** Momentos (ms): entrada do lado esquerdo, do direito e o visto no vencedor (com narração, nas palavras faladas). */
+export type TemposComparacao = { esq: number; dir: number; visto: number };
+
+export const Comparacao: React.FC<{ dur: number; paleta?: PaletaCartela; direita?: string; acucarDireita?: number; tempos?: TemposComparacao }> = ({
   dur,
   paleta = "cacau",
   direita = "BARCELONA",
   acucarDireita = 22,
+  tempos = { esq: 0, dir: 220, visto: 1350 },
 }) => {
   const K = CORES[paleta];
   const t = useMs();
-  const esq = kf(t, [0, 620], [0, 1], CURVA.sai);
-  const dir = kf(t, [220, 840], [0, 1], CURVA.sai);
-  const x = kf(t, [380, 760], [0, 1], CURVA.mola);
-  const visto = kf(t, [1350, 1800], [0, 1], CURVA.sai);
-  const brilho = kf(t, [1350, 2000], [0, 1], CURVA.sai);
+  const esq = kf(t, [tempos.esq, tempos.esq + 620], [0, 1], CURVA.sai);
+  const dir = kf(t, [tempos.dir, tempos.dir + 620], [0, 1], CURVA.sai);
+  const x = kf(t, [tempos.dir + 160, tempos.dir + 540], [0, 1], CURVA.mola);
+  const visto = kf(t, [tempos.visto, tempos.visto + 450], [0, 1], CURVA.sai);
+  const brilho = kf(t, [tempos.visto, tempos.visto + 650], [0, 1], CURVA.sai);
   const saida = kf(t, [dur - 260, dur], [0, 1], CURVA.entra);
   const flutua = (fase: number) => Math.sin((t / 1000) * 2 + fase) * 6;
   return (
-    <AbsoluteFill style={{ background: fundoCacau, opacity: 1 - saida }}>
+    // no "colorido" o fundo é o verde do veredito: a cartela anterior emenda sem quadro marrom
+    <AbsoluteFill style={{ background: paleta === "colorido" ? K.veredito : fundoCacau, opacity: 1 - saida }}>
       {/* metades com as cores de cada lado (no "cacau" as duas são o próprio fundo) */}
       <div style={{ position: "absolute", left: 0, top: 0, width: 540, height: 1920, background: K.esq, translate: `${(1 - esq) * -540}px 0` }} />
       <div style={{ position: "absolute", left: 540, top: 0, width: 540, height: 1920, background: K.dir, translate: `${(1 - dir) * 540}px 0` }} />

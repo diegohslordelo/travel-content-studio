@@ -1,0 +1,663 @@
+{
+  "titulo": "Churros em Madrid: será que vale? (Chocolatería San Ginés) · REV2 com narração do Diego e voz da Marina",
+  "fps": 24,
+  "largura": 1080,
+  "altura": 1920,
+  "paleta": "colorido",
+  "destino": {
+    "nome": "MADRID",
+    "lon": -3.7068,
+    "lat": 40.4168
+  },
+  "cartelas": {
+    "topo_veredito": "Desculpa, Madrid,",
+    "abaixo_veredito": "e por muito.",
+    "acucar_destino": 0,
+    "tempos_veredito": {
+      "topo": 150,
+      "acima": 1150,
+      "principal": 1800,
+      "abaixo": 2350
+    },
+    "tempos_comparacao": {
+      "esq": 600,
+      "dir": 1250,
+      "visto": 2450
+    }
+  },
+  "fontes": {
+    "IMG_3811": {
+      "arquivo": "IMG_3811.MOV",
+      "drive_id": "1En2nJJA1ppjttI08D-dD3shg6A8u5Rnm",
+      "girar": "auto",
+      "nota": "20/03/2026 10:37 · fachada da San Ginés"
+    },
+    "IMG_3813": {
+      "arquivo": "IMG_3813.MOV",
+      "drive_id": "1AcuyfrVaxrUqf4bnSC86L4d4Scz6JFeR",
+      "girar": "auto",
+      "nota": "10:37 · Pasadizo de San Ginés com o terraço"
+    },
+    "IMG_3814": {
+      "arquivo": "IMG_3814.MOV",
+      "drive_id": "13nOdjGmV4MFIhs6YFkg_mHnUY5sWTV3a",
+      "girar": "auto",
+      "nota": "10:37 · Diego chegando (fala: \"Viemos tomar café aqui na Chocolatería San Ginés… de 1894\")"
+    },
+    "IMG_3815": {
+      "arquivo": "IMG_3815.MOV",
+      "drive_id": "1WPyigAInBqaC4IVGvKSoYnU88_EpXPti",
+      "girar": "auto",
+      "nota": "10:38 · prato de churros e xícara de chocolate vistos de cima (vertical)"
+    },
+    "IMG_3818": {
+      "arquivo": "IMG_3818.MOV",
+      "drive_id": "1wY6Xw1gAHtsUqzB5qf11GW8BQXTGWF9U",
+      "girar": "auto",
+      "nota": "10:39 · churro mergulhando no chocolate"
+    },
+    "IMG_3819": {
+      "arquivo": "IMG_3819.MOV",
+      "drive_id": "1d2bxJYETdkCKWk5uQUNog56ZUQWG-J7n",
+      "girar": "auto",
+      "nota": "10:39 · Marina prova o churro"
+    },
+    "IMG_3820": {
+      "arquivo": "IMG_3820.MOV",
+      "drive_id": "1G6FVO0OqaURe7ICdLWveWtkuVrPl-N6V",
+      "girar": "auto",
+      "nota": "10:42 · Marina toma o chocolate na xícara"
+    },
+    "IMG_3821": {
+      "arquivo": "IMG_3821.MOV",
+      "drive_id": "19MTHG4JN9Mc2i-lcF00wKmi6wcQLlmM2",
+      "girar": "horario",
+      "nota": "10:56 · veredito na rua (gravado na horizontal; metadado −90 errado)"
+    },
+    "IMG_3812": {
+      "arquivo": "IMG_3812.MOV",
+      "drive_id": "1nJhRs1unvSEFB640JDjJJtYDgFK2rWZE",
+      "girar": "auto",
+      "nota": "10:37 · placa CHOCOLATERIA SAN GINES com a plaquinha 1894"
+    }
+  },
+  "cenas": [
+    {
+      "id": "h_prato",
+      "bloco": "gancho",
+      "fonte": "IMG_3815",
+      "in": 0.2,
+      "out": 1.6,
+      "x": [
+        [
+          0,
+          0.5
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "comida",
+      "camera": {
+        "de": 1.14,
+        "para": 1.02
+      },
+      "mira": "50% 60%",
+      "o_que": "prato de churros e xícara de chocolate de cima"
+    },
+    {
+      "id": "h_mergulho",
+      "bloco": "gancho",
+      "fonte": "IMG_3818",
+      "in": 3.4,
+      "out": 5.15,
+      "x": [
+        [
+          0,
+          0.41
+        ]
+      ],
+      "zoom": 1.3,
+      "y": 0.6,
+      "grade": "comida",
+      "camera": {
+        "de": 1.0,
+        "para": 1.06
+      },
+      "efeito": "mergulho",
+      "mira": "47% 55%",
+      "o_que": "churro mergulhando no chocolate → câmera afunda na xícara"
+    },
+    {
+      "id": "globo",
+      "bloco": "viagem",
+      "grafico": true,
+      "dur": 3.9,
+      "efeito": "globo"
+    },
+    {
+      "id": "b_diego",
+      "bloco": "chegada",
+      "fonte": "IMG_3814",
+      "in": 0.7,
+      "out": 1.8,
+      "x": [
+        [
+          0,
+          0.42
+        ],
+        [
+          1.1,
+          0.46
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "rua",
+      "camera": {
+        "de": 1.0,
+        "para": 1.04
+      },
+      "o_que": "Diego chegando à San Ginés"
+    },
+    {
+      "id": "b_fachada",
+      "bloco": "chegada",
+      "fonte": "IMG_3811",
+      "in": 0.1,
+      "out": 2.4,
+      "x": [
+        [
+          0,
+          0.3
+        ],
+        [
+          2.3,
+          0.44
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "rua",
+      "camera": {
+        "de": 1.04,
+        "para": 1.0
+      },
+      "o_que": "fachada CHOCOLATERÍA SAN GINÉS"
+    },
+    {
+      "id": "b_placa",
+      "bloco": "chegada",
+      "fonte": "IMG_3812",
+      "in": 4.3,
+      "out": 5.7,
+      "x": [
+        [
+          0,
+          0.6
+        ],
+        [
+          1.4,
+          0.64
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "rua",
+      "camera": {
+        "de": 1.0,
+        "para": 1.06
+      },
+      "mira": "45% 30%",
+      "o_que": "placa CHOCOLATERIA SAN GINES com a plaquinha 1894 (na fala \"aberta desde 1894\")"
+    },
+    {
+      "id": "c_prato",
+      "bloco": "classico",
+      "fonte": "IMG_3815",
+      "in": 1.65,
+      "out": 3.28,
+      "x": [
+        [
+          0,
+          0.5
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "comida",
+      "camera": {
+        "de": 1.0,
+        "para": 1.1
+      },
+      "mira": "45% 62%",
+      "o_que": "prato de churros de cima (na fala \"uma porção de churros\")"
+    },
+    {
+      "id": "c_mergulho",
+      "bloco": "classico",
+      "fonte": "IMG_3818",
+      "in": 4.6,
+      "out": 6.16,
+      "x": [
+        [
+          0,
+          0.4
+        ]
+      ],
+      "zoom": 1.1,
+      "y": 0.55,
+      "grade": "comida",
+      "camera": {
+        "de": 1.0,
+        "para": 1.08
+      },
+      "mira": "42% 55%",
+      "o_que": "churro no chocolate (na fala \"acompanhada de chocolate quente\")"
+    },
+    {
+      "id": "k_xicara",
+      "bloco": "classico",
+      "fonte": "IMG_3820",
+      "in": 1.4,
+      "out": 2.7,
+      "x": [
+        [
+          0,
+          0.45
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "interior",
+      "camera": {
+        "de": 1.0,
+        "para": 1.06
+      },
+      "mira": "60% 50%",
+      "o_que": "Marina toma o chocolate (na fala \"servido na xícara\")"
+    },
+    {
+      "id": "c_mordida",
+      "bloco": "classico",
+      "fonte": "IMG_3819",
+      "in": 0.9,
+      "out": 3.05,
+      "x": [
+        [
+          0,
+          0.47
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "interior",
+      "camera": {
+        "de": 1.0,
+        "para": 1.07
+      },
+      "mira": "48% 40%",
+      "o_que": "Marina morde o churro (close da degustação, sem fala)"
+    },
+    {
+      "id": "r_mastiga",
+      "bloco": "revelacao",
+      "fonte": "IMG_3819",
+      "in": 3.05,
+      "out": 6.5,
+      "x": [
+        [
+          0,
+          0.47
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "interior",
+      "camera": {
+        "de": 1.0,
+        "para": 1.12
+      },
+      "efeito": "suspense",
+      "mira": "48% 30%",
+      "o_que": "Marina mastigando (na fala \"a parte mais importante, nossa opinião\")"
+    },
+    {
+      "id": "r_fala",
+      "bloco": "revelacao",
+      "fonte": "IMG_3821",
+      "in": 1.72,
+      "out": 8.47,
+      "x": [
+        [
+          0,
+          0.58
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "rua",
+      "camera": {
+        "de": 1.0,
+        "para": 1.22
+      },
+      "efeito": "suspense",
+      "mira": "62% 38%",
+      "o_que": "saída da San Ginés; tambor; Marina: \"Nada demais, gente.\" (voz original em 6,62–8,40 s do bruto)"
+    },
+    {
+      "id": "r_veredito",
+      "bloco": "revelacao",
+      "grafico": true,
+      "dur": 3.75,
+      "efeito": "veredito"
+    },
+    {
+      "id": "f_comparacao",
+      "bloco": "fechamento",
+      "grafico": true,
+      "dur": 4.2,
+      "efeito": "comparacao"
+    },
+    {
+      "id": "f_pergunta",
+      "bloco": "fechamento",
+      "fonte": "IMG_3818",
+      "in": 0.0,
+      "out": 2.9,
+      "velocidade": 0.7,
+      "x": [
+        [
+          0,
+          0.42
+        ],
+        [
+          2.9,
+          0.5
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "comida",
+      "camera": {
+        "de": 1.0,
+        "para": 1.06
+      },
+      "efeito": "fundo",
+      "o_que": "mesa com xícara e churros (fundo da pergunta; fecha em loop com o gancho)"
+    }
+  ],
+  "textos": [
+    {
+      "cena": "h_prato",
+      "t": 0.08,
+      "fim": 1.95,
+      "estilo": "gancho",
+      "kicker": "SAÍMOS DO BRASIL PRA PROVAR",
+      "linhas": [
+        "O CHURROS",
+        "DE MADRID"
+      ],
+      "y": 330
+    },
+    {
+      "cena": "globo",
+      "t": 0.3,
+      "fim": 2.6,
+      "estilo": "serifa_pequena",
+      "linhas": [
+        "Será que vale",
+        "a viagem?"
+      ],
+      "y": 230
+    },
+    {
+      "cena": "b_fachada",
+      "t": 0.05,
+      "fim": 2.29,
+      "estilo": "lugar",
+      "kicker": "MADRID · DESDE 1894",
+      "linhas": [
+        "CHOCOLATERÍA",
+        "SAN GINÉS"
+      ],
+      "y": 1080
+    },
+    {
+      "cena": "c_mergulho",
+      "t": 0.05,
+      "fim": 1.54,
+      "estilo": "capitulo",
+      "numero": "01",
+      "linhas": [
+        "O CLÁSSICO"
+      ],
+      "sub": "com chocolate quente",
+      "y": 260
+    },
+    {
+      "cena": "r_mastiga",
+      "t": 1.4,
+      "fim": 3.45,
+      "estilo": "serifa_pequena",
+      "linhas": [
+        "Nossa opinião…"
+      ],
+      "y": 1250
+    },
+    {
+      "cena": "r_fala",
+      "t": 5.04,
+      "fim": 6.75,
+      "estilo": "citacao",
+      "kicker": "MARINA, NA SAÍDA",
+      "linhas": [
+        "“Nada demais,",
+        "gente.”"
+      ],
+      "y": 1080
+    },
+    {
+      "cena": "f_pergunta",
+      "t": 0.1,
+      "fim": 4.12,
+      "estilo": "pergunta",
+      "kicker": "E você,",
+      "linhas": [
+        "AINDA VALE A",
+        "PENA PROVAR?"
+      ],
+      "y": 520
+    }
+  ],
+  "cta": {
+    "cena": "f_pergunta",
+    "t": 2.45,
+    "rotulo": "MANDA PRA QUEM VAI",
+    "x": 154,
+    "nota": "DS V2, 2.7. Único elemento com cores do DS (decisão do Diego, 21/10/2026). Centrada no canvas (placa M de 772 px → x 154)."
+  },
+  "capa": {
+    "cena": "h_prato",
+    "t": 0.6,
+    "rotulo": "CHURROS EM",
+    "destino": "MADRID",
+    "modulo": "interrogacao"
+  },
+  "efeitos": [],
+  "narracao": [
+    {
+      "id": "n1",
+      "arquivo": "Rua da Graviola.m4a",
+      "drive_id": "1C0emwFk5s_QlYnUnmwDpONeM749U3v_T",
+      "in": 0.0,
+      "out": 3.16,
+      "cena": "h_prato",
+      "t": 0.12,
+      "texto": "Saímos do Brasil para provar o churros mais famoso de Madrid."
+    },
+    {
+      "id": "n2",
+      "arquivo": "Rua da Graviola 2.m4a",
+      "drive_id": "1ZDk1X7ZDpx61feBPvmlWerZgsWk0RO9w",
+      "in": 0.0,
+      "out": 2.05,
+      "cena": "globo",
+      "t": 0.3,
+      "texto": "Será que esse clássico vale a viagem?"
+    },
+    {
+      "id": "n3",
+      "arquivo": "Vivo Inteligente.m4a",
+      "drive_id": "1xfl-yaGOCAGxFZrPRi-MNBtWB-ilc1xN",
+      "in": 0.0,
+      "out": 5.55,
+      "cena": "globo",
+      "t": 3.38,
+      "texto": "Em Madrid, nós fomos conhecer a Chocolatería San Ginés, aberta desde 1894."
+    },
+    {
+      "id": "n4",
+      "arquivo": "Vivo Inteligente 2.m4a",
+      "drive_id": "17l4nIr0NPBG1WQdkxZ6_LpyOQ31_FYvV",
+      "in": 0.38,
+      "out": 4.64,
+      "cena": "c_prato",
+      "t": 0.3,
+      "texto": "Pedimos o clássico, uma porção [transcrição automática: \"poção\"] de churros acompanhada de chocolate quente servido na xícara."
+    },
+    {
+      "id": "n5",
+      "arquivo": "Rua da Graviola 3.m4a",
+      "drive_id": "11whd1q_U-LKzkEqZaIJs2cFXIxKPds4S",
+      "in": 0.0,
+      "out": 3.47,
+      "cena": "c_mordida",
+      "t": 1.35,
+      "texto": "E agora vem a parte mais importante, nossa opinião."
+    },
+    {
+      "id": "n6",
+      "arquivo": "Rua da Graviola 4.m4a",
+      "drive_id": "1_QNJI_EZ8ZCWqSv4EIhpP7C-yPtjBpVq",
+      "in": 0.0,
+      "out": 2.56,
+      "cena": "r_fala",
+      "t": 0.06,
+      "texto": "Na saída da chocolateria, Marina resumiu tudo."
+    },
+    {
+      "id": "n7",
+      "arquivo": "Vivo Inteligente 3.m4a",
+      "drive_id": "1BIiYoEKOsuniedq4plmL9M8q--FX5R4e",
+      "in": 0.0,
+      "out": 3.27,
+      "cena": "r_veredito",
+      "t": 0.15,
+      "texto": "Desculpa, Madrid, mas a gente prefere o brasileiro. E por muito."
+    },
+    {
+      "id": "n8",
+      "arquivo": "Rua da Graviola 6.m4a",
+      "drive_id": "1wmxj06UNT3boIoZuGtJ1dWMBwiLkL5g3",
+      "in": 0.12,
+      "out": 3.71,
+      "cena": "f_comparacao",
+      "t": 0.15,
+      "texto": "Na disputa Brasil contra Madrid, esse round é disparado do Brasil."
+    },
+    {
+      "id": "n9",
+      "arquivo": "Rua da Graviola 7.m4a",
+      "drive_id": "1AWfhi6FX7EHTVBLaMoLOKFgomAxrMOLN",
+      "in": 0.0,
+      "out": 2.25,
+      "cena": "f_pergunta",
+      "t": 0.15,
+      "texto": "E você, acha que ainda vale a pena provar?"
+    }
+  ],
+  "narracao_nao_usada": [
+    {
+      "arquivo": "Vivo Inteligente 4.m4a",
+      "drive_id": "18zPSst2Dx1lMPxGKQCC5RLJh1E_BmgkB",
+      "texto": "Na disputa Madrid contra Brasil, esse round é do Brasil. E pra você, ainda vale a pena provar?",
+      "motivo": "segunda tomada da comparação + pergunta; usei 'Rua da Graviola 6' (ordem Brasil × Madrid, igual à cartela) e 'Rua da Graviola 7'"
+    },
+    {
+      "arquivo": "Rua da Graviola 5.m4a",
+      "drive_id": "1BYQprHLS46LmSxg-D8h4G2vg619SZNTb",
+      "texto": "(sem voz)",
+      "motivo": "silêncio: pico −41 dBFS, −63 LUFS; a transcrição automática ('E aí') é alucinação do Whisper"
+    },
+    {
+      "arquivo": "Rua da Graviola 8.m4a",
+      "drive_id": "1V28-DsHGOxtZSUvnHM_JKT_v18SOsnVb",
+      "texto": "(sem voz)",
+      "motivo": "silêncio: pico −39 dBFS, −55 LUFS; a transcrição automática ('Tchau') é alucinação do Whisper"
+    }
+  ],
+  "voz_original": {
+    "fonte": "IMG_3821",
+    "in": 6.62,
+    "out": 8.4,
+    "cena": "r_fala",
+    "texto": "Marina: \"Nada demais, gente.\" (fala de 6,78 a ~7,60 s; depois, ambiente e reação até 8,40 s; às 8,48 s ela retoma a fala e o corte vem antes)"
+  },
+  "tambor": {
+    "dur": 2.2,
+    "folga": 0.03,
+    "nota": "rufada de caixa sintetizada no rev2.py (som autoral, sem licença de terceiros); termina 30 ms antes da voz da Marina"
+  },
+  "trilha": {
+    "arquivo": "trilha/Bossa Antigua.mp3",
+    "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Bossa%20Antigua.mp3",
+    "credito": "\"Bossa Antigua\" Kevin MacLeod (incompetech.com) · Licensed under Creative Commons: By Attribution 4.0 License · http://creativecommons.org/licenses/by/4.0/",
+    "isrc": "USUAN1700069",
+    "lufs_cama": -28,
+    "pausa_fade_s": 0.4,
+    "volta_cena": "r_veredito",
+    "volta_fade_s": 0.8,
+    "fim_fade_s": 1.2
+  },
+  "mix": {
+    "voz_lufs": -16,
+    "marina_lufs": -16,
+    "tambor_pico_db": -5,
+    "master_lufs": -14,
+    "master_pico_dbtp": -1
+  },
+  "efeitos_mix": [
+    {
+      "arq": "sfx_mergulho.wav",
+      "cena": "h_mergulho",
+      "t": 1.2,
+      "db": -14
+    },
+    {
+      "arq": "sfx_aviao.wav",
+      "cena": "globo",
+      "t": 0.55,
+      "db": -24
+    },
+    {
+      "arq": "sfx_pin.wav",
+      "cena": "globo",
+      "t": 2.9,
+      "db": -20
+    },
+    {
+      "arq": "sfx_whoosh.wav",
+      "cena": "b_diego",
+      "t": -0.25,
+      "db": -20
+    },
+    {
+      "arq": "sfx_tum.wav",
+      "cena": "r_veredito",
+      "t": 1.8,
+      "db": -10
+    },
+    {
+      "arq": "sfx_whoosh.wav",
+      "cena": "f_comparacao",
+      "t": -0.1,
+      "db": -20
+    },
+    {
+      "arq": "sfx_pop.wav",
+      "cena": "f_comparacao",
+      "t": 2.45,
+      "db": -20
+    }
+  ]
+}

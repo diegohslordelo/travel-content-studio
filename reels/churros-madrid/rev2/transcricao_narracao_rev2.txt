@@ -1,0 +1,56 @@
+TRANSCRIÇÃO DAS GRAVAÇÕES DO DIEGO · Reel "Churros em Madrid" (REV2)
+Pasta do Drive: Youtube/Madrid (enviadas em 21/10/2026, 12 arquivos .m4a)
+Método: Whisper large-v3 (automático, com tempo de cada palavra). Ninguém ouviu ainda: confira antes de publicar.
+Marcações: [?] = trecho incerto · [sem voz] = arquivo sem fala.
+
+-- Na ordem do vídeo ----------------------------------------------------------
+
+1. Rua da Graviola.m4a (3,48 s)                         → 0,1 s no vídeo · prato de churros
+   "Saímos do Brasil para provar o churros mais famoso de Madrid."
+   [?] "Madrid" no fim teve confiança baixa, mas o sentido é claro.
+
+2. Rua da Graviola 2.m4a (2,62 s)                       → 3,5 s · globo
+   "Será que esse clássico vale a viagem?"
+
+3. Vivo Inteligente.m4a (5,95 s)                        → 6,5 s · globo → fachada → placa 1894
+   "Em Madrid, nós fomos conhecer a Chocolatería San Ginés, aberta desde 1894."
+   (a transcrição automática escreve "Sanguinés"; é o nome San Ginés)
+
+4. Vivo Inteligente 2.m4a (5,10 s)                      → 12,2 s · prato → churro no chocolate → xícara
+   "Pedimos o clássico, uma porção de churros acompanhada de chocolate quente servido na xícara."
+   [?] "porção": a transcrição automática ouviu "poção". Confira na escuta.
+
+5. Rua da Graviola 3.m4a (4,16 s)                       → 17,7 s · Marina mordendo e mastigando
+   "E agora vem a parte mais importante, nossa opinião."
+
+6. Rua da Graviola 4.m4a (3,05 s)                       → 21,6 s · saída da San Ginés
+   "Na saída da chocolateria, Marina resumiu tudo."
+
+   >> rufada de tambor: 24,63 – 26,83 s
+
+7. MARINA, voz original (IMG_3821.MOV, 6,62 – 8,40 s)   → 26,86 s · sincronizada com a imagem
+   "Nada demais, gente."
+
+8. Vivo Inteligente 3.m4a (3,56 s)                      → 28,9 s · cartela do veredito
+   "Desculpa, Madrid, mas a gente prefere o brasileiro. E por muito."
+
+9. Rua da Graviola 6.m4a (4,25 s)                       → 32,3 s · comparação Brasil × Madrid
+   "Na disputa Brasil contra Madrid, esse round é disparado do Brasil."
+
+10. Rua da Graviola 7.m4a (2,71 s)                      → 36,6 s · pergunta final + CTA
+   "E você, acha que ainda vale a pena provar?"
+
+-- Gravadas, mas fora do vídeo -------------------------------------------------
+
+Vivo Inteligente 4.m4a (6,12 s)
+   "Na disputa Madrid contra Brasil, esse round é do Brasil. E pra você, ainda vale a pena provar?"
+   Segunda tomada das frases 9 e 10. Usei as outras: "Brasil contra Madrid" segue a ordem da cartela
+   (Brasil à esquerda) e "disparado" é mais forte.
+
+Rua da Graviola 5.m4a (2,28 s)   [sem voz] pico −41 dBFS. O Whisper "ouviu" "E aí", mas é alucinação no silêncio.
+Rua da Graviola 8.m4a (1,00 s)   [sem voz] pico −39 dBFS. O Whisper "ouviu" "Tchau", mas é alucinação no silêncio.
+   Se você gravou algo nesses dois, o arquivo veio sem áudio: grave de novo.
+
+-- Frases do roteiro de referência sem gravação correspondente -----------------
+
+"Manda pra quem vai a Madrid." Não há gravação. O convite fica só na placa do CTA na tela.

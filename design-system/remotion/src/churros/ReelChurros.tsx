@@ -16,7 +16,7 @@ import { Audio, Video } from "@remotion/media";
 import { AbsoluteFill, CalculateMetadataFunction, Sequence, random, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Placa } from "../ds/Placa";
 import { kf, useMs } from "../ds/tempo";
-import { Comparacao, Veredito } from "./Cartelas";
+import { Comparacao, TemposComparacao, TemposVeredito, Veredito } from "./Cartelas";
 import { Destino, Globo } from "./Globo";
 import { EstiloTexto, TextoNaTela } from "./Textos";
 import { C, CURVA, carregarFontesChurros } from "./tema";
@@ -61,7 +61,13 @@ export type PropsChurros = {
   /** "cacau" (REV1 de Barcelona) ou "colorido" (globo e cartelas em cores vivas) */
   paleta?: "cacau" | "colorido";
   destino?: Destino;
-  cartelas?: { abaixo_veredito?: string; acucar_destino?: number };
+  cartelas?: {
+    abaixo_veredito?: string;
+    acucar_destino?: number;
+    topo_veredito?: string;
+    tempos_veredito?: TemposVeredito;
+    tempos_comparacao?: TemposComparacao;
+  };
   efeitos?: Efeito[];
   capa?: { cena: string; t: number; rotulo?: string; destino: string; modulo?: "seta" | "interrogacao" };
 };
@@ -237,9 +243,25 @@ export const ReelChurros: React.FC<PropsChurros> = (p) => {
   const conteudo = (c: Cena): React.ReactNode => {
     switch (c.efeito ?? EFEITO_POR_ID[c.id] ?? "plano") {
       case "veredito":
-        return <Veredito dur={c.dur * 1000} paleta={paleta} abaixo={p.cartelas?.abaixo_veredito} />;
+        return (
+          <Veredito
+            dur={c.dur * 1000}
+            paleta={paleta}
+            abaixo={p.cartelas?.abaixo_veredito}
+            topo={p.cartelas?.topo_veredito}
+            tempos={p.cartelas?.tempos_veredito}
+          />
+        );
       case "comparacao":
-        return <Comparacao dur={c.dur * 1000} paleta={paleta} direita={p.destino?.nome} acucarDireita={p.cartelas?.acucar_destino} />;
+        return (
+          <Comparacao
+            dur={c.dur * 1000}
+            paleta={paleta}
+            direita={p.destino?.nome}
+            acucarDireita={p.cartelas?.acucar_destino}
+            tempos={p.cartelas?.tempos_comparacao}
+          />
+        );
       case "mergulho":
         return <Mergulho cena={c} />;
       case "congela":
