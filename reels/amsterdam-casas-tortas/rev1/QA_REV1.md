@@ -4,7 +4,7 @@
 
 | Item | Valor |
 |---|---|
-| Arquivo final | `reel_amsterdam-casas-tortas_rev1.mp4` · 1080 × 1920 · 30 fps · 59,7 s · H.264 + AAC 320 kbps · vídeo fluido e desenho colorido (ajustes de 21/10) |
+| Arquivo final | `reel_amsterdam-casas-tortas_rev1.mp4` · 1080 × 1920 · 30 fps · 57,7 s · H.264 + AAC 320 kbps · vídeo fluido, desenho colorido, pausas entre as falas encurtadas e vídeos de fundo mudos (ajustes de 21/10) |
 | Prévia leve | `reel_amsterdam-casas-tortas_rev1_previa.mp4` (540 × 960) |
 | Capa | `capa_amsterdam-casas-tortas_rev1.jpg` (1080 × 1920; placa Hook "POR QUE AS CASAS DE AMSTERDAM / DANÇAM ?" no recorte 3:4, entre y 240 e 1680) |
 | Áudio | −14,0 LUFS integrados · pico verdadeiro −1,4 dBTP (DS V2, 4.6) |
@@ -166,3 +166,9 @@ python3 rev1.py tudo        # voz → planos → sons → props → render → m
 ```
 
 Os brutos, as fotos e a narração ficam em `../fonte/` (fora do git). Se faltarem, o `rev1.py` imprime o comando de download pelo `drive_id` de cada arquivo em `rev1.json`. A transcrição fica em cache em `../fonte/narracao/asr_large-v3.json`; para refazer com o Whisper, apague esse arquivo (precisa do pacote `faster-whisper`).
+
+## Ajustes de 21/10/2026 (pedidos do Diego)
+
+- **Decupagem:** as pausas entre os takes caíram para 0,06–0,10 s (0,15 s antes da Varredura e 0,20 s antes do Cinema). Nenhuma fala foi cortada: cada take mantém 50 ms antes e 120 ms depois da voz. Duração: 59,7 → 57,7 s; os tempos das cenas e das legendas acompanham as palavras sozinhos.
+- **Vídeos de fundo mudos:** sem o som ambiente dos clipes (`mix.ambiente_mudo` em `rev1.json`). No arquivo ficam só a voz e os efeitos sonoros; a música entra baixa na postagem.
+- Os tempos citados nas seções acima são os da versão de 59,7 s.

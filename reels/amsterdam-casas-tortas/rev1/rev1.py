@@ -577,8 +577,10 @@ def props():
         "capa": {k: d["capa"][k] for k in ("rotulo", "destino", "modulo", "tamanho")} | {"arquivo": "capa_fundo.jpg"},
         "cta": {k: d["cta"][k] for k in ("rotulo", "destino", "modulo", "tamanho")} | {"ini": cta["ini"]},
         "voz": [{"arquivo": tk["arquivo"], "ini": round(tk["t0"] * 1000), "dur": round(tk["dur"] * 1000)} for tk in takes],
-        "ambientes": [{"arquivo": f"amb_{p['id']}.wav", "ini": p["ini"], "fim": p["fim"], "cinema": p.get("transicao") == "cinema"}
-                      for p in lista if p["tipo"] != "desenho"],
+        # vídeos de fundo mudos a pedido do Diego (21/10): a música entra na postagem
+        "ambientes": [] if d["mix"].get("ambiente_mudo") else [
+            {"arquivo": f"amb_{p['id']}.wav", "ini": p["ini"], "fim": p["fim"], "cinema": p.get("transicao") == "cinema"}
+            for p in lista if p["tipo"] != "desenho"],
         "sons": sons_,
         "mix": d["mix"],
     }

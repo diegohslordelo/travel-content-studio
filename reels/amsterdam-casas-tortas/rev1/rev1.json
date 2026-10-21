@@ -30,8 +30,8 @@
    {"arquivo": "narracao_8.m4a", "drive_id": "1cB_laKyLa6OsC7bdOMG1Vty4e7MHbLoy", "nome_drive": "Praça Ernesto Lebram 8.m4a"},
    {"arquivo": "narracao_9.m4a", "drive_id": "1DmgGLqspE7zSpu3LWVEAv0O9bMBtoFfg", "nome_drive": "Praça Ernesto Lebram 9.m4a", "declip": true}
   ],
-  "pausas": [0.3, 0.3, 0.45, 0.25, 0.35, 0.3, 0.6, 0.3],
-  "pausa_motivo": "entre os takes: 0,45 s antes da Varredura (take 4) e 0,60 s antes do Cinema (take 8); 0,25 s dentro do desenho do solo (takes 4 → 5)",
+  "pausas": [0.08, 0.08, 0.15, 0.06, 0.1, 0.08, 0.2, 0.08],
+  "pausa_motivo": "decupagem de 21/10 (pedido do Diego): pausas curtas entre os takes; 0,15 s antes da Varredura e 0,20 s antes do Cinema. Cada take mantém 50 ms antes e 120 ms depois da fala, para não cortar a voz",
   "inicio": 0.0,
   "cauda": 0.12
  },
@@ -150,8 +150,8 @@
   {"nome": "plim", "em": "superiores@7+250", "rel_db": -12, "motivo": "o sofá entra pela janela de cima (chegada ao destino)"},
   {"nome": "clack", "em": "cta+280", "rel_db": -10, "motivo": "placa de CTA assenta (Chegada)"}
  ],
- "mix": {"voz_lufs": -16, "ambiente_lufs": -31, "cinema_ambiente_rel_db": -6, "master_lufs": -14, "master_pico_dbtp": -1},
- "trilha": "nenhuma no arquivo: música da biblioteca do Instagram na hora de postar, 8 a 10 dB abaixo da voz (DS 4.6)",
+ "mix": {"voz_lufs": -16, "ambiente_lufs": -31, "cinema_ambiente_rel_db": -6, "master_lufs": -14, "master_pico_dbtp": -1, "ambiente_mudo": true},
+ "trilha": "nenhuma no arquivo: o Diego coloca música baixa ao postar. Vídeos de fundo mudos (21/10); ficam só a voz e os efeitos",
  "capa": {"rotulo": "POR QUE AS CASAS DE AMSTERDAM", "destino": "DANÇAM", "modulo": "interrogacao", "tamanho": "M", "fonte": "IMG_1410", "t": 1.0, "recorte": [2700, 1150, 1000]},
  "movimento": "pedido do Diego (21/10): fluido, sem parecer foto. Vídeo com a tremedeira da mão removida e 40% do movimento de câmera, suavizado; fotos com zoom lento 100 → 104% (DS 4.5)"
 }
