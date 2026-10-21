@@ -50,6 +50,7 @@ O arquivo sai em `../kit/mov/` com o nome da composição. Todos têm 1080 × 19
 | `src/ds/Som.tsx` | 4.6 | Sons `PD_*_v1.wav` no volume relativo à voz; `SomMoeda` (máquina de moeda) |
 | `src/kit/Kit.tsx` | 6.1 | Composições do kit, PNGs e catálogo |
 | `src/reel/Reel.tsx` | 5.2 | Reel montado a partir de `revN.json` |
+| `src/churros/` | — | Reel "Churros em Barcelona" (`reels/churros-barcelona/revN`): linguagem visual própria (globo com rota, cartelas, tipografia); do DS só a placa do CTA e a capa (decisão do Diego, 21/10/2026). Fontes Anton, Instrument Serif e Inter (`@fontsource`, OFL) |
 | `scripts/kit.mjs` | 6.1 | Exportação do kit |
 
 ## Decisões de implementação (registradas, não são regra nova)

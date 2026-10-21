@@ -1,0 +1,425 @@
+{
+  "titulo": "Churros em Barcelona: será que vale? (Xurreria Trebol × churros brasileiro)",
+  "fps": 24,
+  "largura": 1080,
+  "altura": 1920,
+  "fontes": {
+    "vlog": {
+      "arquivo": "vlog_barcelona_3dias.mov",
+      "drive_id": "1caei0riSf82pYiGAhi_Zuhp6ByJLdi5k",
+      "nota": "Export do vlog de 3 dias (Drive: Barcelona/Youtube/copy_71526AEF…mov, 3840×2160, 24 fps, HLG/BT.2020). Os brutos do dia 3 (Xurreria Trebol, Sagrada Família) não estão na pasta do Drive; os trechos vêm deste master."
+    }
+  },
+  "cenas": [
+    {
+      "id": "h_bandeja",
+      "bloco": "gancho",
+      "fonte": "vlog",
+      "in": 1694.0,
+      "out": 1695.25,
+      "x": [
+        [
+          0,
+          0.56
+        ],
+        [
+          1.25,
+          0.5
+        ]
+      ],
+      "zoom": 1.15,
+      "grade": "comida",
+      "camera": {
+        "de": 1.12,
+        "para": 1.0
+      },
+      "o_que": "28:14 · bandeja de churros dourados no balcão da Trebol"
+    },
+    {
+      "id": "h_mergulho",
+      "bloco": "gancho",
+      "fonte": "vlog",
+      "in": 1681.0,
+      "out": 1682.75,
+      "x": [
+        [
+          0,
+          0.58
+        ]
+      ],
+      "zoom": 1.45,
+      "y": 0.62,
+      "grade": "comida",
+      "camera": {
+        "de": 1.0,
+        "para": 1.06
+      },
+      "o_que": "28:01 · churro mergulhando no chocolate quente"
+    },
+    {
+      "id": "mapa",
+      "bloco": "viagem",
+      "grafico": true,
+      "dur": 3.9
+    },
+    {
+      "id": "b_sagrada",
+      "bloco": "chegada",
+      "fonte": "vlog",
+      "in": 1576.1,
+      "out": 1577.4,
+      "x": [
+        [
+          0,
+          0.5
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "rua",
+      "camera": {
+        "de": 1.18,
+        "para": 1.04
+      },
+      "o_que": "26:16 · Sagrada Família (dia 3)"
+    },
+    {
+      "id": "b_caminho",
+      "bloco": "chegada",
+      "fonte": "vlog",
+      "in": 1638.5,
+      "out": 1639.8,
+      "x": [
+        [
+          0,
+          0.5
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "rua",
+      "camera": {
+        "de": 1.0,
+        "para": 1.04
+      },
+      "o_que": "27:18 · Diego e Marina a caminho da Trebol"
+    },
+    {
+      "id": "b_marina",
+      "bloco": "chegada",
+      "fonte": "vlog",
+      "in": 1642.6,
+      "out": 1644.1,
+      "x": [
+        [
+          0,
+          0.36
+        ],
+        [
+          1.5,
+          0.42
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "rua",
+      "camera": {
+        "de": 1.03,
+        "para": 1.0
+      },
+      "o_que": "27:22 · Marina se vira e acena"
+    },
+    {
+      "id": "b_fachada",
+      "bloco": "chegada",
+      "fonte": "vlog",
+      "in": 1690.6,
+      "out": 1692.6,
+      "x": [
+        [
+          0,
+          0.42
+        ],
+        [
+          2.0,
+          0.72
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "rua",
+      "camera": {
+        "de": 1.04,
+        "para": 1.0
+      },
+      "o_que": "28:10 · fachada XURRERIA TREBOL (pan pelo toldo)"
+    },
+    {
+      "id": "b_trevo",
+      "bloco": "chegada",
+      "fonte": "vlog",
+      "in": 1646.4,
+      "out": 1647.5,
+      "x": [
+        [
+          0,
+          0.6
+        ],
+        [
+          1.1,
+          0.46
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "comida",
+      "camera": {
+        "de": 1.0,
+        "para": 1.05
+      },
+      "o_que": "27:26 · painel CHURRERIA J. BALCELLS com o trevo"
+    },
+    {
+      "id": "c_cone",
+      "bloco": "classico",
+      "fonte": "vlog",
+      "in": 1658.6,
+      "out": 1660.6,
+      "x": [
+        [
+          0,
+          0.2
+        ],
+        [
+          1.7,
+          0.66
+        ]
+      ],
+      "zoom": 1.3,
+      "grade": "comida",
+      "camera": {
+        "de": 1.06,
+        "para": 1.0
+      },
+      "o_que": "27:38 · cone de churros → copo de chocolate quente",
+      "y": 0.72
+    },
+    {
+      "id": "c_mordida",
+      "bloco": "classico",
+      "fonte": "vlog",
+      "in": 1683.0,
+      "out": 1685.6,
+      "x": [
+        [
+          0,
+          0.56
+        ],
+        [
+          2.6,
+          0.5
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "comida",
+      "camera": {
+        "de": 1.0,
+        "para": 1.07
+      },
+      "o_que": "28:03 · churro com chocolate até a mordida"
+    },
+    {
+      "id": "k_aponta",
+      "bloco": "kinder",
+      "fonte": "vlog",
+      "in": 1661.0,
+      "out": 1661.62,
+      "congelar": 1.1,
+      "x": [
+        [
+          0,
+          0.52
+        ]
+      ],
+      "zoom": 1.15,
+      "grade": "comida",
+      "camera": {
+        "de": 1.0,
+        "para": 1.1
+      },
+      "o_que": "27:41 · Diego aponta o churro de Kinder Bueno embrulhado (fala: \"Esse daqui é de Kinder Bueno?\" \"É.\")",
+      "y": 0.55
+    },
+    {
+      "id": "k_marina",
+      "bloco": "kinder",
+      "fonte": "vlog",
+      "in": 1688.0,
+      "out": 1690.3,
+      "x": [
+        [
+          0,
+          0.46
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "comida",
+      "camera": {
+        "de": 1.05,
+        "para": 1.0
+      },
+      "o_que": "28:08 · Marina com o churro recheado no mesmo papel, joinha"
+    },
+    {
+      "id": "r_mastiga",
+      "bloco": "revelacao",
+      "fonte": "vlog",
+      "in": 1685.6,
+      "out": 1687.7,
+      "x": [
+        [
+          0,
+          0.47
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "comida",
+      "camera": {
+        "de": 1.0,
+        "para": 1.12
+      },
+      "o_que": "28:05 · Diego mastigando o churro com chocolate (pausa antes do veredito)"
+    },
+    {
+      "id": "r_veredito",
+      "bloco": "revelacao",
+      "grafico": true,
+      "dur": 2.6
+    },
+    {
+      "id": "f_comparacao",
+      "bloco": "fechamento",
+      "grafico": true,
+      "dur": 3.0
+    },
+    {
+      "id": "f_pergunta",
+      "bloco": "fechamento",
+      "fonte": "vlog",
+      "in": 1695.3,
+      "out": 1697.2,
+      "x": [
+        [
+          0,
+          0.5
+        ],
+        [
+          1.9,
+          0.44
+        ]
+      ],
+      "zoom": 1.0,
+      "grade": "comida",
+      "camera": {
+        "de": 1.0,
+        "para": 1.06
+      },
+      "o_que": "28:15 · bandeja a 0,6× (fundo da pergunta final; fecha em loop com o gancho)",
+      "velocidade": 0.6
+    }
+  ],
+  "textos": [
+    {
+      "cena": "h_bandeja",
+      "t": 0.08,
+      "fim": 1.95,
+      "estilo": "gancho",
+      "kicker": "SAÍMOS DO BRASIL PRA PROVAR",
+      "linhas": [
+        "O CHURROS",
+        "DE BARCELONA"
+      ],
+      "y": 330
+    },
+    {
+      "cena": "h_mergulho",
+      "t": 0.62,
+      "fim": 1.75,
+      "estilo": "serifa",
+      "linhas": [
+        "Será que",
+        "vale?"
+      ],
+      "y": 380
+    },
+    {
+      "cena": "b_fachada",
+      "t": 0.25,
+      "fim": 2.0,
+      "estilo": "lugar",
+      "kicker": "BARCELONA · GRÀCIA",
+      "linhas": [
+        "XURRERIA TREBOL"
+      ],
+      "y": 1180
+    },
+    {
+      "cena": "c_cone",
+      "t": 0.15,
+      "fim": 2.0,
+      "estilo": "capitulo",
+      "numero": "01",
+      "linhas": [
+        "O CLÁSSICO"
+      ],
+      "sub": "com chocolate quente",
+      "y": 300
+    },
+    {
+      "cena": "k_aponta",
+      "t": 0.5,
+      "fim": 1.72,
+      "estilo": "capitulo",
+      "numero": "02",
+      "linhas": [
+        "KINDER BUENO"
+      ],
+      "sub": "o segundo pedido",
+      "y": 300
+    },
+    {
+      "cena": "r_mastiga",
+      "t": 0.7,
+      "fim": 2.0,
+      "estilo": "serifa_pequena",
+      "linhas": [
+        "E o veredito…"
+      ],
+      "y": 360
+    },
+    {
+      "cena": "f_pergunta",
+      "t": 0.2,
+      "fim": 3.2,
+      "estilo": "pergunta",
+      "kicker": "E AÍ,",
+      "linhas": [
+        "VOCÊ FICA",
+        "COM QUAL?"
+      ],
+      "y": 560
+    }
+  ],
+  "cta": {
+    "cena": "f_pergunta",
+    "t": 1.0,
+    "rotulo": "MANDA PRA QUEM VAI",
+    "nota": "DS V2, 2.7 (CTA botão): placa pequena com verbo + módulo de seta. Único elemento do DS no vídeo, por decisão do Diego (21/10/2026). Centrada no canvas (placa M com 772 px de largura → x 154; CLAUDE.md, 6).",
+    "x": 154
+  },
+  "capa": {
+    "cena": "h_bandeja",
+    "t": 0.6,
+    "rotulo": "CHURROS EM",
+    "destino": "BARCELONA",
+    "modulo": "interrogacao"
+  },
+  "sons": {
+    "nota": "Desenho de som opcional (faixa separada, sintetizada no rev1.py). Nenhum áudio dos clipes entra no vídeo."
+  }
+}
