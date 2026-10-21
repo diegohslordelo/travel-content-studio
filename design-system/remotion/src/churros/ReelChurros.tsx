@@ -1,5 +1,6 @@
 /**
- * Reel "Churros em Barcelona: será que vale?" (reels/churros-barcelona/revN).
+ * Reels dos churros: "Churros em Barcelona" (reels/churros-barcelona/rev1) e "Churros em Madrid"
+ * (reels/churros-madrid/revN), mesmo roteiro e mesmas animações.
  *
  * Montagem a partir de `revN.json` + medições do `revN.py preparar` (props). As cenas de vídeo já vêm
  * recortadas em 9:16, com cor convertida e sem áudio; aqui entram a câmera virtual, as transições,
@@ -16,12 +17,13 @@ import { AbsoluteFill, CalculateMetadataFunction, Sequence, random, staticFile, 
 import { Placa } from "../ds/Placa";
 import { kf, useMs } from "../ds/tempo";
 import { Comparacao, Veredito } from "./Cartelas";
-import { Globo } from "./Globo";
+import { Destino, Globo } from "./Globo";
 import { EstiloTexto, TextoNaTela } from "./Textos";
 import { C, CURVA, carregarFontesChurros } from "./tema";
 
 carregarFontesChurros();
 
+type EfeitoCena = "plano" | "mergulho" | "congela" | "suspense" | "fundo" | "globo" | "veredito" | "comparacao";
 type Cena = {
   id: string;
   bloco: string;
@@ -30,6 +32,13 @@ type Cena = {
   quadros: number;
   dur: number;
   camera?: { de: number; para: number };
+  /** tratamento da cena; sem ele, vale o mapa por id da REV1 de Barcelona */
+  efeito?: EfeitoCena;
+  /** origem do zoom ("x% y%"): onde a câmera mira */
+  mira?: string;
+  /** congela: ms em que o quadro para; foco: centro do foco de luz ("x% y%") */
+  congela_ms?: number;
+  foco?: string;
 };
 type TextoProps = {
   cena: string;
@@ -49,6 +58,11 @@ export type PropsChurros = {
   cenas: Cena[];
   textos: TextoProps[];
   cta?: { cena: string; t: number; rotulo: string; x?: number };
+  /** "cacau" (REV1 de Barcelona) ou "colorido" (globo e cartelas em cores vivas) */
+  paleta?: "cacau" | "colorido";
+  destino?: Destino;
+  cartelas?: { abaixo_veredito?: string; acucar_destino?: number };
+  efeitos?: Efeito[];
   capa?: { cena: string; t: number; rotulo?: string; destino: string; modulo?: "seta" | "interrogacao" };
 };
 
@@ -66,7 +80,7 @@ export const metadadosChurros: CalculateMetadataFunction<PropsChurros> = ({ prop
 
 // ---------------------------------------------------------------- planos
 
-/** Origem do zoom de cada plano (onde a câmera "mira"): o que importa na imagem. */
+/** Origem do zoom de cada plano da REV1 de Barcelona (as revisões novas trazem `mira` no JSON). */
 const MIRA: Record<string, string> = {
   h_bandeja: "50% 60%",
   h_mergulho: "76% 74%",
@@ -88,7 +102,7 @@ const Plano: React.FC<{ cena: Cena; soco?: boolean; extra?: (t: number) => React
   const s = soco ? 1 + 0.05 * (1 - kf(t, [0, 180], [0, 1], CURVA.sai)) : 1;
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
-      <AbsoluteFill style={{ scale: String(escala * s), transformOrigin: MIRA[cena.id] ?? "50% 50%", ...(extra ? extra(t) : {}) }}>
+      <AbsoluteFill style={{ scale: String(escala * s), transformOrigin: cena.mira ?? MIRA[cena.id] ?? "50% 50%", ...(extra ? extra(t) : {}) }}>
         <Video src={staticFile(cena.arquivo as string)} muted objectFit="cover" style={{ width: "100%", height: "100%" }} />
       </AbsoluteFill>
     </AbsoluteFill>
@@ -109,8 +123,8 @@ const Mergulho: React.FC<{ cena: Cena }> = ({ cena }) => {
   );
 };
 
-/** Kinder Bueno: o quadro congela no dedo sobre o churro embrulhado; flash curto e foco de luz no produto. */
-const Congela: React.FC<{ cena: Cena; congelaEm: number }> = ({ cena, congelaEm }) => {
+/** Mudança de ritmo: o quadro congela (no produto), flash curto e foco de luz nele. */
+const Congela: React.FC<{ cena: Cena; congelaEm: number; foco?: string }> = ({ cena, congelaEm, foco: centroFoco = "61% 48%" }) => {
   const t = useMs();
   const d = t - congelaEm;
   const flash = d >= 0 ? kf(d, [0, 40, 200], [0, 0.85, 0], [CURVA.sai, CURVA.suave]) : 0;
@@ -120,7 +134,7 @@ const Congela: React.FC<{ cena: Cena; congelaEm: number }> = ({ cena, congelaEm 
       <Plano cena={cena} extra={() => ({ filter: foco > 0 ? `saturate(${1 - 0.25 * foco})` : undefined })} />
       <AbsoluteFill
         style={{
-          background: `radial-gradient(circle at 61% 48%, rgba(0,0,0,0) 0px, rgba(0,0,0,0) ${300 - 60 * foco}px, rgba(20,10,5,${0.62 * foco}) ${520 - 60 * foco}px)`,
+          background: `radial-gradient(circle at ${centroFoco}, rgba(0,0,0,0) 0px, rgba(0,0,0,0) ${300 - 60 * foco}px, rgba(20,10,5,${0.62 * foco}) ${520 - 60 * foco}px)`,
         }}
       />
       <AbsoluteFill style={{ background: C.creme, opacity: flash }} />
@@ -178,6 +192,17 @@ const Pelicula: React.FC = () => {
 // ---------------------------------------------------------------- som (opcional, faixa separada)
 
 type Efeito = { arq: string; cena: string; t: number; vol: number };
+
+/** Tratamento das cenas da REV1 de Barcelona (as revisões novas trazem `efeito` no JSON). */
+const EFEITO_POR_ID: Record<string, EfeitoCena> = {
+  mapa: "globo",
+  h_mergulho: "mergulho",
+  k_aponta: "congela",
+  r_mastiga: "suspense",
+  r_veredito: "veredito",
+  f_comparacao: "comparacao",
+  f_pergunta: "fundo",
+};
 /** Efeitos sintetizados no rev1.py (pico −6 dBFS); o master leva o conjunto a ≈ −24 LUFS. */
 const EFEITOS: Efeito[] = [
   { arq: "sfx_whoosh.wav", cena: "h_mergulho", t: -0.12, vol: 0.45 },
@@ -208,40 +233,42 @@ export const ReelChurros: React.FC<PropsChurros> = (p) => {
   const q = (s: number) => Math.round(s * fps);
   const cena = (id: string) => p.cenas.find((c) => c.id === id) as Cena;
 
+  const paleta = p.paleta ?? "cacau";
   const conteudo = (c: Cena): React.ReactNode => {
-    switch (c.id) {
-      case "r_veredito":
-        return <Veredito dur={c.dur * 1000} />;
-      case "f_comparacao":
-        return <Comparacao dur={c.dur * 1000} />;
-      case "h_mergulho":
+    switch (c.efeito ?? EFEITO_POR_ID[c.id] ?? "plano") {
+      case "veredito":
+        return <Veredito dur={c.dur * 1000} paleta={paleta} abaixo={p.cartelas?.abaixo_veredito} />;
+      case "comparacao":
+        return <Comparacao dur={c.dur * 1000} paleta={paleta} direita={p.destino?.nome} acucarDireita={p.cartelas?.acucar_destino} />;
+      case "mergulho":
         return <Mergulho cena={c} />;
-      case "k_aponta":
-        return <Congela cena={c} congelaEm={620} />;
-      case "r_mastiga":
+      case "congela":
+        return <Congela cena={c} congelaEm={c.congela_ms ?? 620} foco={c.foco} />;
+      case "suspense":
         return <Suspense cena={c} />;
-      case "f_pergunta":
+      case "fundo":
         return <FundoPergunta cena={c} />;
       default:
         return <Plano cena={c} soco={c.bloco === "gancho" || c.bloco === "chegada"} />;
     }
   };
+  const idGlobo = p.cenas.find((c) => (c.efeito ?? EFEITO_POR_ID[c.id]) === "globo")?.id;
 
   return (
     <AbsoluteFill style={{ background: C.cacau }}>
       {p.cenas
-        .filter((c) => c.id !== "mapa")
+        .filter((c) => c.id !== idGlobo)
         .map((c) => (
           <Sequence key={c.id} name={c.id} from={ini[c.id]} durationInFrames={c.quadros}>
             {conteudo(c)}
           </Sequence>
         ))}
 
-      {/* o globo fica por cima e dissolve sobre a Sagrada Família enquanto ainda mergulha */}
-      {ini.mapa !== undefined && (
-        <Sequence name="mapa" from={ini.mapa} durationInFrames={cena("mapa").quadros + SOBRA_GLOBO}>
-          <SaidaGlobo quadros={cena("mapa").quadros}>
-            <Globo />
+      {/* o globo fica por cima e dissolve sobre o primeiro plano da cidade enquanto ainda mergulha */}
+      {idGlobo && (
+        <Sequence name="globo" from={ini[idGlobo]} durationInFrames={cena(idGlobo).quadros + SOBRA_GLOBO}>
+          <SaidaGlobo quadros={cena(idGlobo).quadros}>
+            <Globo paleta={paleta} destino={p.destino} corEntrada={paleta === "colorido" ? C.cacau2 : undefined} />
           </SaidaGlobo>
         </Sequence>
       )}
@@ -261,7 +288,7 @@ export const ReelChurros: React.FC<PropsChurros> = (p) => {
 
       <Pelicula />
 
-      {EFEITOS.filter((e) => ini[e.cena] !== undefined).map((e, i) => (
+      {(p.efeitos ?? EFEITOS).filter((e) => ini[e.cena] !== undefined).map((e, i) => (
         <Sequence key={`sfx${i}`} name={`som ${e.arq}`} from={Math.max(0, ini[e.cena] + q(e.t))} layout="none">
           <Audio src={staticFile(e.arq)} volume={e.vol} />
         </Sequence>
@@ -284,7 +311,7 @@ export const CapaChurros: React.FC<PropsChurros> = (p) => {
   const c = p.cenas.find((x) => x.id === p.capa?.cena) as Cena;
   return (
     <AbsoluteFill style={{ background: C.cacau }}>
-      <AbsoluteFill style={{ scale: String(c.camera?.de ?? 1), transformOrigin: MIRA[c.id] ?? "50% 50%" }}>
+      <AbsoluteFill style={{ scale: String(c.camera?.de ?? 1), transformOrigin: c.mira ?? MIRA[c.id] ?? "50% 50%" }}>
         <Video src={staticFile(c.arquivo as string)} muted trimBefore={Math.round(p.capa.t * fps)} objectFit="cover" style={{ width: "100%", height: "100%" }} />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(20,10,5,.35), rgba(20,10,5,0) 45%)" }} />

@@ -1,12 +1,15 @@
 /**
- * Viagem Brasil → Barcelona num globo cor de cacau (o mergulho no chocolate do gancho "vira" o oceano).
+ * Viagem Brasil → destino (Barcelona, Madrid…) num globo em duas paletas:
+ * - "cacau" (REV1 de Barcelona): o mergulho no chocolate do gancho "vira" o oceano;
+ * - "colorido" (Madrid): cores naturais e vivas — oceano azul, terras verdes, Brasil em verde e amarelo,
+ *   Espanha em vermelho e amarelo, céu estrelado. O chocolate do mergulho se dissolve no céu.
  *
  * Projeção ortográfica feita aqui (sem d3): o centro da câmera acompanha o avião pelo arco de círculo
- * máximo, e no fim a câmera mergulha em Barcelona. Contornos: Natural Earth 1:50m (domínio público),
- * em reels/churros-barcelona/rev1/geo/mundo.json. Só aparecem os nomes BRASIL e BARCELONA; nenhum
+ * máximo, e no fim a câmera mergulha no destino. Contornos: Natural Earth 1:50m (domínio público),
+ * em reels/<reel>/revN/geo/mundo.json. Só aparecem os nomes BRASIL e o do destino; nenhum
  * número (duração, distância) é mostrado.
  */
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AbsoluteFill, continueRender, delayRender, staticFile } from "remotion";
 import { kf, useMs } from "../ds/tempo";
 import { C, CURVA, F } from "./tema";
@@ -17,8 +20,10 @@ type LonLat = [number, number];
 const RAD = Math.PI / 180;
 /** Ponto de partida: interior do Nordeste, só para o arco sair de dentro do Brasil (sem nome de cidade). */
 const ORIGEM: LonLat = [-44.5, -12.5];
-/** Barcelona (Xurreria Trebol fica a ~3 km daqui; no globo é o mesmo ponto). */
-const DESTINO: LonLat = [2.17, 41.39];
+/** Destino padrão (REV1 de Barcelona). */
+const BARCELONA: Destino = { nome: "BARCELONA", lon: 2.17, lat: 41.39 };
+
+export type Destino = { nome: string; lon: number; lat: number };
 
 const paraVetor = ([lon, lat]: LonLat): [number, number, number] => [
   Math.cos(lat * RAD) * Math.cos(lon * RAD),
@@ -91,17 +96,111 @@ const Aviao: React.FC<{ x: number; y: number; ang: number; escala: number }> = (
   </g>
 );
 
+type Paleta = {
+  fundo: string;
+  estrelas: boolean;
+  oceano: [string, string, string];
+  brilho: string;
+  atmosfera: string;
+  grade: string;
+  gradeOp: number;
+  terra: string;
+  terraOp: number;
+  contorno: string;
+  contornoOp: number;
+  brasil: string;
+  brasilBorda: string;
+  destino: string;
+  destinoBorda: string;
+  rota: string;
+  rotaBrilho: string;
+  ponto: string;
+  pontoBorda: string;
+  rotuloOrigem: { fundo: string; borda: string; texto: string };
+  rotuloDestino: { fundo: string; borda: string; texto: string };
+};
+
+const PALETAS: Record<"cacau" | "colorido", Paleta> = {
+  cacau: {
+    fundo: `radial-gradient(120% 80% at 50% 52%, ${C.cacau2} 0%, ${C.cacau} 70%)`,
+    estrelas: false,
+    oceano: [C.chocolate, C.cacau3, C.cacau2],
+    brilho: "rgba(255,236,210,.20)",
+    atmosfera: "rgba(233,166,58,.28)",
+    grade: C.creme,
+    gradeOp: 0.07,
+    terra: C.creme2,
+    terraOp: 0.36,
+    contorno: C.cacau,
+    contornoOp: 0.55,
+    brasil: C.dourado,
+    brasilBorda: C.cacau,
+    destino: C.dourado,
+    destinoBorda: C.cacau,
+    rota: C.douradoClaro,
+    rotaBrilho: C.dourado,
+    ponto: C.douradoClaro,
+    pontoBorda: C.cacau,
+    rotuloOrigem: { fundo: "rgba(30,18,12,.55)", borda: C.dourado, texto: C.creme },
+    rotuloDestino: { fundo: "rgba(30,18,12,.55)", borda: C.dourado, texto: C.creme },
+  },
+  colorido: {
+    fundo: "radial-gradient(120% 85% at 50% 50%, #17336E 0%, #0B1A3D 55%, #050B1E 100%)",
+    estrelas: true,
+    oceano: ["#3C9BEA", "#1F64C4", "#103E8A"],
+    brilho: "rgba(255,255,255,.30)",
+    atmosfera: "rgba(120,205,255,.55)",
+    grade: "#FFFFFF",
+    gradeOp: 0.1,
+    terra: "#7CC46B",
+    terraOp: 1,
+    contorno: "#2F6B3A",
+    contornoOp: 0.7,
+    brasil: "#13A24F",
+    brasilBorda: "#FFD43B",
+    destino: "#E5322D",
+    destinoBorda: "#FFC72C",
+    rota: "#FFD43B",
+    rotaBrilho: "#FFB000",
+    ponto: "#FFFFFF",
+    pontoBorda: "#E5322D",
+    rotuloOrigem: { fundo: "#13A24F", borda: "#FFD43B", texto: "#FFFFFF" },
+    rotuloDestino: { fundo: "#E5322D", borda: "#FFC72C", texto: "#FFFFFF" },
+  },
+};
+
+/** Estrelas fixas (posições pseudoaleatórias determinísticas), com cintilação leve. */
+const Estrelas: React.FC<{ t: number }> = ({ t }) => (
+  <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
+    {Array.from({ length: 140 }, (_, i) => {
+      const a = Math.sin(i * 91.7) * 43758.5453;
+      const b = Math.sin(i * 47.3 + 3) * 24634.6345;
+      const x = (a - Math.floor(a)) * 1080;
+      const y = (b - Math.floor(b)) * 1920;
+      const r = 1 + ((i * 7) % 3) * 0.7;
+      const pisca = 0.45 + 0.55 * Math.abs(Math.sin(t / 600 + i));
+      return <circle key={i} cx={x} cy={y} r={r} fill="#FFFFFF" opacity={0.55 * pisca} />;
+    })}
+  </svg>
+);
+
 export const DUR_ROTA = { surge: 600, voo: [650, 2850] as [number, number], mergulho: [2950, 4230] as [number, number] };
 
-export const Globo: React.FC = () => {
+export const Globo: React.FC<{ paleta?: "cacau" | "colorido"; destino?: Destino; corEntrada?: string }> = ({
+  paleta = "cacau",
+  destino = BARCELONA,
+  corEntrada,
+}) => {
   const t = useMs();
   const mundo = useMundo();
+  const P = PALETAS[paleta];
+  const DESTINO: LonLat = [destino.lon, destino.lat];
 
-  // ---- câmera: surge sobre o Brasil, acompanha o avião, mergulha em Barcelona
+  // ---- câmera: surge sobre o Brasil, acompanha o avião, mergulha no destino
   const pVoo = kf(t, DUR_ROTA.voo, [0, 1], CURVA.suave);
   // a câmera vai atrás do avião com atraso: ele atravessa a tela em vez de ficar parado no centro
   const pCam = kf(t, [DUR_ROTA.voo[0] + 250, DUR_ROTA.mergulho[0] + 100], [0, 1], CURVA.suave);
-  // mergulho em Barcelona: crescimento contínuo (potência), sem esperar o fim para acelerar
+  // mergulho no destino: crescimento contínuo (potência), sem esperar o fim para acelerar
   const pMerg = Math.pow(kf(t, DUR_ROTA.mergulho, [0, 1]), 2.2);
   const pontoCentro = slerp(ORIGEM, DESTINO, 0.1 + 0.9 * pCam);
   const centro: LonLat = [pontoCentro[0], pontoCentro[1] - 8 * (1 - pCam)];
@@ -111,20 +210,15 @@ export const Globo: React.FC = () => {
   const cy = 1000 - 40 * pCam;
   const proj = projetor(centro, R, cx, cy);
 
-  const caminhos = useMemo(() => {
-    if (!mundo) return [];
-    return mundo.map((p) => ({ iso: p.iso, aneis: p.aneis }));
-  }, [mundo]);
-
   if (!mundo) return null;
 
-  const corPais = (iso: string): { fill: string; op: number } => {
-    if (iso === "BRA") return { fill: C.dourado, op: kf(t, [150, 650], [0.25, 1], CURVA.sai) * (1 - 0.35 * pVoo) };
-    if (iso === "ESP") return { fill: C.dourado, op: kf(t, [2700, 3200], [0.25, 1], CURVA.sai) };
-    return { fill: C.creme2, op: 0.36 };
+  const corPais = (iso: string): { fill: string; op: number; borda?: string } => {
+    if (iso === "BRA") return { fill: P.brasil, op: kf(t, [150, 650], [paleta === "colorido" ? 0.6 : 0.25, 1], CURVA.sai) * (1 - 0.35 * pVoo * (paleta === "cacau" ? 1 : 0)), borda: P.brasilBorda };
+    if (iso === "ESP") return { fill: P.destino, op: kf(t, [2700, 3200], [paleta === "colorido" ? 0 : 0.25, 1], CURVA.sai), borda: P.destinoBorda };
+    return { fill: P.terra, op: P.terraOp };
   };
 
-  const paths = caminhos.map(({ iso, aneis }) => {
+  const paths = mundo.map(({ iso, aneis }) => {
     let d = "";
     for (const anel of aneis) {
       let algumVisivel = false;
@@ -135,8 +229,19 @@ export const Globo: React.FC = () => {
       });
       if (algumVisivel) d += `M${pts.join("L")}Z`;
     }
+    if (!d) return null;
     const cor = corPais(iso);
-    return d ? <path key={iso} d={d} fill={cor.fill} fillOpacity={cor.op} stroke={C.cacau} strokeOpacity={0.55} strokeWidth={1.2} /> : null;
+    const base = <path key={iso} d={d} fill={P.terra} fillOpacity={P.terraOp} stroke={P.contorno} strokeOpacity={P.contornoOp} strokeWidth={1.2} />;
+    if (paleta === "colorido" && cor.borda) {
+      // destaque por cima da terra comum: cor + borda acesa
+      return (
+        <g key={iso}>
+          {base}
+          <path d={d} fill={cor.fill} fillOpacity={cor.op} stroke={cor.borda} strokeOpacity={cor.op} strokeWidth={4} strokeLinejoin="round" />
+        </g>
+      );
+    }
+    return <path key={iso} d={d} fill={cor.fill} fillOpacity={cor.op} stroke={P.contorno} strokeOpacity={P.contornoOp} strokeWidth={1.2} />;
   });
 
   // graticulado leve (15°)
@@ -178,26 +283,28 @@ export const Globo: React.FC = () => {
   const [ox, oy] = proj(ORIGEM);
   const [bx, by] = proj(DESTINO);
   const rotuloBr = kf(t, [300, 700], [0, 1], CURVA.sai) * kf(t, [1600, 2000], [1, 0]);
-  const rotuloBcn = kf(t, [2850, 3250], [0, 1], CURVA.sai) * kf(t, DUR_ROTA.mergulho, [1, 0], CURVA.entra);
+  const rotuloDest = kf(t, [2850, 3250], [0, 1], CURVA.sai) * kf(t, DUR_ROTA.mergulho, [1, 0], CURVA.entra);
   const pulso = (t - 2900) / 900;
+  const entrada = corEntrada ? kf(t, [0, 380], [1, 0], CURVA.suave) : 0;
 
   return (
-    <AbsoluteFill style={{ background: `radial-gradient(120% 80% at 50% 52%, ${C.cacau2} 0%, ${C.cacau} 70%)` }}>
+    <AbsoluteFill style={{ background: P.fundo }}>
+      {P.estrelas && <Estrelas t={t} />}
       <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, opacity: surge }}>
         <defs>
           <radialGradient id="oceano" cx="42%" cy="38%" r="70%">
-            <stop offset="0%" stopColor={C.chocolate} />
-            <stop offset="65%" stopColor={C.cacau3} />
-            <stop offset="100%" stopColor={C.cacau2} />
+            <stop offset="0%" stopColor={P.oceano[0]} />
+            <stop offset="65%" stopColor={P.oceano[1]} />
+            <stop offset="100%" stopColor={P.oceano[2]} />
           </radialGradient>
           <radialGradient id="brilho" cx="35%" cy="28%" r="55%">
-            <stop offset="0%" stopColor="rgba(255,236,210,.20)" />
-            <stop offset="100%" stopColor="rgba(255,236,210,0)" />
+            <stop offset="0%" stopColor={P.brilho} />
+            <stop offset="100%" stopColor="rgba(255,255,255,0)" />
           </radialGradient>
           <radialGradient id="atmosfera" cx="50%" cy="50%" r="50%">
-            <stop offset="88%" stopColor="rgba(233,166,58,0)" />
-            <stop offset="96%" stopColor="rgba(233,166,58,.28)" />
-            <stop offset="100%" stopColor="rgba(233,166,58,0)" />
+            <stop offset="88%" stopColor="rgba(255,255,255,0)" />
+            <stop offset="96%" stopColor={P.atmosfera} />
+            <stop offset="100%" stopColor="rgba(255,255,255,0)" />
           </radialGradient>
           <clipPath id="esfera">
             <circle cx={cx} cy={cy} r={R} />
@@ -212,32 +319,33 @@ export const Globo: React.FC = () => {
         <circle cx={cx} cy={cy} r={R * 1.09} fill="url(#atmosfera)" />
         <circle cx={cx} cy={cy} r={R} fill="url(#oceano)" />
         <g clipPath="url(#esfera)">
-          <path d={grade.join("")} fill="none" stroke={C.creme} strokeOpacity={0.07} strokeWidth={1.2} />
+          <path d={grade.join("")} fill="none" stroke={P.grade} strokeOpacity={P.gradeOp} strokeWidth={1.2} />
           {paths}
           {rota.length > 1 && (
             <>
-              <polyline points={rota.join(" ")} fill="none" stroke={C.dourado} strokeWidth={14} strokeOpacity={0.45} filter="url(#brilhoRota)" />
-              <polyline points={rota.join(" ")} fill="none" stroke={C.douradoClaro} strokeWidth={6} strokeLinecap="round" strokeDasharray="2 16" />
+              <polyline points={rota.join(" ")} fill="none" stroke={P.rotaBrilho} strokeWidth={14} strokeOpacity={0.45} filter="url(#brilhoRota)" />
+              <polyline points={rota.join(" ")} fill="none" stroke={P.rota} strokeWidth={6} strokeLinecap="round" strokeDasharray="2 16" />
             </>
           )}
-          <circle cx={ox} cy={oy} r={11} fill={C.creme} stroke={C.cacau} strokeWidth={3} opacity={kf(t, [200, 500], [0, 1])} />
+          <circle cx={ox} cy={oy} r={11} fill={P.ponto} stroke={P.brasilBorda === C.cacau ? C.cacau : P.brasil} strokeWidth={3} opacity={kf(t, [200, 500], [0, 1])} />
           {t > 2850 && (
             <>
-              <circle cx={bx} cy={by} r={14 + 70 * Math.max(0, Math.min(1, pulso))} fill="none" stroke={C.douradoClaro} strokeWidth={4} opacity={Math.max(0, 1 - pulso)} />
-              <circle cx={bx} cy={by} r={13} fill={C.douradoClaro} stroke={C.cacau} strokeWidth={3} />
+              <circle cx={bx} cy={by} r={14 + 70 * Math.max(0, Math.min(1, pulso))} fill="none" stroke={P.rota} strokeWidth={4} opacity={Math.max(0, 1 - pulso)} />
+              <circle cx={bx} cy={by} r={13} fill={P.ponto} stroke={P.pontoBorda} strokeWidth={3} />
             </>
           )}
           <circle cx={cx} cy={cy} r={R} fill="url(#brilho)" />
         </g>
         {escAviao > 0.01 && <Aviao x={posAviao[0]} y={posAviao[1]} ang={ang} escala={escAviao} />}
       </svg>
-      <RotuloMapa x={ox - 60} y={oy + 60} texto="BRASIL" opacidade={rotuloBr} />
-      <RotuloMapa x={bx} y={by - 120} texto="BARCELONA" opacidade={rotuloBcn} />
+      <RotuloMapa x={ox - 60} y={oy + 60} texto="BRASIL" opacidade={rotuloBr} cores={P.rotuloOrigem} />
+      <RotuloMapa x={bx} y={by - 120} texto={destino.nome} opacidade={rotuloDest} cores={P.rotuloDestino} />
+      {entrada > 0 && <AbsoluteFill style={{ background: corEntrada, opacity: entrada }} />}
     </AbsoluteFill>
   );
 };
 
-const RotuloMapa: React.FC<{ x: number; y: number; texto: string; opacidade: number }> = ({ x, y, texto, opacidade }) =>
+const RotuloMapa: React.FC<{ x: number; y: number; texto: string; opacidade: number; cores: Paleta["rotuloOrigem"] }> = ({ x, y, texto, opacidade, cores }) =>
   opacidade <= 0.001 ? null : (
     <div
       style={{
@@ -256,12 +364,13 @@ const RotuloMapa: React.FC<{ x: number; y: number; texto: string; opacidade: num
           fontFamily: F.cartaz,
           fontSize: 84,
           letterSpacing: "0.04em",
-          color: C.creme,
+          color: cores.texto,
           padding: "6px 26px 10px",
-          background: "rgba(30,18,12,.55)",
+          background: cores.fundo,
           borderRadius: 14,
-          border: `2px solid ${C.dourado}`,
+          border: `3px solid ${cores.borda}`,
           lineHeight: 1,
+          boxShadow: "0 8px 24px rgba(0,0,0,.35)",
         }}
       >
         {texto}

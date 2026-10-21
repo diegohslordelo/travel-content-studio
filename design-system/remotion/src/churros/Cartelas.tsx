@@ -1,6 +1,6 @@
 /**
  * Cartelas gráficas do Reel dos churros:
- * - Veredito: pausa tipográfica sobre cacau ("A gente prefere / O BRASILEIRO").
+ * - Veredito: pausa tipográfica ("A gente prefere / O BRASILEIRO"), sobre cacau ou sobre o verde do Brasil.
  * - Comparação: os dois churros ilustrados lado a lado. Não há imagem do churro brasileiro no acervo,
  *   então os dois são desenho (ilustração assumida), nunca foto apresentada como nossa.
  * Tempos em ms relativos à Sequence.
@@ -12,7 +12,44 @@ import { C, CURVA, F } from "./tema";
 
 const fundoCacau = `radial-gradient(110% 70% at 50% 45%, ${C.cacau2} 0%, ${C.cacau} 72%)`;
 
-export const Veredito: React.FC<{ dur: number }> = ({ dur }) => {
+export type PaletaCartela = "cacau" | "colorido";
+
+/** Cores das cartelas: "cacau" (REV1 de Barcelona) e "colorido" (verde e amarelo do Brasil × vermelho e amarelo da Espanha). */
+const CORES = {
+  cacau: {
+    veredito: fundoCacau,
+    acima: C.creme,
+    principal: C.douradoClaro,
+    faixa: [C.verdeBr, C.amareloBr],
+    abaixo: C.creme2,
+    esq: fundoCacau,
+    dir: fundoCacau,
+    divisoria: C.dourado,
+    xFundo: C.cacau,
+    xBorda: C.dourado,
+    xTexto: C.douradoClaro,
+    visto: C.douradoClaro,
+    luz: "233,166,58",
+  },
+  colorido: {
+    veredito: "radial-gradient(110% 75% at 50% 42%, #1DB45C 0%, #0F8A43 55%, #075E2D 100%)",
+    acima: "#FFFFFF",
+    principal: "#FFD43B",
+    faixa: ["#FFD43B", "#1E4FD8"],
+    abaixo: "rgba(255,255,255,.88)",
+    esq: "linear-gradient(160deg, #1DB45C 0%, #0B7A3B 100%)",
+    dir: "linear-gradient(200deg, #E5322D 0%, #A3111E 100%)",
+    divisoria: "#FFFFFF",
+    xFundo: "#FFFFFF",
+    xBorda: "#FFD43B",
+    xTexto: "#E5322D",
+    visto: "#FFD43B",
+    luz: "255,212,59",
+  },
+} as const;
+
+export const Veredito: React.FC<{ dur: number; paleta?: PaletaCartela; abaixo?: string }> = ({ dur, paleta = "cacau", abaixo = "desculpa, Barcelona." }) => {
+  const K = CORES[paleta];
   const t = useMs();
   const a = kf(t, [0, 480], [0, 1], CURVA.sai);
   const b = kf(t, [420, 900], [0, 1], CURVA.mola);
@@ -22,10 +59,10 @@ export const Veredito: React.FC<{ dur: number }> = ({ dur }) => {
   // leve "respiração" do bloco depois do impacto
   const resp = 1 + 0.025 * kf(t, [900, dur], [0, 1], CURVA.suave);
   return (
-    <AbsoluteFill style={{ background: fundoCacau, alignItems: "center", justifyContent: "center" }}>
+    <AbsoluteFill style={{ background: K.veredito, alignItems: "center", justifyContent: "center" }}>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", scale: String(resp), opacity: 1 - saida, marginTop: -120 }}>
         <div style={{ overflow: "hidden" }}>
-          <div style={{ fontFamily: F.serifa, fontStyle: "italic", fontSize: 124, color: C.creme, translate: `0 ${(1 - a) * 100}%`, lineHeight: 1.05 }}>
+          <div style={{ fontFamily: F.serifa, fontStyle: "italic", fontSize: 124, color: K.acima, translate: `0 ${(1 - a) * 100}%`, lineHeight: 1.05 }}>
             A gente prefere
           </div>
         </div>
@@ -34,7 +71,7 @@ export const Veredito: React.FC<{ dur: number }> = ({ dur }) => {
             fontFamily: F.cartaz,
             fontSize: 196,
             lineHeight: 1,
-            color: C.douradoClaro,
+            color: K.principal,
             letterSpacing: "0.01em",
             scale: String(1.35 - 0.35 * b),
             opacity: Math.min(1, b * 2.5),
@@ -46,8 +83,8 @@ export const Veredito: React.FC<{ dur: number }> = ({ dur }) => {
           O BRASILEIRO
         </div>
         <div style={{ display: "flex", gap: 0, marginTop: 26, height: 14, width: 760, justifyContent: "center" }}>
-          <div style={{ width: 380 * faixa, background: C.verdeBr, borderRadius: "7px 0 0 7px" }} />
-          <div style={{ width: 380 * faixa, background: C.amareloBr, borderRadius: "0 7px 7px 0" }} />
+          <div style={{ width: 380 * faixa, background: K.faixa[0], borderRadius: "7px 0 0 7px" }} />
+          <div style={{ width: 380 * faixa, background: K.faixa[1], borderRadius: "0 7px 7px 0" }} />
         </div>
         <div
           style={{
@@ -55,13 +92,13 @@ export const Veredito: React.FC<{ dur: number }> = ({ dur }) => {
             fontWeight: 600,
             fontSize: 46,
             letterSpacing: "0.03em",
-            color: C.creme2,
+            color: K.abaixo,
             marginTop: 54,
             opacity: c,
             translate: `0 ${(1 - c) * 16}px`,
           }}
         >
-          desculpa, Barcelona.
+          {abaixo}
         </div>
       </div>
     </AbsoluteFill>
@@ -136,7 +173,13 @@ const Rotulo: React.FC<{ texto: string; cores: string[] }> = ({ texto, cores }) 
   </div>
 );
 
-export const Comparacao: React.FC<{ dur: number }> = ({ dur }) => {
+export const Comparacao: React.FC<{ dur: number; paleta?: PaletaCartela; direita?: string; acucarDireita?: number }> = ({
+  dur,
+  paleta = "cacau",
+  direita = "BARCELONA",
+  acucarDireita = 22,
+}) => {
+  const K = CORES[paleta];
   const t = useMs();
   const esq = kf(t, [0, 620], [0, 1], CURVA.sai);
   const dir = kf(t, [220, 840], [0, 1], CURVA.sai);
@@ -147,6 +190,9 @@ export const Comparacao: React.FC<{ dur: number }> = ({ dur }) => {
   const flutua = (fase: number) => Math.sin((t / 1000) * 2 + fase) * 6;
   return (
     <AbsoluteFill style={{ background: fundoCacau, opacity: 1 - saida }}>
+      {/* metades com as cores de cada lado (no "cacau" as duas são o próprio fundo) */}
+      <div style={{ position: "absolute", left: 0, top: 0, width: 540, height: 1920, background: K.esq, translate: `${(1 - esq) * -540}px 0` }} />
+      <div style={{ position: "absolute", left: 540, top: 0, width: 540, height: 1920, background: K.dir, translate: `${(1 - dir) * 540}px 0` }} />
       {/* luz quente atrás do vencedor */}
       <div
         style={{
@@ -156,10 +202,10 @@ export const Comparacao: React.FC<{ dur: number }> = ({ dur }) => {
           width: 640,
           height: 840,
           borderRadius: "50%",
-          background: `radial-gradient(closest-side, rgba(233,166,58,${0.32 * brilho}), rgba(233,166,58,0))`,
+          background: `radial-gradient(closest-side, rgba(${K.luz},${0.32 * brilho}), rgba(${K.luz},0))`,
         }}
       />
-      <div style={{ position: "absolute", left: 540 - 1.5, top: 520, width: 3, height: 980 * x, background: `linear-gradient(${C.dourado}, rgba(233,166,58,0))`, opacity: 0.6 }} />
+      <div style={{ position: "absolute", left: 540 - 1.5, top: 520, width: 3, height: 980 * x, background: `linear-gradient(${K.divisoria}, rgba(255,255,255,0))`, opacity: 0.6 }} />
       <div
         style={{
           position: "absolute",
@@ -168,14 +214,14 @@ export const Comparacao: React.FC<{ dur: number }> = ({ dur }) => {
           width: 112,
           height: 112,
           borderRadius: 56,
-          background: C.cacau,
-          border: `3px solid ${C.dourado}`,
+          background: K.xFundo,
+          border: `3px solid ${K.xBorda}`,
           display: "grid",
           placeItems: "center",
           fontFamily: F.serifa,
           fontStyle: "italic",
           fontSize: 76,
-          color: C.douradoClaro,
+          color: K.xTexto,
           scale: String(x),
         }}
       >
@@ -190,18 +236,18 @@ export const Comparacao: React.FC<{ dur: number }> = ({ dur }) => {
         </div>
       </div>
 
-      {/* BARCELONA */}
+      {/* destino (Barcelona, Madrid…) */}
       <div style={{ position: "absolute", left: 540, width: 540, top: 300, display: "flex", flexDirection: "column", alignItems: "center", translate: `${(1 - dir) * 260}px 0`, opacity: dir }}>
-        <Rotulo texto="BARCELONA" cores={[C.amareloBr, C.vermelhoEs, C.amareloBr]} />
+        <Rotulo texto={direita} cores={[C.amareloBr, C.vermelhoEs, C.amareloBr]} />
         <div style={{ position: "relative", marginTop: 120, width: 360, height: 700, translate: `0 ${flutua(1.7)}px` }}>
           <div style={{ position: "absolute", left: 92, top: 0, rotate: "-14deg" }}>
-            <Churro w={62} h={520} id="es1" acucar={22} />
+            <Churro w={62} h={520} id="es1" acucar={acucarDireita} />
           </div>
           <div style={{ position: "absolute", left: 150, top: -20, rotate: "-2deg" }}>
-            <Churro w={62} h={540} id="es2" acucar={22} />
+            <Churro w={62} h={540} id="es2" acucar={acucarDireita} />
           </div>
           <div style={{ position: "absolute", left: 208, top: 6, rotate: "11deg" }}>
-            <Churro w={62} h={510} id="es3" acucar={22} />
+            <Churro w={62} h={510} id="es3" acucar={acucarDireita} />
           </div>
           <div style={{ position: "absolute", left: 66, top: 470 }}>
             <Xicara />
@@ -214,7 +260,7 @@ export const Comparacao: React.FC<{ dur: number }> = ({ dur }) => {
         <path
           d="M150,1520 L230,1600 L400,1400"
           fill="none"
-          stroke={C.douradoClaro}
+          stroke={K.visto}
           strokeWidth={22}
           strokeLinecap="round"
           strokeLinejoin="round"

@@ -9,7 +9,7 @@ import { AbsoluteFill } from "remotion";
 import { kf, useMs } from "../ds/tempo";
 import { C, CURVA, F, SEGURO } from "./tema";
 
-export type EstiloTexto = "gancho" | "serifa" | "lugar" | "capitulo" | "serifa_pequena" | "pergunta";
+export type EstiloTexto = "gancho" | "serifa" | "lugar" | "capitulo" | "serifa_pequena" | "pergunta" | "citacao";
 
 export type Texto = {
   estilo: EstiloTexto;
@@ -29,16 +29,17 @@ const Linha: React.FC<{ t: number; atraso: number; children: React.ReactNode; st
   const p = kf(t - atraso, [0, 520], [0, 1], CURVA.sai);
   return (
     // a folga em cima não deixa a máscara cortar acentos (Á, Ê) acima da altura da linha
-    <div style={{ overflow: "hidden", paddingTop: "0.24em", marginTop: "-0.24em", paddingBottom: "0.08em", marginBottom: "-0.08em" }}>
+    <div style={{ overflow: "hidden", paddingTop: "0.4em", marginTop: "-0.4em", paddingBottom: "0.08em", marginBottom: "-0.08em" }}>
       <div style={{ ...style, translate: `0 ${(1 - p) * 110}%`, opacity: Math.min(1, p * 3) }}>{children}</div>
     </div>
   );
 };
 
-const Veu: React.FC<{ op: number; ate?: number }> = ({ op, ate = 46 }) => (
+/** Véu de contraste: de cima para baixo, ou de baixo para cima quando o texto fica na metade inferior. */
+const Veu: React.FC<{ op: number; ate?: number; baixo?: boolean }> = ({ op, ate = 46, baixo }) => (
   <AbsoluteFill
     style={{
-      background: `linear-gradient(180deg, rgba(24,14,9,.62) 0%, rgba(24,14,9,.38) ${ate * 0.55}%, rgba(24,14,9,0) ${ate}%)`,
+      background: `linear-gradient(${baixo ? "0deg" : "180deg"}, rgba(24,14,9,.62) 0%, rgba(24,14,9,.38) ${ate * 0.55}%, rgba(24,14,9,0) ${ate}%)`,
       opacity: op,
     }}
   />
@@ -115,7 +116,7 @@ export const TextoNaTela: React.FC<Texto> = ({ estilo, linhas, kicker, sub, nume
     const traco = kf(t, [260 + linhas.length * 90, 760 + linhas.length * 90], [0, 1], CURVA.sai);
     return (
       <AbsoluteFill>
-        <Veu op={veu} />
+        <Veu op={veu} baixo={y > 900} />
         <div style={caixa}>
           {linhas.map((l, i) => (
             <Linha key={i} t={t} atraso={i * 90} style={serifa(tam)}>
@@ -170,7 +171,7 @@ export const TextoNaTela: React.FC<Texto> = ({ estilo, linhas, kicker, sub, nume
     const anel = kf(t, [0, 420], [0, 1], CURVA.sai);
     return (
       <AbsoluteFill>
-        <Veu op={veu} />
+        <Veu op={veu} baixo={y > 900} />
         <div style={caixa}>
           {numero && (
             <div
@@ -203,6 +204,27 @@ export const TextoNaTela: React.FC<Texto> = ({ estilo, linhas, kicker, sub, nume
           {sub && (
             <Linha t={t} atraso={260} style={{ ...serifa(72), color: C.douradoClaro, marginTop: 6 }}>
               {sub}
+            </Linha>
+          )}
+        </div>
+      </AbsoluteFill>
+    );
+  }
+
+  if (estilo === "citacao") {
+    // fala real de quem aparece no plano, com crédito pequeno embaixo
+    return (
+      <AbsoluteFill>
+        <Veu op={veu} baixo={y > 900} ate={50} />
+        <div style={caixa}>
+          {linhas.map((l, i) => (
+            <Linha key={i} t={t} atraso={i * 90} style={serifa(124)}>
+              {l}
+            </Linha>
+          ))}
+          {kicker && (
+            <Linha t={t} atraso={260} style={{ ...kick, fontSize: 28, marginTop: 22 }}>
+              {kicker}
             </Linha>
           )}
         </div>
