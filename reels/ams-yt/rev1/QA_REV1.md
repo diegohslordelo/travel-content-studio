@@ -6,7 +6,7 @@
 | Fonte | `fonte/1016_sem_musica.mp4` + `fonte/1016_so_musica.mp4` (export do CapCut do Diego, 19/10/2026; fora do git, somente leitura) |
 | Data | 21/10/2026 |
 | Duração da REV1 | **33:00,3** = gancho 26,5 s + corpo 31:35,7 + fechamento 38,1 s + tela final 20,0 s |
-| Estado | Prévia para aprovação. Faltam as narrações, o print do hotel, a escuta e o render em 4K (seção 6) |
+| Estado | Prévia completa pronta para aprovação. Faltam as narrações, o print do hotel, a escuta e o render em 4K (seção 6) |
 
 ## 1. Entregas desta revisão
 
@@ -14,8 +14,8 @@
 |---|---|
 | `rev1_gancho.mp4` | Gancho (0:00–0:32) com o contador e a frase da narração na tela, para aprovar os takes e gravar |
 | `rev1_fechamento.mp4` | Fechamento (31:54–33:00) com o contador e as frases, para aprovar e gravar |
-| `rev1_previa_720p.mp4` | Vídeo inteiro, prévia leve em 720p (efeitos, sons e mixagem). O guia de narração aparece só no gancho e no fechamento |
-| `rev1_mccrispy.mp4` | O momento do McCrispy (rufar + fogos murchos) para aprovar o som |
+| `rev1_previa_720p.mp4` | Vídeo inteiro, 33:00,3, prévia leve em 720p (247 MB; efeitos, sons e mixagem). **−14,1 LUFS e −1,2 dBTP medidos no MP4.** O guia de narração aparece só no gancho e no fechamento |
+| `rev1_mccrispy.mp4` | O momento do McCrispy (20 s: mordida, rufar, "Não" e fogos murchos) para aprovar o som |
 | `ROTEIRO_NARRACAO_REV1.md` | Texto das narrações, com o tempo de cada frase e como gravar |
 | `efeitos_rev1.md` | Cada efeito visual e sonoro: minuto em que entra, duração e por quê |
 | `DECUPAGEM_REV1.md` | O que saiu do vídeo e por quê (cortes manuais, pausas, acidentes de câmera) |
@@ -32,7 +32,7 @@
 4. **Hora e lugar** de cada trecho: a fala casada com a transcrição do acervo dá a hora do arquivo; o GPS dos clipes e o OpenStreetMap dão a rua (Fabel Friet na Runstraat, Het Molentje na Gasthuismolensteeg, The Old Bell no Rembrandtplein etc.).
 5. **Gancho e fechamento** montados com os melhores momentos dos 3 dias e roteiro de narração.
 6. **Objetos e efeitos** (`efeitos_rev1.md`): placa de marca, capítulos com a transição Página, Placar por dia, 28 etiquetas de lugar, 21 recibos, recibo da viagem, notas, lista dos museus, correção do € 7,15, rufar + zoom + fogos murchos, selo VALE A PENA, bilhetes, like, Instagram (3 vezes), placa de fechamento e tela final.
-7. **Áudio**: diagnóstico de 145 planos, tratamento, música do Diego remixada com ducking e master em −14 LUFS / ≤ −1 dBTP.
+7. **Áudio**: diagnóstico de 145 planos, tratamento, música do Diego remixada com ducking e master em −14 LUFS / ≤ −1 dBTP. Ao medir o MP4 achei que o AAC elevou o pico para +0,7 dBFS (a mixagem em WAV estava em −1,6); corrigi com quedas locais de ganho (`corrigir_pico_aac.py`) e o arquivo final mede −1,2 dBTP.
 8. **Legenda `.srt`** com nomes na grafia oficial e lista de escuta.
 
 ## 3. Decisões do Diego aplicadas (21/10/2026)

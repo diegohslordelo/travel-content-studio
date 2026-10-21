@@ -19,11 +19,11 @@ O áudio original está em −20,6 LUFS, com fala entre −28,5 e −16,0 LUFS d
 
 | Item | Original | Exportado (prévia do gancho) | Observação |
 |---|---|---|---|
-| Contêiner / duração | MP4, 32:43,8 (vídeo e áudio iguais) | MP4, 32,6 s (trecho) | O vídeo completo final é outra duração por causa da decupagem |
-| Fluxo de imagem | HEVC 10 bits, 3840 × 2160, 24 fps, BT.709 | H.264, 1920 × 1080, 24 fps | Prévia: imagem renderizada do proxy; o 4K sai no render final |
-| Áudio | AAC, 44,1 kHz, estéreo, 148 kbps | AAC, 48 kHz, estéreo, 192 kbps | Precedente REV6/REV8 |
-| LUFS integrado | −20,6 | −14,2 (trecho do gancho) | Alvo [PROJETO] −14 ± 1 LU. A mixagem dos 33 min fecha em −14,08 antes do AAC |
-| Pico verdadeiro | −0,2 dBTP | −1,5 dBTP | Limite [PROJETO] −1 dBTP |
+| Contêiner / duração | MP4, 32:43,8 (vídeo e áudio iguais) | MP4, 33:00,3 (vídeo e áudio iguais, sem erro de decodificação) | A diferença vem do gancho, do fechamento, da tela final e da decupagem |
+| Fluxo de imagem | HEVC 10 bits, 3840 × 2160, 24 fps, BT.709 | H.264, 1280 × 720, 24 fps | Prévia leve: imagem renderizada do proxy 1080p; o 4K sai no render final |
+| Áudio | AAC, 44,1 kHz, estéreo, 148 kbps | AAC, 48 kHz, estéreo, 160 kbps (prévia) e 192 kbps (gancho e fechamento) | Precedente REV6/REV8: 192 kbps. Na entrega final uso 192 kbps |
+| LUFS integrado | −20,6 | **−14,1** (vídeo completo, medido no MP4) | Alvo [PROJETO] −14 ± 1 LU: cumpre. LRA 5,7 LU |
+| Pico verdadeiro | −0,2 dBTP | **−1,2 dBTP** (vídeo completo, medido no MP4) | Limite [PROJETO] −1 dBTP: cumpre, depois da correção da seção 10 |
 | Piso de ruído (mediana dos planos com fala) | fala 18,9 dB acima do piso | — | Pior plano: 8,0 dB (New York Pizza, FEBO) |
 
 ## 3. Blocos analisados
@@ -39,7 +39,7 @@ Um bloco por plano do editado do Diego (cortes de cena detectados no proxy; plan
 | P03 | Restaurantes, rua, bonde | Ruído de pessoas, trânsito e máquinas | Fala/piso de 8 a 13 dB nos piores planos | G1–G2 | T3 | **Sim** (é o lugar) | Não tratar (5.6): é som do lugar; redução em ruído variável cria artefato |
 | P04 | Montagens sem fala | Correlação negativa (−0,26) | Só em trechos onde o som da câmera está mudo (−∞ LUFS) | G0 | — | — | Não tratar: não há voz ali |
 | P05 | Blocos de música do CapCut | Música alta | Música a −9 LUFS, por baixo de falas em 3 blocos (ex.: casas tortas, 02:25) | G2 | T1 | — | Tratar: remixar a partir do arquivo só de música, com ducking |
-| P06 | Picos de sílaba, golpes de vento e manuseio | Crista alta (o master pede +8,6 dB) | Limitador age > 1 dB em 8,9% do tempo, > 6 dB em 0,3% | G1 | T1 | — | Compressor leve antes + limitador no master; os 10 piores pontos vão para a escuta |
+| P06 | Picos de sílaba, golpes de vento e manuseio | Crista alta (o master pede +8,6 dB) | Limitador age > 1 dB em 9,0% do tempo, > 6 dB em 0,3% | G1 | T1 | — | Compressor leve antes + limitador no master; os 10 piores pontos vão para a escuta |
 | P07 | Clipping, DC, início/fim | — | 0 amostras no teto; sem degrau no início | G0 | — | — | Sem problema relevante |
 
 ## 5. Tratamento aplicado
@@ -82,11 +82,15 @@ Os 10 momentos em que o limitador mais trabalha (vídeo final): **03:39,8 · 27:
 
 ## 10. Validação técnica
 
+**Achado no padrão (11.3, "medir o arquivo exportado"):** a mixagem em WAV saiu com −1,6 dBTP, mas o AAC elevou o pico do MP4 completo para **+0,7 dBFS** (2 amostras em 29:30) e −0,4 dBFS (2 amostras em 23:15), acima do limite. O mesmo já tinha acontecido na REV6. Correção (`rev1/corrigir_pico_aac.py`): ciclo de codificar, decodificar e achar as amostras acima de −1,2 dBFS, com queda local de ganho de ~100 ms no WAV só nesses pontos (6 pontos, entre 0,5 e 2,4 dB), até o decodificado ficar abaixo. Convergiu em 3 rodadas. Os pontos corrigidos, no vídeo final: 04:10 · 23:15 · 27:37 · 27:58 · 28:00 · 29:30. Cada um é uma queda de menos de 100 ms: ouvir se algum deixou "buraco" na fala ou na música.
+
 | Item | Esperado | Obtido |
 |---|---|---|
-| Original intacto | SHA-256 igual | conferir no fim (arquivos somente leitura) |
-| Loudness | −14 ± 1 LU | −14,08 (mixagem) · −14,2 (gancho exportado) |
-| Pico verdadeiro | ≤ −1 dBTP | −1,5 dBTP (gancho exportado) |
+| Original intacto | SHA-256 igual | **OK**: os dois arquivos de `fonte/` batem com o hash do início (somente leitura) |
+| Loudness | −14 ± 1 LU | **−14,1 LUFS** no MP4 da prévia completa |
+| Pico verdadeiro | ≤ −1 dBTP | **−1,2 dBTP** no MP4 da prévia completa (antes da correção: +0,7) |
+| Decodificação | sem erros | sem erros |
+| Duração vídeo × áudio | iguais | 1980,333 s nos dois |
 | Clipping novo | nenhum | nenhum |
 | Sincronia | início, meio e fim | os cortes são em quadros inteiros (24 fps), imagem e som juntos; conferência visual humana pendente |
 
