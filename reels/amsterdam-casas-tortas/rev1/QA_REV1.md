@@ -4,7 +4,7 @@
 
 | Item | Valor |
 |---|---|
-| Arquivo final | `reel_amsterdam-casas-tortas_rev1.mp4` · 1080 × 1920 · 30 fps · 59,7 s · H.264 + AAC 320 kbps |
+| Arquivo final | `reel_amsterdam-casas-tortas_rev1.mp4` · 1080 × 1920 · 30 fps · 59,7 s · H.264 + AAC 320 kbps · vídeo fluido e desenho colorido (ajustes de 21/10) |
 | Prévia leve | `reel_amsterdam-casas-tortas_rev1_previa.mp4` (540 × 960) |
 | Capa | `capa_amsterdam-casas-tortas_rev1.jpg` (1080 × 1920; placa Hook "POR QUE AS CASAS DE AMSTERDAM / DANÇAM ?" no recorte 3:4, entre y 240 e 1680) |
 | Áudio | −14,0 LUFS integrados · pico verdadeiro −1,4 dBTP (DS V2, 4.6) |
@@ -21,7 +21,7 @@
 | Sem o DS introdutório, só a legenda | Sem placa de abertura, sem Placar, sem fechamento e sem bordão. Do DS entram só os estilos de legenda (Padrão com Destaque, Emocional e Informação, DS 3.2), as transições e o CTA |
 | CTA para o vídeo do YouTube no fim | Placa de direção do DS 2.7: `VÍDEO COMPLETO · SÁBADO 24/10` / `NO YOUTUBE` + seta, com a Chegada e o *clack*, nos últimos 2,9 s, sobre a fileira das Dancing Houses com céu livre |
 | Pegar a narração no Drive, transcrever e basear legenda e duração nela | 4 modelos Whisper (large-v3, large-v3-turbo, large-v2 e medium); os 44 grupos de legenda são a fala real (o `rev1.py` recusa grupo que não bata com a transcrição); a duração é a da fala (56,7 s) + o CTA (2,9 s) = 59,7 s |
-| Nada de imagem se mexendo o tempo todo | 11 planos parados (quadro congelado do 4K ou foto) e 3 vídeos com "tripé digital": o recorte acompanha a cena e a câmera fica parada (resíduo ≤ 0,42 px por quadro); barco, água e nuvens continuam vivos. Sem Ken Burns |
+| Nada de imagem se mexendo o tempo todo, **mas fluido, sem parecer foto** (ajuste de 21/10) | Todos os planos dos clipes são vídeo: a tremedeira da mão sai e fica o movimento de câmera suavizado, em 40% do original nos planos do Amstel e da viga, e em 50 a 90% nos de inclinação forte do `IMG_1410` (sem folga no quadro para segurar mais). Os 3 planos das fotos do WhatsApp têm zoom lento de 100 → 104% (DS 4.5) |
 | Trechos estáticos de no máximo 3 s | O maior plano real tem 2,90 s (CTA). O `rev1.py props` para com erro se algum plano real passar de 3 s |
 | Usar esses vídeos e fotos | Os 5 vídeos do WhatsApp são as tomadas `IMG_1403`, `1404`, `1407`, `1408` e `1410` (mesma duração e mesmo quadro); usei os **originais 4K** delas, do Drive. As 2 fotos entram como enviadas (960 × 1280) |
 | Desenho animado da subida dos móveis com o gancho | Cena `gancho` (41,3–47,6 s): o sofá sobe pela corda, bate no peitoril da fachada reta (*tuc* + tremor de 2 quadros), a fachada se inclina para a frente (prumo tracejado mostra o ângulo), o sofá sobe livre e entra pela porta do sótão (*plim*) |
@@ -111,7 +111,7 @@ A transcrição é automática e eu não escuto áudio: a validação auditiva �
 
 | Item | Situação |
 |---|---|
-| Só tokens oficiais | ✅ Legendas, placa e transições são os componentes do Remotion (tokens do JSON). O desenho usa só papel, grafite (900/800/700), asfalto, concreto, recibo e amarelo (500/300); curvas `ease-arrive`, `ease-out`, `ease-drop`, `ease-cinema` |
+| Só tokens oficiais | ✅ Legendas, placa e transições são os componentes do Remotion (tokens do JSON). ➖ O desenho tem paleta própria, colorida como as casas de verdade (decisão do Diego, 21/10: o DS vale para os componentes de vídeo, não para as cores desta animação) |
 | Objeto de marca na posição fixa | ➖ Sem placa de abertura, **a pedido do Diego**. A placa entra uma vez, no CTA, em x 72 · y 640, com a Chegada |
 | Placar | ➖ Não é Reel de primeiro dia |
 | Carimbo, ticket e bilhetes | ✅ Nenhum |
@@ -142,9 +142,9 @@ A transcrição é automática e eu não escuto áudio: a validação auditiva �
 
 ## Decisões desta revisão (valem só para este Reel)
 
-- **Sem Ken Burns:** o DS (4.5) prevê o zoom de 100 → 104% em plano parado de mais de 2 s; não foi usado, porque o Diego pediu imagem estática.
+- **Movimento (21/10):** a 1ª versão travava a câmera e parecia foto. Agora os planos são vídeo com o movimento suavizado (sem tremedeira) e as fotos têm o zoom 100 → 104% do DS 4.5. Os clipes curtos (`IMG_1408` e trechos do `IMG_1404`, `1407`, `1410`, `1403`) tocam entre 85% e 95% da velocidade para cobrir o plano sem congelar.
 - **Tone mapping Hable a 203 nits** (o Madrid usou Möbius a 100): dia claro com céu estourava no Möbius.
-- **Desenho:** é ilustração deste Reel, não componente da marca. Traço grafite de 6 px (o peso do traço de caneta, 1.6); o amarelo marca o assunto de cada cena (a casa amarela, as estacas, o sofá) e fica perto de 10% da tela.
+- **Desenho (21/10, pedido do Diego):** colorido com as cores das casas de Amsterdam (tijolo, ocre, creme, fachada escura, caixilho branco, telha, portas verdes e vermelhas, floreiras), céu com nuvens, canal com reflexo e barco, solo em camadas de turfa, argila e areia, estacas de madeira e sofá verde-água. Animação com mola (as casas balançam ao tombar), squash & stretch ao nascer, poeira no tombo, ciclo de dois dias com sol, lua, estrelas e janelas acesas, impacto do sofá e braços recebendo a mudança no sótão.
 - **Sem círculo de caneta no gancho real:** o azul caneta ficaria sobre céu azul e sobre a fachada grafite, combinações proibidas no DS (1.1). A viga ocupa o quadro e a legenda destaca "detalhe".
 - **Rota sem coordenadas:** as coordenadas das casas não foram conferidas, e o DS trata as coordenadas como opcionais.
 - **Placa do CTA em tamanho M** (DS 2.7: "placa pequena"), sem saída: o vídeo acaba nela e o loop é um corte seco.

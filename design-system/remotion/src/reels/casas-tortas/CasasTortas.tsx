@@ -13,7 +13,7 @@ import { GrupoLegenda, LegendaEmocional, LegendaInformacao, LegendaPadrao } from
 import { Cinema, CenaRota, Varredura } from "../../ds/Transicoes";
 import { ARQUIVOS, NomeSom } from "../../ds/Som";
 import { kf, useMs } from "../../ds/tempo";
-import { EASE } from "../../ds/tokens";
+import { EASE, EFEITO } from "../../ds/tokens";
 import { CenaFileira, CenaGancho, CenaSolo } from "./cenas";
 
 type Plano = {
@@ -72,8 +72,15 @@ export const metadadosCasasTortas: CalculateMetadataFunction<PropsCasasTortas> =
 /** Rota: a cena que sai continua por baixo enquanto a linha revela a que entra (500 ms + folga). */
 const SOBRA_ROTA = 560;
 
+/** Foto (só as 2 do WhatsApp, sem vídeo): zoom lento 100 → 104% no plano inteiro (DS 4.5), para não parecer parada. */
+const FotoViva: React.FC<{ pl: Plano }> = ({ pl }) => {
+  const t = useMs();
+  const z = kf(t, [0, pl.fim - pl.ini + SOBRA_ROTA], [1, EFEITO.zoomSutil]);
+  return <Img src={staticFile(pl.arquivo as string)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: String(z) }} />;
+};
+
 const ConteudoPlano: React.FC<{ pl: Plano; ev: (nome: string) => number; evs: (nome: string) => number[] }> = ({ pl, ev, evs }) => {
-  if (pl.tipo === "foto") return <Img src={staticFile(pl.arquivo as string)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />;
+  if (pl.tipo === "foto") return <FotoViva pl={pl} />;
   if (pl.tipo === "video")
     return <Video src={staticFile(pl.arquivo as string)} muted objectFit="cover" style={{ width: "100%", height: "100%" }} />;
   switch (pl.desenho) {

@@ -329,7 +329,10 @@ def video_estavel(p, dur, W, H, destino, fps_fonte=24):
 
     src = os.path.join(FONTE, f"{p['fonte']}.MOV")
     SW, SH = 3840, 2160
-    nq = int(np.ceil(dur * fps_fonte)) + 2
+    total = float(sh(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", src], capturar=True).stdout)
+    # clipe curto demais para o plano: toca um pouco mais devagar (no mínimo 85%) em vez de congelar no fim
+    vel = min(1.0, max(0.85, (total - p["t"] - 0.05) / dur))
+    nq = int(np.ceil(dur * vel * fps_fonte)) + 2
     x0, y0, x1, y1 = p["estabilizar"]
     cx, cy, w = p["recorte"]
     h = w * 16 / 9
@@ -370,9 +373,25 @@ def video_estavel(p, dur, W, H, destino, fps_fonte=24):
         anterior = cinza
         caminho.append((dx, dy))
     c = np.array(caminho)
+    # Movimento fluido (pedido do Diego, 21/10): a tremedeira da mão sai, o movimento da câmera fica, suavizado
+    # (Savitzky-Golay) e reduzido a `movimento` (0 = tripé, 1 = só tira a tremedeira). Se o recorte não couber
+    # no quadro, deixa um pouco mais do movimento original até caber.
+    from scipy.signal import savgol_filter
+    if len(c) >= 9:
+        jan = min(len(c) - (1 - len(c) % 2), 31)
+        suave = savgol_filter(c, jan, 2, axis=0)
+        for k in [p.get("movimento", 0.4)] + list(np.arange(0.5, 1.01, 0.1)):
+            off = c - k * suave
+            off = off - off[0]
+            bx = cx + off[:, 0] - w / 2
+            by = cy + off[:, 1] - h / 2
+            if bx.min() >= 0 and by.min() >= 0 and bx.max() <= SW - w and by.max() <= SH - h:
+                break
+        c = off
+        print(f"  {p['id']}: movimento mantido {k:.0%} (suavizado)")
 
     # 2ª passada: recorte que acompanha a cena
-    enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps_fonte), "-i", "-",
+    enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", f"{fps_fonte * vel:.4f}", "-i", "-",
                             "-c:v", "libx264", "-preset", "medium", "-crf", "14", "-pix_fmt", "yuv420p", "-color_primaries", "bt709",
                             "-color_trc", "bt709", "-colorspace", "bt709", destino], stdin=subprocess.PIPE)
     encostou = 0
@@ -386,6 +405,8 @@ def video_estavel(p, dur, W, H, destino, fps_fonte=24):
         enc.stdin.write(im.tobytes())
     enc.stdin.close()
     enc.wait()
+    if vel < 1:
+        print(f"  {p['id']}: clipe curto, velocidade {vel:.0%}")
     print(f"  {p['id']}: {len(c)} quadros, deslocamento da cena ({c[-1][0]:.0f}, {c[-1][1]:.0f}) px (4K)")
     if encostou:
         sys.exit(f"recorte de {p['id']} encostou na borda em {encostou} quadros: a cena escorregaria; ajuste `recorte`")
@@ -404,7 +425,7 @@ def planos():
             foto(p, W, H, os.path.join(PUBLIC, f"plano_{p['id']}.jpg"))
             print(f"plano {p['id']}: foto ({dur:.2f} s)")
         elif p["tipo"] == "video":
-            video_estavel(p, dur + 0.15, W, H, os.path.join(PUBLIC, f"plano_{p['id']}.mp4"))
+            video_estavel(p, dur + (0.75 if p is not lista[-1] else 0.15), W, H, os.path.join(PUBLIC, f"plano_{p['id']}.mp4"))
 
 
 # ------------------------------------------------------------------ sons
@@ -553,7 +574,7 @@ def props():
         "legendas": leg,
         "emocional": emo,
         "informacao": [{"rotulo": i["rotulo"], "numero": i["numero"], "ini": resolver(i["em"], takes, ini), "fim": resolver(i["fim"], takes, ini)} for i in d["informacao"]],
-        "capa": {k: v for k, v in d["capa"].items() if k != "plano"} | {"arquivo": f"plano_{d['capa']['plano']}.jpg"},
+        "capa": {k: d["capa"][k] for k in ("rotulo", "destino", "modulo", "tamanho")} | {"arquivo": "capa_fundo.jpg"},
         "cta": {k: d["cta"][k] for k in ("rotulo", "destino", "modulo", "tamanho")} | {"ini": cta["ini"]},
         "voz": [{"arquivo": tk["arquivo"], "ini": round(tk["t0"] * 1000), "dur": round(tk["dur"] * 1000)} for tk in takes],
         "ambientes": [{"arquivo": f"amb_{p['id']}.wav", "ini": p["ini"], "fim": p["fim"], "cinema": p.get("transicao") == "cinema"}
@@ -609,6 +630,8 @@ def master():
 
 
 def capa():
+    d = carregar()
+    foto(dict(d["capa"], id="capa"), d["largura"], d["altura"], os.path.join(PUBLIC, "capa_fundo.jpg"))
     remotion(["still", "src/index.ts", "CapaCasasTortas", CAPA, f"--props={os.path.join(TMP, 'props.json')}", "--image-format=jpeg", "--jpeg-quality=92"])
 
 
