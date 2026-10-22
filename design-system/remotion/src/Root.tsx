@@ -5,6 +5,7 @@
  * - Reel / CapaReel: montagem de um Reel a partir de reels/<reel>/revN (props + --public-dir).
  * - AmostraYT: amostra de 30 s dos grafismos do vídeo longo do YouTube (16:9), --public-dir=reels/amostra-yt/public.
  * - ReelGreves: Reel narrado "Greves na Europa" (reels/greves-europa/rev1: props + --public-dir).
+ * - ReelGrevesV2: "Greves na Europa" com a voz do Diego, versões Tela Verde e Narrada (reels/greves-europa/rev2).
  */
 import React from "react";
 import { Composition, Still } from "remotion";
@@ -14,6 +15,7 @@ import { CapaReel, Reel, metadadosReel, propsVazias } from "./reel/Reel";
 import { AmostraYT } from "./yt/AmostraYT";
 import { AmostraFimYT, DUR_AMOSTRA_FIM } from "./yt/AmostraFimYT";
 import { ReelGreves, metadadosGreves, propsGrevesVazias } from "./greves/ReelGreves";
+import { ReelGrevesV2, metadadosGrevesV2, propsGrevesV2Vazias } from "./greves/ReelGrevesV2";
 
 carregarFontes();
 
@@ -24,6 +26,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="AmostraYT" component={AmostraYT} durationInFrames={900} fps={30} width={1920} height={1080} />
     <Composition id="AmostraFimYT" component={AmostraFimYT} durationInFrames={Math.round((DUR_AMOSTRA_FIM * 30) / 1000)} fps={30} width={1920} height={1080} />
     <Composition id="ReelGreves" component={ReelGreves} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsGrevesVazias} calculateMetadata={metadadosGreves} />
+    <Composition id="ReelGrevesV2" component={ReelGrevesV2} durationInFrames={24} fps={24} width={1080} height={1920} defaultProps={propsGrevesV2Vazias} calculateMetadata={metadadosGrevesV2} />
     <Still id="CapaReel" component={CapaReel} width={1080} height={1920} defaultProps={propsVazias} />
   </>
 );

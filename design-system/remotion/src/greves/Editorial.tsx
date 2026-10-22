@@ -128,14 +128,14 @@ export const RotuloAcervo: React.FC<{ texto: string; ini: number; fim: number }>
 
 /* ---------------------------------------------------------------- funil "o impacto depende" */
 
-export const Funil: React.FC<{ ini: number; fim: number; titulo: string; itens: { texto: string; em: number }[] }> = ({ ini, fim, titulo, itens }) => {
+export const Funil: React.FC<{ ini: number; fim: number; titulo: string; itens: { texto: string; em: number }[]; top?: number }> = ({ ini, fim, titulo, itens, top = 330 }) => {
   const t = useSeg();
   if (t < ini || t > fim + 0.3) return null;
   const s = prog(t, fim, fim + 0.25, EASE.exit);
   const pt = prog(t, ini, ini + 0.3, EASE.out);
   const larguras = [820, 720, 620, 520];
   return (
-    <div style={{ position: "absolute", left: 0, right: 0, top: 330, opacity: 1 - s }}>
+    <div style={{ position: "absolute", left: 0, right: 0, top, opacity: 1 - s }}>
       <div style={{ textAlign: "center", fontFamily: FONTE_ED.impacto, fontWeight: 700, fontSize: 52, color: ED.branco, textShadow: SOMBRA_IMPACTO, letterSpacing: "0.02em", opacity: pt, translate: `0 ${(1 - pt) * 20}px` }}>{titulo}</div>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 14, marginTop: 24 }}>
         {itens.map((it, i) => {

@@ -1,0 +1,180 @@
+{
+ "reel": "greves-europa",
+ "revisao": 2,
+ "data": "2026-10-22",
+ "titulo": "Greves na Europa (out–nov/2026): confira antes de sair",
+ "versoes": {
+  "tela_verde": {"saida": "reel_tela_verde.mp4", "previa": "reel_tela_verde_preview.mp4", "diego": true},
+  "narrado": {"saida": "reel_narrado.mp4", "previa": "reel_narrado_preview.mp4", "diego": false}
+ },
+ "fps": 24,
+ "largura": 1080,
+ "altura": 1920,
+ "nota_fps": "24 fps: é o FPS da gravação do Diego (iPhone), que fica na tela quase o tempo todo. Converter para 30 repetiria quadros da fala. O FPS de produção segue em aberto (CLAUDE.md, pendência 5); os tempos em ms são a referência.",
+ "restricao_de_imagem": "Pedido do Diego (22/10/2026): sem imagens da Marina nem da família; só paisagens e vídeos da internet com licença livre. A gravação nova do Diego (fala) é o sujeito da versão Tela Verde.",
+ "tomadas": {
+  "A": {"arquivo": "gravacao/IMG_7072.MOV", "recorte": "gravacao/recorte/IMG_7072.webm", "drive_id": "1k-to515XX0_Lozb2pQVN0VGgozd0_v0y", "in": 0.0, "out": 13.10, "ini": 0.0},
+  "B": {"arquivo": "gravacao/IMG_7076.MOV", "recorte": "gravacao/recorte/IMG_7076.webm", "drive_id": "1w-snrap0LjSLo03get4wqZmA-ZJ5qlv7", "in": 0.0, "out": 8.85, "ini": 17.20},
+  "C": {"arquivo": "gravacao/IMG_7078.MOV", "recorte": "gravacao/recorte/IMG_7078.webm", "drive_id": "12mAwXEG0l3BZEJAOtIKuMS2HuRGip2ml", "in": 0.50, "out": 6.70, "ini": 26.05}
+ },
+ "nota_tomadas": "IMG_7072 = abertura até 'deixar na tela' (a pausa de print dele, 13,1–16,1 s, é substituída pelo quadro de datas de 4,3 s). IMG_7076 = 'Mas calma aí' até 'já resolve'. IMG_7078 = fontes na legenda e CTA. Pasta do Drive: Primeiro Dia/Reel (22/10/2026).",
+ "duracao": 32.25,
+ "print": {"ini": {"take": "A", "palavra": 51}, "fim": 17.20},
+ "diego": {
+  "escala": 0.72,
+  "nota": "Recorte (RobustVideoMatting ResNet50) ancorado na base e centrado em x 540; cabeça em y ≈ 780, queixo em y ≈ 1230. Punch-in (escala maior) nos momentos de ênfase.",
+  "zoom": [
+   {"em": {"take": "A", "palavra": 17}, "escala": 0.80},
+   {"em": {"take": "A", "palavra": 19}, "escala": 0.72},
+   {"em": {"take": "A", "palavra": 40}, "escala": 0.78},
+   {"em": 17.20, "escala": 0.72},
+   {"em": {"take": "B", "palavra": 18}, "escala": 0.77},
+   {"em": {"take": "C", "palavra": 0}, "escala": 0.72},
+   {"em": {"take": "C", "palavra": 9}, "escala": 0.70}
+  ]
+ },
+ "fontes": {
+  "MK1622": {"arquivo": "mixkit/mixkit-1622-2160.mp4", "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/train-arriving-to-a-subway-station-1622/", "lugar": "plataforma de metrô (local não informado)"},
+  "MK40912": {"arquivo": "mixkit/mixkit-40912-2160.mp4", "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/passenger-train-traveling-between-the-streets-of-a-city-40912/", "lugar": "trem atravessando uma cidade (local não informado)"},
+  "MK40672": {"arquivo": "mixkit/mixkit-40672-2160.mp4", "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/subway-cars-departing-from-an-underground-station-40672/", "lugar": "metrô partindo (local não informado)"},
+  "MK5015": {"arquivo": "mixkit/mixkit-5015-2160.mp4", "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/european-city-from-the-air-with-buildings-to-the-horizon-5015/", "lugar": "cidade europeia vista do alto (local não informado)"}
+ },
+ "cenas": [
+  {"id": "plataforma", "fonte": "MK1622", "ini": 0.0, "fim": 4.40, "in": 8.20, "recorte_x": [[0, 1150], [4.4, 1500]], "zoom": [1.04, 1.14], "rotulo": "IMAGEM ILUSTRATIVA"},
+  {"id": "mapa", "tipo": "grafico", "ini": 4.40, "fim": {"take": "A", "palavra": 51}},
+  {"id": "print", "tipo": "grafico", "ini": {"take": "A", "palavra": 51}, "fim": 17.20},
+  {"id": "trens", "fonte": "MK40912", "ini": 17.20, "fim": {"take": "B", "palavra": 10, "desloc": -0.12}, "in": 0.50, "recorte_x": [[0, 1310]], "zoom": [1.0, 1.06]},
+  {"id": "metro", "fonte": "MK40672", "ini": {"take": "B", "palavra": 10, "desloc": -0.12}, "fim": {"take": "B", "palavra": 17, "desloc": -0.1}, "in": 1.50, "recorte_x": [[0, 1310]], "zoom": [1.0, 1.05]},
+  {"id": "canais", "tipo": "grafico", "ini": {"take": "B", "palavra": 17, "desloc": -0.1}, "fim": {"take": "B", "palavra": 28, "desloc": -0.08}},
+  {"id": "rota", "tipo": "grafico", "ini": {"take": "B", "palavra": 28, "desloc": -0.08}, "fim": 26.05},
+  {"id": "fim", "fonte": "MK5015", "ini": 26.05, "fim": 32.25, "in": 2.00, "recorte_x": [[0, 1050], [6.2, 1600]], "zoom": [1.0, 1.06]}
+ ],
+ "graficos": {
+  "partidas": {
+   "ini": 0.55, "fim": 4.30, "selo": "ILUSTRAÇÃO",
+   "linhas": [["09:05", "PARIS", "NO HORÁRIO"], ["09:20", "MILÃO", "NO HORÁRIO"], ["09:35", "MADRI", "ATRASADO 40'"]],
+   "vira": 1, "vira_para": "CANCELADO", "vira_em": {"take": "A", "palavra": 17, "desloc": -0.05},
+   "top": {"tela_verde": 330, "narrado": 800}
+  },
+  "mapa": {
+   "camera": [
+    {"t": 4.30, "alvo": "europa", "zoom": 0.50, "tela": {"tela_verde": [540, 470], "narrado": [540, 900]}},
+    {"t": 8.40, "alvo": "iberia", "zoom": 0.66, "tela": {"tela_verde": [560, 520], "narrado": [540, 960]}},
+    {"t": 12.90, "alvo": "iberia", "zoom": 0.72, "tela": {"tela_verde": [560, 520], "narrado": [540, 960]}}
+   ],
+   "destaques": [
+    {"pais": "ESP", "texto": "ESPANHA", "ponto": "espanha", "em": {"take": "A", "palavra": 36}},
+    {"pais": "PRT", "texto": "PORTUGAL", "ponto": "portugal", "em": {"take": "A", "palavra": 37}},
+    {"pais": "ITA", "texto": "ITÁLIA", "ponto": "italia", "em": {"take": "A", "palavra": 38}},
+    {"pais": "FRA", "texto": "FRANÇA", "ponto": "franca", "em": {"take": "A", "palavra": 39}}
+   ],
+   "contador": {"em": {"take": "A", "palavra": 28}, "fim": {"take": "A", "palavra": 36}, "linhas": ["PELO MENOS", "4 PAÍSES"], "ate": "ATÉ O FIM DE NOVEMBRO"},
+   "escurecer_em": {"take": "A", "palavra": 40}
+  },
+  "prepara": {"ini": {"take": "A", "palavra": 40}, "fim": {"take": "A", "palavra": 51}, "linhas": ["PREPARA", "O PRINT"], "enfase_em": {"take": "A", "palavra": 45}},
+  "quadro": {
+   "titulo": "GREVES DE TRANSPORTE NA EUROPA",
+   "subtitulo": "OUT–NOV/2026 · SITUAÇÃO EM 22/10/2026",
+   "itens": [
+    {"data": "28 e 30/10", "dia": "QUA · SEX", "pais": "PORTUGAL", "o_que": "Metro de Lisboa", "hora": "5h–10h", "status": "CONVOCADA", "tom": "alerta"},
+    {"data": "29/10", "dia": "QUI", "pais": "ESPANHA", "o_que": "Trens Renfe (maquinistas)", "hora": "24 h", "status": "CONVOCADA", "tom": "alerta"},
+    {"data": "29–30/10", "dia": "QUI–SEX", "pais": "ITÁLIA", "o_que": "Greve geral USB", "hora": "trens: 21h do dia 29 às 20h59 do dia 30", "status": "TRANSPORTE EM DÚVIDA", "tom": "duvida"},
+    {"data": "30/10", "dia": "SEX", "pais": "PORTUGAL", "o_que": "Trens CP", "hora": "dia todo · pode afetar 29 e 31", "status": "CONVOCADA", "tom": "alerta"},
+    {"data": "30/10 e 02/11", "dia": "SEX · SEG", "pais": "ESPANHA", "o_que": "Trens Ouigo (maquinistas)", "hora": "24 h · parciais em 06 e 09/11", "status": "CONVOCADA", "tom": "alerta"},
+    {"data": "03/11", "dia": "TER", "pais": "GRÉCIA", "o_que": "Ônibus KTEL", "hora": "24 h", "status": "CONVOCADA", "tom": "alerta"},
+    {"data": "05/11", "dia": "QUI", "pais": "FRANÇA", "o_que": "Trens SNCF (4 sindicatos)", "hora": "dia todo · plano na véspera", "status": "CONVOCADA", "tom": "alerta"},
+    {"data": "11/11", "dia": "QUA", "pais": "ESPANHA", "o_que": "Greve geral", "hora": "24 h", "status": "CONVOCADA", "tom": "alerta"},
+    {"data": "13/11", "dia": "SEX", "pais": "ITÁLIA · MILÃO", "o_que": "Metrô, bonde e ônibus ATM", "hora": "24 h", "status": "CALENDÁRIO MIT", "tom": "alerta"},
+    {"data": "20/11", "dia": "SEX", "pais": "ITÁLIA", "o_que": "Greve geral CGIL", "hora": "dia todo", "status": "CALENDÁRIO MIT", "tom": "alerta"},
+    {"data": "20–21/11", "dia": "SEX–SÁB", "pais": "ITÁLIA", "o_que": "Trens", "hora": "21h do dia 20 às 20h do dia 21", "status": "CALENDÁRIO MIT", "tom": "alerta"},
+    {"data": "21/11", "dia": "SÁB", "pais": "ITÁLIA", "o_que": "Controle aéreo ENAV", "hora": "13h–17h", "status": "CALENDÁRIO MIT", "tom": "alerta"}
+   ],
+   "rodape": ["Greve pode ser desconvocada ou mudar até a véspera.", "Confira o canal oficial antes de sair · fontes na legenda"],
+   "assinatura": "@primeirodiaem"
+  },
+  "calma": {"ini": {"take": "B", "palavra": 5}, "fim": {"take": "B", "palavra": 10, "desloc": -0.15}, "linhas": ["NEM TUDO", "PARA"], "enfase_em": {"take": "B", "palavra": 8}},
+  "funil": {
+   "ini": {"take": "B", "palavra": 10, "desloc": -0.1}, "fim": {"take": "B", "palavra": 17, "desloc": -0.15},
+   "titulo": "O IMPACTO DEPENDE",
+   "itens": [
+    {"texto": "DO PAÍS", "em": {"take": "B", "palavra": 12}},
+    {"texto": "DA EMPRESA", "em": {"take": "B", "palavra": 14}},
+    {"texto": "DA LINHA", "em": {"take": "B", "palavra": 16}}
+   ],
+   "top": {"tela_verde": 290, "narrado": 560}
+  },
+  "canais": {
+   "selo": "CAPTURAS REAIS · 22/10/2026",
+   "telas": [
+    {"arquivo": "prints/of_mit.jpg", "rotulo": "MIT · ITÁLIA"},
+    {"arquivo": "prints/of_renfe.jpg", "rotulo": "RENFE · ESPANHA"},
+    {"arquivo": "prints/of_cp.jpg", "rotulo": "CP · PORTUGAL"}
+   ],
+   "top": {"tela_verde": 300, "narrado": 600},
+   "escala": {"tela_verde": 0.74, "narrado": 1.0},
+   "confira_em": {"take": "B", "palavra": 23}
+  },
+  "rota": {
+   "selo": "EXEMPLO ILUSTRATIVO",
+   "origem": "HOTEL",
+   "destino": "ESTAÇÃO",
+   "x_em": {"take": "B", "palavra": 31},
+   "horario_em": {"take": "B", "palavra": 33},
+   "horarios": ["08:10", "09:40"],
+   "rota_em": {"take": "B", "palavra": 35}
+  },
+  "legenda_post": {"ini": {"take": "C", "palavra": 0}, "fim": {"take": "C", "palavra": 9, "desloc": -0.1}, "linhas": ["FONTES E APPS", "OFICIAIS"], "chip": "NA LEGENDA", "seta_em": {"take": "C", "palavra": 7}},
+  "cta": {
+   "placa": {"ini": {"take": "C", "palavra": 10}, "rotulo": "SALVA PARA CONSULTAR", "destino": "ANTES DA VIAGEM", "modulo": "seta", "tamanho": "M"},
+   "acoes": [
+    {"icone": "salvar", "texto": "SALVA", "em": {"take": "C", "palavra": 10}},
+    {"icone": "enviar", "texto": "MANDA PRA QUEM VAI", "em": {"take": "C", "palavra": 14}}
+   ],
+   "credito": "IMAGENS: MIXKIT (LICENÇA LIVRE) · MAPA: NATURAL EARTH"
+  }
+ },
+ "legendas": [
+  {"take": "A", "de": 0, "ate": 5, "texto": "Imagina chegar|na estação de trem"},
+  {"take": "A", "de": 6, "ate": 12, "texto": "na Europa, com seu|roteiro todo planejado"},
+  {"take": "A", "de": 13, "ate": 18, "texto": "e o seu trem|*não *sai.", "destaque": 17},
+  {"take": "A", "de": 19, "ate": 26, "texto": "Até o final de novembro|tem greve marcada"},
+  {"take": "A", "de": 27, "ate": 33, "texto": "em pelo menos|*quatro países da Europa,", "destaque": 30},
+  {"take": "A", "de": 34, "ate": 39, "texto": "dentre eles Espanha,|Portugal, Itália, França."},
+  {"take": "A", "de": 40, "ate": 45, "texto": "Já se prepare|para tirar *print", "destaque": 45},
+  {"take": "A", "de": 46, "ate": 51, "texto": "porque eu vou|deixar na tela."},
+  {"take": "B", "de": 0, "ate": 2, "texto": "Mas calma aí,"},
+  {"take": "B", "de": 3, "ate": 9, "texto": "ter greve *não significa|que tudo para,", "destaque": 5},
+  {"take": "B", "de": 10, "ate": 16, "texto": "depende do país,|da empresa, da linha."},
+  {"take": "B", "de": 17, "ate": 21, "texto": "O importante mesmo|é conferir"},
+  {"take": "B", "de": 22, "ate": 27, "texto": "o *canal *oficial|de cada país,", "destaque": 23},
+  {"take": "B", "de": 28, "ate": 35, "texto": "às vezes você mudar|o horário já resolve."},
+  {"take": "C", "de": 0, "ate": 5, "texto": "As fontes e os|aplicativos oficiais"},
+  {"take": "C", "de": 6, "ate": 8, "texto": "estão na *legenda.", "destaque": 8},
+  {"take": "C", "de": 9, "ate": 12, "texto": "Já *salva esse vídeo", "destaque": 10},
+  {"take": "C", "de": 13, "ate": 20, "texto": "e *manda pra alguém|que vai pra Europa", "destaque": 14},
+  {"take": "C", "de": 21, "ate": 24, "texto": "pra não passar|perrengue."}
+ ],
+ "sons": [
+  {"nome": "painel", "em": {"take": "A", "palavra": 17, "desloc": -0.09}, "rel_db": -14, "motivo": "linha do painel vira para CANCELADO"},
+  {"nome": "whoosh", "em": 4.30, "rel_db": -18, "motivo": "plataforma → mapa"},
+  {"nome": "blip", "em": {"take": "A", "palavra": 28}, "rel_db": -20, "motivo": "PELO MENOS 4 PAÍSES"},
+  {"nome": "blip", "em": {"take": "A", "palavra": 36}, "rel_db": -20, "motivo": "Espanha acende"},
+  {"nome": "blip", "em": {"take": "A", "palavra": 37}, "rel_db": -21, "motivo": "Portugal acende"},
+  {"nome": "blip", "em": {"take": "A", "palavra": 38}, "rel_db": -21, "motivo": "Itália acende"},
+  {"nome": "blip", "em": {"take": "A", "palavra": 39}, "rel_db": -21, "motivo": "França acende"},
+  {"nome": "obturador", "em": {"take": "A", "palavra": 51}, "rel_db": -12, "motivo": "Snap (DS 4.6): quadro do print entra"},
+  {"nome": "whoosh", "em": 17.12, "rel_db": -16, "motivo": "varrida para a virada"},
+  {"nome": "ping", "em": {"take": "B", "palavra": 23}, "rel_db": -16, "motivo": "canal oficial"},
+  {"nome": "tick", "em": {"take": "B", "palavra": 31}, "rel_db": -14, "motivo": "rota planejada riscada"},
+  {"nome": "clack", "em": {"take": "C", "palavra": 10, "desloc": 0.28}, "rel_db": -10, "motivo": "placa CTA assenta (Chegada, 280 ms; DS 4.6)"}
+ ],
+ "mix": {
+  "voz_lufs": -16,
+  "trilha_lufs": -28,
+  "trilha_print_db": 3,
+  "master_lufs": -14,
+  "master_pico_dbtp": -1,
+  "voz_filtro": "highpass=f=80,afftdn=nf=-45:nr=8,acompressor=threshold=-24dB:ratio=2.5:attack=8:release=120:makeup=2"
+ },
+ "trilha": "sintetizada (rev2.py trilha), mesma linguagem da REV1: tensão até a virada (17,2 s), com respiro no quadro do print, e resolução calma depois. Original, sem direitos de terceiros"
+}

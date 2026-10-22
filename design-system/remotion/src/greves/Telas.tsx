@@ -30,7 +30,9 @@ export const PainelPartidas: React.FC<{
   vira: number;
   viraPara: string;
   viraEm: number;
-}> = ({ ini, fim, selo, linhas, vira, viraPara, viraEm }) => {
+  /** y do topo do painel (padrão 800, REV1). */
+  top?: number;
+}> = ({ ini, fim, selo, linhas, vira, viraPara, viraEm, top = 800 }) => {
   const t = useSeg();
   if (t < ini || t > fim + 0.3) return null;
   const p = prog(t, ini, ini + 0.35, EASE.out);
@@ -42,7 +44,7 @@ export const PainelPartidas: React.FC<{
       style={{
         position: "absolute",
         left: SEG.x0,
-        top: 800,
+        top,
         width: SEG.x1 - SEG.x0,
         background: "#0E1118",
         borderRadius: 18,
@@ -81,24 +83,32 @@ export const PainelPartidas: React.FC<{
 /* ---------------------------------------------------------------- telas dos canais oficiais */
 
 /** Três capturas reais em molduras de celular, abertas em leque a partir do centro do canvas (x 540). */
-export const TelasCanais: React.FC<{ ini: number; fim: number; selo: string; telas: { arquivo: string; rotulo: string }[] }> = ({ ini, fim, selo, telas }) => {
+export const TelasCanais: React.FC<{
+  ini: number;
+  fim: number;
+  selo: string;
+  telas: { arquivo: string; rotulo: string }[];
+  /** y do topo dos celulares (padrão 560, REV1) e escala do leque (padrão 1). */
+  top?: number;
+  escala?: number;
+}> = ({ ini, fim, selo, telas, top = 560, escala = 1 }) => {
   const t = useSeg();
   if (t < ini - 0.01 || t > fim + 0.1) return null;
-  const L = 340;
-  const H = 620;
+  const L = 340 * escala;
+  const H = 620 * escala;
   return (
     <div style={{ position: "absolute", inset: 0, background: `radial-gradient(ellipse at 50% 60%, #12302A 0%, ${ED.tinta} 70%)` }}>
       {telas.map((tl, i) => {
         const p = prog(t, ini + i * 0.12, ini + i * 0.12 + 0.4, EASE.arrive);
         const ang = (i - 1) * 9;
-        const dx = (i - 1) * 236;
+        const dx = (i - 1) * 236 * escala;
         return (
           <div
             key={tl.arquivo}
             style={{
               position: "absolute",
               left: SEG.centro - L / 2 + dx * p,
-              top: 560 + Math.abs(i - 1) * 30,
+              top: top + Math.abs(i - 1) * 30 * escala,
               width: L,
               height: H,
               rotate: `${ang * p}deg`,
@@ -107,8 +117,8 @@ export const TelasCanais: React.FC<{ ini: number; fim: number; selo: string; tel
               zIndex: i === 1 ? 2 : 1,
             }}
           >
-            <div style={{ width: L, height: H, borderRadius: 40, background: "#05070B", padding: 12, boxShadow: "0 30px 60px -10px rgba(0,0,0,.8)", border: "2px solid #2B3242" }}>
-              <div style={{ width: "100%", height: "100%", borderRadius: 30, overflow: "hidden", background: "#fff" }}>
+            <div style={{ width: L, height: H, borderRadius: 40 * escala, background: "#05070B", padding: 12 * escala, boxShadow: "0 30px 60px -10px rgba(0,0,0,.8)", border: "2px solid #2B3242" }}>
+              <div style={{ width: "100%", height: "100%", borderRadius: 30 * escala, overflow: "hidden", background: "#fff" }}>
                 <Img src={staticFile(tl.arquivo)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
               </div>
             </div>
@@ -118,7 +128,7 @@ export const TelasCanais: React.FC<{ ini: number; fim: number; selo: string; tel
           </div>
         );
       })}
-      <div style={{ position: "absolute", left: 0, right: 0, top: 530, textAlign: "center", opacity: prog(t, ini + 0.3, ini + 0.6) }}>
+      <div style={{ position: "absolute", left: 0, right: 0, top: top - 30, textAlign: "center", opacity: prog(t, ini + 0.3, ini + 0.6) }}>
         <span style={{ fontFamily: FONTE_ED.mono, fontSize: 20, letterSpacing: "0.12em", color: ED.cinza }}>{selo}</span>
       </div>
     </div>
