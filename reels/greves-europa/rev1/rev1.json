@@ -1,0 +1,189 @@
+{
+ "reel": "greves-europa",
+ "revisao": 1,
+ "data": "2026-10-22",
+ "titulo": "Greves na Europa (out–nov/2026): confira antes de sair",
+ "formato": "narrado",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "duracao": 35.7,
+ "restricao_de_imagem": "Pedido do Diego (22/10/2026): sem imagens dele, da Marina ou da família; só paisagens, vídeos da internet com licença livre e estação do acervo se for muito boa.",
+ "narracao": {
+  "tipo": "TEMPORARIA",
+  "nota": "Síntese edge-tts (pt-BR-AntonioNeural, +18%) só como guia de tempo. Não é o áudio final: regravar com a voz do Diego e substituir narracao_temp/fXX.*.",
+  "pausa_max": 0.42,
+  "pausa_nova": 0.24,
+  "frases": [
+   {"id": "f01", "ini": 0.20},
+   {"id": "f02", "ini": 5.50},
+   {"id": "f03", "ini": 8.85},
+   {"id": "f04", "ini": 17.10},
+   {"id": "f05", "ini": 20.45},
+   {"id": "f06", "ini": 24.00},
+   {"id": "f07", "ini": 27.25},
+   {"id": "f08", "ini": 30.30}
+  ]
+ },
+ "fontes": {
+  "IMG_3207": {"arquivo": "IMG_3207.MOV", "drive_id": "1Pxf-SSmtmgePLlKz4RqSm693I0UvegBY", "hdr": true, "origem": "acervo", "lugar": "plataforma da estação Marne-la-Vallée–Chessy (RER A), França; só desconhecidos no quadro", "data": "18/03/2026"},
+  "IMG_4237": {"arquivo": "IMG_4237.MOV", "drive_id": "1u_B7JHIkvWlBxNUQoDgzUjrw8axCe4MK", "hdr": true, "origem": "acervo", "lugar": "Rua Augusta à noite, Lisboa (paisagem, sem pessoas conhecidas)", "data": "22/03/2026", "credito": "ACERVO · LISBOA · MAR/2026"},
+  "MK1622": {"arquivo": "mixkit/mixkit-1622-2160.mp4", "hdr": false, "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/train-arriving-to-a-subway-station-1622/", "lugar": "plataforma de metrô (local não informado)"},
+  "MK4270": {"arquivo": "mixkit/mixkit-4270-1080.mp4", "hdr": false, "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/bear-and-the-strawberry-tree-statue-in-madrid-4270/", "lugar": "Puerta del Sol, Madri"},
+  "MK4066": {"arquivo": "mixkit/mixkit-4066-1080.mp4", "hdr": false, "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/panoramic-view-of-barcelona-at-night-4066/", "lugar": "Barcelona à noite"},
+  "MK4646": {"arquivo": "mixkit/mixkit-4646-2160.mp4", "hdr": false, "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/venice-central-canal-at-night-4646/", "lugar": "Grande Canal e ponte de Rialto, Veneza"},
+  "MK4025": {"arquivo": "mixkit/mixkit-4025-1080.mp4", "hdr": false, "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/time-lapse-of-the-arc-de-triomphe-in-paris-from-4025/", "lugar": "Arco do Triunfo, Paris"},
+  "MK40912": {"arquivo": "mixkit/mixkit-40912-2160.mp4", "hdr": false, "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/passenger-train-traveling-between-the-streets-of-a-city-40912/", "lugar": "trem atravessando uma cidade (local não informado)"},
+  "MK1606": {"arquivo": "mixkit/mixkit-1606-2160.mp4", "hdr": false, "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/city-train-driving-under-a-bridge-1606/", "lugar": "trem urbano sob uma ponte (local não informado)"},
+  "MK40672": {"arquivo": "mixkit/mixkit-40672-2160.mp4", "hdr": false, "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/subway-cars-departing-from-an-underground-station-40672/", "lugar": "metrô partindo (local não informado)"},
+  "MK21605": {"arquivo": "mixkit/mixkit-21605-2160.mp4", "hdr": false, "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/hands-of-a-person-searching-a-map-on-his-cell-21605/", "lugar": "mãos consultando mapa no celular"},
+  "MK5015": {"arquivo": "mixkit/mixkit-5015-2160.mp4", "hdr": false, "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/european-city-from-the-air-with-buildings-to-the-horizon-5015/", "lugar": "cidade europeia vista do alto (local não informado)"}
+ },
+ "cenas": [
+  {"id": "plataforma", "fonte": "IMG_3207", "ini": 0.00, "dur": 1.80, "in": 0.15, "recorte_x": [[0, 1050], [1.8, 1650]], "zoom": [1.0, 1.06], "audio": "ambiente", "rotulo": "ACERVO · MARNE-LA-VALLÉE · MAR/2026"},
+  {"id": "trem_parado", "fonte": "MK1622", "ini": 1.80, "dur": 3.70, "in": 8.20, "recorte_x": [[0, 1150], [3.7, 1450]], "zoom": [1.04, 1.14], "audio": "mudo", "rotulo": "IMAGEM ILUSTRATIVA"},
+  {"id": "mapa", "tipo": "grafico", "ini": 5.50, "dur": 3.35},
+  {"id": "agenda", "tipo": "grafico", "ini": 8.85, "dur": 8.25},
+  {"id": "trem_cidade", "fonte": "MK40912", "ini": 17.10, "dur": 1.80, "in": 0.50, "recorte_x": [[0, 1310]], "zoom": [1.0, 1.05], "audio": "mudo"},
+  {"id": "trem_ponte", "fonte": "MK1606", "ini": 18.90, "dur": 1.55, "in": 4.20, "recorte_x": [[0, 1300], [1.55, 1500]], "audio": "mudo"},
+  {"id": "metro", "fonte": "MK40672", "ini": 20.45, "dur": 3.55, "in": 1.50, "recorte_x": [[0, 1310]], "zoom": [1.0, 1.04], "audio": "mudo"},
+  {"id": "celular", "fonte": "MK21605", "ini": 24.00, "dur": 1.60, "in": 1.00, "recorte_x": [[0, 1250], [1.6, 1350]], "zoom": [1.0, 1.05], "audio": "mudo"},
+  {"id": "canais", "tipo": "grafico", "ini": 25.60, "dur": 1.65},
+  {"id": "rota", "tipo": "grafico", "ini": 27.25, "dur": 3.05},
+  {"id": "fim", "fonte": "MK5015", "ini": 30.30, "dur": 5.40, "in": 2.00, "recorte_x": [[0, 1050], [5.4, 1600]], "zoom": [1.0, 1.05], "audio": "mudo"}
+ ],
+ "janelas": [
+  {"id": "j_esp1", "fonte": "MK4270", "in": 0.50, "dur": 2.0},
+  {"id": "j_ita", "fonte": "MK4646", "in": 1.00, "dur": 8.0},
+  {"id": "j_prt", "fonte": "IMG_4237", "in": 0.20, "dur": 2.0},
+  {"id": "j_fra", "fonte": "MK4025", "in": 6.00, "dur": 2.4},
+  {"id": "j_esp2", "fonte": "MK4066", "in": 0.30, "dur": 2.6}
+ ],
+ "legendas": [
+  {"frase": "f01", "de": 0, "ate": 3, "texto": "Imagina chegar|na estação,"},
+  {"frase": "f01", "de": 4, "ate": 8, "texto": "com o passeio|todo planejado,"},
+  {"frase": "f01", "de": 9, "ate": 11, "texto": "e descobrir que"},
+  {"frase": "f01", "de": 12, "ate": 17, "texto": "o seu trem|não vai sair."},
+  {"frase": "f02", "de": 0, "ate": 2, "texto": "Tem greve marcada"},
+  {"frase": "f02", "de": 3, "ate": 7, "texto": "em vários países|da Europa"},
+  {"frase": "f02", "de": 8, "ate": 12, "texto": "até o fim de novembro."},
+  {"frase": "f03", "de": 0, "ate": 2, "texto": "Espanha e Itália"},
+  {"frase": "f03", "de": 3, "ate": 7, "texto": "já no fim de outubro,"},
+  {"frase": "f03", "de": 8, "ate": 11, "texto": "Portugal no dia 30,"},
+  {"frase": "f03", "de": 12, "ate": 15, "texto": "França no dia|5 de novembro,"},
+  {"frase": "f03", "de": 16, "ate": 21, "texto": "Espanha de novo|no dia 11"},
+  {"frase": "f03", "de": 22, "ate": 26, "texto": "e Itália nos dias|20 e 21."},
+  {"frase": "f04", "de": 0, "ate": 1, "texto": "Mas calma:"},
+  {"frase": "f04", "de": 2, "ate": 5, "texto": "isso não significa que"},
+  {"frase": "f04", "de": 6, "ate": 9, "texto": "todo transporte|vai parar."},
+  {"frase": "f05", "de": 0, "ate": 4, "texto": "Depende do país,|da cidade,"},
+  {"frase": "f05", "de": 5, "ate": 10, "texto": "da empresa|e até da linha."},
+  {"frase": "f06", "de": 0, "ate": 4, "texto": "Antes de cancelar|o passeio,"},
+  {"frase": "f06", "de": 5, "ate": 8, "texto": "confira os|canais *oficiais.", "destaque": 8},
+  {"frase": "f07", "de": 0, "ate": 4, "texto": "Às vezes, mudar o horário"},
+  {"frase": "f07", "de": 5, "ate": 9, "texto": "ou a rota já resolve."},
+  {"frase": "f08", "de": 0, "ate": 2, "texto": "Salva esse vídeo"},
+  {"frase": "f08", "de": 3, "ate": 6, "texto": "e confere a legenda:"},
+  {"frase": "f08", "de": 7, "ate": 10, "texto": "deixei lá as fontes"},
+  {"frase": "f08", "de": 11, "ate": 14, "texto": "e os aplicativos|oficiais."}
+ ],
+ "graficos": {
+  "hook": {"ini": 0.0, "fim": 5.46, "linhas": ["IMAGINA CHEGAR", "E O TREM", "NÃO SAIR"], "enfase_em": {"frase": "f01", "palavra": 15}},
+  "partidas": {
+   "ini": 3.20, "fim": 5.46, "selo": "ILUSTRAÇÃO",
+   "linhas": [["09:05", "PARIS", "NO HORÁRIO"], ["09:20", "MILÃO", "NO HORÁRIO"], ["09:35", "MADRI", "ATRASADO 40'"]],
+   "vira": 1, "vira_para": "CANCELADO", "vira_em": {"frase": "f01", "palavra": 14}
+  },
+  "mapa": {
+   "ini": 5.50, "fim": 8.85,
+   "camera": [
+    {"t": 5.35, "alvo": "iberia", "zoom": 0.62, "tela": [540, 1020]},
+    {"t": 8.9, "alvo": "iberia", "zoom": 0.7, "tela": [540, 1020]}
+   ],
+   "destaques": [
+    {"pais": "ESP", "em": {"frase": "f02", "palavra": 4}},
+    {"pais": "ITA", "em": {"frase": "f02", "palavra": 4, "desloc": 0.15}},
+    {"pais": "PRT", "em": {"frase": "f02", "palavra": 4, "desloc": 0.30}},
+    {"pais": "FRA", "em": {"frase": "f02", "palavra": 4, "desloc": 0.45}}
+   ],
+   "rotulos": [
+    {"pais": "ESP", "texto": "ESPANHA", "ponto": "espanha"},
+    {"pais": "ITA", "texto": "ITÁLIA", "ponto": "italia"},
+    {"pais": "PRT", "texto": "PORTUGAL", "ponto": "portugal"},
+    {"pais": "FRA", "texto": "FRANÇA", "ponto": "franca"}
+   ],
+   "colagem": {
+    "ini": {"frase": "f02", "palavra": 7}, "fim": 8.62,
+    "cartelas": [
+     {"arquivo": "prints/es_euronews.jpg", "credito": "EURONEWS · 07/10", "x": 60, "y": 300, "largura": 500, "rot": -4},
+     {"arquivo": "prints/it_leggo.jpg", "credito": "LEGGO · 17/10", "x": 470, "y": 340, "largura": 480, "rot": 3},
+     {"arquivo": "prints/fr_sortiraparis.jpg", "credito": "SORTIRAPARIS · 20/10", "x": 90, "y": 700, "largura": 380, "rot": 2.5},
+     {"arquivo": "prints/pt_sol.jpg", "credito": "SOL · 21/10", "x": 440, "y": 760, "largura": 520, "rot": -2}
+    ]
+   }
+  },
+  "agenda": {
+   "ini": 8.85, "fim": 17.10,
+   "titulo": "PRÓXIMAS GREVES · TRANSPORTE",
+   "itens": [
+    {"pais": "ESP", "janela": "j_esp1", "nome": "ESPANHA", "data": "29/10", "dia": "QUI", "titulo": "TRENS RENFE", "detalhe": "maquinistas · 24 h", "status": "CONVOCADA", "tom": "alerta", "em": {"frase": "f03", "palavra": 0}},
+    {"pais": "ITA", "janela": "j_ita", "nome": "ITÁLIA", "data": "29–30/10", "dia": "QUI–SEX", "titulo": "GREVE GERAL", "detalhe": "trens: 21h de 29/10 às 20h59 de 30/10", "status": "TRANSPORTE EM DÚVIDA", "tom": "duvida", "em": {"frase": "f03", "palavra": 2}},
+    {"pais": "PRT", "janela": "j_prt", "nome": "PORTUGAL", "data": "30/10", "dia": "SEX", "titulo": "TRENS CP", "detalhe": "e metrô de Lisboa 5h–10h (28 e 30/10)", "status": "CONVOCADA", "tom": "alerta", "em": {"frase": "f03", "palavra": 8}},
+    {"pais": "FRA", "janela": "j_fra", "nome": "FRANÇA", "data": "05/11", "dia": "QUI", "titulo": "TRENS SNCF", "detalhe": "4 sindicatos convocam", "status": "CONVOCADA", "tom": "alerta", "em": {"frase": "f03", "palavra": 12}},
+    {"pais": "ESP", "janela": "j_esp2", "nome": "ESPANHA", "data": "11/11", "dia": "QUA", "titulo": "GREVE GERAL", "detalhe": "CCOO e UGT · 24 h", "status": "CONVOCADA", "tom": "alerta", "em": {"frase": "f03", "palavra": 16}},
+    {"pais": "ITA", "janela": "j_ita", "nome": "ITÁLIA · MILÃO", "data": "13/11", "dia": "SEX", "titulo": "METRÔ E ÔNIBUS", "detalhe": "ATM · 24 h", "status": "LOCAL", "tom": "alerta", "em": {"frase": "f03", "palavra": 19}},
+    {"pais": "ITA", "janela": "j_ita", "nome": "ITÁLIA", "data": "20/11", "dia": "SEX", "titulo": "GREVE GERAL", "detalhe": "CGIL · dia inteiro", "status": "NACIONAL", "tom": "alerta", "em": {"frase": "f03", "palavra": 22}},
+    {"pais": "ITA", "janela": "j_ita", "nome": "ITÁLIA", "data": "20–21/11", "dia": "SEX–SÁB", "titulo": "GREVE DE TRENS", "detalhe": "21h de 20/11 às 20h de 21/11", "status": "NACIONAL", "tom": "alerta", "em": {"frase": "f03", "palavra": 25}},
+    {"pais": "ITA", "janela": "j_ita", "nome": "ITÁLIA", "data": "21/11", "dia": "SÁB", "titulo": "CONTROLE AÉREO", "detalhe": "ENAV · 13h–17h", "status": "NACIONAL", "tom": "alerta", "em": {"frase": "f03", "palavra": 26, "desloc": 0.3}}
+   ],
+   "fonte": "FONTES: MIT, RENFE/SEMAF, CP E SINDICATOS (IMPRENSA) · 22/10/2026"
+  },
+  "virada": {"ini": 17.35, "fim": 20.40, "linhas": ["GREVE NÃO SIGNIFICA", "PARALISAÇÃO TOTAL"], "em": {"frase": "f04", "palavra": 2}},
+  "funil": {
+   "ini": 20.45, "fim": 23.90, "titulo": "O IMPACTO DEPENDE",
+   "itens": [
+    {"texto": "DO PAÍS", "em": {"frase": "f05", "palavra": 2}},
+    {"texto": "DA CIDADE", "em": {"frase": "f05", "palavra": 4}},
+    {"texto": "DA EMPRESA", "em": {"frase": "f05", "palavra": 6}},
+    {"texto": "DA LINHA", "em": {"frase": "f05", "palavra": 10}}
+   ]
+  },
+  "confira": {"ini": {"frase": "f06", "palavra": 5}, "fim": 27.05, "texto": ["CONFIRA", "ANTES DE SAIR"]},
+  "canais": {
+   "ini": 25.60, "fim": 27.25, "selo": "CAPTURAS REAIS · 22/10/2026",
+   "telas": [
+    {"arquivo": "prints/of_mit.jpg", "rotulo": "MIT · ITÁLIA"},
+    {"arquivo": "prints/of_renfe.jpg", "rotulo": "RENFE · ESPANHA"},
+    {"arquivo": "prints/of_stib.jpg", "rotulo": "STIB · BRUXELAS"}
+   ]
+  },
+  "rota": {
+   "ini": 27.25, "fim": 30.30, "selo": "EXEMPLO ILUSTRATIVO",
+   "origem": "HOTEL", "destino": "ESTAÇÃO",
+   "x_em": {"frase": "f07", "palavra": 2},
+   "horario_em": {"frase": "f07", "palavra": 4}, "horarios": ["08:10", "09:40"],
+   "rota_em": {"frase": "f07", "palavra": 7}
+  },
+  "fim": {
+   "placa": {"ini": 30.45, "rotulo": "SALVA PARA CONSULTAR", "destino": "ANTES DA VIAGEM", "modulo": "seta", "tamanho": "M"},
+   "resumo": {
+    "ini": 31.30, "titulo": "PRÓXIMAS DATAS · OUT–NOV/2026",
+    "itens": [["29/10", "ESPANHA", "trens Renfe"], ["29–30/10", "ITÁLIA", "greve geral*"], ["30/10", "PORTUGAL", "trens CP"], ["05/11", "FRANÇA", "trens SNCF"], ["11/11", "ESPANHA", "greve geral"], ["20–21/11", "ITÁLIA", "geral + trens"]],
+    "rodape": "*transporte em dúvida · lista completa e fontes na legenda"
+   },
+   "credito": "IMAGENS: MIXKIT (LICENÇA LIVRE) E ACERVO · MAPA: NATURAL EARTH"
+  }
+ },
+ "sons": [
+  {"nome": "painel", "em": {"frase": "f01", "palavra": 14, "desloc": -0.04}, "rel_db": -14, "motivo": "linha do painel vira para CANCELADO"},
+  {"nome": "blip", "em": {"frase": "f02", "palavra": 4}, "rel_db": -18, "motivo": "países acendem no mapa"},
+  {"nome": "whoosh", "em": 8.78, "rel_db": -16, "motivo": "do mapa para a agenda"},
+  {"nome": "blip", "em": {"frase": "f03", "palavra": 8}, "rel_db": -20, "motivo": "data nova na agenda"},
+  {"nome": "blip", "em": {"frase": "f03", "palavra": 16}, "rel_db": -20, "motivo": "data nova na agenda"},
+  {"nome": "ping", "em": {"frase": "f06", "palavra": 5}, "rel_db": -16, "motivo": "canais oficiais"},
+  {"nome": "tick", "em": {"frase": "f07", "palavra": 2}, "rel_db": -14, "motivo": "rota planejada riscada"},
+  {"nome": "clack", "em": 30.73, "rel_db": -10, "motivo": "placa CTA assenta (Chegada, 280 ms; DS 4.6)"}
+ ],
+ "mix": {"voz_lufs": -16, "ambiente_lufs": -27, "trilha_lufs": -27, "master_lufs": -14, "master_pico_dbtp": -1},
+ "trilha": "sintetizada nesta revisão (rev1.py trilha): tensão (pulso grave, 0–17,1 s) → resolução calma (17,1–35,7 s). Original, sem direitos de terceiros; provisória até a escolha de faixa da biblioteca do Instagram na postagem"
+}
