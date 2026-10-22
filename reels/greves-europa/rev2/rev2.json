@@ -4,34 +4,40 @@
  "data": "2026-10-22",
  "titulo": "Greves na Europa (out–nov/2026): confira antes de sair",
  "versoes": {
-  "tela_verde": {"saida": "reel_tela_verde.mp4", "previa": "reel_tela_verde_preview.mp4", "diego": true},
-  "narrado": {"saida": "reel_narrado.mp4", "previa": "reel_narrado_preview.mp4", "diego": false}
+  "tela_verde_canto": {"saida": "reel_tela_verde_canto.mp4", "previa": "reel_tela_verde_canto_preview.mp4", "layout": "tela_verde", "diego": "canto", "legenda": {"base_y": 1160, "uma_linha": false}},
+  "tela_verde_legenda_baixa": {"saida": "reel_tela_verde_legenda_baixa.mp4", "previa": "reel_tela_verde_legenda_baixa_preview.mp4", "layout": "tela_verde", "diego": "centro", "legenda": {"base_y": 1640, "uma_linha": true}},
+  "narrado": {"saida": "reel_narrado.mp4", "previa": "reel_narrado_preview.mp4", "layout": "narrado", "diego": null, "legenda": {"base_y": 1420, "uma_linha": false}}
  },
+ "nota_versoes": "Diego, 22/10/2026: a legenda não pode ficar no rosto, e ele não quer ficar reduzido no centro com o corte da câmera aparecendo. Duas opções de Tela Verde: (1) canto: Diego menor no canto inferior direito, encostado na base, legenda acima da cabeça (base y 1160); (2) legenda_baixa: Diego no tamanho da 1ª entrega e legenda abaixo do queixo, uma linha por vez (base y 1640; o queixo mais baixo medido nesse enquadramento fica em y 1547, ver `rev2.py rosto`). Na opção 2 a legenda sai da zona do DS (y 1250–1440) e entra na faixa onde o Instagram mostra nome e legenda do post: exceção desta peça, a pedido do Diego.",
  "fps": 24,
  "largura": 1080,
  "altura": 1920,
  "nota_fps": "24 fps: é o FPS da gravação do Diego (iPhone), que fica na tela quase o tempo todo. Converter para 30 repetiria quadros da fala. O FPS de produção segue em aberto (CLAUDE.md, pendência 5); os tempos em ms são a referência.",
  "restricao_de_imagem": "Pedido do Diego (22/10/2026): sem imagens da Marina nem da família; só paisagens e vídeos da internet com licença livre. A gravação nova do Diego (fala) é o sujeito da versão Tela Verde.",
  "tomadas": {
-  "A": {"arquivo": "gravacao/IMG_7072.MOV", "recorte": "gravacao/recorte/IMG_7072.webm", "drive_id": "1k-to515XX0_Lozb2pQVN0VGgozd0_v0y", "in": 0.0, "out": 13.10, "ini": 0.0},
-  "B": {"arquivo": "gravacao/IMG_7076.MOV", "recorte": "gravacao/recorte/IMG_7076.webm", "drive_id": "1w-snrap0LjSLo03get4wqZmA-ZJ5qlv7", "in": 0.0, "out": 8.85, "ini": 17.20},
-  "C": {"arquivo": "gravacao/IMG_7078.MOV", "recorte": "gravacao/recorte/IMG_7078.webm", "drive_id": "12mAwXEG0l3BZEJAOtIKuMS2HuRGip2ml", "in": 0.50, "out": 6.70, "ini": 26.05}
+  "A": {"arquivo": "gravacao/IMG_7072.MOV", "recorte": "gravacao/recorte/IMG_7072.webm", "drive_id": "1k-to515XX0_Lozb2pQVN0VGgozd0_v0y", "in": 0.0, "out": 13.10, "ini": 0.0, "queixo": 1370},
+  "B": {"arquivo": "gravacao/IMG_7076.MOV", "recorte": "gravacao/recorte/IMG_7076.webm", "drive_id": "1w-snrap0LjSLo03get4wqZmA-ZJ5qlv7", "in": 0.0, "out": 8.85, "ini": 14.86, "queixo": 1357},
+  "C": {"arquivo": "gravacao/IMG_7078.MOV", "recorte": "gravacao/recorte/IMG_7078.webm", "drive_id": "12mAwXEG0l3BZEJAOtIKuMS2HuRGip2ml", "in": 0.50, "out": 6.70, "ini": 23.71, "queixo": 1412}
  },
- "nota_tomadas": "IMG_7072 = abertura até 'deixar na tela' (a pausa de print dele, 13,1–16,1 s, é substituída pelo quadro de datas de 4,3 s). IMG_7076 = 'Mas calma aí' até 'já resolve'. IMG_7078 = fontes na legenda e CTA. Pasta do Drive: Primeiro Dia/Reel (22/10/2026).",
- "duracao": 32.25,
- "print": {"ini": {"take": "A", "palavra": 51}, "fim": 17.20},
+ "nota_tomadas": "IMG_7072 = abertura até 'deixar na tela' (a pausa de print dele, 13,1–16,1 s, é substituída pelo quadro de datas de 2,0 s, pedido do Diego em 22/10/2026). IMG_7076 = 'Mas calma aí' até 'já resolve'. IMG_7078 = fontes na legenda e CTA. Pasta do Drive: Primeiro Dia/Reel (22/10/2026).",
+ "duracao": 29.91,
+ "print": {"ini": {"take": "A", "palavra": 51}, "fim": 14.86},
  "diego": {
+  "canto": {"escala": 0.5, "x": 790, "zoom": [], "nota": "Escala em torno da base: o corpo continua até a borda de baixo (sem corte). Centro do Diego em x 790; o rosto fica entre x ≈ 650 e 930, dentro da zona segura."},
+  "centro": {
   "escala": 0.72,
-  "nota": "Recorte (RobustVideoMatting ResNet50) ancorado na base e centrado em x 540; cabeça em y ≈ 780, queixo em y ≈ 1230. Punch-in (escala maior) nos momentos de ênfase.",
+  "x": 540,
+  "nota": "Enquadramento da 1ª entrega: recorte ancorado na base, centrado em x 540, punch-in nos momentos de ênfase.",
   "zoom": [
    {"em": {"take": "A", "palavra": 17}, "escala": 0.80},
    {"em": {"take": "A", "palavra": 19}, "escala": 0.72},
    {"em": {"take": "A", "palavra": 40}, "escala": 0.78},
-   {"em": 17.20, "escala": 0.72},
+   {"em": 14.86, "escala": 0.72},
    {"em": {"take": "B", "palavra": 18}, "escala": 0.77},
    {"em": {"take": "C", "palavra": 0}, "escala": 0.72},
    {"em": {"take": "C", "palavra": 9}, "escala": 0.70}
   ]
+  }
  },
  "fontes": {
   "MK1622": {"arquivo": "mixkit/mixkit-1622-2160.mp4", "origem": "Mixkit, Stock Video Free License", "url": "https://mixkit.co/free-stock-video/train-arriving-to-a-subway-station-1622/", "lugar": "plataforma de metrô (local não informado)"},
@@ -42,12 +48,12 @@
  "cenas": [
   {"id": "plataforma", "fonte": "MK1622", "ini": 0.0, "fim": 4.40, "in": 8.20, "recorte_x": [[0, 1150], [4.4, 1500]], "zoom": [1.04, 1.14], "rotulo": "IMAGEM ILUSTRATIVA"},
   {"id": "mapa", "tipo": "grafico", "ini": 4.40, "fim": {"take": "A", "palavra": 51}},
-  {"id": "print", "tipo": "grafico", "ini": {"take": "A", "palavra": 51}, "fim": 17.20},
-  {"id": "trens", "fonte": "MK40912", "ini": 17.20, "fim": {"take": "B", "palavra": 10, "desloc": -0.12}, "in": 0.50, "recorte_x": [[0, 1310]], "zoom": [1.0, 1.06]},
+  {"id": "print", "tipo": "grafico", "ini": {"take": "A", "palavra": 51}, "fim": 14.86},
+  {"id": "trens", "fonte": "MK40912", "ini": 14.86, "fim": {"take": "B", "palavra": 10, "desloc": -0.12}, "in": 0.50, "recorte_x": [[0, 1310]], "zoom": [1.0, 1.06]},
   {"id": "metro", "fonte": "MK40672", "ini": {"take": "B", "palavra": 10, "desloc": -0.12}, "fim": {"take": "B", "palavra": 17, "desloc": -0.1}, "in": 1.50, "recorte_x": [[0, 1310]], "zoom": [1.0, 1.05]},
   {"id": "canais", "tipo": "grafico", "ini": {"take": "B", "palavra": 17, "desloc": -0.1}, "fim": {"take": "B", "palavra": 28, "desloc": -0.08}},
-  {"id": "rota", "tipo": "grafico", "ini": {"take": "B", "palavra": 28, "desloc": -0.08}, "fim": 26.05},
-  {"id": "fim", "fonte": "MK5015", "ini": 26.05, "fim": 32.25, "in": 2.00, "recorte_x": [[0, 1050], [6.2, 1600]], "zoom": [1.0, 1.06]}
+  {"id": "rota", "tipo": "grafico", "ini": {"take": "B", "palavra": 28, "desloc": -0.08}, "fim": 23.71},
+  {"id": "fim", "fonte": "MK5015", "ini": 23.71, "fim": 29.91, "in": 2.00, "recorte_x": [[0, 1050], [6.2, 1600]], "zoom": [1.0, 1.06]}
  ],
  "graficos": {
   "partidas": {
@@ -163,7 +169,7 @@
   {"nome": "blip", "em": {"take": "A", "palavra": 38}, "rel_db": -21, "motivo": "Itália acende"},
   {"nome": "blip", "em": {"take": "A", "palavra": 39}, "rel_db": -21, "motivo": "França acende"},
   {"nome": "obturador", "em": {"take": "A", "palavra": 51}, "rel_db": -12, "motivo": "Snap (DS 4.6): quadro do print entra"},
-  {"nome": "whoosh", "em": 17.12, "rel_db": -16, "motivo": "varrida para a virada"},
+  {"nome": "whoosh", "em": 14.78, "rel_db": -16, "motivo": "varrida para a virada"},
   {"nome": "ping", "em": {"take": "B", "palavra": 23}, "rel_db": -16, "motivo": "canal oficial"},
   {"nome": "tick", "em": {"take": "B", "palavra": 31}, "rel_db": -14, "motivo": "rota planejada riscada"},
   {"nome": "clack", "em": {"take": "C", "palavra": 10, "desloc": 0.28}, "rel_db": -10, "motivo": "placa CTA assenta (Chegada, 280 ms; DS 4.6)"}
@@ -176,5 +182,5 @@
   "master_pico_dbtp": -1,
   "voz_filtro": "highpass=f=80,afftdn=nf=-45:nr=8,acompressor=threshold=-24dB:ratio=2.5:attack=8:release=120:makeup=2"
  },
- "trilha": "sintetizada (rev2.py trilha), mesma linguagem da REV1: tensão até a virada (17,2 s), com respiro no quadro do print, e resolução calma depois. Original, sem direitos de terceiros"
+ "trilha": "sintetizada (rev2.py trilha), mesma linguagem da REV1: tensão até a virada (14,9 s), com respiro no quadro do print, e resolução calma depois. Original, sem direitos de terceiros"
 }

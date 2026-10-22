@@ -23,17 +23,15 @@ import { Camera, MapaEuropa } from "./Mapa";
 import { PainelPartidas, RotaIlustrativa, TelasCanais } from "./Telas";
 import { Deslocamento, ED, FONTE_ED, SEG, SOMBRA_IMPACTO, prog, useSeg } from "./tema";
 
-type Modo = "tela_verde" | "narrado";
-type PorModo<T> = Record<Modo, T>;
 
 type Cena = { id: string; tipo?: "grafico"; ini: number; fim: number; arquivo?: string; zoom?: [number, number]; rotulo?: string };
 
 type ItemQuadro = { data: string; dia: string; pais: string; o_que: string; hora: string; status: string; tom: Tom };
 
 type Graficos = {
-  partidas: { ini: number; fim: number; selo: string; linhas: string[][]; vira: number; vira_para: string; vira_em: number; top: PorModo<number> };
+  partidas: { ini: number; fim: number; selo: string; linhas: string[][]; vira: number; vira_para: string; vira_em: number; top: number };
   mapa: {
-    camera: (Omit<Camera, "tela"> & { tela: PorModo<[number, number]> })[];
+    camera: Camera[];
     destaques: { pais: string; texto: string; ponto: string; em: number }[];
     contador: { em: number; fim: number; linhas: string[]; ate: string };
     escurecer_em: number;
@@ -41,8 +39,8 @@ type Graficos = {
   prepara: { ini: number; fim: number; linhas: string[]; enfase_em: number };
   quadro: { titulo: string; subtitulo: string; itens: ItemQuadro[]; rodape: string[]; assinatura: string };
   calma: { ini: number; fim: number; linhas: string[]; enfase_em: number };
-  funil: { ini: number; fim: number; titulo: string; itens: { texto: string; em: number }[]; top: PorModo<number> };
-  canais: { selo: string; telas: { arquivo: string; rotulo: string }[]; top: PorModo<number>; escala: PorModo<number>; confira_em: number };
+  funil: { ini: number; fim: number; titulo: string; itens: { texto: string; em: number }[]; top: number };
+  canais: { selo: string; telas: { arquivo: string; rotulo: string }[]; top: number; escala: number; confira_em: number };
   rota: { selo: string; origem: string; destino: string; x_em: number; horario_em: number; horarios: string[]; rota_em: number };
   legenda_post: { ini: number; fim: number; linhas: string[]; chip: string; seta_em: number };
   cta: {
@@ -53,8 +51,8 @@ type Graficos = {
 };
 
 export type PropsGrevesV2 = {
-  modo: Modo;
-  mostrar_diego: boolean;
+  /** versão: tela_verde_canto, tela_verde_legenda_baixa ou narrado (rev2.json, versoes). */
+  modo: string;
   fps: number;
   largura: number;
   altura: number;
@@ -63,16 +61,18 @@ export type PropsGrevesV2 = {
   tomadas: { id: string; ini: number; dur: number; voz: string; recorte: string }[];
   cenas: Cena[];
   print: { ini: number; fim: number };
-  diego: { escala: number; zoom: { em: number; escala: number }[] };
+  /** Enquadramento do Diego (null = versão narrada, só a voz): escala em torno da base e centro em x. */
+  diego: { escala: number; x: number; zoom: { em: number; escala: number; dur?: number }[] } | null;
   legendas: { texto: string; ini: number; fim: number; destaque_em?: number }[];
+  /** y da base do bloco da legenda (DS: 1420). */
+  legenda_base_y: number;
   graficos: Graficos | null;
   trilha?: string;
   sons: { nome: string; em: number; rel_db: number; arquivo?: string; nivel?: number }[];
 };
 
 export const propsGrevesV2Vazias: PropsGrevesV2 = {
-  modo: "tela_verde",
-  mostrar_diego: true,
+  modo: "tela_verde_canto",
   fps: 24,
   largura: 1080,
   altura: 1920,
@@ -81,8 +81,9 @@ export const propsGrevesV2Vazias: PropsGrevesV2 = {
   tomadas: [],
   cenas: [],
   print: { ini: 0, fim: 0 },
-  diego: { escala: 0.72, zoom: [] },
+  diego: null,
   legendas: [],
+  legenda_base_y: 1420,
   graficos: null,
   sons: [],
 };
@@ -124,29 +125,28 @@ const CenaVideo: React.FC<{ cena: Cena }> = ({ cena }) => {
 
 /* ---------------------------------------------------------------- o Diego recortado */
 
-/** Escala do recorte: degraus com punch-in de 180 ms (ease-out) nos momentos de ênfase. */
-const escalaDiego = (t: number, base: number, zoom: { em: number; escala: number }[]): number => {
+/** Escala do recorte: degraus com punch-in de 180 ms (ease-out) nos momentos de ênfase; `dur` muda a duração. */
+const escalaDiego = (t: number, base: number, zoom: { em: number; escala: number; dur?: number }[]): number => {
   let e = base;
-  let anterior = base;
   for (const z of zoom) {
     if (t < z.em) break;
-    anterior = e;
-    e = anterior + (z.escala - anterior) * prog(t, z.em, z.em + 0.18, EASE.out);
-    if (t >= z.em + 0.18) e = z.escala;
+    const d = z.dur ?? 0.18;
+    e = t >= z.em + d ? z.escala : e + (z.escala - e) * prog(t, z.em, z.em + d, EASE.out);
   }
   return e;
 };
 
-const Diego: React.FC<{ tomada: PropsGrevesV2["tomadas"][number]; diego: PropsGrevesV2["diego"]; entrada?: boolean }> = ({ tomada, diego, entrada }) => {
+const Diego: React.FC<{ tomada: PropsGrevesV2["tomadas"][number]; diego: NonNullable<PropsGrevesV2["diego"]>; entrada?: boolean }> = ({ tomada, diego, entrada }) => {
   const t = useSeg();
   const e = escalaDiego(t, diego.escala, diego.zoom);
   const p = entrada ? prog(t, tomada.ini, tomada.ini + 0.32, EASE.out) : 1;
   return (
     <AbsoluteFill
       style={{
+        // escala em torno da base: o corpo vai sempre até a borda de baixo, sem corte aparente
         transformOrigin: "50% 100%",
         scale: String(e),
-        translate: `0 ${(1 - p) * 140}px`,
+        translate: `${diego.x - 540}px ${(1 - p) * 140}px`,
         opacity: p,
         // o quarto da gravação é escuro: levanta um pouco o rosto e separa a silhueta do fundo com um contorno claro sutil
         filter: "brightness(1.14) contrast(1.05) saturate(1.04) drop-shadow(0 0 2px rgba(243,245,248,.45)) drop-shadow(0 24px 40px rgba(0,0,0,.55))",
@@ -310,13 +310,15 @@ const ChipLegenda: React.FC<{ texto: string; ini: number; fim: number; setaEm: n
   if (t < ini + 0.2 || t > fim + 0.25) return null;
   const p = prog(t, ini + 0.2, ini + 0.5, EASE.arrive);
   const s = prog(t, fim, fim + 0.22, EASE.exit);
-  const quica = t > setaEm ? 10 * Math.abs(Math.sin((t - setaEm) * Math.PI * 2.4)) : 0;
+  const quica = t > setaEm ? 6 * Math.abs(Math.sin((t - setaEm) * Math.PI * 2.4)) : 0;
   return (
-    <div style={{ position: "absolute", left: 0, right: 0, top: 540, display: "flex", flexDirection: "column", alignItems: "center", gap: 10, opacity: p * (1 - s) }}>
-      <div style={{ fontFamily: FONTE_ED.impacto, fontWeight: 800, fontSize: 54, color: ED.tinta, background: ED.calma, padding: "6px 26px", borderRadius: 12, letterSpacing: "0.02em" }}>{texto}</div>
-      <svg width={60} height={60} viewBox="0 0 24 24" style={{ translate: `0 ${quica}px` }}>
-        <path d="M12 3v16M5 13l7 7 7-7" fill="none" stroke={ED.calma} strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
+    <div style={{ position: "absolute", left: SEG.x0, top: 486, opacity: p * (1 - s) }}>
+      <div style={{ display: "inline-flex", alignItems: "center", gap: 10, fontFamily: FONTE_ED.impacto, fontWeight: 800, fontSize: 54, color: ED.tinta, background: ED.calma, padding: "4px 18px 4px 24px", borderRadius: 12, letterSpacing: "0.02em" }}>
+        {texto}
+        <svg width={44} height={44} viewBox="0 0 24 24" style={{ translate: `0 ${quica}px` }}>
+          <path d="M12 3v16M5 13l7 7 7-7" fill="none" stroke={ED.tinta} strokeWidth={3.2} strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </div>
     </div>
   );
 };
@@ -329,7 +331,6 @@ export const ReelGrevesV2: React.FC<PropsGrevesV2> = (p) => {
   const t = useSeg();
   const g = p.graficos;
   if (!g) return <AbsoluteFill style={{ background: ED.tinta }} />;
-  const m = p.modo;
   const cena = (id: string) => p.cenas.find((c) => c.id === id) as Cena;
   const pr = p.print;
   const noPrint = t >= pr.ini && t < pr.fim;
@@ -347,14 +348,14 @@ export const ReelGrevesV2: React.FC<PropsGrevesV2> = (p) => {
         <MapaEuropa
           ini={c.ini}
           fim={c.fim}
-          cameras={g.mapa.camera.map((k) => ({ ...k, tela: k.tela[m] }))}
+          cameras={g.mapa.camera}
           destaques={g.mapa.destaques}
           rotulos={g.mapa.destaques}
           escurecer={[{ ini: g.mapa.escurecer_em, fim: c.fim + 1, valor: 0.5 }]}
         />
       );
     else if (c.id === "print") conteudo = <QuadroPrint ini={c.ini} fim={c.fim} q={g.quadro} />;
-    else if (c.id === "canais") conteudo = <TelasCanais ini={c.ini} fim={c.fim} selo={g.canais.selo} telas={g.canais.telas} top={g.canais.top[m]} escala={g.canais.escala[m]} />;
+    else if (c.id === "canais") conteudo = <TelasCanais ini={c.ini} fim={c.fim} selo={g.canais.selo} telas={g.canais.telas} top={g.canais.top} escala={g.canais.escala} />;
     else if (c.id === "rota")
       conteudo = (
         <RotaIlustrativa ini={c.ini} fim={c.fim} selo={g.rota.selo} origem={g.rota.origem} destino={g.rota.destino} xEm={g.rota.x_em} horarioEm={g.rota.horario_em} horarios={g.rota.horarios} rotaEm={g.rota.rota_em} />
@@ -391,13 +392,14 @@ export const ReelGrevesV2: React.FC<PropsGrevesV2> = (p) => {
       )}
 
       {/* o Diego (só na versão Tela Verde). A tomada A sai quando o quadro do print entra. */}
-      {p.mostrar_diego &&
+      {p.diego &&
         p.tomadas.map((tk) => {
+          const enq = p.diego as NonNullable<PropsGrevesV2["diego"]>;
           const fimVisivel = tk.id === "A" ? Math.min(tk.ini + tk.dur, pr.ini) : tk.ini + tk.dur;
           return (
             <Sequence key={tk.id} name={`diego ${tk.id}`} from={q(tk.ini)} durationInFrames={Math.max(1, q(fimVisivel) - q(tk.ini))}>
               <Deslocamento.Provider value={q(tk.ini) / fps}>
-                <Diego tomada={tk} diego={p.diego} entrada={tk.ini >= pr.fim - 0.01 && tk.id === "B"} />
+                <Diego tomada={tk} diego={enq} entrada={tk.ini >= pr.fim - 0.01 && tk.id === "B"} />
               </Deslocamento.Provider>
             </Sequence>
           );
@@ -406,7 +408,7 @@ export const ReelGrevesV2: React.FC<PropsGrevesV2> = (p) => {
       {cena("plataforma").rotulo && <RotuloAcervo texto={cena("plataforma").rotulo as string} ini={0.1} fim={Math.min(cena("plataforma").fim, 2.6)} />}
 
       {/* ato 1: o risco */}
-      <PainelPartidas ini={g.partidas.ini} fim={g.partidas.fim} selo={g.partidas.selo} linhas={g.partidas.linhas} vira={g.partidas.vira} viraPara={g.partidas.vira_para} viraEm={g.partidas.vira_em} top={g.partidas.top[m]} />
+      <PainelPartidas ini={g.partidas.ini} fim={g.partidas.fim} selo={g.partidas.selo} linhas={g.partidas.linhas} vira={g.partidas.vira} viraPara={g.partidas.vira_para} viraEm={g.partidas.vira_em} top={g.partidas.top} />
 
       {/* ato 2: onde e quando */}
       <TextoImpacto linhas={g.mapa.contador.linhas} ini={g.mapa.contador.em} fim={g.mapa.contador.fim} y={262} tamanho={104} enfase={[1]} enfaseEm={g.mapa.contador.em + 0.35} />
@@ -415,11 +417,11 @@ export const ReelGrevesV2: React.FC<PropsGrevesV2> = (p) => {
 
       {/* ato 3: a virada e a solução */}
       <TextoImpacto linhas={g.calma.linhas} ini={g.calma.ini} fim={g.calma.fim} y={290} tamanho={150} cor={ED.branco} enfase={[1]} enfaseEm={g.calma.enfase_em} corEnfase={ED.calma} />
-      <Funil ini={g.funil.ini} fim={g.funil.fim} titulo={g.funil.titulo} itens={g.funil.itens} top={g.funil.top[m]} />
+      <Funil ini={g.funil.ini} fim={g.funil.fim} titulo={g.funil.titulo} itens={g.funil.itens} top={g.funil.top} />
       <ConfiraSelo ini={g.canais.confira_em} fim={canais.fim} />
 
       {/* encerramento */}
-      <TextoImpacto linhas={g.legenda_post.linhas} ini={g.legenda_post.ini} fim={g.legenda_post.fim} y={290} tamanho={104} />
+      <TextoImpacto linhas={g.legenda_post.linhas} ini={g.legenda_post.ini} fim={g.legenda_post.fim} y={280} tamanho={96} />
       <ChipLegenda texto={g.legenda_post.chip} ini={g.legenda_post.ini} fim={g.legenda_post.fim} setaEm={g.legenda_post.seta_em} />
       <AcoesCta acoes={g.cta.acoes} fim={p.duracao + 1} />
       <Placa rotulo={g.cta.placa.rotulo} destino={g.cta.placa.destino} modulo={g.cta.placa.modulo} tamanho={g.cta.placa.tamanho} entrada={g.cta.placa.ini * 1000} />
@@ -427,6 +429,7 @@ export const ReelGrevesV2: React.FC<PropsGrevesV2> = (p) => {
       {!noPrint && (
         <LegendaPadrao
           modo="grupo"
+          base={p.altura - p.legenda_base_y}
           grupos={p.legendas
             .filter((l) => l.ini < pr.ini || l.ini >= pr.fim)
             .map((l) => ({

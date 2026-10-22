@@ -1,6 +1,6 @@
 # Legenda do post · Reel "Greves na Europa" (REV2)
 
-Vale para as duas versões (Tela Verde e Narrada). Revisar as datas no dia da postagem (`research/sources.md`). Texto pronto para copiar:
+Vale para as três versões (as duas Tela Verde e a Narrada). Revisar as datas no dia da postagem (`research/sources.md`). Texto pronto para copiar:
 
 ```
 Vai pra Europa até o fim de novembro? Salva e confere antes de sair do hotel 👇
@@ -50,6 +50,6 @@ Imagens: Mixkit (licença livre) · mapa: Natural Earth.
 ```
 
 **Notas:**
-- O quadro do print (12,9–17,2 s) tem as mesmas datas, menos Nápoles (16/11) e Malpensa (22/11), que ficam só aqui.
+- O quadro do print (12,9–14,9 s) tem as mesmas datas, menos Nápoles (16/11) e Malpensa (22/11), que ficam só aqui.
 - Se alguma data for desconvocada antes de postar, retire-a daqui e avise no primeiro comentário fixado ("ATUALIZAÇÃO: …"). O quadro do vídeo traz "situação em 22/10/2026" e o aviso de que greve pode mudar até a véspera.
 - Bélgica, Alemanha, Holanda e Reino Unido: nenhuma greve de transporte confirmada até 30/11 em 22/10/2026.

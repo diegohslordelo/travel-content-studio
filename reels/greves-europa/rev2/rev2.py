@@ -4,6 +4,7 @@
 Pipeline (rode de dentro desta pasta):
     python3 rev2.py fala       # transcrição com tempo de cada palavra (faster-whisper large-v3) → fala/transcricao.json
     python3 rev2.py recorte    # recorte do Diego (RobustVideoMatting ResNet50, ONNX) → ../fonte/gravacao/recorte/*.webm
+    python3 rev2.py rosto      # mede o rosto em cada recorte → valores de `queixo` em rev2.json (legenda fora do rosto)
     python3 rev2.py preparar   # voz, recortes por tomada, cenas, trilha, efeitos e props em _tmp/
     python3 rev2.py props      # só refaz _tmp/props_*.json (reaproveita o que já foi gerado)
     python3 rev2.py render     # Remotion monta as duas versões (composição "ReelGrevesV2")
@@ -132,6 +133,31 @@ def recorte():
         print(f"{nome}: {n} quadros → {os.path.basename(saida)}")
 
 
+def rosto():
+    """Mede o rosto do Diego quadro a quadro (YuNet, OpenCV) em cada recorte e imprime o queixo mais baixo (y da
+    imagem 1080 × 1920). Esse valor vai em `tomadas.<X>.queixo` do rev2.json: a composição escala o recorte em torno
+    dele e o leva para `diego.queixo_y`, acima da zona da legenda. Modelo: opencv_zoo, face_detection_yunet_2023mar."""
+    import cv2
+    import numpy as np
+    d = carregar()
+    W, H = d["largura"] // 2, d["altura"] // 2
+    det = cv2.FaceDetectorYN.create(os.environ.get("YUNET_ONNX", "face_detection_yunet_2023mar.onnx"), "", (W, H), 0.6)
+    for nome in d["tomadas"]:
+        p = subprocess.Popen(["ffmpeg", "-v", "error", "-c:v", "libvpx-vp9", "-i", os.path.join(PUBLIC, f"diego_{nome}.webm"), "-vf", f"scale={W}:{H}",
+                              "-f", "rawvideo", "-pix_fmt", "bgr24", "-"], stdout=subprocess.PIPE)
+        queixos, sem = [], 0
+        while True:
+            b = p.stdout.read(W * H * 3)
+            if len(b) < W * H * 3:
+                break
+            _, fs = det.detect(np.frombuffer(b, np.uint8).reshape(H, W, 3))
+            if fs is None:
+                sem += 1
+                continue
+            queixos.append(float(fs[0][1] + fs[0][3]) * 2)
+        print(f"{nome}: queixo mais baixo y {max(queixos):.0f} (mediana {np.median(queixos):.0f}; {sem} quadro(s) sem rosto)")
+
+
 # ---------------------------------------------------------------- tempos ancorados na fala
 
 def carregar_fala():
@@ -179,6 +205,33 @@ def grupos_legenda(d, fl):
             item["destaque_em"] = t({"take": g["take"], "palavra": g["destaque"]})
         out.append(item)
     return out
+
+
+def grupos_uma_linha(d, fl):
+    """Mesmos textos, uma linha por vez: cada linha ("|") vira um grupo que entra na 1ª palavra dela."""
+    _, t = resolver(d, fl)
+    linhas = []
+    for g in d["legendas"]:
+        w = g["de"]
+        for txt in g["texto"].split("|"):
+            n = len(txt.split())
+            item = {"take": g["take"], "de": w, "ate": w + n - 1, "texto": txt.strip()}
+            if "destaque" in g and w <= g["destaque"] <= w + n - 1:
+                item["destaque"] = g["destaque"]
+            linhas.append(item)
+            w += n
+    return grupos_legenda(dict(d, legendas=linhas), fl)
+
+
+def escolher(o, layout, layouts):
+    """Valores por layout ({"tela_verde": …, "narrado": …}) → o valor do layout da versão."""
+    if isinstance(o, dict):
+        if o and set(o) == layouts:
+            return escolher(o[layout], layout, layouts)
+        return {k: escolher(v, layout, layouts) for k, v in o.items()}
+    if isinstance(o, list):
+        return [escolher(x, layout, layouts) for x in o]
+    return o
 
 
 # ---------------------------------------------------------------- voz, recortes e cenas
@@ -401,11 +454,10 @@ def preparar(reaproveitar=False):
     vozes = voz(d) if not (reaproveitar and all(os.path.exists(os.path.join(PUBLIC, f"voz_{n}.wav")) for n in d["tomadas"])) else {n: f"voz_{n}.wav" for n in d["tomadas"]}
     diego = recortes_tomadas(d, reaproveitar)
     base = {k: d[k] for k in ("fps", "largura", "altura", "duracao", "mix")}
-    base["tomadas"] = [{"id": n, "ini": tk["ini"], "dur": round(tk["out"] - tk["in"], 3), "voz": vozes[n], "recorte": diego[n]} for n, tk in d["tomadas"].items()]
+    base["tomadas"] = [{"id": n, "ini": tk["ini"], "dur": round(tk["out"] - tk["in"], 3), "voz": vozes[n], "recorte": diego[n], "queixo": tk["queixo"]}
+                      for n, tk in d["tomadas"].items()]
     base["cenas"] = preparar_cenas(d, t, reaproveitar)
     base["print"] = andar(d["print"])
-    base["diego"] = andar(d["diego"])
-    base["legendas"] = grupos_legenda(d, fl)
     base["graficos"] = andar(d["graficos"])
     for sub in ("prints",):
         shutil.copytree(os.path.join(REV1, "assets", sub), os.path.join(PUBLIC, sub), dirs_exist_ok=True)
@@ -423,8 +475,13 @@ def preparar(reaproveitar=False):
             item["nivel"] = round(nivel_evento(os.path.join(PUBLIC, sfx[s["nome"]])), 1)
         sons.append(item)
     base["sons"] = sons
+    legendas = {False: grupos_legenda(d, fl), True: grupos_uma_linha(d, fl)}
+    layouts = {v["layout"] for v in d["versoes"].values()}
     for nome, v in d["versoes"].items():
-        props = dict(base, modo=nome, mostrar_diego=v["diego"])
+        props = escolher(dict(base, modo=nome), v["layout"], layouts)
+        props["diego"] = andar(d["diego"][v["diego"]]) if v["diego"] else None
+        props["legendas"] = legendas[v["legenda"]["uma_linha"]]
+        props["legenda_base_y"] = v["legenda"]["base_y"]
         with open(os.path.join(TMP, f"props_{nome}.json"), "w", encoding="utf-8") as fp:
             json.dump(props, fp, ensure_ascii=False, indent=1)
     print(f"duração: {d['duracao']:.2f} s · print {base['print']['ini']:.2f}–{base['print']['fim']:.2f} s · props em _tmp/props_*.json")
@@ -501,14 +558,14 @@ def quadros():
     for nome, v in d["versoes"].items():
         sh(["ffmpeg", "-v", "error", "-y", "-i", os.path.join(AQUI, v["saida"]), "-vf", "fps=2,scale=216:384,tile=11x6:padding=4:color=black",
             "-frames:v", "1", os.path.join(pasta, f"folha_{nome}.jpg")])
-        for s in (0.6, 3.9, 7.2, 9.9, 11.8, 14.5, 18.6, 20.6, 23.4, 25.6, 27.4, 30.6):
+        for s in (0.6, 3.9, 7.2, 9.9, 11.8, 13.9, 16.3, 18.3, 20.2, 23.2, 25.0, 28.2):
             sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{s}", "-i", os.path.join(AQUI, v["saida"]), "-frames:v", "1", "-q:v", "3",
                 os.path.join(pasta, f"{nome}_{s:04.1f}s.jpg")])
 
 
 if __name__ == "__main__":
     etapa = sys.argv[1] if len(sys.argv) > 1 else "tudo"
-    etapas = {"fala": [fala], "recorte": [recorte], "preparar": [preparar], "props": [lambda: preparar(reaproveitar=True)],
+    etapas = {"fala": [fala], "recorte": [recorte], "rosto": [rosto], "preparar": [preparar], "props": [lambda: preparar(reaproveitar=True)],
               "render": [lambda: render(sys.argv[2] if len(sys.argv) > 2 else None)], "master": [master], "previa": [previa],
               "srt": [srt], "quadros": [quadros], "tudo": [preparar, render, master, previa, srt, quadros]}
     for fn in etapas[etapa]:
