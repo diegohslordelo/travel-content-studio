@@ -15,12 +15,12 @@
  "restricao_de_imagem": "Pedido do Diego (22/10/2026): sem imagens da Marina nem da família; só paisagens e vídeos da internet com licença livre. A gravação nova do Diego (fala) é o sujeito da versão Tela Verde.",
  "tomadas": {
   "A": {"arquivo": "gravacao/IMG_7072.MOV", "recorte": "gravacao/recorte/IMG_7072.webm", "drive_id": "1k-to515XX0_Lozb2pQVN0VGgozd0_v0y", "in": 0.0, "out": 13.36, "ini": 0.0, "queixo": 1370},
-  "B": {"arquivo": "gravacao/IMG_7076.MOV", "recorte": "gravacao/recorte/IMG_7076.webm", "drive_id": "1w-snrap0LjSLo03get4wqZmA-ZJ5qlv7", "in": 0.0, "out": 9.04, "ini": 14.86, "queixo": 1357},
-  "C": {"arquivo": "gravacao/IMG_7078.MOV", "recorte": "gravacao/recorte/IMG_7078.webm", "drive_id": "12mAwXEG0l3BZEJAOtIKuMS2HuRGip2ml", "in": 0.62, "out": 6.45, "ini": 23.90, "queixo": 1412}
+  "B": {"arquivo": "gravacao/IMG_7076.MOV", "recorte": "gravacao/recorte/IMG_7076.webm", "drive_id": "1w-snrap0LjSLo03get4wqZmA-ZJ5qlv7", "in": 0.0, "out": 9.04, "cortes": [[4.125, 4.5833]], "ini": 14.86, "queixo": 1357},
+  "C": {"arquivo": "gravacao/IMG_7078.MOV", "recorte": "gravacao/recorte/IMG_7078.webm", "drive_id": "12mAwXEG0l3BZEJAOtIKuMS2HuRGip2ml", "in": 0.62, "out": 6.45, "ini": 23.442, "queixo": 1412}
  },
- "decupagem": "Cortes pelo fim real da fala (energia do áudio em blocos de 10 ms, ver DECUPAGEM.md) + 0,15 s de cauda: A termina em 13,21 s, B em 8,89 s, C em 6,02 s (o vídeo acaba 0,43 s depois de 'perrengue').",
+ "decupagem": "Pausa de 0,59 s em IMG_7076 (silêncio de 4,04 a 4,63 s, o Diego olhando a tela antes de 'O importante mesmo') cortada: tira 4,125–4,583 s (11 quadros, 0,458 s) e deixa 0,16 s de respiração. Cortes pelo fim real da fala (energia do áudio em blocos de 10 ms, ver DECUPAGEM.md) + 0,15 s de cauda: A termina em 13,21 s, B em 8,89 s, C em 6,02 s (o vídeo acaba 0,43 s depois de 'perrengue').",
  "nota_tomadas": "IMG_7072 = abertura até 'deixar na tela' (a pausa de print dele, 13,1–16,1 s, é substituída pelo quadro de datas de 2,0 s, pedido do Diego em 22/10/2026). IMG_7076 = 'Mas calma aí' até 'já resolve'. IMG_7078 = fontes na legenda e CTA. Pasta do Drive: Primeiro Dia/Reel (22/10/2026).",
- "duracao": 29.73,
+ "duracao": 29.272,
  "print": {"ini": {"take": "A", "palavra": 51}, "fim": 14.86},
  "diego": {
   "canto": {"escala": 0.5, "x": 790, "zoom": [], "nota": "Escala em torno da base: o corpo continua até a borda de baixo (sem corte). Centro do Diego em x 790; o rosto fica entre x ≈ 650 e 930, dentro da zona segura."},
@@ -44,8 +44,8 @@
   {"id": "trens", "fonte": "MK40912", "ini": 14.86, "fim": {"take": "B", "palavra": 10, "desloc": -0.12}, "in": 0.50, "recorte_x": [[0, 1310]], "zoom": [1.0, 1.06]},
   {"id": "metro", "fonte": "MK40672", "ini": {"take": "B", "palavra": 10, "desloc": -0.12}, "fim": {"take": "B", "palavra": 17, "desloc": -0.1}, "in": 1.50, "recorte_x": [[0, 1310]], "zoom": [1.0, 1.05]},
   {"id": "canais", "tipo": "grafico", "ini": {"take": "B", "palavra": 17, "desloc": -0.1}, "fim": {"take": "B", "palavra": 28, "desloc": -0.08}},
-  {"id": "rota", "tipo": "grafico", "ini": {"take": "B", "palavra": 28, "desloc": -0.08}, "fim": 23.90},
-  {"id": "fim", "fonte": "MK5015", "ini": 23.90, "fim": 29.73, "in": 2.00, "recorte_x": [[0, 1050], [5.83, 1600]], "zoom": [1.0, 1.06]}
+  {"id": "rota", "tipo": "grafico", "ini": {"take": "B", "palavra": 28, "desloc": -0.08}, "fim": 23.442},
+  {"id": "fim", "fonte": "MK5015", "ini": 23.442, "fim": 29.272, "in": 2.00, "recorte_x": [[0, 1050], [5.83, 1600]], "zoom": [1.0, 1.06]}
  ],
  "graficos": {
   "partidas": {

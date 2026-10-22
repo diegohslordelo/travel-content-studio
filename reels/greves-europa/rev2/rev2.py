@@ -165,6 +165,26 @@ def carregar_fala():
         return json.load(f)
 
 
+def cortes(tk):
+    """Pausas retiradas de dentro da tomada: [[ini, fim], ...] em segundos do arquivo bruto (alinhados ao quadro de 24 fps)."""
+    return tk.get("cortes", [])
+
+
+def dur_tomada(tk):
+    return tk["out"] - tk["in"] - sum(b - a for a, b in cortes(tk))
+
+
+def no_trecho(tk, t):
+    """Tempo do bruto → tempo dentro do trecho já sem as pausas cortadas (contínuo: uma palavra marcada dentro da pausa vai para o ponto do corte)."""
+    return t - tk["in"] - sum(min(max(t - a, 0.0), b - a) for a, b in cortes(tk))
+
+
+def segmentos(tk):
+    """Trechos mantidos, relativos ao início da tomada (`in`): [(ini, fim), ...]."""
+    pts = [tk["in"]] + [x for c in cortes(tk) for x in c] + [tk["out"]]
+    return [(pts[i] - tk["in"], pts[i + 1] - tk["in"]) for i in range(0, len(pts), 2)]
+
+
 def resolver(d, fl):
     """{"take", "palavra", "desloc"} → segundos absolutos na linha do tempo do Reel (início da palavra)."""
     tks = d["tomadas"]
@@ -173,7 +193,7 @@ def resolver(d, fl):
         if isinstance(v, (int, float)):
             return float(v)
         tk = tks[v["take"]]
-        return round(tk["ini"] + fl[v["take"]][v["palavra"]]["t"] - tk["in"] + v.get("desloc", 0.0), 3)
+        return round(tk["ini"] + no_trecho(tk, fl[v["take"]][v["palavra"]]["t"]) + v.get("desloc", 0.0), 3)
 
     def andar(o):
         if isinstance(o, dict):
@@ -243,9 +263,20 @@ def voz(d):
     partes = []
     for nome, tk in d["tomadas"].items():
         arq = os.path.join(TMP, f"voz_{nome}_f.wav")
-        dur = tk["out"] - tk["in"]
-        sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{tk['in']:.3f}", "-i", bruto(tk), "-t", f"{dur:.3f}", "-vn", "-ac", "1", "-ar", str(SR),
-            "-af", f"{filtro},afade=t=in:d=0.03,afade=t=out:st={dur - 0.06:.3f}:d=0.06", "-c:a", "pcm_s16le", arq])
+        dur = dur_tomada(tk)
+        if not cortes(tk):
+            sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{tk['in']:.3f}", "-i", bruto(tk), "-t", f"{dur:.3f}", "-vn", "-ac", "1", "-ar", str(SR),
+                "-af", f"{filtro},afade=t=in:d=0.03,afade=t=out:st={dur - 0.06:.3f}:d=0.06", "-c:a", "pcm_s16le", arq])
+        else:
+            # filtra o trecho inteiro (a redução de ruído precisa de contexto) e só depois tira as pausas, com fades de 20 ms nas emendas
+            cheio = os.path.join(TMP, f"voz_{nome}_cheio.wav")
+            sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{tk['in']:.3f}", "-i", bruto(tk), "-t", f"{tk['out'] - tk['in']:.3f}", "-vn", "-ac", "1",
+                "-ar", str(SR), "-af", filtro, "-c:a", "pcm_s16le", cheio])
+            seg = segmentos(tk)
+            fc = ";".join(f"[0:a]atrim={a:.4f}:{b:.4f},asetpts=PTS-STARTPTS,afade=t=in:d=0.02,afade=t=out:st={b - a - 0.02:.4f}:d=0.02[s{i}]"
+                          for i, (a, b) in enumerate(seg))
+            fc += ";" + "".join(f"[s{i}]" for i in range(len(seg))) + f"concat=n={len(seg)}:v=0:a=1,afade=t=in:d=0.03,afade=t=out:st={dur - 0.06:.4f}:d=0.06[o]"
+            sh(["ffmpeg", "-v", "error", "-y", "-i", cheio, "-filter_complex", fc, "-map", "[o]", "-c:a", "pcm_s16le", arq])
         partes.append((nome, arq))
     lista = os.path.join(TMP, "voz_lista.txt")
     with open(lista, "w") as f:
@@ -270,9 +301,16 @@ def recortes_tomadas(d, reaproveitar):
         arq = f"diego_{nome}.webm"
         dest = os.path.join(PUBLIC, arq)
         if not (reaproveitar and os.path.exists(dest)):
-            sh(["ffmpeg", "-v", "error", "-y", "-c:v", "libvpx-vp9", "-ss", f"{tk['in']:.3f}", "-i", os.path.join(FONTE, tk["recorte"]),
-                "-t", f"{tk['out'] - tk['in'] + 0.05:.3f}", "-an", "-c:v", "libvpx-vp9", "-pix_fmt", "yuva420p", "-b:v", "0", "-crf", "16",
-                "-row-mt", "1", "-deadline", "good", "-cpu-used", "4", "-auto-alt-ref", "0", dest])
+            ent = ["-c:v", "libvpx-vp9", "-ss", f"{tk['in']:.3f}", "-i", os.path.join(FONTE, tk["recorte"]), "-t", f"{tk['out'] - tk['in'] + 0.05:.3f}"]
+            codec = ["-an", "-c:v", "libvpx-vp9", "-pix_fmt", "yuva420p", "-b:v", "0", "-crf", "16", "-row-mt", "1", "-deadline", "good",
+                     "-cpu-used", "4", "-auto-alt-ref", "0", dest]
+            if not cortes(tk):
+                sh(["ffmpeg", "-v", "error", "-y"] + ent + codec)
+            else:  # corte seco (jump cut) nos pontos de `cortes`, sempre em quadro inteiro
+                seg = segmentos(tk)
+                fc = ";".join(f"[0:v]trim=start={a:.4f}:end={b:.4f},setpts=PTS-STARTPTS[v{i}]" for i, (a, b) in enumerate(seg))
+                fc += ";" + "".join(f"[v{i}]" for i in range(len(seg))) + f"concat=n={len(seg)}:v=1:a=0,format=yuva420p[o]"
+                sh(["ffmpeg", "-v", "error", "-y"] + ent + ["-filter_complex", fc, "-map", "[o]"] + codec)
         out[nome] = arq
     return out
 
@@ -454,7 +492,7 @@ def preparar(reaproveitar=False):
     vozes = voz(d) if not (reaproveitar and all(os.path.exists(os.path.join(PUBLIC, f"voz_{n}.wav")) for n in d["tomadas"])) else {n: f"voz_{n}.wav" for n in d["tomadas"]}
     diego = recortes_tomadas(d, reaproveitar)
     base = {k: d[k] for k in ("fps", "largura", "altura", "duracao", "mix")}
-    base["tomadas"] = [{"id": n, "ini": tk["ini"], "dur": round(tk["out"] - tk["in"], 3), "voz": vozes[n], "recorte": diego[n], "queixo": tk["queixo"]}
+    base["tomadas"] = [{"id": n, "ini": tk["ini"], "dur": round(dur_tomada(tk), 3), "voz": vozes[n], "recorte": diego[n], "queixo": tk["queixo"]}
                       for n, tk in d["tomadas"].items()]
     base["cenas"] = preparar_cenas(d, t, reaproveitar)
     base["print"] = andar(d["print"])

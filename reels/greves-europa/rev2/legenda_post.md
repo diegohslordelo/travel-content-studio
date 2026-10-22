@@ -1,6 +1,6 @@
 # Legenda do post · Reel "Greves na Europa" (REV2)
 
-Vale para as três versões (as duas Tela Verde e a Narrada). Revisar as datas no dia da postagem (`research/sources.md`). Texto pronto para copiar:
+Vale para as duas versões (Tela Verde e Narrada). Revisar as datas no dia da postagem (`research/sources.md`). Texto pronto para copiar:
 
 ```
 Vai pra Europa até o fim de novembro? Salva e confere antes de sair do hotel 👇
@@ -33,14 +33,24 @@ GREVES DE TRANSPORTE PREVISTAS (situação em 22/10/2026)
 
 Greve não é tudo parado: na Itália há faixas de trens garantidos, na Espanha o governo fixa serviços mínimos e a SNCF publica o plano na véspera. O impacto muda por país, empresa e linha.
 
-ONDE CONFERIR
-• Itália: scioperi.mit.gov.it + site/app da Trenitalia e da Italo (trens garantidos)
-• Espanha: renfe.com e app Renfe; serviços mínimos em transportes.gob.es
-• Portugal: cp.pt e app CP; metrolisboa.pt
-• França: app SNCF Connect (plano de transporte na véspera)
-• Voos: site do aeroporto e app da companhia aérea
+FONTES E APPS OFICIAIS (confere aqui antes de sair)
+🇮🇹 Itália
+• Calendário oficial de greves (Ministério dos Transportes): scioperi.mit.gov.it
+• Trens: app e site da Trenitalia (trenitalia.com) e da Italo (italotreno.it), que listam os trens garantidos
+🇪🇸 Espanha
+• Trens: app e site da Renfe (renfe.com)
+• Serviços mínimos: Ministério dos Transportes (transportes.gob.es)
+🇵🇹 Portugal
+• Trens: app e site da CP (cp.pt)
+• Metrô de Lisboa: metrolisboa.pt
+🇫🇷 França
+• Trens: app e site SNCF Connect (sncf-connect.com). O plano de transporte sai na véspera
+🇬🇷 Grécia
+• Ônibus: confira com a empresa de ônibus e o site da cidade, pois a greve é dos KTEL
+✈️ Voos
+• Site do aeroporto e app da companhia aérea
 
-Fontes: Ministério dos Transportes da Itália (MIT), CP, Semaf, CCOO/UGT, sindicatos ferroviários franceses, Euronews, Infobae, SOL, Sortiraparis e EfSyn.
+Fontes das datas: Ministério dos Transportes da Itália (MIT), sindicatos Semaf, USB, CGIL, CUB/SGB, CCOO/UGT e os quatro sindicatos ferroviários franceses, via CP, Euronews, Infobae, SOL, Sortiraparis e EfSyn, conferidas em 22/10/2026.
 
 Manda pra quem vai viajar nessas datas pra não passar perrengue.
 
