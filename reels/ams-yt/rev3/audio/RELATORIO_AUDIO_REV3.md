@@ -6,7 +6,7 @@
 | Vídeo / formato | Vídeo longo do YouTube, 16:9, 24 fps · REV3 com 33:04,6 (gancho 20,3 s + corpo decupado 31:35,7 + fechamento 48,6 s + tela final 20 s) |
 | Viagem / dia / local | Amsterdam, 12 a 14/03/2026 (3 dias) |
 | Arquivos de origem | Os da REV2 (`rev2/audio/RELATORIO_AUDIO_REV2.md`), com o fechamento trocado pelas 7 gravações de 23/10/2026: `fonte/narracao/fechamento_v2/F_1.m4a` a `F_7.m4a` (AAC 48 kHz, gravador do celular, baixadas do Drive) |
-| SHA-256 do original | SHA_FONTE |
+| SHA-256 do original | `1016_sem_musica.mp4`: igual ao registrado (`reels/ams-yt/sha256_fonte.txt`), conferido de novo em 23/10/2026, durante o render. `1016_so_musica.mp4`: conferido no download (REV2); neste ambiente só existe decodificado (`_tmp/musica_orig.wav`) |
 | Data da revisão / responsável | 23/10/2026 · Claude (medição e tratamento); escuta: Diego |
 | Ferramentas e versões | As da REV2: FFmpeg 6.1 (ebur128), Python 3 + numpy, scipy, soundfile, pyloudnorm 0.1, faster-whisper 1.2.1 (large-v3, int8) |
 | Estado | **AGUARDANDO ESCUTA** (11.1): nada foi ouvido. Os números apontam onde ouvir; não substituem o ouvido |
@@ -78,7 +78,7 @@ Os 10 pontos em que o limitador mais trabalha são os da REV2 (o primeiro: 03:33
 
 | Item | Esperado | Obtido |
 |---|---|---|
-| Original intacto | SHA-256 igual | SHA_OK |
+| Original intacto | SHA-256 igual | **OK** (`1016_sem_musica.mp4`, 23/10/2026, durante o render) |
 | Loudness | −14 ± 1 LU | **LUFS_FINAL** no MP4 final |
 | Pico verdadeiro | ≤ −1 dBTP | **TP_FINAL** no MP4 final |
 | Decodificação | sem erros | DECOD |
