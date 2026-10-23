@@ -22,7 +22,7 @@
 | `ROTEIRO_NARRACAO_REV2.md` | O que você gravou, onde entra, e o texto para regravar o F3 e o F4 |
 | `FALANTES_REV2.md` | Quem fala em cada frase, medido pelo tom de voz |
 | `efeitos_rev2.md` | Cada efeito: minuto em que entra, duração e por quê |
-| `legenda_rev2.srt` + `legenda_duvidas_rev2.md` | Legenda (482 legendas) e o que ouvir antes de subir |
+| `legenda_rev2.srt` + `legenda_duvidas_rev2.md` | Legenda (455 legendas) e o que ouvir antes de subir |
 | `DESCRICAO_YOUTUBE_REV2.md` | 3 títulos, descrição com o link do hotel e os 22 capítulos |
 | `audio/RELATORIO_AUDIO_REV2.md` | Revisão de áudio (o que mudou desde a REV1) |
 | `../sons/AMS_tambor_v2.wav`, `../sons/AMS_confete_murcho_v1.wav` | Os dois sons novos, para aprovar |
@@ -32,7 +32,7 @@
 | # | Pedido | Feito |
 |---|---|---|
 | 1 | Ganchos gravados, na pasta do Drive | As 11 gravações foram transcritas (Whisper large-v3) e encaixadas. Você gravou um texto seu, diferente do roteiro: o gancho e o fechamento foram remontados pelo que foi dito (o fechamento passou de 38,1 s para 43,3 s; o gancho, de 26,5 s para 20,3 s). Das 4 tomadas do gancho, a 2 ficou de fora (a 3 diz o mesmo e mais) |
-| 2 | Separar suas falas das da Marina pelo tom de voz | Medição de F0 palavra a palavra (`FALANTES_REV2.md`): 283 frases suas, 66 dela, 20 de dúvida. "Eu sei que não vai chover" é seu. A legenda nunca junta as duas vozes |
+| 2 | Separar suas falas das da Marina pelo tom de voz | Medição de F0 palavra a palavra (`FALANTES_REV2.md`): 283 frases suas, 66 dela, 20 de dúvida. "Eu sei que não vai chover" é seu. A legenda abre legenda nova quando a outra pessoa fala 3 palavras ou mais |
 | 3 | Print na pasta; não é afiliado | Print recortado (sem a barra de busca com datas de outra estadia e o "1 diária") e link comum na descrição: `https://www.hoteis.com/ho266594/` |
 | 4 | Confete murcho no lugar dos fogos; tambores mais graves e misteriosos, mesmo andamento | Som e animação novos (`AMS_confete_murcho_v1.wav` + `ConfeteMurcho` no Remotion); rufar v2 em tambor grave com bordão, mesmo andamento e crescendo do v1. As 7 decisões da QA da REV1 ficam aprovadas |
 | 5 | Escuta e legenda depois | Feito o resto; a legenda foi refeita para a REV2 e espera as suas correções |
@@ -82,6 +82,19 @@
 - [ ] 3 thumbnails para o teste A/B.
 - [ ] Conferir o SHA-256 da fonte no fim (padrão de áudio, 11.3).
 
-## 7. Render final em 4K
+## 7. Render final
 
-O teste desta sessão (10 s da fonte) renderizou a 0,9 quadro/s em 4K com o proxy rodando ao lado; sem concorrência, a estimativa é de 2 a 3 quadros/s, ou **4 a 6 horas** para os 47.503 quadros, e o arquivo final teria uns 7 GB. Este ambiente não tem como te entregar um arquivo desse tamanho (o Git LFS do repositório não é lugar para ele e o conector do Drive não sobe arquivos grandes). Opções na seção de pendências da conversa.
+O render final lê direto a fonte em 4K (`bash rev2/renderizar_rev2.sh final4k`; testado nesta sessão em 10 s, com as cores conferidas contra a fonte). Duas limitações deste ambiente:
+
+- **Tempo:** em 4 núcleos, o 4K sai a ~1 quadro/s com outra tarefa rodando ao lado e deve ficar em 2 a 3 quadros/s sozinho: **4 a 6 horas** para os 47.503 quadros.
+- **Entrega:** o arquivo em 4K fica com 4 a 7 GB. O único caminho daqui até você é o Git LFS do GitHub, que na conta gratuita aceita até 2 GB por arquivo e 10 GB por mês de armazenamento e de download. O conector do Drive não sobe arquivos desse tamanho.
+
+Opções (a decisão é sua):
+
+| Opção | Arquivo | Como chega | Custo |
+|---|---|---|---|
+| **A · 1080p** | 1 arquivo de ~1,9 GB (8 Mbps, o que o YouTube recomenda para 1080p) | GitHub (LFS), baixa e sobe direto no YouTube | ~3 h de render; 1,9 GB da cota |
+| **B · 4K** | ~4,5 GB (16 Mbps) em 3 partes de até 1,9 GB | GitHub (LFS); você junta as partes no PC com um comando | ~5 h de render; 4,5 GB da cota |
+| **C · 4K no seu computador** | o arquivo sai direto aí | script pronto (`renderizar_rev2.sh final4k`), mas precisa de Node, ffmpeg e Python instalados | o tempo do seu computador |
+
+Recomendo a **A** para publicar amanhã: sai em ~3 h, num arquivo só, e gasta menos da metade da cota. A desvantagem é que o vídeo não terá a opção 4K no YouTube; se isso importa para você, a **B**.

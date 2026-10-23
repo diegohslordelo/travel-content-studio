@@ -40,8 +40,10 @@ case "${1:-}" in
       [ -s "_tmp/p_$i.mp4" ] || render "$RAIZ/_tmp/p_$i.mp4" "$a" "$b"
       echo "file '$RAIZ/_tmp/p_$i.mp4'" >> _tmp/partes.txt
     done
-    ffmpeg -nostdin -v error -y -f concat -safe 0 -i _tmp/partes.txt -c copy _tmp/previa_video.mp4
-    python3 rev2/finalizar_rev2.py _tmp/previa_video.mp4 0 _tmp/previa_mix.mp4
+    # junta as partes já recomprimindo em ~1 Mbps (o grão do DS faz o CRF 20 passar de 2 GB no vídeo inteiro);
+    # o áudio do render (só efeitos) vai junto, sem recodificar, para a mixagem
+    ffmpeg -nostdin -v error -y -f concat -safe 0 -i _tmp/partes.txt -c:v libx264 -preset veryfast -crf 30 -maxrate 1000k -bufsize 2000k -pix_fmt yuv420p -c:a copy -movflags +faststart _tmp/previa_video.mp4
+    python3 rev2/finalizar_rev2.py _tmp/previa_video.mp4 0 rev2/rev2_previa_720p.mp4
     ;;
   final4k)
     # 3840 × 2160 lendo direto a fonte 4K (HEVC 10 bits; o Remotion decodifica pelo <OffthreadVideo>), x264 veryfast

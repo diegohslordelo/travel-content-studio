@@ -4,9 +4,10 @@
 Muda da REV1 (`rev1/gerar_srt_rev1.py`):
   - gancho e fechamento saem do que o Diego gravou (transcrição das narrações), não do roteiro;
   - as falas reais do gancho saem da transcrição da fonte, no trecho do take;
-  - quem fala (`_tmp/falantes.json`, `scripts/quem_fala.py`, pelo tom de voz): uma legenda nunca junta fala do Diego e
-    da Marina; a troca de quem fala abre legenda nova. Nome ("Marina: …") não entra: o DS só pede quando a pessoa não
-    aparece, e isso a medição de voz não sabe dizer.
+  - quem fala (`_tmp/falantes.json`, `scripts/quem_fala.py`, pelo tom de voz): quando a outra pessoa fala 3 palavras
+    ou mais seguidas, abre legenda nova. Nome ("Marina: …") não entra: o DS só pede quando a pessoa não aparece, e
+    isso a medição de voz não sabe dizer;
+  - só sai do .srt a palavra que caiu num corte manual; palavra que o Whisper pôs numa pausa tirada é erro de tempo.
 
 Base: transcrição automática (faster-whisper large-v3) — NÃO é verdade: o Diego ouve e confirma antes do envio
 (ele vai mandar as correções do .srt depois, 23/10/2026).
@@ -40,6 +41,7 @@ NOMES = [
     (r"\bbelgica bruxelas\b", "Bélgica, Bruxelas"), (r"\bfebo\b", "FEBO"), (r"\bVangog\b", "Van Gogh"),
     (r"\bA comida típica é uma roupa frita\b", "A comida típica é uma batata frita"),
     (r"\barroba primeirodiaem\b", "@primeirodiaem"),
+    (r"(\w) -(\w)", r"\1-\2"),  # o Whisper separa palavra com hífen em dois tokens ("guarda -chuva")
 ]
 # trechos que a transcrição não resolve: vão para a lista de escuta do Diego (não são inventados no .srt)
 DUVIDAS = [
@@ -92,11 +94,13 @@ def main():
     fal = json.load(open("_tmp/falantes.json", encoding="utf-8"))
     tn = json.load(open("_tmp/narr/transcricao_narr.json", encoding="utf-8"))
     mp = mt.Mapa(edl, lt["gancho_ms"])
-    manter = [(a / 24, b / 24) for a, b in edl["manter"]]
     quem_palavra = {round(w["ini"], 3): w.get("quem", "?") for f in fal["frases"] for w in f["palavras"]}
+    # a decupagem só tira pausa onde a energia da voz cai: palavra que o Whisper pôs dentro de uma pausa tirada é erro
+    # de tempo da transcrição e fica (ex.: o "vale" de "vale muito a pena", 29:58). Só sai o que caiu num corte manual.
+    manuais = [(r["de_s"], r["de_s"] + r["dur_s"]) for r in edl["removidos"] if r["motivo"] != "pausa na fala"]
 
     def mantida(t):
-        return any(a <= t < b for a, b in manter)
+        return 0 <= t < edl["duracao_fonte_s"] and not any(a <= t < b for a, b in manuais)
 
     # frases do corpo no relógio final; palavras em trechos cortados saem; a troca de quem fala parte a frase
     frases = []
@@ -117,6 +121,22 @@ def main():
         if not ws:
             continue
         baixas_todas += [w for w in ws if w["prob"] < 0.45 and len(w["p"]) > 3]
+        # troca de quem fala só conta quando a outra pessoa fala 3 palavras ou mais seguidas: trecho menor vira de quem
+        # fala mais na frase (uma palavra isolada do outro lado é quase sempre erro de oitava do pYIN: "Gente, meu / cabelo")
+        corridas = []
+        for w in ws:
+            if w["quem"] in ("D", "M"):
+                if corridas and corridas[-1][0] == w["quem"]:
+                    corridas[-1][1].append(w)
+                else:
+                    corridas.append((w["quem"], [w]))
+        if len(corridas) > 1:
+            conta = {q: sum(len(g) for q2, g in corridas if q2 == q) for q, _ in corridas}
+            maioria = max(conta, key=conta.get)
+            for q, grupo in corridas:
+                if len(grupo) < 3:
+                    for w in grupo:
+                        w["quem"] = maioria
         atual, dono = [ws[0]], ws[0]["quem"]
         for w in ws[1:]:
             if w["quem"] in ("D", "M") and dono in ("D", "M") and w["quem"] != dono:

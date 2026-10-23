@@ -39,7 +39,7 @@ Resultado: 283 frases suas, 66 da Marina, 20 com dúvida (as duas vozes ou medid
 
 ## Na legenda (.srt)
 
-Uma legenda nunca junta a sua fala e a da Marina: a troca de quem fala abre legenda nova. Não pus o nome ("Marina: …"): o DS V2 (3.4.1) só pede o nome quando a pessoa não aparece, e a medição de voz não sabe se ela aparece.
+Quando a outra pessoa fala 3 palavras ou mais seguidas, abre legenda nova: uma legenda não junta a sua fala e a da Marina. Trechos menores ficam com quem fala mais na frase (uma palavra isolada do outro lado é quase sempre erro de medida). Não pus o nome ("Marina: …"): o DS V2 (3.4.1) só pede o nome quando a pessoa não aparece, e a medição de voz não sabe se ela aparece.
 
 ## Frases da Marina no vídeo
 

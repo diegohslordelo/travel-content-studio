@@ -17,11 +17,11 @@ Saem da transcrição das suas narrações gravadas em 22/10/2026 (o que você f
 | Vídeo final | Texto na legenda | Dúvida |
 |---|---|---|
 | 00:02:40 | por causa do sol macio | 02:25 da fonte: "Por causa do sol macio" — palavra provável errada |
-| 00:08:30 | Kiko, passamos pela American Eagle e isso, | 08:29 da fonte: "Pull&Bear agora, Kiko" (loja KIKO Milano?) |
+| 00:08:30 | Kiko, já passamos pela / American Eagle e é isso, | 08:29 da fonte: "Pull&Bear agora, Kiko" (loja KIKO Milano?) |
 | 00:19:15 | Riges alguma coisa, / eu não sei falar o nome dele | 19:35 da fonte: "Riges... alguma coisa" — mantido como foi dito (Rijksmuseum) |
 | 00:25:12 | Museu da primeira fábrica da Heineken. / Iremos de tarde. | 28:57 da fonte: "Ele chegou no ... A primeira fábrica" — a transcrição sem filtro ouviu "parque de rações" |
 
-## Palavras com confiança baixa (60)
+## Palavras com confiança baixa (62)
 
 | Vídeo final | Palavra | Confiança |
 |---|---|---:|
@@ -31,10 +31,12 @@ Saem da transcrição das suas narrações gravadas em 22/10/2026 (o que você f
 | 00:02:02 | para | 0.27 |
 | 00:02:07 | vezes | 0.28 |
 | 00:02:11 | Porque | 0.28 |
+| 00:04:45 | Pois | 0.15 |
 | 00:05:46 | Que, | 0.17 |
 | 00:05:50 | Não, | 0.32 |
 | 00:06:57 | Muito | 0.38 |
 | 00:08:57 | não, | 0.00 |
+| 00:09:29 | prova | 0.39 |
 | 00:09:30 | vai, | 0.19 |
 | 00:09:41 | você | 0.24 |
 | 00:10:04 | vinhemos | 0.42 |

@@ -69,7 +69,7 @@ def main():
     L += ["", "**No gancho**: \"Bebi quatro, estou realizado\" é seu (144–157 Hz). \"Gente, meu cabelo!\" saiu misturado: \"Gente\" mediu na sua faixa e \"meu cabelo\" na da Marina; com o vento dessa cena a medida não decide. Ouça esse trecho (00:03 do vídeo final). Ele entra como fala real, sem nome na tela, então não muda a montagem.", "",
           "**A pergunta do resumo** (\"quem disse 'eu sei que não vai chover'?\"): você (140 Hz). A Marina responde em seguida: \"Tomara que não, porque nem guarda-chuva eu tenho\" (293 Hz).", "",
           "## Na legenda (.srt)", "",
-          "Uma legenda nunca junta a sua fala e a da Marina: a troca de quem fala abre legenda nova. Não pus o nome (\"Marina: …\"): o DS V2 (3.4.1) só pede o nome quando a pessoa não aparece, e a medição de voz não sabe se ela aparece.", "",
+          "Quando a outra pessoa fala 3 palavras ou mais seguidas, abre legenda nova: uma legenda não junta a sua fala e a da Marina. Trechos menores ficam com quem fala mais na frase (uma palavra isolada do outro lado é quase sempre erro de medida). Não pus o nome (\"Marina: …\"): o DS V2 (3.4.1) só pede o nome quando a pessoa não aparece, e a medição de voz não sabe se ela aparece.", "",
           "## Frases da Marina no vídeo", "", "| Vídeo final | Fonte | F0 | Frase |", "|---|---|---:|---|"]
     for f in fr:
         if f["quem"] == "Marina" and no_video(f["ini"] + 0.2):
