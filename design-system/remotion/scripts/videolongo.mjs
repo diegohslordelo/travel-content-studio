@@ -6,7 +6,8 @@
  *   node scripts/videolongo.mjs <props.json> <public-dir> tudo    <saida.mp4> [escala]
  *
  * Imagem em H.264 (CRF 20) + os efeitos sonoros do Remotion; voz e música são mixadas depois pelo script da revisão.
- * `escala` < 1 gera a prévia leve (ex.: 0.667 → 1280 × 720).
+ * `escala` < 1 gera a prévia leve (ex.: 0.667 → 1280 × 720); 2 gera o 4K (3840 × 2160).
+ * X264_PRESET (ex.: veryfast) troca o preset do x264 (padrão do Remotion: medium) e CRF troca o CRF (padrão 20).
  */
 import { bundle } from "@remotion/bundler";
 import { renderMedia, renderStill, selectComposition } from "@remotion/renderer";
@@ -28,6 +29,7 @@ const serveUrl = pronto
   ? process.env.BUNDLE_DIR
   : await bundle({ entryPoint: path.join(raiz, "src", "index.ts"), publicDir: path.resolve(publicDir), ...(process.env.BUNDLE_DIR ? { outDir: process.env.BUNDLE_DIR } : {}) });
 const comum = { serveUrl, browserExecutable, logLevel: "warn", inputProps };
+const codificacao = { codec: "h264", crf: Number(process.env.CRF ?? 20), ...(process.env.X264_PRESET ? { x264Preset: process.env.X264_PRESET } : {}) };
 const composition = await selectComposition({ ...comum, id: "VideoLongo" });
 const concurrency = Math.max(1, os.cpus().length);
 let ultimo = -1;
@@ -47,10 +49,10 @@ if (modo === "quadros") {
   }
 } else if (modo === "trecho") {
   const [ini, fim, escala = "1"] = resto;
-  await renderMedia({ ...comum, composition, codec: "h264", crf: 20, enforceAudioTrack: true, outputLocation: saida, frameRange: [Number(ini), Number(fim)], scale: Number(escala), concurrency, onProgress: progresso });
+  await renderMedia({ ...comum, composition, ...codificacao, enforceAudioTrack: true, outputLocation: saida, frameRange: [Number(ini), Number(fim)], scale: Number(escala), concurrency, onProgress: progresso });
 } else if (modo === "tudo") {
   const [escala = "1"] = resto;
-  await renderMedia({ ...comum, composition, codec: "h264", crf: 20, enforceAudioTrack: true, outputLocation: saida, scale: Number(escala), concurrency, onProgress: progresso });
+  await renderMedia({ ...comum, composition, ...codificacao, enforceAudioTrack: true, outputLocation: saida, scale: Number(escala), concurrency, onProgress: progresso });
 } else {
   console.error("modo: quadros | trecho | tudo");
   process.exit(1);

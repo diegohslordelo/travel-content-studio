@@ -10,5 +10,17 @@
   "duracao_s": 2.452,
   "lufs_50ms": -14.0,
   "pico_dbfs": -6.9
+ },
+ "AMS_tambor_v2.wav": {
+  "evento": "McCrispy: rufar grave em crescendo de 4.03 s (andamento do v1), para logo antes do \"não\"",
+  "duracao_s": 4.092,
+  "lufs_50ms": -14.0,
+  "pico_dbfs": -4.5
+ },
+ "AMS_confete_murcho_v1.wav": {
+  "evento": "McCrispy: lança-confete que falha, logo depois do \"não\" (substitui os fogos)",
+  "duracao_s": 2.152,
+  "lufs_50ms": -14.0,
+  "pico_dbfs": -1.4
  }
 }

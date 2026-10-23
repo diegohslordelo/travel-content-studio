@@ -238,6 +238,133 @@ export const FogosMurchos: React.FC<{ em: number; x: number; y: number; altura?:
 /* ------------------------------------------------------------------------------------------------ */
 
 /**
+ * Confete murcho (pedido do Diego, 23/10/2026, no "não" do McCrispy, no lugar dos fogos: "um confete estourado,
+ * daqueles murchos que palhaço estoura"). Sincronizado com `AMS_confete_murcho_v1.wav`, que começa em `em`:
+ * o lança-confete entra 300 ms antes com mola; em `em` a cordinha é puxada e sai um "pfft" (fumacinha) em vez
+ * do estouro; a língua de sogra sai fraca (até 170 ms → 600 ms), murcha e fica pendurada; 30 papeizinhos sobem
+ * pouco e caem rodando devagar até ~2 s. `x`, `y` = boca do lança-confete; `escala` 2 no vídeo longo.
+ */
+export const ConfeteMurcho: React.FC<{ em: number; x: number; y: number; escala?: number; semente?: number }> = ({ em, x, y, escala = 2, semente = 11 }) => {
+  const t = useMs() - em;
+  if (t < -300 || t > 2500) return null;
+  const cores = [EFX.coral, EFX.tangerina, EFX.limao, EFX.turquesa, EFX.ceu, EFX.violeta, EFX.rosa];
+  const INCL = -24; // graus: o cone aponta para cima e um pouco para a esquerda
+  const rad = ((INCL - 90) * Math.PI) / 180;
+  const [ux, uy] = [Math.cos(rad), Math.sin(rad)]; // direção da boca
+  const entra = mola(t + 300);
+  const sai = kf(t, [1900, 2300], [1, 0], EASE.exit);
+  const coice = t >= 0 ? kf(t, [0, 60, 260], [0, 1, 0], [EASE.out, EASE.out]) : 0; // recua de leve no "pfft"
+  const treme = t >= 0 && t < 900 ? Math.sin(t / 18) * 2 * (1 - t / 900) : 0;
+
+  // cone: boca em (0,0), corpo para baixo, listrado
+  const L = 150;
+  const cone = (
+    <g transform={`translate(${x - ux * 14 * coice + treme} ${y - uy * 14 * coice}) rotate(${INCL}) scale(${entra * escala})`} opacity={sai}>
+      <defs>
+        <clipPath id={`conec${semente}`}>
+          <path d={`M -46 0 L 46 0 L 8 ${L} L -8 ${L} Z`} />
+        </clipPath>
+      </defs>
+      <path d={`M -46 0 L 46 0 L 8 ${L} L -8 ${L} Z`} fill={EFX.violeta} />
+      <g clipPath={`url(#conec${semente})`}>
+        {[0, 1, 2, 3, 4].map((i) => (
+          <rect key={i} x={-60} y={8 + i * 30} width={120} height={14} fill={i % 2 ? EFX.limao : EFX.rosa} transform={`skewY(-8)`} />
+        ))}
+      </g>
+      <ellipse cx={0} cy={0} rx={46} ry={11} fill={EFX.tangerina} stroke="rgba(0,0,0,.25)" strokeWidth={3} />
+      <ellipse cx={0} cy={1} rx={34} ry={6} fill="#5B3A12" opacity={0.55} />
+      {/* cordinha: puxada no "pfft" */}
+      <path d={`M 0 ${L} q 10 ${26 + 30 * coice} -4 ${54 + 40 * Math.min(1, Math.max(0, t) / 120)}`} fill="none" stroke={EFX.branco} strokeWidth={5} strokeLinecap="round" />
+    </g>
+  );
+
+  // fumacinha do "pfft"
+  const fumaca: React.ReactNode[] = [];
+  if (t >= 0 && t < 900) {
+    for (let i = 0; i < 5; i++) {
+      const d = t - i * 40;
+      if (d < 0) continue;
+      const o = kf(d, [0, 90, 700], [0, 0.55, 0], EASE.out);
+      const dist = (30 + d * 0.09 + i * 12) * escala;
+      fumaca.push(<circle key={`fm${i}`} cx={x + ux * dist + (i - 2) * 16} cy={y + uy * dist - (i % 2) * 10} r={(18 + d * 0.05) * escala} fill="#B9BBC3" opacity={o} />);
+    }
+  }
+
+  // língua de sogra: desenrola pouco e murcha, ficando pendurada na boca do cone
+  let lingua: React.ReactNode = null;
+  if (t >= 160) {
+    const tl = t - 160;
+    const sobe = kf(tl, [0, 260], [0, 1], EASE.out); // comprimento que chega a sair
+    const murcha = kf(tl, [260, 950], [0, 1], EASE.cinema); // perde o ar e cai
+    const n = 14;
+    const comp = 190 * escala * sobe;
+    const pts: [number, number][] = [];
+    let px = x;
+    let py = y;
+    let ang = rad;
+    for (let k = 0; k <= n; k++) {
+      pts.push([px, py]);
+      const passo = comp / n;
+      // cheia: segue reta e enrola na ponta; murcha: cada pedaço vira para baixo (gravidade)
+      const enrola = k > n * 0.6 ? 0.35 * (1 - murcha) : 0;
+      const alvo = Math.PI / 2 + 0.2; // para baixo
+      ang = ang + enrola + (alvo - ang) * 0.22 * murcha;
+      px += Math.cos(ang) * passo;
+      py += Math.sin(ang) * passo;
+    }
+    lingua = (
+      <g opacity={sai}>
+        <polyline points={pts.map((q) => q.join(",")).join(" ")} fill="none" stroke={EFX.coral} strokeWidth={(22 - 6 * murcha) * escala} strokeLinecap="round" strokeLinejoin="round" />
+        <polyline points={pts.map((q) => q.join(",")).join(" ")} fill="none" stroke={EFX.tangerina} strokeWidth={6 * escala} strokeLinecap="round" strokeDasharray={`${18 * escala} ${16 * escala}`} opacity={0.9} />
+      </g>
+    );
+  }
+
+  // papel picado: sobe pouco (sem pressão) e cai rodando devagar
+  const papeis: React.ReactNode[] = [];
+  if (t >= 30) {
+    const tp = (t - 30) / 1000;
+    const N = 42;
+    for (let i = 0; i < N; i++) {
+      const abre = ((random(`ca${semente}${i}`) - 0.5) * 70 * Math.PI) / 180;
+      const v = (170 + random(`cv${semente}${i}`) * 230) * escala; // px/s: fraco
+      const a0 = rad + abre;
+      const arrasto = (1 - Math.exp(-tp * 4)) / 4;
+      const g = 140 + random(`cg${semente}${i}`) * 60; // papel cai devagar
+      const balanco = Math.sin(tp * (5 + random(`cb${semente}${i}`) * 3) + i) * 22 * Math.min(1, tp * 2);
+      const cx = x + Math.cos(a0) * v * arrasto + balanco;
+      const cy = y + Math.sin(a0) * v * arrasto + 0.5 * g * tp * tp;
+      const vida = 1.6 + random(`cl${semente}${i}`) * 0.5;
+      const o = kf(tp, [0, 0.05, vida - 0.4, vida], [0, 1, 1, 0]);
+      if (o <= 0) continue;
+      const gira = tp * (200 + random(`cr${semente}${i}`) * 300) + i * 37;
+      const vira = Math.cos(tp * (7 + random(`cf${semente}${i}`) * 5) + i); // o papel "pisca" ao virar
+      const cor = cores[i % cores.length];
+      papeis.push(
+        i % 5 === 4 ? (
+          <circle key={`p${i}`} cx={cx} cy={cy} r={8 * escala} fill={cor} opacity={o} />
+        ) : (
+          <rect key={`p${i}`} x={-8} y={-12} width={16} height={24} rx={2} fill={cor} opacity={o} transform={`translate(${cx} ${cy}) rotate(${gira}) scale(${escala} ${escala * (0.25 + 0.75 * Math.abs(vira))})`} />
+        ),
+      );
+    }
+  }
+
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <svg width={1920} height={1080} viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0, overflow: "visible", filter: "drop-shadow(0 6px 8px rgba(0,0,0,.35))" }}>
+        {fumaca}
+        {lingua}
+        {cone}
+        {papeis}
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/**
  * Print de um site surgindo (pedido do Diego, 21/10/2026: a página do hotel no Hoteis.com). Janela de
  * navegador neutra com a barra do endereço; a página entra subindo e se endireitando (rotateX 14° → 0,
  * 520 ms), rola devagar para mostrar o resto e sai pela direita. Sem som.

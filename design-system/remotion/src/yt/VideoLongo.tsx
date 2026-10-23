@@ -18,7 +18,7 @@ import { kf, useMs } from "../ds/tempo";
 import { EASE, SOM, YT } from "../ds/tokens";
 import { LIKE_APERTA, LIKE_INSCRITO } from "../ds/Placa";
 import { ChamadaInstagram, DUR_PAGINA, EtiquetaLugar, LOWER_BASE, MapaRota, Quadro, TelaFinal, VOLUME_PAGINA_DB, VirarPagina } from "./Objetos16x9";
-import { FogosMurchos, GuiaNarracao, Nota, PrintSite } from "./Efeitos";
+import { ConfeteMurcho, FogosMurchos, GuiaNarracao, Nota, PrintSite } from "./Efeitos";
 
 /** `congela`: mostra só o quadro `src` (imagem parada; o som da mixagem segue). */
 export type Trecho = { src: number; de: number; ate: number; pagina?: boolean; congela?: boolean };
@@ -31,6 +31,7 @@ export type Evento =
   | { tipo: "placar"; valores: ValorPlacar[]; ligar: number; desligar?: number }
   | ({ tipo: "nota"; titulo: string; linhas: string[]; x: number; y: number; largura?: number; cor?: string; cor2?: string; icone?: "alerta" | "dica" | "relogio" } & Base)
   | { tipo: "fogos"; em: number; x: number; y: number; altura?: number }
+  | { tipo: "confete"; em: number; x: number; y: number }
   | { tipo: "som"; nome: NomeSom; em: number; relDb: number }
   | { tipo: "audio"; arquivo: string; em: number; volume: number }
   | ({ tipo: "instagram" } & Base)
@@ -130,6 +131,8 @@ const UmEvento: React.FC<{ e: Evento; refLufs: number }> = ({ e, refLufs }) => {
       return <Nota {...e} />;
     case "fogos":
       return <FogosMurchos em={e.em} x={e.x} y={e.y} altura={e.altura} />;
+    case "confete":
+      return <ConfeteMurcho em={e.em} x={e.x} y={e.y} />;
     case "som":
       return <Som nome={e.nome} em={e.em} relDb={e.relDb} refLufs={refLufs} />;
     case "audio":

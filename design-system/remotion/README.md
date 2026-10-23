@@ -52,8 +52,8 @@ O arquivo sai em `../kit/mov/` com o nome da composição. Todos têm 1080 × 19
 | `src/reel/Reel.tsx` | 5.2 | Reel montado a partir de `revN.json` |
 | `src/yt/Objetos16x9.tsx` | 5.4 | Objetos do vídeo longo 16:9: Etiqueta de lugar, chamada do Instagram, Mapa com Rota, transição Página, tela final e Quadro (lista que acende item a item) |
 | `src/yt/VideoLongo.tsx` | 5.4 | Vídeo longo montado a partir de `reels/<video>/revN/props_revN.json`: trechos da fonte (decupagem, quadro congelado, Página) e eventos (objetos, efeitos, sons, zoom) |
-| `src/yt/Efeitos.tsx` | — | Camada de efeitos do vídeo longo, com cores livres (decisão do Diego, 21/10/2026; não é paleta do DS): Nota de aviso, Fogos murchos, Print de site e o guia de gravação da narração |
-| `scripts/videolongo.mjs` | — | Render do `VideoLongo`: quadros de conferência, trecho ou vídeo inteiro (`BUNDLE_DIR` reaproveita o bundle) |
+| `src/yt/Efeitos.tsx` | — | Camada de efeitos do vídeo longo, com cores livres (decisão do Diego, 21/10/2026; não é paleta do DS): Nota de aviso, Fogos murchos (REV1), Confete murcho (REV2, no lugar dos fogos, 23/10/2026), Print de site e o guia de gravação da narração |
+| `scripts/videolongo.mjs` | — | Render do `VideoLongo`: quadros de conferência, trecho ou vídeo inteiro (`BUNDLE_DIR` reaproveita o bundle; `X264_PRESET` e `CRF` mudam a codificação; escala 2 = 4K) |
 | `scripts/servir.mjs` | — | Servidor local com Range para o proxy do vídeo longo (fora da pasta pública: o bundle não copia gigabytes) |
 | `scripts/kit.mjs` | 6.1 | Exportação do kit |
 
