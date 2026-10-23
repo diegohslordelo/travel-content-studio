@@ -17,7 +17,7 @@
 | `rev2_hotel.mp4` | 00:54–01:11: recibo da hospedagem e o print real do Hoteis.com |
 | `rev2_mccrispy.mp4` | 13:10–13:30: rufar grave e confete murcho |
 | `rev2_fechamento.mp4` | 31:15–32:59: 2º FEBO, focaccia, fechamento narrado e tela final |
-| `rev2_previa_720p.mp4` | Vídeo inteiro em 720p, com efeitos, sons e mixagem |
+| `rev2_previa_720p.mp4` | Vídeo inteiro em 720p (270 MB), com efeitos, sons e mixagem: −14,1 LUFS e −1,4 dBTP medidos no MP4 |
 | `takes_rev2.md` | Cada take do gancho e do fechamento, com a duração (o menor tem 2,04 s) |
 | `ROTEIRO_NARRACAO_REV2.md` | O que você gravou, onde entra, e o texto para regravar o F3 e o F4 |
 | `FALANTES_REV2.md` | Quem fala em cada frase, medido pelo tom de voz |

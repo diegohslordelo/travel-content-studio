@@ -27,7 +27,7 @@ def main():
     br = sys.argv[4] if len(sys.argv) > 4 else "160k"
     x, sr = sf.read(mixwav, dtype="float32")
     assert sr == SR
-    for rodada in range(1, 7):
+    for rodada in range(1, 9):
         sf.write("_tmp/fix.wav", x, SR, subtype="FLOAT")
         sh(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", "_tmp/fix.wav", "-c:a", "aac", "-b:a", br, "-ar", "48000", "_tmp/fix.m4a"])
         sh(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", "_tmp/fix.m4a", "-c:a", "pcm_f32le", "_tmp/fix_dec.wav"])
@@ -43,7 +43,7 @@ def main():
         grupos = np.split(ruins, np.flatnonzero(np.diff(ruins) > SR // 5) + 1)
         for g in grupos:
             c = int(g[np.argmax(pico[g])])
-            exc = 20 * np.log10(pico[c] / lim) + 0.5
+            exc = min(3.0, 20 * np.log10(pico[c] / lim) + 0.5)  # no máximo 3 dB por rodada: pico absurdo é falha do codificador
             n = int(0.05 * SR)
             a, b = max(0, c - n), min(len(x), c + n)
             w = 0.5 * (1 - np.cos(np.pi * np.arange(b - a) / (b - a)))  # 0..1

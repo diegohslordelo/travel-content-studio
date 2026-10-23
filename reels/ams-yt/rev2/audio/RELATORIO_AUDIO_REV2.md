@@ -22,10 +22,10 @@ A voz do corpo, a música do Diego no corpo e o master seguem a cadeia da REV1, 
 | Contêiner / duração | MP4, 32:43,8 | MP4, 32:59,3 (prévia) | Gancho, fechamento, tela final e decupagem |
 | Fluxo de imagem | HEVC 10 bits, 3840 × 2160, 24 fps | H.264, 1280 × 720, 24 fps (prévia) | O render final lê direto a fonte em 4K (`renderizar_rev2.sh final4k`) |
 | Áudio | AAC 44,1 kHz estéreo (fonte); narrações AAC 48 kHz | AAC 192 kbps, 48 kHz, estéreo | — |
-| LUFS integrado | −20,6 (fonte) | **[PRÉVIA]** | Alvo [PROJETO] −14 ± 1 LU |
-| Pico verdadeiro | −0,2 dBTP (fonte) | **[PRÉVIA]** | Limite [PROJETO] −1 dBTP |
+| LUFS integrado | −20,6 (fonte) | **−14,1** (prévia completa, medido no MP4) | Alvo [PROJETO] −14 ± 1 LU: cumpre |
+| Pico verdadeiro | −0,2 dBTP (fonte) | **−1,4 dBTP** (prévia completa, medido no MP4) | Limite [PROJETO] −1 dBTP: cumpre, depois da correção da seção 10 |
 
-Trechos de aprovação (medidos no MP4 exportado): gancho −12,5 LUFS (34 s; a narração é densa) e −1,4 dBTP; hotel −14,6 LUFS e −1,5 dBTP; McCrispy −14,9 LUFS e −1,4 dBTP; fim do dia 3 + fechamento −13,1 LUFS e −1,5 dBTP.
+Trechos de aprovação (medidos no MP4 exportado, com o teto de −2,0 dBTP): gancho −12,6 LUFS (34 s; a narração é densa) e −1,9 dBTP; hotel −14,7 LUFS e −1,8 dBTP; McCrispy −15,0 LUFS e −1,8 dBTP; fim do dia 3 + fechamento −13,3 LUFS e −1,8 dBTP. São trechos: o alvo de −14 LUFS vale para o vídeo inteiro.
 
 ## 3. Blocos analisados
 
@@ -66,12 +66,12 @@ Corpo: os mesmos 145 blocos da REV1 (`rev1/audio/diagnostico_blocos_rev1.csv`; a
 | P08 | 1 | Recorte de cada narração (fala − 120 ms a fala + 250 ms), rampas de 30 ms (entrada) e 80 ms (saída) | Tirar o clique e o silêncio do arquivo | — | AGUARDANDO ESCUTA | — |
 | — | 3 | Passa-altas 80 Hz, 2 polos, nas narrações | Mesmo da voz da fonte [PRECEDENTE REV6] | — | AGUARDANDO ESCUTA | — |
 | — | 2 | Ganho para a fala de cada narração ficar em −21,2 LUFS | Narração no mesmo nível da fala do vídeo (9.3) | Ganhos de −6,4 a −0,3 dB (tabela da seção 3) | AGUARDANDO ESCUTA | — |
-| P10 | 6 | Compressor 2:1, joelho 4 dB, ataque 20 ms, liberação 150 ms, máx. 3 dB, limiar 8 dB acima da fala-alvo | Mesmo da voz da fonte | **[MIX]** | AGUARDANDO ESCUTA | — |
+| P10 | 6 | Compressor 2:1, joelho 4 dB, ataque 20 ms, liberação 150 ms, máx. 3 dB, limiar 8 dB acima da fala-alvo | Mesmo da voz da fonte | Redução máx. por narração de 0,3 a 2,1 dB | AGUARDANDO ESCUTA | — |
 | P11, P12 | 7 | Música com ducking (3 dB abaixo sem fala, 9 dB com fala, transição de 500 ms, pausas de até 0,8 s seguram) | [PROJETO] 8–10 dB abaixo da voz | — | AGUARDANDO ESCUTA | — |
 | — | — | Rufar grave −8 dB e confete murcho −6 dB da voz | Provisório, como na REV1 | — | AGUARDANDO ESCUTA | — |
-| — | 8 | Master (ganho único para −14 LUFS) + limitador de pico verdadeiro (teto −1,6 dBTP) + correção de pico pós-AAC (alvo −1,2 dBTP, por pico verdadeiro) | [PROJETO] −14 LUFS, ≤ −1 dBTP | **[MIX]** | — | — |
+| — | 8 | Master (ganho único para −14 LUFS) + limitador de pico verdadeiro (teto **−2,0 dBTP**; a REV1 usava −1,6) + correção de pico pós-AAC (alvo −1,2 dBTP, por pico verdadeiro, no máximo 3 dB por ponto e por rodada) | [PROJETO] −14 LUFS, ≤ −1 dBTP | −14,1 LUFS e −1,4 dBTP no MP4 da prévia | — | — |
 
-Cadeia final (a partir do original, um passe): voz da fonte como na REV1 → narrações (passa-altas 80 Hz → ganho → compressor → recorte) → gancho (falas reais 0 dB, clipes −14 dB) e fechamento (clipes −14 dB) → músicas com ducking → efeitos (Remotion + rufar −8 dB e confete −6 dB) → master → limitador → AAC 192 kbps 48 kHz com correção de pico. Scripts: `rev2/mixar_rev2.py`, `rev2/finalizar_rev2.py`, `rev2/corrigir_pico_aac.py`.
+Cadeia final (a partir do original, um passe): voz da fonte como na REV1 → narrações (passa-altas 80 Hz → ganho → compressor → recorte) → gancho (falas reais 0 dB, clipes −14 dB) e fechamento (clipes −14 dB) → músicas com ducking → efeitos (Remotion + rufar −8 dB e confete −6 dB) → master → limitador (teto −2,0 dBTP) → AAC 192 kbps 48 kHz com correção de pico. Scripts: `rev2/mixar_rev2.py`, `rev2/finalizar_rev2.py`, `rev2/corrigir_pico_aac.py`.
 
 ## 6. Comparação A/B e testes de artefato
 
@@ -88,7 +88,7 @@ Nenhuma legenda embutida (decisão do Diego para o vídeo longo: só `.srt`). O 
 
 ## 9. Limitações residuais e pontos de escuta
 
-Os 10 momentos em que o limitador mais trabalha são os da REV1 deslocados 6,2 s para trás pelo gancho mais curto (o primeiro: 03:33,6, −13 dB). Ouvir também: o G3 em 00:14,6 (P09), as entradas e saídas de cada narração, a música do gancho saindo sobre a 1ª cena do Dia 1 (00:19–00:21) e a do fechamento entrando em 31:56.
+Os 10 momentos em que o limitador mais trabalha são os da REV1 deslocados 6,2 s para trás pelo gancho mais curto (o primeiro: 03:33,6, −13 dB). Ouvir também: as 4 quedas da correção de pico (seção 10), o G3 em 00:14,6 (P09), as entradas e saídas de cada narração, a música do gancho saindo sobre a 1ª cena do Dia 1 (00:19–00:21) e a do fechamento entrando em 31:56.
 
 | ID | Onde | Descrição | G final | Causa | Aceite do Diego |
 |---|---|---|---|---|---|
@@ -101,12 +101,16 @@ Os 10 momentos em que o limitador mais trabalha são os da REV1 deslocados 6,2 s
 | Item | Esperado | Obtido |
 |---|---|---|
 | Original intacto | SHA-256 igual | **OK** no download (23/10/2026) |
-| Loudness | −14 ± 1 LU | **[PRÉVIA]** |
-| Pico verdadeiro | ≤ −1 dBTP | **[PRÉVIA]** |
-| Decodificação | sem erros | **[PRÉVIA]** |
-| Duração vídeo × áudio | iguais | **[PRÉVIA]** |
+| Loudness | −14 ± 1 LU | **−14,1 LUFS** no MP4 da prévia completa |
+| Pico verdadeiro | ≤ −1 dBTP | **−1,4 dBTP** no MP4 da prévia completa |
+| Decodificação | sem erros | sem erros (decodificação completa) |
+| Duração vídeo × áudio | iguais | 1979,333 s nos dois; 47.504 quadros |
 | Clipping novo | nenhum | nenhum (o limitador trabalha antes do AAC; a correção pós-AAC fecha o resto) |
 | Sincronia | início, meio e fim | cortes em quadros inteiros (24 fps); conferência visual humana pendente |
+
+**Correção de pico pós-AAC na prévia completa:** com o teto de −1,6 dBTP (o da REV1), o AAC passou de −1 dBTP em vários pontos e a correção oscilou: numa rodada o codificador gerou um pico de +9,6 dBTP e o script abriu uma queda de 11,3 dB. Baixei o teto do limitador para −2,0 dBTP e limitei cada correção a 3 dB por rodada. Resultado: 4 rodadas, quedas locais de ~100 ms em **00:00,9** (3,2 dB, a plosiva do G1), **25:38,6** (3,0 dB), **27:52,4** (1,6 dB) e **29:23,9** (1,1 dB). Ouvir se alguma deixou buraco na fala ou na música.
+
+**Sincronia nas emendas da prévia:** cada parte do render (8 partes) tem o áudio 7 ms mais longo que a imagem; juntando os arquivos inteiros, a imagem atrasava até 2 quadros no fim. Agora imagem e som das partes são juntados à parte, cada som cortado no tamanho exato da sua imagem: 47.504 quadros, imagem e som com 1979,333 s.
 
 ## 11. Validação auditiva
 

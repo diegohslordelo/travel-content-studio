@@ -33,6 +33,9 @@ import montar_rev2 as mt  # noqa: E402
 MUSICA_GANCHO = ("_tmp/mus_gancho.wav", 0.0)  # (arquivo decodificado do mp3, início na faixa em s)
 MUSICA_FECHAMENTO = "_tmp/mus_fech.wav"  # recortada para terminar junto com o vídeo
 NIVEL_REAL = {"gancho_fala": 0.0, "gancho_baixo": -14.0, "fechamento": -14.0}
+# teto do limitador: −2,0 dBTP (a REV1 usava −1,6). Com −1,6, o AAC passou de −1 dBTP em vários pontos do vídeo
+# inteiro e a correção pós-AAC oscilou (o codificador gerou um pico de +9,6 dBTP numa rodada)
+TETO_DBTP = -2.0
 
 
 def env_interp(ms_pts, db_pts, n):
@@ -351,7 +354,7 @@ def main():
     base = T.copy()
     for _ in range(3):  # o limitador baixa a loudness: corrige o ganho e limita de novo a partir da mesma mistura
         T = base * np.float32(10 ** (g_master / 20))
-        reducao = limita(T, -1.6)
+        reducao = limita(T, TETO_DBTP)
         l_fim = medidor.integrated_loudness(T)
         if abs(l_fim + 14.0) <= 0.15:
             break

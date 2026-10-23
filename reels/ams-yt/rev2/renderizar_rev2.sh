@@ -30,6 +30,24 @@ render() {  # $1 saída, $2 quadro inicial, $3 quadro final [, $4 props, $5 esca
   echo "ok $1"
 }
 
+juntar() {  # $1 lista de partes, $2 vídeo de saída, $3 som do render (wav); depois de $3: opções de vídeo do ffmpeg
+  # imagem e som juntados à parte: cada parte do Remotion tem o áudio 7 ms mais longo que a imagem, e o concat de
+  # arquivos inteiros atrasaria a imagem a cada emenda (2 quadros a mais no vídeo inteiro da prévia)
+  local lista=$1 saida=$2 som=$3; shift 3
+  : > _tmp/juntar_v.txt; : > _tmp/juntar_a.txt
+  while read -r _ f; do
+    f=${f//\'/}
+    q=$(ffprobe -v error -select_streams v:0 -count_packets -show_entries stream=nb_read_packets -of default=nw=1:nk=1 "$f")
+    ffmpeg -nostdin -v error -y -i "$f" -map 0:v -c copy "$f.v.mp4"
+    ffmpeg -nostdin -v error -y -i "$f" -map 0:a -af "apad,atrim=end=$(python3 -c "print($q / 24)")" -ar 48000 -ac 2 -c:a pcm_f32le "$f.a.wav"
+    echo "file '$f.v.mp4'" >> _tmp/juntar_v.txt
+    echo "file '$f.a.wav'" >> _tmp/juntar_a.txt
+  done < "$lista"
+  ffmpeg -nostdin -v error -y -f concat -safe 0 -i _tmp/juntar_v.txt "$@" -an -movflags +faststart "$saida"
+  ffmpeg -nostdin -v error -y -f concat -safe 0 -i _tmp/juntar_a.txt -c:a pcm_f32le "$som"
+  while read -r _ f; do f=${f//\'/}; rm -f "$f.v.mp4" "$f.a.wav"; done < "$lista"
+}
+
 case "${1:-}" in
   trechos)
     shift
@@ -41,6 +59,10 @@ case "${1:-}" in
       python3 rev2/finalizar_rev2.py "_tmp/r_$1.mp4" "$(python3 -c "print($2 * 1000 / 24)")" "rev2/rev2_$1.mp4"
     done
     ;;
+  juntar)  # só junta as partes já prontas da prévia e finaliza (refaz o fim do "previa" sem renderizar)
+    juntar _tmp/partes.txt _tmp/previa_video.mp4 _tmp/previa_sfx.wav -c:v libx264 -preset veryfast -crf 30 -maxrate 1000k -bufsize 2000k -pix_fmt yuv420p
+    python3 rev2/finalizar_rev2.py _tmp/previa_video.mp4 0 rev2/rev2_previa_720p.mp4 _tmp/previa_sfx.wav
+    ;;
   previa)
     TOTAL=$(python3 -c "import json; print(round(json.load(open('rev2/linha_do_tempo_rev2.json'))['duracao_ms'] * 24 / 1000))")
     PARTES=8
@@ -50,10 +72,9 @@ case "${1:-}" in
       [ -s "_tmp/p_$i.mp4" ] || render "$RAIZ/_tmp/p_$i.mp4" "$a" "$b"
       echo "file '$RAIZ/_tmp/p_$i.mp4'" >> _tmp/partes.txt
     done
-    # junta as partes já recomprimindo em ~1 Mbps (o grão do DS faz o CRF 20 passar de 2 GB no vídeo inteiro);
-    # o áudio do render (só efeitos) vai junto, sem recodificar, para a mixagem
-    ffmpeg -nostdin -v error -y -f concat -safe 0 -i _tmp/partes.txt -c:v libx264 -preset veryfast -crf 30 -maxrate 1000k -bufsize 2000k -pix_fmt yuv420p -c:a copy -movflags +faststart _tmp/previa_video.mp4
-    python3 rev2/finalizar_rev2.py _tmp/previa_video.mp4 0 rev2/rev2_previa_720p.mp4
+    # junta as partes já recomprimindo em ~1 Mbps (o grão do DS faz o CRF 20 passar de 2 GB no vídeo inteiro)
+    juntar _tmp/partes.txt _tmp/previa_video.mp4 _tmp/previa_sfx.wav -c:v libx264 -preset veryfast -crf 30 -maxrate 1000k -bufsize 2000k -pix_fmt yuv420p
+    python3 rev2/finalizar_rev2.py _tmp/previa_video.mp4 0 rev2/rev2_previa_720p.mp4 _tmp/previa_sfx.wav
     ;;
   final4k)
     # 3840 × 2160 lendo direto a fonte 4K (HEVC 10 bits; o Remotion decodifica pelo <OffthreadVideo>), x264 veryfast
@@ -70,9 +91,9 @@ json.dump(p, open('_tmp/props_rev2_4k.json', 'w'), ensure_ascii=False)"
       [ -s "_tmp/f_$i.mp4" ] || X264_PRESET=veryfast CRF=20 render "$RAIZ/_tmp/f_$i.mp4" "$a" "$b" "$RAIZ/_tmp/props_rev2_4k.json" 2
       echo "file '$RAIZ/_tmp/f_$i.mp4'" >> _tmp/partes4k.txt
     done
-    ffmpeg -nostdin -v error -y -f concat -safe 0 -i _tmp/partes4k.txt -c copy _tmp/final4k_video.mp4
-    python3 rev2/finalizar_rev2.py _tmp/final4k_video.mp4 0 _tmp/rev2_final_4k.mp4
+    juntar _tmp/partes4k.txt _tmp/final4k_video.mp4 _tmp/final4k_sfx.wav -c copy
+    python3 rev2/finalizar_rev2.py _tmp/final4k_video.mp4 0 _tmp/rev2_final_4k.mp4 _tmp/final4k_sfx.wav
     ;;
   *)
-    echo "uso: bash rev2/renderizar_rev2.sh trechos|previa|final4k"; exit 1 ;;
+    echo "uso: bash rev2/renderizar_rev2.sh trechos|previa|juntar|final4k"; exit 1 ;;
 esac
