@@ -4,7 +4,7 @@
 # e de `python rev2/montar_rev2.py` + `python rev2/mixar_rev2.py --saida _tmp/mix_base.wav` (gera o cache da mixagem).
 #
 #   bash rev2/renderizar_rev2.sh trechos [nomes]  trechos de aprovação (gancho, hotel, mccrispy, fechamento; padrão: todos)
-#   bash rev2/renderizar_rev2.sh previa    vídeo inteiro em 720p, em 8 partes, juntadas sem recodificar
+#   bash rev2/renderizar_rev2.sh previa    vídeo inteiro em 720p, em 8 partes, juntadas e recomprimidas em ~1 Mbps
 #   bash rev2/renderizar_rev2.sh final4k   vídeo inteiro em 4K, da fonte (4 a 6 h em 4 núcleos; ~7 GB)
 #
 # A imagem sai do Remotion (H.264, CRF 20) e o som da mixagem (`rev2/finalizar_rev2.py`: AAC 192 kbps e medida
@@ -16,8 +16,18 @@ ESCALA=0.6666666666666666  # 1280 × 720
 export BUNDLE_DIR="$RAIZ/_tmp/bundle"
 rm -rf "$BUNDLE_DIR"  # o bundle é refeito a cada chamada: um bundle velho renderiza o código velho do Remotion
 
-render() {  # $1 saída, $2 quadro inicial, $3 quadro final
-  (cd ../../design-system/remotion && node scripts/videolongo.mjs "$RAIZ/rev2/props_rev2.json" "$RAIZ/public" trecho "$1" "$2" "$3" "$ESCALA" 2>&1 | grep -E "^ok|Error|error" || true)
+render() {  # $1 saída, $2 quadro inicial, $3 quadro final [, $4 props, $5 escala]
+  # para no primeiro erro (uma parte que falha não pode deixar o laço seguir) e só grava a saída quando o render
+  # termina: parte pela metade nunca passa por pronta. O Remotion copia o vídeo-fonte para o /tmp a cada render;
+  # a cópia de um render interrompido fica lá, então limpo antes de cada parte.
+  rm -rf /tmp/remotion-v*-assets* 2>/dev/null || true
+  local log="$RAIZ/_tmp/render_parte.log"
+  if ! (cd ../../design-system/remotion && node scripts/videolongo.mjs "${4:-$RAIZ/rev2/props_rev2.json}" "$RAIZ/public" trecho "$1.tmp.mp4" "$2" "$3" "${5:-$ESCALA}" > "$log" 2>&1); then
+    grep -v "%$" "$log" | tail -20
+    exit 1
+  fi
+  mv "$1.tmp.mp4" "$1"
+  echo "ok $1"
 }
 
 case "${1:-}" in
@@ -57,9 +67,7 @@ json.dump(p, open('_tmp/props_rev2_4k.json', 'w'), ensure_ascii=False)"
     : > _tmp/partes4k.txt
     for i in $(seq 0 $((PARTES - 1))); do
       a=$((TOTAL * i / PARTES)); b=$((TOTAL * (i + 1) / PARTES - 1))
-      if [ ! -s "_tmp/f_$i.mp4" ]; then
-        (cd ../../design-system/remotion && X264_PRESET=veryfast CRF=20 node scripts/videolongo.mjs "$RAIZ/_tmp/props_rev2_4k.json" "$RAIZ/public" trecho "$RAIZ/_tmp/f_$i.mp4" "$a" "$b" 2 2>&1 | grep -E "^ok|Error|error" || true)
-      fi
+      [ -s "_tmp/f_$i.mp4" ] || X264_PRESET=veryfast CRF=20 render "$RAIZ/_tmp/f_$i.mp4" "$a" "$b" "$RAIZ/_tmp/props_rev2_4k.json" 2
       echo "file '$RAIZ/_tmp/f_$i.mp4'" >> _tmp/partes4k.txt
     done
     ffmpeg -nostdin -v error -y -f concat -safe 0 -i _tmp/partes4k.txt -c copy _tmp/final4k_video.mp4
