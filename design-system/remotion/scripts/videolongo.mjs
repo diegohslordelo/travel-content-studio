@@ -8,6 +8,8 @@
  * Imagem em H.264 (CRF 20) + os efeitos sonoros do Remotion; voz e música são mixadas depois pelo script da revisão.
  * `escala` < 1 gera a prévia leve (ex.: 0.667 → 1280 × 720); 2 gera o 4K (3840 × 2160).
  * X264_PRESET (ex.: veryfast) troca o preset do x264 (padrão do Remotion: medium) e CRF troca o CRF (padrão 20).
+ * MAXRATE (ex.: 12M) limita a taxa do CRF (buffer = 2 × MAXRATE): com o grão do DS, o CRF puro pesa (a prévia 720p em
+ * CRF 20 passava de 2 GB).
  */
 import { bundle } from "@remotion/bundler";
 import { renderMedia, renderStill, selectComposition } from "@remotion/renderer";
@@ -28,8 +30,15 @@ const pronto = process.env.BUNDLE_DIR && existsSync(path.join(process.env.BUNDLE
 const serveUrl = pronto
   ? process.env.BUNDLE_DIR
   : await bundle({ entryPoint: path.join(raiz, "src", "index.ts"), publicDir: path.resolve(publicDir), ...(process.env.BUNDLE_DIR ? { outDir: process.env.BUNDLE_DIR } : {}) });
-const comum = { serveUrl, browserExecutable, logLevel: "warn", inputProps };
-const codificacao = { codec: "h264", crf: Number(process.env.CRF ?? 20), ...(process.env.X264_PRESET ? { x264Preset: process.env.X264_PRESET } : {}) };
+// 3 min por quadro: antes do 1º quadro o Remotion copia o vídeo-fonte (proxy de 3,7 GB) para o /tmp, e os 30 s
+// padrão estouram quando a máquina está ocupada
+const comum = { serveUrl, browserExecutable, logLevel: "warn", inputProps, timeoutInMilliseconds: 180000 };
+const codificacao = {
+  codec: "h264",
+  crf: Number(process.env.CRF ?? 20),
+  ...(process.env.X264_PRESET ? { x264Preset: process.env.X264_PRESET } : {}),
+  ...(process.env.MAXRATE ? { encodingMaxRate: process.env.MAXRATE, encodingBufferSize: `${parseFloat(process.env.MAXRATE) * 2}M` } : {}),
+};
 const composition = await selectComposition({ ...comum, id: "VideoLongo" });
 const concurrency = Math.max(1, os.cpus().length);
 let ultimo = -1;
