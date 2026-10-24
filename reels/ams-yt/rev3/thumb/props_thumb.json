@@ -1,0 +1,28 @@
+{
+  "foto": "foto_diego_parque.jpg",
+  "fotoLargura": 1408,
+  "fotoX": -128,
+  "fotoY": -520,
+  "rotulo": "QUANTO CUSTOU",
+  "destino": "AMSTERDAM",
+  "recibo": {
+    "lugar": "3 DIAS · 2 PESSOAS",
+    "cabecalho": "12 A 14/03 · SEM PASSAGEM",
+    "linhas": [
+      [
+        "Hospedagem",
+        "€ 552,72"
+      ],
+      [
+        "Todo o resto",
+        "€ 333,77"
+      ]
+    ],
+    "total": "€ 886,49",
+    "real": "€ 443,24 por pessoa",
+    "rodape": "cotação € 1 = R$ 5,9978 · PTAX 12/03/2026"
+  },
+  "reciboX": 786,
+  "reciboY": 60,
+  "reciboEscala": 0.74
+}

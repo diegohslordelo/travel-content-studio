@@ -7,7 +7,7 @@
 | Fonte | `fonte/1016_sem_musica.mp4` + `fonte/1016_so_musica.mp4` (os mesmos da REV2); narrações do gancho de 22/10/2026 (`fonte/narracao/inicio/`); **narrações novas do fechamento de 23/10/2026** (`fonte/narracao/fechamento_v2/F_1` a `F_7`, baixadas do Drive); músicas e print do hotel da REV2 |
 | Data | 23/10/2026 |
 | Duração da REV3 | **33:04,6** = gancho 20,3 s + corpo 31:35,7 + fechamento 48,6 s + tela final 20,0 s |
-| Estado | Render final em 1080p entregue por link (Gofile); 4K pedido pelo Diego em 24/10, em render (seção 7). Falta a escuta e as correções do `.srt` (seção 6) |
+| Estado | Render final em 1080p entregue por link (Gofile) e **é o que vai ao ar**; o 4K foi cancelado pelo Diego em 24/10 (13 das 16 partes feitas). Thumbnail pronta. Falta a escuta e as correções do `.srt` (seção 6) |
 
 ## 1. Entregas desta revisão
 
@@ -67,7 +67,7 @@
 
 **Do Claude (depois disso)**
 - [ ] Aplicar as correções do `.srt`.
-- [ ] 3 thumbnails para o teste A/B.
+- [ ] 2 thumbnails a mais para o teste A/B (a 1ª está em `thumb/thumbnail_amsterdam_rev3.png`).
 
 ## 7. Render final
 
@@ -83,3 +83,11 @@ Som nos dois: mixagem da REV3 (`mixar_rev3.py` → `finalizar_rev3.py`, AAC 192 
 Os arquivos ficam fora do git e foram enviados pelo Gofile. O Gofile apaga arquivos de quem não tem conta depois de alguns dias sem download (~10 dias, segundo fontes de terceiros; a página oficial não diz): baixe logo.
 
 Para as próximas revisões: o proxy 1080p (`_tmp/servir/proxy1080.mp4`) foi apagado para o 4K caber no disco. Uma prévia nova precisa refazer o proxy a partir da fonte (~50 min).
+
+**4K cancelado (Diego, 24/10/2026):** o vídeo a publicar é o 1080p. `renderizar_rev3.sh final4k` continua no repositório (13 das 16 partes já estavam prontas; as partes em `_tmp/` não vão para o git).
+
+## 8. Thumbnail
+
+`thumb/thumbnail_amsterdam_rev3.png` (1280 × 720), feita com a foto do parque que o Diego enviou (`thumb/foto_diego_parque.jpg`), pela composição `ThumbYT` do Remotion (`node scripts/thumb.mjs thumb/props_thumb.json thumb <saida.png>`, de `design-system/remotion`). DS V2, 5.5: foto como fundo com contraste +10, Placa pequena (75%) no canto superior esquerdo com margem 48, 1 objeto da história (Recibo com o total, valores reais do vídeo), texto: `QUANTO CUSTOU AMSTERDAM`. Zona proibida (x > 1040 e y > 600) livre.
+
+Desvios que você pode querer rever: (1) o DS pede o Diego à direita e recortado (parallax); na foto ele está à esquerda do centro e sem recorte, então a placa e o Recibo ficam nos dois lados dele; (2) o preset de cor do DS não foi aplicado (só o contraste +10); (3) a foto é de dia nublado em parque, não um frame do vídeo.
