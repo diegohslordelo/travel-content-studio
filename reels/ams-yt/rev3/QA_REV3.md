@@ -86,8 +86,14 @@ Para as próximas revisões: o proxy 1080p (`_tmp/servir/proxy1080.mp4`) foi apa
 
 **4K cancelado (Diego, 24/10/2026):** o vídeo a publicar é o 1080p. `renderizar_rev3.sh final4k` continua no repositório (13 das 16 partes já estavam prontas; as partes em `_tmp/` não vão para o git).
 
-## 8. Thumbnail
+## 8. Thumbnails
 
-`thumb/thumbnail_amsterdam_rev3.png` (1280 × 720), feita com a foto do Diego na ponte sobre o canal (`thumb/foto_diego_canal.jpg`; a do parque, `foto_diego_parque.jpg`, foi a 1ª versão), pela composição `ThumbYT` do Remotion (`node scripts/thumb.mjs thumb/props_thumb.json thumb <saida.png>`, de `design-system/remotion`). DS V2, 5.5: foto como fundo com contraste +10, Placa pequena (75%) no canto superior esquerdo com margem 48, 1 objeto da história (Recibo com `€ ???`: nenhum valor na capa, o total só aparece no vídeo, pedido do Diego em 24/10), texto: `QUANTO CUSTOU AMSTERDAM?`. Zona proibida (x > 1040 e y > 600) livre.
+Foto do casal no canal ao entardecer (`thumb/foto_casal_canal.jpg`), 3 opções em `thumb/` (1280 × 720), pela composição `ThumbYT` do Remotion (`node scripts/thumb.mjs thumb/props_thumb_<a|b|c>.json thumb <saida.png>`, de `design-system/remotion`). Nenhuma mostra valores reais: o total só aparece no vídeo (pedido do Diego, 24/10).
 
-Desvios que você pode querer rever: (1) o DS pede o Diego à direita e recortado (parallax); na foto ele está à esquerda do centro e sem recorte, então a placa e o Recibo ficam nos dois lados dele; (2) o preset de cor do DS não foi aplicado: só contraste +10 e brilho +18% (a foto é escura); (3) a foto é uma foto, não um frame do vídeo.
+| Arquivo | O que tem |
+|---|---|
+| `thumbnail_amsterdam_B_recibo_menor.png` | Placa `QUANTO CUSTOU / AMSTERDAM?` + Recibo pequeno com `€ ???` |
+| `thumbnail_amsterdam_C_sem_recibo.png` | Só a Placa |
+| `thumbnail_amsterdam_D_so_amsterdam.png` | Só `AMSTERDAM` em Condensed 800 amarelo (Display, DS 3.2), sem Placa nem Recibo |
+
+As versões anteriores (foto do parque e da ponte) estão em `thumb/anteriores/`. Desvios do DS 5.5: o Diego não está à direita nem recortado (selfie com a Marina, que é parceira de viagem e não coprotagonista: ela aparece, mas o foco fica no Diego, à esquerda); só contraste +10 e brilho +18%, sem o preset de cor; é uma foto, não um frame do vídeo. A opção D tira a Placa, que o DS pede na thumbnail (5.5): fica a decisão do Diego.

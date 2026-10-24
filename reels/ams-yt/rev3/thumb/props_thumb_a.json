@@ -1,0 +1,28 @@
+{
+  "foto": "foto_casal_canal.jpg",
+  "fotoLargura": 1280,
+  "fotoX": 0,
+  "fotoY": -529,
+  "reciboX": 930,
+  "reciboY": 250,
+  "reciboEscala": 0.52,
+  "rotulo": "QUANTO CUSTOU",
+  "destino": "AMSTERDAM?",
+  "recibo": {
+    "lugar": "3 DIAS · 2 PESSOAS",
+    "cabecalho": "12 A 14/03 · SEM PASSAGEM",
+    "linhas": [
+      [
+        "Hospedagem",
+        "€ ???"
+      ],
+      [
+        "Todo o resto",
+        "€ ???"
+      ]
+    ],
+    "total": "€ ???",
+    "real": "o hotel pesou?",
+    "rodape": "descubra no vídeo"
+  }
+}
