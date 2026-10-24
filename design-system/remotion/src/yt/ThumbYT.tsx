@@ -41,7 +41,7 @@ export const ThumbYT: React.FC<PropsThumbYT> = (p) => (
   <AbsoluteFill style={{ background: COR.grafite, overflow: "hidden" }}>
     <Img
       src={staticFile(p.foto)}
-      style={{ position: "absolute", left: p.fotoX, top: p.fotoY, width: p.fotoLargura, filter: "contrast(1.1)" }}
+      style={{ position: "absolute", left: p.fotoX, top: p.fotoY, width: p.fotoLargura, filter: "contrast(1.1) brightness(1.18)" }}
     />
     {/* scrim grafite de apoio à placa e ao recibo (DS 1.4: grafite 15–20% da peça) */}
     <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(18,19,23,.42) 0%, rgba(18,19,23,0) 36%, rgba(18,19,23,0) 62%, rgba(18,19,23,.38) 100%)" }} />

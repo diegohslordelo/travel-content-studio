@@ -1,8 +1,8 @@
 {
-  "foto": "foto_diego_parque.jpg",
+  "foto": "foto_diego_canal.jpg",
   "fotoLargura": 1925,
-  "fotoX": -400,
-  "fotoY": -790,
+  "fotoX": -540,
+  "fotoY": -935,
   "rotulo": "QUANTO CUSTOU",
   "destino": "AMSTERDAM?",
   "recibo": {
@@ -22,7 +22,7 @@
     "real": "o hotel pesou?",
     "rodape": "descubra no vídeo"
   },
-  "reciboX": 770,
+  "reciboX": 785,
   "reciboY": 140,
   "reciboEscala": 0.78
 }
