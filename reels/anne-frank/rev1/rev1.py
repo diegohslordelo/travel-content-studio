@@ -191,8 +191,21 @@ def preparar():
         a = os.path.join(TMP, f"fala_{fa['id']}.wav")
         sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{fa['in']:.3f}", "-i", src, "-vf",
             f"{TONEMAP},scale={W}:{H}:flags=lanczos,fps={fps},format=yuv420p,setsar=1", "-frames:v", str(fa["quadros"]), "-an", *SAIDA_X264, v])
-        sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{fa['in']:.3f}", "-i", src, "-vn", "-ac", "2", "-ar", "48000", "-af",
-            f"apad,atrim=0:{fa['dur']:.5f},afade=t=in:d=0.012,afade=t=out:st={fa['dur'] - 0.06:.4f}:d=0.06", "-c:a", "pcm_s24le", a])
+        c = fa.get("cauda")
+        if c:
+            # O bruto tem a trilha de áudio mais curta que o vídeo e a voz ainda soa no último quadro (corte no meio
+            # da última sílaba). Alonga a vogal final (WSOLA, mantém o tom) e faz uma queda suave, sem inventar fala.
+            L = c["audio_fim"] - fa["in"]
+            m = c["ms"] / 1000
+            q = c["queda_ms"] / 1000
+            af = (f"[0:a]atrim=0:{L - m:.4f},asetpts=PTS-STARTPTS[h];"
+                  f"[0:a]atrim={L - m:.4f}:{L:.4f},asetpts=PTS-STARTPTS,atempo={1 / c['esticar']:.3f},afade=t=out:st={m * c['esticar'] - q:.4f}:d={q:.4f}[t];"
+                  f"[h][t]acrossfade=d=0.012:c1=tri:c2=tri,apad,atrim=0:{fa['dur']:.5f},afade=t=in:d=0.012[o]")
+            sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{fa['in']:.3f}", "-i", src, "-vn", "-ac", "2", "-ar", "48000", "-filter_complex", af,
+                "-map", "[o]", "-c:a", "pcm_s24le", a])
+        else:
+            sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{fa['in']:.3f}", "-i", src, "-vn", "-ac", "2", "-ar", "48000", "-af",
+                f"apad,atrim=0:{fa['dur']:.5f},afade=t=in:d=0.012,afade=t=out:st={fa['dur'] - 0.06:.4f}:d=0.06", "-c:a", "pcm_s24le", a])
         lista_v.append(v)
         lista_a.append(a)
     with open(os.path.join(TMP, "concat.txt"), "w") as f:
@@ -340,7 +353,7 @@ def master():
 
 def capa():
     props = os.path.join(TMP, "props.json")
-    remotion(["still", "src/index.ts", "CapaAnneFrank", CAPA, f"--props={props}", f"--public-dir={PUBLIC}", "--image-format=jpeg",
+    remotion(["still", "src/index.ts", "ReelAnneFrank", CAPA, "--frame=106", f"--props={props}", f"--public-dir={PUBLIC}", "--image-format=jpeg",
               "--jpeg-quality=92", "--log=warn"])
 
 

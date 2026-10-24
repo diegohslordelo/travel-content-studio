@@ -26,7 +26,7 @@
   },
 
   "falas": [
-    { "id": "f1", "fonte": "IMG_7143", "in": 0.10, "out": 3.71, "inicio_voz": 0.20 },
+    { "id": "f1", "fonte": "IMG_7143", "in": 0.10, "out": 3.85, "inicio_voz": 0.20, "cauda": { "audio_fim": 3.699, "ms": 150, "esticar": 2.0, "queda_ms": 180, "motivo": "a trilha de áudio do bruto acaba em 3,70 s, no meio do 'de' de 'cidade' (o vídeo vai até 3,97 s); a vogal final é alongada e cai suave" } },
     { "id": "f2", "fonte": "IMG_7101", "in": 0.28, "out": 8.20, "inicio_voz": 0.38 },
     { "id": "f3", "fonte": "IMG_7106", "in": 0.10, "out": 6.80, "inicio_voz": 0.20 },
     { "id": "f4", "fonte": "IMG_7112", "in": 0.14, "out": 6.45, "inicio_voz": 0.24 },

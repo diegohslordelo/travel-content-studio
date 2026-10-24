@@ -4,7 +4,7 @@
 
 | Item | Valor |
 |---|---|
-| Arquivo final | `reel_anne-frank_rev1.mp4` · 1080 × 1920 · 30 fps · 50,3 s · H.264 + AAC 320 kbps |
+| Arquivo final | `reel_anne-frank_rev1.mp4` · 1080 × 1920 · 30 fps · 50,4 s · H.264 + AAC 320 kbps |
 | Prévia leve | `reel_anne-frank_rev1_previa.mp4` (540 × 960) |
 | Capa | `capa_anne-frank_rev1.jpg` (quadro do gancho com a frase inteira) |
 | Áudio | −14,0 LUFS integrados · pico verdadeiro −1,4 dBTP (DS V2, 4.6) · faixa única: voz original + *clack* do CTA |
@@ -129,7 +129,7 @@ Os valores ficam em `design-system/remotion/src/annefrank/estilo.ts`, separados 
 | Voz original preservada | ✅ Sem voz sintética, sem corte dentro das frases; só ganho, passa-alta em 70 Hz e o master |
 | DS V2 só no CTA | ✅ Placa CTA (2.7), Chegada e *clack* (4.6) só a partir de 47,07 s. O resto usa Anton, Inter e a paleta acima |
 | Animações não escondem informação | ✅ Rótulos no topo da imagem, legenda na costura ou no terço de baixo, nada na faixa da interface do Instagram (y 1440–1920) |
-| Render conferido | ✅ Render completo (1.508 quadros, 50,27 s), conferido por quadros (folha de 26 quadros, um por cena) e pela medição do áudio (B-rolls sem faixa de som; depois da fala, só o *clack* em 47,5 s). A escuta é do Diego |
+| Render conferido | ✅ Render completo (1.512 quadros, 50,40 s), conferido por quadros (folha de 26 quadros, um por cena) e pela medição do áudio (B-rolls sem faixa de som; depois da fala, só o *clack* em 47,5 s). A escuta é do Diego |
 
 ## Conformidade com o DS V2 (só o CTA)
 
@@ -154,7 +154,7 @@ Os valores ficam em `design-system/remotion/src/annefrank/estilo.ts`, separados 
 | 7 | Conformidade DS V2 | ✅ No CTA (acima) |
 | 8 | Identidade verbal | ✅ Direto e preciso; sem bordão (não é Reel de primeiro dia) |
 | 9 | Originalidade | ✅ Fala e vídeos próprios; fotos de arquivo com licença e crédito |
-| 10 | Formato e duração | ⚠️ **50,3 s**, acima da duração padrão de 7–30 s da referência de conteúdo (3.1). Toda a fala ficou, porque cada frase leva a história adiante. Ver "Riscos" |
+| 10 | Formato e duração | ⚠️ **50,4 s**, acima da duração padrão de 7–30 s da referência de conteúdo (3.1). Toda a fala ficou, porque cada frase leva a história adiante. Ver "Riscos" |
 
 ## Conferir no ouvido (≈ 2 min)
 
@@ -174,11 +174,12 @@ Se algo estiver errado: corrigir `correcoes_legenda` em `rev1.json` e rodar `pyt
 - **Linha do tempo com datas exatas** (6/7/1942 → 4/8/1944) sob o "2 ANOS" que o Diego fala: deixa o número verificável.
 - **Nomes das 8 pessoas na tela:** dado histórico público. Ajuda a entender "outras quatro pessoas" e "o único das oito".
 - **Sem imagem para "perseguição aos judeus"**. A foto da estrela amarela encontrada no Commons era a versão belga ("J"), errada para Amsterdam; a holandesa ("Jood") não baixou (o Commons limitou o acesso). Em vez disso, o diário fica na tela, bem de perto e escurecido.
+- **Final de "cidade." (ajuste de 24/10/2026, pedido do Diego).** A trilha de áudio do bruto `IMG_7143` acaba em 3,70 s, no meio do "de" (o vídeo vai até 3,97 s). A sílaba cortada não existe no arquivo e não foi recriada. O `rev1.py` alonga a vogal final (últimos 150 ms esticados 2×, mesmo tom) e aplica uma queda de 180 ms, no lugar do corte seco; o take 1 ficou 0,13 s mais longo e as cenas seguintes deslocaram igual (a tabela de cortes acima vale com esse deslocamento, ≈ +0,13 s a partir de 3,7 s). **Conferir no ouvido.** Solução definitiva: regravar só essa frase, com respiro depois de "cidade.", e trocar o take 1 (material futuro, não bloqueia a postagem).
 - **30 fps** (FPS de produção não definido, pendência 5).
 
 ## Riscos
 
-- **Duração (50,3 s).** Se a retenção cair antes da metade no Insights, a próxima versão pode cortar o take 4 (diário, 6,3 s) ou o take 6 (1960, 6,3 s) e ficar em ≈ 38–44 s. É **uma variável por teste** (referência de conteúdo, 8.3).
+- **Duração (50,4 s).** Se a retenção cair antes da metade no Insights, a próxima versão pode cortar o take 4 (diário, 6,3 s) ou o take 6 (1960, 6,3 s) e ficar em ≈ 38–44 s. É **uma variável por teste** (referência de conteúdo, 8.3).
 - **Tema sensível.** Nada de humor, efeito sonoro ou figurinha na divulgação. Os gráficos usam só dados históricos.
 - **Fotos de Anne Frank:** domínio público na UE; status discutido nos EUA (ver "Imagens externas").
 
