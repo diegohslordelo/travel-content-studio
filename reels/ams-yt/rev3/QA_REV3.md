@@ -88,6 +88,6 @@ Para as próximas revisões: o proxy 1080p (`_tmp/servir/proxy1080.mp4`) foi apa
 
 ## 8. Thumbnail
 
-`thumb/thumbnail_amsterdam_rev3.png` (1280 × 720), feita com a foto do parque que o Diego enviou (`thumb/foto_diego_parque.jpg`), pela composição `ThumbYT` do Remotion (`node scripts/thumb.mjs thumb/props_thumb.json thumb <saida.png>`, de `design-system/remotion`). DS V2, 5.5: foto como fundo com contraste +10, Placa pequena (75%) no canto superior esquerdo com margem 48, 1 objeto da história (Recibo com o total, valores reais do vídeo), texto: `QUANTO CUSTOU AMSTERDAM`. Zona proibida (x > 1040 e y > 600) livre.
+`thumb/thumbnail_amsterdam_rev3.png` (1280 × 720), feita com a foto do parque que o Diego enviou (`thumb/foto_diego_parque.jpg`), pela composição `ThumbYT` do Remotion (`node scripts/thumb.mjs thumb/props_thumb.json thumb <saida.png>`, de `design-system/remotion`). DS V2, 5.5: foto como fundo com contraste +10, Placa pequena (75%) no canto superior esquerdo com margem 48, 1 objeto da história (Recibo com `€ ???`: nenhum valor na capa, o total só aparece no vídeo, pedido do Diego em 24/10), texto: `QUANTO CUSTOU AMSTERDAM?`. Zona proibida (x > 1040 e y > 600) livre.
 
 Desvios que você pode querer rever: (1) o DS pede o Diego à direita e recortado (parallax); na foto ele está à esquerda do centro e sem recorte, então a placa e o Recibo ficam nos dois lados dele; (2) o preset de cor do DS não foi aplicado (só o contraste +10); (3) a foto é de dia nublado em parque, não um frame do vídeo.
