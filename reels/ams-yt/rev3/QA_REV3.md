@@ -7,13 +7,14 @@
 | Fonte | `fonte/1016_sem_musica.mp4` + `fonte/1016_so_musica.mp4` (os mesmos da REV2); narrações do gancho de 22/10/2026 (`fonte/narracao/inicio/`); **narrações novas do fechamento de 23/10/2026** (`fonte/narracao/fechamento_v2/F_1` a `F_7`, baixadas do Drive); músicas e print do hotel da REV2 |
 | Data | 23/10/2026 |
 | Duração da REV3 | **33:04,6** = gancho 20,3 s + corpo 31:35,7 + fechamento 48,6 s + tela final 20,0 s |
-| Estado | Render final em 1080p entregue por link de download. Falta a escuta e as correções do `.srt` (seção 6) |
+| Estado | Render final em 1080p entregue por link (Gofile); 4K pedido pelo Diego em 24/10, em render (seção 7). Falta a escuta e as correções do `.srt` (seção 6) |
 
 ## 1. Entregas desta revisão
 
 | Arquivo | O que é |
 |---|---|
-| `rev3_final_1080p.mp4` (link de download, fora do git) | Vídeo inteiro em 1920 × 1080, 24 fps, H.264 + AAC 192 kbps. Loudness e pico medidos no arquivo: `audio/RELATORIO_AUDIO_REV3.md` |
+| `rev3_final_4k.mp4` (link de download, fora do git) | Vídeo inteiro em 3840 × 2160, 24 fps, H.264 (até 20 Mbps) + AAC 192 kbps, lido direto da fonte 4K. É o arquivo para subir no YouTube |
+| `rev3_final_1080p.mp4` (link de download, fora do git) | Vídeo inteiro em 1920 × 1080, 24 fps, H.264 (12 Mbps) + AAC 192 kbps: 47.631 quadros, imagem e som com 1984,625 s, **−14,1 LUFS e −1,6 dBTP** medidos no arquivo. Para assistir e aprovar enquanto o 4K renderiza |
 | `takes_rev3.md` | Cada take do gancho e do fechamento (menor: 2,04 s) e o texto de cada narração como foi dita |
 | `efeitos_rev3.md` | Cada efeito: minuto em que entra, duração e por quê (os 22 Placares estão lá) |
 | `legenda_rev3.srt` + `legenda_duvidas_rev3.md` | Legenda (456 legendas), com o fechamento novo |
@@ -30,7 +31,7 @@
 | 4 | O Placar só aparece quando algum dinheiro é somado | Ele liga 0,2 s antes do Recibo com o total do dia até ali, soma junto com a moeda do Recibo, fica 3 s e apaga. Gastos que chegam antes de ele apagar (até 2,5 s depois) somam na mesma aparição: só acontece no GVB + café (16:17, 8,8 s na tela). São 22 aparições no vídeo; o total continua zerando a cada dia |
 | 5 | O 1º gasto na cena do ônibus, não durante a fala | Recibo do ônibus (€ 13,00) e o 1º Placar entram em **00:41**, na cena de dentro do ônibus (IMG_1377, 14:38), e não mais em 00:27, quando vocês falam no aeroporto |
 | 6 | Print do hotel menos tempo; sair quando você vira para mostrar o quarto | O print passou de 6,5 s para **4,2 s** (01:01,8 a 01:06,0). Ele sai antes de você virar a câmera para o quarto (a câmera vira em 01:06,7 e o quarto aparece em 01:07,3); na REV2 ele ficava 2,3 s em cima do quarto |
-| 7 | Renderizar e mandar por link do Gofile | Render final em 1080p (seção 7) e link do Gofile |
+| 7 | Renderizar e mandar por link do Gofile; depois, "quero em 4K" (24/10) | 1080p e 4K, cada um com link do Gofile (seção 7) |
 
 ## 3. Decisões minhas que precisam do seu OK
 
@@ -39,7 +40,6 @@
 | 1 | Bilhete do veredito agora diz **"vale muito a pena!"** e entra no F5 (32:29,9, sobre os dois rindo debaixo do guarda-chuva) | O F2 novo não fala mais "valeu muito a pena"; quem diz isso agora é o F5 ("porque esgota e vale muito a pena") | Tirar o Bilhete |
 | 2 | O print sai na virada da câmera (01:06,7) | Li "quando eu viro pra mostrar o quarto" como a virada da câmera traseira | Se você quis dizer o giro de corpo em 01:03,5 (a cama aparece atrás de você), o print sai em 01:03,2 e fica só 1,4 s: aí ele precisa entrar antes, junto com o Recibo da hospedagem |
 | 3 | Gastos com até 2,5 s de intervalo dividem a mesma aparição do Placar | Evita o Placar apagar e reacender em 2 s (GVB e café) | Uma aparição por gasto |
-| 4 | Render em **1080p** (e não 4K) | Sai em ~2,5 h e num arquivo só, que dá para baixar; o 4K levaria 4 a 6 h e teria 4 a 7 GB | Render 4K (`bash rev3/renderizar_rev3.sh final4k`), se você quiser a opção 4K no YouTube |
 
 ## 4. Divergências registradas (não resolvidas por mim)
 
@@ -71,4 +71,15 @@
 
 ## 7. Render final
 
-`bash rev3/renderizar_rev3.sh final1080`: imagem do proxy 1080p (`_tmp/servir/proxy1080.mp4`, feito da fonte 4K) em 16 partes, H.264 CRF 19 com teto de 12 Mbps (o YouTube recomenda 8 Mbps para 1080p a 24 qps), juntadas sem recodificar; som da mixagem (`mixar_rev3.py` → `finalizar_rev3.py`, AAC 192 kbps com correção de pico). O arquivo final fica fora do git (`_tmp/rev3_final_1080p.mp4`, 2 a 3 GB) e foi enviado pelo Gofile. O Gofile apaga arquivos sem download depois de alguns dias: baixe logo.
+| Versão | Comando | Como | Arquivo |
+|---|---|---|---|
+| **4K** (a que vai para o YouTube) | `bash rev3/renderizar_rev3.sh final4k` | Lê direto a fonte 4K (HEVC 10 bits), 16 partes, x264 CRF 19 com teto de **20 Mbps**, partes juntadas sem recodificar e sem cópia da imagem (`juntar_leve`, testado com partes sintéticas: quadros contínuos nas emendas) | `_tmp/rev3_final_4k.mp4`, ~5 GB |
+| 1080p | `bash rev3/renderizar_rev3.sh final1080` | Proxy 1080p, 16 partes, CRF 19 com teto de 12 Mbps | `_tmp/rev3_final_1080p.mp4`, 2,98 GB |
+
+Som nos dois: mixagem da REV3 (`mixar_rev3.py` → `finalizar_rev3.py`, AAC 192 kbps com correção de pico), medida no arquivo exportado.
+
+**Por que 20 Mbps no 4K:** é o que cabe no disco desta sessão (partes + vídeo juntado ≈ 2 × 5 GB, mais ~4 GB de WAV da mixagem). O YouTube recomenda 35–45 Mbps para subir 4K em H.264, mas recodifica tudo: o 4K que ele entrega ao público sai em VP9/AV1, abaixo disso.
+
+Os arquivos ficam fora do git e foram enviados pelo Gofile. O Gofile apaga arquivos de quem não tem conta depois de alguns dias sem download (~10 dias, segundo fontes de terceiros; a página oficial não diz): baixe logo.
+
+Para as próximas revisões: o proxy 1080p (`_tmp/servir/proxy1080.mp4`) foi apagado para o 4K caber no disco. Uma prévia nova precisa refazer o proxy a partir da fonte (~50 min).

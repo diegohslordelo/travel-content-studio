@@ -7,6 +7,7 @@ pico entre amostras do G1 passou disso, então a conta é a do pico verdadeiro.)
 
   python rev3/corrigir_pico_aac.py <mix.wav> <video_sem_audio_ou_com.mp4> <saida.mp4> [bitrate=160k]
 """
+import os
 import subprocess
 import sys
 
@@ -51,6 +52,9 @@ def main():
             ganho = 10 ** (-exc / 20 * (1 - queda)) if False else 10 ** (-exc / 20 * np.sin(np.pi * np.arange(b - a) / (b - a)) ** 2)
             x[a:b] *= ganho[:, None].astype(np.float32)
             print(f"   {c / SR:8.2f} s: queda de {exc:.1f} dB em {2 * n / SR * 1000:.0f} ms")
+    # os WAV de trabalho saem antes de juntar a imagem: no 4K, o disco não comporta os dois vídeos e os três WAV
+    for tmp in ("_tmp/fix.wav", "_tmp/fix_dec.wav"):
+        os.remove(tmp)
     sf.write("_tmp/fix_final.wav", x, SR, subtype="FLOAT")
     sh(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", video, "-i", "_tmp/fix.m4a", "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "copy", "-movflags", "+faststart", saida])
     print("ok", saida)
