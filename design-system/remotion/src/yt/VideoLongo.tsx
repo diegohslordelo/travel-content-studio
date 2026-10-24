@@ -67,7 +67,11 @@ const TrechoBase: React.FC<{ v: string; tr: Trecho }> = ({ v, tr }) => {
   const { fps } = useVideoConfig();
   const q = (ms: number) => Math.round((ms * fps) / 1000);
   const dur = q(tr.ate) - q(tr.de) + (tr.pagina ? q(DUR_PAGINA) : 0);
-  const base = <Video src={v.startsWith("http") ? v : staticFile(v)} trimBefore={q(tr.src)} muted objectFit="cover" style={{ width: "100%", height: "100%" }} />;
+  // o Chromium do render não decodifica HEVC e cai no <OffthreadVideo>; sem `transparent: false`, cada quadro da fonte
+  // vira PNG (caro no 4K). A fonte não tem alfa: BMP dá os mesmos pixels
+  const base = (
+    <Video src={v.startsWith("http") ? v : staticFile(v)} trimBefore={q(tr.src)} muted objectFit="cover" style={{ width: "100%", height: "100%" }} fallbackOffthreadVideoProps={{ transparent: false }} />
+  );
   const video = tr.congela ? <Freeze frame={0}>{base}</Freeze> : base;
   return (
     <Sequence from={q(tr.de)} durationInFrames={dur} name={`fonte ${(tr.src / 1000).toFixed(2)} s`}>

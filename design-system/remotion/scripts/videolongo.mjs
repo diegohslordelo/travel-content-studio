@@ -1,7 +1,7 @@
 /**
  * Render da composição `VideoLongo` (vídeo longo do YouTube) a partir das props de uma revisão.
  *
- *   node scripts/videolongo.mjs <props.json> <public-dir> quadros <saida-dir> <q1,q2,...>   PNGs de conferência
+ *   node scripts/videolongo.mjs <props.json> <public-dir> quadros <saida-dir> <q1,q2,...>   PNGs de conferência (ESCALA=2: 4K)
  *   node scripts/videolongo.mjs <props.json> <public-dir> trecho  <saida.mp4> <q-ini> <q-fim> [escala]
  *   node scripts/videolongo.mjs <props.json> <public-dir> tudo    <saida.mp4> [escala]
  *
@@ -57,7 +57,7 @@ const progresso = ({ progress }) => {
 if (modo === "quadros") {
   mkdirSync(saida, { recursive: true });
   for (const q of resto[0].split(",").map(Number)) {
-    await renderStill({ ...comum, composition, frame: q, output: path.join(saida, `q${String(q).padStart(6, "0")}.png`) });
+    await renderStill({ ...comum, composition, frame: q, output: path.join(saida, `q${String(q).padStart(6, "0")}.png`), scale: Number(process.env.ESCALA ?? 1) });
     console.log("quadro", q);
   }
 } else if (modo === "trecho") {
