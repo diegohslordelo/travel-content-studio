@@ -1,0 +1,123 @@
+{
+  "reel": "anne-frank",
+  "revisao": 2,
+  "titulo": "A Casa de Anne Frank: a melhor atração de Amsterdã também é uma das mais tristes",
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "costura_y": 900,
+  "nota": "REV2 (25/10/2026): take 1 inteiro (0–4,00 s), na medida enviada pelo Diego, e restauro do fim de 'cidade.' (take 1) e 'vazio.' (take 6), que o iPhone não gravou (ver restauro.py e QA_REV2.md). Formato tela dividida. O DS V2 entra só no CTA final (placa + clack). Tudo antes do CTA usa a paleta e as fontes próprias deste Reel (decisão do Diego no pedido de 24/10/2026). Tempos das cenas: âncora 'fala:palavra' (#n = n-ésima ocorrência na fala) ± segundos, ou segundos absolutos.",
+
+  "fontes": {
+    "IMG_7143": { "arquivo": "IMG_7143_25out.MOV", "origem": "enviado pelo Diego no chat em 25/10/2026: mesmo take do Drive (IMG_7143.MOV, id 1V0INvdKeJwm0yQh2b0FdtLXHwADoBw0e), com o tempo que ele quer no Reel (vídeo 4,00 s; áudio 3,72 s)" },
+    "IMG_7101": { "arquivo": "IMG_7101.MOV", "drive_id": "1q2MrJdMgA-yF9Vn77COy3g9vwLVv45lr", "pasta": "Reel Anne Frank" },
+    "IMG_7106": { "arquivo": "IMG_7106.MOV", "drive_id": "1s-Odrdd7rMZkZAiL-mnKtuEnKh5enBf_", "pasta": "Reel Anne Frank" },
+    "IMG_7112": { "arquivo": "IMG_7112.MOV", "drive_id": "11M_NOb8lF_XN03G120ybvCJqUIjYexxd", "pasta": "Reel Anne Frank" },
+    "IMG_7114": { "arquivo": "IMG_7114.MOV", "drive_id": "1qKN8-lVXmyo1oOlkRKgsFr_BxbcdzIm5", "pasta": "Reel Anne Frank" },
+    "IMG_7116": { "arquivo": "IMG_7116.MOV", "drive_id": "1DLNbkdGFhcsZyzzhXa049MlW_hshVbSt", "pasta": "Reel Anne Frank" },
+    "IMG_7137": { "arquivo": "IMG_7137.MOV", "drive_id": "1ne424bD0zsquYeOkrNt5Jr1D-k_UFRYX", "pasta": "Reel Anne Frank" },
+    "IMG_1555": { "arquivo": "acervo/IMG_1555.MOV", "drive_id": "1xvOiZoza89RlXH10bQyKLP-jU4IWNyyi", "pasta": "Youtube/Amsterdam", "o_que": "porta verde com a placa ANNE FRANK HUIS, Prinsengracht (13/03/2026 10:56)" },
+    "IMG_1556": { "arquivo": "acervo/IMG_1556.MOV", "drive_id": "1ZJtrW4Es4xycbUuYI5LXlSxt-kWJdW3E", "pasta": "Youtube/Amsterdam", "o_que": "porta e fachada da Prinsengracht 263, câmera subindo (13/03/2026 10:56)" },
+    "IMG_1558": { "arquivo": "acervo/IMG_1558.MOV", "drive_id": "10aHnrlwB4-IquzNj9TMFwdMx6lFnxRX2", "pasta": "Youtube/Amsterdam", "o_que": "estátua de Anne Frank na Westermarkt (13/03/2026 11:11)" },
+    "IMG_1561": { "arquivo": "acervo/IMG_1561.MOV", "drive_id": "1sAClthUb184gPzOVcg7_sUrFFe2mIwva", "pasta": "Youtube/Amsterdam", "o_que": "canal com árvores perto da casa (13/03/2026 11:24)" },
+    "IMG_2065": { "arquivo": "acervo/IMG_2065.MOV", "drive_id": "1S5SZaygEd8wOX9138O9C0n8q8A07zW1I", "pasta": "Youtube/Amsterdam", "o_que": "canal ao entardecer (14/03/2026 18:53)" },
+    "IMG_2068": { "arquivo": "acervo/IMG_2068.MOV", "drive_id": "1xSXCPF7nZsaGn0_dvp7p_xXZplORi-95", "pasta": "Youtube/Amsterdam", "o_que": "canal ao entardecer com a torre da Westerkerk, vertical (14/03/2026 18:53)" },
+    "IMG_2070": { "arquivo": "acervo/IMG_2070.MOV", "drive_id": "1UgI8w6IN8p8heNBqFflGxIutNbuntKa9", "pasta": "Youtube/Amsterdam", "o_que": "canal ao entardecer, vertical (14/03/2026 18:54)" }
+  },
+
+  "falas": [
+    { "id": "f1", "fonte": "IMG_7143", "in": 0.00, "out": 4.00, "inicio_voz": 0.205, "nota": "clipe inteiro, na medida do Diego (25/10/2026)",
+      "restauro": { "motivo": "o áudio do .MOV acaba em 3,72 s, no meio do 'DA' de 'ci-DA-de'; o vídeo mostra a boca terminando '-de' até ≈ 3,90 s",
+                    "corte": 3.716, "ate": 4.01, "ambiente": [0.07, 0.19],
+                    "vogal": { "de": 3.635, "estender": 0.050, "f0_fim": 84, "queda_de": 0.6, "ganho_fim_db": -12 },
+                    "fechamento": 0.020,
+                    "fricativa": { "fonte": "IMG_7143", "de": 3.165, "ate": 3.250, "queda": 0.03, "rel_db": -5, "o_que": "o 'tch' de 'tristes', 0,5 s antes, no mesmo take" } } },
+    { "id": "f2", "fonte": "IMG_7101", "in": 0.28, "out": 8.20, "inicio_voz": 0.38 },
+    { "id": "f3", "fonte": "IMG_7106", "in": 0.10, "out": 6.80, "inicio_voz": 0.20 },
+    { "id": "f4", "fonte": "IMG_7112", "in": 0.14, "out": 6.45, "inicio_voz": 0.24 },
+    { "id": "f5", "fonte": "IMG_7114", "in": 0.20, "out": 8.66, "inicio_voz": 0.30 },
+    { "id": "f6", "fonte": "IMG_7116", "in": 0.12, "out": 6.62, "inicio_voz": 0.22,
+      "restauro": { "motivo": "o áudio do .MOV acaba em 6,46 s, no meio do 'ZI' de 'va-ZI-o'; o vídeo mostra os lábios fechando o '-o' até ≈ 6,56 s",
+                    "corte": 6.458, "ate": 6.62, "ambiente": [0.11, 0.20],
+                    "vogal": { "de": 6.39, "estender": 0.030, "f0_fim": 100, "queda_de": 0.35, "ganho_fim_db": -18 },
+                    "morfo": { "fonte": "IMG_7112", "de": 6.165, "ate": 6.235, "dur": 0.075, "de_p": 0.3, "o_que": "o '-o' final de 'nazismo.' (take 4)" } } },
+    { "id": "f7", "fonte": "IMG_7137", "in": 0.05, "out": 7.74, "inicio_voz": 0.06, "nota": "in 0,00 → 0,05: os primeiros 50 ms do arquivo são silêncio digital (deixavam um buraco de 60 ms depois de 'vazio.'); a voz começa em 0,06 s" }
+  ],
+  "rosto_y": 640,
+
+  "correcoes_legenda": {
+    "f2:aparece": "parece",
+    "f2:mas": "Mas"
+  },
+
+  "broll": {
+    "hook":       { "fonte": "IMG_2068", "in": 1.00, "layout": "full",  "foco_x": 0.50, "vel": 1.0 },
+    "fachada":    { "fonte": "IMG_1556", "in": 3.40, "layout": "split", "foco_x": 0.50, "vel": 2.0 },
+    "canal":      { "fonte": "IMG_1561", "in": 0.20, "layout": "split", "foco_x": 0.45, "vel": 1.0 },
+    "porta":      { "fonte": "IMG_1555", "in": 0.40, "layout": "split", "foco_x": 0.55, "vel": 1.0 },
+    "estatua":    { "fonte": "IMG_1558", "in": 0.30, "layout": "split", "foco_x": 0.47, "vel": 1.0 },
+    "entardecer": { "fonte": "IMG_2070", "in": 0.20, "layout": "full",  "foco_x": 0.50, "vel": 1.0 }
+  },
+
+  "imagens": {
+    "anexo_fundos":  { "arquivo": "anexo_fundos_2026.jpg", "rotulo": "Os fundos do anexo, hoje", "credito": "Hannolans · CC BY 4.0", "pagina": "https://commons.wikimedia.org/wiki/File:Achterzijde_Achterhuis.jpg" },
+    "anne_1942":     { "arquivo": "anne_1942.jpg", "rotulo": "Anne Frank · maio de 1942", "credito": "Autor desconhecido · domínio público", "pagina": "https://commons.wikimedia.org/wiki/File:Anne_Frank_passport_photo,_May_1942.jpg" },
+    "anne_1940":     { "arquivo": "anne_1940_escrevendo.jpg", "rotulo": "Anne Frank · 1940", "credito": "Autor desconhecido · Coleção Anne Frank Stichting · domínio público", "pagina": "https://commons.wikimedia.org/wiki/File:AnneFrank1940_crop.jpg" },
+    "diario":        { "arquivo": "diario_kiel_2019.jpg", "rotulo": "O diário de Anne Frank em exposição · Kiel, 2019", "credito": "Diego Delso · CC BY-SA 4.0", "pagina": "https://commons.wikimedia.org/wiki/File:Diario_de_Anne_Frank,_Iglesia_de_San_Nicol%C3%A1s,_Kiel,_Alemania,_2019-09-10,_DD_22.jpg" },
+    "otto":          { "arquivo": "otto_frank_1961.jpg", "rotulo": "Otto Frank · 1961", "credito": "Jack de Nijs / Anefo · CC BY-SA 3.0 NL", "pagina": "https://commons.wikimedia.org/wiki/File:Otto_Frank_(1961).jpg" },
+    "abertura_1960": { "arquivo": "abertura_1960.jpg", "rotulo": "Abertura do museu · 3 de maio de 1960", "credito": "Henk Lindeboom / Anefo · Nationaal Archief · CC0", "pagina": "https://commons.wikimedia.org/wiki/File:Woonkamer_van_de_familie_Frank,_Bestanddeelnr_911-2116.jpg" },
+    "anexo_1957":    { "arquivo": "anexo_vazio_1957.jpg", "rotulo": "O anexo vazio · 1957", "credito": "Wim van Rossem / Anefo · Nationaal Archief · CC0", "pagina": "https://commons.wikimedia.org/wiki/File:Raampartij_in_het_achterhuis_van_Anne_Frank,_Bestanddeelnr_908-4340.jpg" }
+  },
+
+  "cenas": [
+    { "id": "gancho",     "ini": 0,                 "tipo": "broll", "broll": "hook", "kb": [1.0, 1.09] },
+    { "id": "fachada",    "ini": "f2:Por",          "tipo": "broll", "broll": "fachada", "kb": [1.0, 1.04] },
+    { "id": "canal",      "ini": "f2:beira-0.10",   "tipo": "broll", "broll": "canal", "kb": [1.04, 1.0] },
+    { "id": "casa",       "ini": "f2:mas-0.06",     "tipo": "anim", "anim": "casa", "marcos": { "armario": "f2:armário", "passagem": "f2:passagem", "anexo": "f2:anexo" } },
+    { "id": "anexo",      "ini": "f2:secreto-0.05", "tipo": "foto", "foto": "anexo_fundos", "layout": "split", "kb": [1.12, 1.0], "foco": [0.5, 0.42] },
+    { "id": "anne",       "ini": "f3:Foi",          "tipo": "foto", "foto": "anne_1942", "layout": "card" },
+    { "id": "treze",      "ini": "f3:com-0.04",     "tipo": "foto", "foto": "anne_1942", "layout": "split", "kb": [1.0, 1.06], "foco": [0.5, 0.40], "numero": { "grande": "13", "pequeno": "ANOS", "em": "f3:13" } },
+    { "id": "linha",      "ini": "f3:passou-0.05",  "tipo": "anim", "anim": "linha", "layout": "split" },
+    { "id": "oito",       "ini": "f3:com#2-0.05",   "tipo": "anim", "anim": "pessoas", "layout": "split", "estado": "apresenta", "marcos": { "familia": "f3:família", "outras": "f3:outras" } },
+    { "id": "escreveu",   "ini": "f4:Durante","tipo": "foto", "foto": "anne_1940", "layout": "split", "kb": [1.0, 1.07], "foco": [0.5, 0.45] },
+    { "id": "diario",     "ini": "f4:que-0.06",     "tipo": "foto", "foto": "diario", "layout": "split", "kb": [1.05, 1.15], "foco": [0.36, 0.5] },
+    { "id": "perseguicao","ini": "f4:perseguição-0.12", "tipo": "foto", "foto": "diario", "layout": "full", "kb": [1.35, 1.48], "foco": [0.30, 0.45], "tom": "escuro" },
+    { "id": "agosto",     "ini": "f5:Em",           "tipo": "anim", "anim": "data", "texto": ["AGOSTO", "DE 1944"] },
+    { "id": "presas",     "ini": "f5:as-0.08",      "tipo": "anim", "anim": "pessoas", "layout": "full", "estado": "presas", "marcos": { "presas": "f5:descobertas" } },
+    { "id": "otto",       "ini": "f5:Otto-0.06",    "tipo": "foto", "foto": "otto", "layout": "card" },
+    { "id": "unico",      "ini": "f5:foi-0.06",     "tipo": "anim", "anim": "pessoas", "layout": "full", "estado": "unico", "marcos": { "unico": "f5:único" } },
+    { "id": "detalhe",    "ini": "f6:E",            "tipo": "fala", "zoom": [1.10, 1.16] },
+    { "id": "abertura",   "ini": "f6:em-0.06",      "tipo": "foto", "foto": "abertura_1960", "layout": "split", "kb": [1.0, 1.06], "foco": [0.5, 0.42], "numero": { "grande": "1960", "pequeno": "", "em": "f6:1960" } },
+    { "id": "pedido",     "ini": "f6:a-0.04",       "tipo": "foto", "foto": "otto", "layout": "split", "kb": [1.0, 1.05], "foco": [0.5, 0.35] },
+    { "id": "vazio",      "ini": "f6:o#2-0.06",     "tipo": "foto", "foto": "anexo_1957", "layout": "full", "kb": [1.10, 1.0], "foco": [0.5, 0.5] },
+    { "id": "porta",      "ini": "f7:Por",          "tipo": "broll", "broll": "porta", "kb": [1.0, 1.05] },
+    { "id": "direto",     "ini": "f7:de-0.06",    "tipo": "fala", "zoom": [1.0, 1.05] },
+    { "id": "estatua",    "ini": "f7:porque-0.06",  "tipo": "broll", "broll": "estatua", "kb": [1.2, 1.28] },
+    { "id": "marcas",     "ini": "f7:que#2-0.06",   "tipo": "broll", "broll": "entardecer", "kb": [1.0, 1.06] },
+    { "id": "cta",        "ini": "fim",             "tipo": "cta" }
+  ],
+
+  "gancho": {
+    "blocos": [
+      { "linhas": ["A MELHOR ATRAÇÃO", "DE AMSTERDÃ"], "em": 0 },
+      { "linhas": ["TAMBÉM É UMA DAS", "MAIS TRISTES", "DA CIDADE."], "em": "f1:também" }
+    ]
+  },
+
+  "destaques": ["casa", "bonita", "armário,", "anexo", "secreto", "Anne", "Frank,", "13", "anos,", "dois", "diário", "nazismo.", "1944,", "único", "vazio.", "real", "marcas."],
+
+  "cta": {
+    "duracao": 3.2,
+    "rotulo": "MANDA PRA QUEM VAI PRA",
+    "destino": "AMSTERDAM",
+    "nota": "Placa CTA do DS V2 (2.7): verbo + módulo de seta, posição fixa x 72 · y 640, Chegada + clack. Único lugar do Reel com o DS."
+  },
+
+  "mix": {
+    "voz_lufs": -14.0,
+    "voz_pico_dbtp": -1.5,
+    "clack_db_rel": -10,
+    "master_lufs": -14.0,
+    "master_pico_dbtp": -1.0
+  }
+}
