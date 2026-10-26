@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="900" viewBox="0 0 1080 900">
+  <!-- Ilustração criada para o Reel (não é foto): bonde elétrico genérico do começo do século XX, em traço.
+       Cores do padrão do Reel (estilo.ts): fundo #14120F, traço #ECE5D8, destaque #E0AE5C. -->
+  <rect width="1080" height="900" fill="#14120F"/>
+  <g fill="none" stroke="#ECE5D8" stroke-linecap="round" stroke-linejoin="round" opacity="0.32" stroke-width="3">
+    <!-- prédios do Eixample ao fundo -->
+    <path d="M0 520 V250 H150 V520 M150 520 V210 H330 V520 M330 520 V270 H470 V520 M610 520 V230 H790 V520 M790 520 V260 H930 V520 M930 520 V200 H1080"/>
+    <path d="M30 290 h40 v50 h-40z M90 290 h40 v50 h-40z M30 380 h40 v50 h-40z M90 380 h40 v50 h-40z
+             M180 250 h40 v50 h-40z M250 250 h40 v50 h-40z M180 340 h40 v50 h-40z M250 340 h40 v50 h-40z M180 430 h40 v50 h-40z M250 430 h40 v50 h-40z
+             M360 310 h35 v45 h-35z M415 310 h35 v45 h-35z M360 400 h35 v45 h-35z M415 400 h35 v45 h-35z
+             M640 270 h40 v50 h-40z M720 270 h40 v50 h-40z M640 360 h40 v50 h-40z M720 360 h40 v50 h-40z M640 450 h40 v50 h-40z M720 450 h40 v50 h-40z
+             M820 300 h35 v45 h-35z M875 300 h35 v45 h-35z M820 390 h35 v45 h-35z M875 390 h35 v45 h-35z
+             M960 240 h40 v50 h-40z M1020 240 h40 v50 h-40z M960 330 h40 v50 h-40z M1020 330 h40 v50 h-40z M960 420 h40 v50 h-40z M1020 420 h40 v50 h-40z"/>
+  </g>
+  <g fill="none" stroke="#ECE5D8" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+    <!-- fio aéreo e trilhos -->
+    <path d="M0 150 H1080" stroke-width="3" opacity="0.8"/>
+    <path d="M0 742 H1080 M0 770 H1080" stroke-width="4"/>
+    <path d="M40 742 l-14 28 M120 742 l-14 28 M200 742 l-14 28 M280 742 l-14 28 M360 742 l-14 28 M440 742 l-14 28 M520 742 l-14 28 M600 742 l-14 28 M680 742 l-14 28 M760 742 l-14 28 M840 742 l-14 28 M920 742 l-14 28 M1000 742 l-14 28" stroke-width="2" opacity="0.5"/>
+    <!-- pantógrafo / trole -->
+    <path d="M560 330 L690 152 M690 152 l18 0" stroke-width="4"/>
+    <!-- carroceria -->
+    <path d="M230 420 Q230 360 300 350 H860 Q930 360 930 420 V680 Q930 700 910 700 H250 Q230 700 230 680 Z" fill="#14120F"/>
+    <path d="M250 350 Q260 318 330 315 H830 Q900 318 910 350" fill="#14120F"/>
+    <path d="M500 315 h170 v-22 h-170z" stroke-width="4"/>
+    <!-- janelas -->
+    <path d="M270 400 h90 v130 h-90z M380 400 h90 v130 h-90z M490 400 h90 v130 h-90z M600 400 h90 v130 h-90z M710 400 h90 v130 h-90z M820 400 h80 v130 h-80z" stroke-width="4"/>
+    <!-- faixa e porta -->
+    <path d="M230 560 H930" stroke-width="4"/>
+    <path d="M232 585 H928" stroke="#E0AE5C" stroke-width="6"/>
+    <!-- rodas -->
+    <circle cx="340" cy="712" r="30"/><circle cx="420" cy="712" r="30"/>
+    <circle cx="740" cy="712" r="30"/><circle cx="820" cy="712" r="30"/>
+    <circle cx="340" cy="712" r="6"/><circle cx="420" cy="712" r="6"/><circle cx="740" cy="712" r="6"/><circle cx="820" cy="712" r="6"/>
+    <!-- farol -->
+    <circle cx="905" cy="625" r="14" stroke="#E0AE5C"/>
+  </g>
+  <!-- linhas de movimento -->
+  <g stroke="#ECE5D8" stroke-linecap="round" stroke-width="4" opacity="0.45">
+    <path d="M60 470 H190 M90 520 H200 M40 610 H180 M110 660 H210"/>
+  </g>
+</svg>

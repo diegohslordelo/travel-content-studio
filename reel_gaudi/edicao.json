@@ -1,0 +1,142 @@
+{
+  "reel": "gaudi",
+  "titulo": "Gaudí: ele desenhou o cartão-postal de Barcelona e morreu como um morador de rua",
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "costura_y": 900,
+  "rosto_y": 700,
+  "duracao_max": 45.0,
+  "nota": "Padrão medido em padrao.md (Reel Anne Frank, tela dividida). Tempos das falas em segundos do bruto; cenas ancoradas em 'fala:palavra' (#n = n-ésima ocorrência) ± segundos. Legenda = fala real do Diego (pedido de 26/10/2026), com os números escritos como no roteiro.",
+  "fontes": {
+    "IMG_7231": {
+      "arquivo": "IMG_7231.mov",
+      "drive_id": "1_WLLy3zhSqEIpDL6o43wh0KzYoJNAxQ6",
+      "parte": 1
+    },
+    "IMG_7259": {
+      "arquivo": "IMG_7259.mov",
+      "drive_id": "1R2ogwSNQf-6ki9a_ZiCwjqC4PhT0omMg",
+      "parte": 2
+    },
+    "IMG_7256": {
+      "arquivo": "IMG_7256.mov",
+      "drive_id": "1x68GHR6pj90TgWcmnJbGY5pxrRlNxHBB",
+      "parte": "3–4"
+    },
+    "IMG_7242": {
+      "arquivo": "IMG_7242.mov",
+      "drive_id": "1KeZMDKt5DJnxdzS2t_IEkNI6eBWEgtsf",
+      "parte": 5
+    },
+    "IMG_7243": {
+      "arquivo": "IMG_7243.mov",
+      "drive_id": "178Ct5DEe0upDp7KQHTxHmuCYuiFT-D9P",
+      "parte": "6–7"
+    },
+    "IMG_7244": {
+      "arquivo": "IMG_7244.mov",
+      "drive_id": "120dJH3x0NZTqxXm7ZClBjLIeVcUgW4Og",
+      "parte": 8
+    },
+    "IMG_7245": {
+      "arquivo": "IMG_7245.mov",
+      "drive_id": "1q4IYN1vYRDCMkubjhy60YXns-1BxvPyq",
+      "parte": 9
+    },
+    "master": {
+      "arquivo": "acervo/master_barcelona.mov",
+      "drive_id": "1caei0riSf82pYiGAhi_Zuhp6ByJLdi5k",
+      "pasta": "Barcelona/Youtube",
+      "nota": "vlog master de Barcelona (34:10, 4K HLG, 24 fps); baixar só o trecho 1410–1620 s com scripts/trecho_drive.py. Áudio do master não é usado (tem trilha de violão)"
+    }
+  },
+  "falas": [
+    {
+      "id": "f1",
+      "fonte": "IMG_7231",
+      "in": 0.3,
+      "out": 4.02
+    },
+    {
+      "id": "f2",
+      "fonte": "IMG_7259",
+      "in": 0.42,
+      "out": 6.3
+    },
+    {
+      "id": "f3",
+      "fonte": "IMG_7256",
+      "in": 0.28,
+      "out": 10.26,
+      "tirar": [
+        [
+          6.17,
+          6.33
+        ]
+      ],
+      "respiro_depois": 0.28,
+      "nota": "pausa depois de 'básicos,' de 0,34 → 0,18 s (corte no silêncio, coberto por imagem em tela cheia); respiração curta 4→5"
+    },
+    {
+      "id": "f4",
+      "fonte": "IMG_7242",
+      "in": 0.06,
+      "out": 6.94,
+      "nota": "termina em 'maquetes' (pausa natural de 0,24 s depois). '…pra viver o projeto.' fica fora: o iPhone cortou o fim de 'projeto' (a trilha de áudio acaba em 7,79 s, no meio da palavra) e a frase não está no roteiro. Os primeiros 60 ms do arquivo são silêncio digital"
+    },
+    {
+      "id": "f5",
+      "fonte": "IMG_7243",
+      "in": 0.1,
+      "out": 10.28,
+      "tirar": [
+        [
+          8.57,
+          8.76
+        ]
+      ],
+      "respiro_depois": 0.28,
+      "nota": "pausa depois de 'naquele dia,' de 0,41 → 0,22 s (coberta por imagem); respiração curta 7→8"
+    },
+    {
+      "id": "f6",
+      "fonte": "IMG_7244",
+      "in": 0.055,
+      "out": 5.8,
+      "restauro": {
+        "motivo": "a trilha de áudio acaba em 5,588 s, logo no começo do 'a' de 'visi-TA' (o vídeo mostra a boca aberta no 'a' até ≈ 5,70 s e fechando em ≈ 5,80 s). Completa com o '-ta.' final de 'pronta.' do próprio Diego (IMG_7243), emendado dentro da oclusão do 't'",
+        "corte": 5.465,
+        "fonte": "IMG_7243",
+        "de": 2.215,
+        "ate": 2.495,
+        "cruzar": 0.008,
+        "ref": [
+          5.38,
+          5.44
+        ],
+        "ref_doador": [
+          2.14,
+          2.165
+        ]
+      }
+    },
+    {
+      "id": "f7",
+      "fonte": "IMG_7245",
+      "in": 0.055,
+      "out": 2.2
+    }
+  ],
+  "audio": {
+    "passa_alta_hz": 70,
+    "reducao_ruido": "afftdn=nr=8:nf=-58:tn=1",
+    "fade_in_s": 0.008,
+    "fade_out_s": 0.04,
+    "voz_lufs": -14.0,
+    "voz_pico_dbtp": -1.5,
+    "master_lufs": -14.0,
+    "master_pico_dbtp": -1.0,
+    "clack_db_rel": -10
+  }
+}

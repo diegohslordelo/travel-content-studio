@@ -1,0 +1,1706 @@
+{
+ "IMG_7231": [
+  {
+   "texto": "Ele",
+   "ini": 0.381,
+   "fim": 0.481,
+   "prob": 1.0,
+   "whisper": [
+    0.0,
+    0.4
+   ]
+  },
+  {
+   "texto": "desenhou",
+   "ini": 0.521,
+   "fim": 0.802,
+   "prob": 0.898,
+   "whisper": [
+    0.4,
+    0.8
+   ]
+  },
+  {
+   "texto": "o",
+   "ini": 0.822,
+   "fim": 0.862,
+   "prob": 0.904,
+   "whisper": [
+    0.8,
+    0.82
+   ]
+  },
+  {
+   "texto": "cartão",
+   "ini": 0.902,
+   "fim": 1.223,
+   "prob": 1.0,
+   "whisper": [
+    0.82,
+    1.22
+   ]
+  },
+  {
+   "texto": "postal",
+   "ini": 1.343,
+   "fim": 1.724,
+   "prob": 0.956,
+   "whisper": [
+    1.22,
+    1.5
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 1.784,
+   "fim": 1.824,
+   "prob": 1.0,
+   "whisper": [
+    1.5,
+    1.8
+   ]
+  },
+  {
+   "texto": "Barcelona",
+   "ini": 1.884,
+   "fim": 2.445,
+   "prob": 0.969,
+   "whisper": [
+    1.8,
+    2.26
+   ]
+  },
+  {
+   "texto": "e",
+   "ini": 2.485,
+   "fim": 2.505,
+   "prob": 1.0,
+   "whisper": [
+    2.26,
+    2.46
+   ]
+  },
+  {
+   "texto": "morreu",
+   "ini": 2.565,
+   "fim": 2.806,
+   "prob": 0.955,
+   "whisper": [
+    2.46,
+    2.76
+   ]
+  },
+  {
+   "texto": "como",
+   "ini": 2.866,
+   "fim": 3.006,
+   "prob": 1.0,
+   "whisper": [
+    2.76,
+    2.94
+   ]
+  },
+  {
+   "texto": "um",
+   "ini": 3.067,
+   "fim": 3.107,
+   "prob": 0.985,
+   "whisper": [
+    2.94,
+    3.04
+   ]
+  },
+  {
+   "texto": "morador",
+   "ini": 3.167,
+   "fim": 3.527,
+   "prob": 1.0,
+   "whisper": [
+    3.04,
+    3.42
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 3.568,
+   "fim": 3.628,
+   "prob": 1.0,
+   "whisper": [
+    3.42,
+    3.6
+   ]
+  },
+  {
+   "texto": "rua.",
+   "ini": 3.728,
+   "fim": 3.888,
+   "prob": 1.0,
+   "whisper": [
+    3.6,
+    3.78
+   ]
+  }
+ ],
+ "IMG_7242": [
+  {
+   "texto": "Nem",
+   "ini": 0.08,
+   "fim": 0.18,
+   "prob": 0.999,
+   "whisper": [
+    0.0,
+    0.14
+   ]
+  },
+  {
+   "texto": "sempre",
+   "ini": 0.26,
+   "fim": 0.42,
+   "prob": 0.492,
+   "whisper": [
+    0.14,
+    0.3
+   ]
+  },
+  {
+   "texto": "foi",
+   "ini": 0.44,
+   "fim": 0.54,
+   "prob": 0.998,
+   "whisper": [
+    0.3,
+    0.5
+   ]
+  },
+  {
+   "texto": "assim,",
+   "ini": 0.601,
+   "fim": 0.861,
+   "prob": 0.993,
+   "whisper": [
+    0.5,
+    0.74
+   ]
+  },
+  {
+   "texto": "ele",
+   "ini": 0.961,
+   "fim": 1.041,
+   "prob": 0.996,
+   "whisper": [
+    0.84,
+    0.96
+   ]
+  },
+  {
+   "texto": "largou",
+   "ini": 1.101,
+   "fim": 1.361,
+   "prob": 0.912,
+   "whisper": [
+    0.96,
+    1.3
+   ]
+  },
+  {
+   "texto": "tudo",
+   "ini": 1.481,
+   "fim": 1.641,
+   "prob": 1.0,
+   "whisper": [
+    1.3,
+    1.52
+   ]
+  },
+  {
+   "texto": "pela",
+   "ini": 1.721,
+   "fim": 1.882,
+   "prob": 0.947,
+   "whisper": [
+    1.52,
+    1.8
+   ]
+  },
+  {
+   "texto": "obra,",
+   "ini": 2.022,
+   "fim": 2.142,
+   "prob": 0.366,
+   "whisper": [
+    1.8,
+    2.08
+   ]
+  },
+  {
+   "texto": "ele",
+   "ini": 2.162,
+   "fim": 2.222,
+   "prob": 0.189,
+   "whisper": [
+    2.14,
+    2.2
+   ]
+  },
+  {
+   "texto": "se",
+   "ini": 2.322,
+   "fim": 2.362,
+   "prob": 0.072,
+   "whisper": [
+    2.2,
+    2.32
+   ]
+  },
+  {
+   "texto": "desligou",
+   "ini": 2.442,
+   "fim": 2.902,
+   "prob": 0.994,
+   "whisper": [
+    2.32,
+    2.84
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 2.923,
+   "fim": 2.963,
+   "prob": 0.998,
+   "whisper": [
+    2.84,
+    2.94
+   ]
+  },
+  {
+   "texto": "aparência",
+   "ini": 3.043,
+   "fim": 3.523,
+   "prob": 0.749,
+   "whisper": [
+    2.94,
+    3.42
+   ]
+  },
+  {
+   "texto": "e",
+   "ini": 3.543,
+   "fim": 3.563,
+   "prob": 0.992,
+   "whisper": [
+    3.42,
+    3.5
+   ]
+  },
+  {
+   "texto": "passou",
+   "ini": 3.603,
+   "fim": 3.843,
+   "prob": 0.999,
+   "whisper": [
+    3.5,
+    3.68
+   ]
+  },
+  {
+   "texto": "a",
+   "ini": 3.863,
+   "fim": 3.883,
+   "prob": 1.0,
+   "whisper": [
+    3.68,
+    3.84
+   ]
+  },
+  {
+   "texto": "dormir",
+   "ini": 3.923,
+   "fim": 4.164,
+   "prob": 0.947,
+   "whisper": [
+    3.84,
+    4.06
+   ]
+  },
+  {
+   "texto": "num",
+   "ini": 4.204,
+   "fim": 4.284,
+   "prob": 0.909,
+   "whisper": [
+    4.06,
+    4.2
+   ]
+  },
+  {
+   "texto": "quarto",
+   "ini": 4.364,
+   "fim": 4.684,
+   "prob": 0.997,
+   "whisper": [
+    4.2,
+    4.48
+   ]
+  },
+  {
+   "texto": "dentro",
+   "ini": 4.804,
+   "fim": 5.084,
+   "prob": 0.984,
+   "whisper": [
+    4.48,
+    4.86
+   ]
+  },
+  {
+   "texto": "da",
+   "ini": 5.124,
+   "fim": 5.204,
+   "prob": 0.999,
+   "whisper": [
+    4.86,
+    5.14
+   ]
+  },
+  {
+   "texto": "igreja",
+   "ini": 5.265,
+   "fim": 5.665,
+   "prob": 1.0,
+   "whisper": [
+    5.14,
+    5.6
+   ]
+  },
+  {
+   "texto": "junto",
+   "ini": 5.745,
+   "fim": 5.905,
+   "prob": 1.0,
+   "whisper": [
+    5.6,
+    5.76
+   ]
+  },
+  {
+   "texto": "com",
+   "ini": 5.965,
+   "fim": 6.025,
+   "prob": 1.0,
+   "whisper": [
+    5.76,
+    5.98
+   ]
+  },
+  {
+   "texto": "outras",
+   "ini": 6.105,
+   "fim": 6.285,
+   "prob": 0.928,
+   "whisper": [
+    5.98,
+    6.18
+   ]
+  },
+  {
+   "texto": "maquetes",
+   "ini": 6.325,
+   "fim": 6.826,
+   "prob": 0.9,
+   "whisper": [
+    6.18,
+    6.78
+   ]
+  },
+  {
+   "texto": "pra",
+   "ini": 7.066,
+   "fim": 7.166,
+   "prob": 0.985,
+   "whisper": [
+    6.78,
+    7.06
+   ]
+  },
+  {
+   "texto": "viver",
+   "ini": 7.206,
+   "fim": 7.506,
+   "prob": 0.877,
+   "whisper": [
+    7.06,
+    7.32
+   ]
+  },
+  {
+   "texto": "o",
+   "ini": 7.526,
+   "fim": 7.546,
+   "prob": 0.624,
+   "whisper": [
+    7.32,
+    7.5
+   ]
+  },
+  {
+   "texto": "projeto.",
+   "ini": 7.566,
+   "fim": 7.807,
+   "prob": 0.44,
+   "whisper": [
+    7.5,
+    7.6
+   ]
+  }
+ ],
+ "IMG_7243": [
+  {
+   "texto": "E",
+   "ini": 0.18,
+   "fim": 0.2,
+   "prob": 1.0,
+   "whisper": [
+    0.0,
+    0.18
+   ]
+  },
+  {
+   "texto": "quando",
+   "ini": 0.26,
+   "fim": 0.42,
+   "prob": 0.666,
+   "whisper": [
+    0.18,
+    0.3
+   ]
+  },
+  {
+   "texto": "ele",
+   "ini": 0.44,
+   "fim": 0.5,
+   "prob": 0.331,
+   "whisper": [
+    0.3,
+    0.44
+   ]
+  },
+  {
+   "texto": "morreu,",
+   "ini": 0.54,
+   "fim": 0.781,
+   "prob": 0.965,
+   "whisper": [
+    0.44,
+    0.74
+   ]
+  },
+  {
+   "texto": "nem",
+   "ini": 0.841,
+   "fim": 0.961,
+   "prob": 0.667,
+   "whisper": [
+    0.76,
+    0.86
+   ]
+  },
+  {
+   "texto": "um",
+   "ini": 1.021,
+   "fim": 1.081,
+   "prob": 0.943,
+   "whisper": [
+    0.86,
+    1.02
+   ]
+  },
+  {
+   "texto": "quarto",
+   "ini": 1.161,
+   "fim": 1.421,
+   "prob": 0.998,
+   "whisper": [
+    1.02,
+    1.26
+   ]
+  },
+  {
+   "texto": "da",
+   "ini": 1.461,
+   "fim": 1.521,
+   "prob": 1.0,
+   "whisper": [
+    1.26,
+    1.48
+   ]
+  },
+  {
+   "texto": "igreja",
+   "ini": 1.601,
+   "fim": 1.861,
+   "prob": 1.0,
+   "whisper": [
+    1.48,
+    1.84
+   ]
+  },
+  {
+   "texto": "estava",
+   "ini": 1.901,
+   "fim": 2.101,
+   "prob": 0.987,
+   "whisper": [
+    1.84,
+    2.0
+   ]
+  },
+  {
+   "texto": "pronta.",
+   "ini": 2.241,
+   "fim": 2.522,
+   "prob": 0.944,
+   "whisper": [
+    2.0,
+    2.5
+   ]
+  },
+  {
+   "texto": "Depois",
+   "ini": 2.762,
+   "fim": 3.102,
+   "prob": 1.0,
+   "whisper": [
+    2.56,
+    2.92
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 3.122,
+   "fim": 3.182,
+   "prob": 0.999,
+   "whisper": [
+    2.92,
+    3.14
+   ]
+  },
+  {
+   "texto": "100",
+   "ini": 3.322,
+   "fim": 3.502,
+   "prob": 0.673,
+   "whisper": [
+    3.14,
+    3.36
+   ]
+  },
+  {
+   "texto": "anos,",
+   "ini": 3.602,
+   "fim": 3.883,
+   "prob": 1.0,
+   "whisper": [
+    3.36,
+    3.76
+   ]
+  },
+  {
+   "texto": "o",
+   "ini": 3.943,
+   "fim": 3.963,
+   "prob": 1.0,
+   "whisper": [
+    3.82,
+    3.96
+   ]
+  },
+  {
+   "texto": "Papa",
+   "ini": 4.083,
+   "fim": 4.363,
+   "prob": 1.0,
+   "whisper": [
+    3.96,
+    4.14
+   ]
+  },
+  {
+   "texto": "abençoou",
+   "ini": 4.403,
+   "fim": 4.703,
+   "prob": 0.438,
+   "whisper": [
+    4.14,
+    4.72
+   ]
+  },
+  {
+   "texto": "a",
+   "ini": 4.783,
+   "fim": 4.803,
+   "prob": 1.0,
+   "whisper": [
+    4.72,
+    4.82
+   ]
+  },
+  {
+   "texto": "torre",
+   "ini": 4.903,
+   "fim": 5.063,
+   "prob": 1.0,
+   "whisper": [
+    4.82,
+    5.04
+   ]
+  },
+  {
+   "texto": "mais",
+   "ini": 5.123,
+   "fim": 5.343,
+   "prob": 0.997,
+   "whisper": [
+    5.04,
+    5.14
+   ]
+  },
+  {
+   "texto": "alta",
+   "ini": 5.423,
+   "fim": 5.604,
+   "prob": 1.0,
+   "whisper": [
+    5.14,
+    5.5
+   ]
+  },
+  {
+   "texto": "da",
+   "ini": 5.664,
+   "fim": 5.724,
+   "prob": 1.0,
+   "whisper": [
+    5.5,
+    5.7
+   ]
+  },
+  {
+   "texto": "igreja.",
+   "ini": 5.804,
+   "fim": 6.164,
+   "prob": 1.0,
+   "whisper": [
+    5.7,
+    6.12
+   ]
+  },
+  {
+   "texto": "Milhões",
+   "ini": 6.264,
+   "fim": 6.704,
+   "prob": 1.0,
+   "whisper": [
+    6.16,
+    6.58
+   ]
+  },
+  {
+   "texto": "visitam",
+   "ini": 6.804,
+   "fim": 7.125,
+   "prob": 0.981,
+   "whisper": [
+    6.58,
+    7.12
+   ]
+  },
+  {
+   "texto": "a",
+   "ini": 7.165,
+   "fim": 7.185,
+   "prob": 0.689,
+   "whisper": [
+    7.12,
+    7.14
+   ]
+  },
+  {
+   "texto": "igreja,",
+   "ini": 7.225,
+   "fim": 7.565,
+   "prob": 0.998,
+   "whisper": [
+    7.14,
+    7.52
+   ]
+  },
+  {
+   "texto": "mas",
+   "ini": 7.625,
+   "fim": 7.725,
+   "prob": 0.983,
+   "whisper": [
+    7.54,
+    7.66
+   ]
+  },
+  {
+   "texto": "naquele",
+   "ini": 7.765,
+   "fim": 8.125,
+   "prob": 1.0,
+   "whisper": [
+    7.66,
+    8.0
+   ]
+  },
+  {
+   "texto": "dia,",
+   "ini": 8.245,
+   "fim": 8.465,
+   "prob": 0.894,
+   "whisper": [
+    8.0,
+    8.4
+   ]
+  },
+  {
+   "texto": "ninguém",
+   "ini": 8.866,
+   "fim": 9.206,
+   "prob": 1.0,
+   "whisper": [
+    8.46,
+    8.92
+   ]
+  },
+  {
+   "texto": "sabia",
+   "ini": 9.286,
+   "fim": 9.606,
+   "prob": 0.991,
+   "whisper": [
+    8.92,
+    9.38
+   ]
+  },
+  {
+   "texto": "quem",
+   "ini": 9.646,
+   "fim": 9.766,
+   "prob": 0.936,
+   "whisper": [
+    9.38,
+    9.7
+   ]
+  },
+  {
+   "texto": "era",
+   "ini": 9.806,
+   "fim": 9.886,
+   "prob": 1.0,
+   "whisper": [
+    9.7,
+    9.84
+   ]
+  },
+  {
+   "texto": "Gaudí.",
+   "ini": 9.926,
+   "fim": 10.167,
+   "prob": 0.796,
+   "whisper": [
+    9.84,
+    10.16
+   ]
+  }
+ ],
+ "IMG_7244": [
+  {
+   "texto": "Por",
+   "ini": 0.04,
+   "fim": 0.14,
+   "prob": 0.998,
+   "whisper": [
+    0.0,
+    0.1
+   ]
+  },
+  {
+   "texto": "trás",
+   "ini": 0.18,
+   "fim": 0.34,
+   "prob": 0.998,
+   "whisper": [
+    0.1,
+    0.26
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 0.361,
+   "fim": 0.401,
+   "prob": 1.0,
+   "whisper": [
+    0.26,
+    0.4
+   ]
+  },
+  {
+   "texto": "todo",
+   "ini": 0.501,
+   "fim": 0.681,
+   "prob": 0.958,
+   "whisper": [
+    0.4,
+    0.58
+   ]
+  },
+  {
+   "texto": "o",
+   "ini": 0.701,
+   "fim": 0.721,
+   "prob": 0.12,
+   "whisper": [
+    0.58,
+    0.68
+   ]
+  },
+  {
+   "texto": "monumento",
+   "ini": 0.761,
+   "fim": 1.162,
+   "prob": 0.955,
+   "whisper": [
+    0.68,
+    1.16
+   ]
+  },
+  {
+   "texto": "tem",
+   "ini": 1.222,
+   "fim": 1.322,
+   "prob": 1.0,
+   "whisper": [
+    1.16,
+    1.26
+   ]
+  },
+  {
+   "texto": "alguém",
+   "ini": 1.382,
+   "fim": 1.622,
+   "prob": 1.0,
+   "whisper": [
+    1.26,
+    1.5
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 1.642,
+   "fim": 1.702,
+   "prob": 0.98,
+   "whisper": [
+    1.5,
+    1.7
+   ]
+  },
+  {
+   "texto": "carne",
+   "ini": 1.783,
+   "fim": 1.943,
+   "prob": 0.481,
+   "whisper": [
+    1.7,
+    1.9
+   ]
+  },
+  {
+   "texto": "e",
+   "ini": 1.983,
+   "fim": 2.003,
+   "prob": 0.0,
+   "whisper": [
+    1.9,
+    2.0
+   ]
+  },
+  {
+   "texto": "osso",
+   "ini": 2.043,
+   "fim": 2.263,
+   "prob": 0.498,
+   "whisper": [
+    2.0,
+    2.22
+   ]
+  },
+  {
+   "texto": "com",
+   "ini": 2.283,
+   "fim": 2.363,
+   "prob": 1.0,
+   "whisper": [
+    2.22,
+    2.3
+   ]
+  },
+  {
+   "texto": "a",
+   "ini": 2.403,
+   "fim": 2.443,
+   "prob": 0.999,
+   "whisper": [
+    2.3,
+    2.38
+   ]
+  },
+  {
+   "texto": "história",
+   "ini": 2.484,
+   "fim": 2.784,
+   "prob": 1.0,
+   "whisper": [
+    2.38,
+    2.66
+   ]
+  },
+  {
+   "texto": "por",
+   "ini": 2.844,
+   "fim": 2.944,
+   "prob": 1.0,
+   "whisper": [
+    2.66,
+    2.86
+   ]
+  },
+  {
+   "texto": "trás",
+   "ini": 3.024,
+   "fim": 3.265,
+   "prob": 0.989,
+   "whisper": [
+    2.86,
+    3.14
+   ]
+  },
+  {
+   "texto": "e",
+   "ini": 3.305,
+   "fim": 3.325,
+   "prob": 0.966,
+   "whisper": [
+    3.14,
+    3.26
+   ]
+  },
+  {
+   "texto": "saber",
+   "ini": 3.385,
+   "fim": 3.585,
+   "prob": 0.806,
+   "whisper": [
+    3.26,
+    3.48
+   ]
+  },
+  {
+   "texto": "disso",
+   "ini": 3.625,
+   "fim": 3.846,
+   "prob": 1.0,
+   "whisper": [
+    3.48,
+    3.68
+   ]
+  },
+  {
+   "texto": "muda",
+   "ini": 4.006,
+   "fim": 4.226,
+   "prob": 1.0,
+   "whisper": [
+    3.68,
+    4.24
+   ]
+  },
+  {
+   "texto": "a",
+   "ini": 4.286,
+   "fim": 4.306,
+   "prob": 1.0,
+   "whisper": [
+    4.24,
+    4.26
+   ]
+  },
+  {
+   "texto": "maneira",
+   "ini": 4.366,
+   "fim": 4.607,
+   "prob": 0.942,
+   "whisper": [
+    4.26,
+    4.46
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 4.627,
+   "fim": 4.707,
+   "prob": 1.0,
+   "whisper": [
+    4.46,
+    4.62
+   ]
+  },
+  {
+   "texto": "você",
+   "ini": 4.747,
+   "fim": 4.947,
+   "prob": 1.0,
+   "whisper": [
+    4.62,
+    4.84
+   ]
+  },
+  {
+   "texto": "vive",
+   "ini": 5.067,
+   "fim": 5.248,
+   "prob": 1.0,
+   "whisper": [
+    4.84,
+    5.16
+   ]
+  },
+  {
+   "texto": "a",
+   "ini": 5.308,
+   "fim": 5.328,
+   "prob": 1.0,
+   "whisper": [
+    5.16,
+    5.3
+   ]
+  },
+  {
+   "texto": "visita.",
+   "ini": 5.368,
+   "fim": 5.588,
+   "prob": 0.5,
+   "whisper": [
+    5.3,
+    5.56
+   ]
+  }
+ ],
+ "IMG_7245": [
+  {
+   "texto": "Já",
+   "ini": 0.081,
+   "fim": 0.141,
+   "prob": 0.999,
+   "whisper": [
+    0.0,
+    0.1
+   ]
+  },
+  {
+   "texto": "salva",
+   "ini": 0.282,
+   "fim": 0.463,
+   "prob": 1.0,
+   "whisper": [
+    0.1,
+    0.44
+   ]
+  },
+  {
+   "texto": "esse",
+   "ini": 0.503,
+   "fim": 0.604,
+   "prob": 0.999,
+   "whisper": [
+    0.44,
+    0.52
+   ]
+  },
+  {
+   "texto": "vídeo",
+   "ini": 0.664,
+   "fim": 0.825,
+   "prob": 1.0,
+   "whisper": [
+    0.52,
+    0.74
+   ]
+  },
+  {
+   "texto": "pra",
+   "ini": 0.846,
+   "fim": 0.946,
+   "prob": 1.0,
+   "whisper": [
+    0.74,
+    0.88
+   ]
+  },
+  {
+   "texto": "lembrar",
+   "ini": 0.987,
+   "fim": 1.289,
+   "prob": 1.0,
+   "whisper": [
+    0.88,
+    1.18
+   ]
+  },
+  {
+   "texto": "disso",
+   "ini": 1.329,
+   "fim": 1.51,
+   "prob": 0.808,
+   "whisper": [
+    1.18,
+    1.38
+   ]
+  },
+  {
+   "texto": "em",
+   "ini": 1.53,
+   "fim": 1.57,
+   "prob": 0.0,
+   "whisper": [
+    1.38,
+    1.52
+   ]
+  },
+  {
+   "texto": "Barcelona.",
+   "ini": 1.591,
+   "fim": 2.034,
+   "prob": 0.694,
+   "whisper": [
+    1.52,
+    1.72
+   ]
+  }
+ ],
+ "IMG_7256": [
+  {
+   "texto": "Roupa",
+   "ini": 0.36,
+   "fim": 0.56,
+   "prob": 1.0,
+   "whisper": [
+    0.0,
+    0.54
+   ]
+  },
+  {
+   "texto": "surrada,",
+   "ini": 0.68,
+   "fim": 1.141,
+   "prob": 1.0,
+   "whisper": [
+    0.54,
+    1.08
+   ]
+  },
+  {
+   "texto": "sem",
+   "ini": 1.301,
+   "fim": 1.401,
+   "prob": 0.393,
+   "whisper": [
+    1.14,
+    1.32
+   ]
+  },
+  {
+   "texto": "documento,",
+   "ini": 1.481,
+   "fim": 2.021,
+   "prob": 0.994,
+   "whisper": [
+    1.32,
+    2.02
+   ]
+  },
+  {
+   "texto": "ninguém",
+   "ini": 2.101,
+   "fim": 2.401,
+   "prob": 0.996,
+   "whisper": [
+    2.02,
+    2.12
+   ]
+  },
+  {
+   "texto": "sabia",
+   "ini": 2.481,
+   "fim": 2.742,
+   "prob": 1.0,
+   "whisper": [
+    2.12,
+    2.52
+   ]
+  },
+  {
+   "texto": "quem",
+   "ini": 2.802,
+   "fim": 2.922,
+   "prob": 1.0,
+   "whisper": [
+    2.52,
+    2.84
+   ]
+  },
+  {
+   "texto": "era",
+   "ini": 2.982,
+   "fim": 3.062,
+   "prob": 1.0,
+   "whisper": [
+    2.84,
+    3.02
+   ]
+  },
+  {
+   "texto": "ele.",
+   "ini": 3.202,
+   "fim": 3.342,
+   "prob": 1.0,
+   "whisper": [
+    3.02,
+    3.26
+   ]
+  },
+  {
+   "texto": "E",
+   "ini": 3.382,
+   "fim": 3.402,
+   "prob": 0.0,
+   "whisper": [
+    3.34,
+    3.38
+   ]
+  },
+  {
+   "texto": "aí",
+   "ini": 3.442,
+   "fim": 3.482,
+   "prob": 0.0,
+   "whisper": [
+    3.38,
+    3.42
+   ]
+  },
+  {
+   "texto": "levaram",
+   "ini": 3.502,
+   "fim": 3.802,
+   "prob": 0.952,
+   "whisper": [
+    3.42,
+    3.78
+   ]
+  },
+  {
+   "texto": "ele",
+   "ini": 3.842,
+   "fim": 3.922,
+   "prob": 1.0,
+   "whisper": [
+    3.78,
+    3.88
+   ]
+  },
+  {
+   "texto": "para",
+   "ini": 3.962,
+   "fim": 4.042,
+   "prob": 0.94,
+   "whisper": [
+    3.88,
+    3.96
+   ]
+  },
+  {
+   "texto": "um",
+   "ini": 4.062,
+   "fim": 4.102,
+   "prob": 0.0,
+   "whisper": [
+    3.96,
+    4.04
+   ]
+  },
+  {
+   "texto": "hospital",
+   "ini": 4.122,
+   "fim": 4.403,
+   "prob": 0.5,
+   "whisper": [
+    4.04,
+    4.26
+   ]
+  },
+  {
+   "texto": "simples",
+   "ini": 4.523,
+   "fim": 4.843,
+   "prob": 1.0,
+   "whisper": [
+    4.26,
+    4.56
+   ]
+  },
+  {
+   "texto": "para",
+   "ini": 4.863,
+   "fim": 4.983,
+   "prob": 0.989,
+   "whisper": [
+    4.56,
+    4.9
+   ]
+  },
+  {
+   "texto": "tomar",
+   "ini": 5.023,
+   "fim": 5.203,
+   "prob": 0.983,
+   "whisper": [
+    4.9,
+    5.1
+   ]
+  },
+  {
+   "texto": "cuidados",
+   "ini": 5.243,
+   "fim": 5.583,
+   "prob": 0.948,
+   "whisper": [
+    5.1,
+    5.46
+   ]
+  },
+  {
+   "texto": "básicos,",
+   "ini": 5.663,
+   "fim": 6.083,
+   "prob": 1.0,
+   "whisper": [
+    5.46,
+    5.98
+   ]
+  },
+  {
+   "texto": "mas",
+   "ini": 6.424,
+   "fim": 6.524,
+   "prob": 1.0,
+   "whisper": [
+    6.06,
+    6.44
+   ]
+  },
+  {
+   "texto": "chegando",
+   "ini": 6.564,
+   "fim": 6.844,
+   "prob": 0.925,
+   "whisper": [
+    6.44,
+    6.78
+   ]
+  },
+  {
+   "texto": "lá",
+   "ini": 6.884,
+   "fim": 6.944,
+   "prob": 1.0,
+   "whisper": [
+    6.78,
+    6.9
+   ]
+  },
+  {
+   "texto": "ninguém",
+   "ini": 7.024,
+   "fim": 7.324,
+   "prob": 0.989,
+   "whisper": [
+    6.9,
+    7.1
+   ]
+  },
+  {
+   "texto": "reconheceu.",
+   "ini": 7.384,
+   "fim": 7.965,
+   "prob": 0.965,
+   "whisper": [
+    7.1,
+    7.92
+   ]
+  },
+  {
+   "texto": "E",
+   "ini": 8.085,
+   "fim": 8.105,
+   "prob": 1.0,
+   "whisper": [
+    7.98,
+    8.06
+   ]
+  },
+  {
+   "texto": "depois",
+   "ini": 8.145,
+   "fim": 8.385,
+   "prob": 0.945,
+   "whisper": [
+    8.06,
+    8.28
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 8.425,
+   "fim": 8.465,
+   "prob": 1.0,
+   "whisper": [
+    8.28,
+    8.42
+   ]
+  },
+  {
+   "texto": "três",
+   "ini": 8.585,
+   "fim": 8.825,
+   "prob": 1.0,
+   "whisper": [
+    8.42,
+    8.68
+   ]
+  },
+  {
+   "texto": "dias",
+   "ini": 8.925,
+   "fim": 9.265,
+   "prob": 0.971,
+   "whisper": [
+    8.68,
+    9.06
+   ]
+  },
+  {
+   "texto": "ele",
+   "ini": 9.565,
+   "fim": 9.646,
+   "prob": 1.0,
+   "whisper": [
+    9.06,
+    9.58
+   ]
+  },
+  {
+   "texto": "faleceu.",
+   "ini": 9.726,
+   "fim": 10.186,
+   "prob": 0.967,
+   "whisper": [
+    9.58,
+    10.08
+   ]
+  }
+ ],
+ "IMG_7259": [
+  {
+   "texto": "Em",
+   "ini": 0.5,
+   "fim": 0.601,
+   "prob": 1.0,
+   "whisper": [
+    0.0,
+    0.5
+   ]
+  },
+  {
+   "texto": "1926,",
+   "ini": 0.681,
+   "fim": 1.701,
+   "prob": 0.797,
+   "whisper": [
+    0.5,
+    1.42
+   ]
+  },
+  {
+   "texto": "Gaudí,",
+   "ini": 1.762,
+   "fim": 2.102,
+   "prob": 0.772,
+   "whisper": [
+    1.66,
+    2.16
+   ]
+  },
+  {
+   "texto": "o",
+   "ini": 2.282,
+   "fim": 2.322,
+   "prob": 0.998,
+   "whisper": [
+    2.18,
+    2.26
+   ]
+  },
+  {
+   "texto": "arquiteto",
+   "ini": 2.382,
+   "fim": 2.902,
+   "prob": 0.998,
+   "whisper": [
+    2.26,
+    2.88
+   ]
+  },
+  {
+   "texto": "da",
+   "ini": 2.923,
+   "fim": 2.983,
+   "prob": 1.0,
+   "whisper": [
+    2.88,
+    2.94
+   ]
+  },
+  {
+   "texto": "Sagrada",
+   "ini": 3.063,
+   "fim": 3.323,
+   "prob": 0.99,
+   "whisper": [
+    2.94,
+    3.26
+   ]
+  },
+  {
+   "texto": "Família,",
+   "ini": 3.423,
+   "fim": 3.743,
+   "prob": 1.0,
+   "whisper": [
+    3.26,
+    3.7
+   ]
+  },
+  {
+   "texto": "foi",
+   "ini": 3.803,
+   "fim": 3.903,
+   "prob": 1.0,
+   "whisper": [
+    3.7,
+    3.82
+   ]
+  },
+  {
+   "texto": "atropelado",
+   "ini": 3.923,
+   "fim": 4.284,
+   "prob": 0.778,
+   "whisper": [
+    3.82,
+    4.26
+   ]
+  },
+  {
+   "texto": "por",
+   "ini": 4.364,
+   "fim": 4.464,
+   "prob": 1.0,
+   "whisper": [
+    4.26,
+    4.4
+   ]
+  },
+  {
+   "texto": "um",
+   "ini": 4.524,
+   "fim": 4.584,
+   "prob": 0.987,
+   "whisper": [
+    4.4,
+    4.54
+   ]
+  },
+  {
+   "texto": "bonde",
+   "ini": 4.664,
+   "fim": 4.924,
+   "prob": 0.998,
+   "whisper": [
+    4.54,
+    4.9
+   ]
+  },
+  {
+   "texto": "na",
+   "ini": 5.004,
+   "fim": 5.064,
+   "prob": 1.0,
+   "whisper": [
+    4.9,
+    5.0
+   ]
+  },
+  {
+   "texto": "Gran",
+   "ini": 5.144,
+   "fim": 5.285,
+   "prob": 0.996,
+   "whisper": [
+    5.0,
+    5.18
+   ]
+  },
+  {
+   "texto": "Via",
+   "ini": 5.385,
+   "fim": 5.525,
+   "prob": 1.0,
+   "whisper": [
+    5.18,
+    5.44
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 5.565,
+   "fim": 5.605,
+   "prob": 1.0,
+   "whisper": [
+    5.44,
+    5.58
+   ]
+  },
+  {
+   "texto": "Barcelona.",
+   "ini": 5.665,
+   "fim": 6.185,
+   "prob": 0.985,
+   "whisper": [
+    5.58,
+    5.82
+   ]
+  }
+ ]
+}
