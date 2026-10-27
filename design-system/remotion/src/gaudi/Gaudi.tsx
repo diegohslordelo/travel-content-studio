@@ -153,6 +153,10 @@ const Apoio: React.FC<{ p: PropsGaudi; cena: Cena }> = ({ p, cena }) => {
         <div style={{ width: p.largura, height: h, scale: String(z), filter: cena.tom ? FILTROS[cena.tom] : GRADE_VIDEO }}>
           <Video src={staticFile(cena.arquivo)} muted style={{ width: p.largura, height: h }} />
         </div>
+        {/* pedra e céu claros em tela cheia: o mesmo degradê de base do gancho, para a legenda branca (y 1320) se ler */}
+        {!split && cena.id !== "gancho" && (
+          <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 960, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.62) 100%)" }} />
+        )}
       </div>
     );
   }

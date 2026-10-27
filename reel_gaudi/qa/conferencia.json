@@ -1,0 +1,1739 @@
+{
+ "formato": {
+  "duracao_s": 44.833,
+  "ok_duracao": true,
+  "video": "1080x1920 30/1 h264",
+  "audio": "aac 48000 Hz 2 canais",
+  "bitrate_kbps": 19600
+ },
+ "legendas": {
+  "grupos": 55,
+  "fora": [],
+  "maior_largura": 744,
+  "y_usados": [
+   900,
+   1320,
+   1375
+  ],
+  "lista": [
+   {
+    "texto": "Em 1926,",
+    "ini": 3.813,
+    "y": 1320,
+    "x0": 392,
+    "x1": 688,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "Gaudí,",
+    "ini": 5.075,
+    "y": 1375,
+    "x0": 433,
+    "x1": 647,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "o arquiteto",
+    "ini": 5.595,
+    "y": 1375,
+    "x0": 364,
+    "x1": 716,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "da Sagrada Família,",
+    "ini": 6.236,
+    "y": 900,
+    "x0": 222,
+    "x1": 858,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "foi atropelado",
+    "ini": 7.116,
+    "y": 900,
+    "x0": 314,
+    "x1": 766,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "por um bonde",
+    "ini": 7.677,
+    "y": 900,
+    "x0": 315,
+    "x1": 765,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "na Gran Via",
+    "ini": 8.317,
+    "y": 900,
+    "x0": 353,
+    "x1": 727,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "de Barcelona.",
+    "ini": 8.878,
+    "y": 900,
+    "x0": 316,
+    "x1": 764,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "Roupa surrada,",
+    "ini": 9.68,
+    "y": 900,
+    "x0": 291,
+    "x1": 789,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "sem documento,",
+    "ini": 10.621,
+    "y": 900,
+    "x0": 266,
+    "x1": 814,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "ninguém sabia",
+    "ini": 11.421,
+    "y": 1320,
+    "x0": 301,
+    "x1": 779,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "quem era ele.",
+    "ini": 12.122,
+    "y": 1320,
+    "x0": 320,
+    "x1": 760,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "E aí levaram",
+    "ini": 12.702,
+    "y": 900,
+    "x0": 346,
+    "x1": 734,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "ele para um hospital",
+    "ini": 13.162,
+    "y": 900,
+    "x0": 212,
+    "x1": 868,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "simples para tomar",
+    "ini": 13.843,
+    "y": 900,
+    "x0": 228,
+    "x1": 852,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "cuidados básicos,",
+    "ini": 14.563,
+    "y": 900,
+    "x0": 242,
+    "x1": 838,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "mas chegando lá",
+    "ini": 15.594,
+    "y": 1320,
+    "x0": 265,
+    "x1": 815,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "ninguém reconheceu.",
+    "ini": 16.194,
+    "y": 1320,
+    "x0": 182,
+    "x1": 898,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "E depois",
+    "ini": 17.255,
+    "y": 1320,
+    "x0": 402,
+    "x1": 678,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "de três dias",
+    "ini": 17.595,
+    "y": 1320,
+    "x0": 352,
+    "x1": 728,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "ele faleceu.",
+    "ini": 18.735,
+    "y": 1375,
+    "x0": 350,
+    "x1": 730,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "Nem sempre foi assim,",
+    "ini": 19.72,
+    "y": 1375,
+    "x0": 168,
+    "x1": 912,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "ele largou",
+    "ini": 20.601,
+    "y": 900,
+    "x0": 380,
+    "x1": 700,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "tudo pela obra,",
+    "ini": 21.121,
+    "y": 900,
+    "x0": 295,
+    "x1": 785,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "ele se desligou",
+    "ini": 21.802,
+    "y": 900,
+    "x0": 297,
+    "x1": 783,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "de aparência",
+    "ini": 22.563,
+    "y": 900,
+    "x0": 330,
+    "x1": 750,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "e passou a dormir",
+    "ini": 23.183,
+    "y": 900,
+    "x0": 250,
+    "x1": 830,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "num quarto",
+    "ini": 23.844,
+    "y": 900,
+    "x0": 352,
+    "x1": 728,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "dentro da igreja",
+    "ini": 24.444,
+    "y": 900,
+    "x0": 285,
+    "x1": 795,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "junto com outras",
+    "ini": 25.385,
+    "y": 900,
+    "x0": 265,
+    "x1": 815,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "maquetes",
+    "ini": 25.965,
+    "y": 900,
+    "x0": 377,
+    "x1": 703,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "E quando ele morreu,",
+    "ini": 26.647,
+    "y": 1320,
+    "x0": 195,
+    "x1": 885,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "nem 1/4 da igreja",
+    "ini": 27.308,
+    "y": 1320,
+    "x0": 264,
+    "x1": 816,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "estava pronta.",
+    "ini": 28.368,
+    "y": 1320,
+    "x0": 304,
+    "x1": 776,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "Depois de 100 anos,",
+    "ini": 29.229,
+    "y": 1320,
+    "x0": 212,
+    "x1": 868,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "o Papa abençoou",
+    "ini": 30.41,
+    "y": 900,
+    "x0": 261,
+    "x1": 819,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "a torre mais alta",
+    "ini": 31.25,
+    "y": 1320,
+    "x0": 280,
+    "x1": 800,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "da igreja.",
+    "ini": 32.131,
+    "y": 1320,
+    "x0": 389,
+    "x1": 691,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "Milhões visitam",
+    "ini": 32.731,
+    "y": 900,
+    "x0": 282,
+    "x1": 798,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "a igreja,",
+    "ini": 33.632,
+    "y": 900,
+    "x0": 410,
+    "x1": 670,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "mas naquele dia,",
+    "ini": 34.092,
+    "y": 900,
+    "x0": 264,
+    "x1": 816,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "ninguém sabia",
+    "ini": 35.139,
+    "y": 1320,
+    "x0": 301,
+    "x1": 779,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "quem era Gaudí.",
+    "ini": 35.919,
+    "y": 1320,
+    "x0": 273,
+    "x1": 807,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "Por trás",
+    "ini": 36.818,
+    "y": 1320,
+    "x0": 413,
+    "x1": 667,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "de todo o monumento",
+    "ini": 37.139,
+    "y": 1320,
+    "x0": 186,
+    "x1": 894,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "tem alguém",
+    "ini": 38.0,
+    "y": 1320,
+    "x0": 349,
+    "x1": 731,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "de carne e osso",
+    "ini": 38.42,
+    "y": 1320,
+    "x0": 285,
+    "x1": 795,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "com a história",
+    "ini": 39.061,
+    "y": 900,
+    "x0": 311,
+    "x1": 769,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "por trás",
+    "ini": 39.622,
+    "y": 900,
+    "x0": 413,
+    "x1": 667,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "e saber disso muda",
+    "ini": 40.083,
+    "y": 1320,
+    "x0": 225,
+    "x1": 855,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "a maneira que você",
+    "ini": 41.064,
+    "y": 1320,
+    "x0": 225,
+    "x1": 855,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "vive a visita.",
+    "ini": 41.845,
+    "y": 1320,
+    "x0": 335,
+    "x1": 745,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "Já salva esse vídeo",
+    "ini": 42.493,
+    "y": 1320,
+    "x0": 224,
+    "x1": 856,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "pra lembrar disso",
+    "ini": 43.258,
+    "y": 1320,
+    "x0": 256,
+    "x1": 824,
+    "linhas": 1,
+    "ok": true
+   },
+   {
+    "texto": "em Barcelona.",
+    "ini": 43.942,
+    "y": 1320,
+    "x0": 307,
+    "x1": 773,
+    "linhas": 1,
+    "ok": true
+   }
+  ]
+ },
+ "trocas": {
+  "total": 30,
+  "fora_de_0_3s": [],
+  "nao_medidas": [
+   "elegante"
+  ],
+  "maior_desvio_s": 0.161,
+  "lista": [
+   {
+    "cena": "1926",
+    "palavra": "Em (f2)",
+    "palavra_s": 3.813,
+    "corte_planejado_s": 3.8,
+    "corte_medido_s": 3.8,
+    "desvio_s": -0.013,
+    "ok": true
+   },
+   {
+    "cena": "gaudi",
+    "palavra": "Gaudí (f2)",
+    "palavra_s": 5.075,
+    "corte_planejado_s": 5.067,
+    "corte_medido_s": 5.067,
+    "desvio_s": -0.008,
+    "ok": true
+   },
+   {
+    "cena": "sagrada",
+    "palavra": "da (f2)",
+    "palavra_s": 6.236,
+    "corte_planejado_s": 6.2,
+    "corte_medido_s": 6.2,
+    "desvio_s": -0.036,
+    "ok": true
+   },
+   {
+    "cena": "bonde",
+    "palavra": "foi (f2)",
+    "palavra_s": 7.116,
+    "corte_planejado_s": 7.067,
+    "corte_medido_s": 7.067,
+    "desvio_s": -0.049,
+    "ok": true
+   },
+   {
+    "cena": "granvia",
+    "palavra": "na (f2)",
+    "palavra_s": 8.317,
+    "corte_planejado_s": 8.267,
+    "corte_medido_s": 8.267,
+    "desvio_s": -0.05,
+    "ok": true
+   },
+   {
+    "cena": "surrada",
+    "palavra": "Roupa (f3)",
+    "palavra_s": 9.68,
+    "corte_planejado_s": 9.667,
+    "corte_medido_s": 9.667,
+    "desvio_s": -0.013,
+    "ok": true
+   },
+   {
+    "cena": "ninguem",
+    "palavra": "ninguém (f3)",
+    "palavra_s": 11.421,
+    "corte_planejado_s": 11.367,
+    "corte_medido_s": 11.367,
+    "desvio_s": -0.054,
+    "ok": true
+   },
+   {
+    "cena": "hospital",
+    "palavra": "E (f3)",
+    "palavra_s": 12.702,
+    "corte_planejado_s": 12.667,
+    "corte_medido_s": 12.667,
+    "desvio_s": -0.035,
+    "ok": true
+   },
+   {
+    "cena": "cuidados",
+    "palavra": "para (f3)",
+    "palavra_s": 14.183,
+    "corte_planejado_s": 14.133,
+    "corte_medido_s": 14.133,
+    "desvio_s": -0.05,
+    "ok": true
+   },
+   {
+    "cena": "reconheceu",
+    "palavra": "mas (f3)",
+    "palavra_s": 15.594,
+    "corte_planejado_s": 15.433,
+    "corte_medido_s": 15.433,
+    "desvio_s": -0.161,
+    "ok": true
+   },
+   {
+    "cena": "tres_dias",
+    "palavra": "E (f3)",
+    "palavra_s": 17.255,
+    "corte_planejado_s": 17.2,
+    "corte_medido_s": 17.2,
+    "desvio_s": -0.055,
+    "ok": true
+   },
+   {
+    "cena": "faleceu",
+    "palavra": "ele (f3)",
+    "palavra_s": 18.735,
+    "corte_planejado_s": 18.7,
+    "corte_medido_s": 18.7,
+    "desvio_s": -0.035,
+    "ok": true
+   },
+   {
+    "cena": "elegante",
+    "palavra": "Nem (f4)",
+    "palavra_s": 19.72,
+    "corte_planejado_s": 19.733,
+    "corte_medido_s": null,
+    "desvio_s": 0.013,
+    "ok": true
+   },
+   {
+    "cena": "obra",
+    "palavra": "ele (f4)",
+    "palavra_s": 20.601,
+    "corte_planejado_s": 20.567,
+    "corte_medido_s": 20.567,
+    "desvio_s": -0.034,
+    "ok": true
+   },
+   {
+    "cena": "aparencia",
+    "palavra": "ele (f4)",
+    "palavra_s": 21.802,
+    "corte_planejado_s": 21.767,
+    "corte_medido_s": 21.767,
+    "desvio_s": -0.035,
+    "ok": true
+   },
+   {
+    "cena": "oficina",
+    "palavra": "e (f4)",
+    "palavra_s": 23.183,
+    "corte_planejado_s": 23.133,
+    "corte_medido_s": 23.133,
+    "desvio_s": -0.05,
+    "ok": true
+   },
+   {
+    "cena": "dentro",
+    "palavra": "dentro (f4)",
+    "palavra_s": 24.444,
+    "corte_planejado_s": 24.4,
+    "corte_medido_s": 24.4,
+    "desvio_s": -0.044,
+    "ok": true
+   },
+   {
+    "cena": "maquetes",
+    "palavra": "junto (f4)",
+    "palavra_s": 25.385,
+    "corte_planejado_s": 25.333,
+    "corte_medido_s": 25.333,
+    "desvio_s": -0.052,
+    "ok": true
+   },
+   {
+    "cena": "um_quarto",
+    "palavra": "E (f5)",
+    "palavra_s": 26.647,
+    "corte_planejado_s": 26.6,
+    "corte_medido_s": 26.6,
+    "desvio_s": -0.047,
+    "ok": true
+   },
+   {
+    "cena": "cem_anos",
+    "palavra": "Depois (f5)",
+    "palavra_s": 29.229,
+    "corte_planejado_s": 29.2,
+    "corte_medido_s": 29.2,
+    "desvio_s": -0.029,
+    "ok": true
+   },
+   {
+    "cena": "papa",
+    "palavra": "o (f5)",
+    "palavra_s": 30.41,
+    "corte_planejado_s": 30.367,
+    "corte_medido_s": 30.367,
+    "desvio_s": -0.043,
+    "ok": true
+   },
+   {
+    "cena": "torre",
+    "palavra": "a (f5)",
+    "palavra_s": 31.25,
+    "corte_planejado_s": 31.2,
+    "corte_medido_s": 31.2,
+    "desvio_s": -0.05,
+    "ok": true
+   },
+   {
+    "cena": "milhoes",
+    "palavra": "Milhões (f5)",
+    "palavra_s": 32.731,
+    "corte_planejado_s": 32.7,
+    "corte_medido_s": 32.7,
+    "desvio_s": -0.031,
+    "ok": true
+   },
+   {
+    "cena": "naquele_dia",
+    "palavra": "mas (f5)",
+    "palavra_s": 34.092,
+    "corte_planejado_s": 34.067,
+    "corte_medido_s": 34.067,
+    "desvio_s": -0.025,
+    "ok": true
+   },
+   {
+    "cena": "ninguem_sabia",
+    "palavra": "ninguém (f5)",
+    "palavra_s": 35.139,
+    "corte_planejado_s": 35.0,
+    "corte_medido_s": 35.0,
+    "desvio_s": -0.139,
+    "ok": true
+   },
+   {
+    "cena": "monumento",
+    "palavra": "Por (f6)",
+    "palavra_s": 36.818,
+    "corte_planejado_s": 36.833,
+    "corte_medido_s": 36.833,
+    "desvio_s": 0.015,
+    "ok": true
+   },
+   {
+    "cena": "carne_osso",
+    "palavra": "tem (f6)",
+    "palavra_s": 38.0,
+    "corte_planejado_s": 37.967,
+    "corte_medido_s": 37.967,
+    "desvio_s": -0.033,
+    "ok": true
+   },
+   {
+    "cena": "historia",
+    "palavra": "com (f6)",
+    "palavra_s": 39.061,
+    "corte_planejado_s": 39.033,
+    "corte_medido_s": 39.033,
+    "desvio_s": -0.028,
+    "ok": true
+   },
+   {
+    "cena": "visita",
+    "palavra": "e (f6)",
+    "palavra_s": 40.083,
+    "corte_planejado_s": 40.033,
+    "corte_medido_s": 40.033,
+    "desvio_s": -0.05,
+    "ok": true
+   },
+   {
+    "cena": "cta",
+    "palavra": "Já (f7)",
+    "palavra_s": 42.493,
+    "corte_planejado_s": 42.467,
+    "corte_medido_s": 42.467,
+    "desvio_s": -0.026,
+    "ok": true
+   }
+  ]
+ },
+ "audio": {
+  "lufs": -14.0,
+  "pico_verdadeiro_dbtp": -1.8,
+  "amostras_acima_-1dBFS": 0,
+  "amostras_em_0dBFS": 0,
+  "emendas": [
+   {
+    "t": 3.7333,
+    "fala": "f2",
+    "antes_db": -56.2,
+    "depois_db": -56.1
+   },
+   {
+    "t": 9.6,
+    "fala": "f3",
+    "antes_db": -47.4,
+    "depois_db": -52.8
+   },
+   {
+    "t": 15.5,
+    "fala": "f3",
+    "antes_db": -46.2,
+    "depois_db": -46.1
+   },
+   {
+    "t": 19.4333,
+    "fala": "f3",
+    "antes_db": -50.2,
+    "depois_db": -50.0
+   },
+   {
+    "t": 19.7,
+    "fala": "f4",
+    "antes_db": -49.7,
+    "depois_db": -21.0
+   },
+   {
+    "t": 26.5667,
+    "fala": "f5",
+    "antes_db": -44.9,
+    "depois_db": -52.3
+   },
+   {
+    "t": 35.0333,
+    "fala": "f5",
+    "antes_db": -41.6,
+    "depois_db": -48.9
+   },
+   {
+    "t": 36.5667,
+    "fala": "f5",
+    "antes_db": -40.0,
+    "depois_db": -48.0
+   },
+   {
+    "t": 36.8333,
+    "fala": "f6",
+    "antes_db": -55.9,
+    "depois_db": -22.4
+   },
+   {
+    "t": 42.4667,
+    "fala": "f7",
+    "antes_db": -58.6,
+    "depois_db": -23.5
+   }
+  ]
+ },
+ "transcricao_final": {
+  "texto": "Ele desenhou o cartão postal de Barcelona e morreu como um morador de rua. Em 1926, Gaudí, o arquiteto da Sagrada Família, foi atropelado por um bonde na Gran Via de Barcelona. Roupa surrada, sem documento, ninguém sabia quem era ele. Aí levaram ele para um hospital simples para tomar cuidados básicos, mas chegando lá ninguém reconheceu. E depois de três dias, ele faleceu. Nem sempre foi assim. Ele largou tudo pela obra, ele se desligou de aparência e passou a dormir num quarto dentro da igreja junto com outras maquetes. E quando ele morreu, nem um quarto da igreja estava pronta. Depois de 100 anos, o Papa abençoou a torre mais alta da igreja. Milhões visitam a igreja, mas naquele dia ninguém sabia quem era Gaudí. Por trás de todo o monumento tem alguém de carne e osso com a história por trás. E saber disso muda a maneira que você vive a visita. Já salva esse vídeo para lembrar disso em Barcelona.",
+  "palavras_baixa_confianca": [
+   [
+    27.26,
+    "nem",
+    0.46
+   ],
+   [
+    34.84,
+    "ninguém",
+    0.54
+   ]
+  ],
+  "palavras": [
+   [
+    0.0,
+    "Ele",
+    0.77
+   ],
+   [
+    0.1,
+    "desenhou",
+    1.0
+   ],
+   [
+    0.5,
+    "o",
+    0.97
+   ],
+   [
+    0.54,
+    "cartão",
+    0.93
+   ],
+   [
+    0.9,
+    "postal",
+    0.98
+   ],
+   [
+    1.26,
+    "de",
+    1.0
+   ],
+   [
+    1.54,
+    "Barcelona",
+    0.99
+   ],
+   [
+    2.0,
+    "e",
+    0.94
+   ],
+   [
+    2.2,
+    "morreu",
+    1.0
+   ],
+   [
+    2.48,
+    "como",
+    1.0
+   ],
+   [
+    2.66,
+    "um",
+    0.69
+   ],
+   [
+    2.76,
+    "morador",
+    1.0
+   ],
+   [
+    3.14,
+    "de",
+    0.99
+   ],
+   [
+    3.3,
+    "rua.",
+    1.0
+   ],
+   [
+    3.68,
+    "Em",
+    0.99
+   ],
+   [
+    3.84,
+    "1926,",
+    1.0
+   ],
+   [
+    5.02,
+    "Gaudí,",
+    0.98
+   ],
+   [
+    5.52,
+    "o",
+    0.99
+   ],
+   [
+    5.64,
+    "arquiteto",
+    1.0
+   ],
+   [
+    6.22,
+    "da",
+    1.0
+   ],
+   [
+    6.28,
+    "Sagrada",
+    1.0
+   ],
+   [
+    6.6,
+    "Família,",
+    0.99
+   ],
+   [
+    7.04,
+    "foi",
+    1.0
+   ],
+   [
+    7.16,
+    "atropelado",
+    1.0
+   ],
+   [
+    7.6,
+    "por",
+    1.0
+   ],
+   [
+    7.72,
+    "um",
+    1.0
+   ],
+   [
+    7.9,
+    "bonde",
+    1.0
+   ],
+   [
+    8.24,
+    "na",
+    1.0
+   ],
+   [
+    8.34,
+    "Gran",
+    0.97
+   ],
+   [
+    8.54,
+    "Via",
+    0.96
+   ],
+   [
+    8.76,
+    "de",
+    0.99
+   ],
+   [
+    8.94,
+    "Barcelona.",
+    1.0
+   ],
+   [
+    9.58,
+    "Roupa",
+    1.0
+   ],
+   [
+    9.88,
+    "surrada,",
+    0.97
+   ],
+   [
+    10.5,
+    "sem",
+    1.0
+   ],
+   [
+    10.66,
+    "documento,",
+    1.0
+   ],
+   [
+    11.34,
+    "ninguém",
+    1.0
+   ],
+   [
+    11.48,
+    "sabia",
+    1.0
+   ],
+   [
+    11.88,
+    "quem",
+    1.0
+   ],
+   [
+    12.18,
+    "era",
+    1.0
+   ],
+   [
+    12.36,
+    "ele.",
+    1.0
+   ],
+   [
+    12.68,
+    "Aí",
+    0.78
+   ],
+   [
+    12.76,
+    "levaram",
+    0.98
+   ],
+   [
+    13.12,
+    "ele",
+    1.0
+   ],
+   [
+    13.22,
+    "para",
+    0.73
+   ],
+   [
+    13.32,
+    "um",
+    0.98
+   ],
+   [
+    13.38,
+    "hospital",
+    1.0
+   ],
+   [
+    13.58,
+    "simples",
+    1.0
+   ],
+   [
+    13.92,
+    "para",
+    0.88
+   ],
+   [
+    14.26,
+    "tomar",
+    1.0
+   ],
+   [
+    14.46,
+    "cuidados",
+    1.0
+   ],
+   [
+    14.78,
+    "básicos,",
+    1.0
+   ],
+   [
+    15.4,
+    "mas",
+    1.0
+   ],
+   [
+    15.64,
+    "chegando",
+    0.99
+   ],
+   [
+    15.94,
+    "lá",
+    1.0
+   ],
+   [
+    16.1,
+    "ninguém",
+    0.75
+   ],
+   [
+    16.3,
+    "reconheceu.",
+    0.96
+   ],
+   [
+    17.18,
+    "E",
+    0.99
+   ],
+   [
+    17.26,
+    "depois",
+    1.0
+   ],
+   [
+    17.48,
+    "de",
+    1.0
+   ],
+   [
+    17.62,
+    "três",
+    0.96
+   ],
+   [
+    17.88,
+    "dias,",
+    1.0
+   ],
+   [
+    18.4,
+    "ele",
+    1.0
+   ],
+   [
+    18.78,
+    "faleceu.",
+    1.0
+   ],
+   [
+    19.46,
+    "Nem",
+    1.0
+   ],
+   [
+    19.78,
+    "sempre",
+    1.0
+   ],
+   [
+    19.98,
+    "foi",
+    1.0
+   ],
+   [
+    20.16,
+    "assim.",
+    1.0
+   ],
+   [
+    20.52,
+    "Ele",
+    1.0
+   ],
+   [
+    20.66,
+    "largou",
+    1.0
+   ],
+   [
+    20.96,
+    "tudo",
+    1.0
+   ],
+   [
+    21.2,
+    "pela",
+    1.0
+   ],
+   [
+    21.46,
+    "obra,",
+    1.0
+   ],
+   [
+    21.82,
+    "ele",
+    0.94
+   ],
+   [
+    21.9,
+    "se",
+    1.0
+   ],
+   [
+    21.98,
+    "desligou",
+    1.0
+   ],
+   [
+    22.5,
+    "de",
+    1.0
+   ],
+   [
+    22.62,
+    "aparência",
+    1.0
+   ],
+   [
+    23.06,
+    "e",
+    0.97
+   ],
+   [
+    23.18,
+    "passou",
+    1.0
+   ],
+   [
+    23.36,
+    "a",
+    1.0
+   ],
+   [
+    23.52,
+    "dormir",
+    1.0
+   ],
+   [
+    23.72,
+    "num",
+    0.92
+   ],
+   [
+    23.88,
+    "quarto",
+    1.0
+   ],
+   [
+    24.18,
+    "dentro",
+    0.99
+   ],
+   [
+    24.54,
+    "da",
+    1.0
+   ],
+   [
+    24.82,
+    "igreja",
+    1.0
+   ],
+   [
+    25.26,
+    "junto",
+    0.79
+   ],
+   [
+    25.44,
+    "com",
+    1.0
+   ],
+   [
+    25.66,
+    "outras",
+    1.0
+   ],
+   [
+    25.84,
+    "maquetes.",
+    1.0
+   ],
+   [
+    26.52,
+    "E",
+    1.0
+   ],
+   [
+    26.64,
+    "quando",
+    1.0
+   ],
+   [
+    26.8,
+    "ele",
+    1.0
+   ],
+   [
+    26.94,
+    "morreu,",
+    1.0
+   ],
+   [
+    27.26,
+    "nem",
+    0.46
+   ],
+   [
+    27.38,
+    "um",
+    0.97
+   ],
+   [
+    27.5,
+    "quarto",
+    1.0
+   ],
+   [
+    27.76,
+    "da",
+    1.0
+   ],
+   [
+    27.98,
+    "igreja",
+    1.0
+   ],
+   [
+    28.34,
+    "estava",
+    0.99
+   ],
+   [
+    28.52,
+    "pronta.",
+    0.77
+   ],
+   [
+    28.96,
+    "Depois",
+    0.79
+   ],
+   [
+    29.42,
+    "de",
+    0.99
+   ],
+   [
+    29.64,
+    "100",
+    0.81
+   ],
+   [
+    29.86,
+    "anos,",
+    1.0
+   ],
+   [
+    30.32,
+    "o",
+    0.99
+   ],
+   [
+    30.42,
+    "Papa",
+    0.78
+   ],
+   [
+    30.64,
+    "abençoou",
+    0.96
+   ],
+   [
+    31.22,
+    "a",
+    1.0
+   ],
+   [
+    31.34,
+    "torre",
+    0.99
+   ],
+   [
+    31.52,
+    "mais",
+    0.99
+   ],
+   [
+    31.64,
+    "alta",
+    1.0
+   ],
+   [
+    32.0,
+    "da",
+    1.0
+   ],
+   [
+    32.18,
+    "igreja.",
+    0.93
+   ],
+   [
+    32.66,
+    "Milhões",
+    0.99
+   ],
+   [
+    33.06,
+    "visitam",
+    1.0
+   ],
+   [
+    33.62,
+    "a",
+    1.0
+   ],
+   [
+    33.62,
+    "igreja,",
+    1.0
+   ],
+   [
+    34.04,
+    "mas",
+    1.0
+   ],
+   [
+    34.16,
+    "naquele",
+    0.97
+   ],
+   [
+    34.48,
+    "dia",
+    1.0
+   ],
+   [
+    34.84,
+    "ninguém",
+    0.54
+   ],
+   [
+    35.22,
+    "sabia",
+    1.0
+   ],
+   [
+    35.66,
+    "quem",
+    0.99
+   ],
+   [
+    36.0,
+    "era",
+    1.0
+   ],
+   [
+    36.14,
+    "Gaudí.",
+    0.95
+   ],
+   [
+    36.52,
+    "Por",
+    0.99
+   ],
+   [
+    36.86,
+    "trás",
+    1.0
+   ],
+   [
+    37.08,
+    "de",
+    1.0
+   ],
+   [
+    37.2,
+    "todo",
+    1.0
+   ],
+   [
+    37.38,
+    "o",
+    0.81
+   ],
+   [
+    37.5,
+    "monumento",
+    0.99
+   ],
+   [
+    37.96,
+    "tem",
+    0.84
+   ],
+   [
+    38.06,
+    "alguém",
+    1.0
+   ],
+   [
+    38.3,
+    "de",
+    1.0
+   ],
+   [
+    38.5,
+    "carne",
+    0.79
+   ],
+   [
+    38.7,
+    "e",
+    0.99
+   ],
+   [
+    38.82,
+    "osso",
+    1.0
+   ],
+   [
+    39.02,
+    "com",
+    0.98
+   ],
+   [
+    39.12,
+    "a",
+    0.91
+   ],
+   [
+    39.18,
+    "história",
+    1.0
+   ],
+   [
+    39.46,
+    "por",
+    1.0
+   ],
+   [
+    39.66,
+    "trás.",
+    1.0
+   ],
+   [
+    40.06,
+    "E",
+    0.83
+   ],
+   [
+    40.1,
+    "saber",
+    1.0
+   ],
+   [
+    40.3,
+    "disso",
+    0.99
+   ],
+   [
+    40.5,
+    "muda",
+    1.0
+   ],
+   [
+    41.04,
+    "a",
+    1.0
+   ],
+   [
+    41.06,
+    "maneira",
+    1.0
+   ],
+   [
+    41.26,
+    "que",
+    0.97
+   ],
+   [
+    41.44,
+    "você",
+    1.0
+   ],
+   [
+    41.64,
+    "vive",
+    1.0
+   ],
+   [
+    41.96,
+    "a",
+    0.71
+   ],
+   [
+    42.1,
+    "visita.",
+    0.96
+   ],
+   [
+    42.4,
+    "Já",
+    1.0
+   ],
+   [
+    42.54,
+    "salva",
+    0.96
+   ],
+   [
+    42.84,
+    "esse",
+    0.99
+   ],
+   [
+    42.96,
+    "vídeo",
+    1.0
+   ],
+   [
+    43.18,
+    "para",
+    0.61
+   ],
+   [
+    43.32,
+    "lembrar",
+    1.0
+   ],
+   [
+    43.62,
+    "disso",
+    0.99
+   ],
+   [
+    43.82,
+    "em",
+    0.99
+   ],
+   [
+    43.94,
+    "Barcelona.",
+    1.0
+   ]
+  ]
+ },
+ "costura": [
+  {
+   "cena": "sagrada",
+   "lum_linha": 101.1,
+   "lum_vizinhos": 142.8,
+   "ok": true
+  },
+  {
+   "cena": "bonde",
+   "lum_linha": 61.9,
+   "lum_vizinhos": 70.3,
+   "ok": true
+  },
+  {
+   "cena": "granvia",
+   "lum_linha": 51.8,
+   "lum_vizinhos": 68.1,
+   "ok": true
+  },
+  {
+   "cena": "surrada",
+   "lum_linha": 63.5,
+   "lum_vizinhos": 84.5,
+   "ok": true
+  },
+  {
+   "cena": "hospital",
+   "lum_linha": 86.0,
+   "lum_vizinhos": 118.3,
+   "ok": true
+  },
+  {
+   "cena": "cuidados",
+   "lum_linha": 89.0,
+   "lum_vizinhos": 119.9,
+   "ok": true
+  }
+ ]
+}

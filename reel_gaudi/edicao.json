@@ -103,22 +103,13 @@
       "id": "f6",
       "fonte": "IMG_7244",
       "in": 0.055,
-      "out": 5.8,
+      "out": 5.7,
       "restauro": {
-        "motivo": "a trilha de áudio acaba em 5,588 s, logo no começo do 'a' de 'visi-TA' (o vídeo mostra a boca aberta no 'a' até ≈ 5,70 s e fechando em ≈ 5,80 s). Completa com o '-ta.' final de 'pronta.' do próprio Diego (IMG_7243), emendado dentro da oclusão do 't'",
-        "corte": 5.465,
-        "fonte": "IMG_7243",
-        "de": 2.215,
-        "ate": 2.495,
-        "cruzar": 0.008,
-        "ref": [
-          5.38,
-          5.44
-        ],
-        "ref_doador": [
-          2.14,
-          2.165
-        ]
+        "modo": "fim_suave",
+        "corte": 5.585,
+        "fade": 0.025,
+        "motivo": "a trilha de áudio do .MOV acaba em 5,588 s, ≈ 35 ms dentro do 'a' de 'visi-TA' (a boca segue aberta no vídeo até ≈ 5,70 s). Usa só o que foi gravado, com fade de 25 ms dentro da vogal e tom de sala depois (Whisper no take inteiro: 'visita.' 0,88).",
+        "testado_e_descartado": "continuar a vogal com os períodos do próprio 'a' (Whisper: 'vizinha'), emprestar o '-ta' de 'pronta.' na oclusão (‘vida’) ou dentro da vogal (‘visita’ 0,56–0,63, mas ‘vizinha/vizinhança’ com qualquer ajuste de tom ou cruzamento), 'a' de 'rua.', 'Família,', 'sabia', 'igreja.' (‘visão’, ‘vida’)"
       }
     },
     {

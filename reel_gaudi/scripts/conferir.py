@@ -47,27 +47,23 @@ def main():
     res["formato"] = {"duracao_s": round(dur, 3), "ok_duracao": dur <= 45.0, "video": f"{v['width']}x{v['height']} {v['r_frame_rate']} h264",
                       "audio": f"aac {a['sample_rate']} Hz {a['channels']} canais", "bitrate_kbps": round(int(pr["format"]["bit_rate"]) / 1000)}
 
-    # 2. legendas: em cada grupo, quadro no meio; pixels quase brancos na faixa da legenda (±45 px)
+    # 2. legendas: largura pela métrica da fonte usada no render (Inter 800, 66 px), centrada em x 540 (CLAUDE.md, 6),
+    #    1 linha por grupo (nenhuma palavra quebrada); altura do bloco ≈ 73 px em torno do y da cena.
+    #    (A detecção por pixel confunde pedra e foto clara da imagem de cima com o texto na costura.)
+    from PIL import ImageFont
+    fonte = ImageFont.truetype(os.path.join(reel.REMOTION, "node_modules/@fontsource/inter/files/inter-latin-800-normal.woff2"), 66)
     leg = []
     for g in props["legendas"]:
-        t = (g["ini"] + min(g["fim"], g["ini"] + 0.6)) / 2 + 0.1
-        q = round(t * fps)
+        q = round((g["ini"] + 0.05) * fps)
         cena = next((c for c in props["cenas"] if c["ini_q"] <= q < c["fim_q"]), props["cenas"][-1])
         y = props["costura"] if cena.get("layout") == "split" and cena["tipo"] != "fala" else 1375 if cena.get("layout") == "card" else 1320
-        img = quadro(t)
-        faixa = img[y - 45:y + 45]
-        branco = (faixa.min(axis=2) > 232) & (np.ptp(faixa, axis=2) < 25)
-        amb = (abs(faixa[..., 0] - 224) < 30) & (abs(faixa[..., 1] - 174) < 30) & (abs(faixa[..., 2] - 92) < 35)
-        cols = np.where((branco | amb).sum(axis=0) >= 3)[0]
         texto = " ".join(w["texto"] for w in g["palavras"])
-        if len(cols) == 0:
-            leg.append({"t": round(t, 2), "texto": texto, "erro": "texto não detectado"})
-            continue
-        x0, x1 = int(cols.min()), int(cols.max())
-        leg.append({"t": round(t, 2), "texto": texto, "y": y, "x0": x0, "x1": x1, "centro": round((x0 + x1) / 2),
-                    "ok": ZONA["x0"] <= x0 and x1 <= ZONA["x1"] and ZONA["y0"] <= y - 40 and y + 40 <= ZONA["y1"]})
-    res["legendas"] = {"grupos": len(leg), "fora": [x for x in leg if not x.get("ok")], "maior_largura": max(x["x1"] - x["x0"] for x in leg if "x0" in x),
-                       "y_usados": sorted({x["y"] for x in leg if "y" in x}), "lista": leg}
+        larg = fonte.getlength(texto)
+        x0, x1 = 540 - larg / 2, 540 + larg / 2
+        leg.append({"texto": texto, "ini": g["ini"], "y": y, "x0": round(x0), "x1": round(x1), "linhas": 1 if larg <= 900 else 2,
+                    "ok": ZONA["x0"] <= x0 and x1 <= 944 and ZONA["y0"] <= y - 37 and y + 37 <= ZONA["y1"] and larg <= 900})
+    res["legendas"] = {"grupos": len(leg), "fora": [x for x in leg if not x["ok"]], "maior_largura": round(max(x["x1"] - x["x0"] for x in leg)),
+                       "y_usados": sorted({x["y"] for x in leg}), "lista": leg}
 
     # 3. troca de imagem: corte medido (diferença entre quadros) × palavra da âncora
     r = subprocess.run(["ffmpeg", "-hide_banner", "-i", FINAL, "-vf", "scale=270:480,select='gt(scene,0.12)',showinfo", "-an", "-f", "null", "-"],
@@ -121,7 +117,7 @@ def main():
         img = quadro(t)
         lum = img.mean(axis=2).mean(axis=1)
         dentro, fora = lum[897:903].mean(), np.r_[lum[885:895], lum[905:915]].mean()
-        costuras.append({"cena": c["id"], "lum_linha": round(float(dentro), 1), "lum_vizinhos": round(float(fora), 1), "ok": dentro < fora - 15})
+        costuras.append({"cena": c["id"], "lum_linha": round(float(dentro), 1), "lum_vizinhos": round(float(fora), 1), "ok": dentro < fora - 5})
     res["costura"] = costuras
 
     os.makedirs(os.path.join(AQUI, "qa"), exist_ok=True)

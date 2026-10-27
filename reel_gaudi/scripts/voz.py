@@ -72,6 +72,19 @@ def periodo(x):
     return lo + int(np.argmax(c[lo:hi]))
 
 
+def fim_suave(x, r):
+    """O áudio do .MOV acaba no começo da última vogal: usa só o que foi gravado, com fade curto dentro da vogal (sem
+    clique nem corte seco) e o tom de sala por baixo, no lugar do silêncio digital."""
+    corte, q = int(r["corte"] * SR), int(r["fade"] * SR)
+    y = x[:corte].copy()
+    y[-q:] *= np.linspace(1, 0, q) ** 1.5
+    tom = loop_tom(tom_de_sala(x), int(0.4 * SR))
+    tom[:q] *= np.linspace(0, 1, q)
+    y = np.concatenate([y, np.zeros(len(tom) - q)])
+    y[corte - q:] += tom[:len(y) - corte + q]
+    return y, {"modo": "fim_suave", "fim_voz_s": r["corte"], "fade_ms": round(1000 * r["fade"])}
+
+
 def restaurar(x, r, doador):
     """Completa a sílaba que o iPhone cortou com a mesma sílaba falada pelo Diego em outro take (o "-ta." final de
     "pronta.", IMG_7243): emenda dentro da oclusão do "t" (quase silêncio), com cruzamento curto e o ganho igualado
@@ -80,6 +93,10 @@ def restaurar(x, r, doador):
     corte = int(r["corte"] * SR)
     d0, d1 = int(r["de"] * SR), int(r["ate"] * SR)
     don = doador[d0:d1].copy()
+    if r.get("tom_rel", 1.0) != 1.0:
+        # tom do doador ajustado ao do take (reamostragem: ≈ 8% mais grave e 8% mais longo)
+        from scipy.signal import resample
+        don = resample(don, int(len(don) / r["tom_rel"]))
     # ganho: vogal antes da oclusão em cada take (o "i" de "visi-" e o "o/n" de "pron-")
     ref = rms_db(x[int(r["ref"][0] * SR):int(r["ref"][1] * SR)])
     ref_d = rms_db(doador[int(r["ref_doador"][0] * SR):int(r["ref_doador"][1] * SR)])
@@ -112,7 +129,10 @@ def montar(d, fonte_dir):
         info = None
         if "restauro" in fa:
             r = fa["restauro"]
-            x, info = restaurar(x, r, carregar_take(os.path.join(fonte_dir, d["fontes"][r["fonte"]]["arquivo"])))
+            if r.get("modo") == "fim_suave":
+                x, info = fim_suave(x, r)
+            else:
+                x, info = restaurar(x, r, carregar_take(os.path.join(fonte_dir, d["fontes"][r["fonte"]]["arquivo"])))
             print(f"  restauro {fa['id']}: {info}")
         # nível do take medido na fala (para os takes soarem iguais antes do ganho geral)
         nivel = rms_db(x[int(fa["in"] * SR):int(fa["out"] * SR)])
