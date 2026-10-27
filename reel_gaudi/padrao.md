@@ -70,3 +70,11 @@ Tudo acima foi reproduzido com os mesmos valores (a composição `ReelGaudi` par
 3. **Redução leve de ruído** na voz (`afftdn`, 8 dB), pedida neste Reel.
 4. **CTA com a fala**: o Diego gravou o CTA (parte 9), então a Placa entra quando ele diz "salva" e a legenda continua; no Anne Frank o CTA era só na tela, depois da fala.
 5. Alguns grupos de legenda têm 4 palavras curtas (ex.: "de carne e osso", "Já salva esse vídeo"), sempre em 1 linha e até 24 caracteres (o mais largo tem 744 px).
+
+### REV2 (27/10/2026): diferenças a pedido do Diego
+
+6. **Gancho em tela dividida**: o Diego aparece embaixo desde o 1º quadro; o texto do gancho (mesmas fontes) fica na metade de cima. No Anne Frank o gancho era em tela cheia.
+7. **Nada gravado pelo Diego por menos de 2 s** (acervo e falas em tela cheia). No Anne Frank havia planos de 0,8 s.
+8. **Efeitos sonoros próprios** (impacto, sino, whoosh), além do *clack* do CTA. O Anne Frank tinha só voz e *clack*.
+9. **Transições com sentido**, além do corte seco: dissolve de foto no cartão (1924 → 1878) e cartão que sai revelando a torre.
+
