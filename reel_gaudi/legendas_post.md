@@ -2,9 +2,11 @@
 
 Reel `reel_gaudi_final.mp4` (44,83 s) · capa `capa_reel_gaudi.jpg`. Data e horário: conforme o planejamento (este Reel não está na grade V5; encaixe a pedido do Diego).
 
+**Revisão de 27/10/2026 (pedido do Diego):** legendas sem o bloco de créditos das imagens, e com a linha "O vídeo de Barcelona em 3 dias está disponível no link da bio." (lido como "link da bio").
+
 Fatos da legenda: tudo o que o Diego diz no vídeo, mais o nome do hospital (Hospital de la Santa Creu, o mesmo das imagens) e a bênção de **10/06/2026** pelo Papa Leão XIV, conferida na web em 26/10/2026 ([Sagrada Família](https://sagradafamilia.org/en/-/benediccio-i-inauguracio-de-la-torre-de-jesucrist), [Catalan News](https://www.catalannews.com/popes-visit/item/pope-leo-xiv-popemobil-barcelona-june-10-2026)). Nenhum número a mais: nem a altura da torre, que as fontes medem de jeitos diferentes.
 
-## Legenda do Instagram (1339 de 2.200 caracteres)
+## Legenda do Instagram (979 de 2.200 caracteres)
 
 ```
 Ele desenhou o cartão-postal de Barcelona e morreu como um morador de rua.
@@ -19,12 +21,12 @@ Por trás de todo monumento tem alguém de carne e osso. Saber a história muda 
 
 Salva esse vídeo pra lembrar disso em Barcelona.
 
-Imagens: Gaudí (1878, Pau Audouard; 1924, Josep Brangulí e autor desconhecido) e oficina da Sagrada Família (1906 e 1926), domínio público. Gran Via: Txllxt TxllxT, CC BY-SA 4.0. Hospital de la Santa Creu: Enfo, CC BY-SA 3.0. Sagrada Família c. 1915: Templo Expiatorio de la Sagrada Familia, CC BY-SA 3.0. Bênção da torre (10/06/2026): Medol, CC BY 4.0. Todas via Wikimedia Commons. Vídeos da Sagrada: meus, março de 2026.
+O vídeo de Barcelona em 3 dias está disponível no link da bio.
 
 #Barcelona #SagradaFamilia #Gaudi #CuriosidadesDeViagem #ViagemBarcelona #PrimeiroDia
 ```
 
-## Legenda do TikTok (924 de 2.200 caracteres)
+## Legenda do TikTok (766 de 2.200 caracteres)
 
 Gancho nos primeiros ~100 caracteres (o resto fica atrás do "mais"). 5 hashtags, no final.
 
@@ -39,7 +41,7 @@ Cem anos depois, em 10/06/2026, o Papa Leão XIV abençoou a Torre de Jesus Cris
 
 Por trás de todo monumento tem alguém de carne e osso. Salva esse vídeo pra lembrar disso em Barcelona.
 
-Fotos: Wikimedia Commons (Gaudí e oficina, domínio público; Gran Via, Txllxt TxllxT, CC BY-SA 4.0; Hospital, Enfo, CC BY-SA 3.0; Sagrada c. 1915, CC BY-SA 3.0; bênção da torre, Medol, CC BY 4.0). Vídeos da Sagrada: meus.
+O vídeo de Barcelona em 3 dias está disponível no link da bio.
 
 #barcelona #gaudi #sagradafamilia #curiosidades #primeirodia
 ```
@@ -52,7 +54,7 @@ Fotos: Wikimedia Commons (Gaudí e oficina, domínio público; Gran Via, Txllxt 
 Gaudí desenhou o cartão-postal de Barcelona e morreu como um morador de rua
 ```
 
-**Descrição (1276 de 5.000 caracteres).** A 1ª linha é a que aparece antes do "mostrar mais". Só 3 hashtags, as que o YouTube mostra acima do título.
+**Descrição (940 de 5.000 caracteres).** A 1ª linha é a que aparece antes do "mostrar mais". Só 3 hashtags, as que o YouTube mostra acima do título.
 
 ```
 Gaudí desenhou o cartão-postal de Barcelona e morreu como um morador de rua. Esta é a história por trás da Sagrada Família.
@@ -67,8 +69,9 @@ Por trás de todo monumento tem alguém de carne e osso. Saber a história muda 
 
 Salva esse vídeo pra lembrar disso em Barcelona.
 
+O vídeo de Barcelona em 3 dias está disponível no link da bio.
+
 Fonte da bênção da torre (10/06/2026): Sagrada Família (sagradafamilia.org) e Catalan News.
-Imagens: Wikimedia Commons. Gaudí (1878, Pau Audouard; 1924, Josep Brangulí e autor desconhecido) e oficina da Sagrada Família (1906 e 1926): domínio público. Gran Via: Txllxt TxllxT, CC BY-SA 4.0. Hospital de la Santa Creu: Enfo, CC BY-SA 3.0. Sagrada Família c. 1915: Templo Expiatorio de la Sagrada Familia, CC BY-SA 3.0. Bênção da torre: Medol, CC BY 4.0. Vídeos da Sagrada: meus, março de 2026.
 
 #Barcelona #SagradaFamilia #Gaudi
 ```
@@ -82,7 +85,7 @@ Imagens: Wikimedia Commons. Gaudí (1878, Pau Audouard; 1924, Josep Brangulí e 
 | Item | O que fazer |
 |---|---|
 | Áudio | Voz original. Se usar trilha da biblioteca do Instagram: piano ou cordas lentas, sem batida, 8 a 10 dB abaixo da voz (DS V2, 4.6). O render sai sem trilha |
-| CTA | Um só, o mesmo da tela e da fala: **salvar** ("Salva esse vídeo pra lembrar disso em Barcelona") |
-| Créditos | O bloco "Imagens:" vai na legenda porque a tela não tem texto de crédito. CC BY e CC BY-SA exigem o crédito; não tire |
+| CTA | O do vídeo é **salvar** ("Salva esse vídeo pra lembrar disso em Barcelona"). A linha do link da bio é informação, não um 2º pedido; se a retenção ou os salvamentos caírem, testar tirar essa linha (referência de conteúdo, 3.4: CTA único) |
+| Créditos das imagens | **Fora das legendas, por pedido do Diego.** Continuam em `creditos.md`. Atenção: 5 fotos têm licença que exige crédito (Gran Via e Sagrada c. 1915, CC BY-SA; Hospital, CC BY-SA 3.0; bênção da torre, CC BY 4.0). Sem o crédito publicado em algum lugar, o uso não cumpre a licença. Alternativas: comentário fixado com o bloco de `creditos.md`, ou trocar essas fotos por imagens de domínio público |
 | Primeira hora | Responder os comentários. Pergunta boa para puxar conversa: "Você já tinha ouvido essa história do Gaudí?" |
 | Antes de postar | Ouvir o vídeo 1 vez (itens em `QA_REEL_GAUDI.md`, "Conferir no ouvido"). Limites de 2.200 caracteres (TikTok) e 100/5.000 (título/descrição dos Shorts) conferidos na web em 22/10/2026, em fontes de terceiros; testar na hora de postar |
