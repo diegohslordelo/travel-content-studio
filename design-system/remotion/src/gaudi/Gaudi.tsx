@@ -3,15 +3,17 @@
  * Camadas: imagem de apoio (vídeo do acervo, foto ou animação) · Diego (tela cheia, metade de baixo ou desfocado
  * como fundo do cartão) · legendas · gancho · CTA. Cortes secos; o DS V2 aparece só no CTA final (Placa + clack).
  * Diferença registrada em relação ao Anne Frank: sem rótulo de crédito na tela (o pedido de 26/10/2026 proíbe texto,
- * nome ou data que não estejam na fala); os créditos ficam em creditos.md e na legenda do post.
+ * nome ou data que não estejam na fala); os créditos ficam em creditos.md.
+ * REV2 (27/10/2026): gancho em tela dividida (o Diego aparece no 1º quadro), bonde animado, cartão com dissolve
+ * 1924 → 1878, cartão da bênção sobre a torre e faixa de efeitos (sfx.wav).
  */
 import React from "react";
 import { Audio, Video } from "@remotion/media";
 import { AbsoluteFill, CalculateMetadataFunction, Img, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Placa } from "../ds/Placa";
 import { Som } from "../ds/Som";
-import { Comparar, Data, Fracao } from "./Graficos";
-import { GRADE_FOTO, GRADE_VIDEO, PALETA, TEXTO, TITULO, ease, lerp } from "./estilo";
+import { Bonde, Comparar, Data, Fracao } from "./Graficos";
+import { GRADE_FOTO, GRADE_VIDEO, PALETA, TEXTO, TITULO, ease, easeInOut, lerp } from "./estilo";
 
 type Palavra = { texto: string; ini: number; fim: number; destaque: boolean };
 type Grupo = { palavras: Palavra[]; ini: number; fim: number };
@@ -24,8 +26,9 @@ type Cena = {
   layout?: "full" | "split" | "card";
   kb?: [number, number];
   foco?: [number, number];
+  foco_fim?: [number, number]; // Ken Burns com movimento: o enquadramento vai de foco a foco_fim
   foto?: string;
-  anim?: "data" | "fracao" | "comparar";
+  anim?: "data" | "fracao" | "comparar" | "bonde";
   marcos?: Record<string, number>;
   zoom?: [number, number];
   texto?: string[];
@@ -33,6 +36,11 @@ type Cena = {
   fundo?: string;
   fotos?: [string, string];
   continua?: boolean; // o plano segue por baixo do CTA até o fim
+  foto2?: string; // cartão: 2ª foto, que entra em marcos.troca (dissolve)
+  foco2?: [number, number];
+  kb2?: [number, number];
+  tom2?: "escuro" | "pb" | "noite";
+  cartao?: string; // broll em tela cheia: foto num cartão por cima do vídeo desfocado, até marcos.cartao_sai
 };
 export type PropsGaudi = {
   fps: number;
@@ -45,9 +53,11 @@ export type PropsGaudi = {
   imagens: Record<string, { arquivo: string }>;
   gancho: { linhas: string[]; tamanhos: number[]; tempos: number[] }[];
   fimGancho: number;
+  ganchoLayout: { split: boolean; topo: number };
   legendas: Grupo[];
   cta: { ini: number; rotulo: string; destino: string; entrada: number };
   mix: { voz_lufs: number; clack_db_rel: number };
+  sfx: boolean; // faixa de efeitos do Reel (sfx.wav, gerada em reel_gaudi/scripts/sons.py)
 };
 
 export const propsVaziasGaudi: PropsGaudi = {
@@ -61,9 +71,11 @@ export const propsVaziasGaudi: PropsGaudi = {
   imagens: {},
   gancho: [],
   fimGancho: 0,
+  ganchoLayout: { split: false, topo: 690 },
   legendas: [],
   cta: { ini: 0, rotulo: "", destino: "", entrada: 200 },
   mix: { voz_lufs: -14, clack_db_rel: -10 },
+  sfx: false,
 };
 
 export const metadadosGaudi: CalculateMetadataFunction<PropsGaudi> = ({ props }) => ({
@@ -111,7 +123,7 @@ const FILTROS = {
   noite: "grayscale(1) brightness(0.4) contrast(1.2)", // foto clara em tela cheia: a legenda branca precisa de fundo escuro
 };
 
-const Foto: React.FC<{ src: string; w: number; h: number; t: number; dur: number; kb?: [number, number]; foco?: [number, number]; filtro?: string }> = ({
+const Foto: React.FC<{ src: string; w: number; h: number; t: number; dur: number; kb?: [number, number]; foco?: [number, number]; focoFim?: [number, number]; filtro?: string }> = ({
   src,
   w,
   h,
@@ -119,9 +131,13 @@ const Foto: React.FC<{ src: string; w: number; h: number; t: number; dur: number
   dur,
   kb = [1, 1.05],
   foco = [0.5, 0.5],
+  focoFim,
   filtro = GRADE_FOTO,
 }) => {
   const z = lerp(t, 0, dur, kb[0], kb[1], (x) => x);
+  const fim = focoFim ?? foco;
+  const fx = lerp(t, 0, dur, foco[0], fim[0], easeInOut);
+  const fy = lerp(t, 0, dur, foco[1], fim[1], easeInOut);
   return (
     <div style={{ position: "absolute", left: 0, top: 0, width: w, height: h, overflow: "hidden", background: PALETA.preto }}>
       <Img
@@ -130,12 +146,35 @@ const Foto: React.FC<{ src: string; w: number; h: number; t: number; dur: number
           width: w,
           height: h,
           objectFit: "cover",
-          objectPosition: `${foco[0] * 100}% ${foco[1] * 100}%`,
+          objectPosition: `${fx * 100}% ${fy * 100}%`,
           scale: String(z),
-          transformOrigin: `${foco[0] * 100}% ${foco[1] * 100}%`,
+          transformOrigin: `${fx * 100}% ${fy * 100}%`,
           filter: filtro,
         }}
       />
+    </div>
+  );
+};
+
+/** Foto num cartão (4:3) sobre o vídeo desfocado; sai para baixo e some quando o vídeo fica nítido. */
+const CartaoFoto: React.FC<{ src: string; t: number; dur: number; larg: number; alt: number; top: number; saida: number }> = ({ src, t, dur, larg, alt, top, saida }) => {
+  const e = ease(Math.min(1, t / 0.3));
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: (1080 - larg) / 2,
+        top: top + 60 * saida,
+        width: larg,
+        height: alt,
+        borderRadius: 20,
+        overflow: "hidden",
+        boxShadow: "0 30px 80px rgba(0,0,0,0.6)",
+        opacity: e * (1 - saida),
+        scale: String((0.9 + 0.1 * e) * (1 - 0.06 * saida)),
+      }}
+    >
+      <Foto src={src} w={larg} h={alt} t={t} dur={dur} kb={[1.0, 1.06]} foco={[0.5, 0.45]} />
     </div>
   );
 };
@@ -148,14 +187,28 @@ const Apoio: React.FC<{ p: PropsGaudi; cena: Cena }> = ({ p, cena }) => {
   const h = split ? p.costura : p.altura;
   if (cena.tipo === "broll" && cena.arquivo) {
     const z = cena.kb ? lerp(t, 0, dur, cena.kb[0], cena.kb[1], (x) => x) : 1;
+    const sai = cena.marcos?.cartao_sai ?? 0;
+    const desfoque = cena.cartao ? lerp(t, sai - 0.05, sai + 0.35, 1, 0, easeInOut) : 0; // o vídeo aparece nítido quando o cartão sai
+    const base = cena.tom ? FILTROS[cena.tom] : GRADE_VIDEO;
     return (
       <div style={{ position: "absolute", left: 0, top: 0, width: p.largura, height: h, overflow: "hidden" }}>
-        <div style={{ width: p.largura, height: h, scale: String(z), filter: cena.tom ? FILTROS[cena.tom] : GRADE_VIDEO }}>
+        <div style={{ width: p.largura, height: h, scale: String(z * (1 + 0.06 * desfoque)), filter: `${base} blur(${22 * desfoque}px) brightness(${1 - 0.45 * desfoque})` }}>
           <Video src={staticFile(cena.arquivo)} muted style={{ width: p.largura, height: h }} />
         </div>
         {/* pedra e céu claros em tela cheia: o mesmo degradê de base do gancho, para a legenda branca (y 1320) se ler */}
         {!split && cena.id !== "gancho" && (
           <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 960, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.62) 100%)" }} />
+        )}
+        {cena.cartao && desfoque > 0 && (
+          <CartaoFoto
+            src={p.imagens[cena.cartao].arquivo}
+            t={t}
+            dur={sai + 0.4}
+            larg={880}
+            alt={660}
+            top={Math.round(h * 0.42 - 330)}
+            saida={lerp(t, sai - 0.08, sai + 0.3, 0, 1, easeInOut)}
+          />
         )}
       </div>
     );
@@ -165,6 +218,8 @@ const Apoio: React.FC<{ p: PropsGaudi; cena: Cena }> = ({ p, cena }) => {
     if (cena.layout === "card") {
       // cartão flutuante sobre o Diego desfocado (como no Reel Anne Frank)
       const e = ease(Math.min(1, t / 0.32));
+      const troca = cena.marcos?.troca ?? Infinity;
+      const d2 = lerp(t, troca - 0.12, troca + 0.28, 0, 1, easeInOut); // dissolve para a 2ª foto (1924 → 1878: voltar no tempo)
       return (
         <div
           style={{
@@ -181,10 +236,15 @@ const Apoio: React.FC<{ p: PropsGaudi; cena: Cena }> = ({ p, cena }) => {
           }}
         >
           <Foto src={im.arquivo} w={800} h={900} t={t} dur={dur} kb={cena.kb ?? [1.0, 1.05]} foco={cena.foco ?? [0.5, 0.35]} filtro={cena.tom ? FILTROS[cena.tom] : GRADE_FOTO} />
+          {cena.foto2 && d2 > 0 && (
+            <div style={{ position: "absolute", inset: 0, opacity: d2 }}>
+              <Foto src={p.imagens[cena.foto2].arquivo} w={800} h={900} t={t - troca} dur={dur - troca} kb={cena.kb2 ?? [1.04, 1.0]} foco={cena.foco2 ?? [0.5, 0.3]} filtro={cena.tom2 ? FILTROS[cena.tom2] : GRADE_FOTO} />
+            </div>
+          )}
         </div>
       );
     }
-    return <Foto src={im.arquivo} w={p.largura} h={h} t={t} dur={dur} kb={cena.kb} foco={cena.foco} filtro={cena.tom ? FILTROS[cena.tom] : GRADE_FOTO} />;
+    return <Foto src={im.arquivo} w={p.largura} h={h} t={t} dur={dur} kb={cena.kb} foco={cena.foco} focoFim={cena.foco_fim} filtro={cena.tom ? FILTROS[cena.tom] : GRADE_FOTO} />;
   }
   if (cena.tipo === "anim") {
     const fundo = cena.fundo ? p.imagens[cena.fundo]?.arquivo : undefined;
@@ -192,6 +252,7 @@ const Apoio: React.FC<{ p: PropsGaudi; cena: Cena }> = ({ p, cena }) => {
       <div style={{ position: "absolute", left: 0, top: 0, width: p.largura, height: h, overflow: "hidden" }}>
         {cena.anim === "data" && <Data t={t} linhas={cena.texto ?? []} fundo={fundo} />}
         {cena.anim === "fracao" && <Fracao t={t} fundo={fundo} marco={cena.marcos?.quarto ?? 0.4} />}
+        {cena.anim === "bonde" && <Bonde t={t} altura={h} />}
         {cena.anim === "comparar" && cena.fotos && (
           <Comparar t={t} altura={h} a={p.imagens[cena.fotos[0]].arquivo} b={p.imagens[cena.fotos[1]].arquivo} marco={cena.marcos?.troca ?? 1} focoA={[0.5, 0.25]} focoB={[0.5, 0.3]} />
         )}
@@ -246,13 +307,19 @@ const Gancho: React.FC<{ p: PropsGaudi; tS: number }> = ({ p, tS }) => {
       </div>
     );
   };
+  // em tela dividida o gancho fica na metade de cima (o Diego já está embaixo desde o 1º quadro)
+  const sp = p.ganchoLayout.split;
   return (
     <>
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 1250, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.7) 100%)" }} />
-      <div style={{ position: "absolute", left: 72, right: 72, top: 690, textShadow: "0 4px 30px rgba(0,0,0,0.45)" }}>
+      {sp ? (
+        <div style={{ position: "absolute", left: 0, right: 0, top: 240, height: p.costura - 240, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 40%, rgba(0,0,0,0.72) 100%)" }} />
+      ) : (
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 1250, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.7) 100%)" }} />
+      )}
+      <div style={{ position: "absolute", left: 72, right: 72, top: p.ganchoLayout.topo, textShadow: "0 4px 30px rgba(0,0,0,0.45)" }}>
         {p.gancho.map((b, i) => (
           <React.Fragment key={i}>
-            {i > 0 && <div style={{ height: 34 }} />}
+            {i > 0 && <div style={{ height: sp ? 18 : 34 }} />}
             {b.linhas.map((l, k) => linha(l, b.tamanhos[k], b.tempos[k], i * 10 + k))}
           </React.Fragment>
         ))}
@@ -301,6 +368,7 @@ export const ReelGaudi: React.FC<PropsGaudi> = (p) => {
         <Som nome="clack" em={p.cta.entrada + 280} relDb={p.mix.clack_db_rel} refLufs={p.mix.voz_lufs} />
       </Sequence>
       <Audio src={staticFile("voz.wav")} />
+      {p.sfx && <Audio src={staticFile("sfx.wav")} />}
     </AbsoluteFill>
   );
 };

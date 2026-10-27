@@ -1,0 +1,83 @@
+{
+  "nota": "Cenas ancoradas nas palavras (fala:palavra[#n] ± s). Composições do padrão (padrao.md): broll/foto em tela cheia (full), tela dividida (split, apoio em cima e Diego embaixo, costura em y 900), cartão sobre o Diego desfocado (card), Diego em tela cheia (fala) e animação (anim). Nenhuma imagem de apoio mostra o Diego ou a Marina. Cortes dentro de uma fala (pausas encurtadas em 15,50 s e 35,03 s) caem em cenas sem o Diego na tela.",
+
+  "broll": {
+    "natividade": { "fonte": "master", "in": 1428.55, "max": 1431.95, "vel": 0.88, "foco": [0.52, 0.5], "quadro": 1.0, "o_que": "fachada da Natividade de baixo, com guindaste (master 23:48,6)" },
+    "natividade_fim": { "fonte": "master", "in": 1429.05, "max": 1431.95, "vel": 1.0, "foco": [0.52, 0.5], "quadro": 1.0, "o_que": "o mesmo plano do gancho, por baixo do CTA (loop com o começo)" },
+    "esculturas": { "fonte": "master", "in": 1465.0, "max": 1467.5, "vel": 1.0, "foco": [0.45, 0.45], "quadro": 0.9, "o_que": "esculturas da fachada da Natividade (master 24:25)" },
+    "maquete": { "fonte": "master", "in": 1546.0, "max": 1547.3, "vel": 0.9, "foco": [0.40, 0.5], "quadro": 0.8, "o_que": "maquete da Sagrada Família no museu da basílica, recortada só na maquete (master 25:46)" },
+    "torre": { "fonte": "master", "in": 1549.05, "max": 1551.9, "vel": 1.0, "foco": [0.52, 0.5], "quadro": 1.0, "o_que": "Torre de Jesus Cristo com a cruz no topo e guindaste, março de 2026 (master 25:49)" },
+    "teto": { "fonte": "master", "in": 1527.0, "max": 1530.3, "vel": 1.0, "foco": [0.5, 0.45], "quadro": 0.9, "o_que": "interior: colunas e teto da nave (master 25:27)" },
+    "paixao": { "fonte": "master", "in": 1425.6, "max": 1428.4, "vel": 1.0, "foco": [0.45, 0.5], "quadro": 1.0, "o_que": "fachada da Paixão de baixo, com guindaste (master 23:45,6)" }
+  },
+
+  "imagens": {
+    "gaudi_1878": { "arquivo": "gaudi_1878.jpg" },
+    "gaudi_1924": { "arquivo": "gaudi_1924.jpg" },
+    "gaudi_1924b": { "arquivo": "gaudi_1924b.jpg" },
+    "granvia": { "arquivo": "granvia_sw.jpg" },
+    "hosp_claustre": { "arquivo": "hosp_claustre.jpg" },
+    "hosp_pati": { "arquivo": "hosp_pati.jpg" },
+    "sf_1915": { "arquivo": "sf_1915.jpg" },
+    "taller_1906": { "arquivo": "taller_1906.jpg" },
+    "taller_1926": { "arquivo": "taller_1926.jpg" },
+    "bencao_2026": { "arquivo": "bencao_2026.jpg" },
+    "bonde": { "arquivo": "bonde_ilustracao.png" }
+  },
+
+  "cenas": [
+    { "id": "gancho",      "ini": 0,                     "tipo": "broll", "broll": "natividade", "layout": "full", "kb": [1.0, 1.08] },
+    { "id": "1926",        "ini": "f2:Em",               "tipo": "anim", "anim": "data", "layout": "full", "texto": ["1926"] },
+    { "id": "gaudi",       "ini": "f2:Gaudí",            "tipo": "foto", "foto": "gaudi_1924", "layout": "card", "kb": [1.75, 1.85], "foco": [0.58, 0.40] },
+    { "id": "sagrada",     "ini": "f2:da-0.04",          "tipo": "broll", "broll": "esculturas", "layout": "split", "kb": [1.0, 1.04] },
+    { "id": "bonde",       "ini": "f2:foi-0.04",         "tipo": "foto", "foto": "bonde", "layout": "split", "kb": [1.0, 1.06], "foco": [0.5, 0.5] },
+    { "id": "granvia",     "ini": "f2:na-0.04",          "tipo": "foto", "foto": "granvia", "layout": "split", "kb": [1.0, 1.06], "foco": [0.5, 0.55] },
+    { "id": "surrada",     "ini": "f3:Roupa",            "tipo": "foto", "foto": "gaudi_1924b", "layout": "split", "kb": [1.45, 1.6], "foco": [0.64, 0.42], "tom": "pb" },
+    { "id": "ninguem",     "ini": "f3:ninguém-0.04",     "tipo": "fala", "zoom": [1.10, 1.16] },
+    { "id": "hospital",    "ini": "f3:E-0.04",           "tipo": "foto", "foto": "hosp_claustre", "layout": "split", "kb": [1.0, 1.06], "foco": [0.5, 0.5] },
+    { "id": "cuidados",    "ini": "f3:para#2-0.04",      "tipo": "foto", "foto": "hosp_pati", "layout": "split", "kb": [1.06, 1.0], "foco": [0.5, 0.5] },
+    { "id": "reconheceu",  "ini": "f3:mas-0.16",         "tipo": "foto", "foto": "hosp_claustre", "layout": "full", "kb": [1.12, 1.2], "foco": [0.5, 0.6], "tom": "escuro" },
+    { "id": "tres_dias",   "ini": "f3:E#2-0.04",         "tipo": "anim", "anim": "data", "layout": "full", "texto": ["TRÊS", "DIAS"] },
+    { "id": "faleceu",     "ini": "f3:ele#3-0.04",       "tipo": "foto", "foto": "gaudi_1924", "layout": "card", "kb": [1.85, 2.0], "foco": [0.58, 0.40], "tom": "escuro" },
+    { "id": "elegante",    "ini": "f4:Nem",              "tipo": "foto", "foto": "gaudi_1878", "layout": "card", "kb": [1.0, 1.06], "foco": [0.5, 0.3] },
+    { "id": "obra",        "ini": "f4:ele-0.04",         "tipo": "foto", "foto": "sf_1915", "layout": "split", "kb": [1.0, 1.07], "foco": [0.5, 0.45] },
+    { "id": "aparencia",   "ini": "f4:ele#2-0.04",       "tipo": "anim", "anim": "comparar", "layout": "split", "fotos": ["gaudi_1878", "gaudi_1924"], "marcos": { "troca": "f4:aparência" } },
+    { "id": "oficina",     "ini": "f4:e-0.04",           "tipo": "foto", "foto": "taller_1906", "layout": "split", "kb": [1.0, 1.06], "foco": [0.6, 0.5] },
+    { "id": "dentro",      "ini": "f4:dentro-0.04",      "tipo": "foto", "foto": "taller_1926", "layout": "split", "kb": [1.0, 1.06], "foco": [0.5, 0.4] },
+    { "id": "maquetes",    "ini": "f4:junto-0.04",       "tipo": "broll", "broll": "maquete", "layout": "split", "kb": [1.0, 1.04] },
+    { "id": "um_quarto",   "ini": "f5:E-0.04",           "tipo": "anim", "anim": "fracao", "layout": "full", "fundo": "sf_1915", "marcos": { "quarto": "f5:quarto" } },
+    { "id": "cem_anos",    "ini": "f5:Depois-0.04",      "tipo": "anim", "anim": "data", "layout": "full", "texto": ["100", "ANOS"] },
+    { "id": "papa",        "ini": "f5:o-0.04",           "tipo": "foto", "foto": "bencao_2026", "layout": "split", "kb": [1.0, 1.05], "foco": [0.5, 0.45] },
+    { "id": "torre",       "ini": "f5:a-0.04",           "tipo": "broll", "broll": "torre", "layout": "full", "kb": [1.0, 1.1] },
+    { "id": "milhoes",     "ini": "f5:Milhões-0.04",     "tipo": "broll", "broll": "teto", "layout": "split", "kb": [1.0, 1.05] },
+    { "id": "naquele_dia", "ini": "f5:mas-0.04",         "tipo": "foto", "foto": "gaudi_1924b", "layout": "split", "kb": [1.7, 1.85], "foco": [0.66, 0.45], "tom": "pb" },
+    { "id": "ninguem_sabia","ini": "f5:ninguém-0.14",    "tipo": "foto", "foto": "gaudi_1878", "layout": "full", "kb": [1.0, 1.1], "foco": [0.5, 0.32], "tom": "noite" },
+    { "id": "monumento",   "ini": "f6:Por",              "tipo": "broll", "broll": "paixao", "layout": "full", "kb": [1.0, 1.06] },
+    { "id": "carne_osso",  "ini": "f6:tem-0.04",         "tipo": "fala", "zoom": [1.0, 1.05] },
+    { "id": "historia",    "ini": "f6:com-0.04",         "tipo": "foto", "foto": "taller_1926", "layout": "split", "kb": [1.06, 1.0], "foco": [0.5, 0.4] },
+    { "id": "visita",      "ini": "f6:e#2-0.04",         "tipo": "fala", "zoom": [1.08, 1.14] },
+    { "id": "cta",         "ini": "f7:Já-0.04",          "tipo": "broll", "broll": "natividade_fim", "layout": "full", "kb": [1.08, 1.12], "continua": true }
+  ],
+
+  "gancho": {
+    "blocos": [
+      { "linhas": ["ELE DESENHOU O", "CARTÃO-POSTAL", "DE BARCELONA"], "tamanhos": [92, 120, 92], "tempos": [0, 0, 0] },
+      { "linhas": ["E MORREU COMO UM", "MORADOR", "DE RUA."], "tamanhos": [92, 170, 92], "tempos": ["f1:e", "f1:morador", "f1:de#2"] }
+    ]
+  },
+
+  "legenda": {
+    "sem_legenda": ["f1"],
+    "escrita": { "f5:um": "", "f5:quarto": "1/4" },
+    "destaques": ["1926", "Gaudí", "bonde", "Barcelona", "surrada", "hospital", "reconheceu", "três", "obra", "aparência", "maquetes", "1/4", "100", "Papa", "torre", "Milhões", "carne", "osso", "história", "visita", "salva"]
+  },
+
+  "cta": {
+    "ini": "f7:salva-0.2",
+    "entrada_ms": 200,
+    "cauda": 0.25,
+    "rotulo": "SALVA ESSE VÍDEO",
+    "destino": "BARCELONA",
+    "nota": "Placa CTA do DS V2 (2.7): verbo + módulo de seta, posição fixa x 72 · y 640, Chegada + clack. Texto tirado da fala da parte 9 ('salva esse vídeo … em Barcelona'). Único lugar do Reel com o DS."
+  }
+}

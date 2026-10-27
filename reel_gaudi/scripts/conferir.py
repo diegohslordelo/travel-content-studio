@@ -65,6 +65,22 @@ def main():
     res["legendas"] = {"grupos": len(leg), "fora": [x for x in leg if not x["ok"]], "maior_largura": round(max(x["x1"] - x["x0"] for x in leg)),
                        "y_usados": sorted({x["y"] for x in leg}), "lista": leg}
 
+    # 2b. REV2: nenhuma imagem gravada pelo Diego (acervo e falas em tela cheia) por menos de 2 s, sem esticar take
+    cfg = {x["id"]: x for x in cenas_cfg}
+    broll_cfg = reel.ler("cenas.json")["broll"]
+    gravadas = []
+    for c in props["cenas"]:
+        if c["tipo"] in ("broll", "fala"):
+            dur = ((props["quadros"] if c.get("continua") else c["fim_q"]) - c["ini_q"]) / fps
+            item = {"cena": c["id"], "tipo": c["tipo"], "dur_s": round(dur, 2), "ok": dur >= 2.0}
+            if c["tipo"] == "broll":
+                b = broll_cfg[cfg[c["id"]]["broll"]]
+                usado = dur * b.get("vel", 1)
+                item.update({"take_in": b["in"], "take_fim": round(b["in"] + usado, 3), "take_max": b["max"], "dentro_do_take": b["in"] + usado <= b["max"]})
+                item["ok"] = item["ok"] and item["dentro_do_take"]
+            gravadas.append(item)
+    res["gravadas_pelo_diego"] = {"fora": [x for x in gravadas if not x["ok"]], "lista": gravadas}
+
     # 3. troca de imagem: corte medido (diferença entre quadros) × palavra da âncora
     r = subprocess.run(["ffmpeg", "-hide_banner", "-i", FINAL, "-vf", "scale=270:480,select='gt(scene,0.12)',showinfo", "-an", "-f", "null", "-"],
                        capture_output=True, text=True)

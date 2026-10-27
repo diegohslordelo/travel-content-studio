@@ -21,6 +21,7 @@ import sys
 
 AQUI = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(AQUI, "scripts"))
+import sons as SONS  # noqa: E402
 import voz as VOZ  # noqa: E402
 
 FONTE = os.path.join(AQUI, "fonte")
@@ -274,9 +275,27 @@ def preparar():
     legendas = grupos_legenda(c, palavras)
     cta_ini = resolver(c["cta"]["ini"], palavras, fim_falas)
 
+    # 7. Efeitos sonoros (REV2): "cena:<id>±s" = início da cena; "marco:<id>:<nome>" = marco da cena; ou âncora de palavra
+    por_id = {cc["id"]: cc for cc in cenas}
+
+    def quando(ancora):
+        if isinstance(ancora, str) and ancora.startswith("cena:"):
+            m = re.fullmatch(r"cena:([\w]+)([+-][\d.]+)?", ancora)
+            return por_id[m.group(1)]["ini_q"] / fps + float(m.group(2) or 0)
+        if isinstance(ancora, str) and ancora.startswith("marco:"):
+            m = re.fullmatch(r"marco:([\w]+):([a-z_]+)([+-][\d.]+)?", ancora)
+            return por_id[m.group(1)]["ini_q"] / fps + por_id[m.group(1)]["marcos"][m.group(2)] + float(m.group(3) or 0)
+        return resolver(ancora, palavras, fim_falas)
+
+    sons = []
+    if c.get("sons"):
+        sons = SONS.mixar(c["sons"], quando, total, au["voz_lufs"], os.path.join(PUBLIC, "sfx.wav"))
+        print("efeitos:", ", ".join(f"{x['som']} {x['em_s']:.2f} s ({x['rel_db']} dB)" for x in sons))
+
     props = {
         "fps": fps, "largura": W, "altura": H, "costura": costura, "rostoY": d["rosto_y"], "quadros": round(total * fps),
         "cenas": cenas, "imagens": imgs, "gancho": gancho, "fimGancho": round(cenas[1]["ini_q"] / fps, 3), "legendas": legendas,
+        "ganchoLayout": {"split": c["gancho"].get("layout") == "split", "topo": c["gancho"].get("topo", 690)}, "sfx": bool(sons), "sons": sons,
         "cta": {"ini": round(cta_ini, 3), "rotulo": c["cta"]["rotulo"], "destino": c["cta"]["destino"], "entrada": c["cta"]["entrada_ms"]},
         "mix": {"voz_lufs": au["voz_lufs"], "clack_db_rel": au["clack_db_rel"]},
     }
