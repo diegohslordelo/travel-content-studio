@@ -15,7 +15,7 @@ Guia de **edição** (montagem, transição, som, animação e material de apoio
 | **[externo]** | Fonte externa (lista no fim). Quase só blogs de edição: regra prática, não dado medido |
 | **[candidato]** | Proposta do Claude, sem aprovação nem teste |
 
-**Limite importante:** os 9 Reels de referência que o Diego indicou (3 por formato) **não foram assistidos**. O Instagram só entrega o vídeo com login, e o acesso automatizado foi bloqueado. Deles só se leu a legenda pública. Em especial, a transição "suave e imersiva" do 1º link de tela dividida **não foi vista**: as propostas da seção 3 vêm das técnicas conhecidas, não da análise daquele vídeo (ver seção 9).
+**Referências externas:** os 9 Reels que o Diego indicou (3 por formato) foram analisados quadro a quadro pelo Claude in Chrome em 28/10/2026, **sem áudio** (seção 10 e `docs/referencias/analise_reels_referencia_2026-10-28.md`). O Claude do repositório não assistiu aos vídeos.
 
 ---
 
@@ -86,6 +86,11 @@ Todos com master −14,0 a −14,1 LUFS **[medido]** (DS V2, 4.6).
 | **Revelação por objeto** | Um elemento da cena (poste, pessoa passando, borda da placa, animação) cruza a tela e a próxima cena aparece atrás dele | — | Usa o movimento que já existe no plano |
 | **Corte por correspondência** (*match cut*) | Dois planos com a mesma forma ou posição (arco → arco, torre → torre, xícara → globo) em corte seco | — | É corte seco (não conta na cota) e parece contínuo |
 | **Ponte de som** (J-cut / L-cut) | O som da próxima cena começa 3 a 12 quadros **antes** do corte (J) ou o da cena atual continua **depois** (L) | — | É a transição mais suave que existe e não mexe na imagem |
+| **Luz de passagem** (ida) | Luz quente entra pela borda de cima em 3 quadros, cobre a tela por 4, o corte fica **escondido no quadro mais claro** (6º) e a luz recua para um canto em 4 quadros. Total ≈ 11 quadros a 30 fps (≈ 370 ms) | — (referência 1, 15,37 s) | O olho não vê o corte: só vê a luz. Ver o conflito de intensidade na seção 10 |
+| **Clarão de volta** | Corte seco para um quadro superexposto que volta ao normal em 5 quadros (≈ 170 ms) | — (referência 1, 24,73 s) | Faz par com a Luz de passagem: luz quente na ida para o apoio, clarão branco na volta para o rosto |
+| **Empurrão da tela dividida** | A metade de cima sobe e sai pelo topo; a de baixo cresce até a tela cheia, com desaceleração. ≈ 19 quadros (≈ 630 ms) | — (referência 1, 3,47 s) | É a mesma imagem que cresce: a passagem do gancho dividido para a fala em tela cheia fica contínua |
+| **Mão na lente** | O Diego leva a mão à lente na gravação do quarto; o corte cai no quadro de maior desfoque | — (referência 1, 31,43 s) | Corte escondido feito na gravação, sem efeito. Precisa estar no roteiro de gravação |
+| **Corte de zoom** (*punch-in*) | Mesmo plano, corte seco para um enquadramento mais fechado | — (referências 2 e 6) | Corte seco (não gasta cota); quebra fala longa do Diego |
 
 **Duração das candidatas:** dentro da faixa de 100–700 ms do DS.
 
@@ -227,7 +232,7 @@ O master continua em −14 LUFS e pico ≤ −1 dBTP (DS 4.6). Estes números su
 
 ## 9. Pendências (decisão do Diego)
 
-1. **Vídeos de referência:** a análise dos 9 Reels virá do Claude in Chrome (prompt em `docs/prompts/ANALISE_REELS_CHROME.md`). Quando o `.md` chegar, as observações entram aqui.
+1. **Luz de passagem:** a intensidade da referência (tela inteira lavada de luz) passa do *light leak* de 8% do DS (4.5, só na Cinema). Decidir se a Luz de passagem pode passar de 8% no pico (≈ 4 quadros) ou se fica em 8% (seção 10).
 2. **Brand book:** os volumes da 4.1 e as candidatas da 3.2 estão valendo na edição, mas o DS V2 (4.4, 4.6) e os tokens só mudam a pedido do Diego.
 3. **Escuta:** os sons `PDX_*` e os `PD_*_v1` nunca foram ouvidos. O primeiro Reel com o kit novo precisa de escuta antes de postar.
 4. **Conflito registrado:** o pedido de "transições mais suaves e imersivas" convive com a regra de 70% de cortes secos do DS (4.4). Este guia usa **menos transições, melhores** (2 a 3 por Reel, nas viradas), sem mexer na regra.
@@ -235,6 +240,46 @@ O master continua em −14 LUFS e pico ≤ −1 dBTP (DS 4.6). Estes números su
 **Resolvidas em 28/10/2026 (Diego):** o Claude decide as transições de cada Reel com criatividade ligada ao tema (seção 3.2); os efeitos ficam marcantes (seção 4.1); `@remotion/transitions` e os demais pacotes foram instalados, e um kit de sons CC0 foi baixado (seção 7). O som de impacto do Gaudí virou o `PDX_impacto` (seção 4.1).
 
 ---
+
+## 10. O que as 9 referências ensinam
+
+Fonte: análise quadro a quadro feita pelo Claude in Chrome em 28/10/2026 (`docs/referencias/analise_reels_referencia_2026-10-28.md`). Medidas a cada 1/30 s nas transições; **sem áudio** (o Chrome não ouve). Os números são das contas analisadas, não do perfil.
+
+### 10.1 Resumo
+
+| Formato | O que se repete | Ritmo medido |
+|---|---|---|
+| Tela dividida (1, 2, 3) | Prova em cima, rosto embaixo, **legenda na emenda** (y ≈ 48–50%). Alternam dividida e tela cheia a cada 2–6 s. O 1 e o 3 põem o apoio numa **moldura** (cartão de celular, máscara circular) em vez de corte reto | 2,2 a 3,5 s por cena |
+| Tela verde (4, 5, 6) | Apresentador **recortado num canto inferior** (ou cabeça entre duas fotos); o fundo é material de terceiros e dá o ritmo; a camada do apresentador é contínua | 1,1 a 2,6 s no fundo |
+| Narrado (7, 8, 9) | Corte a cada 1,2–1,8 s; texto palavra a palavra no centro, frase no topo ou só o gancho | 1,2 a 1,8 s |
+
+**Só 1 dos 9 Reels usa transição estilizada** (o 1, que o Diego indicou). Os outros 8 cortam seco. Isso confirma a linha deste guia: poucas transições, mas boas, nos pontos certos.
+
+### 10.2 O que muda na edição do perfil
+
+| Aprendizado | Como entra no Primeiro Dia | Origem |
+|---|---|---|
+| Luz de passagem na ida, Clarão na volta (par ida/volta) | Ida para o apoio (foto, acervo, prova) com luz quente; volta para o Diego com clarão. No máximo 2 pares por Reel, nas viradas (cotas da seção 2) | Ref. 1 |
+| O corte fica escondido no quadro mais claro ou mais desfocado | Regra geral para Luz de passagem, Mão na lente e Mergulho: o corte nunca cai num quadro "limpo" | Ref. 1 |
+| Abertura dividida que vira tela cheia | Gancho em tela dividida (padrão do perfil) e Empurrão para a tela cheia quando a fala começa | Ref. 1 |
+| Apoio em moldura | Foto ou vídeo como **cartão** sobre cópia desfocada e escurecida do próprio vídeo (o perfil já usa o cartão; a referência confirma) | Ref. 1 e 3 |
+| Legenda na emenda | Já é o padrão do perfil (`FORMATOS_REELS.md`, 2); a referência confirma | Ref. 2 e 3 |
+| Corte de zoom no rosto | Em fala longa do Diego em tela cheia, 1 corte de zoom a cada 5–15 s, no lugar do zoom lento contínuo | Ref. 2 e 6 |
+| Palavra-chave em dupla tipográfica, palavra a palavra | No DS isso já existe: contraste **Barlow Condensed 800 × 300 itálico** (DS 2, Tipografia, "um único contraste por tela"). A serifa da referência **não** entra (o DS evita a serifa da categoria) | Ref. 1 · DS |
+| Contador de números | Placar do DS (número que gira) para alcance, preço e tempo | Ref. 1 · DS |
+| Destaque desenhado (círculo no rosto, holofote numa palavra) | Círculo ou marcação na cor do DS sobre o detalhe que a fala cita, só no gancho ou na revelação | Ref. 6 e 8 |
+| Tela verde com o Diego no canto | Alternativa ao Diego no centro (greves): recorte num canto inferior quando o fundo precisa de espaço (mapa, print, vídeo de terceiros). Escolha por Reel | Ref. 5 e 6 |
+| **Tela "PLAY ▷" de vídeo caseiro para flashback** | Combina com a regra do CLAUDE.md, 10 (o Diego de hoje conta, o acervo é passado): o vídeo da viagem entra com marca de "gravação" (data e hora reais do arquivo) e fica claro que é lembrança, não cena de hoje | Ref. 8 · CLAUDE.md |
+| Número escrito à mão | Bilhete/Caneta do DS para o número de impacto (custo, horas, distância) | Ref. 8 · DS |
+| Prova na tela (print, mensagem, perfil) | Já é regra do perfil ("CAPTURA REAL") | Ref. 1, 5, 9 |
+
+### 10.3 Som das referências: ainda não sabido
+
+O Chrome não ouve. Os instantes com provável efeito sonoro estão na seção 6 de cada Reel da análise (ex.: Ref. 1 em 15,4 · 20,8 · 41,4 · 58,9 · 78,0 s, nas Luzes de passagem, e 24,73 · 45,0 · 63,43 · 81,93 s, nos Clarões). Até o Diego ouvir, o perfil usa: **Luz de passagem** com `PDX_ar_longo` (−6 dB, pico no quadro mais claro) e **Clarão** com `PDX_impacto` (−4 dB, no 1º quadro). Volumes na seção 4.1.
+
+### 10.4 Conflito com o DS (registrado, não resolvido)
+
+A Luz de passagem da referência lava a tela inteira por ≈ 4 quadros. O DS limita o *light leak* a 8% e só na transição Cinema (4.5). Este guia **não** usa a intensidade da referência até o Diego decidir (pendência 1 da seção 9). Enquanto isso, a Luz de passagem pode ser feita **dentro** da família Cinema (escurece, abre com luz quente de 8%) ou com o pacote `@remotion/light-leaks` limitado a 8%.
 
 ## Fontes externas
 
