@@ -4,6 +4,10 @@ Primeiro formato documentado deste arquivo. Guia geral para qualquer Reel do per
 
 **Status deste documento:** guia operacional, **não** é fonte oficial (CLAUDE.md, 5) e não altera o Design System V2. A linguagem visual do formato (fontes, cor de destaque, grão) é própria dele e foi adotada por decisão do Diego em Reels específicos; para virar padrão da marca precisa da aprovação dele e da governança do DS V2. Os valores visuais abaixo vêm do código de referência do formato (uma composição Remotion por Reel em tela dividida, em `design-system/remotion/src/`); se divergir, vale o código do Reel, não este texto.
 
+**DS só no CTA (decisão do Diego, 28/10/2026):** o DS V2 e os seus componentes entram só no CTA do fim do Reel. Do gancho até antes do CTA vale a linguagem própria do formato descrita aqui.
+
+**Volumes dos efeitos:** os números da seção 10.3 foram substituídos pelos volumes de trabalho de `docs/REFERENCIA_EDICAO_FORMATOS.md`, seção 4.1 (decisão do Diego, 28/10/2026: efeitos marcantes).
+
 **Como ler as marcas de origem:**
 
 | Marca | Significa |

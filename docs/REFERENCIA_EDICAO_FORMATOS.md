@@ -4,6 +4,8 @@ Guia de **edição** (montagem, transição, som, animação e material de apoio
 
 **Status:** guia operacional (pedido do Diego, 28/10/2026). **Não** é fonte oficial (CLAUDE.md, 5) e não altera o Design System V2. Roteiro e formato vêm do Trello. Valores visuais e sonoros vêm do DS V2 e dos tokens: este guia não cria valor novo, e o que ainda não existe no DS aparece como **candidato**, à espera de aprovação do Diego (DS V2, Governança).
 
+**Regra de uso do DS nos Reels (decisão do Diego, 28/10/2026):** o Design System V2 e os seus componentes (placa, objetos, legendas do DS, transições do DS, sons `PD_*`, cores e fontes da marca) entram **só no fim do Reel, no CTA**. Do gancho até antes do CTA, o Reel usa a **linguagem do formato** (`docs/FORMATOS_REELS.md`: fontes, cor de destaque, legenda e animações próprias) e os sons `PDX_*`. O que este guia cita do DS fora do CTA vale só como **técnica** (o que fazer), refeita sem elementos da marca.
+
 **De onde vem cada coisa**
 
 | Marca | Significa |
@@ -56,7 +58,7 @@ Todos com master −14,0 a −14,1 LUFS **[medido]** (DS V2, 4.6).
 | Pelo menos 1,5 s de cena entre duas transições | [DS] 4.4 |
 | Nunca: transição de catálogo (cubo, página, glitch, zoom com giro, *shake* genérico), *whoosh* em todo corte | [DS] 4.4 |
 | Transição dura entre 100 e 700 ms | [DS] 4.1 (por tipo de elemento) |
-| No máximo 1 efeito sonoro a cada 1,5 s; só arquivos `PD_*` nos eventos da 4.6 | [DS] 4.6 e checklist |
+| No máximo 1 efeito sonoro a cada 1,5 s; no meio do Reel, sons `PDX_*`; `PD_*` só no CTA | [DS] 4.6 · decisão do Diego, 28/10/2026 |
 | No máximo 3 efeitos de vídeo ao mesmo tempo (grão conta) | [DS] 4.5 |
 | Transição só onde **o sentido muda**: lugar, tempo, bloco do roteiro ou revelação | [DS] 4.4 · [externo] |
 | Uma transição forçada entre planos que não combinam fica pior que um corte seco | [externo] |
@@ -66,7 +68,9 @@ Todos com master −14,0 a −14,1 LUFS **[medido]** (DS V2, 4.6).
 
 ## 3. Transições suaves e imersivas: o vocabulário
 
-### 3.1 Já existem no DS V2 (usar primeiro)
+### 3.1 Famílias do DS V2: só no CTA
+
+No meio do Reel, as famílias abaixo **não** entram com os elementos do DS (painel e linha amarelos, placa, sons `PD_*`). A ideia de cada uma continua valendo como técnica, refeita na linguagem do formato: escurecer e abrir com luz (Cinema), chicote com desfoque (Arrasto), linha que revela a cena (Rota), corte seco no ritmo (Snap). A Varredura de Placa e a Chegada da placa podem levar ao CTA final.
 
 | Família DS | Como deixar imersiva | Quando, nos três formatos |
 |---|---|---|
@@ -76,7 +80,7 @@ Todos com master −14,0 a −14,1 LUFS **[medido]** (DS V2, 4.6).
 | **Varredura de Placa** (320 ms, *clack*) | A placa "leva" a cena | Troca de capítulo ou de dia. 1 por Reel |
 | **Snap** (100 ms, obturador) | — (é seco de propósito) | Lista, datas, preços |
 
-### 3.2 Candidatas [candidato] (fora do DS: só entram com aprovação do Diego, como variante ou família nova, versão MINOR)
+### 3.2 Transições do meio do Reel (linguagem do formato; o Claude escolhe por Reel)
 
 | Candidata | Como é | Já usada no perfil? | Por que é imersiva |
 |---|---|---|---|
@@ -94,7 +98,7 @@ Todos com master −14,0 a −14,1 LUFS **[medido]** (DS V2, 4.6).
 
 **Duração das candidatas:** dentro da faixa de 100–700 ms do DS.
 
-**Quem decide (decisão do Diego, 28/10/2026):** o Claude escolhe a transição de cada Reel, entre as famílias do DS e as candidatas acima. O critério é **criatividade ligada ao Reel**: a transição tem de nascer do tema, do objeto e do impacto daquele momento (a xícara que vira o globo nos churros; num Reel de trem, a porta que fecha e abre na cena seguinte; numa história antiga, a foto que envelhece até a outra). Transição genérica, que serviria em qualquer Reel, não entra. As cotas da seção 2 continuam valendo. A QA de cada revisão registra a transição escolhida e o porquê. Isso não altera o brand book: incluir as candidatas no DS V2 depende de pedido do Diego.
+**Quem decide (decisão do Diego, 28/10/2026):** o Claude escolhe a transição de cada Reel, entre as transições acima e as técnicas da 3.1 refeitas sem elementos do DS. O critério é **criatividade ligada ao Reel**: a transição tem de nascer do tema, do objeto e do impacto daquele momento (a xícara que vira o globo nos churros; num Reel de trem, a porta que fecha e abre na cena seguinte; numa história antiga, a foto que envelhece até a outra). Transição genérica, que serviria em qualquer Reel, não entra. As cotas da seção 2 continuam valendo. A QA de cada revisão registra a transição escolhida e o porquê. Isso não altera o brand book: incluir as candidatas no DS V2 depende de pedido do Diego.
 
 **Pacote `@remotion/transitions` (instalado em 28/10/2026, 4.0.535):** traz `fade`, `dissolve`, `slide`, `wipe`, `iris`, `clock-wipe`, `flip`, `cross-zoom`, `zoom-blur`, `linear-blur`, `blur-slide`, `push-cut`, `crosswarp`, `dreamy-zoom`, `film-burn`, `ripple`, `swap`, `zoom-in-out`, `book-flip`. Servem de **motor** para as transições acima (ex.: `zoom-blur` no Mergulho, `dissolve` na Fusão, `linear-blur` no Arrasto). Ficam proibidos como efeito pronto e visível os que caem na lista "não usar nunca" do DS: `flip`, `book-flip`, `ripple`, `crosswarp`, `swap` e `clock-wipe`.
 
@@ -103,10 +107,10 @@ Todos com master −14,0 a −14,1 LUFS **[medido]** (DS V2, 4.6).
 | Momento do roteiro | Transição sugerida |
 |---|---|
 | Gancho → primeira cena de contexto | Corte seco (o gancho não pode ter respiro) |
-| Contexto → História (volta no tempo) | Dissolve de foto ou Cinema |
-| Conflito → Virada / efeito A-há | **Mergulho** ou Cinema + ponte de som |
-| Lista de fatos, datas, lugares | Snap ou *match cut* |
-| Deslocamento (de um lugar a outro) | Arrasto ou Rota |
+| Contexto → História (volta no tempo) | Dissolve de foto ou escurecer e abrir com luz |
+| Conflito → Virada / efeito A-há | **Mergulho** ou Luz de passagem + ponte de som |
+| Lista de fatos, datas, lugares | *Match cut* ou corte seco no ritmo da fala |
+| Deslocamento (de um lugar a outro) | Chicote com desfoque ou linha que revela (sem o amarelo do DS) |
 | Moral → CTA (loop) | Corte seco no plano do gancho + *clack* da placa |
 
 Na prática, um Reel de 30 s fica com **2 a 3 transições** nos pontos de virada, e o resto em corte seco.
@@ -123,10 +127,10 @@ O Diego avisou que, com a música do Instagram, os efeitos **não se ouvem**. Co
 
 | Som | DS 4.6 | **Volume de trabalho** |
 |---|---|---|
-| Transição (`PDX_swish`, `PDX_ar_longo`, `PD_whoosh`) | −16 dB | **−6 dB** |
+| Transição (`PDX_swish`, `PDX_ar_longo`) | −16 dB | **−6 dB** |
 | Riser antes da virada (`PDX_riser`) | — | **−8 dB**, subindo até o corte |
 | Impacto em data, número, revelação (`PDX_impacto`) | — | **−4 dB** |
-| Objetos do DS (*clack*, *ding*, *tum*, moeda) | −6 a −14 dB | **−6 dB** (o *tum* fica em −4 dB) |
+| *Clack* da placa do CTA (único som do DS no Reel) | −10 dB | **−6 dB** |
 | Página, obturador (`PDX_pagina`, `PDX_obturador`) | −12 dB | **−8 dB** |
 | Ponte de som (ambiente real da próxima cena) | −6 dB (Cinema) | **−8 dB**, e −3 dB nos 3 a 12 quadros antes do corte |
 | Música (quando o Claude mixa no render) | 8–10 dB abaixo da voz | **−18 dB sob a fala** (*ducking*), −10 dB sem fala |
@@ -162,7 +166,7 @@ O master continua em −14 LUFS e pico ≤ −1 dBTP (DS 4.6). Estes números su
 | Gancho | Diego desde o 1º quadro e texto grande na metade de cima | `FORMATOS_REELS.md`, 4 · [QA] Gaudí |
 | Ritmo | ≈ 2 s por imagem, ≥ 2 s para material do Diego; tela cheia do Diego 1–2 vezes para respirar | [medido] · [QA] |
 | Imagem | Representa de forma **direta** o que é dito; gancho visual de identificação ou curiosidade | [Trello] |
-| Transições | Dissolve de foto (voltar no tempo), Cinema na virada, *match cut* entre fotos da mesma forma. A **metade de baixo (Diego) não transiciona**: só a de cima muda | [QA] · [candidato] |
+| Transições | Dissolve de foto (voltar no tempo), Luz de passagem na virada, *match cut* entre fotos da mesma forma. A **metade de baixo (Diego) não transiciona**: só a de cima muda | [QA] · [candidato] |
 | Som | Voz + *clack* do CTA; ambiente da cena de cima em ponte de som quando houver | [QA] · [candidato] |
 | Animação | Data, número, fração, linha do tempo, planta, comparação, em tela cheia | [medido] |
 
@@ -175,8 +179,8 @@ O master continua em −14 LUFS e pico ≤ −1 dBTP (DS 4.6). Estes números su
 | Fala | **Tom mais acelerado** e respiros cortados, às vezes até a última letra da palavra | [Trello] |
 | Diego | Fixo no centro, legenda abaixo do queixo, tamanho fixo (sem zoom) | [QA] greves (decisão do Diego) |
 | Fundo | Um fundo por bloco; o que é dito aparece atrás na mesma hora (data dita = data na tela) | [Trello] · [QA] |
-| Transições | **Fusão de fundo** como padrão; Snap em lista de datas | [QA] · [DS] |
-| Som | Voz −16 LUFS, trilha −28 LUFS, PD_* nos eventos | [QA] greves |
+| Transições | **Fusão de fundo** como padrão; corte seco no ritmo da fala em listas de datas | [QA] · [DS] |
+| Som | Voz −16 LUFS, trilha −28 LUFS, `PDX_*` nos eventos; `PD_*` só no CTA | [QA] greves · decisão do Diego |
 
 ### 5.3 Narrado
 
@@ -187,7 +191,7 @@ O master continua em −14 LUFS e pico ≤ −1 dBTP (DS 4.6). Estes números su
 | Ritmo | **Nunca mais de 3 s na mesma cena**; com o mínimo de 2 s para material do Diego, a faixa do acervo é 2–3 s | [Trello] · `FORMATOS_REELS.md` |
 | Estrutura | **Contraste constante:** conflito aparece, resolve e outro surge | [Trello] |
 | Variações | Encenar o pensamento, imagens "da galeria" ou o processo de uma história | [Trello] |
-| Transições | **Mergulho** (churros) na virada, Arrasto no deslocamento, Cinema antes do bonito | [medido] · [DS] |
+| Transições | **Mergulho** (churros) na virada, chicote com desfoque no deslocamento, escurecer e abrir com luz antes do bonito | [medido] · [DS] |
 | Som | Narração + voz original do lugar em ponte de som; trilha baixa com pausa na fala real | [QA] churros |
 
 ---
@@ -219,11 +223,11 @@ O master continua em −14 LUFS e pico ≤ −1 dBTP (DS 4.6). Estes números su
 
 ## 8. Checklist de edição (antes de entregar)
 
-1. Cada transição está num ponto onde o sentido muda e tem nome (família DS ou candidata aprovada).
+1. Cada transição está num ponto onde o sentido muda e tem nome (seção 3.2; DS só no CTA).
 2. ≥ 70% de cortes secos; ≤ 3 famílias; ≤ 5 transições (até 30 s); ≥ 1,5 s entre transições.
 3. Nenhuma cena acima de 3 s no Narrado; nada do Diego abaixo de 2 s.
 4. A imagem cai na palavra que mostra.
-5. Som de transição no pico do movimento; ponte de som onde há ambiente real; *whoosh* só no Arrasto.
+5. Som de transição no pico do movimento; ponte de som onde há ambiente real; nenhum som `PD_*` antes do CTA.
 6. ≤ 1 efeito sonoro a cada 1,5 s; master −14 LUFS, pico ≤ −1 dBTP.
 7. Material da internet com licença e crédito; ilustração com cara de desenho.
 8. Escuta humana feita (ou pendência registrada na QA).
@@ -265,12 +269,12 @@ Fonte: análise quadro a quadro feita pelo Claude in Chrome em 28/10/2026 (`docs
 | Apoio em moldura | Foto ou vídeo como **cartão** sobre cópia desfocada e escurecida do próprio vídeo (o perfil já usa o cartão; a referência confirma) | Ref. 1 e 3 |
 | Legenda na emenda | Já é o padrão do perfil (`FORMATOS_REELS.md`, 2); a referência confirma | Ref. 2 e 3 |
 | Corte de zoom no rosto | Em fala longa do Diego em tela cheia, 1 corte de zoom a cada 5–15 s, no lugar do zoom lento contínuo | Ref. 2 e 6 |
-| Palavra-chave em dupla tipográfica, palavra a palavra | No DS isso já existe: contraste **Barlow Condensed 800 × 300 itálico** (DS 2, Tipografia, "um único contraste por tela"). A serifa da referência **não** entra (o DS evita a serifa da categoria) | Ref. 1 · DS |
-| Contador de números | Placar do DS (número que gira) para alcance, preço e tempo | Ref. 1 · DS |
-| Destaque desenhado (círculo no rosto, holofote numa palavra) | Círculo ou marcação na cor do DS sobre o detalhe que a fala cita, só no gancho ou na revelação | Ref. 6 e 8 |
+| Palavra-chave em dupla tipográfica, palavra a palavra | Dois pesos na tipografia do formato (`FORMATOS_REELS.md`), palavra a palavra. As fontes do DS só no CTA | Ref. 1 |
+| Contador de números | Contador animado na linguagem do formato (não o Placar do DS) para preço, tempo e alcance | Ref. 1 |
+| Destaque desenhado (círculo no rosto, holofote numa palavra) | Círculo ou marcação na cor de destaque do formato sobre o detalhe que a fala cita, só no gancho ou na revelação | Ref. 6 e 8 |
 | Tela verde com o Diego no canto | Alternativa ao Diego no centro (greves): recorte num canto inferior quando o fundo precisa de espaço (mapa, print, vídeo de terceiros). Escolha por Reel | Ref. 5 e 6 |
 | **Tela "PLAY ▷" de vídeo caseiro para flashback** | Combina com a regra do CLAUDE.md, 10 (o Diego de hoje conta, o acervo é passado): o vídeo da viagem entra com marca de "gravação" (data e hora reais do arquivo) e fica claro que é lembrança, não cena de hoje | Ref. 8 · CLAUDE.md |
-| Número escrito à mão | Bilhete/Caneta do DS para o número de impacto (custo, horas, distância) | Ref. 8 · DS |
+| Número escrito à mão | Animação própria de traço escrevendo o número de impacto (não o Bilhete do DS) | Ref. 8 |
 | Prova na tela (print, mensagem, perfil) | Já é regra do perfil ("CAPTURA REAL") | Ref. 1, 5, 9 |
 
 ### 10.3 Som das referências: ainda não sabido
@@ -279,18 +283,18 @@ O Chrome não ouve. Os instantes com provável efeito sonoro estão na seção 6
 
 ### 10.4 Intensidade da Luz de passagem (decisão do Claude, delegada pelo Diego em 28/10/2026)
 
-O DS limita o *light leak* a 8% (4.5). Com 8% a luz não esconde o corte, e o efeito da referência se perde. Decisão:
+Com a regra de 28/10/2026 (DS só no CTA), o limite de 8% do DS (4.5) não se aplica no meio do Reel. Com 8% a luz não esconde o corte. Decisão:
 
 | Fase | Duração | Intensidade |
 |---|---|---|
 | Entrada (luz desce da borda de cima) | 3 quadros | sobe de 8% até o pico |
-| **Pico (o corte fica aqui)** | **no máximo 4 quadros** (≈ 130 ms a 30 fps) | **até 85%** de opacidade, cor quente do *light leak* do DS |
+| **Pico (o corte fica aqui)** | **no máximo 4 quadros** (≈ 130 ms a 30 fps) | **até 85%** de opacidade, cor quente |
 | Saída (luz recua para um canto) | 4 quadros | desce do pico até 0 |
 
-- Fora do pico, nada passa de 8%. A transição inteira fica abaixo de 0,4 s, a mesma exceção que o DS já abre para Varredura e Cinema (área de objeto, seção 2 do DS).
+- Fora do pico, a luz fica fraca (≤ 8%). A transição inteira dura menos de 0,4 s.
 - No máximo **2 Luzes de passagem por Reel**, sempre em par com o Clarão de volta, e só em Reel de tom leve ou curioso. Em tema sensível (ex.: Anne Frank), não usar.
 - Implementação: `@remotion/light-leaks` ou máscara própria com degradê, com a curva acima. Som: `PDX_ar_longo` a −6 dB, com o pico do som no 1º quadro do pico de luz.
-- É uma exceção de edição, registrada aqui e na QA de cada Reel que usar. O brand book continua com 8% até o Diego pedir a atualização.
+- A QA de cada Reel que usar registra a transição.
 
 ## Fontes externas
 
