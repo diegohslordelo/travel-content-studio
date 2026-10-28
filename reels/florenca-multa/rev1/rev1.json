@@ -1,0 +1,401 @@
+{
+ "largura": 1080,
+ "altura": 1920,
+ "fps": 24,
+ "tomadas": [
+  {
+   "nome": "t1",
+   "arquivo": "gravacao/IMG_7347.MOV",
+   "ini": 0.6,
+   "fim": 3.98,
+   "cortes": [],
+   "voz_ini": 0.71
+  },
+  {
+   "nome": "t2",
+   "arquivo": "gravacao/IMG_7292.MOV",
+   "ini": 0.44,
+   "fim": 9.7,
+   "cortes": [
+    [
+     5.46,
+     5.72
+    ]
+   ],
+   "obs": "9,79–10,58 s: falso começo 'E aí o Goo…' (repetido no t3), fora",
+   "voz_ini": 0.54
+  },
+  {
+   "nome": "t3",
+   "arquivo": "gravacao/IMG_7294.MOV",
+   "ini": 0.36,
+   "fim": 7.8,
+   "cortes": [
+    [
+     3.68,
+     3.86
+    ]
+   ],
+   "voz_ini": 0.44
+  },
+  {
+   "nome": "t4",
+   "arquivo": "gravacao/IMG_7306.MOV",
+   "ini": 0.02,
+   "fim": 6.25,
+   "cortes": [],
+   "voz_ini": 0.12
+  },
+  {
+   "nome": "t5",
+   "arquivo": "gravacao/IMG_7346.MOV",
+   "ini": 0.02,
+   "fim": 15.15,
+   "cortes": [
+    [
+     8.86,
+     9.26
+    ]
+   ],
+   "voz_ini": 0.12
+  },
+  {
+   "nome": "t6",
+   "arquivo": "gravacao/IMG_7345.MOV",
+   "ini": 0.17,
+   "fim": 5.15,
+   "cortes": [],
+   "obs": "pausa 1,99–2,34 mantida (suspense antes da revelação)",
+   "voz_ini": 0.27
+  },
+  {
+   "nome": "t7",
+   "arquivo": "gravacao/IMG_7343.MOV",
+   "ini": 0.54,
+   "fim": 14.1,
+   "cortes": [
+    [
+     11.65,
+     11.84
+    ]
+   ],
+   "voz_ini": 0.64
+  }
+ ],
+ "legendas": [
+  [
+   12,
+   14,
+   "No último dia"
+  ],
+  [
+   15,
+   16,
+   "de *Florença*,"
+  ],
+  [
+   17,
+   19,
+   "eu, minha *família*"
+  ],
+  [
+   20,
+   22,
+   "e minha *namorada*"
+  ],
+  [
+   23,
+   26,
+   "A gente saiu *correndo*"
+  ],
+  [
+   27,
+   28,
+   "do *hotel*"
+  ],
+  [
+   29,
+   32,
+   "pra ir pra *estação*"
+  ],
+  [
+   33,
+   36,
+   "Só que a gente"
+  ],
+  [
+   37,
+   38,
+   "não *contava*"
+  ],
+  [
+   39,
+   41,
+   "que as *rotas*,"
+  ],
+  [
+   42,
+   44,
+   "elas tinham *mudado*"
+  ],
+  [
+   45,
+   47,
+   "porque a cidade,"
+  ],
+  [
+   48,
+   51,
+   "ela tava em *obra*."
+  ],
+  [
+   52,
+   56,
+   "E aí o *Google* Maps"
+  ],
+  [
+   57,
+   59,
+   "mandou a gente"
+  ],
+  [
+   60,
+   62,
+   "por um *caminho*"
+  ],
+  [
+   63,
+   66,
+   "que fazia a gente"
+  ],
+  [
+   67,
+   69,
+   "perder o *trem*."
+  ],
+  [
+   70,
+   73,
+   "E aí, nessa *agonia*,"
+  ],
+  [
+   74,
+   78,
+   "a gente subiu no *ônibus*"
+  ],
+  [
+   79,
+   82,
+   "e *esqueceu* de pagar"
+  ],
+  [
+   83,
+   84,
+   "o *bilhete*."
+  ],
+  [
+   100,
+   102,
+   "Na primeira *parada*"
+  ],
+  [
+   103,
+   104,
+   "subiu guardas"
+  ],
+  [
+   105,
+   106,
+   "de *fiscalização*."
+  ],
+  [
+   107,
+   109,
+   "Eles vieram *direto*"
+  ],
+  [
+   110,
+   111,
+   "na gente,"
+  ],
+  [
+   112,
+   113,
+   "foi aquilo:"
+  ],
+  [
+   114,
+   116,
+   "*desce* do ônibus,"
+  ],
+  [
+   117,
+   119,
+   "paga a *multa*,"
+  ],
+  [
+   120,
+   122,
+   "deu *40* euros"
+  ],
+  [
+   123,
+   124,
+   "para cada,"
+  ],
+  [
+   125,
+   127,
+   "mais o preço"
+  ],
+  [
+   128,
+   129,
+   "da *passagem*,"
+  ],
+  [
+   130,
+   133,
+   "foram os *15* minutos"
+  ],
+  [
+   134,
+   138,
+   "que a gente *perdeu* lá."
+  ],
+  [
+   139,
+   142,
+   "E aí eu *desacreditado*,"
+  ],
+  [
+   143,
+   145,
+   "depois disso tudo,"
+  ],
+  [
+   146,
+   149,
+   "virei para o *guarda*"
+  ],
+  [
+   150,
+   151,
+   "e perguntei:"
+  ],
+  [
+   152,
+   154,
+   "qual o caminho"
+  ],
+  [
+   155,
+   156,
+   "mais *rápido*"
+  ],
+  [
+   157,
+   160,
+   "para a gente ir"
+  ],
+  [
+   161,
+   165,
+   "para a *estação* de trem?"
+  ],
+  [
+   166,
+   170,
+   "E por *ironia* do destino,"
+  ],
+  [
+   171,
+   173,
+   "a gente estava"
+  ],
+  [
+   174,
+   177,
+   "na *frente* da estação."
+  ],
+  [
+   178,
+   183,
+   "O *Google* ia fazer a gente"
+  ],
+  [
+   184,
+   187,
+   "dar uma volta *enorme*"
+  ],
+  [
+   188,
+   192,
+   "e a gente ia pagar"
+  ],
+  [
+   193,
+   194,
+   "mais *caro*"
+  ],
+  [
+   195,
+   199,
+   "se não fosse a *multa*."
+  ],
+  [
+   200,
+   204,
+   "Então fica a *dica* aí:"
+  ],
+  [
+   205,
+   208,
+   "se a sua cidade"
+  ],
+  [
+   209,
+   211,
+   "está em *obra*"
+  ],
+  [
+   212,
+   214,
+   "que você vai,"
+  ],
+  [
+   215,
+   218,
+   "é melhor você *perguntar*"
+  ],
+  [
+   219,
+   224,
+   "para alguém que é de *lá*."
+  ],
+  [
+   225,
+   227,
+   "E outra coisa:"
+  ],
+  [
+   228,
+   230,
+   "*paga* a passagem,"
+  ],
+  [
+   231,
+   234,
+   "porque *Murphy* está aí"
+  ],
+  [
+   235,
+   239,
+   "para acabar com a *gente*."
+  ]
+ ],
+ "diego": {
+  "face_alvo_largura": 400,
+  "face_alvo_y": 1400
+ }
+}
