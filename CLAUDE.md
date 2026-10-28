@@ -119,6 +119,23 @@ A referência de conteúdo Instagram é a fonte destas regras. Consulte o docume
 5. **Calendário e testes:** planos antes, durante e depois de cada viagem.
 6. **Métricas:** interpretação dos Insights e recomendação do próximo teste.
 
+**Montagem de roteiro de Reel** (decisão do Diego, 28/10/2026). **Toda vez** que for montar um roteiro, leia antes, nesta ordem:
+
+| # | Arquivo | Para quê |
+|---|---|---|
+| 1 | `docs/ESTRUTURAS_DE_ROTEIRO.md` | As 5 estruturas do Trello (AIDA, I.H.C., Jeito Errado × Jeito Certo, Ele-Eu-Você-Futuro, Análise Estratégica). É a referência de estrutura |
+| 2 | `docs/FORMATOS_TRELLO.md` | Formatos do Trello (tela dividida, tela verde, narrado), com os roteiros virais analisados e o prompt de adaptação (proibido inventar história; fato real e verificável) |
+| 3 | `docs/FORMATOS_REELS.md` | Como o perfil executa o formato: anatomia da tela, composições, legendas, sincronia, material de apoio, montagem do roteiro e QA |
+| 4 | `docs/REFERENCIA_EDICAO_FORMATOS.md` | Edição: transições por momento do roteiro, sons e volumes, ferramentas, checklist e o que as 9 referências ensinam (análise completa em `docs/referencias/`) |
+| 5 | `design-system/sons/externos/README.md` | Kit de sons de transição (`PDX_*`) |
+| 6 | `docs/referencia-conteudo-instagram.md` | Gancho, duração, CTA único e checklist pré-publicação |
+
+Como entregar:
+- **Duas opções**, cada uma com estrutura e formato do Trello, gancho pronto, roteiro em tabela (tempo, fala, imagem/fundo, transição e som) e o sinal que favorece. Depois, **uma recomendação** com o motivo.
+- O texto que o Diego vai **gravar no quarto** sai num bloco de código, com as instruções de gravação.
+- Antes de escrever, confira o acervo da cidade (seção 10). Dado que falta (valor, hora, lugar) fica marcado como a confirmar e nunca é inventado.
+- DS só no CTA final (seção 6). O roteiro aprovado é salvo em `reels/<reel>/`.
+
 **Planejamento operacional** (`planejamento/planejamento-primeiro-dia-v5.html`, V5 de 15/10/2026, feita sobre a V4 que o Diego enviou; a V4 fica em `planejamento/versoes/`):
 - É o painel do que publicar, quando, onde e com quais orientações. É mutável e não é regra permanente. Os documentos de referência têm precedência sobre ele, e ele não é autoridade visual.
 - Antes de propor uma produção a partir dele, confira o acervo (seção 10). Só altere o planejamento a pedido explícito do Diego. Para mudar a grade: `planejamento/scripts/` (montar com `montar_v5.py` e conferir com `validar_v5.py`).
@@ -182,7 +199,7 @@ travel-content-studio/
 ├── README.md        visão geral e como recuperar o que foi removido
 ├── CLAUDE.md        este manual
 ├── design-system/   DS V2, tokens, bundle, Remotion, kit, sons e fontes (ver design-system/README.md)
-├── docs/            referência de conteúdo Instagram, instrução-base do DS e padrão de revisão de áudio do YouTube
+├── docs/            referência de conteúdo Instagram, estruturas e formatos do Trello, guias de formato e de edição, prompts e análises de referência, instrução-base do DS e padrões do YouTube
 ├── acervo/          base de acervo: índice, transcrição e linha do tempo de cada cidade (Colab, 15/10/2026)
 ├── planejamento/    painel V5, auditoria criativa, banco de ideias, CSVs de auditoria, scripts e versões
 └── reels/           um Reel por pasta, uma revisão por subpasta (brutos em reels/<reel>/fonte/, fora do git)
