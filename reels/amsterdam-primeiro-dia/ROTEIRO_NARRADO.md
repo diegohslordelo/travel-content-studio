@@ -1,89 +1,142 @@
-# Amsterdam · "Quanto custa o primeiro dia em Amsterdam?" · Roteiro (Narrado) · v2
+# Amsterdam · "Primeiro dia em Amsterdam: 7 horas, 11 paradas" · Roteiro (Narrado) · v3
 
-**Formato:** Narrado (Trello, Formato viral validado 04) · **Estrutura:** AIDA (Trello, Estruturas de roteiro) · **Duração estimada:** ≈ 41 s.
-**Peça do planejamento:** `IG-20261028-REE-amsterdam-first-day` (série "Primeiro dia", 28/10/2026).
-**Base:** dia 1 do vlog de Amsterdam no YouTube (12/03/2026, capítulos 00:20–13:52 da REV3, branch `claude/eloquent-dirac-f8tr3m`). Horas, lugares e valores vêm do Placar e dos Recibos do vlog (`reels/ams-yt/rev3/props_rev3.json`), registro do Diego de 21 e 23/10/2026. Falas reais conferidas na legenda revisada do vlog (`legenda_rev3.srt`, Whisper large-v3).
-**DS só no CTA** (decisão do Diego, 28/10/2026): do bloco 1 ao 15, tudo na linguagem do formato (`docs/FORMATOS_REELS.md`) e com os sons `PDX_*`; o DS entra só na placa do CTA (bloco 16).
-**A v1 deste roteiro** (Nível A com Placa e Placar no meio do Reel, sem narração) foi substituída: contrariava a decisão "DS só no CTA" e não seguia nenhuma estrutura do Trello.
+**Formato:** Narrado (Trello, Formato viral validado 04) · **Estrutura:** AIDA (Trello, Estruturas de roteiro) · **Duração estimada:** ≈ 2:20 (pedido do Diego, 28/10/2026: narrar o dia inteiro; a duração pode passar dos 30 s). Teto: < 3 min (referência de conteúdo, 3.1).
+**Peça do planejamento:** `IG-20261028-REE-amsterdam-first-day` (série "Primeiro dia").
+**Base:** dia 1 do vlog de Amsterdam no YouTube (12/03/2026, capítulos 00:20–13:52 da REV3, branch `claude/eloquent-dirac-f8tr3m`). Horas, lugares e valores vêm do Placar, das Etiquetas e dos Recibos do vlog (`reels/ams-yt/rev3/props_rev3.json`, registro do Diego de 21 e 23/10/2026). Falas reais conferidas na legenda revisada do vlog (`legenda_rev3.srt`, Whisper large-v3), exceto "com molho, deu sete e cinquenta" (só no acervo).
+**DS só no CTA** (decisão do Diego, 28/10/2026): do bloco 1 ao 31, linguagem do formato (`docs/FORMATOS_REELS.md`) e sons `PDX_*`; o DS entra só na placa do CTA (bloco 32).
+**Histórico:** v1 (Nível A, sem narração) e v2 (narrado de 41 s, só 5 paradas) substituídas a pedido do Diego.
 
 ## Ideia central
 
-O primeiro dia inteiro em Amsterdam, no frio e no vento, custou € 90,84 para dois, sem nenhum ingresso.
+Em 7 horas no primeiro dia, no frio e no vento, a gente fez 11 paradas em Amsterdam por € 90,84 para dois, sem pagar nenhum ingresso.
 
 ## AIDA
 
 | Etapa | No Reel |
 |---|---|
-| **Atenção** (tema + curiosidade + conflito) | "Quanto custa o primeiro dia em Amsterdam?" sobre o canal, e o vento já na 2ª cena ("Gente, meu cabelo!") |
-| **Interesse** (o processo, em contraste −/+) | Pouso e ônibus → vento × casas tortas → bicicleta → doce × batata → doce em dobro → 11 graus com sensação de 3 |
-| **Desejo** (moral) | € 90,84 para dois, sem pagar nenhum ingresso: o centro basta no primeiro dia |
-| **Ação** (CTA) | "Salva pra sua viagem." + placa do DS `SALVA PRA VIAGEM →` no plano do gancho (loop) |
+| **Atenção** | Os 3 números do dia (7 horas, 11 paradas, uns 90 euros) e o conflito: o vento ("Gente, meu cabelo!") |
+| **Interesse** | As 11 paradas na ordem real, cada uma com o seu contraste e o seu preço: hotel, Dancing Houses, pizza, Praça Dam, batata, Tony's, Kalverstraat, stroopwafel, The Old Bell, Red Light e McDonald's |
+| **Desejo** | Nenhum ingresso, € 90,84 para dois, € 45,42 por pessoa; "no frio e no vento, valeu cada passo" |
+| **Ação** | Os outros 2 dias estão no vídeo completo do YouTube (link no perfil) |
 
 ## Texto para gravar (no quarto)
 
-Tom de áudio de WhatsApp para um amigo, no passado (é lembrança, não é como se estivesse lá). Os números como se diz.
+Só as linhas **N**. As falas reais estão entre colchetes para você saber o que vem antes e depois. Tom de áudio de WhatsApp, no passado (é lembrança), números como se diz.
 
 ```
-N1  Quanto custa o primeiro dia em Amsterdam?
-N2  A gente pousou às duas e meia. Ônibus até o centro: treze euros pra dois.
-N3  Sete e quinze.
-N4  Aí o doce veio em dobro: chocolate na Tony's, vinte euros… e stroopwafel quentinho, nove e cinquenta.
-N5  Somando a pizza, a cerveja e o McDonald's da noite, o primeiro dia fechou em noventa euros e oitenta e quatro. Pra dois.
-N6  E sem pagar nenhum ingresso: foi só andar pelo centro.
-N7  Salva esse vídeo pra sua viagem.
+N1  Sete horas, onze paradas e uns noventa euros pra dois. Esse foi o nosso primeiro dia em Amsterdam.
+     [fala real: "Gente, meu cabelo!"]
+N2  E um vento que não deu trégua.
+N3  Pousamos às duas e meia. Ônibus pro centro: treze euros pra dois.
+N4  Hotel no bairro dos museus.
+     [fala real: "O quarto cabe perfeitamente duas pessoas."]
+N5  Mala no canto, casaco no corpo, e rua.
+     [fala real: "Esse vento tá matando a gente, mas demos de cara com as Dancing Houses."]
+N6  Parece que vão cair, né? Mas muita casa aqui foi feita inclinada de propósito, pra subir as coisas pelo gancho sem bater na fachada.
+N7  Comida típica daqui? Batata frita. Então, óbvio: pizza. Duas fatias e uma Coca, onze e noventa e nove.
+N8  Praça Dam: de um lado, o palácio que já foi prefeitura. Do outro, o monumento às vítimas da Segunda Guerra.
+     [fala real: "Aqui todo mundo anda de bicicleta, e você fica com medo de ser atropelado por uma bicicleta."]
+     [fala real: "Era pra ser um doce, mas a gente passou na frente e acabou virando a batata."]
+     [fala real: "Com molho, deu sete e cinquenta."]
+N9  Spoiler: foi sete e quinze.
+N10 Na frente, a Tony's: vinte euros em chocolate, guardado pra depois.
+     [fala real: "Ui, tá anoitecendo, tá ficando mais frio e mais vento."]
+N11 Aí, rolezinho na Kalverstraat, loja atrás de loja.
+     [fala real: "A gente sai do Brasil, mas o Brasil não sai da gente."]
+N12 O doce que faltava: stroopwafel quentinho com chocolate. Nove e cinquenta.
+     [fala real: "Você tá toda melada."]
+N13 Pra brindar a primeira noite, The Old Bell.
+     [fala real: "Eu não pedi nem Heineken, nem Amstel, porque são as que tem no Brasil."]
+N14 Duas cervejas e um vinho: dezesseis e sessenta.
+     [fala real: "Tá 11 graus com sensação de 3."]
+N15 Mesmo assim, fomos ver o Red Light District. Lá dentro não pode filmar: são vitrines na rua, e aqui é legalizado. Foi menos estranho do que eu imaginava, mas não é a nossa realidade.
+N16 Pra fechar, tradição da Marina: McDonald's. Pedi o McCrispy daqui.
+     [fala real: "Vou ver se é melhor que o McCrispy do Brasil."]
+     [fala real: "Não."]
+N17 Doze e sessenta pelos dois. Aí sim: hotel e coberta.
+N18 Resultado: nenhum ingresso, noventa euros e oitenta e quatro pra dois. Uns quarenta e cinco por pessoa. No frio e no vento, valeu cada passo.
+N19 Os outros dois dias, com o custo de tudo, tão no vídeo completo no YouTube. Link no perfil.
 ```
 
 ## Fala × imagem × composição
 
-Tempos estimados (refaço pela palavra depois da gravação). Imagens do acervo **mudas**, a não ser nas falas reais e nas pontes de som. Nenhuma cena passa de 3 s.
+Tempos estimados (≈ 3 palavras/s na narração); refaço tudo pela palavra depois da gravação. Imagens do acervo **mudas**, menos nas falas reais e nas pontes de som. **Nenhuma imagem passa de 3 s**: blocos longos levam 2 ou 3 imagens, trocando na palavra que cada uma mostra.
 
-| # | AIDA | Tempo | Áudio | Imagem (acervo, hora) | Na tela | Transição / som |
+| # | Parada | Tempo | Áudio | Imagem (acervo, hora) | Na tela | Transição / som |
 |---|---|---|---|---|---|---|
-| 1 | Atenção | 0,0–2,5 | **N1** | Canal com as casas tortas, sem fala (IMG_1403 ou IMG_1404, 16:27) | Gancho em texto grande (linguagem do formato): `QUANTO CUSTA O PRIMEIRO DIA EM AMSTERDAM?`, palavra de peso **AMSTERDAM** | Corte seco; trilha baixa |
-| 2 | Atenção | 2,5–4,0 | Real: "Gente, meu cabelo!" | IMG_1418 (17:01), 8,1–9,1 s: o vento | Legenda | Trilha pausa na fala real |
-| 3 | Interesse | 4,0–6,0 | **N2a** "A gente pousou às duas e meia." | IMG_1375 (14:30), aeroporto | Legenda | Corte seco |
-| 4 | Interesse | 6,0–8,4 | **N2b** "Ônibus até o centro: treze euros pra dois." | IMG_1376 ou IMG_1377 (14:38) | Legenda, destaque em **€ 13** | Corte seco |
-| 5 | Interesse (−) | 8,4–11,4 | Real: "esse vento tá matando a gente," | IMG_1406 (16:30), 3,6–6,6 s | Legenda | Corte seco |
-| 6 | Interesse (+) | 11,4–14,4 | Real: "mas demos de cara com as Dancing Houses" | Casas tortas (IMG_1407 ou IMG_1408, 16:32), com a voz de IMG_1406 6,6–9,6 s por baixo | Legenda | Corte no "mas" (a voz continua: L-cut) |
-| 7 | Interesse | 14,4–17,4 | Real: "aqui todo mundo anda de bicicleta" | IMG_1440 (17:15), ≈ 8,5–11,5 s | Legenda | Corte seco |
-| 8 | Interesse (−) | 17,4–19,8 | Real: "Era pra ser um doce, mas a gente passou na frente" | IMG_1449 (17:36), 5,9–8,3 s | Legenda | Corte seco |
-| 9 | Interesse (+) | 19,8–21,8 | Real: "e acabou virando a batata" + **N3** "Sete e quinze." | Batata de perto (IMG_1452, 17:39, ou o fim de IMG_1449) | Legenda, destaque em **€ 7,15** | Corte seco |
-| 10 | Interesse (+) | 21,8–24,6 | **N4a** "Aí o doce veio em dobro: chocolate na Tony's, vinte euros…" | Tony's Chocolonely (IMG_1456, 17:46) | Destaque em **€ 20** | Corte seco |
-| 11 | Interesse (+) | 24,6–27,2 | **N4b** "…e stroopwafel quentinho, nove e cinquenta." | IMG_1479 ou IMG_1480 (18:48) | Destaque em **€ 9,50** | **Ponte de som:** o vento de IMG_1516 entra 12 quadros antes do corte |
-| 12 | Interesse (−) | 27,2–30,0 | Real: "Tá 11 graus com sensação de 3." | IMG_1516 (20:46), ≈ 7,0–10,0 s, rua à noite | Número em tela cheia: **11° · SENSAÇÃO DE 3°** | `PDX_impacto` no "3" |
-| 13 | Desejo | 30,0–32,8 | **N5a** "Somando a pizza, a cerveja e o McDonald's da noite," | McCrispy (IMG_1528, 21:21) | Legenda | `PDX_riser` subindo até o corte |
-| 14 | Desejo | 32,8–36,2 | **N5b** "o primeiro dia fechou em noventa euros e oitenta e quatro. Pra dois." | Animação em tela cheia: **€ 90,84** · `PRA DOIS` · `≈ R$ 544,84` | — | **Mergulho** na embalagem do McDonald's: o número nasce de dentro dela · `PDX_impacto` em "noventa" |
-| 15 | Desejo | 36,2–39,0 | **N6** "E sem pagar nenhum ingresso: foi só andar pelo centro." | Rua com casinhas e canal (IMG_1440, outro trecho, ou IMG_1530/1531, 21:40) | Legenda | Corte seco |
-| 16 | Ação | 39,0–41,0 | **N7** "Salva esse vídeo pra sua viagem." | Plano do gancho (loop) | Placa do DS `SALVA PRA VIAGEM →` com Chegada (x 72 · y 640) | *Clack* (−6 dB da voz) |
+| 1 | Gancho | 0:00,0–0:06,7 | **Sete horas, onze paradas e uns noventa euros pra dois. Esse foi o nosso primeiro dia em Amsterdam.** | Canal das casas tortas, sem fala (IMG_1403 ou IMG_1404, 16:27) → Praça Dam (IMG_1422, 17:10) → stroopwafel (IMG_1480, 18:49) | Gancho em texto grande: `7 HORAS · 11 PARADAS · € 90` | Corte seco |
+| 2 | Gancho | 0:06,7–0:08,0 | Real: "Gente, meu cabelo!" | IMG_1418 (17:01), 8,1–9,1 s | Legenda | Trilha pausa |
+| 3 | Gancho | 0:08,0–0:10,6 | **E um vento que não deu trégua.** | Rua com vento (IMG_1418, outro trecho) | Legenda | Corte seco |
+| 4 | Chegada | 0:10,6–0:14,8 | **Pousamos às duas e meia. Ônibus pro centro: treze euros pra dois.** | IMG_1375 (14:30, aeroporto) → IMG_1376 ou IMG_1377 (14:38) | Destaque **€ 13,00** | Corte seco |
+| 5 | Hotel | 0:14,8–0:16,7 | **Hotel no bairro dos museus.** | Fachada ou corredor do hotel (IMG_1390, início) | Legenda | Corte seco |
+| 6 | Hotel | 0:16,7–0:19,1 | Real: "O quarto cabe perfeitamente duas pessoas." | IMG_1390 (15:20), ≈ 8,4–11,4 s | Legenda | Corte seco |
+| 7 | Hotel | 0:19,1–0:22,0 | **Mala no canto, casaco no corpo, e rua.** | Saindo do hotel / rua (IMG_1391 ou IMG_1392, 15:48) | Legenda | Arrasto no "rua" (chicote com desfoque, sem o amarelo do DS) + `PDX_swish` |
+| 8 | Dancing Houses | 0:22,0–0:27,3 | Real: "Esse vento tá matando a gente, mas demos de cara com as Dancing Houses." | IMG_1406 (16:30), 3,6–9,6 s: Diego → casas (IMG_1407, 16:32) | Legenda | Corte no "mas" (a voz continua) |
+| 9 | Dancing Houses | 0:27,3–0:35,5 | **Parece que vão cair, né? Mas muita casa aqui foi feita inclinada de propósito, pra subir as coisas pelo gancho sem bater na fachada.** | Casas de perto (IMG_1409, 16:33, mudo) → canal (IMG_1410, 16:36) | Legenda | Corte seco |
+| 10 | Pizza | 0:35,5–0:41,8 | **Comida típica daqui? Batata frita. Então, óbvio: pizza. Duas fatias e uma Coca, onze e noventa e nove.** | New York Pizza (IMG_1417, 16:48 · 0EE26401…mp4, 16:49) | Destaque **€ 11,99** | Corte seco |
+| 11 | Praça Dam | 0:41,8–0:48,7 | **Praça Dam: de um lado, o palácio que já foi prefeitura. Do outro, o monumento às vítimas da Segunda Guerra.** | IMG_1425 (17:10): palácio → monumento | Legenda | Corte seco |
+| 12 | Praça Dam | 0:48,7–0:55,0 | Real: "Aqui todo mundo anda de bicicleta, e você fica com medo de ser atropelado por uma bicicleta." | IMG_1440 (17:15), ≈ 7,4–15,7 s, bicicletas passando | Legenda | Corte seco |
+| 13 | Batata | 0:55,0–1:01,0 | Real: "Era pra ser um doce, mas a gente passou na frente e acabou virando a batata." | IMG_1449 (17:36), 5,9–10,8 s | Legenda | Corte seco |
+| 14 | Batata | 1:01,0–1:03,4 | Real: "Com molho, deu sete e cinquenta." | IMG_1449, ≈ 14,5–16,5 s | Legenda | Corte seco |
+| 15 | Batata | 1:03,4–1:05,3 | **Spoiler: foi sete e quinze.** | Batata de perto (IMG_1452, 17:39) | Destaque **€ 7,15** (o € 7,50 aparece riscado) | `PDX_impacto` no "quinze" |
+| 16 | Tony's | 1:05,3–1:09,2 | **Na frente, a Tony's: vinte euros em chocolate, guardado pra depois.** | IMG_1454 (17:40) → IMG_1456 (17:46) | Destaque **€ 20,00** | Corte seco |
+| 17 | Kalverstraat | 1:09,2–1:13,0 | Real: "Ui, tá anoitecendo, tá ficando mais frio e mais vento." | IMG_1465 (18:29), início | Legenda | **Ponte de som:** o vento da Kalverstraat entra 12 quadros antes do corte (dia → noite) |
+| 18 | Kalverstraat | 1:13,0–1:15,9 | **Aí, rolezinho na Kalverstraat, loja atrás de loja.** | Lojas da Kalverstraat (IMG_1465, outro trecho · IMG_1466–1469, 18:32) | Legenda | Corte seco |
+| 19 | Kalverstraat | 1:15,9–1:20,5 | Real: "A gente sai do Brasil, mas o Brasil não sai da gente." | IMG_1474 (18:37), 0,0–3,3 s | Legenda | Corte seco |
+| 20 | Stroopwafel | 1:20,5–1:24,4 | **O doce que faltava: stroopwafel quentinho com chocolate. Nove e cinquenta.** | IMG_1479 (18:48) → IMG_1480 (18:49) | Destaque **€ 9,50** | Corte seco |
+| 21 | Stroopwafel | 1:24,4–1:26,1 | Real: "Você tá toda melada." | IMG_1479, ≈ 19,5–22,0 s | Legenda | Corte seco |
+| 22 | Cerveja | 1:26,1–1:29,0 | **Pra brindar a primeira noite, The Old Bell.** | The Old Bell, fachada ou praça (IMG_1495–1497, 19:28) | Legenda | Corte seco |
+| 23 | Cerveja | 1:29,0–1:34,2 | Real: "Eu não pedi nem Heineken, nem Amstel, porque são as que tem no Brasil." | IMG_1498 (19:28), ≈ 10,6–13,6 s | Legenda | Corte seco |
+| 24 | Cerveja | 1:34,2–1:37,2 | **Duas cervejas e um vinho: dezesseis e sessenta.** | Brinde (IMG_1498, ≈ 22,7–27,7 s) | Destaque **€ 16,60** | Corte seco |
+| 25 | Red Light | 1:37,2–1:39,9 | Real: "Tá 11 graus com sensação de 3." | IMG_1516 (20:46), ≈ 7,0–10,0 s | Número em tela cheia: **11° · SENSAÇÃO DE 3°** | `PDX_impacto` no "3" |
+| 26 | Red Light | 1:39,9–1:51,5 | **Mesmo assim, fomos ver o Red Light District. Lá dentro não pode filmar: são vitrines na rua, e aqui é legalizado. Foi menos estranho do que eu imaginava, mas não é a nossa realidade.** | IMG_1516/IMG_1517 (rua antes de entrar) → **tela preta com `AQUI NÃO PODE FILMAR`** (2 s, som ambiente da rua) → IMG_1518 (20:55, depois, Diego falando, mudo) | Legenda | Escurecer e abrir (a tela preta é a própria transição) |
+| 27 | McDonald's | 1:51,5–1:55,1 | **Pra fechar, tradição da Marina: McDonald's. Pedi o McCrispy daqui.** | IMG_1525 (21:16) → IMG_1527 (21:21) | Legenda | Corte seco |
+| 28 | McDonald's | 1:55,1–1:58,9 | Real: "Vou ver se é melhor que o McCrispy do Brasil." | IMG_1528 (21:21), início | Legenda | Corte seco |
+| 29 | McDonald's | 1:58,9–2:00,1 | Real: "Não." | IMG_1528, a resposta | Legenda | Rufar curto (`PDX_riser` baixo) antes do "Não" |
+| 30 | McDonald's | 2:00,1–2:03,7 | **Doze e sessenta pelos dois. Aí sim: hotel e coberta.** | IMG_1529 (21:31), indo pro hotel | Destaque **€ 12,60** | Corte seco |
+| 31 | Desejo | 2:03,7–2:12,3 | **Resultado: nenhum ingresso, noventa euros e oitenta e quatro pra dois. Uns quarenta e cinco por pessoa. No frio e no vento, valeu cada passo.** | Animação em tela cheia: **€ 90,84 · PRA DOIS** · `€ 45,42 POR PESSOA` · `≈ R$ 544,84` → casinhas e canal à noite (IMG_1530/1531, 21:40) | Número em tela cheia | **Mergulho** na embalagem do McDonald's: o total nasce de dentro dela · `PDX_impacto` em "noventa" |
+| 32 | CTA | 2:12,3–2:18,5 | **Os outros dois dias, com o custo de tudo, tão no vídeo completo no YouTube. Link no perfil.** | Plano do gancho (loop) | Placa do DS `VÍDEO COMPLETO NO YOUTUBE →` com Chegada (x 72 · y 640) | *Clack* (−6 dB da voz) |
 
-**Contraste do formato:** o vento aparece (2), passa (3–4), volta (5), perde para as casas (6); o doce vira batata (8–9) e depois volta em dobro (10–11); o frio chega ao pico (12) e o preço resolve (14).
+**Transições:** Arrasto (saída do hotel), ponte de som do vento (dia → noite na Kalverstraat), escurecer na tela preta do Red Light e Mergulho no total: 4 transições, com dezenas de cortes secos (≥ 70%). Sons `PDX_*` (2 impactos, 1 rufar, 1 swish) com ≥ 1,5 s entre eles; *clack* do DS só no CTA. Volumes: `docs/REFERENCIA_EDICAO_FORMATOS.md`, 4.1. Trilha baixa, com pausa nas falas reais.
 
-**Transições:** 1 transição visível (Mergulho, na revelação do total), 1 ponte de som (vento, dia → noite) e 1 L-cut; o resto em corte seco (≥ 70%). Sons: 2 `PDX_impacto`, 1 `PDX_riser` e o *clack* do CTA, com ≥ 1,5 s entre eles. Volumes: `docs/REFERENCIA_EDICAO_FORMATOS.md`, 4.1. Música com pausa nas falas reais.
+**Red Light:** nenhuma imagem de dentro (o próprio Diego não filmou: "lá não pode filmar, é uma política do local", 20:46). Só a rua antes de entrar, a tela preta e o Diego depois. Tom respeitoso, sem piada.
 
 ## Os números (registro do Diego, Placar e Recibos do vlog)
 
-| Hora | Gasto (2 pessoas) | Valor |
-|---|---|---:|
-| 14:38 | Ônibus 397, aeroporto → centro (€ 6,50 × 2) | € 13,00 |
-| 16:48 | New York Pizza: 2 fatias + 1 Coca-Cola | € 11,99 |
-| 17:36 | Manneken Pis: batata pequena + molho (falado "sete e cinquenta"; foi € 7,15) | € 7,15 |
-| 17:41 | Tony's Chocolonely: barras | € 20,00 |
-| 18:49 | Hans Egstorf: stroopwafel com cobertura | € 9,50 |
-| 19:29 | The Old Bell: 2 cervejas + 1 taça de vinho | € 16,60 |
-| 21:21 | McDonald's: McCrispy + lanche da Marina | € 12,60 |
-| | **Dia 1** | **€ 90,84** |
-| | Por pessoa | € 45,42 |
+| Hora | Parada | Gasto (2 pessoas) | Valor |
+|---|---|---|---:|
+| 14:38 | Ônibus 397 | Aeroporto → centro (€ 6,50 × 2) | € 13,00 |
+| 15:20 | XO Hotel Inner (Museumkwartier) | Fora da conta do dia (entra no total da viagem do vlog) | — |
+| 16:30 | Dancing Houses (Damrak) | — | — |
+| 16:48 | New York Pizza (Spui) | 2 fatias + 1 Coca-Cola | € 11,99 |
+| 17:10 | Praça Dam | — | — |
+| 17:36 | Manneken Pis (Damrak 41) | Batata pequena + molho (falado "sete e cinquenta"; foi € 7,15) | € 7,15 |
+| 17:41 | Tony's Chocolonely | Barras de chocolate | € 20,00 |
+| 18:29 | Kalverstraat | — | — |
+| 18:49 | Hans Egstorf | Stroopwafel com cobertura | € 9,50 |
+| 19:29 | The Old Bell (Rembrandtplein) | 2 cervejas + 1 taça de vinho | € 16,60 |
+| 20:55 | Red Light District (De Wallen) | — | — |
+| 21:21 | McDonald's (Reguliersbreestraat) | McCrispy + lanche da Marina | € 12,60 |
+| | | **Dia 1** | **€ 90,84** |
+| | | Por pessoa | € 45,42 |
 
-Cotação: € 1 = R$ 5,9978 (PTAX de 12/03/2026, a mesma do vlog): € 90,84 ≈ R$ 544,84; € 45,42 ≈ R$ 272,42. Fora: hotel e passagem aérea.
+- **7 horas:** do pouso (14:30, hora do arquivo de IMG_1375) até a saída do McDonald's para o hotel (21:31).
+- **11 paradas:** as 11 da tabela, sem contar o ônibus.
+- **Cotação:** € 1 = R$ 5,9978 (PTAX de 12/03/2026, a mesma do vlog): € 90,84 ≈ R$ 544,84; € 45,42 ≈ R$ 272,42. Fora: hotel e passagem aérea.
+
+## Fatos externos (conferidos em 28/10/2026)
+
+- **Casas inclinadas de propósito:** muitas casas de Amsterdam foram feitas inclinadas para a frente para que o que sobe pela viga de içar (o gancho no alto da fachada) não bata na parede. As fontes divergem sobre quanto da inclinação das Dancing Houses vem disso e quanto vem do afundamento das estacas; por isso o texto diz "muita casa aqui", e não "essas casas". Fontes: [The Culture Trip](https://theculturetrip.com/europe/netherlands/articles/why-do-houses-and-buildings-in-amsterdam-tilt-forward), [DutchReview](https://dutchreview.com/culture/amsterdam-canal-houses/), [Amsterdamian](https://amsterdamian.com/see/amsterdam/why-dutch-houses-have-those-hooks-on-the-facades/).
+- **Praça Dam:** o Palácio Real foi construído como prefeitura (a partir de 1648) e o Monumento Nacional (1956) homenageia as vítimas da Segunda Guerra. Fonte: [Wikipedia, Dam Square](https://en.wikipedia.org/wiki/Dam_Square).
 
 ## Legenda do post
 
 ```
-Quanto custa o primeiro dia em Amsterdam? Pra gente, € 90,84 para dois (≈ R$ 544,84), ou € 45,42 por pessoa, sem hotel e sem passagem.
+Primeiro dia em Amsterdam: 7 horas, 11 paradas e € 90,84 para dois (≈ R$ 544,84), ou € 45,42 por pessoa, sem hotel e sem passagem.
 
-Ônibus do aeroporto € 13,00 · pizza € 11,99 · batata € 7,15 · chocolate na Tony's € 20,00 · stroopwafel € 9,50 · cerveja e vinho € 16,60 · McDonald's € 12,60. Nenhum ingresso: o primeiro dia foi andar pelo centro.
+Ônibus do aeroporto € 13,00 · New York Pizza € 11,99 · batata da Manneken Pis € 7,15 · Tony's Chocolonely € 20,00 · stroopwafel € 9,50 · cerveja e vinho na The Old Bell € 16,60 · McDonald's € 12,60. Dancing Houses, Praça Dam, Kalverstraat e Red Light District: de graça.
 
-Salva pra sua viagem. O dia completo está no YouTube (link no perfil).
+Os outros 2 dias, com o custo de tudo, estão no vídeo completo no YouTube (link no perfil).
 
 Cotação: € 1 = R$ 5,9978 (PTAX de 12/03/2026).
 
@@ -92,13 +145,13 @@ Cotação: € 1 = R$ 5,9978 (PTAX de 12/03/2026).
 
 ## Como gravar
 
-- No quarto, lugar silencioso, celular a 15–20 cm da boca. Não precisa aparecer: é só a voz.
-- Um arquivo por bloco (N1 a N7), 2 tomadas de cada; N1 com cara de pergunta de verdade.
+- No quarto, lugar silencioso, celular a 15–20 cm da boca. Só a voz.
+- Um arquivo por linha N (N1 a N19), 2 tomadas de cada. Na N1, energia de quem conta uma novidade.
 - 1 s de silêncio antes de parar cada gravação (o iPhone corta ≈ 0,27 s do fim do áudio).
-- Eu corto os respiros. Não acelere a fala.
+- Fale no seu ritmo: eu corto os respiros e não acelero a voz.
 
 ## Antes da edição
 
-1. Baixar do Drive (`Youtube/Amsterdam`) só os clipes da tabela e conferir na folha de contato as cenas com "ou" (1, 4, 6, 9, 11 e 15).
-2. Transcrever de novo as falas reais (5, 6, 7, 8, 9 e 12) e cortar pela palavra.
-3. Se passar de 45 s depois da gravação: cortar a cena 7 (bicicleta), não acelerar a voz.
+1. Baixar do Drive (`Youtube/Amsterdam`) só os clipes da tabela e conferir na folha de contato as cenas com "ou".
+2. Transcrever de novo as falas reais e cortar pela palavra. Conferir no ouvido "com molho, deu sete e cinquenta" (IMG_1449): é a única fala que não está na legenda revisada do vlog.
+3. Se a montagem passar de 2:40: tirar primeiro a fala da Kalverstraat ("A gente sai do Brasil…") e depois a do stroopwafel ("Você tá toda melada"). Não acelerar a voz.
