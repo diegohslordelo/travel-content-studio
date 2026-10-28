@@ -121,7 +121,7 @@ const Clarao: React.FC<{ em: number }> = ({ em }) => {
 
 // ------------------------------------------------------------------ Diego (recorte), legendas, sons
 
-/** Zoom de corte (punch-in) nos saltos de fala e nos momentos de ênfase. Centro no rosto (x 540 · y 1400). */
+/** Zoom de corte (punch-in) nos saltos de fala e nos momentos de ênfase. Centro no rosto (canto inferior direito: x ≈ 850 · y 1610). */
 const PUNCHES: [number, number, number][] = [];
 const Diego: React.FC<{ segs: Segmento[]; punches: [number, number, number][] }> = ({ segs, punches }) => {
   const { fps } = useVideoConfig();
@@ -129,17 +129,20 @@ const Diego: React.FC<{ segs: Segmento[]; punches: [number, number, number][] }>
   let k = 1;
   for (const [a, b, z] of punches) if (t >= a && t < b) k = z;
   return (
-    <AbsoluteFill style={{ transform: `scale(${k})`, transformOrigin: "540px 1400px" }}>
+    <AbsoluteFill style={{ transform: `scale(${k})`, transformOrigin: "850px 1610px" }}>
       {segs.map((s, i) => {
         const a = Math.round(s.ini * fps), d = Math.round((s.ini + s.dur) * fps) - a;
         const salto = s.salto ? 1.07 : 1;
         return (
           <Sequence key={i} from={a} durationInFrames={Math.max(1, d)} layout="none">
-            <AbsoluteFill style={{ transform: `scale(${salto})`, transformOrigin: "540px 1400px" }}>
+            <AbsoluteFill style={{ transform: `scale(${salto})`, transformOrigin: "850px 1610px" }}>
               <div
                 style={{
                   position: "absolute", left: 0, top: 0, width: 1080, height: 1920,
                   transform: `translate(${s.tx}px, ${s.ty}px) scale(${s.s})`, transformOrigin: "0 0",
+                  // o ombro esquerdo termina na borda do quadro da gravação: some num degradê em vez de corte duro
+                  maskImage: "linear-gradient(to right, transparent 0%, black 16%, black 100%)",
+                  WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 16%, black 100%)",
                   filter: "brightness(1.1) contrast(1.05) saturate(1.04) drop-shadow(0 0 2px rgba(255,236,214,.55)) drop-shadow(0 26px 46px rgba(0,0,0,.6))",
                 }}
               >
@@ -160,7 +163,7 @@ const Legendas: React.FC<{ legendas: Legenda[] }> = ({ legendas }) => {
   const k = clamp((t - l.ini) / 0.12);
   const partes = l.texto.split(/(\*[^*]+\*)/).filter(Boolean);
   return (
-    <div style={{ position: "absolute", left: 0, right: 0, top: 1652, display: "flex", justifyContent: "center", opacity: k, transform: `scale(${0.94 + 0.06 * k})` }}>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1240, display: "flex", justifyContent: "center", opacity: k, transform: `scale(${0.94 + 0.06 * k})` }}>
       <div style={{ fontFamily: TEXTO, fontWeight: 800, fontSize: 66, lineHeight: 1.1, color: COR.branco, textShadow: SOMBRA_TEXTO, whiteSpace: "nowrap" }}>
         {partes.map((p, i) => (p.startsWith("*") ? <span key={i} style={{ color: COR.ambar }}>{p.slice(1, -1)}</span> : <span key={i}>{p}</span>))}
       </div>
@@ -313,7 +316,7 @@ export const ReelFlorenca: React.FC<PropsFlorenca> = (p) => {
       <Janela ini={s12} fim={s13 + 0.45}>
         <AbsoluteFill style={t >= s13 ? mergulhoSai(s13, "60%", "40%")(t) : undefined}>
           <Mapa t={t} camera={cam} fases={{ parada: s12 - 2, revela: s12 - 2, volta: W(181) }} />
-          <Titulo t={t} top={860} alinhar="centro" sai={W(193) - 0.08} linhas={[{ texto: "UMA VOLTA ENORME", em: W(185) - 0.04, tam: 104, cor: COR.alerta, peso: true }]} />
+          <Titulo t={t} top={860} alinhar="centro" sai={W(193) - 0.32} linhas={[{ texto: "UMA VOLTA ENORME", em: W(185) - 0.04, tam: 104, cor: COR.alerta, peso: true }]} />
           <Titulo t={t} top={860} alinhar="centro" linhas={[{ texto: "MAIS CARO", em: W(193) - 0.04, tam: 132, cor: COR.alerta, peso: true }]} />
         </AbsoluteFill>
       </Janela>
@@ -354,7 +357,7 @@ export const ReelFlorenca: React.FC<PropsFlorenca> = (p) => {
       <Clarao em={s12} />
 
       {/* ---------- base do Diego (assenta o recorte no fundo) ---------- */}
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 52%, rgba(0,0,0,.5) 78%, rgba(0,0,0,.72) 100%)" }} />
+      <AbsoluteFill style={{ background: "radial-gradient(55% 32% at 82% 100%, rgba(0,0,0,.6) 0%, rgba(0,0,0,0) 100%), linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,.18) 72%, rgba(0,0,0,.4) 100%)" }} />
       <Diego segs={p.segmentos} punches={punches} />
 
       {/* ---------- gancho ---------- */}

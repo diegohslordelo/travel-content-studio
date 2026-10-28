@@ -21,7 +21,7 @@ TMP = os.path.join(AQUI, "_tmp"); PUBLIC = os.path.join(TMP, "public")
 REMOTION = os.path.normpath(os.path.join(AQUI, "..", "..", "..", "design-system", "remotion"))
 SR = 48000
 ALVO_VOZ = -16.0  # LUFS de cada tomada antes do master
-VERSOES = {"com_rostos": True, "sem_rostos": False}  # pedido do Diego (28/10/2026)
+VERSOES = {"com_rostos": True}  # versão única com as pessoas (pedido do Diego, 28/10/2026)
 
 
 def sh(cmd, capturar=False):
@@ -110,7 +110,8 @@ def props():
     for t, r in rosto.items():
         x, y, w, h = r["face"]; cx, cy = x + w / 2, y + h / 2
         s = max(wa / w, (H - ya) / (H - cy))  # o corpo tem de encostar na borda de baixo
-        tr[t] = {"s": round(s, 4), "tx": round(W / 2 - s * cx, 1), "ty": round(ya - s * cy, 1)}
+        tx = W - s * W  # canto inferior direito: a borda direita do quadro encosta na borda do Reel
+        tr[t] = {"s": round(s, 4), "tx": round(tx, 1), "ty": round(ya - s * cy, 1), "rosto_x": round(tx + s * cx, 1)}
     for sg in L["segmentos"]:
         sg.update(tr[sg["tomada"]])
     P = L["palavras"]
@@ -187,16 +188,16 @@ def master():
         m = json.loads(r.stderr[r.stderr.rindex("{"):])
         af = (f"loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:"
               f"measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true,aresample=48000")
-        saida = os.path.join(AQUI, f"reel_florenca-multa_rev1_{nome}.mp4")
+        saida = os.path.join(AQUI, "reel_florenca-multa_rev1.mp4")
         sh(["ffmpeg", "-v", "error", "-y", "-i", ent, "-c:v", "copy", "-af", af, "-c:a", "aac", "-b:a", "320k", "-ar", "48000", "-movflags", "+faststart", saida])
         print(nome, lufs(saida))
 
 
 def previa():
     for nome in VERSOES:
-        ent = os.path.join(AQUI, f"reel_florenca-multa_rev1_{nome}.mp4")
+        ent = os.path.join(AQUI, "reel_florenca-multa_rev1.mp4")
         sh(["ffmpeg", "-v", "error", "-y", "-i", ent, "-vf", "scale=540:960", "-c:v", "libx264", "-crf", "26", "-preset", "medium", "-c:a", "aac", "-b:a", "128k",
-            os.path.join(AQUI, f"reel_florenca-multa_rev1_{nome}_previa.mp4")])
+            os.path.join(AQUI, "reel_florenca-multa_rev1_previa.mp4")])
 
 
 if __name__ == "__main__":

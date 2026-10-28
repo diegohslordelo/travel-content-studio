@@ -378,7 +378,7 @@ export const Fiscais: React.FC<{ t: number; abre: number; sobem: number; carimbo
   const kc = clamp((t - carimbo) / 0.2);
   const sirene = t >= carimbo ? Math.sin((t - carimbo) * 14) : 0;
   const tremor = t >= carimbo && t < carimbo + 0.14 ? Math.sin(t * 200) * 12 : 0;
-  const escala = 1 + v * 0.9;
+  const escala = 1 + v * 0.3;
   return (
     <div style={{ position: "absolute", inset: 0, transform: `translateX(${tremor}px)` }}>
       <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>

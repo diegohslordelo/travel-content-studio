@@ -395,7 +395,8 @@
   ]
  ],
  "diego": {
-  "face_alvo_largura": 400,
-  "face_alvo_y": 1400
+  "layout": "canto inferior direito (pedido do Diego, 28/10/2026)",
+  "face_alvo_largura": 270,
+  "face_alvo_y": 1610
  }
 }

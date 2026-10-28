@@ -6,12 +6,13 @@
 
 | Arquivo | O que é |
 |---|---|
-| `reel_florenca-multa_rev1_com_rostos.mp4` | Versão com cenas do acervo em que aparecem outras pessoas (família no jantar, selfie com a Marina, o trem) |
-| `reel_florenca-multa_rev1_sem_rostos.mp4` | Versão sem rostos de outras pessoas: silhuetas no lugar dos cartões, mapa com o trem saindo no lugar do vídeo do trem, Ponte Vecchio e rua vazia no lugar das cenas com gente |
-| `*_previa.mp4` | Prévias 540 × 960 |
-| `musica/Sneaky_Snitch.mp3` | Música sugerida, **fora do vídeo** (pedido do Diego, 28/10/2026: ele põe na plataforma). Kevin MacLeod, CC BY 4.0: crédito na legenda (`legenda_post.md`) |
+| `reel_florenca-multa_rev1.mp4` | Versão final (única, com as pessoas do acervo: pedido do Diego, 28/10/2026) |
+| `reel_florenca-multa_rev1_previa.mp4` | Prévia 540 × 960 |
+| `musica/Sneaky_Snitch.mp3` | Música sugerida, **fora do vídeo** (o Diego põe na plataforma). Kevin MacLeod, CC BY 4.0: crédito na legenda (`legenda_post.md`) |
 
-Comum às duas: 1080 × 1920 · 24 fps (o da gravação) · ≈ 61 s · H.264 + AAC 320 kbps · −14 LUFS · pico ≤ −1,5 dBTP · **sem música**.
+1080 × 1920 · 24 fps (o da gravação) · ≈ 61 s · H.264 + AAC 320 kbps · −14 LUFS · pico ≤ −1,5 dBTP · **sem música**.
+
+**Layout (pedido do Diego, 28/10/2026):** o Diego fica **no canto inferior direito, menor** (rosto ≈ 270 px de largura, centro em x ≈ 820–880 · y 1610), como nas referências de tela verde (Reels 5 e 6 da análise). O ombro direito encosta na borda do Reel; o esquerdo some num degradê (o quadro da gravação termina ali). A legenda corre **acima da cabeça dele** (topo y 1240, centrada em x 540), sem tocar nele. Uma versão "sem rostos" chegou a ser feita e foi descartada a pedido.
 
 ## Estrutura e formato
 
@@ -24,7 +25,7 @@ Comum às duas: 1080 × 1920 · 24 fps (o da gravação) · ≈ 61 s · H.264 + 
 | Tempo | Fala | Fundo | Transição / som |
 |---|---|---|---|
 | 0–3,3 | "Levamos uma multa em Florença e foi a melhor coisa que aconteceu." | Duomo (IMG_5554) + gancho Anton linha a linha, "MULTA" em vermelho | impacto em "multa" |
-| 3,3–7,25 | "No último dia de Florença, eu, minha família e minha namorada…" | Panorama (IMG_5939) desfocando + cartões IMG_5658 e IMG_5808 · **sem rostos:** Ponte Vecchio + 5 silhuetas | fusão |
+| 3,3–7,25 | "No último dia de Florença, eu, minha família e minha namorada…" | Panorama (IMG_5939) desfocando + cartões IMG_5658 e IMG_5808 | fusão |
 | 7,25–9,15 | "…a gente saiu correndo do hotel pra ir pra estação" | Rua (IMG_5718), acelerada | chicote + *swish* |
 | 9,15–17,35 | rotas mudadas, obra, Google, "perder o trem", agonia, ônibus | Mapa esquemático: rota bloqueada, barreiras, a volta do aplicativo, etiqueta PERDER O TREM, pulso vermelho, ônibus | mergulho + ar · impacto em "obra" e "perder" |
 | 17,35–19,6 | "…subiu no ônibus e esqueceu de pagar o bilhete." | Ônibus real de Florença (IMG_5680) + bilhete riscado | mergulho no ônibus do mapa · impacto em "bilhete" |
@@ -35,9 +36,9 @@ Comum às duas: 1080 × 1920 · 24 fps (o da gravação) · ≈ 61 s · H.264 + 
 | 34,7–44,0 | desacreditado, a pergunta, "por ironia do destino" | Mapa de perto, sem cor, "QUAL O CAMINHO MAIS RÁPIDO?"; escurece na pausa | *riser* até "ironia" |
 | 44,0–45,6 | "…a gente estava na frente da estação." | Luz de passagem → mapa abre: a estação acende colada no ponto; "NA FRENTE DA ESTAÇÃO" | luz (pico 4 quadros) + impacto |
 | 45,6–49,4 | "O Google ia fazer a gente dar uma volta enorme… mais caro…" | Mapa: a volta em vermelho, "UMA VOLTA ENORME", "MAIS CARO" | clarão + *swish* |
-| 49,4–51,5 | "…se não fosse a multa. Então fica a dica aí:" | Dentro do trem (IMG_5986) · **sem rostos:** trem saindo da estação no mapa | mergulho + ar |
-| 51,5–54,6 | "se a sua cidade está em obra… perguntar para alguém que é de lá." | Rua de Florença (IMG_5591 · sem rostos: IMG_5718) + "CIDADE EM OBRA?" / "PERGUNTAR PARA ALGUÉM QUE É DE LÁ" | |
-| 54,6–56,7 | "E outra coisa: paga a passagem," | Ônibus passando (sem rostos: Duomo) + bilhete com ✓ | chicote + *swish* |
+| 49,4–51,5 | "…se não fosse a multa. Então fica a dica aí:" | Dentro do trem (IMG_5986) | mergulho + ar |
+| 51,5–54,6 | "se a sua cidade está em obra… perguntar para alguém que é de lá." | Rua de Florença (IMG_5591) + "CIDADE EM OBRA?" / "PERGUNTAR PARA ALGUÉM QUE É DE LÁ" | |
+| 54,6–56,7 | "E outra coisa: paga a passagem," | Ônibus passando + bilhete com ✓ | chicote + *swish* |
 | 56,7–61,0 | "porque Murphy está aí para acabar com a gente." + CTA | Ponte Vecchio ao pôr do sol (IMG_5812) + **Placa do DS** "MANDA PRA QUEM VAI PRA / ITÁLIA →" | fusão · *clack* (DS) |
 
 ## Conformidade
@@ -50,7 +51,7 @@ Comum às duas: 1080 × 1920 · 24 fps (o da gravação) · ≈ 61 s · H.264 + 
 | Imagem gravada pelo Diego ≥ 2 s na tela | ✅ nos planos de fundo · ⚠️ cartão IMG_5808 (selfie com a Marina): ≈ 2,0 s |
 | Transições | 10 em 61 s (fusão, chicote, mergulho ×3, escurecer, luz de passagem, clarão, chicote, fusão), ≥ 1,5 s entre elas; o resto é corte seco |
 | Efeitos | Kit `PDX_*` (CC0) nos volumes de trabalho (impacto −4/−6 dB, transição −6 dB, papel/obturador/riser −8 dB da voz) e *clack* do DS a −6 dB no CTA; ≥ 1,5 s entre efeitos |
-| Legenda | Inter 800 66 px, 1 palavra em âmbar por grupo, centrada em x 540, abaixo do queixo (base ≈ y 1726). ⚠️ Como nas greves, fica na faixa onde o Instagram mostra o nome e o texto do post |
+| Legenda | Inter 800 66 px, 1 palavra em âmbar por grupo, centrada em x 540, topo em y 1240 (acima da cabeça do Diego; dentro da zona segura e fora da faixa do nome/texto do post) |
 | Loudness | −14 LUFS · pico ≤ −1,5 dBTP (medido no arquivo final) |
 | Duração | ≈ 61 s. ⚠️ A referência de conteúdo recomenda até 30 s; a fala inteira foi mantida por pedido (nenhuma fala cortada) |
 
