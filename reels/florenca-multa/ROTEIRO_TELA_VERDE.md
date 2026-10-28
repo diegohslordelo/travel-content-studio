@@ -2,7 +2,7 @@
 
 **Formato:** Tela verde (Trello, Formato viral validado 02) · **Estrutura:** I.H.C. (Trello, Estruturas de roteiro) · **Duração estimada:** ≈ 33 s no ritmo acelerado do formato.
 **Fato:** relato do Diego (28/10/2026). Saída de Florença para Veneza em **31/12/2024**, pelo acervo (`acervo/italia/linha_do_tempo.md`).
-**Dados a confirmar antes do render:** multa de 40 € **por pessoa** ou no total; hora da fiscalização (para o selo de perrengue).
+**Dados confirmados pelo Diego (28/10/2026):** multa de **40 € por pessoa + o valor da passagem** (5 pessoas: 200 € de multa, mais as 5 passagens de ônibus, valor não informado); estação **Santa Maria Novella**; hora da fiscalização **não registrada** (o selo de perrengue fica sem hora).
 **DS só no CTA** (decisão do Diego, 28/10/2026): do bloco 1 ao 10 tudo é na linguagem do formato (`docs/FORMATOS_REELS.md`); o DS entra só na placa do CTA (bloco 11).
 
 ## Texto para gravar (no quarto)
@@ -13,7 +13,7 @@
 3. A cidade tava em obra, as rotas mudaram, e o Google mandou um caminho que fazia a gente perder o trem.
 4. Na correria, a gente subiu no ônibus… e esqueceu de pagar.
 5. Adivinha: fiscalização. E os fiscais vieram primeiro na gente.
-6. Desce na próxima parada, quinze minutos de burocracia, multa de quarenta euros [por pessoa].
+6. Desce na próxima parada, quinze minutos de burocracia, e multa de quarenta euros por pessoa, mais a passagem.
 7. Faltando quatro minutos pro trem, a gente já tinha desistido.
 8. Por desencargo, perguntei pro fiscal como chegava na estação.
 9. Ele apontou. A gente tava na frente dela.
@@ -37,7 +37,7 @@
 | 10 | Consequência | Rota do Google se apaga; a curta brilha | Canto inferior | **Clarão de volta** |
 | 11 | Conteúdo + CTA | Plano do gancho (loop) + placa **MANDA PRA QUEM VAI PRA / ITÁLIA →** | Centro | Fusão de fundo · *clack* |
 
-**Conferir antes do render:** a estação de destino (Santa Maria Novella é a principal de Florença para Veneza, mas não está no relato); foto de ônibus com licença; os 6 vídeos de 31/12 (IMG_5986–5997) na folha de contato.
+**Conferir antes do render:** foto de ônibus e da estação Santa Maria Novella com licença livre; os 6 vídeos de 31/12 (IMG_5986–5997) na folha de contato. Na tela, o talão mostra **"40 € × 5 = 200 € + passagem"** (sem inventar o valor da passagem).
 
 **Transições:** Fusão de fundo, linha da rota, Mão na lente, Luz de passagem e Clarão (`docs/REFERENCIA_EDICAO_FORMATOS.md`, 3.2): 5 transições não secas, ≥ 1,5 s entre elas. Sons `PDX_*` no meio, *clack* do DS só na placa do CTA. Volumes: seção 4.1 do mesmo guia.
 
