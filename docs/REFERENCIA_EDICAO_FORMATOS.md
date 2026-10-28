@@ -87,7 +87,11 @@ Todos com master −14,0 a −14,1 LUFS **[medido]** (DS V2, 4.6).
 | **Corte por correspondência** (*match cut*) | Dois planos com a mesma forma ou posição (arco → arco, torre → torre, xícara → globo) em corte seco | — | É corte seco (não conta na cota) e parece contínuo |
 | **Ponte de som** (J-cut / L-cut) | O som da próxima cena começa 3 a 12 quadros **antes** do corte (J) ou o da cena atual continua **depois** (L) | — | É a transição mais suave que existe e não mexe na imagem |
 
-**Duração das candidatas:** dentro da faixa de 100–700 ms do DS. A duração exata de cada uma fica para o teste e a aprovação.
+**Duração das candidatas:** dentro da faixa de 100–700 ms do DS.
+
+**Quem decide (decisão do Diego, 28/10/2026):** o Claude escolhe a transição de cada Reel, entre as famílias do DS e as candidatas acima. O critério é **criatividade ligada ao Reel**: a transição tem de nascer do tema, do objeto e do impacto daquele momento (a xícara que vira o globo nos churros; num Reel de trem, a porta que fecha e abre na cena seguinte; numa história antiga, a foto que envelhece até a outra). Transição genérica, que serviria em qualquer Reel, não entra. As cotas da seção 2 continuam valendo. A QA de cada revisão registra a transição escolhida e o porquê. Isso não altera o brand book: incluir as candidatas no DS V2 depende de pedido do Diego.
+
+**Pacote `@remotion/transitions` (instalado em 28/10/2026, 4.0.535):** traz `fade`, `dissolve`, `slide`, `wipe`, `iris`, `clock-wipe`, `flip`, `cross-zoom`, `zoom-blur`, `linear-blur`, `blur-slide`, `push-cut`, `crosswarp`, `dreamy-zoom`, `film-burn`, `ripple`, `swap`, `zoom-in-out`, `book-flip`. Servem de **motor** para as transições acima (ex.: `zoom-blur` no Mergulho, `dissolve` na Fusão, `linear-blur` no Arrasto). Ficam proibidos como efeito pronto e visível os que caem na lista "não usar nunca" do DS: `flip`, `book-flip`, `ripple`, `crosswarp`, `swap` e `clock-wipe`.
 
 ### 3.3 Onde usar, pelo bloco do roteiro (estruturas do Trello)
 
@@ -108,17 +112,38 @@ Na prática, um Reel de 30 s fica com **2 a 3 transições** nos pontos de virad
 
 O som é o que deixa a transição "imersiva" e também o que mais estraga quando erra.
 
+### 4.1 Volumes (decisão do Diego, 28/10/2026)
+
+O Diego avisou que, com a música do Instagram, os efeitos **não se ouvem**. Com os volumes do DS 4.6 (*whoosh* −16 dB, *clack* −10 dB da voz) e a música a 8–10 dB abaixo da voz, o efeito fica no nível da música ou abaixo dela e some. Decisão: **os efeitos têm de ser marcantes**. Volumes de trabalho, relativos à voz (loudness do evento, mesma medida do `design-system/sons/README.md`):
+
+| Som | DS 4.6 | **Volume de trabalho** |
+|---|---|---|
+| Transição (`PDX_swish`, `PDX_ar_longo`, `PD_whoosh`) | −16 dB | **−6 dB** |
+| Riser antes da virada (`PDX_riser`) | — | **−8 dB**, subindo até o corte |
+| Impacto em data, número, revelação (`PDX_impacto`) | — | **−4 dB** |
+| Objetos do DS (*clack*, *ding*, *tum*, moeda) | −6 a −14 dB | **−6 dB** (o *tum* fica em −4 dB) |
+| Página, obturador (`PDX_pagina`, `PDX_obturador`) | −12 dB | **−8 dB** |
+| Ponte de som (ambiente real da próxima cena) | −6 dB (Cinema) | **−8 dB**, e −3 dB nos 3 a 12 quadros antes do corte |
+| Música (quando o Claude mixa no render) | 8–10 dB abaixo da voz | **−18 dB sob a fala** (*ducking*), −10 dB sem fala |
+
+**Regra que segura tudo:** todo efeito fica **pelo menos 6 dB acima da música** no instante em que toca. Quando a música entra no Instagram, a versão entregue já leva a trilha mixada (ou uma versão `_sem_trilha` com a orientação de deixar a música do app em volume baixo).
+
+O master continua em −14 LUFS e pico ≤ −1 dBTP (DS 4.6). Estes números substituem os da 4.6 **na prática de edição**; o brand book e os tokens só mudam quando o Diego pedir.
+
+### 4.2 Regras
+
 | Regra | Origem |
 |---|---|
-| **Ponte de som antes de efeito sonoro:** o ambiente real da próxima cena (rua, sino, água, multidão) entra 3 a 12 quadros antes da imagem | [externo] J-cut · [DS] Cinema: ambiente do lugar −6 dB |
-| *Whoosh* só no Arrasto, −16 dB da voz, arquivo `PD_whoosh_v1.wav` | [DS] 4.6 |
+| **Ponte de som antes de efeito sonoro:** o ambiente real da próxima cena (rua, sino, água, multidão) entra 3 a 12 quadros antes da imagem | [externo] J-cut · [DS] Cinema: ambiente do lugar |
+| *Whoosh* não vai em todo corte: só nas transições escolhidas | [DS] 4.4 |
+| Kit de transição: `design-system/sons/externos/` (`PDX_*`, CC0) | Instalado em 28/10/2026 |
 | O som bate no **pico do movimento** (desfoque máximo, centro da tela), não no início | [externo] |
 | Som curto, ataque rápido, cauda curta. Não repetir o mesmo som em toda transição | [externo] |
-| Música 8 a 10 dB abaixo da voz (no Instagram) e pausa da trilha nos momentos de fala real | [QA] Gaudí · churros |
+| Pausa da trilha nos momentos de fala real (Marina, som do lugar) | [QA] churros |
 | Tema sensível (Anne Frank): sem efeito sonoro | [QA] |
 | Os `PD_*_v1.wav` são sintetizados e **ninguém ouviu**. Toda transição com som precisa de escuta humana antes de postar | [DS] sons/README · CLAUDE.md, 12 |
 
-**Fora do DS hoje:** os efeitos do Gaudí (impactos, sino, *whooshes* fora do Arrasto) e a rufada de caixa dos churros. Foram exceções desses Reels, não regra. Se o Diego quiser um som de impacto para datas e números como padrão, isso pede um som novo no DS (MINOR).
+**Fora do brand book:** o kit `PDX_*` e os volumes da 4.1 valem na edição por decisão do Diego (28/10/2026), mas ainda não estão no DS V2 (4.6) nem nos tokens.
 
 ---
 
@@ -178,7 +203,8 @@ O som é o que deixa a transição "imersiva" e também o que mais estraga quand
 
 | Ferramenta | Situação no repositório | Uso |
 |---|---|---|
-| **Remotion** 4.0.535 (`design-system/remotion/`) | Instalado: `remotion`, `@remotion/cli`, `@remotion/fonts`, `@remotion/media`. **`@remotion/transitions` não está instalado** | Composições dos Reels. As transições do perfil foram feitas à mão (`interpolate`). Para fade, slide, wipe e outras, instalar `@remotion/transitions` na mesma versão (4.0.535) ou continuar à mão. Nenhuma transição pronta do pacote entra sem passar pela seção 2 |
+| **Remotion** 4.0.535 (`design-system/remotion/`) | Instalados em 28/10/2026, todos na 4.0.535: `@remotion/transitions` (19 apresentações), `@remotion/sfx` (biblioteca de sons), `@remotion/light-leaks` (vazamento de luz, transição Cinema), `@remotion/motion-blur` (desfoque de movimento real: Arrasto, saída de placa), `@remotion/noise` (grão, movimento orgânico), `@remotion/paths` e `@remotion/shapes` (linhas e formas animadas: Rota, mapas, gráficos), `@remotion/layout-utils` (medir e encaixar texto), `@remotion/animation-utils` e `@remotion/media-utils` (forma de onda, duração de áudio) | Composições dos Reels. Nenhuma apresentação pronta entra sem passar pela seção 2 e pela seção 3 |
+| **Sons** | `design-system/sons/` (`PD_*`, sons da marca) e `design-system/sons/externos/` (`PDX_*`, transição, CC0) | Volumes na seção 4.1 |
 | **ffmpeg** | Instalado | Medição (corte, loudness), folhas de contato, extração de trecho |
 | **HyperFrames (HeyGen)** | O `compose` e o `render` do servidor MCP ficam bloqueados nesta sessão (cliente de terminal). As skills locais (`npx skills add heygen-com/hyperframes`) **não estão instaladas** | Fica para quando o Diego quiser instalar. Não é necessário para os três formatos |
 | **Recorte por IA** (RobustVideoMatting) | Usado nas greves | Tela verde sem fundo verde |
@@ -201,11 +227,12 @@ O som é o que deixa a transição "imersiva" e também o que mais estraga quand
 
 ## 9. Pendências (decisão do Diego)
 
-1. **A transição do 1º link de tela dividida não foi vista.** Para refinar com base nela: mande 2 ou 3 capturas de tela do momento da transição (antes, meio, depois) ou descreva o que acontece. Com isso, ela vira uma candidata medida.
-2. **Aprovar candidatas** (seção 3.2): Mergulho, Fusão de fundo e Dissolve de foto já foram usados; Revelação por objeto, *match cut* e ponte de som são novas. Aprovar como variante do DS (MINOR) ou só como exceção por Reel.
-3. **Som de impacto** para datas e números (usado no Gaudí, fora do DS): vira som oficial ou sai?
-4. **`@remotion/transitions`:** instalar ou manter as transições escritas à mão.
-5. **Conflito a registrar:** o pedido de "transições mais suaves e imersivas" convive com a regra de 70% de cortes secos do DS (4.4). Este guia propõe **menos transições, melhores** (2 a 3 por Reel, nas viradas), sem mexer na regra. Se a ideia for usar mais do que a cota, o DS precisa mudar.
+1. **Vídeos de referência:** a análise dos 9 Reels virá do Claude in Chrome (prompt em `docs/prompts/ANALISE_REELS_CHROME.md`). Quando o `.md` chegar, as observações entram aqui.
+2. **Brand book:** os volumes da 4.1 e as candidatas da 3.2 estão valendo na edição, mas o DS V2 (4.4, 4.6) e os tokens só mudam a pedido do Diego.
+3. **Escuta:** os sons `PDX_*` e os `PD_*_v1` nunca foram ouvidos. O primeiro Reel com o kit novo precisa de escuta antes de postar.
+4. **Conflito registrado:** o pedido de "transições mais suaves e imersivas" convive com a regra de 70% de cortes secos do DS (4.4). Este guia usa **menos transições, melhores** (2 a 3 por Reel, nas viradas), sem mexer na regra.
+
+**Resolvidas em 28/10/2026 (Diego):** o Claude decide as transições de cada Reel com criatividade ligada ao tema (seção 3.2); os efeitos ficam marcantes (seção 4.1); `@remotion/transitions` e os demais pacotes foram instalados, e um kit de sons CC0 foi baixado (seção 7). O som de impacto do Gaudí virou o `PDX_impacto` (seção 4.1).
 
 ---
 
