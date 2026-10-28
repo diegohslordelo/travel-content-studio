@@ -86,7 +86,7 @@ Todos com master −14,0 a −14,1 LUFS **[medido]** (DS V2, 4.6).
 | **Revelação por objeto** | Um elemento da cena (poste, pessoa passando, borda da placa, animação) cruza a tela e a próxima cena aparece atrás dele | — | Usa o movimento que já existe no plano |
 | **Corte por correspondência** (*match cut*) | Dois planos com a mesma forma ou posição (arco → arco, torre → torre, xícara → globo) em corte seco | — | É corte seco (não conta na cota) e parece contínuo |
 | **Ponte de som** (J-cut / L-cut) | O som da próxima cena começa 3 a 12 quadros **antes** do corte (J) ou o da cena atual continua **depois** (L) | — | É a transição mais suave que existe e não mexe na imagem |
-| **Luz de passagem** (ida) | Luz quente entra pela borda de cima em 3 quadros, cobre a tela por 4, o corte fica **escondido no quadro mais claro** (6º) e a luz recua para um canto em 4 quadros. Total ≈ 11 quadros a 30 fps (≈ 370 ms) | — (referência 1, 15,37 s) | O olho não vê o corte: só vê a luz. Ver o conflito de intensidade na seção 10 |
+| **Luz de passagem** (ida) | Luz quente entra pela borda de cima em 3 quadros, cobre a tela por 4, o corte fica **escondido no quadro mais claro** (6º) e a luz recua para um canto em 4 quadros. Total ≈ 11 quadros a 30 fps (≈ 370 ms) | — (referência 1, 15,37 s) | O olho não vê o corte: só vê a luz. Intensidade na seção 10.4 |
 | **Clarão de volta** | Corte seco para um quadro superexposto que volta ao normal em 5 quadros (≈ 170 ms) | — (referência 1, 24,73 s) | Faz par com a Luz de passagem: luz quente na ida para o apoio, clarão branco na volta para o rosto |
 | **Empurrão da tela dividida** | A metade de cima sobe e sai pelo topo; a de baixo cresce até a tela cheia, com desaceleração. ≈ 19 quadros (≈ 630 ms) | — (referência 1, 3,47 s) | É a mesma imagem que cresce: a passagem do gancho dividido para a fala em tela cheia fica contínua |
 | **Mão na lente** | O Diego leva a mão à lente na gravação do quarto; o corte cai no quadro de maior desfoque | — (referência 1, 31,43 s) | Corte escondido feito na gravação, sem efeito. Precisa estar no roteiro de gravação |
@@ -232,7 +232,7 @@ O master continua em −14 LUFS e pico ≤ −1 dBTP (DS 4.6). Estes números su
 
 ## 9. Pendências (decisão do Diego)
 
-1. **Luz de passagem:** a intensidade da referência (tela inteira lavada de luz) passa do *light leak* de 8% do DS (4.5, só na Cinema). Decidir se a Luz de passagem pode passar de 8% no pico (≈ 4 quadros) ou se fica em 8% (seção 10).
+1. **Luz de passagem:** resolvida em 28/10/2026 (seção 10.4): pico de até 85% por no máximo 4 quadros, 8% fora dele. Falta só levar ao brand book, se o Diego quiser.
 2. **Brand book:** os volumes da 4.1 e as candidatas da 3.2 estão valendo na edição, mas o DS V2 (4.4, 4.6) e os tokens só mudam a pedido do Diego.
 3. **Escuta:** os sons `PDX_*` e os `PD_*_v1` nunca foram ouvidos. O primeiro Reel com o kit novo precisa de escuta antes de postar.
 4. **Conflito registrado:** o pedido de "transições mais suaves e imersivas" convive com a regra de 70% de cortes secos do DS (4.4). Este guia usa **menos transições, melhores** (2 a 3 por Reel, nas viradas), sem mexer na regra.
@@ -277,9 +277,20 @@ Fonte: análise quadro a quadro feita pelo Claude in Chrome em 28/10/2026 (`docs
 
 O Chrome não ouve. Os instantes com provável efeito sonoro estão na seção 6 de cada Reel da análise (ex.: Ref. 1 em 15,4 · 20,8 · 41,4 · 58,9 · 78,0 s, nas Luzes de passagem, e 24,73 · 45,0 · 63,43 · 81,93 s, nos Clarões). Até o Diego ouvir, o perfil usa: **Luz de passagem** com `PDX_ar_longo` (−6 dB, pico no quadro mais claro) e **Clarão** com `PDX_impacto` (−4 dB, no 1º quadro). Volumes na seção 4.1.
 
-### 10.4 Conflito com o DS (registrado, não resolvido)
+### 10.4 Intensidade da Luz de passagem (decisão do Claude, delegada pelo Diego em 28/10/2026)
 
-A Luz de passagem da referência lava a tela inteira por ≈ 4 quadros. O DS limita o *light leak* a 8% e só na transição Cinema (4.5). Este guia **não** usa a intensidade da referência até o Diego decidir (pendência 1 da seção 9). Enquanto isso, a Luz de passagem pode ser feita **dentro** da família Cinema (escurece, abre com luz quente de 8%) ou com o pacote `@remotion/light-leaks` limitado a 8%.
+O DS limita o *light leak* a 8% (4.5). Com 8% a luz não esconde o corte, e o efeito da referência se perde. Decisão:
+
+| Fase | Duração | Intensidade |
+|---|---|---|
+| Entrada (luz desce da borda de cima) | 3 quadros | sobe de 8% até o pico |
+| **Pico (o corte fica aqui)** | **no máximo 4 quadros** (≈ 130 ms a 30 fps) | **até 85%** de opacidade, cor quente do *light leak* do DS |
+| Saída (luz recua para um canto) | 4 quadros | desce do pico até 0 |
+
+- Fora do pico, nada passa de 8%. A transição inteira fica abaixo de 0,4 s, a mesma exceção que o DS já abre para Varredura e Cinema (área de objeto, seção 2 do DS).
+- No máximo **2 Luzes de passagem por Reel**, sempre em par com o Clarão de volta, e só em Reel de tom leve ou curioso. Em tema sensível (ex.: Anne Frank), não usar.
+- Implementação: `@remotion/light-leaks` ou máscara própria com degradê, com a curva acima. Som: `PDX_ar_longo` a −6 dB, com o pico do som no 1º quadro do pico de luz.
+- É uma exceção de edição, registrada aqui e na QA de cada Reel que usar. O brand book continua com 8% até o Diego pedir a atualização.
 
 ## Fontes externas
 
