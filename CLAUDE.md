@@ -73,10 +73,12 @@ Este arquivo **não** descreve a identidade visual. Cores, fontes, componentes, 
 | Procedimento | Vídeo longo do YouTube | `docs/VIDEO_LONGO_YOUTUBE.md` | Estrutura, sons, música, envio do material, fluxo e pendências dos vlogs (decisões do Diego de 16/10/2026). Os requisitos do DS V2 e dos tokens prevalecem, exceto nas diferenças listadas na seção 6 dele
 | Procedimento | Padrão de revisão de áudio (vídeos longos do YouTube) | `docs/AUDIO_REVIEW_STANDARD.md` | Método, checklist e relatório da revisão de áudio. Os requisitos do DS V2 e dos tokens prevalecem sobre ele |
 | Apoio | Instrução-base | `docs/design-system-marca-viagens.md` | Método e teoria (o porquê). As cores e fontes "sugeridas" dele não valem como identidade |
+| Roteiro e formato | Trello "Formatos Criativos de Conteúdo [Alunos]" | `docs/ESTRUTURAS_DE_ROTEIRO.md` e `docs/FORMATOS_TRELLO.md` (espelhos do quadro, https://trello.com/b/VOx6su53/formatos-criativos-de-conteudo-alunos) | Estruturas de roteiro e formatos (tela dividida, tela verde, narrado e, quando incorporados, os demais). Decisão do Diego, 28/10/2026: **é a referência** para estrutura e formato de roteiro. Não vale sobre o DS V2 (identidade visual) nem sobre as regras de marca |
 
 As fontes do DS V2 ainda não estão no repositório (seção 14).
 
 **Em caso de conflito:**
+- **Roteiro e formato** (decisão do Diego, 28/10/2026): entre o Trello e o que o Claude já sabe ou lembra sobre estrutura de roteiro e formato de vídeo, **vale o Trello**. Os espelhos em `docs/` copiam o quadro sem acréscimos; se o quadro mudar, atualize o espelho. Só as listas já incorporadas valem como referência (hoje: "Estruturas de roteiro" e os formatos 01 Tela dividida, 02 Tela verde e 04 Narrado). O Trello não substitui o DS V2, os tokens, as regras editoriais (seção 9) nem a referência de conteúdo no que não trata de roteiro e formato.
 - Uma regra específica de Reel não altera o Design System.
 - Uma regra antiga da V1 (ou da v0) não prevalece sobre a V2.
 - **DS × tokens × bundle** (decisão do Diego, 05/10/2026): os tokens valem para **valores**; o brand book vale para **regras**; o bundle é só implementação de prévia e, se divergir, corrige-se o bundle.
@@ -166,9 +168,9 @@ O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias 
 
 - **Não é possível refilmar** essas viagens. Não presuma que o Diego possa voltar ou gravar uma cena contextual nova.
 - **Não crie cenas falsas** para representar acontecimentos que não foram gravados.
-- **Gravação atual do Diego:** não a insira num Reel de experiência passada se isso quebrar a continuidade temporal.
+- **Gravação atual do Diego** (decisão dele, 28/10/2026): ele não consegue gravar mais viagens, mas **grava no quarto** e o Claude usa essas gravações para montar o Reel (fala, narração, tela dividida, tela verde). Nesse caso o Diego de hoje **conta** a viagem e o acervo entra como imagem de apoio. Não faça parecer que a gravação do quarto aconteceu na viagem, e não a insira como se fosse cena da viagem (continuidade temporal e contexto verdadeiro, seção 9).
 - **Priorize o material existente:** falas, voz, cenas, texto na tela, narração, elementos do DS V2, montagem, som ambiente e edição.
-- **Gravação nova:** se for mesmo necessária, registre-a como **"material futuro"**. Ela não é requisito para concluir a edição atual.
+- **Gravação nova no quarto:** pode ser pedida quando o roteiro precisar de fala ou narração que o acervo não tem. O roteiro deve dizer o que o Diego precisa gravar. Gravação de **viagem** continua impossível; se algo assim fosse necessário, registre como **"material futuro"**, fora do requisito da edição atual.
 - **Material bruto** (master e brutos, em `fonte/`): pode ser analisado, mas não alterado, movido, renomeado ou excluído sem autorização explícita do Diego.
 
 ## 11. Organização do repositório
