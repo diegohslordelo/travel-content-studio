@@ -1,0 +1,523 @@
+{
+ "nota": "Decupagem da REV4 (29/10/2026): toda imagem com no mínimo 3 s na tela (pedido do Diego: fotos, vídeos e animações), transição desenhada em cada troca de cena, fala 2 regravada ('românico'). Âncoras 'fala:palavra#n±s'. REV4: fala 2 trocada pela IMG_7440.",
+ "acervo_dir": "../fonte",
+ "rostoY": 680,
+ "broll": {
+  "IMG_2490.MOV": {
+   "ini": 3.0,
+   "fim_limpo": 7.9,
+   "foco_x": 0.55,
+   "nota": "Canal até o Rozenhoedkaai (16/03, 12:40)."
+  },
+  "IMG_2479.MOV": {
+   "ini": 0.3,
+   "fim_limpo": 6.8,
+   "foco_x": 0.5,
+   "nota": "Fachada da basílica, estátuas douradas (16/03, 12:27)."
+  },
+  "IMG_2639.MOV": {
+   "ini": 0.0,
+   "fim_limpo": 3.5,
+   "foco_x": 0.5,
+   "nota": "Waffle com chocolate (16/03, 14:41); só a mão do Diego."
+  },
+  "IMG_2477.MOV": {
+   "ini": 0.2,
+   "fim_limpo": 4.4,
+   "foco_x": 0.5,
+   "nota": "Praça Burg com a basílica (16/03, 12:02)."
+  },
+  "IMG_2486.MOV": {
+   "ini": 0.3,
+   "fim_limpo": 6.6,
+   "foco_x": 0.5,
+   "nota": "Canal com barco (16/03, 12:30); fecha o loop com a abertura."
+  }
+ },
+ "imagens": [
+  "reliquia_frasco",
+  "reliquia_veneracao",
+  "capela_baixo",
+  "capela_cima",
+  "procissao_hoje",
+  "procissao_soldados",
+  "cartaz_procissao",
+  "cruzados"
+ ],
+ "cenas": [
+  {
+   "id": "abertura",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_2490.MOV",
+   "ini": 0,
+   "fim": "f1:fadas+0.17",
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "nota": "cidade de conto de fadas"
+  },
+  {
+   "id": "fachada",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_2479.MOV",
+   "ini": "f1:fadas+0.17",
+   "fim": 6.7,
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "cartao": "reliquia_frasco",
+   "marcos": {
+    "cartao": "f1:sangue-0.06"
+   },
+   "transicao": "whip",
+   "nota": "existe uma basílica · o frasco entra em 'sangue'"
+  },
+  {
+   "id": "diego_chave",
+   "tipo": "fala",
+   "ini": 6.7,
+   "fim": "f2:Lá-0.1",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "transicao": "empurrao",
+   "nota": "palavra-chave 'Basílica do Sangue Sagrado' e etiqueta de lugar 'Bruges, Bélgica'"
+  },
+  {
+   "id": "capelas",
+   "tipo": "anim",
+   "layout": "full",
+   "anim": "capelas",
+   "ini": "f2:Lá-0.1",
+   "fim": "f2:que-0.08",
+   "fotos": [
+    "capela_baixo",
+    "capela_cima"
+   ],
+   "marcos": {
+    "baixo": "f2:uma",
+    "cima": "f2:outra"
+   },
+   "transicao": "zoom"
+  },
+  {
+   "id": "reliquia",
+   "tipo": "foto",
+   "layout": "card",
+   "foto": "reliquia_veneracao",
+   "ini": "f2:que-0.08",
+   "fim": "f3:teria-0.08",
+   "kb": [
+    1.0,
+    1.07
+   ],
+   "foco": [
+    0.6,
+    0.55
+   ],
+   "transicao": "mergulho",
+   "nota": "mergulho: a câmera entra na capela de cima e encontra a relíquia"
+  },
+  {
+   "id": "rota",
+   "tipo": "anim",
+   "layout": "full",
+   "anim": "rota",
+   "ini": "f3:teria-0.08",
+   "fim": "f3:essa#2-0.1",
+   "marcos": {
+    "bruges": "f3:Bruges",
+    "cruzadas": "f3:cruzadas"
+   },
+   "transicao": "dissolve"
+  },
+  {
+   "id": "origem",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "cruzados",
+   "selo": "REPRESENTAÇÃO ARTÍSTICA",
+   "ini": "f3:essa#2-0.1",
+   "fim": "f4:E-0.22",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.3,
+    0.55
+   ],
+   "foco_fim": [
+    0.45,
+    0.5
+   ],
+   "tom": "medieval",
+   "interrogacao": true,
+   "marcos": {
+    "interrogacao": "f3:comprovada"
+   },
+   "transicao": "clarao",
+   "nota": "'essa história é muito antiga… origem não comprovada': a iluminura das cruzadas com o '?'"
+  },
+  {
+   "id": "viva",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "procissao_hoje",
+   "ini": "f4:E-0.22",
+   "fim": "f4:procissão-0.08",
+   "kb": [
+    1.0,
+    1.07
+   ],
+   "foco": [
+    0.45,
+    0.45
+   ],
+   "transicao": "luz",
+   "letreiro": [
+    {
+     "texto": "DESDE A",
+     "tam": 86,
+     "em": "f4:Desde-0.05"
+    },
+    {
+     "texto": "IDADE MÉDIA",
+     "tam": 150,
+     "em": "f4:Idade-0.05",
+     "cor": "ambar"
+    }
+   ]
+  },
+  {
+   "id": "cartaz",
+   "tipo": "foto",
+   "layout": "card",
+   "foto": "cartaz_procissao",
+   "selo": "REGISTRO HISTÓRICO",
+   "ini": "f4:procissão-0.08",
+   "fim": "f4:pela-0.08",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.5,
+    0.3
+   ],
+   "foco_fim": [
+    0.5,
+    0.5
+   ],
+   "transicao": "dissolve"
+  },
+  {
+   "id": "unesco",
+   "tipo": "anim",
+   "layout": "full",
+   "anim": "patrimonio",
+   "ini": "f4:pela-0.08",
+   "fim": "f5:É-0.24",
+   "fundo": "procissao_soldados",
+   "marcos": {
+    "l0": "f4:UNESCO",
+    "l1": "f4:patrimônio",
+    "l2": "f4:cultural",
+    "l3": "f4:imaterial",
+    "l4": "f4:humanidade"
+   },
+   "transicao": "zoom"
+  },
+  {
+   "id": "waffle",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_2639.MOV",
+   "ini": "f5:É-0.24",
+   "fim": "f5:arquitetura+0.2",
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "transicao": "whip"
+  },
+  {
+   "id": "basilica",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_2477.MOV",
+   "ini": "f5:arquitetura+0.2",
+   "fim": "f5:Agora-0.08",
+   "kb": [
+    1.05,
+    1.0
+   ],
+   "transicao": "dissolve"
+  },
+  {
+   "id": "cta",
+   "tipo": "broll",
+   "layout": "full",
+   "arquivo": "IMG_2486.MOV",
+   "ini": "f5:Agora-0.08",
+   "fim": "fim",
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "transicao": "luz",
+   "nota": "volta ao canal (loop) + placa do DS V2"
+  }
+ ],
+ "gancho": {
+  "layout": {
+   "split": true,
+   "topo": 275
+  },
+  "fim": 6.7,
+  "blocos": [
+   {
+    "ini": 0,
+    "linhas": [
+     {
+      "texto": "VOCÊ SABIA QUE NO MEIO",
+      "tam": 60,
+      "em": 0
+     },
+     {
+      "texto": "DE UMA CIDADE QUE PARECE",
+      "tam": 60,
+      "em": "f1:de#1-0.05"
+     },
+     {
+      "texto": "TER SAÍDO DE UM",
+      "tam": 60,
+      "em": "f1:ter-0.05"
+     },
+     {
+      "texto": "CONTO DE FADAS",
+      "tam": 132,
+      "em": "f1:conto-0.05",
+      "cor": "ambar"
+     }
+    ]
+   },
+   {
+    "ini": "f1:existe-0.08",
+    "linhas": [
+     {
+      "texto": "EXISTE UMA BASÍLICA",
+      "tam": 70,
+      "em": "f1:existe-0.08"
+     },
+     {
+      "texto": "QUE GUARDA",
+      "tam": 70,
+      "em": "f1:que#3-0.05"
+     },
+     {
+      "texto": "O SANGUE",
+      "tam": 136,
+      "em": "f1:sangue-0.06",
+      "cor": "sangue"
+     },
+     {
+      "texto": "DE JESUS CRISTO?",
+      "tam": 84,
+      "em": "f1:Jesus-0.05"
+     }
+    ]
+   }
+  ]
+ },
+ "chaves": [
+  {
+   "ini": "f2:Basílica-0.06",
+   "fim": "f2:em-0.08",
+   "linhas": [
+    {
+     "texto": "Basílica do",
+     "estilo": "titulo",
+     "em": "f2:Basílica-0.06"
+    },
+    {
+     "texto": "Sangue Sagrado",
+     "estilo": "serifa",
+     "em": "f2:Sangue-0.06"
+    }
+   ]
+  },
+  {
+   "ini": "f2:Bruges-0.06",
+   "fim": "f2:Lá-0.1",
+   "tipo": "local",
+   "linhas": [
+    {
+     "texto": "BRUGES",
+     "estilo": "titulo",
+     "em": "f2:Bruges-0.06"
+    },
+    {
+     "texto": "BÉLGICA",
+     "estilo": "rotulo",
+     "em": "f2:Bélgica-0.06"
+    }
+   ]
+  }
+ ],
+ "legenda": {
+  "destaques": {
+   "f2": [
+    "duas",
+    "simples",
+    "românico",
+    "gótica",
+    "relíquia"
+   ],
+   "f3": [
+    "tradição",
+    "bruges",
+    "cruzadas",
+    "ponto",
+    "antiga",
+    "comprovada"
+   ],
+   "f4": [
+    "viva",
+    "procissão",
+    "sagrado",
+    "unesco"
+   ],
+   "f5": [
+    "chocolate",
+    "medieval",
+    "fé",
+    "séculos",
+    "bruges",
+    "europa"
+   ]
+  },
+  "troca": {
+   "unesco": "UNESCO"
+  },
+  "quebrar_antes": [
+   "f2:em#1",
+   "f3:não",
+   "f5:reúne"
+  ],
+  "sem_legenda": [
+   [
+    "f2:da-0.1",
+    "f2:Lá-0.15"
+   ],
+   [
+    "f4:Desde-0.1",
+    "f4:a#2-0.1"
+   ],
+   [
+    "f4:pela-0.1",
+    "f5:É-0.3"
+   ]
+  ]
+ },
+ "sons": [
+  {
+   "nome": "swish · chicote canal → fachada",
+   "arquivo": "PDX_swish.wav",
+   "em": "f1:fadas+0.17",
+   "desl": 0.13,
+   "rel_db": -6,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "impacto · o sangue",
+   "arquivo": "PDX_impacto.wav",
+   "em": "f1:sangue-0.06",
+   "rel_db": -4,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "swish · empurrão",
+   "arquivo": "PDX_swish.wav",
+   "em": 6.7,
+   "desl": 0.3,
+   "rel_db": -6,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "ar longo · zoom para as capelas",
+   "arquivo": "PDX_ar_longo.wav",
+   "em": "f2:Lá-0.1",
+   "desl": 0.15,
+   "rel_db": -9,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "ar longo · mergulho na capela de cima",
+   "arquivo": "PDX_ar_longo.wav",
+   "em": "f2:que-0.08",
+   "rel_db": -6,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "página · dissolve para a rota",
+   "arquivo": "PDX_pagina.wav",
+   "em": "f3:teria-0.08",
+   "desl": 0.2,
+   "rel_db": -9,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "impacto · clarão (virada)",
+   "arquivo": "PDX_impacto.wav",
+   "em": "f3:essa#2-0.1",
+   "rel_db": -4,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "ar longo · luz de passagem",
+   "arquivo": "PDX_ar_longo.wav",
+   "em": "f4:E-0.22",
+   "rel_db": -6,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "impacto · IDADE MÉDIA",
+   "arquivo": "PDX_impacto.wav",
+   "em": "f4:Idade",
+   "rel_db": -4,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "impacto · PATRIMÔNIO",
+   "arquivo": "PDX_impacto.wav",
+   "em": "f4:patrimônio",
+   "rel_db": -6,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "swish · chicote UNESCO → waffle",
+   "arquivo": "PDX_swish.wav",
+   "em": "f5:É-0.24",
+   "desl": 0.13,
+   "rel_db": -6,
+   "alinhar": "pico"
+  }
+ ],
+ "cta": {
+  "ini": "f5:me-0.04",
+  "entrada_ms": 0,
+  "cauda": 1.6,
+  "rotulo": "ME DIZ AÍ",
+  "destino": "BRUGES",
+  "modulo": "interrogacao",
+  "clack_db_rel": -6,
+  "nota": "Placa CTA do DS V2 (2.7): verbo + módulo, posição fixa do DS, Chegada + clack. Texto da fala ('me diz aí, você colocaria Bruges…'). Único lugar do Reel com o DS (pedido do Diego)."
+ },
+ "min_cena": 3.0
+}
