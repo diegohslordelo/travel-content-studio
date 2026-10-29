@@ -1,0 +1,178 @@
+[
+ {
+  "fala": "f1",
+  "fonte": "IMG_7349",
+  "antes": {
+   "lufs_fala": -31.3,
+   "piso_db": -60.6,
+   "timbre_vs_media_db": [
+    -1.5,
+    3.7,
+    4.9,
+    0.5,
+    -2.2
+   ],
+   "ruido_abaixo_da_fala_db": 46.9
+  },
+  "eq": [
+   "equalizer=f=316:t=o:w=1:g=1.5",
+   "equalizer=f=707:t=o:w=1:g=-5.0",
+   "equalizer=f=1414:t=o:w=1:g=-5.0",
+   "equalizer=f=2828:t=o:w=1:g=-1.8"
+  ],
+  "reducao_ruido": 0.45,
+  "ganho_db": 1.8,
+  "ruido_abaixo_da_fala_db": 49.9,
+  "depois": {
+   "lufs_fala": -15.6,
+   "piso_db": -43.3,
+   "timbre_vs_media_db": [
+    0.0,
+    0.7,
+    1.3,
+    -0.1,
+    -0.3
+   ]
+  }
+ },
+ {
+  "fala": "f2",
+  "fonte": "IMG_7434",
+  "antes": {
+   "lufs_fala": -32.1,
+   "piso_db": -53.3,
+   "timbre_vs_media_db": [
+    0.4,
+    -1.9,
+    -3.1,
+    -1.5,
+    -1.9
+   ],
+   "ruido_abaixo_da_fala_db": 29.9
+  },
+  "eq": [
+   "equalizer=f=707:t=o:w=1:g=1.5",
+   "equalizer=f=1414:t=o:w=1:g=3.1",
+   "equalizer=f=2828:t=o:w=1:g=1.0",
+   "equalizer=f=5657:t=o:w=1:g=1.3"
+  ],
+  "reducao_ruido": 0.92,
+  "ganho_db": 0.1,
+  "ruido_abaixo_da_fala_db": 47.9,
+  "depois": {
+   "lufs_fala": -15.5,
+   "piso_db": -40.5,
+   "timbre_vs_media_db": [
+    0.0,
+    0.1,
+    -0.5,
+    0.5,
+    -0.7
+   ]
+  }
+ },
+ {
+  "fala": "f3",
+  "fonte": "IMG_7373",
+  "antes": {
+   "lufs_fala": -31.8,
+   "piso_db": -63.6,
+   "timbre_vs_media_db": [
+    0.4,
+    -0.3,
+    -1.9,
+    1.6,
+    2.1
+   ],
+   "ruido_abaixo_da_fala_db": 35.3
+  },
+  "eq": [
+   "equalizer=f=1414:t=o:w=1:g=2.8",
+   "equalizer=f=2828:t=o:w=1:g=-1.8",
+   "equalizer=f=5657:t=o:w=1:g=-2.3"
+  ],
+  "reducao_ruido": 0.85,
+  "ganho_db": 0.0,
+  "ruido_abaixo_da_fala_db": 46.5,
+  "depois": {
+   "lufs_fala": -16.0,
+   "piso_db": -49.5,
+   "timbre_vs_media_db": [
+    0.0,
+    0.3,
+    -0.5,
+    0.5,
+    0.6
+   ]
+  }
+ },
+ {
+  "fala": "f4",
+  "fonte": "IMG_7405",
+  "antes": {
+   "lufs_fala": -31.7,
+   "piso_db": -64.5,
+   "timbre_vs_media_db": [
+    0.4,
+    -1.3,
+    0.5,
+    -2.5,
+    1.6
+   ],
+   "ruido_abaixo_da_fala_db": 47.5
+  },
+  "eq": [
+   "equalizer=f=707:t=o:w=1:g=1.2",
+   "equalizer=f=1414:t=o:w=1:g=-0.9",
+   "equalizer=f=2828:t=o:w=1:g=3.7",
+   "equalizer=f=5657:t=o:w=1:g=-1.7"
+  ],
+  "reducao_ruido": 0.41,
+  "ganho_db": -0.4,
+  "ruido_abaixo_da_fala_db": 51.6,
+  "depois": {
+   "lufs_fala": -15.7,
+   "piso_db": -49.8,
+   "timbre_vs_media_db": [
+    0.0,
+    -0.9,
+    0.2,
+    -1.1,
+    0.3
+   ]
+  }
+ },
+ {
+  "fala": "f5",
+  "fonte": "IMG_7407",
+  "antes": {
+   "lufs_fala": -30.1,
+   "piso_db": -71.7,
+   "timbre_vs_media_db": [
+    0.4,
+    -0.2,
+    -0.3,
+    1.9,
+    0.4
+   ],
+   "ruido_abaixo_da_fala_db": 48.2
+  },
+  "eq": [
+   "equalizer=f=2828:t=o:w=1:g=-2.0"
+  ],
+  "reducao_ruido": 0.4,
+  "ganho_db": -1.5,
+  "ruido_abaixo_da_fala_db": 52.0,
+  "depois": {
+   "lufs_fala": -15.5,
+   "piso_db": -62.7,
+   "timbre_vs_media_db": [
+    0.0,
+    -0.2,
+    -0.6,
+    0.2,
+    0.1
+   ]
+  }
+ }
+]

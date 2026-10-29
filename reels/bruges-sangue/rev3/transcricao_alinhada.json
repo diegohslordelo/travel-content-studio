@@ -1,0 +1,930 @@
+{
+ "IMG_7349": [
+  {
+   "texto": "Você",
+   "ini": 1.19,
+   "fim": 1.391,
+   "prob": 1.0
+  },
+  {
+   "texto": "sabia",
+   "ini": 1.471,
+   "fim": 1.852,
+   "prob": 1.0
+  },
+  {
+   "texto": "que",
+   "ini": 1.913,
+   "fim": 1.973,
+   "prob": 0.999
+  },
+  {
+   "texto": "no",
+   "ini": 2.013,
+   "fim": 2.093,
+   "prob": 0.999
+  },
+  {
+   "texto": "meio",
+   "ini": 2.133,
+   "fim": 2.294,
+   "prob": 0.923
+  },
+  {
+   "texto": "de",
+   "ini": 2.314,
+   "fim": 2.354,
+   "prob": 0.932
+  },
+  {
+   "texto": "uma",
+   "ini": 2.374,
+   "fim": 2.474,
+   "prob": 0.998
+  },
+  {
+   "texto": "cidade",
+   "ini": 2.534,
+   "fim": 2.956,
+   "prob": 0.999
+  },
+  {
+   "texto": "que",
+   "ini": 2.996,
+   "fim": 3.076,
+   "prob": 0.994
+  },
+  {
+   "texto": "parece",
+   "ini": 3.116,
+   "fim": 3.377,
+   "prob": 0.663
+  },
+  {
+   "texto": "ter",
+   "ini": 3.377,
+   "fim": 3.497,
+   "prob": 0.717
+  },
+  {
+   "texto": "saído",
+   "ini": 3.557,
+   "fim": 3.798,
+   "prob": 0.91
+  },
+  {
+   "texto": "de",
+   "ini": 3.838,
+   "fim": 3.899,
+   "prob": 0.993
+  },
+  {
+   "texto": "um",
+   "ini": 3.939,
+   "fim": 3.999,
+   "prob": 0.996
+  },
+  {
+   "texto": "conto",
+   "ini": 4.079,
+   "fim": 4.38,
+   "prob": 0.996
+  },
+  {
+   "texto": "de",
+   "ini": 4.4,
+   "fim": 4.48,
+   "prob": 0.994
+  },
+  {
+   "texto": "fadas",
+   "ini": 4.581,
+   "fim": 4.942,
+   "prob": 0.998
+  },
+  {
+   "texto": "existe",
+   "ini": 5.002,
+   "fim": 5.263,
+   "prob": 0.71
+  },
+  {
+   "texto": "uma",
+   "ini": 5.263,
+   "fim": 5.363,
+   "prob": 0.595
+  },
+  {
+   "texto": "basílica",
+   "ini": 5.403,
+   "fim": 6.005,
+   "prob": 0.999
+  },
+  {
+   "texto": "que",
+   "ini": 6.045,
+   "fim": 6.125,
+   "prob": 0.919
+  },
+  {
+   "texto": "guarda",
+   "ini": 6.185,
+   "fim": 6.406,
+   "prob": 0.952
+  },
+  {
+   "texto": "o",
+   "ini": 6.446,
+   "fim": 6.466,
+   "prob": 0.907
+  },
+  {
+   "texto": "sangue",
+   "ini": 6.566,
+   "fim": 6.827,
+   "prob": 0.998
+  },
+  {
+   "texto": "de",
+   "ini": 6.867,
+   "fim": 6.928,
+   "prob": 0.997
+  },
+  {
+   "texto": "Jesus",
+   "ini": 6.968,
+   "fim": 7.269,
+   "prob": 1.0
+  },
+  {
+   "texto": "Cristo?",
+   "ini": 7.329,
+   "fim": 7.65,
+   "prob": 0.961
+  }
+ ],
+ "IMG_7434": [
+  {
+   "texto": "Hoje",
+   "ini": 2.34,
+   "fim": 2.421,
+   "prob": 0.247
+  },
+  {
+   "texto": "estou",
+   "ini": 2.441,
+   "fim": 2.581,
+   "prob": 0.572
+  },
+  {
+   "texto": "falando",
+   "ini": 2.621,
+   "fim": 2.882,
+   "prob": 0.581
+  },
+  {
+   "texto": "da",
+   "ini": 2.882,
+   "fim": 2.962,
+   "prob": 0.998
+  },
+  {
+   "texto": "Basílica",
+   "ini": 3.002,
+   "fim": 3.483,
+   "prob": 0.999
+  },
+  {
+   "texto": "do",
+   "ini": 3.523,
+   "fim": 3.583,
+   "prob": 0.998
+  },
+  {
+   "texto": "Sangue",
+   "ini": 3.704,
+   "fim": 3.924,
+   "prob": 0.996
+  },
+  {
+   "texto": "Sagrado",
+   "ini": 3.984,
+   "fim": 4.325,
+   "prob": 0.951
+  },
+  {
+   "texto": "em",
+   "ini": 4.345,
+   "fim": 4.405,
+   "prob": 0.997
+  },
+  {
+   "texto": "Bruges,",
+   "ini": 4.486,
+   "fim": 4.846,
+   "prob": 0.935
+  },
+  {
+   "texto": "na",
+   "ini": 4.887,
+   "fim": 4.967,
+   "prob": 0.999
+  },
+  {
+   "texto": "Bélgica.",
+   "ini": 5.047,
+   "fim": 5.428,
+   "prob": 0.998
+  },
+  {
+   "texto": "Lá",
+   "ini": 5.468,
+   "fim": 5.528,
+   "prob": 0.997
+  },
+  {
+   "texto": "tem",
+   "ini": 5.588,
+   "fim": 5.689,
+   "prob": 0.998
+  },
+  {
+   "texto": "duas",
+   "ini": 5.749,
+   "fim": 5.969,
+   "prob": 0.998
+  },
+  {
+   "texto": "capelas,",
+   "ini": 6.029,
+   "fim": 6.47,
+   "prob": 0.999
+  },
+  {
+   "texto": "uma",
+   "ini": 6.511,
+   "fim": 6.591,
+   "prob": 0.998
+  },
+  {
+   "texto": "mais",
+   "ini": 6.631,
+   "fim": 6.771,
+   "prob": 0.946
+  },
+  {
+   "texto": "simples,",
+   "ini": 6.851,
+   "fim": 7.132,
+   "prob": 0.978
+  },
+  {
+   "texto": "em",
+   "ini": 7.172,
+   "fim": 7.212,
+   "prob": 0.417
+  },
+  {
+   "texto": "estilo",
+   "ini": 7.212,
+   "fim": 7.413,
+   "prob": 0.558
+  },
+  {
+   "texto": "românico,",
+   "ini": 7.473,
+   "fim": 7.994,
+   "prob": 0.999
+  },
+  {
+   "texto": "e",
+   "ini": 8.054,
+   "fim": 8.074,
+   "prob": 0.994
+  },
+  {
+   "texto": "outra",
+   "ini": 8.114,
+   "fim": 8.295,
+   "prob": 0.975
+  },
+  {
+   "texto": "gótica,",
+   "ini": 8.355,
+   "fim": 8.696,
+   "prob": 0.995
+  },
+  {
+   "texto": "que",
+   "ini": 8.756,
+   "fim": 8.816,
+   "prob": 0.991
+  },
+  {
+   "texto": "é",
+   "ini": 8.856,
+   "fim": 8.876,
+   "prob": 0.188
+  },
+  {
+   "texto": "onde",
+   "ini": 8.876,
+   "fim": 8.997,
+   "prob": 0.575
+  },
+  {
+   "texto": "a",
+   "ini": 9.017,
+   "fim": 9.037,
+   "prob": 0.91
+  },
+  {
+   "texto": "relíquia",
+   "ini": 9.077,
+   "fim": 9.438,
+   "prob": 0.997
+  },
+  {
+   "texto": "é",
+   "ini": 9.618,
+   "fim": 9.638,
+   "prob": 0.998
+  },
+  {
+   "texto": "venerada.",
+   "ini": 9.758,
+   "fim": 10.26,
+   "prob": 0.999
+  }
+ ],
+ "IMG_7373": [
+  {
+   "texto": "Segundo",
+   "ini": 1.01,
+   "fim": 1.271,
+   "prob": 0.859
+  },
+  {
+   "texto": "a",
+   "ini": 1.271,
+   "fim": 1.291,
+   "prob": 0.994
+  },
+  {
+   "texto": "tradição,",
+   "ini": 1.311,
+   "fim": 1.811,
+   "prob": 0.858
+  },
+  {
+   "texto": "essa",
+   "ini": 1.851,
+   "fim": 2.011,
+   "prob": 0.977
+  },
+  {
+   "texto": "relíquia",
+   "ini": 2.052,
+   "fim": 2.332,
+   "prob": 0.64
+  },
+  {
+   "texto": "teria",
+   "ini": 2.372,
+   "fim": 2.572,
+   "prob": 0.998
+  },
+  {
+   "texto": "chegado",
+   "ini": 2.632,
+   "fim": 3.013,
+   "prob": 0.918
+  },
+  {
+   "texto": "a",
+   "ini": 3.073,
+   "fim": 3.093,
+   "prob": 0.992
+  },
+  {
+   "texto": "Bruges",
+   "ini": 3.153,
+   "fim": 3.413,
+   "prob": 0.508
+  },
+  {
+   "texto": "depois",
+   "ini": 3.433,
+   "fim": 3.653,
+   "prob": 0.997
+  },
+  {
+   "texto": "das",
+   "ini": 3.673,
+   "fim": 3.774,
+   "prob": 0.036
+  },
+  {
+   "texto": "cruzadas,",
+   "ini": 3.814,
+   "fim": 4.434,
+   "prob": 0.936
+  },
+  {
+   "texto": "mas",
+   "ini": 4.514,
+   "fim": 4.655,
+   "prob": 0.999
+  },
+  {
+   "texto": "tem",
+   "ini": 4.715,
+   "fim": 4.815,
+   "prob": 0.695
+  },
+  {
+   "texto": "um",
+   "ini": 4.855,
+   "fim": 4.915,
+   "prob": 0.801
+  },
+  {
+   "texto": "ponto",
+   "ini": 4.975,
+   "fim": 5.255,
+   "prob": 0.993
+  },
+  {
+   "texto": "aí.",
+   "ini": 5.295,
+   "fim": 5.395,
+   "prob": 0.983
+  },
+  {
+   "texto": "Essa",
+   "ini": 5.776,
+   "fim": 5.916,
+   "prob": 0.979
+  },
+  {
+   "texto": "história",
+   "ini": 5.916,
+   "fim": 6.236,
+   "prob": 0.984
+  },
+  {
+   "texto": "é",
+   "ini": 6.277,
+   "fim": 6.297,
+   "prob": 0.994
+  },
+  {
+   "texto": "muito",
+   "ini": 6.317,
+   "fim": 6.557,
+   "prob": 0.999
+  },
+  {
+   "texto": "antiga,",
+   "ini": 6.597,
+   "fim": 6.957,
+   "prob": 0.989
+  },
+  {
+   "texto": "então",
+   "ini": 6.997,
+   "fim": 7.158,
+   "prob": 0.969
+  },
+  {
+   "texto": "sua",
+   "ini": 7.218,
+   "fim": 7.338,
+   "prob": 0.921
+  },
+  {
+   "texto": "origem",
+   "ini": 7.378,
+   "fim": 7.658,
+   "prob": 0.83
+  },
+  {
+   "texto": "não",
+   "ini": 7.678,
+   "fim": 7.758,
+   "prob": 0.952
+  },
+  {
+   "texto": "é",
+   "ini": 7.778,
+   "fim": 7.798,
+   "prob": 0.996
+  },
+  {
+   "texto": "comprovada",
+   "ini": 7.838,
+   "fim": 8.519,
+   "prob": 0.993
+  },
+  {
+   "texto": "com",
+   "ini": 8.579,
+   "fim": 8.679,
+   "prob": 0.99
+  },
+  {
+   "texto": "certeza.",
+   "ini": 8.719,
+   "fim": 9.18,
+   "prob": 0.998
+  }
+ ],
+ "IMG_7405": [
+  {
+   "texto": "E",
+   "ini": 0.77,
+   "fim": 0.79,
+   "prob": 0.505
+  },
+  {
+   "texto": "essa",
+   "ini": 0.83,
+   "fim": 0.97,
+   "prob": 0.999
+  },
+  {
+   "texto": "tradição",
+   "ini": 1.03,
+   "fim": 1.491,
+   "prob": 0.875
+  },
+  {
+   "texto": "continua",
+   "ini": 1.551,
+   "fim": 1.911,
+   "prob": 0.986
+  },
+  {
+   "texto": "viva",
+   "ini": 1.931,
+   "fim": 2.071,
+   "prob": 0.96
+  },
+  {
+   "texto": "até",
+   "ini": 2.131,
+   "fim": 2.292,
+   "prob": 0.999
+  },
+  {
+   "texto": "hoje.",
+   "ini": 2.372,
+   "fim": 2.652,
+   "prob": 0.985
+  },
+  {
+   "texto": "Desde",
+   "ini": 2.732,
+   "fim": 2.932,
+   "prob": 0.781
+  },
+  {
+   "texto": "a",
+   "ini": 2.932,
+   "fim": 2.952,
+   "prob": 0.743
+  },
+  {
+   "texto": "Idade",
+   "ini": 2.972,
+   "fim": 3.213,
+   "prob": 0.935
+  },
+  {
+   "texto": "Média,",
+   "ini": 3.253,
+   "fim": 3.493,
+   "prob": 0.801
+  },
+  {
+   "texto": "a",
+   "ini": 3.513,
+   "fim": 3.533,
+   "prob": 0.995
+  },
+  {
+   "texto": "cidade",
+   "ini": 3.553,
+   "fim": 3.833,
+   "prob": 0.997
+  },
+  {
+   "texto": "celebra",
+   "ini": 3.873,
+   "fim": 4.193,
+   "prob": 0.978
+  },
+  {
+   "texto": "uma",
+   "ini": 4.193,
+   "fim": 4.274,
+   "prob": 0.645
+  },
+  {
+   "texto": "procissão",
+   "ini": 4.314,
+   "fim": 4.894,
+   "prob": 0.968
+  },
+  {
+   "texto": "em",
+   "ini": 4.974,
+   "fim": 5.014,
+   "prob": 0.689
+  },
+  {
+   "texto": "homenagem",
+   "ini": 5.054,
+   "fim": 5.575,
+   "prob": 0.88
+  },
+  {
+   "texto": "ao",
+   "ini": 5.615,
+   "fim": 5.675,
+   "prob": 0.988
+  },
+  {
+   "texto": "sangue",
+   "ini": 5.735,
+   "fim": 5.935,
+   "prob": 0.61
+  },
+  {
+   "texto": "sagrado,",
+   "ini": 5.995,
+   "fim": 6.416,
+   "prob": 0.998
+  },
+  {
+   "texto": "que",
+   "ini": 6.436,
+   "fim": 6.516,
+   "prob": 0.983
+  },
+  {
+   "texto": "inclusive",
+   "ini": 6.556,
+   "fim": 6.956,
+   "prob": 0.997
+  },
+  {
+   "texto": "foi",
+   "ini": 6.996,
+   "fim": 7.096,
+   "prob": 0.882
+  },
+  {
+   "texto": "reconhecida",
+   "ini": 7.136,
+   "fim": 7.557,
+   "prob": 0.97
+  },
+  {
+   "texto": "pela",
+   "ini": 7.617,
+   "fim": 7.757,
+   "prob": 0.735
+  },
+  {
+   "texto": "UNESCO",
+   "ini": 7.777,
+   "fim": 8.157,
+   "prob": 0.912
+  },
+  {
+   "texto": "como",
+   "ini": 8.437,
+   "fim": 8.578,
+   "prob": 0.748
+  },
+  {
+   "texto": "um",
+   "ini": 8.578,
+   "fim": 8.618,
+   "prob": 0.889
+  },
+  {
+   "texto": "patrimônio",
+   "ini": 8.638,
+   "fim": 9.098,
+   "prob": 0.999
+  },
+  {
+   "texto": "cultural",
+   "ini": 9.138,
+   "fim": 9.639,
+   "prob": 1.0
+  },
+  {
+   "texto": "imaterial",
+   "ini": 9.759,
+   "fim": 10.359,
+   "prob": 0.889
+  },
+  {
+   "texto": "da",
+   "ini": 10.379,
+   "fim": 10.439,
+   "prob": 0.999
+  },
+  {
+   "texto": "humanidade.",
+   "ini": 10.459,
+   "fim": 11.02,
+   "prob": 0.995
+  }
+ ],
+ "IMG_7407": [
+  {
+   "texto": "É",
+   "ini": 0.621,
+   "fim": 0.641,
+   "prob": 0.98
+  },
+  {
+   "texto": "impressionante",
+   "ini": 0.681,
+   "fim": 1.382,
+   "prob": 0.994
+  },
+  {
+   "texto": "como",
+   "ini": 1.422,
+   "fim": 1.542,
+   "prob": 0.984
+  },
+  {
+   "texto": "a",
+   "ini": 1.583,
+   "fim": 1.603,
+   "prob": 0.994
+  },
+  {
+   "texto": "cidade",
+   "ini": 1.643,
+   "fim": 1.923,
+   "prob": 0.999
+  },
+  {
+   "texto": "que",
+   "ini": 1.963,
+   "fim": 2.023,
+   "prob": 0.997
+  },
+  {
+   "texto": "cheira",
+   "ini": 2.124,
+   "fim": 2.344,
+   "prob": 0.89
+  },
+  {
+   "texto": "a",
+   "ini": 2.364,
+   "fim": 2.384,
+   "prob": 0.007
+  },
+  {
+   "texto": "chocolate",
+   "ini": 2.384,
+   "fim": 2.905,
+   "prob": 0.965
+  },
+  {
+   "texto": "reúne",
+   "ini": 2.965,
+   "fim": 3.206,
+   "prob": 0.605
+  },
+  {
+   "texto": "arquitetura",
+   "ini": 3.226,
+   "fim": 3.767,
+   "prob": 0.997
+  },
+  {
+   "texto": "medieval,",
+   "ini": 3.807,
+   "fim": 4.348,
+   "prob": 0.998
+  },
+  {
+   "texto": "fé",
+   "ini": 4.749,
+   "fim": 4.869,
+   "prob": 0.999
+  },
+  {
+   "texto": "e",
+   "ini": 5.07,
+   "fim": 5.09,
+   "prob": 0.144
+  },
+  {
+   "texto": "histórias",
+   "ini": 5.11,
+   "fim": 5.611,
+   "prob": 0.984
+  },
+  {
+   "texto": "que",
+   "ini": 5.611,
+   "fim": 5.691,
+   "prob": 0.991
+  },
+  {
+   "texto": "atravessam",
+   "ini": 5.711,
+   "fim": 6.172,
+   "prob": 0.996
+  },
+  {
+   "texto": "séculos.",
+   "ini": 6.312,
+   "fim": 6.733,
+   "prob": 0.892
+  },
+  {
+   "texto": "Agora",
+   "ini": 6.874,
+   "fim": 7.074,
+   "prob": 0.927
+  },
+  {
+   "texto": "me",
+   "ini": 7.114,
+   "fim": 7.174,
+   "prob": 0.767
+  },
+  {
+   "texto": "diz",
+   "ini": 7.234,
+   "fim": 7.395,
+   "prob": 0.977
+  },
+  {
+   "texto": "aí,",
+   "ini": 7.455,
+   "fim": 7.555,
+   "prob": 0.993
+  },
+  {
+   "texto": "você",
+   "ini": 7.896,
+   "fim": 8.096,
+   "prob": 0.761
+  },
+  {
+   "texto": "colocaria",
+   "ini": 8.116,
+   "fim": 8.557,
+   "prob": 0.969
+  },
+  {
+   "texto": "Bruges",
+   "ini": 8.617,
+   "fim": 8.918,
+   "prob": 0.688
+  },
+  {
+   "texto": "no",
+   "ini": 8.938,
+   "fim": 8.998,
+   "prob": 0.963
+  },
+  {
+   "texto": "seu",
+   "ini": 9.038,
+   "fim": 9.138,
+   "prob": 0.728
+  },
+  {
+   "texto": "roteiro",
+   "ini": 9.178,
+   "fim": 9.479,
+   "prob": 0.984
+  },
+  {
+   "texto": "da",
+   "ini": 9.499,
+   "fim": 9.539,
+   "prob": 0.995
+  },
+  {
+   "texto": "Europa?",
+   "ini": 9.579,
+   "fim": 9.9,
+   "prob": 1.0
+  }
+ ]
+}

@@ -32,9 +32,25 @@ export const carregarFontesBruges = () => {
   if (!carregadas) {
     carregadas = Promise.all([
       loadFont({ family: TITULO, url: anton, weight: "400", display: "block" }),
-      loadFont({ family: TEXTO, url: inter700, weight: "700", display: "block" }),
-      loadFont({ family: TEXTO, url: inter800, weight: "800", display: "block" }),
-      loadFont({ family: SERIFA, url: cormorant, weight: "700", style: "italic", display: "block" }),
+      loadFont({
+        family: TEXTO,
+        url: inter700,
+        weight: "700",
+        display: "block",
+      }),
+      loadFont({
+        family: TEXTO,
+        url: inter800,
+        weight: "800",
+        display: "block",
+      }),
+      loadFont({
+        family: SERIFA,
+        url: cormorant,
+        weight: "700",
+        style: "italic",
+        display: "block",
+      }),
     ]);
   }
   return carregadas;
@@ -43,7 +59,8 @@ export const carregarFontesBruges = () => {
 /** Grade das imagens: cor contida, sem o rosa saturado do HDR convertido (FORMATOS_REELS 2). */
 export const GRADE_VIDEO = "saturate(0.78) contrast(1.06) brightness(0.97)";
 export const GRADE_FOTO = "grayscale(0.12) contrast(1.05)";
-export const SOMBRA_TEXTO = "0 3px 0 rgba(0,0,0,0.35), 0 4px 22px rgba(0,0,0,0.85)";
+export const SOMBRA_TEXTO =
+  "0 3px 0 rgba(0,0,0,0.35), 0 4px 22px rgba(0,0,0,0.85)";
 
 export const clamp = (x: number) => Math.min(1, Math.max(0, x));
 export const ease = (p: number) => 1 - Math.pow(1 - clamp(p), 3);
@@ -51,5 +68,11 @@ export const easeInOut = (p: number) => {
   const x = clamp(p);
   return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
 };
-export const lerp = (t: number, t0: number, t1: number, v0: number, v1: number, curva: (p: number) => number = ease) =>
-  v0 + (v1 - v0) * curva((t - t0) / (t1 - t0));
+export const lerp = (
+  t: number,
+  t0: number,
+  t1: number,
+  v0: number,
+  v1: number,
+  curva: (p: number) => number = ease,
+) => v0 + (v1 - v0) * curva((t - t0) / (t1 - t0));

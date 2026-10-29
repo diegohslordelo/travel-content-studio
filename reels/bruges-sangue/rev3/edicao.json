@@ -1,0 +1,57 @@
+{
+ "nota": "Voz do Reel (REV3): 5 tomadas do quarto, em ordem, sem corte dentro da fala. A fala 2 é a regravação IMG_7434 (29/10/2026, 'românico'), no lugar da IMG_7371. 'in' e 'out' medidos pela energia da voz (corte no silêncio).",
+ "fonte_dir": "../fonte/quarto",
+ "fps": 30,
+ "fontes": {
+  "IMG_7349": "IMG_7349.MOV",
+  "IMG_7373": "IMG_7373.MOV",
+  "IMG_7405": "IMG_7405.MOV",
+  "IMG_7407": "IMG_7407.MOV",
+  "IMG_7434": "IMG_7434.MOV"
+ },
+ "falas": [
+  {
+   "id": "f1",
+   "fonte": "IMG_7349",
+   "in": 1.05,
+   "out": 7.75,
+   "texto": "Você sabia que no meio de uma cidade que parece ter saído de um conto de fadas existe uma basílica que guarda o sangue de Jesus Cristo?"
+  },
+  {
+   "id": "f2",
+   "fonte": "IMG_7434",
+   "in": 2.2,
+   "out": 10.4,
+   "texto": "Hoje estou falando da Basílica do Sangue Sagrado em Bruges, na Bélgica. Lá tem duas capelas, uma mais simples, em estilo românico, e outra gótica, que é onde a relíquia é venerada."
+  },
+  {
+   "id": "f3",
+   "fonte": "IMG_7373",
+   "in": 0.75,
+   "out": 9.22,
+   "fim_suave": true,
+   "texto": "Segundo a tradição, essa relíquia teria chegado a Bruges depois das cruzadas, mas tem um ponto aí. Essa história é muito antiga, então sua origem não é comprovada com certeza."
+  },
+  {
+   "id": "f4",
+   "fonte": "IMG_7405",
+   "in": 0.55,
+   "out": 11.1,
+   "texto": "E essa tradição continua viva até hoje. Desde a Idade Média, a cidade celebra uma procissão em homenagem ao sangue sagrado, que inclusive foi reconhecida pela UNESCO como um patrimônio cultural imaterial da humanidade."
+  },
+  {
+   "id": "f5",
+   "fonte": "IMG_7407",
+   "in": 0.38,
+   "out": 10.0,
+   "texto": "É impressionante como a cidade que cheira a chocolate reúne arquitetura medieval, fé e histórias que atravessam séculos. Agora me diz aí, você colocaria Bruges no seu roteiro da Europa?"
+  }
+ ],
+ "audio": {
+  "fade_ms": 12,
+  "passa_alta_hz": 70,
+  "ruido": "afftdn=nr=8:nf=-58:tn=1",
+  "alvo_lufs": -14,
+  "pico_dbtp": -1
+ }
+}

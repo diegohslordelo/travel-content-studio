@@ -8,11 +8,39 @@
  */
 import React from "react";
 import { Audio, Video } from "@remotion/media";
-import { AbsoluteFill, CalculateMetadataFunction, Img, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import {
+  AbsoluteFill,
+  CalculateMetadataFunction,
+  Img,
+  Sequence,
+  staticFile,
+  useCurrentFrame,
+  useVideoConfig,
+} from "remotion";
 import { Placa, Modulo } from "../ds/Placa";
 import { Som } from "../ds/Som";
-import { Capelas, DataIdade, Interrogacao, Mapa, MapaBelgica, Patrimonio, Rota } from "./Graficos";
-import { GRADE_FOTO, GRADE_VIDEO, PALETA, SERIFA, SOMBRA_TEXTO, TEXTO, TITULO, clamp, ease, easeInOut, lerp } from "./estilo";
+import {
+  Capelas,
+  DataIdade,
+  Interrogacao,
+  Mapa,
+  MapaBelgica,
+  Patrimonio,
+  Rota,
+} from "./Graficos";
+import {
+  GRADE_FOTO,
+  GRADE_VIDEO,
+  PALETA,
+  SERIFA,
+  SOMBRA_TEXTO,
+  TEXTO,
+  TITULO,
+  clamp,
+  ease,
+  easeInOut,
+  lerp,
+} from "./estilo";
 
 type Palavra = { texto: string; ini: number; fim: number; destaque: boolean };
 type Grupo = { palavras: Palavra[]; ini: number; fim: number };
@@ -42,10 +70,36 @@ type Cena = {
   zoom2?: number;
   cartao?: string;
   interrogacao?: boolean;
-  transicao?: "empurrao" | "clarao" | "luz";
+  transicao?: Transicao;
+  saida?: Transicao | null;
+  letreiro?: { texto: string; tam: number; em: number; cor?: string }[];
 };
-type Bloco = { linhas: string[]; tamanhos: number[]; cores: string[]; tempos: number[]; ini: number };
-type Chave = { ini: number; fim: number; linhas: { texto: string; estilo: "titulo" | "serifa"; em: string }[] };
+/** Transição de entrada de uma cena (REV3: uma em cada troca, escolhida pelo sentido da troca). */
+type Transicao =
+  | "empurrao"
+  | "clarao"
+  | "luz"
+  | "whip"
+  | "dissolve"
+  | "zoom"
+  | "mergulho";
+type Bloco = {
+  linhas: string[];
+  tamanhos: number[];
+  cores: string[];
+  tempos: number[];
+  ini: number;
+};
+type Chave = {
+  ini: number;
+  fim: number;
+  tipo?: "local";
+  linhas: {
+    texto: string;
+    estilo: "titulo" | "serifa" | "rotulo";
+    em: string;
+  }[];
+};
 export type PropsBruges = {
   fps: number;
   largura: number;
@@ -61,7 +115,13 @@ export type PropsBruges = {
   legendas: Grupo[];
   chaves: (Chave & { tempos?: number[] })[];
   mapas: { belgica: Mapa; rota: Mapa };
-  cta: { ini: number; rotulo: string; destino: string; modulo: Modulo; entrada: number };
+  cta: {
+    ini: number;
+    rotulo: string;
+    destino: string;
+    modulo: Modulo;
+    entrada: number;
+  };
   mix: { voz_lufs: number; clack_db_rel: number };
   sfx: boolean;
 };
@@ -80,13 +140,18 @@ export const propsVaziasBruges: PropsBruges = {
   ganchoLayout: { split: true, topo: 275 },
   legendas: [],
   chaves: [],
-  mapas: { belgica: { w: 1080, h: 900, paises: [], bruges: [0, 0] }, rota: { w: 1080, h: 1920, paises: [], bruges: [0, 0] } },
+  mapas: {
+    belgica: { w: 1080, h: 900, paises: [], bruges: [0, 0] },
+    rota: { w: 1080, h: 1920, paises: [], bruges: [0, 0] },
+  },
   cta: { ini: 0, rotulo: "", destino: "", modulo: "seta", entrada: 0 },
   mix: { voz_lufs: -16, clack_db_rel: -6 },
   sfx: false,
 };
 
-export const metadadosBruges: CalculateMetadataFunction<PropsBruges> = ({ props }) => ({
+export const metadadosBruges: CalculateMetadataFunction<PropsBruges> = ({
+  props,
+}) => ({
   durationInFrames: Math.max(1, props.quadros),
   fps: props.fps,
   width: props.largura,
@@ -103,7 +168,11 @@ const posicaoFala = (c: Cena): "cheia" | "baixo" | "fundo" | "fora" => {
 };
 
 /** Diego: um único vídeo contínuo (as falas decupadas), reposicionado a cada cena. */
-const Fala: React.FC<{ p: PropsBruges; cena: Cena; t: number }> = ({ p, cena, t }) => {
+const Fala: React.FC<{ p: PropsBruges; cena: Cena; t: number }> = ({
+  p,
+  cena,
+  t,
+}) => {
   const pos = posicaoFala(cena);
   const dur = (cena.fim_q - cena.ini_q) / p.fps;
   const hBaixo = p.altura - p.costura;
@@ -111,8 +180,11 @@ const Fala: React.FC<{ p: PropsBruges; cena: Cena; t: number }> = ({ p, cena, t 
   let box: React.CSSProperties = { top: 0, height: p.altura };
   let video: React.CSSProperties = {};
   if (pos === "cheia") {
-    let z = cena.zoom ? lerp(t, 0, dur, cena.zoom[0], cena.zoom[1], (x) => x) : 1;
-    if (cena.zoom2 && cena.marcos?.zoom !== undefined && t >= cena.marcos.zoom) z = cena.zoom2; // corte de zoom
+    let z = cena.zoom
+      ? lerp(t, 0, dur, cena.zoom[0], cena.zoom[1], (x) => x)
+      : 1;
+    if (cena.zoom2 && cena.marcos?.zoom !== undefined && t >= cena.marcos.zoom)
+      z = cena.zoom2; // corte de zoom
     if (cena.transicao === "empurrao" && t < EMPURRAO) {
       // a metade de baixo cresce até a tela cheia
       const e = easeInOut(t / EMPURRAO);
@@ -126,12 +198,37 @@ const Fala: React.FC<{ p: PropsBruges; cena: Cena; t: number }> = ({ p, cena, t 
     box = { top: p.costura, height: hBaixo };
     video = { translate: `0 ${desl}px` };
   } else if (pos === "fundo") {
-    video = { scale: "1.15", filter: "blur(26px) grayscale(1) brightness(0.42)" };
+    video = {
+      scale: "1.15",
+      filter: "blur(26px) grayscale(1) brightness(0.42)",
+    };
   }
   return (
-    <div style={{ position: "absolute", left: 0, width: p.largura, overflow: "hidden", opacity: pos === "fora" ? 0 : 1, ...box }}>
-      <div style={{ position: "absolute", left: 0, top: 0, width: p.largura, height: p.altura, ...video }}>
-        <Video src={staticFile("fala.mp4")} muted style={{ width: p.largura, height: p.altura }} />
+    <div
+      style={{
+        position: "absolute",
+        left: 0,
+        width: p.largura,
+        overflow: "hidden",
+        opacity: pos === "fora" ? 0 : 1,
+        ...box,
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          left: 0,
+          top: 0,
+          width: p.largura,
+          height: p.altura,
+          ...video,
+        }}
+      >
+        <Video
+          src={staticFile("fala.mp4")}
+          muted
+          style={{ width: p.largura, height: p.altura }}
+        />
       </div>
     </div>
   );
@@ -141,7 +238,17 @@ const FILTROS = {
   medieval: "sepia(0.15) contrast(1.06) brightness(0.92)",
 };
 
-const Foto: React.FC<{ src: string; w: number; h: number; t: number; dur: number; kb?: [number, number]; foco?: [number, number]; focoFim?: [number, number]; filtro?: string }> = ({
+const Foto: React.FC<{
+  src: string;
+  w: number;
+  h: number;
+  t: number;
+  dur: number;
+  kb?: [number, number];
+  foco?: [number, number];
+  focoFim?: [number, number];
+  filtro?: string;
+}> = ({
   src,
   w,
   h,
@@ -157,17 +264,40 @@ const Foto: React.FC<{ src: string; w: number; h: number; t: number; dur: number
   const fx = lerp(t, 0, dur, foco[0], fim[0], easeInOut);
   const fy = lerp(t, 0, dur, foco[1], fim[1], easeInOut);
   return (
-    <div style={{ position: "absolute", left: 0, top: 0, width: w, height: h, overflow: "hidden", background: PALETA.preto }}>
+    <div
+      style={{
+        position: "absolute",
+        left: 0,
+        top: 0,
+        width: w,
+        height: h,
+        overflow: "hidden",
+        background: PALETA.preto,
+      }}
+    >
       <Img
         src={staticFile(src)}
-        style={{ width: w, height: h, objectFit: "cover", objectPosition: `${fx * 100}% ${fy * 100}%`, scale: String(z), transformOrigin: `${fx * 100}% ${fy * 100}%`, filter: filtro }}
+        style={{
+          width: w,
+          height: h,
+          objectFit: "cover",
+          objectPosition: `${fx * 100}% ${fy * 100}%`,
+          scale: String(z),
+          transformOrigin: `${fx * 100}% ${fy * 100}%`,
+          filter: filtro,
+        }}
       />
     </div>
   );
 };
 
 /** Selo discreto que diferencia representação artística, gravura e registro histórico de foto atual (pedido do Diego). */
-const Selo: React.FC<{ texto: string; x: number; y: number; t: number }> = ({ texto, x, y, t }) => {
+const Selo: React.FC<{ texto: string; x: number; y: number; t: number }> = ({
+  texto,
+  x,
+  y,
+  t,
+}) => {
   const e = ease((t - 0.1) / 0.25);
   return (
     <div
@@ -191,25 +321,208 @@ const Selo: React.FC<{ texto: string; x: number; y: number; t: number }> = ({ te
   );
 };
 
-/** Imagem de apoio da cena (atrás do Diego, acima dele na tela dividida, ou em cartão). */
+/** Quadros de entrada de cada transição (a saída usa o extra_q que o preparar.py dá à cena que sai). */
+const ENTRADA_Q: Partial<Record<Transicao, number>> = {
+  whip: 8,
+  zoom: 12,
+  mergulho: 14,
+};
+const DESLOC_WHIP = 420; // px: chicote lateral (o "arrasto" refeito sem a cor do DS)
+
+/**
+ * Invólucro de transição da imagem de apoio. A cena que sai continua extra_q quadros por cima da que entra
+ * e sai com o movimento da transição; a que entra faz o movimento complementar. Tipos:
+ * - whip: chicote lateral com desfoque direcional (as duas cenas andam juntas para a esquerda);
+ * - dissolve: a cena que sai some por cima da que entra;
+ * - zoom: a que sai cresce e desfoca, a que entra assenta de 122% para 100%;
+ * - mergulho: a câmera entra na capela de cima do desenho e encontra a próxima imagem;
+ * - empurrao: a metade de cima sai pelo topo (o Diego cresce até a tela cheia).
+ */
 const Apoio: React.FC<{ p: PropsBruges; cena: Cena }> = ({ p, cena }) => {
+  const q = useCurrentFrame();
+  const durQ = cena.fim_q - cena.ini_q;
+  let estilo: React.CSSProperties = {};
+  let blurX = 0;
+  let z = 1;
+  const eQ = cena.transicao ? ENTRADA_Q[cena.transicao] : undefined;
+  if (eQ && q < eQ) {
+    const e = easeInOut(q / eQ);
+    if (cena.transicao === "whip") {
+      estilo = {
+        translate: `${(1 - e) * DESLOC_WHIP}px 0`,
+        opacity: Math.min(1, 0.2 + e * 1.4),
+      };
+      blurX = (1 - e) * 38;
+    } else if (cena.transicao === "zoom") {
+      estilo = {
+        scale: String(1.22 - 0.22 * e),
+        opacity: e,
+        filter: `blur(${(1 - e) * 14}px)`,
+      };
+    } else if (cena.transicao === "mergulho") {
+      estilo = {
+        scale: String(1.08 - 0.08 * e),
+        filter: `blur(${(1 - e) * 8}px)`,
+      };
+    }
+  }
+  if (q >= durQ && cena.extra_q) {
+    const k = clamp((q - durQ) / cena.extra_q);
+    const e = easeInOut(k);
+    z = 2;
+    if (cena.saida === "whip") {
+      estilo = { translate: `${-e * DESLOC_WHIP}px 0`, opacity: 1 - e };
+      blurX = e * 38;
+    } else if (cena.saida === "dissolve") {
+      estilo = { opacity: 1 - e };
+    } else if (cena.saida === "zoom") {
+      estilo = {
+        scale: String(1 + 0.5 * e),
+        opacity: 1 - e,
+        filter: `blur(${e * 16}px)`,
+        transformOrigin: "540px 760px",
+      };
+    } else if (cena.saida === "mergulho") {
+      estilo = {
+        scale: String(1 + 1.9 * k * k),
+        opacity: 1 - clamp((k - 0.35) / 0.65),
+        filter: `blur(${e * 18}px)`,
+        transformOrigin: "540px 620px",
+      };
+    } else if (cena.saida === "empurrao") {
+      estilo = { translate: `0 ${-p.costura * e}px` };
+    }
+  }
+  const filtroId = `mb-${cena.id}`;
+  return (
+    <div style={{ position: "absolute", inset: 0, zIndex: z }}>
+      {blurX > 0.5 && (
+        <svg width={0} height={0} style={{ position: "absolute" }}>
+          <filter id={filtroId} x="-20%" y="0" width="140%" height="100%">
+            <feGaussianBlur stdDeviation={`${blurX.toFixed(1)} 0`} />
+          </filter>
+        </svg>
+      )}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          ...estilo,
+          ...(blurX > 0.5 ? { filter: `url(#${filtroId})` } : {}),
+        }}
+      >
+        <ApoioConteudo p={p} cena={cena} />
+      </div>
+    </div>
+  );
+};
+
+/** Letreiro grande na metade de cima, linha a linha no tempo da fala ("DESDE A / IDADE MÉDIA"). */
+const Letreiro: React.FC<{
+  linhas: NonNullable<Cena["letreiro"]>;
+  t: number;
+  altura: number;
+}> = ({ linhas, t, altura }) => (
+  <>
+    <div
+      style={{
+        position: "absolute",
+        left: 0,
+        right: 0,
+        top: 0,
+        height: altura,
+        background:
+          "linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.25) 100%)",
+        opacity: ease((t - linhas[0].em + 0.2) / 0.3),
+      }}
+    />
+    <div
+      style={{
+        position: "absolute",
+        left: 72,
+        right: 72,
+        top: 300,
+        textShadow: "0 4px 30px rgba(0,0,0,0.55)",
+      }}
+    >
+      {linhas.map((l, i) => {
+        const e = ease((t - l.em) / 0.18);
+        return (
+          <div
+            key={i}
+            style={{ overflow: "hidden", paddingTop: 30, marginTop: -30 }}
+          >
+            <div
+              style={{
+                font: `400 ${l.tam}px ${TITULO}`,
+                lineHeight: 1.0,
+                color: l.cor === "ambar" ? PALETA.ambar : PALETA.branco,
+                translate: `0 ${(1 - e) * 100}%`,
+                opacity: e > 0 ? 1 : 0,
+              }}
+            >
+              {l.texto}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </>
+);
+
+/** Imagem de apoio da cena (atrás do Diego, acima dele na tela dividida, ou em cartão). */
+const ApoioConteudo: React.FC<{ p: PropsBruges; cena: Cena }> = ({
+  p,
+  cena,
+}) => {
   const t = useCurrentFrame() / p.fps;
   const dur = (cena.fim_q - cena.ini_q) / p.fps;
   const split = cena.layout === "split";
   const h = split ? p.costura : p.altura;
-  // empurrão: a metade de cima sai pelo topo no começo da cena seguinte
-  const sai = cena.extra_q ? easeInOut((t - dur) / EMPURRAO) : 0;
-  const mov: React.CSSProperties = sai > 0 ? { translate: `0 ${-p.costura * sai}px` } : {};
   if (cena.tipo === "broll" && cena.arquivo) {
     const z = cena.kb ? lerp(t, 0, dur, cena.kb[0], cena.kb[1], (x) => x) : 1;
     const mc = cena.marcos?.cartao;
     return (
-      <div style={{ position: "absolute", left: 0, top: 0, width: p.largura, height: h, overflow: "hidden", ...mov }}>
-        <div style={{ width: p.largura, height: h, scale: String(z), filter: GRADE_VIDEO }}>
-          <Video src={staticFile(cena.arquivo)} muted style={{ width: p.largura, height: h }} />
+      <div
+        style={{
+          position: "absolute",
+          left: 0,
+          top: 0,
+          width: p.largura,
+          height: h,
+          overflow: "hidden",
+        }}
+      >
+        <div
+          style={{
+            width: p.largura,
+            height: h,
+            scale: String(z),
+            filter: GRADE_VIDEO,
+          }}
+        >
+          <Video
+            src={staticFile(cena.arquivo)}
+            muted
+            style={{ width: p.largura, height: h }}
+          />
         </div>
-        {!split && <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 960, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.62) 100%)" }} />}
-        {cena.cartao && mc !== undefined && t >= mc && <CartaoFaixa src={p.imagens[cena.cartao].arquivo} t={t - mc} />}
+        {!split && (
+          <div
+            style={{
+              position: "absolute",
+              left: 0,
+              right: 0,
+              bottom: 0,
+              height: 960,
+              background:
+                "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.62) 100%)",
+            }}
+          />
+        )}
+        {cena.cartao && mc !== undefined && t >= mc && (
+          <CartaoFaixa src={p.imagens[cena.cartao].arquivo} t={t - mc} />
+        )}
       </div>
     );
   }
@@ -223,24 +536,92 @@ const Apoio: React.FC<{ p: PropsBruges; cena: Cena }> = ({ p, cena }) => {
       const d2 = lerp(t, troca - 0.12, troca + 0.32, 0, 1, easeInOut); // dissolve: foto atual → gravura antiga
       return (
         <>
-          <div style={{ position: "absolute", left: 140, top: 330, width: 800, height: 900, borderRadius: 20, overflow: "hidden", boxShadow: "0 30px 80px rgba(0,0,0,0.6)", opacity: e, scale: String(0.9 + 0.1 * e) }}>
-            <Foto src={im.arquivo} w={800} h={900} t={t} dur={dur} kb={cena.kb ?? [1.0, 1.05]} foco={cena.foco ?? [0.5, 0.35]} focoFim={cena.foco_fim} filtro={filtro} />
+          <div
+            style={{
+              position: "absolute",
+              left: 140,
+              top: 330,
+              width: 800,
+              height: 900,
+              borderRadius: 20,
+              overflow: "hidden",
+              boxShadow: "0 30px 80px rgba(0,0,0,0.6)",
+              opacity: e,
+              scale: String(0.9 + 0.1 * e),
+            }}
+          >
+            <Foto
+              src={im.arquivo}
+              w={800}
+              h={900}
+              t={t}
+              dur={dur}
+              kb={cena.kb ?? [1.0, 1.05]}
+              foco={cena.foco ?? [0.5, 0.35]}
+              focoFim={cena.foco_fim}
+              filtro={filtro}
+            />
             {cena.foto2 && d2 > 0 && (
               <div style={{ position: "absolute", inset: 0, opacity: d2 }}>
-                <Foto src={p.imagens[cena.foto2].arquivo} w={800} h={900} t={t - troca} dur={dur - troca} kb={cena.kb2 ?? [1.04, 1.0]} foco={cena.foco2 ?? [0.5, 0.3]} filtro="sepia(0.25) contrast(1.05)" />
+                <Foto
+                  src={p.imagens[cena.foto2].arquivo}
+                  w={800}
+                  h={900}
+                  t={t - troca}
+                  dur={dur - troca}
+                  kb={cena.kb2 ?? [1.04, 1.0]}
+                  foco={cena.foco2 ?? [0.5, 0.3]}
+                  filtro="sepia(0.25) contrast(1.05)"
+                />
               </div>
             )}
           </div>
           {cena.selo && <Selo texto={cena.selo} x={162} y={352} t={t} />}
-          {cena.selo2 && d2 > 0.5 && <Selo texto={cena.selo2} x={162} y={352} t={t - troca} />}
+          {cena.selo2 && d2 > 0.5 && (
+            <Selo texto={cena.selo2} x={162} y={352} t={t - troca} />
+          )}
         </>
       );
     }
     return (
-      <div style={{ position: "absolute", left: 0, top: 0, width: p.largura, height: h, overflow: "hidden" }}>
-        <Foto src={im.arquivo} w={p.largura} h={h} t={t} dur={dur} kb={cena.kb} foco={cena.foco} focoFim={cena.foco_fim} filtro={filtro} />
-        {!split && <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 960, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.66) 100%)" }} />}
-        {cena.interrogacao && cena.marcos?.interrogacao !== undefined && <Interrogacao t={t} em={cena.marcos.interrogacao} cx={470} cy={590} />}
+      <div
+        style={{
+          position: "absolute",
+          left: 0,
+          top: 0,
+          width: p.largura,
+          height: h,
+          overflow: "hidden",
+        }}
+      >
+        <Foto
+          src={im.arquivo}
+          w={p.largura}
+          h={h}
+          t={t}
+          dur={dur}
+          kb={cena.kb}
+          foco={cena.foco}
+          focoFim={cena.foco_fim}
+          filtro={filtro}
+        />
+        {!split && (
+          <div
+            style={{
+              position: "absolute",
+              left: 0,
+              right: 0,
+              bottom: 0,
+              height: 960,
+              background:
+                "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.66) 100%)",
+            }}
+          />
+        )}
+        {cena.interrogacao && cena.marcos?.interrogacao !== undefined && (
+          <Interrogacao t={t} em={cena.marcos.interrogacao} cx={470} cy={590} />
+        )}
+        {cena.letreiro && <Letreiro linhas={cena.letreiro} t={t} altura={h} />}
         {cena.selo && <Selo texto={cena.selo} x={72} y={290} t={t} />}
       </div>
     );
@@ -248,14 +629,44 @@ const Apoio: React.FC<{ p: PropsBruges; cena: Cena }> = ({ p, cena }) => {
   if (cena.tipo === "anim") {
     const m = cena.marcos ?? {};
     return (
-      <div style={{ position: "absolute", left: 0, top: 0, width: p.largura, height: h, overflow: "hidden" }}>
-        {cena.anim === "mapa" && <MapaBelgica t={t} mapa={p.mapas.belgica} altura={h} marcos={m} />}
+      <div
+        style={{
+          position: "absolute",
+          left: 0,
+          top: 0,
+          width: p.largura,
+          height: h,
+          overflow: "hidden",
+        }}
+      >
+        {cena.anim === "mapa" && (
+          <MapaBelgica t={t} mapa={p.mapas.belgica} altura={h} marcos={m} />
+        )}
         {cena.anim === "rota" && <Rota t={t} mapa={p.mapas.rota} marcos={m} />}
-        {cena.anim === "capelas" && cena.fotos && <Capelas t={t} baixo={p.imagens[cena.fotos[0]].arquivo} cima={p.imagens[cena.fotos[1]].arquivo} marcos={m} />}
+        {cena.anim === "capelas" && cena.fotos && (
+          <Capelas
+            t={t}
+            baixo={p.imagens[cena.fotos[0]].arquivo}
+            cima={p.imagens[cena.fotos[1]].arquivo}
+            marcos={m}
+          />
+        )}
         {cena.anim === "data" && <DataIdade t={t} marcos={m} />}
-        {cena.anim === "patrimonio" && <Patrimonio t={t} marcos={m} fundo={cena.fundo ? p.imagens[cena.fundo].arquivo : undefined} />}
+        {cena.anim === "patrimonio" && (
+          <Patrimonio
+            t={t}
+            marcos={m}
+            fundo={cena.fundo ? p.imagens[cena.fundo].arquivo : undefined}
+          />
+        )}
         {/* REV2: "depois das cruzadas" entra como cartão sobre o mapa, em vez de um corte de 1,1 s */}
-        {cena.cartao && m.cartao !== undefined && t >= m.cartao && <CartaoMapa src={p.imagens[cena.cartao].arquivo} t={t - m.cartao} selo={cena.selo} />}
+        {cena.cartao && m.cartao !== undefined && t >= m.cartao && (
+          <CartaoMapa
+            src={p.imagens[cena.cartao].arquivo}
+            t={t - m.cartao}
+            selo={cena.selo}
+          />
+        )}
       </div>
     );
   }
@@ -263,7 +674,11 @@ const Apoio: React.FC<{ p: PropsBruges; cena: Cena }> = ({ p, cena }) => {
 };
 
 /** Cartão sobre o mapa da rota (iluminura das cruzadas), abaixo de Bruges e acima da legenda. */
-const CartaoMapa: React.FC<{ src: string; t: number; selo?: string }> = ({ src, t, selo }) => {
+const CartaoMapa: React.FC<{ src: string; t: number; selo?: string }> = ({
+  src,
+  t,
+  selo,
+}) => {
   const e = ease(t / 0.3);
   return (
     <>
@@ -283,7 +698,16 @@ const CartaoMapa: React.FC<{ src: string; t: number; selo?: string }> = ({ src, 
           scale: String(0.92 + 0.08 * e),
         }}
       >
-        <Foto src={src} w={860} h={440} t={t} dur={1.4} kb={[1.0, 1.06]} foco={[0.3, 0.62]} filtro={FILTROS.medieval} />
+        <Foto
+          src={src}
+          w={860}
+          h={440}
+          t={t}
+          dur={1.4}
+          kb={[1.0, 1.06]}
+          foco={[0.3, 0.62]}
+          filtro={FILTROS.medieval}
+        />
       </div>
       {selo && <Selo texto={selo} x={132} y={800} t={t} />}
     </>
@@ -310,13 +734,26 @@ const CartaoFaixa: React.FC<{ src: string; t: number }> = ({ src, t }) => {
         scale: String(0.94 + 0.06 * e),
       }}
     >
-      <Foto src={src} w={936} h={236} t={t} dur={1.5} kb={[1.0, 1.06]} foco={[0.5, 0.6]} filtro="contrast(1.06) saturate(1.05)" />
+      <Foto
+        src={src}
+        w={936}
+        h={236}
+        t={t}
+        dur={1.5}
+        kb={[1.0, 1.06]}
+        foco={[0.5, 0.6]}
+        filtro="contrast(1.06) saturate(1.05)"
+      />
     </div>
   );
 };
 
 /** Legenda: 1 a 4 palavras, Inter 800 66 px com sombra; palavra de destaque em âmbar (padrão do formato). */
-const Legenda: React.FC<{ p: PropsBruges; tS: number; cena: Cena }> = ({ p, tS, cena }) => {
+const Legenda: React.FC<{ p: PropsBruges; tS: number; cena: Cena }> = ({
+  p,
+  tS,
+  cena,
+}) => {
   const g = p.legendas.find((x) => tS >= x.ini && tS < x.fim);
   if (!g) return null;
   const pos = posicaoFala(cena);
@@ -354,16 +791,54 @@ const Gancho: React.FC<{ p: PropsBruges; tS: number }> = ({ p, tS }) => {
   if (!p.gancho.length || tS >= p.fimGancho + EMPURRAO) return null;
   const sai = easeInOut((tS - p.fimGancho) / EMPURRAO);
   const bloco = [...p.gancho].reverse().find((b) => tS >= b.ini) ?? p.gancho[0];
-  const cor = (c: string) => (c === "ambar" ? PALETA.ambar : c === "sangue" ? PALETA.sangue : PALETA.branco);
+  const cor = (c: string) =>
+    c === "ambar"
+      ? PALETA.ambar
+      : c === "sangue"
+        ? PALETA.sangue
+        : PALETA.branco;
   return (
-    <div style={{ position: "absolute", inset: 0, translate: `0 ${-p.costura * clamp(sai)}px` }}>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 240, height: p.costura - 240, background: "linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0.72) 100%)" }} />
-      <div style={{ position: "absolute", left: 72, right: 72, top: p.ganchoLayout.topo, textShadow: "0 4px 30px rgba(0,0,0,0.5)" }}>
+    <div
+      style={{
+        position: "absolute",
+        inset: 0,
+        translate: `0 ${-p.costura * clamp(sai)}px`,
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          left: 0,
+          right: 0,
+          top: 240,
+          height: p.costura - 240,
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0.72) 100%)",
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          left: 72,
+          right: 72,
+          top: p.ganchoLayout.topo,
+          textShadow: "0 4px 30px rgba(0,0,0,0.5)",
+        }}
+      >
         {bloco.linhas.map((l, k) => {
           const ini = bloco.tempos[k];
           const e = ini <= 0 ? 1 : ease((tS - ini) / 0.16);
           return (
-            <div key={`${bloco.ini}-${k}`} style={{ font: `400 ${bloco.tamanhos[k]}px ${TITULO}`, lineHeight: 1.02, color: cor(bloco.cores[k]), opacity: e, translate: `0 ${(1 - e) * 24}px` }}>
+            <div
+              key={`${bloco.ini}-${k}`}
+              style={{
+                font: `400 ${bloco.tamanhos[k]}px ${TITULO}`,
+                lineHeight: 1.02,
+                color: cor(bloco.cores[k]),
+                opacity: e,
+                translate: `0 ${(1 - e) * 24}px`,
+              }}
+            >
               {l}
             </div>
           );
@@ -380,16 +855,57 @@ const PalavraChave: React.FC<{ p: PropsBruges; tS: number }> = ({ p, tS }) => {
   const sai = 1 - ease((tS - (c.fim - 0.15)) / 0.15);
   return (
     <>
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 900, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 60%, rgba(0,0,0,0.7) 100%)", opacity: ease((tS - c.ini) / 0.2) * sai }} />
-      <div style={{ position: "absolute", left: 72, right: 72, top: 1170, textShadow: SOMBRA_TEXTO, opacity: sai }}>
+      <div
+        style={{
+          position: "absolute",
+          left: 0,
+          right: 0,
+          bottom: 0,
+          height: 900,
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 60%, rgba(0,0,0,0.7) 100%)",
+          opacity: ease((tS - c.ini) / 0.2) * sai,
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          left: 72,
+          right: 72,
+          top: 1170,
+          textShadow: SOMBRA_TEXTO,
+          opacity: sai,
+        }}
+      >
         {c.linhas.map((l, i) => {
           const em = c.tempos?.[i] ?? c.ini;
           const e = ease((tS - em) / 0.18);
-          return (
+          return l.estilo === "rotulo" ? (
             <div
               key={i}
               style={{
-                font: l.estilo === "titulo" ? `400 104px ${TITULO}` : `italic 700 142px ${SERIFA}`,
+                font: `700 42px ${TEXTO}`,
+                letterSpacing: "0.34em",
+                color: PALETA.ambar,
+                marginTop: 10,
+                marginLeft: c.tipo === "local" ? 74 : 0,
+                opacity: e,
+                translate: `0 ${(1 - e) * 16}px`,
+              }}
+            >
+              {l.texto}
+            </div>
+          ) : (
+            <div
+              key={i}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 18,
+                font:
+                  l.estilo === "titulo"
+                    ? `400 ${c.tipo === "local" ? 118 : 104}px ${TITULO}`
+                    : `italic 700 142px ${SERIFA}`,
                 lineHeight: l.estilo === "titulo" ? 1.0 : 0.95,
                 color: l.estilo === "titulo" ? PALETA.branco : PALETA.ambar,
                 textTransform: l.estilo === "titulo" ? "uppercase" : undefined,
@@ -397,6 +913,7 @@ const PalavraChave: React.FC<{ p: PropsBruges; tS: number }> = ({ p, tS }) => {
                 translate: `0 ${(1 - e) * 26}px`,
               }}
             >
+              {c.tipo === "local" && i === 0 && <Pin />}
               {l.texto}
             </div>
           );
@@ -406,8 +923,24 @@ const PalavraChave: React.FC<{ p: PropsBruges; tS: number }> = ({ p, tS }) => {
   );
 };
 
+/** Pino de mapa da etiqueta de lugar (desenho próprio do formato, âmbar). */
+const Pin: React.FC = () => (
+  <svg width={56} height={76} viewBox="0 0 56 76">
+    <path
+      d="M28 74 C 18 56, 3 42, 3 27 A 25 25 0 1 1 53 27 C 53 42, 38 56, 28 74 Z"
+      fill={PALETA.ambar}
+      stroke={PALETA.preto}
+      strokeWidth={3}
+    />
+    <circle cx={28} cy={27} r={10} fill={PALETA.preto} />
+  </svg>
+);
+
 /** Luz de passagem (ida para o apoio): luz quente desce do topo em 3 quadros, cobre por 4 (o corte fica no mais claro) e recua para um canto em 4. */
-const LuzDePassagem: React.FC<{ q: number; corte: number }> = ({ q, corte }) => {
+const LuzDePassagem: React.FC<{ q: number; corte: number }> = ({
+  q,
+  corte,
+}) => {
   const f = q - (corte - 5);
   if (f < 0 || f > 10) return null;
   let op = 0;
@@ -423,7 +956,14 @@ const LuzDePassagem: React.FC<{ q: number; corte: number }> = ({ q, corte }) => 
     op = 0.85 * (1 - canto);
   }
   return (
-    <div style={{ position: "absolute", inset: 0, pointerEvents: "none", mixBlendMode: "screen" }}>
+    <div
+      style={{
+        position: "absolute",
+        inset: 0,
+        pointerEvents: "none",
+        mixBlendMode: "screen",
+      }}
+    >
       <div
         style={{
           position: "absolute",
@@ -449,14 +989,40 @@ const Clarao: React.FC<{ q: number; ini: number }> = ({ q, ini }) => {
   const f = q - ini;
   if (f < 0 || f > 4) return null;
   const op = [0.85, 0.6, 0.36, 0.16, 0.05][f];
-  return <div style={{ position: "absolute", inset: 0, background: "#FFF6E8", opacity: op, pointerEvents: "none" }} />;
+  return (
+    <div
+      style={{
+        position: "absolute",
+        inset: 0,
+        background: "#FFF6E8",
+        opacity: op,
+        pointerEvents: "none",
+      }}
+    />
+  );
 };
 
 /** Grão de película próprio do formato (não é o grão do DS). */
 const Grao: React.FC<{ q: number }> = ({ q }) => (
-  <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, opacity: 0.06, mixBlendMode: "overlay", pointerEvents: "none" }}>
+  <svg
+    width={1080}
+    height={1920}
+    style={{
+      position: "absolute",
+      inset: 0,
+      opacity: 0.06,
+      mixBlendMode: "overlay",
+      pointerEvents: "none",
+    }}
+  >
     <filter id="grao-bruges">
-      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={q % 7} stitchTiles="stitch" />
+      <feTurbulence
+        type="fractalNoise"
+        baseFrequency="0.85"
+        numOctaves={2}
+        seed={q % 7}
+        stitchTiles="stitch"
+      />
     </filter>
     <rect width="100%" height="100%" filter="url(#grao-bruges)" />
   </svg>
@@ -465,14 +1031,19 @@ const Grao: React.FC<{ q: number }> = ({ q }) => (
 export const ReelBruges: React.FC<PropsBruges> = (p) => {
   const q = useCurrentFrame();
   const { fps } = useVideoConfig();
-  if (!p.cenas.length) return <AbsoluteFill style={{ background: PALETA.preto }} />;
+  if (!p.cenas.length)
+    return <AbsoluteFill style={{ background: PALETA.preto }} />;
   const tS = q / fps;
-  const cena = p.cenas.find((c) => q >= c.ini_q && q < c.fim_q) ?? p.cenas[p.cenas.length - 1];
+  const cena =
+    p.cenas.find((c) => q >= c.ini_q && q < c.fim_q) ??
+    p.cenas[p.cenas.length - 1];
   const t = (q - cena.ini_q) / fps;
   const empurrando = cena.transicao === "empurrao" && t < EMPURRAO;
   const split = (cena.layout === "split" && cena.tipo !== "fala") || empurrando;
   const ctaQ = Math.round(p.cta.ini * fps);
-  const linhaY = empurrando ? p.costura * (1 - easeInOut(t / EMPURRAO)) : p.costura;
+  const linhaY = empurrando
+    ? p.costura * (1 - easeInOut(t / EMPURRAO))
+    : p.costura;
 
   return (
     <AbsoluteFill style={{ background: PALETA.preto }}>
@@ -480,30 +1051,60 @@ export const ReelBruges: React.FC<PropsBruges> = (p) => {
       {p.cenas
         .filter((c) => c.tipo !== "fala")
         .map((c) => (
-          <Sequence key={c.id} from={c.ini_q} durationInFrames={c.fim_q - c.ini_q + (c.extra_q ?? 0)} premountFor={20} name={c.id}>
+          <Sequence
+            key={c.id}
+            from={c.ini_q}
+            durationInFrames={c.fim_q - c.ini_q + (c.extra_q ?? 0)}
+            premountFor={20}
+            name={c.id}
+          >
             <Apoio p={p} cena={c} />
           </Sequence>
         ))}
-      {split && <div style={{ position: "absolute", left: 0, right: 0, top: linhaY - 3, height: 6, background: "rgba(0,0,0,0.55)" }} />}
-      <Grao q={q} />
-      <Legenda p={p} tS={tS} cena={cena} />
-      <PalavraChave p={p} tS={tS} />
-      <Gancho p={p} tS={tS} />
-      {p.cenas
-        .filter((c) => c.transicao === "luz")
-        .map((c) => (
-          <LuzDePassagem key={c.id} q={q} corte={c.ini_q} />
-        ))}
-      {p.cenas
-        .filter((c) => c.transicao === "clarao")
-        .map((c) => (
-          <Clarao key={c.id} q={q} ini={c.ini_q} />
-        ))}
-      {/* CTA: único lugar do Reel com o DS V2 (2.7: placa de direção com verbo + módulo; Chegada; clack) */}
-      <Sequence from={ctaQ} name="CTA (DS V2)">
-        <Placa rotulo={p.cta.rotulo} destino={p.cta.destino} modulo={p.cta.modulo} entrada={p.cta.entrada} />
-        <Som nome="clack" em={p.cta.entrada + 280} relDb={p.mix.clack_db_rel} refLufs={p.mix.voz_lufs} />
-      </Sequence>
+      {/* camadas de cima (acima das imagens de apoio, inclusive da que está saindo numa transição) */}
+      <div style={{ position: "absolute", inset: 0, zIndex: 3 }}>
+        {split && (
+          <div
+            style={{
+              position: "absolute",
+              left: 0,
+              right: 0,
+              top: linhaY - 3,
+              height: 6,
+              background: "rgba(0,0,0,0.55)",
+            }}
+          />
+        )}
+        <Grao q={q} />
+        <Legenda p={p} tS={tS} cena={cena} />
+        <PalavraChave p={p} tS={tS} />
+        <Gancho p={p} tS={tS} />
+        {p.cenas
+          .filter((c) => c.transicao === "luz")
+          .map((c) => (
+            <LuzDePassagem key={c.id} q={q} corte={c.ini_q} />
+          ))}
+        {p.cenas
+          .filter((c) => c.transicao === "clarao")
+          .map((c) => (
+            <Clarao key={c.id} q={q} ini={c.ini_q} />
+          ))}
+        {/* CTA: único lugar do Reel com o DS V2 (2.7: placa de direção com verbo + módulo; Chegada; clack) */}
+        <Sequence from={ctaQ} name="CTA (DS V2)">
+          <Placa
+            rotulo={p.cta.rotulo}
+            destino={p.cta.destino}
+            modulo={p.cta.modulo}
+            entrada={p.cta.entrada}
+          />
+          <Som
+            nome="clack"
+            em={p.cta.entrada + 280}
+            relDb={p.mix.clack_db_rel}
+            refLufs={p.mix.voz_lufs}
+          />
+        </Sequence>
+      </div>
       <Audio src={staticFile("voz.wav")} />
       {p.sfx && <Audio src={staticFile("sfx.wav")} />}
     </AbsoluteFill>
