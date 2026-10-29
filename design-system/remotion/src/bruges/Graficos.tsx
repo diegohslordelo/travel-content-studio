@@ -62,7 +62,7 @@ export const MapaBelgica: React.FC<{ t: number; mapa: Mapa; altura: number; marc
           position: "absolute",
           left: 0,
           right: 0,
-          top: 300,
+          top: 770, // abaixo da Bélgica, longe do rótulo BRUGES e acima da legenda na costura
           textAlign: "center",
           font: `700 40px ${TEXTO}`,
           letterSpacing: "0.32em",

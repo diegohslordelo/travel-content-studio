@@ -254,10 +254,40 @@ const Apoio: React.FC<{ p: PropsBruges; cena: Cena }> = ({ p, cena }) => {
         {cena.anim === "capelas" && cena.fotos && <Capelas t={t} baixo={p.imagens[cena.fotos[0]].arquivo} cima={p.imagens[cena.fotos[1]].arquivo} marcos={m} />}
         {cena.anim === "data" && <DataIdade t={t} marcos={m} />}
         {cena.anim === "patrimonio" && <Patrimonio t={t} marcos={m} fundo={cena.fundo ? p.imagens[cena.fundo].arquivo : undefined} />}
+        {/* REV2: "depois das cruzadas" entra como cartão sobre o mapa, em vez de um corte de 1,1 s */}
+        {cena.cartao && m.cartao !== undefined && t >= m.cartao && <CartaoMapa src={p.imagens[cena.cartao].arquivo} t={t - m.cartao} selo={cena.selo} />}
       </div>
     );
   }
   return null;
+};
+
+/** Cartão sobre o mapa da rota (iluminura das cruzadas), abaixo de Bruges e acima da legenda. */
+const CartaoMapa: React.FC<{ src: string; t: number; selo?: string }> = ({ src, t, selo }) => {
+  const e = ease(t / 0.3);
+  return (
+    <>
+      <div
+        style={{
+          position: "absolute",
+          left: 110,
+          top: 780,
+          width: 860,
+          height: 440,
+          borderRadius: 20,
+          overflow: "hidden",
+          boxShadow: "0 30px 80px rgba(0,0,0,0.75)",
+          border: `3px solid ${PALETA.ambar}`,
+          opacity: e,
+          translate: `0 ${(1 - e) * 50}px`,
+          scale: String(0.92 + 0.08 * e),
+        }}
+      >
+        <Foto src={src} w={860} h={440} t={t} dur={1.4} kb={[1.0, 1.06]} foco={[0.3, 0.62]} filtro={FILTROS.medieval} />
+      </div>
+      {selo && <Selo texto={selo} x={132} y={800} t={t} />}
+    </>
+  );
 };
 
 /** O frasco da relíquia entra numa faixa larga sob o texto do gancho, na palavra "sangue". */

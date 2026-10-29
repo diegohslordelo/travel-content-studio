@@ -1,0 +1,541 @@
+{
+ "nota": "Decupagem da REV1. Cada cena começa ancorada numa palavra da fala ('fala:palavra#n±s', 0,08 s antes do início dela). Tela dividida no padrão do perfil (FORMATOS_REELS.md); DS V2 só no CTA final. Números puros são segundos do Reel. REV2 (29/10/2026): toda cena com no mínimo 2 s (pedido do Diego) e waffle com chocolate no lugar da vitrine de chocolate.",
+ "acervo_dir": "../fonte",
+ "rostoY": 680,
+ "broll": {
+  "IMG_2490.MOV": {
+   "ini": 3.0,
+   "fim_limpo": 7.9,
+   "foco_x": 0.55,
+   "nota": "Canal até o Rozenhoedkaai (16/03, 12:40). Sem corte de cena."
+  },
+  "IMG_2479.MOV": {
+   "ini": 0.3,
+   "fim_limpo": 6.8,
+   "foco_x": 0.5,
+   "nota": "Fachada da Basílica do Sangue Sagrado, estátuas douradas (16/03, 12:27)."
+  },
+  "IMG_2476.MOV": {
+   "ini": 0.4,
+   "fim_limpo": 3.4,
+   "foco_x": 0.42,
+   "nota": "Praça Burg com a basílica (16/03, 12:02)."
+  },
+  "IMG_2486.MOV": {
+   "ini": 0.3,
+   "fim_limpo": 6.6,
+   "foco_x": 0.5,
+   "nota": "Canal em perspectiva com barco (16/03, 12:30). Fecha o loop com o canal da abertura."
+  },
+  "IMG_2639.MOV": {
+   "ini": 0.2,
+   "fim_limpo": 3.5,
+   "foco_x": 0.5,
+   "nota": "Waffle com chocolate e garfinho da Bélgica (16/03, 14:41). Só a mão e a manga do Diego aparecem."
+  }
+ },
+ "imagens": [
+  "reliquia_frasco",
+  "reliquia_veneracao",
+  "gravura_relicario",
+  "relicario",
+  "capela_baixo",
+  "capela_cima",
+  "procissao_relicario",
+  "procissao_hoje",
+  "procissao_soldados",
+  "cartaz_procissao",
+  "cruzados"
+ ],
+ "cenas": [
+  {
+   "id": "abertura",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_2490.MOV",
+   "ini": 0,
+   "fim": "f1:existe-0.08",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "cidade de conto de fadas: o canal"
+  },
+  {
+   "id": "fachada",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_2479.MOV",
+   "ini": "f1:existe-0.08",
+   "fim": 6.7,
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "cartao": "reliquia_frasco",
+   "extra": 0.64,
+   "marcos": {
+    "cartao": "f1:sangue-0.06"
+   },
+   "nota": "existe uma basílica · o frasco entra em cartão na palavra 'sangue'"
+  },
+  {
+   "id": "diego_chave",
+   "tipo": "fala",
+   "ini": 6.7,
+   "fim": "f2:Bruges-0.08",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "transicao": "empurrao",
+   "nota": "Empurrão: a metade de cima sai pelo topo e o Diego cresce (ref. 1)"
+  },
+  {
+   "id": "mapa",
+   "tipo": "anim",
+   "layout": "split",
+   "anim": "mapa",
+   "ini": "f2:Bruges-0.08",
+   "fim": "f2:uma-0.08",
+   "marcos": {
+    "bruges": "f2:Bruges",
+    "belgica": "f2:Bélgica"
+   }
+  },
+  {
+   "id": "capelas",
+   "tipo": "anim",
+   "layout": "full",
+   "anim": "capelas",
+   "ini": "f2:uma-0.08",
+   "fim": "f2:que#2-0.08",
+   "fotos": [
+    "capela_baixo",
+    "capela_cima"
+   ],
+   "marcos": {
+    "duas": "f2:duas",
+    "baixo": "f2:uma",
+    "cima": "f2:outra",
+    "gotica": "f2:gótica"
+   }
+  },
+  {
+   "id": "reliquia",
+   "tipo": "foto",
+   "layout": "card",
+   "foto": "reliquia_veneracao",
+   "foto2": "gravura_relicario",
+   "selo2": "GRAVURA ANTIGA",
+   "ini": "f2:que#2-0.08",
+   "fim": "f3:teria-0.08",
+   "marcos": {
+    "troca": "f3:Segundo-0.1"
+   },
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.6,
+    0.55
+   ],
+   "kb2": [
+    1.06,
+    1.0
+   ],
+   "foco2": [
+    0.5,
+    0.35
+   ],
+   "nota": "foto atual → gravura antiga (dissolve: voltar no tempo)"
+  },
+  {
+   "id": "rota",
+   "tipo": "anim",
+   "layout": "full",
+   "anim": "rota",
+   "ini": "f3:teria-0.08",
+   "fim": "f3:mas-0.06",
+   "marcos": {
+    "bruges": "f3:Bruges",
+    "cartao": "f3:depois-0.08"
+   },
+   "cartao": "cruzados",
+   "selo": "REPRESENTAÇÃO ARTÍSTICA",
+   "nota": "a rota se desenha até Bruges; em 'depois das cruzadas' a iluminura entra em cartão sobre o mapa (a REV1 cortava para ela em 1,1 s)"
+  },
+  {
+   "id": "diego_virada",
+   "tipo": "fala",
+   "ini": "f3:mas-0.06",
+   "fim": "f3:então-0.08",
+   "zoom": [
+    1.0,
+    1.02
+   ],
+   "zoom2": 1.13,
+   "marcos": {
+    "zoom": "f3:Essa-0.06"
+   },
+   "transicao": "clarao",
+   "nota": "virada 'mas tem um ponto aí': clarão de volta ao rosto; corte de zoom em 'Essa história'"
+  },
+  {
+   "id": "origem",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "relicario",
+   "ini": "f3:então-0.08",
+   "fim": 24.4,
+   "kb": [
+    1.04,
+    1.0
+   ],
+   "foco": [
+    0.5,
+    0.4
+   ],
+   "interrogacao": true,
+   "marcos": {
+    "interrogacao": "f3:comprovada"
+   }
+  },
+  {
+   "id": "viva",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "procissao_hoje",
+   "ini": 24.4,
+   "fim": "f4:Desde-0.16",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.45,
+    0.5
+   ],
+   "transicao": "luz"
+  },
+  {
+   "id": "idade",
+   "tipo": "anim",
+   "layout": "full",
+   "anim": "data",
+   "texto": [
+    "DESDE A",
+    "IDADE MÉDIA"
+   ],
+   "ini": "f4:Desde-0.16",
+   "fim": "f4:procissão+0.27",
+   "marcos": {
+    "l0": "f4:Desde",
+    "l1": "f4:Idade"
+   }
+  },
+  {
+   "id": "procissao",
+   "tipo": "foto",
+   "layout": "card",
+   "foto": "procissao_relicario",
+   "ini": "f4:procissão+0.27",
+   "fim": "f4:que+0.14",
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "foco": [
+    0.55,
+    0.4
+   ]
+  },
+  {
+   "id": "soldados",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "procissao_soldados",
+   "ini": "f4:que+0.14",
+   "fim": "f4:como+0.14",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.35,
+    0.5
+   ]
+  },
+  {
+   "id": "unesco",
+   "tipo": "anim",
+   "layout": "full",
+   "anim": "patrimonio",
+   "texto": [
+    "UNESCO",
+    "PATRIMÔNIO",
+    "CULTURAL",
+    "IMATERIAL",
+    "DA HUMANIDADE"
+   ],
+   "ini": "f4:como+0.14",
+   "fim": "f5:É-0.24",
+   "fundo": "procissao_soldados",
+   "marcos": {
+    "l1": "f4:patrimônio",
+    "l2": "f4:cultural",
+    "l3": "f4:imaterial",
+    "l4": "f4:humanidade"
+   }
+  },
+  {
+   "id": "waffle",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_2639.MOV",
+   "ini": "f5:É-0.24",
+   "fim": "f5:reúne-0.18",
+   "kb": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "id": "arquitetura",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_2476.MOV",
+   "ini": "f5:reúne-0.18",
+   "fim": "f5:fé+0.04",
+   "kb": [
+    1.04,
+    1.0
+   ]
+  },
+  {
+   "id": "historia",
+   "tipo": "foto",
+   "layout": "card",
+   "foto": "cartaz_procissao",
+   "selo": "REGISTRO HISTÓRICO",
+   "ini": "f5:fé+0.04",
+   "fim": "f5:Agora-0.08",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.5,
+    0.3
+   ],
+   "foco_fim": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "id": "cta",
+   "tipo": "broll",
+   "layout": "full",
+   "arquivo": "IMG_2486.MOV",
+   "ini": "f5:Agora-0.08",
+   "fim": "fim",
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "nota": "volta ao canal (loop com a abertura) + placa do DS V2"
+  }
+ ],
+ "gancho": {
+  "layout": {
+   "split": true,
+   "topo": 275
+  },
+  "fim": 6.7,
+  "blocos": [
+   {
+    "ini": 0,
+    "linhas": [
+     {
+      "texto": "VOCÊ SABIA QUE NO MEIO",
+      "tam": 60,
+      "em": 0
+     },
+     {
+      "texto": "DE UMA CIDADE QUE PARECE",
+      "tam": 60,
+      "em": "f1:de#1-0.05"
+     },
+     {
+      "texto": "TER SAÍDO DE UM",
+      "tam": 60,
+      "em": "f1:ter-0.05"
+     },
+     {
+      "texto": "CONTO DE FADAS",
+      "tam": 132,
+      "em": "f1:conto-0.05",
+      "cor": "ambar"
+     }
+    ]
+   },
+   {
+    "ini": "f1:existe-0.08",
+    "linhas": [
+     {
+      "texto": "EXISTE UMA BASÍLICA",
+      "tam": 70,
+      "em": "f1:existe-0.08"
+     },
+     {
+      "texto": "QUE GUARDA",
+      "tam": 70,
+      "em": "f1:que#3-0.05"
+     },
+     {
+      "texto": "O SANGUE",
+      "tam": 136,
+      "em": "f1:sangue-0.06",
+      "cor": "sangue"
+     },
+     {
+      "texto": "DE JESUS CRISTO?",
+      "tam": 84,
+      "em": "f1:Jesus-0.05"
+     }
+    ]
+   }
+  ]
+ },
+ "chaves": [
+  {
+   "ini": "f2:Basílica-0.06",
+   "fim": "f2:em-0.08",
+   "linhas": [
+    {
+     "texto": "Basílica do",
+     "estilo": "titulo",
+     "em": "f2:Basílica-0.06"
+    },
+    {
+     "texto": "Sangue Sagrado",
+     "estilo": "serifa",
+     "em": "f2:Sangue-0.06"
+    }
+   ]
+  }
+ ],
+ "legenda": {
+  "destaques": {
+   "f2": [
+    "bruges",
+    "duas",
+    "simples",
+    "gótica",
+    "relíquia"
+   ],
+   "f3": [
+    "tradição",
+    "bruges",
+    "cruzadas",
+    "ponto",
+    "antiga",
+    "comprovada"
+   ],
+   "f4": [
+    "viva",
+    "procissão",
+    "sagrado",
+    "unesco"
+   ],
+   "f5": [
+    "chocolate",
+    "medieval",
+    "fé",
+    "séculos",
+    "bruges",
+    "europa"
+   ]
+  },
+  "troca": {
+   "unesco": "UNESCO"
+  },
+  "quebrar_antes": [
+   "f2:em#1",
+   "f3:não",
+   "f5:reúne"
+  ],
+  "sem_legenda": [
+   [
+    "f2:da-0.1",
+    "f2:em-0.1"
+   ],
+   [
+    "f4:Desde-0.1",
+    "f4:a#2-0.1"
+   ],
+   [
+    "f4:como-0.1",
+    "f5:É-0.3"
+   ]
+  ]
+ },
+ "sons": [
+  {
+   "nome": "impacto · o sangue (revelação no gancho)",
+   "arquivo": "PDX_impacto.wav",
+   "em": "f1:sangue-0.06",
+   "rel_db": -4,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "swish · empurrão da tela dividida",
+   "arquivo": "PDX_swish.wav",
+   "em": 6.7,
+   "desl": 0.3,
+   "rel_db": -6,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "página · foto atual vira gravura antiga",
+   "arquivo": "PDX_pagina.wav",
+   "em": "f3:Segundo-0.1",
+   "desl": 0.08,
+   "rel_db": -8,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "impacto · clarão de volta (virada)",
+   "arquivo": "PDX_impacto.wav",
+   "em": "f3:mas-0.06",
+   "rel_db": -4,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "ar longo · luz de passagem (pico no corte)",
+   "arquivo": "PDX_ar_longo.wav",
+   "em": 24.4,
+   "rel_db": -6,
+   "alinhar": "pico"
+  },
+  {
+   "nome": "impacto · IDADE MÉDIA",
+   "arquivo": "PDX_impacto.wav",
+   "em": "f4:Idade",
+   "rel_db": -4,
+   "alinhar": "pico"
+  }
+ ],
+ "cta": {
+  "ini": "f5:me-0.04",
+  "entrada_ms": 0,
+  "cauda": 1.6,
+  "rotulo": "ME DIZ AÍ",
+  "destino": "BRUGES",
+  "modulo": "interrogacao",
+  "clack_db_rel": -6,
+  "nota": "Placa CTA do DS V2 (2.7): verbo + módulo, posição fixa do DS, Chegada + clack. Texto da fala ('me diz aí, você colocaria Bruges…'). Único lugar do Reel com o DS (pedido do Diego)."
+ }
+}
