@@ -1,0 +1,25 @@
+/* Gerado por scripts/prep.py a partir de design-system/primeiro-dia-tokens-v2.json. Não editar à mão. */
+:root{
+  --pd-y: #FFC21A;
+  --pd-y7: #8A5A00;
+  --pd-n: #121317;
+  --pd-n5: #5B606B;
+  --pd-n3: #C8CBD1;
+  --pd-p: #F6F3EC;
+  --pd-r: #FCFBF8;
+  --pd-ink: #1F3BB3;
+  --pd-g: #147A44;
+  --pd-radius-paper: 3px;
+  --pd-radius-tag: 10px;
+  --pd-radius-plate: 16px;
+  --pd-radius-photo: 24px;
+  --pd-sh-plate: 0 3px 0 rgba(0,0,0,0.28), 0 18px 32px -10px rgba(0,0,0,0.55);
+  --pd-bevel: inset 0 2px 0 rgba(255,255,255,0.45), inset 0 -4px 0 rgba(0,0,0,0.16);
+  --pd-sh-paper: 0 1px 1px rgba(0,0,0,0.20), 0 14px 26px -10px rgba(0,0,0,0.50);
+  --pd-grain-op: 0.05;
+  --pd-fiber-op: 0.04;
+  --pd-scrim-op: 0.63;
+  --pd-w: 1080px;
+  --pd-h: 1440px;
+  --pd-m: 80px;
+}
