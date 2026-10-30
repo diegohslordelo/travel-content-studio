@@ -1,0 +1,42 @@
+{
+  "reel": "socotra",
+  "titulo": "Essa ilha parece ter saído de um filme de ficção científica, mas ela é real (Socotra, Iêmen)",
+  "fps": 30,
+  "largura": 1080,
+  "altura": 1920,
+  "costura_y": 900,
+  "rosto_y": 740,
+  "duracao_max": 46.0,
+  "nota": "Tela dividida (docs/FORMATOS_REELS.md). 8 tomadas gravadas no quarto (GPS de Salvador), pasta Drive Reel/Socotra. Ordem pedida pelo Diego (30/10/2026): a CTA de envio (IMG_7511) entra logo antes da revelação do nome (IMG_7495). Tempos das falas em segundos do bruto; cenas ancoradas em 'fala:palavra' (#n = n-ésima ocorrência) ± segundos.",
+  "fontes": {
+    "IMG_7489": {"arquivo": "IMG_7489.MOV", "drive_id": "1wpxKo3hwmPV8JzA3sAdvW6GipjUNZkUY", "parte": "gancho"},
+    "IMG_7493": {"arquivo": "IMG_7493.MOV", "drive_id": "10Pp3c8Q163x_Bo7Gr-CbkRp1J4pPFdJu", "parte": "árvores"},
+    "IMG_7511": {"arquivo": "IMG_7511.MOV", "drive_id": "1ZzJ4NM57qJlFvGnriw7ywnpGSkYnLHUM", "parte": "CTA de envio"},
+    "IMG_7495": {"arquivo": "IMG_7495.MOV", "drive_id": "1tBkx3s-3llePtDEmH7-CwIA1lF-LgIHG", "parte": "revelação"},
+    "IMG_7499": {"arquivo": "IMG_7499.MOV", "drive_id": "1H5rfQfroLGgu_btBkbryW4DimP_lsrrx", "parte": "37%"},
+    "IMG_7506": {"arquivo": "IMG_7506.MOV", "drive_id": "1_TDEaAgOyjYgdiAKHIcOAUljNwrt1oR2", "parte": "Sangue de Dragão"},
+    "IMG_7508": {"arquivo": "IMG_7508.MOV", "drive_id": "1XRgeAnK-ul_BUEL5njWQnLOJmUi6LqRF", "parte": "a prova"},
+    "IMG_7517": {"arquivo": "IMG_7517.MOV", "drive_id": "18SNdmJ6CFjB9neTrX8kELpQV45NbJG67", "parte": "CTA final"}
+  },
+  "falas": [
+    {"id": "f1", "fonte": "IMG_7489", "in": 0.50, "out": 4.62, "respiro_depois": 0.20},
+    {"id": "f2", "fonte": "IMG_7493", "in": 2.36, "out": 8.76, "respiro_depois": 0.20},
+    {"id": "f3", "fonte": "IMG_7511", "in": 1.66, "out": 5.44, "respiro_depois": 0.30},
+    {"id": "f4", "fonte": "IMG_7495", "in": 2.74, "out": 8.22},
+    {"id": "f5", "fonte": "IMG_7499", "in": 1.90, "out": 8.62, "tirar": [[3.92, 4.16]], "respiro_depois": 0.20},
+    {"id": "f6", "fonte": "IMG_7506", "in": 3.02, "out": 8.95, "respiro_depois": 0.22},
+    {"id": "f7", "fonte": "IMG_7508", "in": 2.84, "out": 8.05, "respiro_depois": 0.25},
+    {"id": "f8", "fonte": "IMG_7517", "in": 0.42, "out": 6.45}
+  ],
+  "audio": {
+    "fade_in_s": 0.012,
+    "fade_out_s": 0.02,
+    "passa_alta_hz": 70,
+    "reducao_ruido": "afftdn=nr=8:nf=-58:tn=1",
+    "voz_lufs": -14.0,
+    "voz_pico_dbtp": -1.5,
+    "master_lufs": -14.0,
+    "master_pico_dbtp": -1.0,
+    "clack_db_rel": -6
+  }
+}
