@@ -1,0 +1,383 @@
+{
+ "nota": "Imagens: Wikimedia Commons (créditos em creditos.md), animações criadas (mapa com dados Natural Earth, domínio público). Nenhuma imagem é das gravações do Diego além do rosto. O nome Socotra só aparece na tela a partir de f4:socotra (revelação). REV2: 'pergunta' virou tela dividida com as árvores-garrafa (sem o respiro, o Diego em tela cheia ficaria 1,6 s, abaixo dos 2 s da regra dele); a mesma foto continua escurecida sob o 37%.",
+ "imagens": {
+  "firmihin": {
+   "arquivo": "web/firmihin_aurora.jpg"
+  },
+  "floresta": {
+   "arquivo": "web/dragoes_ilha.jpg"
+  },
+  "guarda": {
+   "arquivo": "web/dragao_guarda.jpg"
+  },
+  "resina": {
+   "arquivo": "web/resina_seca.jpg"
+  },
+  "garrafas": {
+   "arquivo": "web/garrafas.jpg"
+  },
+  "rosa": {
+   "arquivo": "web/rosa_deserto.jpg"
+  },
+  "diksam": {
+   "arquivo": "web/diksam.jpg"
+  },
+  "dragao_v": {
+   "arquivo": "web/dragao_2.jpg"
+  },
+  "iss": {
+   "arquivo": "web/iss_costa.jpg"
+  },
+  "dunas": {
+   "arquivo": "web/dunas_noget.jpg"
+  },
+  "skand": {
+   "arquivo": "web/skand.jpg"
+  }
+ },
+ "cenas": [
+  {
+   "id": "gancho",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "firmihin",
+   "ini": 0,
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.5,
+    0.55
+   ],
+   "efeito": "scifi",
+   "marcos": {
+    "real": "f1:real-0.04"
+   }
+  },
+  {
+   "id": "arvores",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "floresta",
+   "ini": "f2:se-0.08",
+   "kb": [
+    1.06,
+    1.0
+   ],
+   "foco": [
+    0.42,
+    0.6
+   ]
+  },
+  {
+   "id": "guarda_chuva",
+   "tipo": "anim",
+   "anim": "guarda",
+   "layout": "split",
+   "foto": "guarda",
+   "ini": "f2:parece-0.08",
+   "marcos": {
+    "guarda": "f2:guarda-0.05",
+    "colocou": "f2:colocou-0.05",
+    "tronco": "f2:tronco-0.1",
+    "sangue": "f2:sangue-0.12"
+   }
+  },
+  {
+   "id": "compartilha",
+   "tipo": "fala",
+   "ini": "f3:já-0.08",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "marcos": {
+    "manda": "f3:manda-0.05",
+    "punch": "f3:pessoa-0.04"
+   }
+  },
+  {
+   "id": "cosmos",
+   "tipo": "anim",
+   "anim": "cosmos",
+   "layout": "full",
+   "ini": "f4:só-0.06",
+   "marcos": {
+    "pandora": "f4:pandora-0.1",
+    "distante": "f4:distante-0.05",
+    "terra": "f4:terra-0.3",
+    "zoom": "f4:fica#2-0.05",
+    "socotra": "f4:socotra-0.04",
+    "iemen": "f4:iêmen-0.06"
+   }
+  },
+  {
+   "id": "pergunta",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "garrafas",
+   "ini": "f5:e-0.05",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "porcentagem",
+   "tipo": "anim",
+   "anim": "fracao",
+   "layout": "full",
+   "fundo": "garrafas",
+   "ini": "f5:cerca-0.10",
+   "marcos": {
+    "numero": "f5:37-0.04"
+   }
+  },
+  {
+   "id": "endemica",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "rosa",
+   "ini": "f5:não-0.08",
+   "kb": [
+    1.0,
+    1.07
+   ],
+   "foco": [
+    0.5,
+    0.42
+   ]
+  },
+  {
+   "id": "famosa",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "diksam",
+   "ini": "f6:uma-0.08",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.62,
+    0.45
+   ]
+  },
+  {
+   "id": "formato",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "dragao_v",
+   "ini": "f6:ela-0.08",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.5,
+    0.75
+   ],
+   "foco_fim": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "resina",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "resina",
+   "ini": "f6:resina-0.08",
+   "kb": [
+    1.05,
+    1.12
+   ],
+   "foco": [
+    0.62,
+    0.42
+   ]
+  },
+  {
+   "id": "planeta",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "iss",
+   "ini": "f7:socotra-0.08",
+   "kb": [
+    1.12,
+    1.0
+   ],
+   "foco": [
+    0.55,
+    0.5
+   ]
+  },
+  {
+   "id": "lugares",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "dunas",
+   "ini": "f7:lugares-0.08",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "viu_tudo",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "skand",
+   "ini": "f7:até-0.08",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.5,
+    0.35
+   ]
+  },
+  {
+   "id": "cta",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "firmihin",
+   "ini": "f8:agora-0.10",
+   "kb": [
+    1.08,
+    1.0
+   ],
+   "foco": [
+    0.5,
+    0.55
+   ],
+   "continua": true
+  }
+ ],
+ "gancho": {
+  "layout": "split",
+  "topo": 275,
+  "blocos": [
+   {
+    "linhas": [
+     "ESSA ILHA PARECE TER",
+     "SAÍDO DE UM FILME DE",
+     "FICÇÃO CIENTÍFICA"
+    ],
+    "tamanhos": [
+     78,
+     78,
+     104
+    ],
+    "tempos": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "linhas": [
+     "MAS ELA É",
+     "REAL."
+    ],
+    "tamanhos": [
+     78,
+     170
+    ],
+    "tempos": [
+     "f1:mas",
+     "f1:real-0.04"
+    ]
+   }
+  ]
+ },
+ "legenda": {
+  "sem_legenda": [
+   "f1"
+  ],
+  "escrita": {
+   "37": "37%",
+   "%": "",
+   "f3:já": "Já"
+  },
+  "destaques": [
+   "árvores",
+   "guarda-chuva",
+   "sangue",
+   "manda",
+   "pandora",
+   "terra",
+   "socotra",
+   "iêmen",
+   "37%",
+   "nenhum",
+   "dragão",
+   "resina",
+   "planeta",
+   "tudo",
+   "coragem",
+   "segue"
+  ]
+ },
+ "cta": {
+  "ini": "f8:segue-0.25",
+  "entrada_ms": 200,
+  "cauda": 0.0,
+  "rotulo": "SEGUE O PERFIL",
+  "destino": "@PRIMEIRODIAEM",
+  "nota": "Placa CTA do DS V2 (2.7): verbo + módulo de seta, Chegada + clack. Texto da fala ('segue o perfil'); o destino é o @ do perfil (para onde ir). Único lugar do Reel com o DS (decisão do Diego, 28/10/2026)."
+ },
+ "sons": [
+  {
+   "som": "drone",
+   "em": 0,
+   "rel_db": -20,
+   "ate": "f1:real-0.04"
+  },
+  {
+   "som": "impacto",
+   "em": "f1:real-0.04",
+   "rel_db": -4
+  },
+  {
+   "som": "swish",
+   "em": "marco:guarda_chuva:colocou+0.15",
+   "rel_db": -8
+  },
+  {
+   "som": "swish",
+   "em": "marco:compartilha:manda+0.05",
+   "rel_db": -8
+  },
+  {
+   "som": "riser",
+   "em_fim": "cena:cosmos",
+   "rel_db": -8
+  },
+  {
+   "som": "ar_longo",
+   "em": "marco:cosmos:zoom",
+   "rel_db": -6
+  },
+  {
+   "som": "impacto",
+   "em": "marco:cosmos:socotra",
+   "rel_db": -4
+  },
+  {
+   "som": "impacto",
+   "em": "marco:porcentagem:numero",
+   "rel_db": -5
+  }
+ ]
+}
