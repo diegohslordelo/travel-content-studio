@@ -15,6 +15,8 @@ FOTOS = {
     "porta_inferno": ("The Door to Hell.jpg", 3000),
     "brilho_crepusculo": ("Gates of Hell 015 (8031716278).jpg", 2816),
     "estrelas": ("Star trails over Turkmenistan sky.jpg", 3000),
+    "fogo_dia": ("Darvaza gas crater, Jähennem derwezesi, Door to Hell, Gates of Hell, Derweze, Turkmenistan.jpg", 3000),
+    "vermelho_dentro": ("Darvaza Gas Crater (42435087502).jpg", 1920),
     "panorama": ("Darvasa gas crater panorama crop.jpg", 5934),
     "silhuetas_borda": ("Darvasa gas crater 1.jpg", 3000),
     "fumaca_noite": ("Darvaza Gas Crater (42435084232).jpg", 3000),

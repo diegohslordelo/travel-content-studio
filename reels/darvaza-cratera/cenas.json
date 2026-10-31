@@ -1,5 +1,5 @@
 {
- "nota": "Cenas ancoradas nas palavras ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. Fotos: imagens/lista_commons.json (licença e autor). Legenda = fala gravada; '*' = destaque âmbar; '~' = grupo que não aparece (o gancho ou um título já mostra a palavra).",
+ "nota": "Cenas ancoradas nas palavras ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. Fotos: imagens/lista_commons.json (licença e autor). Legenda = fala gravada; '*' = destaque âmbar; '~' = grupo que não aparece (o gancho ou um título já mostra a palavra). REV2: entra a fala do gancho (f1, IMG_7536).",
  "costura": 900,
  "rostoY": 800,
  "rostoX": 610,
@@ -17,6 +17,38 @@
    "foco": [
     0.5,
     0.55
+   ],
+   "tom": "noite"
+  },
+  {
+   "id": "gancho_deserto",
+   "ini": "f1:em-0.04",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "noite_deserto",
+   "kb": [
+    1.16,
+    1.24
+   ],
+   "foco": [
+    0.5,
+    0.3
+   ],
+   "tom": "noite"
+  },
+  {
+   "id": "fogo_todo_lado",
+   "ini": "f2:tem-0.06",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "vermelho_dentro",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.5,
+    0.5
    ],
    "tom": "noite"
   },
@@ -220,16 +252,16 @@
    "ini": "f5:esse-0.06",
    "tipo": "foto",
    "layout": "full",
-   "foto": "noite_deserto",
+   "foto": "fogo_dia",
    "kb": [
-    1.45,
-    1.55
+    1.0,
+    1.08
    ],
    "foco": [
-    0.52,
-    0.95
+    0.5,
+    0.45
    ],
-   "tom": "noite"
+   "tom": "natural"
   },
   {
    "id": "mapa",
@@ -460,41 +492,42 @@
  ],
  "gancho": {
   "topo": 275,
-  "fim": "f2:parece-0.04",
+  "fim": "f2:tem-0.06",
   "blocos": [
    {
     "linhas": [
-     "TEM FOGO",
-     "PRA TODO LADO"
+     "IMAGINE ENCONTRAR",
+     "UM BURACO GIGANTE"
     ],
     "tamanhos": [
-     150,
-     104
+     96,
+     96
     ],
     "tempos": [
      "0",
-     "f2:pra-0.04"
+     "f1:um-0.04"
     ]
    },
    {
     "linhas": [
-     "E QUANDO",
-     "A NOITE CHEGA"
+     "EM CHAMAS",
+     "NO MEIO DO DESERTO"
     ],
     "tamanhos": [
-     84,
-     124
+     150,
+     92
     ],
     "tempos": [
-     "f2:e-0.04",
-     "f2:noite-0.04"
+     "f1:em-0.04",
+     "f1:no-0.04"
     ]
    }
   ]
  },
  "legendas": [
-  "~Tem fogo pra todo lado,",
-  "~e quando a noite chega,",
+  "~Imagine encontrar um buraco gigante em chamas no meio do deserto.",
+  "Tem *fogo* pra todo lado,",
+  "e quando a *noite* chega,",
   "parece que abriram",
   "uma *porta*",
   "direto pro *inferno*.",
@@ -645,6 +678,11 @@
   "nota": "cama de fogo sintetizada (ruído grave + estalos), contínua, mais alta nas cenas de fogo em tela cheia",
   "base_rel_db": -24,
   "realces": [
+   {
+    "de": "0",
+    "ate": "f2:tem-0.06",
+    "rel_db": -18
+   },
    {
     "de": "f2:abriram-0.06",
     "ate": "f3a:a-0.06",

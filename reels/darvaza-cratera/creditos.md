@@ -6,7 +6,9 @@ Todas as fotos são da cratera de Darvaza (Wikimedia Commons, categoria "Derweze
 
 | Arquivo | Cena do Reel | Autor | Licença | Página |
 |---|---|---|---|---|
-| `chamas_perto.jpg` | gancho, CTA final | Rastapopulous | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:DarvazaMay2011.JPG |
+| `chamas_perto.jpg` | gancho ("Imagine encontrar…"), CTA final | Rastapopulous | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:DarvazaMay2011.JPG |
+| `vermelho_dentro.jpg` | "Tem fogo pra todo lado" (rev2) | John Pavelka | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Darvaza_Gas_Crater_(42435087502).jpg |
+| `fogo_dia.jpg` | "Esse lugar existe de verdade" (rev2) | Benjamin Goetzinger | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Darvaza_gas_crater,_J%C3%A4hennem_derwezesi,_Door_to_Hell,_Gates_of_Hell,_Derweze,_Turkmenistan.jpg |
 | `brilho_anoitecer.jpg` | "quando a noite chega" | Benjamin Goetzinger | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Glow_of_Darvaza_gas_crater,_J%C3%A4hennem_derwezesi,_Door_to_Hell,_Gates_of_Hell,_Derweze,_Turkmenistan.jpg |
 | `borda_noite.jpg` | "porta direto pro inferno", CTA final | John Pavelka | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Darvaza_Gas_Crater_(42435082502).jpg |
 | `cratera_dia.jpg` | "enorme cratera" | John Pavelka | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Darvaza_Gas_Crater_-_Daytime_(42435086112).jpg |
@@ -14,7 +16,7 @@ Todas as fotos são da cratera de Darvaza (Wikimedia Commons, categoria "Derweze
 | `fumaca_noite.jpg` | "se apagaria em poucos dias" | John Pavelka | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Darvaza_Gas_Crater_(42435084232).jpg |
 | `bracos_abertos.jpg` | "que teria coragem" | Tormod Sandtorv | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Darvasa_gas_crater_2.jpg |
 | `carro_borda.jpg` | "de chegar perto" | miketnorton | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Derweze_gas_fire2.jpg |
-| `noite_deserto.jpg` | "existe de verdade" | Benjamin Goetzinger | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Darvaza_gas_crater,_J%C3%A4hennem_derwezesi,_Door_to_Hell,_Gates_of_Hell,_Derweze,_Turkmenistan_at_night.jpg |
+| `noite_deserto.jpg` | "existe de verdade" (rev1); "em chamas no meio do deserto" (rev2) | Benjamin Goetzinger | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Darvaza_gas_crater,_J%C3%A4hennem_derwezesi,_Door_to_Hell,_Gates_of_Hell,_Derweze,_Turkmenistan_at_night.jpg |
 | `brilho_crepusculo.jpg` | "a cratera da Darvaza" | Stefan Krasowski | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Gates_of_Hell_015_(8031716278).jpg |
 | `silhuetas_borda.jpg` | "mundialmente" | Tormod Sandtorv | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Darvasa_gas_crater_1.jpg |
 | `porta_inferno.jpg` | "Porta do Inferno", capa | flydime | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:The_Door_to_Hell.jpg |

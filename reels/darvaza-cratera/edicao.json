@@ -11,9 +11,22 @@
   "IMG_7542": "1QxKZuBlYowCe3VrOdhyvmKNV9qY-DxWk",
   "IMG_7543": "1RhPCg_6g_Keb-hPPbu3BJ3BbAzIwZAZv",
   "IMG_7546": "15FMxydKp7gJavEcSvoOA4gmGaYschST_",
-  "IMG_7547": "1k6yNE1vxWBN6CmYD3WXegdCg3rMyKDIx"
+  "IMG_7547": "1k6yNE1vxWBN6CmYD3WXegdCg3rMyKDIx",
+  "IMG_7536": "1q1mneq1kho1-6WkCu5rPX0dnYYnlauQh"
  },
  "falas": [
+  {
+   "id": "f1",
+   "bloco": "1 · gancho",
+   "fonte": "IMG_7536",
+   "trechos": [
+    [
+     5.08,
+     8.16
+    ]
+   ],
+   "nota": "Antes de 5,08 s há um estalo de boca (4,66 s) e uma respiração (4,88–5,02 s), que ficam de fora. Whisper large-v3 e wav2vec2 ouvem 'Imagine' (o roteiro diz 'Imagina'): texto e legenda seguem a fala."
+  },
   {
    "id": "f2",
    "bloco": "2 · imagens mentais",
@@ -94,7 +107,6 @@
    ]
   }
  ],
- "gancho_pendente": "A tomada do bloco 1 ('Imagina encontrar um buraco gigante em chamas no meio do deserto!') não está na pasta do Drive. Quando chegar, entra como 1ª fala (id f1) e o Reel é renderizado de novo (rev2).",
  "cauda_s": 0.5,
  "audio": {
   "fade_ms": 12,
