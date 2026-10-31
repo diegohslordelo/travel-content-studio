@@ -60,3 +60,7 @@ Parte da REV2 (`../rev2/QA_REV2.md`): a voz, os cortes, as legendas, as animaç�
 ## 4. Créditos
 
 `creditos.md`: 12 fotos (Rod Waddington, Valerian Guillot, Alex38, Ahmedxalkatheri, NASA), mapa, sons e trilha. **Entrou um autor novo, Ahmedxalkatheri (CC BY-SA 4.0); a linha de crédito das legendas foi atualizada.** A licença do KEEN é a da fonte de onde o Diego o tirou; ela não foi verificada.
+
+## 5. Legenda sem crédito (decisão do Diego, 31/10/2026)
+
+O Diego pediu legenda simples, sem a fonte das imagens. **Risco (FORMATOS_REELS.md, 8.6):** 11 das 13 fotos são CC BY ou CC BY-SA e a trilha é CC BY 4.0; essas licenças pedem crédito publicado. Sem ele, o uso não cumpre a licença. Alternativas: o comentário fixado em `legenda_post.md` ou trocar por imagens de domínio público. A decisão é do Diego.
