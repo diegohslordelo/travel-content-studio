@@ -18,3 +18,6 @@ Thumbs.db
 # Amostra do YouTube: proxies 1080p derivados dos brutos e dados brutos do OSM
 reels/amostra-yt/public/clipes/
 reels/amostra-yt/mapa/
+
+# Reel da cratera de Darvaza: arquivos derivados para o render (fala decupada, voz, efeitos, cópias das fotos)
+reels/darvaza-cratera/public/

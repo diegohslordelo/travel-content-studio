@@ -1,0 +1,106 @@
+{
+ "reel": "darvaza-cratera",
+ "titulo": "Cratera de Darvaza, a Porta do Inferno (Turcomenistão)",
+ "fps": 30,
+ "nota": "Tempos em segundos do bruto. Entrada e saída medidas pela energia da voz (120–3.500 Hz e 3,5–12 kHz, para não perder o 's' final), com folga de 40–80 ms; nenhum corte dentro de palavra. Nenhum corte dentro de tomada: em IMG_7547 entra só a 2ª leitura (a 1ª é um começo falso).",
+ "fontes_drive": {
+  "pasta": "Youtube/Reel/Cratera (19OOH3Q8bRE9xTIOlezGOVG5UDoI192-i)",
+  "IMG_7537": "15koPN_q0LRPGn0zN7bE-saPOX_LpV5Wh",
+  "IMG_7540": "1zfnMbF5ym4SoGOhU0jUOKSpJO9NUtxLl",
+  "IMG_7541": "1sy1E1AFlbvbTtqVNwVcUUJA5FsCkPyLq",
+  "IMG_7542": "1QxKZuBlYowCe3VrOdhyvmKNV9qY-DxWk",
+  "IMG_7543": "1RhPCg_6g_Keb-hPPbu3BJ3BbAzIwZAZv",
+  "IMG_7546": "15FMxydKp7gJavEcSvoOA4gmGaYschST_",
+  "IMG_7547": "1k6yNE1vxWBN6CmYD3WXegdCg3rMyKDIx"
+ },
+ "falas": [
+  {
+   "id": "f2",
+   "bloco": "2 · imagens mentais",
+   "fonte": "IMG_7537",
+   "trechos": [
+    [
+     2.07,
+     6.27
+    ]
+   ]
+  },
+  {
+   "id": "f3a",
+   "bloco": "3 · conflito",
+   "fonte": "IMG_7540",
+   "trechos": [
+    [
+     0.44,
+     5.27
+    ]
+   ]
+  },
+  {
+   "id": "f3b",
+   "bloco": "3 · conflito",
+   "fonte": "IMG_7541",
+   "trechos": [
+    [
+     0.49,
+     5.29
+    ]
+   ]
+  },
+  {
+   "id": "f4",
+   "bloco": "4 · CTA do meio (envio)",
+   "fonte": "IMG_7542",
+   "trechos": [
+    [
+     1.97,
+     6.4
+    ]
+   ]
+  },
+  {
+   "id": "f5",
+   "bloco": "5 · revelação",
+   "fonte": "IMG_7543",
+   "trechos": [
+    [
+     1.87,
+     8.14
+    ]
+   ]
+  },
+  {
+   "id": "f6",
+   "bloco": "6 · contraste",
+   "fonte": "IMG_7547",
+   "trechos": [
+    [
+     2.34,
+     9.73
+    ]
+   ],
+   "texto": "E o mais impressionante é que a cratera continuou queimando durante décadas, o que começou com uma exploração natural se transformando nas paisagens mais surreais do planeta.",
+   "nota": "0,42–1,62 s é um começo falso ('E o mais impressionante é que…') que o Diego reiniciou em 2,38 s; fica de fora inteiro. Texto conferido com o Whisper large-v3 só neste trecho."
+  },
+  {
+   "id": "f7",
+   "bloco": "7 · CTA final (seguir)",
+   "fonte": "IMG_7546",
+   "trechos": [
+    [
+     2.13,
+     7.7
+    ]
+   ]
+  }
+ ],
+ "gancho_pendente": "A tomada do bloco 1 ('Imagina encontrar um buraco gigante em chamas no meio do deserto!') não está na pasta do Drive. Quando chegar, entra como 1ª fala (id f1) e o Reel é renderizado de novo (rev2).",
+ "cauda_s": 0.5,
+ "audio": {
+  "fade_ms": 12,
+  "passa_alta_hz": 70,
+  "afftdn": "afftdn=nr=8:nf=-58:tn=1",
+  "master_lufs": -14.0,
+  "pico_dbtp": -1.0
+ }
+}

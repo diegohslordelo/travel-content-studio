@@ -1,0 +1,676 @@
+{
+ "nota": "Cenas ancoradas nas palavras ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. Fotos: imagens/lista_commons.json (licença e autor). Legenda = fala gravada; '*' = destaque âmbar; '~' = grupo que não aparece (o gancho ou um título já mostra a palavra).",
+ "costura": 900,
+ "rostoY": 800,
+ "rostoX": 610,
+ "cenas": [
+  {
+   "id": "gancho_chamas",
+   "ini": "0",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "chamas_perto",
+   "kb": [
+    1.16,
+    1.02
+   ],
+   "foco": [
+    0.5,
+    0.55
+   ],
+   "tom": "noite"
+  },
+  {
+   "id": "anoitecer",
+   "ini": "f2:e-0.04",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "brilho_anoitecer",
+   "kb": [
+    1.0,
+    1.07
+   ],
+   "foco": [
+    0.56,
+    0.62
+   ]
+  },
+  {
+   "id": "porta",
+   "ini": "f2:abriram-0.06",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "borda_noite",
+   "kb": [
+    1.0,
+    1.1
+   ],
+   "foco": [
+    0.42,
+    0.55
+   ],
+   "tom": "noite",
+   "mergulho": {
+    "foco": [
+     0.62,
+     0.62
+    ],
+    "dur": 0.36
+   }
+  },
+  {
+   "id": "perfuracao",
+   "ini": "f3a:a-0.06",
+   "tipo": "anim",
+   "anim": "perfuracao",
+   "layout": "split",
+   "nasce": true,
+   "marcos": {
+    "gas": "f3a:gás",
+    "cedeu": "f3a:cedeu"
+   }
+  },
+  {
+   "id": "desaba",
+   "ini": "f3a:e#1-0.04",
+   "tipo": "anim",
+   "anim": "perfuracao",
+   "layout": "full",
+   "base": "perfuracao",
+   "marcos": {
+    "gas": "f3a:gás",
+    "cedeu": "f3a:cedeu"
+   }
+  },
+  {
+   "id": "cratera_real",
+   "ini": "f3a:formou-0.06",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "cratera_dia",
+   "kb": [
+    1.0,
+    1.1
+   ],
+   "foco": [
+    0.48,
+    0.56
+   ]
+  },
+  {
+   "id": "gas",
+   "ini": "f3b:para-0.06",
+   "tipo": "anim",
+   "anim": "gas",
+   "layout": "split",
+   "marcos": {
+    "espalha": "f3b:espalhasse"
+   }
+  },
+  {
+   "id": "fosforo",
+   "ini": "f3b:decidiram-0.06",
+   "tipo": "anim",
+   "anim": "fosforo",
+   "layout": "split",
+   "marcos": {
+    "acende": "f3b:decidiram+0.12",
+    "cai": "f3b:colocar-0.06"
+   }
+  },
+  {
+   "id": "fogo",
+   "ini": "f3b:fogo-0.04",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "dentro_fogo",
+   "kb": [
+    1.14,
+    1.0
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ],
+   "tom": "noite"
+  },
+  {
+   "id": "poucos_dias",
+   "ini": "f3b:apagaria-0.04",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "fumaca_noite",
+   "kb": [
+    1.15,
+    1.22
+   ],
+   "foco": [
+    0.5,
+    0.3
+   ],
+   "apagar": [
+    "f3b:apagaria",
+    "f3b:poucos",
+    0.42
+   ],
+   "titulo": {
+    "centroY": 800,
+    "linhas": [
+     {
+      "texto": "POUCOS",
+      "tam": 250,
+      "em": "f3b:poucos-0.04"
+     },
+     {
+      "texto": "DIAS",
+      "tam": 250,
+      "em": "f3b:dias-0.04",
+      "cor": "ambar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cta_meio",
+   "ini": "f4:antes-0.06",
+   "tipo": "fala",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "envio": {
+    "entra": "f4:manda-0.04",
+    "voa": "f4:aquela-0.1",
+    "x": 880,
+    "y": 1090
+   }
+  },
+  {
+   "id": "coragem",
+   "ini": "f4:que-0.06",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "bracos_abertos",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.7,
+    0.55
+   ]
+  },
+  {
+   "id": "perto",
+   "ini": "f4:chegar-0.06",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "carro_borda",
+   "kb": [
+    1.0,
+    1.12
+   ],
+   "foco": [
+    0.32,
+    0.62
+   ]
+  },
+  {
+   "id": "existe",
+   "ini": "f5:esse-0.06",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "noite_deserto",
+   "kb": [
+    1.45,
+    1.55
+   ],
+   "foco": [
+    0.52,
+    0.95
+   ],
+   "tom": "noite"
+  },
+  {
+   "id": "mapa",
+   "ini": "f5:e-0.02",
+   "tipo": "mapa",
+   "layout": "full",
+   "marcos": {
+    "pais": "f5:turcomenistão",
+    "ponto": "f5:turcomenistão+0.3"
+   },
+   "titulo": {
+    "centroY": 520,
+    "linhas": [
+     {
+      "texto": "TURCOMENISTÃO",
+      "tam": 128,
+      "em": "f5:turcomenistão"
+     }
+    ]
+   }
+  },
+  {
+   "id": "darvaza",
+   "ini": "f5:é-0.04",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "brilho_crepusculo",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.5,
+    0.52
+   ],
+   "apagar": [
+    "f5:cratera-0.1",
+    "f5:cratera+0.15",
+    0.6
+   ],
+   "titulo": {
+    "centroY": 600,
+    "linhas": [
+     {
+      "texto": "A CRATERA",
+      "tam": 100,
+      "em": "f5:cratera-0.04"
+     },
+     {
+      "texto": "DARVAZA",
+      "tam": 270,
+      "em": "f5:darvaza-0.04",
+      "cor": "ambar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "conhecido",
+   "ini": "f5:ele-0.06",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "silhuetas_borda",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.62,
+    0.62
+   ]
+  },
+  {
+   "id": "porta_inferno",
+   "ini": "f5:conhecido-0.06",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "porta_inferno",
+   "kb": [
+    1.0,
+    1.1
+   ],
+   "foco": [
+    0.5,
+    0.62
+   ],
+   "tom": "noite",
+   "apagar": [
+    "f5:porta-0.1",
+    "f5:porta+0.15",
+    0.62
+   ],
+   "titulo": {
+    "centroY": 780,
+    "linhas": [
+     {
+      "texto": "PORTA DO",
+      "tam": 170,
+      "em": "f5:porta-0.04"
+     },
+     {
+      "texto": "INFERNO",
+      "tam": 250,
+      "em": "f5:inferno-0.04",
+      "cor": "ambar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "virada",
+   "ini": "f6:e-0.04",
+   "tipo": "fala",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "punch": {
+    "em": "f6:é-0.02",
+    "z": 1.14
+   }
+  },
+  {
+   "id": "decadas",
+   "ini": "f6:durante-0.06",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "estrelas",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.55,
+    0.8
+   ],
+   "apagar": [
+    "f6:décadas-0.1",
+    "f6:décadas+0.15",
+    0.7
+   ],
+   "titulo": {
+    "centroY": 800,
+    "linhas": [
+     {
+      "texto": "DÉCADAS",
+      "tam": 260,
+      "em": "f6:décadas-0.04",
+      "cor": "ambar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exploracao",
+   "ini": "f6:com-0.06",
+   "tipo": "anim",
+   "anim": "perfuracao",
+   "layout": "split",
+   "estatico": true
+  },
+  {
+   "id": "paisagem",
+   "ini": "f6:se-0.06",
+   "tipo": "foto",
+   "layout": "full",
+   "foto": "panorama",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "foco": [
+    0.22,
+    0.5
+   ],
+   "foco_fim": [
+    0.56,
+    0.5
+   ]
+  },
+  {
+   "id": "de_perto",
+   "ini": "f7:agora-0.06",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "amanhecer_longe",
+   "kb": [
+    1.0,
+    1.6
+   ],
+   "foco": [
+    0.37,
+    0.74
+   ]
+  },
+  {
+   "id": "cta_a",
+   "ini": "f7:já-0.06",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "borda_noite",
+   "kb": [
+    1.04,
+    1.12
+   ],
+   "foco": [
+    0.5,
+    0.6
+   ],
+   "tom": "noite"
+  },
+  {
+   "id": "cta_b",
+   "ini": "f7:lugares-0.06",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "chamas_perto",
+   "kb": [
+    1.0,
+    1.1
+   ],
+   "foco": [
+    0.5,
+    0.55
+   ],
+   "tom": "noite"
+  }
+ ],
+ "gancho": {
+  "topo": 275,
+  "fim": "f2:parece-0.04",
+  "blocos": [
+   {
+    "linhas": [
+     "TEM FOGO",
+     "PRA TODO LADO"
+    ],
+    "tamanhos": [
+     150,
+     104
+    ],
+    "tempos": [
+     "0",
+     "f2:pra-0.04"
+    ]
+   },
+   {
+    "linhas": [
+     "E QUANDO",
+     "A NOITE CHEGA"
+    ],
+    "tamanhos": [
+     84,
+     124
+    ],
+    "tempos": [
+     "f2:e-0.04",
+     "f2:noite-0.04"
+    ]
+   }
+  ]
+ },
+ "legendas": [
+  "~Tem fogo pra todo lado,",
+  "~e quando a noite chega,",
+  "parece que abriram",
+  "uma *porta*",
+  "direto pro *inferno*.",
+  "A *história* começou",
+  "com a *perfuração*",
+  "em busca de",
+  "*gás natural*,",
+  "e aí o solo *cedeu*",
+  "e formou essa",
+  "*enorme* cratera.",
+  "Para evitar que",
+  "o *gás* se espalhasse,",
+  "decidiram colocar",
+  "*fogo* nele,",
+  "acreditando que ele",
+  "se *apagaria*",
+  "~em poucos dias.",
+  "Antes de eu falar",
+  "*onde fica*,",
+  "já *manda* esse vídeo",
+  "para aquela pessoa",
+  "que teria *coragem*",
+  "de chegar *perto*",
+  "desse lugar!",
+  "Esse lugar *existe*",
+  "de *verdade*",
+  "e fica no",
+  "~Turcomenistão.",
+  "É a",
+  "~cratera da Darvaza.",
+  "Ele também é",
+  "*mundialmente*",
+  "conhecido como a",
+  "~Porta do Inferno.",
+  "E o mais",
+  "*impressionante*",
+  "é que a cratera",
+  "continuou *queimando*",
+  "durante",
+  "~décadas,",
+  "o que começou",
+  "com uma",
+  "*exploração* natural",
+  "se transformando",
+  "nas *paisagens*",
+  "mais *surreais*",
+  "do planeta.",
+  "Agora me diz,",
+  "você teria *coragem*",
+  "de ver isso",
+  "de *perto*?",
+  "~Já segue esse perfil",
+  "para não perder",
+  "outros lugares",
+  "*imperdíveis*",
+  "pelo mundo!"
+ ],
+ "cta": {
+  "ini": "f7:já-0.06",
+  "entrada": "f7:segue-0.12",
+  "rotulo": "SEGUE O PERFIL",
+  "destino": "@PRIMEIRODIAEM"
+ },
+ "transicoes": [
+  {
+   "tipo": "mergulho",
+   "em": "f3a:a-0.06",
+   "nota": "da porta do inferno para o passado: a câmera afunda no fogo e a ilustração nasce do brilho"
+  },
+  {
+   "tipo": "luz",
+   "em": "f5:esse-0.06",
+   "nota": "revelação: luz de passagem na ida para o lugar real"
+  },
+  {
+   "tipo": "clarao",
+   "em": "f5:ele-0.06",
+   "nota": "clarão de volta para o rosto (par da luz de passagem)"
+  }
+ ],
+ "sons": [
+  {
+   "som": "PDX_ar_longo",
+   "em": "f3a:a-0.06",
+   "alinhar": "pico",
+   "rel_db": -6,
+   "nota": "mergulho no fogo"
+  },
+  {
+   "som": "PDX_impacto",
+   "em": "f3a:cedeu",
+   "rel_db": -4,
+   "nota": "o solo cede"
+  },
+  {
+   "som": "PDX_ar_longo",
+   "em": "f3b:fogo-0.04",
+   "alinhar": "pico",
+   "rel_db": -8,
+   "nota": "fogo acende"
+  },
+  {
+   "som": "PDX_swish",
+   "em": "f3b:poucos-0.06",
+   "rel_db": -8,
+   "nota": "POUCOS DIAS"
+  },
+  {
+   "som": "PDX_swish",
+   "em": "f4:aquela-0.1",
+   "rel_db": -8,
+   "nota": "avião de envio sai voando"
+  },
+  {
+   "som": "PDX_riser",
+   "em": "f5:esse-0.06",
+   "alinhar": "fim",
+   "rel_db": -8,
+   "nota": "sobe até a revelação"
+  },
+  {
+   "som": "PDX_ar_longo",
+   "em": "f5:esse-0.06",
+   "alinhar": "pico",
+   "rel_db": -6,
+   "nota": "luz de passagem"
+  },
+  {
+   "som": "PDX_impacto",
+   "em": "f5:darvaza-0.04",
+   "rel_db": -4,
+   "nota": "DARVAZA"
+  },
+  {
+   "som": "PDX_impacto",
+   "em": "f5:porta-0.04",
+   "rel_db": -4,
+   "nota": "PORTA DO INFERNO"
+  },
+  {
+   "som": "PDX_impacto",
+   "em": "f6:décadas-0.04",
+   "rel_db": -6,
+   "nota": "DÉCADAS"
+  }
+ ],
+ "fogo": {
+  "nota": "cama de fogo sintetizada (ruído grave + estalos), contínua, mais alta nas cenas de fogo em tela cheia",
+  "base_rel_db": -24,
+  "realces": [
+   {
+    "de": "f2:abriram-0.06",
+    "ate": "f3a:a-0.06",
+    "rel_db": -15
+   },
+   {
+    "de": "f3b:fogo-0.04",
+    "ate": "f3b:apagaria-0.04",
+    "rel_db": -14
+   },
+   {
+    "de": "f5:conhecido-0.06",
+    "ate": "f6:e-0.04",
+    "rel_db": -17
+   },
+   {
+    "de": "f6:se-0.06",
+    "ate": "f7:agora-0.06",
+    "rel_db": -17
+   }
+  ],
+  "silencio": [
+   {
+    "de": "f3a:a-0.06",
+    "ate": "f3b:fogo-0.04"
+   }
+  ]
+ }
+}
