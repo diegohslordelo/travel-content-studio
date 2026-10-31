@@ -77,9 +77,9 @@ const Torre: React.FC<{ p: number }> = ({ p }) => {
  */
 export const Perfuracao: React.FC<{ t: number; m: Record<string, number>; altura: number; estatico?: boolean }> = ({ t, m, altura, estatico }) => {
   const tt = estatico ? 1.8 : t;
-  const desenho = estatico ? 1 : lerp(t, 0, 0.7, 0, 1, easeInOut);
-  const broca = estatico ? 625 : lerp(t, 0.5, (m.gas ?? 2) - 0.1, 236, 625, easeInOut);
-  const gas = estatico ? 0.7 : lerp(t, (m.gas ?? 2) - 0.15, (m.gas ?? 2) + 0.35, 0, 1);
+  const desenho = estatico ? 1 : lerp(t, 0, 0.5, 0, 1, easeInOut);
+  const broca = estatico ? 625 : lerp(t, 0.35, (m.gas ?? 2) - 0.2, 236, 625, easeInOut);
+  const gas = estatico ? 0.7 : lerp(t, (m.gas ?? 2) - 0.2, (m.gas ?? 2) + 0.15, 0, 1);
   const tc = m.cedeu ?? Infinity;
   const dc = tt - tc; // depois do desabamento
   const caiu = dc >= 0;
@@ -93,9 +93,9 @@ export const Perfuracao: React.FC<{ t: number; m: Record<string, number>; altura
   const pedacos = Array.from({ length: 7 }, (_, i) => {
     const x0 = BORDA_E + (i * (BORDA_D - BORDA_E)) / 7;
     const w = (BORDA_D - BORDA_E) / 7;
-    const atraso = Math.abs(i - 3) * 0.035;
+    const atraso = Math.abs(i - 3) * 0.02;
     const d = Math.max(0, dc - atraso);
-    const y = 0.5 * 2600 * d * d;
+    const y = 0.5 * 4200 * d * d;
     const rot = (i - 3) * 9 * d * 3;
     return { x0, w, y, rot, vis: y < 500 };
   });
@@ -119,12 +119,12 @@ export const Perfuracao: React.FC<{ t: number; m: Record<string, number>; altura
         {!caiu ? (
           <Torre p={desenho} />
         ) : (
-          <g transform={`translate(${dc * 40} ${0.5 * 2200 * dc * dc}) rotate(${Math.min(28, dc * 70)} 540 500)`} opacity={Math.max(0, 1 - dc / 0.7)}>
+          <g transform={`translate(${dc * 40} ${0.5 * 3600 * dc * dc}) rotate(${Math.min(28, dc * 90)} 540 500)`} opacity={Math.max(0, 1 - dc / 0.4)}>
             <Torre p={1} />
           </g>
         )}
         {/* rachaduras um instante antes */}
-        {dc > -0.12 && dc < 0.1 && (
+        {dc > -0.2 && dc < 0.08 && (
           <path d="M540 500 l-30 22 l18 16 l-26 24 M540 500 l34 18 l-14 20 l30 22 M470 500 l-10 30 M610 500 l14 28" stroke={PALETA.ambar} strokeWidth={4} fill="none" />
         )}
         {caiu &&
@@ -139,7 +139,7 @@ export const Perfuracao: React.FC<{ t: number; m: Record<string, number>; altura
         {/* a cratera que fica */}
         {caiu && (
           <g fill="none" stroke={PALETA.papel} strokeWidth={4} strokeLinecap="round">
-            <path d={`M${BORDA_E} ${SOLO} C ${BORDA_E + 30} ${SOLO + 150}, ${BORDA_D - 30} ${SOLO + 150}, ${BORDA_D} ${SOLO}`} {...traco(lerp(dc, 0.05, 0.45, 0, 1))} />
+            <path d={`M${BORDA_E} ${SOLO} C ${BORDA_E + 30} ${SOLO + 150}, ${BORDA_D - 30} ${SOLO + 150}, ${BORDA_D} ${SOLO}`} {...traco(lerp(dc, 0, 0.3, 0, 1))} />
             {Array.from({ length: 6 }, (_, i) => {
               const fase = (dc * 0.8 + i * 0.21) % 1;
               const x = 420 + i * 48;
@@ -150,7 +150,7 @@ export const Perfuracao: React.FC<{ t: number; m: Record<string, number>; altura
                   stroke={PALETA.ambar}
                   strokeWidth={3}
                   strokeDasharray="8 10"
-                  opacity={clamp((dc - 0.25) * 3) * (1 - fase)}
+                  opacity={clamp((dc - 0.15) * 4) * (1 - fase)}
                   transform={`translate(0 ${-fase * 120})`}
                 />
               );
@@ -164,7 +164,7 @@ export const Perfuracao: React.FC<{ t: number; m: Record<string, number>; altura
 
 /** Gás saindo da cratera e se espalhando pelos lados (m.espalha = palavra "espalhasse"). */
 export const GasEspalha: React.FC<{ t: number; m: Record<string, number>; altura: number }> = ({ t, m, altura }) => {
-  const abre = lerp(t, (m.espalha ?? 0.9) - 0.3, (m.espalha ?? 0.9) + 0.5, 0, 1, easeInOut);
+  const abre = lerp(t, (m.espalha ?? 0.9) - 0.35, (m.espalha ?? 0.9) + 0.25, 0, 1, easeInOut);
   return (
     <svg width={1080} height={altura} viewBox="0 0 1080 900" style={{ position: "absolute", inset: 0, background: PALETA.fundo }}>
       <Estrelas />
@@ -173,7 +173,7 @@ export const GasEspalha: React.FC<{ t: number; m: Record<string, number>; altura
       {Array.from({ length: 10 }, (_, i) => {
         const lado = i % 2 ? 1 : -1;
         const k = Math.floor(i / 2);
-        const sobe = lerp(t, 0.05 + k * 0.06, 0.9 + k * 0.06, 0, 1, ease);
+        const sobe = lerp(t, k * 0.04, 0.5 + k * 0.04, 0, 1, ease);
         const dx = lado * (60 + k * 70) * (0.25 + 1.6 * abre);
         const y0 = SOLO + 60;
         const d = `M${540 + lado * k * 18} ${y0} C ${540 + lado * k * 18} ${y0 - 120}, ${540 + dx * 0.6} ${y0 - 200 - k * 20}, ${540 + dx} ${y0 - 170 - k * 34 + abre * 60}`;
@@ -196,7 +196,7 @@ export const GasEspalha: React.FC<{ t: number; m: Record<string, number>; altura
       {Array.from({ length: 10 }, (_, i) => {
         const lado = i % 2 ? 1 : -1;
         const k = Math.floor(i / 2);
-        const sobe = lerp(t, 0.05 + k * 0.06, 0.9 + k * 0.06, 0, 1, ease);
+        const sobe = lerp(t, k * 0.04, 0.5 + k * 0.04, 0, 1, ease);
         const dx = lado * (60 + k * 70) * (0.25 + 1.6 * abre);
         return <circle key={`n${i}`} cx={540 + dx} cy={SOLO - 110 - k * 34 + abre * 60} r={10 + k * 4} fill="none" stroke={PALETA.papel} strokeWidth={3} opacity={0.5 * sobe} />;
       })}
@@ -205,8 +205,9 @@ export const GasEspalha: React.FC<{ t: number; m: Record<string, number>; altura
 };
 
 /** Fósforo: risca, acende e cai na cratera (m.acende, m.cai em segundos da cena). */
-export const Fosforo: React.FC<{ t: number; m: Record<string, number>; altura: number }> = ({ t, m, altura }) => {
-  const desenho = lerp(t, 0, 0.18, 0, 1);
+export const Fosforo: React.FC<{ t: number; m: Record<string, number>; altura: number; sobre?: boolean }> = ({ t, m, altura, sobre }) => {
+  if (t < (m.entra ?? 0)) return null;
+  const desenho = lerp(t, m.entra ?? 0, (m.entra ?? 0) + 0.18, 0, 1);
   const acende = m.acende ?? 0.22;
   const cai = m.cai ?? 0.42;
   const chama = clamp((t - acende) / 0.1);
@@ -217,10 +218,14 @@ export const Fosforo: React.FC<{ t: number; m: Record<string, number>; altura: n
   const fl = 1 + 0.12 * Math.sin(t * 40) + 0.06 * Math.sin(t * 23);
   const brilho = clamp((t - cai - 0.36) / 0.08);
   return (
-    <svg width={1080} height={altura} viewBox="0 0 1080 900" style={{ position: "absolute", inset: 0, background: PALETA.fundo }}>
-      <Estrelas />
-      <Chao p={1} buraco />
-      <path d={`M${BORDA_E} ${SOLO} C ${BORDA_E + 30} ${SOLO + 150}, ${BORDA_D - 30} ${SOLO + 150}, ${BORDA_D} ${SOLO}`} stroke={PALETA.papel} strokeWidth={4} fill="none" />
+    <svg width={1080} height={altura} viewBox="0 0 1080 900" style={{ position: "absolute", inset: 0, background: sobre ? undefined : PALETA.fundo }}>
+      {!sobre && (
+        <>
+          <Estrelas />
+          <Chao p={1} buraco />
+          <path d={`M${BORDA_E} ${SOLO} C ${BORDA_E + 30} ${SOLO + 150}, ${BORDA_D - 30} ${SOLO + 150}, ${BORDA_D} ${SOLO}`} stroke={PALETA.papel} strokeWidth={4} fill="none" />
+        </>
+      )}
       <ellipse cx={540} cy={SOLO + 70} rx={200 * (0.3 + brilho)} ry={60 * (0.3 + brilho)} fill={PALETA.ambar} opacity={0.15 + 0.5 * brilho} />
       <g transform={`translate(${x} ${y}) rotate(${rot})`}>
         <line x1={0} y1={0} x2={150} y2={0} stroke={PALETA.papel} strokeWidth={10} strokeLinecap="round" {...traco(desenho)} />
@@ -299,7 +304,7 @@ export type DadosMapa = { paises: { nome: string; d: string }[]; darvaza: [numbe
  */
 export const Mapa: React.FC<{ t: number; dados: DadosMapa; m: Record<string, number>; altura: number }> = ({ t, dados, m, altura }) => {
   const [cx, cy] = dados.darvaza;
-  const z = lerp(t, 0, m.pais + 0.25, 0, 1, easeInOut);
+  const z = lerp(t, 0, m.pais, 0, 1, easeInOut);
   const largura = 820 * Math.pow(240 / 820, z);
   const alturaV = (largura * altura) / 1080;
   const vy = cy - alturaV * 0.47;

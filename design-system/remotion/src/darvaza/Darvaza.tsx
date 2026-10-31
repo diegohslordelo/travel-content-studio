@@ -25,11 +25,11 @@ type Cena = {
   foco?: [number, number];
   foco_fim?: [number, number];
   tom?: "titulo" | "noite" | "natural";
-  anim?: "perfuracao" | "gas" | "fosforo";
+  anim?: "perfuracao" | "gas" | "fosforo" | "gasfosforo";
   marcos?: Record<string, number>;
   desloc?: number;
   estatico?: boolean;
-  titulo?: { linhas: Linha[]; centroY: number };
+  titulo?: { linhas: Linha[]; centroY: number; sai?: number };
   apagar?: [number, number, number];
   zoom?: [number, number];
   punch?: { em: number; z: number };
@@ -173,6 +173,12 @@ const Apoio: React.FC<{ p: PropsDarvaza; cena: Cena }> = ({ p, cena }) => {
         <GasEspalha t={ta} m={m} altura={h} />
       ) : cena.anim === "fosforo" ? (
         <Fosforo t={ta} m={m} altura={h} />
+      ) : cena.anim === "gasfosforo" ? (
+        // gás e fósforo na mesma cena: o fósforo entra por cima do gás que se espalha, sem corte no meio
+        <>
+          <GasEspalha t={ta} m={m} altura={h} />
+          <Fosforo t={ta} m={m} altura={h} sobre />
+        </>
       ) : null;
   } else if (cena.tipo === "mapa") {
     conteudo = <Mapa t={t} dados={p.mapa} m={cena.marcos ?? { pais: 0.4, ponto: 0.6 }} altura={h} />;
@@ -180,7 +186,7 @@ const Apoio: React.FC<{ p: PropsDarvaza; cena: Cena }> = ({ p, cena }) => {
   return (
     <div style={{ position: "absolute", left: 0, top: 0, width: p.largura, height: h, overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0, scale: String(1 + 0.25 * nasce), filter: nasce > 0 ? `blur(${12 * nasce}px)` : undefined }}>{conteudo}</div>
-      {cena.titulo && <Titulo t={t} linhas={cena.titulo.linhas} centroY={cena.titulo.centroY} />}
+      {cena.titulo && <Titulo t={t} linhas={cena.titulo.linhas} centroY={cena.titulo.centroY} sai={cena.titulo.sai} />}
     </div>
   );
 };

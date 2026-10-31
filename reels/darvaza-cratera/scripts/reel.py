@@ -147,6 +147,8 @@ def props():
         if "titulo" in s:
             e["titulo"] = {"centroY": s["titulo"]["centroY"],
                            "linhas": [dict(l, em=round(A(l["em"]) - ini, 4), **({"cor": AMBAR} if l.get("cor") == "ambar" else {})) for l in s["titulo"]["linhas"]]}
+            if "sai" in s["titulo"]:
+                e["titulo"]["sai"] = round(A(s["titulo"]["sai"]) - ini, 4)
         if "envio" in s:
             v = s["envio"]
             e["envio"] = {"entra": round(A(v["entra"]) - ini, 4), "voa": round(A(v["voa"]) - ini, 4), "x": v["x"], "y": v["y"]}

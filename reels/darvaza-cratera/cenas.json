@@ -1,5 +1,5 @@
 {
- "nota": "Cenas ancoradas nas palavras ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. Fotos: imagens/lista_commons.json (licença e autor). Legenda = fala gravada; '*' = destaque âmbar; '~' = grupo que não aparece (o gancho ou um título já mostra a palavra). REV2: entra a fala do gancho (f1, IMG_7536).",
+ "nota": "Cenas ancoradas nas palavras ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. Fotos: imagens/lista_commons.json (licença e autor). Legenda = fala gravada; '*' = destaque âmbar; '~' = grupo que não aparece (o gancho ou um título já mostra a palavra). REV2: entra a fala do gancho (f1, IMG_7536). REV3: tempos revistos com scripts/tempos.py (título ou animação completo ≥ 0,8 s na tela antes do corte).",
  "costura": 900,
  "rostoY": 800,
  "rostoX": 610,
@@ -99,7 +99,7 @@
    "nasce": true,
    "marcos": {
     "gas": "f3a:gás",
-    "cedeu": "f3a:cedeu"
+    "cedeu": "f3a:cedeu-0.1"
    }
   },
   {
@@ -111,12 +111,12 @@
    "base": "perfuracao",
    "marcos": {
     "gas": "f3a:gás",
-    "cedeu": "f3a:cedeu"
+    "cedeu": "f3a:cedeu-0.1"
    }
   },
   {
    "id": "cratera_real",
-   "ini": "f3a:formou-0.06",
+   "ini": "f3a:cratera+0.05",
    "tipo": "foto",
    "layout": "split",
    "foto": "cratera_dia",
@@ -131,23 +131,15 @@
   },
   {
    "id": "gas",
-   "ini": "f3b:para-0.06",
+   "ini": "f3b:gás-0.12",
    "tipo": "anim",
-   "anim": "gas",
+   "anim": "gasfosforo",
    "layout": "split",
    "marcos": {
-    "espalha": "f3b:espalhasse"
-   }
-  },
-  {
-   "id": "fosforo",
-   "ini": "f3b:decidiram-0.06",
-   "tipo": "anim",
-   "anim": "fosforo",
-   "layout": "split",
-   "marcos": {
-    "acende": "f3b:decidiram+0.12",
-    "cai": "f3b:colocar-0.06"
+    "espalha": "f3b:espalhasse",
+    "entra": "f3b:decidiram-0.08",
+    "acende": "f3b:decidiram+0.1",
+    "cai": "f3b:colocar-0.22"
    }
   },
   {
@@ -191,12 +183,12 @@
      {
       "texto": "POUCOS",
       "tam": 250,
-      "em": "f3b:poucos-0.04"
+      "em": "f3b:poucos-0.1"
      },
      {
       "texto": "DIAS",
       "tam": 250,
-      "em": "f3b:dias-0.04",
+      "em": "f3b:dias-0.28",
       "cor": "ambar"
      }
     ]
@@ -204,7 +196,7 @@
   },
   {
    "id": "cta_meio",
-   "ini": "f4:antes-0.06",
+   "ini": "f4:falar-0.06",
    "tipo": "fala",
    "zoom": [
     1.0,
@@ -212,14 +204,14 @@
    ],
    "envio": {
     "entra": "f4:manda-0.04",
-    "voa": "f4:aquela-0.1",
+    "voa": "f4:pessoa-0.12",
     "x": 880,
     "y": 1090
    }
   },
   {
    "id": "coragem",
-   "ini": "f4:que-0.06",
+   "ini": "f4:teria-0.06",
    "tipo": "foto",
    "layout": "split",
    "foto": "bracos_abertos",
@@ -234,7 +226,7 @@
   },
   {
    "id": "perto",
-   "ini": "f4:chegar-0.06",
+   "ini": "f4:perto-0.06",
    "tipo": "foto",
    "layout": "split",
    "foto": "carro_borda",
@@ -265,12 +257,12 @@
   },
   {
    "id": "mapa",
-   "ini": "f5:e-0.02",
+   "ini": "f5:verdade+0.15",
    "tipo": "mapa",
    "layout": "full",
    "marcos": {
     "pais": "f5:turcomenistão",
-    "ponto": "f5:turcomenistão+0.3"
+    "ponto": "f5:turcomenistão-0.14"
    },
    "titulo": {
     "centroY": 520,
@@ -285,7 +277,7 @@
   },
   {
    "id": "darvaza",
-   "ini": "f5:é-0.04",
+   "ini": "f5:cratera+0.04",
    "tipo": "foto",
    "layout": "full",
    "foto": "brilho_crepusculo",
@@ -308,7 +300,7 @@
      {
       "texto": "A CRATERA",
       "tam": 100,
-      "em": "f5:cratera-0.04"
+      "em": "f5:cratera+0.04"
      },
      {
       "texto": "DARVAZA",
@@ -316,23 +308,9 @@
       "em": "f5:darvaza-0.04",
       "cor": "ambar"
      }
-    ]
+    ],
+    "sai": "f5:mundialmente-0.12"
    }
-  },
-  {
-   "id": "conhecido",
-   "ini": "f5:ele-0.06",
-   "tipo": "foto",
-   "layout": "split",
-   "foto": "silhuetas_borda",
-   "kb": [
-    1.0,
-    1.08
-   ],
-   "foco": [
-    0.62,
-    0.62
-   ]
   },
   {
    "id": "porta_inferno",
@@ -365,7 +343,7 @@
      {
       "texto": "INFERNO",
       "tam": 250,
-      "em": "f5:inferno-0.04",
+      "em": "f5:inferno-0.1",
       "cor": "ambar"
      }
     ]
@@ -373,7 +351,7 @@
   },
   {
    "id": "virada",
-   "ini": "f6:e-0.04",
+   "ini": "f6:impressionante+0.12",
    "tipo": "fala",
    "zoom": [
     1.0,
@@ -386,7 +364,7 @@
   },
   {
    "id": "decadas",
-   "ini": "f6:durante-0.06",
+   "ini": "f6:décadas-0.12",
    "tipo": "foto",
    "layout": "full",
    "foto": "estrelas",
@@ -604,8 +582,8 @@
   },
   {
    "tipo": "clarao",
-   "em": "f5:ele-0.06",
-   "nota": "clarão de volta para o rosto (par da luz de passagem)"
+   "em": "f6:impressionante+0.12",
+   "nota": "clarão de volta para o rosto (par da luz de passagem), na 1ª volta ao Diego depois da revelação"
   }
  ],
  "sons": [
@@ -631,13 +609,13 @@
   },
   {
    "som": "PDX_swish",
-   "em": "f3b:poucos-0.06",
+   "em": "f3b:poucos-0.12",
    "rel_db": -8,
    "nota": "POUCOS DIAS"
   },
   {
    "som": "PDX_swish",
-   "em": "f4:aquela-0.1",
+   "em": "f4:pessoa-0.12",
    "rel_db": -8,
    "nota": "avião de envio sai voando"
   },
