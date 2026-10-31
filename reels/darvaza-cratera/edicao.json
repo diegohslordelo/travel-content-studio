@@ -107,7 +107,7 @@
    ]
   }
  ],
- "cauda_s": 0.5,
+ "cauda_s": 0.4,
  "audio": {
   "fade_ms": 12,
   "passa_alta_hz": 70,

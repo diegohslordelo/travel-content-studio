@@ -1,7 +1,7 @@
 """Análise de tempo de cada cena: quando o último elemento da cena fica completo na tela (título inteiro, animação
 terminada, ponto do mapa assentado, ícone que sai) e quanto tempo ele fica parado antes do corte ("tempo de leitura").
 Uso (de dentro de reels/darvaza-cratera/): python3 scripts/tempos.py [_tmp/props.json]
-Metas (julgamento, docs/FORMATOS_REELS.md 5.1): foto ≥ 0,9 s · gravado pelo Diego ≥ 2 s · nenhuma cena > 3 s ·
+Metas: toda cena de 2 a 3 s na tela (pedido do Diego, 31/10/2026) ·
 título ou animação completo ≥ 0,8 s na tela antes do corte (o olho precisa de ≈ 0,5 s para ler 1–2 palavras grandes)."""
 import json, sys
 p = json.load(open(sys.argv[1] if len(sys.argv) > 1 else "_tmp/props.json"))
@@ -36,7 +36,8 @@ for c in p["cenas"]:
         oque += " → corte por correspondência para o fogo real"
         leitura = max(leitura, 0.8)  # o fósforo cai dentro da cratera e o corte é a ignição: a ação continua na foto
     av = []
-    if dur > 3.0: av.append("passa de 3 s")
+    if dur > 3.0 + 1e-6: av.append("passa de 3 s")
+    if dur < 2.0 - 1e-6: av.append("menos de 2 s (regra: 2 a 3 s por cena)")
     if c["tipo"] == "fala" and dur < 2.0: av.append("Diego < 2 s")
     if c["tipo"] == "foto" and dur < 0.9: av.append("foto < 0,9 s")
     if leitura is not None and c["tipo"] != "fala" and leitura < 0.8: av.append(f"{oque}: só {max(leitura, 0):.2f} s na tela")
