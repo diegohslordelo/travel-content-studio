@@ -1,0 +1,1902 @@
+{
+ "IMG_7489": [
+  {
+   "texto": "Essa",
+   "ini": 0.602,
+   "fim": 0.762,
+   "prob": 1.0,
+   "whisper": [
+    0.0,
+    0.66
+   ]
+  },
+  {
+   "texto": "ilha",
+   "ini": 0.843,
+   "fim": 0.943,
+   "prob": 0.487,
+   "whisper": [
+    0.66,
+    0.94
+   ]
+  },
+  {
+   "texto": "parece",
+   "ini": 1.003,
+   "fim": 1.144,
+   "prob": 0.472,
+   "whisper": [
+    0.94,
+    1.08
+   ]
+  },
+  {
+   "texto": "ter",
+   "ini": 1.204,
+   "fim": 1.284,
+   "prob": 0.549,
+   "whisper": [
+    1.08,
+    1.24
+   ]
+  },
+  {
+   "texto": "saído",
+   "ini": 1.364,
+   "fim": 1.545,
+   "prob": 0.552,
+   "whisper": [
+    1.24,
+    1.52
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 1.585,
+   "fim": 1.625,
+   "prob": 1.0,
+   "whisper": [
+    1.52,
+    1.62
+   ]
+  },
+  {
+   "texto": "um",
+   "ini": 1.665,
+   "fim": 1.725,
+   "prob": 0.998,
+   "whisper": [
+    1.62,
+    1.64
+   ]
+  },
+  {
+   "texto": "filme",
+   "ini": 1.766,
+   "fim": 1.946,
+   "prob": 0.974,
+   "whisper": [
+    1.64,
+    1.88
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 1.986,
+   "fim": 2.026,
+   "prob": 1.0,
+   "whisper": [
+    1.88,
+    2.02
+   ]
+  },
+  {
+   "texto": "ficção",
+   "ini": 2.167,
+   "fim": 2.628,
+   "prob": 0.769,
+   "whisper": [
+    2.02,
+    2.56
+   ]
+  },
+  {
+   "texto": "científica,",
+   "ini": 2.829,
+   "fim": 3.491,
+   "prob": 0.982,
+   "whisper": [
+    2.56,
+    3.46
+   ]
+  },
+  {
+   "texto": "mas",
+   "ini": 3.551,
+   "fim": 3.712,
+   "prob": 1.0,
+   "whisper": [
+    3.46,
+    3.62
+   ]
+  },
+  {
+   "texto": "ela",
+   "ini": 3.792,
+   "fim": 3.892,
+   "prob": 1.0,
+   "whisper": [
+    3.62,
+    3.82
+   ]
+  },
+  {
+   "texto": "é",
+   "ini": 3.932,
+   "fim": 3.952,
+   "prob": 1.0,
+   "whisper": [
+    3.82,
+    3.92
+   ]
+  },
+  {
+   "texto": "real.",
+   "ini": 4.073,
+   "fim": 4.454,
+   "prob": 1.0,
+   "whisper": [
+    3.92,
+    4.26
+   ]
+  }
+ ],
+ "IMG_7493": [
+  {
+   "texto": "Se",
+   "ini": 2.463,
+   "fim": 2.543,
+   "prob": 0.958,
+   "whisper": [
+    2.12,
+    2.48
+   ]
+  },
+  {
+   "texto": "ligue",
+   "ini": 2.664,
+   "fim": 2.864,
+   "prob": 0.999,
+   "whisper": [
+    2.48,
+    2.84
+   ]
+  },
+  {
+   "texto": "nessas",
+   "ini": 2.904,
+   "fim": 3.204,
+   "prob": 0.934,
+   "whisper": [
+    2.84,
+    3.1
+   ]
+  },
+  {
+   "texto": "árvores.",
+   "ini": 3.284,
+   "fim": 3.625,
+   "prob": 0.999,
+   "whisper": [
+    3.1,
+    3.5
+   ]
+  },
+  {
+   "texto": "Parece",
+   "ini": 3.685,
+   "fim": 3.865,
+   "prob": 0.5,
+   "whisper": [
+    3.56,
+    3.78
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 3.885,
+   "fim": 3.945,
+   "prob": 0.978,
+   "whisper": [
+    3.78,
+    3.94
+   ]
+  },
+  {
+   "texto": "alguém",
+   "ini": 3.985,
+   "fim": 4.125,
+   "prob": 0.972,
+   "whisper": [
+    3.94,
+    4.02
+   ]
+  },
+  {
+   "texto": "pegou",
+   "ini": 4.166,
+   "fim": 4.286,
+   "prob": 0.4,
+   "whisper": [
+    4.02,
+    4.26
+   ]
+  },
+  {
+   "texto": "um",
+   "ini": 4.306,
+   "fim": 4.346,
+   "prob": 1.0,
+   "whisper": [
+    4.26,
+    4.32
+   ]
+  },
+  {
+   "texto": "guarda",
+   "ini": 4.366,
+   "fim": 4.526,
+   "prob": 0.922,
+   "whisper": [
+    4.32,
+    4.52
+   ]
+  },
+  {
+   "texto": "-chuva",
+   "ini": 4.566,
+   "fim": 4.706,
+   "prob": 1.0,
+   "whisper": [
+    4.52,
+    4.64
+   ]
+  },
+  {
+   "texto": "gigante",
+   "ini": 4.786,
+   "fim": 5.227,
+   "prob": 0.986,
+   "whisper": [
+    4.64,
+    5.18
+   ]
+  },
+  {
+   "texto": "e",
+   "ini": 5.267,
+   "fim": 5.287,
+   "prob": 0.0,
+   "whisper": [
+    5.18,
+    5.24
+   ]
+  },
+  {
+   "texto": "colocou",
+   "ini": 5.307,
+   "fim": 5.627,
+   "prob": 0.992,
+   "whisper": [
+    5.24,
+    5.58
+   ]
+  },
+  {
+   "texto": "em",
+   "ini": 5.667,
+   "fim": 5.708,
+   "prob": 1.0,
+   "whisper": [
+    5.58,
+    5.66
+   ]
+  },
+  {
+   "texto": "cima",
+   "ini": 5.808,
+   "fim": 5.988,
+   "prob": 1.0,
+   "whisper": [
+    5.66,
+    5.92
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 6.048,
+   "fim": 6.088,
+   "prob": 1.0,
+   "whisper": [
+    5.92,
+    6.08
+   ]
+  },
+  {
+   "texto": "um",
+   "ini": 6.148,
+   "fim": 6.188,
+   "prob": 1.0,
+   "whisper": [
+    6.08,
+    6.12
+   ]
+  },
+  {
+   "texto": "tronco",
+   "ini": 6.308,
+   "fim": 6.589,
+   "prob": 1.0,
+   "whisper": [
+    6.12,
+    6.5
+   ]
+  },
+  {
+   "texto": "e",
+   "ini": 6.629,
+   "fim": 6.649,
+   "prob": 1.0,
+   "whisper": [
+    6.5,
+    6.62
+   ]
+  },
+  {
+   "texto": "tem",
+   "ini": 6.709,
+   "fim": 6.789,
+   "prob": 0.999,
+   "whisper": [
+    6.62,
+    6.72
+   ]
+  },
+  {
+   "texto": "algumas",
+   "ini": 6.809,
+   "fim": 7.049,
+   "prob": 0.313,
+   "whisper": [
+    6.72,
+    6.9
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 7.069,
+   "fim": 7.149,
+   "prob": 0.889,
+   "whisper": [
+    6.9,
+    7.1
+   ]
+  },
+  {
+   "texto": "parecem",
+   "ini": 7.189,
+   "fim": 7.47,
+   "prob": 0.643,
+   "whisper": [
+    7.1,
+    7.4
+   ]
+  },
+  {
+   "texto": "até",
+   "ini": 7.49,
+   "fim": 7.59,
+   "prob": 0.336,
+   "whisper": [
+    7.4,
+    7.52
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 7.63,
+   "fim": 7.71,
+   "prob": 0.416,
+   "whisper": [
+    7.52,
+    7.66
+   ]
+  },
+  {
+   "texto": "tem",
+   "ini": 7.75,
+   "fim": 7.85,
+   "prob": 0.99,
+   "whisper": [
+    7.66,
+    7.78
+   ]
+  },
+  {
+   "texto": "sangue",
+   "ini": 7.971,
+   "fim": 8.151,
+   "prob": 0.996,
+   "whisper": [
+    7.78,
+    8.12
+   ]
+  },
+  {
+   "texto": "escorrendo.",
+   "ini": 8.191,
+   "fim": 8.631,
+   "prob": 0.869,
+   "whisper": [
+    8.12,
+    8.52
+   ]
+  }
+ ],
+ "IMG_7495": [
+  {
+   "texto": "Só",
+   "ini": 2.822,
+   "fim": 2.882,
+   "prob": 0.963,
+   "whisper": [
+    2.5,
+    2.82
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 2.922,
+   "fim": 3.002,
+   "prob": 0.935,
+   "whisper": [
+    2.82,
+    2.94
+   ]
+  },
+  {
+   "texto": "isso",
+   "ini": 3.022,
+   "fim": 3.142,
+   "prob": 0.999,
+   "whisper": [
+    2.94,
+    3.06
+   ]
+  },
+  {
+   "texto": "não",
+   "ini": 3.182,
+   "fim": 3.242,
+   "prob": 0.737,
+   "whisper": [
+    3.06,
+    3.18
+   ]
+  },
+  {
+   "texto": "é",
+   "ini": 3.263,
+   "fim": 3.283,
+   "prob": 0.989,
+   "whisper": [
+    3.18,
+    3.26
+   ]
+  },
+  {
+   "texto": "Pandora",
+   "ini": 3.383,
+   "fim": 3.843,
+   "prob": 0.991,
+   "whisper": [
+    3.26,
+    3.74
+   ]
+  },
+  {
+   "texto": "e",
+   "ini": 3.883,
+   "fim": 3.903,
+   "prob": 0.989,
+   "whisper": [
+    3.74,
+    3.86
+   ]
+  },
+  {
+   "texto": "nenhum",
+   "ini": 3.923,
+   "fim": 4.063,
+   "prob": 0.625,
+   "whisper": [
+    3.86,
+    3.98
+   ]
+  },
+  {
+   "texto": "planeta",
+   "ini": 4.083,
+   "fim": 4.343,
+   "prob": 0.755,
+   "whisper": [
+    3.98,
+    4.2
+   ]
+  },
+  {
+   "texto": "distante.",
+   "ini": 4.403,
+   "fim": 4.804,
+   "prob": 0.938,
+   "whisper": [
+    4.2,
+    4.7
+   ],
+   "pontuacao_manual": true
+  },
+  {
+   "texto": "Esse",
+   "ini": 4.844,
+   "fim": 4.964,
+   "prob": 0.5,
+   "whisper": [
+    4.7,
+    4.86
+   ]
+  },
+  {
+   "texto": "lugar",
+   "ini": 5.024,
+   "fim": 5.204,
+   "prob": 0.884,
+   "whisper": [
+    4.86,
+    5.12
+   ]
+  },
+  {
+   "texto": "fica",
+   "ini": 5.244,
+   "fim": 5.364,
+   "prob": 1.0,
+   "whisper": [
+    5.12,
+    5.3
+   ]
+  },
+  {
+   "texto": "aqui",
+   "ini": 5.404,
+   "fim": 5.544,
+   "prob": 1.0,
+   "whisper": [
+    5.3,
+    5.48
+   ]
+  },
+  {
+   "texto": "na",
+   "ini": 5.604,
+   "fim": 5.664,
+   "prob": 1.0,
+   "whisper": [
+    5.48,
+    5.64
+   ]
+  },
+  {
+   "texto": "Terra",
+   "ini": 5.824,
+   "fim": 6.065,
+   "prob": 0.997,
+   "whisper": [
+    5.64,
+    5.92
+   ]
+  },
+  {
+   "texto": "e",
+   "ini": 6.105,
+   "fim": 6.125,
+   "prob": 1.0,
+   "whisper": [
+    5.92,
+    6.1
+   ]
+  },
+  {
+   "texto": "fica",
+   "ini": 6.165,
+   "fim": 6.325,
+   "prob": 1.0,
+   "whisper": [
+    6.1,
+    6.24
+   ]
+  },
+  {
+   "texto": "no",
+   "ini": 6.365,
+   "fim": 6.405,
+   "prob": 0.952,
+   "whisper": [
+    6.24,
+    6.34
+   ]
+  },
+  {
+   "texto": "arquipélago",
+   "ini": 6.445,
+   "fim": 6.845,
+   "prob": 0.794,
+   "whisper": [
+    6.34,
+    6.76
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 6.885,
+   "fim": 6.925,
+   "prob": 0.997,
+   "whisper": [
+    6.76,
+    6.92
+   ]
+  },
+  {
+   "texto": "Socotra,",
+   "ini": 7.025,
+   "fim": 7.566,
+   "prob": 0.994,
+   "whisper": [
+    6.92,
+    7.5
+   ]
+  },
+  {
+   "texto": "no",
+   "ini": 7.606,
+   "fim": 7.666,
+   "prob": 1.0,
+   "whisper": [
+    7.56,
+    7.62
+   ]
+  },
+  {
+   "texto": "Iêmen.",
+   "ini": 7.726,
+   "fim": 10.388,
+   "prob": 0.663,
+   "whisper": [
+    7.62,
+    7.96
+   ],
+   "pontuacao_manual": true
+  }
+ ],
+ "IMG_7499": [
+  {
+   "texto": "E",
+   "ini": 2.281,
+   "fim": 2.301,
+   "prob": 0.841,
+   "whisper": [
+    1.84,
+    2.24
+   ]
+  },
+  {
+   "texto": "sabe",
+   "ini": 2.401,
+   "fim": 2.541,
+   "prob": 0.75,
+   "whisper": [
+    2.24,
+    2.48
+   ]
+  },
+  {
+   "texto": "o",
+   "ini": 2.561,
+   "fim": 2.581,
+   "prob": 0.235,
+   "whisper": [
+    2.48,
+    2.58
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 2.601,
+   "fim": 2.661,
+   "prob": 1.0,
+   "whisper": [
+    2.58,
+    2.6
+   ]
+  },
+  {
+   "texto": "deixa",
+   "ini": 2.701,
+   "fim": 2.861,
+   "prob": 0.4,
+   "whisper": [
+    2.6,
+    2.76
+   ]
+  },
+  {
+   "texto": "isso",
+   "ini": 2.901,
+   "fim": 3.001,
+   "prob": 0.252,
+   "whisper": [
+    2.76,
+    2.92
+   ]
+  },
+  {
+   "texto": "mais",
+   "ini": 3.041,
+   "fim": 3.182,
+   "prob": 1.0,
+   "whisper": [
+    2.92,
+    3.06
+   ]
+  },
+  {
+   "texto": "interessante?",
+   "ini": 3.222,
+   "fim": 3.782,
+   "prob": 1.0,
+   "whisper": [
+    3.06,
+    3.56
+   ]
+  },
+  {
+   "texto": "Cerca",
+   "ini": 4.262,
+   "fim": 4.442,
+   "prob": 0.803,
+   "whisper": [
+    3.98,
+    4.38
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 4.482,
+   "fim": 4.542,
+   "prob": 0.999,
+   "whisper": [
+    4.38,
+    4.52
+   ]
+  },
+  {
+   "texto": "37",
+   "ini": 4.662,
+   "fim": 5.163,
+   "prob": 1.0,
+   "whisper": [
+    4.52,
+    4.94
+   ]
+  },
+  {
+   "texto": "%",
+   "ini": 5.223,
+   "fim": 5.543,
+   "prob": 0.963,
+   "whisper": [
+    4.94,
+    5.32
+   ]
+  },
+  {
+   "texto": "das",
+   "ini": 5.563,
+   "fim": 5.663,
+   "prob": 0.999,
+   "whisper": [
+    5.32,
+    5.6
+   ]
+  },
+  {
+   "texto": "espécies",
+   "ini": 5.703,
+   "fim": 6.003,
+   "prob": 0.926,
+   "whisper": [
+    5.6,
+    5.9
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 6.023,
+   "fim": 6.083,
+   "prob": 1.0,
+   "whisper": [
+    5.9,
+    6.06
+   ]
+  },
+  {
+   "texto": "plantas",
+   "ini": 6.223,
+   "fim": 6.523,
+   "prob": 0.857,
+   "whisper": [
+    6.06,
+    6.5
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 6.543,
+   "fim": 6.623,
+   "prob": 0.998,
+   "whisper": [
+    6.5,
+    6.6
+   ]
+  },
+  {
+   "texto": "tem",
+   "ini": 6.683,
+   "fim": 6.803,
+   "prob": 1.0,
+   "whisper": [
+    6.6,
+    6.74
+   ]
+  },
+  {
+   "texto": "lá",
+   "ini": 6.843,
+   "fim": 6.903,
+   "prob": 1.0,
+   "whisper": [
+    6.74,
+    6.88
+   ]
+  },
+  {
+   "texto": "não",
+   "ini": 6.963,
+   "fim": 7.043,
+   "prob": 1.0,
+   "whisper": [
+    6.88,
+    6.98
+   ]
+  },
+  {
+   "texto": "tem",
+   "ini": 7.083,
+   "fim": 7.143,
+   "prob": 0.129,
+   "whisper": [
+    6.98,
+    7.14
+   ]
+  },
+  {
+   "texto": "em",
+   "ini": 7.164,
+   "fim": 7.204,
+   "prob": 0.5,
+   "whisper": [
+    7.14,
+    7.2
+   ]
+  },
+  {
+   "texto": "nenhum",
+   "ini": 7.244,
+   "fim": 7.524,
+   "prob": 0.986,
+   "whisper": [
+    7.2,
+    7.46
+   ]
+  },
+  {
+   "texto": "outro",
+   "ini": 7.624,
+   "fim": 7.844,
+   "prob": 0.977,
+   "whisper": [
+    7.46,
+    7.74
+   ]
+  },
+  {
+   "texto": "lugar",
+   "ini": 7.884,
+   "fim": 8.104,
+   "prob": 0.696,
+   "whisper": [
+    7.74,
+    7.96
+   ]
+  },
+  {
+   "texto": "do",
+   "ini": 8.144,
+   "fim": 8.204,
+   "prob": 0.916,
+   "whisper": [
+    7.96,
+    8.14
+   ]
+  },
+  {
+   "texto": "mundo.",
+   "ini": 8.264,
+   "fim": 8.464,
+   "prob": 1.0,
+   "whisper": [
+    8.14,
+    8.34
+   ]
+  }
+ ],
+ "IMG_7506": [
+  {
+   "texto": "Uma",
+   "ini": 3.107,
+   "fim": 3.207,
+   "prob": 0.275,
+   "whisper": [
+    2.76,
+    3.08
+   ]
+  },
+  {
+   "texto": "das",
+   "ini": 3.227,
+   "fim": 3.307,
+   "prob": 0.669,
+   "whisper": [
+    3.08,
+    3.22
+   ]
+  },
+  {
+   "texto": "mais",
+   "ini": 3.327,
+   "fim": 3.467,
+   "prob": 1.0,
+   "whisper": [
+    3.22,
+    3.36
+   ]
+  },
+  {
+   "texto": "famosas",
+   "ini": 3.487,
+   "fim": 3.808,
+   "prob": 0.88,
+   "whisper": [
+    3.36,
+    3.7
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 3.828,
+   "fim": 3.908,
+   "prob": 0.991,
+   "whisper": [
+    3.7,
+    3.84
+   ]
+  },
+  {
+   "texto": "tem",
+   "ini": 3.948,
+   "fim": 4.049,
+   "prob": 0.943,
+   "whisper": [
+    3.84,
+    4.0
+   ]
+  },
+  {
+   "texto": "lá",
+   "ini": 4.109,
+   "fim": 4.149,
+   "prob": 0.712,
+   "whisper": [
+    4.0,
+    4.1
+   ]
+  },
+  {
+   "texto": "é",
+   "ini": 4.209,
+   "fim": 4.229,
+   "prob": 0.0,
+   "whisper": [
+    4.1,
+    4.2
+   ]
+  },
+  {
+   "texto": "a",
+   "ini": 4.249,
+   "fim": 4.269,
+   "prob": 0.584,
+   "whisper": [
+    4.2,
+    4.24
+   ]
+  },
+  {
+   "texto": "árvore",
+   "ini": 4.329,
+   "fim": 4.57,
+   "prob": 0.938,
+   "whisper": [
+    4.24,
+    4.5
+   ]
+  },
+  {
+   "texto": "Sangue",
+   "ini": 4.73,
+   "fim": 4.93,
+   "prob": 1.0,
+   "whisper": [
+    4.5,
+    4.92
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 4.971,
+   "fim": 5.031,
+   "prob": 1.0,
+   "whisper": [
+    4.92,
+    4.94
+   ]
+  },
+  {
+   "texto": "Dragão.",
+   "ini": 5.111,
+   "fim": 5.391,
+   "prob": 0.97,
+   "whisper": [
+    4.94,
+    5.36
+   ],
+   "pontuacao_manual": true
+  },
+  {
+   "texto": "Ela",
+   "ini": 5.692,
+   "fim": 5.812,
+   "prob": 0.981,
+   "whisper": [
+    5.36,
+    5.68
+   ]
+  },
+  {
+   "texto": "tem",
+   "ini": 5.872,
+   "fim": 5.953,
+   "prob": 0.673,
+   "whisper": [
+    5.68,
+    5.86
+   ]
+  },
+  {
+   "texto": "esse",
+   "ini": 5.973,
+   "fim": 6.073,
+   "prob": 0.225,
+   "whisper": [
+    5.86,
+    5.98
+   ]
+  },
+  {
+   "texto": "formato",
+   "ini": 6.093,
+   "fim": 6.494,
+   "prob": 0.785,
+   "whisper": [
+    5.98,
+    6.38
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 6.554,
+   "fim": 6.614,
+   "prob": 0.993,
+   "whisper": [
+    6.38,
+    6.54
+   ]
+  },
+  {
+   "texto": "guarda",
+   "ini": 6.674,
+   "fim": 6.875,
+   "prob": 0.999,
+   "whisper": [
+    6.54,
+    6.84
+   ]
+  },
+  {
+   "texto": "-chuva",
+   "ini": 6.995,
+   "fim": 7.175,
+   "prob": 0.998,
+   "whisper": [
+    6.84,
+    7.1
+   ]
+  },
+  {
+   "texto": "e",
+   "ini": 7.215,
+   "fim": 7.235,
+   "prob": 0.97,
+   "whisper": [
+    7.1,
+    7.2
+   ]
+  },
+  {
+   "texto": "tem",
+   "ini": 7.255,
+   "fim": 7.316,
+   "prob": 0.333,
+   "whisper": [
+    7.2,
+    7.26
+   ]
+  },
+  {
+   "texto": "uma",
+   "ini": 7.336,
+   "fim": 7.396,
+   "prob": 0.352,
+   "whisper": [
+    7.26,
+    7.34
+   ]
+  },
+  {
+   "texto": "resina",
+   "ini": 7.436,
+   "fim": 7.656,
+   "prob": 0.988,
+   "whisper": [
+    7.34,
+    7.62
+   ]
+  },
+  {
+   "texto": "avermelhada",
+   "ini": 7.696,
+   "fim": 8.238,
+   "prob": 0.997,
+   "whisper": [
+    7.62,
+    8.16
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 8.338,
+   "fim": 8.398,
+   "prob": 0.684,
+   "whisper": [
+    8.16,
+    8.32
+   ]
+  },
+  {
+   "texto": "sai",
+   "ini": 8.478,
+   "fim": 8.578,
+   "prob": 0.977,
+   "whisper": [
+    8.32,
+    8.48
+   ]
+  },
+  {
+   "texto": "dela",
+   "ini": 8.638,
+   "fim": 8.819,
+   "prob": 0.99,
+   "whisper": [
+    8.48,
+    8.68
+   ]
+  }
+ ],
+ "IMG_7508": [
+  {
+   "texto": "Socotra",
+   "ini": 2.986,
+   "fim": 3.366,
+   "prob": 0.859,
+   "whisper": [
+    3.0,
+    3.32
+   ]
+  },
+  {
+   "texto": "é",
+   "ini": 3.386,
+   "fim": 3.406,
+   "prob": 1.0,
+   "whisper": [
+    3.32,
+    3.4
+   ]
+  },
+  {
+   "texto": "a",
+   "ini": 3.447,
+   "fim": 3.467,
+   "prob": 1.0,
+   "whisper": [
+    3.4,
+    3.42
+   ]
+  },
+  {
+   "texto": "prova",
+   "ini": 3.587,
+   "fim": 3.907,
+   "prob": 0.999,
+   "whisper": [
+    3.42,
+    3.76
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 3.988,
+   "fim": 4.048,
+   "prob": 1.0,
+   "whisper": [
+    3.76,
+    3.96
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 4.088,
+   "fim": 4.148,
+   "prob": 0.67,
+   "whisper": [
+    3.96,
+    4.08
+   ]
+  },
+  {
+   "texto": "o",
+   "ini": 4.168,
+   "fim": 4.188,
+   "prob": 0.0,
+   "whisper": [
+    4.08,
+    4.16
+   ]
+  },
+  {
+   "texto": "nosso",
+   "ini": 4.208,
+   "fim": 4.368,
+   "prob": 0.982,
+   "whisper": [
+    4.16,
+    4.26
+   ]
+  },
+  {
+   "texto": "planeta",
+   "ini": 4.408,
+   "fim": 4.689,
+   "prob": 0.996,
+   "whisper": [
+    4.26,
+    4.56
+   ]
+  },
+  {
+   "texto": "tem",
+   "ini": 4.769,
+   "fim": 4.869,
+   "prob": 1.0,
+   "whisper": [
+    4.56,
+    4.78
+   ]
+  },
+  {
+   "texto": "lugares",
+   "ini": 4.929,
+   "fim": 5.25,
+   "prob": 0.996,
+   "whisper": [
+    4.78,
+    5.04
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 5.29,
+   "fim": 5.35,
+   "prob": 1.0,
+   "whisper": [
+    5.04,
+    5.28
+   ]
+  },
+  {
+   "texto": "são",
+   "ini": 5.39,
+   "fim": 5.49,
+   "prob": 0.999,
+   "whisper": [
+    5.28,
+    5.4
+   ]
+  },
+  {
+   "texto": "capazes",
+   "ini": 5.53,
+   "fim": 5.931,
+   "prob": 0.949,
+   "whisper": [
+    5.4,
+    5.88
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 5.971,
+   "fim": 6.011,
+   "prob": 1.0,
+   "whisper": [
+    5.88,
+    5.98
+   ]
+  },
+  {
+   "texto": "surpreender",
+   "ini": 6.092,
+   "fim": 6.532,
+   "prob": 1.0,
+   "whisper": [
+    5.98,
+    6.44
+   ]
+  },
+  {
+   "texto": "até",
+   "ini": 6.572,
+   "fim": 6.693,
+   "prob": 0.995,
+   "whisper": [
+    6.44,
+    6.6
+   ]
+  },
+  {
+   "texto": "quem",
+   "ini": 6.753,
+   "fim": 6.933,
+   "prob": 0.985,
+   "whisper": [
+    6.6,
+    6.82
+   ]
+  },
+  {
+   "texto": "acha",
+   "ini": 7.013,
+   "fim": 7.194,
+   "prob": 0.974,
+   "whisper": [
+    6.82,
+    7.08
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 7.234,
+   "fim": 7.314,
+   "prob": 0.946,
+   "whisper": [
+    7.08,
+    7.22
+   ]
+  },
+  {
+   "texto": "já",
+   "ini": 7.354,
+   "fim": 7.414,
+   "prob": 1.0,
+   "whisper": [
+    7.22,
+    7.36
+   ]
+  },
+  {
+   "texto": "viu",
+   "ini": 7.474,
+   "fim": 7.574,
+   "prob": 0.705,
+   "whisper": [
+    7.36,
+    7.52
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 7.594,
+   "fim": 7.654,
+   "prob": 0.499,
+   "whisper": [
+    7.52,
+    7.62
+   ]
+  },
+  {
+   "texto": "tudo.",
+   "ini": 7.755,
+   "fim": 7.915,
+   "prob": 1.0,
+   "whisper": [
+    7.62,
+    7.8
+   ]
+  }
+ ],
+ "IMG_7511": [
+  {
+   "texto": "já",
+   "ini": 1.761,
+   "fim": 1.821,
+   "prob": 1.0,
+   "whisper": [
+    1.34,
+    1.76
+   ]
+  },
+  {
+   "texto": "aproveita",
+   "ini": 1.861,
+   "fim": 2.201,
+   "prob": 0.879,
+   "whisper": [
+    1.76,
+    2.16
+   ]
+  },
+  {
+   "texto": "e",
+   "ini": 2.241,
+   "fim": 2.261,
+   "prob": 0.02,
+   "whisper": [
+    2.16,
+    2.22
+   ]
+  },
+  {
+   "texto": "manda",
+   "ini": 2.342,
+   "fim": 2.522,
+   "prob": 0.928,
+   "whisper": [
+    2.22,
+    2.54
+   ]
+  },
+  {
+   "texto": "esse",
+   "ini": 2.562,
+   "fim": 2.702,
+   "prob": 0.899,
+   "whisper": [
+    2.54,
+    2.6
+   ]
+  },
+  {
+   "texto": "vídeo",
+   "ini": 2.762,
+   "fim": 2.942,
+   "prob": 1.0,
+   "whisper": [
+    2.6,
+    2.86
+   ]
+  },
+  {
+   "texto": "pra",
+   "ini": 2.962,
+   "fim": 3.042,
+   "prob": 0.862,
+   "whisper": [
+    2.86,
+    2.98
+   ]
+  },
+  {
+   "texto": "aquela",
+   "ini": 3.062,
+   "fim": 3.222,
+   "prob": 0.833,
+   "whisper": [
+    2.98,
+    3.14
+   ]
+  },
+  {
+   "texto": "pessoa",
+   "ini": 3.302,
+   "fim": 3.562,
+   "prob": 0.999,
+   "whisper": [
+    3.14,
+    3.46
+   ]
+  },
+  {
+   "texto": "que",
+   "ini": 3.582,
+   "fim": 3.642,
+   "prob": 1.0,
+   "whisper": [
+    3.46,
+    3.6
+   ]
+  },
+  {
+   "texto": "toparia",
+   "ini": 3.682,
+   "fim": 3.943,
+   "prob": 0.835,
+   "whisper": [
+    3.6,
+    3.86
+   ]
+  },
+  {
+   "texto": "viajar",
+   "ini": 3.983,
+   "fim": 4.223,
+   "prob": 0.998,
+   "whisper": [
+    3.86,
+    4.14
+   ]
+  },
+  {
+   "texto": "com",
+   "ini": 4.263,
+   "fim": 4.363,
+   "prob": 1.0,
+   "whisper": [
+    4.14,
+    4.3
+   ]
+  },
+  {
+   "texto": "você",
+   "ini": 4.423,
+   "fim": 4.643,
+   "prob": 1.0,
+   "whisper": [
+    4.3,
+    4.54
+   ]
+  },
+  {
+   "texto": "pra",
+   "ini": 4.703,
+   "fim": 4.763,
+   "prob": 0.429,
+   "whisper": [
+    4.54,
+    4.72
+   ]
+  },
+  {
+   "texto": "um",
+   "ini": 4.783,
+   "fim": 4.823,
+   "prob": 0.043,
+   "whisper": [
+    4.72,
+    4.8
+   ]
+  },
+  {
+   "texto": "lugar",
+   "ini": 4.843,
+   "fim": 5.023,
+   "prob": 0.662,
+   "whisper": [
+    4.8,
+    4.94
+   ]
+  },
+  {
+   "texto": "desses.",
+   "ini": 5.063,
+   "fim": 8.105,
+   "prob": 0.387,
+   "whisper": [
+    4.94,
+    5.18
+   ],
+   "pontuacao_manual": true
+  }
+ ],
+ "IMG_7517": [
+  {
+   "texto": "Agora",
+   "ini": 0.52,
+   "fim": 0.681,
+   "prob": 0.94,
+   "whisper": [
+    0.0,
+    0.6
+   ]
+  },
+  {
+   "texto": "me",
+   "ini": 0.721,
+   "fim": 0.781,
+   "prob": 1.0,
+   "whisper": [
+    0.6,
+    0.72
+   ]
+  },
+  {
+   "texto": "diz",
+   "ini": 0.821,
+   "fim": 0.921,
+   "prob": 0.998,
+   "whisper": [
+    0.72,
+    0.88
+   ]
+  },
+  {
+   "texto": "aí,",
+   "ini": 1.001,
+   "fim": 1.061,
+   "prob": 0.0,
+   "whisper": [
+    0.88,
+    1.0
+   ]
+  },
+  {
+   "texto": "você",
+   "ini": 1.081,
+   "fim": 1.221,
+   "prob": 1.0,
+   "whisper": [
+    1.02,
+    1.14
+   ]
+  },
+  {
+   "texto": "teria",
+   "ini": 1.281,
+   "fim": 1.461,
+   "prob": 0.984,
+   "whisper": [
+    1.14,
+    1.36
+   ]
+  },
+  {
+   "texto": "coragem",
+   "ini": 1.501,
+   "fim": 1.822,
+   "prob": 1.0,
+   "whisper": [
+    1.36,
+    1.78
+   ]
+  },
+  {
+   "texto": "de",
+   "ini": 1.862,
+   "fim": 1.902,
+   "prob": 1.0,
+   "whisper": [
+    1.78,
+    1.86
+   ]
+  },
+  {
+   "texto": "ir",
+   "ini": 1.942,
+   "fim": 1.982,
+   "prob": 0.251,
+   "whisper": [
+    1.86,
+    1.94
+   ]
+  },
+  {
+   "texto": "pra",
+   "ini": 2.002,
+   "fim": 2.062,
+   "prob": 0.664,
+   "whisper": [
+    1.94,
+    2.02
+   ]
+  },
+  {
+   "texto": "Socotra?",
+   "ini": 2.122,
+   "fim": 2.542,
+   "prob": 0.891,
+   "whisper": [
+    2.02,
+    2.5
+   ]
+  },
+  {
+   "texto": "Já",
+   "ini": 2.703,
+   "fim": 2.763,
+   "prob": 1.0,
+   "whisper": [
+    2.56,
+    2.72
+   ]
+  },
+  {
+   "texto": "comenta",
+   "ini": 2.863,
+   "fim": 3.143,
+   "prob": 0.757,
+   "whisper": [
+    2.72,
+    3.12
+   ]
+  },
+  {
+   "texto": "aqui",
+   "ini": 3.183,
+   "fim": 3.323,
+   "prob": 0.999,
+   "whisper": [
+    3.12,
+    3.28
+   ]
+  },
+  {
+   "texto": "e",
+   "ini": 3.363,
+   "fim": 3.383,
+   "prob": 0.0,
+   "whisper": [
+    3.28,
+    3.34
+   ]
+  },
+  {
+   "texto": "segue",
+   "ini": 3.503,
+   "fim": 3.684,
+   "prob": 0.964,
+   "whisper": [
+    3.34,
+    3.58
+   ]
+  },
+  {
+   "texto": "o",
+   "ini": 3.704,
+   "fim": 3.724,
+   "prob": 1.0,
+   "whisper": [
+    3.58,
+    3.7
+   ]
+  },
+  {
+   "texto": "perfil",
+   "ini": 3.764,
+   "fim": 4.044,
+   "prob": 0.826,
+   "whisper": [
+    3.7,
+    4.0
+   ]
+  },
+  {
+   "texto": "pra",
+   "ini": 4.064,
+   "fim": 4.164,
+   "prob": 0.99,
+   "whisper": [
+    4.0,
+    4.08
+   ]
+  },
+  {
+   "texto": "descobrir",
+   "ini": 4.184,
+   "fim": 4.484,
+   "prob": 1.0,
+   "whisper": [
+    4.08,
+    4.34
+   ]
+  },
+  {
+   "texto": "outros",
+   "ini": 4.544,
+   "fim": 4.785,
+   "prob": 0.999,
+   "whisper": [
+    4.34,
+    4.62
+   ]
+  },
+  {
+   "texto": "lugares",
+   "ini": 4.825,
+   "fim": 5.145,
+   "prob": 0.951,
+   "whisper": [
+    4.62,
+    4.98
+   ]
+  },
+  {
+   "texto": "inacreditáveis.",
+   "ini": 5.185,
+   "fim": 5.986,
+   "prob": 0.983,
+   "whisper": [
+    4.98,
+    5.78
+   ]
+  }
+ ]
+}

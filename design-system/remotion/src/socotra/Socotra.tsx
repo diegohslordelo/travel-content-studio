@@ -38,6 +38,7 @@ type Cena = {
   fundo?: string;
   anim?: "guarda" | "cosmos" | "fracao";
   efeito?: "scifi";
+  tom?: "claro"; // REV3: árvores mais claras e menos escurecidas (pedido do Diego, 31/10/2026)
   marcos?: Record<string, number>;
   zoom?: [number, number];
   continua?: boolean;
@@ -86,6 +87,7 @@ export const metadadosSocotra: CalculateMetadataFunction<PropsSocotra> = ({ prop
 });
 
 const VERMELHO = "#B3261E"; // só nas gotas desenhadas ("sangue escorrendo"): cor da resina, não é cor da marca
+const CLARO = `${GRADE_FOTO} brightness(1.06) saturate(1.1)`;
 const SCIFI = "grayscale(1) sepia(1) hue-rotate(140deg) saturate(2.4) contrast(1.18) brightness(0.78)";
 const lin = (x: number) => x;
 const clamp01 = (x: number) => Math.min(1, Math.max(0, x));
@@ -163,7 +165,7 @@ const FotoScifi: React.FC<{ src: string; w: number; h: number; t: number; dur: n
   return (
     <div style={{ position: "absolute", left: 0, top: 0, width: w, height: h, overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0, filter: ficcao ? `brightness(${pisca})` : undefined }}>
-        <Foto src={src} w={w} h={h} t={t} dur={dur} kb={cena.kb} foco={cena.foco} filtro={ficcao ? SCIFI : `${GRADE_FOTO} saturate(1.12)`} />
+        <Foto src={src} w={w} h={h} t={t} dur={dur} kb={cena.kb} foco={cena.foco} filtro={ficcao ? SCIFI : cena.tom === "claro" ? CLARO : `${GRADE_FOTO} saturate(1.12)`} />
       </div>
       {ficcao && (
         <>
@@ -213,7 +215,7 @@ const GuardaChuva: React.FC<{ p: PropsSocotra; cena: Cena; t: number; dur: numbe
   return (
     <div style={{ position: "absolute", left: 0, top: 0, width: p.largura, height: h, overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0, scale: String(z), transformOrigin: "50% 40%" }}>
-        <Foto src={src} w={p.largura} h={h} t={0} dur={1} kb={[1, 1]} filtro={`${GRADE_FOTO} brightness(${1 - 0.42 * escuro})`} />
+        <Foto src={src} w={p.largura} h={h} t={0} dur={1} kb={[1, 1]} filtro={`${GRADE_FOTO} brightness(${1 - (cena.tom === "claro" ? 0.22 : 0.42) * escuro})`} />
         <svg width={p.largura} height={h} style={{ position: "absolute", inset: 0, overflow: "visible", filter: "drop-shadow(0 3px 6px rgba(0,0,0,0.55))" }}>
           <g transform={`translate(550 ${80 + dy}) rotate(4.4) scale(${esc})`}>
             <Traco d={copa} t={t} t0={m.guarda} dur={0.45} comp={1400} />
@@ -371,7 +373,7 @@ const Cosmos: React.FC<{ t: number; m: Record<string, number> }> = ({ t, m }) =>
 };
 
 /** "Cerca de 37% das espécies de plantas": anel âmbar que enche até 37% e contador. */
-const Fracao37: React.FC<{ t: number; marco: number; fundo?: string }> = ({ t, marco, fundo }) => {
+const Fracao37: React.FC<{ t: number; marco: number; fundo?: string; claro?: boolean }> = ({ t, marco, fundo, claro }) => {
   const k = ease(clamp01((t - marco) / 0.75));
   const r = 300;
   const circ = 2 * Math.PI * r;
@@ -379,7 +381,7 @@ const Fracao37: React.FC<{ t: number; marco: number; fundo?: string }> = ({ t, m
   const entra = ease(clamp01(t / 0.25));
   return (
     <AbsoluteFill style={{ background: PALETA.fundo }}>
-      {fundo && <Foto src={fundo} w={1080} h={1920} t={t} dur={3} kb={[1.08, 1.0]} filtro="grayscale(0.5) brightness(0.3) blur(2px)" />}
+      {fundo && <Foto src={fundo} w={1080} h={1920} t={t} dur={3} kb={[1.08, 1.0]} filtro={claro ? "grayscale(0.2) brightness(0.45) blur(1px)" : "grayscale(0.5) brightness(0.3) blur(2px)"} />}
       <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, opacity: entra }}>
         <circle cx={540} cy={CENTRO_Y} r={r} fill="none" stroke={PALETA.papel} strokeOpacity={0.2} strokeWidth={26} />
         <circle
@@ -445,7 +447,7 @@ const Apoio: React.FC<{ p: PropsSocotra; cena: Cena }> = ({ p, cena }) => {
     if (cena.efeito === "scifi") return <FotoScifi src={src} w={p.largura} h={h} t={t} dur={dur} cena={cena} />;
     return (
       <div style={{ position: "absolute", left: 0, top: 0, width: p.largura, height: h, overflow: "hidden" }}>
-        <Foto src={src} w={p.largura} h={h} t={t} dur={dur} kb={cena.kb} foco={cena.foco} focoFim={cena.foco_fim} />
+        <Foto src={src} w={p.largura} h={h} t={t} dur={dur} kb={cena.kb} foco={cena.foco} focoFim={cena.foco_fim} filtro={cena.tom === "claro" ? CLARO : undefined} />
         {/* tela cheia: degradê de base para a legenda branca (y 1320) se ler sobre céu e areia claros */}
         {!split && <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 960, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.62) 100%)" }} />}
       </div>
@@ -453,7 +455,7 @@ const Apoio: React.FC<{ p: PropsSocotra; cena: Cena }> = ({ p, cena }) => {
   }
   if (cena.tipo === "anim") {
     if (cena.anim === "guarda") return <GuardaChuva p={p} cena={cena} t={t} dur={dur} />;
-    if (cena.anim === "fracao") return <Fracao37 t={t} marco={m.numero ?? 0.3} fundo={cena.fundo ? p.imagens[cena.fundo].arquivo : undefined} />;
+    if (cena.anim === "fracao") return <Fracao37 t={t} marco={m.numero ?? 0.3} fundo={cena.fundo ? p.imagens[cena.fundo].arquivo : undefined} claro={cena.tom === "claro"} />;
     if (cena.anim === "cosmos")
       return (
         <AbsoluteFill style={{ background: PALETA.preto }}>
