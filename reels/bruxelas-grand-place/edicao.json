@@ -1,0 +1,128 @@
+{
+ "reel": "bruxelas-grand-place",
+ "titulo": "Grand-Place: a praça que foi bombardeada e quase destruída (Bruxelas)",
+ "fps": 30,
+ "nota": "Tempos em segundos do bruto (gravações do quarto, 31/10/2026). Entrada e saída medidas pela energia da voz (120–4.000 Hz, janelas de 10 ms; scripts/segmentar.py) e pelo alinhamento forçado da tomada bruta (scripts/alinhar_tomadas.py). Cortes dentro de tomada só em silêncio de oclusiva (/p/, /k/, /t/) ou com fade na vogal. A ordem dos blocos segue o roteiro do Diego; o texto segue a fala gravada (docs/FORMATOS_REELS.md, 9.5). Terceiro valor de um trecho = fade de saída em ms (padrão: audio.fade_ms).",
+ "fontes_drive": {
+  "pasta": "Youtube/Bruxelas/Reel (1t9LoTTJfzwtIipwU92Pj4wd60FP6klQ-)",
+  "IMG_7518": "1ebRqSVF4h4_0azvhSnfL7RHvg3N8Sy9d",
+  "IMG_7523": "14pRioNLLMVwMq4SLk7R2G3VLaI2gDtZ5",
+  "IMG_7525": "1CR_WlJTQz5C5ja9nKL_k26mCM9dRQWuh",
+  "IMG_7530": "1ru1gPuJp-E0w-YC4Krz8A67BNMYJcfbC",
+  "IMG_7532": "1Puo8Ff6O1JcA9EXgwEyN3TtCrEGaupUy",
+  "IMG_7535": "1fYF2A625GAf-50dmWq4nyq1L0bib1R3h",
+  "IMG_7548": "1eTyVJ8_fgfOr_rtnsjxme7Mv_e-TElSO"
+ },
+ "falas": [
+  {
+   "id": "f1",
+   "bloco": "1 · gancho",
+   "fonte": "IMG_7518",
+   "trechos": [
+    [
+     0.5,
+     1.15
+    ],
+    [
+     3.7,
+     5.64
+    ]
+   ],
+   "nota": "'Essa praça' + 'quase foi destruída por completo.' O meio ('parece um cenário de filme, mas o mais impressionante é que ela') sai do gancho; 'parece um cenário de filme' abre o bloco 2. Emenda no silêncio do /k/ de 'quase' (−84 dB) e no fechamento do /p/ de 'parece' (−56 dB)."
+  },
+  {
+   "id": "f2",
+   "bloco": "2 · contraste",
+   "fonte": "IMG_7518",
+   "trechos": [
+    [
+     1.15,
+     2.31,
+     45
+    ]
+   ],
+   "nota": "'parece um cenário de filme,' (o 'mas' que vem colado fica de fora; fade de 45 ms no fim de 'filme')."
+  },
+  {
+   "id": "f2b",
+   "bloco": "2 · contraste",
+   "fonte": "IMG_7523",
+   "trechos": [
+    [
+     2.96,
+     6.53,
+     25
+    ]
+   ],
+   "nota": "'se liga nesses prédios com esses detalhes dourados, fachadas cheias de ornamentos,' O 'E' inicial que o Whisper da tomada bruta escreveu não está na voz (confiança 0,05 no Whisper, 0,01 no alinhamento; o Whisper da voz final não o ouve): sai do texto e da legenda. Fica de fora 'tem construções tão próximas que parece que você voltou no tempo séculos atrás. atrás.' (fora do roteiro, repete 'parece' e tem 'atrás' dobrado).",
+   "fora_do_texto": [
+    "E"
+   ]
+  },
+  {
+   "id": "f3",
+   "bloco": "3 · relevância emocional (1695)",
+   "fonte": "IMG_7525",
+   "trechos": [
+    [
+     0.33,
+     6.54
+    ]
+   ]
+  },
+  {
+   "id": "f4",
+   "bloco": "4 · CTA do meio (envio)",
+   "fonte": "IMG_7548",
+   "trechos": [
+    [
+     4.96,
+     8.88
+    ]
+   ],
+   "nota": "Antes de 4,96 s há ruídos e um começo que o Whisper não transcreve: fica de fora."
+  },
+  {
+   "id": "f5",
+   "bloco": "5 · revelação",
+   "fonte": "IMG_7530",
+   "trechos": [
+    [
+     2.14,
+     8.48
+    ]
+   ]
+  },
+  {
+   "id": "f6",
+   "bloco": "6 · UNESCO",
+   "fonte": "IMG_7532",
+   "trechos": [
+    [
+     0.28,
+     7.03
+    ]
+   ]
+  },
+  {
+   "id": "f7",
+   "bloco": "7 · moral + CTA final (seguir)",
+   "fonte": "IMG_7535",
+   "trechos": [
+    [
+     1.94,
+     10.5
+    ]
+   ],
+   "nota": "1,08–1,40 s é respiração: fica de fora."
+  }
+ ],
+ "cauda_s": 0.25,
+ "audio": {
+  "fade_ms": 12,
+  "passa_alta_hz": 70,
+  "afftdn": "afftdn=nr=8:nf=-58:tn=1",
+  "master_lufs": -14.0,
+  "pico_dbtp": -1.0
+ }
+}

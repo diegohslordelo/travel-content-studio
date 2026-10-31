@@ -1,0 +1,42 @@
+{
+ "incendio": {
+  "arquivo": "commons/incendio.jpg",
+  "descricao": "Pintura 'O bombardeio da Grand-Place em 1695' (anônimo, fim do séc. XVII), Museu da Cidade de Bruxelas; foto de Benoit Brummer",
+  "commons": "File:NIND MVB-Bombardement ISO200.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:NIND_MVB-Bombardement_ISO200.jpg",
+  "autor": "Trougnouf (Benoit Brummer)",
+  "licenca": "Public domain",
+  "data": "2019-02-12 16:50:52",
+  "credito": "Own work"
+ },
+ "plano_bombardeio": {
+  "arquivo": "commons/plano_bombardeio.jpg",
+  "descricao": "Plano do bombardeio de Bruxelas pelo exército francês, 13–15 de agosto de 1695 (Nicolas de Fer / Harmanus van Loon)",
+  "commons": "File:Plattegrond van het bombardement van Brussel door de Fransen, 1695, Harmanus van Loon, Nicolas de Fer, Lodewijk XIV (koning van Frankrijk), 1695.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Plattegrond_van_het_bombardement_van_Brussel_door_de_Fransen%2C_1695%2C_Harmanus_van_Loon%2C_Nicolas_de_Fer%2C_Lodewijk_XIV_%28koning_van_Frankrijk%29%2C_1695.jpg",
+  "autor": "Nicolas de Fer",
+  "licenca": "Public domain",
+  "data": "1695",
+  "credito": "https://www.rijksmuseum.nl/en/search/objects?set=RP-P-1910-2224-2228#/RP-P-1910-2224-2228,0"
+ },
+ "ruinas_coppens": {
+  "arquivo": "commons/ruinas_coppens.jpg",
+  "descricao": "Augustin Coppens, a Grand-Place depois do bombardeio (1695), desenho",
+  "commons": "File:Augustin Coppens, Grote Markt na bombardement.JPG",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Augustin_Coppens%2C_Grote_Markt_na_bombardement.JPG",
+  "autor": "Augustin Coppens",
+  "licenca": "Public domain",
+  "data": "2015-06-20 14:06:00",
+  "credito": "Vincent Heymans (red.), « Les Maisons de la Grand-Place de Bruxelles », 2010"
+ },
+ "ruinas_gravura": {
+  "arquivo": "commons/ruinas_gravura.jpg",
+  "descricao": "Ruínas de um lado da Grand-Place em 1695 (gravura segundo Augustin Coppens), Rijksmuseum",
+  "commons": "File:Ruïnes op de Grote Markt te Brussel, 1695 Bouvalligheden van de eene sijde van de Groote Merkt van de hoek van de Heuvelstraat naar S. Niklaas Ruinae a latere Fori Maximi nempe a Via Collina versus Fanum D. Nicolai (tit, RP-P-1921-449.jpg",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Ru%C3%AFnes_op_de_Grote_Markt_te_Brussel%2C_1695_Bouvalligheden_van_de_eene_sijde_van_de_Groote_Merkt_van_de_hoek_van_de_Heuvelstraat_naar_S._Niklaas_Ruinae_a_latere_Fori_Maximi_nempe_a_Via_Collina_versus_Fanum_D._Nicolai_%28tit%2C_RP-P-1921-449.jpg",
+  "autor": "Rijksmuseum",
+  "licenca": "CC0",
+  "data": "between 1695 and 1711date QS:P,+1500-00-00T00:00:00Z/6,P1319,+1695-00-00T00:00:00Z/9,P1326,+1711-00-00T00:00:00Z/9",
+  "credito": "http://hdl.handle.net/10934/RM0001.COLLECT.335067"
+ }
+}
