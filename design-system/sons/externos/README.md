@@ -31,3 +31,16 @@ Feitos com ffmpeg a partir dos originais acima (e uma senoide de 55 Hz no impact
 | `PDX_obturador.wav` | shutter-modern | Snap, print, captura real |
 
 Volumes de uso: `docs/REFERENCIA_EDICAO_FORMATOS.md`, seção 4.
+
+## Som do fim do gancho (`keen`)
+
+Pedido do Diego (01/11/2026): **em todo vídeo, o `keen` toca no fim do gancho** (regra no CLAUDE.md, seção 7).
+
+| Arquivo | O que é |
+|---|---|
+| `keen_original.m4a` | Áudio original, copiado sem recompressão do vídeo que o Diego enviou (`copy_00072611-1662-4A2A-9675-0A1FA2F768C2.mov`, 4,16 s, AAC 44,1 kHz estéreo) |
+| `keen.wav` | O trecho útil (0,10–1,85 s do original), 48 kHz mono, pico −1 dBFS. **1,75 s**: sobe de forma contínua, chega ao **pico em 0,96 s** e cai em ≈ 0,8 s |
+
+**Como usar:** alinhar o **pico** (0,96 s do arquivo) no corte entre o gancho e a cena seguinte; a subida fica sob o fim da frase do gancho. Volume de trabalho: −6 dB da voz (o de transição, `docs/REFERENCIA_EDICAO_FORMATOS.md`, 4.1), a calibrar na escuta.
+
+**Origem e licença:** o Diego enviou o som; a origem e a licença não foram informadas. **Ninguém ouviu** o arquivo pelo repositório: duração e pico foram medidos com ffmpeg.

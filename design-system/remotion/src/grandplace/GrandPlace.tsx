@@ -45,7 +45,7 @@ export type PropsGP = {
   rostoX: number;
   quadros: number;
   cenas: Cena[];
-  gancho: { linhas: string[]; tamanhos: number[]; tempos: number[]; cores?: (string | null)[] }[];
+  gancho: { linhas: string[]; tamanhos: number[]; tempos: number[]; cores?: (string | null)[]; sai?: number | null }[];
   fimGancho: number;
   ganchoTopo: number;
   legendas: Grupo[];
@@ -257,12 +257,17 @@ const Gancho: React.FC<{ p: PropsGP; tS: number }> = ({ p, tS }) => {
     <div style={{ opacity: sai }}>
       <div style={{ position: "absolute", left: 0, right: 0, top: 240, height: p.costura - 240, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.42) 40%, rgba(0,0,0,0.7) 100%)" }} />
       <div style={{ position: "absolute", left: 72, right: 72, top: p.ganchoTopo, textShadow: "0 4px 30px rgba(0,0,0,0.5)" }}>
-        {p.gancho.map((b, i) => (
-          <React.Fragment key={i}>
-            {i > 0 && <div style={{ height: 18 }} />}
-            {b.linhas.map((l, k) => linha(l, b.tamanhos[k], b.tempos[k], b.cores?.[k], i * 10 + k))}
-          </React.Fragment>
-        ))}
+        {p.gancho.map((b, i) => {
+          // bloco com "sai": a frase some (100 ms) e o bloco seguinte ocupa o lugar dela no topo
+          if (b.sai != null && tS >= b.sai) return null;
+          const fora = b.sai != null ? lerp(tS, b.sai - 0.1, b.sai, 1, 0, (x) => x) : 1;
+          return (
+            <div key={i} style={{ opacity: fora }}>
+              {i > 0 && <div style={{ height: 18 }} />}
+              {b.linhas.map((l, k) => linha(l, b.tamanhos[k], b.tempos[k], b.cores?.[k], i * 10 + k))}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -1,60 +1,421 @@
 {
- "nota": "Cenas ancoradas nas palavras ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. Toda imagem fica de 2 a 3 s na tela (pedido do Diego). 'video' = acervo do Diego (fonte, entrada em s no bruto, foco x/y do recorte, 0–1); vai mudo, recortado na proporção da camada, HDR → SDR. Fotos: imagens/lista_commons.json. Legenda = fala gravada; '*' = destaque âmbar; '~' = grupo que não aparece (o gancho ou um título já mostra as palavras).",
+ "nota": "Cenas ancoradas nas palavras ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. Toda imagem fica de 2 a 3 s na tela (pedido do Diego). 'video' = acervo do Diego (fonte, entrada em s no bruto, foco x/y do recorte, 0–1); vai mudo, recortado na proporção da camada, HDR → SDR. Fotos: imagens/lista_commons.json. Legenda = fala gravada; '*' = destaque âmbar; '~' = grupo que não aparece (o gancho ou um título já mostra as palavras). REV2 (01/11/2026, pedido do Diego): gancho com a tomada inteira, sem decupar, em duas imagens (a praça hoje → o incêndio de 1695); som 'keen' no fim do gancho.",
  "costura": 900,
  "rostoY": 690,
  "rostoX": 510,
  "cenas": [
-  {"id": "gancho_incendio", "ini": "0", "tipo": "foto", "layout": "split", "foto": "incendio", "tom": "pintura",
-   "kb": [1.0, 1.14], "foco": [0.36, 0.52], "foco_fim": [0.34, 0.5]},
-  {"id": "cenario_de_filme", "ini": "f2:parece-0.06", "tipo": "video", "layout": "full",
-   "video": {"fonte": "IMG_2191", "in": 0.4, "foco": [0.6, 0.5]}, "kb": [1.0, 1.05]},
-  {"id": "detalhes_dourados", "ini": "f2b:com-0.06", "tipo": "video", "layout": "split",
-   "video": {"fonte": "IMG_2217", "in": 1.2, "foco": [0.5, 0.42]}, "kb": [1.0, 1.05]},
-  {"id": "ano_1695", "ini": "f3:agora-0.06", "tipo": "video", "layout": "full",
-   "video": {"fonte": "IMG_2214", "in": 0.6, "foco": [0.42, 0.5]}, "kb": [1.0, 1.06],
-   "sepia": ["f3:agora+0.05", "f3:em-0.02"], "apagar": ["f3:imagina", "f3:1695-0.05", 0.42],
-   "titulo": {"centroY": 820, "linhas": [{"texto": "1695", "tam": 330, "em": "f3:1695-0.04", "cor": "ambar"}]}},
-  {"id": "tropas_francesas", "ini": "f3:bombardeada-0.06", "tipo": "foto", "layout": "split", "foto": "plano_bombardeio", "tom": "gravura",
-   "kb": [1.55, 1.75], "foco": [0.55, 0.40], "foco_fim": [0.52, 0.6]},
-  {"id": "ruinas_1695", "ini": "f3:quase-0.06", "tipo": "foto", "layout": "split", "foto": "ruinas_coppens", "tom": "gravura",
-   "kb": [1.0, 1.1], "foco": [0.62, 0.42]},
-  {"id": "cta_meio", "ini": "f4:já-0.06", "tipo": "fala", "zoom": [1.0, 1.06],
-   "envio": {"entra": "f4:manda-0.04", "voa": "f4:pessoa-0.2", "x": 860, "y": 1150}},
-  {"id": "revelacao", "ini": "f5:essa-0.06", "tipo": "video", "layout": "full",
-   "video": {"fonte": "IMG_2211", "in": 2.3, "foco": [0.5, 0.5]}, "kb": [1.0, 1.04],
-   "mapa": {"entra": "f5:coração-0.1", "cidade": "f5:bruxelas-0.04", "pais": "f5:bélgica-0.06"},
-   "titulo": {"centroY": 905, "linhas": [{"texto": "GRAND-PLACE", "tam": 170, "em": "f5:grand-0.04", "cor": "ambar"}]}},
-  {"id": "antes_depois", "ini": "f5:depois-0.06", "tipo": "foto", "layout": "split", "foto": "ruinas_gravura", "tom": "gravura",
-   "kb": [1.0, 1.06], "foco": [0.62, 0.5],
-   "comparar": {"fonte": "IMG_2213", "in": 0.3, "foco": [0.42, 0.45], "de": "f5:recuperou-0.24", "ate": "f5:essa#2-0.08"},
-   "nota": "Gravura das ruínas de 1695 (a Maison du Roi em ruínas à direita) e, na fala 'e recuperou essa icônica aparência', uma cortina revela a mesma praça hoje (IMG_2213, Maison du Roi). As duas imagens ficam 2 s ou mais na tela cada uma; a cena inteira passa de 3 s porque são duas imagens ligadas pela cortina."},
-  {"id": "ano_1998", "ini": "f6:em-0.04", "tipo": "video", "layout": "full",
-   "video": {"fonte": "IMG_2195", "in": 1.2, "foco": [0.5, 0.5]}, "kb": [1.0, 1.05],
-   "apagar": ["f6:em", "f6:1998-0.05", 0.42],
-   "titulo": {"centroY": 820, "linhas": [{"texto": "1998", "tam": 330, "em": "f6:1998-0.04", "cor": "ambar"}]}},
-  {"id": "patrimonio", "ini": "f6:como-0.06", "tipo": "video", "layout": "full",
-   "video": {"fonte": "IMG_2192", "in": 0.3, "foco": [0.6, 0.68], "zoom": 1.3}, "kb": [1.0, 1.05],
-   "titulo": {"centroY": 860, "linhas": [{"texto": "PATRIMÔNIO", "tam": 160, "em": "f6:patrimônio-0.04"}, {"texto": "MUNDIAL", "tam": 160, "em": "f6:mundial-0.04"}, {"texto": "DA UNESCO", "tam": 120, "em": "f6:unesco-0.08", "cor": "ambar"}]}},
-  {"id": "arquitetura", "ini": "f6:histórica-0.06", "tipo": "video", "layout": "split",
-   "video": {"fonte": "IMG_2216", "in": 1.4, "foco": [0.5, 0.4]}, "kb": [1.0, 1.05]},
-  {"id": "moral", "ini": "f7:que#1-0.04", "tipo": "fala", "zoom": [1.0, 1.04], "punch": {"em": "f7:destruição-0.02", "z": 1.14}},
-  {"id": "europa", "ini": "f7:históricos-0.06", "tipo": "video", "layout": "full",
-   "video": {"fonte": "IMG_2190", "in": 3.9, "foco": [0.6, 0.7], "zoom": 1.35}, "kb": [1.0, 1.04]},
-  {"id": "cta", "ini": "f7:perfil-0.17", "tipo": "video", "layout": "split",
-   "video": {"fonte": "IMG_2411", "in": 1.9, "foco": [0.62, 0.5]}, "kb": [1.0, 1.05]}
+  {
+   "id": "gancho_hoje",
+   "ini": "0",
+   "tipo": "video",
+   "layout": "split",
+   "video": {
+    "fonte": "IMG_2190",
+    "in": 0.2,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "id": "gancho_incendio",
+   "ini": "f1:impressionante-0.01",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "incendio",
+   "tom": "pintura",
+   "kb": [
+    1.0,
+    1.14
+   ],
+   "foco": [
+    0.36,
+    0.52
+   ],
+   "foco_fim": [
+    0.34,
+    0.5
+   ]
+  },
+  {
+   "id": "cenario_de_filme",
+   "ini": "f2b:se-0.06",
+   "tipo": "video",
+   "layout": "full",
+   "video": {
+    "fonte": "IMG_2191",
+    "in": 0.4,
+    "foco": [
+     0.6,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "id": "detalhes_dourados",
+   "ini": "f2b:fachadas-0.1",
+   "tipo": "video",
+   "layout": "split",
+   "video": {
+    "fonte": "IMG_2217",
+    "in": 1.2,
+    "foco": [
+     0.5,
+     0.42
+    ]
+   },
+   "kb": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "id": "ano_1695",
+   "ini": "f3:em-0.06",
+   "tipo": "video",
+   "layout": "full",
+   "video": {
+    "fonte": "IMG_2214",
+    "in": 0.6,
+    "foco": [
+     0.42,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "sepia": [
+    "f3:em-0.06",
+    "f3:1695+0.12"
+   ],
+   "apagar": [
+    "f3:em-0.02",
+    "f3:1695+0.12",
+    0.42
+   ],
+   "titulo": {
+    "centroY": 820,
+    "linhas": [
+     {
+      "texto": "1695",
+      "tam": 330,
+      "em": "f3:1695+0.02",
+      "cor": "ambar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tropas_francesas",
+   "ini": "f3:por-0.06",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "plano_bombardeio",
+   "tom": "gravura",
+   "kb": [
+    1.55,
+    1.75
+   ],
+   "foco": [
+    0.55,
+    0.4
+   ],
+   "foco_fim": [
+    0.52,
+    0.6
+   ]
+  },
+  {
+   "id": "ruinas_1695",
+   "ini": "f3:prédios-0.06",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "ruinas_coppens",
+   "tom": "gravura",
+   "kb": [
+    1.0,
+    1.1
+   ],
+   "foco": [
+    0.62,
+    0.42
+   ]
+  },
+  {
+   "id": "cta_meio",
+   "ini": "f4:vídeo-0.06",
+   "tipo": "fala",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "envio": {
+    "entra": "f4:vídeo-0.02",
+    "voa": "f4:você-0.1",
+    "x": 860,
+    "y": 1150
+   }
+  },
+  {
+   "id": "revelacao",
+   "ini": "f5:essa-0.06",
+   "tipo": "video",
+   "layout": "full",
+   "video": {
+    "fonte": "IMG_2211",
+    "in": 2.3,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "mapa": {
+    "entra": "f5:coração-0.1",
+    "cidade": "f5:bruxelas-0.04",
+    "pais": "f5:bélgica-0.06"
+   },
+   "titulo": {
+    "centroY": 905,
+    "linhas": [
+     {
+      "texto": "GRAND-PLACE",
+      "tam": 170,
+      "em": "f5:grand-0.04",
+      "cor": "ambar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "antes_depois",
+   "ini": "f5:depois-0.06",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "ruinas_gravura",
+   "tom": "gravura",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.62,
+    0.5
+   ],
+   "comparar": {
+    "fonte": "IMG_2213",
+    "in": 0.3,
+    "foco": [
+     0.42,
+     0.45
+    ],
+    "de": "f5:recuperou-0.24",
+    "ate": "f5:essa#2-0.08"
+   },
+   "nota": "Gravura das ruínas de 1695 (a Maison du Roi em ruínas à direita) e, na fala 'e recuperou essa icônica aparência', uma cortina revela a mesma praça hoje (IMG_2213, Maison du Roi). As duas imagens ficam 2 s ou mais na tela cada uma; a cena inteira passa de 3 s porque são duas imagens ligadas pela cortina."
+  },
+  {
+   "id": "ano_1998",
+   "ini": "f6:em-0.04",
+   "tipo": "video",
+   "layout": "full",
+   "video": {
+    "fonte": "IMG_2195",
+    "in": 1.2,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "apagar": [
+    "f6:em",
+    "f6:1998-0.05",
+    0.42
+   ],
+   "titulo": {
+    "centroY": 820,
+    "linhas": [
+     {
+      "texto": "1998",
+      "tam": 330,
+      "em": "f6:1998-0.04",
+      "cor": "ambar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "patrimonio",
+   "ini": "f6:como-0.06",
+   "tipo": "video",
+   "layout": "full",
+   "video": {
+    "fonte": "IMG_2192",
+    "in": 0.3,
+    "foco": [
+     0.6,
+     0.68
+    ],
+    "zoom": 1.3
+   },
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "titulo": {
+    "centroY": 860,
+    "linhas": [
+     {
+      "texto": "PATRIMÔNIO",
+      "tam": 160,
+      "em": "f6:patrimônio-0.04"
+     },
+     {
+      "texto": "MUNDIAL",
+      "tam": 160,
+      "em": "f6:mundial-0.04"
+     },
+     {
+      "texto": "DA UNESCO",
+      "tam": 120,
+      "em": "f6:unesco-0.08",
+      "cor": "ambar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "arquitetura",
+   "ini": "f6:histórica-0.06",
+   "tipo": "video",
+   "layout": "split",
+   "video": {
+    "fonte": "IMG_2216",
+    "in": 1.4,
+    "foco": [
+     0.5,
+     0.4
+    ]
+   },
+   "kb": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "id": "moral",
+   "ini": "f7:que#1-0.04",
+   "tipo": "fala",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "punch": {
+    "em": "f7:destruição-0.02",
+    "z": 1.14
+   }
+  },
+  {
+   "id": "europa",
+   "ini": "f7:históricos-0.06",
+   "tipo": "video",
+   "layout": "full",
+   "video": {
+    "fonte": "IMG_2190",
+    "in": 3.9,
+    "foco": [
+     0.6,
+     0.7
+    ],
+    "zoom": 1.35
+   },
+   "kb": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "id": "cta",
+   "ini": "f7:perfil-0.17",
+   "tipo": "video",
+   "layout": "split",
+   "video": {
+    "fonte": "IMG_2411",
+    "in": 1.9,
+    "foco": [
+     0.62,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.05
+   ]
+  }
  ],
  "gancho": {
   "topo": 280,
-  "fim": "f2:parece-0.06",
+  "fim": "f2b:se-0.06",
   "blocos": [
-   {"linhas": ["ESSA PRAÇA", "QUASE FOI"], "tamanhos": [112, 112], "tempos": ["0", "f1:quase-0.04"]},
-   {"linhas": ["DESTRUÍDA", "POR COMPLETO"], "tamanhos": [178, 104], "tempos": ["f1:destruída-0.04", "f1:por-0.04"], "cores": ["ambar", null]}
+   {
+    "linhas": [
+     "ESSA PRAÇA PARECE",
+     "UM CENÁRIO DE FILME"
+    ],
+    "tamanhos": [
+     104,
+     104
+    ],
+    "tempos": [
+     "0",
+     "f1:um-0.04"
+    ],
+    "sai": "f1:impressionante-0.01"
+   },
+   {
+    "linhas": [
+     "QUASE FOI",
+     "DESTRUÍDA",
+     "POR COMPLETO"
+    ],
+    "tamanhos": [
+     112,
+     178,
+     104
+    ],
+    "tempos": [
+     "f1:quase-0.04",
+     "f1:destruída-0.04",
+     "f1:por-0.04"
+    ],
+    "cores": [
+     null,
+     "ambar",
+     null
+    ]
+   }
   ]
  },
  "legendas": [
-  "~Essa praça quase foi destruída por completo.",
-  "Parece um cenário",
-  "de *filme*,",
+  "~Essa praça parece um cenário de filme, mas o mais impressionante é que ela quase foi destruída por completo.",
   "Se liga nesses",
   "*prédios*",
   "com esses detalhes",
@@ -104,32 +465,114 @@
   "outro lugar",
   "*imperdível*."
  ],
- "cta": {"ini": "f7:já-0.06", "entrada": "f7:segue-0.12", "rotulo": "SEGUE O PERFIL", "destino": "@PRIMEIRODIAEM"},
+ "cta": {
+  "ini": "f7:já-0.06",
+  "entrada": "f7:segue-0.12",
+  "rotulo": "SEGUE O PERFIL",
+  "destino": "@PRIMEIRODIAEM"
+ },
  "transicoes": [
-  {"tipo": "luz", "em": "f5:essa-0.06", "nota": "revelação: luz de passagem na ida para a chegada à praça ('Essa é a Grand-Place')"},
-  {"tipo": "clarao", "em": "f7:que#1-0.04", "nota": "clarão de volta para o rosto (par da luz de passagem), na moral da história"}
+  {
+   "tipo": "luz",
+   "em": "f5:essa-0.06",
+   "nota": "revelação: luz de passagem na ida para a chegada à praça ('Essa é a Grand-Place')"
+  },
+  {
+   "tipo": "clarao",
+   "em": "f7:que#1-0.04",
+   "nota": "clarão de volta para o rosto (par da luz de passagem), na moral da história"
+  }
  ],
  "sons": [
-  {"som": "PDX_impacto", "em": "f1:destruída-0.04", "rel_db": -4, "nota": "DESTRUÍDA"},
-  {"som": "PDX_impacto", "em": "f3:1695-0.04", "rel_db": -4, "nota": "1695"},
-  {"som": "PDX_impacto", "em": "f3:bombardeada", "rel_db": -9, "nota": "bombardeada (estouro distante sob o plano do bombardeio)"},
-  {"som": "PDX_swish", "em": "f4:pessoa-0.2", "rel_db": -8, "nota": "avião de envio sai voando"},
-  {"som": "PDX_riser", "em": "f5:grand-0.04", "alinhar": "fim", "rel_db": -8, "nota": "sobe até o nome GRAND-PLACE"},
-  {"som": "PDX_impacto", "em": "f5:grand-0.04", "rel_db": -4, "nota": "GRAND-PLACE"},
-  {"som": "PDX_ar_longo", "em": "f5:recuperou-0.24", "rel_db": -8, "nota": "cortina antes/depois"},
-  {"som": "PDX_impacto", "em": "f6:1998-0.04", "rel_db": -4, "nota": "1998"},
-  {"som": "PDX_swish", "em": "f6:patrimônio-0.06", "rel_db": -8, "nota": "PATRIMÔNIO MUNDIAL"}
+  {
+   "som": "PDX_impacto",
+   "em": "f1:destruída-0.04",
+   "rel_db": -4,
+   "nota": "DESTRUÍDA"
+  },
+  {
+   "som": "keen",
+   "em": "f2b:se-0.06",
+   "alinhar": "pico",
+   "rel_db": -6,
+   "nota": "som do fim do gancho (CLAUDE.md, 7): pico no corte para a 1ª cena depois do gancho"
+  },
+  {
+   "som": "PDX_impacto",
+   "em": "f3:1695+0.02",
+   "rel_db": -4,
+   "nota": "1695"
+  },
+  {
+   "som": "PDX_impacto",
+   "em": "f3:bombardeada",
+   "rel_db": -9,
+   "nota": "bombardeada (estouro distante sob o plano do bombardeio)"
+  },
+  {
+   "som": "PDX_swish",
+   "em": "f4:você-0.1",
+   "rel_db": -8,
+   "nota": "avião de envio sai voando"
+  },
+  {
+   "som": "PDX_riser",
+   "em": "f5:grand-0.04",
+   "alinhar": "fim",
+   "rel_db": -8,
+   "nota": "sobe até o nome GRAND-PLACE"
+  },
+  {
+   "som": "PDX_impacto",
+   "em": "f5:grand-0.04",
+   "rel_db": -4,
+   "nota": "GRAND-PLACE"
+  },
+  {
+   "som": "PDX_ar_longo",
+   "em": "f5:recuperou-0.24",
+   "rel_db": -8,
+   "nota": "cortina antes/depois"
+  },
+  {
+   "som": "PDX_impacto",
+   "em": "f6:1998-0.04",
+   "rel_db": -4,
+   "nota": "1998"
+  },
+  {
+   "som": "PDX_swish",
+   "em": "f6:patrimônio-0.06",
+   "rel_db": -8,
+   "nota": "PATRIMÔNIO MUNDIAL"
+  }
  ],
  "fogo": {
   "nota": "cama de fogo sintetizada (ruído grave + estalos) só nas imagens do incêndio e do bombardeio",
   "trechos": [
-   {"de": "0", "ate": "f2:parece-0.06", "rel_db": -17},
-   {"de": "f3:bombardeada-0.06", "ate": "f4:já-0.06", "rel_db": -22}
+   {
+    "de": "f1:impressionante-0.01",
+    "ate": "f2b:se-0.06",
+    "rel_db": -17
+   },
+   {
+    "de": "f3:bombardeada-0.06",
+    "ate": "f4:já-0.06",
+    "rel_db": -22
+   }
   ]
  },
  "ambiente": {
   "nota": "som real da praça (IMG_2211, a chegada) como ponte de som da revelação: entra 10 quadros antes do corte e fica baixo sob a fala",
   "fonte": "IMG_2211",
-  "trechos": [{"de": "f5:essa-0.39", "ate": "f5:depois-0.06", "pico": "f5:essa-0.06", "rel_db_pico": -8, "rel_db": -17}]
+  "trechos": [
+   {
+    "de": "f5:essa-0.39",
+    "ate": "f5:depois-0.06",
+    "pico": "f5:essa-0.06",
+    "rel_db_pico": -8,
+    "rel_db": -17
+   }
+  ]
  }
 }
