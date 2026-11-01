@@ -12,7 +12,8 @@
 |---|---|
 | `reel_grand-place_rev2.mp4` | Final: 1080 × 1920, 30 qps, H.264 + AAC 48 kHz, **40,72 s**, **−14,1 LUFS**, pico **−1,4 dBTP** |
 | `reel_grand-place_rev2_previa.mp4` | Prévia leve (540 × 960) |
-| `capa_grand-place_rev2.jpg` | Capa (igual à da REV1) |
+| `capa_grand-place_rev2.jpg` | Capa (a mesma da do Instagram). O Diego aparece no quadro de 5,0 s da voz nova: olhar sério, boca fechada, o mesmo momento da REV1 |
+| `capas/` | Capas por plataforma: Instagram (1080 × 1920, recorte 3:4), TikTok (1080 × 1920, faixa central) e Shorts (2160 × 3840, faixa central). Script: `scripts/capas.py` |
 | `qa_frames/` | Um quadro por cena · um quadro por segundo |
 
 ## O que mudou
@@ -52,6 +53,8 @@
 | Pico do `keen` | 4,34 s + 0,96 s = 5,30 s, o quadro do corte ✅ |
 | Legendas | 42 grupos, 1 linha; a maior tem 808 px (x 136–944) ✅ |
 | Transcrição da voz final | Igual ao texto das legendas. O Whisper agora ouve "**pra** aquela pessoa" e "**pra** esse lugar" (confiança 0,46; na REV1 e na tomada bruta ouviu "para", 0,81–0,97). A legenda diz "para" |
+
+Legendas do post (Instagram, TikTok e Shorts): `../legenda_post.md`, sem fontes e com o CTA do vídeo de Bruxelas que sai no sábado no YouTube.
 
 ## Conferir no ouvido
 
