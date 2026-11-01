@@ -21,27 +21,10 @@
    "trechos": [
     [
      0.5,
-     1.15
-    ],
-    [
-     3.7,
      5.64
     ]
    ],
-   "nota": "'Essa praça' + 'quase foi destruída por completo.' O meio ('parece um cenário de filme, mas o mais impressionante é que ela') sai do gancho; 'parece um cenário de filme' abre o bloco 2. Emenda no silêncio do /k/ de 'quase' (−84 dB) e no fechamento do /p/ de 'parece' (−56 dB)."
-  },
-  {
-   "id": "f2",
-   "bloco": "2 · contraste",
-   "fonte": "IMG_7518",
-   "trechos": [
-    [
-     1.15,
-     2.31,
-     45
-    ]
-   ],
-   "nota": "'parece um cenário de filme,' (o 'mas' que vem colado fica de fora; fade de 45 ms no fim de 'filme')."
+   "nota": "Tomada inteira, sem corte (pedido do Diego, 01/11/2026, REV2): 'Essa praça parece um cenário de filme, mas o mais impressionante é que ela quase foi destruída por completo.'"
   },
   {
    "id": "f2b",
