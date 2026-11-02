@@ -132,6 +132,11 @@ O Diego avisou que, com a música do Instagram, os efeitos **não se ouvem**. Co
 | Impacto em data, número, revelação (`PDX_impacto`) | — | **−4 dB** |
 | *Clack* da placa do CTA (único som do DS no Reel) | −10 dB | **−6 dB** |
 | Página, obturador (`PDX_pagina`, `PDX_obturador`) | −12 dB | **−8 dB** |
+| *Woosh* de zoom in e zoom out (`PDX_woosh`) | — | **−6 dB** (proposta, 02/11/2026) |
+| *Punch* e *Vine boom* (`PDX_punch`, `PDX_punch_seco`, `PDX_vine_boom`) | — | **−4 dB** (proposta, 02/11/2026) |
+| *Magic Reveal* (`PDX_magic_reveal`, `PDX_magic_brilho`) | — | **−6 dB** (proposta, 02/11/2026) |
+| *Ding* de notificação no meio do Reel (`PDX_ding`) | — | **−6 dB** (proposta, 02/11/2026) |
+| *Faaah* (`PDX_faaah`, é voz: só na pausa da fala) | — | **−8 dB** (proposta, 02/11/2026) |
 | Ponte de som (ambiente real da próxima cena) | −6 dB (Cinema) | **−8 dB**, e −3 dB nos 3 a 12 quadros antes do corte |
 | Música (quando o Claude mixa no render) | 8–10 dB abaixo da voz | **−18 dB sob a fala** (*ducking*), −10 dB sem fala |
 
@@ -146,6 +151,7 @@ O master continua em −14 LUFS e pico ≤ −1 dBTP (DS 4.6). Estes números su
 | **Ponte de som antes de efeito sonoro:** o ambiente real da próxima cena (rua, sino, água, multidão) entra 3 a 12 quadros antes da imagem | [externo] J-cut · [DS] Cinema: ambiente do lugar |
 | *Whoosh* não vai em todo corte: só nas transições escolhidas | [DS] 4.4 |
 | Kit de transição: `design-system/sons/externos/` (`PDX_*`, CC0) | Instalado em 28/10/2026 |
+| Kit "SFX virais" (`PDX_faaah`, `PDX_punch`, `PDX_vine_boom`, `PDX_magic_reveal`, `PDX_woosh`, `PDX_ding`): origem, licença e limites em `design-system/sons/externos/README.md`. Faaah e Vine boom: no máximo 1 dos dois por Reel, só em perrengue ou surpresa real | Pedido do Diego, 02/11/2026 |
 | O som bate no **pico do movimento** (desfoque máximo, centro da tela), não no início | [externo] |
 | Som curto, ataque rápido, cauda curta. Não repetir o mesmo som em toda transição | [externo] |
 | Pausa da trilha nos momentos de fala real (Marina, som do lugar) | [QA] churros |
