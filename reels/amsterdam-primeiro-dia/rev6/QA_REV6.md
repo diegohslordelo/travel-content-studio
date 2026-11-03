@@ -24,7 +24,15 @@ O resto (cenas, Marina com o vinho, legendas, sons de transição e CTA) é igua
 
 ## Medido no vídeo final
 
-Preenchido depois do render (`scripts/conferir.py`).
+| Ponto | Resultado |
+|---|---|
+| Formato | 1080 × 1920, 30 qps, H.264 CRF 10 + AAC 320 kb/s 48 kHz, **60,57 s**, 322 MB ✅ |
+| Áudio | **−14,1 LUFS**, pico **−1,3 dBTP**, 0 amostras acima de −1 dBFS, 0 em 0 dBFS ✅ |
+| Legendas | 88 grupos de 1 linha; a maior com 806 px ✅ |
+| Gancho | Quadros em 0,2 · 1,0 · 1,8 · 2,5 s: as linhas entram na fala e o logotipo em "primeiro dia" ✅ |
+| Placar | Nenhum Placar, etiqueta ou som de moeda no vídeo ✅ |
+
+Arquivos: `reel_amsterdam-primeiro-dia_rev6.mp4` (final), `reel_amsterdam-primeiro-dia_rev6_previa.mp4`, `capa_amsterdam-primeiro-dia_rev6.jpg`, `qa_frames/`. Legendas do post: `../legenda_post.md`.
 
 ## Pendências (decisão do Diego)
 
