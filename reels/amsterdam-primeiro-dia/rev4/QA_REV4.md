@@ -20,7 +20,24 @@
 
 ## Medido no vídeo final
 
-Preenchido depois do render (`scripts/conferir.py`).
+| Ponto | Resultado |
+|---|---|
+| Formato | 1080 × 1920, 30 qps, H.264 CRF 10 + AAC 320 kb/s 48 kHz, **60,57 s**, 313 MB ✅ |
+| Áudio | **−14,0 LUFS**, pico **−1,3 dBTP**, 0 amostras acima de −1 dBFS ✅ |
+| Legendas | 88 grupos de 1 linha; a maior com 806 px ✅ |
+| Tremor dos planos novos | Monumento 0,09 · stroopwafel 0,31 · Guinness 0,60 · mesa 0,06 ✅ |
+
+## Proposta em aprovação: a Marina com o vinho
+
+Pedido do Diego (03/11/2026): ele subiu no Drive o IMG_1499 (a Marina com o vinho; o arquivo é igual ao do acervo) e pediu uma prévia antes de substituir. Prévia: `previa_marina_vinho.mp4` (40–48 s). O `cenas.json` já está com essa versão; **o vídeo da REV4 ainda não**:
+
+| Cena | REV4 entregue | Proposta |
+|---|---|---|
+| Mesa (IMG_1497) | 41,80–44,67 s | 41,80–43,77 s ("batizado com a minha primeira cerveja de Amsterdã") |
+| Marina com o vinho (IMG_1499, 4,3 s, o gole) | — | 43,77–45,77 s ("e Marina pegou um vinho. E depois nós vamos") |
+| Red Light | 44,67–47,77 s | 45,77–47,77 s, entra em "volta" com o chicote |
+
+Se o Diego não aprovar, volta o `cenas.json` da REV4 (commit anterior).
 
 ## Conferir no ouvido
 

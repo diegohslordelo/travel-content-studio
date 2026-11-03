@@ -418,12 +418,26 @@
     1.0,
     1.04
    ],
-   "sai": "chicote",
    "nota": "cerveja e a taça de vinho da Marina (IMG_1497, 3,0 s): REV4 usa o plano desde 0,0 s; a fusão virou chicote porque o plano não tem os 0,3 s extras que a fusão pede"
   },
   {
+   "id": "marina_vinho",
+   "ini": "f09:marina-0.06",
+   "sai": "chicote",
+   "video": {
+    "fonte": "IMG_1499",
+    "in": 4.3,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.03
+   ],
+   "nota": "a Marina tomando o vinho (IMG_1499, que o Diego subiu no Drive em 03/11/2026), em 'e Marina pegou um vinho'"
+  },
+  {
    "id": "red_light",
-   "ini": "f10:e-0.11",
+   "ini": "f10:volta-0.06",
    "entra": "chicote",
    "video": {
     "fonte": "IMG_1519",
@@ -698,7 +712,7 @@
   },
   {
    "som": "PDX_swish",
-   "em": "f10:e-0.11",
+   "em": "f10:volta-0.06",
    "alinhar": "inicio",
    "rel_db": -6,
    "nota": "chicote: do bar para a Red Light (REV4)"
