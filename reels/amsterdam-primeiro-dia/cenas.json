@@ -23,13 +23,13 @@
    "ISSO É",
    "TUDO",
    "O QUE FIZEMOS NO NOSSO",
-   "EM AMSTERDÃ"
+   "EM AMSTERDAM"
   ],
   "tamanhos": [
    90,
    180,
    74,
-   150
+   140
   ],
   "topos": [
    272,
@@ -575,7 +575,7 @@
   }
  ],
  "legendas": [
-  "~Isso é tudo o que fizemos no nosso primeiro dia em Amsterdã.",
+  "~Isso é tudo o que fizemos no nosso primeiro dia em Amsterdam.",
   "A gente pousou",
   "às *duas e meia*",
   "e pegamos um *ônibus*",
@@ -623,7 +623,7 @@
   "E lá bem pertinho",
   "nós fomos comer",
   "o biscoito mais famoso",
-  "de Amsterdã,",
+  "de Amsterdam,",
   "o *Stroopwafel*,",
   "que é um biscoito",
   "recheado com *caramelo*",
@@ -636,7 +636,7 @@
   "pra eu ser batizado",
   "com a minha",
   "*primeira cerveja*",
-  "de Amsterdã",
+  "de Amsterdam",
   "e Marina",
   "pegou um *vinho*",
   "E depois nós vamos",
@@ -650,12 +650,12 @@
   "mais *importante*",
   "da cidade,",
   "o *McDonald's*",
-  "de Amsterdã.",
+  "de Amsterdam.",
   "Esse foi só",
   "o *primeiro*",
   "dos *três dias*",
   "que nós passamos",
-  "em Amsterdã,",
+  "em Amsterdam,",
   "então se você",
   "quer ver tudo,",
   "o vídeo já tá",
@@ -762,5 +762,9 @@
   "nota": "Etiqueta de valor do DS V2 (2.6) ao lado do Placar, em 80% e sem o '≈ R$' para caber até x 944 (pedido do Diego: 'folhinha de recibo pequena, do lado do contador')"
  },
  "sem_placar": true,
- "sem_placar_nota": "REV6 (pedido do Diego, 03/11/2026): 'tire o placar, só vai ter isso no vídeo do YouTube'. Placar, etiquetas de valor e os sons de moeda/tique saem do Reel; os valores ficam aqui só como registro e na legenda do post."
+ "sem_placar_nota": "REV6 (pedido do Diego, 03/11/2026): 'tire o placar, só vai ter isso no vídeo do YouTube'. Placar, etiquetas de valor e os sons de moeda/tique saem do Reel; os valores ficam aqui só como registro e na legenda do post.",
+ "grafia": {
+  "Amsterdã": "Amsterdam"
+ },
+ "grafia_nota": "REV7 (pedido do Diego, 03/11/2026): na tela, 'Amsterdam' em vez de 'Amsterdã' (a fala não muda)"
 }

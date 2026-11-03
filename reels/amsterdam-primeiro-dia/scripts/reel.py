@@ -91,6 +91,9 @@ def contexto():
     return pal, Ancoras(pal, voz_s), voz_s
 
 
+GRAFIA = {}
+
+
 def corrigidas(pal, corr):
     """Texto da legenda: a fala gravada, com a grafia certa dos nomes que o Whisper escreveu errado."""
     out, usadas = [], set()
@@ -100,6 +103,9 @@ def corrigidas(pal, corr):
         if k in corr and k not in usadas:
             t = corr[k]; usadas.add(k)
         out.append(dict(w, texto_leg=t))
+    for w in out:  # grafia escolhida para a tela em todas as ocorrências (ex.: Amsterdã → Amsterdam)
+        for a, b in GRAFIA.items():
+            w["texto_leg"] = w["texto_leg"].replace(a, b)
     falta = set(corr) - usadas
     if falta:
         sys.exit(f"correções sem palavra: {falta}")
@@ -182,6 +188,7 @@ def plano_grades(c, A, total):
 def props():
     pal0, A, voz_s = contexto()
     c = ler("cenas.json")
+    GRAFIA.update(c.get("grafia", {}))
     pal = corrigidas(pal0, c.get("correcoes", {}))
     total = voz_s
     quadros = int(round(total * FPS))
