@@ -92,7 +92,9 @@
     },
     {
      "fonte": "IMG_1476-1",
-     "in": 0.2
+     "in": 0.2,
+     "zoom": 1.22,
+     "foco_y": 0.0
     },
     {
      "fonte": "IMG_1495",
@@ -347,12 +349,15 @@
    "ini": "f08:o#2-0.06",
    "video": {
     "fonte": "IMG_1476-1",
-    "in": 0.2
+    "in": 0.2,
+    "zoom": 1.22,
+    "foco_y": 0.0
    },
    "kb": [
     1.0,
     1.04
-   ]
+   ],
+   "nota": "zoom no topo: a base do quadro tem os logos de Instagram e TikTok da loja"
   },
   {
    "id": "stroopwafel_balcao",

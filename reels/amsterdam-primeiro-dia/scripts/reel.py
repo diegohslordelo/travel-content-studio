@@ -246,7 +246,9 @@ def extrair(v, nq, saida, W, H):
         xexp = f"{x0:.1f}" if abs(x1 - x0) < 1 else f"'{x0:.1f}+({x1 - x0:.1f})*min(1,t/{dt:.3f})'"
         crop = f"crop={cw}:{h}:{xexp}:0,"
     else:
-        crop = ""
+        # vertical: entra inteiro; 'zoom' + 'foco_y' recortam uma parte (ex.: tirar logos de redes sociais da base do quadro)
+        z = v.get("zoom", 1.0)
+        crop = f"crop=iw/{z}:ih/{z}:(iw-iw/{z})*{v.get('foco', 0.5)}:(ih-ih/{z})*{v.get('foco_y', 0.5)}," if z > 1 else ""
     base = f"{TM},{crop}scale={W}:{H}:flags=lanczos"
     estab = ""
     if v.get("estabilizar"):
