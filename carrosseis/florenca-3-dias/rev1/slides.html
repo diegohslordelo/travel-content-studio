@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Carrossel Florença em 3 dias · REV1</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="../../../design-system/bundle/pd-bundle.css">
+<style>
+/* Só tokens do DS V2.1 (cores, fontes, tamanhos, espaços, raios, sombras). Canvas 1080 × 1440 (DS 3.x, 3:4). */
+body{margin:0;background:#26292F}
+.slide{position:relative;width:1080px;height:1440px;overflow:hidden;background:var(--pd-p);color:var(--pd-n);margin:0 0 40px}
+.slide.pd-paper::after{opacity:.04} /* fibra 4% */
+.grain{position:absolute;inset:0;background:var(--pd-grain);opacity:.05;mix-blend-mode:overlay;pointer-events:none;z-index:50}
+/* contador: x 1000 alinhado à direita · y 80 · Plex Mono 30 */
+.count{position:absolute;right:80px;top:64px;font:500 30px/1.3 var(--pd-fm);letter-spacing:.02em;color:var(--pd-n5);z-index:30}
+/* etiqueta de série: mini-placa 48 px, Condensed 600 28 px +8%, face amarela, sem módulo */
+.serie{position:absolute;left:80px;top:60px;height:48px;padding:0 16px;display:flex;align-items:center;background:var(--pd-y);border-radius:10px;box-shadow:var(--pd-bevel),0 3px 0 rgba(0,0,0,.25);font:600 28px/1 var(--pd-fd);letter-spacing:.08em;text-transform:uppercase;color:var(--pd-n);z-index:30}
+/* Rota: linha amarela contínua de 8 px em y 1360, atravessa a borda e continua no slide seguinte */
+.rota{position:absolute;left:0;right:0;top:1356px;height:8px;background:var(--pd-y);z-index:20}
+.on-photo{color:var(--pd-r);text-shadow:0 2px 0 rgba(0,0,0,.35),0 0 24px rgba(0,0,0,.45)}
+/* H2 · Body · micro */
+.h2{position:absolute;left:80px;top:168px;width:920px;font:700 80px/.95 var(--pd-fd);margin:0}
+.h2 small{display:block;font:500 30px/1.3 var(--pd-fm);letter-spacing:.02em;color:var(--pd-n5);text-transform:uppercase;margin-top:16px}
+.body{font:500 44px/1.3 var(--pd-ft)}
+.micro{font:500 30px/1.3 var(--pd-fm);letter-spacing:.02em;text-transform:uppercase}
+/* Fotografia: foto radius-photo com margem 80, legenda Barlow 500 40 abaixo */
+.photo{position:absolute;left:80px;top:160px;width:920px;height:920px;border-radius:24px;overflow:hidden;background:var(--pd-n)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.legenda{position:absolute;left:80px;top:1128px;width:920px;font:500 40px/1.3 var(--pd-ft);color:var(--pd-n)}
+.legenda b{font-weight:700}
+/* Placa P (50%) encostada na base esquerda da foto, sobrepondo 24 px */
+.placaP{left:104px!important;top:auto!important;bottom:336px;transform-origin:0 100%;scale:.75}
+/* Status VALE: ✓ verde sobre papel */
+.status{position:absolute;right:104px;top:184px;display:flex;align-items:center;gap:12px;padding:12px 20px;background:var(--pd-r);border-radius:10px;box-shadow:0 1px 1px rgba(0,0,0,.2),0 14px 26px -10px rgba(0,0,0,.5);font:700 40px/1 var(--pd-fd);letter-spacing:.06em;color:var(--pd-g);z-index:25}
+.status svg{width:40px;height:40px}
+/* Roteiro: rota vertical com paradas numeradas */
+.route{position:absolute;left:80px;top:400px;width:920px}
+.route:before{content:"";position:absolute;left:26px;top:30px;bottom:30px;width:8px;background:var(--pd-y)}
+.stop{position:relative;display:flex;gap:40px;align-items:flex-start;margin-bottom:56px}
+.stop .n{flex:none;width:60px;height:60px;border-radius:50%;background:var(--pd-n);color:var(--pd-y);display:grid;place-items:center;font:700 40px/1 var(--pd-fdata);position:relative;z-index:1}
+.stop h3{margin:2px 0 0;font:600 56px/1 var(--pd-fd);letter-spacing:.02em}
+.stop p{margin:10px 0 0;font:500 40px/1.25 var(--pd-ft);color:var(--pd-n5)}
+.stop p b{color:var(--pd-n);font-weight:700}
+.food{position:absolute;left:80px;top:1232px;width:920px;font:500 40px/1.3 var(--pd-ft)}
+.food b{font-weight:700}
+/* Comparação: dois recibos lado a lado */
+.cmp{position:absolute;top:400px;width:440px}
+.cmp .pd-receipt__body{padding:36px 36px 26px}
+.cmp .row{padding:18px 0 0}
+.cmp .row small{display:block;font:500 30px/1 var(--pd-fm);letter-spacing:.06em;color:var(--pd-n5);text-transform:uppercase}
+.cmp .row b{display:block;font:700 44px/1.1 var(--pd-ft);margin-top:6px}
+.cmp .row b.v{font:700 56px/1 var(--pd-fdata)}
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<section class="slide" id="s01">
+  <div class="photo" style="inset:0;width:auto;height:auto;border-radius:0"><img src="../fonte/capa_duomo_piazzale.jpg" style="object-position:50% 50%;transform:scale(1.55);transform-origin:57% 62%"></div>
+  <div class="pd-scrim"></div>
+  <div class="serie">Roteiro</div>
+  <div class="count on-photo">01 / 14</div>
+  <div style="position:absolute;left:80px;bottom:200px;display:flex;flex-direction:column;gap:24px;z-index:25">
+    <div class="micro on-photo">por pessoa · hotel incluso · dez/2024<br>43,7731° N · 11,2560° E</div>
+    <div class="pd-plate" style="position:relative;left:0;top:0">
+      <div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__label">Florença em 3 dias</div><div class="pd-plate__dest">€ x</div></div>
+      <div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div>
+    </div>
+  </div>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- CUSTO -->
+<section class="slide pd-paper" id="s02">
+  <div class="serie">Roteiro</div><div class="count">02 / 14</div>
+  <h2 class="h2">Quanto custou, por pessoa<small>Florença · 28 a 31/12/2024 · 3 noites</small></h2>
+  <div class="pd-receipt" style="left:165px;top:330px;transform-origin:0 0;scale:1.25">
+    <div class="pd-receipt__body">
+      <div class="pd-receipt__head"><b>FLORENÇA · 3 DIAS</b>valores em euro · por pessoa</div>
+      <div class="pd-receipt__line"><span>Hotel · 3 noites</span><span>x</span></div>
+      <div class="pd-receipt__line"><span>Comida e bebida</span><span>x</span></div>
+      <div class="pd-receipt__line"><span>Ônibus</span><span>x</span></div>
+      <div class="pd-receipt__line"><span>Jardins de Boboli</span><span>x</span></div>
+      <div class="pd-receipt__line"><span>Duomo</span><span>0,00</span></div>
+      <div class="pd-receipt__tot"><small>TOTAL</small><div><b>€ x</b><em>≈ R$ x</em></div></div>
+      <div class="pd-receipt__foot">HOTEL: R$ 4.721 P/ 5 = R$ 944,20<br>CIVICO 71 · SANTA CROCE<br>€ 1 = R$ x · DATA A CONFIRMAR</div>
+    </div>
+    <div class="pd-receipt__teeth"></div>
+  </div>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- ROTEIRO DIA 1 -->
+<section class="slide pd-paper" id="s03">
+  <div class="serie">Roteiro</div><div class="count">03 / 14</div>
+  <h2 class="h2">Dia 1 · O centro a pé<small>28/12/2024</small></h2>
+  <div class="route">
+    <div class="stop"><span class="n">1</span><div><h3>Duomo por fora</h3><p>grátis</p></div></div>
+    <div class="stop"><span class="n">2</span><div><h3>Piazza della Signoria</h3><p>grátis</p></div></div>
+    <div class="stop"><span class="n">3</span><div><h3>All'Antico Vinaio</h3><p>almoço · <b>€ x</b></p></div></div>
+    <div class="stop"><span class="n">4</span><div><h3>Ponte Vecchio</h3><p>grátis · atravessamos a pé</p></div></div>
+    <div class="stop"><span class="n">5</span><div><h3>Ponte alle Grazie</h3><p>grátis · pôr do sol</p></div></div>
+  </div>
+  <p class="food">Comida no dia 1: <b>€ x</b> ≈ R$ x</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- DUOMO POR FORA -->
+<section class="slide pd-paper" id="s04">
+  <div class="serie">Roteiro</div><div class="count">04 / 14</div>
+  <div class="photo"><img src="../fonte/duomo_fora.jpg" style="object-position:50% 40%"></div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Duomo</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda"><b>Grátis.</b> No primeiro dia, só por fora: a fila para entrar estava enorme. Voltamos no dia 3, de manhã.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- SIGNORIA + ALMOÇO -->
+<section class="slide pd-paper" id="s05">
+  <div class="serie">Roteiro</div><div class="count">05 / 14</div>
+  <div class="photo"><img src="../fonte/signoria.jpg" style="object-position:50% 45%"></div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Signoria</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda"><b>Grátis.</b> Palazzo Vecchio e estátuas ao ar livre. Pertinho dali, almoço no <b>All'Antico Vinaio</b>: € x.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- PONTE VECCHIO -->
+<section class="slide pd-paper" id="s06">
+  <div class="serie">Roteiro</div><div class="count">06 / 14</div>
+  <div class="photo"><img src="../fonte/ponte_vecchio_por_do_sol.jpg" style="object-position:50% 55%"></div>
+  <div class="status"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21l9 9 17-20"/></svg>VALE</div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Ponte Vecchio</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda"><b>Grátis.</b> Atravessamos a Ponte Vecchio e vimos o pôr do sol da Ponte alle Grazie, com ela de frente.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- ROTEIRO DIA 2 -->
+<section class="slide pd-paper" id="s07">
+  <div class="serie">Roteiro</div><div class="count">07 / 14</div>
+  <h2 class="h2">Dia 2 · Mercado e jardins<small>29/12/2024</small></h2>
+  <div class="route">
+    <div class="stop"><span class="n">1</span><div><h3>Mercato Centrale</h3><p>café da manhã · <b>€ x</b></p></div></div>
+    <div class="stop"><span class="n">2</span><div><h3>Ponte Vecchio de novo</h3><p>grátis · pela casa de Galileu</p></div></div>
+    <div class="stop"><span class="n">3</span><div><h3>Jardins de Boboli</h3><p><b>€ x</b> · a tarde inteira</p></div></div>
+    <div class="stop"><span class="n">4</span><div><h3>Ponte Santa Trinita</h3><p>grátis · pôr do sol</p></div></div>
+    <div class="stop"><span class="n">5</span><div><h3>Janelinha do vinho</h3><p><b>€ x</b> · antes do jantar</p></div></div>
+  </div>
+  <p class="food">Comida no dia 2: <b>€ x</b> ≈ R$ x</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- MERCATO CENTRALE + DICA -->
+<section class="slide pd-paper" id="s08">
+  <div class="serie">Roteiro</div><div class="count">08 / 14</div>
+  <h2 class="h2">Manhã no Mercato Centrale<small>dia 2 · café da manhã</small></h2>
+  <p class="body" style="position:absolute;left:80px;top:420px;width:920px;margin:0">Tomamos café sem pressa e andamos pelas bancas, vendo o que cada uma tinha de melhor.</p>
+  <div class="pd-note pd-paper" style="left:120px;top:760px;z-index:25"><span class="pd-note__t">dica: quer ver o David?</span><span class="pd-note__t">compre a Accademia antes.</span></div>
+  <p class="legenda" style="top:1080px">A Galleria dell'Accademia fica perto do mercado. A viagem foi de última hora e não achamos ingresso.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- BOBOLI -->
+<section class="slide pd-paper" id="s09">
+  <div class="serie">Roteiro</div><div class="count">09 / 14</div>
+  <div class="photo"><img src="../fonte/boboli.jpg" style="object-position:50% 55%"></div>
+  <div class="status"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21l9 9 17-20"/></svg>VALE</div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Boboli</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda"><b>€ x.</b> É imenso: reserve a tarde inteira. Com o Palazzo Pitti, que fica lá dentro, reserve ainda mais tempo.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- SANTA TRINITA -->
+<section class="slide pd-paper" id="s10">
+  <div class="serie">Roteiro</div><div class="count">10 / 14</div>
+  <div class="photo"><img src="../fonte/santa_trinita.jpg" style="object-position:50% 45%"></div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Santa Trinita</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda"><b>Grátis.</b> Pôr do sol de um lado, Ponte Vecchio do outro. Na volta, vinho na janelinha: € x.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- ROTEIRO DIA 3 -->
+<section class="slide pd-paper" id="s11">
+  <div class="serie">Roteiro</div><div class="count">11 / 14</div>
+  <h2 class="h2">Dia 3 · Do Duomo à Piazzale<small>30/12/2024</small></h2>
+  <div class="route">
+    <div class="stop"><span class="n">1</span><div><h3>Duomo por dentro</h3><p>grátis · só a catedral</p></div></div>
+    <div class="stop"><span class="n">2</span><div><h3>Bairro de San Lorenzo</h3><p>grátis · almoço na rua <b>€ x</b></p></div></div>
+    <div class="stop"><span class="n">3</span><div><h3>Mercado: vinhos</h3><p><b>€ x</b> · para o pôr do sol</p></div></div>
+    <div class="stop"><span class="n">4</span><div><h3>Piazzale Michelangelo</h3><p>grátis · tarde e pôr do sol</p></div></div>
+  </div>
+  <p class="food">Comida no dia 3: <b>€ x</b> ≈ R$ x</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- DUOMO POR DENTRO -->
+<section class="slide pd-paper" id="s12">
+  <div class="serie">Roteiro</div><div class="count">12 / 14</div>
+  <div class="photo"><img src="../fonte/duomo_dentro.jpg" style="object-position:50% 40%"></div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Duomo</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda"><b>A catedral é grátis</b>, sem reserva. Cúpula, campanário e batistério são pagos: não fomos.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- PIAZZALE -->
+<section class="slide pd-paper" id="s13">
+  <div class="serie">Roteiro</div><div class="count">13 / 14</div>
+  <div class="photo"><img src="../fonte/piazzale.jpg" style="object-position:50% 62%"></div>
+  <div class="status"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21l9 9 17-20"/></svg>VALE</div>
+  <div class="pd-plate pd-plate--one placaP"><div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Piazzale</div></div><div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div></div>
+  <p class="legenda"><b>Grátis.</b> O melhor pôr do sol da cidade, com Florença inteira na frente. Levamos vinho do mercado.</p>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+<!-- ENCERRAMENTO -->
+<section class="slide pd-paper" id="s14">
+  <div class="serie">Roteiro</div><div class="count">14 / 14</div>
+  <h2 class="h2">Florença em 3 dias: € x<small>por pessoa · ≈ R$ x · hotel incluso</small></h2>
+  <div class="pd-note pd-paper" style="left:120px;top:400px"><span class="pd-note__t">o que não pula:</span><span class="pd-note__t">pôr do sol na</span><span class="pd-note__t">piazzale.</span>
+    <svg class="mark" style="right:-74px;top:-40px;width:110px;height:110px;color:#147A44" viewBox="0 0 110 110"><path d="M22 58l20 22 46-56"/><path d="M55 4C20 4 4 30 6 56s26 50 54 48 46-24 44-52S84 2 50 6"/></svg></div>
+  <div class="body" style="position:absolute;left:80px;top:720px;width:920px;font-size:40px">
+    <p style="margin:0 0 24px">Jantar de despedida: <b>uma boa massa</b> para fechar Florença.</p>
+    <p style="margin:0">No <b>ônibus</b>, pague a passagem antes de sentar. A gente esqueceu e levou <b>€ 40</b> de multa cada.</p>
+  </div>
+  <div class="pd-plate pd-plate--s pd-plate--one" style="left:80px;top:1040px;transform-origin:0 0;scale:.75">
+    <div class="pd-plate__face"><i class="pd-rivet t"></i><i class="pd-rivet b"></i><div class="pd-plate__dest">Salva pra viagem</div></div>
+    <div class="pd-plate__mod"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M8 41h50V18l38 32-38 32V59H8z"/></svg></div>
+  </div>
+  <svg class="pd-one" viewBox="0 0 100 100" style="position:absolute;left:904px;top:1168px;height:96px;z-index:25" aria-label="1º"><path class="num" fill="#121317" d="M26 4h22v96H26V30l-14 7V16z"/><g><circle class="sun" cx="76" cy="17" r="15" fill="#FFC21A"/></g><rect class="bar" x="58.7" y="38" width="34.5" height="5.5" fill="#FFC21A"/></svg>
+  <div class="rota"></div><div class="grain"></div>
+</section>
+
+</body>
+</html>
