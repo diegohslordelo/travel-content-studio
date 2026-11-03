@@ -274,7 +274,7 @@ export const ReelAmsterdam1: React.FC<PropsAMS> = (p) => {
       </div>
       <Grao q={q} />
       {/* Placar do Dia (DS V2, 2.5): hora de cada ponto e gasto acumulado do dia, como no vlog do YouTube */}
-      <Placar valores={p.placar.valores} ligar={p.placar.ligar} refLufs={p.mix.voz_lufs} som={false} />
+      {p.placar.valores.length > 0 && <Placar valores={p.placar.valores} ligar={p.placar.ligar} refLufs={p.mix.voz_lufs} som={false} />}
       {/* o que entrou no Placar: Etiqueta de valor do DS (2.6) ao lado dele, reduzida (pedido do Diego para este Reel) */}
       {p.etiquetas.map((e, i) => (
         <div key={i} style={{ position: "absolute", inset: 0, scale: String(p.etiqueta.escala), transformOrigin: `${p.etiqueta.x}px ${p.etiqueta.y}px` }}>

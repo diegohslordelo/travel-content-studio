@@ -200,9 +200,9 @@ def props():
         "gancho": {"linhas": g["linhas"], "tamanhos": g["tamanhos"], "tempos": [round(A(x), 3) for x in g["tempos"]],
                    "cores": [AMBAR if x == "ambar" else None for x in g["cores"]], "topos": g["topos"], "fim": round(A(g["fim"]), 3),
                    "placa": {"destino": g["placa"]["destino"], "entrada": round(A(g["placa"]["entrada"]) * 1000), "saida": round(A(g["placa"]["saida"]) * 1000)}},
-        "placar": {"valores": valores, "ligar": valores[0]["em"]},
+        "placar": {"valores": [] if c.get("sem_placar") else valores, "ligar": valores[0]["em"]},
         "etiquetas": [{"ini": round(A(v["em"]) * 1000) + 50, "fim": round(A(v["em"]) * 1000) + 50 + c["etiqueta"]["dur_ms"], **v["etiqueta"]}
-                      for v in c["placar"] if "etiqueta" in v],
+                      for v in c["placar"] if "etiqueta" in v and not c.get("sem_placar")],
         "etiqueta": {k: c["etiqueta"][k] for k in ("x", "y", "escala")},
         "cta": {"ini": round(A(c["grades"][1]["ini"]), 3), "rotulo": c["cta"]["rotulo"], "destino": c["cta"]["destino"],
                 "entrada": round((A(c["cta"]["entrada"]) - A(c["grades"][1]["ini"])) * 1000)},
@@ -344,7 +344,7 @@ def sons():
         eventos.append({"arq": arq, "som": ev["som"], "t": A(ev["em"]), "alinhar": ev.get("alinhar", "inicio"), "rel_db": ev["rel_db"], "nota": ev.get("nota", "")})
     # sons do Placar (como no vlog): moeda em soma de gasto, tick quando só a hora gira; o 1º valor (ligar) não tem som
     sp = c["sons_placar"]
-    for a, b in zip(c["placar"], c["placar"][1:]):
+    for a, b in ([] if c.get("sem_placar") else zip(c["placar"], c["placar"][1:])):
         soma = a["gasto"] != b["gasto"]
         eventos.append({"arq": os.path.join(SONS_DS, "PD_moeda_v1.wav" if soma else "PD_tick_v1.wav"), "som": "PD_moeda" if soma else "PD_tick",
                         "t": A(b["em"]) + (0.05 if soma else 0), "alinhar": "inicio", "rel_db": sp["moeda_db"] if soma else sp["tick_db"],

@@ -760,5 +760,7 @@
   "escala": 0.8,
   "dur_ms": 2600,
   "nota": "Etiqueta de valor do DS V2 (2.6) ao lado do Placar, em 80% e sem o '≈ R$' para caber até x 944 (pedido do Diego: 'folhinha de recibo pequena, do lado do contador')"
- }
+ },
+ "sem_placar": true,
+ "sem_placar_nota": "REV6 (pedido do Diego, 03/11/2026): 'tire o placar, só vai ter isso no vídeo do YouTube'. Placar, etiquetas de valor e os sons de moeda/tique saem do Reel; os valores ficam aqui só como registro e na legenda do post."
 }
