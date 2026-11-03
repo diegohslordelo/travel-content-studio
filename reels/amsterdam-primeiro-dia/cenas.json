@@ -411,18 +411,20 @@
    "ini": "f09:batizado+0.19",
    "video": {
     "fonte": "IMG_1497",
-    "in": 0.1,
+    "in": 0.0,
     "foco": 0.5
    },
    "kb": [
     1.0,
     1.04
-   ]
+   ],
+   "sai": "chicote",
+   "nota": "cerveja e a taça de vinho da Marina (IMG_1497, 3,0 s): REV4 usa o plano desde 0,0 s; a fusão virou chicote porque o plano não tem os 0,3 s extras que a fusão pede"
   },
   {
    "id": "red_light",
-   "ini": "f10:e-0.06",
-   "entra": "fusao",
+   "ini": "f10:e-0.11",
+   "entra": "chicote",
    "video": {
     "fonte": "IMG_1519",
     "in": 4.0,
@@ -695,11 +697,11 @@
    "nota": "luz de passagem: dia → noite"
   },
   {
-   "som": "PDX_ar_longo",
-   "em": "f10:e-0.06",
-   "alinhar": "pico",
-   "rel_db": -8,
-   "nota": "fusão: do bar para a Red Light"
+   "som": "PDX_swish",
+   "em": "f10:e-0.11",
+   "alinhar": "inicio",
+   "rel_db": -6,
+   "nota": "chicote: do bar para a Red Light (REV4)"
   },
   {
    "som": "PDX_riser",

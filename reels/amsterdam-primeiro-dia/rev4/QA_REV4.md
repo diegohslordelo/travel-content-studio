@@ -12,7 +12,9 @@
 | 4 | No lugar de você bebendo a cerveja, o vídeo enviado (IMG_1508) | Cena 17 (40,33–41,80 s, "Depois paramos no barzinho pra eu ser"): **IMG_1508 do Diego**, você sorrindo com a Guinness |
 | 5 | Máxima qualidade possível | Trechos da viagem em H.264 **CRF 10** (antes 15), recorte do Diego em VP9 **CRF 12** (antes 18), render final em H.264 **CRF 10** (antes 14), áudio AAC 320 kb/s. A compressão fica para o Instagram |
 
-**Cena do bar com 1,47 s:** o IMG_1508 enviado tem 1,74 s, e os últimos 0,25 s tremem e desfocam (aceleração 4,3). Sem esticar o vídeo, a cena usa os primeiros 1,47 s; a cena seguinte (a cerveja e o vinho na mesa) passa a entrar em "batizado" e fica com 2,93 s ("batizado com a minha primeira cerveja de Amsterdã e Marina pegou um vinho"). É a única imagem gravada abaixo de 2 s além do aeroporto (que já aparece no mergulho da grade).
+**Cena do bar com 1,47 s:** o IMG_1508 enviado tem 1,74 s, e os últimos 0,25 s tremem e desfocam (aceleração 4,3). Sem esticar o vídeo, a cena usa os primeiros 1,47 s; a cena seguinte (a cerveja e o vinho na mesa) passa a entrar em "batizado" e fica com 2,87 s ("batizado com a minha primeira cerveja de Amsterdã e Marina pegou um vinho"). É a única imagem gravada abaixo de 2 s além do aeroporto (que já aparece no mergulho da grade).
+
+**Transição para a Red Light:** com a cena da mesa mais longa, o IMG_1497 (3,0 s) não tinha os 0,3 s extras que a fusão exige. Sem esticar o plano, a fusão virou **chicote** (`PDX_swish`, −6 dB), e o corte entra 0,11 s antes de "E depois", dentro da faixa de 0,04–0,12 s.
 
 **Exceção deste Reel (não é regra geral):** o DS entra no gancho (placa do logotipo), no Placar e no CTA, por pedido do Diego. A regra "DS só no CTA" (CLAUDE.md, 6) não muda.
 
