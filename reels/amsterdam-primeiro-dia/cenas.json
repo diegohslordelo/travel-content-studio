@@ -64,7 +64,7 @@
     {
      "fonte": "IMG_1375",
      "in": 11.5,
-     "foco": 0.4,
+     "foco": 0.3,
      "estabilizar": true
     },
     {
@@ -175,7 +175,7 @@
    "video": {
     "fonte": "IMG_1375",
     "in": "continua",
-    "foco": 0.4,
+    "foco": 0.3,
     "estabilizar": true
    },
    "kb": [
@@ -547,7 +547,8 @@
   "*Palácio Real*.",
   "o Museu",
   "*Madame Tussauds*",
-  "e o *Monumento Nacional*.",
+  "e o *Monumento",
+  "*Nacional*.",
   "Pra forrar a barriga",
   "a gente encontrou logo",
   "uma das *batatas*",
