@@ -65,8 +65,8 @@
    "mergulho": "f02:A-0.42",
    "brilho": 0.92,
    "pop": [
-    0.03,
-    0.13
+    0.0,
+    0.045
    ],
    "tiles": [
     {
@@ -114,7 +114,8 @@
      "in": 6.2,
      "foco": 0.5
     }
-   ]
+   ],
+   "nota": "os 9 quadros entram em 0,36 s e a grade fecha em 'TUDO' (REV3: sem quadro preto no início)"
   },
   {
    "id": "cta",

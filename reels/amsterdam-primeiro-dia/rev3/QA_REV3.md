@@ -11,6 +11,8 @@
 | 3 | Capa com o mesmo gancho | A capa é o quadro em que o gancho está completo (texto branco + placa), 0,1 s antes da placa sair |
 | 4 | `keen` "um pouquinho antes" | O `keen` sobe até 0,90 s e corta seco em ≈ 0,97 s: esse corte é a batida que se ouve. Na REV2 ele caía no corte do gancho para o aeroporto (2,92 s); na REV3 cai **0,2 s antes (2,72 s, 6 quadros)**, no meio do mergulho, quando a câmera já está entrando no aeroporto |
 
+**Correção da revisão final (não pedida):** na REV2 os 9 vídeos da grade entravam um a cada 0,13 s e a grade só fechava em 1,1 s, então o **primeiro segundo tinha a tela quase toda preta**. Na REV3 eles entram um a cada 0,045 s e a grade fecha em "TUDO" (0,36 s), junto com o soco seco.
+
 **Placa no gancho sem *clack*:** o `keen` sobe exatamente nesse trecho (1,76–2,72 s); com o *clack* seriam dois efeitos a menos de 1,5 s (DS V2, 4.6).
 
 **Exceção deste Reel (não é regra geral):** além do Placar e do CTA, o DS entra no gancho com a placa do logotipo, por pedido do Diego. A regra "DS só no CTA" (CLAUDE.md, 6) não muda.
