@@ -4,7 +4,7 @@ Valores: Placar do vlog de Amsterdam no YouTube (REV3, branch `claude/eloquent-d
 
 **REV2 (03/11/2026):** a pizza (16:48, € 11,99) saiu do Placar do Reel a pedido do Diego, que agora fecha em **€ 78,85**. O dia inteiro custou € 90,84 com a pizza; a legenda mostra as duas contas para não contradizer o vlog.
 
-**Conferir antes de postar:** a batata da Manneken Pis está € 7,15 no Placar do vlog e € 7,50 no Recibo do vlog (ver `rev3/QA_REV3.md`, pendência 1). A legenda usa € 7,15.
+**Conferir antes de postar:** a batata da Manneken Pis está € 7,15 no Placar do vlog e € 7,50 no Recibo do vlog (ver `rev5/QA_REV5.md`, pendência 1). A legenda usa € 7,15.
 
 ## Instagram
 
