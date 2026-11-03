@@ -200,6 +200,9 @@ def props():
         "gancho": {"linhas": g["linhas"], "tamanhos": g["tamanhos"], "tempos": [round(A(x), 3) for x in g["tempos"]],
                    "cores": [AMBAR if x == "ambar" else None for x in g["cores"]], "topo": g["topo"], "fim": round(A(g["fim"]), 3)},
         "placar": {"valores": valores, "ligar": valores[0]["em"]},
+        "etiquetas": [{"ini": round(A(v["em"]) * 1000) + 50, "fim": round(A(v["em"]) * 1000) + 50 + c["etiqueta"]["dur_ms"], **v["etiqueta"]}
+                      for v in c["placar"] if "etiqueta" in v],
+        "etiqueta": {k: c["etiqueta"][k] for k in ("x", "y", "escala")},
         "cta": {"ini": round(A(c["grades"][1]["ini"]), 3), "rotulo": c["cta"]["rotulo"], "destino": c["cta"]["destino"],
                 "entrada": round((A(c["cta"]["entrada"]) - A(c["grades"][1]["ini"])) * 1000)},
         "mix": {"voz_lufs": round(voz_lufs, 2), "clack_db_rel": -6},

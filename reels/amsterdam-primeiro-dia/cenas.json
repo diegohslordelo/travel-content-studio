@@ -255,42 +255,42 @@
    "id": "batata",
    "ini": "f04:pra-0.06",
    "video": {
-    "fonte": "IMG_1449-1",
-    "in": 0.4
+    "fonte": "IMG_1446",
+    "in": 1.0
    },
    "kb": [
     1.0,
     1.03
-   ]
+   ],
+   "nota": "o atendente põe a batata no cone e leva ao molho (pedido do Diego, 03/11/2026)"
   },
   {
    "id": "manneken_pis",
    "ini": "f04:que-0.06",
    "sai": "chicote",
    "video": {
-    "fonte": "IMG_1444",
-    "in": 0.3,
-    "foco": 0.5
+    "fonte": "IMG_1449-1",
+    "in": 0.4
    },
    "kb": [
     1.0,
     1.03
-   ]
+   ],
+   "nota": "Marina com a batata (o cone tem o logo da Manneken Pis); a fachada saiu (pedido do Diego, 03/11/2026)"
   },
   {
    "id": "tonys",
    "ini": "f05:loja-0.06",
    "entra": "chicote",
    "video": {
-    "fonte": "IMG_1456",
-    "in": 13.0,
-    "foco": 0.5
+    "fonte": "IMG_1459-1",
+    "in": 0.3
    },
    "kb": [
     1.0,
     1.02
    ],
-   "nota": "dentro da loja (pedido do Diego, 03/11/2026): sala vermelha → corredor das barras"
+   "nota": "parede de torres de chocolate com as alavancas, o Diego puxando uma barra (pedido do Diego, 03/11/2026)"
   },
   {
    "id": "chocolates",
@@ -377,26 +377,28 @@
    "ini": "f08:com#2-0.06",
    "video": {
     "fonte": "IMG_1479",
-    "in": 3.0,
+    "in": 8.4,
     "foco": 0.4
    },
    "kb": [
     1.0,
     1.03
-   ]
+   ],
+   "nota": "Marina provando o stroopwafel (mordida em ≈ 8,7 s; pedido do Diego, 03/11/2026)"
   },
   {
-   "id": "praca_noite",
+   "id": "bar_cerveja",
    "ini": "f09:depois-0.06",
    "video": {
-    "fonte": "IMG_1491",
-    "in": 0.4,
-    "foco": 0.5
+    "fonte": "IMG_1507",
+    "in": 0.0,
+    "foco": 0.47
    },
    "kb": [
     1.0,
     1.03
-   ]
+   ],
+   "nota": "o Diego bebendo cerveja no bar (pedido do Diego, 03/11/2026, no lugar da praça com o bonde)"
   },
   {
    "id": "cerveja_vinho",
@@ -463,7 +465,11 @@
    "em": "f02:ônibus",
    "tempo": "14:38",
    "gasto": "€ 13,00",
-   "nota": "ônibus 397, € 13,00 (Placar do vlog)"
+   "nota": "ônibus 397, € 13,00 (Placar do vlog)",
+   "etiqueta": {
+    "euro": "+ € 13,00",
+    "rotulo": "ÔNIBUS"
+   }
   },
   {
    "em": "f02:hotel#2",
@@ -480,50 +486,70 @@
   {
    "em": "f02:praça#1",
    "tempo": "17:10",
-   "gasto": "€ 24,99",
-   "nota": "Praça Dam 17:10; o gasto inclui a New York Pizza (16:48, € 11,99), que não é citada na fala"
+   "gasto": "€ 13,00",
+   "nota": "Praça Dam 17:10, sem gasto (pedido do Diego, 03/11/2026: a pizza das 16:48, € 11,99, saiu do Placar)"
   },
   {
    "em": "f04:mannequin",
    "tempo": "17:36",
-   "gasto": "€ 32,14",
-   "nota": "Manneken Pis, + € 7,15 (Placar do vlog; o Recibo do vlog diz € 7,50)"
+   "gasto": "€ 20,15",
+   "nota": "Manneken Pis, + € 7,15 (Placar do vlog; o Recibo do vlog diz € 7,50)",
+   "etiqueta": {
+    "euro": "+ € 7,15",
+    "rotulo": "MANNEKEN PIS"
+   }
   },
   {
    "em": "f05:tonys",
    "tempo": "17:41",
-   "gasto": "€ 52,14",
-   "nota": "Tony's, + € 20,00"
+   "gasto": "€ 40,15",
+   "nota": "Tony's, + € 20,00",
+   "etiqueta": {
+    "euro": "+ € 20,00",
+    "rotulo": "TONY'S"
+   }
   },
   {
    "em": "f06:carvestrat",
    "tempo": "18:29",
-   "gasto": "€ 52,14",
+   "gasto": "€ 40,15",
    "nota": "Kalverstraat"
   },
   {
    "em": "f08:hans",
    "tempo": "18:49",
-   "gasto": "€ 61,64",
-   "nota": "Hans Egstorf, + € 9,50"
+   "gasto": "€ 49,65",
+   "nota": "Hans Egstorf, + € 9,50",
+   "etiqueta": {
+    "euro": "+ € 9,50",
+    "rotulo": "HANS EGSTORF"
+   }
   },
   {
    "em": "f09:barzinho",
    "tempo": "19:29",
-   "gasto": "€ 78,24",
-   "nota": "The Old Bell, + € 16,60"
+   "gasto": "€ 66,25",
+   "nota": "The Old Bell, + € 16,60",
+   "etiqueta": {
+    "euro": "+ € 16,60",
+    "rotulo": "CERVEJA E VINHO"
+   }
   },
   {
    "em": "f10:headlight",
    "tempo": "20:55",
-   "gasto": "€ 78,24",
+   "gasto": "€ 66,25",
    "nota": "Red Light District"
   },
   {
    "em": "f11:mcdonalds",
    "tempo": "21:21",
-   "gasto": "€ 90,84",
-   "nota": "McDonald's, + € 12,60 → total do dia 1"
+   "gasto": "€ 78,85",
+   "nota": "McDonald's, + € 12,60 → total do dia 1",
+   "etiqueta": {
+    "euro": "+ € 12,60",
+    "rotulo": "McDONALD'S"
+   }
   }
  ],
  "legendas": [
@@ -705,5 +731,12 @@
   "moeda_db": -8,
   "tick_db": -14,
   "nota": "Sons do Placar como no vlog: máquina de moeda em toda soma de gasto, tick quando só a hora gira. Um evento do Placar a menos de 1,5 s de outro efeito fica mudo (a mudança aparece na tela)."
+ },
+ "etiqueta": {
+  "x": 652,
+  "y": 250,
+  "escala": 0.8,
+  "dur_ms": 2600,
+  "nota": "Etiqueta de valor do DS V2 (2.6) ao lado do Placar, em 80% e sem o '≈ R$' para caber até x 944 (pedido do Diego: 'folhinha de recibo pequena, do lado do contador')"
  }
 }

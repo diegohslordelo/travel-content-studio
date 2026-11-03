@@ -10,6 +10,7 @@ import { Audio, Video } from "@remotion/media";
 import { AbsoluteFill, CalculateMetadataFunction, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { Placa } from "../ds/Placa";
 import { Placar, ValorPlacar } from "../ds/Placar";
+import { EtiquetaValor } from "../ds/Cards";
 import { Som } from "../ds/Som";
 import { GRADE_VIDEO, PALETA, TEXTO, TITULO, clamp, ease, easeIn, lerp } from "./estilo";
 
@@ -29,6 +30,8 @@ export type PropsAMS = {
   legendas: Grupo[];
   gancho: { linhas: string[]; tamanhos: number[]; tempos: number[]; cores: (string | null)[]; topo: number; fim: number };
   placar: { valores: ValorPlacar[]; ligar: number };
+  etiquetas: { ini: number; fim: number; euro: string; rotulo: string }[];
+  etiqueta: { x: number; y: number; escala: number };
   cta: { ini: number; rotulo: string; destino: string; entrada: number };
   mix: { voz_lufs: number; clack_db_rel: number };
   sfx: boolean;
@@ -45,6 +48,8 @@ export const propsVaziasAMS: PropsAMS = {
   legendas: [],
   gancho: { linhas: [], tamanhos: [], tempos: [], cores: [], topo: 300, fim: 0 },
   placar: { valores: [], ligar: 0 },
+  etiquetas: [],
+  etiqueta: { x: 652, y: 262, escala: 0.6 },
   cta: { ini: 0, rotulo: "", destino: "", entrada: 0 },
   mix: { voz_lufs: -16, clack_db_rel: -6 },
   sfx: false,
@@ -249,7 +254,13 @@ export const ReelAmsterdam1: React.FC<PropsAMS> = (p) => {
       </div>
       <Grao q={q} />
       {/* Placar do Dia (DS V2, 2.5): hora de cada ponto e gasto acumulado do dia, como no vlog do YouTube */}
-      <Placar valores={p.placar.valores} ligar={p.placar.ligar} refLufs={p.mix.voz_lufs} />
+      <Placar valores={p.placar.valores} ligar={p.placar.ligar} refLufs={p.mix.voz_lufs} som={false} />
+      {/* o que entrou no Placar: Etiqueta de valor do DS (2.6) ao lado dele, reduzida (pedido do Diego para este Reel) */}
+      {p.etiquetas.map((e, i) => (
+        <div key={i} style={{ position: "absolute", inset: 0, scale: String(p.etiqueta.escala), transformOrigin: `${p.etiqueta.x}px ${p.etiqueta.y}px` }}>
+          <EtiquetaValor euro={e.euro} real="" rotulo={e.rotulo} ini={e.ini} fim={e.fim} x={p.etiqueta.x} y={p.etiqueta.y} />
+        </div>
+      ))}
       <Legenda p={p} tS={tS} />
       <Gancho p={p} tS={tS} />
       {p.transicoes.map((tr, i) => (tr.tipo === "luz" ? <LuzPassagem key={i} q={q} corte={tr.q} /> : <Clarao key={i} q={q} corte={tr.q} />))}
