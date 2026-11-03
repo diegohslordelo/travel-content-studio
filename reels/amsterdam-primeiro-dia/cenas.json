@@ -39,9 +39,9 @@
   ],
   "tempos": [
    "0",
-   "0",
-   "0",
-   "0"
+   "f01:tudo-0.04",
+   "f01:o-0.04",
+   "f01:em-0.04"
   ],
   "cores": [
    null,
@@ -51,11 +51,11 @@
   ],
   "placa": {
    "destino": "PRIMEIRO DIA",
-   "entrada": "0-0.56",
+   "entrada": "f01:primeiro-0.06",
    "saida": "f02:A-0.34",
-   "nota": "logotipo (DS V2, 2.1, Marca) já assentado no 1º quadro: a Chegada termina no quadro 0 e o brilho de esmalte passa entre 0,14 e 0,74 s. Pedido do Diego (03/11/2026): o começo do vídeo igual à capa"
+   "nota": "logotipo (DS V2, 2.1, Marca) entra com a Chegada em 'primeiro dia', x 72 · y 640 (REV6: como na REV3, pedido do Diego, 03/11/2026)"
   },
-  "nota": "REV4: frase inteira, em branco, com o logotipo, desde o 1º quadro (igual à capa), pedido do Diego, 03/11/2026"
+  "nota": "REV6: cada linha entra quando é dita (como na REV3), texto todo branco, 'PRIMEIRO DIA' como logotipo. Pedido do Diego, 03/11/2026"
  },
  "grades": [
   {
@@ -66,7 +66,7 @@
    "brilho": 0.92,
    "pop": [
     0.0,
-    0.0
+    0.045
    ],
    "tiles": [
     {
@@ -115,7 +115,7 @@
      "foco": 0.5
     }
    ],
-   "nota": "REV4: os 9 quadros já estão na tela no 1º quadro (igual à capa)"
+   "nota": "os 9 quadros entram em 0,36 s e a grade fecha em 'TUDO' (como na REV3)"
   },
   {
    "id": "cta",
