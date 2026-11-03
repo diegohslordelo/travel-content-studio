@@ -48,7 +48,15 @@ O IMG_1507 é das 20:05 (uma Guinness, no mesmo bar onde eles ficaram das 19:28 
 
 ## Medido no vídeo final
 
-Preenchido depois do render (`scripts/conferir.py`): ver a tabela no fim.
+| Ponto | Resultado |
+|---|---|
+| Formato | 1080 × 1920, 30 qps, H.264 + AAC 48 kHz, **60,57 s** ✅ |
+| Áudio | **−14,0 LUFS**, pico **−1,3 dBTP**, 0 amostras acima de −1 dBFS, 0 em 0 dBFS ✅ |
+| Legendas | 88 grupos de 1 linha; o maior tem 806 px ("mais famosas da cidade,"), dentro de x 137–943 ✅ |
+| Etiquetas | Terminam em x ≈ 896, dentro da zona segura ✅ |
+| Tremor | Todos os trechos com p90 ≤ 1,32 ✅ |
+
+Arquivos: `reel_amsterdam-primeiro-dia_rev2.mp4`, `reel_amsterdam-primeiro-dia_rev2_previa.mp4`, `capa_amsterdam-primeiro-dia_rev2.jpg`, `qa_frames/`.
 
 ## Conferir no ouvido
 
