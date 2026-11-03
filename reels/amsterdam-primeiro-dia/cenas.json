@@ -18,36 +18,44 @@
   "f10:Headlight": "Red Light"
  },
  "gancho": {
-  "topo": 270,
   "fim": "f02:A-0.04",
   "linhas": [
    "ISSO É",
    "TUDO",
    "O QUE FIZEMOS NO NOSSO",
-   "PRIMEIRO DIA EM",
-   "AMSTERDÃ"
+   "EM AMSTERDÃ"
   ],
   "tamanhos": [
-   112,
-   236,
-   84,
-   112,
-   172
+   90,
+   180,
+   74,
+   150
+  ],
+  "topos": [
+   272,
+   362,
+   542,
+   830
   ],
   "tempos": [
    "0",
    "f01:tudo-0.04",
    "f01:o-0.04",
-   "f01:primeiro-0.04",
-   "f01:amsterdã-0.04"
+   "f01:em-0.04"
   ],
   "cores": [
    null,
-   "ambar",
    null,
    null,
-   "ambar"
-  ]
+   null
+  ],
+  "placa": {
+   "destino": "PRIMEIRO DIA",
+   "entrada": "f01:primeiro-0.06",
+   "saida": "f02:A-0.34",
+   "nota": "logotipo da marca (DS V2, 2.1, variante Marca) em 'primeiro dia', na posição oficial x 72 · y 640, com Chegada; sem clack (o keen sobe no mesmo trecho: 1 efeito a cada 1,5 s). Pedido do Diego, 03/11/2026"
+  },
+  "nota": "Gancho em uma cor só (branco) e 'PRIMEIRO DIA' com a placa do logotipo: pedido do Diego, 03/11/2026 (REV3)"
  },
  "grades": [
   {
@@ -664,10 +672,10 @@
   },
   {
    "som": "keen",
-   "em": "f02:A-0.04",
+   "em": "f02:A-0.24",
    "alinhar": "pico",
    "rel_db": -6,
-   "nota": "som do fim do gancho (CLAUDE.md, 7): pico no corte, no fim do mergulho na grade"
+   "nota": "som do fim do gancho (CLAUDE.md, 7): o corte seco do keen (pico) 0,2 s antes do corte, no meio do mergulho (pedido do Diego, 03/11/2026: 'um pouquinho antes')"
   },
   {
    "som": "PDX_swish",

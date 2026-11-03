@@ -198,7 +198,8 @@ def props():
         "diego": c["diego"], "legendaY": c["legendaY"],
         "legendas": legendas(c["legendas"], pal),
         "gancho": {"linhas": g["linhas"], "tamanhos": g["tamanhos"], "tempos": [round(A(x), 3) for x in g["tempos"]],
-                   "cores": [AMBAR if x == "ambar" else None for x in g["cores"]], "topo": g["topo"], "fim": round(A(g["fim"]), 3)},
+                   "cores": [AMBAR if x == "ambar" else None for x in g["cores"]], "topos": g["topos"], "fim": round(A(g["fim"]), 3),
+                   "placa": {"destino": g["placa"]["destino"], "entrada": round(A(g["placa"]["entrada"]) * 1000), "saida": round(A(g["placa"]["saida"]) * 1000)}},
         "placar": {"valores": valores, "ligar": valores[0]["em"]},
         "etiquetas": [{"ini": round(A(v["em"]) * 1000) + 50, "fim": round(A(v["em"]) * 1000) + 50 + c["etiqueta"]["dur_ms"], **v["etiqueta"]}
                       for v in c["placar"] if "etiqueta" in v],
@@ -438,7 +439,7 @@ def master():
 def capa():
     """Capa: o quadro em que o gancho está completo (FORMATOS_REELS.md, 4.1), tirado do vídeo final."""
     p = ler("_tmp/props.json")
-    t = p["gancho"]["tempos"][-1] + 0.35
+    t = p["gancho"]["placa"]["saida"] / 1000 - 0.1  # tudo na tela (texto e placa), antes da saída da placa e do mergulho
     sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{t:.3f}", "-i", f"{REV}/{NOME}_{REV}.mp4", "-frames:v", "1", "-q:v", "2", f"{REV}/capa_amsterdam-primeiro-dia_{REV}.jpg"])
 
 

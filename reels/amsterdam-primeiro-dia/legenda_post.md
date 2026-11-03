@@ -4,7 +4,7 @@ Valores: Placar do vlog de Amsterdam no YouTube (REV3, branch `claude/eloquent-d
 
 **REV2 (03/11/2026):** a pizza (16:48, € 11,99) saiu do Placar do Reel a pedido do Diego, que agora fecha em **€ 78,85**. O dia inteiro custou € 90,84 com a pizza; a legenda mostra as duas contas para não contradizer o vlog.
 
-**Conferir antes de postar:** a batata da Manneken Pis está € 7,15 no Placar do vlog e € 7,50 no Recibo do vlog (ver `rev2/QA_REV2.md`, pendência 1). A legenda usa € 7,15.
+**Conferir antes de postar:** a batata da Manneken Pis está € 7,15 no Placar do vlog e € 7,50 no Recibo do vlog (ver `rev3/QA_REV3.md`, pendência 1). A legenda usa € 7,15.
 
 ## Instagram
 
@@ -33,7 +33,7 @@ Cotação: € 1 = R$ 5,9978 (PTAX de 12/03/2026).
 ## TikTok
 
 ```
-Primeiro dia em Amsterdam por € 90,84 para dois (com a pizza do caminho) 🇳🇱 Batata, stroopwafel, Tony's, cerveja e até McDonald's. O vídeo completo dos 3 dias está no YouTube (link no perfil).
+Tudo o que fizemos no primeiro dia em Amsterdam e quanto gastamos 🇳🇱 Batata, Tony's, stroopwafel, cerveja e até McDonald's: € 78,85 para dois (€ 90,84 com a pizza do caminho). O vídeo completo dos 3 dias está no YouTube, link no perfil.
 
 #Amsterdam #viagemeuropa #quantocusta #roteiroamsterdam #primeirodia
 ```
@@ -43,13 +43,13 @@ Primeiro dia em Amsterdam por € 90,84 para dois (com a pizza do caminho) 🇳�
 Título (≤ 100 caracteres):
 
 ```
-Primeiro dia em Amsterdam: quanto custou? (€ 90,84 para dois)
+Primeiro dia em Amsterdam: tudo o que fizemos e quanto gastamos
 ```
 
 Descrição:
 
 ```
-Tudo o que a gente fez no primeiro dia em Amsterdam, com a hora e o gasto de cada parada. O vídeo completo dos 3 dias está no canal.
+Tudo o que a gente fez no primeiro dia em Amsterdam, com a hora e o gasto de cada parada: € 78,85 para dois (€ 90,84 com a pizza do caminho). O vídeo completo dos 3 dias está no canal.
 
 #Amsterdam #viagemeuropa #quantocusta
 ```

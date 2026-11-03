@@ -28,7 +28,15 @@ export type PropsAMS = {
   diego: { x: number; y: number; w: number; h: number };
   legendaY: number;
   legendas: Grupo[];
-  gancho: { linhas: string[]; tamanhos: number[]; tempos: number[]; cores: (string | null)[]; topo: number; fim: number };
+  gancho: {
+    linhas: string[];
+    tamanhos: number[];
+    tempos: number[];
+    cores: (string | null)[];
+    topos: number[];
+    fim: number;
+    placa?: { destino: string; entrada: number; saida: number };
+  };
   placar: { valores: ValorPlacar[]; ligar: number };
   etiquetas: { ini: number; fim: number; euro: string; rotulo: string }[];
   etiqueta: { x: number; y: number; escala: number };
@@ -46,7 +54,7 @@ export const propsVaziasAMS: PropsAMS = {
   diego: { x: 520, y: 924, w: 560, h: 996 },
   legendaY: 1080,
   legendas: [],
-  gancho: { linhas: [], tamanhos: [], tempos: [], cores: [], topo: 300, fim: 0 },
+  gancho: { linhas: [], tamanhos: [], tempos: [], cores: [], topos: [], fim: 0 },
   placar: { valores: [], ligar: 0 },
   etiquetas: [],
   etiqueta: { x: 652, y: 262, escala: 0.6 },
@@ -173,16 +181,28 @@ const Gancho: React.FC<{ p: PropsAMS; tS: number }> = ({ p, tS }) => {
   return (
     <div style={{ opacity: sai }}>
       <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 1250, background: "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0) 100%)" }} />
-      <div style={{ position: "absolute", left: 72, right: 72, top: g.topo, textShadow: "0 4px 30px rgba(0,0,0,0.55)" }}>
-        {g.linhas.map((l, k) => {
-          const e = g.tempos[k] <= 0 ? 1 : ease((tS - g.tempos[k]) / 0.16);
-          return (
-            <div key={k} style={{ font: `400 ${g.tamanhos[k]}px ${TITULO}`, lineHeight: 1.0, color: g.cores[k] ?? PALETA.branco, opacity: tS < g.tempos[k] ? 0 : e, translate: `0 ${(1 - e) * 24}px` }}>
-              {l}
-            </div>
-          );
-        })}
-      </div>
+      {g.linhas.map((l, k) => {
+        const e = g.tempos[k] <= 0 ? 1 : ease((tS - g.tempos[k]) / 0.16);
+        return (
+          <div
+            key={k}
+            style={{
+              position: "absolute",
+              left: 72,
+              right: 72,
+              top: g.topos[k],
+              font: `400 ${g.tamanhos[k]}px ${TITULO}`,
+              lineHeight: 1.0,
+              color: g.cores[k] ?? PALETA.branco,
+              textShadow: "0 4px 30px rgba(0,0,0,0.55)",
+              opacity: tS < g.tempos[k] ? 0 : e,
+              translate: `0 ${(1 - e) * 24}px`,
+            }}
+          >
+            {l}
+          </div>
+        );
+      })}
     </div>
   );
 };
@@ -263,6 +283,12 @@ export const ReelAmsterdam1: React.FC<PropsAMS> = (p) => {
       ))}
       <Legenda p={p} tS={tS} />
       <Gancho p={p} tS={tS} />
+      {p.gancho.placa && (
+        // "primeiro dia" com o logotipo da marca: placa PRIMEIRO DIA → (DS V2, 2.1, variante Marca), x 72 · y 640, Chegada
+        <Sequence from={0} durationInFrames={Math.round(p.gancho.fim * p.fps)} name="placa do logotipo (gancho)">
+          <Placa destino={p.gancho.placa.destino} modulo="seta" entrada={p.gancho.placa.entrada} saida={p.gancho.placa.saida} />
+        </Sequence>
+      )}
       {p.transicoes.map((tr, i) => (tr.tipo === "luz" ? <LuzPassagem key={i} q={q} corte={tr.q} /> : <Clarao key={i} q={q} corte={tr.q} />))}
       {/* CTA: placa de direção do DS V2 (verbo + módulo de seta), Chegada e clack */}
       <Sequence from={ctaQ} name="CTA (DS V2)">
