@@ -72,7 +72,7 @@ if passo in ("video", "tudo"):
         nqv = tr["quadros_video"]
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-c:v", "libvpx-vp9", "-i", f"fonte/recorte/{tr['fonte']}.webm", "-ss", f"{tr['in']:.4f}",
                         "-t", f"{nqv / FPS + 0.2:.4f}", "-an", "-vf", "fps=30,tpad=stop_mode=clone:stop=30,format=yuva420p", "-frames:v", str(nqv),
-                        "-c:v", "libvpx-vp9", "-pix_fmt", "yuva420p", "-b:v", "0", "-crf", "18", "-row-mt", "1", "-deadline", "good",
+                        "-c:v", "libvpx-vp9", "-pix_fmt", "yuva420p", "-b:v", "0", "-crf", "12", "-row-mt", "1", "-deadline", "good",
                         "-cpu-used", "4", "-auto-alt-ref", "0", clip], check=True)
         n = int(subprocess.run(["ffprobe", "-v", "error", "-count_frames", "-select_streams", "v:0", "-show_entries",
                                 "stream=nb_read_frames", "-of", "csv=p=0", clip], capture_output=True, text=True).stdout.strip() or 0)

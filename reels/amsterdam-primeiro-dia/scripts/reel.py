@@ -262,7 +262,7 @@ def extrair(v, nq, saida, W, H):
             f"{base},vidstabdetect=shakiness=7:accuracy=15:result={trf}", "-f", "null", "-"])
         estab = f",vidstabtransform=input={trf}:smoothing=18:optzoom=0:zoom=6:interpol=bicubic,unsharp=5:5:0.4"
     vf = f"{base}{estab},fps={FPS},setsar=1"
-    sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{t0:.3f}", "-i", arq, "-an", "-vf", vf, "-frames:v", str(nq), "-c:v", "libx264", "-crf", "15",
+    sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{t0:.3f}", "-i", arq, "-an", "-vf", vf, "-frames:v", str(nq), "-c:v", "libx264", "-crf", "10",
         "-preset", "fast", "-pix_fmt", "yuv420p", saida])
 
 
@@ -401,7 +401,7 @@ def render():
     os.makedirs("_tmp", exist_ok=True)
     cmd = ["npx", "remotion", "render", "src/index.ts", "ReelAmsterdam1", os.path.join(AQUI, "_tmp", "reel_sem_master.mov"),
            f"--props={os.path.join(AQUI, '_tmp', 'props.json')}", f"--public-dir={PUBLIC}", "--concurrency=4",
-           "--codec=h264", "--crf=14", "--audio-codec=pcm-16", "--log=warn", "--timeout=120000"]
+           "--codec=h264", "--crf=10", "--audio-codec=pcm-16", "--log=warn", "--timeout=120000"]
     if CHROME:
         cmd.append(f"--browser-executable={CHROME}")
     cmd += sys.argv[2:]

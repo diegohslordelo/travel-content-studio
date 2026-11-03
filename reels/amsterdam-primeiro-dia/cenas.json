@@ -39,9 +39,9 @@
   ],
   "tempos": [
    "0",
-   "f01:tudo-0.04",
-   "f01:o-0.04",
-   "f01:em-0.04"
+   "0",
+   "0",
+   "0"
   ],
   "cores": [
    null,
@@ -51,11 +51,11 @@
   ],
   "placa": {
    "destino": "PRIMEIRO DIA",
-   "entrada": "f01:primeiro-0.06",
+   "entrada": "0-0.56",
    "saida": "f02:A-0.34",
-   "nota": "logotipo da marca (DS V2, 2.1, variante Marca) em 'primeiro dia', na posição oficial x 72 · y 640, com Chegada; sem clack (o keen sobe no mesmo trecho: 1 efeito a cada 1,5 s). Pedido do Diego, 03/11/2026"
+   "nota": "logotipo (DS V2, 2.1, Marca) já assentado no 1º quadro: a Chegada termina no quadro 0 e o brilho de esmalte passa entre 0,14 e 0,74 s. Pedido do Diego (03/11/2026): o começo do vídeo igual à capa"
   },
-  "nota": "Gancho em uma cor só (branco) e 'PRIMEIRO DIA' com a placa do logotipo: pedido do Diego, 03/11/2026 (REV3)"
+  "nota": "REV4: frase inteira, em branco, com o logotipo, desde o 1º quadro (igual à capa), pedido do Diego, 03/11/2026"
  },
  "grades": [
   {
@@ -66,7 +66,7 @@
    "brilho": 0.92,
    "pop": [
     0.0,
-    0.045
+    0.0
    ],
    "tiles": [
     {
@@ -115,7 +115,7 @@
      "foco": 0.5
     }
    ],
-   "nota": "os 9 quadros entram em 0,36 s e a grade fecha em 'TUDO' (REV3: sem quadro preto no início)"
+   "nota": "REV4: os 9 quadros já estão na tela no 1º quadro (igual à capa)"
   },
   {
    "id": "cta",
@@ -250,15 +250,14 @@
    "id": "tussauds_monumento",
    "ini": "f03:o-0.06",
    "video": {
-    "fonte": "IMG_1432",
-    "in": 0.4,
-    "foco": 0.62,
-    "foco_fim": 0.45
+    "fonte": "IMG_1433_diego",
+    "in": 1.0
    },
    "kb": [
     1.0,
     1.02
-   ]
+   ],
+   "nota": "IMG_1433 recortado em vertical pelo Diego (upload de 03/11/2026), no lugar do IMG_1432: panorâmica subindo no Monumento Nacional"
   },
   {
    "id": "batata",
@@ -385,33 +384,31 @@
    "id": "stroopwafel_marina",
    "ini": "f08:com#2-0.06",
    "video": {
-    "fonte": "IMG_1479",
-    "in": 8.4,
-    "foco": 0.4
+    "fonte": "IMG_1478_diego",
+    "in": 0.3
    },
    "kb": [
     1.0,
     1.03
    ],
-   "nota": "Marina provando o stroopwafel (mordida em ≈ 8,7 s; pedido do Diego, 03/11/2026)"
+   "nota": "o stroopwafel na mão, embalagem da Hans Egstorf (IMG_1478 recortado pelo Diego, upload de 03/11/2026), no lugar da Marina mordendo"
   },
   {
    "id": "bar_cerveja",
    "ini": "f09:depois-0.06",
    "video": {
-    "fonte": "IMG_1507",
-    "in": 0.0,
-    "foco": 0.47
+    "fonte": "IMG_1508_diego",
+    "in": 0.0
    },
    "kb": [
     1.0,
     1.03
    ],
-   "nota": "o Diego bebendo cerveja no bar (pedido do Diego, 03/11/2026, no lugar da praça com o bonde)"
+   "nota": "o Diego com a Guinness no bar (IMG_1508 recortado pelo Diego, upload de 03/11/2026). O arquivo tem 1,74 s e os últimos 0,25 s tremem: a cena usa 1,47 s, sem esticar"
   },
   {
    "id": "cerveja_vinho",
-   "ini": "f09:primeira+0.28",
+   "ini": "f09:batizado+0.19",
    "video": {
     "fonte": "IMG_1497",
     "in": 0.1,
