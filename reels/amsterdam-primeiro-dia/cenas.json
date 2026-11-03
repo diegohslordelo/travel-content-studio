@@ -1,0 +1,703 @@
+{
+ "nota": "Cenas ancoradas nas palavras da voz decupada ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. Vídeos da viagem (Drive, pasta Amsterdam): 'in' = entrada em s no bruto; 'foco' = centro x do recorte 9:16 (0–1) nos planos horizontais, 'foco_fim' = panorâmica do recorte; planos verticais entram inteiros. Mudos, SDR, na velocidade real (nunca em câmera lenta). Toda imagem fica de 2 a 3,5 s. Legenda = fala gravada, com a grafia correta dos nomes (correcoes); '*' = destaque âmbar; '~' = grupo que não aparece (o gancho já mostra as palavras).",
+ "diego": {
+  "x": 540,
+  "y": 924,
+  "w": 560,
+  "h": 996
+ },
+ "legendaY": 1075,
+ "correcoes": {
+  "f02:as": "às",
+  "f02:Dan,": "Dam,",
+  "f04:Mannequin": "Manneken",
+  "f04:Peas.": "Pis.",
+  "f06:Carvestrat,": "Kalverstraat,",
+  "f08:Eggstorf.": "Egstorf.",
+  "f09:E": "e",
+  "f10:Headlight": "Red Light"
+ },
+ "gancho": {
+  "topo": 270,
+  "fim": "f02:A-0.04",
+  "linhas": [
+   "ISSO É",
+   "TUDO",
+   "O QUE FIZEMOS NO NOSSO",
+   "PRIMEIRO DIA EM",
+   "AMSTERDÃ"
+  ],
+  "tamanhos": [
+   112,
+   236,
+   84,
+   112,
+   172
+  ],
+  "tempos": [
+   "0",
+   "f01:tudo-0.04",
+   "f01:o-0.04",
+   "f01:primeiro-0.04",
+   "f01:amsterdã-0.04"
+  ],
+  "cores": [
+   null,
+   "ambar",
+   null,
+   null,
+   "ambar"
+  ]
+ },
+ "grades": [
+  {
+   "id": "gancho",
+   "ini": "0",
+   "fim": "f02:A-0.04",
+   "mergulho": "f02:A-0.42",
+   "brilho": 0.92,
+   "pop": [
+    0.03,
+    0.13
+   ],
+   "tiles": [
+    {
+     "fonte": "IMG_1375",
+     "in": 11.5,
+     "foco": 0.4,
+     "estabilizar": true
+    },
+    {
+     "fonte": "IMG_1403-1",
+     "in": 0.2
+    },
+    {
+     "fonte": "IMG_1421",
+     "in": 3.4,
+     "foco": 0.5
+    },
+    {
+     "fonte": "IMG_1449-1",
+     "in": 0.6
+    },
+    {
+     "fonte": "IMG_1462",
+     "in": 0.4,
+     "foco": 0.5
+    },
+    {
+     "fonte": "IMG_1464",
+     "in": 0.4,
+     "foco": 0.5
+    },
+    {
+     "fonte": "IMG_1476-1",
+     "in": 0.2
+    },
+    {
+     "fonte": "IMG_1495",
+     "in": 0.3,
+     "foco": 0.42
+    },
+    {
+     "fonte": "IMG_1527",
+     "in": 6.2,
+     "foco": 0.5
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "ini": "f12:três-0.06",
+   "fim": "fim",
+   "brilho": 0.62,
+   "pop": [
+    0.0,
+    0.1
+   ],
+   "tiles": [
+    {
+     "fonte": "IMG_1390",
+     "in": 14.5,
+     "foco": 0.5
+    },
+    {
+     "fonte": "IMG_1406",
+     "in": 7.6,
+     "foco": 0.3,
+     "estabilizar": true
+    },
+    {
+     "fonte": "IMG_1425",
+     "in": 5.0,
+     "foco": 0.42
+    },
+    {
+     "fonte": "IMG_1454",
+     "in": 10.0,
+     "foco": 0.42
+    },
+    {
+     "fonte": "IMG_1479",
+     "in": 9.0,
+     "foco": 0.4
+    },
+    {
+     "fonte": "IMG_1498",
+     "in": 3.0,
+     "foco": 0.4
+    },
+    {
+     "fonte": "IMG_1499",
+     "in": 1.0,
+     "foco": 0.5
+    },
+    {
+     "fonte": "IMG_1518",
+     "in": 10.0,
+     "foco": 0.42
+    },
+    {
+     "fonte": "IMG_1527",
+     "in": 9.0,
+     "foco": 0.5
+    }
+   ]
+  }
+ ],
+ "cenas": [
+  {
+   "id": "aeroporto",
+   "ini": "f02:A-0.04",
+   "entra": "mergulho",
+   "video": {
+    "fonte": "IMG_1375",
+    "in": "continua",
+    "foco": 0.4,
+    "estabilizar": true
+   },
+   "kb": [
+    1.0,
+    1.03
+   ],
+   "lugar": "pousou 14:30"
+  },
+  {
+   "id": "onibus",
+   "ini": "f02:a#2-0.06",
+   "video": {
+    "fonte": "IMG_1381",
+    "in": 0.0,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "hotel",
+   "ini": "f02:então-0.06",
+   "sai": "chicote",
+   "video": {
+    "fonte": "IMG_1390",
+    "in": 15.0,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "dancing_houses",
+   "ini": "f02:só-0.06",
+   "entra": "chicote",
+   "video": {
+    "fonte": "IMG_1403-1",
+    "in": 0.4
+   },
+   "kb": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "id": "palacio_real",
+   "ini": "f02:praça#1-0.06",
+   "video": {
+    "fonte": "IMG_1421",
+    "in": 3.6,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "tussauds_monumento",
+   "ini": "f03:o-0.06",
+   "video": {
+    "fonte": "IMG_1432",
+    "in": 0.4,
+    "foco": 0.62,
+    "foco_fim": 0.45
+   },
+   "kb": [
+    1.0,
+    1.02
+   ]
+  },
+  {
+   "id": "batata",
+   "ini": "f04:pra-0.06",
+   "video": {
+    "fonte": "IMG_1449-1",
+    "in": 0.4
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "manneken_pis",
+   "ini": "f04:que-0.06",
+   "sai": "chicote",
+   "video": {
+    "fonte": "IMG_1444",
+    "in": 0.3,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "tonys",
+   "ini": "f05:loja-0.06",
+   "entra": "chicote",
+   "video": {
+    "fonte": "IMG_1456",
+    "in": 13.0,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.02
+   ],
+   "nota": "dentro da loja (pedido do Diego, 03/11/2026): sala vermelha → corredor das barras"
+  },
+  {
+   "id": "chocolates",
+   "ini": "f05:e#2-0.06",
+   "video": {
+    "fonte": "IMG_1462",
+    "in": 0.3,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "id": "kalverstraat",
+   "ini": "f06:na-0.06",
+   "video": {
+    "fonte": "IMG_1464",
+    "in": 0.3,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "lojas",
+   "ini": "f07:mas-0.06",
+   "video": {
+    "fonte": "IMG_1472",
+    "in": 0.4,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "hans_egstorf_fachada",
+   "ini": "f08:e-0.06",
+   "video": {
+    "fonte": "IMG_1477",
+    "in": 0.0,
+    "foco": 0.45
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "stroopwafel_vitrine",
+   "ini": "f08:o#2-0.06",
+   "video": {
+    "fonte": "IMG_1476-1",
+    "in": 0.2
+   },
+   "kb": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "id": "stroopwafel_balcao",
+   "ini": "f08:caramelo+0.3",
+   "video": {
+    "fonte": "IMG_1480",
+    "in": 2.0,
+    "foco": 0.45
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "stroopwafel_marina",
+   "ini": "f08:com#2-0.06",
+   "video": {
+    "fonte": "IMG_1479",
+    "in": 3.0,
+    "foco": 0.4
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "praca_noite",
+   "ini": "f09:depois-0.06",
+   "video": {
+    "fonte": "IMG_1491",
+    "in": 0.4,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "cerveja_vinho",
+   "ini": "f09:primeira+0.28",
+   "video": {
+    "fonte": "IMG_1497",
+    "in": 0.1,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "id": "red_light",
+   "ini": "f10:e-0.06",
+   "entra": "fusao",
+   "video": {
+    "fonte": "IMG_1519",
+    "in": 4.0,
+    "foco": 0.42
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "canal_noite",
+   "ini": "f11:e-0.06",
+   "video": {
+    "fonte": "IMG_1523",
+    "in": 0.2,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "id": "mcdonalds",
+   "ini": "f11:mcdonalds-0.06",
+   "video": {
+    "fonte": "IMG_1527",
+    "in": 6.0,
+    "foco": 0.5
+   },
+   "kb": [
+    1.0,
+    1.03
+   ]
+  }
+ ],
+ "placar": [
+  {
+   "em": "f02:pousou",
+   "tempo": "14:30",
+   "gasto": "€ 0,00",
+   "nota": "pouso (IMG_1375, 14:30; o Diego diz 'duas e meia')"
+  },
+  {
+   "em": "f02:ônibus",
+   "tempo": "14:38",
+   "gasto": "€ 13,00",
+   "nota": "ônibus 397, € 13,00 (Placar do vlog)"
+  },
+  {
+   "em": "f02:hotel#2",
+   "tempo": "15:20",
+   "gasto": "€ 13,00",
+   "nota": "XO Hotel Inner (etiqueta do vlog)"
+  },
+  {
+   "em": "f02:dancing",
+   "tempo": "16:30",
+   "gasto": "€ 13,00",
+   "nota": "Dancing Houses (etiqueta do vlog)"
+  },
+  {
+   "em": "f02:praça#1",
+   "tempo": "17:10",
+   "gasto": "€ 24,99",
+   "nota": "Praça Dam 17:10; o gasto inclui a New York Pizza (16:48, € 11,99), que não é citada na fala"
+  },
+  {
+   "em": "f04:mannequin",
+   "tempo": "17:36",
+   "gasto": "€ 32,14",
+   "nota": "Manneken Pis, + € 7,15 (Placar do vlog; o Recibo do vlog diz € 7,50)"
+  },
+  {
+   "em": "f05:tonys",
+   "tempo": "17:41",
+   "gasto": "€ 52,14",
+   "nota": "Tony's, + € 20,00"
+  },
+  {
+   "em": "f06:carvestrat",
+   "tempo": "18:29",
+   "gasto": "€ 52,14",
+   "nota": "Kalverstraat"
+  },
+  {
+   "em": "f08:hans",
+   "tempo": "18:49",
+   "gasto": "€ 61,64",
+   "nota": "Hans Egstorf, + € 9,50"
+  },
+  {
+   "em": "f09:barzinho",
+   "tempo": "19:29",
+   "gasto": "€ 78,24",
+   "nota": "The Old Bell, + € 16,60"
+  },
+  {
+   "em": "f10:headlight",
+   "tempo": "20:55",
+   "gasto": "€ 78,24",
+   "nota": "Red Light District"
+  },
+  {
+   "em": "f11:mcdonalds",
+   "tempo": "21:21",
+   "gasto": "€ 90,84",
+   "nota": "McDonald's, + € 12,60 → total do dia 1"
+  }
+ ],
+ "legendas": [
+  "~Isso é tudo o que fizemos no nosso primeiro dia em Amsterdã.",
+  "A gente pousou",
+  "às *duas e meia*",
+  "e pegamos um *ônibus*",
+  "a caminho do hotel.",
+  "A gente já estava",
+  "morrendo de *fome*,",
+  "então deixamos",
+  "as coisas no *hotel*",
+  "e fomos procurar",
+  "algo para comer.",
+  "Só que no caminho",
+  "a gente passou pelas",
+  "*Dancing Houses*",
+  "e a *Praça Dam*,",
+  "que é a praça",
+  "onde tem o",
+  "*Palácio Real*.",
+  "o Museu",
+  "*Madame Tussauds*",
+  "e o *Monumento Nacional*.",
+  "Pra forrar a barriga",
+  "a gente encontrou logo",
+  "uma das *batatas*",
+  "mais famosas da cidade,",
+  "que é a",
+  "*Manneken Pis*.",
+  "E de lá, nós fomos",
+  "para a loja",
+  "de *chocolate*",
+  "mais famosa da cidade,",
+  "a *Tony's*,",
+  "e na minha opinião,",
+  "a *melhor* chocolate",
+  "do mundo.",
+  "De lá, nós vamos",
+  "dar um passeio",
+  "na *Kalverstraat*,",
+  "que é uma rua",
+  "cheia de *lojas*.",
+  "Mas a gente só",
+  "estava a passeio",
+  "e acabou não",
+  "comprando *nada*",
+  "E lá bem pertinho",
+  "nós fomos comer",
+  "o biscoito mais famoso",
+  "de Amsterdã,",
+  "o *Stroopwafel*,",
+  "que é um biscoito",
+  "recheado com *caramelo*",
+  "nessa *Hans Egstorf*.",
+  "A gente pegou esse",
+  "com *top de chocolate*",
+  "e estava muito bom.",
+  "Depois paramos",
+  "no *barzinho*",
+  "pra eu ser batizado",
+  "com a minha",
+  "*primeira cerveja*",
+  "de Amsterdã",
+  "e Marina",
+  "pegou um *vinho*",
+  "E depois nós vamos",
+  "dar uma volta",
+  "na famosa",
+  "*Red Light Street*.",
+  "E por último,",
+  "nós fechamos",
+  "o nosso passeio",
+  "no ponto turístico",
+  "mais *importante*",
+  "da cidade,",
+  "o *McDonald's*",
+  "de Amsterdã.",
+  "Esse foi só",
+  "o *primeiro*",
+  "dos *três dias*",
+  "que nós passamos",
+  "em Amsterdã,",
+  "então se você",
+  "quer ver tudo,",
+  "o vídeo já tá",
+  "disponível no meu",
+  "canal no *YouTube*,",
+  "é só clicar",
+  "no *link da bio*",
+  "e assistir."
+ ],
+ "cta": {
+  "entrada": "f12:youtube-0.1",
+  "rotulo": "ASSISTA NO",
+  "destino": "YOUTUBE"
+ },
+ "transicoes": [
+  {
+   "tipo": "luz",
+   "em": "f06:na-0.06",
+   "nota": "dia → noite: da Tony's (17:41) para a Kalverstraat acesa (18:29)"
+  }
+ ],
+ "sons": [
+  {
+   "som": "PDX_punch_seco",
+   "em": "f01:tudo-0.02",
+   "rel_db": -4,
+   "nota": "ISSO É TUDO: a grade do dia fecha"
+  },
+  {
+   "som": "keen",
+   "em": "f02:A-0.04",
+   "alinhar": "pico",
+   "rel_db": -6,
+   "nota": "som do fim do gancho (CLAUDE.md, 7): pico no corte, no fim do mergulho na grade"
+  },
+  {
+   "som": "PDX_swish",
+   "em": "f02:só-0.06",
+   "rel_db": -6,
+   "nota": "chicote: do hotel para a rua (Dancing Houses)"
+  },
+  {
+   "som": "PDX_woosh",
+   "em": "f05:loja-0.06",
+   "rel_db": -6,
+   "nota": "chicote: da Manneken Pis para a Tony's"
+  },
+  {
+   "som": "PDX_ar_longo",
+   "em": "f06:na-0.06",
+   "alinhar": "pico",
+   "rel_db": -6,
+   "nota": "luz de passagem: dia → noite"
+  },
+  {
+   "som": "PDX_ar_longo",
+   "em": "f10:e-0.06",
+   "alinhar": "pico",
+   "rel_db": -8,
+   "nota": "fusão: do bar para a Red Light"
+  },
+  {
+   "som": "PDX_riser",
+   "em": "f11:mcdonalds-0.06",
+   "alinhar": "fim",
+   "rel_db": -8,
+   "nota": "sobe até o 'ponto turístico mais importante': o McDonald's"
+  },
+  {
+   "som": "PDX_woosh",
+   "em": "f12:três-0.06",
+   "rel_db": -6,
+   "nota": "a grade do dia volta (CTA)"
+  },
+  {
+   "som": "PDX_magic_brilho",
+   "em": "f04:batatas-0.04",
+   "rel_db": -6,
+   "nota": "uma das batatas mais famosas da cidade"
+  },
+  {
+   "som": "PDX_punch_seco",
+   "em": "f07:nada",
+   "rel_db": -8,
+   "nota": "não comprando NADA (batida de humor, curta)"
+  },
+  {
+   "som": "PDX_magic_reveal",
+   "em": "f08:o#2-0.06",
+   "rel_db": -8,
+   "nota": "revelação da vitrine de stroopwafels"
+  }
+ ],
+ "sons_placar": {
+  "moeda_db": -8,
+  "tick_db": -14,
+  "nota": "Sons do Placar como no vlog: máquina de moeda em toda soma de gasto, tick quando só a hora gira. Um evento do Placar a menos de 1,5 s de outro efeito fica mudo (a mudança aparece na tela)."
+ }
+}

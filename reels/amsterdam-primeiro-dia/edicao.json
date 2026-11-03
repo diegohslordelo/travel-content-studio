@@ -1,0 +1,38 @@
+{
+ "reel": "amsterdam-primeiro-dia",
+ "titulo": "Primeiro dia em Amsterdam (tela verde, CTA para o YouTube)",
+ "fps": 30,
+ "nota": "Tempos em segundos do bruto (gravações do quarto, pasta do Drive 'Amsterdam/Reel primeiro dia', 02/11/2026). Entrada e saída medidas pela energia da voz (120–4.000 Hz, janelas de 10 ms; scripts/segmentar.py) e pelo alinhamento forçado (scripts/alinhar_tomadas.py). Uma tomada por bloco, na ordem do roteiro do Diego; o texto segue a fala gravada. Tela verde: respiros cortados, sem cortar palavra e sem acelerar. Terceiro valor de um trecho = fade de saída em ms. IMG_7632 ('Já manda esse vídeo pra alguém…') fica de fora: CTA errado, a pedido do Diego.",
+ "fontes_drive": {
+  "pasta": "Amsterdam/Reel primeiro dia (17keobGqEQvniOFEsw7hDPU8GWAH-z3bF)",
+  "IMG_7602": "1r4UT4dEBbJ7LbAMNlzOixHCML35REVdU",
+  "IMG_7606": "1lEixnYGJJ8f7jh_MZbPAPZ8vvuxuHtMX",
+  "IMG_7607": "1HC-9R5PGBGFJtc9F6dkUiyqFNcabM9kO",
+  "IMG_7609": "1xBT_pD-obNXRw8Du8rdXiFB7QzgFO98s",
+  "IMG_7611": "1juqEB5-NOhtzzoWCmbz7LZxUQoUg32ho",
+  "IMG_7615": "1VVnS4EBcQsfqgrH4yEQlm4TWqsyjmwpN",
+  "IMG_7616": "1dHJ3QM40vJKV2rFvvu4aaMWz4mN9MB-5",
+  "IMG_7621": "1PgHquf9BvWhMWruMbp6l65htKHVN8iju",
+  "IMG_7622": "1Hg272TRDBTnOmZkb7eVmaR9ySKkvUUek",
+  "IMG_7628": "19Zgjvh3E792_CweRy1tVVbpjTwJFQzFg",
+  "IMG_7636": "19c50t5R4CgM39tKgadnSw42ksmESYQs2",
+  "IMG_7652": "1ArOS2ITIciL4-k9WfL17Lzfe35nikYg_",
+  "IMG_7632_descartado": "1Dx3XRzHZY5nRaOSKCN-qx91XFN9Feey7"
+ },
+ "falas": [
+  {"id": "f01", "bloco": "1 · gancho", "fonte": "IMG_7602", "trechos": [[0.2, 3.08]]},
+  {"id": "f02", "bloco": "2 · chegada, hotel, Dancing Houses, Dam", "fonte": "IMG_7606", "trechos": [[0.3, 10.04], [10.22, 11.79, 25]], "nota": "Pausa de 0,33 s entre 'Praça Dam,' e 'que é a praça' cortada no silêncio (−55 dB). A voz vai até o fim do arquivo ('Real.'): fade de 25 ms, sem restauro."},
+  {"id": "f03", "bloco": "3 · Dam (continuação)", "fonte": "IMG_7607", "trechos": [[0.26, 2.68]]},
+  {"id": "f04", "bloco": "4 · batata (Manneken Pis)", "fonte": "IMG_7609", "trechos": [[0.12, 4.2]]},
+  {"id": "f05", "bloco": "5 · Tony's", "fonte": "IMG_7611", "trechos": [[0.22, 5.02]]},
+  {"id": "f06", "bloco": "6 · Kalverstraat", "fonte": "IMG_7615", "trechos": [[0.36, 3.76]]},
+  {"id": "f07", "bloco": "6 · Kalverstraat (sem compras)", "fonte": "IMG_7616", "trechos": [[0.27, 2.63, 20]]},
+  {"id": "f08", "bloco": "7 · stroopwafel (Hans Egstorf)", "fonte": "IMG_7621", "trechos": [[0.32, 9.4]]},
+  {"id": "f09", "bloco": "8 · barzinho", "fonte": "IMG_7622", "trechos": [[0.34, 4.7]]},
+  {"id": "f10", "bloco": "9 · Red Light", "fonte": "IMG_7628", "trechos": [[0.42, 3.5]]},
+  {"id": "f11", "bloco": "9 · McDonald's", "fonte": "IMG_7636", "trechos": [[0.45, 5.22]]},
+  {"id": "f12", "bloco": "10 · CTA (YouTube)", "fonte": "IMG_7652", "trechos": [[0.44, 7.62]]}
+ ],
+ "cauda_s": 0.9,
+ "audio": {"fade_ms": 12, "passa_alta_hz": 70, "afftdn": "afftdn=nr=8:nf=-58:tn=1", "master_lufs": -14.0, "pico_dbtp": -1.0}
+}
