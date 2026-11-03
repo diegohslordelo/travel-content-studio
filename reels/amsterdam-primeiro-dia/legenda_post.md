@@ -4,7 +4,7 @@ Valores: Placar do vlog de Amsterdam no YouTube (REV3, branch `claude/eloquent-d
 
 **REV6 (03/11/2026):** o Placar saiu do Reel (pedido do Diego: só no vídeo do YouTube). Sem total na tela, as legendas usam o total real do dia, € 90,84, com a pizza na lista.
 
-**Conferir antes de postar:** a batata da Manneken Pis está € 7,15 no Placar do vlog e € 7,50 no Recibo do vlog (ver `rev6/QA_REV6.md`, pendência 1). A legenda usa € 7,15.
+**Conferir antes de postar:** a batata da Manneken Pis está € 7,15 no Placar do vlog e € 7,50 no Recibo do vlog (ver `rev7/QA_REV7.md`, pendência 1). A legenda usa € 7,15.
 
 ## Instagram
 

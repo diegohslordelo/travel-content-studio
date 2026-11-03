@@ -13,7 +13,14 @@ A fala não muda (o Diego diz "Amsterdã"); só a grafia na tela (`cenas.json`: 
 
 ## Medido no vídeo final
 
-Preenchido depois do render (`scripts/conferir.py`).
+| Ponto | Resultado |
+|---|---|
+| Formato | 1080 × 1920, 30 qps, H.264 CRF 10 + AAC 320 kb/s 48 kHz, **60,57 s**, 322 MB ✅ |
+| Áudio | **−14,1 LUFS**, pico **−1,3 dBTP**, 0 amostras acima de −1 dBFS ✅ |
+| Legendas | 88 grupos de 1 linha; a maior com 806 px ✅ |
+| Gancho e capa | "EM AMSTERDAM" dentro da zona segura ✅ |
+
+Arquivos: `reel_amsterdam-primeiro-dia_rev7.mp4` (final), `reel_amsterdam-primeiro-dia_rev7_previa.mp4`, `capa_amsterdam-primeiro-dia_rev7.jpg`, `qa_frames/`. Legendas do post: `../legenda_post.md`.
 
 ## Pendências (decisão do Diego)
 
