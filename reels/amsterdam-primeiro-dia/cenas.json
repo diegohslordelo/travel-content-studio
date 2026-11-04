@@ -664,14 +664,7 @@
   "entrada": "f12:alguém-0.1",
   "rotulo": "MANDA PRA ALGUÉM QUE VAI PRA",
   "destino": "AMSTERDAM",
-  "trocas": [
-   {
-    "em": "f12:comenta-0.1",
-    "rotulo": "E COMENTA O QUE VOCÊ",
-    "destino": "QUER SABER"
-   }
-  ],
-  "nota": "REV8: CTA de envio e comentário (IMG_7632), pedido do Diego (04/11/2026). Placa do DS com troca de texto (2.1) em 'comenta'"
+  "nota": "REV8: CTA de envio e comentário (IMG_7632). A placa fica só com 'MANDA PRA ALGUÉM QUE VAI PRA / AMSTERDAM →'; o 'comenta o que você quer saber de lá' fica só na fala e na legenda (pedido do Diego, 04/11/2026)"
  },
  "transicoes": [
   {
