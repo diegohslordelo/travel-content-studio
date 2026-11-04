@@ -15,7 +15,14 @@ O Reel passa de 60,6 s para **56,9 s** (o CTA novo é mais curto). As legendas d
 
 ## Medido no vídeo final
 
-Preenchido depois do render (`scripts/conferir.py`).
+| Ponto | Resultado |
+|---|---|
+| Formato | 1080 × 1920, 30 qps, H.264 CRF 10 + AAC 320 kb/s 48 kHz, **56,90 s**, 275 MB ✅ |
+| Áudio | **−14,0 LUFS**, pico **−1,3 dBTP**, 0 amostras acima de −1 dBFS ✅ |
+| Legendas | 81 grupos de 1 linha, em y 1320; a maior com 806 px ✅ |
+| Transcrição da voz final | Termina em "Já manda esse vídeo pra alguém que vai pra Amsterdã e comenta aqui o que você quer saber de lá." ✅ |
+
+Arquivos: `reel_amsterdam-primeiro-dia_rev8.mp4` (final), `reel_amsterdam-primeiro-dia_rev8_previa.mp4`, `capa_amsterdam-primeiro-dia_rev8.jpg`, `qa_frames/`. Legendas do post: `../legenda_post.md`.
 
 ## Pendências (decisão do Diego)
 
