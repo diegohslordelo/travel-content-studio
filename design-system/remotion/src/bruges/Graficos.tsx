@@ -91,7 +91,10 @@ export const Comparar: React.FC<{ t: number; dur: number; a: string; b: string; 
   );
   return (
     <div style={{ position: "absolute", inset: 0, background: PALETA.preto, overflow: "hidden" }}>
-      <div style={{ position: "absolute", left: 0, top: lerp(e, 0, 1, 480, 0, (x) => x), width: 1080, height: 960, overflow: "hidden" }}>{foto(a, focoA, lerp(t, 0, dur, 1.0, 1.06, (x) => x), "saturate(0.8) contrast(1.06)")}</div>
+      {/* Bruges começa em tela cheia e encolhe para a metade de cima quando o Porto da Barra entra ("igual") */}
+      <div style={{ position: "absolute", left: 0, top: 0, width: 1080, height: lerp(e, 0, 1, 1920, 960, (x) => x), overflow: "hidden" }}>
+        <Img src={staticFile(a)} style={{ width: 1080, height: "100%", objectFit: "cover", objectPosition: `${focoA[0] * 100}% ${focoA[1] * 100}%`, scale: String(lerp(t, 0, dur, 1.0, 1.06, (x) => x)), filter: "saturate(0.8) contrast(1.06)" }} />
+      </div>
       <div style={{ position: "absolute", left: 0, top: 960 + (1 - e) * 960, width: 1080, height: 960, overflow: "hidden" }}>{foto(b, focoB, lerp(t, marco, dur, 1.0, 1.08, (x) => x), GRADE_FOTO)}</div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 957, height: 6, background: "rgba(0,0,0,0.55)", opacity: e }} />
       {t > marco && (

@@ -190,15 +190,21 @@ def render():
 
 
 def master():
+    """Ganho linear + limitador com sobreamostragem 4× até −14 LUFS e pico ≤ −1 dBTP (DS V2, 4.6).
+    O AAC sobe os picos depois do limitador: o teto fica em −3,3 dBFS e o ganho é recalibrado numa 2ª passada."""
     src = f"_tmp/{REV}_render.mp4"
+    out = f"{REV}/reel_bruges-bate-volta_{REV}.mp4"
     i, _ = loudness(src)
     g = -14.0 - i
-    out = f"{REV}/reel_bruges-bate-volta_{REV}.mp4"
-    # ganho linear + limitador com sobreamostragem 4× (FORMATOS_REELS 10.1)
-    af = f"volume={g:.2f}dB,aresample=192000,alimiter=limit=0.84:attack=1:release=60:level=disabled,aresample=48000"
-    run("ffmpeg", "-v", "error", "-y", "-i", src, "-c:v", "copy", "-af", af, "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", out)
-    i2, pk = loudness(out)
-    print(f"master: {i2:.1f} LUFS, pico {pk:.1f} dBTP → {out}")
+    for passada in range(5):
+        af = f"volume={g:.2f}dB,aresample=192000,alimiter=limit=0.68:attack=1:release=80:level=disabled,aresample=48000"
+        run("ffmpeg", "-v", "error", "-y", "-i", src, "-c:v", "copy", "-af", af, "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", out)
+        i2, pk = loudness(out)
+        print(f"master {passada + 1}: {i2:.2f} LUFS, pico {pk:.2f} dBTP")
+        if abs(i2 + 14.0) <= 0.1 and pk <= -1.0:
+            break
+        g += -14.0 - i2
+    print(f"→ {out}")
 
 
 if ETAPA in ("preparar", "tudo"):
