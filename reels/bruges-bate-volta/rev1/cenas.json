@@ -1,0 +1,625 @@
+{
+ "_sobre": "REV1 do Reel 'Bruges não quer você lá'. Tempos em segundos na linha do tempo final (voz decupada, rev1/edicao.json). Cada troca de imagem cai na palavra (rev1/transcricao_alinhada.json).",
+ "rostoY": 720,
+ "cenas": [
+  {
+   "id": "gancho_fitas",
+   "tipo": "foto",
+   "ini": 0.0,
+   "fim": 2.45,
+   "layout": "split",
+   "arquivo": "fotos/manha_rozenhoedkaai.jpg",
+   "kb": [
+    1.04,
+    1.1
+   ],
+   "foco": [
+    0.5,
+    0.42
+   ]
+  },
+  {
+   "id": "gancho_multidao",
+   "tipo": "broll",
+   "ini": 2.45,
+   "fim": 4.85,
+   "layout": "split",
+   "fonte": "IMG_4128.mov",
+   "src": 7.4,
+   "kb": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "id": "cidade",
+   "tipo": "broll",
+   "ini": 4.85,
+   "fim": 7.3,
+   "layout": "full",
+   "fonte": "IMG_4116.mov",
+   "src": 0.0,
+   "entrada": "empurrao",
+   "kb": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "id": "habitantes",
+   "tipo": "broll",
+   "ini": 7.3,
+   "fim": 9.3,
+   "layout": "full",
+   "fonte": "IMG_4128.mov",
+   "src": 0.0,
+   "kb": [
+    1.02,
+    1.06
+   ],
+   "escuro": 0.15
+  },
+  {
+   "id": "milhoes",
+   "tipo": "broll",
+   "ini": 9.3,
+   "fim": 11.88,
+   "layout": "full",
+   "fonte": "IMG_4116.mov",
+   "src": 3.4,
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "escuro": 0.15
+  },
+  {
+   "id": "lotou",
+   "tipo": "broll",
+   "ini": 11.88,
+   "fim": 13.88,
+   "layout": "full",
+   "fonte": "IMG_4117.mov",
+   "src": 8.0,
+   "kb": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "id": "captura",
+   "tipo": "captura",
+   "ini": 13.88,
+   "fim": 16.8,
+   "layout": "full"
+  },
+  {
+   "id": "errado",
+   "tipo": "fala",
+   "ini": 16.8,
+   "fim": 19.32,
+   "layout": "full",
+   "zoom": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "id": "trem",
+   "tipo": "broll",
+   "ini": 19.32,
+   "fim": 21.32,
+   "layout": "full",
+   "fonte": "IMG_4244.mov",
+   "src": 1.0,
+   "escuro": 0.2
+  },
+  {
+   "id": "todo_mundo",
+   "tipo": "broll",
+   "ini": 21.32,
+   "fim": 23.32,
+   "layout": "full",
+   "fonte": "IMG_4121.mp4",
+   "src": 0.3,
+   "kb": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "id": "comparar",
+   "tipo": "comparar",
+   "ini": 23.32,
+   "fim": 25.22,
+   "layout": "full"
+  },
+  {
+   "id": "porto",
+   "tipo": "foto",
+   "ini": 25.22,
+   "fim": 26.8,
+   "layout": "full",
+   "arquivo": "fotos/porto_da_barra_lotado.jpg",
+   "kb": [
+    1.08,
+    1.2
+   ],
+   "foco": [
+    0.25,
+    0.6
+   ],
+   "foco_fim": [
+    0.35,
+    0.62
+   ]
+  },
+  {
+   "id": "linda_gente",
+   "tipo": "broll",
+   "ini": 26.8,
+   "fim": 29.7,
+   "layout": "full",
+   "fonte": "IMG_4128.mov",
+   "src": 3.9,
+   "kb": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "id": "virada",
+   "tipo": "broll",
+   "ini": 29.7,
+   "fim": 31.72,
+   "layout": "full",
+   "fonte": "IMG_4133.mov",
+   "src": 0.5,
+   "entrada": "luz",
+   "kb": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "id": "saida",
+   "tipo": "broll",
+   "ini": 31.72,
+   "fim": 33.72,
+   "layout": "full",
+   "fonte": "IMG_4227.mov",
+   "src": 6.0,
+   "kb": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "id": "conselho",
+   "tipo": "fala",
+   "ini": 33.72,
+   "fim": 36.4,
+   "layout": "full",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "punch": 1.58
+  },
+  {
+   "id": "noite_belfort",
+   "tipo": "foto",
+   "ini": 36.4,
+   "fim": 37.8,
+   "layout": "full",
+   "arquivo": "fotos/noite_belfort.jpg",
+   "entrada": "cinema",
+   "kb": [
+    1.12,
+    1.02
+   ],
+   "foco": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "id": "noite_markt",
+   "tipo": "foto",
+   "ini": 37.8,
+   "fim": 38.88,
+   "layout": "full",
+   "arquivo": "fotos/noite_markt.jpg",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.3,
+    0.5
+   ],
+   "foco_fim": [
+    0.6,
+    0.5
+   ]
+  },
+  {
+   "id": "manha",
+   "tipo": "foto",
+   "ini": 38.88,
+   "fim": 39.78,
+   "layout": "full",
+   "arquivo": "fotos/manha_dijver.jpg",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.45,
+    0.5
+   ]
+  },
+  {
+   "id": "noite_canal",
+   "tipo": "foto",
+   "ini": 39.78,
+   "fim": 41.66,
+   "layout": "full",
+   "arquivo": "fotos/noite_rozenhoedkaai_azul.jpg",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.2,
+    0.5
+   ],
+   "foco_fim": [
+    0.55,
+    0.5
+   ]
+  },
+  {
+   "id": "patrimonio",
+   "tipo": "foto",
+   "ini": 41.66,
+   "fim": 43.42,
+   "layout": "full",
+   "arquivo": "fotos/noite_stadhuis.jpg",
+   "kb": [
+    1.0,
+    1.07
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ],
+   "foco_fim": [
+    0.55,
+    0.45
+   ]
+  },
+  {
+   "id": "chocolate",
+   "tipo": "broll",
+   "ini": 43.42,
+   "fim": 45.42,
+   "layout": "full",
+   "fonte": "IMG_4235.mov",
+   "src": 0.5,
+   "kb": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "id": "bonita",
+   "tipo": "broll",
+   "ini": 45.42,
+   "fim": 47.42,
+   "layout": "full",
+   "fonte": "IMG_4218.mp4",
+   "src": 6.4
+  },
+  {
+   "id": "europa",
+   "tipo": "broll",
+   "ini": 47.42,
+   "fim": 49.5,
+   "layout": "full",
+   "fonte": "IMG_4131.mov",
+   "src": 0.0,
+   "kb": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "id": "europa_foto",
+   "tipo": "foto",
+   "ini": 49.5,
+   "fim": 50.95,
+   "layout": "full",
+   "arquivo": "fotos/manha_canal.jpg",
+   "kb": [
+    1.0,
+    1.07
+   ],
+   "foco": [
+    0.4,
+    0.5
+   ],
+   "foco_fim": [
+    0.55,
+    0.5
+   ]
+  },
+  {
+   "id": "pergunta",
+   "tipo": "fala",
+   "ini": 50.95,
+   "fim": 53.0,
+   "layout": "full",
+   "entrada": "clarao",
+   "zoom": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "id": "cta",
+   "tipo": "foto",
+   "ini": 53.0,
+   "fim": 55.2,
+   "layout": "split",
+   "arquivo": "fotos/manha_rozenhoedkaai.jpg",
+   "kb": [
+    1.1,
+    1.04
+   ],
+   "foco": [
+    0.5,
+    0.42
+   ]
+  }
+ ],
+ "fotos": {
+  "porto_da_barra_lotado.jpg": "fonte/web/fotos/porto_da_barra_lotado.jpg",
+  "noite_belfort.jpg": "fonte/web/fotos/noite_belfort.jpg",
+  "noite_markt.jpg": "fonte/web/fotos/noite_markt.jpg",
+  "manha_rozenhoedkaai.jpg": "fonte/web/fotos/morning_43348759971.jpg",
+  "noite_rozenhoedkaai_azul.jpg": "fonte/web/fotos/noite_rozenhoedkaai_azul.jpg",
+  "manha_dijver.jpg": "fonte/web/fotos/manha_x6.jpg",
+  "manha_canal.jpg": "fonte/web/fotos/manha_x7.jpg",
+  "noite_stadhuis.jpg": "fonte/web/fotos/noite_stadhuis.jpg"
+ },
+ "captura_cortes": {
+  "afar_titulo.jpg": [
+   "/tmp/claude-0/afar_titulo.png",
+   0,
+   400,
+   1200,
+   1227
+  ],
+  "afar_trecho.jpg": [
+   "/tmp/claude-0/afar_trecho.png",
+   0,
+   380,
+   1200,
+   1067
+  ]
+ },
+ "quadros": {
+  "comparar_bruges.jpg": [
+   "IMG_4128.mov",
+   8.4
+  ],
+  "captura_fundo.jpg": [
+   "IMG_4116.mov",
+   5.0
+  ]
+ },
+ "gancho": {
+  "linhas": [
+   {
+    "tam": 128,
+    "palavras": [
+     {
+      "texto": "BRUGES",
+      "em": 0.22
+     },
+     {
+      "texto": "NÃO",
+      "em": 0.48,
+      "cor": "#E0AE5C"
+     },
+     {
+      "texto": "QUER",
+      "em": 0.78,
+      "cor": "#E0AE5C"
+     }
+    ]
+   },
+   {
+    "tam": 170,
+    "palavras": [
+     {
+      "texto": "VOCÊ",
+      "em": 1.16
+     },
+     {
+      "texto": "LÁ.",
+      "em": 1.44
+     }
+    ]
+   }
+  ],
+  "fim": 2.45,
+  "topo": 282
+ },
+ "sem_legenda": [
+  [
+   0,
+   2.45
+  ],
+  [
+   5.95,
+   11.62
+  ],
+  [
+   53.25,
+   60
+  ]
+ ],
+ "contador": {
+  "ini": 4.85,
+  "fim": 11.88,
+  "marcos": {
+   "cento": 1.13,
+   "habitantes": 3.19,
+   "milhoes": 4.51,
+   "turistas": 5.51,
+   "ano": 6.23
+  }
+ },
+ "relogio": {
+  "ini": 19.32,
+  "fim": 21.32,
+  "em": 20.02
+ },
+ "captura": {
+  "titulo": "fotos/afar_titulo.jpg",
+  "trecho": "fotos/afar_trecho.jpg",
+  "fundo": "fotos/captura_fundo.jpg",
+  "troca": 0.52
+ },
+ "comparar": {
+  "a": "fotos/comparar_bruges.jpg",
+  "b": "fotos/porto_da_barra_lotado.jpg",
+  "marco": 0.52,
+  "focoA": [
+   0.5,
+   0.62
+  ],
+  "focoB": [
+   0.3,
+   0.62
+  ]
+ },
+ "cta": {
+  "ini": 53.0,
+  "rotulo": "NO SEU ROTEIRO",
+  "destino": "BRUGES",
+  "entrada": 150
+ },
+ "clack_db_rel": -6,
+ "sons": [
+  {
+   "som": "PDX_impacto",
+   "em": 0.8,
+   "rel_db": -4,
+   "_": "as fitas batem ('quer')"
+  },
+  {
+   "som": "PDX_swish",
+   "em": 4.85,
+   "rel_db": -6,
+   "_": "empurrão: a paisagem toma a tela"
+  },
+  {
+   "som": "PDX_impacto",
+   "em": 9.36,
+   "rel_db": -4,
+   "_": "8 MILHÕES"
+  },
+  {
+   "som": "PDX_obturador",
+   "em": 13.88,
+   "rel_db": -8,
+   "_": "captura real"
+  },
+  {
+   "som": "PDX_swish",
+   "em": 23.84,
+   "rel_db": -6,
+   "_": "o Porto da Barra sobe ('igual')"
+  },
+  {
+   "som": "PDX_riser",
+   "em": 29.7,
+   "rel_db": -8,
+   "ancora_fim": true,
+   "_": "sobe até a virada"
+  },
+  {
+   "som": "PDX_ar_longo",
+   "em": 36.4,
+   "rel_db": -6,
+   "_": "abre a noite"
+  },
+  {
+   "som": "PDX_impacto",
+   "em": 50.95,
+   "rel_db": -4,
+   "_": "clarão de volta ao rosto"
+  }
+ ],
+ "legenda_texto": {
+  "55": "Porque",
+  "56": "",
+  "58": "fiz.",
+  "95": "lá,",
+  "96": "linda."
+ },
+ "legenda_destaques": [
+  "120",
+  "mil",
+  "8",
+  "milhões",
+  "propaganda",
+  "errado",
+  "fiz",
+  "11",
+  "porto",
+  "barra",
+  "gente",
+  "outra",
+  "embora",
+  "conselho",
+  "noite",
+  "canais",
+  "patrimônio",
+  "chocolate",
+  "bonita",
+  "europa",
+  "roteiro",
+  "lotou"
+ ],
+ "nao_separar": [
+  "porto da",
+  "da barra",
+  "bate e",
+  "e volta",
+  "120 mil",
+  "8 milhões",
+  "11 horas"
+ ],
+ "fitas": {
+  "ini": 0.0,
+  "fim": 4.85,
+  "entradas": [
+   0.8,
+   0.95
+  ],
+  "texto": "POLITIE · POLICE",
+  "tops": [
+   600,
+   735
+  ],
+  "giros": [
+   -9,
+   6
+  ]
+ },
+ "_gancho": "Gancho B (fita de isolamento) escolhido pelo Diego em 04/11/2026, mantendo a fala 'Bruges não quer você lá'. As fitas usam a inscrição real 'POLITIE · POLICE'."
+}

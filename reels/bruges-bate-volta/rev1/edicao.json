@@ -1,0 +1,116 @@
+{
+ "_sobre": "Decupagem da voz (REV1). Trechos em segundos da tomada original. A fala gravada manda (FORMATOS_REELS 9.5). Pausas internas só são cortadas quando a cena não mostra o rosto.",
+ "fps": 30,
+ "pad_ini": 0.1,
+ "pad_fim": 0.14,
+ "falas": [
+  {
+   "id": "gancho",
+   "tomada": "IMG_7694",
+   "trechos": [
+    [
+     3.22,
+     7.8
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "numeros",
+   "tomada": "IMG_7695",
+   "trechos": [
+    [
+     1.7,
+     3.12
+    ],
+    [
+     4.29,
+     9.6
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "propaganda",
+   "tomada": "IMG_7696",
+   "trechos": [
+    [
+     2.1,
+     6.64
+    ]
+   ],
+   "pausa_depois": 0.12
+  },
+  {
+   "id": "errado",
+   "tomada": "IMG_7713",
+   "trechos": [
+    [
+     3.88,
+     9.4
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "porto",
+   "tomada": "IMG_7720",
+   "trechos": [
+    [
+     0.27,
+     7.06
+    ]
+   ],
+   "pausa_depois": 0.12
+  },
+  {
+   "id": "virada",
+   "tomada": "IMG_7722",
+   "trechos": [
+    [
+     3.36,
+     7.18
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "conselho",
+   "tomada": "IMG_7728",
+   "trechos": [
+    [
+     0.14,
+     7.64
+    ]
+   ],
+   "pausa_depois": 0.08
+  },
+  {
+   "id": "motivos",
+   "tomada": "IMG_7733",
+   "trechos": [
+    [
+     2.52,
+     4.39
+    ],
+    [
+     5.31,
+     8.92
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "pergunta",
+   "tomada": "IMG_7734",
+   "trechos": [
+    [
+     2.38,
+     10.0
+    ]
+   ],
+   "pausa_depois": 0.0
+  }
+ ],
+ "_cortes": "motivos: tirado 'Você faz tudo a pé' (4.39–5.31 da tomada) para a imagem casar com a fala na regra dos 2–3 s; pergunta: 0,9 s de silêncio no fim para a placa do CTA."
+}

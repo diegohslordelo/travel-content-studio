@@ -18,3 +18,10 @@ Thumbs.db
 # Amostra do YouTube: proxies 1080p derivados dos brutos e dados brutos do OSM
 reels/amostra-yt/public/clipes/
 reels/amostra-yt/mapa/
+
+# Reel de Bruges: mídia derivada dos brutos e da web (refeita por scripts/voz.py e scripts/reel.py)
+reels/bruges-bate-volta/public/clipes/
+reels/bruges-bate-volta/public/fotos/
+reels/bruges-bate-volta/public/*.mp4
+reels/bruges-bate-volta/public/*.wav
+reels/bruges-bate-volta/mapa/
