@@ -37,6 +37,8 @@ export const carregarFontesBruges = () => {
 /** Grade das imagens de apoio (FORMATOS_REELS, 2). */
 export const GRADE_VIDEO = "saturate(0.7) contrast(1.06) brightness(0.96)";
 export const GRADE_FOTO = "grayscale(0.15) contrast(1.05)";
+/** REV2: cor natural (o Diego achou as imagens apagadas com a grade de dessaturação). */
+export const GRADE_NATURAL = "contrast(1.03)";
 
 export const clamp01 = (p: number) => Math.min(1, Math.max(0, p));
 export const ease = (p: number) => 1 - Math.pow(1 - clamp01(p), 3);

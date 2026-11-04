@@ -1,0 +1,1168 @@
+[
+ {
+  "palavras": [
+   {
+    "texto": "Bruges",
+    "destaque": false
+   }
+  ],
+  "ini": 0.18,
+  "fim": 0.44
+ },
+ {
+  "palavras": [
+   {
+    "texto": "não",
+    "destaque": false
+   },
+   {
+    "texto": "quer",
+    "destaque": false
+   },
+   {
+    "texto": "você",
+    "destaque": false
+   },
+   {
+    "texto": "lá",
+    "destaque": false
+   }
+  ],
+  "ini": 0.44,
+  "fim": 2.26
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Pelo",
+    "destaque": false
+   },
+   {
+    "texto": "menos",
+    "destaque": false
+   }
+  ],
+  "ini": 2.47,
+  "fim": 2.74
+ },
+ {
+  "palavras": [
+   {
+    "texto": "não",
+    "destaque": false
+   },
+   {
+    "texto": "da",
+    "destaque": false
+   },
+   {
+    "texto": "maneira",
+    "destaque": false
+   }
+  ],
+  "ini": 2.74,
+  "fim": 3.54
+ },
+ {
+  "palavras": [
+   {
+    "texto": "que",
+    "destaque": false
+   },
+   {
+    "texto": "todo",
+    "destaque": false
+   },
+   {
+    "texto": "mundo",
+    "destaque": false
+   },
+   {
+    "texto": "vai",
+    "destaque": false
+   }
+  ],
+  "ini": 3.54,
+  "fim": 5.02
+ },
+ {
+  "palavras": [
+   {
+    "texto": "A",
+    "destaque": false
+   },
+   {
+    "texto": "cidade",
+    "destaque": false
+   },
+   {
+    "texto": "tem",
+    "destaque": false
+   }
+  ],
+  "ini": 5.03,
+  "fim": 5.48
+ },
+ {
+  "palavras": [
+   {
+    "texto": "menos",
+    "destaque": false
+   },
+   {
+    "texto": "de",
+    "destaque": false
+   },
+   {
+    "texto": "120",
+    "destaque": true
+   },
+   {
+    "texto": "mil",
+    "destaque": true
+   }
+  ],
+  "ini": 5.48,
+  "fim": 8.0
+ },
+ {
+  "palavras": [
+   {
+    "texto": "habitantes",
+    "destaque": false
+   },
+   {
+    "texto": "e",
+    "destaque": false
+   },
+   {
+    "texto": "recebeu",
+    "destaque": false
+   }
+  ],
+  "ini": 8.0,
+  "fim": 9.06
+ },
+ {
+  "palavras": [
+   {
+    "texto": "mais",
+    "destaque": false
+   },
+   {
+    "texto": "de",
+    "destaque": false
+   },
+   {
+    "texto": "8",
+    "destaque": true
+   },
+   {
+    "texto": "milhões",
+    "destaque": true
+   }
+  ],
+  "ini": 9.06,
+  "fim": 10.02
+ },
+ {
+  "palavras": [
+   {
+    "texto": "de",
+    "destaque": false
+   },
+   {
+    "texto": "turistas",
+    "destaque": false
+   }
+  ],
+  "ini": 10.02,
+  "fim": 10.87
+ },
+ {
+  "palavras": [
+   {
+    "texto": "em",
+    "destaque": false
+   },
+   {
+    "texto": "um",
+    "destaque": false
+   },
+   {
+    "texto": "ano",
+    "destaque": false
+   }
+  ],
+  "ini": 10.87,
+  "fim": 11.97
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Lotou",
+    "destaque": true
+   },
+   {
+    "texto": "tanto",
+    "destaque": false
+   }
+  ],
+  "ini": 11.97,
+  "fim": 12.71
+ },
+ {
+  "palavras": [
+   {
+    "texto": "que",
+    "destaque": false
+   },
+   {
+    "texto": "a",
+    "destaque": false
+   },
+   {
+    "texto": "própria",
+    "destaque": false
+   },
+   {
+    "texto": "Bruges",
+    "destaque": false
+   }
+  ],
+  "ini": 12.71,
+  "fim": 13.82
+ },
+ {
+  "palavras": [
+   {
+    "texto": "parou",
+    "destaque": false
+   },
+   {
+    "texto": "de",
+    "destaque": false
+   },
+   {
+    "texto": "fazer",
+    "destaque": false
+   }
+  ],
+  "ini": 13.82,
+  "fim": 14.38
+ },
+ {
+  "palavras": [
+   {
+    "texto": "propaganda",
+    "destaque": true
+   },
+   {
+    "texto": "em",
+    "destaque": false
+   },
+   {
+    "texto": "Bruxelas",
+    "destaque": false
+   }
+  ],
+  "ini": 14.38,
+  "fim": 15.58
+ },
+ {
+  "palavras": [
+   {
+    "texto": "e",
+    "destaque": false
+   },
+   {
+    "texto": "em",
+    "destaque": false
+   },
+   {
+    "texto": "Paris",
+    "destaque": false
+   }
+  ],
+  "ini": 15.58,
+  "fim": 16.72
+ },
+ {
+  "palavras": [
+   {
+    "texto": "E",
+    "destaque": false
+   },
+   {
+    "texto": "eu",
+    "destaque": false
+   },
+   {
+    "texto": "sei",
+    "destaque": false
+   },
+   {
+    "texto": "qual",
+    "destaque": false
+   }
+  ],
+  "ini": 16.85,
+  "fim": 17.52
+ },
+ {
+  "palavras": [
+   {
+    "texto": "o",
+    "destaque": false
+   },
+   {
+    "texto": "jeito",
+    "destaque": false
+   },
+   {
+    "texto": "errado",
+    "destaque": true
+   }
+  ],
+  "ini": 17.52,
+  "fim": 18.6
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Porque",
+    "destaque": false
+   },
+   {
+    "texto": "eu",
+    "destaque": false
+   },
+   {
+    "texto": "fiz",
+    "destaque": true
+   }
+  ],
+  "ini": 18.68,
+  "fim": 19.44
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Cheguei",
+    "destaque": false
+   },
+   {
+    "texto": "lá",
+    "destaque": false
+   }
+  ],
+  "ini": 19.44,
+  "fim": 19.86
+ },
+ {
+  "palavras": [
+   {
+    "texto": "às",
+    "destaque": false
+   },
+   {
+    "texto": "11",
+    "destaque": true
+   },
+   {
+    "texto": "horas",
+    "destaque": false
+   },
+   {
+    "texto": "junto",
+    "destaque": false
+   }
+  ],
+  "ini": 19.86,
+  "fim": 20.6
+ },
+ {
+  "palavras": [
+   {
+    "texto": "com",
+    "destaque": false
+   },
+   {
+    "texto": "todo",
+    "destaque": false
+   },
+   {
+    "texto": "mundo",
+    "destaque": false
+   }
+  ],
+  "ini": 20.6,
+  "fim": 21.18
+ },
+ {
+  "palavras": [
+   {
+    "texto": "e",
+    "destaque": false
+   },
+   {
+    "texto": "saí",
+    "destaque": false
+   },
+   {
+    "texto": "no",
+    "destaque": false
+   },
+   {
+    "texto": "final",
+    "destaque": false
+   }
+  ],
+  "ini": 21.18,
+  "fim": 21.76
+ },
+ {
+  "palavras": [
+   {
+    "texto": "da",
+    "destaque": false
+   },
+   {
+    "texto": "tarde",
+    "destaque": false
+   }
+  ],
+  "ini": 21.76,
+  "fim": 22.61
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Eu",
+    "destaque": false
+   },
+   {
+    "texto": "não",
+    "destaque": false
+   },
+   {
+    "texto": "contava",
+    "destaque": false
+   }
+  ],
+  "ini": 22.61,
+  "fim": 23.12
+ },
+ {
+  "palavras": [
+   {
+    "texto": "que",
+    "destaque": false
+   },
+   {
+    "texto": "Bruges",
+    "destaque": false
+   },
+   {
+    "texto": "era",
+    "destaque": false
+   }
+  ],
+  "ini": 23.12,
+  "fim": 23.8
+ },
+ {
+  "palavras": [
+   {
+    "texto": "igual",
+    "destaque": false
+   },
+   {
+    "texto": "um",
+    "destaque": false
+   },
+   {
+    "texto": "domingo",
+    "destaque": false
+   }
+  ],
+  "ini": 23.8,
+  "fim": 24.54
+ },
+ {
+  "palavras": [
+   {
+    "texto": "de",
+    "destaque": false
+   },
+   {
+    "texto": "sol",
+    "destaque": false
+   },
+   {
+    "texto": "duas",
+    "destaque": false
+   },
+   {
+    "texto": "horas",
+    "destaque": false
+   }
+  ],
+  "ini": 24.54,
+  "fim": 25.52
+ },
+ {
+  "palavras": [
+   {
+    "texto": "no",
+    "destaque": false
+   },
+   {
+    "texto": "Porto",
+    "destaque": true
+   },
+   {
+    "texto": "da",
+    "destaque": false
+   },
+   {
+    "texto": "Barra",
+    "destaque": true
+   }
+  ],
+  "ini": 25.52,
+  "fim": 26.4
+ },
+ {
+  "palavras": [
+   {
+    "texto": "de",
+    "destaque": false
+   },
+   {
+    "texto": "Salvador",
+    "destaque": false
+   }
+  ],
+  "ini": 26.4,
+  "fim": 26.7
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Ela",
+    "destaque": false
+   },
+   {
+    "texto": "tá",
+    "destaque": false
+   },
+   {
+    "texto": "lá",
+    "destaque": false
+   }
+  ],
+  "ini": 26.7,
+  "fim": 27.68
+ },
+ {
+  "palavras": [
+   {
+    "texto": "linda",
+    "destaque": false
+   }
+  ],
+  "ini": 27.68,
+  "fim": 28.28
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Mas",
+    "destaque": false
+   },
+   {
+    "texto": "você",
+    "destaque": false
+   },
+   {
+    "texto": "só",
+    "destaque": false
+   }
+  ],
+  "ini": 28.28,
+  "fim": 28.88
+ },
+ {
+  "palavras": [
+   {
+    "texto": "vê",
+    "destaque": false
+   },
+   {
+    "texto": "gente",
+    "destaque": true
+   }
+  ],
+  "ini": 28.88,
+  "fim": 29.7
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Só",
+    "destaque": false
+   },
+   {
+    "texto": "que",
+    "destaque": false
+   },
+   {
+    "texto": "Bruges",
+    "destaque": false
+   }
+  ],
+  "ini": 29.76,
+  "fim": 30.26
+ },
+ {
+  "palavras": [
+   {
+    "texto": "é",
+    "destaque": false
+   },
+   {
+    "texto": "outra",
+    "destaque": true
+   },
+   {
+    "texto": "cidade",
+    "destaque": false
+   }
+  ],
+  "ini": 30.26,
+  "fim": 31.36
+ },
+ {
+  "palavras": [
+   {
+    "texto": "quando",
+    "destaque": false
+   },
+   {
+    "texto": "a",
+    "destaque": false
+   },
+   {
+    "texto": "galera",
+    "destaque": false
+   }
+  ],
+  "ini": 31.36,
+  "fim": 32.18
+ },
+ {
+  "palavras": [
+   {
+    "texto": "do",
+    "destaque": false
+   },
+   {
+    "texto": "bate",
+    "destaque": false
+   },
+   {
+    "texto": "e",
+    "destaque": false
+   },
+   {
+    "texto": "volta",
+    "destaque": false
+   }
+  ],
+  "ini": 32.18,
+  "fim": 32.86
+ },
+ {
+  "palavras": [
+   {
+    "texto": "vai",
+    "destaque": false
+   },
+   {
+    "texto": "embora",
+    "destaque": true
+   }
+  ],
+  "ini": 32.86,
+  "fim": 33.8
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Por",
+    "destaque": false
+   },
+   {
+    "texto": "isso",
+    "destaque": false
+   }
+  ],
+  "ini": 33.8,
+  "fim": 33.9
+ },
+ {
+  "palavras": [
+   {
+    "texto": "eu",
+    "destaque": false
+   },
+   {
+    "texto": "vou",
+    "destaque": false
+   },
+   {
+    "texto": "te",
+    "destaque": false
+   },
+   {
+    "texto": "dar",
+    "destaque": false
+   }
+  ],
+  "ini": 33.9,
+  "fim": 34.26
+ },
+ {
+  "palavras": [
+   {
+    "texto": "um",
+    "destaque": false
+   },
+   {
+    "texto": "conselho",
+    "destaque": true
+   },
+   {
+    "texto": "aqui",
+    "destaque": false
+   }
+  ],
+  "ini": 34.26,
+  "fim": 35.26
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Olho",
+    "destaque": false
+   },
+   {
+    "texto": "no",
+    "destaque": false
+   },
+   {
+    "texto": "olho",
+    "destaque": false
+   }
+  ],
+  "ini": 35.26,
+  "fim": 36.34
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Dorme",
+    "destaque": false
+   },
+   {
+    "texto": "uma",
+    "destaque": false
+   },
+   {
+    "texto": "noite",
+    "destaque": true
+   },
+   {
+    "texto": "lá",
+    "destaque": false
+   }
+  ],
+  "ini": 36.46,
+  "fim": 37.38
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Você",
+    "destaque": false
+   },
+   {
+    "texto": "não",
+    "destaque": false
+   },
+   {
+    "texto": "vai",
+    "destaque": false
+   }
+  ],
+  "ini": 37.38,
+  "fim": 37.9
+ },
+ {
+  "palavras": [
+   {
+    "texto": "se",
+    "destaque": false
+   },
+   {
+    "texto": "arrepender",
+    "destaque": false
+   }
+  ],
+  "ini": 37.9,
+  "fim": 38.97
+ },
+ {
+  "palavras": [
+   {
+    "texto": "De",
+    "destaque": false
+   },
+   {
+    "texto": "manhã",
+    "destaque": false
+   }
+  ],
+  "ini": 38.97,
+  "fim": 39.26
+ },
+ {
+  "palavras": [
+   {
+    "texto": "cedo",
+    "destaque": false
+   },
+   {
+    "texto": "e",
+    "destaque": false
+   },
+   {
+    "texto": "à",
+    "destaque": false
+   },
+   {
+    "texto": "noite",
+    "destaque": true
+   }
+  ],
+  "ini": 39.26,
+  "fim": 40.02
+ },
+ {
+  "palavras": [
+   {
+    "texto": "os",
+    "destaque": false
+   },
+   {
+    "texto": "canais",
+    "destaque": true
+   },
+   {
+    "texto": "são",
+    "destaque": false
+   },
+   {
+    "texto": "só",
+    "destaque": false
+   }
+  ],
+  "ini": 40.02,
+  "fim": 40.9
+ },
+ {
+  "palavras": [
+   {
+    "texto": "seus",
+    "destaque": false
+   }
+  ],
+  "ini": 40.9,
+  "fim": 41.7
+ },
+ {
+  "palavras": [
+   {
+    "texto": "O",
+    "destaque": false
+   },
+   {
+    "texto": "centro",
+    "destaque": false
+   },
+   {
+    "texto": "inteiro",
+    "destaque": false
+   }
+  ],
+  "ini": 41.72,
+  "fim": 42.28
+ },
+ {
+  "palavras": [
+   {
+    "texto": "é",
+    "destaque": false
+   },
+   {
+    "texto": "patrimônio",
+    "destaque": true
+   }
+  ],
+  "ini": 42.28,
+  "fim": 42.9
+ },
+ {
+  "palavras": [
+   {
+    "texto": "da",
+    "destaque": false
+   },
+   {
+    "texto": "humanidade",
+    "destaque": false
+   }
+  ],
+  "ini": 42.9,
+  "fim": 43.46
+ },
+ {
+  "palavras": [
+   {
+    "texto": "A",
+    "destaque": false
+   },
+   {
+    "texto": "cidade",
+    "destaque": false
+   },
+   {
+    "texto": "cheira",
+    "destaque": false
+   }
+  ],
+  "ini": 43.46,
+  "fim": 44.38
+ },
+ {
+  "palavras": [
+   {
+    "texto": "a",
+    "destaque": false
+   },
+   {
+    "texto": "chocolate",
+    "destaque": true
+   }
+  ],
+  "ini": 44.38,
+  "fim": 45.02
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Foi",
+    "destaque": false
+   },
+   {
+    "texto": "a",
+    "destaque": false
+   },
+   {
+    "texto": "cidade",
+    "destaque": false
+   },
+   {
+    "texto": "mais",
+    "destaque": false
+   }
+  ],
+  "ini": 45.02,
+  "fim": 45.74
+ },
+ {
+  "palavras": [
+   {
+    "texto": "bonita",
+    "destaque": true
+   },
+   {
+    "texto": "que",
+    "destaque": false
+   },
+   {
+    "texto": "eu",
+    "destaque": false
+   },
+   {
+    "texto": "vi",
+    "destaque": false
+   }
+  ],
+  "ini": 45.74,
+  "fim": 46.56
+ },
+ {
+  "palavras": [
+   {
+    "texto": "na",
+    "destaque": false
+   },
+   {
+    "texto": "Bélgica",
+    "destaque": false
+   }
+  ],
+  "ini": 46.56,
+  "fim": 47.39
+ },
+ {
+  "palavras": [
+   {
+    "texto": "É",
+    "destaque": false
+   },
+   {
+    "texto": "literalmente",
+    "destaque": false
+   },
+   {
+    "texto": "a",
+    "destaque": false
+   },
+   {
+    "texto": "Europa",
+    "destaque": true
+   }
+  ],
+  "ini": 47.39,
+  "fim": 48.54
+ },
+ {
+  "palavras": [
+   {
+    "texto": "que",
+    "destaque": false
+   },
+   {
+    "texto": "você",
+    "destaque": false
+   },
+   {
+    "texto": "imagina",
+    "destaque": false
+   },
+   {
+    "texto": "antes",
+    "destaque": false
+   }
+  ],
+  "ini": 48.54,
+  "fim": 49.92
+ },
+ {
+  "palavras": [
+   {
+    "texto": "de",
+    "destaque": false
+   },
+   {
+    "texto": "ir",
+    "destaque": false
+   },
+   {
+    "texto": "pra",
+    "destaque": false
+   },
+   {
+    "texto": "Europa",
+    "destaque": true
+   }
+  ],
+  "ini": 49.92,
+  "fim": 50.97
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Agora",
+    "destaque": false
+   },
+   {
+    "texto": "me",
+    "destaque": false
+   },
+   {
+    "texto": "diz",
+    "destaque": false
+   },
+   {
+    "texto": "aí",
+    "destaque": false
+   }
+  ],
+  "ini": 50.97,
+  "fim": 51.7
+ },
+ {
+  "palavras": [
+   {
+    "texto": "você",
+    "destaque": false
+   },
+   {
+    "texto": "colocaria",
+    "destaque": false
+   }
+  ],
+  "ini": 51.7,
+  "fim": 52.4
+ },
+ {
+  "palavras": [
+   {
+    "texto": "Bruges",
+    "destaque": false
+   },
+   {
+    "texto": "no",
+    "destaque": false
+   },
+   {
+    "texto": "seu",
+    "destaque": false
+   }
+  ],
+  "ini": 52.4,
+  "fim": 53.23
+ },
+ {
+  "palavras": [
+   {
+    "texto": "roteiro",
+    "destaque": true
+   },
+   {
+    "texto": "da",
+    "destaque": false
+   },
+   {
+    "texto": "Bélgica?",
+    "destaque": false
+   }
+  ],
+  "ini": 53.23,
+  "fim": 54.46
+ }
+]

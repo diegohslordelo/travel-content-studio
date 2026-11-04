@@ -5,7 +5,7 @@
  */
 import React from "react";
 import { Img, staticFile } from "remotion";
-import { GRADE_FOTO, PALETA, TEXTO, TITULO, clamp01, ease, easeBack, easeInOut, lerp } from "./estilo";
+import { GRADE_FOTO, GRADE_NATURAL, PALETA, TEXTO, TITULO, clamp01, ease, easeBack, easeInOut, lerp } from "./estilo";
 
 const sombraTexto = "0 4px 30px rgba(0,0,0,0.65), 0 2px 0 rgba(0,0,0,0.35)";
 
@@ -64,28 +64,35 @@ export const Relogio: React.FC<{ t: number; em: number }> = ({ t, em }) => {
 };
 
 /** Captura real da matéria (Afar, 18/06/2019): título e depois o trecho destacado. */
-export const Captura: React.FC<{ t: number; dur: number; fundo: string; titulo: string; trecho: string; troca: number }> = ({ t, dur, fundo, titulo, trecho, troca }) => {
-  const e = ease(t / 0.3);
-  const d = easeInOut((t - troca) / 0.35);
-  const card = (src: string, alt: number, op: number, ty: number, kb: number) => (
-    <div style={{ position: "absolute", left: 90, width: 900, top: 800 - alt / 2 + ty, height: alt, borderRadius: 26, overflow: "hidden", boxShadow: "0 40px 90px rgba(0,0,0,0.7)", opacity: op, background: "#fff" }}>
-      <Img src={staticFile(src)} style={{ width: 900, height: alt, objectFit: "cover", objectPosition: "50% 0%", scale: String(kb), transformOrigin: "50% 40%" }} />
-    </div>
-  );
+export const Captura: React.FC<{ t: number; dur: number; fundo: string; titulo: string; trecho: string; troca: number; calmo?: boolean }> = ({ t, dur, fundo, titulo, trecho, troca, calmo }) => {
+  const e = ease(t / (calmo ? 0.2 : 0.3));
+  const d = easeInOut((t - troca) / (calmo ? 0.25 : 0.35));
+  // REV2 (calmo): cartão menor (820 px), centrado em y 760, para terminar acima da legenda (y 1320); sem zoom nem deslize
+  const larg = calmo ? 820 : 900;
+  const centro = calmo ? 760 : 800;
+  const card = (src: string, alt0: number, op: number, ty: number, kb: number) => {
+    const alt = Math.round((alt0 * larg) / 900);
+    return (
+      <div style={{ position: "absolute", left: (1080 - larg) / 2, width: larg, top: centro - alt / 2 + (calmo ? 0 : ty), height: alt, borderRadius: 26, overflow: "hidden", boxShadow: "0 40px 90px rgba(0,0,0,0.7)", opacity: op, background: "#fff" }}>
+        <Img src={staticFile(src)} style={{ width: larg, height: alt, objectFit: "cover", objectPosition: "50% 0%", scale: calmo ? undefined : String(kb), transformOrigin: "50% 40%" }} />
+      </div>
+    );
+  };
   return (
     <div style={{ position: "absolute", inset: 0, overflow: "hidden", background: PALETA.preto }}>
       <Img src={staticFile(fundo)} style={{ position: "absolute", inset: -60, width: 1200, height: 2040, objectFit: "cover", filter: "blur(28px) brightness(0.42) saturate(0.6)" }} />
       {card(titulo, 920, e * (1 - d), (1 - e) * 80 - 40 * d, 1.0 + 0.03 * clamp01(t / troca))}
       {t > troca - 0.4 && card(trecho, 800, d, (1 - d) * 60, lerp(t, troca, dur, 1.0, 1.08, (x) => x))}
-      <div style={{ position: "absolute", left: 90, top: 800 - 460 - 74, font: `800 30px ${TEXTO}`, letterSpacing: 4, color: PALETA.preto, background: PALETA.ambar, padding: "10px 20px", borderRadius: 10, opacity: e }}>CAPTURA REAL</div>
+      <div style={{ position: "absolute", left: (1080 - larg) / 2, top: centro - Math.round((920 * larg) / 900) / 2 - 74, font: `800 30px ${TEXTO}`, letterSpacing: 4, color: PALETA.preto, background: PALETA.ambar, padding: "10px 20px", borderRadius: 10, opacity: e }}>CAPTURA REAL</div>
     </div>
   );
 };
 
 /** "Bruges era igual um domingo de sol no Porto da Barra": Bruges em cima, o Porto da Barra sobe por baixo, "=" na costura. */
-export const Comparar: React.FC<{ t: number; dur: number; a: string; b: string; marco: number; focoA: [number, number]; focoB: [number, number] }> = ({ t, dur, a, b, marco, focoA, focoB }) => {
-  const e = ease((t - marco) / 0.32);
-  const igual = easeBack((t - marco - 0.12) / 0.3);
+export const Comparar: React.FC<{ t: number; dur: number; a: string; b: string; marco: number; focoA: [number, number]; focoB: [number, number]; calmo?: boolean }> = ({ t, dur, a, b, marco, focoA, focoB, calmo }) => {
+  // REV2 (calmo): corte seco para a tela dividida na palavra "igual", sem deslize nem zoom; o "=" só aparece
+  const e = calmo ? (t >= marco ? 1 : 0) : ease((t - marco) / 0.32);
+  const igual = calmo ? (t >= marco ? 1 : 0) : easeBack((t - marco - 0.12) / 0.3);
   const foto = (src: string, foco: [number, number], kb: number, filtro: string) => (
     <Img src={staticFile(src)} style={{ width: 1080, height: 960, objectFit: "cover", objectPosition: `${foco[0] * 100}% ${foco[1] * 100}%`, scale: String(kb), transformOrigin: `${foco[0] * 100}% ${foco[1] * 100}%`, filter: filtro }} />
   );
@@ -93,9 +100,9 @@ export const Comparar: React.FC<{ t: number; dur: number; a: string; b: string; 
     <div style={{ position: "absolute", inset: 0, background: PALETA.preto, overflow: "hidden" }}>
       {/* Bruges começa em tela cheia e encolhe para a metade de cima quando o Porto da Barra entra ("igual") */}
       <div style={{ position: "absolute", left: 0, top: 0, width: 1080, height: lerp(e, 0, 1, 1920, 960, (x) => x), overflow: "hidden" }}>
-        <Img src={staticFile(a)} style={{ width: 1080, height: "100%", objectFit: "cover", objectPosition: `${focoA[0] * 100}% ${focoA[1] * 100}%`, scale: String(lerp(t, 0, dur, 1.0, 1.06, (x) => x)), filter: "saturate(0.8) contrast(1.06)" }} />
+        <Img src={staticFile(a)} style={{ width: 1080, height: "100%", objectFit: "cover", objectPosition: `${focoA[0] * 100}% ${focoA[1] * 100}%`, scale: calmo ? undefined : String(lerp(t, 0, dur, 1.0, 1.06, (x) => x)), filter: calmo ? GRADE_NATURAL : "saturate(0.8) contrast(1.06)" }} />
       </div>
-      <div style={{ position: "absolute", left: 0, top: 960 + (1 - e) * 960, width: 1080, height: 960, overflow: "hidden" }}>{foto(b, focoB, lerp(t, marco, dur, 1.0, 1.08, (x) => x), GRADE_FOTO)}</div>
+      <div style={{ position: "absolute", left: 0, top: 960 + (1 - e) * 960, width: 1080, height: 960, overflow: "hidden" }}>{foto(b, focoB, calmo ? 1 : lerp(t, marco, dur, 1.0, 1.08, (x) => x), calmo ? GRADE_NATURAL : GRADE_FOTO)}</div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 957, height: 6, background: "rgba(0,0,0,0.55)", opacity: e }} />
       {t > marco && (
         <div style={{ position: "absolute", left: 540 - 70, top: 960 - 70, width: 140, height: 140, borderRadius: 70, background: PALETA.ambar, display: "flex", alignItems: "center", justifyContent: "center", scale: String(igual), boxShadow: "0 12px 40px rgba(0,0,0,0.5)" }}>

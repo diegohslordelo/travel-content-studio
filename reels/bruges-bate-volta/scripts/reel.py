@@ -49,15 +49,32 @@ def lufs_evento(arq):
 def preparar():
     os.makedirs(f"{PUB}/clipes", exist_ok=True)
     os.makedirs(f"{PUB}/fotos", exist_ok=True)
-    # 1) clipes do acervo: mudos, SDR, 30 qps, 1080 de largura, só o trecho da cena (+0,3 s de folga)
+    # 1) clipes do acervo: mudos, SDR, 30 qps, 1080 × 1920, só o trecho da cena (+0,3 s de folga).
+    #    Plano horizontal (4K 16:9): recorte vertical 9:16 em "recorte_x" (0 = esquerda, 1 = direita).
+    #    "estabilizar": vidstab em 2 passadas (só em plano com tremor medido, scripts/tremor.py).
     for c in C["cenas"]:
         if c["tipo"] != "broll":
             continue
         src = f"fonte/{c['fonte']}"
-        dur = c["fim"] - c["ini"] + 0.3
+        dur = min(c["fim"] - c["ini"] + 0.3, duracao(src) - c["src"])  # folga de até 0,3 s, sem passar do fim do take
+        if dur < c["fim"] - c["ini"]:
+            raise SystemExit(f"{c['id']}: o take tem só {dur:.2f} s a partir de {c['src']} s")
         saida = f"{PUB}/clipes/{c['id']}.mp4"
-        vf = (TONE + "," if hdr(src) else "") + f"fps={FPS},scale=1080:-2"
-        run("ffmpeg", "-v", "error", "-y", "-ss", str(c["src"]), "-i", src, "-t", f"{dur:.3f}", "-vf", vf, "-an", "-c:v", "libx264", "-crf", "17", "-preset", "fast", "-pix_fmt", "yuv420p", saida)
+        w, h = [int(x) for x in subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", src], capture_output=True, text=True).stdout.strip().split(",")[:2]]
+        rot = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream_side_data=rotation", "-of", "csv=p=0", src], capture_output=True, text=True).stdout.strip()
+        if re.search(r"(^|[^0-9])(90|270)([^0-9]|$)", rot):  # vertical do iPhone: 1920 × 1080 com rotação ±90
+            w, h = h, w
+        partes = [TONE] if hdr(src) else []
+        if c.get("estabilizar"):
+            trf = f"_tmp/{c['id']}.trf"
+            run("ffmpeg", "-v", "error", "-y", "-ss", str(c["src"]), "-i", src, "-t", f"{dur:.3f}", "-vf", f"vidstabdetect=shakiness=6:accuracy=15:result={trf}", "-f", "null", "-")
+            partes.append(f"vidstabtransform=input={trf}:smoothing=30:zoom=4:optzoom=0,unsharp=5:5:0.6")
+        if w > h:  # horizontal → recorte vertical
+            cw = round(h * 9 / 16)
+            x = round((w - cw) * c.get("recorte_x", 0.5))
+            partes.append(f"crop={cw}:{h}:{x}:0")
+        partes += [f"fps={FPS}", "scale=1080:1920:flags=lanczos", "setsar=1"]
+        run("ffmpeg", "-v", "error", "-y", "-ss", str(c["src"]), "-i", src, "-t", f"{dur:.3f}", "-vf", ",".join(partes), "-an", "-c:v", "libx264", "-crf", "17", "-preset", "fast", "-pix_fmt", "yuv420p", saida)
         c["arquivo"] = f"clipes/{c['id']}.mp4"
     # 2) fotos (web, com licença em creditos.md) e capturas
     for nome, origem in C["fotos"].items():
@@ -68,7 +85,7 @@ def preparar():
     # quadro parado de Bruges lotada (comparação) e fundo da captura
     for nome, (fonte, seg) in C["quadros"].items():
         src = f"fonte/{fonte}"
-        vf = (TONE + "," if hdr(src) else "") + "scale=1080:-2"
+        vf = (TONE + "," if hdr(src) else "") + "scale='min(3840,iw)':-2"
         run("ffmpeg", "-v", "error", "-y", "-ss", str(seg), "-i", src, "-frames:v", "1", "-vf", vf, "-q:v", "2", f"{PUB}/fotos/{nome}")
     # 3) voz: ganho linear até −14 LUFS (o limitador fica no master)
     i, _ = loudness(f"{PUB}/voz_bruta.wav")
@@ -77,15 +94,18 @@ def preparar():
     voz_lufs = -14.0
     # 4) efeitos do formato (PDX_*), relativos à voz (REFERENCIA_EDICAO_FORMATOS 4.1)
     entradas, filtros = [], []
+    if not C["sons"]:  # REV2: sem efeitos (pedido do Diego)
+        run("ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-t", f"{DUR:.3f}", "-c:a", "pcm_s16le", f"{PUB}/sfx.wav")
     for k, s in enumerate(C["sons"]):
         arq = f"{SONS}/{s['som']}.wav"
         g = voz_lufs + s["rel_db"] - lufs_evento(arq)
         ini = s["em"] - (duracao(arq) if s.get("ancora_fim") else 0.0)  # riser: termina no corte
         entradas += ["-i", arq]
         filtros.append(f"[{k}:a]aresample=48000,aformat=channel_layouts=stereo,volume={g:.2f}dB,adelay={max(0, round(ini * 1000))}|{max(0, round(ini * 1000))}[s{k}]")
-    mix = "".join(f"[s{k}]" for k in range(len(C["sons"])))
-    filtros.append(f"{mix}amix=inputs={len(C['sons'])}:normalize=0,apad=whole_dur={DUR:.3f}[out]")
-    run("ffmpeg", "-v", "error", "-y", *entradas, "-filter_complex", ";".join(filtros), "-map", "[out]", "-t", f"{DUR:.3f}", "-c:a", "pcm_s16le", f"{PUB}/sfx.wav")
+    if C["sons"]:
+        mix = "".join(f"[s{k}]" for k in range(len(C["sons"])))
+        filtros.append(f"{mix}amix=inputs={len(C['sons'])}:normalize=0,apad=whole_dur={DUR:.3f}[out]")
+        run("ffmpeg", "-v", "error", "-y", *entradas, "-filter_complex", ";".join(filtros), "-map", "[out]", "-t", f"{DUR:.3f}", "-c:a", "pcm_s16le", f"{PUB}/sfx.wav")
     # 5) legendas: grupos de 1 a 4 palavras, uma linha (FORMATOS_REELS 6)
     legendas = grupos_legenda()
     # 6) props
@@ -100,8 +120,11 @@ def preparar():
         "semLegenda": C["sem_legenda"],
         "gancho": C["gancho"],
         "fitas": C.get("fitas"),
-        "contador": C["contador"],
-        "relogio": C["relogio"],
+        "contador": C.get("contador"),
+        "relogio": C.get("relogio"),
+        "textos": C.get("textos", []),
+        "calmo": C.get("calmo", False),
+        "audio": not C.get("audio_fora", False),
         "captura": C["captura"],
         "comparar": C["comparar"],
         "mapa": {"paises": {}, "cidades": {}} if not any(c["tipo"] == "mapa" for c in C["cenas"]) else {"paises": mapa["paises"], "cidades": mapa["cidades"]},
@@ -190,8 +213,36 @@ def render():
 
 
 def master():
-    """Ganho linear + limitador com sobreamostragem 4× até −14 LUFS e pico ≤ −1 dBTP (DS V2, 4.6).
-    O AAC sobe os picos depois do limitador: o teto fica em −3,3 dBFS e o ganho é recalibrado numa 2ª passada."""
+    if C.get("audio_fora"):
+        return master_fora()
+    master_rev1()
+
+
+def master_fora():
+    """REV2+: a voz (já igualada por tomada) e o clack do CTA são mixados aqui, fora do Remotion; ganho até −14 LUFS e
+    um limitador de pico leve (só nas consoantes mais fortes, nível automático DESLIGADO); um único AAC no fim."""
+    voz = f"{PUB}/voz_bruta.wav"
+    clack = "../../design-system/sons/PD_clack_v1.wav"
+    ini_clack = C["cta"]["ini"] + (C["cta"]["entrada"] + 280) / 1000
+    i_voz, _ = loudness(voz)
+    g_clack = i_voz + C["clack_db_rel"] - (-17.9)  # −17,9 LUFS: loudness de evento do clack (sons/README.md)
+    mix_wav = f"_tmp/{REV}_mix.wav"
+    run("ffmpeg", "-v", "error", "-y", "-i", voz, "-i", clack, "-filter_complex",
+        f"[0:a]aformat=channel_layouts=stereo[v];[1:a]aresample=48000,aformat=channel_layouts=stereo,volume={g_clack:.2f}dB,adelay={round(ini_clack * 1000)}|{round(ini_clack * 1000)}[c];"
+        f"[v][c]amix=inputs=2:normalize=0:duration=first,apad=whole_dur={DUR:.3f}[m]", "-map", "[m]", "-t", f"{DUR:.3f}", "-c:a", "pcm_f32le", mix_wav)
+    i_mix, _ = loudness(mix_wav)
+    g = -14.0 - i_mix
+    final_wav = f"_tmp/{REV}_master.wav"
+    af = f"volume={g:.2f}dB,aresample=192000,alimiter=limit=0.82:attack=2:release=60:level=false,aresample=48000"
+    run("ffmpeg", "-v", "error", "-y", "-i", mix_wav, "-af", af, "-c:a", "pcm_f32le", final_wav)
+    out = f"{REV}/reel_bruges-bate-volta_{REV}.mp4"
+    run("ffmpeg", "-v", "error", "-y", "-i", f"_tmp/{REV}_render.mp4", "-i", final_wav, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "320k", "-shortest", "-movflags", "+faststart", out)
+    i2, pk = loudness(out)
+    print(f"master: {i2:.1f} LUFS, pico {pk:.1f} dBTP → {out}")
+
+
+def master_rev1():
+    """REV1: ganho linear + limitador sobre o render (substituído na REV2: estourava as consoantes)."""
     src = f"_tmp/{REV}_render.mp4"
     out = f"{REV}/reel_bruges-bate-volta_{REV}.mp4"
     i, _ = loudness(src)

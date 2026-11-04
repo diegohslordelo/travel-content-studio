@@ -11,7 +11,7 @@ import { Placa } from "../ds/Placa";
 import { Som } from "../ds/Som";
 import { Captura, Comparar, Contador, Relogio } from "./Graficos";
 import { DadosMapa, Mapa, ModoMapa } from "./Mapa";
-import { GRADE_FOTO, GRADE_VIDEO, PALETA, TEXTO, TITULO, clamp01, ease, easeInOut, lerp } from "./estilo";
+import { GRADE_FOTO, GRADE_NATURAL, GRADE_VIDEO, PALETA, TEXTO, TITULO, clamp01, ease, easeInOut, lerp } from "./estilo";
 
 type Palavra = { texto: string; destaque: boolean };
 type Grupo = { palavras: Palavra[]; ini: number; fim: number };
@@ -49,6 +49,12 @@ export type PropsBruges = {
   mapa: DadosMapa;
   cta: { ini: number; rotulo: string; destino: string; entrada: number };
   mix: { voz_lufs: number; clack_db_rel: number };
+  /** REV2+: montagem calma (pedido do Diego, 04/11/2026): cor natural, sem zoom nem deslizes, textos só com fade. */
+  calmo?: boolean;
+  /** false: o vídeo sai mudo e a voz + clack são mixados fora (scripts/reel.py), com um único AAC no master. */
+  audio?: boolean;
+  /** Textos grandes por cima da imagem (números ditos na fala), só com fade. */
+  textos?: { ini: number; fim: number; top: number; linhas: { texto: string; tam: number; cor?: string; fonte?: "titulo" | "texto"; em?: number }[] }[];
 };
 
 export const propsVaziasBruges: PropsBruges = {
@@ -142,15 +148,16 @@ const Apoio: React.FC<{ p: PropsBruges; cena: CenaBruges }> = ({ p, cena }) => {
       const z = cena.kb ? lerp(t, 0, dur, cena.kb[0], cena.kb[1], (x) => x) : 1;
       return (
         // os clipes são verticais (1080 × 1920): o vídeo fica inteiro e a caixa recorta pelo centro (sem esticar)
-        <div style={{ position: "absolute", left: 0, top: (h - ALTURA) / 2, width: LARGURA, height: ALTURA, scale: String(z), filter: GRADE_VIDEO }}>
+        // foco[1]: que altura do vídeo vertical aparece quando a caixa é menor (tela dividida); 0,5 = centro
+        <div style={{ position: "absolute", left: 0, top: (h - ALTURA) * (cena.foco?.[1] ?? 0.5), width: LARGURA, height: ALTURA, scale: String(z), filter: p.calmo ? GRADE_NATURAL : GRADE_VIDEO }}>
           <Video src={staticFile(cena.arquivo)} muted style={{ width: LARGURA, height: ALTURA }} />
         </div>
       );
     }
-    if (cena.tipo === "foto" && cena.arquivo) return <Foto src={cena.arquivo} w={LARGURA} h={h} t={t} dur={dur} kb={cena.kb} foco={cena.foco} focoFim={cena.foco_fim} />;
+    if (cena.tipo === "foto" && cena.arquivo) return <Foto src={cena.arquivo} w={LARGURA} h={h} t={t} dur={dur} kb={cena.kb} foco={cena.foco} focoFim={cena.foco_fim} filtro={p.calmo ? GRADE_NATURAL : GRADE_FOTO} />;
     if (cena.tipo === "mapa") return <Mapa t={t} modo={cena.modo ?? "bloqueio"} dados={p.mapa} largura={LARGURA} altura={h} dur={dur} />;
-    if (cena.tipo === "captura") return <Captura t={t} dur={dur} fundo={p.captura.fundo} titulo={p.captura.titulo} trecho={p.captura.trecho} troca={p.captura.troca} />;
-    if (cena.tipo === "comparar") return <Comparar t={t} dur={dur} a={p.comparar.a} b={p.comparar.b} marco={p.comparar.marco} focoA={p.comparar.focoA} focoB={p.comparar.focoB} />;
+    if (cena.tipo === "captura") return <Captura t={t} dur={dur} fundo={p.captura.fundo} titulo={p.captura.titulo} trecho={p.captura.trecho} troca={p.captura.troca} calmo={p.calmo} />;
+    if (cena.tipo === "comparar") return <Comparar t={t} dur={dur} a={p.comparar.a} b={p.comparar.b} marco={p.comparar.marco} focoA={p.comparar.focoA} focoB={p.comparar.focoB} calmo={p.calmo} />;
     return null;
   })();
   return (
@@ -159,7 +166,16 @@ const Apoio: React.FC<{ p: PropsBruges; cena: CenaBruges }> = ({ p, cena }) => {
       {cena.escuro ? <div style={{ position: "absolute", inset: 0, background: `rgba(11,10,9,${cena.escuro})` }} /> : null}
       {/* tela cheia clara: degradê na base para a legenda branca (FORMATOS_REELS 3) */}
       {cena.layout === "full" && cena.tipo !== "captura" && cena.tipo !== "comparar" && (
-        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 960, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 55%, rgba(0,0,0,0.62) 100%)" }} />
+        <div
+          style={{
+            position: "absolute",
+            left: 0,
+            right: 0,
+            bottom: 0,
+            height: p.calmo ? 760 : 960,
+            background: p.calmo ? "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.32) 60%, rgba(0,0,0,0.42) 100%)" : "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 55%, rgba(0,0,0,0.62) 100%)",
+          }}
+        />
       )}
     </div>
   );
@@ -225,7 +241,7 @@ const Legenda: React.FC<{ p: PropsBruges; tS: number; cena: CenaBruges }> = ({ p
         lineHeight: 1.1,
         color: PALETA.branco,
         textShadow: "0 3px 0 rgba(0,0,0,0.35), 0 4px 22px rgba(0,0,0,0.85)",
-        scale: String(0.94 + 0.06 * e),
+        scale: p.calmo ? undefined : String(0.94 + 0.06 * e),
         opacity: e,
       }}
     >
@@ -349,6 +365,17 @@ export const ReelBruges: React.FC<PropsBruges> = (p) => {
           <Contador t={tS - p.contador.ini} m={p.contador.marcos} />
         </Sequence>
       )}
+      {(p.textos ?? []).map((x, k) =>
+        tS >= x.ini && tS < x.fim ? (
+          <div key={k} style={{ position: "absolute", left: 0, right: 0, top: x.top, textAlign: "center", opacity: ease((tS - x.ini) / 0.25) * (1 - clamp01((tS - (x.fim - 0.2)) / 0.2)), textShadow: "0 4px 30px rgba(0,0,0,0.65), 0 2px 0 rgba(0,0,0,0.35)" }}>
+            {x.linhas.map((l, j) => (
+              <div key={j} style={{ font: l.fonte === "texto" ? `800 ${l.tam}px ${TEXTO}` : `400 ${l.tam}px ${TITULO}`, letterSpacing: l.fonte === "texto" ? 3 : 0, lineHeight: 1.02, color: l.cor ?? PALETA.branco, opacity: l.em === undefined ? 1 : ease((tS - l.em) / 0.25) }}>
+                {l.texto}
+              </div>
+            ))}
+          </div>
+        ) : null,
+      )}
       {p.relogio && tS >= p.relogio.ini && tS < p.relogio.fim && <Relogio t={tS - p.relogio.ini} em={p.relogio.em - p.relogio.ini} />}
       {cena.layout === "split" && !empurrando && <div style={{ position: "absolute", left: 0, right: 0, top: p.costura - 3, height: 6, background: "rgba(0,0,0,0.55)" }} />}
       {p.cenas.filter((c) => c.entrada && c.entrada !== "empurrao").map((c) => (Math.abs(tS - c.ini) < 0.5 ? <Transicao key={c.id} tipo={c.entrada} dt={tS - c.ini} /> : null))}
@@ -358,10 +385,10 @@ export const ReelBruges: React.FC<PropsBruges> = (p) => {
       {/* CTA: único lugar do Reel com o DS V2 (2.7: placa de direção; Chegada; clack) */}
       <Sequence from={iq(p.cta.ini)} name="CTA (DS V2)">
         <Placa rotulo={p.cta.rotulo} destino={p.cta.destino} modulo="interrogacao" entrada={p.cta.entrada} />
-        <Som nome="clack" em={p.cta.entrada + 280} relDb={p.mix.clack_db_rel} refLufs={p.mix.voz_lufs} />
+        {p.audio !== false && <Som nome="clack" em={p.cta.entrada + 280} relDb={p.mix.clack_db_rel} refLufs={p.mix.voz_lufs} />}
       </Sequence>
-      <Audio src={staticFile("voz.wav")} />
-      <Audio src={staticFile("sfx.wav")} />
+      {p.audio !== false && <Audio src={staticFile("voz.wav")} />}
+      {p.audio !== false && <Audio src={staticFile("sfx.wav")} />}
     </AbsoluteFill>
   );
 };
