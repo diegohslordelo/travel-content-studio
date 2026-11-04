@@ -135,7 +135,20 @@ As legendas continuam com 1 a 4 palavras em uma linha (máx. 23 caracteres), cen
 ---
 
 ## 5. Medições (vídeo final)
-(preenchidas após o render)
+
+| Ponto | REV1 | REV2 |
+|---|---|---|
+| Duração | 55,1 s | 55,1 s (mesma fala) |
+| Formato | 1080 × 1920, 30 qps, H.264 + AAC | igual · AAC 320 kb/s codificado **uma vez** |
+| Loudness integrado | −14,1 LUFS (4 passadas) | **−14,0 LUFS** (1 passada) |
+| Pico verdadeiro | −1,0 dBTP | **−1,7 dBTP**; nenhuma amostra acima de −1,5 dBFS |
+| Faixa de loudness (LRA) | — | 2,1 LU (volume parelho entre as falas) |
+| Atuação do limitador | até ~6 dB em boa parte das sílabas (teto −3,3 dBFS + nível automático ligado) | **máx. 1,0 dB, em 0,7% dos trechos de 10 ms** |
+| Efeitos sonoros | 8 | 0 (só o clack do CTA, −10 dB) |
+| Cenas | 27 | 20 |
+| Transições estilizadas | 4 + deslizes e zooms | 0 (cortes secos; fitas do gancho mantidas) |
+| Takes tremidos | IMG_4121 e IMG_4235 | nenhum (o maior tremor restante, IMG_2447, entra estabilizado) |
+| Legendas sobrepostas | 4 pontos (seção 3) | 0 na folha de 1 quadro por segundo (`qa_frames/folha_1s.jpg`) |
 
 ## 6. Conferir no ouvido (o Claude não escuta áudio)
 - [ ] A voz não estoura mais, principalmente "tanto" (≈ 12,5 s) e "Olho no olho" (≈ 35,3 s).
