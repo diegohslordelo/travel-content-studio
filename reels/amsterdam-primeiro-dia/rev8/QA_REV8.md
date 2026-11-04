@@ -1,14 +1,17 @@
 # QA · Reel "Primeiro dia em Amsterdam" · REV8 (04/11/2026) · versão para postar
 
-**Veredito: pronto.** A REV8 é a REV7 (`../rev7/QA_REV7.md`, não alterada) com o Placar e os preços de volta, a pedido do Diego (04/11/2026): "Coloque os preços e o placar de novo".
+**Veredito: pronto.** A REV8 parte da REV7 (`../rev7/QA_REV7.md`, não alterada) com quatro pedidos do Diego (04/11/2026).
 
-## O que voltou
+## O que mudou
 
-- **Placar do Dia** (DS V2, 2.5) em x 72 · y 256: hora de cada ponto e gasto acumulado, do pouso (14:30 · € 0,00) ao McDonald's (21:21 · **€ 78,85**). Sem a pizza, como pedido na REV2.
-- **Etiquetas de valor** (DS V2, 2.6) ao lado do Placar, a 80% e só em €: ÔNIBUS + € 13,00 · MANNEKEN PIS + € 7,15 · TONY'S + € 20,00 · HANS EGSTORF + € 9,50 · CERVEJA E VINHO + € 16,60 · McDONALD'S + € 12,60.
-- **Sons:** máquina de moeda em cada soma (−8 dB da voz) e *tick* quando só a hora gira (−14 dB), com 1 efeito a cada 1,5 s no máximo.
+| # | Pedido | Na REV8 |
+|---|---|---|
+| 1 | "Coloque os preços e o placar de novo" | Placar do Dia (DS V2, 2.5) e as etiquetas de valor de volta, como na REV5 (fecha em **€ 78,85**, sem a pizza), com a moeda em cada soma |
+| 2 | "Coloque em formato narrado, tire de tela verde" | **Formato Narrado** (Trello): o recorte do Diego sai da tela; a voz dele narra sobre as imagens da viagem em tela cheia. A legenda desce para a posição de tela cheia (**y 1320**, FORMATOS_REELS.md, 6). Regra do Narrado (no máximo 3 s por cena): a Red Light vai até "E por último" (2,50 s) e o canal noturno cai de 3,5 para **3,0 s** |
+| 3 | Kalverstraat com dois takes iguais | Fica o 1º (IMG_1464, a rua); o 2º (IMG_1472, a mesma rua) vira **IMG_1466**, a fachada de uma loja de perto (tremor 0,2–0,4). O IMG_1467 (LEGO) tem 2,33 s, menos que a cena (2,37 s), e não dá para esticar |
+| 4 | "Coloque a outra CTA no lugar do vídeo do YouTube" | O CTA final é o **IMG_7632**: "Já manda esse vídeo pra alguém que vai pra Amsterdã e comenta aqui o que você quer saber de lá." (0,24–3,74 s da tomada). A placa do DS entra com **"MANDA PRA ALGUÉM QUE VAI PRA / AMSTERDAM →"** e, em "comenta", vira (troca de texto do DS, 2.1) para **"E COMENTA O QUE VOCÊ / QUER SABER →"**. A grade do dia entra em "vídeo" (53,27 s), para o McDonald's ficar 2,0 s |
 
-O resto é igual à REV7: "Amsterdam" na tela, gancho na fala com o logotipo, Marina com o vinho, qualidade máxima. As legendas do post voltam à versão da REV5 (€ 78,85 na tela; € 90,84 no dia com a pizza).
+O Reel passa de 60,6 s para **56,9 s** (o CTA novo é mais curto). As legendas do post trocam o CTA do YouTube pelo de envio e comentário.
 
 ## Medido no vídeo final
 

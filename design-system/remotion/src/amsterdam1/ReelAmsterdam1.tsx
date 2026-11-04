@@ -40,7 +40,7 @@ export type PropsAMS = {
   placar: { valores: ValorPlacar[]; ligar: number };
   etiquetas: { ini: number; fim: number; euro: string; rotulo: string }[];
   etiqueta: { x: number; y: number; escala: number };
-  cta: { ini: number; rotulo: string; destino: string; entrada: number };
+  cta: { ini: number; rotulo: string; destino: string; entrada: number; trocas?: { em: number; rotulo?: string; destino: string }[] };
   mix: { voz_lufs: number; clack_db_rel: number };
   sfx: boolean;
   transicoes: { tipo: "luz" | "clarao"; q: number }[];
@@ -269,9 +269,11 @@ export const ReelAmsterdam1: React.FC<PropsAMS> = (p) => {
       <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 560, background: "linear-gradient(to bottom, rgba(0,0,0,0.38) 0%, rgba(0,0,0,0) 100%)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 760, bottom: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.42) 40%, rgba(0,0,0,0.55) 100%)" }} />
       {/* o Diego de hoje (quarto), recortado, no canto inferior direito; tamanho fixo, sem zoom */}
-      <div style={{ position: "absolute", left: d.x, top: d.y, width: d.w, height: d.h, filter: "drop-shadow(0 10px 28px rgba(0,0,0,0.55))" }}>
-        <OffthreadVideo src={staticFile("diego.webm")} transparent muted style={{ width: d.w, height: d.h }} />
-      </div>
+      {d.w > 0 && (
+        <div style={{ position: "absolute", left: d.x, top: d.y, width: d.w, height: d.h, filter: "drop-shadow(0 10px 28px rgba(0,0,0,0.55))" }}>
+          <OffthreadVideo src={staticFile("diego.webm")} transparent muted style={{ width: d.w, height: d.h }} />
+        </div>
+      )}
       <Grao q={q} />
       {/* Placar do Dia (DS V2, 2.5): hora de cada ponto e gasto acumulado do dia, como no vlog do YouTube */}
       {p.placar.valores.length > 0 && <Placar valores={p.placar.valores} ligar={p.placar.ligar} refLufs={p.mix.voz_lufs} som={false} />}
@@ -292,7 +294,7 @@ export const ReelAmsterdam1: React.FC<PropsAMS> = (p) => {
       {p.transicoes.map((tr, i) => (tr.tipo === "luz" ? <LuzPassagem key={i} q={q} corte={tr.q} /> : <Clarao key={i} q={q} corte={tr.q} />))}
       {/* CTA: placa de direção do DS V2 (verbo + módulo de seta), Chegada e clack */}
       <Sequence from={ctaQ} name="CTA (DS V2)">
-        <Placa rotulo={p.cta.rotulo} destino={p.cta.destino} modulo="seta" entrada={p.cta.entrada} />
+        <Placa rotulo={p.cta.rotulo} destino={p.cta.destino} modulo="seta" entrada={p.cta.entrada} trocas={p.cta.trocas} />
         <Som nome="clack" em={p.cta.entrada + 280} relDb={p.mix.clack_db_rel} refLufs={p.mix.voz_lufs} />
       </Sequence>
       <Audio src={staticFile("voz.wav")} />
