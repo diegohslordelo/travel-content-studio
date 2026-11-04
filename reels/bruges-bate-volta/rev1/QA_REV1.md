@@ -66,5 +66,18 @@
 - [ ] As pausas entre as falas (0,24 a 0,38 s): naturais ou corridas?
 - [ ] O fim (54,1–55,1 s): 1 s de silêncio com a placa na tela.
 
-## Medições
-(preenchidas após o render)
+## Medições (vídeo final)
+
+| # | Ponto | Resultado |
+|---|---|---|
+| 1 | Duração | 55,1 s (acima do alvo de 45 s do formato; ver Pontos de atenção, 1) |
+| 2 | Formato | 1080 × 1920, 30 qps, H.264 + AAC 48 kHz 320 kb/s |
+| 3 | Material gravado ≥ 2 s · nenhuma cena > 3 s | 27 cenas: a menor gravada tem 2,00 s; as fotos e grafismos ficam entre 0,90 e 1,90 s; a maior cena tem 2,92 s (captura) |
+| 5 | Legendas | 65 grupos de 1 a 4 palavras, em uma linha (máx. 23 caracteres), centro x 540 |
+| 6 | Imagem na palavra | Toda troca é ancorada no tempo da palavra (transcrição alinhada na voz final) |
+| 9 | Áudio | −14,1 LUFS integrados, pico −1,0 dBTP (master em 4 passadas: o AAC sobe os picos depois do limitador) |
+| 11 | Transcrição da voz final | Whisper large-v3 = fala gravada; o corte "humanidade. / A cidade" foi transcrito limpo |
+| 12 | Nada na tela fora da fala | Gancho, números, 11H e placa vêm da fala. Exceções registradas: fitas "POLITIE · POLICE" (inscrição da fita real) e selo "CAPTURA REAL" |
+| 13 | Créditos | `creditos.md` e bloco de crédito em `legenda_post.md` |
+
+Arquivos: `reel_bruges-bate-volta_rev1.mp4` (master), `reel_bruges-bate-volta_rev1_previa.mp4` (540 px, leve), `capa_bruges-bate-volta_rev1.jpg` (quadro de 1,9 s, gancho completo) e `qa_frames/folha_1s.jpg`.
