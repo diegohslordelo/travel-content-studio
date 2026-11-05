@@ -3,6 +3,7 @@
  "duracao": 50.167,
  "voz": 49.458,
  "roxo": 0,
+ "diego": "diego_fundo.mp4",
  "cenas": [
   {
    "id": "gancho",
@@ -43,8 +44,6 @@
     1.06,
     1.0
    ],
-   "tag_cima": "GTA VI · VICE CITY",
-   "tag_baixo": "MIAMI DE VERDADE",
    "foto": "planos/skyline.jpg",
    "foto_baixo": "planos/skyline_real.jpg"
   },
@@ -84,8 +83,6 @@
     1.06,
     1.0
    ],
-   "tag_cima": "GTA VI",
-   "tag_baixo": "MIAMI · WYNWOOD",
    "numero": "1",
    "foto": "planos/wynwood.jpg",
    "foto_baixo": "planos/wynwood_real.jpg"
@@ -103,8 +100,6 @@
     1.05,
     1.0
    ],
-   "tag_cima": "GTA VI · SAHARA ARENA",
-   "tag_baixo": "MIAMI · KASEYA CENTER",
    "numero": "2",
    "foto": "planos/arena.jpg",
    "foto_baixo": "planos/arena_real.jpg"
@@ -129,14 +124,13 @@
    "fim": 38.03333333333333,
    "zoom": [
     1.0,
-    1.06
+    1.07
    ],
    "zoom_baixo": [
     1.06,
     1.0
    ],
-   "tag_cima": "GTA VI · VICE BEACH",
-   "tag_baixo": "MIAMI · OCEAN DRIVE",
+   "origem": "35% 60%",
    "numero": "3",
    "foto": "planos/ocean.jpg",
    "foto_baixo": "planos/ocean_real.jpg"
@@ -152,11 +146,10 @@
     1.06
    ],
    "zoom_baixo": [
-    1.06,
-    1.0
+    1.0,
+    1.05
    ],
-   "tag_cima": "GTA VICE CITY · 2002",
-   "tag_baixo": "MIAMI · COLONY HOTEL",
+   "origem_baixo": "50% 100%",
    "foto": "planos/colon.jpg",
    "foto_baixo": "planos/colon_real.jpg"
   },

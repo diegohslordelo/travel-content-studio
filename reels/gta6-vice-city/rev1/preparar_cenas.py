@@ -143,7 +143,8 @@ gancho = [{"ini": 0.0, "fim": cenas[1]["ini"], "linhas": [
     {"t": "ROUBAR", "em": A("gancho:roubar-0.04"), "tam": 200, "forte": True},
     {"t": "UM CARRO", "em": A("gancho:um-0.04"), "tam": 200, "forte": True}]}]
 
-props = {"fps": FPS, "duracao": round(cenas[-1]["fim"], 3), "voz": round(FIM_VOZ, 3), "roxo": 0,
+# vídeo do Diego com a luz roxa só no fundo (aplicar_roxo.py; versão escolhida pelo Diego, 05/11/2026)
+props = {"fps": FPS, "duracao": round(cenas[-1]["fim"], 3), "voz": round(FIM_VOZ, 3), "roxo": 0, "diego": "diego_fundo.mp4",
          "cenas": cenas, "legendas": leg, "gancho": gancho}
 json.dump(props, open("public/props.json", "w"), ensure_ascii=False, indent=1)
 for d in cenas: print(f"{d['ini']:6.2f}-{d['fim']:6.2f} {d['fim'] - d['ini']:4.2f}s {d['tipo']:9s} {d['id']}")

@@ -11,7 +11,6 @@ def t(fala, pal, n=1):
 cena = {c["id"]: c for c in P["cenas"]}
 EVENTOS = [
     ("externos/PDX_impacto.wav", t("gancho", "carro") - 0.02, -4, "gancho: 'roubar um carro'"),
-    ("externos/PDX_swish.wav",   cena["sofa"]["ini"] - 0.03, -6, "clarão: Diego no sofá"),
     ("externos/PDX_impacto.wav", t("vice", "19") - 0.02, -4, "data: dia 19"),
     ("externos/PDX_swish.wav",   cena["skyline"]["ini"] - 0.03, -6, "comparar: skyline"),
     ("externos/PDX_swish.wav",   cena["wynwood"]["ini"] - 0.03, -6, "comparar 1: Wynwood"),
@@ -45,7 +44,7 @@ def lufs(f):
 I0, _ = lufs("build/mix.wav")
 ganho = -14.0 - I0
 subprocess.run(["ffmpeg","-v","error","-y","-i","build/mix.wav","-af",
-    f"volume={ganho:.2f}dB,aresample=192000,alimiter=limit=0.76:attack=1:release=60:level=disabled,aresample=48000",
+    f"volume={ganho:.2f}dB,aresample=192000,alimiter=limit=0.70:attack=1:release=60:level=disabled,aresample=48000",
     "-c:a","pcm_s24le","build/master.wav"],check=True)
 I1, TP1 = lufs("build/master.wav")
 if abs(I1 + 14) > 0.15:

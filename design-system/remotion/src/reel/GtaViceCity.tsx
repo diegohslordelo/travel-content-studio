@@ -4,7 +4,8 @@
  * Pedidos do Diego (05/11/2026):
  *  - ponto turístico = "comparar": Vice City do jogo em cima, Miami de verdade embaixo;
  *  - palavra de ênfase da legenda nas cores do GTA VI (o resto em branco);
- *  - versão B: luz roxa do GTA muito leve só nas gravações do Diego (props.roxo = opacidade; 0 = versão A).
+ *  - luz roxa do GTA muito leve só nas gravações do Diego, em duas versões (quadro inteiro ou só o fundo), aplicada no
+ *    próprio vídeo do Diego por reels/<reel>/revN/aplicar_roxo.py e escolhida em props.diego. props.roxo (sobreposição CSS) fica 0.
  * Render: --public-dir=reels/gta6-vice-city/revN/public --props=reels/gta6-vice-city/revN/public/props.json
  */
 import React from "react";
@@ -41,6 +42,7 @@ export type PropsVice = {
   duracao: number;
   voz: number;
   roxo: number;
+  diego?: string;
   cenas: Cena[];
   legendas: Legenda[];
   gancho: { ini: number; fim: number; linhas: Linha[] }[];
@@ -258,7 +260,7 @@ export const GtaViceCity: React.FC<PropsVice> = (p) => {
       {/* Diego embaixo durante toda a fala (vídeo decupado, em sincronia com a voz) */}
       <Sequence durationInFrames={sq(p.duracao, fps)} layout="none">
         <AbsoluteFill style={{ top: COSTURA, height: H - COSTURA, overflow: "hidden" }}>
-          <OffthreadVideo src={staticFile("diego.mp4")} muted style={{ position: "absolute", top: ROSTO_DESLOC - COSTURA, left: 0, width: W, height: H }} />
+          <OffthreadVideo src={staticFile(p.diego ?? "diego.mp4")} muted style={{ position: "absolute", top: ROSTO_DESLOC - COSTURA, left: 0, width: W, height: H }} />
           <LuzRoxa roxo={p.roxo} />
         </AbsoluteFill>
       </Sequence>
@@ -271,7 +273,7 @@ export const GtaViceCity: React.FC<PropsVice> = (p) => {
               {c.tag_cima && <Tag t={c.tag_cima} jogo x={X0} y={240} em={0.15} />}
             </AbsoluteFill>
           )}
-          {c.tipo === "diego" && <DiegoCheio c={c} roxo={p.roxo} />}
+          {c.tipo === "diego" && <DiegoCheio c={c} roxo={p.roxo} arquivo={p.diego ?? "diego.mp4"} />}
           {c.tipo === "comparar" && <Comparar c={c} />}
           {c.transicao === "dissolve" && i > 0 && <Dissolve anterior={p.cenas[i - 1]} c={c} />}
         </Sequence>
@@ -289,13 +291,13 @@ export const GtaViceCity: React.FC<PropsVice> = (p) => {
 };
 
 /** Diego em tela cheia (plano aberto no sofá), aproximação lenta e linear (100 → 105%). */
-const DiegoCheio: React.FC<{ c: Cena; roxo: number }> = ({ c, roxo }) => {
+const DiegoCheio: React.FC<{ c: Cena; roxo: number; arquivo: string }> = ({ c, roxo, arquivo }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const z = interpolate(f, [0, (c.fim - c.ini) * fps], [1, 1.05]);
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
-      <OffthreadVideo src={staticFile("diego.mp4")} muted startFrom={sq(c.ini, fps)} style={{ width: W, height: H, transform: `scale(${z})` }} />
+      <OffthreadVideo src={staticFile(arquivo)} muted startFrom={sq(c.ini, fps)} style={{ width: W, height: H, transform: `scale(${z})` }} />
       <LuzRoxa roxo={roxo} />
     </AbsoluteFill>
   );
