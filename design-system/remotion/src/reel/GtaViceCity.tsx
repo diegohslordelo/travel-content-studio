@@ -159,10 +159,11 @@ const Gancho: React.FC<{ blocos: PropsVice["gancho"] }> = ({ blocos }) => {
       {b.linhas.map((l, i) => {
         const tam = tams[i];
         const d = t - l.em;
-        const o = interpolate(d, [0, 0.12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-        const s = l.forte ? interpolate(d, [0, 0.16], [1.18, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) }) : 1;
+        // mesma entrada do gancho dos outros Reels (GtaCidades): fade + sobe 24 px em 0,16 s, sem escala
+        const o = interpolate(d, [0, 0.16], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+        const dy = interpolate(d, [0, 0.16], [24, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
         const el = (
-          <div key={i} style={{ position: "absolute", left: X0, top: topo, opacity: o, transform: `scale(${s})`, transformOrigin: "0% 50%", fontFamily: "Anton", fontSize: tam, lineHeight: 1.0, whiteSpace: "nowrap", color: "#FFFFFF",
+          <div key={i} style={{ position: "absolute", left: X0, top: topo, opacity: o, transform: `translateY(${dy}px)`, fontFamily: "Anton", fontSize: tam, lineHeight: 1.0, whiteSpace: "nowrap", color: "#FFFFFF",
             textShadow: "0 4px 0 rgba(0,0,0,0.35), 0 6px 26px rgba(0,0,0,0.9)" }}>
             {l.t}
           </div>

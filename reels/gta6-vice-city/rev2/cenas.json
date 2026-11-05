@@ -3,7 +3,7 @@
  "cenas": [
   {"id": "gancho", "ancora": "inicio", "tipo": "topo",
    "foto": "../fonte/real/gancho/px_car_burglary_thief_burglar_break_into_screwdriver_car_thief_break_locks-545992.jpg",
-   "recorte": [0.0, 0.0, 0.85, 1.0], "zoom": [1.0, 1.10], "origem": "30% 25%",
+   "recorte": [0.0, 0.0, 0.85, 1.0], "zoom": [1.0, 1.03], "origem": "30% 25%",
    "credito": "pxhere.com/en/photo/545992 (CC0)"},
   {"id": "sofa", "ancora": "sofa:E-0.06", "tipo": "diego", "transicao": "clarao"},
   {"id": "dia19", "ancora": "vice:Dia-0.06", "tipo": "topo",

@@ -36,7 +36,12 @@ def regioes(x, sr, a, b):
     for r in regs:
         if m and r[0] - m[-1][1] < PAUSA_MIN: m[-1][1] = r[1]
         else: m.append(r)
-    return m
+    # REV2: nenhum trecho com menos de 0,4 s (vira micro-corte que treme o rosto); emenda no anterior, com a pausa
+    k = []
+    for r in m:
+        if k and (r[1] - r[0] < 0.4 or k[-1][1] - k[-1][0] < 0.4): k[-1][1] = r[1]
+        else: k.append(r)
+    return k
 
 segs = []  # (arquivo, ini, fim, fala_id)
 for f in E["falas"]:
