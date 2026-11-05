@@ -148,6 +148,9 @@ gancho = [{"ini": 0.0, "fim": cenas[1]["ini"], "linhas": [
     {"t": "UM CARRO", "em": A("gancho:um-0.04"), "tam": 200, "forte": True}]}]
 
 # vídeo do Diego com a luz roxa só no fundo (aplicar_roxo.py; versão escolhida pelo Diego, 05/11/2026)
+FONTE_ANTON = lambda s: ImageFont.truetype("build/anton.ttf", s)
+for l in gancho[0]["linhas"]:   # o gancho usa tamanho fixo: tem de caber na largura máxima (x 72 + 872)
+    assert FONTE_ANTON(l["tam"]).getlength(l["t"]) <= 872, l["t"]
 props = {"fps": FPS, "duracao": round(cenas[-1]["fim"], 3), "voz": round(FIM_VOZ, 3), "roxo": 0, "diego": "diego_fundo.mp4",
          "cenas": cenas, "legendas": leg, "gancho": gancho}
 json.dump(props, open("public/props.json", "w"), ensure_ascii=False, indent=1)

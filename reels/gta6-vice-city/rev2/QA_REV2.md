@@ -12,6 +12,10 @@
 | Tremida na troca sofá → próximo take | trecho de 0,1 s no fim da fala do sofá + ~6 quadros do take seguinte em tela cheia | **decupagem sem trechos < 0,4 s** (mínimo 0,70 s) e cenas do sofá e do "Dia 19" presas ao corte exato entre takes (quadros 48 e 126) |
 | Fotos reais | 1.800 px | 3.240 px (mesmas fotos) |
 
+## Correção depois da primeira entrega da REV2 (gancho "tremendo", Diego)
+
+O texto do gancho ("ESSE MÊS EU VOU / ROUBAR / UM CARRO") pulava a cada 4 quadros: o `fitText` media o texto no navegador antes de a fonte Anton carregar, numa das 4 abas do render, e o tamanho e a posição mudavam (base 429 ↔ 465 px, largura 835 ↔ 699 px). Agora os tamanhos são fixos (96, 200 e 200 px, conferidos em `preparar_cenas.py` para caber em 872 px). Medido no vídeo novo: depois de entrar, cada linha fica no mesmo pixel até o fim do gancho.
+
 ## Medido
 
 - −14,0 LUFS, pico −1,3 dBTP. 16 trechos na decupagem.

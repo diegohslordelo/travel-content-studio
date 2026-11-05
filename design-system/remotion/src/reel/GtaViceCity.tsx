@@ -11,7 +11,6 @@
 import React from "react";
 import { AbsoluteFill, Img, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig, Easing } from "remotion";
 import { loadFont } from "@remotion/fonts";
-import { fitText } from "@remotion/layout-utils";
 import anton from "@fontsource/anton/files/anton-latin-400-normal.woff2";
 import inter800 from "@fontsource/inter/files/inter-latin-800-normal.woff2";
 
@@ -59,7 +58,6 @@ const GTA_ROXO = "#4050C0";
 const GRAD_GTA = `linear-gradient(90deg, ${GTA_ROSA} 0%, #F05090 35%, ${GTA_LARANJA} 100%)`;
 const LUZ_ROXA = "#8A3CFF"; // luz da versão B: o roxo do céu do logo/trailer do GTA VI
 const X0 = 72;
-const LARG_MAX = 872;
 
 const useT = () => {
   const f = useCurrentFrame();
@@ -151,7 +149,9 @@ const Gancho: React.FC<{ blocos: PropsVice["gancho"] }> = ({ blocos }) => {
   const b = blocos.find((x) => t >= x.ini && t < x.fim);
   if (!b) return null;
   // texto na base da metade de cima (a ação da foto fica livre em cima)
-  const tams = b.linhas.map((l) => Math.min(l.tam, fitText({ text: l.t, withinWidth: LARG_MAX, fontFamily: "Anton", fontWeight: "400" }).fontSize));
+  // tamanhos fixos (conferidos em preparar_cenas.py para caber em 872 px). Sem fitText: medido no navegador antes de a
+  // Anton carregar, ele variava entre as abas do render e o texto pulava a cada 4 quadros (gancho "tremendo", REV2).
+  const tams = b.linhas.map((l) => l.tam);
   let topo = COSTURA - 44 - tams.reduce((a, x) => a + x + 6, 0);
   return (
     <AbsoluteFill>
