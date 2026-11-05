@@ -1,0 +1,17 @@
+{
+ "fps": 30,
+ "tempo": 1.07,
+ "observacao": "Tempos em segundos do arquivo original (fonte/fala, Drive YouTube/GTA, 05/11/2026). Uma tomada por fala, sem falsas largadas. Fora: IMG_7795 9,36-9,90 s e IMG_7806 0,04-0,21 s (batida grave no celular, centroide 185-342 Hz, sem fala; o Whisper alucina 'Tchau'). Decupagem justa no silêncio e voz+vídeo a 1,07x (preferência do Diego, 05/11/2026).",
+ "falas": [
+  {"id": "gancho",  "arquivo": "IMG_7783", "entrada": 0.55, "saida": 2.45,  "texto": "Esse mês eu vou roubar um carro."},
+  {"id": "sofa",    "arquivo": "IMG_7786", "entrada": 0.85, "saida": 3.75,  "texto": "E eu não vou nem precisar sair do sofá pra isso."},
+  {"id": "vice",    "arquivo": "IMG_7790", "entrada": 2.25, "saida": 11.85, "texto": "Dia 19 de novembro lança o GTA 6, e com ele a volta da Vice City, a cidade do jogo que foi inspirada na Miami de verdade. Mas, rapaz, será que elas se parecem mesmo?"},
+  {"id": "tres",    "arquivo": "IMG_7792", "entrada": 0.40, "saida": 8.25,  "texto": "Hoje eu vou mostrar 3 lugares pra você, viajante que curte videogame, e se sentir dentro do jogo. E o último eu te garanto que é pura nostalgia."},
+  {"id": "wynwood", "arquivo": "IMG_7795", "entrada": 2.30, "saida": 8.10,  "texto": "O primeiro é o Wynwood, o bairro dos murais. A arte de rua de lá te faz sentir dentro da própria Vice City."},
+  {"id": "arena",   "arquivo": "IMG_7800", "entrada": 0.20, "saida": 11.08, "texto": "Em segundo, o Sahara Arena. É a própria casa do Miami Heat, o Kaseya Center. Eles firmaram a parceria dia 18 com a Rockstar e vão transformar a quadra e o uniforme dos jogadores na própria Vice City."},
+  {"id": "ocean",   "arquivo": "IMG_7801", "entrada": 0.20, "saida": 8.36,  "texto": "Em terceiro, a Ocean Drive, que no Vice City de 2002 continuou com o mesmo nome. E tem o Colony Hotel, que no jogo comeu Y, virou Colon."},
+  {"id": "lembrar", "arquivo": "IMG_7804", "entrada": 0.00, "saida": 2.25,  "texto": "Esse, quem jogou de verdade, vai lembrar."},
+  {"id": "moral",   "arquivo": "IMG_7806", "entrada": 0.55, "saida": 7.75,  "texto": "No jogo você já roubou um carro nessa rua, e na vida real você precisa de um primeiro dia em Miami para conhecer a Vice City de verdade."}
+ ],
+ "audio": {"passa_alta_hz": 70, "afftdn": "nr=8:nf=-58:tn=1", "alvo_lufs": -14.0, "pico_dbtp": -1.0}
+}

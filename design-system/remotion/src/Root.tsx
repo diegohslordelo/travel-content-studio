@@ -12,6 +12,7 @@ import { KitComposicoes } from "./kit/Kit";
 import { CapaReel, Reel, metadadosReel, propsVazias } from "./reel/Reel";
 import { AmostraYT } from "./yt/AmostraYT";
 import { GtaCidades, metadadosGta, PropsGta } from "./reel/GtaCidades";
+import { GtaViceCity, metadadosVice, PropsVice } from "./reel/GtaViceCity";
 import { AmostraFimYT, DUR_AMOSTRA_FIM } from "./yt/AmostraFimYT";
 
 carregarFontes();
@@ -23,6 +24,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="AmostraYT" component={AmostraYT} durationInFrames={900} fps={30} width={1920} height={1080} />
     <Composition id="AmostraFimYT" component={AmostraFimYT} durationInFrames={Math.round((DUR_AMOSTRA_FIM * 30) / 1000)} fps={30} width={1920} height={1080} />
     <Composition id="GtaCidades" component={GtaCidades} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={{ fps: 30, duracao: 1, fimGta: 0, voz: 0, cenas: [], legendas: [], gancho: [] } as PropsGta} calculateMetadata={metadadosGta} />
+    <Composition id="GtaViceCity" component={GtaViceCity} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={{ fps: 30, duracao: 1, voz: 0, roxo: 0, cenas: [], legendas: [], gancho: [] } as PropsVice} calculateMetadata={metadadosVice} />
     <Still id="CapaReel" component={CapaReel} width={1080} height={1920} defaultProps={propsVazias} />
   </>
 );
