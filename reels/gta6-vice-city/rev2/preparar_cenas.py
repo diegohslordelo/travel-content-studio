@@ -2,6 +2,8 @@
 monta as legendas (1 linha, palavra de ênfase nas cores do GTA) e escreve public/props.json para a composição GtaViceCity.
 Roda de dentro de reels/gta6-vice-city/rev2, depois de preparar_voz.py e alinhar.py."""
 import json, re, subprocess, os, shutil, unicodedata
+ESC = float(os.environ.get("ESC", "1.5"))   # resolução das imagens em relação ao painel (4K: ESC=3)
+ESC_V = 2 if ESC > 2 else 1                  # trechos de vídeo do jogo: 2x no render 4K
 from PIL import Image, ImageFilter, ImageEnhance, ImageFont
 
 FPS = 30
@@ -54,14 +56,14 @@ for c in C:
         if k in c: d[k] = c[k]
     w, h = W, COSTURA
     if "video" in c:
-        out = f"planos/{c['id']}.mp4"; video(c["video"], c["fim"] - c["ini"], "public/" + out, w, h); d["video"] = out
+        out = f"planos/{c['id']}.mp4"; video(c["video"], c["fim"] - c["ini"], "public/" + out, w * ESC_V, h * ESC_V); d["video"] = out
     if "foto" in c:
         out = f"planos/{c['id']}.jpg"
-        im = conter(c["foto"], int(w * 1.5), int(h * 1.5)) if c.get("contem") else cobrir(c["foto"], int(w * 1.5), int(h * 1.5), c.get("recorte"))
+        im = conter(c["foto"], int(w * ESC), int(h * ESC)) if c.get("contem") else cobrir(c["foto"], int(w * ESC), int(h * ESC), c.get("recorte"))
         im.save("public/" + out, quality=92); d["foto"] = out
     if "foto_baixo" in c:
         out = f"planos/{c['id']}_real.jpg"
-        cobrir(c["foto_baixo"], int(W * 1.5), int((H - COSTURA) * 1.5), c.get("recorte_baixo")).save("public/" + out, quality=92); d["foto_baixo"] = out
+        cobrir(c["foto_baixo"], int(W * ESC), int((H - COSTURA) * ESC), c.get("recorte_baixo")).save("public/" + out, quality=92); d["foto_baixo"] = out
     cenas.append(d)
 
 # ---------- legendas ----------
