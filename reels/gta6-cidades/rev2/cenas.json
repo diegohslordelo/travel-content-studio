@@ -1,0 +1,284 @@
+{
+ "nota": "Cada cena começa numa âncora 'fala:palavra[#n]±s' (tempo do alinhamento forçado) e vai até o início da seguinte. tipo: topo (metade de cima, Diego embaixo) | cheia (tela cheia) | diego (Diego em tela cheia) | grade | contador. Vídeo de apoio sempre mudo, sem mudança de velocidade.",
+ "cenas": [
+  {
+   "id": "gta_data",
+   "ancora": "inicio",
+   "tipo": "topo",
+   "fonte": "../fonte/jogos/GTAVI_Launch_Trailer.mp4",
+   "ss": 81.6,
+   "credito": "Rockstar Games, GTA VI Launch Trailer (rockstargames.com/VI/media)",
+   "precorte": "crop=3840:1920:0:120"
+  },
+  {
+   "id": "gta_praia",
+   "ancora": "gancho_a:milhões-0.06",
+   "tipo": "topo",
+   "fonte": "../fonte/jogos/GTAVI_Launch_Trailer.mp4",
+   "ss": 55.2,
+   "precorte": "crop=3840:1920:0:120"
+  },
+  {
+   "id": "gta_moto",
+   "ancora": "gancho_a:mais+0.06",
+   "tipo": "topo",
+   "fonte": "../fonte/jogos/GTAVI_Launch_Trailer.mp4",
+   "ss": 48.95,
+   "precorte": "crop=3840:1920:0:120"
+  },
+  {
+   "id": "gta_rua",
+   "ancora": "gancho_a:pra-0.06",
+   "tipo": "topo",
+   "fonte": "../fonte/jogos/GTAVI_Launch_Trailer.mp4",
+   "ss": 47.0,
+   "precorte": "crop=3840:1920:0:120"
+  },
+  {
+   "id": "gta_skyline",
+   "ancora": "gancho_a:que-0.06",
+   "tipo": "topo",
+   "fonte": "../fonte/jogos/GTAVI_Launch_Trailer.mp4",
+   "ss": 25.3,
+   "precorte": "crop=3840:1920:0:120"
+  },
+  {
+   "id": "gta_conversivel",
+   "ancora": "gancho_b:E-0.06",
+   "tipo": "topo",
+   "fonte": "../fonte/jogos/GTAVI_Launch_Trailer.mp4",
+   "ss": 26.42,
+   "precorte": "crop=3840:1920:0:120"
+  },
+  {
+   "id": "vice_placa",
+   "ancora": "vice:Vice-0.06",
+   "tipo": "topo",
+   "foto": "../fonte/jogos/gta_shots/Places/Vice City/Vice_City_01.jpg",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "credito": "Rockstar Games, screenshot oficial"
+  },
+  {
+   "id": "gta_marina",
+   "ancora": "vice:de-0.06",
+   "tipo": "topo",
+   "fonte": "../fonte/jogos/GTAVI_Launch_Trailer.mp4",
+   "ss": 5.0,
+   "precorte": "crop=3840:1920:0:120"
+  },
+  {
+   "id": "virada",
+   "ancora": "virada:Mas-0.06",
+   "tipo": "diego",
+   "transicao": "clarao"
+  },
+  {
+   "id": "quatro",
+   "ancora": "virada:Eu#2-0.31",
+   "tipo": "grade",
+   "fotos": [
+    {
+     "fonte": "../fonte/acervo/IMG_5554.MOV",
+     "ss": 0.1333,
+     "hdr": true
+    },
+    {
+     "fonte": "../fonte/acervo/IMG_6016.MOV",
+     "ss": 0.3,
+     "hdr": true
+    },
+    {
+     "fonte": "../fonte/acervo/IMG_5261.MOV",
+     "ss": 3.0,
+     "hdr": true
+    },
+    {
+     "fonte": "../fonte/acervo/IMG_3107.MOV",
+     "ss": 1.5,
+     "hdr": true
+    }
+   ],
+   "entra_em": [
+    "virada:quatro-0.30",
+    "virada:quatro-0.15",
+    "virada:quatro+0.00",
+    "virada:quatro+0.15"
+   ]
+  },
+  {
+   "id": "ac2_canal",
+   "ancora": "florenca:Florença-0.06",
+   "tipo": "topo",
+   "foto": "../fonte/jogos/ac/ac2_s01.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "credito": "Ubisoft, Assassin's Creed II (Steam)"
+  },
+  {
+   "id": "ac2_telhado",
+   "ancora": "florenca:Aquela-0.06",
+   "tipo": "topo",
+   "credito": "Ubisoft, Assassin's Creed II (Steam)",
+   "foto": "../fonte/jogos/ac/ac2_s07.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "id": "duomo",
+   "ancora": "florenca:Na-0.06",
+   "tipo": "cheia",
+   "foto_de_video": {
+    "fonte": "../fonte/acervo/IMG_5554.MOV",
+    "ss": 0.1333,
+    "hdr": true
+   },
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "numero": {
+    "em": "florenca:463-0.04",
+    "linhas": [
+     "463",
+     "DEGRAUS"
+    ],
+    "segunda_em": "florenca:degraus-0.04"
+   },
+   "credito": "Acervo do Diego (quadro parado: o take tem tremor)"
+  },
+  {
+   "id": "acb_coliseu",
+   "ancora": "roma:Roma-0.06",
+   "tipo": "topo",
+   "fonte": "../fonte/jogos/ac/acb_m0.mp4",
+   "ss": 18.05,
+   "credito": "Ubisoft, AC Brotherhood Story Trailer (Steam)"
+  },
+  {
+   "id": "coliseu_real",
+   "ancora": "roma:Brotherhood+0.26",
+   "tipo": "topo",
+   "fonte": "../fonte/acervo/IMG_5261.MOV",
+   "ss": 2.6,
+   "hdr": true
+  },
+  {
+   "id": "acu_nd",
+   "ancora": "paris:é-0.06",
+   "tipo": "topo",
+   "fonte": "../fonte/jogos/ac/acu_m0.mp4",
+   "ss": 22.4,
+   "credito": "Ubisoft, AC Unity E3 2014 Trailer (Steam)",
+   "precorte": "crop=1920:816:0:132"
+  },
+  {
+   "id": "acu_torre",
+   "ancora": "paris:Uma-0.06",
+   "tipo": "topo",
+   "fonte": "../fonte/jogos/ac/acu_m0.mp4",
+   "ss": 36.0,
+   "precorte": "crop=1920:816:0:132"
+  },
+  {
+   "id": "acu_foto",
+   "ancora": "paris:só-0.06",
+   "tipo": "topo",
+   "foto": "../fonte/jogos/ac/acu_s04.jpg",
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "credito": "Ubisoft, AC Unity (Steam)"
+  },
+  {
+   "id": "nd_real",
+   "ancora": "fogo:Cinco-0.06",
+   "tipo": "topo",
+   "fonte": "../fonte/acervo/IMG_3104.MOV",
+   "ss": 0.0,
+   "hdr": true,
+   "credito": "Acervo do Diego, Paris 17/03/2026: fachada inteira (pedido do Diego na REV2: imagem mais ampla)"
+  },
+  {
+   "id": "acu_gratis",
+   "ancora": "fogo:Ubisoft-0.06",
+   "tipo": "topo",
+   "foto": "../fonte/jogos/ac/acu_s00.jpg",
+   "zoom": [
+    1.0,
+    1.07
+   ]
+  },
+  {
+   "id": "contador",
+   "ancora": "fogo:3-0.04",
+   "tipo": "contador",
+   "numero": {
+    "em": "fogo:3-0.04",
+    "linhas": [
+     "3 MILHÕES",
+     "DE DOWNLOADS",
+     "EM UMA SEMANA"
+    ],
+    "linhas_em": [
+     "fogo:3-0.04",
+     "fogo:downloads-0.04",
+     "fogo:semana-0.04"
+    ]
+   }
+  },
+  {
+   "id": "moral",
+   "ancora": "moral:Então-0.06",
+   "tipo": "diego"
+  },
+  {
+   "id": "ensaio",
+   "ancora": "moral:Pensa-0.06",
+   "tipo": "topo",
+   "foto": "../fonte/jogos/ac/ac2_s00.jpg",
+   "zoom": [
+    1.0,
+    1.07
+   ]
+  },
+  {
+   "id": "veneza_real",
+   "ancora": "moral:mapa-0.12",
+   "tipo": "topo",
+   "fonte": "../fonte/acervo/IMG_6099.MOV",
+   "ss": 11.4,
+   "hdr": true,
+   "transicao": "luz"
+  },
+  {
+   "id": "cta",
+   "ancora": "fim",
+   "tipo": "cta",
+   "diego": {
+    "fonte": "../fonte/fala/IMG_7763.MOV",
+    "ss": 9.72,
+    "dur": 1.38
+   },
+   "dur": 2.0,
+   "placa": {
+    "rotulo": "MANDA PRA QUEM VAI SUMIR",
+    "destino": "DIA 19",
+    "modulo": "seta"
+   },
+   "precorte": "crop=3840:1920:0:120",
+   "foto": "../fonte/jogos/gta_shots/Places/Vice City/Vice_City_08.jpg",
+   "zoom": [
+    1.0,
+    1.05
+   ]
+  }
+ ]
+}

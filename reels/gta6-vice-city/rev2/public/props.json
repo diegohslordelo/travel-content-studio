@@ -1,0 +1,1366 @@
+{
+ "fps": 30,
+ "duracao": 53.733,
+ "voz": 53.02,
+ "roxo": 0,
+ "diego": "diego_fundo.mp4",
+ "cenas": [
+  {
+   "id": "gancho",
+   "tipo": "topo",
+   "ini": 0.0,
+   "fim": 1.6,
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "origem": "30% 25%",
+   "foto": "planos/gancho.jpg"
+  },
+  {
+   "id": "sofa",
+   "tipo": "diego",
+   "ini": 1.6,
+   "fim": 4.2,
+   "transicao": "clarao"
+  },
+  {
+   "id": "dia19",
+   "tipo": "topo",
+   "ini": 4.2,
+   "fim": 8.8,
+   "video": "planos/dia19.mp4"
+  },
+  {
+   "id": "skyline",
+   "tipo": "comparar",
+   "ini": 8.8,
+   "fim": 13.366666666666667,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "zoom_baixo": [
+    1.06,
+    1.0
+   ],
+   "foto": "planos/skyline.jpg",
+   "foto_baixo": "planos/skyline_real.jpg"
+  },
+  {
+   "id": "tres_a",
+   "tipo": "topo",
+   "ini": 13.366666666666667,
+   "fim": 17.0,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "foto": "planos/tres_a.jpg"
+  },
+  {
+   "id": "tres_b",
+   "tipo": "topo",
+   "ini": 17.0,
+   "fim": 20.933333333333334,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "origem": "60% 50%",
+   "foto": "planos/tres_b.jpg"
+  },
+  {
+   "id": "wynwood",
+   "tipo": "comparar",
+   "ini": 20.933333333333334,
+   "fim": 26.3,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "zoom_baixo": [
+    1.06,
+    1.0
+   ],
+   "numero": "1",
+   "foto": "planos/wynwood.jpg",
+   "foto_baixo": "planos/wynwood_real.jpg"
+  },
+  {
+   "id": "arena",
+   "tipo": "comparar",
+   "ini": 26.3,
+   "fim": 30.233333333333334,
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "zoom_baixo": [
+    1.05,
+    1.0
+   ],
+   "numero": "2",
+   "foto": "planos/arena.jpg",
+   "foto_baixo": "planos/arena_real.jpg"
+  },
+  {
+   "id": "heat",
+   "tipo": "topo",
+   "ini": 30.233333333333334,
+   "fim": 36.333333333333336,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "origem": "50% 47%",
+   "foto": "planos/heat.jpg"
+  },
+  {
+   "id": "ocean",
+   "tipo": "comparar",
+   "ini": 36.333333333333336,
+   "fim": 40.8,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "zoom_baixo": [
+    1.06,
+    1.0
+   ],
+   "origem": "35% 60%",
+   "numero": "3",
+   "foto": "planos/ocean.jpg",
+   "foto_baixo": "planos/ocean_real.jpg"
+  },
+  {
+   "id": "colon",
+   "tipo": "comparar",
+   "ini": 40.8,
+   "fim": 46.233333333333334,
+   "transicao": "dissolve",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "zoom_baixo": [
+    1.0,
+    1.05
+   ],
+   "origem_baixo": "50% 100%",
+   "foto": "planos/colon.jpg",
+   "foto_baixo": "planos/colon_real.jpg"
+  },
+  {
+   "id": "moral_a",
+   "tipo": "topo",
+   "ini": 46.233333333333334,
+   "fim": 48.333333333333336,
+   "video": "planos/moral_a.mp4"
+  },
+  {
+   "id": "moral_b",
+   "tipo": "topo",
+   "ini": 48.333333333333336,
+   "fim": 53.733333333333334,
+   "transicao": "luz",
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "foto": "planos/moral_b.jpg"
+  }
+ ],
+ "legendas": [
+  {
+   "ini": 1.622,
+   "fim": 2.086,
+   "palavras": [
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "EU",
+     "destaque": false
+    },
+    {
+     "t": "NÃO",
+     "destaque": false
+    },
+    {
+     "t": "VOU",
+     "destaque": false
+    },
+    {
+     "t": "NEM",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 2.086,
+   "fim": 2.671,
+   "palavras": [
+    {
+     "t": "PRECISAR",
+     "destaque": false
+    },
+    {
+     "t": "SAIR",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 2.671,
+   "fim": 4.192,
+   "palavras": [
+    {
+     "t": "DO",
+     "destaque": false
+    },
+    {
+     "t": "SOFÁ",
+     "destaque": true
+    },
+    {
+     "t": "PRA",
+     "destaque": false
+    },
+    {
+     "t": "ISSO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 4.405,
+   "fim": 5.567,
+   "palavras": [
+    {
+     "t": "DIA",
+     "destaque": true
+    },
+    {
+     "t": "19",
+     "destaque": true
+    },
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "NOVEMBRO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 5.567,
+   "fim": 6.749,
+   "palavras": [
+    {
+     "t": "LANÇA",
+     "destaque": false
+    },
+    {
+     "t": "O",
+     "destaque": false
+    },
+    {
+     "t": "GTA",
+     "destaque": true
+    },
+    {
+     "t": "6",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 6.749,
+   "fim": 7.67,
+   "palavras": [
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "COM",
+     "destaque": false
+    },
+    {
+     "t": "ELE",
+     "destaque": false
+    },
+    {
+     "t": "A",
+     "destaque": false
+    },
+    {
+     "t": "VOLTA",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 7.67,
+   "fim": 8.812,
+   "palavras": [
+    {
+     "t": "DA",
+     "destaque": false
+    },
+    {
+     "t": "VICE",
+     "destaque": true
+    },
+    {
+     "t": "CITY",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 8.812,
+   "fim": 9.614,
+   "palavras": [
+    {
+     "t": "A",
+     "destaque": false
+    },
+    {
+     "t": "CIDADE",
+     "destaque": false
+    },
+    {
+     "t": "DO",
+     "destaque": false
+    },
+    {
+     "t": "JOGO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 9.614,
+   "fim": 10.255,
+   "palavras": [
+    {
+     "t": "QUE",
+     "destaque": false
+    },
+    {
+     "t": "FOI",
+     "destaque": false
+    },
+    {
+     "t": "INSPIRADA",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 10.255,
+   "fim": 11.537,
+   "palavras": [
+    {
+     "t": "NA",
+     "destaque": false
+    },
+    {
+     "t": "MIAMI",
+     "destaque": true
+    },
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "VERDADE",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 11.537,
+   "fim": 11.978,
+   "palavras": [
+    {
+     "t": "MAS",
+     "destaque": false
+    },
+    {
+     "t": "RAPAZ",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 11.978,
+   "fim": 12.479,
+   "palavras": [
+    {
+     "t": "SERÁ",
+     "destaque": false
+    },
+    {
+     "t": "QUE",
+     "destaque": false
+    },
+    {
+     "t": "ELAS",
+     "destaque": false
+    },
+    {
+     "t": "SE",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 12.479,
+   "fim": 13.4,
+   "palavras": [
+    {
+     "t": "PARECEM",
+     "destaque": false
+    },
+    {
+     "t": "MESMO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 13.4,
+   "fim": 14.162,
+   "palavras": [
+    {
+     "t": "HOJE",
+     "destaque": false
+    },
+    {
+     "t": "EU",
+     "destaque": false
+    },
+    {
+     "t": "VOU",
+     "destaque": false
+    },
+    {
+     "t": "MOSTRAR",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 14.162,
+   "fim": 15.506,
+   "palavras": [
+    {
+     "t": "3",
+     "destaque": true
+    },
+    {
+     "t": "LUGARES",
+     "destaque": true
+    },
+    {
+     "t": "PRA",
+     "destaque": false
+    },
+    {
+     "t": "VOCÊ",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 15.506,
+   "fim": 16.429,
+   "palavras": [
+    {
+     "t": "VIAJANTE",
+     "destaque": false
+    },
+    {
+     "t": "QUE",
+     "destaque": false
+    },
+    {
+     "t": "CURTE",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 16.429,
+   "fim": 17.01,
+   "palavras": [
+    {
+     "t": "VIDEOGAME",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 17.01,
+   "fim": 17.672,
+   "palavras": [
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "SE",
+     "destaque": false
+    },
+    {
+     "t": "SENTIR",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 17.672,
+   "fim": 18.715,
+   "palavras": [
+    {
+     "t": "DENTRO",
+     "destaque": false
+    },
+    {
+     "t": "DO",
+     "destaque": false
+    },
+    {
+     "t": "JOGO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 18.715,
+   "fim": 19.116,
+   "palavras": [
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "O",
+     "destaque": false
+    },
+    {
+     "t": "ÚLTIMO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 19.116,
+   "fim": 19.778,
+   "palavras": [
+    {
+     "t": "EU",
+     "destaque": false
+    },
+    {
+     "t": "TE",
+     "destaque": false
+    },
+    {
+     "t": "GARANTO",
+     "destaque": false
+    },
+    {
+     "t": "QUE",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 19.778,
+   "fim": 20.941,
+   "palavras": [
+    {
+     "t": "É",
+     "destaque": false
+    },
+    {
+     "t": "PURA",
+     "destaque": false
+    },
+    {
+     "t": "NOSTALGIA",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 20.941,
+   "fim": 21.322,
+   "palavras": [
+    {
+     "t": "O",
+     "destaque": false
+    },
+    {
+     "t": "PRIMEIRO",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 21.322,
+   "fim": 22.043,
+   "palavras": [
+    {
+     "t": "É",
+     "destaque": false
+    },
+    {
+     "t": "O",
+     "destaque": false
+    },
+    {
+     "t": "WYNWOOD",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 22.043,
+   "fim": 23.106,
+   "palavras": [
+    {
+     "t": "O",
+     "destaque": false
+    },
+    {
+     "t": "BAIRRO",
+     "destaque": false
+    },
+    {
+     "t": "DOS",
+     "destaque": false
+    },
+    {
+     "t": "MURAIS",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 23.106,
+   "fim": 23.747,
+   "palavras": [
+    {
+     "t": "A",
+     "destaque": false
+    },
+    {
+     "t": "ARTE",
+     "destaque": false
+    },
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "RUA",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 23.747,
+   "fim": 24.669,
+   "palavras": [
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "LÁ",
+     "destaque": false
+    },
+    {
+     "t": "TE",
+     "destaque": false
+    },
+    {
+     "t": "FAZ",
+     "destaque": false
+    },
+    {
+     "t": "SENTIR",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 24.669,
+   "fim": 25.591,
+   "palavras": [
+    {
+     "t": "DENTRO",
+     "destaque": false
+    },
+    {
+     "t": "DA",
+     "destaque": false
+    },
+    {
+     "t": "PRÓPRIA",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 25.591,
+   "fim": 26.313,
+   "palavras": [
+    {
+     "t": "VICE",
+     "destaque": true
+    },
+    {
+     "t": "CITY",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 26.313,
+   "fim": 26.814,
+   "palavras": [
+    {
+     "t": "EM",
+     "destaque": false
+    },
+    {
+     "t": "SEGUNDO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 26.814,
+   "fim": 27.817,
+   "palavras": [
+    {
+     "t": "O",
+     "destaque": false
+    },
+    {
+     "t": "SAHARA",
+     "destaque": true
+    },
+    {
+     "t": "ARENA",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 27.817,
+   "fim": 28.679,
+   "palavras": [
+    {
+     "t": "É",
+     "destaque": false
+    },
+    {
+     "t": "A",
+     "destaque": false
+    },
+    {
+     "t": "PRÓPRIA",
+     "destaque": false
+    },
+    {
+     "t": "CASA",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 28.679,
+   "fim": 29.44,
+   "palavras": [
+    {
+     "t": "DO",
+     "destaque": false
+    },
+    {
+     "t": "MIAMI",
+     "destaque": true
+    },
+    {
+     "t": "HEAT",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 29.44,
+   "fim": 30.242,
+   "palavras": [
+    {
+     "t": "O",
+     "destaque": false
+    },
+    {
+     "t": "KASEYA",
+     "destaque": true
+    },
+    {
+     "t": "CENTER",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 30.242,
+   "fim": 30.844,
+   "palavras": [
+    {
+     "t": "ELES",
+     "destaque": false
+    },
+    {
+     "t": "FIRMARAM",
+     "destaque": false
+    },
+    {
+     "t": "A",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 30.844,
+   "fim": 31.926,
+   "palavras": [
+    {
+     "t": "PARCERIA",
+     "destaque": false
+    },
+    {
+     "t": "DIA",
+     "destaque": true
+    },
+    {
+     "t": "18",
+     "destaque": true
+    },
+    {
+     "t": "COM",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 31.926,
+   "fim": 32.788,
+   "palavras": [
+    {
+     "t": "A",
+     "destaque": false
+    },
+    {
+     "t": "ROCKSTAR",
+     "destaque": true
+    },
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "VÃO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 32.788,
+   "fim": 33.43,
+   "palavras": [
+    {
+     "t": "TRANSFORMAR",
+     "destaque": false
+    },
+    {
+     "t": "A",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 33.43,
+   "fim": 34.312,
+   "palavras": [
+    {
+     "t": "QUADRA",
+     "destaque": true
+    },
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "O",
+     "destaque": false
+    },
+    {
+     "t": "UNIFORME",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 34.312,
+   "fim": 34.993,
+   "palavras": [
+    {
+     "t": "DOS",
+     "destaque": false
+    },
+    {
+     "t": "JOGADORES",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 34.993,
+   "fim": 36.356,
+   "palavras": [
+    {
+     "t": "NA",
+     "destaque": false
+    },
+    {
+     "t": "PRÓPRIA",
+     "destaque": false
+    },
+    {
+     "t": "VICE",
+     "destaque": true
+    },
+    {
+     "t": "CITY",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 36.356,
+   "fim": 36.897,
+   "palavras": [
+    {
+     "t": "EM",
+     "destaque": false
+    },
+    {
+     "t": "TERCEIRO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 36.897,
+   "fim": 37.718,
+   "palavras": [
+    {
+     "t": "A",
+     "destaque": false
+    },
+    {
+     "t": "OCEAN",
+     "destaque": true
+    },
+    {
+     "t": "DRIVE",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 37.718,
+   "fim": 38.499,
+   "palavras": [
+    {
+     "t": "QUE",
+     "destaque": false
+    },
+    {
+     "t": "NO",
+     "destaque": false
+    },
+    {
+     "t": "VICE",
+     "destaque": true
+    },
+    {
+     "t": "CITY",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 38.499,
+   "fim": 39.68,
+   "palavras": [
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "2002",
+     "destaque": true
+    },
+    {
+     "t": "CONTINUOU",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 39.68,
+   "fim": 40.821,
+   "palavras": [
+    {
+     "t": "COM",
+     "destaque": false
+    },
+    {
+     "t": "O",
+     "destaque": false
+    },
+    {
+     "t": "MESMO",
+     "destaque": false
+    },
+    {
+     "t": "NOME",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 40.821,
+   "fim": 41.181,
+   "palavras": [
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "TEM",
+     "destaque": false
+    },
+    {
+     "t": "O",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 41.181,
+   "fim": 42.062,
+   "palavras": [
+    {
+     "t": "COLONY",
+     "destaque": true
+    },
+    {
+     "t": "HOTEL",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 42.062,
+   "fim": 42.663,
+   "palavras": [
+    {
+     "t": "QUE",
+     "destaque": false
+    },
+    {
+     "t": "NO",
+     "destaque": false
+    },
+    {
+     "t": "JOGO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 42.663,
+   "fim": 43.463,
+   "palavras": [
+    {
+     "t": "COMEU",
+     "destaque": false
+    },
+    {
+     "t": "Y",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 43.463,
+   "fim": 44.225,
+   "palavras": [
+    {
+     "t": "VIROU",
+     "destaque": false
+    },
+    {
+     "t": "COLON",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 44.225,
+   "fim": 45.115,
+   "palavras": [
+    {
+     "t": "ESSE",
+     "destaque": false
+    },
+    {
+     "t": "QUEM",
+     "destaque": false
+    },
+    {
+     "t": "JOGOU",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 45.115,
+   "fim": 45.721,
+   "palavras": [
+    {
+     "t": "DE",
+     "destaque": true
+    },
+    {
+     "t": "VERDADE",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 45.721,
+   "fim": 46.266,
+   "palavras": [
+    {
+     "t": "VAI",
+     "destaque": false
+    },
+    {
+     "t": "LEMBRAR",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 46.266,
+   "fim": 47.068,
+   "palavras": [
+    {
+     "t": "NO",
+     "destaque": false
+    },
+    {
+     "t": "JOGO",
+     "destaque": false
+    },
+    {
+     "t": "VOCÊ",
+     "destaque": false
+    },
+    {
+     "t": "JÁ",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 47.068,
+   "fim": 47.709,
+   "palavras": [
+    {
+     "t": "ROUBOU",
+     "destaque": false
+    },
+    {
+     "t": "UM",
+     "destaque": false
+    },
+    {
+     "t": "CARRO",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 47.709,
+   "fim": 48.35,
+   "palavras": [
+    {
+     "t": "NESSA",
+     "destaque": false
+    },
+    {
+     "t": "RUA",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 48.35,
+   "fim": 48.952,
+   "palavras": [
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "NA",
+     "destaque": false
+    },
+    {
+     "t": "VIDA",
+     "destaque": false
+    },
+    {
+     "t": "REAL",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 48.952,
+   "fim": 49.673,
+   "palavras": [
+    {
+     "t": "VOCÊ",
+     "destaque": false
+    },
+    {
+     "t": "PRECISA",
+     "destaque": false
+    },
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "UM",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 49.673,
+   "fim": 51.036,
+   "palavras": [
+    {
+     "t": "PRIMEIRO",
+     "destaque": true
+    },
+    {
+     "t": "DIA",
+     "destaque": true
+    },
+    {
+     "t": "EM",
+     "destaque": false
+    },
+    {
+     "t": "MIAMI",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 51.036,
+   "fim": 51.757,
+   "palavras": [
+    {
+     "t": "PARA",
+     "destaque": false
+    },
+    {
+     "t": "CONHECER",
+     "destaque": false
+    },
+    {
+     "t": "A",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 51.757,
+   "fim": 53.733,
+   "palavras": [
+    {
+     "t": "VICE",
+     "destaque": true
+    },
+    {
+     "t": "CITY",
+     "destaque": true
+    },
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "VERDADE",
+     "destaque": false
+    }
+   ]
+  }
+ ],
+ "gancho": [
+  {
+   "ini": 0.0,
+   "fim": 1.6,
+   "linhas": [
+    {
+     "t": "ESSE MÊS EU VOU",
+     "em": 0.041,
+     "tam": 96
+    },
+    {
+     "t": "ROUBAR",
+     "em": 0.791,
+     "tam": 200,
+     "forte": true
+    },
+    {
+     "t": "UM CARRO",
+     "em": 1.055,
+     "tam": 200,
+     "forte": true
+    }
+   ]
+  }
+ ]
+}

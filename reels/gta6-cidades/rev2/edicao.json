@@ -1,0 +1,16 @@
+{
+  "fps": 30,
+  "observacao": "Tempos em segundos do arquivo original. Cortes no silêncio (energia 100–9.000 Hz < -65 dB). Nenhuma palavra cortada. Falsas largadas descartadas: IMG_7755 3,62–7,03 s ('E Paris é o Assassin's Creed Unity. Um artista passou só um...') e IMG_7759 2,95–4,05 s ('Cinco anos depois do...'); IMG_7741 é tomada repetida de IMG_7740; IMG_7763 11,74 s ('Vamos lá') fica fora.",
+  "falas": [
+    {"id": "gancho_a", "arquivo": "IMG_7739", "entrada": 2.92, "saida": 9.80, "texto": "Dia 19 de novembro, milhões de pessoas vão pagar mais de 450 reais pra passear em uma cidade que nem existe."},
+    {"id": "gancho_b", "arquivo": "IMG_7739", "entrada": 10.11, "saida": 11.41, "texto": "E eu vou ser uma delas."},
+    {"id": "vice", "arquivo": "IMG_7740", "entrada": 2.37, "saida": 5.71, "texto": "Vice City é a Miami de mentira do GTA 6."},
+    {"id": "virada", "arquivo": "IMG_7744", "entrada": 2.64, "saida": 6.64, "texto": "Mas eu vou te falar: tem jogo que a cidade existe. Eu já andei por quatro delas."},
+    {"id": "florenca", "arquivo": "IMG_7750", "entrada": 2.11, "saida": 10.18, "texto": "Florença e Veneza: Assassin's Creed 2. Aquela cúpula que você escalava em segundos? Na vida real são 463 degraus."},
+    {"id": "roma", "arquivo": "IMG_7752", "entrada": 2.19, "saida": 5.45, "texto": "Roma é o Assassin's Creed Brotherhood. E tem o Coliseu e tudo."},
+    {"id": "paris", "arquivo": "IMG_7755", "entrada": 7.875, "saida": 13.30, "texto": "E Paris é o Assassin's Creed Unity. Uma artista passou mais de um ano só na Notre-Dame do jogo."},
+    {"id": "fogo", "arquivo": "IMG_7759", "entrada": 5.58, "saida": 13.39, "texto": "Cinco anos depois do lançamento, a de verdade pegou fogo. E isso fez a Ubisoft liberar o jogo de graça. Foram 3 milhões de downloads em uma semana."},
+    {"id": "moral", "arquivo": "IMG_7763", "entrada": 3.28, "saida": 9.72, "texto": "Então, de forma alguma é dinheiro jogado fora. Pensa como um ensaio de viagem: um mapa você já tem, só falta o primeiro dia."}
+  ],
+  "audio": {"passa_alta_hz": 70, "afftdn": "nr=8:nf=-58:tn=1", "fade_ms": 10, "alvo_lufs": -14.0, "pico_dbtp": -1.0}
+}

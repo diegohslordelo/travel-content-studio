@@ -1,0 +1,1080 @@
+{
+ "fps": 30,
+ "duracao": 46.8,
+ "fimGta": 11.541,
+ "voz": 46.8,
+ "cenas": [
+  {
+   "id": "gta_data",
+   "tipo": "topo",
+   "ini": 0.0,
+   "fim": 1.3333333333333333,
+   "transicao": null,
+   "video": "planos/gta_data.mp4"
+  },
+  {
+   "id": "gta_praia",
+   "tipo": "topo",
+   "ini": 1.3333333333333333,
+   "fim": 2.7666666666666666,
+   "transicao": null,
+   "video": "planos/gta_praia.mp4"
+  },
+  {
+   "id": "gta_moto",
+   "tipo": "topo",
+   "ini": 2.7666666666666666,
+   "fim": 4.5,
+   "transicao": null,
+   "video": "planos/gta_moto.mp4"
+  },
+  {
+   "id": "gta_rua",
+   "tipo": "topo",
+   "ini": 4.5,
+   "fim": 5.866666666666666,
+   "transicao": null,
+   "video": "planos/gta_rua.mp4"
+  },
+  {
+   "id": "gta_skyline",
+   "tipo": "topo",
+   "ini": 5.866666666666666,
+   "fim": 6.933333333333334,
+   "transicao": null,
+   "video": "planos/gta_skyline.mp4"
+  },
+  {
+   "id": "gta_conversivel",
+   "tipo": "topo",
+   "ini": 6.933333333333334,
+   "fim": 8.233333333333333,
+   "transicao": null,
+   "video": "planos/gta_conversivel.mp4"
+  },
+  {
+   "id": "vice_placa",
+   "tipo": "topo",
+   "ini": 8.233333333333333,
+   "fim": 9.866666666666667,
+   "transicao": null,
+   "foto": "planos/vice_placa.jpg",
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "id": "gta_marina",
+   "tipo": "topo",
+   "ini": 9.866666666666667,
+   "fim": 11.533333333333333,
+   "transicao": null,
+   "video": "planos/gta_marina.mp4"
+  },
+  {
+   "id": "virada",
+   "tipo": "diego",
+   "ini": 11.533333333333333,
+   "fim": 13.6,
+   "transicao": "clarao"
+  },
+  {
+   "id": "quatro",
+   "tipo": "grade",
+   "ini": 13.6,
+   "fim": 15.566666666666666,
+   "transicao": null,
+   "fotos": [
+    "planos/quatro_0.jpg",
+    "planos/quatro_1.jpg",
+    "planos/quatro_2.jpg",
+    "planos/quatro_3.jpg"
+   ],
+   "entra_em": [
+    14.255,
+    14.405,
+    14.555,
+    14.705
+   ]
+  },
+  {
+   "id": "ac2_canal",
+   "tipo": "topo",
+   "ini": 15.566666666666666,
+   "fim": 18.133333333333333,
+   "transicao": null,
+   "foto": "planos/ac2_canal.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "id": "ac2_telhado",
+   "tipo": "topo",
+   "ini": 18.133333333333333,
+   "fim": 20.4,
+   "transicao": null,
+   "foto": "planos/ac2_telhado.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "id": "duomo",
+   "tipo": "cheia",
+   "ini": 20.4,
+   "fim": 23.633333333333333,
+   "transicao": null,
+   "foto": "planos/duomo.jpg",
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "numero": {
+    "linhas": [
+     "463",
+     "DEGRAUS"
+    ],
+    "em": 21.125,
+    "linhas_em": [
+     21.125,
+     22.786
+    ]
+   }
+  },
+  {
+   "id": "acb_coliseu",
+   "tipo": "topo",
+   "ini": 23.633333333333333,
+   "fim": 25.133333333333333,
+   "transicao": null,
+   "video": "planos/acb_coliseu.mp4"
+  },
+  {
+   "id": "coliseu_real",
+   "tipo": "topo",
+   "ini": 25.133333333333333,
+   "fim": 27.566666666666666,
+   "transicao": null,
+   "video": "planos/coliseu_real.mp4"
+  },
+  {
+   "id": "acu_nd",
+   "tipo": "topo",
+   "ini": 27.566666666666666,
+   "fim": 29.033333333333335,
+   "transicao": null,
+   "video": "planos/acu_nd.mp4"
+  },
+  {
+   "id": "acu_torre",
+   "tipo": "topo",
+   "ini": 29.033333333333335,
+   "fim": 30.766666666666666,
+   "transicao": null,
+   "video": "planos/acu_torre.mp4"
+  },
+  {
+   "id": "acu_foto",
+   "tipo": "topo",
+   "ini": 30.766666666666666,
+   "fim": 32.4,
+   "transicao": null,
+   "foto": "planos/acu_foto.jpg",
+   "zoom": [
+    1.0,
+    1.07
+   ]
+  },
+  {
+   "id": "nd_real",
+   "tipo": "topo",
+   "ini": 32.4,
+   "fim": 35.43333333333333,
+   "transicao": null,
+   "video": "planos/nd_real.mp4"
+  },
+  {
+   "id": "acu_gratis",
+   "tipo": "topo",
+   "ini": 35.43333333333333,
+   "fim": 37.766666666666666,
+   "transicao": null,
+   "foto": "planos/acu_gratis.jpg",
+   "zoom": [
+    1.0,
+    1.07
+   ]
+  },
+  {
+   "id": "contador",
+   "tipo": "contador",
+   "ini": 37.766666666666666,
+   "fim": 40.13333333333333,
+   "transicao": null,
+   "numero": {
+    "linhas": [
+     "3 MILHÕES",
+     "DE DOWNLOADS",
+     "EM UMA SEMANA"
+    ],
+    "em": 37.756,
+    "linhas_em": [
+     37.756,
+     38.497,
+     39.459
+    ]
+   }
+  },
+  {
+   "id": "moral",
+   "tipo": "diego",
+   "ini": 40.13333333333333,
+   "fim": 42.36666666666667,
+   "transicao": null
+  },
+  {
+   "id": "ensaio",
+   "tipo": "topo",
+   "ini": 42.36666666666667,
+   "fim": 44.03333333333333,
+   "transicao": null,
+   "foto": "planos/ensaio.jpg",
+   "zoom": [
+    1.0,
+    1.07
+   ]
+  },
+  {
+   "id": "veneza_real",
+   "tipo": "topo",
+   "ini": 44.03333333333333,
+   "fim": 46.8,
+   "transicao": "luz",
+   "video": "planos/veneza_real.mp4"
+  }
+ ],
+ "legendas": [
+  {
+   "ini": 6.949,
+   "fim": 7.436,
+   "palavras": [
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "EU",
+     "destaque": false
+    },
+    {
+     "t": "VOU",
+     "destaque": false
+    },
+    {
+     "t": "SER",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 7.436,
+   "fim": 8.234,
+   "palavras": [
+    {
+     "t": "UMA",
+     "destaque": false
+    },
+    {
+     "t": "DELAS",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 8.247,
+   "fim": 9.874,
+   "palavras": [
+    {
+     "t": "VICE",
+     "destaque": true
+    },
+    {
+     "t": "CITY",
+     "destaque": false
+    },
+    {
+     "t": "É",
+     "destaque": false
+    },
+    {
+     "t": "A",
+     "destaque": false
+    },
+    {
+     "t": "MIAMI",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 9.874,
+   "fim": 11.549,
+   "palavras": [
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "MENTIRA",
+     "destaque": true
+    },
+    {
+     "t": "DO",
+     "destaque": false
+    },
+    {
+     "t": "GTA",
+     "destaque": false
+    },
+    {
+     "t": "6",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 11.561,
+   "fim": 12.244,
+   "palavras": [
+    {
+     "t": "MAS",
+     "destaque": false
+    },
+    {
+     "t": "EU",
+     "destaque": false
+    },
+    {
+     "t": "VOU",
+     "destaque": false
+    },
+    {
+     "t": "TE",
+     "destaque": false
+    },
+    {
+     "t": "FALAR",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 12.244,
+   "fim": 12.927,
+   "palavras": [
+    {
+     "t": "TEM",
+     "destaque": false
+    },
+    {
+     "t": "JOGO",
+     "destaque": true
+    },
+    {
+     "t": "QUE",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 12.927,
+   "fim": 13.872,
+   "palavras": [
+    {
+     "t": "A",
+     "destaque": false
+    },
+    {
+     "t": "CIDADE",
+     "destaque": false
+    },
+    {
+     "t": "EXISTE",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 13.872,
+   "fim": 14.515,
+   "palavras": [
+    {
+     "t": "EU",
+     "destaque": false
+    },
+    {
+     "t": "JÁ",
+     "destaque": false
+    },
+    {
+     "t": "ANDEI",
+     "destaque": false
+    },
+    {
+     "t": "POR",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 14.515,
+   "fim": 15.569,
+   "palavras": [
+    {
+     "t": "QUATRO",
+     "destaque": true
+    },
+    {
+     "t": "DELAS",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 15.58,
+   "fim": 16.681,
+   "palavras": [
+    {
+     "t": "FLORENÇA",
+     "destaque": true
+    },
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "VENEZA",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 16.681,
+   "fim": 18.162,
+   "palavras": [
+    {
+     "t": "ASSASSIN'S",
+     "destaque": false
+    },
+    {
+     "t": "CREED",
+     "destaque": false
+    },
+    {
+     "t": "2",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 18.162,
+   "fim": 18.863,
+   "palavras": [
+    {
+     "t": "AQUELA",
+     "destaque": false
+    },
+    {
+     "t": "CÚPULA",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 18.863,
+   "fim": 19.583,
+   "palavras": [
+    {
+     "t": "QUE",
+     "destaque": false
+    },
+    {
+     "t": "VOCÊ",
+     "destaque": false
+    },
+    {
+     "t": "ESCALAVA",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 19.583,
+   "fim": 20.404,
+   "palavras": [
+    {
+     "t": "EM",
+     "destaque": false
+    },
+    {
+     "t": "SEGUNDOS",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 20.404,
+   "fim": 21.125,
+   "palavras": [
+    {
+     "t": "NA",
+     "destaque": false
+    },
+    {
+     "t": "VIDA",
+     "destaque": false
+    },
+    {
+     "t": "REAL",
+     "destaque": false
+    },
+    {
+     "t": "SÃO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 23.667,
+   "fim": 24.028,
+   "palavras": [
+    {
+     "t": "ROMA",
+     "destaque": true
+    },
+    {
+     "t": "É",
+     "destaque": false
+    },
+    {
+     "t": "O",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 24.028,
+   "fim": 24.849,
+   "palavras": [
+    {
+     "t": "ASSASSIN'S",
+     "destaque": false
+    },
+    {
+     "t": "CREED",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 24.849,
+   "fim": 25.491,
+   "palavras": [
+    {
+     "t": "BROTHERHOOD",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 25.491,
+   "fim": 26.232,
+   "palavras": [
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "TEM",
+     "destaque": false
+    },
+    {
+     "t": "O",
+     "destaque": false
+    },
+    {
+     "t": "COLISEU",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 26.232,
+   "fim": 26.894,
+   "palavras": [
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "TUDO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 26.894,
+   "fim": 27.736,
+   "palavras": [
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "PARIS",
+     "destaque": true
+    },
+    {
+     "t": "É",
+     "destaque": false
+    },
+    {
+     "t": "O",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 27.736,
+   "fim": 28.578,
+   "palavras": [
+    {
+     "t": "ASSASSIN'S",
+     "destaque": false
+    },
+    {
+     "t": "CREED",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 28.578,
+   "fim": 29.059,
+   "palavras": [
+    {
+     "t": "UNITY",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 29.059,
+   "fim": 29.861,
+   "palavras": [
+    {
+     "t": "UMA",
+     "destaque": false
+    },
+    {
+     "t": "ARTISTA",
+     "destaque": false
+    },
+    {
+     "t": "PASSOU",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 29.861,
+   "fim": 30.803,
+   "palavras": [
+    {
+     "t": "MAIS",
+     "destaque": false
+    },
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "UM",
+     "destaque": false
+    },
+    {
+     "t": "ANO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 30.803,
+   "fim": 31.705,
+   "palavras": [
+    {
+     "t": "SÓ",
+     "destaque": false
+    },
+    {
+     "t": "NA",
+     "destaque": false
+    },
+    {
+     "t": "NOTRE",
+     "destaque": true
+    },
+    {
+     "t": "DAME",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 31.705,
+   "fim": 32.396,
+   "palavras": [
+    {
+     "t": "DO",
+     "destaque": false
+    },
+    {
+     "t": "JOGO",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 32.427,
+   "fim": 33.168,
+   "palavras": [
+    {
+     "t": "CINCO",
+     "destaque": false
+    },
+    {
+     "t": "ANOS",
+     "destaque": false
+    },
+    {
+     "t": "DEPOIS",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 33.168,
+   "fim": 33.669,
+   "palavras": [
+    {
+     "t": "DO",
+     "destaque": false
+    },
+    {
+     "t": "LANÇAMENTO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 33.669,
+   "fim": 34.09,
+   "palavras": [
+    {
+     "t": "A",
+     "destaque": false
+    },
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "VERDADE",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 34.09,
+   "fim": 34.851,
+   "palavras": [
+    {
+     "t": "PEGOU",
+     "destaque": false
+    },
+    {
+     "t": "FOGO",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 34.851,
+   "fim": 36.013,
+   "palavras": [
+    {
+     "t": "E",
+     "destaque": false
+    },
+    {
+     "t": "ISSO",
+     "destaque": false
+    },
+    {
+     "t": "FEZ",
+     "destaque": false
+    },
+    {
+     "t": "A",
+     "destaque": false
+    },
+    {
+     "t": "UBISOFT",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 36.013,
+   "fim": 36.634,
+   "palavras": [
+    {
+     "t": "LIBERAR",
+     "destaque": false
+    },
+    {
+     "t": "O",
+     "destaque": false
+    },
+    {
+     "t": "JOGO",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 36.634,
+   "fim": 37.456,
+   "palavras": [
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "GRAÇA",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 37.456,
+   "fim": 37.766666666666666,
+   "palavras": [
+    {
+     "t": "FORAM",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 40.16,
+   "fim": 40.38,
+   "palavras": [
+    {
+     "t": "ENTÃO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 40.38,
+   "fim": 41.241,
+   "palavras": [
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "FORMA",
+     "destaque": false
+    },
+    {
+     "t": "ALGUMA",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 41.241,
+   "fim": 41.662,
+   "palavras": [
+    {
+     "t": "É",
+     "destaque": false
+    },
+    {
+     "t": "DINHEIRO",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 41.662,
+   "fim": 42.382,
+   "palavras": [
+    {
+     "t": "JOGADO",
+     "destaque": false
+    },
+    {
+     "t": "FORA",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 42.382,
+   "fim": 42.823,
+   "palavras": [
+    {
+     "t": "PENSA",
+     "destaque": false
+    },
+    {
+     "t": "COMO",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 42.823,
+   "fim": 44.044,
+   "palavras": [
+    {
+     "t": "UM",
+     "destaque": false
+    },
+    {
+     "t": "ENSAIO",
+     "destaque": true
+    },
+    {
+     "t": "DE",
+     "destaque": false
+    },
+    {
+     "t": "VIAGEM",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 44.044,
+   "fim": 45.185,
+   "palavras": [
+    {
+     "t": "UM",
+     "destaque": false
+    },
+    {
+     "t": "MAPA",
+     "destaque": true
+    },
+    {
+     "t": "VOCÊ",
+     "destaque": false
+    },
+    {
+     "t": "JÁ",
+     "destaque": false
+    },
+    {
+     "t": "TEM",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 45.185,
+   "fim": 45.726,
+   "palavras": [
+    {
+     "t": "SÓ",
+     "destaque": false
+    },
+    {
+     "t": "FALTA",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 45.726,
+   "fim": 46.8,
+   "palavras": [
+    {
+     "t": "O",
+     "destaque": false
+    },
+    {
+     "t": "PRIMEIRO",
+     "destaque": true
+    },
+    {
+     "t": "DIA",
+     "destaque": false
+    }
+   ]
+  }
+ ],
+ "gancho": [
+  {
+   "ini": 1.321,
+   "fim": 4.484,
+   "linhas": [
+    {
+     "t": "MILHÕES DE PESSOAS",
+     "em": 1.341,
+     "tam": 84
+    },
+    {
+     "t": "VÃO PAGAR MAIS DE",
+     "em": 2.342,
+     "tam": 84
+    },
+    {
+     "t": "450 REAIS",
+     "em": 2.903,
+     "tam": 160,
+     "grad": true
+    }
+   ]
+  },
+  {
+   "ini": 4.484,
+   "fim": 6.929,
+   "linhas": [
+    {
+     "t": "PRA PASSEAR EM",
+     "em": 4.504,
+     "tam": 84
+    },
+    {
+     "t": "UMA CIDADE",
+     "em": 5.305,
+     "tam": 110
+    },
+    {
+     "t": "QUE NEM EXISTE",
+     "em": 5.886,
+     "tam": 140,
+     "grad": true
+    }
+   ]
+  }
+ ]
+}
