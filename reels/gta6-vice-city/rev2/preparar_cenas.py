@@ -19,6 +19,8 @@ subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", "build/diego.mp4", "-vf", "
 def chave(w): return re.sub(r"[^\w]", "", unicodedata.normalize("NFC", w)).lower()
 def ancora(a):
     if a == "inicio": return 0.0
+    if a.startswith("take:"):   # corte exato entre takes (início da fala no vídeo montado): sem quadros do take vizinho
+        return round(next(f["inicio"] for f in L["falas"] if f["id"] == a[5:]), 3)
     m = re.match(r"(\w+):([^#+\-]+?)(?:#(\d+))?([+-][\d.]+)?$", a)
     fala, pal, n, off = m.group(1), chave(m.group(2)), int(m.group(3) or 1), float(m.group(4) or 0)
     hits = [w for w in P if w["fala"] == fala and chave(w["palavra"]) == pal]

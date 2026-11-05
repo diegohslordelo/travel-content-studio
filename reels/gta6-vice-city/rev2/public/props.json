@@ -21,13 +21,13 @@
    "id": "sofa",
    "tipo": "diego",
    "ini": 1.6,
-   "fim": 4.4,
+   "fim": 4.2,
    "transicao": "clarao"
   },
   {
    "id": "dia19",
    "tipo": "topo",
-   "ini": 4.4,
+   "ini": 4.2,
    "fim": 8.8,
    "video": "planos/dia19.mp4"
   },
