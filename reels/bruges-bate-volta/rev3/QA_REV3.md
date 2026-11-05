@@ -45,3 +45,13 @@ Na IMG_7695 o Diego começou "A cidade tem menos de cem…" (1,71–3,10 s da to
 ## Conferir no ouvido (o Claude não escuta áudio)
 - [ ] O início: "Pelo menos" logo depois de "Bruges não quer você lá" (≈ 2 s) e "A cidade tem menos de 120 mil", sem repetição (≈ 4,5 s).
 - [ ] Os cortes de pausa no rosto: "jeito errado. / Porque eu fiz" (≈ 16,3 s) e "olho no olho. / Dorme" (≈ 33,5 s).
+
+## Medições (vídeo final)
+| Ponto | Resultado |
+|---|---|
+| Duração | 52,1 s (REV2: 55,1 s) |
+| Formato | 1080 × 1920, 30 qps, H.264 + AAC 320 kb/s (codificado uma vez) |
+| Loudness | −14,0 LUFS · LRA 2,1 LU |
+| Pico verdadeiro | −1,7 dBTP |
+| Início transcrito do vídeo final | "Bruges não quer você lá, pelo menos não da maneira que todo mundo vai. A cidade tem menos de 120 mil habitantes e recebeu mais de 8 milhões de turistas em um ano. Lotou tanto que a própria Bruges…" (sem a repetição) |
+| Folha de 1 quadro por segundo | `qa_frames/folha_1s.jpg`: nenhuma legenda sobreposta |
