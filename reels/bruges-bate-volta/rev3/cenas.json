@@ -1,0 +1,440 @@
+{
+ "_sobre": "REV3 (pedido do Diego, 05/11/2026): sem o falso começo repetido ('A cidade tem menos de…') e com as pausas longas decupadas (rev3/edicao.json). Cenas, textos e marcos iguais aos da REV2, recalculados na nova linha do tempo: cada troca ancorada no início medido (energia) da frase.",
+ "rostoY": 720,
+ "calmo": true,
+ "audio_fora": true,
+ "cenas": [
+  {
+   "id": "gancho_fitas",
+   "tipo": "foto",
+   "ini": 0.0,
+   "fim": 2.007,
+   "layout": "split",
+   "arquivo": "fotos/manha_rozenhoedkaai.jpg",
+   "kb": [
+    1.0,
+    1.02
+   ],
+   "foco": [
+    0.5,
+    0.42
+   ]
+  },
+  {
+   "id": "gancho_multidao",
+   "tipo": "broll",
+   "ini": 2.007,
+   "fim": 4.43,
+   "layout": "split",
+   "fonte": "IMG_4128.mov",
+   "src": 7.4,
+   "foco": [
+    0.5,
+    1.0
+   ]
+  },
+  {
+   "id": "cidade",
+   "tipo": "broll",
+   "ini": 4.43,
+   "fim": 6.7,
+   "layout": "full",
+   "fonte": "acervo/IMG_2439.MOV",
+   "src": 0.3,
+   "recorte_x": 0.35,
+   "escuro": 0.12
+  },
+  {
+   "id": "milhoes",
+   "tipo": "broll",
+   "ini": 6.7,
+   "fim": 10.003,
+   "layout": "full",
+   "fonte": "acervo/IMG_2448.MOV",
+   "src": 0.5,
+   "recorte_x": 0.5,
+   "escuro": 0.12
+  },
+  {
+   "id": "lotou",
+   "tipo": "broll",
+   "ini": 10.003,
+   "fim": 11.95,
+   "layout": "full",
+   "fonte": "acervo/IMG_2438.MOV",
+   "src": 0.2,
+   "recorte_x": 0.6
+  },
+  {
+   "id": "captura",
+   "tipo": "captura",
+   "ini": 11.95,
+   "fim": 14.707,
+   "layout": "full"
+  },
+  {
+   "id": "errado",
+   "tipo": "fala",
+   "ini": 14.707,
+   "fim": 16.96,
+   "layout": "full"
+  },
+  {
+   "id": "trem",
+   "tipo": "broll",
+   "ini": 16.96,
+   "fim": 20.197,
+   "layout": "full",
+   "fonte": "IMG_4244.mov",
+   "src": 0.6
+  },
+  {
+   "id": "comparar",
+   "tipo": "comparar",
+   "ini": 20.197,
+   "fim": 24.777,
+   "layout": "full"
+  },
+  {
+   "id": "linda_gente",
+   "tipo": "broll",
+   "ini": 24.777,
+   "fim": 27.217,
+   "layout": "full",
+   "fonte": "IMG_4128.mov",
+   "src": 3.9
+  },
+  {
+   "id": "virada",
+   "tipo": "broll",
+   "ini": 27.217,
+   "fim": 31.22,
+   "layout": "full",
+   "fonte": "acervo/IMG_2642.MOV",
+   "src": 0.3,
+   "recorte_x": 0.5
+  },
+  {
+   "id": "conselho",
+   "tipo": "fala",
+   "ini": 31.22,
+   "fim": 33.573,
+   "layout": "full"
+  },
+  {
+   "id": "noite",
+   "tipo": "foto",
+   "ini": 33.573,
+   "fim": 36.093,
+   "layout": "full",
+   "arquivo": "fotos/noite_rozenhoedkaai.jpg",
+   "kb": [
+    1.0,
+    1.02
+   ],
+   "foco": [
+    0.62,
+    0.5
+   ]
+  },
+  {
+   "id": "manha",
+   "tipo": "foto",
+   "ini": 36.093,
+   "fim": 38.7,
+   "layout": "full",
+   "arquivo": "fotos/manha_dijver.jpg",
+   "kb": [
+    1.0,
+    1.02
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "patrimonio",
+   "tipo": "broll",
+   "ini": 38.7,
+   "fim": 40.513,
+   "layout": "full",
+   "fonte": "IMG_4131.mov",
+   "src": 0.2
+  },
+  {
+   "id": "chocolate",
+   "tipo": "broll",
+   "ini": 40.513,
+   "fim": 42.4,
+   "layout": "full",
+   "fonte": "acervo/IMG_2431.MOV",
+   "src": 0.3,
+   "recorte_x": 0.5
+  },
+  {
+   "id": "bonita",
+   "tipo": "broll",
+   "ini": 42.4,
+   "fim": 44.307,
+   "layout": "full",
+   "fonte": "IMG_4218.mp4",
+   "src": 6.4
+  },
+  {
+   "id": "europa",
+   "tipo": "broll",
+   "ini": 44.307,
+   "fim": 47.81,
+   "layout": "full",
+   "fonte": "acervo/IMG_2447.MOV",
+   "src": 0.0,
+   "recorte_x": 0.25,
+   "estabilizar": true
+  },
+  {
+   "id": "pergunta",
+   "tipo": "fala",
+   "ini": 47.81,
+   "fim": 49.917,
+   "layout": "full"
+  },
+  {
+   "id": "cta",
+   "tipo": "foto",
+   "ini": 49.917,
+   "fim": 52.17,
+   "layout": "split",
+   "arquivo": "fotos/manha_rozenhoedkaai.jpg",
+   "kb": [
+    1.02,
+    1.0
+   ],
+   "foco": [
+    0.5,
+    0.42
+   ]
+  }
+ ],
+ "fotos": {
+  "manha_rozenhoedkaai.jpg": "fonte/web/fotos/morning_43348759971.jpg",
+  "noite_rozenhoedkaai.jpg": "fonte/web/fotos/noite_rozenhoedkaai.jpg",
+  "manha_dijver.jpg": "fonte/web/fotos/manha_x6.jpg",
+  "porto_da_barra.jpg": "fonte/web/fotos/porto_da_barra_lotado_tratada.jpg"
+ },
+ "captura_cortes": {
+  "afar_titulo.jpg": [
+   "/tmp/claude-0/afar_titulo.png",
+   0,
+   400,
+   1200,
+   1227
+  ],
+  "afar_trecho.jpg": [
+   "/tmp/claude-0/afar_trecho.png",
+   0,
+   380,
+   1200,
+   1067
+  ]
+ },
+ "quadros": {
+  "comparar_bruges.jpg": [
+   "acervo/IMG_2443.MOV",
+   1.0
+  ],
+  "captura_fundo.jpg": [
+   "IMG_4116.mov",
+   5.0
+  ]
+ },
+ "gancho": {
+  "linhas": [
+   {
+    "tam": 128,
+    "palavras": [
+     {
+      "texto": "BRUGES",
+      "em": 0.17
+     },
+     {
+      "texto": "NÃO",
+      "em": 0.44,
+      "cor": "#E0AE5C"
+     },
+     {
+      "texto": "QUER",
+      "em": 0.74,
+      "cor": "#E0AE5C"
+     }
+    ]
+   },
+   {
+    "tam": 170,
+    "palavras": [
+     {
+      "texto": "VOCÊ",
+      "em": 1.1
+     },
+     {
+      "texto": "LÁ.",
+      "em": 1.4
+     }
+    ]
+   }
+  ],
+  "fim": 2.007,
+  "topo": 282
+ },
+ "fitas": {
+  "ini": 0.0,
+  "fim": 2.007,
+  "entradas": [
+   0.759,
+   0.901
+  ],
+  "texto": "POLITIE · POLICE",
+  "tops": [
+   600,
+   735
+  ],
+  "giros": [
+   -9,
+   6
+  ]
+ },
+ "textos": [
+  {
+   "ini": 5.32,
+   "fim": 6.7,
+   "top": 520,
+   "linhas": [
+    {
+     "texto": "120 MIL",
+     "tam": 220
+    },
+    {
+     "texto": "HABITANTES",
+     "tam": 54,
+     "cor": "#ECE5D8",
+     "fonte": "texto"
+    }
+   ]
+  },
+  {
+   "ini": 7.42,
+   "fim": 10.003,
+   "top": 490,
+   "linhas": [
+    {
+     "texto": "8 MILHÕES",
+     "tam": 196,
+     "cor": "#E0AE5C"
+    },
+    {
+     "texto": "DE TURISTAS",
+     "tam": 58,
+     "fonte": "texto",
+     "em": 8.44
+    },
+    {
+     "texto": "EM 1 ANO",
+     "tam": 58,
+     "fonte": "texto",
+     "em": 8.96
+    }
+   ]
+  }
+ ],
+ "sem_legenda": [
+  [
+   0,
+   2.007
+  ],
+  [
+   5.3,
+   6.7
+  ],
+  [
+   7.4,
+   10.003
+  ],
+  [
+   50.167,
+   60
+  ]
+ ],
+ "contador": null,
+ "relogio": null,
+ "captura": {
+  "titulo": "fotos/afar_titulo.jpg",
+  "trecho": "fotos/afar_trecho.jpg",
+  "fundo": "fotos/captura_fundo.jpg",
+  "troca": 0.52
+ },
+ "comparar": {
+  "a": "fotos/comparar_bruges.jpg",
+  "b": "fotos/porto_da_barra.jpg",
+  "marco": 1.23,
+  "focoA": [
+   0.8,
+   0.6
+  ],
+  "focoB": [
+   0.32,
+   0.72
+  ]
+ },
+ "cta": {
+  "ini": 49.917,
+  "rotulo": "NO SEU ROTEIRO",
+  "destino": "BRUGES",
+  "entrada": 150
+ },
+ "clack_db_rel": -10,
+ "sons": [],
+ "legenda_texto": {
+  "5": "Pelo",
+  "57": "fiz.",
+  "58": "Cheguei",
+  "127": "olho.",
+  "128": "Dorme",
+  "131": "lá.",
+  "132": "Você",
+  "160": "Foi"
+ },
+ "legenda_destaques": [
+  "120",
+  "mil",
+  "8",
+  "milhões",
+  "propaganda",
+  "errado",
+  "fiz",
+  "11",
+  "porto",
+  "barra",
+  "gente",
+  "outra",
+  "embora",
+  "conselho",
+  "noite",
+  "canais",
+  "patrimônio",
+  "chocolate",
+  "bonita",
+  "europa",
+  "roteiro",
+  "lotou"
+ ],
+ "nao_separar": [
+  "porto da",
+  "da barra",
+  "bate e",
+  "e volta",
+  "120 mil",
+  "8 milhões",
+  "11 horas"
+ ],
+ "_porto_da_barra": "Foto lotada: 'Praia do Porto da Barra 1.jpg' (Luan, CC BY-SA 4.0), com contraste/cor corrigidos (eq=contrast 1.14, saturação 1.18). Diego (04/11/2026) pediu o Porto da Barra cheio; a de 2017 (guarda-sóis) parecia vazia."
+}

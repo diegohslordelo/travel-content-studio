@@ -1,0 +1,123 @@
+{
+ "_sobre": "Decupagem da voz (REV3, pedido do Diego 05/11/2026): sai o falso começo da IMG_7695 ('A cidade tem menos de cem…', repetido); todo silêncio dentro da fala com mais de 0,30 s vira 0,20 s (o corte cai no meio do silêncio medido, 0,10 s de folga de cada lado: nenhuma palavra é cortada); entre tomadas, 0,08 s antes da 1ª palavra e 0,12 s depois da última. Tratamento de áudio igual ao da REV2.",
+ "fps": 30,
+ "pad_ini": 0.08,
+ "pad_fim": 0.12,
+ "falas": [
+  {
+   "id": "gancho",
+   "tomada": "IMG_7694",
+   "trechos": [
+    [
+     3.22,
+     7.8
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "numeros",
+   "tomada": "IMG_7695",
+   "trechos": [
+    [
+     4.28,
+     9.6
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "propaganda",
+   "tomada": "IMG_7696",
+   "trechos": [
+    [
+     2.1,
+     6.64
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "errado",
+   "tomada": "IMG_7713",
+   "trechos": [
+    [
+     3.88,
+     9.4
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "porto",
+   "tomada": "IMG_7720",
+   "trechos": [
+    [
+     0.27,
+     7.06
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "virada",
+   "tomada": "IMG_7722",
+   "trechos": [
+    [
+     3.36,
+     7.18
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "conselho",
+   "tomada": "IMG_7728",
+   "trechos": [
+    [
+     0.14,
+     7.64
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "motivos",
+   "tomada": "IMG_7733",
+   "trechos": [
+    [
+     2.52,
+     4.39
+    ],
+    [
+     5.31,
+     8.92
+    ]
+   ],
+   "pausa_depois": 0.0
+  },
+  {
+   "id": "pergunta",
+   "tomada": "IMG_7734",
+   "trechos": [
+    [
+     2.38,
+     10.0
+    ]
+   ],
+   "pausa_depois": 0.0
+  }
+ ],
+ "_cortes": "motivos: tirado 'Você faz tudo a pé' (4.39–5.31 da tomada) para a imagem casar com a fala na regra dos 2–3 s; pergunta: 0,9 s de silêncio no fim para a placa do CTA.",
+ "tratamento": {
+  "versao": 2,
+  "passa_alta_hz": 85,
+  "compressor": "acompressor=threshold=-26dB:ratio=2.5:attack=5:release=110:knee=6:makeup=1",
+  "alvo_tomada_lufs": -18.0
+ },
+ "compactar": {
+  "pausa_max": 0.3,
+  "pausa_alvo": 0.2,
+  "limiar_db_abaixo_p90": 30
+ }
+}

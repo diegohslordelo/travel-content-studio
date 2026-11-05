@@ -19,5 +19,18 @@ for i, w in enumerate(ws):
     while k < min(n - 1, int(w["e"] * 100)) and db[k] < lim:
         k += 1
     w["s"] = round(max(w["s"], k / 100), 3)
+    # o Whisper estica a palavra por cima de uma pausa: se houver silêncio ≥ 0,12 s dentro dela, ela começa depois
+    a0, b0 = int(w["s"] * 100), int(w["e"] * 100)
+    j = a0
+    while j < b0:
+        if db[j] < lim:
+            k = j
+            while k < b0 and db[k] < lim:
+                k += 1
+            if k - j >= 12 and k < b0:
+                w["s"] = round(k / 100, 3)
+            j = k
+        else:
+            j += 1
 json.dump(ws, open(f"{rev}/transcricao_alinhada.json", "w"), ensure_ascii=False, indent=1)
 print(" ".join(f"{w['w']}@{w['s']:.2f}" for w in ws))

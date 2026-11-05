@@ -10,8 +10,48 @@ W = json.load(open("_tmp/transcricao_whisper.json"))
 fps = E["fps"]
 tmp = "_tmp/voz"; os.makedirs(tmp, exist_ok=True)
 TONE = "zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=mobius:param=0.3:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p"
+COMP = E.get("compactar")
+
+
+def silencios_tomada(tom):
+    """Silêncios da tomada (energia 120–4000 Hz em janelas de 10 ms, abaixo de p90 − limiar)."""
+    import numpy as np
+    sr = 16000
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", f"fonte/{tom}.MOV", "-vn", "-ac", "1", "-ar", str(sr), "-af", "highpass=f=120,lowpass=f=4000", "-f", "f32le", "-"], capture_output=True).stdout
+    x = np.frombuffer(raw, np.float32); hop = sr // 100; n = len(x) // hop
+    db = 20 * np.log10(np.sqrt(np.mean(x[: n * hop].reshape(n, hop) ** 2, 1)) + 1e-9)
+    mudo = db < np.percentile(db, 90) - COMP["limiar_db_abaixo_p90"]
+    out, i = [], 0
+    while i < n:
+        if mudo[i]:
+            j = i
+            while j < n and mudo[j]: j += 1
+            out.append((i / 100, j / 100)); i = j
+        else:
+            i += 1
+    return out
+
+
+def compacta(tom, trechos):
+    """REV3+: dentro de cada trecho, silêncio > pausa_max vira pausa_alvo (metade de cada lado do corte)."""
+    if not COMP:
+        return trechos
+    sil = silencios_tomada(tom)
+    meio = COMP["pausa_alvo"] / 2
+    novos = []
+    for a, b in trechos:
+        cur = a
+        for s, e in sil:
+            if s > a + 0.05 and e < b - 0.05 and e - s > COMP["pausa_max"]:
+                novos.append([cur, round(s + meio, 3)])
+                cur = round(e - meio, 3)
+        novos.append([cur, b])
+    return novos
+
+
 pecas, palavras, t = [], [], 0.0
 for f in E["falas"]:
+    f = dict(f, trechos=compacta(f["tomada"], f["trechos"]))
     ws = W[f["tomada"] + ".MOV"]
     n = len(f["trechos"])
     for k, (a, b) in enumerate(f["trechos"]):
