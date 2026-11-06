@@ -69,7 +69,12 @@ export const EtiquetaLugar: React.FC<{ lugar: string; detalhe: string; ini: numb
   );
 };
 
-/** Chamada do Instagram (decisão de 16/10/2026): glifo oficial + "SEGUE NO INSTA" + @primeirodiaem, no espaço do lower third. Sem som. */
+/**
+ * Chamada do Instagram (decisão de 16/10/2026): glifo + "SEGUE NO INSTAGRAM" + @primeirodiaem, no espaço do lower third. Sem som.
+ * Regras da Meta (meta.com/brand/resources/instagram, conferidas em 21/10/2026): o nome "Instagram" não se abrevia
+ * (por isso não "INSTA"); glifo em cor sólida, sem distorcer nem girar, ≥ 29 px, com área livre de metade do
+ * tamanho do glifo entre ele e o texto (76 px → 38 px; o código usa 40).
+ */
 export const ChamadaInstagram: React.FC<{ ini: number; fim: number; usuario?: string }> = ({ ini, fim, usuario = "@primeirodiaem" }) => {
   const { visivel, x, opac } = useEntradaSaida(ini, fim);
   if (!visivel) return null;
@@ -83,7 +88,7 @@ export const ChamadaInstagram: React.FC<{ ini: number; fim: number; usuario?: st
         boxSizing: "border-box",
         display: "flex",
         alignItems: "center",
-        gap: 26,
+        gap: 40,
         padding: "0 40px 0 30px",
         background: COR.grafite,
         borderRadius: RAIO.placa,
@@ -94,7 +99,7 @@ export const ChamadaInstagram: React.FC<{ ini: number; fim: number; usuario?: st
     >
       <GlifoInstagram tamanho={76} cor={COR.papel} />
       <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-        <span style={{ fontFamily: FONTE.display, fontWeight: TIPO.label.fontWeight, fontSize: TIPO.label.fontSize, lineHeight: 1, letterSpacing: TIPO.label.letterSpacing, color: COR.amarelo }}>SEGUE NO INSTA</span>
+        <span style={{ fontFamily: FONTE.display, fontWeight: TIPO.label.fontWeight, fontSize: TIPO.label.fontSize, lineHeight: 1, letterSpacing: TIPO.label.letterSpacing, color: COR.amarelo }}>SEGUE NO INSTAGRAM</span>
         <span style={{ fontFamily: FONTE.texto, fontWeight: 700, fontSize: 52, lineHeight: 1, color: COR.papel }}>{usuario}</span>
       </div>
     </div>
@@ -302,5 +307,52 @@ export const TelaFinal: React.FC<{ ini: number; proximo: string; refLufs?: numbe
       )}
       <Som nome="clique" em={ini + 400 + DUR.base} relDb={SOM.clique} refLufs={refLufs} />
     </>
+  );
+};
+
+/**
+ * Quadro (DS 2.6, "Ranking"/lista): painel grafite com linhas de 104 px — número de parada amarelo (PD Placar),
+ * nome em H3 papel e um complemento em Plex Mono. Aqui as linhas acendem na ordem em que são faladas (pedido
+ * do Diego: a lista dos museus "vai aparecendo aos poucos"), cada uma em 160 ms vindo da esquerda (fato → ).
+ * Sai inteiro pela direita em 240 ms. Sem som (o DS não prevê som para o Quadro).
+ */
+export const Quadro: React.FC<{ linhas: { em: number; nome: string; complemento?: string }[]; fim: number; x: number; y: number; escala?: number }> = ({ linhas, fim, x, y, escala = 0.75 }) => {
+  const t = useMs();
+  if (linhas.length === 0 || t < linhas[0].em) return null;
+  const ts = t - fim;
+  if (ts >= DUR.base) return null;
+  const xSai = kf(ts, [0, DUR.base], [0, 1150], EASE.exit);
+  const opSai = kf(ts, [80, DUR.base], [1, 0]);
+  return (
+    <div style={{ position: "absolute", left: x, top: y, scale: String(escala), transformOrigin: "0 0", translate: `${xSai}px 0`, opacity: opSai, display: "flex", flexDirection: "column", gap: 8 }}>
+      {linhas.map((l, i) => {
+        const tl = t - l.em;
+        if (tl < 0) return null;
+        const e = kf(tl, [0, DUR.fast], [0, 1], EASE.out);
+        return (
+          <div
+            key={l.nome}
+            style={{
+              height: 104,
+              boxSizing: "border-box",
+              display: "flex",
+              alignItems: "center",
+              gap: 28,
+              padding: "0 40px 0 30px",
+              background: COR.grafite,
+              borderRadius: RAIO.tag,
+              boxShadow: `${SOMBRA.placa}, inset 0 0 0 2px rgba(255,255,255,.08)`,
+              opacity: e,
+              translate: `${(1 - e) * -24}px 0`,
+              alignSelf: "flex-start",
+            }}
+          >
+            <span style={{ fontFamily: FONTE.dados, fontWeight: 700, fontSize: TIPO.data.fontSize, lineHeight: 1, color: COR.amarelo, minWidth: 34, fontVariantNumeric: "tabular-nums" }}>{i + 1}</span>
+            <span style={{ fontFamily: FONTE.display, fontWeight: TIPO.h3.fontWeight, fontSize: TIPO.h3.fontSize, lineHeight: 1, letterSpacing: TIPO.h3.letterSpacing, color: COR.papel, textTransform: "uppercase", whiteSpace: "nowrap" }}>{l.nome}</span>
+            {l.complemento && <span style={{ fontFamily: FONTE.mono, fontWeight: 500, fontSize: 26, letterSpacing: "0.06em", color: COR.amarelo, whiteSpace: "nowrap", opacity: 0.9 }}>{l.complemento}</span>}
+          </div>
+        );
+      })}
+    </div>
   );
 };

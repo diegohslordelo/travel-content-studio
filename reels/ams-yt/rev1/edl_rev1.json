@@ -1,0 +1,1505 @@
+{
+ "fps": 24,
+ "duracao_fonte_s": 1963.804,
+ "duracao_saida_s": 1895.708,
+ "removido_s": 68.083,
+ "manter": [
+  [
+   0,
+   246
+  ],
+  [
+   251,
+   957
+  ],
+  [
+   960,
+   1032
+  ],
+  [
+   1039,
+   1141
+  ],
+  [
+   1154,
+   1831
+  ],
+  [
+   1859,
+   1919
+  ],
+  [
+   1924,
+   2190
+  ],
+  [
+   2194,
+   2316
+  ],
+  [
+   2324,
+   2615
+  ],
+  [
+   2622,
+   2716
+  ],
+  [
+   2737,
+   2854
+  ],
+  [
+   2867,
+   3521
+  ],
+  [
+   3532,
+   3628
+  ],
+  [
+   3644,
+   3770
+  ],
+  [
+   3781,
+   3838
+  ],
+  [
+   3841,
+   3859
+  ],
+  [
+   3862,
+   3954
+  ],
+  [
+   3980,
+   5057
+  ],
+  [
+   5067,
+   5384
+  ],
+  [
+   5387,
+   5579
+  ],
+  [
+   5586,
+   5963
+  ],
+  [
+   5973,
+   6150
+  ],
+  [
+   6154,
+   6186
+  ],
+  [
+   6189,
+   6381
+  ],
+  [
+   6388,
+   6600
+  ],
+  [
+   6615,
+   6632
+  ],
+  [
+   6645,
+   7922
+  ],
+  [
+   7925,
+   8383
+  ],
+  [
+   8392,
+   8560
+  ],
+  [
+   8831,
+   10406
+  ],
+  [
+   10411,
+   11987
+  ],
+  [
+   11994,
+   12065
+  ],
+  [
+   12068,
+   12331
+  ],
+  [
+   12334,
+   12383
+  ],
+  [
+   12390,
+   13747
+  ],
+  [
+   13768,
+   14034
+  ],
+  [
+   14040,
+   14598
+  ],
+  [
+   14604,
+   16046
+  ],
+  [
+   16049,
+   16122
+  ],
+  [
+   16130,
+   16192
+  ],
+  [
+   16201,
+   16226
+  ],
+  [
+   16246,
+   16286
+  ],
+  [
+   16289,
+   16385
+  ],
+  [
+   16403,
+   16657
+  ],
+  [
+   16661,
+   16702
+  ],
+  [
+   16715,
+   18099
+  ],
+  [
+   18105,
+   18581
+  ],
+  [
+   18584,
+   18873
+  ],
+  [
+   18894,
+   19473
+  ],
+  [
+   19550,
+   20072
+  ],
+  [
+   20079,
+   20175
+  ],
+  [
+   20180,
+   20221
+  ],
+  [
+   20232,
+   20289
+  ],
+  [
+   20296,
+   20480
+  ],
+  [
+   20490,
+   20818
+  ],
+  [
+   20822,
+   21891
+  ],
+  [
+   21895,
+   22772
+  ],
+  [
+   22776,
+   22909
+  ],
+  [
+   22927,
+   24961
+  ],
+  [
+   24964,
+   24972
+  ],
+  [
+   24977,
+   25028
+  ],
+  [
+   25039,
+   26191
+  ],
+  [
+   26199,
+   26667
+  ],
+  [
+   26684,
+   26728
+  ],
+  [
+   26756,
+   26833
+  ],
+  [
+   26837,
+   26863
+  ],
+  [
+   26867,
+   27519
+  ],
+  [
+   27522,
+   27550
+  ],
+  [
+   27555,
+   28080
+  ],
+  [
+   28084,
+   28362
+  ],
+  [
+   28371,
+   28531
+  ],
+  [
+   28536,
+   28565
+  ],
+  [
+   28578,
+   28668
+  ],
+  [
+   28676,
+   28717
+  ],
+  [
+   28728,
+   28847
+  ],
+  [
+   28855,
+   28907
+  ],
+  [
+   28921,
+   29029
+  ],
+  [
+   29040,
+   30363
+  ],
+  [
+   30371,
+   30649
+  ],
+  [
+   30652,
+   30744
+  ],
+  [
+   30753,
+   30900
+  ],
+  [
+   30905,
+   30950
+  ],
+  [
+   30959,
+   30996
+  ],
+  [
+   31002,
+   31083
+  ],
+  [
+   31100,
+   31164
+  ],
+  [
+   31195,
+   31730
+  ],
+  [
+   31740,
+   31872
+  ],
+  [
+   31875,
+   31943
+  ],
+  [
+   31949,
+   32097
+  ],
+  [
+   32112,
+   32504
+  ],
+  [
+   32513,
+   32793
+  ],
+  [
+   32798,
+   32968
+  ],
+  [
+   32974,
+   33120
+  ],
+  [
+   33148,
+   33258
+  ],
+  [
+   33262,
+   35787
+  ],
+  [
+   35793,
+   35866
+  ],
+  [
+   35882,
+   35985
+  ],
+  [
+   35988,
+   36222
+  ],
+  [
+   36226,
+   36256
+  ],
+  [
+   36262,
+   36358
+  ],
+  [
+   36363,
+   36392
+  ],
+  [
+   36396,
+   36612
+  ],
+  [
+   36617,
+   36770
+  ],
+  [
+   36773,
+   37062
+  ],
+  [
+   37079,
+   37178
+  ],
+  [
+   37199,
+   38093
+  ],
+  [
+   38102,
+   38276
+  ],
+  [
+   38285,
+   38408
+  ],
+  [
+   38424,
+   40072
+  ],
+  [
+   40075,
+   40292
+  ],
+  [
+   40326,
+   40524
+  ],
+  [
+   40534,
+   41084
+  ],
+  [
+   41097,
+   41128
+  ],
+  [
+   41134,
+   41516
+  ],
+  [
+   41598,
+   41676
+  ],
+  [
+   41689,
+   41798
+  ],
+  [
+   41807,
+   42245
+  ],
+  [
+   42252,
+   42445
+  ],
+  [
+   42470,
+   44023
+  ],
+  [
+   44026,
+   44034
+  ],
+  [
+   44044,
+   44196
+  ],
+  [
+   44200,
+   44490
+  ],
+  [
+   44493,
+   44973
+  ],
+  [
+   44988,
+   45257
+  ],
+  [
+   45261,
+   45393
+  ],
+  [
+   45411,
+   45475
+  ],
+  [
+   45486,
+   46342
+  ],
+  [
+   46347,
+   46429
+  ],
+  [
+   46433,
+   46494
+  ],
+  [
+   46505,
+   46674
+  ],
+  [
+   46678,
+   46950
+  ],
+  [
+   46969,
+   47131
+  ]
+ ],
+ "removidos": [
+  {
+   "de_q": 246,
+   "ate_q": 251,
+   "de_s": 10.25,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 957,
+   "ate_q": 960,
+   "de_s": 39.875,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 1032,
+   "ate_q": 1039,
+   "de_s": 43.0,
+   "dur_s": 0.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 1141,
+   "ate_q": 1154,
+   "de_s": 47.542,
+   "dur_s": 0.542,
+   "motivo": "[visual] giro da câmera com a mão na frente da lente (tour do quarto, 0:47)"
+  },
+  {
+   "de_q": 1831,
+   "ate_q": 1859,
+   "de_s": 76.292,
+   "dur_s": 1.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 1919,
+   "ate_q": 1924,
+   "de_s": 79.958,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 2190,
+   "ate_q": 2194,
+   "de_s": 91.25,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 2316,
+   "ate_q": 2324,
+   "de_s": 96.5,
+   "dur_s": 0.333,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 2615,
+   "ate_q": 2622,
+   "de_s": 108.958,
+   "dur_s": 0.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 2716,
+   "ate_q": 2737,
+   "de_s": 113.167,
+   "dur_s": 0.875,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 2854,
+   "ate_q": 2867,
+   "de_s": 118.917,
+   "dur_s": 0.542,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 3521,
+   "ate_q": 3532,
+   "de_s": 146.708,
+   "dur_s": 0.458,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 3628,
+   "ate_q": 3644,
+   "de_s": 151.167,
+   "dur_s": 0.667,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 3770,
+   "ate_q": 3781,
+   "de_s": 157.083,
+   "dur_s": 0.458,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 3838,
+   "ate_q": 3841,
+   "de_s": 159.917,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 3859,
+   "ate_q": 3862,
+   "de_s": 160.792,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 3954,
+   "ate_q": 3980,
+   "de_s": 164.75,
+   "dur_s": 1.083,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 5057,
+   "ate_q": 5067,
+   "de_s": 210.708,
+   "dur_s": 0.417,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 5384,
+   "ate_q": 5387,
+   "de_s": 224.333,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 5579,
+   "ate_q": 5586,
+   "de_s": 232.458,
+   "dur_s": 0.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 5963,
+   "ate_q": 5973,
+   "de_s": 248.458,
+   "dur_s": 0.417,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 6150,
+   "ate_q": 6154,
+   "de_s": 256.25,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 6186,
+   "ate_q": 6189,
+   "de_s": 257.75,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 6381,
+   "ate_q": 6388,
+   "de_s": 265.875,
+   "dur_s": 0.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 6600,
+   "ate_q": 6615,
+   "de_s": 275.0,
+   "dur_s": 0.625,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 6632,
+   "ate_q": 6645,
+   "de_s": 276.333,
+   "dur_s": 0.542,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 7922,
+   "ate_q": 7925,
+   "de_s": 330.083,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 8383,
+   "ate_q": 8392,
+   "de_s": 349.292,
+   "dur_s": 0.375,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 8560,
+   "ate_q": 8831,
+   "de_s": 356.667,
+   "dur_s": 11.292,
+   "motivo": "[pedido do Diego] trecho do 'daora' em que a Marina fala 'tira isso daí' (5:56–6:08); a fala segue 'A prioridade aqui é a bicicleta. / As casinhas aqui são muito bonitinhas. Muito massa.'"
+  },
+  {
+   "de_q": 10406,
+   "ate_q": 10411,
+   "de_s": 433.583,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 11987,
+   "ate_q": 11994,
+   "de_s": 499.458,
+   "dur_s": 0.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 12065,
+   "ate_q": 12068,
+   "de_s": 502.708,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 12331,
+   "ate_q": 12334,
+   "de_s": 513.792,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 12383,
+   "ate_q": 12390,
+   "de_s": 515.958,
+   "dur_s": 0.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 13747,
+   "ate_q": 13768,
+   "de_s": 572.792,
+   "dur_s": 0.875,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 14034,
+   "ate_q": 14040,
+   "de_s": 584.75,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 14598,
+   "ate_q": 14604,
+   "de_s": 608.25,
+   "dur_s": 0.25,
+   "motivo": "[visual] câmera encosta no rosto da Marina (10:08)"
+  },
+  {
+   "de_q": 16046,
+   "ate_q": 16049,
+   "de_s": 668.583,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 16122,
+   "ate_q": 16130,
+   "de_s": 671.75,
+   "dur_s": 0.333,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 16192,
+   "ate_q": 16201,
+   "de_s": 674.667,
+   "dur_s": 0.375,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 16226,
+   "ate_q": 16246,
+   "de_s": 676.083,
+   "dur_s": 0.833,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 16286,
+   "ate_q": 16289,
+   "de_s": 678.583,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 16385,
+   "ate_q": 16403,
+   "de_s": 682.708,
+   "dur_s": 0.75,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 16657,
+   "ate_q": 16661,
+   "de_s": 694.042,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 16702,
+   "ate_q": 16715,
+   "de_s": 695.917,
+   "dur_s": 0.542,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 18099,
+   "ate_q": 18105,
+   "de_s": 754.125,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 18581,
+   "ate_q": 18584,
+   "de_s": 774.208,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 18873,
+   "ate_q": 18894,
+   "de_s": 786.375,
+   "dur_s": 0.875,
+   "motivo": "[visual] câmera passando de mão, borrada (13:06); sai junto o 'Segura aqui'"
+  },
+  {
+   "de_q": 19473,
+   "ate_q": 19550,
+   "de_s": 811.375,
+   "dur_s": 3.208,
+   "motivo": "[McCrispy] encurta a mastigação antes do 'Não' para caber o rufar (ficam a mordida e ≈ 4,2 s de mastigação até o 'Não')"
+  },
+  {
+   "de_q": 20072,
+   "ate_q": 20079,
+   "de_s": 836.333,
+   "dur_s": 0.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 20175,
+   "ate_q": 20180,
+   "de_s": 840.625,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 20221,
+   "ate_q": 20232,
+   "de_s": 842.542,
+   "dur_s": 0.458,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 20289,
+   "ate_q": 20296,
+   "de_s": 845.375,
+   "dur_s": 0.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 20480,
+   "ate_q": 20490,
+   "de_s": 853.333,
+   "dur_s": 0.417,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 20818,
+   "ate_q": 20822,
+   "de_s": 867.417,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 21891,
+   "ate_q": 21895,
+   "de_s": 912.125,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 22772,
+   "ate_q": 22776,
+   "de_s": 948.833,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 22909,
+   "ate_q": 22927,
+   "de_s": 954.542,
+   "dur_s": 0.75,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 24961,
+   "ate_q": 24964,
+   "de_s": 1040.042,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 24972,
+   "ate_q": 24977,
+   "de_s": 1040.5,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 25028,
+   "ate_q": 25039,
+   "de_s": 1042.833,
+   "dur_s": 0.458,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 26191,
+   "ate_q": 26199,
+   "de_s": 1091.292,
+   "dur_s": 0.333,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 26667,
+   "ate_q": 26684,
+   "de_s": 1111.125,
+   "dur_s": 0.708,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 26728,
+   "ate_q": 26756,
+   "de_s": 1113.667,
+   "dur_s": 1.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 26833,
+   "ate_q": 26837,
+   "de_s": 1118.042,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 26863,
+   "ate_q": 26867,
+   "de_s": 1119.292,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 27519,
+   "ate_q": 27522,
+   "de_s": 1146.625,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 27550,
+   "ate_q": 27555,
+   "de_s": 1147.917,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 28080,
+   "ate_q": 28084,
+   "de_s": 1170.0,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 28362,
+   "ate_q": 28371,
+   "de_s": 1181.75,
+   "dur_s": 0.375,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 28531,
+   "ate_q": 28536,
+   "de_s": 1188.792,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 28565,
+   "ate_q": 28578,
+   "de_s": 1190.208,
+   "dur_s": 0.542,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 28668,
+   "ate_q": 28676,
+   "de_s": 1194.5,
+   "dur_s": 0.333,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 28717,
+   "ate_q": 28728,
+   "de_s": 1196.542,
+   "dur_s": 0.458,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 28847,
+   "ate_q": 28855,
+   "de_s": 1201.958,
+   "dur_s": 0.333,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 28907,
+   "ate_q": 28921,
+   "de_s": 1204.458,
+   "dur_s": 0.583,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 29029,
+   "ate_q": 29040,
+   "de_s": 1209.542,
+   "dur_s": 0.458,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 30363,
+   "ate_q": 30371,
+   "de_s": 1265.125,
+   "dur_s": 0.333,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 30649,
+   "ate_q": 30652,
+   "de_s": 1277.042,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 30744,
+   "ate_q": 30753,
+   "de_s": 1281.0,
+   "dur_s": 0.375,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 30900,
+   "ate_q": 30905,
+   "de_s": 1287.5,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 30950,
+   "ate_q": 30959,
+   "de_s": 1289.583,
+   "dur_s": 0.375,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 30996,
+   "ate_q": 31002,
+   "de_s": 1291.5,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 31083,
+   "ate_q": 31100,
+   "de_s": 1295.125,
+   "dur_s": 0.708,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 31164,
+   "ate_q": 31195,
+   "de_s": 1298.5,
+   "dur_s": 1.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 31730,
+   "ate_q": 31740,
+   "de_s": 1322.083,
+   "dur_s": 0.417,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 31872,
+   "ate_q": 31875,
+   "de_s": 1328.0,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 31943,
+   "ate_q": 31949,
+   "de_s": 1330.958,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 32097,
+   "ate_q": 32112,
+   "de_s": 1337.375,
+   "dur_s": 0.625,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 32504,
+   "ate_q": 32513,
+   "de_s": 1354.333,
+   "dur_s": 0.375,
+   "motivo": "[visual] câmera girando de cabeça para baixo (22:34)"
+  },
+  {
+   "de_q": 32793,
+   "ate_q": 32798,
+   "de_s": 1366.375,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 32968,
+   "ate_q": 32974,
+   "de_s": 1373.667,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 33120,
+   "ate_q": 33148,
+   "de_s": 1380.0,
+   "dur_s": 1.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 33258,
+   "ate_q": 33262,
+   "de_s": 1385.75,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 35787,
+   "ate_q": 35793,
+   "de_s": 1491.125,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 35866,
+   "ate_q": 35882,
+   "de_s": 1494.417,
+   "dur_s": 0.667,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 35985,
+   "ate_q": 35988,
+   "de_s": 1499.375,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 36222,
+   "ate_q": 36226,
+   "de_s": 1509.25,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 36256,
+   "ate_q": 36262,
+   "de_s": 1510.667,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 36358,
+   "ate_q": 36363,
+   "de_s": 1514.917,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 36392,
+   "ate_q": 36396,
+   "de_s": 1516.333,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 36612,
+   "ate_q": 36617,
+   "de_s": 1525.5,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 36770,
+   "ate_q": 36773,
+   "de_s": 1532.083,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 37062,
+   "ate_q": 37079,
+   "de_s": 1544.25,
+   "dur_s": 0.708,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 37178,
+   "ate_q": 37199,
+   "de_s": 1549.083,
+   "dur_s": 0.875,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 38093,
+   "ate_q": 38102,
+   "de_s": 1587.208,
+   "dur_s": 0.375,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 38276,
+   "ate_q": 38285,
+   "de_s": 1594.833,
+   "dur_s": 0.375,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 38408,
+   "ate_q": 38424,
+   "de_s": 1600.333,
+   "dur_s": 0.667,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 40072,
+   "ate_q": 40075,
+   "de_s": 1669.667,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 40292,
+   "ate_q": 40326,
+   "de_s": 1678.833,
+   "dur_s": 1.417,
+   "motivo": "[visual] câmera vira para o chão e mostra os pés (27:59)"
+  },
+  {
+   "de_q": 40524,
+   "ate_q": 40534,
+   "de_s": 1688.5,
+   "dur_s": 0.417,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 41084,
+   "ate_q": 41097,
+   "de_s": 1711.833,
+   "dur_s": 0.542,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 41128,
+   "ate_q": 41134,
+   "de_s": 1713.667,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 41516,
+   "ate_q": 41598,
+   "de_s": 1729.833,
+   "dur_s": 3.417,
+   "motivo": "[pedido do Diego] 'Saímos, tomamos a cerveja e' (28:50): o trecho começa no 'agora estamos aqui'"
+  },
+  {
+   "de_q": 41676,
+   "ate_q": 41689,
+   "de_s": 1736.5,
+   "dur_s": 0.542,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 41798,
+   "ate_q": 41807,
+   "de_s": 1741.583,
+   "dur_s": 0.375,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 42245,
+   "ate_q": 42252,
+   "de_s": 1760.208,
+   "dur_s": 0.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 42445,
+   "ate_q": 42470,
+   "de_s": 1768.542,
+   "dur_s": 1.042,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 44023,
+   "ate_q": 44026,
+   "de_s": 1834.292,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 44034,
+   "ate_q": 44044,
+   "de_s": 1834.75,
+   "dur_s": 0.417,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 44196,
+   "ate_q": 44200,
+   "de_s": 1841.5,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 44490,
+   "ate_q": 44493,
+   "de_s": 1853.75,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 44973,
+   "ate_q": 44988,
+   "de_s": 1873.875,
+   "dur_s": 0.625,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 45257,
+   "ate_q": 45261,
+   "de_s": 1885.708,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 45393,
+   "ate_q": 45411,
+   "de_s": 1891.375,
+   "dur_s": 0.75,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 45475,
+   "ate_q": 45486,
+   "de_s": 1894.792,
+   "dur_s": 0.458,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 46342,
+   "ate_q": 46347,
+   "de_s": 1930.917,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 46429,
+   "ate_q": 46433,
+   "de_s": 1934.542,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 46494,
+   "ate_q": 46505,
+   "de_s": 1937.25,
+   "dur_s": 0.458,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 46674,
+   "ate_q": 46678,
+   "de_s": 1944.75,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 46950,
+   "ate_q": 46969,
+   "de_s": 1956.25,
+   "dur_s": 0.792,
+   "motivo": "pausa na fala"
+  }
+ ],
+ "cortes_manuais_aplicados": [
+  {
+   "de": 47.52,
+   "ate": 47.94,
+   "motivo": "[visual] giro da câmera com a mão na frente da lente (tour do quarto, 0:47)"
+  },
+  {
+   "de": 356.63,
+   "ate": 367.99,
+   "motivo": "[pedido do Diego] trecho do 'daora' em que a Marina fala 'tira isso daí' (5:56–6:08); a fala segue 'A prioridade aqui é a bicicleta. / As casinhas aqui são muito bonitinhas. Muito massa.'"
+  },
+  {
+   "de": 608.25,
+   "ate": 608.5,
+   "motivo": "[visual] câmera encosta no rosto da Marina (10:08)"
+  },
+  {
+   "de": 786.375,
+   "ate": 787.25,
+   "motivo": "[visual] câmera passando de mão, borrada (13:06); sai junto o 'Segura aqui'"
+  },
+  {
+   "de": 811.34,
+   "ate": 814.59,
+   "motivo": "[McCrispy] encurta a mastigação antes do 'Não' para caber o rufar (ficam a mordida e ≈ 4,2 s de mastigação até o 'Não')"
+  },
+  {
+   "de": 1354.33,
+   "ate": 1354.71,
+   "motivo": "[visual] câmera girando de cabeça para baixo (22:34)"
+  },
+  {
+   "de": 1679.3,
+   "ate": 1680.25,
+   "motivo": "[visual] câmera vira para o chão e mostra os pés (27:59)"
+  },
+  {
+   "de": 1729.83,
+   "ate": 1733.25,
+   "motivo": "[pedido do Diego] 'Saímos, tomamos a cerveja e' (28:50): o trecho começa no 'agora estamos aqui'"
+  }
+ ],
+ "congelar": [
+  {
+   "de": 483.417,
+   "ate": 483.667,
+   "quadro": 483.667,
+   "motivo": "[visual] câmera virando no começo do plano da Kalverstraat (8:03); o 'Ui' já começou, então a imagem congela no primeiro quadro bom em vez de cortar a palavra"
+  }
+ ]
+}
