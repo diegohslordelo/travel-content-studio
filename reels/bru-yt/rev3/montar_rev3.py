@@ -1,6 +1,7 @@
 """Montagem da REV3 do vlog de Bruxelas (vídeo longo do YouTube, 16:9, 30 fps). Parte da REV2 (`rev2/montar_rev2.py`,
 não alterada) e acrescenta o pedido do Diego de 06/11/2026: "quando o primeiro dia aparece, tem que aparecer a data
-no canto superior esquerdo: 15 de Março de 2026" (placa de capítulo do DS em x 96 · y 96).
+no canto superior esquerdo: 15 de Março de 2026", "nas cores do placar, um pouco menor que essa placa" (painel do
+Placar, x 96 · y 72).
 
 O que a REV2 já fazia (partindo da REV1):
 
@@ -315,12 +316,11 @@ def main():
 
     # ---------- marca ----------
     ev.append({"tipo": "placa", "rotulo": "1 DIA EM", "destino": "BRUXELAS", "tamanho": "M", "x": 96, "y": 960 - 166, "entrada": G + 500, "saida": G + 4200})
-    # data (pedido do Diego, 06/11/2026): placa de capítulo do DS no canto superior esquerdo (16:9: x 96 · y 96), junto
-    # com a placa da marca. "15 DE MARÇO DE 2026" inteiro na linha grande passaria da largura máxima da placa (872 px,
-    # DS 2.1: ≈ 1.010 px com 104 px): fica rótulo "DOMINGO · 2026" e destino "15 DE MARÇO" (128 px, ≈ 826 px). Sem
-    # clack (o da placa da marca toca 200 ms antes; DS 4.6: no máximo 1 efeito a cada 1,5 s)
-    ev.append({"tipo": "placa", "rotulo": "DOMINGO · 2026", "destino": "15 DE MARÇO", "tamanho": "M", "x": 96, "y": 96, "entrada": G + 700, "saida": G + 4400, "som": False})
-    ef(G + 700, "Placa de capítulo com a data: \"DOMINGO · 2026 / 15 DE MARÇO →\" (canto superior esquerdo, sem som)", "Pedido do Diego (06/11/2026): a data quando o primeiro dia aparece. Posição da placa de capítulo do DS no 16:9 (x 96 · y 96). O texto inteiro numa linha passaria da largura máxima da placa (DS 2.1)", 3940)
+    # data (pedido do Diego, 06/11/2026: "quando o primeiro dia aparece, tem que aparecer a data no canto superior
+    # esquerdo"; depois: "nas cores do placar, um pouco menor que essa placa"): painel do Placar (grafite, amarelo,
+    # 56 px, 96 px de altura) na posição do Placar no 16:9 (x 96 · y 72), junto com a placa da marca. Sem som
+    ev.append({"tipo": "data", "texto": "15 de março de 2026", "ini": G + 700, "fim": G + 4400})
+    ef(G + 700, "Data \"15 DE MARÇO DE 2026\" no painel do Placar (canto superior esquerdo, sem som)", "Pedido do Diego (06/11/2026): a data quando o primeiro dia aparece, nas cores do Placar e menor que a placa. Material, fonte, altura e acender do Placar (DS 2.5), na posição dele (x 96 · y 72); o 1º Placar de gasto só entra em 1:06", 3700)
     ef(G + 500, "Placa \"1 DIA EM BRUXELAS →\" (Chegada + clack)", "Marca do vídeo (doc. do vídeo longo, seção 2), sobre o \"Bom dia, Bélgica!\". Sem placa de capítulo \"DIA 1\": o vídeo tem um dia só", 3700)
 
     # ---------- placar + recibos ----------

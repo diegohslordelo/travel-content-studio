@@ -156,6 +156,36 @@ export const Placar: React.FC<PropsPlacar> = ({
   </>
 );
 
+/** Painel do Placar (grafite, amarelo, PD Placar 56 px, 96 px de altura): exportado para a data do vídeo longo usar o mesmo material. */
+export const estiloPainelPlacar: React.CSSProperties = {
+  height: 96,
+  display: "inline-flex",
+  alignItems: "center",
+  gap: 22,
+  padding: "0 28px",
+  background: COR.grafite,
+  borderRadius: RAIO.tag,
+  boxShadow: `${SOMBRA.placa}, inset 0 0 0 2px rgba(255,255,255,.08)`,
+  color: COR.amarelo,
+  fontFamily: FONTE.dados,
+  fontWeight: 700,
+  fontSize: TIPO.data.fontSize,
+  lineHeight: 1,
+  fontVariantNumeric: "tabular-nums",
+};
+
+/** Acende em 80 ms com 1 quadro de flicker; apaga em 80 ms (assinatura GIRO, 2.5). */
+export const usePlacarAceso = (ligar: number, desligar?: number): number | null => {
+  const t = useMs();
+  const { fps } = useVideoConfig();
+  if (t < ligar) return null;
+  const quadro = 1000 / fps;
+  let opac = kf(t - ligar, [0, DUR.tick], [0, 1]);
+  if (t - ligar >= DUR.tick && t - ligar < DUR.tick + quadro) opac = 0.4;
+  if (desligar !== undefined) opac *= kf(t - desligar, [0, DUR.tick], [1, 0]);
+  return opac;
+};
+
 const PlacarVisual: React.FC<Omit<PropsPlacar, "som" | "refLufs">> = ({
   valores,
   ligar = 0,
@@ -164,13 +194,9 @@ const PlacarVisual: React.FC<Omit<PropsPlacar, "som" | "refLufs">> = ({
   y = REEL.placarY,
 }) => {
   const t = useMs();
-  const { fps } = useVideoConfig();
-  if (t < ligar) return null;
-  const quadro = 1000 / fps;
   // acende em 80 ms com 1 quadro de flicker
-  let opac = kf(t - ligar, [0, DUR.tick], [0, 1]);
-  if (t - ligar >= DUR.tick && t - ligar < DUR.tick + quadro) opac = 0.4;
-  if (desligar !== undefined) opac *= kf(t - desligar, [0, DUR.tick], [1, 0]);
+  const opac = usePlacarAceso(ligar, desligar);
+  if (opac === null) return null;
   const tempos = valores.map((v) => v.em);
   return (
     <div
@@ -178,20 +204,7 @@ const PlacarVisual: React.FC<Omit<PropsPlacar, "som" | "refLufs">> = ({
         position: "absolute",
         left: x,
         top: y,
-        height: 96,
-        display: "inline-flex",
-        alignItems: "center",
-        gap: 22,
-        padding: "0 28px",
-        background: COR.grafite,
-        borderRadius: RAIO.tag,
-        boxShadow: `${SOMBRA.placa}, inset 0 0 0 2px rgba(255,255,255,.08)`,
-        color: COR.amarelo,
-        fontFamily: FONTE.dados,
-        fontWeight: 700,
-        fontSize: TIPO.data.fontSize,
-        lineHeight: 1,
-        fontVariantNumeric: "tabular-nums",
+        ...estiloPainelPlacar,
         opacity: opac,
       }}
     >

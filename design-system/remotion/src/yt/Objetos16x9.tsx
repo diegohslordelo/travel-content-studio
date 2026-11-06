@@ -10,6 +10,7 @@ import { GlifoInstagram, Seta } from "../ds/icones";
 import { Bilhete } from "../ds/Bilhete";
 import { Simbolo1 } from "../ds/Simbolo1";
 import { Som } from "../ds/Som";
+import { estiloPainelPlacar, usePlacarAceso } from "../ds/Placar";
 import { kf, useMs } from "../ds/tempo";
 import { COR, DUR, EASE, FONTE, RAIO, SOM, SOMBRA, TIPO, YT, rgba } from "../ds/tokens";
 
@@ -356,4 +357,15 @@ export const Quadro: React.FC<{ linhas: { em: number; nome: string; complemento?
       })}
     </div>
   );
+};
+
+/**
+ * Data do dia no painel do Placar (vlog de Bruxelas, pedido do Diego, 06/11/2026: "a data nas cores do placar, um
+ * pouco menor que a placa"): mesmo material, fonte, altura e acender do Placar (2.5), na posição dele no 16:9
+ * (x 96 · y 72). Sem som. Variação do Placar: precisa do OK do Diego (governança do DS, 7.4).
+ */
+export const DataPlacar: React.FC<{ texto: string; ini: number; fim: number; x?: number; y?: number }> = ({ texto, ini, fim, x = YT.margemTitulo, y = 72 }) => {
+  const opac = usePlacarAceso(ini, fim);
+  if (opac === null || opac <= 0) return null;
+  return <div style={{ position: "absolute", left: x, top: y, ...estiloPainelPlacar, opacity: opac, textTransform: "uppercase", whiteSpace: "nowrap" }}>{texto}</div>;
 };

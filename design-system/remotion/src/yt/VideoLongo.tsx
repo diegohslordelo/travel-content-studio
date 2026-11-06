@@ -17,7 +17,7 @@ import { NomeSom, Som } from "../ds/Som";
 import { kf, useMs } from "../ds/tempo";
 import { EASE, SOM, YT } from "../ds/tokens";
 import { LIKE_APERTA, LIKE_INSCRITO } from "../ds/Placa";
-import { ChamadaInstagram, DUR_PAGINA, EtiquetaLugar, LOWER_BASE, MapaRota, Quadro, TelaFinal, VOLUME_PAGINA_DB, VirarPagina } from "./Objetos16x9";
+import { ChamadaInstagram, DataPlacar, DUR_PAGINA, EtiquetaLugar, LOWER_BASE, MapaRota, Quadro, TelaFinal, VOLUME_PAGINA_DB, VirarPagina } from "./Objetos16x9";
 import { ConfeteMurcho, FogosMurchos, GuiaNarracao, Nota, PrintSite } from "./Efeitos";
 
 /** `congela`: mostra só o quadro `src` (imagem parada; o som da mixagem segue). */
@@ -35,6 +35,7 @@ export type Evento =
   | { tipo: "som"; nome: NomeSom; em: number; relDb: number }
   | { tipo: "audio"; arquivo: string; em: number; volume: number }
   | ({ tipo: "instagram" } & Base)
+  | ({ tipo: "data"; texto: string; x?: number; y?: number } & Base)
   | { tipo: "like"; entrada: number; saida: number; x?: number; y?: number }
   | { tipo: "quadro"; linhas: { em: number; nome: string; complemento?: string }[]; fim: number; x: number; y: number; escala?: number }
   | ({ tipo: "ticket"; escala?: number } & TicketProps)
@@ -152,6 +153,8 @@ const UmEvento: React.FC<{ e: Evento; refLufs: number }> = ({ e, refLufs }) => {
       );
     case "instagram":
       return <ChamadaInstagram ini={e.ini} fim={e.fim} />;
+    case "data":
+      return <DataPlacar texto={e.texto} ini={e.ini} fim={e.fim} x={e.x} y={e.y} />;
     case "like":
       return (
         <>

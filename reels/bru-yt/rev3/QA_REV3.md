@@ -10,12 +10,11 @@
 
 | Pedido do Diego (06/11/2026) | Feito |
 |---|---|
-| "Quando o primeiro dia aparece, tem que aparecer a data no canto superior esquerdo: 15 de Março de 2026" | Placa de capítulo do DS no canto superior esquerdo (x 96 · y 96, a posição da placa de capítulo no 16:9, DS 1.3), em **0:37,2**, junto com a placa "1 DIA EM BRUXELAS" (que entra 200 ms antes), até 0:40,9. Rótulo **"DOMINGO · 2026"**, destino **"15 DE MARÇO"**, seta. Sem *clack* próprio: o da placa da marca toca 200 ms antes (DS 4.6, no máximo 1 efeito a cada 1,5 s). Prévia: `previas/rev3_data_540p.mp4` (0:30–0:50) |
+| "Quando o primeiro dia aparece, tem que aparecer a data no canto superior esquerdo: 15 de Março de 2026" | A data entra em **0:37,2**, junto com a placa "1 DIA EM BRUXELAS" (que entra 200 ms antes), e fica até 0:40,9 |
+| "Coloque a data nas cores do placar, um pouco menor que essa placa" | A 1ª versão (placa de capítulo amarela, "DOMINGO · 2026 / 15 DE MARÇO") virou **"15 DE MARÇO DE 2026" no painel do Placar**: grafite, letras amarelas, fonte do Placar (56 px), 96 px de altura, o mesmo acender (80 ms com 1 quadro de flicker), na posição do Placar no 16:9 (x 96 · y 72). Cabe inteira numa linha (≈ 540 × 96 px, contra ≈ 620 × 164 px da placa). Sem som. Prévia: `previas/rev3_data_540p.mp4` (0:30–0:50) |
 
-## 2. Decisão minha que precisa do seu OK
+## 2. Decisões e divergências
 
-| Decisão | Por quê | Alternativa |
-|---|---|---|
-| A data em 2 linhas: "DOMINGO · 2026" em cima e "15 DE MARÇO" grande | "15 DE MARÇO DE 2026" inteiro na linha grande daria ≈ 1.010 px de placa, acima da largura máxima de 872 px do DS (2.1, que manda abreviar acima de 16 letras). Assim fica com ≈ 826 px e mostra dia, mês e ano | (a) "15 DE MARÇO DE" em cima e "2026" grande (lê na ordem, mas o ano fica mais forte que a data); (b) "15 DE MARÇO DE 2026" inteiro, passando da largura máxima (exceção ao DS, decisão sua) |
-
-A placa é em CAIXA-ALTA, como todas as placas do DS (2.1); por isso "MARÇO" e não "Março".
+- **Componente:** a data é uma variação do Placar (DS 2.5), sem relógio e sem valor. O painel usa os mesmos valores do Placar (`estiloPainelPlacar`, exportado de `design-system/remotion/src/ds/Placar.tsx`); nenhum valor visual novo. Pela governança do DS (7.4), variação precisa do seu OK (você pediu).
+- **Caixa-alta:** "15 DE MARÇO DE 2026", como os textos de destaque do DS. Se quiser "15 de Março de 2026" com minúsculas, é só trocar.
+- **Posição:** é a mesma do Placar. Não há conflito, porque o 1º Placar de gasto só entra em 1:06.
