@@ -50,6 +50,7 @@ Também troquei no gancho o Atomium de longe, que se repetia no fechamento, pela
 - Narrações sem sobreposição (folga ≥ 150 ms) e a do hotel termina antes da sua fala da Jeanneke (asserções no `montar_rev2.py`).
 - Números: Placar fecha o dia em € 94,10; Recibo do dia = € 58,10 de comida e bebida + € 36,00 de metrô + € 144,59 de hotel = € 238,69 (asserção).
 - Takes do gancho e do fechamento: todos ≥ 2,00 s, sem corte dentro e com ≥ 1 quadro de folga para o plano vizinho.
+- Prévia `previas/rev2_previa_540p.mp4` medida no arquivo: 28.508 quadros (950,27 s), imagem e som com a mesma duração, decodificação sem erro, **−14,8 LUFS e −1,6 dBTP** (o AAC tinha subido o pico para +1,2 dBTP; um limitador antes da codificação corrigiu). No render final, a correção de pico pós-AAC de Amsterdam (`corrigir_pico_aac.py`).
 
 ## 6. Pendências
 
