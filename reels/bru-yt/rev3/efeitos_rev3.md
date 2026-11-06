@@ -1,0 +1,61 @@
+# REV3 · Efeitos visuais e sonoros (vlog de Bruxelas)
+
+Gerado por `rev3/montar_rev3.py`. Minutos no **vídeo final** (gancho + corpo decupado + fechamento). Cores dos efeitos: camada de efeitos (decisão do Diego, 21/10/2026, no vlog de Amsterdam); objetos da marca nas cores do DS.
+
+| Entra | Dura | Efeito | Por quê |
+|---|---:|---|---|
+| 00:37.0 | 3.7 s | Placa "1 DIA EM BRUXELAS →" (Chegada + clack) | Marca do vídeo (doc. do vídeo longo, seção 2), sobre o "Bom dia, Bélgica!". Sem placa de capítulo "DIA 1": o vídeo tem um dia só |
+| 00:37.2 | 3.9 s | Placa de capítulo com a data: "DOMINGO · 2026 / 15 DE MARÇO →" (canto superior esquerdo, sem som) | Pedido do Diego (06/11/2026): a data quando o primeiro dia aparece. Posição da placa de capítulo do DS no 16:9 (x 96 · y 96). O texto inteiro numa linha passaria da largura máxima da placa (DS 2.1) |
+| 01:06.1 | 3.5 s | Mapa: do centro ao Atomium, de metrô (Rota amarela se desenhando + Pin 1º; whoosh + plim) | Deslocamento longo (≈ 6 km) que o vídeo não mostra: entre a rua do centro e a saída do metrô no Heysel. Base OpenStreetMap (tiles vetoriais), cores naturais do DS 2.3.0 |
+| 01:09.2 | 3.6 s | Placar: 12:15 · € 36,00 (METRÔ · STIB) | Regra do vlog de Amsterdam (Diego, 23/10/2026): só aparece quando um gasto é somado, com a hora real do clipe; liga sem som (a moeda é a do Recibo), soma e apaga 3 s depois |
+| 01:09.4 | 5.5 s | Recibo METRÔ · STIB: € 36,00 (máquina de moeda) | Diego: 00:33, 18 euros por pessoa (confirmado em 06/11); "a gente pegou um de 10 viagens". A tarifa oficial do Brupass 10 em 2026 é € 18,90 (SNCB/STIB): ficou o valor do registro. Entra no 1º plano depois do metrô (saída no Heysel, 12h15) |
+| 01:22.9 | 4.0 s | Etiqueta de lugar: ATOMIUM · HEYSEL · 12H16 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 01:57.7 | 7.0 s | Nota "Sabia?": Um cristal de ferro ampliado 165 bilhões de vezes. Feito para a Expo 58. | A Marina fala (1:22–1:34). Site oficial do Atomium: cristal elementar de ferro ampliado 165 bilhões de vezes; construído para a Expo 58 |
+| 02:30.0 | 3.9 s | Mapa: do Atomium ao Zinneke Pis, de metrô (Rota amarela se desenhando + Pin 1º; whoosh + plim) | Volta ao centro: entra na rua que leva ao Zinneke, depois dos planos do Atomium. Base OpenStreetMap (tiles vetoriais), cores naturais do DS 2.3.0 |
+| 02:46.8 | 4.0 s | Etiqueta de lugar: ZINNEKE PIS · RUE DES CHARTREUX · 13H16 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 02:55.3 | 6.0 s | Nota "Zinneke = vira-lata": Em dialeto de Bruxelas. Estátua de Tom Frantzen, sem água: é só bronze. | Visit Brussels e Wikipédia: "zinneke" é vira-lata no dialeto local; obra de Tom Frantzen; ao contrário dos outros dois, não é fonte |
+| 03:21.7 | 4.0 s | Etiqueta de lugar: FRITLAND · RUE HENRI MAUS · 13H53 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 03:33.9 | 3.6 s | Placar: 13:53 · € 45,00 (FRITLAND) | Regra do vlog de Amsterdam (Diego, 23/10/2026): só aparece quando um gasto é somado, com a hora real do clipe; liga sem som (a moeda é a do Recibo), soma e apaga 3 s depois |
+| 03:34.1 | 5.5 s | Recibo FRITLAND: € 9,00 (máquina de moeda) | Diego: 03:01, 9 euros; na fala, "um sanduíche de batata frita… tem carne também, a gente vai dividir". Entra no close do sanduíche |
+| 03:39.9 | 6.0 s | Nota "Tem nome: mitraillette": Baguete com carne, fritas e molho: clássico das friteries de Bruxelas. | O sanduíche que eles dividiram é baguete com carne e fritas, o que na Bélgica se chama mitraillette (Wikipédia, Beer City Brussels) |
+| 03:56.2 | 4.5 s | Chamada SEGUE NO INSTAGRAM @primeirodiaem | 1ª de 3 (≈ 3 min): planos da Fritland, sem fala |
+| 04:08.3 | 4.0 s | Etiqueta de lugar: BOLSA DE BRUXELAS · BOULEVARD ANSPACH · 14H07 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 04:15.9 | 4.0 s | Etiqueta de lugar: GRAND PLACE · PATRIMÔNIO DA UNESCO · 14H10 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 05:23.6 | 11.6 s | Print da página do hotel (janela de navegador): fachada, bar, terraço e salão | Print do Diego (06/11/2026). O preço de uma busca nova (R$ 655 / R$ 769, 8–9/11) foi coberto: não é o da viagem. Entra no "ibis" e sai antes do Recibo |
+| 05:35.4 | 7.1 s | Recibo da hospedagem: R$ 1.738,78 = € 289,18 (2 noites) | No "Ficamos duas noites" (H1). R$ 1.738,78 para duas pessoas e duas noites; fora do Placar do dia (regra de Amsterdam); 1 noite entra no total do fechamento |
+| 05:40.1 | 4.0 s | Etiqueta de lugar: JEANNEKE PIS · IMPASSE DE LA FIDÉLITÉ · 14H24 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 05:57.9 | 4.0 s | Etiqueta de lugar: LE ROI DE LA GAUFRE · RUE DE LA FOURCHE · 14H36 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 06:02.3 | 4.1 s | Animação "DEIXA O LIKE E SE INSCREVE" (clique + ding) | Doc., seção 2: versão curta, sem fala, em 30–40% do vídeo: dentro do Le Roi de la Gaufre, antes do waffle |
+| 06:28.8 | 3.4 s | Bilhete na letra do Diego: "extremamente aprovado!" + ✓ | O Diego diz "Extremamente aprovado" (5:57): opinião vira Bilhete (DS 2.4) |
+| 06:33.0 | 8.3 s | Placar: 14:36 · € 53,50 (LE ROI DE LA GAUFRE) | Regra do vlog de Amsterdam (Diego, 23/10/2026): só aparece quando um gasto é somado, com a hora real do clipe; liga sem som (a moeda é a do Recibo), soma e apaga 3 s depois |
+| 06:33.2 | 9.7 s | Recibo LE ROI DE LA GAUFRE: € 8,50 (máquina de moeda, uma por linha) | Diego: 06:02 "o meu foi 3,5 euros" e 06:08 "o dela foi 5 euros", aparecendo aos poucos na nota, em lista. Cada linha entra quando o valor é falado (6:01,5 e 6:06,2), com a moeda |
+| 07:00.3 | 4.0 s | Etiqueta de lugar: GALERIAS REAIS SAINT-HUBERT · DESDE 1847 · 14H49 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 07:48.0 | 0.5 s | Quadro congelado (0.55 s) | [visual] câmera girando da loja de chocolate para a selfie (7:17); o "Estamos" começa em 438,12, então a imagem para no 1º quadro bom e o som segue |
+| 07:56.9 | 7.5 s | Nota "Na vitrine": 6 ovinhos de Páscoa: € 26 (a gente não comprou) | Diego (7:26): "seis ovos de páscoa, menores que meu dedo, estão a 26 euros pela vitrine". Não é gasto: fica fora do Placar |
+| 08:18.4 | 4.0 s | Etiqueta de lugar: MANNEKEN PIS · RUE DE L'ÉTUVE · 16H12 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 08:43.3 | 6.5 s | Nota "1.141 roupas": É o guarda-roupa do Manneken Pis (fim de 2023). Hoje: jogador de futebol. | Diego fala que vestem o menino. Regulamento da cidade de Bruxelas (2025): 1.141 trajes no fim de 2023 |
+| 09:11.5 | 4.5 s | Chamada SEGUE NO INSTAGRAM @primeirodiaem | 2ª de 3 (≈ metade do vídeo): multidão no Manneken Pis, sem fala |
+| 09:21.4 | 3.1 s | Mapa: do Manneken Pis ao Mont des Arts e à Praça Real, a pé (Rota amarela se desenhando + Pin 1º; whoosh + plim) | A subida para o bairro real (o Diego: "uma das regiões… um pouco mais alta"). Base OpenStreetMap (tiles vetoriais), cores naturais do DS 2.3.0 |
+| 09:24.5 | 4.0 s | Etiqueta de lugar: MONT DES ARTS · BAIRRO REAL · 16H33 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 09:40.5 | 4.0 s | Etiqueta de lugar: PRAÇA REAL · PLACE ROYALE · 16H34 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 10:05.8 | 4.4 s | Selo VALE A PENA (Ticket VALE, Subida + ding) | O Diego: "vale muito a pena vir aqui, principalmente nesse período de final de tarde" (9:36) |
+| 11:19.0 | 4.0 s | Etiqueta de lugar: BRASSERIE DE LA MADELEINE · GALERIE BORTIER · 17H57 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 11:35.8 | 3.6 s | Placar: 17:57 · € 59,70 (BRASSERIE DE LA MADELEINE) | Regra do vlog de Amsterdam (Diego, 23/10/2026): só aparece quando um gasto é somado, com a hora real do clipe; liga sem som (a moeda é a do Recibo), soma e apaga 3 s depois |
+| 11:36.0 | 5.5 s | Recibo BRASSERIE DE LA MADELEINE: € 6,20 (máquina de moeda) | Diego: 11:11, 6,20 euros, duas cervejas. Entra 2,8 s antes (11:08,2), para sair antes do corte para o Aux Merveilleux (11:13,9) |
+| 11:41.9 | 4.0 s | Etiqueta de lugar: AUX MERVEILLEUX DE FRED · PETITE RUE AU BEURRE · 18H38 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 11:52.2 | 0.5 s | Quadro congelado (0.47 s) | [visual] câmera girando da vitrine do Merveilleux para a selfie (11:24); o "Saímos" começa em 684,52 |
+| 12:07.6 | 3.6 s | Placar: 18:38 · € 68,20 (AUX MERVEILLEUX DE FRED) | Regra do vlog de Amsterdam (Diego, 23/10/2026): só aparece quando um gasto é somado, com a hora real do clipe; liga sem som (a moeda é a do Recibo), soma e apaga 3 s depois |
+| 12:07.8 | 5.5 s | Recibo AUX MERVEILLEUX DE FRED: € 8,50 (máquina de moeda) | Diego: 11:40, os dois deu 8,50. Entra quando ele mostra os dois doces ("um pão de chocolate e… um bolinho de chocolate branco") |
+| 12:43.1 | 6.0 s | Nota "Merveilleux": Suspiro com chantili, coberto de raspas de chocolate. | A Marina descobre o recheio (12:08–12:22). Merveilleux: camadas de suspiro e chantili cobertas de chocolate (Time Out, David Lebovitz) |
+| 12:48.1 | 0.3 s | Quadro congelado (0.30 s) | [visual] câmera girando no começo do vídeo do frio (12:26); a fala já começou |
+| 13:08.4 | 5.0 s | Nota "7 °C": com vento: leve luva! | A Marina: "tá marcando 7 graus" (12:51); o Diego comprou uma luva para ela |
+| 13:33.0 | 4.0 s | Etiqueta de lugar: SPAGO RISTORANTE · RUE DU PONT DE LA CARPE · 20H00 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
+| 14:09.0 | 3.6 s | Placar: 20:27 · € 94,10 (SPAGO RISTORANTE) | Regra do vlog de Amsterdam (Diego, 23/10/2026): só aparece quando um gasto é somado, com a hora real do clipe; liga sem som (a moeda é a do Recibo), soma e apaga 3 s depois |
+| 14:09.2 | 5.5 s | Recibo SPAGO RISTORANTE: € 25,90 (máquina de moeda) | Diego: 13:55, 25,90 euros. Na fala ele arredonda ("a conta deu 25 euros"); o Recibo mostra o valor do registro. Entra no "25" (13:54,3) |
+| 14:37.3 | 8.6 s | Mapa do dia no centro (9 paradas, da Zinneke ao Spago) | F1 ("a gente bateu perna por Bruxelas inteira… passamos pelas três estátuas"): o roteiro a pé. Entra depois de alguns segundos da Grand Place à noite |
+| 14:45.6 | 14.9 s | Recibo do dia: € 94,10 sem hotel → € 238,69 com 1 noite (€ 119,34 por pessoa) | Entra no "Metrô, comida, cerveja e doce" (F2); a linha do hotel e o total novo entram no "somando uma noite de hotel" (F3). Responde à pergunta do gancho |
+| 15:02.3 | 3.8 s | Bilhete do veredito: "vale! mas 1 dia basta" + ✓ | No "eu diria que sim, mas não mais que um dia" (F4). A REV1 dizia "vale muito! leve luva"; o veredito gravado mudou |
+| 15:17.1 | 3.5 s | Animação "DEIXA O LIKE E SE INSCREVE" (2ª vez) | No "puder se inscrever ou deixar o like aqui" (F5) |
+| 15:21.6 | 2.9 s | Chamada SEGUE NO INSTAGRAM (3ª vez) | No "me seguir no Instagram, arroba primeirodiaem" (F5) |
+| 15:24.3 | 6.0 s | Placa de fechamento "TODA CIDADE TEM UM PRIMEIRO DIA." + Nascer do 1º | No "Toda cidade tem um primeiro dia" (F6) |
+| 15:30.3 | 20.0 s | Transição Página → tela final de 20 s ("próximo dia: bruges →") | Doc., seção 2. Ordem dos vlogs (CLAUDE.md, pendência 11): Amsterdam, Bruxelas, Bruges… |

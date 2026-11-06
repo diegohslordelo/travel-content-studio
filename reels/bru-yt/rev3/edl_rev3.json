@@ -1,0 +1,501 @@
+{
+ "fps": 30,
+ "duracao_fonte_s": 867.312,
+ "duracao_saida_s": 844.6,
+ "removido_s": 22.7,
+ "manter": [
+  [
+   0,
+   80
+  ],
+  [
+   87,
+   1561
+  ],
+  [
+   1567,
+   2188
+  ],
+  [
+   2197,
+   2390
+  ],
+  [
+   2403,
+   2578
+  ],
+  [
+   2589,
+   2637
+  ],
+  [
+   2645,
+   3572
+  ],
+  [
+   3583,
+   4542
+  ],
+  [
+   4552,
+   4776
+  ],
+  [
+   4790,
+   5279
+  ],
+  [
+   5298,
+   7646
+  ],
+  [
+   7651,
+   8234
+  ],
+  [
+   8238,
+   8309
+  ],
+  [
+   8315,
+   9325
+  ],
+  [
+   9336,
+   10275
+  ],
+  [
+   10278,
+   10353
+  ],
+  [
+   10361,
+   11387
+  ],
+  [
+   11394,
+   11469
+  ],
+  [
+   11488,
+   11671
+  ],
+  [
+   11686,
+   16851
+  ],
+  [
+   16854,
+   16989
+  ],
+  [
+   16996,
+   17115
+  ],
+  [
+   17124,
+   17186
+  ],
+  [
+   17194,
+   17469
+  ],
+  [
+   17486,
+   17642
+  ],
+  [
+   17647,
+   18187
+  ],
+  [
+   18200,
+   18810
+  ],
+  [
+   18822,
+   21319
+  ],
+  [
+   21387,
+   21491
+  ],
+  [
+   21565,
+   21739
+  ],
+  [
+   21754,
+   21928
+  ],
+  [
+   21971,
+   22499
+  ],
+  [
+   22527,
+   22595
+  ],
+  [
+   22664,
+   22773
+  ],
+  [
+   22807,
+   22856
+  ],
+  [
+   22862,
+   24418
+  ],
+  [
+   24423,
+   24641
+  ],
+  [
+   24686,
+   25057
+  ],
+  [
+   25091,
+   26019
+  ]
+ ],
+ "removidos": [
+  {
+   "de_q": 80,
+   "ate_q": 87,
+   "de_s": 2.667,
+   "dur_s": 0.233,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 1561,
+   "ate_q": 1567,
+   "de_s": 52.033,
+   "dur_s": 0.2,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 2188,
+   "ate_q": 2197,
+   "de_s": 72.933,
+   "dur_s": 0.3,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 2390,
+   "ate_q": 2403,
+   "de_s": 79.667,
+   "dur_s": 0.433,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 2578,
+   "ate_q": 2589,
+   "de_s": 85.933,
+   "dur_s": 0.367,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 2637,
+   "ate_q": 2645,
+   "de_s": 87.9,
+   "dur_s": 0.267,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 3572,
+   "ate_q": 3583,
+   "de_s": 119.067,
+   "dur_s": 0.367,
+   "motivo": "[visual] câmera virando antes da selfie do Zinneke (1:59), logo depois do mapa"
+  },
+  {
+   "de_q": 4542,
+   "ate_q": 4552,
+   "de_s": 151.4,
+   "dur_s": 0.333,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 4776,
+   "ate_q": 4790,
+   "de_s": 159.2,
+   "dur_s": 0.467,
+   "motivo": "[hesitação] palavra esticada [E]: 2ª transcrição \"Ééé...\""
+  },
+  {
+   "de_q": 5279,
+   "ate_q": 5298,
+   "de_s": 175.967,
+   "dur_s": 0.633,
+   "motivo": "[hesitação] palavra esticada [E]: 2ª transcrição \"E...\""
+  },
+  {
+   "de_q": 7646,
+   "ate_q": 7651,
+   "de_s": 254.867,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 8234,
+   "ate_q": 8238,
+   "de_s": 274.467,
+   "dur_s": 0.133,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 8309,
+   "ate_q": 8315,
+   "de_s": 276.967,
+   "dur_s": 0.2,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 9325,
+   "ate_q": 9336,
+   "de_s": 310.833,
+   "dur_s": 0.367,
+   "motivo": "[visual] câmera girando entre a Jeanneke Pis e a selfie (5:10); a fala começa em 311,27"
+  },
+  {
+   "de_q": 10275,
+   "ate_q": 10278,
+   "de_s": 342.5,
+   "dur_s": 0.1,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 10353,
+   "ate_q": 10361,
+   "de_s": 345.1,
+   "dur_s": 0.267,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 11387,
+   "ate_q": 11394,
+   "de_s": 379.567,
+   "dur_s": 0.233,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 11469,
+   "ate_q": 11488,
+   "de_s": 382.3,
+   "dur_s": 0.633,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 11671,
+   "ate_q": 11686,
+   "de_s": 389.033,
+   "dur_s": 0.5,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 16851,
+   "ate_q": 16854,
+   "de_s": 561.7,
+   "dur_s": 0.1,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 16989,
+   "ate_q": 16996,
+   "de_s": 566.3,
+   "dur_s": 0.233,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 17115,
+   "ate_q": 17124,
+   "de_s": 570.5,
+   "dur_s": 0.3,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 17186,
+   "ate_q": 17194,
+   "de_s": 572.867,
+   "dur_s": 0.267,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 17469,
+   "ate_q": 17486,
+   "de_s": 582.3,
+   "dur_s": 0.567,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 17642,
+   "ate_q": 17647,
+   "de_s": 588.067,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 18187,
+   "ate_q": 18200,
+   "de_s": 606.233,
+   "dur_s": 0.433,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 18810,
+   "ate_q": 18822,
+   "de_s": 627.0,
+   "dur_s": 0.4,
+   "motivo": "[visual] câmera no chão, com os pés, na montagem do Mont des Arts (10:27)"
+  },
+  {
+   "de_q": 21319,
+   "ate_q": 21387,
+   "de_s": 710.633,
+   "dur_s": 2.267,
+   "motivo": "[momento vazio] mastigação do pão de chocolate no Aux Merveilleux (11:50); fica o \"Bom?\" de 11:53,5, achado numa 2ª transcrição do trecho"
+  },
+  {
+   "de_q": 21491,
+   "ate_q": 21565,
+   "de_s": 716.367,
+   "dur_s": 2.467,
+   "motivo": "[momento vazio] pausa de 3,7 s entre \"É…\" e \"bom, né?\" (11:56)"
+  },
+  {
+   "de_q": 21739,
+   "ate_q": 21754,
+   "de_s": 724.633,
+   "dur_s": 0.5,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 21928,
+   "ate_q": 21971,
+   "de_s": 730.933,
+   "dur_s": 1.433,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 22499,
+   "ate_q": 22527,
+   "de_s": 749.967,
+   "dur_s": 0.933,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 22595,
+   "ate_q": 22664,
+   "de_s": 753.167,
+   "dur_s": 2.3,
+   "motivo": "[momento vazio] risada do frio encurtada (12:33); ficam ≈ 2 s"
+  },
+  {
+   "de_q": 22773,
+   "ate_q": 22807,
+   "de_s": 759.1,
+   "dur_s": 1.133,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 22856,
+   "ate_q": 22862,
+   "de_s": 761.867,
+   "dur_s": 0.2,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 24418,
+   "ate_q": 24423,
+   "de_s": 813.933,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 24641,
+   "ate_q": 24686,
+   "de_s": 821.367,
+   "dur_s": 1.5,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 25057,
+   "ate_q": 25091,
+   "de_s": 835.233,
+   "dur_s": 1.133,
+   "motivo": "pausa na fala"
+  }
+ ],
+ "cortes_manuais_aplicados": [
+  {
+   "de": 710.63,
+   "ate": 712.9,
+   "motivo": "[momento vazio] mastigação do pão de chocolate no Aux Merveilleux (11:50); fica o \"Bom?\" de 11:53,5, achado numa 2ª transcrição do trecho"
+  },
+  {
+   "de": 716.34,
+   "ate": 718.84,
+   "motivo": "[momento vazio] pausa de 3,7 s entre \"É…\" e \"bom, né?\" (11:56)"
+  },
+  {
+   "de": 753.15,
+   "ate": 755.48,
+   "motivo": "[momento vazio] risada do frio encurtada (12:33); ficam ≈ 2 s"
+  },
+  {
+   "de": 119.05,
+   "ate": 119.45,
+   "motivo": "[visual] câmera virando antes da selfie do Zinneke (1:59), logo depois do mapa"
+  },
+  {
+   "de": 310.82,
+   "ate": 311.22,
+   "motivo": "[visual] câmera girando entre a Jeanneke Pis e a selfie (5:10); a fala começa em 311,27"
+  },
+  {
+   "de": 627.0,
+   "ate": 627.4,
+   "motivo": "[visual] câmera no chão, com os pés, na montagem do Mont des Arts (10:27)"
+  },
+  {
+   "de": 159.17,
+   "ate": 159.69,
+   "motivo": "[hesitação] palavra esticada [E] (2ª transcrição: \"Ééé...\")"
+  },
+  {
+   "de": 175.96,
+   "ate": 176.6,
+   "motivo": "[hesitação] palavra esticada [E] (2ª transcrição: \"E...\")"
+  }
+ ],
+ "congelar": [
+  {
+   "de": 437.72,
+   "ate": 438.27,
+   "quadro": 438.3,
+   "motivo": "[visual] câmera girando da loja de chocolate para a selfie (7:17); o \"Estamos\" começa em 438,12, então a imagem para no 1º quadro bom e o som segue"
+  },
+  {
+   "de": 684.33,
+   "ate": 684.8,
+   "quadro": 684.83,
+   "motivo": "[visual] câmera girando da vitrine do Merveilleux para a selfie (11:24); o \"Saímos\" começa em 684,52"
+  },
+  {
+   "de": 746.93,
+   "ate": 747.23,
+   "quadro": 747.27,
+   "motivo": "[visual] câmera girando no começo do vídeo do frio (12:26); a fala já começou"
+  }
+ ],
+ "fragmentos": [
+  "pedaço de 0.40 s com fala em 151.00 s: corte de pausa em 150.80 s desfeito",
+  "pedaço de 0.20 s com fala em 167.57 s: corte de pausa em 167.23 s desfeito",
+  "pedaço de 0.70 s com fala em 381.60 s: corte de pausa em 381.40 s desfeito",
+  "pedaço de 0.13 s sem fala em 389.40 s: sai junto com o corte",
+  "pedaço de 0.23 s com fala em 513.80 s: corte de pausa em 513.60 s desfeito"
+ ]
+}

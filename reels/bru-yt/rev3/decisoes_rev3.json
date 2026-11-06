@@ -1,0 +1,107 @@
+{
+ "fonte": "fonte/1103_fala.mp4 (export do CapCut do Diego, 4K 30 fps, 14:27,3, música silenciada; Drive, pasta Bruxelas/Vídeo - Youtube, arquivo \"1103 (1).mp4\") · REV2 (06/11/2026): sem pedaços < 0,7 s e sem quadros de câmera virando",
+ "parametros": {
+  "silencio_acima_do_piso_db": 8,
+  "janela_piso_s": 10,
+  "pad_fim": 0.18,
+  "pad_ini": 0.12,
+  "pausa_max": 0.3,
+  "pausa_longa": 3.0,
+  "min_plano": 0.5,
+  "min_fragmento": 1.0
+ },
+ "cortes_manuais": [
+  {
+   "de": [
+    710.1,
+    710.7
+   ],
+   "ate": [
+    712.5,
+    713.1
+   ],
+   "motivo": "[momento vazio] mastigação do pão de chocolate no Aux Merveilleux (11:50); fica o \"Bom?\" de 11:53,5, achado numa 2ª transcrição do trecho"
+  },
+  {
+   "de": [
+    716.0,
+    716.5
+   ],
+   "ate": [
+    718.6,
+    719.1
+   ],
+   "motivo": "[momento vazio] pausa de 3,7 s entre \"É…\" e \"bom, né?\" (11:56)"
+  },
+  {
+   "de": [
+    753.1,
+    753.6
+   ],
+   "ate": [
+    755.2,
+    755.8
+   ],
+   "motivo": "[momento vazio] risada do frio encurtada (12:33); ficam ≈ 2 s"
+  },
+  {
+   "de": 119.05,
+   "ate": 119.45,
+   "motivo": "[visual] câmera virando antes da selfie do Zinneke (1:59), logo depois do mapa"
+  },
+  {
+   "de": 310.82,
+   "ate": 311.22,
+   "motivo": "[visual] câmera girando entre a Jeanneke Pis e a selfie (5:10); a fala começa em 311,27"
+  },
+  {
+   "de": 627.0,
+   "ate": 627.4,
+   "motivo": "[visual] câmera no chão, com os pés, na montagem do Mont des Arts (10:27)"
+  }
+ ],
+ "congelar": [
+  {
+   "de": 437.72,
+   "ate": 438.27,
+   "quadro": 438.3,
+   "motivo": "[visual] câmera girando da loja de chocolate para a selfie (7:17); o \"Estamos\" começa em 438,12, então a imagem para no 1º quadro bom e o som segue"
+  },
+  {
+   "de": 684.33,
+   "ate": 684.8,
+   "quadro": 684.83,
+   "motivo": "[visual] câmera girando da vitrine do Merveilleux para a selfie (11:24); o \"Saímos\" começa em 684,52"
+  },
+  {
+   "de": 746.93,
+   "ate": 747.23,
+   "quadro": 747.27,
+   "motivo": "[visual] câmera girando no começo do vídeo do frio (12:26); a fala já começou"
+  }
+ ],
+ "zonas_protegidas": [
+  {
+   "de": 134.6,
+   "ate": 139.6,
+   "motivo": "Zinneke: a pausa entre \"Ponto turístico de Bruxelas.\" e \"Um cachorro mijando.\" é a revelação da estátua (piada visual)"
+  },
+  {
+   "de": 164.2,
+   "ate": 165.75,
+   "motivo": "\"Que porra, sério\" (2:44): a conferência (scripts/confere_cortes.py) achou um corte de 0,10 s dentro do \"sério\"; o trecho fica inteiro"
+  }
+ ],
+ "nao_cortados": [
+  {
+   "de": 733.8,
+   "ate": 742.0,
+   "motivo": "Marina provando o merveilleux (12:13–12:22): parece vazio na 1ª transcrição, mas a 2ª achou \"Nossa!\" e \"Caramba.\" no meio: fica inteiro"
+  },
+  {
+   "de": 348.5,
+   "ate": 356.6,
+   "motivo": "mordidas do waffle (5:48–5:56): é montagem do Diego, com 3 cortes de cena"
+  }
+ ]
+}
