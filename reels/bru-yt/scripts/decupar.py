@@ -25,6 +25,7 @@ Tudo em quadros inteiros (30 fps): imagem e som cortam no mesmo instante.
 """
 import json
 import math
+import sys
 
 import numpy as np
 import soundfile as sf
@@ -49,11 +50,81 @@ def percentil_movel(db, meia, q):
     return np.repeat(v, 50)[: len(db)]
 
 
+def cortes_reais(cenas):
+    """Cortes de cena de verdade: detecções isoladas (ou em dupla, ≤ 0,1 s). Rajadas de detecções a cada ~0,17 s são
+    panorâmicas da câmera (a conversão de 24 para 30 qps duplica quadros e o detector dispara no movimento)."""
+    grupos = []
+    for c in cenas:
+        if grupos and c - grupos[-1][-1] < 0.3:
+            grupos[-1].append(c)
+        else:
+            grupos.append([c])
+    return [g[0] for g in grupos if len(g) <= 2 and g[-1] - g[0] <= 0.1]
+
+
+def sem_fragmentos(unidos, total_q, palavras, reais, min_q):
+    """REV2 (pedido do Diego, 06/11/2026: "teve alguns que ficaram muito rápidos, menos de 1 segundo de tela"): nenhum
+    pedaço mantido com menos de `min_q` quadros entre dois cortes da decupagem, ou entre um corte e uma troca de cena.
+    Pedaço sem palavra: sai junto com o corte vizinho. Pedaço com palavra: o corte vizinho de pausa é desfeito."""
+    pal = [(math.floor(w["ini"] * FPS), math.ceil(w["fim"] * FPS)) for w in palavras]
+    rq = [round(c * FPS) for c in reais]
+    log = []
+
+    def tem_palavra(a, b):
+        return any(x < b and y > a for x, y in pal)
+
+    for _ in range(50):
+        mudou = False
+        manter = []
+        pos = 0
+        for i, (qa, qb, m) in enumerate(unidos):
+            if qa > pos:
+                manter.append((pos, qa, i - 1 if i else None, i))
+            pos = max(pos, qb)
+        if pos < total_q:
+            manter.append((pos, total_q, len(unidos) - 1, None))
+        for a, b, ant, dep in manter:
+            dentro = [c for c in rq if a < c < b]
+            pedacos = []
+            if ant is not None:
+                pedacos.append((a, dentro[0] if dentro else b, "ini"))
+            if dep is not None:
+                pedacos.append((dentro[-1] if dentro else a, b, "fim"))
+            for x, y, lado in pedacos:
+                if y - x >= min_q:
+                    continue
+                k = ant if lado == "ini" else dep
+                qa, qb, m = unidos[k]
+                if not tem_palavra(x, y):
+                    unidos[k] = (min(qa, x), max(qb, y), m)
+                    log.append(f"pedaço de {(y - x) / FPS:.2f} s sem fala em {x / FPS:.2f} s: sai junto com o corte")
+                    mudou = True
+                    break
+                if not m.startswith("["):
+                    log.append(f"pedaço de {(y - x) / FPS:.2f} s com fala em {x / FPS:.2f} s: corte de pausa em {qa / FPS:.2f} s desfeito")
+                    unidos.pop(k)
+                    mudou = True
+                    break
+            if mudou:
+                break
+        if not mudou:
+            break
+    unidos.sort()
+    junt = []
+    for qa, qb, m in unidos:
+        if junt and qa <= junt[-1][1]:
+            junt[-1] = (junt[-1][0], max(junt[-1][1], qb), junt[-1][2])
+        else:
+            junt.append((qa, qb, m))
+    return junt, log
+
+
 def main():
+    rev = sys.argv[1] if len(sys.argv) > 1 else "rev1"
     tr = json.load(open("_tmp/transcricao.json", encoding="utf-8"))
     palavras = sorted([w for s in tr["segmentos"] for w in s["palavras"] if w["fim"] > w["ini"]], key=lambda w: w["ini"])
     cenas = json.load(open("_tmp/cenas.json", encoding="utf-8"))["cortes"]
-    dec = json.load(open("rev1/decisoes_rev1.json", encoding="utf-8"))
+    dec = json.load(open(f"{rev}/decisoes_{rev}.json", encoding="utf-8"))
     p = dec["parametros"]
 
     db, dur = energia_voz("_tmp/voz_orig.wav")
@@ -161,6 +232,9 @@ def main():
         else:
             unidos.append((qa, qb, m))
     total_q = int(round(dur * FPS))
+    log_frag = []
+    if p.get("min_fragmento"):
+        unidos, log_frag = sem_fragmentos(unidos, total_q, palavras, cortes_reais(cenas), round(p["min_fragmento"] * FPS))
     manter = []
     pos = 0
     for qa, qb, _ in unidos:
@@ -180,8 +254,9 @@ def main():
         "removidos": [{"de_q": qa, "ate_q": qb, "de_s": round(qa / FPS, 3), "dur_s": round((qb - qa) / FPS, 3), "motivo": m} for qa, qb, m in unidos],
         "cortes_manuais_aplicados": manuais,
         "congelar": dec.get("congelar", []),
+        "fragmentos": log_frag,
     }
-    json.dump(out, open("rev1/edl_rev1.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(out, open(f"{rev}/edl_{rev}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     por = {}
     for qa, qb, m in unidos:
         k = m[:70]
@@ -189,6 +264,8 @@ def main():
         por[k][0] += 1
         por[k][1] += (qb - qa) / FPS
     print(f"fonte {dur:.1f} s → saída {out['duracao_saida_s']:.1f} s (−{saiu:.1f} s em {len(unidos)} cortes)")
+    for x in log_frag:
+        print("  ·", x)
     for k, (n, s) in sorted(por.items(), key=lambda x: -x[1][1]):
         print(f"  {n:4d} × {s:7.1f} s  {k}")
 
