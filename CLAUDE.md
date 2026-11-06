@@ -73,10 +73,12 @@ Este arquivo **não** descreve a identidade visual. Cores, fontes, componentes, 
 | Procedimento | Vídeo longo do YouTube | `docs/VIDEO_LONGO_YOUTUBE.md` | Estrutura, sons, música, envio do material, fluxo e pendências dos vlogs (decisões do Diego de 16/10/2026). Os requisitos do DS V2 e dos tokens prevalecem, exceto nas diferenças listadas na seção 6 dele
 | Procedimento | Padrão de revisão de áudio (vídeos longos do YouTube) | `docs/AUDIO_REVIEW_STANDARD.md` | Método, checklist e relatório da revisão de áudio. Os requisitos do DS V2 e dos tokens prevalecem sobre ele |
 | Apoio | Instrução-base | `docs/design-system-marca-viagens.md` | Método e teoria (o porquê). As cores e fontes "sugeridas" dele não valem como identidade |
+| Roteiro e formato | Trello "Formatos Criativos de Conteúdo [Alunos]" | `docs/ESTRUTURAS_DE_ROTEIRO.md` e `docs/FORMATOS_TRELLO.md` (espelhos do quadro, https://trello.com/b/VOx6su53/formatos-criativos-de-conteudo-alunos) | Estruturas de roteiro e formatos (tela dividida, tela verde, narrado e, quando incorporados, os demais). Decisão do Diego, 28/10/2026: **é a referência** para estrutura e formato de roteiro. Não vale sobre o DS V2 (identidade visual) nem sobre as regras de marca |
 
 As fontes do DS V2 ainda não estão no repositório (seção 14).
 
 **Em caso de conflito:**
+- **Roteiro e formato** (decisão do Diego, 28/10/2026): entre o Trello e o que o Claude já sabe ou lembra sobre estrutura de roteiro e formato de vídeo, **vale o Trello**. Os espelhos em `docs/` copiam o quadro sem acréscimos; se o quadro mudar, atualize o espelho. Só as listas já incorporadas valem como referência (hoje: "Estruturas de roteiro" e os formatos 01 Tela dividida, 02 Tela verde e 04 Narrado). O Trello não substitui o DS V2, os tokens, as regras editoriais (seção 9) nem a referência de conteúdo no que não trata de roteiro e formato.
 - Uma regra específica de Reel não altera o Design System.
 - Uma regra antiga da V1 (ou da v0) não prevalece sobre a V2.
 - **DS × tokens × bundle** (decisão do Diego, 05/10/2026): os tokens valem para **valores**; o brand book vale para **regras**; o bundle é só implementação de prévia e, se divergir, corrige-se o bundle.
@@ -85,6 +87,8 @@ As fontes do DS V2 ainda não estão no repositório (seção 14).
 ## 6. Design System V2
 
 **Regra central:** quando a tarefa envolver identidade visual, o Claude deve consultar o Design System V2 e seus tokens antes de decidir.
+
+**DS só no CTA dos Reels** (decisão do Diego, 28/10/2026): nos Reels, o DS V2 e os seus componentes (placa, objetos como Carimbo, Ticket, Recibo, Placar, Bilhete e Etiqueta, legendas do DS, transições do DS, sons `PD_*`, cores e fontes da marca) entram **só no fim, no CTA**. Do gancho até antes do CTA, o Reel usa a linguagem do formato (`docs/FORMATOS_REELS.md`) e as transições e sons de `docs/REFERENCIA_EDICAO_FORMATOS.md`. As regras do DS continuam valendo integralmente no CTA, e nas peças que não são Reel (capas, carrosséis, destaques, YouTube) até o Diego dizer o contrário. O brand book ainda descreve objetos no meio do Reel; atualizá-lo depende de pedido do Diego (seção 14).
 
 - **Versão vigente:** a V2.3.0 "Objetos do Primeiro Dia" (16/10/2026). A 2.1.0 acrescentou os níveis de edição A/B, as regras de som e os tokens de efeito e som, sem valor visual novo. A 2.2.0 acrescentou as legendas do YouTube longo em 16:9 (seção 3.4), com tokens de posição, largura e tempo em `layout.yt`. A 2.3.0 trocou o mapa do vídeo longo (5.4) para cores naturais de mapa, com tokens em `color.map` (DS V2, Changelog).
 - **Aposentadas:** a V1 "Placa & Caneta" e a v0 "Primeira luz". Não reutilize valores, componentes nem regras visuais delas.
@@ -115,6 +119,24 @@ A referência de conteúdo Instagram é a fonte destas regras. Consulte o docume
 5. **Calendário e testes:** planos antes, durante e depois de cada viagem.
 6. **Métricas:** interpretação dos Insights e recomendação do próximo teste.
 
+**Montagem de roteiro de Reel** (decisão do Diego, 28/10/2026). **Toda vez** que for montar um roteiro, leia antes, nesta ordem:
+
+| # | Arquivo | Para quê |
+|---|---|---|
+| 1 | `docs/ESTRUTURAS_DE_ROTEIRO.md` | As 5 estruturas do Trello (AIDA, I.H.C., Jeito Errado × Jeito Certo, Ele-Eu-Você-Futuro, Análise Estratégica). É a referência de estrutura |
+| 2 | `docs/FORMATOS_TRELLO.md` | Formatos do Trello (tela dividida, tela verde, narrado), com os roteiros virais analisados e o prompt de adaptação (proibido inventar história; fato real e verificável) |
+| 3 | `docs/FORMATOS_REELS.md` | Como o perfil executa o formato: anatomia da tela, composições, legendas, sincronia, material de apoio, montagem do roteiro e QA |
+| 4 | `docs/REFERENCIA_EDICAO_FORMATOS.md` | Edição: transições por momento do roteiro, sons e volumes, ferramentas, checklist e o que as 9 referências ensinam (análise completa em `docs/referencias/`) |
+| 5 | `design-system/sons/externos/README.md` | Kit de sons de transição (`PDX_*`) |
+| 6 | `docs/referencia-conteudo-instagram.md` | Gancho, duração, CTA único e checklist pré-publicação |
+
+Como entregar:
+- **Duas opções**, cada uma com estrutura e formato do Trello, gancho pronto, roteiro em tabela (tempo, fala, imagem/fundo, transição e som) e o sinal que favorece. Depois, **uma recomendação** com o motivo.
+- O texto que o Diego vai **gravar no quarto** sai num bloco de código, com as instruções de gravação.
+- **O roteiro nasce do roteiro, não do acervo** (decisão do Diego, 04/11/2026). Quando ele pedir um Reel sobre uma cidade, entregue um roteiro **pensado para viralizar**: gancho forte, vida, identidade e retenção do primeiro ao último segundo. **Esqueça os vídeos do acervo ao montar o roteiro**: não parta das falas, dos clipes nem da linha do tempo da viagem. O acervo dos Reels é só um **backlog de paisagens** para ilustrar o que o Diego fala; a imagem se escolhe depois que o roteiro está pronto. O poder está no roteiro.
+- Fatos externos (história, números, curiosidades) são reais e verificáveis, com fonte (prompt do Trello). Dado pessoal da viagem que faltar (valor, hora, lugar) fica marcado como a confirmar e nunca é inventado.
+- DS só no CTA final (seção 6). O roteiro aprovado é salvo em `reels/<reel>/`.
+
 **Planejamento operacional** (`planejamento/planejamento-primeiro-dia-v5.html`, V5 de 15/10/2026, feita sobre a V4 que o Diego enviou; a V4 fica em `planejamento/versoes/`):
 - É o painel do que publicar, quando, onde e com quais orientações. É mutável e não é regra permanente. Os documentos de referência têm precedência sobre ele, e ele não é autoridade visual.
 - Antes de propor uma produção a partir dele, confira o acervo (seção 10). Só altere o planejamento a pedido explícito do Diego. Para mudar a grade: `planejamento/scripts/` (montar com `montar_v5.py` e conferir com `validar_v5.py`).
@@ -129,8 +151,8 @@ Antes de entregar, confira os pontos abaixo. Se algum falhar, corrija ou sinaliz
 3. **Funciona sem som**, quando aplicável.
 4. **Motivo claro para envio ou salvamento:** dá para dizer para quem alguém mandaria.
 5. **Valor ou emoção:** utilidade clara ou emoção de alta ativação.
-6. **Marca reconhecível:** um ativo distintivo do DS V2 no momento de maior emoção ou utilidade.
-7. **Conformidade com o DS V2:** checklist de conformidade do DS.
+6. **Marca reconhecível:** nos Reels, o ativo do DS V2 aparece no CTA final (decisão do Diego, 28/10/2026); nas outras peças, no momento de maior emoção ou utilidade.
+7. **Conformidade com o DS V2:** checklist de conformidade do DS (nos Reels, aplicado ao CTA).
 8. **Identidade verbal consistente:** tom, bordão e formato de valores do DS V2.
 9. **Originalidade:** conteúdo próprio, sem marca d'água.
 10. **Formato e duração adequados:** pela referência de conteúdo.
@@ -143,7 +165,7 @@ Complementa esta lista o checklist pré-publicação da referência de conteúdo
 
 - **Dados reais:** valores, horários, datas e lugares vêm do registro real da viagem. Não invente nem arredonde sem indicar.
 - **Contexto verdadeiro:** nada que faça parecer que algo aconteceu de outro jeito.
-- **Perrengue e surpresa** (carimbo, ticket) só quando o fato aconteceu de verdade, nas condições do DS V2.
+- **Perrengue e surpresa** só quando o fato aconteceu de verdade. Nos Reels, o Carimbo e o Ticket do DS não entram (DS só no CTA, seção 6); o perrengue é marcado na linguagem do formato.
 - **Elementos da marca** não entram de forma arbitrária: cada uso precisa de função, conforme o DS V2.
 - **Proibido:** repost e conteúdo com marca d'água; introduções, logos ou vinhetas no início; engajamento artificial (referência de conteúdo, seção 9).
 - **Regras visuais de texto e legenda:** estão no DS V2.
@@ -154,7 +176,7 @@ O acervo atual é de viagens que já aconteceram: **Barcelona** (3 dias) · **Am
 
 O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias em 4 cidades, de 23/12/2024 a 04/01/2025). Em 05/10/2026 o Diego informou só fotos e registro de custos; em 14/10/2026 ele enviou ao Drive **214 vídeos** da Itália (Roma 72, Florença 83, Veneza 37, Milão 18, mais 4 sem cidade), separados por cidade pelo GPS. Vídeo da Itália pode entrar em Reel depois de verificado, e os familiares que aparecem nos clipes podem ser mostrados (Diego, 15/10/2026). Fotos da Itália vão para carrossel.
 
-**Base de acervo** (decisão do Diego, 15/10/2026): o conteúdo de todas as viagens está catalogado em `acervo/` (índice geral, e por cidade o índice dos vídeos, a transcrição automática e a linha do tempo dia a dia), gerado da análise do Colab. É a **primeira fonte para saber o que existe** antes de propor uma pauta. Limites: a transcrição não foi ouvida por ninguém e erra nomes; a hora é a do arquivo; arquivos com nome de código são exportações (data não confiável); `acervo/CORTES_DE_CUSTO.md` lista as falas com possível valor, que ficam fora de peças enquanto não houver revisão de custos. Os vídeos e as folhas de contato ficam no Drive. Para refazer: `planejamento/COLAB_ANALISE.md` no commit `77585d3`.
+**Base de acervo** (decisão do Diego, 15/10/2026): o conteúdo de todas as viagens está catalogado em `acervo/` (índice geral, e por cidade o índice dos vídeos, a transcrição automática e a linha do tempo dia a dia), gerado da análise do Colab. É a **primeira fonte para saber o que existe** antes de propor uma pauta, **exceto no roteiro de Reel**: ali o acervo é só backlog de paisagens para ilustrar a fala (seção 7, decisão do Diego de 04/11/2026). Limites: a transcrição não foi ouvida por ninguém e erra nomes; a hora é a do arquivo; arquivos com nome de código são exportações (data não confiável); `acervo/CORTES_DE_CUSTO.md` lista as falas com possível valor, que ficam fora de peças enquanto não houver revisão de custos. Os vídeos e as folhas de contato ficam no Drive. Para refazer: `planejamento/COLAB_ANALISE.md` no commit `77585d3`.
 
 **Vídeos no Drive e fluxo de montagem** (decisão do Diego, 16/10/2026):
 - **Pasta com os vídeos de todas as cidades:** https://drive.google.com/drive/folders/1pDDNmhFAbXzdg5Pbb3b1gx0J5zQCC30o (vídeos em `Youtube/<cidade>`; folhas de contato e JSON da análise em `Youtube/analise/<cidade>`). Use sempre que for montar uma postagem.
@@ -166,9 +188,9 @@ O acervo também inclui a **Itália** (Roma, Florença, Veneza e Milão; 9 dias 
 
 - **Não é possível refilmar** essas viagens. Não presuma que o Diego possa voltar ou gravar uma cena contextual nova.
 - **Não crie cenas falsas** para representar acontecimentos que não foram gravados.
-- **Gravação atual do Diego:** não a insira num Reel de experiência passada se isso quebrar a continuidade temporal.
-- **Priorize o material existente:** falas, voz, cenas, texto na tela, narração, elementos do DS V2, montagem, som ambiente e edição.
-- **Gravação nova:** se for mesmo necessária, registre-a como **"material futuro"**. Ela não é requisito para concluir a edição atual.
+- **Gravação atual do Diego** (decisão dele, 28/10/2026): ele não consegue gravar mais viagens, mas **grava no quarto** e o Claude usa essas gravações para montar o Reel (fala, narração, tela dividida, tela verde). Nesse caso o Diego de hoje **conta** a viagem e o acervo entra como imagem de apoio. Não faça parecer que a gravação do quarto aconteceu na viagem, e não a insira como se fosse cena da viagem (continuidade temporal e contexto verdadeiro, seção 9).
+- **Priorize o material existente:** falas, voz, cenas, texto na tela, narração, elementos do DS V2, montagem, som ambiente e edição. Nos Reels, isso vale para a **imagem**, nunca para o roteiro (seção 7).
+- **Gravação nova no quarto:** pode ser pedida quando o roteiro precisar de fala ou narração que o acervo não tem. O roteiro deve dizer o que o Diego precisa gravar. Gravação de **viagem** continua impossível; se algo assim fosse necessário, registre como **"material futuro"**, fora do requisito da edição atual.
 - **Material bruto** (master e brutos, em `fonte/`): pode ser analisado, mas não alterado, movido, renomeado ou excluído sem autorização explícita do Diego.
 
 ## 11. Organização do repositório
@@ -178,7 +200,7 @@ travel-content-studio/
 ├── README.md        visão geral e como recuperar o que foi removido
 ├── CLAUDE.md        este manual
 ├── design-system/   DS V2, tokens, bundle, Remotion, kit, sons e fontes (ver design-system/README.md)
-├── docs/            referência de conteúdo Instagram, instrução-base do DS e padrão de revisão de áudio do YouTube
+├── docs/            referência de conteúdo Instagram, estruturas e formatos do Trello, guias de formato e de edição, prompts e análises de referência, instrução-base do DS e padrões do YouTube
 ├── acervo/          base de acervo: índice, transcrição e linha do tempo de cada cidade (Colab, 15/10/2026)
 ├── planejamento/    painel V5, auditoria criativa, banco de ideias, CSVs de auditoria, scripts e versões
 └── reels/           um Reel por pasta, uma revisão por subpasta (brutos em reels/<reel>/fonte/, fora do git)
@@ -245,3 +267,4 @@ Questões em aberto. Esta seção não cria regras.
 14. **Som de máquina de moeda:** decisão do Diego em 16/10/2026. **Sempre** que houver Recibo ou soma de gasto no Placar, toca a máquina de moeda (`design-system/sons/PD_moeda_v1.wav`, "ka" da gaveta + sino + cascata de moedas, 1,3 s). Ela **substitui a impressora** (`PD_impressora_v1.wav`, sem uso desde então) no Recibo e o *tick* na soma do Placar; o *tick* fica só para o tempo girando sem gasto novo, e ligar o Placar continua sem som. No Remotion, `Recibo` e `Placar` tocam o som sozinhos (`som={false}` evita dois sons a menos de 1,5 s). Volume provisório de −10 dB da voz (o do *ding*), a calibrar depois da escuta. O som é sintetizado e **ninguém ouviu**. A Etiqueta de valor não tem som próprio (a soma do Placar já marca a compra). Falta o Diego pedir a atualização do brand book (4.6 e kit 6.1, na próxima versão MINOR, incluindo a retirada da impressora; a 2.3.0 foi usada para o mapa); o brand book e os tokens não foram alterados.
 15. **Placa acima de 872 px:** resolvida em 16/10/2026 (Diego aprovou). Quando o destino em 128 px faria a placa passar da largura máxima de 872 px (ex.: "PRIMEIRO DIA." no fechamento, ≈ 944 px), usa-se o tamanho alternativo de 104 px, o mesmo que o DS 2.1 já prevê para 13 a 16 letras. Falta incluir a regra no brand book (a pedido do Diego); o brand book não foi alterado.
 16. **Vídeo longo do YouTube:** decisões do Diego em 16/10/2026 em `docs/VIDEO_LONGO_YOUTUBE.md` (sem legenda gravada na imagem, só `.srt`; Placar em todos os dias; hora na etiqueta de lugar; animação de like e inscrição; `@primeirodiaem` com logo do Instagram 3 vezes; narração de fechamento; música da Biblioteca de áudio do YouTube). A composição 16:9 (`VideoLongo`, `design-system/remotion/src/yt/`) existe desde a REV1 do vlog de Amsterdam (21/10/2026); o andamento do vlog está em `reels/ams-yt/`. As diferenças em relação ao brand book (seção 6 do documento) não foram aplicadas ao brand book; atualizar depende de pedido do Diego.
+17. **DS só no CTA dos Reels:** decisão do Diego em 28/10/2026 (seção 6). O brand book (estrutura do Reel, objetos, legendas, transições e sons 4.4–4.6) e os tokens não foram alterados; atualizar depende de pedido dele. A Pendência 14 (moeda no Recibo e no Placar) deixa de se aplicar a Reels.
