@@ -1,0 +1,28 @@
+{
+ "foto": "foto_casal_mont_des_arts.jpg",
+ "fotoLargura": 1280,
+ "fotoX": 0,
+ "fotoY": 0,
+ "reciboX": 968,
+ "reciboY": 40,
+ "reciboEscala": 0.44,
+ "rotulo": "QUANTO CUSTOU",
+ "destino": "BRUXELAS?",
+ "recibo": {
+  "lugar": "1 DIA · 2 PESSOAS",
+  "cabecalho": "15/03 · COM HOTEL",
+  "linhas": [
+   [
+    "Metrô e comida",
+    "€ ???"
+   ],
+   [
+    "Hotel",
+    "€ ???"
+   ]
+  ],
+  "total": "€ ???",
+  "real": "valeu a pena?",
+  "rodape": "descubra no vídeo"
+ }
+}

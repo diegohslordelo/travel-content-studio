@@ -54,7 +54,7 @@
    "tipo": "gancho_fala"
   },
   {
-   "src": 454.95,
+   "src": 454.72,
    "out": 22233.333333333332,
    "dur": 2066.6666666666665,
    "tipo": "gancho_fala"
@@ -404,6 +404,7 @@
    "fala_fim": 4760.0,
    "arq_ini_s": 0.63,
    "arq_fim_s": 5.14,
+   "cortes": [],
    "texto": "Será que vale a pena passar um dia inteiro em Bruxelas? E quanto será que custa isso?"
   },
   {
@@ -413,6 +414,7 @@
    "fala_fim": 15930.0,
    "arq_ini_s": 0.54,
    "arq_fim_s": 6.27,
+   "cortes": [],
    "texto": "Bom, teve batata frita, waffle, chocolate e alguns que a gente não teve nem coragem de chegar perto."
   },
   {
@@ -422,6 +424,7 @@
    "fala_fim": 35650.0,
    "arq_ini_s": 0.71,
    "arq_fim_s": 11.86,
+   "cortes": [],
    "texto": "Eu anotei cada euro que a gente gastou nesse nosso rolê em Bruxelas. No final do vídeo você vai ver quanto custou tudo e se realmente vale a pena. Então fique com a gente, porque esse é o nosso primeiro dia em Bruxelas."
   },
   {
@@ -437,54 +440,65 @@
    "id": "F1",
    "arq": "narracao/N02.m4a",
    "fala_ini": 877200.0,
-   "fala_fim": 885300.0,
+   "fala_fim": 884625.0,
    "arq_ini_s": 1.33,
    "arq_fim_s": 9.43,
-   "texto": "E um dia só, a gente bateu perna por Bruxelas inteira. Nós fomos do Atomium até a Grand Place, que era do lado, e passamos pelas três estátuas fazendo xixi."
+   "cortes": [
+    [
+     6.09,
+     6.765
+    ]
+   ],
+   "texto": "E um dia só, a gente bateu perna por Bruxelas inteira. Nós fomos do Atomium até a Grand Place, e passamos pelas três estátuas fazendo xixi."
   },
   {
    "id": "F2",
    "arq": "narracao/N03.m4a",
-   "fala_ini": 885800.0,
-   "fala_fim": 890290.0,
+   "fala_ini": 885125.0,
+   "fala_fim": 889615.0,
    "arq_ini_s": 0.6,
    "arq_fim_s": 5.09,
+   "cortes": [],
    "texto": "Metrô, comida, cerveja e doce. O dia para o casal deu 94 euros."
   },
   {
    "id": "F3",
    "arq": "narracao/N06.m4a",
-   "fala_ini": 890790.0,
-   "fala_fim": 899620.0,
+   "fala_ini": 890115.0,
+   "fala_fim": 898945.0,
    "arq_ini_s": 1.05,
    "arq_fim_s": 9.88,
+   "cortes": [],
    "texto": "E somando uma noite de hotel referente a esse dia que a gente passou aqui hoje, ficou uns 239 euros pro casal, 119 pra cada, que isso dá mais ou menos 720 reais."
   },
   {
    "id": "F4",
    "arq": "narracao/N07.m4a",
-   "fala_ini": 900120.0,
-   "fala_fim": 915300.0,
+   "fala_ini": 899445.0,
+   "fala_fim": 914625.0,
    "arq_ini_s": 0.95,
    "arq_fim_s": 16.13,
+   "cortes": [],
    "texto": "Mas e aí, vale a pena? Bom, eu diria que sim, mas não mais que um dia. Esse dia foi suficiente pra gente conhecer o charme, os doces e a cerveja de Bruxelas. Se eu tivesse a oportunidade de fazer diferente, eu me hospedaria numa cidade próxima, como Paris ou até mesmo Bruges, na Bélgica, e viria pra cá de bate e volta."
   },
   {
    "id": "F5",
    "arq": "narracao/N08.m4a",
-   "fala_ini": 915800.0,
-   "fala_fim": 923810.0,
+   "fala_ini": 915125.0,
+   "fala_fim": 923135.0,
    "arq_ini_s": 0.78,
    "arq_fim_s": 8.79,
+   "cortes": [],
    "texto": "Se esse vídeo te ajudou de alguma forma e puder se inscrever ou deixar o like aqui, vai ser muito importante para mim. Também não esquece de me seguir no Instagram, arroba primeirodiaem."
   },
   {
    "id": "F6",
    "arq": "narracao/N09.m4a",
-   "fala_ini": 924310.0,
-   "fala_fim": 927780.0,
+   "fala_ini": 923635.0,
+   "fala_fim": 927105.0,
    "arq_ini_s": 0.8,
    "arq_fim_s": 4.27,
+   "cortes": [],
    "texto": "Toda cidade tem um primeiro dia, e o próximo é em Bruges. A gente se vê lá!"
   }
  ],

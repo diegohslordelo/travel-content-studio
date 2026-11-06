@@ -11,7 +11,7 @@ Cada take com pelo menos 2 s e sem corte de cena dentro (conferido contra `CENAS
 | gancho | 00:12.1 | 2,00 s | 05:31.4–05:33.4 | waffle com Nutella (close), no "waffle, chocolate" da G2 |
 | gancho | 00:14.1 | 3,33 s | 07:06.4–07:09.8 | vitrine dos ovos de Páscoa, no "não teve nem coragem de chegar perto"; no fim, o som de "seis ovos de páscoa…" |
 | gancho | 00:17.4 | 4,80 s | 07:28.4–07:33.2 | Diego: "…menores que meu dedo, estão a 26 euros pela vitrine." |
-| gancho | 00:22.2 | 2,07 s | 07:35.0–07:37.0 | Diego: "Não tem condições." |
+| gancho | 00:22.2 | 2,07 s | 07:34.7–07:36.8 | Diego: "Não tem condições." |
 | gancho | 00:24.3 | 4,40 s | 03:37.9–03:42.3 | chegada na Grand Place (dia) |
 | gancho | 00:28.7 | 2,80 s | 08:48.2–08:51.0 | Manneken Pis vestido de jogador de futebol (para caber a G3) |
 | gancho | 00:31.5 | 5,00 s | 14:22.2–14:27.2 | Grand Place à noite, no "esse é o nosso primeiro dia em Bruxelas" |
@@ -40,9 +40,9 @@ Menor take: **2,00 s**.
 | G2 | `narracao/N11.m4a` | 00:10.2–00:15.9 (5.7 s) | Bom, teve batata frita, waffle, chocolate e alguns que a gente não teve nem coragem de chegar perto. |
 | G3 | `narracao/N12.m4a` | 00:24.5–00:35.6 (11.2 s) | Eu anotei cada euro que a gente gastou nesse nosso rolê em Bruxelas. No final do vídeo você vai ver quanto custou tudo e se realmente vale a pena. Então fique com a gente, porque esse é o nosso primeiro dia em Bruxelas. |
 | H1 | `narracao/N01.m4a` | 05:22.7–05:41.8 (19.1 s) | E falando em hotel, a gente ficou no ibis Brussels off Grand Place, a uns 200 metros da praça. Juro, era colado, parecia que eu tava dentro dela já. Esse foi o mais barato que encontramos próximo do centro. Como a gente ia ficar só um dia aqui, preferimos ficar perto de tudo. Ficamos duas noites, uma pra Bruxelas e uma pro bate e volta de Bruges. No total, isso tudo deu 1.738 para o casal. |
-| F1 | `narracao/N02.m4a` | 14:37.2–14:45.3 (8.1 s) | E um dia só, a gente bateu perna por Bruxelas inteira. Nós fomos do Atomium até a Grand Place, que era do lado, e passamos pelas três estátuas fazendo xixi. |
-| F2 | `narracao/N03.m4a` | 14:45.8–14:50.3 (4.5 s) | Metrô, comida, cerveja e doce. O dia para o casal deu 94 euros. |
-| F3 | `narracao/N06.m4a` | 14:50.8–14:59.6 (8.8 s) | E somando uma noite de hotel referente a esse dia que a gente passou aqui hoje, ficou uns 239 euros pro casal, 119 pra cada, que isso dá mais ou menos 720 reais. |
-| F4 | `narracao/N07.m4a` | 15:00.1–15:15.3 (15.2 s) | Mas e aí, vale a pena? Bom, eu diria que sim, mas não mais que um dia. Esse dia foi suficiente pra gente conhecer o charme, os doces e a cerveja de Bruxelas. Se eu tivesse a oportunidade de fazer diferente, eu me hospedaria numa cidade próxima, como Paris ou até mesmo Bruges, na Bélgica, e viria pra cá de bate e volta. |
-| F5 | `narracao/N08.m4a` | 15:15.8–15:23.8 (8.0 s) | Se esse vídeo te ajudou de alguma forma e puder se inscrever ou deixar o like aqui, vai ser muito importante para mim. Também não esquece de me seguir no Instagram, arroba primeirodiaem. |
-| F6 | `narracao/N09.m4a` | 15:24.3–15:27.8 (3.5 s) | Toda cidade tem um primeiro dia, e o próximo é em Bruges. A gente se vê lá! |
+| F1 | `narracao/N02.m4a` | 14:37.2–14:44.6 (7.4 s) | E um dia só, a gente bateu perna por Bruxelas inteira. Nós fomos do Atomium até a Grand Place, e passamos pelas três estátuas fazendo xixi. |
+| F2 | `narracao/N03.m4a` | 14:45.1–14:49.6 (4.5 s) | Metrô, comida, cerveja e doce. O dia para o casal deu 94 euros. |
+| F3 | `narracao/N06.m4a` | 14:50.1–14:58.9 (8.8 s) | E somando uma noite de hotel referente a esse dia que a gente passou aqui hoje, ficou uns 239 euros pro casal, 119 pra cada, que isso dá mais ou menos 720 reais. |
+| F4 | `narracao/N07.m4a` | 14:59.4–15:14.6 (15.2 s) | Mas e aí, vale a pena? Bom, eu diria que sim, mas não mais que um dia. Esse dia foi suficiente pra gente conhecer o charme, os doces e a cerveja de Bruxelas. Se eu tivesse a oportunidade de fazer diferente, eu me hospedaria numa cidade próxima, como Paris ou até mesmo Bruges, na Bélgica, e viria pra cá de bate e volta. |
+| F5 | `narracao/N08.m4a` | 15:15.1–15:23.1 (8.0 s) | Se esse vídeo te ajudou de alguma forma e puder se inscrever ou deixar o like aqui, vai ser muito importante para mim. Também não esquece de me seguir no Instagram, arroba primeirodiaem. |
+| F6 | `narracao/N09.m4a` | 15:23.6–15:27.1 (3.5 s) | Toda cidade tem um primeiro dia, e o próximo é em Bruges. A gente se vê lá! |

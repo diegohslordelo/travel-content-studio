@@ -133,6 +133,13 @@ def narracao(n, alvo, medidor):
     fala = x[int(n["arq_ini_s"] * SR):int(n["arq_fim_s"] * SR)]
     g_db = alvo - medidor.integrated_loudness(fala)
     y = x[a0:a1] * np.float32(10 ** (g_db / 20))
+    # cortes internos (REV3: "que era do lado" na F1), de silêncio a silêncio, com fusão de 10 ms
+    for c0, c1 in sorted(n.get("cortes", []), reverse=True):
+        i0, i1 = int(c0 * SR) - a0, int(c1 * SR) - a0
+        xf = int(0.01 * SR)
+        rampa = np.linspace(0, 1, xf, dtype=np.float32)
+        junta = y[i0 - xf:i0] * (1 - rampa) + y[i1 - xf:i1] * rampa
+        y = np.concatenate([y[:i0 - xf], junta, y[i1:]])
     gc, red = comprime(y, alvo)
     y = y * gc
     fi, fo = int(0.03 * SR), int(0.08 * SR)

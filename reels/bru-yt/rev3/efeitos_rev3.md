@@ -52,10 +52,10 @@ Gerado por `rev3/montar_rev3.py`. Minutos no **vídeo final** (gancho + corpo de
 | 13:33.0 | 4.0 s | Etiqueta de lugar: SPAGO RISTORANTE · RUE DU PONT DE LA CARPE · 20H00 | Lugar novo (doc., seção 2: lugar + rua/bairro + hora; DS 5.4 lower third). Rua pelo OpenStreetMap e pelo GPS do clipe no acervo; hora do arquivo |
 | 14:09.0 | 3.6 s | Placar: 20:27 · € 94,10 (SPAGO RISTORANTE) | Regra do vlog de Amsterdam (Diego, 23/10/2026): só aparece quando um gasto é somado, com a hora real do clipe; liga sem som (a moeda é a do Recibo), soma e apaga 3 s depois |
 | 14:09.2 | 5.5 s | Recibo SPAGO RISTORANTE: € 25,90 (máquina de moeda) | Diego: 13:55, 25,90 euros. Na fala ele arredonda ("a conta deu 25 euros"); o Recibo mostra o valor do registro. Entra no "25" (13:54,3) |
-| 14:37.3 | 8.6 s | Mapa do dia no centro (9 paradas, da Zinneke ao Spago) | F1 ("a gente bateu perna por Bruxelas inteira… passamos pelas três estátuas"): o roteiro a pé. Entra depois de alguns segundos da Grand Place à noite |
-| 14:45.6 | 14.9 s | Recibo do dia: € 94,10 sem hotel → € 238,69 com 1 noite (€ 119,34 por pessoa) | Entra no "Metrô, comida, cerveja e doce" (F2); a linha do hotel e o total novo entram no "somando uma noite de hotel" (F3). Responde à pergunta do gancho |
-| 15:02.3 | 3.8 s | Bilhete do veredito: "vale! mas 1 dia basta" + ✓ | No "eu diria que sim, mas não mais que um dia" (F4). A REV1 dizia "vale muito! leve luva"; o veredito gravado mudou |
-| 15:17.1 | 3.5 s | Animação "DEIXA O LIKE E SE INSCREVE" (2ª vez) | No "puder se inscrever ou deixar o like aqui" (F5) |
-| 15:21.6 | 2.9 s | Chamada SEGUE NO INSTAGRAM (3ª vez) | No "me seguir no Instagram, arroba primeirodiaem" (F5) |
-| 15:24.3 | 6.0 s | Placa de fechamento "TODA CIDADE TEM UM PRIMEIRO DIA." + Nascer do 1º | No "Toda cidade tem um primeiro dia" (F6) |
+| 14:37.3 | 7.9 s | Mapa do dia no centro (9 paradas, da Zinneke ao Spago) | F1 ("a gente bateu perna por Bruxelas inteira… passamos pelas três estátuas"): o roteiro a pé. Entra depois de alguns segundos da Grand Place à noite |
+| 14:44.9 | 14.9 s | Recibo do dia: € 94,10 sem hotel → € 238,69 com 1 noite (€ 119,34 por pessoa) | Entra no "Metrô, comida, cerveja e doce" (F2); a linha do hotel e o total novo entram no "somando uma noite de hotel" (F3). Responde à pergunta do gancho |
+| 15:01.6 | 3.8 s | Bilhete do veredito: "vale! mas 1 dia basta" + ✓ | No "eu diria que sim, mas não mais que um dia" (F4). A REV1 dizia "vale muito! leve luva"; o veredito gravado mudou |
+| 15:16.4 | 3.5 s | Animação "DEIXA O LIKE E SE INSCREVE" (2ª vez) | No "puder se inscrever ou deixar o like aqui" (F5) |
+| 15:20.9 | 2.9 s | Chamada SEGUE NO INSTAGRAM (3ª vez) | No "me seguir no Instagram, arroba primeirodiaem" (F5) |
+| 15:23.6 | 6.6 s | Placa de fechamento "TODA CIDADE TEM UM PRIMEIRO DIA." + Nascer do 1º | No "Toda cidade tem um primeiro dia" (F6) |
 | 15:30.3 | 20.0 s | Transição Página → tela final de 20 s ("próximo dia: bruges →") | Doc., seção 2. Ordem dos vlogs (CLAUDE.md, pendência 11): Amsterdam, Bruxelas, Bruges… |

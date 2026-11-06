@@ -83,7 +83,9 @@ GANCHO = [
     {"de": 426.42, "ate": 429.77, "o_que": "vitrine dos ovos de Páscoa, no \"não teve nem coragem de chegar perto\"; no fim, o som de \"seis ovos de páscoa…\"", "som": "fala",
      "sons": [(0.0, 2.10, 426.42, "gancho_baixo"), (2.10, 3.35, 447.10, "gancho_fala")]},
     {"de": 448.35, "ate": 453.15, "o_que": "Diego: \"…menores que meu dedo, estão a 26 euros pela vitrine.\"", "som": "fala"},
-    {"de": 454.95, "ate": 457.00, "o_que": "Diego: \"Não tem condições.\"", "som": "fala"},
+    # REV3: termina em 456,79 (silêncio): até 457,00 entrava o começo do "Vamos" (456,92, medido pela energia); a
+    # mesma duração da REV2 (62 quadros), começando 0,22 s antes, no burburinho da galeria
+    {"de": 454.72, "ate": 456.79, "o_que": "Diego: \"Não tem condições.\"", "som": "fala"},
     {"de": 217.94, "ate": 222.34, "o_que": "chegada na Grand Place (dia)", "som": "baixo"},
     {"de": 528.25, "ate": 531.05, "o_que": "Manneken Pis vestido de jogador de futebol (para caber a G3)", "som": "baixo"},
     {"de": 862.25, "ate": 867.25, "o_que": "Grand Place à noite, no \"esse é o nosso primeiro dia em Bruxelas\"", "som": "baixo"},
@@ -118,13 +120,25 @@ FECHAMENTO = [
     {"de": 215.28, "ate": 217.90, "o_que": "Bolsa de Bruxelas (F6), vira a página para a tela final"},
 ]
 NARRACAO_FECHAMENTO = [
-    {"id": "F1", "arq": "N02", "fala": (1.33, 9.43), "texto": "E um dia só, a gente bateu perna por Bruxelas inteira. Nós fomos do Atomium até a Grand Place, que era do lado, e passamos pelas três estátuas fazendo xixi."},
+    # REV3 (Diego, 06/11/2026): sai "que era do lado" (soava como se o Atomium fosse vizinho da Grand Place); o corte
+    # vai de silêncio a silêncio (energia medida) e o "e" fica
+    {"id": "F1", "arq": "N02", "fala": (1.33, 9.43), "cortes": [(6.09, 6.765)], "texto": "E um dia só, a gente bateu perna por Bruxelas inteira. Nós fomos do Atomium até a Grand Place, e passamos pelas três estátuas fazendo xixi."},
     {"id": "F2", "arq": "N03", "fala": (0.60, 5.09), "texto": "Metrô, comida, cerveja e doce. O dia para o casal deu 94 euros."},
     {"id": "F3", "arq": "N06", "fala": (1.05, 9.88), "texto": "E somando uma noite de hotel referente a esse dia que a gente passou aqui hoje, ficou uns 239 euros pro casal, 119 pra cada, que isso dá mais ou menos 720 reais."},
     {"id": "F4", "arq": "N07", "fala": (0.95, 16.13), "texto": "Mas e aí, vale a pena? Bom, eu diria que sim, mas não mais que um dia. Esse dia foi suficiente pra gente conhecer o charme, os doces e a cerveja de Bruxelas. Se eu tivesse a oportunidade de fazer diferente, eu me hospedaria numa cidade próxima, como Paris ou até mesmo Bruges, na Bélgica, e viria pra cá de bate e volta."},
     {"id": "F5", "arq": "N08", "fala": (0.78, 8.79), "texto": "Se esse vídeo te ajudou de alguma forma e puder se inscrever ou deixar o like aqui, vai ser muito importante para mim. Também não esquece de me seguir no Instagram, arroba primeirodiaem."},
     {"id": "F6", "arq": "N09", "fala": (0.80, 4.27), "texto": "Toda cidade tem um primeiro dia, e o próximo é em Bruges. A gente se vê lá!"},
 ]
+def dur_narr(n):
+    """Duração da fala da narração (s), descontados os cortes internos."""
+    return (n["fala"][1] - n["fala"][0]) - sum(b - a for a, b in n.get("cortes", []))
+
+
+def t_narr(n, t):
+    """Tempo `t` do arquivo (s) → tempo dentro da fala já cortada (s)."""
+    return (t - n["fala"][0]) - sum(b - a for a, b in n.get("cortes", []) if b <= t)
+
+
 FECH_INICIO = 1200  # a Grand Place à noite abre com a música; a F1 entra 1,2 s depois
 FECH_INTERVALO = 500  # entre o fim de uma narração e o começo da seguinte
 FECH_RESPIRO = 2400  # depois da F6, antes de a página virar
@@ -423,17 +437,17 @@ def main():
     for n in NARRACAO_FECHAMENTO:
         n["em"] = pos_n
         fech[n["id"]] = n
-        pos_n += (n["fala"][1] - n["fala"][0]) * 1000 + FECH_INTERVALO
+        pos_n += dur_narr(n) * 1000 + FECH_INTERVALO
     fim_falas = pos_n - FECH_INTERVALO
     assert f + fim_falas + FECH_RESPIRO <= F_fim + 1, f"faltam {(f + fim_falas + FECH_RESPIRO - F_fim) / 1000:.2f} s de imagem no fechamento"
 
     def em_f(bid, pal, depois=0.0):
         n = fech[bid]
-        return f + n["em"] + (palavra_narr(tr_n, n["arq"], pal, depois) - n["fala"][0]) * 1000
+        return f + n["em"] + t_narr(n, palavra_narr(tr_n, n["arq"], pal, depois)) * 1000
 
     def fim_f(bid):
         n = fech[bid]
-        return f + n["em"] + (n["fala"][1] - n["fala"][0]) * 1000
+        return f + n["em"] + dur_narr(n) * 1000
 
     noite = hotel_eur / 2
     hotel_dia = noite * NOITES_NO_DIA
@@ -474,7 +488,7 @@ def main():
     for base, lista in [(0, NARRACAO_GANCHO), (B_fim, NARRACAO_FECHAMENTO)]:
         for n in lista:
             f0, f1 = n["fala"]
-            narr.append({"id": n["id"], "arq": f"narracao/{n['arq']}.m4a", "fala_ini": base + n["em"], "fala_fim": base + n["em"] + (f1 - f0) * 1000, "arq_ini_s": f0, "arq_fim_s": f1, "texto": n["texto"]})
+            narr.append({"id": n["id"], "arq": f"narracao/{n['arq']}.m4a", "fala_ini": base + n["em"], "fala_fim": base + n["em"] + dur_narr(n) * 1000, "arq_ini_s": f0, "arq_fim_s": f1, "cortes": n.get("cortes", []), "texto": n["texto"]})
     narr.append({"id": "H1", "arq": f"narracao/{nh['arq']}.m4a", "fala_ini": h0, "fala_fim": h0 + h_dur, "arq_ini_s": nh["fala"][0], "arq_fim_s": nh["fala"][1], "texto": nh["texto"]})
     narr.sort(key=lambda n: n["fala_ini"])
     for a_, b_ in zip(narr, narr[1:]):
