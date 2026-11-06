@@ -42,7 +42,7 @@ export type Evento =
   | ({ tipo: "print"; arquivo: string; endereco: string; x: number; y: number; largura: number; alturaJanela: number; rolagem?: number } & Base)
   | ({ tipo: "mapa"; arquivo: string; desenho?: number } & Base)
   | { tipo: "telafinal"; ini: number; proximo: string }
-  | { tipo: "guia"; inicio: number; fim: number; frases: { ini: number; fim: number; texto: string }[] };
+  | { tipo: "guia"; inicio: number; fim: number; topo?: boolean; frases: { ini: number; fim: number; texto: string }[] };
 
 /** Zoom da imagem (ex.: tensão crescendo no rufar): keyframes em ms do vídeo final, origem em % da tela. */
 export type Zoom = { ms: number[]; escala: number[]; origem?: [number, number] };
@@ -54,13 +54,15 @@ export type PropsVideoLongo = {
   eventos: Evento[];
   zooms?: Zoom[];
   refLufs: number;
+  /** Quadros por segundo do vídeo final (padrão 24, o de Amsterdam). Os tempos das props são em ms (DS V2, 6.2). */
+  fps?: number;
 };
 
 export const propsVideoLongoVazias: PropsVideoLongo = { video: "", duracao: 1000, trechos: [], eventos: [], zooms: [], refLufs: -16 };
 
 export const metadadosVideoLongo: CalculateMetadataFunction<PropsVideoLongo> = ({ props }) => ({
-  durationInFrames: Math.max(1, Math.round((props.duracao * 24) / 1000)),
-  fps: 24,
+  durationInFrames: Math.max(1, Math.round((props.duracao * (props.fps ?? 24)) / 1000)),
+  fps: props.fps ?? 24,
 });
 
 const TrechoBase: React.FC<{ v: string; tr: Trecho }> = ({ v, tr }) => {
@@ -124,6 +126,9 @@ const UmEvento: React.FC<{ e: Evento; refLufs: number }> = ({ e, refLufs }) => {
             <Recibo {...r} x={0} y={0} som={false} />
           </Escala>
           {e.som !== false && <Som nome="moeda" em={e.ini} relDb={-10} refLufs={refLufs} />}
+          {/* lista progressiva: cada linha nova soma e toca a moeda de novo (as linhas que entram juntas com o Recibo, não) */}
+          {e.som !== false &&
+            (e.aparecer ?? []).map((a, i) => (a > 0 && (e.aparecer ?? []).indexOf(a) === i ? <Som key={`m${i}`} nome="moeda" em={e.ini + a} relDb={-10} refLufs={refLufs} /> : null))}
           {e.correcao && <Som nome="clique" em={e.ini + e.correcao.em} relDb={SOM.clique} refLufs={refLufs} />}
         </>
       );
@@ -186,7 +191,7 @@ const UmEvento: React.FC<{ e: Evento; refLufs: number }> = ({ e, refLufs }) => {
     case "telafinal":
       return <TelaFinal ini={e.ini} proximo={e.proximo} refLufs={refLufs} />;
     case "guia":
-      return <GuiaNarracao frases={e.frases} inicio={e.inicio} fim={e.fim} />;
+      return <GuiaNarracao frases={e.frases} inicio={e.inicio} fim={e.fim} topo={e.topo} />;
     default:
       return null;
   }

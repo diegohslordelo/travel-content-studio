@@ -105,6 +105,14 @@ export type ReciboProps = {
    * A cor vem da camada de efeitos (não é cor do DS).
    */
   correcao?: { em: number; nota: string; cor: string };
+  /**
+   * Itens entrando em lista (vlog de Bruxelas, pedido do Diego, 06/11/2026: "tem que ir aparecendo aos poucos na nota,
+   * em lista"): `aparecer[i]` = ms depois de `ini` em que a linha i entra (desliza 12 px e aparece em 240 ms); o total
+   * e o real passam a `totais[k]` quando a linha k entra e o total gira de novo. Sem `aparecer`, tudo entra junto.
+   * Variação do Recibo: precisa do OK do Diego (governança do DS, 7.4).
+   */
+  aparecer?: number[];
+  totais?: { total: string; real: string }[];
 };
 
 const DENTE = 16; // 1.4: borda inferior serrilhada, dentes de 16 px
@@ -124,6 +132,8 @@ export const Recibo: React.FC<ReciboProps> = ({
 
 const ReciboVisual: React.FC<Omit<ReciboProps, "som" | "refLufs">> = ({
   correcao,
+  aparecer,
+  totais,
   lugar,
   cabecalho,
   linhas,
@@ -139,6 +149,11 @@ const ReciboVisual: React.FC<Omit<ReciboProps, "som" | "refLufs">> = ({
   if (t < ini || t > fim + DUR.base) return null;
   const imprime = kf(t - ini, [0, 320], [0, 1], EASE.out);
   const sai = kf(t - fim, [0, DUR.base], [0, 1], EASE.exit);
+  // lista progressiva: quantas linhas já entraram e desde quando o total atual vale
+  const passo = aparecer ? Math.max(0, aparecer.filter((a) => t - ini >= a).length - 1) : 0;
+  const giroDesde = aparecer ? Math.max(320, aparecer[passo]) : 320;
+  const totalAgora = aparecer && totais ? totais[passo].total : total;
+  const realAgora = aparecer && totais ? totais[passo].real : real;
   return (
     <div
       style={{
@@ -191,10 +206,16 @@ const ReciboVisual: React.FC<Omit<ReciboProps, "som" | "refLufs">> = ({
           </div>
           {cabecalho}
         </div>
-        {linhas.map(([item, v], i) => (
+        {linhas.map(([item, v], i) => {
+          const te = aparecer ? t - ini - aparecer[i] : Infinity;
+          if (te < 0) return null;
+          const entra = aparecer && aparecer[i] > 0 ? kf(te, [0, 240], [0, 1], EASE.out) : 1;
+          return (
           <div
             key={i}
             style={{
+              opacity: entra,
+              translate: `0 ${(1 - entra) * -12}px`,
               display: "flex",
               justifyContent: "space-between",
               alignItems: "baseline",
@@ -217,7 +238,8 @@ const ReciboVisual: React.FC<Omit<ReciboProps, "som" | "refLufs">> = ({
               {v}
             </span>
           </div>
-        ))}
+          );
+        })}
         <div
           style={{
             marginTop: 22,
@@ -262,7 +284,7 @@ const ReciboVisual: React.FC<Omit<ReciboProps, "som" | "refLufs">> = ({
                 lineHeight: 0.85,
               }}
             >
-              <TextoGiro valor={total} t={t - ini - 320} />
+              <TextoGiro key={passo} valor={totalAgora} t={t - ini - giroDesde} />
             </div>
             <div
               style={{
@@ -273,7 +295,7 @@ const ReciboVisual: React.FC<Omit<ReciboProps, "som" | "refLufs">> = ({
                 marginTop: 10,
               }}
             >
-              {real}
+              {realAgora}
             </div>
           </div>
         </div>

@@ -113,7 +113,8 @@ type DadosMapa = {
   canal: string[];
   parque: string[];
   rota: [number, number][];
-  paradas: { n: number; nome: string; hora: string; xy: [number, number] }[];
+  /** `rotulo`: deslocamento (px) da etiqueta da parada em relação ao ponto; sem ele, 30 px à direita e acima (ou abaixo, na última). */
+  paradas: { n: number; nome: string; hora: string; xy: [number, number]; rotulo?: [number, number] }[];
 };
 
 const comprimento = (pts: [number, number][]): number =>
@@ -198,7 +199,7 @@ export const MapaRota: React.FC<{ arquivo: string; ini: number; fim: number; des
               const o = kf(tp, [0, DUR.fast], [0, 1], EASE.out);
               const ultima = i === dados.paradas.length - 1;
               const [x, y] = s.xy;
-              const labelY = ultima ? y + 40 : y - 64;
+              const labelY = s.rotulo ? y + s.rotulo[1] : ultima ? y + 40 : y - 64;
               return (
                 <g key={s.n} opacity={o}>
                   {!ultima && <circle cx={x} cy={y} r={14 / zoom} fill={COR.grafite} stroke={COR.amarelo} strokeWidth={4} />}
@@ -207,7 +208,7 @@ export const MapaRota: React.FC<{ arquivo: string; ini: number; fim: number; des
                       {s.n}
                     </text>
                   )}
-                  <g transform={`translate(${x + 30} ${labelY}) scale(${1 / zoom})`}>
+                  <g transform={`translate(${x + (s.rotulo ? s.rotulo[0] : 30)} ${labelY}) scale(${1 / zoom})`}>
                     <rect x={0} y={0} width={40 + 17.6 * (s.nome.length + s.hora.length + 3)} height={48} rx={RAIO.tag} fill={COR.grafite} stroke={rgba(COR.papel, 0.15)} />
                     <text x={18} y={33} fontFamily={FONTE.mono} fontWeight={500} fontSize={27} letterSpacing="0.04em" fill={COR.papel}>
                       {s.nome} <tspan fill={COR.amarelo}>· {s.hora}</tspan>

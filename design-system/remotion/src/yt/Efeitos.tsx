@@ -420,20 +420,21 @@ export const PrintSite: React.FC<{ arquivo: string; endereco: string; ini: numbe
 
 /**
  * Guia de gravação da narração (só na versão de trabalho, nunca na entrega): contador grande no canto e a
- * frase da vez embaixo, para o Diego gravar no tempo certo.
+ * frase da vez embaixo, para o Diego gravar no tempo certo. `topo` (vlog de Bruxelas): contador à esquerda e texto
+ * no alto, para não esconder os objetos do lower third.
  */
-export const GuiaNarracao: React.FC<{ frases: { ini: number; fim: number; texto: string }[]; inicio: number; fim: number }> = ({ frases, inicio, fim }) => {
+export const GuiaNarracao: React.FC<{ frases: { ini: number; fim: number; texto: string }[]; inicio: number; fim: number; topo?: boolean }> = ({ frases, inicio, fim, topo = false }) => {
   const t = useMs();
   if (t < inicio || t >= fim) return null;
   const rel = Math.max(0, t - inicio) / 1000;
   const atual = frases.find((f) => t >= f.ini && t < f.fim);
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
-      <div style={{ position: "absolute", right: 64, top: 52, padding: "10px 22px", borderRadius: 14, background: "rgba(0,0,0,.72)", fontFamily: FONTE.mono, fontWeight: 500, fontSize: 54, color: EFX.limao, fontVariantNumeric: "tabular-nums" }}>
+      <div style={{ position: "absolute", ...(topo ? { left: 64 } : { right: 64 }), top: 52, padding: "10px 22px", borderRadius: 14, background: "rgba(0,0,0,.72)", fontFamily: FONTE.mono, fontWeight: 500, fontSize: 54, color: EFX.limao, fontVariantNumeric: "tabular-nums" }}>
         {rel.toFixed(1).padStart(4, "0")} s
       </div>
       {atual && (
-        <div style={{ position: "absolute", left: 160, right: 160, bottom: 70, padding: "18px 28px", borderRadius: 16, background: "rgba(0,0,0,.72)", textAlign: "center", fontFamily: FONTE.texto, fontWeight: 700, fontSize: 46, lineHeight: 1.2, color: EFX.branco }}>
+        <div style={{ position: "absolute", ...(topo ? { left: 330, right: 600, top: 40 } : { left: 160, right: 160, bottom: 70 }), padding: "18px 28px", borderRadius: 16, background: "rgba(0,0,0,.72)", textAlign: "center", fontFamily: FONTE.texto, fontWeight: 700, fontSize: topo ? 38 : 46, lineHeight: 1.2, color: EFX.branco }}>
           <span style={{ color: EFX.limao, fontFamily: FONTE.mono, fontSize: 30, marginRight: 14 }}>NARRAÇÃO</span>
           {atual.texto}
         </div>
