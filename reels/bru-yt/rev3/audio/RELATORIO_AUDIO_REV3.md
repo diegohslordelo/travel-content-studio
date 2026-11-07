@@ -6,7 +6,7 @@
 | Vídeo / formato | Vídeo longo do YouTube, 16:9, 30 fps · REV3 com 15:50,3 (gancho 36,5 s + corpo decupado 13:59,5 + fechamento 54,3 s + tela final 20 s) |
 | Viagem / dia / local | Bruxelas, domingo 15/03/2026 (1 dia) |
 | Arquivos de origem | `fonte/1103_fala.mp4` (export do CapCut sem a música: AAC 44,1 kHz estéreo), `fonte/1103_musica.mp4` (o mesmo projeto com a música, 1080p), narrações `fonte/narracao/N01`–`N12` (AAC, gravador do celular, 06/11/2026) |
-| SHA-256 do original | Registrado no download (`../../sha256_fonte.txt`); conferido de novo no fim do render: SHA_CONFERIDO |
+| SHA-256 do original | Registrado no download (`../../sha256_fonte.txt`); conferido de novo no fim do render 4K (07/11/2026): os dois arquivos OK |
 | Data / responsável | 06/11/2026 · Claude (medição e tratamento); escuta: Diego |
 | Ferramentas | FFmpeg 6.1 (ebur128), Python 3 + numpy, scipy, soundfile, pyloudnorm 0.2, faster-whisper 1.2.1 (large-v3, int8) |
 | Estado | **AGUARDANDO ESCUTA** (11.1): nada foi ouvido. Os números apontam onde ouvir; não substituem o ouvido |
@@ -19,11 +19,11 @@ Voz da fonte tratada por plano (ganho para a fala ficar na mediana dos planos, �
 
 | Item | Original | Exportado | Observação |
 |---|---|---|---|
-| Contêiner / duração | MP4, 14:27,3 | MP4, DUR_FINAL | Gancho, decupagem, fechamento e tela final |
-| Imagem | HEVC 10 bits, 3840 × 2160, 30 fps | H.264, 1920 × 1080, 30 fps | Render do proxy 1080p (receita de Amsterdam) |
+| Contêiner / duração | MP4, 14:27,3 | MP4, 15:50,27 (950,27 s) | Gancho, decupagem, fechamento e tela final |
+| Imagem | HEVC 10 bits, 3840 × 2160, 30 fps | H.264, 3840 × 2160, 30 fps (CRF 19, até 20 Mbps) | Render final em 4K, direto da fonte (pedido do Diego, 07/11/2026; `rev3/renderizar_final4k_rev3.sh`) |
 | Áudio | AAC 44,1 kHz estéreo | AAC 192 kbps, 48 kHz, estéreo | — |
-| LUFS integrado | −20,8 (fonte de fala) | **LUFS_FINAL** | Alvo [PROJETO] −14 ± 1 LU |
-| Pico verdadeiro | — | **TP_FINAL** | Limite [PROJETO] −1 dBTP |
+| LUFS integrado | −20,8 (fonte de fala) | **−14,1 LUFS** (LRA 7,0 LU) | Alvo [PROJETO] −14 ± 1 LU |
+| Pico verdadeiro | — | **−1,2 dBTP** | Limite [PROJETO] −1 dBTP |
 
 ## 3. Blocos analisados
 
@@ -73,7 +73,18 @@ P01 e P02: falas baixas que o ganho máximo não leva até o alvo (cobertas pelo
 
 ## 10. Validação técnica
 
-VALIDACAO_TECNICA
+Medido no arquivo exportado (`rev3_final_4k.mp4`, 07/11/2026), padrão 11.3:
+
+| Item | Resultado | Alvo |
+|---|---|---|
+| Quadros / duração | 28.508 quadros (950,267 s); imagem 950,267 s e som 950,266 s | 28.508 · mesma duração |
+| Sincronia | quadro i em i / 30 s (desvio 0); o 1º juntado tinha +42 ms a partir de 12:52, corrigido sem recodificar (`rev3/corrigir_ts_video.py`) | 0 |
+| Loudness integrado | −14,1 LUFS (LRA 7,0 LU) | −14 ± 1 LUFS |
+| Pico verdadeiro | −1,2 dBTP (correção pós-AAC em 4 rodadas) | ≤ −1 dBTP |
+| Decodificação completa | sem erro (`ffmpeg -v error -f null`) | sem erro |
+| Áudio | AAC LC 192 kbps, 48 kHz, estéreo | — |
+| SHA-256 das fontes | `fonte/1103_fala.mp4` e `fonte/1103_musica.mp4` OK | igual ao do download |
+| MD5 do arquivo entregue | `fa6c3e8ffd4c72d9735a5345eff525cd` (2.420.453.775 bytes) | — |
 
 ## 11. Validação auditiva
 

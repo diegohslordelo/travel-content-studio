@@ -9,7 +9,9 @@
 #     de cada parte (só efeitos do Remotion) cortado no tamanho exato da imagem; as partes só saem depois de conferir
 #     que o vídeo juntado tem todos os quadros;
 #   - mixagem da REV3 (mixar_rev3.py) e correção de pico pós-AAC (corrigir_pico_aac.py, AAC 192 kbps 48 kHz);
+#   - timestamps da imagem conferidos e corrigidos (corrigir_ts_video.py);
 #   - medição no arquivo exportado (padrão de áudio, 11.3).
+# Se o container reiniciar no meio das partes: SUBPARTES=4 MANTER_BUNDLE=1 bash rev3/renderizar_final4k_rev3.sh
 # Precisa da fonte servida:  node ../../design-system/remotion/scripts/servir.mjs _tmp/servir 8787
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -34,10 +36,33 @@ for i in $(seq 0 $((PARTES - 1))); do
   f="$D/f_$i.mp4"
   if [ ! -s "$f" ]; then
     echo "== parte $((i + 1))/$PARTES: quadros $q0–$q1 ($(date +%H:%M))"
-    rm -rf /tmp/remotion-v*-assets* _tmp/rtmp 2>/dev/null || true; mkdir -p _tmp/rtmp
-    if ! (cd "$RM" && TMPDIR="$RAIZ/_tmp/rtmp" CONCURRENCY=3 OFFTHREAD_CACHE_MB=1500 X264_PRESET=fast CRF=19 MAXRATE=20M \
-          node scripts/videolongo.mjs "$RAIZ/_tmp/props_rev3_4k.json" "$RAIZ/public" trecho "$RAIZ/$f.tmp.mp4" "$q0" "$q1" 2) > "$D/parte_$i.log" 2>&1; then
-      grep -v "%$" "$D/parte_$i.log" | tail -20; exit 1
+    # SUBPARTES > 1 (07/11/2026: o container reiniciou 3 vezes no meio de uma parte): cada parte sai em pedaços
+    # menores, cada um guardado ao terminar; os pedaços são juntados na parte (imagem sem recodificar, som cortado
+    # no tamanho exato de cada pedaço)
+    S=${SUBPARTES:-1}
+    : > "$D/sub_v.txt"; : > "$D/sub_a.txt"
+    for k in $(seq 0 $((S - 1))); do
+      s0=$(( q0 + (q1 - q0 + 1) * k / S )); s1=$(( q0 + (q1 - q0 + 1) * (k + 1) / S - 1 ))
+      g="$f.s$k.mp4"; [ "$S" -eq 1 ] && g="$f.tmp.mp4"
+      if [ ! -s "$g" ] || [ "$S" -eq 1 ]; then
+        rm -rf /tmp/remotion-v*-assets* _tmp/rtmp 2>/dev/null || true; mkdir -p _tmp/rtmp
+        if ! (cd "$RM" && TMPDIR="$RAIZ/_tmp/rtmp" CONCURRENCY=3 OFFTHREAD_CACHE_MB=1500 X264_PRESET=fast CRF=19 MAXRATE=20M \
+              node scripts/videolongo.mjs "$RAIZ/_tmp/props_rev3_4k.json" "$RAIZ/public" trecho "$RAIZ/$g.tmp.mp4" "$s0" "$s1" 2) > "$D/parte_${i}_$k.log" 2>&1; then
+          grep -v "%$" "$D/parte_${i}_$k.log" | tail -20; exit 1
+        fi
+        mv "$g.tmp.mp4" "$g"
+        [ "$S" -gt 1 ] && echo "   pedaço $((k + 1))/$S ok ($(date +%H:%M))"
+      fi
+      m=$(( s1 - s0 + 1 ))
+      printf "file '%s'\nduration %s\n" "$(basename "$g")" "$(python3 -c "print($m / $FPS)")" >> "$D/sub_v.txt"
+      ffmpeg -nostdin -v error -y -i "$g" -map 0:a -af "apad,atrim=end=$(python3 -c "print($m / $FPS)")" -ar 48000 -ac 2 -c:a pcm_f32le "$g.a.wav"
+      echo "file '$(basename "$g").a.wav'" >> "$D/sub_a.txt"
+    done
+    if [ "$S" -gt 1 ]; then
+      ffmpeg -nostdin -v error -y -f concat -safe 0 -i "$D/sub_v.txt" -f concat -safe 0 -i "$D/sub_a.txt" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 320k "$f.tmp.mp4"
+      rm -f "$f".s*.mp4 "$f".s*.mp4.a.wav
+    else
+      rm -f "$f.tmp.mp4.a.wav"
     fi
     mv "$f.tmp.mp4" "$f"
     echo "   ok ($(date +%H:%M))"
@@ -55,6 +80,9 @@ ffmpeg -nostdin -v error -y -f concat -safe 0 -i "$D/v.txt" -map 0:v -c copy -mo
 ffmpeg -nostdin -v error -y -f concat -safe 0 -i "$D/a.txt" -c:a pcm_f32le "$D/sfx.wav"
 qv=$(ffprobe -v error -select_streams v:0 -count_packets -show_entries stream=nb_read_packets -of default=nw=1:nk=1 "$D/video.mp4")
 [ "$qv" -eq "$TOTAL" ] && [ "$soma" -eq "$TOTAL" ] || { echo "vídeo juntado: $qv quadros, esperado $TOTAL"; exit 1; }
+# quadro i em i / FPS (na 1ª execução, a parte montada de pedaços entrou com +42 ms; corrigir_ts_video.py conserta
+# sem recodificar e para com erro se não conseguir)
+python3 -I rev3/corrigir_ts_video.py "$D/video.mp4" "$FPS" "$TOTAL"
 python3 -I rev3/mixar_rev3.py --saida "$D/mix.wav" --sfx "$D/sfx.wav" | tail -1
 python3 -I rev3/corrigir_pico_aac.py "$D/mix.wav" "$D/video.mp4" "$SAIDA" 192k
 rm -f "$D/video.mp4" "$D"/f_*.mp4 "$D"/f_*.mp4.a.wav  # partes só saem com o arquivo final pronto
