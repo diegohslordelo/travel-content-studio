@@ -83,7 +83,21 @@ As 10 falas ficam dentro de 0,9 LU. **A tomada do ranking (IMG_7845) é diferent
 
 ## 5. Medições
 
-(preenchido depois do render, abaixo)
+| # | Ponto | Resultado |
+|---|---|---|
+| 1 | Duração | 50,33 s (voz 49,33 s + 1 s de cauda no CTA) |
+| 2 | Formato | 1080 × 1920, 30 qps, H.264 CRF 10 (≈ 57 Mb/s), AAC 320 kb/s 48 kHz |
+| 3 | Tempo na tela | Todas as cenas ≥ 3 s, menos as 2 exceções do gancho pedidas pelo Diego (2,70 s e 2,53 s) |
+| 4 | Planos do acervo | Nenhum corte de cena dentro dos 6 planos (detecção `scene > 0,25`); nenhum esticado; trechos dentro da duração limpa de cada arquivo |
+| 5 | Legendas | 1 linha, ≤ 4 palavras, largura medida pela fonte ≤ 800 px, centradas em x 540 |
+| 6 | Imagem na palavra | Todas as trocas ancoradas em palavra (`cenas.json`), de 0,05 a 0,3 s antes |
+| 7 | Pessoas | Nenhum apoio com o rosto do Diego ou da Marina (IMG_3023, com a Marina, ficou de fora) |
+| 9 | Áudio | **−14,0 LUFS** integrados, LRA 2,6 LU, pico verdadeiro **−1,5 dBTP**, 0 amostras acima de −1 dBFS, 0 em 0 dBFS |
+| 11 | Transcrição da voz final | Whisper large-v3 no vídeo final repete a fala gravada. Palavras com confiança < 0,6: "você" (27,3 s), "o nono" (ouvido "uma no", 35,8 s), "Madame" (40,6 s), "está", "o", "porque", "pra". Nenhuma palavra cortada |
+| 12 | Nada na tela fora da fala | Textos na tela: PARIS / NÃO QUER / VOCÊ LÁ, PELO MENOS, NÃO SE VOCÊ FOR / igual a todo mundo, 1º DESTINO NO MUNDO, 5º ANO SEGUIDO, HOSPEDAGEM CARA / PONTOS TURÍSTICOS / RESTAURANTES LOTADOS, DÓI NA CONTA, 3 PULOS DO GATO, 1 / 2 / 3, 4 DIAS, 9º DISTRITO, ACOMPANHA AQUI / PRIMEIRO DIA. Todos ditos |
+| 13 | Créditos | `creditos.md` e `imagens/creditos/` |
+
+Folhas: `qa_frames/folha_1s.jpg` (1 quadro por segundo) e `qa_frames/queda_do_print.jpg` (o print cai enquanto o Diego aponta, 5,1–6,1 s, 10 qps).
 
 ## 6. Arquivos
 
