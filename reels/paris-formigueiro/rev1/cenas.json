@@ -1,0 +1,590 @@
+{
+ "nota": "Cenas do Reel (REV1). Âncoras de palavra: 'f3:aqui' = início de 'aqui' na fala 3; '#n' = n-ésima ocorrência; '+/-s' = deslocamento. Cada imagem fica no mínimo 3 s na tela (pedido do Diego, 07/11/2026); exceção registrada só no gancho.",
+ "acervo_dir": "../fonte/acervo",
+ "min_cena": 3.0,
+ "min_excecao": {
+  "abertura": 2.5
+ },
+ "rostoY": 640,
+ "imagens": {
+  "policia": "policia_noite.jpg",
+  "print": "euromonitor_print.png",
+  "hotel": "hotel.jpg",
+  "multidao": "acervo_trocadero_multidao.jpg",
+  "restaurante": "restaurante.jpg",
+  "mona": "mona_multidao.jpg",
+  "chartier": "chartier_sala.jpg",
+  "prato": "chartier_prato.jpg"
+ },
+ "broll": {
+  "IMG_2895.MOV": {
+   "ini": 1.9,
+   "fim_limpo": 9.1,
+   "nota": "Champs-Élysées lotada; sem corte de cena no arquivo"
+  },
+  "IMG_3137.MOV": {
+   "ini": 0.4,
+   "fim_limpo": 5.6,
+   "nota": "Jardim de Luxemburgo no pôr do sol"
+  },
+  "IMG_3062.MOV": {
+   "ini": 0.5,
+   "fim_limpo": 4.08,
+   "nota": "Ópera Garnier do terraço das Galeries Lafayette (9º)"
+  },
+  "IMG_2807.MOV": {
+   "ini": 1.5,
+   "fim_limpo": 4.54,
+   "nota": "Torre Eiffel; a câmera desce e revela a multidão do Trocadéro"
+  },
+  "IMG_3171.MOV": {
+   "ini": 0.3,
+   "fim_limpo": 6.7,
+   "nota": "Torre acesa e brilhando (vertical)"
+  }
+ },
+ "gancho": {
+  "layout": {
+   "split": true,
+   "topo": 290
+  },
+  "fim": "f2:não-0.1",
+  "blocos": [
+   {
+    "ini": 0,
+    "linhas": [
+     {
+      "texto": "PARIS",
+      "tam": 150,
+      "em": 0
+     },
+     {
+      "texto": "NÃO QUER",
+      "tam": 112,
+      "em": "f1:não-0.05"
+     },
+     {
+      "texto": "VOCÊ LÁ.",
+      "tam": 112,
+      "cor": "vermelho",
+      "em": "f1:você-0.05"
+     }
+    ]
+   },
+   {
+    "ini": "f2:Pelo-0.05",
+    "linhas": [
+     {
+      "texto": "PELO",
+      "tam": 150,
+      "em": "f2:Pelo-0.05"
+     },
+     {
+      "texto": "MENOS…",
+      "tam": 150,
+      "cor": "ambar",
+      "em": "f2:menos-0.05"
+     }
+    ]
+   }
+  ]
+ },
+ "chaves": [
+  {
+   "ini": "f2:não-0.1",
+   "fim": "f3:Segundo-0.05",
+   "linhas": [
+    {
+     "texto": "NÃO SE VOCÊ FOR",
+     "estilo": "titulo",
+     "em": "f2:não-0.05"
+    },
+    {
+     "texto": "igual a todo mundo",
+     "estilo": "serifa",
+     "em": "f2:igual-0.05"
+    }
+   ]
+  }
+ ],
+ "cenas": [
+  {
+   "id": "abertura",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "policia",
+   "ini": 0,
+   "fim": "f2:não-0.1",
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ],
+   "foco_fim": [
+    0.55,
+    0.5
+   ],
+   "fita": [
+    {
+     "em": "f1:lá-0.15",
+     "y": 700,
+     "giro": -7,
+     "lado": "esq"
+    },
+    {
+     "em": "f2:Pelo-0.1",
+     "y": 780,
+     "giro": 5,
+     "lado": "dir"
+    }
+   ],
+   "marcos": {
+    "fita0": "f1:lá-0.15",
+    "fita1": "f2:Pelo-0.1"
+   },
+   "nota": "Pedido do Diego: policial, Torre Eiffel ao fundo e fita zebrada, como a abertura de Bruges. Foto real (Commons, CC BY 2.0); a fita é desenho chapado por cima",
+   "aspecto": 1.4934
+  },
+  {
+   "id": "diego_chave",
+   "tipo": "fala",
+   "transicao": "empurrao",
+   "ini": "f2:não-0.1",
+   "fim": "f3:aqui-0.12",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "nota": "Empurrão para a tela cheia: 'pelo menos, não se você for igual a todo mundo' (pedido do Diego)"
+  },
+  {
+   "id": "ranking",
+   "tipo": "anim",
+   "anim": "ranking",
+   "layout": "split",
+   "print": "print",
+   "ini": "f3:aqui-0.12",
+   "fim": "f3:pelo",
+   "marcos": {
+    "primeiro": "f3:primeiro"
+   },
+   "transicao": "queda",
+   "nota": "O Diego aponta para cima e o print da Euromonitor cai na metade de cima (pedido do Diego)"
+  },
+  {
+   "id": "multidao",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_2895.MOV",
+   "transicao": "zoom",
+   "ini": "f3:pelo",
+   "fim": "f4:Hospedagem-0.3",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco_x": 0.5,
+   "letreiro": [
+    {
+     "texto": "5º ANO",
+     "tam": 200,
+     "em": "f3:quinto-0.05",
+     "cor": "ambar"
+    },
+    {
+     "texto": "SEGUIDO",
+     "tam": 150,
+     "em": "f3:seguido-0.05"
+    }
+   ],
+   "nota": "Primeiro destino do mundo pelo 5º ano: a Champs-Élysées lotada. 'Você tem ideia do que isso faz com a cidade?'"
+  },
+  {
+   "id": "lista",
+   "tipo": "anim",
+   "anim": "lista",
+   "layout": "split",
+   "ini": "f4:Hospedagem-0.3",
+   "fim": "f4:isso-0.1",
+   "itens": [
+    {
+     "foto": "hotel",
+     "linhas": [
+      "HOSPEDAGEM",
+      "CARA"
+     ],
+     "em": "hosp"
+    },
+    {
+     "foto": "multidao",
+     "linhas": [
+      "PONTOS",
+      "TURÍSTICOS"
+     ],
+     "em": "pontos",
+     "foco": [
+      0.62,
+      0.6
+     ]
+    },
+    {
+     "foto": "restaurante",
+     "linhas": [
+      "RESTAURANTES",
+      "LOTADOS"
+     ],
+     "em": "rest"
+    }
+   ],
+   "marcos": {
+    "hosp": "f4:Hospedagem",
+    "pontos": "f4:pontos",
+    "rest": "f4:restaurantes"
+   }
+  },
+  {
+   "id": "mona",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "mona",
+   "ini": "f4:isso-0.1",
+   "fim": "f5:Agora-0.1",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.45,
+    0.45
+   ],
+   "foco_fim": [
+    0.55,
+    0.4
+   ],
+   "letreiro": [
+    {
+     "texto": "DÓI NA",
+     "tam": 130,
+     "em": "f4:dói-0.05"
+    },
+    {
+     "texto": "CONTA",
+     "tam": 170,
+     "em": "f4:conta-0.05",
+     "cor": "vermelho"
+    }
+   ],
+   "nota": "Atrapalha a experiência: a multidão diante da Mona Lisa (Commons, CC0)"
+  },
+  {
+   "id": "diego_virada",
+   "tipo": "fala",
+   "transicao": "clarao",
+   "ini": "f5:Agora-0.1",
+   "fim": "f5:três-0.1",
+   "zoom": [
+    1.04,
+    1.1
+   ],
+   "nota": "Virada 'Agora, cá entre nós, dá pra fazer diferente'"
+  },
+  {
+   "id": "gato",
+   "tipo": "anim",
+   "anim": "gato",
+   "layout": "split",
+   "ini": "f5:três-0.1",
+   "fim": "f6:fique-0.05",
+   "marcos": {
+    "tres": "f5:três",
+    "gato": "f5:gato"
+   },
+   "nota": "Três pulos do gato: ilustração em traço"
+  },
+  {
+   "id": "dica1",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3137.MOV",
+   "transicao": "luz",
+   "ini": "f6:fique-0.05",
+   "fim": "f7:Dois-0.12",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco_x": 0.5,
+   "numero": 1,
+   "calendario": true,
+   "marcos": {
+    "numero": "f6:fique-0.05",
+    "quatro": "f6:quatro",
+    "dias": "f6:dias",
+    "sai": "f6:encantar"
+   },
+   "nota": "Dica 1: 4 dias; a imagem é o pôr do sol dourado do Jardim de Luxemburgo",
+   "grade": "saturate(1.15) contrast(1.06)"
+  },
+  {
+   "id": "dica2",
+   "tipo": "foto",
+   "layout": "split",
+   "foto": "chartier",
+   "foto2": "prato",
+   "transicao": "whip",
+   "ini": "f7:Dois-0.12",
+   "fim": "f8:três-0.15",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.5,
+    0.45
+   ],
+   "kb2": [
+    1.02,
+    1.1
+   ],
+   "foco2": [
+    0.55,
+    0.55
+   ],
+   "numero": 2,
+   "marcos": {
+    "numero": "f7:Dois",
+    "troca": "f7:comida"
+   },
+   "nota": "Dica 2: Bouillon Chartier (salão, Commons CC0) e um prato de lá (bœuf bourguignon, Commons CC0)"
+  },
+  {
+   "id": "dica3",
+   "tipo": "anim",
+   "anim": "mapa9",
+   "layout": "split",
+   "ini": "f8:três-0.15",
+   "fim": "f8:muito-0.2",
+   "numero": 3,
+   "marcos": {
+    "numero": "f8:três",
+    "nono": "f8:nono"
+   },
+   "nota": "Dica 3: os 20 distritos; o 9º acende"
+  },
+  {
+   "id": "opera",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3062.MOV",
+   "transicao": "mergulho",
+   "ini": "f8:muito-0.2",
+   "fim": "f9:Paris+0.05",
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "foco_x": 0.35,
+   "nota": "Muito bem localizado: a Ópera Garnier e a cidade vistas do 9º"
+  },
+  {
+   "id": "madame",
+   "tipo": "broll",
+   "layout": "full",
+   "arquivo": "IMG_2807.MOV",
+   "ini": "f9:Paris+0.05",
+   "fim": "f10:Europa-0.3",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "foco_x": 0.5,
+   "nota": "A Madame Paris e o formigueiro: a câmera desce da Torre para a multidão"
+  },
+  {
+   "id": "cta",
+   "tipo": "broll",
+   "layout": "full",
+   "arquivo": "IMG_3171.MOV",
+   "transicao": "luz",
+   "ini": "f10:Europa-0.3",
+   "fim": "fim",
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "foco_x": 0.5,
+   "nota": "CTA: a Torre acesa + placa do DS V2"
+  }
+ ],
+ "legenda": {
+  "destaques": {
+   "f3": [
+    "euromonitor",
+    "primeiro",
+    "quinto",
+    "cidade"
+   ],
+   "f4": [
+    "experiência",
+    "bancária"
+   ],
+   "f5": [
+    "diferente",
+    "gato",
+    "paris"
+   ],
+   "f6": [
+    "quatro",
+    "dourada"
+   ],
+   "f7": [
+    "bouillon",
+    "francesa",
+    "bolso"
+   ],
+   "f8": [
+    "nono",
+    "calmo",
+    "localizado"
+   ],
+   "f9": [
+    "madame",
+    "formigueiro"
+   ],
+   "f10": [
+    "europa",
+    "perfil",
+    "perrengue"
+   ]
+  },
+  "troca": {
+   "f3:primeiro": "1º",
+   "quinto": "5º",
+   "quatro": "4",
+   "f6:um": "1.",
+   "f7:dois": "2.",
+   "f8:três": "3.",
+   "f5:três": "3",
+   "nono": "9º"
+  },
+  "quebrar_antes": [
+   "f8:Você",
+   "f10:já"
+  ],
+  "sem_legenda": [
+   [
+    "f2:não-0.1",
+    "f3:Segundo-0.05"
+   ],
+   [
+    "f4:Hospedagem-0.3",
+    "f4:isso-0.1"
+   ]
+  ]
+ },
+ "sons": [
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f2:não-0.1",
+   "desl": 0.3,
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "empurrão"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f3:aqui-0.12",
+   "desl": 0.36,
+   "rel_db": -4,
+   "alinhar": "pico",
+   "nota": "o print pousa"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f3:quinto",
+   "rel_db": -4,
+   "alinhar": "pico",
+   "nota": "5º ANO"
+  },
+  {
+   "arquivo": "PDX_pagina.wav",
+   "em": "f4:Hospedagem",
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "1º cartão"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f4:dói",
+   "rel_db": -4,
+   "alinhar": "pico",
+   "nota": "DÓI NA CONTA"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f5:Agora-0.1",
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "clarão"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f5:três",
+   "desl": 0.45,
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "1º pulo do gato"
+  },
+  {
+   "arquivo": "PDX_ar_longo.wav",
+   "em": "f6:fique-0.05",
+   "desl": -0.02,
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "luz de passagem"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f7:Dois-0.12",
+   "desl": 0.13,
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "chicote"
+  },
+  {
+   "arquivo": "PDX_obturador.wav",
+   "em": "f8:nono",
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "o 9º acende"
+  },
+  {
+   "arquivo": "PDX_ar_longo.wav",
+   "em": "f8:muito-0.2",
+   "desl": 0.1,
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "mergulho no 9º"
+  },
+  {
+   "arquivo": "PDX_ar_longo.wav",
+   "em": "f10:Europa-0.3",
+   "desl": -0.02,
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "luz de passagem para o CTA"
+  }
+ ],
+ "cta": {
+  "ini": "f10:aqui-0.05",
+  "rotulo": "ACOMPANHA AQUI",
+  "destino": "PRIMEIRO DIA",
+  "modulo": "seta",
+  "entrada_ms": 0,
+  "clack_db_rel": -6,
+  "cauda": 1.0
+ }
+}
