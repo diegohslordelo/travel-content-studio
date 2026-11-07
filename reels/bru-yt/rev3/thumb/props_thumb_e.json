@@ -1,0 +1,27 @@
+{
+ "foto": "foto_casal_atomium_selfie.jpg",
+ "fotoLargura": 1500,
+ "fotoX": -10,
+ "fotoY": -530,
+ "reciboX": 1010,
+ "reciboY": 40,
+ "reciboEscala": 0.42,
+ "destino": "BRUXELAS",
+ "recibo": {
+  "lugar": "1 DIA · 2 PESSOAS",
+  "cabecalho": "15/03 · COM HOTEL",
+  "linhas": [
+   [
+    "Metrô e comida",
+    "€ ???"
+   ],
+   [
+    "Hotel",
+    "€ ???"
+   ]
+  ],
+  "total": "€ ???",
+  "real": "valeu a pena?",
+  "rodape": "descubra no vídeo"
+ }
+}
