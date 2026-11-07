@@ -1,0 +1,212 @@
+[
+ {
+  "tipo": "palavra esticada [É]",
+  "de": 150.58,
+  "ate": 151.14,
+  "vozeado": 0.39,
+  "antes": "menininho",
+  "depois": "do",
+  "segunda": "Bem -vindo.",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   150.8,
+   151.12
+  ]
+ },
+ {
+  "tipo": "buraco com voz",
+  "de": 153.11,
+  "ate": 153.43,
+  "vozeado": 0.54,
+  "antes": "quê?",
+  "depois": "Gente,",
+  "segunda": "Ok?",
+  "miolo": "Ok?",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "tipo": "palavra esticada [É]",
+  "de": 158.31,
+  "ate": 158.95,
+  "vozeado": 0.37,
+  "antes": "direito",
+  "depois": "E",
+  "segunda": "Ó, agirita.",
+  "miolo": "agirita.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "tipo": "palavra esticada [E]",
+  "de": 158.95,
+  "ate": 159.71,
+  "vozeado": 0.33,
+  "antes": "É",
+  "depois": "se",
+  "segunda": "Ééé...",
+  "miolo": "Ééé...",
+  "cortar": true,
+  "corte": [
+   159.17,
+   159.69
+  ]
+ },
+ {
+  "tipo": "palavra esticada [E]",
+  "de": 169.66,
+  "ate": 170.4,
+  "vozeado": 0.15,
+  "antes": "comer",
+  "depois": "viemos",
+  "segunda": "Ficou meio...",
+  "miolo": "meio...",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "tipo": "palavra esticada [E]",
+  "de": 175.74,
+  "ate": 176.62,
+  "vozeado": 0.14,
+  "antes": "Bruxelas",
+  "depois": "pedimos",
+  "segunda": "E...",
+  "miolo": "E...",
+  "cortar": true,
+  "corte": [
+   175.96,
+   176.6
+  ]
+ },
+ {
+  "tipo": "palavra esticada [E]",
+  "de": 261.66,
+  "ate": 262.28,
+  "vozeado": 0.12,
+  "antes": "linda",
+  "depois": "aqui",
+  "segunda": "Muito linda.",
+  "miolo": "linda.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "tipo": "palavra esticada [E]",
+  "de": 342.05,
+  "ate": 342.69,
+  "vozeado": 0.0,
+  "antes": "Bélgica.",
+  "depois": "agora",
+  "segunda": "Música.",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   342.27,
+   342.67
+  ]
+ },
+ {
+  "tipo": "palavra esticada [E]",
+  "de": 381.06,
+  "ate": 381.82,
+  "vozeado": 0.08,
+  "antes": "carro",
+  "depois": "são",
+  "segunda": "Calma.",
+  "miolo": "Calma.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "tipo": "palavra esticada [E]",
+  "de": 491.47,
+  "ate": 492.05,
+  "vozeado": 0.16,
+  "antes": "difícil",
+  "depois": "ele",
+  "segunda": "Obrigada.",
+  "miolo": "Obrigada.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "tipo": "palavra esticada [E]",
+  "de": 592.9,
+  "ate": 593.74,
+  "vozeado": 0.37,
+  "antes": "maneira",
+  "depois": "aí",
+  "segunda": "Maneira.",
+  "miolo": "Maneira.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "tipo": "palavra esticada [E]",
+  "de": 652.32,
+  "ate": 653.2,
+  "vozeado": 0.0,
+  "antes": "Madalena",
+  "depois": "aí",
+  "segunda": "Não, não, não, não.",
+  "miolo": "não, não.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "tipo": "buraco com voz",
+  "de": 703.52,
+  "ate": 703.84,
+  "vozeado": 0.46,
+  "antes": "famoso.",
+  "depois": "Aqui",
+  "segunda": "Famoso.",
+  "miolo": "Famoso.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "tipo": "buraco com voz",
+  "de": 763.86,
+  "ate": 765.02,
+  "vozeado": 0.39,
+  "antes": "cosquinha.",
+  "depois": "Ai,",
+  "segunda": "Tchau, tchau.",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   763.94,
+   764.94
+  ]
+ },
+ {
+  "tipo": "buraco com voz",
+  "de": 806.04,
+  "ate": 806.44,
+  "vozeado": 0.53,
+  "antes": "Spago",
+  "depois": "Ristorante,",
+  "segunda": "Bagulho.",
+  "miolo": "Bagulho.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "tipo": "buraco com voz",
+  "de": 825.42,
+  "ate": 825.76,
+  "vozeado": 0.53,
+  "antes": "aqui,",
+  "depois": "Foi",
+  "segunda": "E o aqui?",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   825.5,
+   825.68
+  ]
+ }
+]

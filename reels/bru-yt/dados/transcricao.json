@@ -1,0 +1,11265 @@
+{
+ "modelo": "faster-whisper large-v3 int8 beam5",
+ "segundos": 709,
+ "segmentos": [
+  {
+   "ini": 0.34,
+   "fim": 6.55,
+   "texto": "Bom dia, Bélgica! Chegamos em mais um destino da nossa viagem.",
+   "conf": -0.159,
+   "sem_fala": 0.023,
+   "palavras": [
+    {
+     "p": "Bom",
+     "ini": 0.34,
+     "fim": 0.56,
+     "prob": 0.853
+    },
+    {
+     "p": "dia,",
+     "ini": 0.56,
+     "fim": 0.92,
+     "prob": 0.99
+    },
+    {
+     "p": "Bélgica!",
+     "ini": 1.14,
+     "fim": 1.8,
+     "prob": 0.782
+    },
+    {
+     "p": "Chegamos",
+     "ini": 3.06,
+     "fim": 3.5,
+     "prob": 0.983
+    },
+    {
+     "p": "em",
+     "ini": 3.5,
+     "fim": 4.24,
+     "prob": 0.857
+    },
+    {
+     "p": "mais",
+     "ini": 4.55,
+     "fim": 5.09,
+     "prob": 0.994
+    },
+    {
+     "p": "um",
+     "ini": 5.09,
+     "fim": 5.23,
+     "prob": 0.995
+    },
+    {
+     "p": "destino",
+     "ini": 5.23,
+     "fim": 5.71,
+     "prob": 0.998
+    },
+    {
+     "p": "da",
+     "ini": 5.71,
+     "fim": 5.83,
+     "prob": 0.977
+    },
+    {
+     "p": "nossa",
+     "ini": 5.83,
+     "fim": 5.97,
+     "prob": 0.997
+    },
+    {
+     "p": "viagem.",
+     "ini": 5.97,
+     "fim": 6.55,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 7.49,
+   "fim": 12.55,
+   "texto": "Nós vamos passar o dia aqui em Bruxelas e amanhã vamos fazer um bate-volta para Bruges.",
+   "conf": -0.159,
+   "sem_fala": 0.023,
+   "palavras": [
+    {
+     "p": "Nós",
+     "ini": 7.49,
+     "fim": 7.93,
+     "prob": 0.98
+    },
+    {
+     "p": "vamos",
+     "ini": 7.93,
+     "fim": 8.17,
+     "prob": 0.996
+    },
+    {
+     "p": "passar",
+     "ini": 8.17,
+     "fim": 8.51,
+     "prob": 0.995
+    },
+    {
+     "p": "o",
+     "ini": 8.51,
+     "fim": 8.71,
+     "prob": 0.971
+    },
+    {
+     "p": "dia",
+     "ini": 8.71,
+     "fim": 8.93,
+     "prob": 0.999
+    },
+    {
+     "p": "aqui",
+     "ini": 8.93,
+     "fim": 9.13,
+     "prob": 0.985
+    },
+    {
+     "p": "em",
+     "ini": 9.13,
+     "fim": 9.27,
+     "prob": 0.988
+    },
+    {
+     "p": "Bruxelas",
+     "ini": 9.27,
+     "fim": 9.73,
+     "prob": 0.997
+    },
+    {
+     "p": "e",
+     "ini": 9.73,
+     "fim": 10.23,
+     "prob": 0.832
+    },
+    {
+     "p": "amanhã",
+     "ini": 10.23,
+     "fim": 10.69,
+     "prob": 0.989
+    },
+    {
+     "p": "vamos",
+     "ini": 10.69,
+     "fim": 10.81,
+     "prob": 0.984
+    },
+    {
+     "p": "fazer",
+     "ini": 10.81,
+     "fim": 11.07,
+     "prob": 0.999
+    },
+    {
+     "p": "um",
+     "ini": 11.07,
+     "fim": 11.27,
+     "prob": 0.991
+    },
+    {
+     "p": "bate",
+     "ini": 11.27,
+     "fim": 11.49,
+     "prob": 0.942
+    },
+    {
+     "p": "-volta",
+     "ini": 11.49,
+     "fim": 11.93,
+     "prob": 0.743
+    },
+    {
+     "p": "para",
+     "ini": 11.93,
+     "fim": 12.11,
+     "prob": 0.984
+    },
+    {
+     "p": "Bruges.",
+     "ini": 12.11,
+     "fim": 12.55,
+     "prob": 0.849
+    }
+   ]
+  },
+  {
+   "ini": 12.89,
+   "fim": 15.69,
+   "texto": "Então o nosso dia hoje vai ser modo turbo.",
+   "conf": -0.159,
+   "sem_fala": 0.023,
+   "palavras": [
+    {
+     "p": "Então",
+     "ini": 12.89,
+     "fim": 13.15,
+     "prob": 0.761
+    },
+    {
+     "p": "o",
+     "ini": 13.55,
+     "fim": 13.63,
+     "prob": 0.724
+    },
+    {
+     "p": "nosso",
+     "ini": 13.63,
+     "fim": 13.83,
+     "prob": 0.997
+    },
+    {
+     "p": "dia",
+     "ini": 13.83,
+     "fim": 14.09,
+     "prob": 0.99
+    },
+    {
+     "p": "hoje",
+     "ini": 14.09,
+     "fim": 14.27,
+     "prob": 0.884
+    },
+    {
+     "p": "vai",
+     "ini": 14.27,
+     "fim": 14.43,
+     "prob": 0.977
+    },
+    {
+     "p": "ser",
+     "ini": 14.43,
+     "fim": 14.61,
+     "prob": 0.93
+    },
+    {
+     "p": "modo",
+     "ini": 14.61,
+     "fim": 14.95,
+     "prob": 0.897
+    },
+    {
+     "p": "turbo.",
+     "ini": 14.95,
+     "fim": 15.69,
+     "prob": 0.891
+    }
+   ]
+  },
+  {
+   "ini": 15.99,
+   "fim": 20.53,
+   "texto": "É isso, nós vamos ver o máximo de pontos turísticos que a gente consegue conhecer em um dia aqui.",
+   "conf": -0.159,
+   "sem_fala": 0.023,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 15.99,
+     "fim": 16.43,
+     "prob": 0.988
+    },
+    {
+     "p": "isso,",
+     "ini": 16.43,
+     "fim": 16.73,
+     "prob": 0.997
+    },
+    {
+     "p": "nós",
+     "ini": 16.87,
+     "fim": 17.01,
+     "prob": 0.99
+    },
+    {
+     "p": "vamos",
+     "ini": 17.01,
+     "fim": 17.21,
+     "prob": 1.0
+    },
+    {
+     "p": "ver",
+     "ini": 17.21,
+     "fim": 17.45,
+     "prob": 0.999
+    },
+    {
+     "p": "o",
+     "ini": 17.45,
+     "fim": 17.57,
+     "prob": 0.998
+    },
+    {
+     "p": "máximo",
+     "ini": 17.57,
+     "fim": 17.89,
+     "prob": 1.0
+    },
+    {
+     "p": "de",
+     "ini": 17.89,
+     "fim": 18.13,
+     "prob": 0.999
+    },
+    {
+     "p": "pontos",
+     "ini": 18.13,
+     "fim": 18.33,
+     "prob": 0.904
+    },
+    {
+     "p": "turísticos",
+     "ini": 18.33,
+     "fim": 18.91,
+     "prob": 0.984
+    },
+    {
+     "p": "que",
+     "ini": 18.91,
+     "fim": 19.07,
+     "prob": 0.998
+    },
+    {
+     "p": "a",
+     "ini": 19.07,
+     "fim": 19.15,
+     "prob": 0.997
+    },
+    {
+     "p": "gente",
+     "ini": 19.15,
+     "fim": 19.19,
+     "prob": 1.0
+    },
+    {
+     "p": "consegue",
+     "ini": 19.19,
+     "fim": 19.39,
+     "prob": 0.995
+    },
+    {
+     "p": "conhecer",
+     "ini": 19.39,
+     "fim": 19.77,
+     "prob": 1.0
+    },
+    {
+     "p": "em",
+     "ini": 19.77,
+     "fim": 19.99,
+     "prob": 0.998
+    },
+    {
+     "p": "um",
+     "ini": 19.99,
+     "fim": 20.07,
+     "prob": 0.997
+    },
+    {
+     "p": "dia",
+     "ini": 20.07,
+     "fim": 20.31,
+     "prob": 1.0
+    },
+    {
+     "p": "aqui.",
+     "ini": 20.31,
+     "fim": 20.53,
+     "prob": 0.998
+    }
+   ]
+  },
+  {
+   "ini": 20.79,
+   "fim": 25.87,
+   "texto": "Então a gente vai acelerar o nosso passo, vamos bater perna e vamos nessa.",
+   "conf": -0.159,
+   "sem_fala": 0.023,
+   "palavras": [
+    {
+     "p": "Então",
+     "ini": 20.79,
+     "fim": 21.23,
+     "prob": 0.998
+    },
+    {
+     "p": "a",
+     "ini": 21.72,
+     "fim": 21.86,
+     "prob": 0.996
+    },
+    {
+     "p": "gente",
+     "ini": 21.86,
+     "fim": 22.0,
+     "prob": 1.0
+    },
+    {
+     "p": "vai",
+     "ini": 22.0,
+     "fim": 22.14,
+     "prob": 1.0
+    },
+    {
+     "p": "acelerar",
+     "ini": 22.14,
+     "fim": 22.64,
+     "prob": 1.0
+    },
+    {
+     "p": "o",
+     "ini": 22.64,
+     "fim": 22.68,
+     "prob": 0.795
+    },
+    {
+     "p": "nosso",
+     "ini": 22.68,
+     "fim": 22.8,
+     "prob": 1.0
+    },
+    {
+     "p": "passo,",
+     "ini": 22.8,
+     "fim": 23.2,
+     "prob": 0.985
+    },
+    {
+     "p": "vamos",
+     "ini": 23.28,
+     "fim": 23.4,
+     "prob": 0.998
+    },
+    {
+     "p": "bater",
+     "ini": 23.4,
+     "fim": 23.72,
+     "prob": 0.995
+    },
+    {
+     "p": "perna",
+     "ini": 23.72,
+     "fim": 24.32,
+     "prob": 0.998
+    },
+    {
+     "p": "e",
+     "ini": 24.32,
+     "fim": 24.8,
+     "prob": 0.994
+    },
+    {
+     "p": "vamos",
+     "ini": 25.33,
+     "fim": 25.63,
+     "prob": 0.998
+    },
+    {
+     "p": "nessa.",
+     "ini": 25.63,
+     "fim": 25.87,
+     "prob": 0.959
+    }
+   ]
+  },
+  {
+   "ini": 25.87,
+   "fim": 67.32,
+   "texto": "Primeira parada, Atomium, aqui em Bruxelas, a gente veio de metrô, acabamos de chegar, ele é enorme, não sei se dá para ter dimensão por filmagem, mas ele é muito grande, ele é conhecido como a Torre Eiffel daqui de Bruxelas, um ponto turístico que é obrigatório.",
+   "conf": -0.209,
+   "sem_fala": 0.371,
+   "palavras": [
+    {
+     "p": "Primeira",
+     "ini": 25.87,
+     "fim": 26.69,
+     "prob": 0.567
+    },
+    {
+     "p": "parada,",
+     "ini": 47.16,
+     "fim": 47.74,
+     "prob": 0.973
+    },
+    {
+     "p": "Atomium,",
+     "ini": 47.74,
+     "fim": 48.76,
+     "prob": 0.84
+    },
+    {
+     "p": "aqui",
+     "ini": 49.24,
+     "fim": 49.94,
+     "prob": 0.962
+    },
+    {
+     "p": "em",
+     "ini": 49.94,
+     "fim": 50.06,
+     "prob": 0.978
+    },
+    {
+     "p": "Bruxelas,",
+     "ini": 50.06,
+     "fim": 50.56,
+     "prob": 0.985
+    },
+    {
+     "p": "a",
+     "ini": 50.82,
+     "fim": 51.04,
+     "prob": 0.949
+    },
+    {
+     "p": "gente",
+     "ini": 51.04,
+     "fim": 51.2,
+     "prob": 0.998
+    },
+    {
+     "p": "veio",
+     "ini": 51.2,
+     "fim": 51.42,
+     "prob": 0.996
+    },
+    {
+     "p": "de",
+     "ini": 51.42,
+     "fim": 51.62,
+     "prob": 0.986
+    },
+    {
+     "p": "metrô,",
+     "ini": 51.64,
+     "fim": 52.74,
+     "prob": 0.965
+    },
+    {
+     "p": "acabamos",
+     "ini": 52.84,
+     "fim": 53.4,
+     "prob": 0.981
+    },
+    {
+     "p": "de",
+     "ini": 53.4,
+     "fim": 53.56,
+     "prob": 0.997
+    },
+    {
+     "p": "chegar,",
+     "ini": 53.56,
+     "fim": 53.86,
+     "prob": 0.991
+    },
+    {
+     "p": "ele",
+     "ini": 54.04,
+     "fim": 54.22,
+     "prob": 0.946
+    },
+    {
+     "p": "é",
+     "ini": 54.22,
+     "fim": 54.36,
+     "prob": 0.996
+    },
+    {
+     "p": "enorme,",
+     "ini": 54.36,
+     "fim": 55.18,
+     "prob": 0.989
+    },
+    {
+     "p": "não",
+     "ini": 55.46,
+     "fim": 56.24,
+     "prob": 0.391
+    },
+    {
+     "p": "sei",
+     "ini": 56.24,
+     "fim": 56.72,
+     "prob": 0.998
+    },
+    {
+     "p": "se",
+     "ini": 56.72,
+     "fim": 56.84,
+     "prob": 0.999
+    },
+    {
+     "p": "dá",
+     "ini": 56.84,
+     "fim": 56.98,
+     "prob": 0.956
+    },
+    {
+     "p": "para",
+     "ini": 56.98,
+     "fim": 57.14,
+     "prob": 0.335
+    },
+    {
+     "p": "ter",
+     "ini": 57.14,
+     "fim": 57.32,
+     "prob": 0.993
+    },
+    {
+     "p": "dimensão",
+     "ini": 57.32,
+     "fim": 57.9,
+     "prob": 0.995
+    },
+    {
+     "p": "por",
+     "ini": 57.9,
+     "fim": 58.44,
+     "prob": 0.966
+    },
+    {
+     "p": "filmagem,",
+     "ini": 58.46,
+     "fim": 59.04,
+     "prob": 0.998
+    },
+    {
+     "p": "mas",
+     "ini": 59.08,
+     "fim": 59.24,
+     "prob": 0.998
+    },
+    {
+     "p": "ele",
+     "ini": 59.24,
+     "fim": 59.4,
+     "prob": 0.996
+    },
+    {
+     "p": "é",
+     "ini": 59.4,
+     "fim": 59.54,
+     "prob": 0.999
+    },
+    {
+     "p": "muito",
+     "ini": 59.54,
+     "fim": 59.88,
+     "prob": 0.997
+    },
+    {
+     "p": "grande,",
+     "ini": 59.88,
+     "fim": 60.28,
+     "prob": 0.994
+    },
+    {
+     "p": "ele",
+     "ini": 61.1,
+     "fim": 61.22,
+     "prob": 0.326
+    },
+    {
+     "p": "é",
+     "ini": 61.22,
+     "fim": 62.66,
+     "prob": 0.998
+    },
+    {
+     "p": "conhecido",
+     "ini": 62.66,
+     "fim": 62.96,
+     "prob": 0.996
+    },
+    {
+     "p": "como",
+     "ini": 62.96,
+     "fim": 63.12,
+     "prob": 0.996
+    },
+    {
+     "p": "a",
+     "ini": 63.12,
+     "fim": 63.26,
+     "prob": 0.995
+    },
+    {
+     "p": "Torre",
+     "ini": 63.26,
+     "fim": 63.46,
+     "prob": 0.8
+    },
+    {
+     "p": "Eiffel",
+     "ini": 63.46,
+     "fim": 63.66,
+     "prob": 0.996
+    },
+    {
+     "p": "daqui",
+     "ini": 63.66,
+     "fim": 63.86,
+     "prob": 0.949
+    },
+    {
+     "p": "de",
+     "ini": 63.86,
+     "fim": 64.02,
+     "prob": 0.999
+    },
+    {
+     "p": "Bruxelas,",
+     "ini": 64.02,
+     "fim": 64.56,
+     "prob": 0.999
+    },
+    {
+     "p": "um",
+     "ini": 64.68,
+     "fim": 65.14,
+     "prob": 0.706
+    },
+    {
+     "p": "ponto",
+     "ini": 65.14,
+     "fim": 65.4,
+     "prob": 0.995
+    },
+    {
+     "p": "turístico",
+     "ini": 65.4,
+     "fim": 65.8,
+     "prob": 0.999
+    },
+    {
+     "p": "que",
+     "ini": 65.8,
+     "fim": 66.02,
+     "prob": 0.998
+    },
+    {
+     "p": "é",
+     "ini": 66.02,
+     "fim": 66.54,
+     "prob": 0.999
+    },
+    {
+     "p": "obrigatório.",
+     "ini": 66.54,
+     "fim": 67.32,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 67.72,
+   "fim": 73.54,
+   "texto": "Ele tem como você subir nele, mas a gente optou por não fazer.",
+   "conf": -0.201,
+   "sem_fala": 0.373,
+   "palavras": [
+    {
+     "p": "Ele",
+     "ini": 67.72,
+     "fim": 68.04,
+     "prob": 0.417
+    },
+    {
+     "p": "tem",
+     "ini": 68.04,
+     "fim": 69.06,
+     "prob": 0.811
+    },
+    {
+     "p": "como",
+     "ini": 69.06,
+     "fim": 69.52,
+     "prob": 0.983
+    },
+    {
+     "p": "você",
+     "ini": 69.52,
+     "fim": 69.74,
+     "prob": 0.992
+    },
+    {
+     "p": "subir",
+     "ini": 69.74,
+     "fim": 70.08,
+     "prob": 0.979
+    },
+    {
+     "p": "nele,",
+     "ini": 70.08,
+     "fim": 70.48,
+     "prob": 0.977
+    },
+    {
+     "p": "mas",
+     "ini": 70.58,
+     "fim": 71.3,
+     "prob": 0.988
+    },
+    {
+     "p": "a",
+     "ini": 71.3,
+     "fim": 71.52,
+     "prob": 0.966
+    },
+    {
+     "p": "gente",
+     "ini": 71.52,
+     "fim": 71.72,
+     "prob": 0.998
+    },
+    {
+     "p": "optou",
+     "ini": 71.72,
+     "fim": 72.04,
+     "prob": 0.977
+    },
+    {
+     "p": "por",
+     "ini": 72.04,
+     "fim": 72.16,
+     "prob": 0.989
+    },
+    {
+     "p": "não",
+     "ini": 72.16,
+     "fim": 72.44,
+     "prob": 0.998
+    },
+    {
+     "p": "fazer.",
+     "ini": 72.44,
+     "fim": 73.54,
+     "prob": 0.958
+    }
+   ]
+  },
+  {
+   "ini": 75.0,
+   "fim": 81.83,
+   "texto": "E ele também é localizado um pouquinho mais distante do centro da cidade, mas é bem bonito.",
+   "conf": -0.201,
+   "sem_fala": 0.373,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 75.0,
+     "fim": 75.32,
+     "prob": 0.942
+    },
+    {
+     "p": "ele",
+     "ini": 75.32,
+     "fim": 75.54,
+     "prob": 0.993
+    },
+    {
+     "p": "também",
+     "ini": 75.54,
+     "fim": 75.74,
+     "prob": 0.986
+    },
+    {
+     "p": "é",
+     "ini": 75.74,
+     "fim": 76.24,
+     "prob": 0.992
+    },
+    {
+     "p": "localizado",
+     "ini": 76.24,
+     "fim": 76.86,
+     "prob": 0.996
+    },
+    {
+     "p": "um",
+     "ini": 76.86,
+     "fim": 77.02,
+     "prob": 0.996
+    },
+    {
+     "p": "pouquinho",
+     "ini": 77.02,
+     "fim": 77.2,
+     "prob": 0.964
+    },
+    {
+     "p": "mais",
+     "ini": 77.2,
+     "fim": 77.4,
+     "prob": 0.999
+    },
+    {
+     "p": "distante",
+     "ini": 77.4,
+     "fim": 77.8,
+     "prob": 0.999
+    },
+    {
+     "p": "do",
+     "ini": 77.8,
+     "fim": 78.14,
+     "prob": 0.686
+    },
+    {
+     "p": "centro",
+     "ini": 78.14,
+     "fim": 78.62,
+     "prob": 1.0
+    },
+    {
+     "p": "da",
+     "ini": 78.62,
+     "fim": 78.88,
+     "prob": 0.999
+    },
+    {
+     "p": "cidade,",
+     "ini": 78.88,
+     "fim": 79.18,
+     "prob": 1.0
+    },
+    {
+     "p": "mas",
+     "ini": 79.48,
+     "fim": 80.06,
+     "prob": 0.998
+    },
+    {
+     "p": "é",
+     "ini": 80.33,
+     "fim": 81.37,
+     "prob": 0.984
+    },
+    {
+     "p": "bem",
+     "ini": 81.37,
+     "fim": 81.55,
+     "prob": 0.999
+    },
+    {
+     "p": "bonito.",
+     "ini": 81.55,
+     "fim": 81.83,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 82.15,
+   "fim": 90.64,
+   "texto": "É, e aí ele basicamente é um cristal de ferro aumentado de 165 bilhões de vezes.",
+   "conf": -0.201,
+   "sem_fala": 0.373,
+   "palavras": [
+    {
+     "p": "É,",
+     "ini": 82.15,
+     "fim": 82.53,
+     "prob": 0.539
+    },
+    {
+     "p": "e",
+     "ini": 82.69,
+     "fim": 83.29,
+     "prob": 0.94
+    },
+    {
+     "p": "aí",
+     "ini": 83.6,
+     "fim": 83.94,
+     "prob": 0.954
+    },
+    {
+     "p": "ele",
+     "ini": 83.94,
+     "fim": 84.4,
+     "prob": 0.501
+    },
+    {
+     "p": "basicamente",
+     "ini": 84.4,
+     "fim": 85.14,
+     "prob": 0.941
+    },
+    {
+     "p": "é",
+     "ini": 85.14,
+     "fim": 85.34,
+     "prob": 0.949
+    },
+    {
+     "p": "um",
+     "ini": 85.34,
+     "fim": 85.5,
+     "prob": 1.0
+    },
+    {
+     "p": "cristal",
+     "ini": 85.5,
+     "fim": 86.8,
+     "prob": 0.998
+    },
+    {
+     "p": "de",
+     "ini": 86.88,
+     "fim": 86.98,
+     "prob": 1.0
+    },
+    {
+     "p": "ferro",
+     "ini": 86.98,
+     "fim": 87.4,
+     "prob": 1.0
+    },
+    {
+     "p": "aumentado",
+     "ini": 87.48,
+     "fim": 88.74,
+     "prob": 0.991
+    },
+    {
+     "p": "de",
+     "ini": 88.74,
+     "fim": 88.86,
+     "prob": 0.755
+    },
+    {
+     "p": "165",
+     "ini": 88.86,
+     "fim": 89.56,
+     "prob": 0.996
+    },
+    {
+     "p": "bilhões",
+     "ini": 89.56,
+     "fim": 90.18,
+     "prob": 0.998
+    },
+    {
+     "p": "de",
+     "ini": 90.18,
+     "fim": 90.36,
+     "prob": 1.0
+    },
+    {
+     "p": "vezes.",
+     "ini": 90.36,
+     "fim": 90.64,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 90.68,
+   "fim": 94.38,
+   "texto": "Ele foi feito com a experiência para uma exposição aqui em 1958.",
+   "conf": -0.201,
+   "sem_fala": 0.373,
+   "palavras": [
+    {
+     "p": "Ele",
+     "ini": 90.68,
+     "fim": 90.86,
+     "prob": 0.997
+    },
+    {
+     "p": "foi",
+     "ini": 90.86,
+     "fim": 91.0,
+     "prob": 1.0
+    },
+    {
+     "p": "feito",
+     "ini": 91.0,
+     "fim": 91.26,
+     "prob": 1.0
+    },
+    {
+     "p": "com",
+     "ini": 91.26,
+     "fim": 91.38,
+     "prob": 0.969
+    },
+    {
+     "p": "a",
+     "ini": 91.38,
+     "fim": 91.4,
+     "prob": 0.582
+    },
+    {
+     "p": "experiência",
+     "ini": 91.4,
+     "fim": 91.84,
+     "prob": 1.0
+    },
+    {
+     "p": "para",
+     "ini": 91.84,
+     "fim": 92.38,
+     "prob": 0.627
+    },
+    {
+     "p": "uma",
+     "ini": 92.38,
+     "fim": 92.58,
+     "prob": 1.0
+    },
+    {
+     "p": "exposição",
+     "ini": 92.58,
+     "fim": 93.22,
+     "prob": 1.0
+    },
+    {
+     "p": "aqui",
+     "ini": 93.22,
+     "fim": 93.54,
+     "prob": 1.0
+    },
+    {
+     "p": "em",
+     "ini": 93.54,
+     "fim": 93.8,
+     "prob": 0.999
+    },
+    {
+     "p": "1958.",
+     "ini": 93.8,
+     "fim": 94.38,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 94.92,
+   "fim": 97.42,
+   "texto": "E eu até falei pro Diego, eu falei, sério, em 1958?",
+   "conf": -0.242,
+   "sem_fala": 0.449,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 94.92,
+     "fim": 95.32,
+     "prob": 0.125
+    },
+    {
+     "p": "eu",
+     "ini": 95.32,
+     "fim": 95.42,
+     "prob": 0.446
+    },
+    {
+     "p": "até",
+     "ini": 95.42,
+     "fim": 95.56,
+     "prob": 0.38
+    },
+    {
+     "p": "falei",
+     "ini": 95.56,
+     "fim": 95.76,
+     "prob": 0.994
+    },
+    {
+     "p": "pro",
+     "ini": 95.76,
+     "fim": 95.88,
+     "prob": 0.756
+    },
+    {
+     "p": "Diego,",
+     "ini": 95.88,
+     "fim": 96.14,
+     "prob": 0.965
+    },
+    {
+     "p": "eu",
+     "ini": 96.24,
+     "fim": 96.36,
+     "prob": 0.836
+    },
+    {
+     "p": "falei,",
+     "ini": 96.36,
+     "fim": 96.46,
+     "prob": 0.995
+    },
+    {
+     "p": "sério,",
+     "ini": 96.52,
+     "fim": 96.86,
+     "prob": 0.985
+    },
+    {
+     "p": "em",
+     "ini": 96.9,
+     "fim": 96.96,
+     "prob": 0.365
+    },
+    {
+     "p": "1958?",
+     "ini": 96.96,
+     "fim": 97.42,
+     "prob": 0.99
+    }
+   ]
+  },
+  {
+   "ini": 97.64,
+   "fim": 100.18,
+   "texto": "Porque você olha ali de perto e parece uma coisa tão moderna assim.",
+   "conf": -0.242,
+   "sem_fala": 0.449,
+   "palavras": [
+    {
+     "p": "Porque",
+     "ini": 97.64,
+     "fim": 97.92,
+     "prob": 0.983
+    },
+    {
+     "p": "você",
+     "ini": 97.92,
+     "fim": 98.06,
+     "prob": 0.756
+    },
+    {
+     "p": "olha",
+     "ini": 98.06,
+     "fim": 98.22,
+     "prob": 0.998
+    },
+    {
+     "p": "ali",
+     "ini": 98.22,
+     "fim": 98.4,
+     "prob": 0.517
+    },
+    {
+     "p": "de",
+     "ini": 98.4,
+     "fim": 98.54,
+     "prob": 0.741
+    },
+    {
+     "p": "perto",
+     "ini": 98.54,
+     "fim": 98.74,
+     "prob": 1.0
+    },
+    {
+     "p": "e",
+     "ini": 98.74,
+     "fim": 98.82,
+     "prob": 0.795
+    },
+    {
+     "p": "parece",
+     "ini": 98.82,
+     "fim": 98.96,
+     "prob": 0.999
+    },
+    {
+     "p": "uma",
+     "ini": 98.96,
+     "fim": 99.12,
+     "prob": 0.999
+    },
+    {
+     "p": "coisa",
+     "ini": 99.12,
+     "fim": 99.28,
+     "prob": 1.0
+    },
+    {
+     "p": "tão",
+     "ini": 99.28,
+     "fim": 99.42,
+     "prob": 1.0
+    },
+    {
+     "p": "moderna",
+     "ini": 99.42,
+     "fim": 99.9,
+     "prob": 1.0
+    },
+    {
+     "p": "assim.",
+     "ini": 99.9,
+     "fim": 100.18,
+     "prob": 0.747
+    }
+   ]
+  },
+  {
+   "ini": 100.82,
+   "fim": 103.8,
+   "texto": "É, ele é realmente muito enorme, muito moderno e muito bonito, velho.",
+   "conf": -0.242,
+   "sem_fala": 0.449,
+   "palavras": [
+    {
+     "p": "É,",
+     "ini": 100.82,
+     "fim": 101.02,
+     "prob": 0.681
+    },
+    {
+     "p": "ele",
+     "ini": 101.04,
+     "fim": 101.14,
+     "prob": 0.999
+    },
+    {
+     "p": "é",
+     "ini": 101.14,
+     "fim": 101.22,
+     "prob": 0.999
+    },
+    {
+     "p": "realmente",
+     "ini": 101.22,
+     "fim": 101.42,
+     "prob": 1.0
+    },
+    {
+     "p": "muito",
+     "ini": 101.42,
+     "fim": 101.72,
+     "prob": 1.0
+    },
+    {
+     "p": "enorme,",
+     "ini": 101.72,
+     "fim": 102.08,
+     "prob": 1.0
+    },
+    {
+     "p": "muito",
+     "ini": 102.12,
+     "fim": 102.38,
+     "prob": 1.0
+    },
+    {
+     "p": "moderno",
+     "ini": 102.38,
+     "fim": 102.98,
+     "prob": 0.998
+    },
+    {
+     "p": "e",
+     "ini": 102.98,
+     "fim": 103.0,
+     "prob": 0.999
+    },
+    {
+     "p": "muito",
+     "ini": 103.0,
+     "fim": 103.18,
+     "prob": 1.0
+    },
+    {
+     "p": "bonito,",
+     "ini": 103.18,
+     "fim": 103.56,
+     "prob": 1.0
+    },
+    {
+     "p": "velho.",
+     "ini": 103.68,
+     "fim": 103.8,
+     "prob": 0.898
+    }
+   ]
+  },
+  {
+   "ini": 104.33,
+   "fim": 107.73,
+   "texto": "E aí agora a gente vai continuar a nossa jornada por Bruxelas.",
+   "conf": -0.242,
+   "sem_fala": 0.449,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 104.33,
+     "fim": 104.67,
+     "prob": 0.999
+    },
+    {
+     "p": "aí",
+     "ini": 104.67,
+     "fim": 104.75,
+     "prob": 0.966
+    },
+    {
+     "p": "agora",
+     "ini": 104.75,
+     "fim": 104.95,
+     "prob": 0.973
+    },
+    {
+     "p": "a",
+     "ini": 104.95,
+     "fim": 105.07,
+     "prob": 1.0
+    },
+    {
+     "p": "gente",
+     "ini": 105.07,
+     "fim": 105.15,
+     "prob": 1.0
+    },
+    {
+     "p": "vai",
+     "ini": 105.15,
+     "fim": 105.25,
+     "prob": 1.0
+    },
+    {
+     "p": "continuar",
+     "ini": 105.25,
+     "fim": 105.73,
+     "prob": 1.0
+    },
+    {
+     "p": "a",
+     "ini": 105.73,
+     "fim": 106.27,
+     "prob": 0.999
+    },
+    {
+     "p": "nossa",
+     "ini": 106.27,
+     "fim": 106.47,
+     "prob": 1.0
+    },
+    {
+     "p": "jornada",
+     "ini": 106.47,
+     "fim": 107.15,
+     "prob": 1.0
+    },
+    {
+     "p": "por",
+     "ini": 107.15,
+     "fim": 107.35,
+     "prob": 0.999
+    },
+    {
+     "p": "Bruxelas.",
+     "ini": 107.35,
+     "fim": 107.73,
+     "prob": 0.996
+    }
+   ]
+  },
+  {
+   "ini": 119.54,
+   "fim": 122.64,
+   "texto": "Coloquei aqui a segunda parada, falaram que tinha um cachorro mijando aqui.",
+   "conf": -0.242,
+   "sem_fala": 0.449,
+   "palavras": [
+    {
+     "p": "Coloquei",
+     "ini": 119.54,
+     "fim": 119.94,
+     "prob": 0.997
+    },
+    {
+     "p": "aqui",
+     "ini": 119.94,
+     "fim": 120.1,
+     "prob": 0.999
+    },
+    {
+     "p": "a",
+     "ini": 120.1,
+     "fim": 120.22,
+     "prob": 1.0
+    },
+    {
+     "p": "segunda",
+     "ini": 120.22,
+     "fim": 120.46,
+     "prob": 0.999
+    },
+    {
+     "p": "parada,",
+     "ini": 120.46,
+     "fim": 121.06,
+     "prob": 0.999
+    },
+    {
+     "p": "falaram",
+     "ini": 121.06,
+     "fim": 121.38,
+     "prob": 0.956
+    },
+    {
+     "p": "que",
+     "ini": 121.38,
+     "fim": 121.5,
+     "prob": 0.999
+    },
+    {
+     "p": "tinha",
+     "ini": 121.5,
+     "fim": 121.62,
+     "prob": 0.972
+    },
+    {
+     "p": "um",
+     "ini": 121.62,
+     "fim": 121.72,
+     "prob": 0.999
+    },
+    {
+     "p": "cachorro",
+     "ini": 121.72,
+     "fim": 122.12,
+     "prob": 1.0
+    },
+    {
+     "p": "mijando",
+     "ini": 122.12,
+     "fim": 122.42,
+     "prob": 0.987
+    },
+    {
+     "p": "aqui.",
+     "ini": 122.42,
+     "fim": 122.64,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 122.86,
+   "fim": 124.72,
+   "texto": "Porque em todo lugar tem alguma coisa mijando.",
+   "conf": -0.242,
+   "sem_fala": 0.449,
+   "palavras": [
+    {
+     "p": "Porque",
+     "ini": 122.86,
+     "fim": 123.18,
+     "prob": 0.911
+    },
+    {
+     "p": "em",
+     "ini": 123.18,
+     "fim": 123.32,
+     "prob": 0.909
+    },
+    {
+     "p": "todo",
+     "ini": 123.32,
+     "fim": 123.48,
+     "prob": 1.0
+    },
+    {
+     "p": "lugar",
+     "ini": 123.48,
+     "fim": 123.76,
+     "prob": 1.0
+    },
+    {
+     "p": "tem",
+     "ini": 123.76,
+     "fim": 123.9,
+     "prob": 1.0
+    },
+    {
+     "p": "alguma",
+     "ini": 123.9,
+     "fim": 124.06,
+     "prob": 0.876
+    },
+    {
+     "p": "coisa",
+     "ini": 124.06,
+     "fim": 124.28,
+     "prob": 1.0
+    },
+    {
+     "p": "mijando.",
+     "ini": 124.28,
+     "fim": 124.72,
+     "prob": 0.998
+    }
+   ]
+  },
+  {
+   "ini": 124.94,
+   "fim": 127.81,
+   "texto": "Vou mostrar o pôr do cachorro pra vocês, velho.",
+   "conf": -0.242,
+   "sem_fala": 0.449,
+   "palavras": [
+    {
+     "p": "Vou",
+     "ini": 124.94,
+     "fim": 125.3,
+     "prob": 0.822
+    },
+    {
+     "p": "mostrar",
+     "ini": 125.61,
+     "fim": 125.93,
+     "prob": 1.0
+    },
+    {
+     "p": "o",
+     "ini": 125.93,
+     "fim": 126.11,
+     "prob": 0.629
+    },
+    {
+     "p": "pôr",
+     "ini": 126.11,
+     "fim": 126.39,
+     "prob": 0.685
+    },
+    {
+     "p": "do",
+     "ini": 126.39,
+     "fim": 126.49,
+     "prob": 0.897
+    },
+    {
+     "p": "cachorro",
+     "ini": 126.49,
+     "fim": 126.97,
+     "prob": 1.0
+    },
+    {
+     "p": "pra",
+     "ini": 126.97,
+     "fim": 127.13,
+     "prob": 0.992
+    },
+    {
+     "p": "vocês,",
+     "ini": 127.13,
+     "fim": 127.51,
+     "prob": 0.999
+    },
+    {
+     "p": "velho.",
+     "ini": 127.57,
+     "fim": 127.81,
+     "prob": 0.997
+    }
+   ]
+  },
+  {
+   "ini": 128.23,
+   "fim": 129.69,
+   "texto": "Que cachorro é esse, velho?",
+   "conf": -0.242,
+   "sem_fala": 0.449,
+   "palavras": [
+    {
+     "p": "Que",
+     "ini": 128.23,
+     "fim": 128.39,
+     "prob": 1.0
+    },
+    {
+     "p": "cachorro",
+     "ini": 128.39,
+     "fim": 129.01,
+     "prob": 1.0
+    },
+    {
+     "p": "é",
+     "ini": 129.01,
+     "fim": 129.13,
+     "prob": 1.0
+    },
+    {
+     "p": "esse,",
+     "ini": 129.13,
+     "fim": 129.41,
+     "prob": 1.0
+    },
+    {
+     "p": "velho?",
+     "ini": 129.49,
+     "fim": 129.69,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 129.77,
+   "fim": 130.89,
+   "texto": "Vou mostrar o cachorro.",
+   "conf": -0.242,
+   "sem_fala": 0.449,
+   "palavras": [
+    {
+     "p": "Vou",
+     "ini": 129.77,
+     "fim": 129.99,
+     "prob": 0.656
+    },
+    {
+     "p": "mostrar",
+     "ini": 129.99,
+     "fim": 130.31,
+     "prob": 1.0
+    },
+    {
+     "p": "o",
+     "ini": 130.31,
+     "fim": 130.47,
+     "prob": 1.0
+    },
+    {
+     "p": "cachorro.",
+     "ini": 130.47,
+     "fim": 130.89,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 135.04,
+   "fim": 136.78,
+   "texto": "Ponto turístico de Bruxelas.",
+   "conf": -0.242,
+   "sem_fala": 0.449,
+   "palavras": [
+    {
+     "p": "Ponto",
+     "ini": 135.04,
+     "fim": 135.44,
+     "prob": 0.997
+    },
+    {
+     "p": "turístico",
+     "ini": 135.44,
+     "fim": 135.84,
+     "prob": 0.976
+    },
+    {
+     "p": "de",
+     "ini": 135.84,
+     "fim": 136.2,
+     "prob": 1.0
+    },
+    {
+     "p": "Bruxelas.",
+     "ini": 136.2,
+     "fim": 136.78,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 138.35,
+   "fim": 139.75,
+   "texto": "Um cachorro mijando.",
+   "conf": -0.242,
+   "sem_fala": 0.449,
+   "palavras": [
+    {
+     "p": "Um",
+     "ini": 138.35,
+     "fim": 138.75,
+     "prob": 0.895
+    },
+    {
+     "p": "cachorro",
+     "ini": 138.75,
+     "fim": 139.15,
+     "prob": 1.0
+    },
+    {
+     "p": "mijando.",
+     "ini": 139.15,
+     "fim": 139.75,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 139.75,
+   "fim": 145.06,
+   "texto": "E essa foi só a primeira das esculturas fazendo xixi que nós vamos ver hoje, tá?",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 139.75,
+     "fim": 140.07,
+     "prob": 0.024
+    },
+    {
+     "p": "essa",
+     "ini": 140.5,
+     "fim": 141.02,
+     "prob": 0.909
+    },
+    {
+     "p": "foi",
+     "ini": 141.02,
+     "fim": 141.28,
+     "prob": 0.982
+    },
+    {
+     "p": "só",
+     "ini": 141.28,
+     "fim": 141.46,
+     "prob": 0.412
+    },
+    {
+     "p": "a",
+     "ini": 141.46,
+     "fim": 141.54,
+     "prob": 0.96
+    },
+    {
+     "p": "primeira",
+     "ini": 141.54,
+     "fim": 141.84,
+     "prob": 0.982
+    },
+    {
+     "p": "das",
+     "ini": 141.84,
+     "fim": 142.12,
+     "prob": 0.96
+    },
+    {
+     "p": "esculturas",
+     "ini": 142.12,
+     "fim": 142.54,
+     "prob": 0.987
+    },
+    {
+     "p": "fazendo",
+     "ini": 142.54,
+     "fim": 143.28,
+     "prob": 0.795
+    },
+    {
+     "p": "xixi",
+     "ini": 143.28,
+     "fim": 143.96,
+     "prob": 0.957
+    },
+    {
+     "p": "que",
+     "ini": 143.96,
+     "fim": 144.14,
+     "prob": 0.778
+    },
+    {
+     "p": "nós",
+     "ini": 144.14,
+     "fim": 144.3,
+     "prob": 0.779
+    },
+    {
+     "p": "vamos",
+     "ini": 144.3,
+     "fim": 144.5,
+     "prob": 0.994
+    },
+    {
+     "p": "ver",
+     "ini": 144.5,
+     "fim": 144.64,
+     "prob": 0.985
+    },
+    {
+     "p": "hoje,",
+     "ini": 144.64,
+     "fim": 144.86,
+     "prob": 0.988
+    },
+    {
+     "p": "tá?",
+     "ini": 144.94,
+     "fim": 145.06,
+     "prob": 0.912
+    }
+   ]
+  },
+  {
+   "ini": 145.14,
+   "fim": 146.84,
+   "texto": "Tem mais duas aí de toda a cidade",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "Tem",
+     "ini": 145.14,
+     "fim": 145.54,
+     "prob": 0.836
+    },
+    {
+     "p": "mais",
+     "ini": 145.54,
+     "fim": 145.8,
+     "prob": 0.996
+    },
+    {
+     "p": "duas",
+     "ini": 145.8,
+     "fim": 146.06,
+     "prob": 0.99
+    },
+    {
+     "p": "aí",
+     "ini": 146.06,
+     "fim": 146.24,
+     "prob": 0.441
+    },
+    {
+     "p": "de",
+     "ini": 146.24,
+     "fim": 146.32,
+     "prob": 0.191
+    },
+    {
+     "p": "toda",
+     "ini": 146.32,
+     "fim": 146.44,
+     "prob": 0.697
+    },
+    {
+     "p": "a",
+     "ini": 146.44,
+     "fim": 146.56,
+     "prob": 0.745
+    },
+    {
+     "p": "cidade",
+     "ini": 146.56,
+     "fim": 146.84,
+     "prob": 0.992
+    }
+   ]
+  },
+  {
+   "ini": 146.84,
+   "fim": 148.96,
+   "texto": "Vai ser uma que é bem famosa",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "Vai",
+     "ini": 146.84,
+     "fim": 147.28,
+     "prob": 0.391
+    },
+    {
+     "p": "ser",
+     "ini": 147.28,
+     "fim": 147.48,
+     "prob": 0.907
+    },
+    {
+     "p": "uma",
+     "ini": 147.48,
+     "fim": 147.64,
+     "prob": 0.983
+    },
+    {
+     "p": "que",
+     "ini": 147.64,
+     "fim": 147.74,
+     "prob": 0.986
+    },
+    {
+     "p": "é",
+     "ini": 147.74,
+     "fim": 147.82,
+     "prob": 0.995
+    },
+    {
+     "p": "bem",
+     "ini": 147.82,
+     "fim": 148.2,
+     "prob": 0.997
+    },
+    {
+     "p": "famosa",
+     "ini": 148.2,
+     "fim": 148.96,
+     "prob": 0.988
+    }
+   ]
+  },
+  {
+   "ini": 148.96,
+   "fim": 149.3,
+   "texto": "É",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 148.96,
+     "fim": 149.3,
+     "prob": 0.471
+    }
+   ]
+  },
+  {
+   "ini": 149.3,
+   "fim": 150.58,
+   "texto": "Que é do menininho",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "Que",
+     "ini": 149.3,
+     "fim": 149.76,
+     "prob": 0.764
+    },
+    {
+     "p": "é",
+     "ini": 149.76,
+     "fim": 149.88,
+     "prob": 0.998
+    },
+    {
+     "p": "do",
+     "ini": 149.88,
+     "fim": 149.98,
+     "prob": 0.994
+    },
+    {
+     "p": "menininho",
+     "ini": 149.98,
+     "fim": 150.58,
+     "prob": 0.981
+    }
+   ]
+  },
+  {
+   "ini": 150.58,
+   "fim": 152.51,
+   "texto": "É do Phil?",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 150.58,
+     "fim": 151.14,
+     "prob": 0.079
+    },
+    {
+     "p": "do",
+     "ini": 152.09,
+     "fim": 152.25,
+     "prob": 0.361
+    },
+    {
+     "p": "Phil?",
+     "ini": 152.25,
+     "fim": 152.51,
+     "prob": 0.356
+    }
+   ]
+  },
+  {
+   "ini": 152.59,
+   "fim": 153.11,
+   "texto": "O quê?",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "O",
+     "ini": 152.59,
+     "fim": 152.83,
+     "prob": 0.359
+    },
+    {
+     "p": "quê?",
+     "ini": 152.83,
+     "fim": 153.11,
+     "prob": 0.563
+    }
+   ]
+  },
+  {
+   "ini": 153.43,
+   "fim": 157.07,
+   "texto": "Gente, eu juro, eu acho que meu corpo não raciocina mais, sério",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "Gente,",
+     "ini": 153.43,
+     "fim": 153.83,
+     "prob": 0.756
+    },
+    {
+     "p": "eu",
+     "ini": 153.87,
+     "fim": 154.07,
+     "prob": 0.581
+    },
+    {
+     "p": "juro,",
+     "ini": 154.07,
+     "fim": 154.33,
+     "prob": 0.886
+    },
+    {
+     "p": "eu",
+     "ini": 154.35,
+     "fim": 154.77,
+     "prob": 0.61
+    },
+    {
+     "p": "acho",
+     "ini": 154.77,
+     "fim": 155.01,
+     "prob": 1.0
+    },
+    {
+     "p": "que",
+     "ini": 155.01,
+     "fim": 155.09,
+     "prob": 0.998
+    },
+    {
+     "p": "meu",
+     "ini": 155.09,
+     "fim": 155.27,
+     "prob": 0.791
+    },
+    {
+     "p": "corpo",
+     "ini": 155.27,
+     "fim": 155.55,
+     "prob": 0.976
+    },
+    {
+     "p": "não",
+     "ini": 155.55,
+     "fim": 155.71,
+     "prob": 0.994
+    },
+    {
+     "p": "raciocina",
+     "ini": 155.71,
+     "fim": 156.21,
+     "prob": 0.972
+    },
+    {
+     "p": "mais,",
+     "ini": 156.21,
+     "fim": 156.49,
+     "prob": 0.999
+    },
+    {
+     "p": "sério",
+     "ini": 156.67,
+     "fim": 157.07,
+     "prob": 0.998
+    }
+   ]
+  },
+  {
+   "ini": 157.07,
+   "fim": 158.31,
+   "texto": "Você não tá conseguindo nem falar direito",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "Você",
+     "ini": 157.07,
+     "fim": 157.29,
+     "prob": 0.81
+    },
+    {
+     "p": "não",
+     "ini": 157.29,
+     "fim": 157.43,
+     "prob": 0.994
+    },
+    {
+     "p": "tá",
+     "ini": 157.43,
+     "fim": 157.51,
+     "prob": 0.835
+    },
+    {
+     "p": "conseguindo",
+     "ini": 157.51,
+     "fim": 157.75,
+     "prob": 0.996
+    },
+    {
+     "p": "nem",
+     "ini": 157.75,
+     "fim": 157.87,
+     "prob": 0.999
+    },
+    {
+     "p": "falar",
+     "ini": 157.87,
+     "fim": 158.09,
+     "prob": 1.0
+    },
+    {
+     "p": "direito",
+     "ini": 158.09,
+     "fim": 158.31,
+     "prob": 0.994
+    }
+   ]
+  },
+  {
+   "ini": 158.31,
+   "fim": 158.95,
+   "texto": "É",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 158.31,
+     "fim": 158.95,
+     "prob": 0.735
+    }
+   ]
+  },
+  {
+   "ini": 158.95,
+   "fim": 163.07,
+   "texto": "E se tem uma coisa que eu tô com saudade, eu juro por Deus, é do calor de Salvador",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 158.95,
+     "fim": 159.71,
+     "prob": 0.633
+    },
+    {
+     "p": "se",
+     "ini": 159.79,
+     "fim": 160.03,
+     "prob": 0.832
+    },
+    {
+     "p": "tem",
+     "ini": 160.03,
+     "fim": 160.21,
+     "prob": 0.973
+    },
+    {
+     "p": "uma",
+     "ini": 160.21,
+     "fim": 160.33,
+     "prob": 0.876
+    },
+    {
+     "p": "coisa",
+     "ini": 160.33,
+     "fim": 160.53,
+     "prob": 0.995
+    },
+    {
+     "p": "que",
+     "ini": 160.53,
+     "fim": 160.65,
+     "prob": 0.997
+    },
+    {
+     "p": "eu",
+     "ini": 160.65,
+     "fim": 160.69,
+     "prob": 0.995
+    },
+    {
+     "p": "tô",
+     "ini": 160.69,
+     "fim": 160.77,
+     "prob": 0.888
+    },
+    {
+     "p": "com",
+     "ini": 160.77,
+     "fim": 160.91,
+     "prob": 0.978
+    },
+    {
+     "p": "saudade,",
+     "ini": 160.91,
+     "fim": 161.69,
+     "prob": 0.992
+    },
+    {
+     "p": "eu",
+     "ini": 161.69,
+     "fim": 161.83,
+     "prob": 0.8
+    },
+    {
+     "p": "juro",
+     "ini": 161.83,
+     "fim": 161.95,
+     "prob": 0.999
+    },
+    {
+     "p": "por",
+     "ini": 161.95,
+     "fim": 162.11,
+     "prob": 0.613
+    },
+    {
+     "p": "Deus,",
+     "ini": 162.11,
+     "fim": 162.29,
+     "prob": 0.975
+    },
+    {
+     "p": "é",
+     "ini": 162.35,
+     "fim": 162.45,
+     "prob": 0.96
+    },
+    {
+     "p": "do",
+     "ini": 162.45,
+     "fim": 162.53,
+     "prob": 0.951
+    },
+    {
+     "p": "calor",
+     "ini": 162.53,
+     "fim": 162.69,
+     "prob": 0.165
+    },
+    {
+     "p": "de",
+     "ini": 162.69,
+     "fim": 162.91,
+     "prob": 0.465
+    },
+    {
+     "p": "Salvador",
+     "ini": 162.91,
+     "fim": 163.07,
+     "prob": 0.607
+    }
+   ]
+  },
+  {
+   "ini": 164.25,
+   "fim": 165.53,
+   "texto": "Que porra, sério",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "Que",
+     "ini": 164.25,
+     "fim": 164.65,
+     "prob": 0.132
+    },
+    {
+     "p": "porra,",
+     "ini": 164.65,
+     "fim": 165.05,
+     "prob": 0.961
+    },
+    {
+     "p": "sério",
+     "ini": 165.05,
+     "fim": 165.53,
+     "prob": 0.995
+    }
+   ]
+  },
+  {
+   "ini": 167.7,
+   "fim": 169.66,
+   "texto": "Tivemos que fazer uma parada para comer",
+   "conf": -0.241,
+   "sem_fala": 0.366,
+   "palavras": [
+    {
+     "p": "Tivemos",
+     "ini": 167.7,
+     "fim": 168.1,
+     "prob": 0.995
+    },
+    {
+     "p": "que",
+     "ini": 168.1,
+     "fim": 168.24,
+     "prob": 1.0
+    },
+    {
+     "p": "fazer",
+     "ini": 168.24,
+     "fim": 168.5,
+     "prob": 0.999
+    },
+    {
+     "p": "uma",
+     "ini": 168.5,
+     "fim": 168.68,
+     "prob": 0.999
+    },
+    {
+     "p": "parada",
+     "ini": 168.68,
+     "fim": 169.06,
+     "prob": 1.0
+    },
+    {
+     "p": "para",
+     "ini": 169.06,
+     "fim": 169.2,
+     "prob": 0.938
+    },
+    {
+     "p": "comer",
+     "ini": 169.2,
+     "fim": 169.66,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 169.66,
+   "fim": 175.74,
+   "texto": "E viemos na Fritland, que fica aqui de frente a bolsa de valores de Bruxelas",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 169.66,
+     "fim": 170.4,
+     "prob": 0.085
+    },
+    {
+     "p": "viemos",
+     "ini": 170.4,
+     "fim": 170.76,
+     "prob": 0.549
+    },
+    {
+     "p": "na",
+     "ini": 170.76,
+     "fim": 170.98,
+     "prob": 0.933
+    },
+    {
+     "p": "Fritland,",
+     "ini": 170.98,
+     "fim": 171.56,
+     "prob": 0.694
+    },
+    {
+     "p": "que",
+     "ini": 171.76,
+     "fim": 172.46,
+     "prob": 0.977
+    },
+    {
+     "p": "fica",
+     "ini": 172.66,
+     "fim": 172.96,
+     "prob": 0.99
+    },
+    {
+     "p": "aqui",
+     "ini": 172.96,
+     "fim": 173.16,
+     "prob": 0.853
+    },
+    {
+     "p": "de",
+     "ini": 173.16,
+     "fim": 173.26,
+     "prob": 0.257
+    },
+    {
+     "p": "frente",
+     "ini": 173.26,
+     "fim": 173.5,
+     "prob": 0.996
+    },
+    {
+     "p": "a",
+     "ini": 173.5,
+     "fim": 173.74,
+     "prob": 0.504
+    },
+    {
+     "p": "bolsa",
+     "ini": 173.74,
+     "fim": 174.14,
+     "prob": 0.837
+    },
+    {
+     "p": "de",
+     "ini": 174.14,
+     "fim": 174.2,
+     "prob": 0.993
+    },
+    {
+     "p": "valores",
+     "ini": 174.2,
+     "fim": 174.52,
+     "prob": 0.994
+    },
+    {
+     "p": "de",
+     "ini": 174.52,
+     "fim": 175.3,
+     "prob": 0.943
+    },
+    {
+     "p": "Bruxelas",
+     "ini": 175.3,
+     "fim": 175.74,
+     "prob": 0.991
+    }
+   ]
+  },
+  {
+   "ini": 175.74,
+   "fim": 180.62,
+   "texto": "E pedimos um pedido meio inusitado",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 175.74,
+     "fim": 176.62,
+     "prob": 0.304
+    },
+    {
+     "p": "pedimos",
+     "ini": 176.74,
+     "fim": 178.12,
+     "prob": 0.862
+    },
+    {
+     "p": "um",
+     "ini": 178.12,
+     "fim": 178.58,
+     "prob": 0.34
+    },
+    {
+     "p": "pedido",
+     "ini": 178.58,
+     "fim": 179.58,
+     "prob": 0.806
+    },
+    {
+     "p": "meio",
+     "ini": 179.58,
+     "fim": 179.82,
+     "prob": 0.98
+    },
+    {
+     "p": "inusitado",
+     "ini": 179.82,
+     "fim": 180.62,
+     "prob": 0.994
+    }
+   ]
+  },
+  {
+   "ini": 180.62,
+   "fim": 182.54,
+   "texto": "É um sanduíche de batata frita",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 180.62,
+     "fim": 180.96,
+     "prob": 0.694
+    },
+    {
+     "p": "um",
+     "ini": 180.96,
+     "fim": 181.12,
+     "prob": 0.998
+    },
+    {
+     "p": "sanduíche",
+     "ini": 181.12,
+     "fim": 181.66,
+     "prob": 0.988
+    },
+    {
+     "p": "de",
+     "ini": 181.66,
+     "fim": 181.86,
+     "prob": 0.992
+    },
+    {
+     "p": "batata",
+     "ini": 181.86,
+     "fim": 182.12,
+     "prob": 0.998
+    },
+    {
+     "p": "frita",
+     "ini": 182.12,
+     "fim": 182.54,
+     "prob": 0.994
+    }
+   ]
+  },
+  {
+   "ini": 182.54,
+   "fim": 184.74,
+   "texto": "Sanduíche não, gente, isso daqui não é um alaifante",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "Sanduíche",
+     "ini": 182.54,
+     "fim": 183.46,
+     "prob": 0.952
+    },
+    {
+     "p": "não,",
+     "ini": 183.46,
+     "fim": 183.66,
+     "prob": 0.936
+    },
+    {
+     "p": "gente,",
+     "ini": 183.72,
+     "fim": 183.86,
+     "prob": 0.965
+    },
+    {
+     "p": "isso",
+     "ini": 183.88,
+     "fim": 184.02,
+     "prob": 0.895
+    },
+    {
+     "p": "daqui",
+     "ini": 184.02,
+     "fim": 184.14,
+     "prob": 0.703
+    },
+    {
+     "p": "não",
+     "ini": 184.14,
+     "fim": 184.26,
+     "prob": 0.678
+    },
+    {
+     "p": "é",
+     "ini": 184.26,
+     "fim": 184.32,
+     "prob": 0.959
+    },
+    {
+     "p": "um",
+     "ini": 184.32,
+     "fim": 184.38,
+     "prob": 0.297
+    },
+    {
+     "p": "alaifante",
+     "ini": 184.38,
+     "fim": 184.74,
+     "prob": 0.594
+    }
+   ]
+  },
+  {
+   "ini": 184.74,
+   "fim": 186.86,
+   "texto": "Tem muita batata",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "Tem",
+     "ini": 184.74,
+     "fim": 185.3,
+     "prob": 0.438
+    },
+    {
+     "p": "muita",
+     "ini": 185.3,
+     "fim": 186.26,
+     "prob": 0.992
+    },
+    {
+     "p": "batata",
+     "ini": 186.26,
+     "fim": 186.86,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 186.86,
+   "fim": 187.94,
+   "texto": "É, e tem carne também",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "É,",
+     "ini": 186.86,
+     "fim": 187.04,
+     "prob": 0.676
+    },
+    {
+     "p": "e",
+     "ini": 187.04,
+     "fim": 187.14,
+     "prob": 0.926
+    },
+    {
+     "p": "tem",
+     "ini": 187.14,
+     "fim": 187.26,
+     "prob": 0.997
+    },
+    {
+     "p": "carne",
+     "ini": 187.26,
+     "fim": 187.54,
+     "prob": 0.999
+    },
+    {
+     "p": "também",
+     "ini": 187.54,
+     "fim": 187.94,
+     "prob": 0.996
+    }
+   ]
+  },
+  {
+   "ini": 187.94,
+   "fim": 189.22,
+   "texto": "E aí a gente vai dividir",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 187.94,
+     "fim": 188.28,
+     "prob": 0.971
+    },
+    {
+     "p": "aí",
+     "ini": 188.28,
+     "fim": 188.34,
+     "prob": 0.86
+    },
+    {
+     "p": "a",
+     "ini": 188.34,
+     "fim": 188.46,
+     "prob": 0.989
+    },
+    {
+     "p": "gente",
+     "ini": 188.46,
+     "fim": 188.56,
+     "prob": 1.0
+    },
+    {
+     "p": "vai",
+     "ini": 188.56,
+     "fim": 188.74,
+     "prob": 0.999
+    },
+    {
+     "p": "dividir",
+     "ini": 188.74,
+     "fim": 189.22,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 189.22,
+   "fim": 189.7,
+   "texto": "E é isso",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 189.22,
+     "fim": 189.38,
+     "prob": 0.463
+    },
+    {
+     "p": "é",
+     "ini": 189.38,
+     "fim": 189.52,
+     "prob": 0.959
+    },
+    {
+     "p": "isso",
+     "ini": 189.52,
+     "fim": 189.7,
+     "prob": 0.997
+    }
+   ]
+  },
+  {
+   "ini": 189.7,
+   "fim": 192.52,
+   "texto": "Pra aforrar a nossa barriga antes de continuar a nossa jornada",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "Pra",
+     "ini": 189.7,
+     "fim": 190.14,
+     "prob": 0.865
+    },
+    {
+     "p": "aforrar",
+     "ini": 190.14,
+     "fim": 190.54,
+     "prob": 0.714
+    },
+    {
+     "p": "a",
+     "ini": 190.54,
+     "fim": 190.6,
+     "prob": 0.641
+    },
+    {
+     "p": "nossa",
+     "ini": 190.6,
+     "fim": 190.74,
+     "prob": 0.999
+    },
+    {
+     "p": "barriga",
+     "ini": 190.74,
+     "fim": 191.2,
+     "prob": 1.0
+    },
+    {
+     "p": "antes",
+     "ini": 191.2,
+     "fim": 191.34,
+     "prob": 0.988
+    },
+    {
+     "p": "de",
+     "ini": 191.34,
+     "fim": 191.46,
+     "prob": 0.999
+    },
+    {
+     "p": "continuar",
+     "ini": 191.46,
+     "fim": 191.84,
+     "prob": 1.0
+    },
+    {
+     "p": "a",
+     "ini": 191.84,
+     "fim": 191.92,
+     "prob": 0.716
+    },
+    {
+     "p": "nossa",
+     "ini": 191.92,
+     "fim": 192.04,
+     "prob": 0.999
+    },
+    {
+     "p": "jornada",
+     "ini": 192.04,
+     "fim": 192.52,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 192.52,
+   "fim": 193.92,
+   "texto": "Será que tá bom?",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "Será",
+     "ini": 192.52,
+     "fim": 193.26,
+     "prob": 0.996
+    },
+    {
+     "p": "que",
+     "ini": 193.5,
+     "fim": 193.64,
+     "prob": 1.0
+    },
+    {
+     "p": "tá",
+     "ini": 193.64,
+     "fim": 193.76,
+     "prob": 0.967
+    },
+    {
+     "p": "bom?",
+     "ini": 193.76,
+     "fim": 193.92,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 194.18,
+   "fim": 195.02,
+   "texto": "Vamos ver agora",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "Vamos",
+     "ini": 194.18,
+     "fim": 194.6,
+     "prob": 0.985
+    },
+    {
+     "p": "ver",
+     "ini": 194.6,
+     "fim": 194.8,
+     "prob": 0.999
+    },
+    {
+     "p": "agora",
+     "ini": 194.8,
+     "fim": 195.02,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 197.51,
+   "fim": 198.73,
+   "texto": "A pata xangou?",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "A",
+     "ini": 197.51,
+     "fim": 197.99,
+     "prob": 0.219
+    },
+    {
+     "p": "pata",
+     "ini": 197.99,
+     "fim": 198.47,
+     "prob": 0.598
+    },
+    {
+     "p": "xangou?",
+     "ini": 198.47,
+     "fim": 198.73,
+     "prob": 0.735
+    }
+   ]
+  },
+  {
+   "ini": 198.87,
+   "fim": 199.25,
+   "texto": "Tá bom",
+   "conf": -0.317,
+   "sem_fala": 0.386,
+   "palavras": [
+    {
+     "p": "Tá",
+     "ini": 198.87,
+     "fim": 199.21,
+     "prob": 0.846
+    },
+    {
+     "p": "bom",
+     "ini": 199.21,
+     "fim": 199.25,
+     "prob": 0.891
+    }
+   ]
+  },
+  {
+   "ini": 227.26,
+   "fim": 230.72,
+   "texto": "Chegamos aqui na Grand Place, depois de nos alimentar.",
+   "conf": -0.33,
+   "sem_fala": 0.241,
+   "palavras": [
+    {
+     "p": "Chegamos",
+     "ini": 227.26,
+     "fim": 227.7,
+     "prob": 0.783
+    },
+    {
+     "p": "aqui",
+     "ini": 227.7,
+     "fim": 228.04,
+     "prob": 0.888
+    },
+    {
+     "p": "na",
+     "ini": 228.04,
+     "fim": 228.34,
+     "prob": 0.948
+    },
+    {
+     "p": "Grand",
+     "ini": 228.34,
+     "fim": 228.52,
+     "prob": 0.453
+    },
+    {
+     "p": "Place,",
+     "ini": 228.52,
+     "fim": 228.94,
+     "prob": 0.882
+    },
+    {
+     "p": "depois",
+     "ini": 229.08,
+     "fim": 229.36,
+     "prob": 0.929
+    },
+    {
+     "p": "de",
+     "ini": 229.36,
+     "fim": 229.52,
+     "prob": 0.735
+    },
+    {
+     "p": "nos",
+     "ini": 229.52,
+     "fim": 229.82,
+     "prob": 0.94
+    },
+    {
+     "p": "alimentar.",
+     "ini": 229.82,
+     "fim": 230.72,
+     "prob": 0.997
+    }
+   ]
+  },
+  {
+   "ini": 231.26,
+   "fim": 235.42,
+   "texto": "Gente, eu ia falar um negócio, esse sol aqui rachando em cima, engana, sabe?",
+   "conf": -0.33,
+   "sem_fala": 0.241,
+   "palavras": [
+    {
+     "p": "Gente,",
+     "ini": 231.26,
+     "fim": 231.7,
+     "prob": 0.719
+    },
+    {
+     "p": "eu",
+     "ini": 231.72,
+     "fim": 231.86,
+     "prob": 0.554
+    },
+    {
+     "p": "ia",
+     "ini": 231.86,
+     "fim": 231.94,
+     "prob": 0.662
+    },
+    {
+     "p": "falar",
+     "ini": 231.94,
+     "fim": 232.08,
+     "prob": 0.99
+    },
+    {
+     "p": "um",
+     "ini": 232.08,
+     "fim": 232.26,
+     "prob": 0.84
+    },
+    {
+     "p": "negócio,",
+     "ini": 232.26,
+     "fim": 232.46,
+     "prob": 0.979
+    },
+    {
+     "p": "esse",
+     "ini": 232.7,
+     "fim": 233.06,
+     "prob": 0.729
+    },
+    {
+     "p": "sol",
+     "ini": 233.06,
+     "fim": 233.5,
+     "prob": 0.972
+    },
+    {
+     "p": "aqui",
+     "ini": 233.5,
+     "fim": 233.78,
+     "prob": 0.961
+    },
+    {
+     "p": "rachando",
+     "ini": 233.78,
+     "fim": 234.32,
+     "prob": 0.947
+    },
+    {
+     "p": "em",
+     "ini": 234.32,
+     "fim": 234.5,
+     "prob": 0.824
+    },
+    {
+     "p": "cima,",
+     "ini": 234.5,
+     "fim": 234.72,
+     "prob": 0.988
+    },
+    {
+     "p": "engana,",
+     "ini": 234.72,
+     "fim": 235.2,
+     "prob": 0.809
+    },
+    {
+     "p": "sabe?",
+     "ini": 235.2,
+     "fim": 235.42,
+     "prob": 0.518
+    }
+   ]
+  },
+  {
+   "ini": 235.42,
+   "fim": 237.3,
+   "texto": "Porque tá um frio, meu, o vento.",
+   "conf": -0.33,
+   "sem_fala": 0.241,
+   "palavras": [
+    {
+     "p": "Porque",
+     "ini": 235.42,
+     "fim": 235.6,
+     "prob": 0.917
+    },
+    {
+     "p": "tá",
+     "ini": 235.6,
+     "fim": 235.72,
+     "prob": 0.697
+    },
+    {
+     "p": "um",
+     "ini": 235.72,
+     "fim": 235.84,
+     "prob": 0.987
+    },
+    {
+     "p": "frio,",
+     "ini": 235.84,
+     "fim": 236.48,
+     "prob": 0.999
+    },
+    {
+     "p": "meu,",
+     "ini": 236.48,
+     "fim": 236.68,
+     "prob": 0.172
+    },
+    {
+     "p": "o",
+     "ini": 236.68,
+     "fim": 236.68,
+     "prob": 0.774
+    },
+    {
+     "p": "vento.",
+     "ini": 236.68,
+     "fim": 237.3,
+     "prob": 0.998
+    }
+   ]
+  },
+  {
+   "ini": 237.52,
+   "fim": 239.38,
+   "texto": "É, o problema é o vento, o vento tá...",
+   "conf": -0.33,
+   "sem_fala": 0.241,
+   "palavras": [
+    {
+     "p": "É,",
+     "ini": 237.52,
+     "fim": 237.74,
+     "prob": 0.675
+    },
+    {
+     "p": "o",
+     "ini": 237.76,
+     "fim": 237.88,
+     "prob": 0.94
+    },
+    {
+     "p": "problema",
+     "ini": 237.88,
+     "fim": 238.04,
+     "prob": 0.874
+    },
+    {
+     "p": "é",
+     "ini": 238.04,
+     "fim": 238.22,
+     "prob": 0.968
+    },
+    {
+     "p": "o",
+     "ini": 238.22,
+     "fim": 238.26,
+     "prob": 0.998
+    },
+    {
+     "p": "vento,",
+     "ini": 238.26,
+     "fim": 238.64,
+     "prob": 1.0
+    },
+    {
+     "p": "o",
+     "ini": 238.64,
+     "fim": 238.76,
+     "prob": 0.485
+    },
+    {
+     "p": "vento",
+     "ini": 238.76,
+     "fim": 239.18,
+     "prob": 1.0
+    },
+    {
+     "p": "tá...",
+     "ini": 239.18,
+     "fim": 239.38,
+     "prob": 0.952
+    }
+   ]
+  },
+  {
+   "ini": 239.38,
+   "fim": 242.68,
+   "texto": "Nossa senhora, eu achei que eu fosse me livrar desse vento, mas não, mas enfim.",
+   "conf": -0.33,
+   "sem_fala": 0.241,
+   "palavras": [
+    {
+     "p": "Nossa",
+     "ini": 239.38,
+     "fim": 239.66,
+     "prob": 0.997
+    },
+    {
+     "p": "senhora,",
+     "ini": 239.66,
+     "fim": 240.14,
+     "prob": 0.874
+    },
+    {
+     "p": "eu",
+     "ini": 240.14,
+     "fim": 240.24,
+     "prob": 0.999
+    },
+    {
+     "p": "achei",
+     "ini": 240.24,
+     "fim": 240.36,
+     "prob": 0.967
+    },
+    {
+     "p": "que",
+     "ini": 240.36,
+     "fim": 240.5,
+     "prob": 0.999
+    },
+    {
+     "p": "eu",
+     "ini": 240.5,
+     "fim": 240.54,
+     "prob": 0.962
+    },
+    {
+     "p": "fosse",
+     "ini": 240.54,
+     "fim": 240.66,
+     "prob": 0.928
+    },
+    {
+     "p": "me",
+     "ini": 240.66,
+     "fim": 240.78,
+     "prob": 0.227
+    },
+    {
+     "p": "livrar",
+     "ini": 240.78,
+     "fim": 241.02,
+     "prob": 0.736
+    },
+    {
+     "p": "desse",
+     "ini": 241.02,
+     "fim": 241.18,
+     "prob": 0.999
+    },
+    {
+     "p": "vento,",
+     "ini": 241.18,
+     "fim": 241.48,
+     "prob": 0.984
+    },
+    {
+     "p": "mas",
+     "ini": 241.52,
+     "fim": 241.66,
+     "prob": 0.99
+    },
+    {
+     "p": "não,",
+     "ini": 241.66,
+     "fim": 241.94,
+     "prob": 0.992
+    },
+    {
+     "p": "mas",
+     "ini": 242.06,
+     "fim": 242.5,
+     "prob": 0.979
+    },
+    {
+     "p": "enfim.",
+     "ini": 242.5,
+     "fim": 242.68,
+     "prob": 0.936
+    }
+   ]
+  },
+  {
+   "ini": 243.16,
+   "fim": 245.76,
+   "texto": "Estamos aqui na Praça Dourada.",
+   "conf": -0.33,
+   "sem_fala": 0.241,
+   "palavras": [
+    {
+     "p": "Estamos",
+     "ini": 243.16,
+     "fim": 243.6,
+     "prob": 0.996
+    },
+    {
+     "p": "aqui",
+     "ini": 243.6,
+     "fim": 244.02,
+     "prob": 1.0
+    },
+    {
+     "p": "na",
+     "ini": 244.02,
+     "fim": 244.68,
+     "prob": 0.937
+    },
+    {
+     "p": "Praça",
+     "ini": 244.68,
+     "fim": 245.1,
+     "prob": 0.99
+    },
+    {
+     "p": "Dourada.",
+     "ini": 245.1,
+     "fim": 245.76,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 245.94,
+   "fim": 246.3,
+   "texto": "Praia 360.",
+   "conf": -0.33,
+   "sem_fala": 0.241,
+   "palavras": [
+    {
+     "p": "Praia",
+     "ini": 245.94,
+     "fim": 246.1,
+     "prob": 0.381
+    },
+    {
+     "p": "360.",
+     "ini": 246.1,
+     "fim": 246.3,
+     "prob": 0.449
+    }
+   ]
+  },
+  {
+   "ini": 247.46,
+   "fim": 253.87,
+   "texto": "Uma praça muito bonita, ela foi considerada patrimônio mundial da Unesco.",
+   "conf": -0.33,
+   "sem_fala": 0.241,
+   "palavras": [
+    {
+     "p": "Uma",
+     "ini": 247.46,
+     "fim": 247.9,
+     "prob": 0.111
+    },
+    {
+     "p": "praça",
+     "ini": 249.87,
+     "fim": 250.31,
+     "prob": 0.988
+    },
+    {
+     "p": "muito",
+     "ini": 250.31,
+     "fim": 250.59,
+     "prob": 1.0
+    },
+    {
+     "p": "bonita,",
+     "ini": 250.59,
+     "fim": 251.21,
+     "prob": 1.0
+    },
+    {
+     "p": "ela",
+     "ini": 251.27,
+     "fim": 251.45,
+     "prob": 0.997
+    },
+    {
+     "p": "foi",
+     "ini": 251.45,
+     "fim": 251.63,
+     "prob": 1.0
+    },
+    {
+     "p": "considerada",
+     "ini": 251.63,
+     "fim": 252.15,
+     "prob": 1.0
+    },
+    {
+     "p": "patrimônio",
+     "ini": 252.15,
+     "fim": 252.79,
+     "prob": 0.967
+    },
+    {
+     "p": "mundial",
+     "ini": 252.79,
+     "fim": 253.07,
+     "prob": 1.0
+    },
+    {
+     "p": "da",
+     "ini": 253.07,
+     "fim": 253.47,
+     "prob": 0.999
+    },
+    {
+     "p": "Unesco.",
+     "ini": 253.47,
+     "fim": 253.87,
+     "prob": 0.941
+    }
+   ]
+  },
+  {
+   "ini": 253.93,
+   "fim": 254.51,
+   "texto": "Muito linda.",
+   "conf": -0.33,
+   "sem_fala": 0.241,
+   "palavras": [
+    {
+     "p": "Muito",
+     "ini": 253.93,
+     "fim": 254.17,
+     "prob": 0.994
+    },
+    {
+     "p": "linda.",
+     "ini": 254.17,
+     "fim": 254.51,
+     "prob": 0.995
+    }
+   ]
+  },
+  {
+   "ini": 254.51,
+   "fim": 259.42,
+   "texto": "E todos os detalhes dourados nela, assim, em ouro, né?",
+   "conf": -0.144,
+   "sem_fala": 0.425,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 254.51,
+     "fim": 254.93,
+     "prob": 0.365
+    },
+    {
+     "p": "todos",
+     "ini": 255.26,
+     "fim": 256.58,
+     "prob": 0.802
+    },
+    {
+     "p": "os",
+     "ini": 256.76,
+     "fim": 256.98,
+     "prob": 0.995
+    },
+    {
+     "p": "detalhes",
+     "ini": 256.98,
+     "fim": 257.36,
+     "prob": 0.999
+    },
+    {
+     "p": "dourados",
+     "ini": 257.36,
+     "fim": 257.96,
+     "prob": 0.986
+    },
+    {
+     "p": "nela,",
+     "ini": 257.96,
+     "fim": 258.26,
+     "prob": 0.933
+    },
+    {
+     "p": "assim,",
+     "ini": 258.28,
+     "fim": 258.52,
+     "prob": 0.673
+    },
+    {
+     "p": "em",
+     "ini": 258.56,
+     "fim": 258.88,
+     "prob": 0.994
+    },
+    {
+     "p": "ouro,",
+     "ini": 258.88,
+     "fim": 259.26,
+     "prob": 0.999
+    },
+    {
+     "p": "né?",
+     "ini": 259.3,
+     "fim": 259.42,
+     "prob": 0.998
+    }
+   ]
+  },
+  {
+   "ini": 259.66,
+   "fim": 261.66,
+   "texto": "Ela é muito linda, muito linda",
+   "conf": -0.144,
+   "sem_fala": 0.425,
+   "palavras": [
+    {
+     "p": "Ela",
+     "ini": 259.66,
+     "fim": 260.06,
+     "prob": 0.326
+    },
+    {
+     "p": "é",
+     "ini": 260.46,
+     "fim": 260.58,
+     "prob": 0.996
+    },
+    {
+     "p": "muito",
+     "ini": 260.58,
+     "fim": 260.76,
+     "prob": 1.0
+    },
+    {
+     "p": "linda,",
+     "ini": 260.76,
+     "fim": 261.1,
+     "prob": 1.0
+    },
+    {
+     "p": "muito",
+     "ini": 261.14,
+     "fim": 261.24,
+     "prob": 0.996
+    },
+    {
+     "p": "linda",
+     "ini": 261.24,
+     "fim": 261.66,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 261.66,
+   "fim": 265.8,
+   "texto": "E aqui é o grande centro, né?",
+   "conf": -0.144,
+   "sem_fala": 0.425,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 261.66,
+     "fim": 262.28,
+     "prob": 0.046
+    },
+    {
+     "p": "aqui",
+     "ini": 263.1,
+     "fim": 264.0,
+     "prob": 0.796
+    },
+    {
+     "p": "é",
+     "ini": 264.0,
+     "fim": 264.16,
+     "prob": 0.846
+    },
+    {
+     "p": "o",
+     "ini": 264.16,
+     "fim": 264.72,
+     "prob": 0.965
+    },
+    {
+     "p": "grande",
+     "ini": 264.72,
+     "fim": 265.16,
+     "prob": 0.999
+    },
+    {
+     "p": "centro,",
+     "ini": 265.16,
+     "fim": 265.58,
+     "prob": 1.0
+    },
+    {
+     "p": "né?",
+     "ini": 265.68,
+     "fim": 265.8,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 265.82,
+   "fim": 269.62,
+   "texto": "Daqui a gente consegue ir pra todos os pontos turísticos basicamente da cidade",
+   "conf": -0.144,
+   "sem_fala": 0.425,
+   "palavras": [
+    {
+     "p": "Daqui",
+     "ini": 265.82,
+     "fim": 266.1,
+     "prob": 0.974
+    },
+    {
+     "p": "a",
+     "ini": 266.1,
+     "fim": 266.28,
+     "prob": 0.999
+    },
+    {
+     "p": "gente",
+     "ini": 266.28,
+     "fim": 266.42,
+     "prob": 1.0
+    },
+    {
+     "p": "consegue",
+     "ini": 266.42,
+     "fim": 266.76,
+     "prob": 1.0
+    },
+    {
+     "p": "ir",
+     "ini": 266.76,
+     "fim": 267.44,
+     "prob": 1.0
+    },
+    {
+     "p": "pra",
+     "ini": 267.44,
+     "fim": 267.58,
+     "prob": 0.666
+    },
+    {
+     "p": "todos",
+     "ini": 267.58,
+     "fim": 267.8,
+     "prob": 0.999
+    },
+    {
+     "p": "os",
+     "ini": 267.8,
+     "fim": 267.98,
+     "prob": 1.0
+    },
+    {
+     "p": "pontos",
+     "ini": 267.98,
+     "fim": 268.16,
+     "prob": 0.969
+    },
+    {
+     "p": "turísticos",
+     "ini": 268.16,
+     "fim": 268.62,
+     "prob": 1.0
+    },
+    {
+     "p": "basicamente",
+     "ini": 268.62,
+     "fim": 269.14,
+     "prob": 0.738
+    },
+    {
+     "p": "da",
+     "ini": 269.14,
+     "fim": 269.34,
+     "prob": 0.999
+    },
+    {
+     "p": "cidade",
+     "ini": 269.34,
+     "fim": 269.62,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 269.62,
+   "fim": 271.24,
+   "texto": "Tirando o Atômico, que é mais distante",
+   "conf": -0.144,
+   "sem_fala": 0.425,
+   "palavras": [
+    {
+     "p": "Tirando",
+     "ini": 269.62,
+     "fim": 270.04,
+     "prob": 0.975
+    },
+    {
+     "p": "o",
+     "ini": 270.04,
+     "fim": 270.16,
+     "prob": 0.93
+    },
+    {
+     "p": "Atômico,",
+     "ini": 270.16,
+     "fim": 270.54,
+     "prob": 0.889
+    },
+    {
+     "p": "que",
+     "ini": 270.56,
+     "fim": 270.68,
+     "prob": 0.895
+    },
+    {
+     "p": "é",
+     "ini": 270.68,
+     "fim": 270.68,
+     "prob": 1.0
+    },
+    {
+     "p": "mais",
+     "ini": 270.68,
+     "fim": 270.78,
+     "prob": 0.973
+    },
+    {
+     "p": "distante",
+     "ini": 270.78,
+     "fim": 271.24,
+     "prob": 0.974
+    }
+   ]
+  },
+  {
+   "ini": 271.66,
+   "fim": 273.98,
+   "texto": "E aí a gente vai continuar a nossa jornada daqui",
+   "conf": -0.144,
+   "sem_fala": 0.425,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 271.66,
+     "fim": 272.06,
+     "prob": 0.957
+    },
+    {
+     "p": "aí",
+     "ini": 272.3,
+     "fim": 272.42,
+     "prob": 0.525
+    },
+    {
+     "p": "a",
+     "ini": 272.42,
+     "fim": 272.48,
+     "prob": 0.996
+    },
+    {
+     "p": "gente",
+     "ini": 272.48,
+     "fim": 272.54,
+     "prob": 1.0
+    },
+    {
+     "p": "vai",
+     "ini": 272.54,
+     "fim": 272.66,
+     "prob": 1.0
+    },
+    {
+     "p": "continuar",
+     "ini": 272.66,
+     "fim": 272.92,
+     "prob": 0.996
+    },
+    {
+     "p": "a",
+     "ini": 272.92,
+     "fim": 273.02,
+     "prob": 0.687
+    },
+    {
+     "p": "nossa",
+     "ini": 273.02,
+     "fim": 273.18,
+     "prob": 0.999
+    },
+    {
+     "p": "jornada",
+     "ini": 273.18,
+     "fim": 273.74,
+     "prob": 1.0
+    },
+    {
+     "p": "daqui",
+     "ini": 273.74,
+     "fim": 273.98,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 273.98,
+   "fim": 276.53,
+   "texto": "E apreciar essa vista",
+   "conf": -0.144,
+   "sem_fala": 0.425,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 273.98,
+     "fim": 274.72,
+     "prob": 0.78
+    },
+    {
+     "p": "apreciar",
+     "ini": 275.15,
+     "fim": 276.01,
+     "prob": 1.0
+    },
+    {
+     "p": "essa",
+     "ini": 276.01,
+     "fim": 276.17,
+     "prob": 1.0
+    },
+    {
+     "p": "vista",
+     "ini": 276.17,
+     "fim": 276.53,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 276.53,
+   "fim": 279.24,
+   "texto": "O nosso hotel é bem aqui do lado também",
+   "conf": -0.144,
+   "sem_fala": 0.425,
+   "palavras": [
+    {
+     "p": "O",
+     "ini": 276.53,
+     "fim": 277.25,
+     "prob": 0.997
+    },
+    {
+     "p": "nosso",
+     "ini": 277.46,
+     "fim": 277.66,
+     "prob": 1.0
+    },
+    {
+     "p": "hotel",
+     "ini": 277.66,
+     "fim": 278.0,
+     "prob": 1.0
+    },
+    {
+     "p": "é",
+     "ini": 278.0,
+     "fim": 278.14,
+     "prob": 0.572
+    },
+    {
+     "p": "bem",
+     "ini": 278.14,
+     "fim": 278.36,
+     "prob": 1.0
+    },
+    {
+     "p": "aqui",
+     "ini": 278.36,
+     "fim": 278.52,
+     "prob": 1.0
+    },
+    {
+     "p": "do",
+     "ini": 278.52,
+     "fim": 278.7,
+     "prob": 1.0
+    },
+    {
+     "p": "lado",
+     "ini": 278.7,
+     "fim": 278.9,
+     "prob": 1.0
+    },
+    {
+     "p": "também",
+     "ini": 278.9,
+     "fim": 279.24,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 279.24,
+   "fim": 282.78,
+   "texto": "Então provavelmente a gente vai voltar aqui de noite pra ver como é que ela fica iluminada",
+   "conf": -0.144,
+   "sem_fala": 0.425,
+   "palavras": [
+    {
+     "p": "Então",
+     "ini": 279.24,
+     "fim": 279.6,
+     "prob": 0.995
+    },
+    {
+     "p": "provavelmente",
+     "ini": 279.6,
+     "fim": 280.18,
+     "prob": 0.992
+    },
+    {
+     "p": "a",
+     "ini": 280.18,
+     "fim": 280.28,
+     "prob": 1.0
+    },
+    {
+     "p": "gente",
+     "ini": 280.28,
+     "fim": 280.4,
+     "prob": 1.0
+    },
+    {
+     "p": "vai",
+     "ini": 280.4,
+     "fim": 280.54,
+     "prob": 1.0
+    },
+    {
+     "p": "voltar",
+     "ini": 280.54,
+     "fim": 280.8,
+     "prob": 1.0
+    },
+    {
+     "p": "aqui",
+     "ini": 280.8,
+     "fim": 281.04,
+     "prob": 1.0
+    },
+    {
+     "p": "de",
+     "ini": 281.04,
+     "fim": 281.22,
+     "prob": 1.0
+    },
+    {
+     "p": "noite",
+     "ini": 281.22,
+     "fim": 281.4,
+     "prob": 1.0
+    },
+    {
+     "p": "pra",
+     "ini": 281.4,
+     "fim": 281.56,
+     "prob": 0.748
+    },
+    {
+     "p": "ver",
+     "ini": 281.56,
+     "fim": 281.7,
+     "prob": 1.0
+    },
+    {
+     "p": "como",
+     "ini": 281.7,
+     "fim": 281.82,
+     "prob": 1.0
+    },
+    {
+     "p": "é",
+     "ini": 281.82,
+     "fim": 281.9,
+     "prob": 0.914
+    },
+    {
+     "p": "que",
+     "ini": 281.9,
+     "fim": 281.96,
+     "prob": 1.0
+    },
+    {
+     "p": "ela",
+     "ini": 281.96,
+     "fim": 282.04,
+     "prob": 1.0
+    },
+    {
+     "p": "fica",
+     "ini": 282.04,
+     "fim": 282.22,
+     "prob": 1.0
+    },
+    {
+     "p": "iluminada",
+     "ini": 282.22,
+     "fim": 282.78,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 282.78,
+   "fim": 285.18,
+   "texto": "Mas é muito linda, é muito linda",
+   "conf": -0.144,
+   "sem_fala": 0.425,
+   "palavras": [
+    {
+     "p": "Mas",
+     "ini": 282.78,
+     "fim": 283.54,
+     "prob": 0.999
+    },
+    {
+     "p": "é",
+     "ini": 283.94,
+     "fim": 284.06,
+     "prob": 1.0
+    },
+    {
+     "p": "muito",
+     "ini": 284.06,
+     "fim": 284.28,
+     "prob": 1.0
+    },
+    {
+     "p": "linda,",
+     "ini": 284.28,
+     "fim": 284.6,
+     "prob": 0.964
+    },
+    {
+     "p": "é",
+     "ini": 284.66,
+     "fim": 284.72,
+     "prob": 0.766
+    },
+    {
+     "p": "muito",
+     "ini": 284.72,
+     "fim": 284.82,
+     "prob": 1.0
+    },
+    {
+     "p": "linda",
+     "ini": 284.82,
+     "fim": 285.18,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 285.18,
+   "fim": 289.42,
+   "texto": "Lindo mesmo, cheio de detalhes, cheio de história também. Amei.",
+   "conf": -0.253,
+   "sem_fala": 0.155,
+   "palavras": [
+    {
+     "p": "Lindo",
+     "ini": 285.18,
+     "fim": 285.34,
+     "prob": 0.464
+    },
+    {
+     "p": "mesmo,",
+     "ini": 285.34,
+     "fim": 285.58,
+     "prob": 0.554
+    },
+    {
+     "p": "cheio",
+     "ini": 285.76,
+     "fim": 286.32,
+     "prob": 0.837
+    },
+    {
+     "p": "de",
+     "ini": 286.32,
+     "fim": 286.5,
+     "prob": 0.998
+    },
+    {
+     "p": "detalhes,",
+     "ini": 286.5,
+     "fim": 287.06,
+     "prob": 0.994
+    },
+    {
+     "p": "cheio",
+     "ini": 287.18,
+     "fim": 288.04,
+     "prob": 0.99
+    },
+    {
+     "p": "de",
+     "ini": 288.04,
+     "fim": 288.2,
+     "prob": 0.996
+    },
+    {
+     "p": "história",
+     "ini": 288.2,
+     "fim": 288.44,
+     "prob": 0.967
+    },
+    {
+     "p": "também.",
+     "ini": 288.44,
+     "fim": 288.76,
+     "prob": 0.982
+    },
+    {
+     "p": "Amei.",
+     "ini": 288.96,
+     "fim": 289.42,
+     "prob": 0.952
+    }
+   ]
+  },
+  {
+   "ini": 289.56,
+   "fim": 289.98,
+   "texto": "É isso.",
+   "conf": -0.253,
+   "sem_fala": 0.155,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 289.56,
+     "fim": 289.8,
+     "prob": 0.792
+    },
+    {
+     "p": "isso.",
+     "ini": 289.8,
+     "fim": 289.98,
+     "prob": 0.997
+    }
+   ]
+  },
+  {
+   "ini": 311.27,
+   "fim": 316.12,
+   "texto": "E acabamos de passar pelo Monumento da Menina, fazer um xixi.",
+   "conf": -0.253,
+   "sem_fala": 0.155,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 311.27,
+     "fim": 311.77,
+     "prob": 0.981
+    },
+    {
+     "p": "acabamos",
+     "ini": 311.77,
+     "fim": 312.27,
+     "prob": 0.996
+    },
+    {
+     "p": "de",
+     "ini": 312.27,
+     "fim": 312.43,
+     "prob": 0.999
+    },
+    {
+     "p": "passar",
+     "ini": 312.43,
+     "fim": 312.67,
+     "prob": 0.999
+    },
+    {
+     "p": "pelo",
+     "ini": 312.67,
+     "fim": 313.29,
+     "prob": 0.997
+    },
+    {
+     "p": "Monumento",
+     "ini": 313.29,
+     "fim": 313.97,
+     "prob": 0.868
+    },
+    {
+     "p": "da",
+     "ini": 313.97,
+     "fim": 314.03,
+     "prob": 0.988
+    },
+    {
+     "p": "Menina,",
+     "ini": 314.03,
+     "fim": 314.57,
+     "prob": 0.989
+    },
+    {
+     "p": "fazer",
+     "ini": 314.61,
+     "fim": 315.29,
+     "prob": 0.473
+    },
+    {
+     "p": "um",
+     "ini": 315.44,
+     "fim": 315.64,
+     "prob": 0.963
+    },
+    {
+     "p": "xixi.",
+     "ini": 315.64,
+     "fim": 316.12,
+     "prob": 0.993
+    }
+   ]
+  },
+  {
+   "ini": 316.18,
+   "fim": 325.14,
+   "texto": "E foi mais uma das estátuas de Bruxelas que fazem xixi pela cidade e se tornaram ponto turístico.",
+   "conf": -0.253,
+   "sem_fala": 0.155,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 316.18,
+     "fim": 316.68,
+     "prob": 0.605
+    },
+    {
+     "p": "foi",
+     "ini": 317.14,
+     "fim": 317.32,
+     "prob": 0.993
+    },
+    {
+     "p": "mais",
+     "ini": 317.32,
+     "fim": 317.58,
+     "prob": 0.996
+    },
+    {
+     "p": "uma",
+     "ini": 317.58,
+     "fim": 317.76,
+     "prob": 0.987
+    },
+    {
+     "p": "das",
+     "ini": 317.76,
+     "fim": 317.96,
+     "prob": 0.998
+    },
+    {
+     "p": "estátuas",
+     "ini": 317.96,
+     "fim": 318.6,
+     "prob": 0.987
+    },
+    {
+     "p": "de",
+     "ini": 318.6,
+     "fim": 318.9,
+     "prob": 0.992
+    },
+    {
+     "p": "Bruxelas",
+     "ini": 318.9,
+     "fim": 319.38,
+     "prob": 0.998
+    },
+    {
+     "p": "que",
+     "ini": 319.38,
+     "fim": 320.12,
+     "prob": 0.927
+    },
+    {
+     "p": "fazem",
+     "ini": 320.94,
+     "fim": 321.3,
+     "prob": 0.996
+    },
+    {
+     "p": "xixi",
+     "ini": 321.3,
+     "fim": 321.88,
+     "prob": 0.998
+    },
+    {
+     "p": "pela",
+     "ini": 321.88,
+     "fim": 322.36,
+     "prob": 0.968
+    },
+    {
+     "p": "cidade",
+     "ini": 322.36,
+     "fim": 322.78,
+     "prob": 1.0
+    },
+    {
+     "p": "e",
+     "ini": 322.78,
+     "fim": 323.14,
+     "prob": 0.536
+    },
+    {
+     "p": "se",
+     "ini": 323.14,
+     "fim": 323.78,
+     "prob": 0.99
+    },
+    {
+     "p": "tornaram",
+     "ini": 323.78,
+     "fim": 324.24,
+     "prob": 0.984
+    },
+    {
+     "p": "ponto",
+     "ini": 324.24,
+     "fim": 324.46,
+     "prob": 0.957
+    },
+    {
+     "p": "turístico.",
+     "ini": 324.46,
+     "fim": 325.14,
+     "prob": 0.997
+    }
+   ]
+  },
+  {
+   "ini": 334.24,
+   "fim": 337.46,
+   "texto": "E como depois de todo salgado, vocês já sabem que tem que ter um docinho,",
+   "conf": -0.253,
+   "sem_fala": 0.155,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 334.24,
+     "fim": 334.52,
+     "prob": 0.99
+    },
+    {
+     "p": "como",
+     "ini": 334.52,
+     "fim": 334.74,
+     "prob": 0.989
+    },
+    {
+     "p": "depois",
+     "ini": 334.74,
+     "fim": 335.06,
+     "prob": 0.986
+    },
+    {
+     "p": "de",
+     "ini": 335.06,
+     "fim": 335.26,
+     "prob": 0.999
+    },
+    {
+     "p": "todo",
+     "ini": 335.26,
+     "fim": 335.4,
+     "prob": 0.572
+    },
+    {
+     "p": "salgado,",
+     "ini": 335.4,
+     "fim": 335.94,
+     "prob": 0.827
+    },
+    {
+     "p": "vocês",
+     "ini": 336.02,
+     "fim": 336.12,
+     "prob": 0.669
+    },
+    {
+     "p": "já",
+     "ini": 336.12,
+     "fim": 336.28,
+     "prob": 0.997
+    },
+    {
+     "p": "sabem",
+     "ini": 336.28,
+     "fim": 336.54,
+     "prob": 0.998
+    },
+    {
+     "p": "que",
+     "ini": 336.54,
+     "fim": 336.66,
+     "prob": 0.58
+    },
+    {
+     "p": "tem",
+     "ini": 336.66,
+     "fim": 336.8,
+     "prob": 0.715
+    },
+    {
+     "p": "que",
+     "ini": 336.8,
+     "fim": 336.9,
+     "prob": 0.927
+    },
+    {
+     "p": "ter",
+     "ini": 336.9,
+     "fim": 337.0,
+     "prob": 0.966
+    },
+    {
+     "p": "um",
+     "ini": 337.0,
+     "fim": 337.06,
+     "prob": 0.997
+    },
+    {
+     "p": "docinho,",
+     "ini": 337.06,
+     "fim": 337.46,
+     "prob": 0.998
+    }
+   ]
+  },
+  {
+   "ini": 337.6,
+   "fim": 342.05,
+   "texto": "a gente parou pra experimentar o bendito waffle diretamente da Bélgica.",
+   "conf": -0.253,
+   "sem_fala": 0.155,
+   "palavras": [
+    {
+     "p": "a",
+     "ini": 337.6,
+     "fim": 338.22,
+     "prob": 0.998
+    },
+    {
+     "p": "gente",
+     "ini": 338.37,
+     "fim": 338.57,
+     "prob": 1.0
+    },
+    {
+     "p": "parou",
+     "ini": 338.57,
+     "fim": 338.95,
+     "prob": 1.0
+    },
+    {
+     "p": "pra",
+     "ini": 338.95,
+     "fim": 339.05,
+     "prob": 0.566
+    },
+    {
+     "p": "experimentar",
+     "ini": 339.05,
+     "fim": 339.59,
+     "prob": 0.999
+    },
+    {
+     "p": "o",
+     "ini": 339.59,
+     "fim": 339.65,
+     "prob": 0.989
+    },
+    {
+     "p": "bendito",
+     "ini": 339.65,
+     "fim": 340.01,
+     "prob": 0.933
+    },
+    {
+     "p": "waffle",
+     "ini": 340.01,
+     "fim": 340.31,
+     "prob": 0.967
+    },
+    {
+     "p": "diretamente",
+     "ini": 340.31,
+     "fim": 341.31,
+     "prob": 0.964
+    },
+    {
+     "p": "da",
+     "ini": 341.31,
+     "fim": 341.55,
+     "prob": 1.0
+    },
+    {
+     "p": "Bélgica.",
+     "ini": 341.55,
+     "fim": 342.05,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 342.05,
+   "fim": 344.72,
+   "texto": "E agora a gente vai ver se é bom mesmo",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 342.05,
+     "fim": 342.69,
+     "prob": 0.524
+    },
+    {
+     "p": "agora",
+     "ini": 343.22,
+     "fim": 343.66,
+     "prob": 0.992
+    },
+    {
+     "p": "a",
+     "ini": 343.66,
+     "fim": 343.8,
+     "prob": 0.973
+    },
+    {
+     "p": "gente",
+     "ini": 343.8,
+     "fim": 343.86,
+     "prob": 1.0
+    },
+    {
+     "p": "vai",
+     "ini": 343.86,
+     "fim": 343.98,
+     "prob": 0.999
+    },
+    {
+     "p": "ver",
+     "ini": 343.98,
+     "fim": 344.12,
+     "prob": 0.998
+    },
+    {
+     "p": "se",
+     "ini": 344.12,
+     "fim": 344.18,
+     "prob": 0.984
+    },
+    {
+     "p": "é",
+     "ini": 344.18,
+     "fim": 344.3,
+     "prob": 0.997
+    },
+    {
+     "p": "bom",
+     "ini": 344.3,
+     "fim": 344.46,
+     "prob": 0.998
+    },
+    {
+     "p": "mesmo",
+     "ini": 344.46,
+     "fim": 344.72,
+     "prob": 0.994
+    }
+   ]
+  },
+  {
+   "ini": 344.72,
+   "fim": 347.13,
+   "texto": "Depois que ela fizer a mídia dela ali pro Instagram",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "Depois",
+     "ini": 344.72,
+     "fim": 345.48,
+     "prob": 0.414
+    },
+    {
+     "p": "que",
+     "ini": 345.59,
+     "fim": 345.83,
+     "prob": 0.999
+    },
+    {
+     "p": "ela",
+     "ini": 345.83,
+     "fim": 345.93,
+     "prob": 0.986
+    },
+    {
+     "p": "fizer",
+     "ini": 345.93,
+     "fim": 346.11,
+     "prob": 0.956
+    },
+    {
+     "p": "a",
+     "ini": 346.11,
+     "fim": 346.23,
+     "prob": 0.998
+    },
+    {
+     "p": "mídia",
+     "ini": 346.23,
+     "fim": 346.41,
+     "prob": 0.995
+    },
+    {
+     "p": "dela",
+     "ini": 346.41,
+     "fim": 346.59,
+     "prob": 0.995
+    },
+    {
+     "p": "ali",
+     "ini": 346.59,
+     "fim": 346.79,
+     "prob": 0.923
+    },
+    {
+     "p": "pro",
+     "ini": 346.79,
+     "fim": 346.93,
+     "prob": 0.731
+    },
+    {
+     "p": "Instagram",
+     "ini": 346.93,
+     "fim": 347.13,
+     "prob": 0.984
+    }
+   ]
+  },
+  {
+   "ini": 348.09,
+   "fim": 357.08,
+   "texto": "Muito bom",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "Muito",
+     "ini": 348.09,
+     "fim": 348.53,
+     "prob": 0.993
+    },
+    {
+     "p": "bom",
+     "ini": 356.64,
+     "fim": 357.08,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 357.08,
+   "fim": 358.36,
+   "texto": "Extremamente aprovado",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "Extremamente",
+     "ini": 357.08,
+     "fim": 357.78,
+     "prob": 0.76
+    },
+    {
+     "p": "aprovado",
+     "ini": 357.78,
+     "fim": 358.36,
+     "prob": 0.998
+    }
+   ]
+  },
+  {
+   "ini": 358.36,
+   "fim": 361.46,
+   "texto": "E não foi nem tão caro, tá?",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 358.36,
+     "fim": 359.12,
+     "prob": 0.998
+    },
+    {
+     "p": "não",
+     "ini": 360.16,
+     "fim": 360.54,
+     "prob": 0.998
+    },
+    {
+     "p": "foi",
+     "ini": 360.54,
+     "fim": 360.74,
+     "prob": 1.0
+    },
+    {
+     "p": "nem",
+     "ini": 360.74,
+     "fim": 360.86,
+     "prob": 1.0
+    },
+    {
+     "p": "tão",
+     "ini": 360.86,
+     "fim": 361.0,
+     "prob": 1.0
+    },
+    {
+     "p": "caro,",
+     "ini": 361.0,
+     "fim": 361.32,
+     "prob": 1.0
+    },
+    {
+     "p": "tá?",
+     "ini": 361.36,
+     "fim": 361.46,
+     "prob": 0.997
+    }
+   ]
+  },
+  {
+   "ini": 361.54,
+   "fim": 363.68,
+   "texto": "R$3,50 o meu, sem nada",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "R",
+     "ini": 361.54,
+     "fim": 361.8,
+     "prob": 0.559
+    },
+    {
+     "p": "$3",
+     "ini": 361.8,
+     "fim": 361.94,
+     "prob": 0.913
+    },
+    {
+     "p": ",50",
+     "ini": 361.94,
+     "fim": 362.42,
+     "prob": 0.998
+    },
+    {
+     "p": "o",
+     "ini": 362.42,
+     "fim": 362.6,
+     "prob": 0.805
+    },
+    {
+     "p": "meu,",
+     "ini": 362.6,
+     "fim": 362.74,
+     "prob": 0.999
+    },
+    {
+     "p": "sem",
+     "ini": 362.8,
+     "fim": 362.96,
+     "prob": 0.995
+    },
+    {
+     "p": "nada",
+     "ini": 362.96,
+     "fim": 363.68,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 363.68,
+   "fim": 366.24,
+   "texto": "O dela foi mais caro porque teve Nutella",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "O",
+     "ini": 363.68,
+     "fim": 364.48,
+     "prob": 0.977
+    },
+    {
+     "p": "dela",
+     "ini": 364.66,
+     "fim": 364.86,
+     "prob": 0.999
+    },
+    {
+     "p": "foi",
+     "ini": 364.86,
+     "fim": 365.02,
+     "prob": 1.0
+    },
+    {
+     "p": "mais",
+     "ini": 365.02,
+     "fim": 365.2,
+     "prob": 1.0
+    },
+    {
+     "p": "caro",
+     "ini": 365.2,
+     "fim": 365.5,
+     "prob": 1.0
+    },
+    {
+     "p": "porque",
+     "ini": 365.5,
+     "fim": 365.62,
+     "prob": 0.971
+    },
+    {
+     "p": "teve",
+     "ini": 365.62,
+     "fim": 365.8,
+     "prob": 0.999
+    },
+    {
+     "p": "Nutella",
+     "ini": 365.8,
+     "fim": 366.24,
+     "prob": 0.994
+    }
+   ]
+  },
+  {
+   "ini": 366.24,
+   "fim": 367.86,
+   "texto": "Foi R$5",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "Foi",
+     "ini": 366.24,
+     "fim": 366.96,
+     "prob": 0.996
+    },
+    {
+     "p": "R",
+     "ini": 366.96,
+     "fim": 367.14,
+     "prob": 0.483
+    },
+    {
+     "p": "$5",
+     "ini": 367.14,
+     "fim": 367.86,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 367.86,
+   "fim": 370.3,
+   "texto": "Mas muito bom, sensacional",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "Mas",
+     "ini": 367.86,
+     "fim": 368.56,
+     "prob": 0.466
+    },
+    {
+     "p": "muito",
+     "ini": 368.76,
+     "fim": 369.48,
+     "prob": 0.999
+    },
+    {
+     "p": "bom,",
+     "ini": 369.48,
+     "fim": 369.76,
+     "prob": 1.0
+    },
+    {
+     "p": "sensacional",
+     "ini": 369.82,
+     "fim": 370.3,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 370.76,
+   "fim": 372.88,
+   "texto": "Uma coisa legal que eu tava reparando",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "Uma",
+     "ini": 370.76,
+     "fim": 371.2,
+     "prob": 0.996
+    },
+    {
+     "p": "coisa",
+     "ini": 371.54,
+     "fim": 371.74,
+     "prob": 1.0
+    },
+    {
+     "p": "legal",
+     "ini": 371.74,
+     "fim": 372.02,
+     "prob": 1.0
+    },
+    {
+     "p": "que",
+     "ini": 372.02,
+     "fim": 372.22,
+     "prob": 0.997
+    },
+    {
+     "p": "eu",
+     "ini": 372.22,
+     "fim": 372.24,
+     "prob": 0.995
+    },
+    {
+     "p": "tava",
+     "ini": 372.24,
+     "fim": 372.38,
+     "prob": 0.726
+    },
+    {
+     "p": "reparando",
+     "ini": 372.38,
+     "fim": 372.88,
+     "prob": 0.997
+    }
+   ]
+  },
+  {
+   "ini": 372.88,
+   "fim": 374.28,
+   "texto": "Aqui perto do centro",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "Aqui",
+     "ini": 372.88,
+     "fim": 373.08,
+     "prob": 0.594
+    },
+    {
+     "p": "perto",
+     "ini": 373.08,
+     "fim": 373.5,
+     "prob": 0.994
+    },
+    {
+     "p": "do",
+     "ini": 373.5,
+     "fim": 374.02,
+     "prob": 1.0
+    },
+    {
+     "p": "centro",
+     "ini": 374.02,
+     "fim": 374.28,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 374.28,
+   "fim": 376.8,
+   "texto": "É que todas as ruas",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 374.28,
+     "fim": 374.92,
+     "prob": 0.999
+    },
+    {
+     "p": "que",
+     "ini": 374.92,
+     "fim": 375.3,
+     "prob": 1.0
+    },
+    {
+     "p": "todas",
+     "ini": 375.3,
+     "fim": 376.22,
+     "prob": 0.925
+    },
+    {
+     "p": "as",
+     "ini": 376.22,
+     "fim": 376.44,
+     "prob": 1.0
+    },
+    {
+     "p": "ruas",
+     "ini": 376.44,
+     "fim": 376.8,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 377.64,
+   "fim": 379.26,
+   "texto": "Elas são muito estreitinhas",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "Elas",
+     "ini": 377.64,
+     "fim": 378.08,
+     "prob": 0.785
+    },
+    {
+     "p": "são",
+     "ini": 378.08,
+     "fim": 378.3,
+     "prob": 1.0
+    },
+    {
+     "p": "muito",
+     "ini": 378.3,
+     "fim": 378.52,
+     "prob": 1.0
+    },
+    {
+     "p": "estreitinhas",
+     "ini": 378.52,
+     "fim": 379.26,
+     "prob": 0.967
+    }
+   ]
+  },
+  {
+   "ini": 379.98,
+   "fim": 381.06,
+   "texto": "Dificilmente passa um carro",
+   "conf": -0.125,
+   "sem_fala": 0.28,
+   "palavras": [
+    {
+     "p": "Dificilmente",
+     "ini": 379.98,
+     "fim": 380.42,
+     "prob": 0.998
+    },
+    {
+     "p": "passa",
+     "ini": 380.42,
+     "fim": 380.6,
+     "prob": 0.963
+    },
+    {
+     "p": "um",
+     "ini": 380.6,
+     "fim": 380.78,
+     "prob": 1.0
+    },
+    {
+     "p": "carro",
+     "ini": 380.78,
+     "fim": 381.06,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 381.06,
+   "fim": 388.84,
+   "texto": "E são todos em paralelopípedos, aí dá um ar mais medievalzinho pra cidade, sabe? É massa!",
+   "conf": -0.315,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 381.06,
+     "fim": 381.82,
+     "prob": 0.299
+    },
+    {
+     "p": "são",
+     "ini": 383.02,
+     "fim": 383.94,
+     "prob": 0.276
+    },
+    {
+     "p": "todos",
+     "ini": 383.94,
+     "fim": 384.18,
+     "prob": 0.271
+    },
+    {
+     "p": "em",
+     "ini": 384.18,
+     "fim": 384.32,
+     "prob": 0.665
+    },
+    {
+     "p": "paralelopípedos,",
+     "ini": 384.32,
+     "fim": 385.18,
+     "prob": 0.786
+    },
+    {
+     "p": "aí",
+     "ini": 385.18,
+     "fim": 385.6,
+     "prob": 0.54
+    },
+    {
+     "p": "dá",
+     "ini": 385.6,
+     "fim": 385.78,
+     "prob": 0.91
+    },
+    {
+     "p": "um",
+     "ini": 385.78,
+     "fim": 385.88,
+     "prob": 0.935
+    },
+    {
+     "p": "ar",
+     "ini": 385.88,
+     "fim": 386.08,
+     "prob": 0.934
+    },
+    {
+     "p": "mais",
+     "ini": 386.08,
+     "fim": 386.3,
+     "prob": 0.702
+    },
+    {
+     "p": "medievalzinho",
+     "ini": 386.3,
+     "fim": 387.14,
+     "prob": 0.877
+    },
+    {
+     "p": "pra",
+     "ini": 387.14,
+     "fim": 387.4,
+     "prob": 0.38
+    },
+    {
+     "p": "cidade,",
+     "ini": 387.4,
+     "fim": 387.76,
+     "prob": 0.993
+    },
+    {
+     "p": "sabe?",
+     "ini": 387.96,
+     "fim": 388.08,
+     "prob": 0.894
+    },
+    {
+     "p": "É",
+     "ini": 388.22,
+     "fim": 388.62,
+     "prob": 0.852
+    },
+    {
+     "p": "massa!",
+     "ini": 388.62,
+     "fim": 388.84,
+     "prob": 0.969
+    }
+   ]
+  },
+  {
+   "ini": 390.02,
+   "fim": 395.64,
+   "texto": "Chegamos aqui na Galeria Royale de Saint-François",
+   "conf": -0.315,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "Chegamos",
+     "ini": 390.02,
+     "fim": 390.52,
+     "prob": 0.925
+    },
+    {
+     "p": "aqui",
+     "ini": 390.52,
+     "fim": 390.82,
+     "prob": 0.989
+    },
+    {
+     "p": "na",
+     "ini": 390.82,
+     "fim": 392.16,
+     "prob": 0.687
+    },
+    {
+     "p": "Galeria",
+     "ini": 392.16,
+     "fim": 393.24,
+     "prob": 0.815
+    },
+    {
+     "p": "Royale",
+     "ini": 393.24,
+     "fim": 393.9,
+     "prob": 0.756
+    },
+    {
+     "p": "de",
+     "ini": 393.9,
+     "fim": 394.12,
+     "prob": 0.767
+    },
+    {
+     "p": "Saint",
+     "ini": 394.12,
+     "fim": 394.8,
+     "prob": 0.227
+    },
+    {
+     "p": "-François",
+     "ini": 395.04,
+     "fim": 395.64,
+     "prob": 0.576
+    }
+   ]
+  },
+  {
+   "ini": 396.98,
+   "fim": 404.51,
+   "texto": "E é uma galeria famosa, daqui é um dos pontos, tem várias lojas aqui ao redor",
+   "conf": -0.315,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 396.98,
+     "fim": 397.48,
+     "prob": 0.281
+    },
+    {
+     "p": "é",
+     "ini": 397.48,
+     "fim": 397.98,
+     "prob": 0.964
+    },
+    {
+     "p": "uma",
+     "ini": 397.98,
+     "fim": 398.18,
+     "prob": 0.998
+    },
+    {
+     "p": "galeria",
+     "ini": 398.18,
+     "fim": 398.92,
+     "prob": 0.994
+    },
+    {
+     "p": "famosa,",
+     "ini": 399.51,
+     "fim": 400.65,
+     "prob": 0.92
+    },
+    {
+     "p": "daqui",
+     "ini": 400.65,
+     "fim": 400.85,
+     "prob": 0.895
+    },
+    {
+     "p": "é",
+     "ini": 400.85,
+     "fim": 401.01,
+     "prob": 0.608
+    },
+    {
+     "p": "um",
+     "ini": 401.01,
+     "fim": 401.03,
+     "prob": 0.983
+    },
+    {
+     "p": "dos",
+     "ini": 401.03,
+     "fim": 401.17,
+     "prob": 0.996
+    },
+    {
+     "p": "pontos,",
+     "ini": 401.17,
+     "fim": 401.57,
+     "prob": 0.977
+    },
+    {
+     "p": "tem",
+     "ini": 401.79,
+     "fim": 402.23,
+     "prob": 0.804
+    },
+    {
+     "p": "várias",
+     "ini": 402.23,
+     "fim": 402.49,
+     "prob": 0.996
+    },
+    {
+     "p": "lojas",
+     "ini": 402.49,
+     "fim": 402.93,
+     "prob": 0.999
+    },
+    {
+     "p": "aqui",
+     "ini": 402.93,
+     "fim": 403.17,
+     "prob": 0.884
+    },
+    {
+     "p": "ao",
+     "ini": 403.17,
+     "fim": 404.03,
+     "prob": 0.988
+    },
+    {
+     "p": "redor",
+     "ini": 404.11,
+     "fim": 404.51,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 406.47,
+   "fim": 410.07,
+   "texto": "Muita chocolateria e loja de joias também, tem algumas lojas de bolsa",
+   "conf": -0.315,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "Muita",
+     "ini": 406.47,
+     "fim": 406.97,
+     "prob": 0.824
+    },
+    {
+     "p": "chocolateria",
+     "ini": 406.97,
+     "fim": 407.47,
+     "prob": 0.972
+    },
+    {
+     "p": "e",
+     "ini": 407.47,
+     "fim": 407.63,
+     "prob": 0.958
+    },
+    {
+     "p": "loja",
+     "ini": 407.63,
+     "fim": 407.99,
+     "prob": 0.933
+    },
+    {
+     "p": "de",
+     "ini": 407.99,
+     "fim": 408.11,
+     "prob": 0.999
+    },
+    {
+     "p": "joias",
+     "ini": 408.11,
+     "fim": 408.45,
+     "prob": 0.766
+    },
+    {
+     "p": "também,",
+     "ini": 408.45,
+     "fim": 408.67,
+     "prob": 0.923
+    },
+    {
+     "p": "tem",
+     "ini": 408.77,
+     "fim": 408.91,
+     "prob": 0.886
+    },
+    {
+     "p": "algumas",
+     "ini": 408.91,
+     "fim": 409.05,
+     "prob": 0.935
+    },
+    {
+     "p": "lojas",
+     "ini": 409.05,
+     "fim": 409.43,
+     "prob": 0.99
+    },
+    {
+     "p": "de",
+     "ini": 409.43,
+     "fim": 409.59,
+     "prob": 0.989
+    },
+    {
+     "p": "bolsa",
+     "ini": 409.59,
+     "fim": 410.07,
+     "prob": 0.745
+    }
+   ]
+  },
+  {
+   "ini": 410.07,
+   "fim": 413.33,
+   "texto": "Mas eu não vi nenhuma loja conhecida, então acho que a gente precisa...",
+   "conf": -0.315,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "Mas",
+     "ini": 410.07,
+     "fim": 410.69,
+     "prob": 0.525
+    },
+    {
+     "p": "eu",
+     "ini": 410.69,
+     "fim": 410.81,
+     "prob": 0.962
+    },
+    {
+     "p": "não",
+     "ini": 410.81,
+     "fim": 410.89,
+     "prob": 0.992
+    },
+    {
+     "p": "vi",
+     "ini": 410.89,
+     "fim": 410.99,
+     "prob": 0.987
+    },
+    {
+     "p": "nenhuma",
+     "ini": 410.99,
+     "fim": 411.13,
+     "prob": 0.973
+    },
+    {
+     "p": "loja",
+     "ini": 411.13,
+     "fim": 411.49,
+     "prob": 0.996
+    },
+    {
+     "p": "conhecida,",
+     "ini": 411.49,
+     "fim": 412.09,
+     "prob": 0.993
+    },
+    {
+     "p": "então",
+     "ini": 412.13,
+     "fim": 412.31,
+     "prob": 0.903
+    },
+    {
+     "p": "acho",
+     "ini": 412.31,
+     "fim": 412.51,
+     "prob": 0.77
+    },
+    {
+     "p": "que",
+     "ini": 412.51,
+     "fim": 412.63,
+     "prob": 0.897
+    },
+    {
+     "p": "a",
+     "ini": 412.63,
+     "fim": 412.83,
+     "prob": 0.369
+    },
+    {
+     "p": "gente",
+     "ini": 412.83,
+     "fim": 412.83,
+     "prob": 0.99
+    },
+    {
+     "p": "precisa...",
+     "ini": 412.83,
+     "fim": 413.33,
+     "prob": 0.852
+    }
+   ]
+  },
+  {
+   "ini": 414.07,
+   "fim": 420.63,
+   "texto": "Mas eu acredito que tem várias lojas locais e é bem bonito, bem bonitamente.",
+   "conf": -0.302,
+   "sem_fala": 0.385,
+   "palavras": [
+    {
+     "p": "Mas",
+     "ini": 414.07,
+     "fim": 414.81,
+     "prob": 0.035
+    },
+    {
+     "p": "eu",
+     "ini": 414.81,
+     "fim": 415.19,
+     "prob": 0.387
+    },
+    {
+     "p": "acredito",
+     "ini": 415.19,
+     "fim": 417.15,
+     "prob": 0.994
+    },
+    {
+     "p": "que",
+     "ini": 417.15,
+     "fim": 417.25,
+     "prob": 0.987
+    },
+    {
+     "p": "tem",
+     "ini": 417.25,
+     "fim": 417.39,
+     "prob": 0.577
+    },
+    {
+     "p": "várias",
+     "ini": 417.39,
+     "fim": 417.53,
+     "prob": 0.836
+    },
+    {
+     "p": "lojas",
+     "ini": 417.53,
+     "fim": 417.99,
+     "prob": 0.995
+    },
+    {
+     "p": "locais",
+     "ini": 417.99,
+     "fim": 418.61,
+     "prob": 0.995
+    },
+    {
+     "p": "e",
+     "ini": 418.61,
+     "fim": 418.99,
+     "prob": 0.361
+    },
+    {
+     "p": "é",
+     "ini": 418.99,
+     "fim": 419.13,
+     "prob": 0.972
+    },
+    {
+     "p": "bem",
+     "ini": 419.13,
+     "fim": 419.25,
+     "prob": 0.937
+    },
+    {
+     "p": "bonito,",
+     "ini": 419.25,
+     "fim": 419.55,
+     "prob": 0.911
+    },
+    {
+     "p": "bem",
+     "ini": 419.75,
+     "fim": 420.13,
+     "prob": 0.898
+    },
+    {
+     "p": "bonitamente.",
+     "ini": 420.13,
+     "fim": 420.63,
+     "prob": 0.923
+    }
+   ]
+  },
+  {
+   "ini": 438.12,
+   "fim": 443.56,
+   "texto": "Estamos aqui na galeria e nunca tivemos coragem de entrar em nenhuma loja de chocolate.",
+   "conf": -0.302,
+   "sem_fala": 0.385,
+   "palavras": [
+    {
+     "p": "Estamos",
+     "ini": 438.12,
+     "fim": 438.46,
+     "prob": 0.944
+    },
+    {
+     "p": "aqui",
+     "ini": 438.46,
+     "fim": 438.94,
+     "prob": 0.99
+    },
+    {
+     "p": "na",
+     "ini": 438.94,
+     "fim": 439.34,
+     "prob": 0.949
+    },
+    {
+     "p": "galeria",
+     "ini": 439.34,
+     "fim": 439.98,
+     "prob": 0.978
+    },
+    {
+     "p": "e",
+     "ini": 439.98,
+     "fim": 440.22,
+     "prob": 0.922
+    },
+    {
+     "p": "nunca",
+     "ini": 440.22,
+     "fim": 440.48,
+     "prob": 0.6
+    },
+    {
+     "p": "tivemos",
+     "ini": 440.48,
+     "fim": 440.86,
+     "prob": 0.881
+    },
+    {
+     "p": "coragem",
+     "ini": 440.86,
+     "fim": 441.6,
+     "prob": 0.998
+    },
+    {
+     "p": "de",
+     "ini": 441.6,
+     "fim": 441.8,
+     "prob": 0.997
+    },
+    {
+     "p": "entrar",
+     "ini": 441.8,
+     "fim": 442.24,
+     "prob": 0.997
+    },
+    {
+     "p": "em",
+     "ini": 442.24,
+     "fim": 442.56,
+     "prob": 0.911
+    },
+    {
+     "p": "nenhuma",
+     "ini": 442.56,
+     "fim": 442.88,
+     "prob": 0.555
+    },
+    {
+     "p": "loja",
+     "ini": 442.88,
+     "fim": 443.24,
+     "prob": 0.999
+    },
+    {
+     "p": "de",
+     "ini": 443.24,
+     "fim": 443.36,
+     "prob": 0.951
+    },
+    {
+     "p": "chocolate.",
+     "ini": 443.36,
+     "fim": 443.56,
+     "prob": 0.886
+    }
+   ]
+  },
+  {
+   "ini": 445.7,
+   "fim": 454.62,
+   "texto": "Porque simplesmente seis ovos de páscoa, menores que meu dedo, estão a 26 euros pela vitrine.",
+   "conf": -0.302,
+   "sem_fala": 0.385,
+   "palavras": [
+    {
+     "p": "Porque",
+     "ini": 445.7,
+     "fim": 446.44,
+     "prob": 0.667
+    },
+    {
+     "p": "simplesmente",
+     "ini": 446.44,
+     "fim": 447.18,
+     "prob": 0.912
+    },
+    {
+     "p": "seis",
+     "ini": 447.18,
+     "fim": 447.78,
+     "prob": 0.769
+    },
+    {
+     "p": "ovos",
+     "ini": 447.78,
+     "fim": 448.1,
+     "prob": 0.635
+    },
+    {
+     "p": "de",
+     "ini": 448.1,
+     "fim": 448.44,
+     "prob": 0.972
+    },
+    {
+     "p": "páscoa,",
+     "ini": 448.44,
+     "fim": 449.12,
+     "prob": 0.889
+    },
+    {
+     "p": "menores",
+     "ini": 449.12,
+     "fim": 449.74,
+     "prob": 0.995
+    },
+    {
+     "p": "que",
+     "ini": 449.74,
+     "fim": 449.88,
+     "prob": 0.972
+    },
+    {
+     "p": "meu",
+     "ini": 449.88,
+     "fim": 450.04,
+     "prob": 0.832
+    },
+    {
+     "p": "dedo,",
+     "ini": 450.04,
+     "fim": 450.44,
+     "prob": 0.999
+    },
+    {
+     "p": "estão",
+     "ini": 450.48,
+     "fim": 450.94,
+     "prob": 0.965
+    },
+    {
+     "p": "a",
+     "ini": 450.94,
+     "fim": 451.16,
+     "prob": 0.993
+    },
+    {
+     "p": "26",
+     "ini": 451.16,
+     "fim": 451.48,
+     "prob": 0.956
+    },
+    {
+     "p": "euros",
+     "ini": 451.48,
+     "fim": 452.14,
+     "prob": 0.962
+    },
+    {
+     "p": "pela",
+     "ini": 452.14,
+     "fim": 452.9,
+     "prob": 0.873
+    },
+    {
+     "p": "vitrine.",
+     "ini": 452.9,
+     "fim": 454.62,
+     "prob": 0.928
+    }
+   ]
+  },
+  {
+   "ini": 455.44,
+   "fim": 456.82,
+   "texto": "Não tem condições",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "Não",
+     "ini": 455.44,
+     "fim": 456.02,
+     "prob": 0.193
+    },
+    {
+     "p": "tem",
+     "ini": 456.02,
+     "fim": 456.34,
+     "prob": 0.967
+    },
+    {
+     "p": "condições",
+     "ini": 456.34,
+     "fim": 456.82,
+     "prob": 0.985
+    }
+   ]
+  },
+  {
+   "ini": 456.82,
+   "fim": 458.08,
+   "texto": "Vamos sair",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "Vamos",
+     "ini": 456.82,
+     "fim": 457.68,
+     "prob": 0.236
+    },
+    {
+     "p": "sair",
+     "ini": 457.68,
+     "fim": 458.08,
+     "prob": 0.985
+    }
+   ]
+  },
+  {
+   "ini": 458.08,
+   "fim": 460.96,
+   "texto": "E continuar o nosso rolê",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 458.08,
+     "fim": 458.42,
+     "prob": 0.392
+    },
+    {
+     "p": "continuar",
+     "ini": 458.7,
+     "fim": 459.74,
+     "prob": 0.989
+    },
+    {
+     "p": "o",
+     "ini": 459.74,
+     "fim": 460.02,
+     "prob": 0.6
+    },
+    {
+     "p": "nosso",
+     "ini": 460.02,
+     "fim": 460.38,
+     "prob": 0.998
+    },
+    {
+     "p": "rolê",
+     "ini": 460.38,
+     "fim": 460.96,
+     "prob": 0.957
+    }
+   ]
+  },
+  {
+   "ini": 460.96,
+   "fim": 461.78,
+   "texto": "Por Bruxelas",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "Por",
+     "ini": 460.96,
+     "fim": 461.22,
+     "prob": 0.189
+    },
+    {
+     "p": "Bruxelas",
+     "ini": 461.22,
+     "fim": 461.78,
+     "prob": 0.965
+    }
+   ]
+  },
+  {
+   "ini": 462.42,
+   "fim": 471.57,
+   "texto": "Estamos de frente",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "Estamos",
+     "ini": 462.42,
+     "fim": 463.0,
+     "prob": 0.992
+    },
+    {
+     "p": "de",
+     "ini": 470.85,
+     "fim": 471.19,
+     "prob": 0.998
+    },
+    {
+     "p": "frente",
+     "ini": 471.19,
+     "fim": 471.57,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 471.57,
+   "fim": 473.83,
+   "texto": "Para a atração da cidade",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "Para",
+     "ini": 471.57,
+     "fim": 472.19,
+     "prob": 0.723
+    },
+    {
+     "p": "a",
+     "ini": 472.19,
+     "fim": 472.55,
+     "prob": 0.999
+    },
+    {
+     "p": "atração",
+     "ini": 472.55,
+     "fim": 473.09,
+     "prob": 0.999
+    },
+    {
+     "p": "da",
+     "ini": 473.09,
+     "fim": 473.43,
+     "prob": 0.993
+    },
+    {
+     "p": "cidade",
+     "ini": 473.43,
+     "fim": 473.83,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 473.83,
+   "fim": 475.09,
+   "texto": "Gente, é muito engraçado",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "Gente,",
+     "ini": 473.83,
+     "fim": 474.29,
+     "prob": 0.816
+    },
+    {
+     "p": "é",
+     "ini": 474.33,
+     "fim": 474.49,
+     "prob": 0.999
+    },
+    {
+     "p": "muito",
+     "ini": 474.49,
+     "fim": 474.59,
+     "prob": 1.0
+    },
+    {
+     "p": "engraçado",
+     "ini": 474.59,
+     "fim": 475.09,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 475.09,
+   "fim": 477.95,
+   "texto": "Fica uma multidão na frente",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "Fica",
+     "ini": 475.09,
+     "fim": 476.19,
+     "prob": 0.98
+    },
+    {
+     "p": "uma",
+     "ini": 476.19,
+     "fim": 476.33,
+     "prob": 0.999
+    },
+    {
+     "p": "multidão",
+     "ini": 476.33,
+     "fim": 477.23,
+     "prob": 1.0
+    },
+    {
+     "p": "na",
+     "ini": 477.23,
+     "fim": 477.57,
+     "prob": 0.743
+    },
+    {
+     "p": "frente",
+     "ini": 477.57,
+     "fim": 477.95,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 477.95,
+   "fim": 480.71,
+   "texto": "Quem vem da rua sem ver o que é",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "Quem",
+     "ini": 477.95,
+     "fim": 478.59,
+     "prob": 0.99
+    },
+    {
+     "p": "vem",
+     "ini": 478.59,
+     "fim": 478.95,
+     "prob": 0.838
+    },
+    {
+     "p": "da",
+     "ini": 478.95,
+     "fim": 479.67,
+     "prob": 0.695
+    },
+    {
+     "p": "rua",
+     "ini": 479.67,
+     "fim": 479.91,
+     "prob": 1.0
+    },
+    {
+     "p": "sem",
+     "ini": 479.91,
+     "fim": 480.15,
+     "prob": 0.369
+    },
+    {
+     "p": "ver",
+     "ini": 480.15,
+     "fim": 480.37,
+     "prob": 1.0
+    },
+    {
+     "p": "o",
+     "ini": 480.37,
+     "fim": 480.49,
+     "prob": 0.998
+    },
+    {
+     "p": "que",
+     "ini": 480.49,
+     "fim": 480.59,
+     "prob": 0.999
+    },
+    {
+     "p": "é",
+     "ini": 480.59,
+     "fim": 480.71,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 480.71,
+   "fim": 481.97,
+   "texto": "Fica tipo, meu Deus, o que é?",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "Fica",
+     "ini": 480.71,
+     "fim": 480.91,
+     "prob": 0.976
+    },
+    {
+     "p": "tipo,",
+     "ini": 480.91,
+     "fim": 481.09,
+     "prob": 0.996
+    },
+    {
+     "p": "meu",
+     "ini": 481.17,
+     "fim": 481.27,
+     "prob": 1.0
+    },
+    {
+     "p": "Deus,",
+     "ini": 481.27,
+     "fim": 481.49,
+     "prob": 0.982
+    },
+    {
+     "p": "o",
+     "ini": 481.59,
+     "fim": 481.73,
+     "prob": 1.0
+    },
+    {
+     "p": "que",
+     "ini": 481.73,
+     "fim": 481.79,
+     "prob": 1.0
+    },
+    {
+     "p": "é?",
+     "ini": 481.79,
+     "fim": 481.97,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 482.09,
+   "fim": 482.81,
+   "texto": "O que será? O que será?",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "O",
+     "ini": 482.09,
+     "fim": 482.21,
+     "prob": 0.954
+    },
+    {
+     "p": "que",
+     "ini": 482.21,
+     "fim": 482.23,
+     "prob": 0.995
+    },
+    {
+     "p": "será?",
+     "ini": 482.23,
+     "fim": 482.41,
+     "prob": 0.957
+    },
+    {
+     "p": "O",
+     "ini": 482.53,
+     "fim": 482.63,
+     "prob": 0.835
+    },
+    {
+     "p": "que",
+     "ini": 482.63,
+     "fim": 482.65,
+     "prob": 0.989
+    },
+    {
+     "p": "será?",
+     "ini": 482.65,
+     "fim": 482.81,
+     "prob": 0.791
+    }
+   ]
+  },
+  {
+   "ini": 482.89,
+   "fim": 485.15,
+   "texto": "O menino fazendo xixi",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "O",
+     "ini": 482.89,
+     "fim": 482.99,
+     "prob": 0.327
+    },
+    {
+     "p": "menino",
+     "ini": 482.99,
+     "fim": 484.51,
+     "prob": 0.654
+    },
+    {
+     "p": "fazendo",
+     "ini": 484.51,
+     "fim": 484.71,
+     "prob": 0.37
+    },
+    {
+     "p": "xixi",
+     "ini": 484.71,
+     "fim": 485.15,
+     "prob": 0.969
+    }
+   ]
+  },
+  {
+   "ini": 485.15,
+   "fim": 489.73,
+   "texto": "Um trocinho daquele fazendo xixi",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "Um",
+     "ini": 485.15,
+     "fim": 485.27,
+     "prob": 0.287
+    },
+    {
+     "p": "trocinho",
+     "ini": 485.27,
+     "fim": 488.27,
+     "prob": 0.862
+    },
+    {
+     "p": "daquele",
+     "ini": 488.51,
+     "fim": 488.81,
+     "prob": 0.781
+    },
+    {
+     "p": "fazendo",
+     "ini": 488.81,
+     "fim": 489.07,
+     "prob": 0.478
+    },
+    {
+     "p": "xixi",
+     "ini": 489.07,
+     "fim": 489.73,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 489.73,
+   "fim": 491.47,
+   "texto": "Mas é muito difícil",
+   "conf": -0.227,
+   "sem_fala": 0.338,
+   "palavras": [
+    {
+     "p": "Mas",
+     "ini": 489.73,
+     "fim": 490.21,
+     "prob": 0.543
+    },
+    {
+     "p": "é",
+     "ini": 490.21,
+     "fim": 490.95,
+     "prob": 1.0
+    },
+    {
+     "p": "muito",
+     "ini": 490.95,
+     "fim": 491.13,
+     "prob": 0.999
+    },
+    {
+     "p": "difícil",
+     "ini": 491.13,
+     "fim": 491.47,
+     "prob": 0.859
+    }
+   ]
+  },
+  {
+   "ini": 491.47,
+   "fim": 493.39,
+   "texto": "E ele tá vestido de jogador de futebol",
+   "conf": -0.2,
+   "sem_fala": 0.485,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 491.47,
+     "fim": 492.05,
+     "prob": 0.144
+    },
+    {
+     "p": "ele",
+     "ini": 492.05,
+     "fim": 492.21,
+     "prob": 0.625
+    },
+    {
+     "p": "tá",
+     "ini": 492.21,
+     "fim": 492.27,
+     "prob": 0.428
+    },
+    {
+     "p": "vestido",
+     "ini": 492.27,
+     "fim": 492.55,
+     "prob": 0.865
+    },
+    {
+     "p": "de",
+     "ini": 492.55,
+     "fim": 492.63,
+     "prob": 0.969
+    },
+    {
+     "p": "jogador",
+     "ini": 492.63,
+     "fim": 492.87,
+     "prob": 0.988
+    },
+    {
+     "p": "de",
+     "ini": 492.87,
+     "fim": 492.95,
+     "prob": 0.992
+    },
+    {
+     "p": "futebol",
+     "ini": 492.95,
+     "fim": 493.39,
+     "prob": 0.995
+    }
+   ]
+  },
+  {
+   "ini": 493.39,
+   "fim": 499.09,
+   "texto": "E é legal isso, porque eles aqui sempre decoram ou vestem ele",
+   "conf": -0.2,
+   "sem_fala": 0.485,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 493.39,
+     "fim": 493.51,
+     "prob": 0.105
+    },
+    {
+     "p": "é",
+     "ini": 493.51,
+     "fim": 493.63,
+     "prob": 0.774
+    },
+    {
+     "p": "legal",
+     "ini": 493.63,
+     "fim": 493.87,
+     "prob": 0.98
+    },
+    {
+     "p": "isso,",
+     "ini": 493.87,
+     "fim": 494.15,
+     "prob": 0.731
+    },
+    {
+     "p": "porque",
+     "ini": 494.25,
+     "fim": 494.57,
+     "prob": 0.725
+    },
+    {
+     "p": "eles",
+     "ini": 494.57,
+     "fim": 495.45,
+     "prob": 0.914
+    },
+    {
+     "p": "aqui",
+     "ini": 495.45,
+     "fim": 496.07,
+     "prob": 0.936
+    },
+    {
+     "p": "sempre",
+     "ini": 496.07,
+     "fim": 496.99,
+     "prob": 0.701
+    },
+    {
+     "p": "decoram",
+     "ini": 496.99,
+     "fim": 498.29,
+     "prob": 0.996
+    },
+    {
+     "p": "ou",
+     "ini": 498.29,
+     "fim": 498.39,
+     "prob": 0.837
+    },
+    {
+     "p": "vestem",
+     "ini": 498.39,
+     "fim": 498.79,
+     "prob": 0.998
+    },
+    {
+     "p": "ele",
+     "ini": 498.79,
+     "fim": 499.09,
+     "prob": 0.984
+    }
+   ]
+  },
+  {
+   "ini": 499.09,
+   "fim": 502.35,
+   "texto": "Eu fui no Natal, eles colocam ele de Papai Noel",
+   "conf": -0.2,
+   "sem_fala": 0.485,
+   "palavras": [
+    {
+     "p": "Eu",
+     "ini": 499.09,
+     "fim": 499.75,
+     "prob": 0.056
+    },
+    {
+     "p": "fui",
+     "ini": 499.75,
+     "fim": 499.91,
+     "prob": 0.711
+    },
+    {
+     "p": "no",
+     "ini": 499.91,
+     "fim": 500.09,
+     "prob": 0.947
+    },
+    {
+     "p": "Natal,",
+     "ini": 500.09,
+     "fim": 500.55,
+     "prob": 0.875
+    },
+    {
+     "p": "eles",
+     "ini": 500.55,
+     "fim": 500.75,
+     "prob": 0.956
+    },
+    {
+     "p": "colocam",
+     "ini": 500.75,
+     "fim": 501.21,
+     "prob": 0.961
+    },
+    {
+     "p": "ele",
+     "ini": 501.21,
+     "fim": 501.45,
+     "prob": 0.974
+    },
+    {
+     "p": "de",
+     "ini": 501.45,
+     "fim": 501.75,
+     "prob": 0.959
+    },
+    {
+     "p": "Papai",
+     "ini": 501.75,
+     "fim": 502.03,
+     "prob": 0.892
+    },
+    {
+     "p": "Noel",
+     "ini": 502.03,
+     "fim": 502.35,
+     "prob": 0.759
+    }
+   ]
+  },
+  {
+   "ini": 503.23,
+   "fim": 506.47,
+   "texto": "Sabe? Aí eles vão decorando e partindo aí com o menininho",
+   "conf": -0.2,
+   "sem_fala": 0.485,
+   "palavras": [
+    {
+     "p": "Sabe?",
+     "ini": 503.23,
+     "fim": 503.71,
+     "prob": 0.663
+    },
+    {
+     "p": "Aí",
+     "ini": 503.77,
+     "fim": 503.85,
+     "prob": 0.721
+    },
+    {
+     "p": "eles",
+     "ini": 503.85,
+     "fim": 504.07,
+     "prob": 0.988
+    },
+    {
+     "p": "vão",
+     "ini": 504.07,
+     "fim": 504.19,
+     "prob": 0.996
+    },
+    {
+     "p": "decorando",
+     "ini": 504.19,
+     "fim": 504.75,
+     "prob": 0.992
+    },
+    {
+     "p": "e",
+     "ini": 504.75,
+     "fim": 505.03,
+     "prob": 0.918
+    },
+    {
+     "p": "partindo",
+     "ini": 505.03,
+     "fim": 505.71,
+     "prob": 0.716
+    },
+    {
+     "p": "aí",
+     "ini": 505.71,
+     "fim": 505.83,
+     "prob": 0.741
+    },
+    {
+     "p": "com",
+     "ini": 505.83,
+     "fim": 506.01,
+     "prob": 0.819
+    },
+    {
+     "p": "o",
+     "ini": 506.01,
+     "fim": 506.13,
+     "prob": 0.971
+    },
+    {
+     "p": "menininho",
+     "ini": 506.13,
+     "fim": 506.47,
+     "prob": 0.932
+    }
+   ]
+  },
+  {
+   "ini": 506.47,
+   "fim": 507.33,
+   "texto": "É muito bom",
+   "conf": -0.2,
+   "sem_fala": 0.485,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 506.47,
+     "fim": 506.77,
+     "prob": 0.754
+    },
+    {
+     "p": "muito",
+     "ini": 506.77,
+     "fim": 507.09,
+     "prob": 0.936
+    },
+    {
+     "p": "bom",
+     "ini": 507.09,
+     "fim": 507.33,
+     "prob": 0.875
+    }
+   ]
+  },
+  {
+   "ini": 507.33,
+   "fim": 509.07,
+   "texto": "De fato, é a criança da cidade",
+   "conf": -0.2,
+   "sem_fala": 0.485,
+   "palavras": [
+    {
+     "p": "De",
+     "ini": 507.33,
+     "fim": 507.55,
+     "prob": 0.856
+    },
+    {
+     "p": "fato,",
+     "ini": 507.55,
+     "fim": 507.83,
+     "prob": 0.999
+    },
+    {
+     "p": "é",
+     "ini": 507.83,
+     "fim": 508.03,
+     "prob": 0.995
+    },
+    {
+     "p": "a",
+     "ini": 508.03,
+     "fim": 508.09,
+     "prob": 0.995
+    },
+    {
+     "p": "criança",
+     "ini": 508.09,
+     "fim": 508.43,
+     "prob": 0.998
+    },
+    {
+     "p": "da",
+     "ini": 508.43,
+     "fim": 508.69,
+     "prob": 0.997
+    },
+    {
+     "p": "cidade",
+     "ini": 508.69,
+     "fim": 509.07,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 509.59,
+   "fim": 511.31,
+   "texto": "E é cuidada pela cidade",
+   "conf": -0.2,
+   "sem_fala": 0.485,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 509.59,
+     "fim": 510.07,
+     "prob": 0.901
+    },
+    {
+     "p": "é",
+     "ini": 510.07,
+     "fim": 510.15,
+     "prob": 0.999
+    },
+    {
+     "p": "cuidada",
+     "ini": 510.15,
+     "fim": 510.61,
+     "prob": 0.973
+    },
+    {
+     "p": "pela",
+     "ini": 510.61,
+     "fim": 510.87,
+     "prob": 0.999
+    },
+    {
+     "p": "cidade",
+     "ini": 510.87,
+     "fim": 511.31,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 511.31,
+   "fim": 513.2,
+   "texto": "Mas é muito massa",
+   "conf": -0.2,
+   "sem_fala": 0.485,
+   "palavras": [
+    {
+     "p": "Mas",
+     "ini": 511.31,
+     "fim": 512.13,
+     "prob": 0.782
+    },
+    {
+     "p": "é",
+     "ini": 512.76,
+     "fim": 512.8,
+     "prob": 0.61
+    },
+    {
+     "p": "muito",
+     "ini": 512.8,
+     "fim": 512.96,
+     "prob": 1.0
+    },
+    {
+     "p": "massa",
+     "ini": 512.96,
+     "fim": 513.2,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 513.2,
+   "fim": 515.48,
+   "texto": "Vamos continuar agora aqui nossa jornada",
+   "conf": -0.2,
+   "sem_fala": 0.485,
+   "palavras": [
+    {
+     "p": "Vamos",
+     "ini": 513.2,
+     "fim": 513.92,
+     "prob": 0.931
+    },
+    {
+     "p": "continuar",
+     "ini": 513.92,
+     "fim": 514.44,
+     "prob": 0.999
+    },
+    {
+     "p": "agora",
+     "ini": 514.44,
+     "fim": 514.6,
+     "prob": 0.965
+    },
+    {
+     "p": "aqui",
+     "ini": 514.6,
+     "fim": 514.78,
+     "prob": 0.994
+    },
+    {
+     "p": "nossa",
+     "ini": 514.78,
+     "fim": 514.92,
+     "prob": 0.866
+    },
+    {
+     "p": "jornada",
+     "ini": 514.92,
+     "fim": 515.48,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 515.48,
+   "fim": 518.26,
+   "texto": "Em volta aqui dele, o legal é que tem várias coisas",
+   "conf": -0.2,
+   "sem_fala": 0.485,
+   "palavras": [
+    {
+     "p": "Em",
+     "ini": 515.48,
+     "fim": 516.16,
+     "prob": 0.96
+    },
+    {
+     "p": "volta",
+     "ini": 516.16,
+     "fim": 516.42,
+     "prob": 1.0
+    },
+    {
+     "p": "aqui",
+     "ini": 516.42,
+     "fim": 516.64,
+     "prob": 0.982
+    },
+    {
+     "p": "dele,",
+     "ini": 516.64,
+     "fim": 516.9,
+     "prob": 0.99
+    },
+    {
+     "p": "o",
+     "ini": 517.02,
+     "fim": 517.26,
+     "prob": 0.901
+    },
+    {
+     "p": "legal",
+     "ini": 517.26,
+     "fim": 517.5,
+     "prob": 0.989
+    },
+    {
+     "p": "é",
+     "ini": 517.5,
+     "fim": 517.64,
+     "prob": 0.993
+    },
+    {
+     "p": "que",
+     "ini": 517.64,
+     "fim": 517.64,
+     "prob": 1.0
+    },
+    {
+     "p": "tem",
+     "ini": 517.64,
+     "fim": 517.78,
+     "prob": 0.997
+    },
+    {
+     "p": "várias",
+     "ini": 517.78,
+     "fim": 517.96,
+     "prob": 0.999
+    },
+    {
+     "p": "coisas",
+     "ini": 517.96,
+     "fim": 518.26,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 518.26,
+   "fim": 520.28,
+   "texto": "Tem um waffle, tem batata frita, tem tudo assim",
+   "conf": -0.2,
+   "sem_fala": 0.485,
+   "palavras": [
+    {
+     "p": "Tem",
+     "ini": 518.26,
+     "fim": 518.46,
+     "prob": 0.987
+    },
+    {
+     "p": "um",
+     "ini": 518.46,
+     "fim": 518.56,
+     "prob": 0.898
+    },
+    {
+     "p": "waffle,",
+     "ini": 518.56,
+     "fim": 518.78,
+     "prob": 0.645
+    },
+    {
+     "p": "tem",
+     "ini": 518.88,
+     "fim": 518.98,
+     "prob": 0.999
+    },
+    {
+     "p": "batata",
+     "ini": 518.98,
+     "fim": 519.22,
+     "prob": 0.997
+    },
+    {
+     "p": "frita,",
+     "ini": 519.22,
+     "fim": 519.58,
+     "prob": 0.998
+    },
+    {
+     "p": "tem",
+     "ini": 519.64,
+     "fim": 519.8,
+     "prob": 0.998
+    },
+    {
+     "p": "tudo",
+     "ini": 519.8,
+     "fim": 520.04,
+     "prob": 0.921
+    },
+    {
+     "p": "assim",
+     "ini": 520.04,
+     "fim": 520.28,
+     "prob": 0.521
+    }
+   ]
+  },
+  {
+   "ini": 557.69,
+   "fim": 559.87,
+   "texto": "Viemos agora para uma das regiões aqui na cidade",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "Viemos",
+     "ini": 557.69,
+     "fim": 558.17,
+     "prob": 0.948
+    },
+    {
+     "p": "agora",
+     "ini": 558.17,
+     "fim": 558.41,
+     "prob": 0.97
+    },
+    {
+     "p": "para",
+     "ini": 558.41,
+     "fim": 558.61,
+     "prob": 0.731
+    },
+    {
+     "p": "uma",
+     "ini": 558.61,
+     "fim": 558.71,
+     "prob": 0.977
+    },
+    {
+     "p": "das",
+     "ini": 558.71,
+     "fim": 558.85,
+     "prob": 0.997
+    },
+    {
+     "p": "regiões",
+     "ini": 558.85,
+     "fim": 559.23,
+     "prob": 0.999
+    },
+    {
+     "p": "aqui",
+     "ini": 559.23,
+     "fim": 559.43,
+     "prob": 0.93
+    },
+    {
+     "p": "na",
+     "ini": 559.43,
+     "fim": 559.57,
+     "prob": 0.797
+    },
+    {
+     "p": "cidade",
+     "ini": 559.57,
+     "fim": 559.87,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 559.87,
+   "fim": 561.01,
+   "texto": "Que ela é um pouco mais alta",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "Que",
+     "ini": 559.87,
+     "fim": 560.07,
+     "prob": 0.009
+    },
+    {
+     "p": "ela",
+     "ini": 560.07,
+     "fim": 560.19,
+     "prob": 0.678
+    },
+    {
+     "p": "é",
+     "ini": 560.19,
+     "fim": 560.29,
+     "prob": 0.999
+    },
+    {
+     "p": "um",
+     "ini": 560.29,
+     "fim": 560.35,
+     "prob": 0.999
+    },
+    {
+     "p": "pouco",
+     "ini": 560.35,
+     "fim": 560.45,
+     "prob": 0.999
+    },
+    {
+     "p": "mais",
+     "ini": 560.45,
+     "fim": 560.63,
+     "prob": 1.0
+    },
+    {
+     "p": "alta",
+     "ini": 560.63,
+     "fim": 561.01,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 561.01,
+   "fim": 565.02,
+   "texto": "É onde fica aqui o Palácio Real de Bruxelas",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 561.01,
+     "fim": 561.89,
+     "prob": 0.936
+    },
+    {
+     "p": "onde",
+     "ini": 562.1,
+     "fim": 562.86,
+     "prob": 0.994
+    },
+    {
+     "p": "fica",
+     "ini": 562.86,
+     "fim": 563.16,
+     "prob": 1.0
+    },
+    {
+     "p": "aqui",
+     "ini": 563.16,
+     "fim": 563.38,
+     "prob": 0.812
+    },
+    {
+     "p": "o",
+     "ini": 563.38,
+     "fim": 563.6,
+     "prob": 0.845
+    },
+    {
+     "p": "Palácio",
+     "ini": 563.6,
+     "fim": 564.2,
+     "prob": 0.993
+    },
+    {
+     "p": "Real",
+     "ini": 564.2,
+     "fim": 564.44,
+     "prob": 0.997
+    },
+    {
+     "p": "de",
+     "ini": 564.44,
+     "fim": 564.64,
+     "prob": 0.928
+    },
+    {
+     "p": "Bruxelas",
+     "ini": 564.64,
+     "fim": 565.02,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 565.02,
+   "fim": 566.2,
+   "texto": "E o Monte das Artes",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 565.02,
+     "fim": 565.28,
+     "prob": 0.861
+    },
+    {
+     "p": "o",
+     "ini": 565.28,
+     "fim": 565.36,
+     "prob": 0.997
+    },
+    {
+     "p": "Monte",
+     "ini": 565.36,
+     "fim": 565.56,
+     "prob": 0.997
+    },
+    {
+     "p": "das",
+     "ini": 565.56,
+     "fim": 565.76,
+     "prob": 0.999
+    },
+    {
+     "p": "Artes",
+     "ini": 565.76,
+     "fim": 566.2,
+     "prob": 0.998
+    }
+   ]
+  },
+  {
+   "ini": 567.31,
+   "fim": 568.53,
+   "texto": "O Palácio Real",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "O",
+     "ini": 567.31,
+     "fim": 567.79,
+     "prob": 0.98
+    },
+    {
+     "p": "Palácio",
+     "ini": 567.79,
+     "fim": 568.27,
+     "prob": 1.0
+    },
+    {
+     "p": "Real",
+     "ini": 568.27,
+     "fim": 568.53,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 568.53,
+   "fim": 570.23,
+   "texto": "Ele é bem grande, bem bonito",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "Ele",
+     "ini": 568.53,
+     "fim": 568.87,
+     "prob": 0.29
+    },
+    {
+     "p": "é",
+     "ini": 568.87,
+     "fim": 569.09,
+     "prob": 1.0
+    },
+    {
+     "p": "bem",
+     "ini": 569.09,
+     "fim": 569.23,
+     "prob": 1.0
+    },
+    {
+     "p": "grande,",
+     "ini": 569.23,
+     "fim": 569.51,
+     "prob": 1.0
+    },
+    {
+     "p": "bem",
+     "ini": 569.59,
+     "fim": 569.83,
+     "prob": 0.931
+    },
+    {
+     "p": "bonito",
+     "ini": 569.83,
+     "fim": 570.23,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 570.23,
+   "fim": 572.54,
+   "texto": "Tem uma estátua na frente também",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "Tem",
+     "ini": 570.23,
+     "fim": 570.77,
+     "prob": 0.999
+    },
+    {
+     "p": "uma",
+     "ini": 570.92,
+     "fim": 571.2,
+     "prob": 0.98
+    },
+    {
+     "p": "estátua",
+     "ini": 571.2,
+     "fim": 571.72,
+     "prob": 0.999
+    },
+    {
+     "p": "na",
+     "ini": 571.72,
+     "fim": 571.9,
+     "prob": 0.999
+    },
+    {
+     "p": "frente",
+     "ini": 571.9,
+     "fim": 572.16,
+     "prob": 1.0
+    },
+    {
+     "p": "também",
+     "ini": 572.16,
+     "fim": 572.54,
+     "prob": 0.994
+    }
+   ]
+  },
+  {
+   "ini": 572.54,
+   "fim": 574.88,
+   "texto": "Que fica na Praça Real",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "Que",
+     "ini": 572.54,
+     "fim": 573.44,
+     "prob": 0.998
+    },
+    {
+     "p": "fica",
+     "ini": 573.58,
+     "fim": 573.88,
+     "prob": 1.0
+    },
+    {
+     "p": "na",
+     "ini": 573.88,
+     "fim": 574.22,
+     "prob": 1.0
+    },
+    {
+     "p": "Praça",
+     "ini": 574.22,
+     "fim": 574.66,
+     "prob": 0.999
+    },
+    {
+     "p": "Real",
+     "ini": 574.66,
+     "fim": 574.88,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 576.34,
+   "fim": 578.46,
+   "texto": "E vale muito a pena vir aqui",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 576.34,
+     "fim": 576.82,
+     "prob": 0.825
+    },
+    {
+     "p": "vale",
+     "ini": 576.82,
+     "fim": 577.3,
+     "prob": 0.772
+    },
+    {
+     "p": "muito",
+     "ini": 577.54,
+     "fim": 577.74,
+     "prob": 0.998
+    },
+    {
+     "p": "a",
+     "ini": 577.74,
+     "fim": 577.9,
+     "prob": 0.995
+    },
+    {
+     "p": "pena",
+     "ini": 577.9,
+     "fim": 578.14,
+     "prob": 1.0
+    },
+    {
+     "p": "vir",
+     "ini": 578.14,
+     "fim": 578.28,
+     "prob": 0.943
+    },
+    {
+     "p": "aqui",
+     "ini": 578.28,
+     "fim": 578.46,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 578.46,
+   "fim": 580.54,
+   "texto": "Principalmente nesse período de final de tarde",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "Principalmente",
+     "ini": 578.46,
+     "fim": 579.1,
+     "prob": 0.992
+    },
+    {
+     "p": "nesse",
+     "ini": 579.1,
+     "fim": 579.3,
+     "prob": 0.998
+    },
+    {
+     "p": "período",
+     "ini": 579.3,
+     "fim": 579.56,
+     "prob": 0.999
+    },
+    {
+     "p": "de",
+     "ini": 579.56,
+     "fim": 579.82,
+     "prob": 0.731
+    },
+    {
+     "p": "final",
+     "ini": 579.82,
+     "fim": 580.14,
+     "prob": 0.995
+    },
+    {
+     "p": "de",
+     "ini": 580.14,
+     "fim": 580.26,
+     "prob": 1.0
+    },
+    {
+     "p": "tarde",
+     "ini": 580.26,
+     "fim": 580.54,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 580.54,
+   "fim": 581.98,
+   "texto": "Porque vem muita gente para cá",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "Porque",
+     "ini": 580.54,
+     "fim": 580.82,
+     "prob": 0.994
+    },
+    {
+     "p": "vem",
+     "ini": 580.82,
+     "fim": 581.02,
+     "prob": 0.457
+    },
+    {
+     "p": "muita",
+     "ini": 581.02,
+     "fim": 581.28,
+     "prob": 1.0
+    },
+    {
+     "p": "gente",
+     "ini": 581.28,
+     "fim": 581.52,
+     "prob": 1.0
+    },
+    {
+     "p": "para",
+     "ini": 581.52,
+     "fim": 581.74,
+     "prob": 0.56
+    },
+    {
+     "p": "cá",
+     "ini": 581.74,
+     "fim": 581.98,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 581.98,
+   "fim": 584.36,
+   "texto": "Fica um lugar bem tranquilo",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "Fica",
+     "ini": 581.98,
+     "fim": 582.64,
+     "prob": 0.995
+    },
+    {
+     "p": "um",
+     "ini": 583.04,
+     "fim": 583.16,
+     "prob": 0.999
+    },
+    {
+     "p": "lugar",
+     "ini": 583.16,
+     "fim": 583.36,
+     "prob": 1.0
+    },
+    {
+     "p": "bem",
+     "ini": 583.36,
+     "fim": 583.92,
+     "prob": 0.999
+    },
+    {
+     "p": "tranquilo",
+     "ini": 583.92,
+     "fim": 584.36,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 584.36,
+   "fim": 585.48,
+   "texto": "Para assistir o pôr do sol",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "Para",
+     "ini": 584.36,
+     "fim": 584.54,
+     "prob": 0.567
+    },
+    {
+     "p": "assistir",
+     "ini": 584.54,
+     "fim": 584.86,
+     "prob": 0.998
+    },
+    {
+     "p": "o",
+     "ini": 584.86,
+     "fim": 585.04,
+     "prob": 0.96
+    },
+    {
+     "p": "pôr",
+     "ini": 585.04,
+     "fim": 585.12,
+     "prob": 0.999
+    },
+    {
+     "p": "do",
+     "ini": 585.12,
+     "fim": 585.18,
+     "prob": 0.997
+    },
+    {
+     "p": "sol",
+     "ini": 585.18,
+     "fim": 585.48,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 585.48,
+   "fim": 586.62,
+   "texto": "Como é uma parte mais alta",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "Como",
+     "ini": 585.48,
+     "fim": 585.8,
+     "prob": 0.737
+    },
+    {
+     "p": "é",
+     "ini": 585.8,
+     "fim": 585.9,
+     "prob": 0.992
+    },
+    {
+     "p": "uma",
+     "ini": 585.9,
+     "fim": 585.94,
+     "prob": 0.991
+    },
+    {
+     "p": "parte",
+     "ini": 585.94,
+     "fim": 586.12,
+     "prob": 0.981
+    },
+    {
+     "p": "mais",
+     "ini": 586.12,
+     "fim": 586.34,
+     "prob": 1.0
+    },
+    {
+     "p": "alta",
+     "ini": 586.34,
+     "fim": 586.62,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 586.62,
+   "fim": 587.7,
+   "texto": "Tem um visual bem legal",
+   "conf": -0.127,
+   "sem_fala": 0.508,
+   "palavras": [
+    {
+     "p": "Tem",
+     "ini": 586.62,
+     "fim": 586.76,
+     "prob": 0.163
+    },
+    {
+     "p": "um",
+     "ini": 586.76,
+     "fim": 586.88,
+     "prob": 0.999
+    },
+    {
+     "p": "visual",
+     "ini": 586.88,
+     "fim": 587.16,
+     "prob": 0.999
+    },
+    {
+     "p": "bem",
+     "ini": 587.16,
+     "fim": 587.4,
+     "prob": 1.0
+    },
+    {
+     "p": "legal",
+     "ini": 587.4,
+     "fim": 587.7,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 587.7,
+   "fim": 592.9,
+   "texto": "E fica algumas pessoas também tocando música e tal, então dá uma vibe maneira",
+   "conf": -0.157,
+   "sem_fala": 0.62,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 587.7,
+     "fim": 588.14,
+     "prob": 0.153
+    },
+    {
+     "p": "fica",
+     "ini": 588.48,
+     "fim": 589.66,
+     "prob": 0.624
+    },
+    {
+     "p": "algumas",
+     "ini": 589.66,
+     "fim": 589.86,
+     "prob": 0.918
+    },
+    {
+     "p": "pessoas",
+     "ini": 589.86,
+     "fim": 590.18,
+     "prob": 0.993
+    },
+    {
+     "p": "também",
+     "ini": 590.18,
+     "fim": 590.42,
+     "prob": 0.714
+    },
+    {
+     "p": "tocando",
+     "ini": 590.42,
+     "fim": 590.72,
+     "prob": 0.979
+    },
+    {
+     "p": "música",
+     "ini": 590.72,
+     "fim": 591.18,
+     "prob": 0.622
+    },
+    {
+     "p": "e",
+     "ini": 591.18,
+     "fim": 591.42,
+     "prob": 0.878
+    },
+    {
+     "p": "tal,",
+     "ini": 591.42,
+     "fim": 591.58,
+     "prob": 0.932
+    },
+    {
+     "p": "então",
+     "ini": 591.6,
+     "fim": 591.76,
+     "prob": 0.861
+    },
+    {
+     "p": "dá",
+     "ini": 591.76,
+     "fim": 591.94,
+     "prob": 0.91
+    },
+    {
+     "p": "uma",
+     "ini": 591.94,
+     "fim": 592.02,
+     "prob": 0.993
+    },
+    {
+     "p": "vibe",
+     "ini": 592.02,
+     "fim": 592.28,
+     "prob": 0.96
+    },
+    {
+     "p": "maneira",
+     "ini": 592.28,
+     "fim": 592.9,
+     "prob": 0.848
+    }
+   ]
+  },
+  {
+   "ini": 592.9,
+   "fim": 597.02,
+   "texto": "E aí a gente vai ficar aqui, vai aproveitar esse finalzinho de tarde aqui em Bruxelas",
+   "conf": -0.157,
+   "sem_fala": 0.62,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 592.9,
+     "fim": 593.74,
+     "prob": 0.369
+    },
+    {
+     "p": "aí",
+     "ini": 594.04,
+     "fim": 594.2,
+     "prob": 0.843
+    },
+    {
+     "p": "a",
+     "ini": 594.2,
+     "fim": 594.3,
+     "prob": 0.953
+    },
+    {
+     "p": "gente",
+     "ini": 594.3,
+     "fim": 594.36,
+     "prob": 1.0
+    },
+    {
+     "p": "vai",
+     "ini": 594.36,
+     "fim": 594.48,
+     "prob": 0.987
+    },
+    {
+     "p": "ficar",
+     "ini": 594.48,
+     "fim": 594.62,
+     "prob": 0.996
+    },
+    {
+     "p": "aqui,",
+     "ini": 594.62,
+     "fim": 594.86,
+     "prob": 0.999
+    },
+    {
+     "p": "vai",
+     "ini": 594.88,
+     "fim": 595.0,
+     "prob": 0.978
+    },
+    {
+     "p": "aproveitar",
+     "ini": 595.0,
+     "fim": 595.42,
+     "prob": 0.999
+    },
+    {
+     "p": "esse",
+     "ini": 595.42,
+     "fim": 595.54,
+     "prob": 0.993
+    },
+    {
+     "p": "finalzinho",
+     "ini": 595.54,
+     "fim": 595.86,
+     "prob": 0.995
+    },
+    {
+     "p": "de",
+     "ini": 595.86,
+     "fim": 595.98,
+     "prob": 0.998
+    },
+    {
+     "p": "tarde",
+     "ini": 595.98,
+     "fim": 596.22,
+     "prob": 1.0
+    },
+    {
+     "p": "aqui",
+     "ini": 596.22,
+     "fim": 596.44,
+     "prob": 0.989
+    },
+    {
+     "p": "em",
+     "ini": 596.44,
+     "fim": 596.58,
+     "prob": 0.996
+    },
+    {
+     "p": "Bruxelas",
+     "ini": 596.58,
+     "fim": 597.02,
+     "prob": 0.994
+    }
+   ]
+  },
+  {
+   "ini": 597.5,
+   "fim": 599.04,
+   "texto": "Nesse fim de jornada nosso",
+   "conf": -0.157,
+   "sem_fala": 0.62,
+   "palavras": [
+    {
+     "p": "Nesse",
+     "ini": 597.5,
+     "fim": 597.94,
+     "prob": 0.658
+    },
+    {
+     "p": "fim",
+     "ini": 597.94,
+     "fim": 598.2,
+     "prob": 1.0
+    },
+    {
+     "p": "de",
+     "ini": 598.2,
+     "fim": 598.34,
+     "prob": 0.999
+    },
+    {
+     "p": "jornada",
+     "ini": 598.34,
+     "fim": 598.8,
+     "prob": 1.0
+    },
+    {
+     "p": "nosso",
+     "ini": 598.8,
+     "fim": 599.04,
+     "prob": 0.838
+    }
+   ]
+  },
+  {
+   "ini": 599.04,
+   "fim": 603.36,
+   "texto": "E mais tarde vamos procurar algum lugar pra jantar",
+   "conf": -0.157,
+   "sem_fala": 0.62,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 599.04,
+     "fim": 599.8,
+     "prob": 0.956
+    },
+    {
+     "p": "mais",
+     "ini": 600.26,
+     "fim": 601.62,
+     "prob": 0.937
+    },
+    {
+     "p": "tarde",
+     "ini": 601.62,
+     "fim": 601.86,
+     "prob": 1.0
+    },
+    {
+     "p": "vamos",
+     "ini": 601.86,
+     "fim": 602.04,
+     "prob": 0.994
+    },
+    {
+     "p": "procurar",
+     "ini": 602.04,
+     "fim": 602.46,
+     "prob": 1.0
+    },
+    {
+     "p": "algum",
+     "ini": 602.46,
+     "fim": 602.58,
+     "prob": 0.995
+    },
+    {
+     "p": "lugar",
+     "ini": 602.58,
+     "fim": 602.8,
+     "prob": 1.0
+    },
+    {
+     "p": "pra",
+     "ini": 602.8,
+     "fim": 602.94,
+     "prob": 0.794
+    },
+    {
+     "p": "jantar",
+     "ini": 602.94,
+     "fim": 603.36,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 603.36,
+   "fim": 606.04,
+   "texto": "Porque amanhã o dia vai ser longo também, já que a gente vai pra Bruges",
+   "conf": -0.157,
+   "sem_fala": 0.62,
+   "palavras": [
+    {
+     "p": "Porque",
+     "ini": 603.36,
+     "fim": 603.6,
+     "prob": 0.335
+    },
+    {
+     "p": "amanhã",
+     "ini": 603.6,
+     "fim": 603.84,
+     "prob": 0.999
+    },
+    {
+     "p": "o",
+     "ini": 603.84,
+     "fim": 603.88,
+     "prob": 0.94
+    },
+    {
+     "p": "dia",
+     "ini": 603.88,
+     "fim": 604.02,
+     "prob": 0.998
+    },
+    {
+     "p": "vai",
+     "ini": 604.02,
+     "fim": 604.14,
+     "prob": 0.999
+    },
+    {
+     "p": "ser",
+     "ini": 604.14,
+     "fim": 604.24,
+     "prob": 0.999
+    },
+    {
+     "p": "longo",
+     "ini": 604.24,
+     "fim": 604.48,
+     "prob": 0.999
+    },
+    {
+     "p": "também,",
+     "ini": 604.48,
+     "fim": 604.82,
+     "prob": 0.999
+    },
+    {
+     "p": "já",
+     "ini": 604.94,
+     "fim": 605.1,
+     "prob": 0.928
+    },
+    {
+     "p": "que",
+     "ini": 605.1,
+     "fim": 605.18,
+     "prob": 0.909
+    },
+    {
+     "p": "a",
+     "ini": 605.18,
+     "fim": 605.3,
+     "prob": 0.996
+    },
+    {
+     "p": "gente",
+     "ini": 605.3,
+     "fim": 605.36,
+     "prob": 1.0
+    },
+    {
+     "p": "vai",
+     "ini": 605.36,
+     "fim": 605.54,
+     "prob": 0.946
+    },
+    {
+     "p": "pra",
+     "ini": 605.54,
+     "fim": 605.68,
+     "prob": 0.99
+    },
+    {
+     "p": "Bruges",
+     "ini": 605.68,
+     "fim": 606.04,
+     "prob": 0.894
+    }
+   ]
+  },
+  {
+   "ini": 606.04,
+   "fim": 608.6,
+   "texto": "E é isso, vamos aproveitar aqui",
+   "conf": -0.157,
+   "sem_fala": 0.62,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 606.04,
+     "fim": 606.52,
+     "prob": 0.998
+    },
+    {
+     "p": "é",
+     "ini": 607.4,
+     "fim": 607.52,
+     "prob": 0.999
+    },
+    {
+     "p": "isso,",
+     "ini": 607.52,
+     "fim": 607.7,
+     "prob": 1.0
+    },
+    {
+     "p": "vamos",
+     "ini": 607.74,
+     "fim": 607.86,
+     "prob": 0.998
+    },
+    {
+     "p": "aproveitar",
+     "ini": 607.86,
+     "fim": 608.38,
+     "prob": 1.0
+    },
+    {
+     "p": "aqui",
+     "ini": 608.38,
+     "fim": 608.6,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 645.68,
+   "fim": 647.6,
+   "texto": "Logo na descida do Monte das Artes",
+   "conf": -0.157,
+   "sem_fala": 0.62,
+   "palavras": [
+    {
+     "p": "Logo",
+     "ini": 645.68,
+     "fim": 646.12,
+     "prob": 0.936
+    },
+    {
+     "p": "na",
+     "ini": 646.12,
+     "fim": 646.2,
+     "prob": 1.0
+    },
+    {
+     "p": "descida",
+     "ini": 646.2,
+     "fim": 646.6,
+     "prob": 1.0
+    },
+    {
+     "p": "do",
+     "ini": 646.6,
+     "fim": 646.72,
+     "prob": 1.0
+    },
+    {
+     "p": "Monte",
+     "ini": 646.72,
+     "fim": 646.9,
+     "prob": 0.871
+    },
+    {
+     "p": "das",
+     "ini": 646.9,
+     "fim": 647.1,
+     "prob": 0.996
+    },
+    {
+     "p": "Artes",
+     "ini": 647.1,
+     "fim": 647.6,
+     "prob": 0.992
+    }
+   ]
+  },
+  {
+   "ini": 647.6,
+   "fim": 652.32,
+   "texto": "Nós nos deparamos com um barzinho que tá aqui, chamado Le Madalena",
+   "conf": -0.157,
+   "sem_fala": 0.62,
+   "palavras": [
+    {
+     "p": "Nós",
+     "ini": 647.6,
+     "fim": 648.22,
+     "prob": 0.516
+    },
+    {
+     "p": "nos",
+     "ini": 648.22,
+     "fim": 648.56,
+     "prob": 0.948
+    },
+    {
+     "p": "deparamos",
+     "ini": 648.56,
+     "fim": 649.42,
+     "prob": 0.995
+    },
+    {
+     "p": "com",
+     "ini": 649.42,
+     "fim": 649.66,
+     "prob": 0.965
+    },
+    {
+     "p": "um",
+     "ini": 649.66,
+     "fim": 649.82,
+     "prob": 0.99
+    },
+    {
+     "p": "barzinho",
+     "ini": 649.82,
+     "fim": 650.32,
+     "prob": 0.999
+    },
+    {
+     "p": "que",
+     "ini": 650.32,
+     "fim": 650.58,
+     "prob": 0.794
+    },
+    {
+     "p": "tá",
+     "ini": 650.58,
+     "fim": 650.8,
+     "prob": 0.835
+    },
+    {
+     "p": "aqui,",
+     "ini": 650.8,
+     "fim": 651.1,
+     "prob": 1.0
+    },
+    {
+     "p": "chamado",
+     "ini": 651.14,
+     "fim": 651.4,
+     "prob": 0.999
+    },
+    {
+     "p": "Le",
+     "ini": 651.4,
+     "fim": 651.72,
+     "prob": 0.947
+    },
+    {
+     "p": "Madalena",
+     "ini": 651.72,
+     "fim": 652.32,
+     "prob": 0.779
+    }
+   ]
+  },
+  {
+   "ini": 652.32,
+   "fim": 659.2,
+   "texto": "E aí eu não poderia deixar passar a oportunidade de tomar a minha cerveja, a minha primeira cerveja belga, na Bélgica.",
+   "conf": -0.16,
+   "sem_fala": 0.547,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 652.32,
+     "fim": 653.2,
+     "prob": 0.339
+    },
+    {
+     "p": "aí",
+     "ini": 653.2,
+     "fim": 653.5,
+     "prob": 0.661
+    },
+    {
+     "p": "eu",
+     "ini": 653.5,
+     "fim": 653.68,
+     "prob": 0.831
+    },
+    {
+     "p": "não",
+     "ini": 653.68,
+     "fim": 653.76,
+     "prob": 0.993
+    },
+    {
+     "p": "poderia",
+     "ini": 653.76,
+     "fim": 654.02,
+     "prob": 0.684
+    },
+    {
+     "p": "deixar",
+     "ini": 654.02,
+     "fim": 654.26,
+     "prob": 0.959
+    },
+    {
+     "p": "passar",
+     "ini": 654.26,
+     "fim": 654.54,
+     "prob": 0.97
+    },
+    {
+     "p": "a",
+     "ini": 654.54,
+     "fim": 654.74,
+     "prob": 0.963
+    },
+    {
+     "p": "oportunidade",
+     "ini": 654.74,
+     "fim": 655.3,
+     "prob": 0.99
+    },
+    {
+     "p": "de",
+     "ini": 655.3,
+     "fim": 655.5,
+     "prob": 0.97
+    },
+    {
+     "p": "tomar",
+     "ini": 655.5,
+     "fim": 655.78,
+     "prob": 0.989
+    },
+    {
+     "p": "a",
+     "ini": 655.78,
+     "fim": 655.94,
+     "prob": 0.857
+    },
+    {
+     "p": "minha",
+     "ini": 655.94,
+     "fim": 656.04,
+     "prob": 0.993
+    },
+    {
+     "p": "cerveja,",
+     "ini": 656.04,
+     "fim": 656.72,
+     "prob": 0.994
+    },
+    {
+     "p": "a",
+     "ini": 656.76,
+     "fim": 656.94,
+     "prob": 0.862
+    },
+    {
+     "p": "minha",
+     "ini": 656.94,
+     "fim": 657.06,
+     "prob": 0.99
+    },
+    {
+     "p": "primeira",
+     "ini": 657.06,
+     "fim": 657.48,
+     "prob": 0.979
+    },
+    {
+     "p": "cerveja",
+     "ini": 657.48,
+     "fim": 658.12,
+     "prob": 0.996
+    },
+    {
+     "p": "belga,",
+     "ini": 658.12,
+     "fim": 658.6,
+     "prob": 0.909
+    },
+    {
+     "p": "na",
+     "ini": 658.6,
+     "fim": 658.78,
+     "prob": 0.983
+    },
+    {
+     "p": "Bélgica.",
+     "ini": 658.78,
+     "fim": 659.2,
+     "prob": 0.986
+    }
+   ]
+  },
+  {
+   "ini": 659.76,
+   "fim": 662.98,
+   "texto": "E aí, estamos aqui agora tomando uma cerveja.",
+   "conf": -0.16,
+   "sem_fala": 0.547,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 659.76,
+     "fim": 660.24,
+     "prob": 0.961
+    },
+    {
+     "p": "aí,",
+     "ini": 660.24,
+     "fim": 660.46,
+     "prob": 0.975
+    },
+    {
+     "p": "estamos",
+     "ini": 660.52,
+     "fim": 661.28,
+     "prob": 0.984
+    },
+    {
+     "p": "aqui",
+     "ini": 661.28,
+     "fim": 661.52,
+     "prob": 0.991
+    },
+    {
+     "p": "agora",
+     "ini": 661.52,
+     "fim": 661.84,
+     "prob": 0.986
+    },
+    {
+     "p": "tomando",
+     "ini": 661.84,
+     "fim": 662.24,
+     "prob": 0.897
+    },
+    {
+     "p": "uma",
+     "ini": 662.24,
+     "fim": 662.36,
+     "prob": 0.991
+    },
+    {
+     "p": "cerveja.",
+     "ini": 662.36,
+     "fim": 662.98,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 663.16,
+   "fim": 669.2,
+   "texto": "Enquanto o final de tarde não chega e não chega a hora do jantar, a gente vai ficar aqui tomando uma cervejinha.",
+   "conf": -0.16,
+   "sem_fala": 0.547,
+   "palavras": [
+    {
+     "p": "Enquanto",
+     "ini": 663.16,
+     "fim": 663.64,
+     "prob": 0.972
+    },
+    {
+     "p": "o",
+     "ini": 663.64,
+     "fim": 663.78,
+     "prob": 0.988
+    },
+    {
+     "p": "final",
+     "ini": 663.78,
+     "fim": 664.02,
+     "prob": 0.981
+    },
+    {
+     "p": "de",
+     "ini": 664.02,
+     "fim": 664.14,
+     "prob": 0.985
+    },
+    {
+     "p": "tarde",
+     "ini": 664.14,
+     "fim": 664.36,
+     "prob": 0.999
+    },
+    {
+     "p": "não",
+     "ini": 664.36,
+     "fim": 664.56,
+     "prob": 0.997
+    },
+    {
+     "p": "chega",
+     "ini": 664.56,
+     "fim": 665.1,
+     "prob": 0.997
+    },
+    {
+     "p": "e",
+     "ini": 665.1,
+     "fim": 665.6,
+     "prob": 0.295
+    },
+    {
+     "p": "não",
+     "ini": 665.6,
+     "fim": 665.86,
+     "prob": 0.992
+    },
+    {
+     "p": "chega",
+     "ini": 665.86,
+     "fim": 666.14,
+     "prob": 0.985
+    },
+    {
+     "p": "a",
+     "ini": 666.14,
+     "fim": 666.4,
+     "prob": 0.986
+    },
+    {
+     "p": "hora",
+     "ini": 666.4,
+     "fim": 666.5,
+     "prob": 0.999
+    },
+    {
+     "p": "do",
+     "ini": 666.5,
+     "fim": 666.64,
+     "prob": 0.519
+    },
+    {
+     "p": "jantar,",
+     "ini": 666.64,
+     "fim": 667.1,
+     "prob": 0.999
+    },
+    {
+     "p": "a",
+     "ini": 667.1,
+     "fim": 667.38,
+     "prob": 0.849
+    },
+    {
+     "p": "gente",
+     "ini": 667.38,
+     "fim": 667.56,
+     "prob": 0.999
+    },
+    {
+     "p": "vai",
+     "ini": 667.56,
+     "fim": 667.68,
+     "prob": 0.984
+    },
+    {
+     "p": "ficar",
+     "ini": 667.68,
+     "fim": 667.82,
+     "prob": 0.989
+    },
+    {
+     "p": "aqui",
+     "ini": 667.82,
+     "fim": 668.08,
+     "prob": 0.994
+    },
+    {
+     "p": "tomando",
+     "ini": 668.08,
+     "fim": 668.58,
+     "prob": 0.925
+    },
+    {
+     "p": "uma",
+     "ini": 668.58,
+     "fim": 668.7,
+     "prob": 0.993
+    },
+    {
+     "p": "cervejinha.",
+     "ini": 668.7,
+     "fim": 669.2,
+     "prob": 0.991
+    }
+   ]
+  },
+  {
+   "ini": 684.52,
+   "fim": 689.73,
+   "texto": "Saímos do bar e viemos aqui provar das delícias da Bélgica.",
+   "conf": -0.16,
+   "sem_fala": 0.547,
+   "palavras": [
+    {
+     "p": "Saímos",
+     "ini": 684.52,
+     "fim": 685.0,
+     "prob": 0.992
+    },
+    {
+     "p": "do",
+     "ini": 685.0,
+     "fim": 685.16,
+     "prob": 0.998
+    },
+    {
+     "p": "bar",
+     "ini": 685.16,
+     "fim": 685.4,
+     "prob": 0.991
+    },
+    {
+     "p": "e",
+     "ini": 685.4,
+     "fim": 686.02,
+     "prob": 0.966
+    },
+    {
+     "p": "viemos",
+     "ini": 686.33,
+     "fim": 686.75,
+     "prob": 0.998
+    },
+    {
+     "p": "aqui",
+     "ini": 686.75,
+     "fim": 687.03,
+     "prob": 0.987
+    },
+    {
+     "p": "provar",
+     "ini": 687.03,
+     "fim": 688.05,
+     "prob": 0.997
+    },
+    {
+     "p": "das",
+     "ini": 688.13,
+     "fim": 688.27,
+     "prob": 0.655
+    },
+    {
+     "p": "delícias",
+     "ini": 688.27,
+     "fim": 688.89,
+     "prob": 0.997
+    },
+    {
+     "p": "da",
+     "ini": 688.89,
+     "fim": 689.21,
+     "prob": 0.997
+    },
+    {
+     "p": "Bélgica.",
+     "ini": 689.21,
+     "fim": 689.73,
+     "prob": 0.998
+    }
+   ]
+  },
+  {
+   "ini": 689.91,
+   "fim": 692.03,
+   "texto": "A gente não faz a menor ideia do que é isso.",
+   "conf": -0.16,
+   "sem_fala": 0.547,
+   "palavras": [
+    {
+     "p": "A",
+     "ini": 689.91,
+     "fim": 690.15,
+     "prob": 0.969
+    },
+    {
+     "p": "gente",
+     "ini": 690.15,
+     "fim": 690.33,
+     "prob": 1.0
+    },
+    {
+     "p": "não",
+     "ini": 690.33,
+     "fim": 690.55,
+     "prob": 0.991
+    },
+    {
+     "p": "faz",
+     "ini": 690.55,
+     "fim": 690.75,
+     "prob": 0.994
+    },
+    {
+     "p": "a",
+     "ini": 690.75,
+     "fim": 690.85,
+     "prob": 0.998
+    },
+    {
+     "p": "menor",
+     "ini": 690.85,
+     "fim": 691.07,
+     "prob": 0.987
+    },
+    {
+     "p": "ideia",
+     "ini": 691.07,
+     "fim": 691.41,
+     "prob": 0.989
+    },
+    {
+     "p": "do",
+     "ini": 691.41,
+     "fim": 691.55,
+     "prob": 0.967
+    },
+    {
+     "p": "que",
+     "ini": 691.55,
+     "fim": 691.63,
+     "prob": 0.999
+    },
+    {
+     "p": "é",
+     "ini": 691.63,
+     "fim": 691.77,
+     "prob": 0.989
+    },
+    {
+     "p": "isso.",
+     "ini": 691.77,
+     "fim": 692.03,
+     "prob": 0.997
+    }
+   ]
+  },
+  {
+   "ini": 692.03,
+   "fim": 698.68,
+   "texto": "A gente na ida, a gente viu, se interessou e aí na volta, por acaso, passamos na frente e falamos, vamos comer.",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "A",
+     "ini": 692.03,
+     "fim": 692.21,
+     "prob": 0.381
+    },
+    {
+     "p": "gente",
+     "ini": 692.21,
+     "fim": 692.51,
+     "prob": 0.99
+    },
+    {
+     "p": "na",
+     "ini": 692.51,
+     "fim": 692.77,
+     "prob": 0.88
+    },
+    {
+     "p": "ida,",
+     "ini": 692.77,
+     "fim": 693.11,
+     "prob": 0.997
+    },
+    {
+     "p": "a",
+     "ini": 693.21,
+     "fim": 693.45,
+     "prob": 0.995
+    },
+    {
+     "p": "gente",
+     "ini": 693.45,
+     "fim": 693.65,
+     "prob": 1.0
+    },
+    {
+     "p": "viu,",
+     "ini": 693.65,
+     "fim": 693.99,
+     "prob": 0.996
+    },
+    {
+     "p": "se",
+     "ini": 694.17,
+     "fim": 694.73,
+     "prob": 0.963
+    },
+    {
+     "p": "interessou",
+     "ini": 694.78,
+     "fim": 695.38,
+     "prob": 0.999
+    },
+    {
+     "p": "e",
+     "ini": 695.38,
+     "fim": 695.64,
+     "prob": 0.309
+    },
+    {
+     "p": "aí",
+     "ini": 695.64,
+     "fim": 695.96,
+     "prob": 0.97
+    },
+    {
+     "p": "na",
+     "ini": 695.96,
+     "fim": 696.3,
+     "prob": 0.949
+    },
+    {
+     "p": "volta,",
+     "ini": 696.3,
+     "fim": 696.66,
+     "prob": 0.999
+    },
+    {
+     "p": "por",
+     "ini": 696.66,
+     "fim": 696.8,
+     "prob": 1.0
+    },
+    {
+     "p": "acaso,",
+     "ini": 696.8,
+     "fim": 697.14,
+     "prob": 1.0
+    },
+    {
+     "p": "passamos",
+     "ini": 697.14,
+     "fim": 697.52,
+     "prob": 0.999
+    },
+    {
+     "p": "na",
+     "ini": 697.52,
+     "fim": 697.64,
+     "prob": 0.995
+    },
+    {
+     "p": "frente",
+     "ini": 697.64,
+     "fim": 697.84,
+     "prob": 0.992
+    },
+    {
+     "p": "e",
+     "ini": 697.84,
+     "fim": 697.98,
+     "prob": 0.945
+    },
+    {
+     "p": "falamos,",
+     "ini": 697.98,
+     "fim": 698.06,
+     "prob": 0.853
+    },
+    {
+     "p": "vamos",
+     "ini": 698.2,
+     "fim": 698.38,
+     "prob": 0.999
+    },
+    {
+     "p": "comer.",
+     "ini": 698.38,
+     "fim": 698.68,
+     "prob": 0.996
+    }
+   ]
+  },
+  {
+   "ini": 699.3,
+   "fim": 701.44,
+   "texto": "Aparentemente, só que tá bem cheio.",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "Aparentemente,",
+     "ini": 699.3,
+     "fim": 699.8,
+     "prob": 0.868
+    },
+    {
+     "p": "só",
+     "ini": 699.82,
+     "fim": 700.14,
+     "prob": 0.974
+    },
+    {
+     "p": "que",
+     "ini": 700.14,
+     "fim": 700.86,
+     "prob": 0.998
+    },
+    {
+     "p": "tá",
+     "ini": 700.86,
+     "fim": 700.96,
+     "prob": 0.615
+    },
+    {
+     "p": "bem",
+     "ini": 700.96,
+     "fim": 701.08,
+     "prob": 0.973
+    },
+    {
+     "p": "cheio.",
+     "ini": 701.08,
+     "fim": 701.44,
+     "prob": 0.995
+    }
+   ]
+  },
+  {
+   "ini": 701.58,
+   "fim": 702.92,
+   "texto": "Então a gente falou, deve ser bom.",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "Então",
+     "ini": 701.58,
+     "fim": 702.0,
+     "prob": 0.996
+    },
+    {
+     "p": "a",
+     "ini": 702.0,
+     "fim": 702.14,
+     "prob": 0.976
+    },
+    {
+     "p": "gente",
+     "ini": 702.14,
+     "fim": 702.24,
+     "prob": 1.0
+    },
+    {
+     "p": "falou,",
+     "ini": 702.24,
+     "fim": 702.38,
+     "prob": 0.999
+    },
+    {
+     "p": "deve",
+     "ini": 702.46,
+     "fim": 702.58,
+     "prob": 1.0
+    },
+    {
+     "p": "ser",
+     "ini": 702.58,
+     "fim": 702.8,
+     "prob": 1.0
+    },
+    {
+     "p": "bom.",
+     "ini": 702.8,
+     "fim": 702.92,
+     "prob": 0.806
+    }
+   ]
+  },
+  {
+   "ini": 702.92,
+   "fim": 703.52,
+   "texto": "Deve ser famoso.",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "Deve",
+     "ini": 702.92,
+     "fim": 703.2,
+     "prob": 0.814
+    },
+    {
+     "p": "ser",
+     "ini": 703.2,
+     "fim": 703.2,
+     "prob": 1.0
+    },
+    {
+     "p": "famoso.",
+     "ini": 703.2,
+     "fim": 703.52,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 703.84,
+   "fim": 708.24,
+   "texto": "Aqui é um pão de chocolate e aqui me parece ser tipo um bolinho de chocolate branco.",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "Aqui",
+     "ini": 703.84,
+     "fim": 704.34,
+     "prob": 0.999
+    },
+    {
+     "p": "é",
+     "ini": 704.34,
+     "fim": 704.46,
+     "prob": 1.0
+    },
+    {
+     "p": "um",
+     "ini": 704.46,
+     "fim": 704.48,
+     "prob": 0.698
+    },
+    {
+     "p": "pão",
+     "ini": 704.48,
+     "fim": 704.66,
+     "prob": 0.997
+    },
+    {
+     "p": "de",
+     "ini": 704.66,
+     "fim": 704.74,
+     "prob": 1.0
+    },
+    {
+     "p": "chocolate",
+     "ini": 704.74,
+     "fim": 704.94,
+     "prob": 1.0
+    },
+    {
+     "p": "e",
+     "ini": 704.94,
+     "fim": 705.54,
+     "prob": 0.959
+    },
+    {
+     "p": "aqui",
+     "ini": 705.54,
+     "fim": 705.76,
+     "prob": 1.0
+    },
+    {
+     "p": "me",
+     "ini": 705.76,
+     "fim": 706.14,
+     "prob": 0.983
+    },
+    {
+     "p": "parece",
+     "ini": 706.14,
+     "fim": 706.54,
+     "prob": 1.0
+    },
+    {
+     "p": "ser",
+     "ini": 706.54,
+     "fim": 706.82,
+     "prob": 0.999
+    },
+    {
+     "p": "tipo",
+     "ini": 706.82,
+     "fim": 707.0,
+     "prob": 0.976
+    },
+    {
+     "p": "um",
+     "ini": 707.0,
+     "fim": 707.14,
+     "prob": 1.0
+    },
+    {
+     "p": "bolinho",
+     "ini": 707.14,
+     "fim": 707.66,
+     "prob": 0.983
+    },
+    {
+     "p": "de",
+     "ini": 707.66,
+     "fim": 707.78,
+     "prob": 1.0
+    },
+    {
+     "p": "chocolate",
+     "ini": 707.78,
+     "fim": 708.04,
+     "prob": 1.0
+    },
+    {
+     "p": "branco.",
+     "ini": 708.04,
+     "fim": 708.24,
+     "prob": 0.944
+    }
+   ]
+  },
+  {
+   "ini": 708.24,
+   "fim": 709.1,
+   "texto": "A gente vai descobrir.",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "A",
+     "ini": 708.24,
+     "fim": 708.34,
+     "prob": 0.995
+    },
+    {
+     "p": "gente",
+     "ini": 708.34,
+     "fim": 708.38,
+     "prob": 1.0
+    },
+    {
+     "p": "vai",
+     "ini": 708.38,
+     "fim": 708.78,
+     "prob": 1.0
+    },
+    {
+     "p": "descobrir.",
+     "ini": 708.78,
+     "fim": 709.1,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 714.28,
+   "fim": 714.9,
+   "texto": "Macio, né?",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "Macio,",
+     "ini": 714.28,
+     "fim": 714.78,
+     "prob": 0.899
+    },
+    {
+     "p": "né?",
+     "ini": 714.78,
+     "fim": 714.9,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 715.2,
+   "fim": 719.75,
+   "texto": "É bom, né?",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 715.2,
+     "fim": 715.7,
+     "prob": 0.51
+    },
+    {
+     "p": "bom,",
+     "ini": 719.39,
+     "fim": 719.61,
+     "prob": 0.456
+    },
+    {
+     "p": "né?",
+     "ini": 719.61,
+     "fim": 719.75,
+     "prob": 0.658
+    }
+   ]
+  },
+  {
+   "ini": 720.25,
+   "fim": 720.69,
+   "texto": "É bom.",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 720.25,
+     "fim": 720.61,
+     "prob": 0.019
+    },
+    {
+     "p": "bom.",
+     "ini": 720.61,
+     "fim": 720.69,
+     "prob": 0.689
+    }
+   ]
+  },
+  {
+   "ini": 722.93,
+   "fim": 724.23,
+   "texto": "Provar esse aqui.",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "Provar",
+     "ini": 722.93,
+     "fim": 723.43,
+     "prob": 0.967
+    },
+    {
+     "p": "esse",
+     "ini": 723.43,
+     "fim": 723.93,
+     "prob": 0.997
+    },
+    {
+     "p": "aqui.",
+     "ini": 723.93,
+     "fim": 724.23,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 725.43,
+   "fim": 726.07,
+   "texto": "Difícil, né?",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "Difícil,",
+     "ini": 725.43,
+     "fim": 725.93,
+     "prob": 0.999
+    },
+    {
+     "p": "né?",
+     "ini": 725.93,
+     "fim": 726.07,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 726.13,
+   "fim": 727.1,
+   "texto": "A caixinha.",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "A",
+     "ini": 726.13,
+     "fim": 726.63,
+     "prob": 0.767
+    },
+    {
+     "p": "caixinha.",
+     "ini": 726.68,
+     "fim": 727.1,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 727.14,
+   "fim": 727.52,
+   "texto": "Uou!",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "Uou!",
+     "ini": 727.14,
+     "fim": 727.52,
+     "prob": 0.529
+    }
+   ]
+  },
+  {
+   "ini": 727.66,
+   "fim": 728.68,
+   "texto": "Vem com a colherzinha.",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "Vem",
+     "ini": 727.66,
+     "fim": 728.04,
+     "prob": 0.578
+    },
+    {
+     "p": "com",
+     "ini": 728.04,
+     "fim": 728.14,
+     "prob": 0.998
+    },
+    {
+     "p": "a",
+     "ini": 728.14,
+     "fim": 728.26,
+     "prob": 0.993
+    },
+    {
+     "p": "colherzinha.",
+     "ini": 728.26,
+     "fim": 728.68,
+     "prob": 0.917
+    }
+   ]
+  },
+  {
+   "ini": 728.88,
+   "fim": 729.78,
+   "texto": "É recheada.",
+   "conf": -0.32,
+   "sem_fala": 0.171,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 728.88,
+     "fim": 729.38,
+     "prob": 0.873
+    },
+    {
+     "p": "recheada.",
+     "ini": 729.38,
+     "fim": 729.78,
+     "prob": 0.952
+    }
+   ]
+  },
+  {
+   "ini": 730.4,
+   "fim": 733.16,
+   "texto": "É um creme?",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "É",
+     "ini": 730.4,
+     "fim": 730.48,
+     "prob": 0.356
+    },
+    {
+     "p": "um",
+     "ini": 730.48,
+     "fim": 731.26,
+     "prob": 0.941
+    },
+    {
+     "p": "creme?",
+     "ini": 732.84,
+     "fim": 733.16,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 733.32,
+   "fim": 733.8,
+   "texto": "Nossa.",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "Nossa.",
+     "ini": 733.32,
+     "fim": 733.8,
+     "prob": 0.696
+    }
+   ]
+  },
+  {
+   "ini": 737.52,
+   "fim": 737.98,
+   "texto": "Bom?",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "Bom?",
+     "ini": 737.52,
+     "fim": 737.98,
+     "prob": 0.976
+    }
+   ]
+  },
+  {
+   "ini": 741.94,
+   "fim": 742.42,
+   "texto": "Aprovado?",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "Aprovado?",
+     "ini": 741.94,
+     "fim": 742.42,
+     "prob": 0.992
+    }
+   ]
+  },
+  {
+   "ini": 742.62,
+   "fim": 743.1,
+   "texto": "Muito.",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "Muito.",
+     "ini": 742.62,
+     "fim": 743.1,
+     "prob": 0.984
+    }
+   ]
+  },
+  {
+   "ini": 743.73,
+   "fim": 744.35,
+   "texto": "Então tá aí.",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "Então",
+     "ini": 743.73,
+     "fim": 744.07,
+     "prob": 0.98
+    },
+    {
+     "p": "tá",
+     "ini": 744.07,
+     "fim": 744.17,
+     "prob": 0.941
+    },
+    {
+     "p": "aí.",
+     "ini": 744.17,
+     "fim": 744.35,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 746.66,
+   "fim": 752.43,
+   "texto": "Esse vídeo aqui é só pra registrar o frio desumano que o Marcos tá sentindo.",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "Esse",
+     "ini": 746.66,
+     "fim": 747.06,
+     "prob": 0.994
+    },
+    {
+     "p": "vídeo",
+     "ini": 747.06,
+     "fim": 747.36,
+     "prob": 0.999
+    },
+    {
+     "p": "aqui",
+     "ini": 747.36,
+     "fim": 747.58,
+     "prob": 0.999
+    },
+    {
+     "p": "é",
+     "ini": 747.58,
+     "fim": 747.68,
+     "prob": 0.999
+    },
+    {
+     "p": "só",
+     "ini": 747.68,
+     "fim": 747.82,
+     "prob": 1.0
+    },
+    {
+     "p": "pra",
+     "ini": 747.82,
+     "fim": 747.98,
+     "prob": 0.802
+    },
+    {
+     "p": "registrar",
+     "ini": 747.98,
+     "fim": 748.48,
+     "prob": 1.0
+    },
+    {
+     "p": "o",
+     "ini": 748.48,
+     "fim": 748.58,
+     "prob": 0.999
+    },
+    {
+     "p": "frio",
+     "ini": 748.58,
+     "fim": 748.9,
+     "prob": 1.0
+    },
+    {
+     "p": "desumano",
+     "ini": 748.9,
+     "fim": 749.6,
+     "prob": 0.998
+    },
+    {
+     "p": "que",
+     "ini": 749.6,
+     "fim": 750.2,
+     "prob": 0.95
+    },
+    {
+     "p": "o",
+     "ini": 751.15,
+     "fim": 751.33,
+     "prob": 0.795
+    },
+    {
+     "p": "Marcos",
+     "ini": 751.33,
+     "fim": 751.61,
+     "prob": 0.67
+    },
+    {
+     "p": "tá",
+     "ini": 751.61,
+     "fim": 751.75,
+     "prob": 0.986
+    },
+    {
+     "p": "sentindo.",
+     "ini": 751.75,
+     "fim": 752.43,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 756.64,
+   "fim": 758.78,
+   "texto": "Eu comprei uma luva pra ela, mostra a luva.",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "Eu",
+     "ini": 756.64,
+     "fim": 757.12,
+     "prob": 0.846
+    },
+    {
+     "p": "comprei",
+     "ini": 757.12,
+     "fim": 757.6,
+     "prob": 0.997
+    },
+    {
+     "p": "uma",
+     "ini": 757.6,
+     "fim": 757.66,
+     "prob": 1.0
+    },
+    {
+     "p": "luva",
+     "ini": 757.66,
+     "fim": 757.94,
+     "prob": 0.999
+    },
+    {
+     "p": "pra",
+     "ini": 757.94,
+     "fim": 758.1,
+     "prob": 0.997
+    },
+    {
+     "p": "ela,",
+     "ini": 758.1,
+     "fim": 758.26,
+     "prob": 0.998
+    },
+    {
+     "p": "mostra",
+     "ini": 758.3,
+     "fim": 758.46,
+     "prob": 0.996
+    },
+    {
+     "p": "a",
+     "ini": 758.46,
+     "fim": 758.62,
+     "prob": 1.0
+    },
+    {
+     "p": "luva.",
+     "ini": 758.62,
+     "fim": 758.78,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 761.13,
+   "fim": 761.61,
+   "texto": "Adiantou?",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "Adiantou?",
+     "ini": 761.13,
+     "fim": 761.61,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 763.02,
+   "fim": 763.86,
+   "texto": "Fez cosquinha.",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "Fez",
+     "ini": 763.02,
+     "fim": 763.44,
+     "prob": 0.834
+    },
+    {
+     "p": "cosquinha.",
+     "ini": 763.44,
+     "fim": 763.86,
+     "prob": 0.979
+    }
+   ]
+  },
+  {
+   "ini": 765.02,
+   "fim": 766.38,
+   "texto": "Ai, tá muito frio.",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "Ai,",
+     "ini": 765.02,
+     "fim": 765.5,
+     "prob": 0.713
+    },
+    {
+     "p": "tá",
+     "ini": 765.52,
+     "fim": 765.86,
+     "prob": 0.994
+    },
+    {
+     "p": "muito",
+     "ini": 765.86,
+     "fim": 766.1,
+     "prob": 0.979
+    },
+    {
+     "p": "frio.",
+     "ini": 766.1,
+     "fim": 766.38,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 766.6,
+   "fim": 768.14,
+   "texto": "Ai, tá bem frio mesmo.",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "Ai,",
+     "ini": 766.6,
+     "fim": 767.08,
+     "prob": 0.881
+    },
+    {
+     "p": "tá",
+     "ini": 767.08,
+     "fim": 767.3,
+     "prob": 0.907
+    },
+    {
+     "p": "bem",
+     "ini": 767.3,
+     "fim": 767.56,
+     "prob": 0.998
+    },
+    {
+     "p": "frio",
+     "ini": 767.56,
+     "fim": 767.9,
+     "prob": 1.0
+    },
+    {
+     "p": "mesmo.",
+     "ini": 767.9,
+     "fim": 768.14,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 768.36,
+   "fim": 771.72,
+   "texto": "Sério, eu não imaginava quando eu vi que seria frio.",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "Sério,",
+     "ini": 768.36,
+     "fim": 768.6,
+     "prob": 0.994
+    },
+    {
+     "p": "eu",
+     "ini": 768.66,
+     "fim": 768.76,
+     "prob": 1.0
+    },
+    {
+     "p": "não",
+     "ini": 768.76,
+     "fim": 768.88,
+     "prob": 1.0
+    },
+    {
+     "p": "imaginava",
+     "ini": 768.88,
+     "fim": 769.92,
+     "prob": 0.999
+    },
+    {
+     "p": "quando",
+     "ini": 769.92,
+     "fim": 770.42,
+     "prob": 0.671
+    },
+    {
+     "p": "eu",
+     "ini": 770.42,
+     "fim": 770.64,
+     "prob": 0.999
+    },
+    {
+     "p": "vi",
+     "ini": 770.64,
+     "fim": 770.9,
+     "prob": 0.992
+    },
+    {
+     "p": "que",
+     "ini": 770.9,
+     "fim": 771.02,
+     "prob": 0.999
+    },
+    {
+     "p": "seria",
+     "ini": 771.02,
+     "fim": 771.38,
+     "prob": 0.938
+    },
+    {
+     "p": "frio.",
+     "ini": 771.38,
+     "fim": 771.72,
+     "prob": 0.996
+    }
+   ]
+  },
+  {
+   "ini": 771.72,
+   "fim": 773.92,
+   "texto": "E o pior é que tá 7 graus, tá marcando 7 graus.",
+   "conf": -0.255,
+   "sem_fala": 0.209,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 771.72,
+     "fim": 771.82,
+     "prob": 0.912
+    },
+    {
+     "p": "o",
+     "ini": 771.82,
+     "fim": 771.98,
+     "prob": 0.999
+    },
+    {
+     "p": "pior",
+     "ini": 771.98,
+     "fim": 772.14,
+     "prob": 1.0
+    },
+    {
+     "p": "é",
+     "ini": 772.14,
+     "fim": 772.24,
+     "prob": 0.689
+    },
+    {
+     "p": "que",
+     "ini": 772.24,
+     "fim": 772.28,
+     "prob": 1.0
+    },
+    {
+     "p": "tá",
+     "ini": 772.28,
+     "fim": 772.3,
+     "prob": 0.999
+    },
+    {
+     "p": "7",
+     "ini": 772.3,
+     "fim": 772.52,
+     "prob": 0.833
+    },
+    {
+     "p": "graus,",
+     "ini": 772.52,
+     "fim": 772.88,
+     "prob": 0.99
+    },
+    {
+     "p": "tá",
+     "ini": 772.92,
+     "fim": 773.0,
+     "prob": 0.997
+    },
+    {
+     "p": "marcando",
+     "ini": 773.0,
+     "fim": 773.28,
+     "prob": 0.995
+    },
+    {
+     "p": "7",
+     "ini": 773.28,
+     "fim": 773.46,
+     "prob": 0.999
+    },
+    {
+     "p": "graus.",
+     "ini": 773.46,
+     "fim": 773.92,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 775.0,
+   "fim": 778.08,
+   "texto": "A gente pegou zero quando a gente viajou e ficou mais de boas.",
+   "conf": -0.342,
+   "sem_fala": 0.141,
+   "palavras": [
+    {
+     "p": "A",
+     "ini": 775.0,
+     "fim": 775.08,
+     "prob": 0.18
+    },
+    {
+     "p": "gente",
+     "ini": 775.08,
+     "fim": 775.24,
+     "prob": 0.996
+    },
+    {
+     "p": "pegou",
+     "ini": 775.24,
+     "fim": 775.62,
+     "prob": 0.959
+    },
+    {
+     "p": "zero",
+     "ini": 775.62,
+     "fim": 775.82,
+     "prob": 0.828
+    },
+    {
+     "p": "quando",
+     "ini": 775.82,
+     "fim": 776.04,
+     "prob": 0.961
+    },
+    {
+     "p": "a",
+     "ini": 776.04,
+     "fim": 776.16,
+     "prob": 0.763
+    },
+    {
+     "p": "gente",
+     "ini": 776.16,
+     "fim": 776.24,
+     "prob": 0.999
+    },
+    {
+     "p": "viajou",
+     "ini": 776.24,
+     "fim": 776.7,
+     "prob": 0.998
+    },
+    {
+     "p": "e",
+     "ini": 776.7,
+     "fim": 776.84,
+     "prob": 0.791
+    },
+    {
+     "p": "ficou",
+     "ini": 776.84,
+     "fim": 777.02,
+     "prob": 0.911
+    },
+    {
+     "p": "mais",
+     "ini": 777.02,
+     "fim": 777.7,
+     "prob": 0.376
+    },
+    {
+     "p": "de",
+     "ini": 777.7,
+     "fim": 777.82,
+     "prob": 0.919
+    },
+    {
+     "p": "boas.",
+     "ini": 777.82,
+     "fim": 778.08,
+     "prob": 0.151
+    }
+   ]
+  },
+  {
+   "ini": 778.3,
+   "fim": 781.38,
+   "texto": "Muito, muito, muito, muito, muito, muito, muito frio.",
+   "conf": -0.342,
+   "sem_fala": 0.141,
+   "palavras": [
+    {
+     "p": "Muito,",
+     "ini": 778.3,
+     "fim": 778.5,
+     "prob": 0.335
+    },
+    {
+     "p": "muito,",
+     "ini": 778.5,
+     "fim": 779.06,
+     "prob": 0.994
+    },
+    {
+     "p": "muito,",
+     "ini": 779.42,
+     "fim": 780.42,
+     "prob": 0.997
+    },
+    {
+     "p": "muito,",
+     "ini": 780.42,
+     "fim": 780.7,
+     "prob": 0.997
+    },
+    {
+     "p": "muito,",
+     "ini": 780.7,
+     "fim": 781.02,
+     "prob": 0.998
+    },
+    {
+     "p": "muito,",
+     "ini": 781.02,
+     "fim": 781.18,
+     "prob": 0.993
+    },
+    {
+     "p": "muito",
+     "ini": 781.18,
+     "fim": 781.28,
+     "prob": 0.986
+    },
+    {
+     "p": "frio.",
+     "ini": 781.28,
+     "fim": 781.38,
+     "prob": 0.629
+    }
+   ]
+  },
+  {
+   "ini": 781.52,
+   "fim": 786.56,
+   "texto": "Eu definitivamente não nasci pra estar e ser do frio.",
+   "conf": -0.342,
+   "sem_fala": 0.141,
+   "palavras": [
+    {
+     "p": "Eu",
+     "ini": 781.52,
+     "fim": 781.86,
+     "prob": 0.977
+    },
+    {
+     "p": "definitivamente",
+     "ini": 781.86,
+     "fim": 782.84,
+     "prob": 0.647
+    },
+    {
+     "p": "não",
+     "ini": 782.84,
+     "fim": 783.04,
+     "prob": 0.981
+    },
+    {
+     "p": "nasci",
+     "ini": 783.04,
+     "fim": 783.42,
+     "prob": 0.947
+    },
+    {
+     "p": "pra",
+     "ini": 783.42,
+     "fim": 784.2,
+     "prob": 0.533
+    },
+    {
+     "p": "estar",
+     "ini": 784.28,
+     "fim": 785.56,
+     "prob": 0.502
+    },
+    {
+     "p": "e",
+     "ini": 785.56,
+     "fim": 785.84,
+     "prob": 0.746
+    },
+    {
+     "p": "ser",
+     "ini": 785.84,
+     "fim": 786.08,
+     "prob": 0.717
+    },
+    {
+     "p": "do",
+     "ini": 786.08,
+     "fim": 786.28,
+     "prob": 0.618
+    },
+    {
+     "p": "frio.",
+     "ini": 786.28,
+     "fim": 786.56,
+     "prob": 0.873
+    }
+   ]
+  },
+  {
+   "ini": 803.64,
+   "fim": 810.34,
+   "texto": "Acabamos de sair aqui do Spago Ristorante, diretamente da Itália.",
+   "conf": -0.342,
+   "sem_fala": 0.141,
+   "palavras": [
+    {
+     "p": "Acabamos",
+     "ini": 803.64,
+     "fim": 804.12,
+     "prob": 0.995
+    },
+    {
+     "p": "de",
+     "ini": 804.12,
+     "fim": 804.22,
+     "prob": 0.559
+    },
+    {
+     "p": "sair",
+     "ini": 804.22,
+     "fim": 804.46,
+     "prob": 1.0
+    },
+    {
+     "p": "aqui",
+     "ini": 804.46,
+     "fim": 804.68,
+     "prob": 0.956
+    },
+    {
+     "p": "do",
+     "ini": 804.68,
+     "fim": 804.94,
+     "prob": 0.998
+    },
+    {
+     "p": "Spago",
+     "ini": 804.94,
+     "fim": 806.04,
+     "prob": 0.919
+    },
+    {
+     "p": "Ristorante,",
+     "ini": 806.44,
+     "fim": 807.78,
+     "prob": 0.981
+    },
+    {
+     "p": "diretamente",
+     "ini": 808.56,
+     "fim": 809.6,
+     "prob": 0.998
+    },
+    {
+     "p": "da",
+     "ini": 809.6,
+     "fim": 809.86,
+     "prob": 1.0
+    },
+    {
+     "p": "Itália.",
+     "ini": 809.86,
+     "fim": 810.34,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 811.14,
+   "fim": 812.28,
+   "texto": "Restaurante muito bom, né?",
+   "conf": -0.342,
+   "sem_fala": 0.141,
+   "palavras": [
+    {
+     "p": "Restaurante",
+     "ini": 811.14,
+     "fim": 811.62,
+     "prob": 0.94
+    },
+    {
+     "p": "muito",
+     "ini": 811.62,
+     "fim": 811.82,
+     "prob": 1.0
+    },
+    {
+     "p": "bom,",
+     "ini": 811.82,
+     "fim": 812.12,
+     "prob": 1.0
+    },
+    {
+     "p": "né?",
+     "ini": 812.16,
+     "fim": 812.28,
+     "prob": 0.854
+    }
+   ]
+  },
+  {
+   "ini": 812.32,
+   "fim": 817.46,
+   "texto": "A gente parou pra comer ali porque foi o mais em conta que a gente achou,",
+   "conf": -0.342,
+   "sem_fala": 0.141,
+   "palavras": [
+    {
+     "p": "A",
+     "ini": 812.32,
+     "fim": 812.44,
+     "prob": 0.996
+    },
+    {
+     "p": "gente",
+     "ini": 812.44,
+     "fim": 812.56,
+     "prob": 1.0
+    },
+    {
+     "p": "parou",
+     "ini": 812.56,
+     "fim": 813.68,
+     "prob": 1.0
+    },
+    {
+     "p": "pra",
+     "ini": 814.36,
+     "fim": 814.46,
+     "prob": 0.995
+    },
+    {
+     "p": "comer",
+     "ini": 814.46,
+     "fim": 814.7,
+     "prob": 1.0
+    },
+    {
+     "p": "ali",
+     "ini": 814.7,
+     "fim": 814.9,
+     "prob": 1.0
+    },
+    {
+     "p": "porque",
+     "ini": 814.9,
+     "fim": 815.22,
+     "prob": 0.917
+    },
+    {
+     "p": "foi",
+     "ini": 815.22,
+     "fim": 815.54,
+     "prob": 0.999
+    },
+    {
+     "p": "o",
+     "ini": 815.54,
+     "fim": 815.64,
+     "prob": 0.857
+    },
+    {
+     "p": "mais",
+     "ini": 815.64,
+     "fim": 816.26,
+     "prob": 0.998
+    },
+    {
+     "p": "em",
+     "ini": 816.26,
+     "fim": 816.4,
+     "prob": 0.885
+    },
+    {
+     "p": "conta",
+     "ini": 816.4,
+     "fim": 816.64,
+     "prob": 0.941
+    },
+    {
+     "p": "que",
+     "ini": 816.64,
+     "fim": 816.84,
+     "prob": 0.581
+    },
+    {
+     "p": "a",
+     "ini": 816.84,
+     "fim": 817.06,
+     "prob": 1.0
+    },
+    {
+     "p": "gente",
+     "ini": 817.06,
+     "fim": 817.14,
+     "prob": 1.0
+    },
+    {
+     "p": "achou,",
+     "ini": 817.14,
+     "fim": 817.46,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 817.54,
+   "fim": 825.42,
+   "texto": "que ainda assim era caro, mas comparado ao que a gente viu aqui,",
+   "conf": -0.342,
+   "sem_fala": 0.141,
+   "palavras": [
+    {
+     "p": "que",
+     "ini": 817.54,
+     "fim": 818.02,
+     "prob": 0.961
+    },
+    {
+     "p": "ainda",
+     "ini": 818.71,
+     "fim": 819.09,
+     "prob": 0.998
+    },
+    {
+     "p": "assim",
+     "ini": 819.09,
+     "fim": 819.29,
+     "prob": 0.998
+    },
+    {
+     "p": "era",
+     "ini": 819.29,
+     "fim": 819.41,
+     "prob": 1.0
+    },
+    {
+     "p": "caro,",
+     "ini": 819.41,
+     "fim": 819.83,
+     "prob": 1.0
+    },
+    {
+     "p": "mas",
+     "ini": 819.88,
+     "fim": 820.6,
+     "prob": 0.999
+    },
+    {
+     "p": "comparado",
+     "ini": 820.6,
+     "fim": 822.52,
+     "prob": 0.992
+    },
+    {
+     "p": "ao",
+     "ini": 823.98,
+     "fim": 824.48,
+     "prob": 1.0
+    },
+    {
+     "p": "que",
+     "ini": 824.48,
+     "fim": 824.62,
+     "prob": 1.0
+    },
+    {
+     "p": "a",
+     "ini": 824.62,
+     "fim": 824.76,
+     "prob": 1.0
+    },
+    {
+     "p": "gente",
+     "ini": 824.76,
+     "fim": 824.84,
+     "prob": 1.0
+    },
+    {
+     "p": "viu",
+     "ini": 824.84,
+     "fim": 825.16,
+     "prob": 1.0
+    },
+    {
+     "p": "aqui,",
+     "ini": 825.16,
+     "fim": 825.42,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 825.76,
+   "fim": 829.15,
+   "texto": "Foi o melhor, assim, com o preço, com o custo-benefício melhor.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "Foi",
+     "ini": 825.76,
+     "fim": 826.12,
+     "prob": 0.648
+    },
+    {
+     "p": "o",
+     "ini": 826.29,
+     "fim": 826.49,
+     "prob": 0.994
+    },
+    {
+     "p": "melhor,",
+     "ini": 826.49,
+     "fim": 827.03,
+     "prob": 0.986
+    },
+    {
+     "p": "assim,",
+     "ini": 827.19,
+     "fim": 827.35,
+     "prob": 0.613
+    },
+    {
+     "p": "com",
+     "ini": 827.43,
+     "fim": 827.55,
+     "prob": 0.99
+    },
+    {
+     "p": "o",
+     "ini": 827.55,
+     "fim": 827.69,
+     "prob": 0.614
+    },
+    {
+     "p": "preço,",
+     "ini": 827.69,
+     "fim": 827.79,
+     "prob": 0.527
+    },
+    {
+     "p": "com",
+     "ini": 827.89,
+     "fim": 828.29,
+     "prob": 0.587
+    },
+    {
+     "p": "o",
+     "ini": 828.29,
+     "fim": 828.31,
+     "prob": 0.906
+    },
+    {
+     "p": "custo",
+     "ini": 828.31,
+     "fim": 828.53,
+     "prob": 0.987
+    },
+    {
+     "p": "-benefício",
+     "ini": 828.53,
+     "fim": 828.91,
+     "prob": 0.978
+    },
+    {
+     "p": "melhor.",
+     "ini": 828.91,
+     "fim": 829.15,
+     "prob": 0.842
+    }
+   ]
+  },
+  {
+   "ini": 829.41,
+   "fim": 831.03,
+   "texto": "A gente pediu uma pizza pra dividir.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "A",
+     "ini": 829.41,
+     "fim": 829.73,
+     "prob": 0.998
+    },
+    {
+     "p": "gente",
+     "ini": 829.73,
+     "fim": 829.85,
+     "prob": 1.0
+    },
+    {
+     "p": "pediu",
+     "ini": 829.85,
+     "fim": 830.07,
+     "prob": 0.999
+    },
+    {
+     "p": "uma",
+     "ini": 830.07,
+     "fim": 830.15,
+     "prob": 0.999
+    },
+    {
+     "p": "pizza",
+     "ini": 830.15,
+     "fim": 830.37,
+     "prob": 1.0
+    },
+    {
+     "p": "pra",
+     "ini": 830.37,
+     "fim": 830.53,
+     "prob": 0.926
+    },
+    {
+     "p": "dividir.",
+     "ini": 830.53,
+     "fim": 831.03,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 831.78,
+   "fim": 833.76,
+   "texto": "Eu pedi uma cerveja, ela pediu uma coca.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "Eu",
+     "ini": 831.78,
+     "fim": 832.18,
+     "prob": 0.999
+    },
+    {
+     "p": "pedi",
+     "ini": 832.18,
+     "fim": 832.36,
+     "prob": 0.997
+    },
+    {
+     "p": "uma",
+     "ini": 832.36,
+     "fim": 832.44,
+     "prob": 1.0
+    },
+    {
+     "p": "cerveja,",
+     "ini": 832.44,
+     "fim": 832.92,
+     "prob": 1.0
+    },
+    {
+     "p": "ela",
+     "ini": 832.92,
+     "fim": 833.02,
+     "prob": 1.0
+    },
+    {
+     "p": "pediu",
+     "ini": 833.02,
+     "fim": 833.24,
+     "prob": 0.994
+    },
+    {
+     "p": "uma",
+     "ini": 833.24,
+     "fim": 833.36,
+     "prob": 1.0
+    },
+    {
+     "p": "coca.",
+     "ini": 833.36,
+     "fim": 833.76,
+     "prob": 0.868
+    }
+   ]
+  },
+  {
+   "ini": 833.78,
+   "fim": 834.96,
+   "texto": "A conta deu 25 euros.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "A",
+     "ini": 833.78,
+     "fim": 833.9,
+     "prob": 0.99
+    },
+    {
+     "p": "conta",
+     "ini": 833.9,
+     "fim": 834.1,
+     "prob": 0.998
+    },
+    {
+     "p": "deu",
+     "ini": 834.1,
+     "fim": 834.26,
+     "prob": 1.0
+    },
+    {
+     "p": "25",
+     "ini": 834.26,
+     "fim": 834.5,
+     "prob": 0.974
+    },
+    {
+     "p": "euros.",
+     "ini": 834.5,
+     "fim": 834.96,
+     "prob": 0.992
+    }
+   ]
+  },
+  {
+   "ini": 836.62,
+   "fim": 837.92,
+   "texto": "A pizza é enorme.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "A",
+     "ini": 836.62,
+     "fim": 837.02,
+     "prob": 0.403
+    },
+    {
+     "p": "pizza",
+     "ini": 837.02,
+     "fim": 837.42,
+     "prob": 1.0
+    },
+    {
+     "p": "é",
+     "ini": 837.42,
+     "fim": 837.6,
+     "prob": 0.977
+    },
+    {
+     "p": "enorme.",
+     "ini": 837.6,
+     "fim": 837.92,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 838.2,
+   "fim": 838.82,
+   "texto": "A pizza é enorme.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "A",
+     "ini": 838.2,
+     "fim": 838.32,
+     "prob": 0.827
+    },
+    {
+     "p": "pizza",
+     "ini": 838.32,
+     "fim": 838.5,
+     "prob": 1.0
+    },
+    {
+     "p": "é",
+     "ini": 838.5,
+     "fim": 838.68,
+     "prob": 0.969
+    },
+    {
+     "p": "enorme.",
+     "ini": 838.68,
+     "fim": 838.82,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 838.84,
+   "fim": 839.6,
+   "texto": "Enorme, enorme, enorme.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "Enorme,",
+     "ini": 838.84,
+     "fim": 839.14,
+     "prob": 0.726
+    },
+    {
+     "p": "enorme,",
+     "ini": 839.14,
+     "fim": 839.36,
+     "prob": 0.996
+    },
+    {
+     "p": "enorme.",
+     "ini": 839.36,
+     "fim": 839.6,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 839.96,
+   "fim": 841.28,
+   "texto": "E boa a pizza, velho.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 839.96,
+     "fim": 840.36,
+     "prob": 0.984
+    },
+    {
+     "p": "boa",
+     "ini": 840.48,
+     "fim": 840.7,
+     "prob": 1.0
+    },
+    {
+     "p": "a",
+     "ini": 840.7,
+     "fim": 840.78,
+     "prob": 0.797
+    },
+    {
+     "p": "pizza,",
+     "ini": 840.78,
+     "fim": 841.06,
+     "prob": 1.0
+    },
+    {
+     "p": "velho.",
+     "ini": 841.12,
+     "fim": 841.28,
+     "prob": 0.879
+    }
+   ]
+  },
+  {
+   "ini": 841.74,
+   "fim": 843.88,
+   "texto": "Bem boa, assim, a massa bem italiana mesmo.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "Bem",
+     "ini": 841.74,
+     "fim": 842.14,
+     "prob": 0.997
+    },
+    {
+     "p": "boa,",
+     "ini": 842.14,
+     "fim": 842.36,
+     "prob": 1.0
+    },
+    {
+     "p": "assim,",
+     "ini": 842.4,
+     "fim": 842.52,
+     "prob": 0.991
+    },
+    {
+     "p": "a",
+     "ini": 842.58,
+     "fim": 842.66,
+     "prob": 0.937
+    },
+    {
+     "p": "massa",
+     "ini": 842.66,
+     "fim": 842.8,
+     "prob": 0.999
+    },
+    {
+     "p": "bem",
+     "ini": 842.8,
+     "fim": 843.0,
+     "prob": 0.714
+    },
+    {
+     "p": "italiana",
+     "ini": 843.0,
+     "fim": 843.48,
+     "prob": 1.0
+    },
+    {
+     "p": "mesmo.",
+     "ini": 843.48,
+     "fim": 843.88,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 844.12,
+   "fim": 846.07,
+   "texto": "E a gente curtiu.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 844.12,
+     "fim": 844.52,
+     "prob": 0.998
+    },
+    {
+     "p": "a",
+     "ini": 845.33,
+     "fim": 845.49,
+     "prob": 1.0
+    },
+    {
+     "p": "gente",
+     "ini": 845.49,
+     "fim": 845.61,
+     "prob": 1.0
+    },
+    {
+     "p": "curtiu.",
+     "ini": 845.61,
+     "fim": 846.07,
+     "prob": 0.999
+    }
+   ]
+  },
+  {
+   "ini": 846.27,
+   "fim": 847.87,
+   "texto": "Agora a gente tá indo pro hotel aqui.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "Agora",
+     "ini": 846.27,
+     "fim": 846.63,
+     "prob": 0.778
+    },
+    {
+     "p": "a",
+     "ini": 846.63,
+     "fim": 846.81,
+     "prob": 0.998
+    },
+    {
+     "p": "gente",
+     "ini": 846.81,
+     "fim": 846.91,
+     "prob": 1.0
+    },
+    {
+     "p": "tá",
+     "ini": 846.91,
+     "fim": 847.05,
+     "prob": 0.961
+    },
+    {
+     "p": "indo",
+     "ini": 847.05,
+     "fim": 847.15,
+     "prob": 1.0
+    },
+    {
+     "p": "pro",
+     "ini": 847.15,
+     "fim": 847.31,
+     "prob": 0.997
+    },
+    {
+     "p": "hotel",
+     "ini": 847.31,
+     "fim": 847.57,
+     "prob": 1.0
+    },
+    {
+     "p": "aqui.",
+     "ini": 847.57,
+     "fim": 847.87,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 848.81,
+   "fim": 852.41,
+   "texto": "O hotel da gente fica bem na Praça Central, ali na Grand Place.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "O",
+     "ini": 848.81,
+     "fim": 849.21,
+     "prob": 0.98
+    },
+    {
+     "p": "hotel",
+     "ini": 849.21,
+     "fim": 849.49,
+     "prob": 1.0
+    },
+    {
+     "p": "da",
+     "ini": 849.49,
+     "fim": 849.67,
+     "prob": 0.999
+    },
+    {
+     "p": "gente",
+     "ini": 849.67,
+     "fim": 849.85,
+     "prob": 1.0
+    },
+    {
+     "p": "fica",
+     "ini": 849.85,
+     "fim": 850.05,
+     "prob": 1.0
+    },
+    {
+     "p": "bem",
+     "ini": 850.05,
+     "fim": 850.35,
+     "prob": 1.0
+    },
+    {
+     "p": "na",
+     "ini": 850.35,
+     "fim": 850.51,
+     "prob": 1.0
+    },
+    {
+     "p": "Praça",
+     "ini": 850.51,
+     "fim": 851.15,
+     "prob": 0.758
+    },
+    {
+     "p": "Central,",
+     "ini": 851.15,
+     "fim": 851.41,
+     "prob": 1.0
+    },
+    {
+     "p": "ali",
+     "ini": 851.61,
+     "fim": 851.79,
+     "prob": 0.999
+    },
+    {
+     "p": "na",
+     "ini": 851.79,
+     "fim": 851.95,
+     "prob": 0.992
+    },
+    {
+     "p": "Grand",
+     "ini": 851.95,
+     "fim": 852.09,
+     "prob": 0.788
+    },
+    {
+     "p": "Place.",
+     "ini": 852.09,
+     "fim": 852.41,
+     "prob": 0.745
+    }
+   ]
+  },
+  {
+   "ini": 852.57,
+   "fim": 853.39,
+   "texto": "Bem do ladinho.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "Bem",
+     "ini": 852.57,
+     "fim": 852.87,
+     "prob": 1.0
+    },
+    {
+     "p": "do",
+     "ini": 852.87,
+     "fim": 853.03,
+     "prob": 0.998
+    },
+    {
+     "p": "ladinho.",
+     "ini": 853.03,
+     "fim": 853.39,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 854.21,
+   "fim": 857.41,
+   "texto": "E aí a gente vai descansar, que amanhã vamos pra Bruges cedo.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "E",
+     "ini": 854.21,
+     "fim": 854.61,
+     "prob": 1.0
+    },
+    {
+     "p": "aí",
+     "ini": 854.61,
+     "fim": 854.85,
+     "prob": 0.999
+    },
+    {
+     "p": "a",
+     "ini": 854.85,
+     "fim": 855.01,
+     "prob": 0.988
+    },
+    {
+     "p": "gente",
+     "ini": 855.01,
+     "fim": 855.17,
+     "prob": 1.0
+    },
+    {
+     "p": "vai",
+     "ini": 855.17,
+     "fim": 855.27,
+     "prob": 0.998
+    },
+    {
+     "p": "descansar,",
+     "ini": 855.27,
+     "fim": 855.89,
+     "prob": 1.0
+    },
+    {
+     "p": "que",
+     "ini": 855.89,
+     "fim": 856.03,
+     "prob": 0.971
+    },
+    {
+     "p": "amanhã",
+     "ini": 856.03,
+     "fim": 856.31,
+     "prob": 1.0
+    },
+    {
+     "p": "vamos",
+     "ini": 856.31,
+     "fim": 856.43,
+     "prob": 0.999
+    },
+    {
+     "p": "pra",
+     "ini": 856.43,
+     "fim": 856.67,
+     "prob": 0.999
+    },
+    {
+     "p": "Bruges",
+     "ini": 856.67,
+     "fim": 856.89,
+     "prob": 0.754
+    },
+    {
+     "p": "cedo.",
+     "ini": 856.89,
+     "fim": 857.41,
+     "prob": 0.987
+    }
+   ]
+  },
+  {
+   "ini": 857.63,
+   "fim": 858.94,
+   "texto": "Pra aproveitar o dia lá.",
+   "conf": -0.216,
+   "sem_fala": 0.254,
+   "palavras": [
+    {
+     "p": "Pra",
+     "ini": 857.63,
+     "fim": 858.03,
+     "prob": 0.989
+    },
+    {
+     "p": "aproveitar",
+     "ini": 858.08,
+     "fim": 858.56,
+     "prob": 1.0
+    },
+    {
+     "p": "o",
+     "ini": 858.56,
+     "fim": 858.62,
+     "prob": 1.0
+    },
+    {
+     "p": "dia",
+     "ini": 858.62,
+     "fim": 858.78,
+     "prob": 1.0
+    },
+    {
+     "p": "lá.",
+     "ini": 858.78,
+     "fim": 858.94,
+     "prob": 1.0
+    }
+   ]
+  },
+  {
+   "ini": 860.06,
+   "fim": 861.24,
+   "texto": "Vamos nessa. Boa noite.",
+   "conf": -0.386,
+   "sem_fala": 0.012,
+   "palavras": [
+    {
+     "p": "Vamos",
+     "ini": 860.06,
+     "fim": 860.4,
+     "prob": 0.65
+    },
+    {
+     "p": "nessa.",
+     "ini": 860.4,
+     "fim": 860.66,
+     "prob": 0.975
+    },
+    {
+     "p": "Boa",
+     "ini": 860.76,
+     "fim": 860.98,
+     "prob": 0.999
+    },
+    {
+     "p": "noite.",
+     "ini": 860.98,
+     "fim": 861.24,
+     "prob": 0.999
+    }
+   ]
+  }
+ ]
+}
