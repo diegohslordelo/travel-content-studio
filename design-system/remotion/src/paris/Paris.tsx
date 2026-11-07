@@ -73,6 +73,8 @@ type Cena = {
   }[];
   fita?: { em: string; y: number; giro: number; lado: "esq" | "dir" }[];
   numero?: number;
+  /** REV2: vídeo num cartão por cima do apoio, a partir do marco "cartao" */
+  cartao?: { arquivo: string; w: number; h: number };
   /** foto encaixada pela largura e apoiada na costura (não corta o topo; o que sobra em cima fica sob a interface) */
   aspecto?: number;
   /** grade de cor própria do plano (ex.: pôr do sol que a grade padrão apagaria) */
@@ -509,6 +511,41 @@ const Sobreposicoes: React.FC<{
   );
 };
 
+/** Cartão com vídeo (o prato) que entra por cima do apoio com um "pop" e leve giro. */
+const CartaoVideo: React.FC<{
+  cartao: { arquivo: string; w: number; h: number };
+  t: number;
+}> = ({ cartao, t }) => {
+  const p = clamp(t / 0.35);
+  const e =
+    p < 0.7 ? ease(p / 0.7) * 1.05 : 1.05 - 0.05 * easeInOut((p - 0.7) / 0.3);
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: 1080 - 72 - cartao.w,
+        top: 268,
+        width: cartao.w,
+        height: cartao.h,
+        borderRadius: 22,
+        overflow: "hidden",
+        border: `6px solid ${PALETA.papel}`,
+        boxShadow: "0 34px 80px rgba(0,0,0,0.65)",
+        opacity: clamp(t / 0.12),
+        scale: String(0.82 + 0.18 * e),
+        rotate: `${(1 - clamp(t / 0.35)) * 6 + 2}deg`,
+        translate: `0 ${(1 - ease(p)) * 60}px`,
+      }}
+    >
+      <Video
+        src={staticFile(cartao.arquivo)}
+        muted
+        style={{ width: cartao.w, height: cartao.h, filter: GRADE_VIDEO }}
+      />
+    </div>
+  );
+};
+
 /** Imagem de apoio da cena (acima do Diego na tela dividida ou em tela cheia). */
 const ApoioConteudo: React.FC<{ p: PropsParis; cena: Cena }> = ({
   p,
@@ -630,6 +667,11 @@ const ApoioConteudo: React.FC<{ p: PropsParis; cena: Cena }> = ({
     >
       {conteudo}
       {cena.tipo !== "anim" && degrade}
+      {cena.cartao && cena.marcos?.cartao !== undefined && (
+        <Sequence from={Math.round(cena.marcos.cartao * p.fps)} layout="none">
+          <CartaoVideo cartao={cena.cartao} t={t - cena.marcos.cartao} />
+        </Sequence>
+      )}
       <Sobreposicoes p={p} cena={cena} t={t} h={h} />
     </div>
   );

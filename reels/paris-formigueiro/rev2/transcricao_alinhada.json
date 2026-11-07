@@ -1,0 +1,1078 @@
+{
+ "IMG_7887": [
+  {
+   "texto": "Paris",
+   "ini": 0.401,
+   "fim": 0.886,
+   "prob": 0.977
+  },
+  {
+   "texto": "não",
+   "ini": 1.088,
+   "fim": 1.249,
+   "prob": 1.0
+  },
+  {
+   "texto": "quer",
+   "ini": 1.37,
+   "fim": 1.572,
+   "prob": 0.981
+  },
+  {
+   "texto": "você",
+   "ini": 1.653,
+   "fim": 1.956,
+   "prob": 0.999
+  },
+  {
+   "texto": "lá.",
+   "ini": 2.017,
+   "fim": 2.118,
+   "prob": 0.999
+  }
+ ],
+ "IMG_7888": [
+  {
+   "texto": "Pelo",
+   "ini": 0.981,
+   "fim": 1.202,
+   "prob": 1.0
+  },
+  {
+   "texto": "menos,",
+   "ini": 1.243,
+   "fim": 1.525,
+   "prob": 0.999
+  },
+  {
+   "texto": "não",
+   "ini": 1.626,
+   "fim": 1.787,
+   "prob": 1.0
+  },
+  {
+   "texto": "se",
+   "ini": 1.887,
+   "fim": 1.968,
+   "prob": 0.999
+  },
+  {
+   "texto": "você",
+   "ini": 2.029,
+   "fim": 2.29,
+   "prob": 1.0
+  },
+  {
+   "texto": "for",
+   "ini": 2.431,
+   "fim": 2.573,
+   "prob": 0.535
+  },
+  {
+   "texto": "igual",
+   "ini": 2.593,
+   "fim": 2.794,
+   "prob": 0.352
+  },
+  {
+   "texto": "a",
+   "ini": 2.814,
+   "fim": 2.834,
+   "prob": 0.996
+  },
+  {
+   "texto": "todo",
+   "ini": 2.935,
+   "fim": 3.197,
+   "prob": 0.999
+  },
+  {
+   "texto": "mundo.",
+   "ini": 3.217,
+   "fim": 3.499,
+   "prob": 0.999
+  }
+ ],
+ "IMG_7845": [
+  {
+   "texto": "Segundo",
+   "ini": 0.71,
+   "fim": 1.071,
+   "prob": 0.996
+  },
+  {
+   "texto": "esse",
+   "ini": 1.151,
+   "fim": 1.371,
+   "prob": 0.97
+  },
+  {
+   "texto": "ranking",
+   "ini": 1.451,
+   "fim": 1.791,
+   "prob": 0.295
+  },
+  {
+   "texto": "aqui",
+   "ini": 1.791,
+   "fim": 1.992,
+   "prob": 0.742
+  },
+  {
+   "texto": "do",
+   "ini": 2.072,
+   "fim": 2.132,
+   "prob": 0.982
+  },
+  {
+   "texto": "Euromonitor,",
+   "ini": 2.192,
+   "fim": 2.813,
+   "prob": 0.827
+  },
+  {
+   "texto": "Paris",
+   "ini": 2.893,
+   "fim": 3.133,
+   "prob": 0.856
+  },
+  {
+   "texto": "é",
+   "ini": 3.153,
+   "fim": 3.173,
+   "prob": 0.972
+  },
+  {
+   "texto": "o",
+   "ini": 3.213,
+   "fim": 3.233,
+   "prob": 0.989
+  },
+  {
+   "texto": "primeiro",
+   "ini": 3.273,
+   "fim": 3.613,
+   "prob": 0.997
+  },
+  {
+   "texto": "destino",
+   "ini": 3.654,
+   "fim": 4.034,
+   "prob": 0.978
+  },
+  {
+   "texto": "no",
+   "ini": 4.094,
+   "fim": 4.194,
+   "prob": 0.998
+  },
+  {
+   "texto": "mundo",
+   "ini": 4.274,
+   "fim": 4.595,
+   "prob": 1.0
+  },
+  {
+   "texto": "pelo",
+   "ini": 4.675,
+   "fim": 4.895,
+   "prob": 0.998
+  },
+  {
+   "texto": "quinto",
+   "ini": 5.015,
+   "fim": 5.456,
+   "prob": 0.963
+  },
+  {
+   "texto": "ano",
+   "ini": 5.596,
+   "fim": 5.776,
+   "prob": 0.999
+  },
+  {
+   "texto": "seguido.",
+   "ini": 5.896,
+   "fim": 6.377,
+   "prob": 0.981
+  },
+  {
+   "texto": "Você",
+   "ini": 7.077,
+   "fim": 7.258,
+   "prob": 0.998
+  },
+  {
+   "texto": "tem",
+   "ini": 7.338,
+   "fim": 7.458,
+   "prob": 0.998
+  },
+  {
+   "texto": "ideia",
+   "ini": 7.518,
+   "fim": 7.938,
+   "prob": 0.999
+  },
+  {
+   "texto": "do",
+   "ini": 7.998,
+   "fim": 8.078,
+   "prob": 0.999
+  },
+  {
+   "texto": "que",
+   "ini": 8.139,
+   "fim": 8.239,
+   "prob": 0.999
+  },
+  {
+   "texto": "isso",
+   "ini": 8.299,
+   "fim": 8.479,
+   "prob": 1.0
+  },
+  {
+   "texto": "faz",
+   "ini": 8.539,
+   "fim": 8.739,
+   "prob": 1.0
+  },
+  {
+   "texto": "com",
+   "ini": 8.779,
+   "fim": 8.859,
+   "prob": 0.671
+  },
+  {
+   "texto": "a",
+   "ini": 8.879,
+   "fim": 8.899,
+   "prob": 0.995
+  },
+  {
+   "texto": "cidade?",
+   "ini": 8.919,
+   "fim": 9.34,
+   "prob": 0.998
+  }
+ ],
+ "IMG_7902": [
+  {
+   "texto": "Hospedagem",
+   "ini": 0.44,
+   "fim": 0.982,
+   "prob": 0.761
+  },
+  {
+   "texto": "cara,",
+   "ini": 1.062,
+   "fim": 1.303,
+   "prob": 0.942
+  },
+  {
+   "texto": "pontos",
+   "ini": 1.403,
+   "fim": 1.664,
+   "prob": 0.815
+  },
+  {
+   "texto": "turísticos",
+   "ini": 1.704,
+   "fim": 2.146,
+   "prob": 0.998
+  },
+  {
+   "texto": "e",
+   "ini": 2.166,
+   "fim": 2.186,
+   "prob": 0.996
+  },
+  {
+   "texto": "restaurantes",
+   "ini": 2.246,
+   "fim": 2.747,
+   "prob": 0.986
+  },
+  {
+   "texto": "lotados,",
+   "ini": 2.808,
+   "fim": 3.249,
+   "prob": 0.997
+  },
+  {
+   "texto": "isso",
+   "ini": 3.289,
+   "fim": 3.45,
+   "prob": 0.496
+  },
+  {
+   "texto": "atrapalha",
+   "ini": 3.49,
+   "fim": 4.072,
+   "prob": 0.862
+  },
+  {
+   "texto": "a",
+   "ini": 4.112,
+   "fim": 4.132,
+   "prob": 0.624
+  },
+  {
+   "texto": "sua",
+   "ini": 4.172,
+   "fim": 4.292,
+   "prob": 0.971
+  },
+  {
+   "texto": "experiência",
+   "ini": 4.312,
+   "fim": 4.894,
+   "prob": 0.969
+  },
+  {
+   "texto": "e",
+   "ini": 4.894,
+   "fim": 4.914,
+   "prob": 0.0
+  },
+  {
+   "texto": "ainda",
+   "ini": 4.914,
+   "fim": 5.115,
+   "prob": 0.417
+  },
+  {
+   "texto": "dói",
+   "ini": 5.255,
+   "fim": 5.496,
+   "prob": 0.974
+  },
+  {
+   "texto": "na",
+   "ini": 5.556,
+   "fim": 5.636,
+   "prob": 0.993
+  },
+  {
+   "texto": "conta",
+   "ini": 5.757,
+   "fim": 6.038,
+   "prob": 0.798
+  },
+  {
+   "texto": "bancária.",
+   "ini": 6.098,
+   "fim": 6.62,
+   "prob": 1.0
+  }
+ ],
+ "IMG_7891": [
+  {
+   "texto": "Agora,",
+   "ini": 0.14,
+   "fim": 0.401,
+   "prob": 0.998
+  },
+  {
+   "texto": "cá",
+   "ini": 0.462,
+   "fim": 0.542,
+   "prob": 0.958
+  },
+  {
+   "texto": "entre",
+   "ini": 0.582,
+   "fim": 0.783,
+   "prob": 0.984
+  },
+  {
+   "texto": "nós,",
+   "ini": 0.843,
+   "fim": 1.064,
+   "prob": 0.998
+  },
+  {
+   "texto": "dá",
+   "ini": 1.104,
+   "fim": 1.184,
+   "prob": 0.99
+  },
+  {
+   "texto": "pra",
+   "ini": 1.224,
+   "fim": 1.305,
+   "prob": 0.636
+  },
+  {
+   "texto": "fazer",
+   "ini": 1.365,
+   "fim": 1.585,
+   "prob": 0.411
+  },
+  {
+   "texto": "diferente,",
+   "ini": 1.585,
+   "fim": 2.188,
+   "prob": 0.972
+  },
+  {
+   "texto": "né?",
+   "ini": 2.248,
+   "fim": 2.328,
+   "prob": 0.548
+  },
+  {
+   "texto": "Eu",
+   "ini": 2.609,
+   "fim": 2.669,
+   "prob": 0.981
+  },
+  {
+   "texto": "vou",
+   "ini": 2.669,
+   "fim": 2.75,
+   "prob": 0.62
+  },
+  {
+   "texto": "te",
+   "ini": 2.77,
+   "fim": 2.85,
+   "prob": 0.74
+  },
+  {
+   "texto": "dar",
+   "ini": 2.89,
+   "fim": 2.99,
+   "prob": 0.664
+  },
+  {
+   "texto": "três",
+   "ini": 3.151,
+   "fim": 3.432,
+   "prob": 0.914
+  },
+  {
+   "texto": "pulos",
+   "ini": 3.532,
+   "fim": 3.753,
+   "prob": 0.591
+  },
+  {
+   "texto": "do",
+   "ini": 3.793,
+   "fim": 3.873,
+   "prob": 0.98
+  },
+  {
+   "texto": "gato",
+   "ini": 3.914,
+   "fim": 4.154,
+   "prob": 0.98
+  },
+  {
+   "texto": "pra",
+   "ini": 4.174,
+   "fim": 4.275,
+   "prob": 0.995
+  },
+  {
+   "texto": "você",
+   "ini": 4.315,
+   "fim": 4.516,
+   "prob": 0.997
+  },
+  {
+   "texto": "não",
+   "ini": 4.596,
+   "fim": 4.736,
+   "prob": 0.998
+  },
+  {
+   "texto": "se",
+   "ini": 4.797,
+   "fim": 4.857,
+   "prob": 0.981
+  },
+  {
+   "texto": "apertar",
+   "ini": 4.897,
+   "fim": 5.278,
+   "prob": 0.862
+  },
+  {
+   "texto": "em",
+   "ini": 5.278,
+   "fim": 5.318,
+   "prob": 0.967
+  },
+  {
+   "texto": "Paris.",
+   "ini": 5.379,
+   "fim": 5.74,
+   "prob": 0.972
+  }
+ ],
+ "IMG_7872": [
+  {
+   "texto": "Um,",
+   "ini": 0.501,
+   "fim": 0.601,
+   "prob": 0.656
+  },
+  {
+   "texto": "fique",
+   "ini": 0.701,
+   "fim": 0.902,
+   "prob": 0.885
+  },
+  {
+   "texto": "no",
+   "ini": 0.922,
+   "fim": 0.983,
+   "prob": 0.986
+  },
+  {
+   "texto": "mínimo",
+   "ini": 1.023,
+   "fim": 1.264,
+   "prob": 0.995
+  },
+  {
+   "texto": "quatro",
+   "ini": 1.304,
+   "fim": 1.605,
+   "prob": 0.965
+  },
+  {
+   "texto": "dias.",
+   "ini": 1.665,
+   "fim": 1.886,
+   "prob": 0.997
+  },
+  {
+   "texto": "Você",
+   "ini": 1.906,
+   "fim": 2.047,
+   "prob": 0.998
+  },
+  {
+   "texto": "vai",
+   "ini": 2.067,
+   "fim": 2.167,
+   "prob": 0.284
+  },
+  {
+   "texto": "querer",
+   "ini": 2.167,
+   "fim": 2.348,
+   "prob": 0.84
+  },
+  {
+   "texto": "se",
+   "ini": 2.368,
+   "fim": 2.428,
+   "prob": 0.811
+  },
+  {
+   "texto": "encantar",
+   "ini": 2.448,
+   "fim": 2.77,
+   "prob": 0.965
+  },
+  {
+   "texto": "com",
+   "ini": 2.81,
+   "fim": 2.95,
+   "prob": 0.958
+  },
+  {
+   "texto": "calma",
+   "ini": 3.091,
+   "fim": 3.392,
+   "prob": 0.999
+  },
+  {
+   "texto": "de",
+   "ini": 3.432,
+   "fim": 3.513,
+   "prob": 0.997
+  },
+  {
+   "texto": "cada",
+   "ini": 3.633,
+   "fim": 3.914,
+   "prob": 0.976
+  },
+  {
+   "texto": "rua",
+   "ini": 4.035,
+   "fim": 4.276,
+   "prob": 0.896
+  },
+  {
+   "texto": "dourada",
+   "ini": 4.296,
+   "fim": 4.617,
+   "prob": 0.992
+  },
+  {
+   "texto": "em",
+   "ini": 4.637,
+   "fim": 4.677,
+   "prob": 0.984
+  },
+  {
+   "texto": "Paris.",
+   "ini": 4.718,
+   "fim": 5.099,
+   "prob": 0.927
+  }
+ ],
+ "IMG_7876": [
+  {
+   "texto": "Dois,",
+   "ini": 0.401,
+   "fim": 0.702,
+   "prob": 0.992
+  },
+  {
+   "texto": "come",
+   "ini": 0.783,
+   "fim": 0.964,
+   "prob": 0.996
+  },
+  {
+   "texto": "um",
+   "ini": 1.024,
+   "fim": 1.084,
+   "prob": 0.996
+  },
+  {
+   "texto": "bouillon,",
+   "ini": 1.124,
+   "fim": 1.446,
+   "prob": 0.495
+  },
+  {
+   "texto": "você",
+   "ini": 1.506,
+   "fim": 1.687,
+   "prob": 0.999
+  },
+  {
+   "texto": "vai",
+   "ini": 1.727,
+   "fim": 1.828,
+   "prob": 0.987
+  },
+  {
+   "texto": "comer",
+   "ini": 1.868,
+   "fim": 2.129,
+   "prob": 0.718
+  },
+  {
+   "texto": "uma",
+   "ini": 2.129,
+   "fim": 2.189,
+   "prob": 0.56
+  },
+  {
+   "texto": "comida",
+   "ini": 2.209,
+   "fim": 2.471,
+   "prob": 0.893
+  },
+  {
+   "texto": "francesa",
+   "ini": 2.511,
+   "fim": 2.933,
+   "prob": 0.85
+  },
+  {
+   "texto": "e",
+   "ini": 2.933,
+   "fim": 2.953,
+   "prob": 0.724
+  },
+  {
+   "texto": "ainda",
+   "ini": 2.973,
+   "fim": 3.134,
+   "prob": 0.632
+  },
+  {
+   "texto": "vai",
+   "ini": 3.174,
+   "fim": 3.315,
+   "prob": 0.993
+  },
+  {
+   "texto": "pesar",
+   "ini": 3.355,
+   "fim": 3.596,
+   "prob": 0.799
+  },
+  {
+   "texto": "menos",
+   "ini": 3.636,
+   "fim": 3.857,
+   "prob": 0.795
+  },
+  {
+   "texto": "no",
+   "ini": 3.877,
+   "fim": 3.958,
+   "prob": 0.993
+  },
+  {
+   "texto": "bolso.",
+   "ini": 4.018,
+   "fim": 4.38,
+   "prob": 0.771
+  }
+ ],
+ "IMG_7878": [
+  {
+   "texto": "E",
+   "ini": 0.121,
+   "fim": 0.141,
+   "prob": 0.996
+  },
+  {
+   "texto": "três,",
+   "ini": 0.261,
+   "fim": 0.502,
+   "prob": 0.932
+  },
+  {
+   "texto": "escolha",
+   "ini": 0.542,
+   "fim": 0.804,
+   "prob": 0.824
+  },
+  {
+   "texto": "o",
+   "ini": 0.804,
+   "fim": 0.824,
+   "prob": 0.32
+  },
+  {
+   "texto": "nono",
+   "ini": 0.824,
+   "fim": 0.984,
+   "prob": 0.931
+  },
+  {
+   "texto": "distrito.",
+   "ini": 1.005,
+   "fim": 1.446,
+   "prob": 0.999
+  },
+  {
+   "texto": "Você",
+   "ini": 1.487,
+   "fim": 1.627,
+   "prob": 0.99
+  },
+  {
+   "texto": "vai",
+   "ini": 1.647,
+   "fim": 1.748,
+   "prob": 0.993
+  },
+  {
+   "texto": "estar",
+   "ini": 1.748,
+   "fim": 1.848,
+   "prob": 0.333
+  },
+  {
+   "texto": "num",
+   "ini": 1.868,
+   "fim": 1.969,
+   "prob": 0.33
+  },
+  {
+   "texto": "bairro",
+   "ini": 1.989,
+   "fim": 2.19,
+   "prob": 0.794
+  },
+  {
+   "texto": "mais",
+   "ini": 2.23,
+   "fim": 2.431,
+   "prob": 0.999
+  },
+  {
+   "texto": "calmo",
+   "ini": 2.511,
+   "fim": 2.793,
+   "prob": 0.967
+  },
+  {
+   "texto": "e",
+   "ini": 2.813,
+   "fim": 2.833,
+   "prob": 0.889
+  },
+  {
+   "texto": "ainda",
+   "ini": 2.853,
+   "fim": 3.014,
+   "prob": 0.957
+  },
+  {
+   "texto": "assim",
+   "ini": 3.054,
+   "fim": 3.235,
+   "prob": 0.837
+  },
+  {
+   "texto": "muito",
+   "ini": 3.315,
+   "fim": 3.576,
+   "prob": 0.999
+  },
+  {
+   "texto": "bem",
+   "ini": 3.616,
+   "fim": 3.737,
+   "prob": 0.957
+  },
+  {
+   "texto": "localizado.",
+   "ini": 3.777,
+   "fim": 4.38,
+   "prob": 1.0
+  }
+ ],
+ "IMG_7880": [
+  {
+   "texto": "Desse",
+   "ini": 0.081,
+   "fim": 0.322,
+   "prob": 0.93
+  },
+  {
+   "texto": "jeito",
+   "ini": 0.362,
+   "fim": 0.604,
+   "prob": 0.961
+  },
+  {
+   "texto": "você",
+   "ini": 0.624,
+   "fim": 0.825,
+   "prob": 0.995
+  },
+  {
+   "texto": "curte",
+   "ini": 0.886,
+   "fim": 1.127,
+   "prob": 0.479
+  },
+  {
+   "texto": "a",
+   "ini": 1.127,
+   "fim": 1.147,
+   "prob": 0.256
+  },
+  {
+   "texto": "Madame",
+   "ini": 1.188,
+   "fim": 1.55,
+   "prob": 0.915
+  },
+  {
+   "texto": "Paris",
+   "ini": 1.611,
+   "fim": 1.892,
+   "prob": 0.825
+  },
+  {
+   "texto": "apesar",
+   "ini": 1.933,
+   "fim": 2.275,
+   "prob": 0.662
+  },
+  {
+   "texto": "do",
+   "ini": 2.295,
+   "fim": 2.376,
+   "prob": 0.992
+  },
+  {
+   "texto": "formigueiro.",
+   "ini": 2.396,
+   "fim": 2.879,
+   "prob": 0.864
+  }
+ ],
+ "IMG_7883": [
+  {
+   "texto": "E",
+   "ini": 0.06,
+   "fim": 0.08,
+   "prob": 0.984
+  },
+  {
+   "texto": "se",
+   "ini": 0.181,
+   "fim": 0.261,
+   "prob": 0.929
+  },
+  {
+   "texto": "você",
+   "ini": 0.301,
+   "fim": 0.481,
+   "prob": 0.999
+  },
+  {
+   "texto": "está",
+   "ini": 0.501,
+   "fim": 0.602,
+   "prob": 0.233
+  },
+  {
+   "texto": "planejando",
+   "ini": 0.622,
+   "fim": 0.983,
+   "prob": 0.614
+  },
+  {
+   "texto": "o",
+   "ini": 1.003,
+   "fim": 1.023,
+   "prob": 0.019
+  },
+  {
+   "texto": "seu",
+   "ini": 1.023,
+   "fim": 1.123,
+   "prob": 0.996
+  },
+  {
+   "texto": "primeiro",
+   "ini": 1.184,
+   "fim": 1.585,
+   "prob": 0.997
+  },
+  {
+   "texto": "dia",
+   "ini": 1.625,
+   "fim": 1.765,
+   "prob": 0.999
+  },
+  {
+   "texto": "na",
+   "ini": 1.825,
+   "fim": 1.886,
+   "prob": 0.507
+  },
+  {
+   "texto": "Europa,",
+   "ini": 1.926,
+   "fim": 2.307,
+   "prob": 0.998
+  },
+  {
+   "texto": "já",
+   "ini": 2.367,
+   "fim": 2.447,
+   "prob": 0.874
+  },
+  {
+   "texto": "acompanha",
+   "ini": 2.487,
+   "fim": 2.949,
+   "prob": 0.896
+  },
+  {
+   "texto": "aqui",
+   "ini": 2.989,
+   "fim": 3.149,
+   "prob": 0.9
+  },
+  {
+   "texto": "esse",
+   "ini": 3.23,
+   "fim": 3.39,
+   "prob": 0.947
+  },
+  {
+   "texto": "perfil,",
+   "ini": 3.45,
+   "fim": 3.751,
+   "prob": 0.841
+  },
+  {
+   "texto": "porque",
+   "ini": 3.771,
+   "fim": 3.912,
+   "prob": 0.762
+  },
+  {
+   "texto": "eu",
+   "ini": 3.932,
+   "fim": 3.972,
+   "prob": 0.006
+  },
+  {
+   "texto": "solto",
+   "ini": 4.032,
+   "fim": 4.293,
+   "prob": 0.765
+  },
+  {
+   "texto": "dica",
+   "ini": 4.333,
+   "fim": 4.554,
+   "prob": 0.999
+  },
+  {
+   "texto": "toda",
+   "ini": 4.714,
+   "fim": 4.955,
+   "prob": 0.945
+  },
+  {
+   "texto": "semana",
+   "ini": 5.035,
+   "fim": 5.356,
+   "prob": 0.999
+  },
+  {
+   "texto": "pra",
+   "ini": 5.396,
+   "fim": 5.516,
+   "prob": 0.923
+  },
+  {
+   "texto": "você",
+   "ini": 5.536,
+   "fim": 5.757,
+   "prob": 0.999
+  },
+  {
+   "texto": "não",
+   "ini": 5.797,
+   "fim": 5.898,
+   "prob": 0.999
+  },
+  {
+   "texto": "passar",
+   "ini": 5.938,
+   "fim": 6.158,
+   "prob": 0.832
+  },
+  {
+   "texto": "perrengue.",
+   "ini": 6.198,
+   "fim": 6.56,
+   "prob": 0.624
+  }
+ ]
+}

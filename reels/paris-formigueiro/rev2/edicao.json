@@ -1,0 +1,23 @@
+{
+ "nota": "Voz do Reel (REV1): 10 tomadas do quarto (Drive Youtube/Paris/Reel, 07/11/2026), na ordem do roteiro, sem corte dentro da fala. 'in' e 'out' medidos pela energia da voz (120–4.000 Hz), corte só no silêncio. A fala gravada manda (FORMATOS_REELS 9.5).",
+ "fonte_dir": "../fonte/quarto",
+ "fps": 30,
+ "fontes": {
+  "IMG_7887": "IMG_7887.mov", "IMG_7888": "IMG_7888.mov", "IMG_7845": "IMG_7845.mov", "IMG_7902": "IMG_7902.mov",
+  "IMG_7891": "IMG_7891.mov", "IMG_7872": "IMG_7872.mov", "IMG_7876": "IMG_7876.mov", "IMG_7878": "IMG_7878.mov",
+  "IMG_7880": "IMG_7880.mov", "IMG_7883": "IMG_7883.mov"
+ },
+ "falas": [
+  {"id": "f1", "fonte": "IMG_7887", "in": 0.30, "out": 2.36, "texto": "Paris não quer você lá."},
+  {"id": "f2", "fonte": "IMG_7888", "in": 0.88, "out": 3.58, "texto": "Pelo menos, não se você for igual a todo mundo."},
+  {"id": "f3", "fonte": "IMG_7845", "in": 0.53, "out": 9.44, "texto": "Segundo esse ranking aqui do Euromonitor, Paris é o primeiro destino no mundo pelo quinto ano seguido. Você tem ideia do que isso faz com a cidade?"},
+  {"id": "f4", "fonte": "IMG_7902", "in": 0.34, "out": 6.78, "texto": "Hospedagem cara, pontos turísticos e restaurantes lotados, isso atrapalha a sua experiência e ainda dói na conta bancária."},
+  {"id": "f5", "fonte": "IMG_7891", "in": 0.0, "out": 5.78, "texto": "Agora, cá entre nós, dá pra fazer diferente, né? Eu vou te dar três pulos do gato pra você não se apertar em Paris."},
+  {"id": "f6", "fonte": "IMG_7872", "in": 0.34, "out": 5.32, "texto": "Um, fique no mínimo quatro dias. Você vai querer se encantar com calma de cada rua dourada em Paris."},
+  {"id": "f7", "fonte": "IMG_7876", "in": 0.22, "out": 4.44, "fim_suave": true, "texto": "Dois, come um bouillon, você vai comer uma comida francesa e ainda vai pesar menos no bolso."},
+  {"id": "f8", "fonte": "IMG_7878", "in": 0.0, "out": 4.46, "fim_suave": true, "texto": "E três, escolha o nono distrito. Você vai estar num bairro mais calmo e ainda assim muito bem localizado."},
+  {"id": "f9", "fonte": "IMG_7880", "in": 0.0, "out": 3.06, "texto": "Desse jeito você curte a Madame Paris apesar do formigueiro."},
+  {"id": "f10", "fonte": "IMG_7883", "in": 0.0, "out": 6.72, "texto": "E se você está planejando o seu primeiro dia na Europa, já acompanha aqui esse perfil, porque eu solto dica toda semana pra você não passar perrengue."}
+ ],
+ "audio": {"fade_ms": 12, "passa_alta_hz": 70, "ruido": "afftdn=nr=8:nf=-58:tn=1", "alvo_lufs": -14, "pico_dbtp": -1}
+}
