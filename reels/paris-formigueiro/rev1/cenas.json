@@ -3,7 +3,8 @@
  "acervo_dir": "../fonte/acervo",
  "min_cena": 3.0,
  "min_excecao": {
-  "abertura": 2.5
+  "abertura": 2.5,
+  "diego_chave": 2.5
  },
  "rostoY": 640,
  "imagens": {
@@ -153,7 +154,7 @@
    "tipo": "fala",
    "transicao": "empurrao",
    "ini": "f2:não-0.1",
-   "fim": "f3:aqui-0.12",
+   "fim": "f3:esse-0.15",
    "zoom": [
     1.0,
     1.06
@@ -166,7 +167,7 @@
    "anim": "ranking",
    "layout": "split",
    "print": "print",
-   "ini": "f3:aqui-0.12",
+   "ini": "f3:esse-0.15",
    "fim": "f3:pelo",
    "marcos": {
     "primeiro": "f3:primeiro"
@@ -240,7 +241,7 @@
     }
    ],
    "marcos": {
-    "hosp": "f4:Hospedagem",
+    "hosp": "f4:Hospedagem-0.2",
     "pontos": "f4:pontos",
     "rest": "f4:restaurantes"
    }
@@ -496,7 +497,7 @@
   },
   {
    "arquivo": "PDX_impacto.wav",
-   "em": "f3:aqui-0.12",
+   "em": "f3:esse-0.15",
    "desl": 0.36,
    "rel_db": -4,
    "alinhar": "pico",
