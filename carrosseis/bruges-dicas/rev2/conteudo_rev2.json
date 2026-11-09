@@ -1,0 +1,25 @@
+{
+  "opacidade_caixa": 0.72,
+  "slides": [
+    {"n":1,"id":"capa","foto":"foto01.jpg","pos":"top","foco":"50% 60%",
+     "titulo":"Tudo que você precisa saber sobre <em>Bruges</em>","texto":"antes de ir · arrasta →","capa":true},
+    {"n":2,"id":"bate-volta","foto":"foto10.jpg","pos":"bottom","foco":"50% 30%",
+     "titulo":"Dá pra ir de <em>bate-volta</em> de Bruxelas","texto":"Trem direto, cerca de 1 hora. Uns <em>€17</em> por pessoa, cada trecho."},
+    {"n":3,"id":"medieval","foto":"foto05.jpg","pos":"bottom","foco":"50% 40%",
+     "titulo":"Parece cenário de <em>filme</em>","texto":"O centro medieval inteiro é Patrimônio da UNESCO. Canais, ruas de pedra e uma torre de igreja de 115 metros."},
+    {"n":4,"id":"chocolate","foto":"foto06.jpg","pos":"bottom","foco":"50% 45%",
+     "titulo":"Primeira impressão: a&nbsp;cidade <em>cheira a chocolate</em>","texto":"É sério. Tem chocolateria em cada esquina, e é chocolate belga: pra muita gente, o melhor do&nbsp;mundo."},
+    {"n":5,"id":"waffle","foto":"foto04.jpg","pos":"top","foco":"50% 55%",
+     "titulo":"Esse waffle foi no <em>Chez&nbsp;Albert</em>","texto":"O melhor que eu comi na Bélgica. Disparado."},
+    {"n":6,"id":"batata","foto":"foto03.jpg","pos":"bottom","foco":"50% 35%",
+     "titulo":"A melhor batata frita da viagem. <em>Disparada.</em>","texto":"Batata com pulled pork, no Fritbar."},
+    {"n":7,"id":"cerveja","foto":"foto07.jpg","pos":"top","foco":"50% 55%",
+     "titulo":"E as cervejas? <em>As melhores</em> que eu bebi.","texto":"Na Bélgica, cerveja é coisa séria: cada uma tem o seu copo."},
+    {"n":8,"id":"basilica","foto":"foto09.jpg","pos":"top","foco":"50% 60%",
+     "titulo":"Basílica do <em>Sangue Sagrado</em>","texto":"Guarda uma relíquia que seria do sangue de Cristo. A entrada é grátis."},
+    {"n":9,"id":"conselho","foto":"foto08.jpg","pos":"bottom","foco":"50% 40%",
+     "titulo":"Conselho final: <em>durma uma noite</em> em Bruges","texto":"De dia, a cidade lota de gente de bate-volta. No fim da tarde, eles vão embora e Bruges fica vazia. Aí você vive a cidade."},
+    {"n":10,"id":"cta","foto":"foto02.jpg","pos":"cta","foco":"50% 50%",
+     "titulo":"Conhece alguém que vai pra <em>Bélgica</em>?","texto":"@primeirodiaem"}
+  ]
+}
