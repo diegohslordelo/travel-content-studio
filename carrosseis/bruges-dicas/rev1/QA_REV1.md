@@ -9,7 +9,7 @@ Pedido do Diego (09/11/2026): carrossel "dicas sobre Bruges" com dormir na cidad
 | # | Slide | Tipo do DS | Conteúdo |
 |---|---|---|---|
 | 01 | Capa | Capa | Foto do Diego no canal (IMG_2549, 12h46) · Placa `DICAS / BRUGES` (base y 1240) · coordenadas Plex Mono |
-| 02 | Dormir | Informação + bilhete | H2, 38 palavras, bilhete "dormir lá vale a pena" + lua desenhada |
+| 02 | Dormir | Informação + bilhete | H2, 34 palavras, bilhete "dormir lá vale a pena" + lua desenhada |
 | 03 | Fritbar | Fotografia | IMG_2624 (14h04) · bilhete "vale o hype." |
 | 04 | Chez Albert | Fotografia | IMG_2700 (16h45) |
 | 05 | Minnewater | Fotografia | IMG_2650 (14h50) · bilhete "muito bonito mesmo." |
@@ -48,7 +48,7 @@ Rota amarela de 8 px em y 1360, contínua entre os slides; contador `NN / 07` em
 |---|---|
 | Formato 1080 × 1440, margem 80 | ok (medido: nada além de x 1000 nem de y 1330, exceto Rota e símbolo) |
 | Alinhamento à esquerda em x 80 | ok (H2, corpo, H3 e legendas) |
-| Informação ≤ 40 palavras | ok (slide 02: 38) |
+| Informação ≤ 40 palavras | ok (slide 02: 34) |
 | 1 CTA | ok (`SALVA PRA VIAGEM →`) |
 | Mínimos de fonte (32 px essencial, 30 px microcopy) | ok (menor texto: 28 px da etiqueta de série, que é o tamanho definido no DS 2.7) |
 | Proporção papel/grafite/amarelo | ok (papel predomina; vermelho, azul e verde somados < 5%) |
