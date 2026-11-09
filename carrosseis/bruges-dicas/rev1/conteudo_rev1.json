@@ -1,0 +1,45 @@
+{
+  "serie": "DICAS · BRUGES",
+  "slides": [
+    {
+      "n": 1, "id": "capa", "tipo": "capa",
+      "placa": { "label": "DICAS", "dest": "BRUGES" },
+      "coordenadas": "51°12′ N · 3°13′ L"
+    },
+    {
+      "n": 2, "id": "dormir", "tipo": "info",
+      "titulo": "Se der, durma em Bruges.",
+      "corpo": "A gente fez bate-volta de Bruxelas e adorou. Mas, segundo guias, depois das 17h os bate-voltas vão embora e a cidade fica bem mais calma. Se o roteiro deixar, a dica é dormir lá.",
+      "bilhete": "dormir lá|vale a pena."
+    },
+    {
+      "n": 3, "id": "fritbar", "tipo": "foto", "foto": "fritbar",
+      "titulo": "Fritbar",
+      "legenda": "A batata é prato principal: porco desfiado, barbecue, cebola crocante e repolho. Katelijnestraat 3. A gente dividiu uma e saiu satisfeito.",
+      "bilhete": "vale o hype."
+    },
+    {
+      "n": 4, "id": "chez-albert", "tipo": "foto", "foto": "chez",
+      "titulo": "Chez Albert",
+      "legenda": "Janelinha de waffle na Breidelstraat, entre a Markt e a Burg. Waffle quente com chocolate belga, pra comer andando."
+    },
+    {
+      "n": 5, "id": "minnewater", "tipo": "foto", "foto": "minnewater",
+      "titulo": "Minnewater",
+      "legenda": "O Lago do Amor, ao sul do centro. Grátis e aberto o ano todo. A ponte de pedra é a Ponte do Amor. A gente foi depois de comer e ficou ouvindo a água.",
+      "bilhete": "muito bonito mesmo."
+    },
+    {
+      "n": 6, "id": "brugse-zot", "tipo": "foto", "foto": "cerveja",
+      "titulo": "Brugse Zot",
+      "legenda": "Blond de 6%, de alta fermentação e refermentada na garrafa. Feita em Bruges, na De Halve Maan. A gente tomou no Café 't Klein Venetië, antes de ir embora."
+    },
+    {
+      "n": 7, "id": "encerramento", "tipo": "fim",
+      "bilhete": "voltaria mil vezes|pra essa cidade.",
+      "micro": "BATE-VOLTA DE BRUXELAS · 16.03.2026",
+      "placa": { "label": "SALVA PRA", "dest": "VIAGEM" },
+      "rotaFim": 904
+    }
+  ]
+}
