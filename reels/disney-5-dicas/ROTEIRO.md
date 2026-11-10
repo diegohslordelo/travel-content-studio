@@ -85,7 +85,7 @@
 O problema fica claro em 3 s ("do jeito errado") e concreto em 11 s (as 5 cenas do erro). Cada erro vira uma promessa que a dica paga, o que segura até o fim, e o pôr do sol fecha o "vai embora antes da melhor parte". O rosto aparece desde o 1º quadro (o gancho dividido é o que mais prende, `FORMATOS_REELS.md`, 4.2).
 
 **Sobre os dois ganchos que você sugeriu:**
-- **"A Disney não quer você lá"** chama atenção, mas não diz qual é o problema: a pessoa precisa esperar para entender. Na v2 o gancho nomeia o erro direto ("do jeito errado") e a fala 2 o descreve. Se quiser testar a sua frase, ela entra como texto na tela do gancho sobre a mesma fala.
+- **"A Disney não quer você lá"** chama atenção, mas não diz qual é o problema: a pessoa precisa esperar para entender. Na v2 o gancho nomeia o erro direto ("do jeito errado") e a fala 2 o descreve. Se quiser testar a sua frase, ela entra **falada** numa variante do gancho ("A Disney não quer você lá. Pelo menos, não do jeito que todo mundo vai: …"), porque texto na tela que não está na fala não entra (`FORMATOS_REELS.md`, 6).
 - **"Não vá pra Disney Paris sem ver isso antes"** é uma fórmula muito repetida no nicho. Funciona, mas é genérica. Ficou na Opção B, com a curiosidade da "última dica" para segurar até o fim.
 
 **Teste sugerido** (referência de conteúdo, 8.3): se publicar A agora, a B pode virar Trial Reel depois, para comparar gancho de conflito × gancho de lista. Só vale como comparação se as duas forem do mesmo formato. Como A e B diferem em formato e gancho, o resultado indica tendência, não prova.
