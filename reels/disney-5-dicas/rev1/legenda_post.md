@@ -17,8 +17,6 @@ São quase 11 milhões de visitas por ano no parque principal, e muita gente vai
 
 Quer a parte 2? Me segue que toda semana tem dica de viagem aqui.
 
-Fonte do número: índice TEA 2025 (Disneyland Park, 10,8 milhões de visitas), via AirMagique, 29/10/2026.
-
 #disneylandparis #disneyparis #dicasdeviagem #paris #viagemeuropa #primeirodia
 ```
 
