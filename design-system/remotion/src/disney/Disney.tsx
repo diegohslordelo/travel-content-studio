@@ -165,6 +165,8 @@ export type PropsDisney = {
   };
   mix: { voz_lufs: number; clack_db_rel: number };
   sfx: boolean;
+  /** REV2: o grão do formato fica só nas imagens de apoio, nunca sobre o Diego (pedido dele, 11/11/2026) */
+  graoSoApoio?: boolean;
 };
 
 export const propsVaziasDisney: PropsDisney = {
@@ -978,10 +980,10 @@ const Clarao: React.FC<{ q: number; ini: number }> = ({ q, ini }) => {
 };
 
 /** Grão de película próprio do formato (não é o grão do DS). */
-const Grao: React.FC<{ q: number }> = ({ q }) => (
+const Grao: React.FC<{ q: number; altura?: number }> = ({ q, altura = 1920 }) => (
   <svg
     width={1080}
-    height={1920}
+    height={altura}
     style={{
       position: "absolute",
       inset: 0,
@@ -1050,7 +1052,12 @@ export const ReelDisney: React.FC<PropsDisney> = (p) => {
             }}
           />
         )}
-        <Grao q={q} />
+        {(() => {
+          // REV2: sem grão sobre o Diego; na tela dividida, só na metade de cima
+          if (!p.graoSoApoio) return <Grao q={q} />;
+          if (cena.tipo === "fala") return null;
+          return <Grao q={q} altura={split ? Math.round(linhaY) : 1920} />;
+        })()}
         <Legenda p={p} tS={tS} cena={cena} />
         <PalavraChave p={p} tS={tS} />
         <Gancho p={p} tS={tS} />
