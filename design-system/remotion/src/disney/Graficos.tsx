@@ -111,15 +111,27 @@ export const PrintCai: React.FC<{
   colY: number;
   colW: number;
   fundo?: string;
-}> = ({ t, src, w0, h0, W, x, y, marcas, linhas, colX, colY, colW, fundo }) => {
+  /** zoom na palavra: ponto (cx, cy) do print vai para (tx, ty) da tela, com escala s */
+  zoom?: { em: number; cx: number; cy: number; s: number; tx: number; ty: number };
+}> = ({ t, src, w0, h0, W, x, y, marcas, linhas, colX, colY, colW, fundo, zoom }) => {
   const esc = W / w0;
   const H = Math.round(h0 * esc);
   const queda = pouso(t / 0.5);
   const yy = lerp(queda, 0, 1, -H - 80, y, (v) => v);
   const giro = (1 - clamp(t / 0.5)) * -6;
+  const z = zoom ? easeInOut((t - zoom.em + 0.1) / 0.55) : 0;
+  const ox = zoom ? x + zoom.cx * esc : 0;
+  const oy = zoom ? y + zoom.cy * esc : 0;
+  const zoomEstilo: React.CSSProperties = zoom
+    ? {
+        transformOrigin: `${ox}px ${oy}px`,
+        transform: `translate(${(zoom.tx - ox) * z}px, ${(zoom.ty - oy) * z}px) scale(${1 + (zoom.s - 1) * z})`,
+      }
+    : {};
   return (
     <div style={{ position: "absolute", inset: 0 }}>
       <FundoParque src={fundo} t={t} />
+      <div style={{ position: "absolute", inset: 0, ...zoomEstilo }}>
       <div
         style={{
           position: "absolute",
@@ -147,14 +159,15 @@ export const PrintCai: React.FC<{
                 top: m.r[1] * esc - 2,
                 width: (m.r[2] * esc + 6) * k,
                 height: m.r[3] * esc + 4,
-                background: "rgba(224,174,92,0.5)",
-                mixBlendMode: "screen",
-                borderBottom: `3px solid ${AMBAR}`,
-                borderRadius: 3,
+                background: "rgba(224,174,92,0.28)",
+                border: `3px solid ${AMBAR}`,
+                boxShadow: "0 0 18px rgba(224,174,92,0.6)",
+                borderRadius: 5,
               }}
             />
           );
         })}
+      </div>
       </div>
       <Rotulos t={t} x={colX} y={colY} w={colW} linhas={linhas} alinhar="center" />
     </div>
@@ -401,7 +414,7 @@ const GatoSentado: React.FC<{ cor: string }> = ({ cor }) => (
   </g>
 );
 
-export const Gato5: React.FC<{ t: number; marcos: Record<string, number>; fundo?: string }> = ({ t, marcos, fundo }) => {
+export const Gato5: React.FC<{ t: number; marcos: Record<string, number>; fundo?: string; extra?: Linha[] }> = ({ t, marcos, fundo, extra }) => {
   const ev = evolvePath(easeInOut(t / 0.6), CASTELO);
   const s0 = marcos.pulos ?? 0.1;
   const DUR = 0.36;
@@ -463,6 +476,7 @@ export const Gato5: React.FC<{ t: number; marcos: Record<string, number>; fundo?
           { texto: "DO GATO", em: s0 + 0.1, tam: 76 },
         ]}
       />
+      {extra && <Rotulos t={t} x={680} y={520} w={380} linhas={extra} />}
     </div>
   );
 };

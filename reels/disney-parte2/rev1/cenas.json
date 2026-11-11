@@ -1,0 +1,891 @@
+{
+ "nota": "Cenas da Parte 2 (REV1, 11/11/2026). Mesmas regras da Parte 1: âncoras de palavra ('f3a:57' = '5,7%'), 'fX:^' = começo do trecho; toda cena ≥ 3 s (regra dos 3 s do Diego); nenhum take de vlog; nada de efeito sobre o Diego (sem zoom, grão, clarão ou luz); conversão de cor neutra no vídeo do Diego e em todos os planos do acervo.",
+ "acervo_dir": "../fonte/acervo",
+ "rostoY": 780,
+ "min_cena": {
+  "broll": 3.0,
+  "fala": 3.0,
+  "foto": 3.0,
+  "anim": 3.0
+ },
+ "imagens": {
+  "print": "print_tea.png",
+  "fundo_castelo": "fundo_castelo.jpg",
+  "fundo_castelo2": "fundo_castelo2.jpg",
+  "fundo_noite": "fundo_noite.jpg",
+  "fundo_studios": "fundo_studios.jpg"
+ },
+ "broll": {
+  "IMG_3356.MOV": {
+   "ini": 0.2,
+   "fim_limpo": 8.3,
+   "rot": "raw",
+   "tonemap": "neutro",
+   "nota": "castelo de dia, câmera subindo"
+  },
+  "IMG_3453.MOV": {
+   "ini": 3.9,
+   "fim_limpo": 7.4,
+   "rot": "raw",
+   "tonemap": "neutro",
+   "nota": "multidão diante do castelo"
+  },
+  "IMG_3456.MOV": {
+   "ini": 6.0,
+   "fim_limpo": 24.0,
+   "rot": "auto",
+   "tonemap": "neutro",
+   "nota": "rua lotada na parada (vertical)"
+  },
+  "IMG_3204.MOV": {
+   "ini": 1.5,
+   "fim_limpo": 6.6,
+   "rot": "raw",
+   "foco_x": 0.03,
+   "tonemap": "neutro",
+   "nota": "painel do RER A no trem de ida (manhã de 18/03): o nome 'Marne-la-Vallée – Chessy' que ele não arrisca falar",
+   "foco_y": 0.4
+  },
+  "IMG_3274.MOV": {
+   "ini": 0.3,
+   "fim_limpo": 7.7,
+   "rot": "raw",
+   "tonemap": "neutro",
+   "nota": "fila lotada (Studios)"
+  },
+  "IMG_3286.MOV": {
+   "ini": 0.1,
+   "fim_limpo": 4.3,
+   "rot": "raw",
+   "tonemap": "neutro",
+   "nota": "Avengers Campus com o Quinjet"
+  },
+  "IMG_3607.MOV": {
+   "ini": 17.0,
+   "fim_limpo": 23.2,
+   "rot": "raw",
+   "tonemap": "neutro",
+   "nota": "fogos sobre o castelo"
+  },
+  "IMG_3442.MOV": {
+   "ini": 0.2,
+   "fim_limpo": 4.8,
+   "rot": "raw",
+   "tonemap": "neutro",
+   "nota": "castelo e céu azul"
+  },
+  "IMG_3593.MOV": {
+   "ini": 11.0,
+   "fim_limpo": 16.7,
+   "rot": "raw",
+   "tonemap": "neutro",
+   "nota": "castelo à noite"
+  },
+  "IMG_3595.MOV": {
+   "ini": 12.0,
+   "fim_limpo": 21.5,
+   "rot": "auto",
+   "tonemap": "neutro",
+   "nota": "fogos sobre o castelo, público na frente (vertical)"
+  }
+ },
+ "gancho": {
+  "layout": {
+   "split": true,
+   "topo": 290
+  },
+  "fim": "f2:^",
+  "blocos": [
+   {
+    "ini": 0,
+    "linhas": [
+     {
+      "texto": "A DISNEY DE PARIS",
+      "tam": 96,
+      "em": 0
+     },
+     {
+      "texto": "CONTINUA SEM",
+      "tam": 120,
+      "em": "f1:continua-0.05"
+     },
+     {
+      "texto": "QUERER",
+      "tam": 120,
+      "em": "f1:querer-0.05"
+     },
+     {
+      "texto": "VOCÊ LÁ.",
+      "tam": 120,
+      "cor": "vermelho",
+      "em": "f1:você-0.05"
+     }
+    ]
+   }
+  ]
+ },
+ "chaves": [
+  {
+   "ini": "f2:Pelo-0.08",
+   "fim": "f3a:^",
+   "linhas": [
+    {
+     "texto": "PELO MENOS…",
+     "estilo": "rotulo",
+     "em": "f2:Pelo-0.05"
+    },
+    {
+     "texto": "NÃO SE VOCÊ FOR",
+     "estilo": "titulo",
+     "em": "f2:não-0.05"
+    },
+    {
+     "texto": "igual a todo mundo",
+     "estilo": "serifa",
+     "em": "f2:igual-0.05"
+    }
+   ]
+  }
+ ],
+ "legenda": {
+  "destaques": {
+   "f3a": [
+    "cresceram",
+    "57"
+   ],
+   "f3b": [
+    "16",
+    "parques"
+   ],
+   "f3c": [
+    "gente"
+   ],
+   "f4": [
+    "lotado",
+    "gato",
+    "2"
+   ],
+   "f5a": [
+    "paris",
+    "40",
+    "rer"
+   ],
+   "f5b": [
+    "última",
+    "mickey"
+   ],
+   "f6": [
+    "cedo",
+    "fila",
+    "estação",
+    "30"
+   ],
+   "f7": [
+    "adventure"
+   ],
+   "f8": [
+    "vingadores",
+    "menor",
+    "castelo",
+    "final"
+   ],
+   "f9": [
+    "frio",
+    "março",
+    "azul",
+    "queixo"
+   ],
+   "f10": [
+    "castelo",
+    "ouro",
+    "dragão"
+   ],
+   "f11": [
+    "paris",
+    "segue"
+   ]
+  },
+  "troca": {
+   "f6:dois": "2.",
+   "f7:três": "3.",
+   "f9:quatro": "4.",
+   "f10:cinco": "5."
+  },
+  "quebrar_antes": [],
+  "sem_legenda": [
+   [
+    "f2:^",
+    "f3a:^"
+   ]
+  ]
+ },
+ "cenas": [
+  {
+   "id": "abertura",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3356.MOV",
+   "ini": 0,
+   "fim": "f2:^",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "fita": [
+    {
+     "em": "f1:continua-0.1",
+     "y": 640,
+     "giro": -7,
+     "lado": "esq"
+    },
+    {
+     "em": "f1:lá-0.12",
+     "y": 760,
+     "giro": 5,
+     "lado": "dir"
+    }
+   ],
+   "marcos": {
+    "fita0": "f1:continua-0.1",
+    "fita1": "f1:lá-0.12"
+   },
+   "nota": "Mesmo gancho da Parte 1: fita zebrada com o castelo"
+  },
+  {
+   "id": "sentada",
+   "tipo": "fala",
+   "ini": "f2:^",
+   "fim": "f3a:^",
+   "nota": "Começa no finzinho do giro da cadeira (pedido do Diego); sem efeito de áudio"
+  },
+  {
+   "id": "print",
+   "tipo": "anim",
+   "anim": "print11",
+   "layout": "split",
+   "fundo": "fundo_castelo",
+   "ini": "f3a:^",
+   "fim": "f3b:^",
+   "dados": {
+    "print": "print",
+    "w0": 1680,
+    "h0": 1380,
+    "marcas": [
+     {
+      "r": [
+       40,
+       646.9,
+       466.8,
+       40
+      ],
+      "em": "f3a:cresceram"
+     },
+     {
+      "r": [
+       1017.2,
+       971.4,
+       100.1,
+       40
+      ],
+      "em": "f3a:57"
+     },
+     {
+      "r": [
+       1017.2,
+       1089.9,
+       100.1,
+       40
+      ],
+      "em": "f3a:57+0.15"
+     },
+     {
+      "r": [
+       1017.2,
+       1236.4,
+       100.1,
+       40
+      ],
+      "em": "f3a:57+0.3"
+     }
+    ],
+    "linhas": [
+     {
+      "texto": "2025",
+      "em": "f3a:2025-0.05",
+      "tam": 40,
+      "cor": "papel",
+      "fonte": "texto",
+      "ate": "f3a:57-0.1"
+     },
+     {
+      "texto": "+5,7%",
+      "em": "f3a:57-0.05",
+      "tam": 112,
+      "cor": "ambar",
+      "ate": "f3a:57-0.1"
+     },
+     {
+      "texto": "DE GENTE",
+      "em": "f3a:gente-0.05",
+      "tam": 34,
+      "cor": "papel",
+      "fonte": "texto",
+      "ate": "f3a:57-0.1"
+     }
+    ],
+    "W": 690,
+    "x": 40,
+    "colX": 750,
+    "colW": 300,
+    "zoom": {
+     "em": "f3a:57",
+     "cx": 600,
+     "cy": 1120,
+     "s": 1.5,
+     "tx": 540,
+     "ty": 600
+    }
+   },
+   "nota": "Print da AirMagique (índice TEA 2025): subtítulo 'Both parks grew 5.7%' e a coluna '+5.7%' da tabela marcados na palavra"
+  },
+  {
+   "id": "multidao16",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3453.MOV",
+   "ini": "f3b:^",
+   "fim": "f3c:^",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "letreiro": [
+    {
+     "texto": "MAIS DE",
+     "tam": 96,
+     "em": "f3b:mais-0.05"
+    },
+    {
+     "texto": "16 MILHÕES",
+     "tam": 170,
+     "em": "f3b:16-0.05",
+     "cor": "ambar"
+    }
+   ]
+  },
+  {
+   "id": "lotado",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3456.MOV",
+   "ini": "f3c:^",
+   "fim": "f4:Mas-0.05",
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "letreiro": [
+    {
+     "texto": "LOTADO",
+     "tam": 200,
+     "em": "f4:Lotado-0.05",
+     "cor": "ambar"
+    }
+   ]
+  },
+  {
+   "id": "gato",
+   "tipo": "anim",
+   "anim": "gato5",
+   "layout": "split",
+   "fundo": "fundo_castelo",
+   "ini": "f4:Mas-0.05",
+   "fim": "f5a:^",
+   "marcos": {
+    "pulos": "f4:pulos"
+   },
+   "dados": {
+    "linhas": [
+     {
+      "texto": "PARTE 2",
+      "em": "f4:parte-0.05",
+      "tam": 120,
+      "cor": "ambar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mapa",
+   "tipo": "anim",
+   "anim": "mapa_rer",
+   "layout": "split",
+   "fundo": "fundo_studios",
+   "ini": "f5a:^",
+   "fim": "f5a:e-0.07",
+   "numero": 1,
+   "marcos": {
+    "numero": "f5a:Primeiro",
+    "rer": "f5a:RER",
+    "quarenta": "f5a:40"
+   },
+   "dados": {
+    "linhas": [
+     {
+      "texto": "NÃO FICA",
+      "em": "f5a:não-0.05",
+      "tam": 84
+     },
+     {
+      "texto": "EM PARIS",
+      "em": "f5a:Paris#2-0.05",
+      "tam": 110,
+      "cor": "ambar"
+     }
+    ]
+   },
+   "nota": "Mapa do centro de Paris até a Disney: linha A do RER, trem e 40 MIN (pedido do Diego)"
+  },
+  {
+   "id": "rer",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3204.MOV",
+   "ini": "f5a:e-0.07",
+   "fim": "f5b:tem-0.05",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'essa estação aqui': o painel do RER A mostra o nome (Marne-la-Vallée – Chessy) que ele não arrisca falar",
+   "zoom_src": 1.1
+  },
+  {
+   "id": "linha",
+   "tipo": "anim",
+   "anim": "linha_final",
+   "layout": "split",
+   "fundo": "fundo_studios",
+   "ini": "f5b:tem-0.05",
+   "fim": "f6:^",
+   "marcos": {
+    "ultima": "f5b:última",
+    "carinhas": "f5b:carinhas"
+   },
+   "dados": {
+    "linhas": [
+     {
+      "texto": "ÚLTIMA ESTAÇÃO",
+      "em": "f5b:última-0.05",
+      "tam": 110,
+      "cor": "ambar"
+     },
+     {
+      "texto": "DA LINHA",
+      "em": "f5b:linha-0.05",
+      "tam": 76
+     }
+    ]
+   }
+  },
+  {
+   "id": "fila",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3274.MOV",
+   "ini": "f6:^",
+   "fim": "f6:os#2-0.05",
+   "numero": 2,
+   "marcos": {
+    "numero": "f6:Dois"
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "letreiro": [
+    {
+     "texto": "SEMPRE",
+     "tam": 110,
+     "em": "f6:Sempre-0.05"
+    },
+    {
+     "texto": "TEM FILA",
+     "tam": 150,
+     "em": "f6:fila-0.05",
+     "cor": "ambar"
+    }
+   ]
+  },
+  {
+   "id": "relogio",
+   "tipo": "anim",
+   "anim": "relogio",
+   "layout": "split",
+   "fundo": "fundo_castelo2",
+   "ini": "f6:os#2-0.05",
+   "fim": "f7:^",
+   "marcos": {
+    "estacao": "f6:estação"
+   },
+   "dados": {
+    "linhas": [
+     {
+      "texto": "HORÁRIOS",
+      "em": "f6:horários-0.05",
+      "tam": 84,
+      "ate": "f6:30-0.15"
+     },
+     {
+      "texto": "DOS PORTÕES",
+      "em": "f6:portões-0.05",
+      "tam": 84,
+      "ate": "f6:30-0.15"
+     },
+     {
+      "texto": "VARIAM",
+      "em": "f6:variar-0.05",
+      "tam": 110,
+      "cor": "ambar",
+      "ate": "f6:30-0.15"
+     },
+     {
+      "texto": "CHEGA",
+      "em": "f6:chega-0.05",
+      "tam": 84
+     },
+     {
+      "texto": "30 MIN",
+      "em": "f6:30-0.05",
+      "tam": 150,
+      "cor": "ambar"
+     },
+     {
+      "texto": "ANTES",
+      "em": "f6:antes-0.05",
+      "tam": 110
+     }
+    ]
+   }
+  },
+  {
+   "id": "parques",
+   "tipo": "anim",
+   "anim": "parques",
+   "layout": "split",
+   "fundo": "fundo_studios",
+   "ini": "f7:^",
+   "fim": "f8:^",
+   "numero": 3,
+   "marcos": {
+    "numero": "f7:Três",
+    "comeca": "f7:começa",
+    "adventure": "f7:Adventure"
+   },
+   "dados": {
+    "linhas": [
+     {
+      "texto": "OS DOIS PARQUES",
+      "em": "f7:dois-0.05",
+      "tam": 76
+     },
+     {
+      "texto": "EM UM DIA SÓ",
+      "em": "f7:dia-0.05",
+      "tam": 96,
+      "cor": "ambar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "vingadores",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3286.MOV",
+   "ini": "f8:^",
+   "fim": "f8:O-0.05",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "letreiro": [
+    {
+     "texto": "ÁREA DOS",
+     "tam": 96,
+     "em": "f8:área-0.05"
+    },
+    {
+     "texto": "VINGADORES",
+     "tam": 150,
+     "em": "f8:Vingadores-0.05",
+     "cor": "ambar"
+    }
+   ]
+  },
+  {
+   "id": "castelo_fogos",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3607.MOV",
+   "ini": "f8:O-0.05",
+   "fim": "f9:^",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "letreiro": [
+    {
+     "texto": "DEIXA PRO",
+     "tam": 110,
+     "em": "f8:Deixa-0.05"
+    },
+    {
+     "texto": "FINAL",
+     "tam": 190,
+     "em": "f8:final-0.05",
+     "cor": "ambar"
+    }
+   ]
+  },
+  {
+   "id": "frio",
+   "tipo": "anim",
+   "anim": "frio",
+   "layout": "split",
+   "fundo": "fundo_noite",
+   "ini": "f9:^",
+   "fim": "f9:Botei-0.05",
+   "numero": 4,
+   "marcos": {
+    "numero": "f9:Quatro"
+   },
+   "dados": {
+    "linhas": [
+     {
+      "texto": "NÃO VÁ DE",
+      "em": "f9:não-0.05",
+      "tam": 84
+     },
+     {
+      "texto": "PEITO ABERTO",
+      "em": "f9:peito-0.05",
+      "tam": 110,
+      "cor": "ambar"
+     },
+     {
+      "texto": "SUBESTIMEI",
+      "em": "f9:subestimei-0.05",
+      "tam": 84
+     }
+    ]
+   }
+  },
+  {
+   "id": "dia",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3442.MOV",
+   "ini": "f9:Botei-0.05",
+   "fim": "f9:azul+0.25",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "letreiro": [
+    {
+     "texto": "O DIA",
+     "tam": 110,
+     "em": "f9:dia-0.05"
+    },
+    {
+     "texto": "TAVA AZUL",
+     "tam": 150,
+     "em": "f9:azul-0.05",
+     "cor": "ambar"
+    }
+   ]
+  },
+  {
+   "id": "noite",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3593.MOV",
+   "ini": "f9:azul+0.25",
+   "fim": "f10:^",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "letreiro": [
+    {
+     "texto": "BATE",
+     "tam": 130,
+     "em": "f9:Bate-0.05"
+    },
+    {
+     "texto": "QUEIXO",
+     "tam": 180,
+     "em": "f9:queixo-0.05",
+     "cor": "ambar"
+    }
+   ]
+  },
+  {
+   "id": "castelo",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3356.MOV",
+   "ini_src": 4.0,
+   "ini": "f10:^",
+   "fim": "f10:e#2-0.15",
+   "numero": 5,
+   "marcos": {
+    "numero": "f10:Cinco"
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "letreiro": [
+    {
+     "texto": "PODE ENTRAR",
+     "tam": 120,
+     "em": "f10:entrar-0.05"
+    },
+    {
+     "texto": "NO CASTELO",
+     "tam": 150,
+     "em": "f10:castelo-0.05",
+     "cor": "ambar"
+    }
+   ],
+   "nota": "o castelo de dia, a câmera subindo até o topo ('lá em cima tem a história dela')"
+  },
+  {
+   "id": "dragao",
+   "tipo": "anim",
+   "anim": "dragao",
+   "layout": "split",
+   "fundo": "fundo_castelo",
+   "ini": "f10:e#2-0.15",
+   "fim": "f11:^",
+   "marcos": {
+    "calabouco": "f10:calabouço",
+    "dragao": "f10:dragão"
+   },
+   "dados": {
+    "linhas": [
+     {
+      "texto": "DICA DE OURO",
+      "em": "f10:dica-0.05",
+      "tam": 84,
+      "cor": "ambar"
+     },
+     {
+      "texto": "UM DRAGÃO",
+      "em": "f10:dragão-0.05",
+      "tam": 96
+     },
+     {
+      "texto": "GIGANTE",
+      "em": "f10:gigante-0.05",
+      "tam": 140,
+      "cor": "ambar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "broll",
+   "layout": "full",
+   "arquivo": "IMG_3595.MOV",
+   "ini": "f11:^",
+   "fim": "fim",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "letreiro": [
+    {
+     "texto": "COMENTA AÍ",
+     "tam": 150,
+     "em": "f11:Comenta-0.05",
+     "cor": "ambar"
+    }
+   ],
+   "nota": "fogos em tela cheia + placa do DS V2"
+  }
+ ],
+ "sons": [
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f3a:^",
+   "desl": 0.36,
+   "rel_db": -4,
+   "alinhar": "pico",
+   "nota": "o print pousa"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f3a:57",
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "+5,7%"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f4:Lotado",
+   "rel_db": -4,
+   "alinhar": "pico",
+   "nota": "LOTADO"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f4:pulos",
+   "desl": 0.15,
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "1º pulo do gato"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f5a:RER",
+   "desl": 0.3,
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "a linha do trem se desenha"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f5a:40",
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "40 MIN"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f6:30",
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "30 MIN"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f10:dica",
+   "rel_db": -4,
+   "alinhar": "pico",
+   "nota": "DICA DE OURO"
+  }
+ ],
+ "cta": {
+  "ini": "f11:segue-0.05",
+  "rotulo": "ME SEGUE AÍ",
+  "destino": "PRIMEIRO DIA",
+  "modulo": "seta",
+  "entrada_ms": 0,
+  "clack_db_rel": -6,
+  "cauda": 1.0
+ }
+}

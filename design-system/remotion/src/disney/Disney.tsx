@@ -38,6 +38,7 @@ import {
   RoteiroComida,
   Semana,
 } from "./Graficos";
+import { Dragao, Frio, LinhaFinal, MapaRER, Parques, Relogio } from "./Graficos2";
 import {
   GRADE_FOTO,
   GRADE_VIDEO,
@@ -84,7 +85,13 @@ type Cena = {
     | "roteiro"
     | "comida"
     | "mochila"
-    | "ouro";
+    | "ouro"
+    | "mapa_rer"
+    | "linha_final"
+    | "relogio"
+    | "parques"
+    | "frio"
+    | "dragao";
   /** chave em `imagens` do quadro do parque que fica desfocado atrás da animação */
   fundo?: string;
   /** dados próprios da animação (print, rótulos, cartões) */
@@ -97,6 +104,11 @@ type Cena = {
     cartoes?: (Cartao & { foto?: string })[];
     rola?: boolean;
     cai?: boolean;
+    W?: number;
+    x?: number;
+    colX?: number;
+    colW?: number;
+    zoom?: { em: number; cx: number; cy: number; s: number; tx: number; ty: number };
   };
   fita?: { em: string; y: number; giro: number; lado: "esq" | "dir" }[];
   numero?: number;
@@ -459,7 +471,8 @@ const Letreiro: React.FC<{
   linhas: NonNullable<Cena["letreiro"]>;
   t: number;
   altura: number;
-}> = ({ linhas, t, altura }) => (
+  x?: number;
+}> = ({ linhas, t, altura, x = 72 }) => (
   <>
     <div
       style={{
@@ -476,7 +489,7 @@ const Letreiro: React.FC<{
     <div
       style={{
         position: "absolute",
-        left: 72,
+        left: x,
         right: 72,
         top: 300,
         textShadow: "0 4px 30px rgba(0,0,0,0.55)",
@@ -528,7 +541,7 @@ const Sobreposicoes: React.FC<{
           faixas={cena.fita.map((f, i) => ({ ...f, em: m[`fita${i}`] ?? 0 }))}
         />
       )}
-      {cena.letreiro && <Letreiro linhas={cena.letreiro} t={t} altura={h} />}
+      {cena.letreiro && <Letreiro linhas={cena.letreiro} t={t} altura={h} x={cena.numero !== undefined ? 250 : 72} />}
       {cena.numero !== undefined && (
         <NumeroDica t={t} em={m.numero ?? 0} n={cena.numero} />
       )}
@@ -669,14 +682,15 @@ const ApoioConteudo: React.FC<{ p: PropsDisney; cena: Cena }> = ({
             src={img(d.print)}
             w0={d.w0 ?? 1}
             h0={d.h0 ?? 1}
-            W={600}
-            x={60}
+            W={d.W ?? 600}
+            x={d.x ?? 60}
             y={300}
             marcas={d.marcas ?? []}
             linhas={linhas}
-            colX={676}
+            colX={d.colX ?? 676}
             colY={292}
-            colW={360}
+            colW={d.colW ?? 360}
+            zoom={d.zoom}
             fundo={fundo}
           />
         )}
@@ -684,7 +698,13 @@ const ApoioConteudo: React.FC<{ p: PropsDisney; cena: Cena }> = ({
           <Cartoes t={t} fundo={fundo} itens={(d.cartoes ?? []).map((c) => ({ ...c, src: c.foto ? img(c.foto) : undefined }))} />
         )}
         {cena.anim === "conta" && <Conta t={t} marcos={m} fundo={fundo} />}
-        {cena.anim === "gato5" && <Gato5 t={t} marcos={m} fundo={fundo} />}
+        {cena.anim === "gato5" && <Gato5 t={t} marcos={m} fundo={fundo} extra={d.linhas ? linhas : undefined} />}
+        {cena.anim === "mapa_rer" && <MapaRER t={t} marcos={m} fundo={fundo} linhas={linhas} />}
+        {cena.anim === "linha_final" && <LinhaFinal t={t} marcos={m} fundo={fundo} linhas={linhas} />}
+        {cena.anim === "relogio" && <Relogio t={t} marcos={m} fundo={fundo} linhas={linhas} />}
+        {cena.anim === "parques" && <Parques t={t} marcos={m} fundo={fundo} linhas={linhas} />}
+        {cena.anim === "frio" && <Frio t={t} marcos={m} fundo={fundo} linhas={linhas} />}
+        {cena.anim === "dragao" && <Dragao t={t} marcos={m} fundo={fundo} linhas={linhas} />}
         {cena.anim === "semana" && <Semana t={t} marcos={m} fundo={fundo} />}
         {cena.anim === "parkhopper" && <ParkHopper t={t} marcos={m} fundo={fundo} />}
         {cena.anim === "aproveitar" && <Aproveitar t={t} marcos={m} fundo={fundo} />}
