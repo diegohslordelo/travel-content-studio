@@ -1,0 +1,302 @@
+{
+ "layout": "h",
+ "largura": 1920,
+ "altura": 1080,
+ "video": "base.mp4",
+ "duracao": 44333,
+ "fps": 30,
+ "gancho": [
+  {
+   "texto": "SERÁ QUE VALE",
+   "em": 250,
+   "tam": 1
+  },
+  {
+   "texto": "A PENA PASSAR",
+   "em": 700,
+   "tam": 1
+  },
+  {
+   "texto": "1 DIA INTEIRO",
+   "em": 1400,
+   "tam": 1
+  },
+  {
+   "texto": "EM BRUXELAS?",
+   "em": 2220,
+   "tam": 2
+  }
+ ],
+ "ganchoFim": 3000,
+ "legendas": [
+  {
+   "texto": "E quanto será",
+   "destaque": null,
+   "ini": 3020,
+   "fim_fala": 3740,
+   "confere": "E quanto será",
+   "fim": 3740
+  },
+  {
+   "texto": "que custa isso?",
+   "destaque": "custa",
+   "ini": 3740,
+   "fim_fala": 4600,
+   "confere": "que custa isso?",
+   "fim": 5000
+  },
+  {
+   "texto": "Ponto turístico",
+   "destaque": null,
+   "ini": 5690,
+   "fim_fala": 6490,
+   "confere": "Ponto turístico",
+   "fim": 6490
+  },
+  {
+   "texto": "de Bruxelas.",
+   "destaque": "Bruxelas.",
+   "ini": 6490,
+   "fim_fala": 7430,
+   "confere": "de Bruxelas.",
+   "fim": 7830
+  },
+  {
+   "texto": "Um cachorro mijando.",
+   "destaque": "cachorro",
+   "ini": 9000,
+   "fim_fala": 10100,
+   "confere": "Um cachorro mijando.",
+   "fim": 10200
+  },
+  {
+   "texto": "Bom, teve",
+   "destaque": null,
+   "ini": 10200,
+   "fim_fala": 10620,
+   "confere": "Bom, teve",
+   "fim": 10620
+  },
+  {
+   "texto": "batata frita,",
+   "destaque": "batata",
+   "ini": 10620,
+   "fim_fala": 11720,
+   "confere": "batata frita,",
+   "fim": 11740
+  },
+  {
+   "texto": "waffle, chocolate",
+   "destaque": "chocolate",
+   "ini": 11740,
+   "fim_fala": 12660,
+   "confere": "waffle, chocolate",
+   "fim": 12660
+  },
+  {
+   "texto": "e alguns",
+   "destaque": null,
+   "ini": 12660,
+   "fim_fala": 13640,
+   "confere": "e alguns",
+   "fim": 13640
+  },
+  {
+   "texto": "que a gente não teve",
+   "destaque": null,
+   "ini": 13640,
+   "fim_fala": 14520,
+   "confere": "que a gente não teve",
+   "fim": 14520
+  },
+  {
+   "texto": "nem coragem",
+   "destaque": "coragem",
+   "ini": 14520,
+   "fim_fala": 15160,
+   "confere": "nem coragem",
+   "fim": 15160
+  },
+  {
+   "texto": "de chegar perto.",
+   "destaque": null,
+   "ini": 15160,
+   "fim_fala": 15740,
+   "confere": "de chegar perto.",
+   "fim": 16140
+  },
+  {
+   "texto": "seis ovos de páscoa,",
+   "destaque": "seis",
+   "ini": 16280,
+   "fim_fala": 18203,
+   "confere": "seis ovos de páscoa,",
+   "fim": 18203
+  },
+  {
+   "texto": "menores que meu dedo,",
+   "destaque": "dedo,",
+   "ini": 18203,
+   "fim_fala": 19523,
+   "confere": "menores que meu dedo,",
+   "fim": 19563
+  },
+  {
+   "texto": "estão a 26 euros",
+   "destaque": "26",
+   "ini": 19563,
+   "fim_fala": 21223,
+   "confere": "estão a 26 euros",
+   "fim": 21223
+  },
+  {
+   "texto": "pela vitrine.",
+   "destaque": null,
+   "ini": 21223,
+   "fim_fala": 22233,
+   "confere": "pela vitrine.",
+   "fim": 22633
+  },
+  {
+   "texto": "Não tem condições",
+   "destaque": "condições",
+   "ini": 22953,
+   "fim_fala": 24300,
+   "confere": "Não tem condições",
+   "fim": 24320
+  },
+  {
+   "texto": "Bom,",
+   "destaque": null,
+   "ini": 24320,
+   "fim_fala": 24760,
+   "confere": "bom",
+   "fim": 24760
+  },
+  {
+   "texto": "extremamente aprovado",
+   "destaque": "aprovado",
+   "ini": 24760,
+   "fim_fala": 26040,
+   "confere": "Extremamente aprovado",
+   "fim": 26373
+  },
+  {
+   "texto": "O que será? O que será?",
+   "destaque": null,
+   "ini": 26373,
+   "fim_fala": 27093,
+   "confere": "O que será? O que será?",
+   "fim": 27173
+  },
+  {
+   "texto": "O menino fazendo xixi",
+   "destaque": "xixi",
+   "ini": 27173,
+   "fim_fala": 29433,
+   "confere": "O menino fazendo xixi",
+   "fim": 29553
+  },
+  {
+   "texto": "a minha primeira",
+   "destaque": null,
+   "ini": 29553,
+   "fim_fala": 30273,
+   "confere": "a minha primeira",
+   "fim": 30273
+  },
+  {
+   "texto": "cerveja belga,",
+   "destaque": "cerveja",
+   "ini": 30273,
+   "fim_fala": 31393,
+   "confere": "cerveja belga,",
+   "fim": 31393
+  },
+  {
+   "texto": "na Bélgica.",
+   "destaque": null,
+   "ini": 31393,
+   "fim_fala": 31993,
+   "confere": "na Bélgica.",
+   "fim": 32333
+  },
+  {
+   "texto": "Eu anotei cada euro",
+   "destaque": "euro",
+   "ini": 32333,
+   "fim_fala": 33283,
+   "confere": "Eu anotei cada euro",
+   "fim": 33283
+  },
+  {
+   "texto": "que a gente gastou",
+   "destaque": null,
+   "ini": 33283,
+   "fim_fala": 34023,
+   "confere": "que a gente gastou",
+   "fim": 34023
+  },
+  {
+   "texto": "nesse nosso rolê",
+   "destaque": null,
+   "ini": 34023,
+   "fim_fala": 34743,
+   "confere": "nesse nosso rolê",
+   "fim": 34743
+  },
+  {
+   "texto": "em Bruxelas.",
+   "destaque": "Bruxelas.",
+   "ini": 34743,
+   "fim_fala": 35203,
+   "confere": "em bruxelas",
+   "fim": 35203
+  },
+  {
+   "texto": "No final do vídeo",
+   "destaque": null,
+   "ini": 35203,
+   "fim_fala": 36163,
+   "confere": "no final do vídeo",
+   "fim": 36163
+  },
+  {
+   "texto": "você vai ver",
+   "destaque": null,
+   "ini": 36163,
+   "fim_fala": 36743,
+   "confere": "você vai ver",
+   "fim": 36743
+  },
+  {
+   "texto": "quanto custou tudo",
+   "destaque": "custou",
+   "ini": 36743,
+   "fim_fala": 37843,
+   "confere": "quanto custou tudo",
+   "fim": 37843
+  },
+  {
+   "texto": "e se realmente",
+   "destaque": null,
+   "ini": 37843,
+   "fim_fala": 38683,
+   "confere": "e se realmente",
+   "fim": 38683
+  },
+  {
+   "texto": "vale a pena.",
+   "destaque": "vale",
+   "ini": 38683,
+   "fim_fala": 39363,
+   "confere": "vale a pena",
+   "fim": 39763
+  }
+ ],
+ "cta": {
+  "rotulo": "VÍDEO COMPLETO",
+  "destino": "NO YOUTUBE",
+  "entrada": 39973
+ }
+}
