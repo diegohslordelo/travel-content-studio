@@ -1,0 +1,114 @@
+{
+ "nota": "Voz da Parte 2 (REV1): uma gravação do quarto (Drive Disney/Reel/Parte 2, 11/11/2026), gravada de trás para frente e com tomadas repetidas; entra na ordem do roteiro, sempre a última tomada completa. Na dica 4, a versão maior (pedido do Diego). 'in'/'out' provisórios, refeitos pela energia da voz. Decupagem colada (pedido do Diego): cada trecho começa ~0,03 s antes da 1ª palavra e termina ~0,04 s depois da última (energia da voz < −45 dB), sem espaço entre as falas; pausas internas > 0,33 s viram 2 trechos. O 'pelo menos' começa no finzinho do giro da cadeira (149,10 s). REV2 (pedido do Diego, 11/11/2026): giro da cadeira encurtado (entra em 149,63 s, último instante do giro, ≈ 0,4 s antes do 'Pelo'); emenda 'Disney Adventure' → 'Lá tem' sem espaço (fim em 36,07 s e início em 58,97 s, ≈ 0,02 s de silêncio de cada lado).",
+ "fonte_dir": "../fonte/quarto",
+ "fps": 30,
+ "fontes": {
+  "Q": "parte2.mp4"
+ },
+ "falas": [
+  {
+   "id": "f1",
+   "fonte": "Q",
+   "in": 140.3667,
+   "out": 143.4667,
+   "texto": "A Disney de Paris continua sem querer você lá."
+  },
+  {
+   "id": "f2",
+   "fonte": "Q",
+   "in": 149.6333,
+   "out": 152.4667,
+   "texto": "Pelo menos não se você for igual a todo mundo."
+  },
+  {
+   "id": "f3a",
+   "fonte": "Q",
+   "in": 157.7,
+   "out": 164.3667,
+   "texto": "Em 2025, os parques da Disney Paris foram os que mais cresceram no mundo. Foram 5,7% a mais de gente,"
+  },
+  {
+   "id": "f3b",
+   "fonte": "Q",
+   "in": 164.6333,
+   "out": 168.0,
+   "texto": "mais de 16 milhões de pessoas somando os dois parques."
+  },
+  {
+   "id": "f3c",
+   "fonte": "Q",
+   "in": 168.2667,
+   "out": 169.8,
+   "texto": "Rapaz, é gente, viu, véi?"
+  },
+  {
+   "id": "f4",
+   "fonte": "Q",
+   "in": 126.3,
+   "out": 133.9,
+   "texto": "E aí você já sabe, né? Lotado. Mas calma que eu trouxe mais 5 pulos do gato pra você não passar perrengue. Bora pra parte 2 das dicas da Disney Paris."
+  },
+  {
+   "id": "f5a",
+   "fonte": "Q",
+   "in": 108.0667,
+   "out": 117.4667,
+   "texto": "Primeiro, a Disney de Paris não fica em Paris. Ela fica uns 40 minutos do centro da cidade. Você vai pegar uma linha de trem chamada RER A e vai chegar até essa estação aqui, que eu não vou nem me arriscar a falar o nome."
+  },
+  {
+   "id": "f5b",
+   "fonte": "Q",
+   "in": 117.7333,
+   "out": 121.4,
+   "texto": "Só que não tem erro: ela é a última estação da linha e tem várias carinhas do Mickey pra te guiar."
+  },
+  {
+   "id": "f6",
+   "fonte": "Q",
+   "in": 95.0333,
+   "out": 103.5667,
+   "texto": "Dois, chegue cedo pra tentar aproveitar os parques ao máximo. Sempre tem fila, os horários de abertura dos portões podem variar de acordo com a estação do ano. Então checa isso e chega 30 minutos antes."
+  },
+  {
+   "id": "f7",
+   "fonte": "Q",
+   "in": 32.0667,
+   "out": 36.0667,
+   "texto": "Três, se você tá planejando fazer os dois parques em um dia só, começa pelo Disney Adventure."
+  },
+  {
+   "id": "f8",
+   "fonte": "Q",
+   "in": 58.9667,
+   "out": 65.6667,
+   "texto": "Lá tem a área dos Vingadores, os brinquedos mais radicais e ele é um pouco menor. O outro parque, o Disneyland Park, é o que tem o castelo e o show de fogos. Deixa ele pro final."
+  },
+  {
+   "id": "f9",
+   "fonte": "Q",
+   "in": 18.1,
+   "out": 27.7,
+   "texto": "Quatro, não vá de peito aberto pro frio não, viu? Eu fui em março e subestimei. Botei só uma camisa de manga comprida porque a previsão tava boa, o dia tava azul, mas quando a noite chegou, esqueça. Bate queixo certo."
+  },
+  {
+   "id": "f10",
+   "fonte": "Q",
+   "in": 7.3333,
+   "out": 15.6333,
+   "texto": "Cinco, você pode entrar no castelo da Bela Adormecida, e lá em cima tem a história dela. E a dica de ouro: embaixo do castelo tem um calabouço com um dragão gigante."
+  },
+  {
+   "id": "f11",
+   "fonte": "Q",
+   "in": 1.0333,
+   "out": 6.4,
+   "texto": "Comenta aí o que você quer saber da Disney de Paris. E se você gosta de dicas de viagem, me segue aí que eu posto toda semana."
+  }
+ ],
+ "audio": {
+  "fade_ms": 12,
+  "passa_alta_hz": 70,
+  "alvo_lufs": -14,
+  "pico_dbtp": -1
+ }
+}
