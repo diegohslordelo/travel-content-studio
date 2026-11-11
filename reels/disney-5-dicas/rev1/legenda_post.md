@@ -24,7 +24,6 @@ Quer a parte 2? Me segue que toda semana tem dica de viagem aqui.
 
 ```
 A Disney de Paris não quer você lá (se você for igual a todo mundo) 🏰 5 pulos do gato pra sua visita. Quer a parte 2? Me segue!
-Fonte do número: índice TEA 2025, via AirMagique (29/10/2026).
 #disneylandparis #disneyparis #dicasdeviagem #paris #viagem
 ```
 
@@ -37,7 +36,6 @@ A Disney de Paris não quer você lá: 5 dicas pra não ir igual a todo mundo
 Descrição:
 ```
 5 pulos do gato pra Disneyland Paris: dia de semana com park hopper, o app, lanche na mochila, Big Thunder no pôr do sol e sair antes do fim dos fogos. Quer a parte 2? Se inscreve no canal.
-Fonte do número: índice TEA 2025 (Disneyland Park, 10,8 milhões de visitas), via AirMagique, 29/10/2026.
 #disneylandparis #dicasdeviagem #paris
 ```
 
