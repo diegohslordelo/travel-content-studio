@@ -1,0 +1,376 @@
+{
+ "gravacao": {
+  "fonte": "7BE64B25.mp4",
+  "lufs_fala_bruta": -17.7,
+  "ruido_abaixo_da_fala_db_antes": 57.7,
+  "reducao_ruido": 0.4,
+  "piso_bruto_db": -74.2,
+  "piso_final_db": -46.7
+ },
+ "frases": [
+  {
+   "fala": "f1",
+   "ini": 0.141,
+   "fim": 2.239,
+   "texto": "A Disney de Paris não quer você lá.",
+   "antes_lufs": -17.6,
+   "ganho_db": -1.1,
+   "depois_lufs": -15.5
+  },
+  {
+   "fala": "f2",
+   "ini": 3.124,
+   "fim": 5.379,
+   "texto": "Pelo menos não se você for igual a todo mundo.",
+   "antes_lufs": -13.5,
+   "ganho_db": -5.3,
+   "depois_lufs": -15.7
+  },
+  {
+   "fala": "f3",
+   "ini": 5.64,
+   "fim": 12.247,
+   "texto": "A Disney de Paris recebe quase 11 milhões de visitas no ano e muitas dessas pessoas ainda visitam parques sem estratégia.",
+   "antes_lufs": -17.7,
+   "ganho_db": -1.1,
+   "depois_lufs": -16.1
+  },
+  {
+   "fala": "f4",
+   "ini": 12.467,
+   "fim": 13.409,
+   "texto": "E aí você já imagina,",
+   "antes_lufs": -17.4,
+   "ganho_db": -1.4,
+   "depois_lufs": -15.2
+  },
+  {
+   "fala": "f4",
+   "ini": 13.469,
+   "fim": 13.569,
+   "texto": "né?",
+   "antes_lufs": -23.3,
+   "ganho_db": 4.5,
+   "depois_lufs": -16.1
+  },
+  {
+   "fala": "f4",
+   "ini": 13.649,
+   "fim": 14.891,
+   "texto": "Mar de gente nos parques,",
+   "antes_lufs": -22.9,
+   "ganho_db": 4.1,
+   "depois_lufs": -15.4
+  },
+  {
+   "fala": "f4",
+   "ini": 14.952,
+   "fim": 16.234,
+   "texto": "pessoas rodando pro lado e pro outro,",
+   "antes_lufs": -19.8,
+   "ganho_db": 1.0,
+   "depois_lufs": -15.5
+  },
+  {
+   "fala": "f4",
+   "ini": 16.254,
+   "fim": 17.356,
+   "texto": "tentando fugir de fila,",
+   "antes_lufs": -27.6,
+   "ganho_db": 6.0,
+   "depois_lufs": -17.2
+  },
+  {
+   "fala": "f4",
+   "ini": 17.696,
+   "fim": 23.647,
+   "texto": "chegam nos restaurantes cheios e olha que já não são baratos e aí tentam tirar o atraso comprando caro um fast pass.",
+   "antes_lufs": -20.2,
+   "ganho_db": 1.4,
+   "depois_lufs": -16.0
+  },
+  {
+   "fala": "f5",
+   "ini": 23.847,
+   "fim": 25.031,
+   "texto": "Mas calma aí que eu vou te ajudar.",
+   "antes_lufs": -12.8,
+   "ganho_db": -5.9,
+   "depois_lufs": -15.3
+  },
+  {
+   "fala": "f5",
+   "ini": 25.051,
+   "fim": 28.28,
+   "texto": "Eu vou te dar 5 pulos do gato com base na minha experiência no parque.",
+   "antes_lufs": -19.0,
+   "ganho_db": 0.2,
+   "depois_lufs": -15.5
+  },
+  {
+   "fala": "f6",
+   "ini": 28.5,
+   "fim": 28.84,
+   "texto": "Primeiro,",
+   "antes_lufs": -12.4,
+   "ganho_db": -6.0,
+   "depois_lufs": -14.5
+  },
+  {
+   "fala": "f6",
+   "ini": 28.94,
+   "fim": 29.901,
+   "texto": "vá dia de semana.",
+   "antes_lufs": -17.0,
+   "ganho_db": -1.7,
+   "depois_lufs": -15.6
+  },
+  {
+   "fala": "f6",
+   "ini": 29.941,
+   "fim": 33.603,
+   "texto": "Você vai comprar ingresso park hopper que te dá acesso aos dois parques em um único dia,",
+   "antes_lufs": -20.6,
+   "ganho_db": 1.8,
+   "depois_lufs": -15.9
+  },
+  {
+   "fala": "f6",
+   "ini": 33.963,
+   "fim": 36.005,
+   "texto": "vai pagar mais barato e ainda vai ter menos gente.",
+   "antes_lufs": -17.4,
+   "ganho_db": -1.4,
+   "depois_lufs": -15.9
+  },
+  {
+   "fala": "f6",
+   "ini": 36.325,
+   "fim": 37.145,
+   "texto": "Cheio sempre vai tá,",
+   "antes_lufs": -18.9,
+   "ganho_db": 0.1,
+   "depois_lufs": -15.4
+  },
+  {
+   "fala": "f6",
+   "ini": 37.285,
+   "fim": 39.447,
+   "texto": "mas vai ter menos gente e você vai conseguir aproveitar tudo.",
+   "antes_lufs": -18.2,
+   "ganho_db": -0.6,
+   "depois_lufs": -16.2
+  },
+  {
+   "fala": "f7",
+   "ini": 39.687,
+   "fim": 39.988,
+   "texto": "Dois,",
+   "antes_lufs": -14.6,
+   "ganho_db": -4.2,
+   "depois_lufs": -15.1
+  },
+  {
+   "fala": "f7",
+   "ini": 40.088,
+   "fim": 41.372,
+   "texto": "baixe o aplicativo da Disney de lá.",
+   "antes_lufs": -18.4,
+   "ganho_db": -0.3,
+   "depois_lufs": -15.9
+  },
+  {
+   "fala": "f7",
+   "ini": 41.412,
+   "fim": 43.798,
+   "texto": "Você consegue comprar em tempo real a fila dos brinquedos.",
+   "antes_lufs": -18.8,
+   "ganho_db": 0.0,
+   "depois_lufs": -16.0
+  },
+  {
+   "fala": "f7",
+   "ini": 43.838,
+   "fim": 46.927,
+   "texto": "Ele ajuda no roteiro e ainda dá para pedir a comida antes no restaurante.",
+   "antes_lufs": -18.2,
+   "ganho_db": -0.6,
+   "depois_lufs": -15.7
+  },
+  {
+   "fala": "f8",
+   "ini": 47.187,
+   "fim": 49.673,
+   "texto": "Aproveita para tirar print aí porque ele foi nosso melhor amigo lá.",
+   "antes_lufs": -14.3,
+   "ganho_db": -4.5,
+   "depois_lufs": -15.6
+  },
+  {
+   "fala": "f9",
+   "ini": 49.974,
+   "fim": 50.615,
+   "texto": "Em terceiro,",
+   "antes_lufs": -16.8,
+   "ganho_db": -2.0,
+   "depois_lufs": -15.3
+  },
+  {
+   "fala": "f9",
+   "ini": 50.635,
+   "fim": 51.797,
+   "texto": "a comida lá dentro é cara mesmo.",
+   "antes_lufs": -16.7,
+   "ganho_db": -2.0,
+   "depois_lufs": -15.2
+  },
+  {
+   "fala": "f9",
+   "ini": 52.018,
+   "fim": 53.4,
+   "texto": "E olha que nem é lá essas coisas.",
+   "antes_lufs": -19.5,
+   "ganho_db": 0.7,
+   "depois_lufs": -15.8
+  },
+  {
+   "fala": "f9",
+   "ini": 53.42,
+   "fim": 53.561,
+   "texto": "Então,",
+   "antes_lufs": -23.6,
+   "ganho_db": 4.9,
+   "depois_lufs": -16.8
+  },
+  {
+   "fala": "f9",
+   "ini": 53.601,
+   "fim": 56.967,
+   "texto": "leva um lanche na mochila para você tapear a barriga e não gastar muito dinheiro com isso.",
+   "antes_lufs": -21.7,
+   "ganho_db": 2.9,
+   "depois_lufs": -15.9
+  },
+  {
+   "fala": "f10",
+   "ini": 57.207,
+   "fim": 57.748,
+   "texto": "Em quarto,",
+   "antes_lufs": -13.9,
+   "ganho_db": -4.8,
+   "depois_lufs": -15.9
+  },
+  {
+   "fala": "f10",
+   "ini": 57.808,
+   "fim": 59.81,
+   "texto": "deixa a montanha-russa Big Thunder pro final de tarde.",
+   "antes_lufs": -18.4,
+   "ganho_db": -0.3,
+   "depois_lufs": -15.7
+  },
+  {
+   "fala": "f10",
+   "ini": 59.87,
+   "fim": 62.313,
+   "texto": "Se ligue no visual sinistro que a gente pegou no pôr do sol.",
+   "antes_lufs": -19.8,
+   "ganho_db": 1.1,
+   "depois_lufs": -15.5
+  },
+  {
+   "fala": "f11",
+   "ini": 62.473,
+   "fim": 62.954,
+   "texto": "E por último,",
+   "antes_lufs": -20.8,
+   "ganho_db": 2.0,
+   "depois_lufs": -15.6
+  },
+  {
+   "fala": "f11",
+   "ini": 62.974,
+   "fim": 63.595,
+   "texto": "a dica de ouro.",
+   "antes_lufs": -18.4,
+   "ganho_db": -0.3,
+   "depois_lufs": -15.2
+  },
+  {
+   "fala": "f11",
+   "ini": 63.675,
+   "fim": 65.198,
+   "texto": "Sai um pouco antes do show de fogos acabar.",
+   "antes_lufs": -20.9,
+   "ganho_db": 2.2,
+   "depois_lufs": -15.7
+  },
+  {
+   "fala": "f11",
+   "ini": 65.198,
+   "fim": 65.979,
+   "texto": "Eu sei que é difícil,",
+   "antes_lufs": -22.1,
+   "ganho_db": 3.4,
+   "depois_lufs": -16.1
+  },
+  {
+   "fala": "f11",
+   "ini": 65.999,
+   "fim": 67.061,
+   "texto": "mas todo mundo sai junto,",
+   "antes_lufs": -22.2,
+   "ganho_db": 3.5,
+   "depois_lufs": -15.3
+  },
+  {
+   "fala": "f11",
+   "ini": 67.101,
+   "fim": 69.966,
+   "texto": "fica muito cheio e já tá perto do horário de acabar a circulação dos trens.",
+   "antes_lufs": -20.3,
+   "ganho_db": 1.5,
+   "depois_lufs": -15.8
+  },
+  {
+   "fala": "f12",
+   "ini": 70.167,
+   "fim": 73.339,
+   "texto": "Eu te garanto que você não vai querer passar perrengue depois de um dia cansativo.",
+   "antes_lufs": -17.7,
+   "ganho_db": -1.1,
+   "depois_lufs": -15.7
+  },
+  {
+   "fala": "f13",
+   "ini": 73.621,
+   "fim": 74.604,
+   "texto": "Se você quer parte 2,",
+   "antes_lufs": -21.1,
+   "ganho_db": 2.3,
+   "depois_lufs": -15.7
+  },
+  {
+   "fala": "f13",
+   "ini": 74.684,
+   "fim": 77.393,
+   "texto": "já me segue aí que toda semana tem dicas de viagem no perfil.",
+   "antes_lufs": -19.7,
+   "ganho_db": 0.9,
+   "depois_lufs": -15.8
+  }
+ ],
+ "resumo_frases": {
+  "frases": 39,
+  "antes": {
+   "min": -27.6,
+   "max": -12.4,
+   "desvio": 3.12
+  },
+  "depois": {
+   "min": -17.2,
+   "max": -14.5,
+   "desvio": 0.45
+  }
+ }
+}

@@ -1,0 +1,969 @@
+{
+ "nota": "Cenas do Reel (REV1, 10/11/2026). Âncoras de palavra: 'f3:quase' = início de 'quase' na fala 3; '#n' = n-ésima ocorrência; '+/-s' = deslocamento; 'f2:^' = começo do trecho da fala 2. Nada gravado pelo Diego (acervo ou rosto) fica menos de 2 s; animações e prints podem ser mais curtos (FORMATOS_REELS 5.1). Pedido do Diego: nenhum take em formato vlog/selfie com ele falando, exceto o vídeo do Big Thunder (IMG_4525).",
+ "acervo_dir": "../fonte/acervo",
+ "rostoY": 780,
+ "imagens": {
+  "print11": "airmagique_print.png",
+  "app": "app_print.png",
+  "fundo_castelo": "fundo_castelo.jpg",
+  "fundo_castelo2": "fundo_castelo2.jpg",
+  "fundo_noite": "fundo_noite.jpg",
+  "fundo_studios": "fundo_studios.jpg",
+  "rodando": "rodando.jpg",
+  "fila": "fila.jpg"
+ },
+ "broll": {
+  "IMG_3356.MOV": {
+   "ini": 0.2,
+   "fim_limpo": 8.3,
+   "rot": "raw",
+   "nota": "castelo da Bela Adormecida de dia, câmera subindo"
+  },
+  "IMG_3337.MOV": {
+   "ini": 3.0,
+   "fim_limpo": 14.9,
+   "rot": "auto",
+   "foco_y": 0.55,
+   "nota": "Main Street cheia, castelo ao fundo (vertical)"
+  },
+  "IMG_3453.MOV": {
+   "ini": 0.3,
+   "fim_limpo": 7.4,
+   "rot": "raw",
+   "foco_x": 0.33,
+   "nota": "multidão diante do castelo esperando a parada"
+  },
+  "IMG_3219.MOV": {
+   "ini": 0.2,
+   "fim_limpo": 3.95,
+   "rot": "raw",
+   "nota": "Walt Disney Studios às 10h, pouca gente"
+  },
+  "IMG_3214.MOV": {
+   "ini": 0.8,
+   "fim_limpo": 6.6,
+   "rot": "raw",
+   "nota": "rua coberta do Studios lotada (a Marina só aparece depois de 9 s)"
+  },
+  "IMG_4525.mov": {
+   "ini": 63.0,
+   "fim_limpo": 70.0,
+   "rot": "raw",
+   "quarto": true,
+   "nota": "Big Thunder Mountain no pôr do sol (vídeo da pasta Reel, 18/03/2026 18:53)"
+  },
+  "IMG_3595.MOV": {
+   "ini": 12.0,
+   "fim_limpo": 21.5,
+   "rot": "auto",
+   "nota": "fogos sobre o castelo, público na frente (vertical)"
+  },
+  "IMG_3205.MOV": {
+   "ini": 1.0,
+   "fim_limpo": 4.7,
+   "rot": "raw",
+   "foco_x": 0.0,
+   "nota": "painel do RER A 'Marne-la-Vallée – Chessy'; o recorte deixa o relógio (09:42) de fora"
+  },
+  "IMG_3607.MOV": {
+   "ini": 17.0,
+   "fim_limpo": 23.2,
+   "rot": "raw",
+   "nota": "fogos sobre o castelo"
+  }
+ },
+ "gancho": {
+  "layout": {
+   "split": true,
+   "topo": 290
+  },
+  "fim": "f2:^",
+  "blocos": [
+   {
+    "ini": 0,
+    "linhas": [
+     {
+      "texto": "A DISNEY",
+      "tam": 132,
+      "em": 0
+     },
+     {
+      "texto": "DE PARIS",
+      "tam": 132,
+      "em": "f1:de-0.05"
+     },
+     {
+      "texto": "NÃO QUER",
+      "tam": 112,
+      "em": "f1:não-0.05"
+     },
+     {
+      "texto": "VOCÊ LÁ.",
+      "tam": 112,
+      "cor": "vermelho",
+      "em": "f1:você-0.05"
+     }
+    ]
+   }
+  ]
+ },
+ "chaves": [
+  {
+   "ini": "f2:Pelo-0.08",
+   "fim": "f3:^",
+   "linhas": [
+    {
+     "texto": "PELO MENOS…",
+     "estilo": "rotulo",
+     "em": "f2:Pelo-0.05"
+    },
+    {
+     "texto": "NÃO SE VOCÊ FOR",
+     "estilo": "titulo",
+     "em": "f2:não-0.05"
+    },
+    {
+     "texto": "igual a todo mundo",
+     "estilo": "serifa",
+     "em": "f2:igual-0.05"
+    }
+   ]
+  },
+  {
+   "ini": "f12:não-0.08",
+   "fim": "f13:^",
+   "linhas": [
+    {
+     "texto": "NÃO VAI QUERER",
+     "estilo": "titulo",
+     "em": "f12:não-0.05"
+    },
+    {
+     "texto": "passar perrengue",
+     "estilo": "serifa",
+     "em": "f12:passar-0.05"
+    }
+   ]
+  }
+ ],
+ "legenda": {
+  "destaques": {
+   "f3": [
+    "estratégia"
+   ],
+   "f4": [
+    "gente",
+    "fila",
+    "cheios",
+    "baratos",
+    "pass"
+   ],
+   "f5": [
+    "ajudar",
+    "gato"
+   ],
+   "f6": [
+    "semana",
+    "hopper",
+    "barato",
+    "tudo"
+   ],
+   "f7": [
+    "aplicativo",
+    "fila",
+    "roteiro",
+    "restaurante"
+   ],
+   "f8": [
+    "print",
+    "amigo"
+   ],
+   "f9": [
+    "cara",
+    "coisas",
+    "mochila",
+    "dinheiro"
+   ],
+   "f10": [
+    "thunder",
+    "sinistro",
+    "sol"
+   ],
+   "f11": [
+    "ouro",
+    "fogos",
+    "cheio",
+    "trens"
+   ],
+   "f12": [
+    "cansativo"
+   ],
+   "f13": [
+    "2",
+    "perfil"
+   ]
+  },
+  "troca": {
+   "f7:dois": "2.",
+   "hopper": "hopper",
+   "montanharussa": "montanha-russa"
+  },
+  "quebrar_antes": [],
+  "sem_legenda": [
+   [
+    "f2:^",
+    "f3:^"
+   ],
+   [
+    "f4:pessoas-0.1",
+    "f4:e#3-0.1"
+   ],
+   [
+    "f12:não-0.08",
+    "f13:^"
+   ]
+  ]
+ },
+ "cenas": [
+  {
+   "id": "abertura",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3356.MOV",
+   "ini": 0,
+   "fim": "f2:^",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "fita": [
+    {
+     "em": "f1:não-0.1",
+     "y": 640,
+     "giro": -7,
+     "lado": "esq"
+    },
+    {
+     "em": "f1:lá-0.12",
+     "y": 760,
+     "giro": 5,
+     "lado": "dir"
+    }
+   ],
+   "marcos": {
+    "fita0": "f1:não-0.1",
+    "fita1": "f1:lá-0.12"
+   },
+   "nota": "Gancho igual ao de Bruges e Paris: fita zebrada (desenho chapado) com o castelo ao fundo"
+  },
+  {
+   "id": "sentada",
+   "tipo": "fala",
+   "ini": "f2:^",
+   "fim": "f3:^",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "nota": "Corte no meio da sentada (gancho visual pedido pelo Diego): ele sozinho em tela cheia, 'pelo menos não…'"
+  },
+  {
+   "id": "print11",
+   "tipo": "anim",
+   "anim": "print11",
+   "layout": "split",
+   "fundo": "fundo_castelo",
+   "ini": "f3:^",
+   "fim": "f3:e-0.05",
+   "dados": {
+    "print": "print11",
+    "w0": 1680,
+    "h0": 1396,
+    "marcas": [
+     {
+      "r": [
+       1326.8,
+       888.4,
+       250.8,
+       40
+      ],
+      "em": "f3:quase"
+     },
+     {
+      "r": [
+       40,
+       944.2,
+       346.2,
+       40
+      ],
+      "em": "f3:quase+0.2"
+     },
+     {
+      "r": [
+       785,
+       1318,
+       215,
+       56
+      ],
+      "em": "f3:11"
+     }
+    ],
+    "linhas": [
+     {
+      "texto": "QUASE",
+      "em": "f3:quase-0.05",
+      "tam": 40,
+      "cor": "papel",
+      "fonte": "texto"
+     },
+     {
+      "texto": "11",
+      "em": "f3:11-0.05",
+      "tam": 230,
+      "cor": "ambar"
+     },
+     {
+      "texto": "MILHÕES",
+      "em": "f3:milhões-0.05",
+      "tam": 80
+     },
+     {
+      "texto": "DE VISITAS",
+      "em": "f3:visitas-0.05",
+      "tam": 34,
+      "cor": "papel",
+      "fonte": "texto"
+     },
+     {
+      "texto": "NO ANO",
+      "em": "f3:ano-0.05",
+      "tam": 34,
+      "cor": "papel",
+      "fonte": "texto"
+     }
+    ]
+   },
+   "nota": "Prova na tela: página da AirMagique com o índice TEA 2025 (Disneyland Park: 10,8 milhões de visitas)"
+  },
+  {
+   "id": "sem_estrategia",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3337.MOV",
+   "transicao": "zoom",
+   "ini": "f3:e-0.05",
+   "fim": "f4:^",
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "letreiro": [
+    {
+     "texto": "SEM",
+     "tam": 150,
+     "em": "f3:sem-0.05",
+     "cor": "ambar"
+    },
+    {
+     "texto": "ESTRATÉGIA",
+     "tam": 130,
+     "em": "f3:estratégia-0.05"
+    }
+   ]
+  },
+  {
+   "id": "mar_de_gente",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3453.MOV",
+   "ini": "f4:^",
+   "fim": "f4:pessoas-0.08",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "letreiro": [
+    {
+     "texto": "MAR DE",
+     "tam": 130,
+     "em": "f4:Mar-0.05"
+    },
+    {
+     "texto": "GENTE",
+     "tam": 200,
+     "em": "f4:gente-0.05",
+     "cor": "ambar"
+    }
+   ],
+   "ini_src": 4.5,
+   "foco_y": 0.85,
+   "zoom_src": 1.15
+  },
+  {
+   "id": "cartoes",
+   "tipo": "anim",
+   "anim": "cartoes",
+   "layout": "split",
+   "fundo": "fundo_studios",
+   "ini": "f4:pessoas-0.08",
+   "fim": "f4:e#3-0.05",
+   "dados": {
+    "cartoes": [
+     {
+      "foto": "rodando",
+      "linhas": [
+       "PESSOAS",
+       "RODANDO"
+      ],
+      "em": "f4:pessoas-0.05",
+      "foco": [
+       0.5,
+       0.6
+      ]
+     },
+     {
+      "foto": "fila",
+      "linhas": [
+       "FUGIR",
+       "DE FILA"
+      ],
+      "em": "f4:fugir-0.05",
+      "foco": [
+       0.45,
+       0.65
+      ]
+     },
+     {
+      "desenho": "restaurante",
+      "linhas": [
+       "RESTAURANTES",
+       "CHEIOS"
+      ],
+      "em": "f4:restaurantes-0.05"
+     }
+    ]
+   }
+  },
+  {
+   "id": "conta",
+   "tipo": "anim",
+   "anim": "conta",
+   "layout": "split",
+   "fundo": "fundo_castelo2",
+   "ini": "f4:e#3-0.05",
+   "fim": "f5:^",
+   "marcos": {
+    "baratos": "f4:baratos",
+    "comprando": "f4:comprando",
+    "caro": "f4:caro",
+    "fast": "f4:fast"
+   }
+  },
+  {
+   "id": "calma",
+   "tipo": "fala",
+   "transicao": "clarao",
+   "ini": "f5:^",
+   "fim": "f5:pulos-0.05",
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "id": "gato",
+   "tipo": "anim",
+   "anim": "gato5",
+   "layout": "split",
+   "fundo": "fundo_castelo",
+   "ini": "f5:pulos-0.05",
+   "fim": "f6:^",
+   "marcos": {
+    "pulos": "f5:pulos"
+   }
+  },
+  {
+   "id": "semana",
+   "tipo": "anim",
+   "anim": "semana",
+   "layout": "split",
+   "fundo": "fundo_studios",
+   "ini": "f6:^",
+   "fim": "f6:park-0.1",
+   "numero": 1,
+   "marcos": {
+    "numero": "f6:Primeiro",
+    "semana": "f6:semana"
+   }
+  },
+  {
+   "id": "parkhopper",
+   "tipo": "anim",
+   "anim": "parkhopper",
+   "layout": "split",
+   "fundo": "fundo_studios",
+   "ini": "f6:park-0.1",
+   "fim": "f6:vai#2-0.07",
+   "marcos": {
+    "dois": "f6:dois",
+    "unico": "f6:único"
+   }
+  },
+  {
+   "id": "menos_gente",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3219.MOV",
+   "ini": "f6:vai#2-0.07",
+   "fim": "f6:Cheio-0.18",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "letreiro": [
+    {
+     "texto": "MAIS BARATO",
+     "tam": 110,
+     "em": "f6:barato-0.05",
+     "cor": "ambar"
+    },
+    {
+     "texto": "MENOS GENTE",
+     "tam": 110,
+     "em": "f6:menos-0.05"
+    }
+   ]
+  },
+  {
+   "id": "cheio",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3214.MOV",
+   "ini": "f6:Cheio-0.18",
+   "fim": "f6:você#2",
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "letreiro": [
+    {
+     "texto": "CHEIO",
+     "tam": 180,
+     "em": "f6:Cheio-0.05",
+     "cor": "ambar"
+    },
+    {
+     "texto": "SEMPRE VAI TÁ",
+     "tam": 84,
+     "em": "f6:sempre-0.05"
+    }
+   ]
+  },
+  {
+   "id": "aproveitar",
+   "tipo": "anim",
+   "anim": "aproveitar",
+   "layout": "split",
+   "fundo": "fundo_castelo2",
+   "ini": "f6:você#2",
+   "fim": "f7:^",
+   "marcos": {
+    "aproveitar": "f6:aproveitar"
+   }
+  },
+  {
+   "id": "app",
+   "tipo": "anim",
+   "anim": "celular",
+   "layout": "split",
+   "fundo": "fundo_castelo2",
+   "ini": "f7:^",
+   "fim": "f7:Ele-0.1",
+   "numero": 2,
+   "marcos": {
+    "numero": "f7:Dois",
+    "cai": "f7:aplicativo-0.25",
+    "rola": "f7:fila"
+   },
+   "dados": {
+    "print": "app",
+    "rola": true,
+    "cai": true,
+    "linhas": [
+     {
+      "texto": "APLICATIVO",
+      "em": "f7:aplicativo-0.05",
+      "tam": 92,
+      "cor": "ambar",
+      "ate": "f7:fila-0.15"
+     },
+     {
+      "texto": "DA DISNEY",
+      "em": "f7:Disney-0.05",
+      "tam": 80,
+      "ate": "f7:fila-0.15"
+     },
+     {
+      "texto": "A FILA",
+      "em": "f7:fila-0.05",
+      "tam": 110,
+      "cor": "ambar"
+     },
+     {
+      "texto": "EM TEMPO REAL",
+      "em": "f7:tempo-0.05",
+      "tam": 64
+     }
+    ]
+   },
+   "nota": "Print real da App Store enviado pelo Diego; a tela rola até a prévia da fila rápida (Premier Access) em 'fila'"
+  },
+  {
+   "id": "roteiro",
+   "tipo": "anim",
+   "anim": "roteiro",
+   "layout": "split",
+   "fundo": "fundo_castelo2",
+   "ini": "f7:Ele-0.1",
+   "fim": "f8:^",
+   "marcos": {
+    "roteiro": "f7:roteiro",
+    "pedir": "f7:pedir",
+    "comida": "f7:comida",
+    "antes": "f7:antes"
+   }
+  },
+  {
+   "id": "print_app",
+   "tipo": "anim",
+   "anim": "celular",
+   "layout": "split",
+   "fundo": "fundo_castelo2",
+   "ini": "f8:^",
+   "fim": "f9:^",
+   "marcos": {
+    "flash": "f8:print"
+   },
+   "dados": {
+    "print": "app",
+    "rola": false,
+    "cai": false,
+    "linhas": [
+     {
+      "texto": "TIRAR PRINT",
+      "em": "f8:tirar-0.05",
+      "tam": 92,
+      "cor": "ambar",
+      "ate": "f8:nosso-0.12"
+     },
+     {
+      "texto": "NOSSO MELHOR",
+      "em": "f8:nosso-0.05",
+      "tam": 84
+     },
+     {
+      "texto": "AMIGO",
+      "em": "f8:amigo-0.05",
+      "tam": 140,
+      "cor": "ambar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "comida",
+   "tipo": "anim",
+   "anim": "comida",
+   "layout": "split",
+   "fundo": "fundo_castelo",
+   "ini": "f9:^",
+   "fim": "f9:Então-0.1",
+   "numero": 3,
+   "marcos": {
+    "numero": "f9:terceiro",
+    "cara": "f9:cara",
+    "nem": "f9:nem"
+   }
+  },
+  {
+   "id": "mochila",
+   "tipo": "anim",
+   "anim": "mochila",
+   "layout": "split",
+   "fundo": "fundo_studios",
+   "ini": "f9:Então-0.1",
+   "fim": "f10:^",
+   "marcos": {
+    "lanche": "f9:lanche",
+    "gastar": "f9:não"
+   }
+  },
+  {
+   "id": "bt_tarde",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_4525.mov",
+   "ini_src": 63.0,
+   "ini": "f10:^",
+   "fim": "f10:Se-0.12",
+   "numero": 4,
+   "marcos": {
+    "numero": "f10:quarto"
+   },
+   "nota": "a montanha-russa (frente do carrinho) no fim da tarde"
+  },
+  {
+   "id": "por_do_sol",
+   "tipo": "broll",
+   "layout": "full",
+   "arquivo": "IMG_4525.mov",
+   "ini_src": 57.4,
+   "foco_x": 0.47,
+   "transicao": "luz",
+   "ini": "f10:Se-0.12",
+   "fim": "f11:^",
+   "grade": "saturate(0.95) contrast(1.06)",
+   "nota": "o pôr do sol do Big Thunder em tela cheia (pedido do Diego: escolher o melhor para quem assiste)"
+  },
+  {
+   "id": "ouro",
+   "tipo": "anim",
+   "anim": "ouro",
+   "layout": "split",
+   "fundo": "fundo_noite",
+   "ini": "f11:^",
+   "fim": "f11:Sai-0.1",
+   "marcos": {
+    "dica": "f11:dica"
+   }
+  },
+  {
+   "id": "fogos",
+   "tipo": "broll",
+   "layout": "full",
+   "arquivo": "IMG_3595.MOV",
+   "ini_src": 12.0,
+   "ini": "f11:Sai-0.1",
+   "fim": "f11:mas-0.08",
+   "grade": "saturate(0.9) contrast(1.05)",
+   "letreiro": [
+    {
+     "texto": "SAI UM POUCO",
+     "tam": 96,
+     "em": "f11:Sai-0.05"
+    },
+    {
+     "texto": "ANTES",
+     "tam": 200,
+     "em": "f11:antes-0.05",
+     "cor": "ambar"
+    }
+   ]
+  },
+  {
+   "id": "todo_mundo",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3595.MOV",
+   "ini_src": 17.0,
+   "foco_y": 1.0,
+   "ini": "f11:mas-0.08",
+   "fim": "f11:já",
+   "grade": "saturate(0.9) contrast(1.05)",
+   "letreiro": [
+    {
+     "texto": "TODO MUNDO",
+     "tam": 96,
+     "em": "f11:todo-0.05"
+    },
+    {
+     "texto": "SAI JUNTO",
+     "tam": 150,
+     "em": "f11:sai-0.05",
+     "cor": "ambar"
+    }
+   ]
+  },
+  {
+   "id": "trens",
+   "tipo": "broll",
+   "layout": "split",
+   "arquivo": "IMG_3205.MOV",
+   "ini_src": 1.0,
+   "ini": "f11:já",
+   "fim": "f12:^",
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "letreiro": [
+    {
+     "texto": "CIRCULAÇÃO",
+     "tam": 120,
+     "em": "f11:circulação-0.05",
+     "cor": "ambar"
+    },
+    {
+     "texto": "DOS TRENS",
+     "tam": 120,
+     "em": "f11:trens-0.05"
+    }
+   ]
+  },
+  {
+   "id": "perrengue",
+   "tipo": "fala",
+   "transicao": "clarao",
+   "ini": "f12:^",
+   "fim": "f13:^",
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "id": "cta",
+   "tipo": "broll",
+   "layout": "full",
+   "arquivo": "IMG_3607.MOV",
+   "transicao": "luz",
+   "ini": "f13:^",
+   "fim": "fim",
+   "kb": [
+    1.0,
+    1.05
+   ],
+   "letreiro": [
+    {
+     "texto": "PARTE 2",
+     "tam": 190,
+     "em": "f13:parte-0.05",
+     "cor": "ambar"
+    }
+   ],
+   "nota": "fogos em tela cheia + placa do DS V2 (CTA)"
+  }
+ ],
+ "sons": [
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f2:^",
+   "desl": 0.2,
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "a sentada"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f3:^",
+   "desl": 0.36,
+   "rel_db": -4,
+   "alinhar": "pico",
+   "nota": "o print pousa"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f3:11",
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "11 MILHÕES"
+  },
+  {
+   "arquivo": "PDX_pagina.wav",
+   "em": "f4:pessoas",
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "1º cartão"
+  },
+  {
+   "arquivo": "PDX_pagina.wav",
+   "em": "f4:fugir",
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "2º cartão"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f4:caro",
+   "rel_db": -4,
+   "alinhar": "pico",
+   "nota": "carimbo CARO"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f5:pulos",
+   "desl": 0.15,
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "1º pulo do gato"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f6:park-0.1",
+   "desl": 0.2,
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "ingresso entra"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f7:aplicativo-0.25",
+   "desl": 0.36,
+   "rel_db": -4,
+   "alinhar": "pico",
+   "nota": "o celular pousa"
+  },
+  {
+   "arquivo": "PDX_obturador.wav",
+   "em": "f8:print",
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "print"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f9:lanche",
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "lanche cai na mochila"
+  },
+  {
+   "arquivo": "PDX_ar_longo.wav",
+   "em": "f10:Se-0.12",
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "luz de passagem: pôr do sol"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f11:dica",
+   "rel_db": -4,
+   "alinhar": "pico",
+   "nota": "DICA DE OURO"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f12:^",
+   "desl": 0.05,
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "clarão"
+  },
+  {
+   "arquivo": "PDX_ar_longo.wav",
+   "em": "f13:^",
+   "rel_db": -6,
+   "alinhar": "pico",
+   "nota": "luz de passagem: CTA"
+  }
+ ],
+ "cta": {
+  "ini": "f13:segue-0.05",
+  "rotulo": "JÁ ME SEGUE AÍ",
+  "destino": "PRIMEIRO DIA",
+  "modulo": "seta",
+  "entrada_ms": 0,
+  "clack_db_rel": -6,
+  "cauda": 1.0
+ }
+}
