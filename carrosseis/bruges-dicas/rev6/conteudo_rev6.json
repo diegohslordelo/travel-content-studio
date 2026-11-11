@@ -1,0 +1,125 @@
+{
+ "slides": [
+  {
+   "n": 1,
+   "id": "capa",
+   "foto": "foto01.jpg",
+   "foco": "50% 62%",
+   "titulo": "Tudo que você precisa saber sobre <em>Bruges</em>",
+   "sub": "arrasta →"
+  },
+  {
+   "n": 2,
+   "id": "medieval",
+   "foto": "foto11_markt.jpg",
+   "foco": "50% 78%",
+   "titulo": "Uma cidade <em>medieval</em> no noroeste da Bélgica",
+   "sub": "Fica a cerca de 1h de Bruxelas. Parece cenário de filme, e o centro inteiro é Patrimônio da UNESCO."
+  },
+  {
+   "n": 3,
+   "id": "historia",
+   "foto": "historia.jpg",
+   "foco": "60% 50%",
+   "titulo": "A cidade que <em>parou no tempo</em>",
+   "sub": "Bruges foi um dos portos mais ricos da Europa. No século XV o acesso ao mar assoreou e o comércio migrou para Antuérpia. A cidade parou, e por isso o centro medieval está intacto."
+  },
+  {
+   "n": 4,
+   "id": "carroca",
+   "video": "../fonte/IMG_2644.MOV",
+   "foco": "50% 50%",
+   "titulo": "É comum encontrar <em>passeios de carroça</em>",
+   "sub": "Pelas praças e ruas de pedra, as carruagens passam o tempo todo."
+  },
+  {
+   "n": 5,
+   "id": "trem",
+   "foto": "foto10.jpg",
+   "foco": "40% 30%",
+   "titulo": "Dá pra ir de <em>trem</em>",
+   "sub": "Direto de Bruxelas, cerca de 1h. São €18 o trecho, então o bate-volta é tranquilo."
+  },
+  {
+   "n": 6,
+   "id": "belfort",
+   "foto": "belfort.jpg",
+   "foco": "62% 50%",
+   "titulo": "Belfort: <em>366 degraus</em> até o topo",
+   "sub": "A torre da praça Markt tem 83 m e um carrilhão de 47 sinos. Se tiver perna, a vista lá de cima vale."
+  },
+  {
+   "n": 7,
+   "id": "barco",
+   "foto": "barco.jpg",
+   "foco": "62% 60%",
+   "titulo": "Passeio de barco? <em>Muita gente faz</em>",
+   "sub": "Eu não gosto. Acho mais divertido conhecer a cidade andando, e não curto gastar dinheiro com isso."
+  },
+  {
+   "n": 8,
+   "id": "michelangelo",
+   "foto": "foto05.jpg",
+   "foco": "50% 45%",
+   "titulo": "Uma escultura do <em>Michelangelo</em> em Bruges",
+   "sub": "A Igreja de Nossa Senhora, a da torre de 115 m, guarda a Madona com o Menino. Foi a única escultura dele a sair da Itália ainda em vida."
+  },
+  {
+   "n": 9,
+   "id": "basilica",
+   "foto": "foto09.jpg",
+   "foco": "50% 55%",
+   "titulo": "Basílica do <em>Sangue Sagrado</em>",
+   "sub": "Igreja do século XII que guarda um frasco com o que seria o sangue de Cristo. Entrada grátis. A gente chegou ao meio-dia, na hora da exposição."
+  },
+  {
+   "n": 10,
+   "id": "waffle",
+   "foto": "foto04.jpg",
+   "foco": "50% 55%",
+   "titulo": "O <em>melhor waffle</em> da&nbsp;Bélgica",
+   "sub": "Chez Albert. Waffle quente com chocolate belga, o melhor que eu comi na Bélgica. Disparado."
+  },
+  {
+   "n": 11,
+   "id": "batata",
+   "foto": "foto03.jpg",
+   "foco": "50% 45%",
+   "titulo": "A <em>melhor batata</em> da viagem",
+   "sub": "Fritbar. Porção enorme, com pulled pork. A melhor batata que eu comi na viagem, disparada."
+  },
+  {
+   "n": 12,
+   "id": "cerveja",
+   "foto": "foto12_cerveja_diego.jpg",
+   "foco": "50% 50%",
+   "titulo": "As <em>melhores cervejas</em> da&nbsp;viagem",
+   "sub": "Na Bélgica cada cerveja tem o seu copo. E as que eu bebi lá foram as melhores."
+  },
+  {
+   "n": 13,
+   "id": "chocolate",
+   "foto": "foto06.jpg",
+   "foco": "50% 50%",
+   "titulo": "A cidade cheira a <em>chocolate</em>",
+   "sub": "Mas não espere preço bom: perto dos pontos turísticos a conta pesa.<br>La Belgique Gourmande é charmosa… e cara."
+  },
+  {
+   "n": 14,
+   "id": "conselho",
+   "foto": "foto08.jpg",
+   "foco": "55% 50%",
+   "titulo": "Conselho final: <em>durma uma noite</em> lá",
+   "sub": "De dia a cidade lota de gente de bate-volta. No fim da tarde eles vão embora, e aí você aproveita Bruges vazia."
+  },
+  {
+   "n": 15,
+   "id": "cta",
+   "foto": "foto02.jpg",
+   "foco": "50% 50%",
+   "titulo": "Conhece alguém que vai pra <em>Bélgica</em>?",
+   "sub": "@primeirodiaem",
+   "cta": true
+  }
+ ]
+}
