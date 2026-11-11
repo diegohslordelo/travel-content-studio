@@ -1,0 +1,85 @@
+{
+ "slides": [
+  {
+   "n": 1,
+   "id": "capa",
+   "foto": "foto01.jpg",
+   "foco": "50% 62%",
+   "titulo": "Tudo que você precisa saber sobre <em>Bruges</em>",
+   "sub": "arrasta →"
+  },
+  {
+   "n": 2,
+   "id": "medieval",
+   "foto": "foto11_markt.jpg",
+   "foco": "50% 78%",
+   "titulo": "Uma cidade <em>medieval</em> no noroeste da Bélgica",
+   "sub": "a cerca de 1h de Bruxelas"
+  },
+  {
+   "n": 3,
+   "id": "trem",
+   "foto": "foto10.jpg",
+   "foco": "40% 30%",
+   "titulo": "Dá pra ir de <em>trem</em>",
+   "sub": "€18 o trecho, direto de Bruxelas"
+  },
+  {
+   "n": 4,
+   "id": "chocolate",
+   "foto": "foto06.jpg",
+   "foco": "50% 50%",
+   "titulo": "A cidade cheira a <em>chocolate</em>",
+   "sub": "Mas não espere preço bom: perto dos pontos turísticos a conta pesa.<br>La Belgique Gourmande é charmosa… e cara."
+  },
+  {
+   "n": 5,
+   "id": "cerveja",
+   "foto": "foto12_cerveja_diego.jpg",
+   "foco": "50% 50%",
+   "titulo": "As <em>melhores cervejas</em> da&nbsp;viagem",
+   "sub": ""
+  },
+  {
+   "n": 6,
+   "id": "waffle",
+   "foto": "foto04.jpg",
+   "foco": "50% 55%",
+   "titulo": "O <em>melhor waffle</em> da&nbsp;Bélgica",
+   "sub": "Chez Albert"
+  },
+  {
+   "n": 7,
+   "id": "batata",
+   "foto": "foto03.jpg",
+   "foco": "50% 45%",
+   "titulo": "A <em>melhor batata</em> da viagem",
+   "sub": "pulled pork, no Fritbar"
+  },
+  {
+   "n": 8,
+   "id": "basilica",
+   "foto": "foto09.jpg",
+   "foco": "50% 55%",
+   "titulo": "Basílica do <em>Sangue Sagrado</em>",
+   "sub": "Igreja do século XII que guarda um frasco com o que seria o sangue de Cristo. Entrada grátis."
+  },
+  {
+   "n": 9,
+   "id": "conselho",
+   "foto": "foto08.jpg",
+   "foco": "55% 50%",
+   "titulo": "Conselho final: <em>durma uma noite</em> lá",
+   "sub": "quando o bate-volta vai embora, a cidade esvazia"
+  },
+  {
+   "n": 10,
+   "id": "cta",
+   "foto": "foto02.jpg",
+   "foco": "50% 50%",
+   "titulo": "Conhece alguém que vai pra <em>Bélgica</em>?",
+   "sub": "@primeirodiaem",
+   "cta": true
+  }
+ ]
+}
