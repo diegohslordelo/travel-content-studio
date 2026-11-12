@@ -8,10 +8,11 @@ import json, os, subprocess
 FONTE = "../fonte"
 PUB = "public"
 os.makedirs(PUB, exist_ok=True)
-# Diego já tratou a cor da gravação (12/11/2026): nenhuma correção de cor nele; só redimensiona.
-CONV = "format=yuv420p"  # sem conversão de cor: pixels como o Diego exportou
-TM = ("zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=mobius:param=0.3:desat=0,"
-      "zscale=t=bt709:m=bt709:r=tv,format=yuv420p")
+# Diego já tratou a cor da gravação (12/11/2026): nenhuma correção de cor; só a conversão HLG→SDR padrão, a mesma
+# que o Drive mostra. A mesma conversão vale para o acervo, sem grade extra.
+CONV = ("zscale=t=linear:npl=600,format=gbrpf32le,zscale=p=bt709,tonemap=clip:desat=0,"
+        "zscale=t=bt709:m=bt709:r=tv,format=yuv420p")  # HLG→SDR igual à prévia do Drive (comparada à miniatura do Drive, erro médio 7,5/255)
+TM = CONV
 
 # Trechos falados da gravação (s). Pausas entre takes removidas no silêncio (energia 120–4000 Hz,
 # limiar −30 dB do nível de fala). 3,15–4,26 = Diego senta na cadeira: mantido inteiro.
@@ -88,7 +89,7 @@ CLIPES = {  # nome: (arquivo, início, duração)
     "noite_laguna": ("IMG_6128", 0.0, 6.5),
     "canal_dia": ("IMG_6016", 0.0, 6.0),
     "rialto": ("IMG_6174", 12.0, 7.0),
-    "noite_rua": ("IMG_6234", 2.0, 8.0),
+    "noite_vazia": ("IMG_6234", 10.0, 2.8),  # Grande Canal à noite da ponte, sem ninguém (10,0–12,8 s)
     "campanile": ("IMG_6060", 0.0, 5.0),
 }
 for nome, (arq, ini, d) in CLIPES.items():

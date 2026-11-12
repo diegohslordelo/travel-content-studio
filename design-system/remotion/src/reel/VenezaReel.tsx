@@ -97,7 +97,7 @@ const Apoio: React.FC<{ c: Cena; t: number }> = ({ c, t }) => {
   const H = c.cheia ? 1920 : COSTURA;
   const z = c.zoom ?? [1.0, 1.07];
   const k = lin(t, c.ini, c.fim, z[0], z[1], Easing.linear);
-  const filtro = c.tipo === "video" ? "saturate(0.85) contrast(1.06) brightness(0.98)" : "contrast(1.05)";
+  const filtro = c.tipo === "video" ? "none" : "contrast(1.05)"; // acervo sem grade: só a conversão HLG→SDR do preparo
   return (
     <div style={{ position: "absolute", left: 0, top: 0, width: 1080, height: H, overflow: "hidden", background: "#000" }}>
       <div style={{ position: "absolute", inset: 0, transform: `scale(${k})` }}>

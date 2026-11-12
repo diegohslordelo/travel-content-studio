@@ -24,7 +24,7 @@ C = [
     dict(ini=s(83) - 0.04, fim=s(95) - 0.04, tipo="video", src="rialto.mp4", zoom=[1.0, 1.06]),  # "ela quer… durma na cidade"
     dict(ini=s(95) - 0.04, fim=27.66, tipo="diego", zoom=[1.0, 1.09]),                         # "E eu fiquei, e não gostei"
     dict(ini=27.66, fim=s(111) - 0.06, tipo="video", src="canal_dia.mp4"),                    # "fazer tudo em um dia"
-    dict(ini=s(111) - 0.06, fim=31.72, tipo="video", src="noite_laguna.mp4", zoom=[1.08, 1.02]),  # "à noite… deserta" (trecho vazio)
+    dict(ini=s(111) - 0.06, fim=31.72, tipo="video", src="noite_vazia.mp4", zoom=[1.04, 1.0]),  # "à noite… deserta": canal vazio à noite
     dict(ini=31.72, fim=s(139) - 0.04, tipo="diego", zoom=[1.0, 1.07]),                         # "suja… Sim, Diego… taxa?"
     dict(ini=s(139) - 0.04, fim=s(149) - 0.06, tipo="foto", src="Arena_di_Verona.jpg", zoom=[1.0, 1.08]),  # "incluir Verona"
     dict(ini=s(149) - 0.06, fim=s(169) - 0.06, tipo="graf", graf="mapa"),                     # "1 hora e pouquinho"

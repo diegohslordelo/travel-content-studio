@@ -11,7 +11,7 @@
 | Seguir a ordem e não cortar fala | 13 trechos, na ordem, todas as 240 palavras da transcrição presentes (conferir no ouvido) |
 | Sem espaço entre falas e takes | Pausas de 0,3–1,0 s removidas no silêncio (energia 120–4.000 Hz, limiar −30 dB); emendas com fade de 12 ms. 63,3 s → 58,3 s |
 | Manter o "sentar na cadeira" | Mantido inteiro (fonte 3,15–4,26 s), em Diego em tela cheia. Só saiu a parada de 0,27 s antes de ele sentar |
-| Sem filtro nele | Nenhuma correção de cor na gravação: os pixels são os que o Diego exportou, só redimensionados para 1080 × 1920 |
+| Sem filtro nele; cores iguais às do Drive | Nenhuma correção de cor. A gravação é HDR (HLG): passa só pela conversão HLG→SDR (clip, npl 600), escolhida comparando com a miniatura que o Drive gera do mesmo vídeo (erro médio 7,5/255). A 1ª versão tratava o HDR como SDR e ficava lavada; a versão com tone mapping Möbius saturava a pele |
 | Ilustrar ao máximo | 21 cenas: acervo (6), fotos de Verona (3), grafismos animados (9), Diego em tela cheia (3) |
 | Mapa Verona → Veneza em "1 hora e pouquinho" | Mapa animado com a linha do trem se desenhando, posições pela latitude/longitude reais; "1H E POUQUINHO / DE TREM" entra na palavra "pouquinho" |
 | Print de respaldo em "3 em cada 4" | Manchete + trecho da Fortune (03/01/2024): "day-trippers… make up about 80% of the city's total visitors" |
@@ -32,10 +32,10 @@
 
 ## Imagens e créditos
 
-- Acervo do Diego (Veneza, 31/12/2024–01/01/2025): IMG_6062 (gancho), IMG_6099 (gôndolas), IMG_6174 (Rialto), IMG_6016 (Grande Canal), IMG_6128 0–2 s (laguna vazia à noite), IMG_6060 (campanário, CTA). Conferidos quadro a quadro: sem o rosto do Diego nem da Marina. HLG → SDR com tone mapping (só no acervo).
+- Acervo do Diego (Veneza, 31/12/2024–01/01/2025): IMG_6062 (gancho), IMG_6099 (gôndolas), IMG_6174 (Rialto), IMG_6016 (Grande Canal), IMG_6234 10,0–12,8 s (Grande Canal à noite visto da ponte, sem ninguém, em "fica deserta"), IMG_6060 (campanário, CTA). Conferidos quadro a quadro: sem o rosto do Diego nem da Marina. Mesma conversão HLG→SDR da gravação, sem grade extra.
 - Wikimedia Commons: `Arena_di_Verona.jpg`, `Ponte_Pietra_Verona.jpg`, `Casa_di_Giulietta_Verona.jpg`. **Licença e autor não conferidos** (a API do Commons respondeu 429 durante a edição): conferir antes de postar e, se CC BY/BY-SA, pôr o crédito no comentário fixado (FORMATOS_REELS 8.6).
 - Print: Fortune (manchete e trecho), uso como citação jornalística.
-- IMG_6234 foi descartado: mostra a Marina e uma ponte cheia, o que contradiz "deserta".
+- Do IMG_6234 só entra o trecho 10,0–12,8 s: o resto mostra a Marina e a ponte cheia. IMG_6128 (laguna com gente) e IMG_6242 (beco com pessoas) não serviram para "deserta".
 
 ## Som
 
