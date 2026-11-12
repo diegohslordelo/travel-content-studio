@@ -39,7 +39,7 @@
 
 ## Som
 
-Voz: só passa-alta 70 Hz e loudness (a redução de ruído saiu: podia abafar sílabas fracas). Master medido: −14,8 LUFS integrados, pico −1,5 dBFS (alvo do DS: −14 LUFS, ≤ −1 dBTP; 0,8 dB abaixo, ajustar na próxima revisão se o Diego achar baixo). Efeitos `PDX_*` (impacto em "30 milhões", "multa", "25%"; obturador em "três", "cinco", "cinco euros"; swish no pedágio e no mapa; riser antes de "E eu fiquei"). *Clack* do DS só no CTA. **Ninguém ouviu** (CLAUDE.md, 12): escuta do Diego obrigatória.
+Voz: só passa-alta 70 Hz e loudness (a redução de ruído saiu: podia abafar sílabas fracas). Master medido: −14,2 LUFS integrados, pico −1,5 dBFS (DS 4.6: −14 LUFS, ≤ −1 dBTP). Nenhum quadro preto ou escuro (YAVG < 45) no vídeo final. Efeitos `PDX_*` (impacto em "30 milhões", "multa", "25%"; obturador em "três", "cinco", "cinco euros"; swish no pedágio e no mapa; riser antes de "E eu fiquei"). *Clack* do DS só no CTA. **Ninguém ouviu** (CLAUDE.md, 12): escuta do Diego obrigatória.
 
 ## Conferir no ouvido (Diego)
 
