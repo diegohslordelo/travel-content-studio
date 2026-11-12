@@ -1,4 +1,4 @@
-# Veneza · "Veneza não te quer lá" · Roteiro (Tela dividida) · v1
+# Veneza · "Veneza não te quer lá" · Roteiro (Tela dividida) · v2
 
 **Formato:** Tela dividida, variação "analisar" (Trello, Formato viral validado 01) · **Estrutura:** Jeito Errado × Jeito Certo (Trello, Estruturas de roteiro) · **Duração estimada:** ≈ 60 s (≈ 3 palavras/s, `docs/FORMATOS_REELS.md`, 5.1).
 **Escolha do Diego (12/11/2026):** opção A. Duração-alvo de 45–60 s neste Reel, a pedido dele (a referência de conteúdo, 3.1, recomenda 7–30 s e `FORMATOS_REELS.md`, 9.2, põe 45 s como teto: divergência registrada, sem regra geral).
@@ -11,15 +11,15 @@
 
 ```
 1.  Veneza não te quer lá. E dessa vez é verdade. Em partes.
-2.  Ela recebe uns 30 milhões de visitantes por ano. No centro, moram menos de 48 mil.
-3.  Faz a conta: uns 80 mil turistas por dia, quase o dobro de quem mora lá.
-4.  E tem uma coisa que ela quer muito que você faça. Eu fiz. E me arrependi.
-5.  Em 2023, já tinha mais cama de turista que morador, e a UNESCO ameaçou pôr Veneza na lista de patrimônio em perigo.
-6.  Em 2024 veio a resposta: um pedágio pra quem vai só passar o dia.
-7.  Cinco euros nos dias de pico, dez em cima da hora. Entrou sem pagar? Multa de até trezentos.
-8.  Mas quem dorme lá não paga. Esse é o "em partes": Veneza quer que você fique.
-9.  Eu fiquei. E não gostei. À noite, fora dos pontos turísticos, é deserta. E achei meio suja.
-10. O jeito certo é o contrário: dorme em Verona, a uma hora e pouco de trem, e vai de bate-volta.
+2.  São uns 30 milhões de visitantes por ano. Em média, 80 mil por dia, pra menos de 48 mil moradores.
+3.  E tem uma coisa que ela quer muito que você faça. Eu fiz. E me arrependi.
+4.  Pra frear o bate-volta, criaram um pedágio: cinco euros, ou dez em cima da hora.
+5.  Funcionou? Pouco. A prefeitura admite que quase não caiu. A cidade segue lotada.
+6.  Então qual a vantagem? Quem dorme lá já paga taxa no hotel. O bate-volta não pagava nada.
+7.  Agora paga: 5,4 milhões de euros em 2025, e parte disso baixa a conta de lixo de quem mora lá.
+8.  Esse é o "em partes": ela aceita o bate-volta, se você pagar. Mas quer mesmo é que você fique.
+9.  Eu fiquei. E não gostei: à noite, fora dos pontos turísticos, é deserta e meio suja.
+10. O jeito certo: dorme em Verona, a uma hora e pouco de trem, e vai de bate-volta.
 11. Você vê Veneza no melhor horário, gasta menos com hotel e ganha Verona de brinde.
 12. Manda pra quem vai pra Itália.
 ```
@@ -28,8 +28,9 @@
 
 - Peito para cima, olhando para a lente, **1 tomada por bloco**, **1 s de pausa entre blocos** e **1 s de silêncio antes de parar** (o iPhone corta ≈ 0,27 s do fim do áudio).
 - Bloco 1: pausa curta antes de "Em partes", dito mais baixo. Grave 2 tomadas.
-- Bloco 4: "Eu fiz." pausa. "E me arrependi." olhando para a lente, meio sorriso.
-- Bloco 7: "Entrou sem pagar?" em tom de pergunta.
+- Bloco 3: "Eu fiz." pausa. "E me arrependi." olhando para a lente, meio sorriso.
+- Bloco 5: "Funcionou?" pergunta; "Pouco." seco.
+- Bloco 6: "Então qual a vantagem?" é a virada: mude o tom, como quem vai contar o segredo.
 - Bloco 9: "Eu fiquei." seco. Pausa. Depois o resto.
 - Bloco 11: como lista, pausa mínima entre os itens; sorriso em "de brinde".
 
@@ -38,19 +39,21 @@
 | # | Tempo | Etapa | Imagem em cima / composição | Transição | Som |
 |---|---|---|---|---|---|
 | 1 | 0–4 s | Conflito (gancho) | Veneza lotada; gancho em texto grande, palavra de peso **EM PARTES** | Corte seco | — |
-| 2 | 4–9 s | Conflito: 30 milhões | Prints das manchetes (CNN e Il Post, só a manchete) → animação 30.000.000 × 48.000 | Corte seco | `PDX_impacto` em "48 mil" |
-| 3 | 9–14 s | Conflito: a conta | Animação: 1 morador × 2 turistas se multiplicando | Corte seco | — |
-| 4 | 14–19 s | Spoiler | **Diego em tela cheia**; corte de zoom em "E me arrependi" | Corte de zoom (seco) | — |
-| 5 | 19–26 s | Por quê | Camas × casas → manchete da UNESCO | Corte seco | `PDX_riser` até 26 s |
-| 6 | 26–31 s | Pedágio | Catraca com QR sobre ponte lotada | **Luz de passagem** em "pedágio" | — |
-| 7 | 31–37 s | Pedágio | Animação "5 € / 10 €" → multa "300 €" | Corte seco | `PDX_obturador` em "trezentos" |
-| 8 | 37–42 s | "Em partes" (resolve o spoiler, 1ª metade) | Janela de hotel acesa à noite | Corte seco | — |
-| 9 | 42–48 s | Jeito errado (resolve o spoiler) | **Diego em tela cheia** em "Eu fiquei" → rua vazia à noite | Corte seco | — |
-| 10 | 48–54 s | Jeito certo | Mapa: linha Verona → Veneza se desenhando | Linha que revela (cor do formato, não o amarelo do DS) | `PDX_swish` |
-| 11 | 54–58 s | Mudança: o que você ganha | Lista de 3, cada item na sua palavra: Veneza de dia · cama com "−€" · Arena de Verona | **Clarão de volta** | — |
-| 12 | 58–60 s | CTA | Plano do gancho (loop) + placa do DS **MANDA PRA QUEM VAI PRA / ITÁLIA →** | Corte seco | *Clack* (único som do DS) |
+| 2 | 4–10 s | Conflito: 30 milhões | Prints das manchetes (CNN e Il Post, só a manchete) → animação 30.000.000 → 80.000/dia × 48.000 | Corte seco | `PDX_impacto` em "48 mil" |
+| 3 | 10–15 s | Spoiler | **Diego em tela cheia**; corte de zoom em "E me arrependi" | Corte de zoom (seco) | — |
+| 4 | 15–20 s | Pedágio | Catraca com QR sobre ponte lotada; "5 € / 10 €" | Corte seco | `PDX_obturador` em "cinco euros" |
+| 5 | 20–24 s | Conflito: não funcionou | Ponte ainda lotada; print da manchete da Euronews ("did it curb overtourism?") | Corte seco | `PDX_riser` até 24 s |
+| 6 | 24–30 s | Virada: a vantagem | Animação: recibo de hotel "taxa de hospedagem" × bilhete do bate-volta "0 €" | **Luz de passagem** em "Então" | — |
+| 7 | 30–36 s | Virada: quem paga a conta | Animação "5,4 MILHÕES €" → conta de lixo com valor caindo | Corte seco | `PDX_impacto` em "5,4 milhões" |
+| 8 | 36–42 s | "Em partes" (resolve o spoiler, 1ª metade) | Janela de hotel acesa à noite | Corte seco | — |
+| 9 | 42–47 s | Jeito errado (resolve o spoiler) | **Diego em tela cheia** em "Eu fiquei" → rua vazia à noite | Corte seco | — |
+| 10 | 47–53 s | Jeito certo | Mapa: linha Verona → Veneza se desenhando | Linha que revela (cor do formato, não o amarelo do DS) | `PDX_swish` |
+| 11 | 53–57 s | Mudança: o que você ganha | Lista de 3, cada item na sua palavra: Veneza de dia · cama com "−€" · Arena de Verona | **Clarão de volta** | — |
+| 12 | 57–60 s | CTA | Plano do gancho (loop) + placa do DS **MANDA PRA QUEM VAI PRA / ITÁLIA →** | Corte seco | *Clack* (único som do DS) |
 
-Transições não secas: 3 (Luz de passagem, linha que revela, Clarão), com ≥ 1,5 s entre elas (`docs/REFERENCIA_EDICAO_FORMATOS.md`, 2). Volumes: mesma referência, 4.1. Se passar de 60 s na gravação, o primeiro corte é "Faz a conta:" (bloco 3).
+Transições não secas: 3 (Luz de passagem, linha que revela, Clarão), com ≥ 1,5 s entre elas (`docs/REFERENCIA_EDICAO_FORMATOS.md`, 2). Volumes: mesma referência, 4.1. Se passar de 60 s na gravação, o primeiro corte é "A cidade segue lotada." (bloco 5).
+
+**v2 (12/11/2026, pedido do Diego):** o roteiro passa a mostrar que o pedágio não esvaziou a cidade e por que mesmo assim ele faz sentido (quem passa o dia passa a pagar a sua parte). Saíram as camas × moradores, a ameaça da UNESCO e a multa de 300 €.
 
 ## Fatos e fontes (conferidos em 12/11/2026)
 
@@ -58,13 +61,11 @@ Transições não secas: 3 (Luz de passagem, linha que revela, Clarão), com ≥
 |---|---|---|---|
 | 2 | ≈ 30 milhões de visitantes/ano | CNN (https://edition-prod-cf.sitemirror.cnn.com/travel/article/venice-tourism-overcrowding-intl/index.html); Smart Control Room da prefeitura: 25–30 milhões (https://www.responsibletravel.com/holidays/italy/travel-guide/overtourism-in-venice) | Estimativa; por isso "uns" |
 | 2 | < 48 mil moradores no centro histórico | Il Post, 08/09/2025 (https://www.ilpost.it/2025/09/08/venezia-residenti-centro-storico-meno-48mila/); 47.652 em 05/2026 (https://www.ilpost.it/2026/05/22/venezia-elezioni-spopolamento-programma-candidati/) | OK |
-| 3 | ≈ 80 mil/dia, quase o dobro | Conta: 30.000.000 ÷ 365 ≈ 82.000; 82.000 ÷ 48.000 ≈ 1,7 | Média calculada, não dado publicado |
-| 5 | Mais cama de turista que morador (2023) | The Guardian, 12/09/2023: 49.693 camas × 49.304 moradores (https://www.pressreader.com/usa/the-guardian-usa/20230912/281831468326042) | OK |
-| 5 | UNESCO ameaçou a lista de patrimônio em perigo (2023) | Arab News (https://www.arabnews.com/node/2597593/world); TravelPulse (https://www.travelpulse.com/news/destinations/venice-access-fee-one-year-on) | OK |
-| 6 | Pedágio desde 2024 para quem passa o dia | Euronews (https://www.euronews.com/2026/03/30/venice-daytripper-fee-to-return-in-2026-when-will-visitors-have-to-pay) | OK |
-| 7 | 5 € (≥ 4 dias antes) / 10 € (em cima da hora) | The Local (https://www.thelocal.it/20251209/calendar-when-will-you-need-to-pay-a-fee-to-visit-venice-in-2026); Lonely Planet (https://www.lonelyplanet.com/articles/venice-introduces-new-booking-system-and-entry-fee-for-visitors) | Regra de 2026. **Reconferir a de 2027 antes de gravar** |
-| 7 | Multa de até 300 € | Arab News (regra de 2025: 50–300 €) | **Reconferir antes de gravar** |
-| 8 | Hospedado não paga | Lonely Planet; 22places (https://www.22places.com/venice-access-fee/) | OK |
+| 2 | ≈ 80 mil/dia, em média | Conta: 30.000.000 ÷ 365 ≈ 82.000 | Média calculada, não dado publicado |
+| 4 | Pedágio para frear o bate-volta; 5 € / 10 € | Fortune/AFP, 11/02/2025: objetivo é "desencorajar os visitantes de um dia" (https://fortune.com/europe/2025/02/11/success-venice-extends-tourist-tax-more-fees-restrictions); Euronews, 08/09/2025: 51% pagaram 5 € e 49% pagaram 10 € (https://www.euronews.com/travel/2025/09/08/venices-daytripper-fee-raised-5-million-in-2025-but-did-it-curb-overtourism) | Regra de 2026. **Reconferir a de 2027 antes de gravar** |
+| 5 | Quase não caiu; segue lotada | Euronews, 08/09/2025: a prefeitura diz que o número de visitantes de um dia "caiu só um pouco"; média diária de pagantes 13.046 (2025) × 16.676 (2024); vereadora da oposição: "o experimento não funcionou" | OK |
+| 6 | Quem dorme paga taxa de hospedagem; hospedado não paga o pedágio | Comune di Venezia, tarifas da imposta di soggiorno (https://comune.venezia.it/sites/comune.venezia.it/files/documenti/Tributi/ids/TARIFFE%20IDS%20-%20STRUTTURE%20con%20classificazione%20L.R.%2011_2013_valide%20dal%2001.04.2025.pdf); a prefeitura fala em "contribuição justa entre pernoites e visitantes de um dia" (Euronews) | OK |
+| 7 | 5,4 milhões de euros em 2025; parte reduz a taxa de lixo | Euronews, 08/09/2025: 723.497 pagantes, €5.421.425; "pelo menos €1,5 milhão", descontados os custos, vai reduzir a taxa de lixo | OK (a fala não diz o valor do lixo) |
 | 10 | Verona → Veneza em ≈ 1h10 | Omio, média ≈ 1h08 (https://www.omio.co.uk/trains/verona-porta-nuova/venice-santa-lucia-aqgox) | Trem rápido; regional ≈ 1h20+. Conferir no Trenitalia |
 | 11 | Hotel mais em conta em Verona | BudgetYourTrip, mediana US$ 160 (Veneza) × US$ 119 (Verona) (https://www.budgetyourtrip.com/hotels/italy/venice-3164603, https://www.budgetyourtrip.com/hotels/italy/verona-3164527); CityVersus, 3★ €150–220 × €100–150 (https://cityversus.org/comparison/verona-vs-venice/) | Fontes divergem no valor; a fala não dá número |
 
