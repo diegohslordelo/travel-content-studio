@@ -401,7 +401,14 @@ export const VenezaReel: React.FC<PropsVeneza> = (p) => {
         </Sequence>
       ))}
       {!apoioCheio && <Diego cheio={diegoCheio} zoom={zoomDiego} />}
-      {cena && cena.tipo !== "diego" && (cena.tipo === "graf" ? <Grafismo c={cena} t={t} /> : <Apoio c={cena} t={t} />)}
+      {cena && cena.tipo !== "diego" && (cena.tipo === "graf" ? (
+        <Grafismo c={cena} t={t} />
+      ) : (
+        // o clipe começa do início em cada cena (Sequence), não na posição absoluta da linha do tempo
+        <Sequence key={cena.ini} from={Math.round(cena.ini * fps)} durationInFrames={Math.max(1, Math.round((cena.fim - cena.ini) * fps))} layout="none">
+          <Apoio c={cena} t={t} />
+        </Sequence>
+      ))}
       {!diegoCheio && !apoioCheio && <div style={{ position: "absolute", left: 0, top: COSTURA - 3, width: 1080, height: 6, background: "rgba(0,0,0,0.55)" }} />}
       <Gancho p={p} t={t} />
       {!noGancho && <Legenda p={p} t={t} y={legY} />}
