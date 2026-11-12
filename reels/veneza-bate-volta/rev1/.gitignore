@@ -1,0 +1,10 @@
+# intermediários e material derivado dos brutos (fora do git; refazer com preparar.py)
+public/
+sdr.mp4
+seg*.mp4
+aseg*.wav
+full.wav
+voz_bruta.wav
+render_sem_master.mp4
+v.txt
+a.txt
