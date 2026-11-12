@@ -10,10 +10,17 @@ def s(i):  # início da palavra i
     return P[i]["s"]
 
 
+# "verdade." soa até ≈ 3,1 s na gravação (a energia da voz vai até 3,18 s): o gancho fica na tela até o Diego começar a sentar.
+FIM_GANCHO = 3.15
+# canal de dia ≥ 2,05 s terminando em "à noite"; canal vazio à noite por 2,3 s (o take limpo tem 2,8 s)
+INI_CANAL = s(111) - 0.06 - 2.05
+FIM_NOITE = s(111) - 0.06 + 2.3
+
+
 # Cenas na linha do tempo final (s). Troca 0,04–0,12 s antes da palavra (FORMATOS_REELS 7.1).
 C = [
-    dict(ini=0.0, fim=2.86, tipo="video", src="lotada.mp4", zoom=[1.0, 1.06]),               # gancho
-    dict(ini=2.86, fim=s(13) - 0.08, tipo="diego", zoom=[1.0, 1.04]),                        # senta na cadeira · "Em partes."
+    dict(ini=0.0, fim=FIM_GANCHO, tipo="video", src="lotada.mp4", zoom=[1.0, 1.06]),               # gancho
+    dict(ini=FIM_GANCHO, fim=s(13) - 0.08, tipo="diego", zoom=[1.0, 1.04]),                        # senta na cadeira · "Em partes."
     dict(ini=s(13) - 0.08, fim=s(22) - 0.06, tipo="graf", graf="milhoes"),                   # 30 milhões
     dict(ini=s(22) - 0.06, fim=s(28) - 0.06, tipo="graf", graf="tres4", dados={"t3": s(24)}),  # três em cada quatro
     dict(ini=s(28) - 0.06, fim=s(39) - 0.1, tipo="graf", graf="print", dados={"t2": s(30)}),  # print Fortune (80%)
@@ -22,17 +29,17 @@ C = [
     dict(ini=s(64) - 0.06, fim=s(70) - 0.04, tipo="graf", graf="multa"),
     dict(ini=s(70) - 0.04, fim=s(83) - 0.04, tipo="video", src="gondolas.mp4"),              # "não é que Veneza não te quer lá"
     dict(ini=s(83) - 0.04, fim=s(95) - 0.04, tipo="video", src="rialto.mp4", zoom=[1.0, 1.06]),  # "ela quer… durma na cidade"
-    dict(ini=s(95) - 0.04, fim=27.66, tipo="diego", zoom=[1.0, 1.09]),                         # "E eu fiquei, e não gostei"
-    dict(ini=27.66, fim=s(111) - 0.06, tipo="video", src="canal_dia.mp4"),                    # "fazer tudo em um dia"
-    dict(ini=s(111) - 0.06, fim=31.72, tipo="video", src="noite_vazia.mp4", zoom=[1.04, 1.0]),  # "à noite… deserta": canal vazio à noite
-    dict(ini=31.72, fim=s(139) - 0.04, tipo="diego", zoom=[1.0, 1.07]),                         # "suja… Sim, Diego… taxa?"
+    dict(ini=s(95) - 0.04, fim=INI_CANAL, tipo="diego", zoom=[1.0, 1.09]),                         # "E eu fiquei, e não gostei"
+    dict(ini=INI_CANAL, fim=s(111) - 0.06, tipo="video", src="canal_dia.mp4"),                    # "fazer tudo em um dia"
+    dict(ini=s(111) - 0.06, fim=FIM_NOITE, tipo="video", src="noite_vazia.mp4", zoom=[1.04, 1.0]),  # "à noite… deserta": canal vazio à noite
+    dict(ini=FIM_NOITE, fim=s(139) - 0.04, tipo="diego", zoom=[1.0, 1.07]),                         # "suja… Sim, Diego… taxa?"
     dict(ini=s(139) - 0.04, fim=s(149) - 0.06, tipo="foto", src="Arena_di_Verona.jpg", zoom=[1.0, 1.08]),  # "incluir Verona"
     dict(ini=s(149) - 0.06, fim=s(169) - 0.06, tipo="graf", graf="mapa"),                     # "1 hora e pouquinho"
     dict(ini=s(169) - 0.06, fim=s(176) - 0.06, tipo="foto", src="Ponte_Pietra_Verona.jpg", zoom=[1.08, 1.0]),
     dict(ini=s(176) - 0.06, fim=s(180) - 0.04, tipo="foto", src="Casa_di_Giulietta_Verona.jpg", zoom=[1.0, 1.1]),  # Romeu e Julieta
     dict(ini=s(180) - 0.04, fim=s(200) - 0.06, tipo="graf", graf="barato", dados={"t25": s(190) - 0.04}),
     dict(ini=s(200) - 0.06, fim=s(222) - 0.06, tipo="graf", graf="reserva", dados={"t5": s(212) - 0.04, "tLink": s(219) - 0.06}),
-    dict(ini=s(222) - 0.06, fim=DUR + 1, tipo="video", src="campanile.mp4"),                  # CTA
+    dict(ini=s(222) - 0.06, fim=DUR + 1, tipo="video", src="praca.mp4"),                      # CTA (IMG_6063 10–16 s: o take cobre os 5,6 s do CTA)
 ]
 for c in C:
     c["ini"] = round(c["ini"], 3)
@@ -71,7 +78,7 @@ grupos = sorted(grupos, key=lambda x: x[0])
 assert sorted(i for x in grupos for i in x) == list(range(len(P))), "grupos inconsistentes"
 # o gancho já é o texto: palavras 0–10 sem legenda (gancho escrito); "Em partes." tem legenda
 gancho = [{
-    "fim": 2.86,
+    "fim": FIM_GANCHO,
     "linhas": [
         {"txt": "VENEZA NÃO", "t": s(0), "tam": 128},
         {"txt": "TE QUER LÁ", "t": s(2), "tam": 160, "cor": "#E0AE5C"},

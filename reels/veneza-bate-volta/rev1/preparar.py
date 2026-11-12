@@ -14,11 +14,42 @@ CONV = ("zscale=t=linear:npl=600,format=gbrpf32le,zscale=p=bt709,tonemap=clip:de
         "zscale=t=bt709:m=bt709:r=tv,format=yuv420p")  # HLG→SDR igual à prévia do Drive (comparada à miniatura do Drive, erro médio 7,5/255)
 TM = CONV
 
-# Trechos falados da gravação (s). Pausas entre takes removidas no silêncio (energia 120–4000 Hz,
-# limiar −30 dB do nível de fala). 3,15–4,26 = Diego senta na cadeira: mantido inteiro.
-TRECHOS = [(0.00, 2.88), (3.15, 5.54), (5.85, 14.14), (14.62, 21.15), (21.58, 28.26), (28.41, 30.00),
-           (30.34, 35.85), (36.41, 38.22), (38.46, 43.41), (43.58, 47.55), (48.41, 49.31),
-           (49.79, 58.85), (59.36, 63.12)]
+# Trechos falados da gravação. Pedido do Diego: nenhuma fala cortada e nenhum espaço entre takes.
+# REV1b (12/11/2026): a 1ª decupagem usava limiar −47 dB e cortou sílabas fracas (fim de "verdade", "e", "E").
+# Agora só sai o trecho em que TODO quadro de 10 ms está abaixo de −62 dBFS (80–6.000 Hz: respiração e sala),
+# deixando 100 ms de folga em cada lado; cada corte foi conferido no perfil de energia. Do início até o Diego sentar (0–5,5 s) nada sai.
+def _trechos():
+    import numpy as np
+    raw = subprocess.run(f'ffmpeg -v error -i {FONTE}/gravacao.mp4 -af "highpass=f=80,lowpass=f=6000" -ac 1 -ar 16000 -f s16le -',
+                         shell=True, check=True, capture_output=True).stdout
+    x = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768
+    hop = 160
+    n = len(x) // hop
+    db = 20 * np.log10(np.sqrt((x[: n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-9)
+    sil = db < -62
+    dur = n / 100
+    cortes = []
+    i = 0
+    while i < n:
+        if sil[i]:
+            j = i
+            while j < n and sil[j]:
+                j += 1
+            a0, b0 = i / 100 + 0.10, j / 100 - 0.10
+            if b0 - a0 >= 0.10 and a0 > 5.6 and j < n:
+                cortes.append((a0, b0))
+            i = j
+        else:
+            i += 1
+    tr, ini = [], 0.0
+    for a0, b0 in cortes:
+        tr.append((ini, a0))
+        ini = b0
+    tr.append((ini, dur))
+    return tr, cortes
+
+
+TRECHOS, CORTES = _trechos()
 FPS = 30
 
 
@@ -47,7 +78,7 @@ if not os.path.exists(f"{PUB}/diego.mp4"):
     open("a.txt", "w").write("".join(f"file aseg{i}.wav\n" for i in lst))
     run(f"ffmpeg -v error -y -f concat -safe 0 -i v.txt -c copy {PUB}/diego.mp4")
     run("ffmpeg -v error -y -f concat -safe 0 -i a.txt -c copy voz_bruta.wav")
-    run("ffmpeg -v error -y -i voz_bruta.wav -af highpass=f=70,afftdn=nr=8:nf=-58:tn=1,loudnorm=I=-14:TP=-1.5:LRA=11 -ar 48000 public/voz.wav")
+    run("ffmpeg -v error -y -i voz_bruta.wav -af highpass=f=70,loudnorm=I=-14:TP=-1.5:LRA=11 -ar 48000 public/voz.wav")
 
 # palavras → linha do tempo final
 pal = json.load(open(f"{FONTE}/palavras.json"))
@@ -84,7 +115,7 @@ json.dump(palavras, open("palavras_final.json", "w"), ensure_ascii=False, indent
 # clipes do acervo (mudos, SDR, 1080 de largura)
 CLIPES = {  # nome: (arquivo, início, duração)
     "lotada": ("IMG_6062", 0.5, 6.0),
-    "praca": ("IMG_6063", 10.0, 6.0),
+    "praca": ("IMG_6063", 12.3, 6.0),  # começa em 12,3 s: antes disso passa uma mulher de cabelo comprido em primeiro plano
     "gondolas": ("IMG_6099", 1.0, 6.0),
     "noite_laguna": ("IMG_6128", 0.0, 6.5),
     "canal_dia": ("IMG_6016", 0.0, 6.0),
