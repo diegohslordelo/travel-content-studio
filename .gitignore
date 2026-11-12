@@ -18,3 +18,9 @@ Thumbs.db
 # Amostra do YouTube: proxies 1080p derivados dos brutos e dados brutos do OSM
 reels/amostra-yt/public/clipes/
 reels/amostra-yt/mapa/
+
+# Reel GTA 6 × Miami: derivados regeneráveis dos brutos (scripts em reels/gta6-miami/scripts)
+reels/gta6-miami/public/fala.mp4
+reels/gta6-miami/public/voz.wav
+reels/gta6-miami/public/clipes/
+reels/gta6-miami/rev1/audio_master.wav

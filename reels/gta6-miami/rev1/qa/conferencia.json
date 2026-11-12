@@ -1,0 +1,255 @@
+{
+ "formato": {
+  "duracao_s": 57.633333,
+  "video": "1080x1920 h264 30/1 yuv420p",
+  "audio": "aac 48000 Hz 2 canais",
+  "quadros": 1729
+ },
+ "diego_tela_cheia": [
+  {
+   "cena": "975_camera",
+   "dur_s": 2.77
+  },
+  {
+   "cena": "reacao",
+   "dur_s": 2.27
+  }
+ ],
+ "legendas": {
+  "grupos": 69,
+  "maior_px": 773,
+  "maior_texto": "mas a cidade continuou",
+  "x_esq": 153,
+  "x_dir": 927,
+  "dentro_72_944": true,
+  "max_palavras": 4
+ },
+ "sincronia": {
+  "max_desvio_s": 0.197,
+  "cenas": [
+   {
+    "cena": "inspirada",
+    "troca_s": 2.8,
+    "palavra": "vice",
+    "palavra_s": 2.87,
+    "antes_s": 0.07
+   },
+   {
+    "cena": "transformando",
+    "troca_s": 4.633,
+    "palavra": "agora",
+    "palavra_s": 4.715,
+    "antes_s": 0.082
+   },
+   {
+    "cena": "racha",
+    "troca_s": 7.433,
+    "palavra": "mas",
+    "palavra_s": 7.502,
+    "antes_s": 0.069
+   },
+   {
+    "cena": "contador",
+    "troca_s": 9.4,
+    "palavra": "a",
+    "palavra_s": 9.484,
+    "antes_s": 0.084
+   },
+   {
+    "cena": "letreiro",
+    "troca_s": 12.967,
+    "palavra": "por",
+    "palavra_s": 13.053,
+    "antes_s": 0.086
+   },
+   {
+    "cena": "975_camera",
+    "troca_s": 15.6,
+    "palavra": "novecentos",
+    "palavra_s": 15.797,
+    "antes_s": 0.197
+   },
+   {
+    "cena": "banana",
+    "troca_s": 18.367,
+    "palavra": "beleza",
+    "palavra_s": 18.452,
+    "antes_s": 0.085
+   },
+   {
+    "cena": "votacao",
+    "troca_s": 20.433,
+    "palavra": "mas",
+    "palavra_s": 20.497,
+    "antes_s": 0.064
+   },
+   {
+    "cena": "condado",
+    "troca_s": 24.2,
+    "palavra": "e",
+    "palavra_s": 24.202,
+    "antes_s": 0.002
+   },
+   {
+    "cena": "reacao",
+    "troca_s": 29.167,
+    "palavra": "e",
+    "palavra_s": 29.174,
+    "antes_s": 0.007
+   },
+   {
+    "cena": "xerife",
+    "troca_s": 31.433,
+    "palavra": "um",
+    "palavra_s": 31.399,
+    "antes_s": -0.034
+   },
+   {
+    "cena": "carta",
+    "troca_s": 32.967,
+    "palavra": "e",
+    "palavra_s": 32.977,
+    "antes_s": 0.01
+   },
+   {
+    "cena": "continuou",
+    "troca_s": 37.733,
+    "palavra": "mas",
+    "palavra_s": 37.728,
+    "antes_s": -0.005
+   },
+   {
+    "cena": "restaurantes",
+    "troca_s": 39.367,
+    "palavra": "restaurantes",
+    "palavra_s": 39.452,
+    "antes_s": 0.085
+   },
+   {
+    "cena": "cadeiras",
+    "troca_s": 41.1,
+    "palavra": "cadeiras",
+    "palavra_s": 41.176,
+    "antes_s": 0.076
+   },
+   {
+    "cena": "placas",
+    "troca_s": 43.467,
+    "palavra": "e",
+    "palavra_s": 43.507,
+    "antes_s": 0.04
+   },
+   {
+    "cena": "ganha",
+    "troca_s": 45.933,
+    "palavra": "mas",
+    "palavra_s": 45.941,
+    "antes_s": 0.008
+   },
+   {
+    "cena": "pisar",
+    "troca_s": 48.233,
+    "palavra": "porque",
+    "palavra_s": 48.287,
+    "antes_s": 0.054
+   },
+   {
+    "cena": "viver",
+    "troca_s": 50.467,
+    "palavra": "vai",
+    "palavra_s": 50.552,
+    "antes_s": 0.085
+   },
+   {
+    "cena": "marcado",
+    "troca_s": 51.6,
+    "palavra": "marcado",
+    "palavra_s": 51.654,
+    "antes_s": 0.054
+   },
+   {
+    "cena": "cta",
+    "troca_s": 53.9,
+    "palavra": "manda",
+    "palavra_s": 53.971,
+    "antes_s": 0.071
+   }
+  ]
+ },
+ "audio": {
+  "lufs_integrado": -14.0,
+  "pico_verdadeiro_dbtp": -1.3,
+  "amostras_acima_-1dBFS": 0,
+  "amostras_0dBFS": 0
+ },
+ "emendas": [
+  {
+   "s": 2.8,
+   "antes_db": -59.8,
+   "depois_db": -59.6,
+   "salto_amostra": 0.0
+  },
+  {
+   "s": 9.4,
+   "antes_db": -66.2,
+   "depois_db": -75.4,
+   "salto_amostra": 0.0
+  },
+  {
+   "s": 15.6,
+   "antes_db": -81.7,
+   "depois_db": -73.1,
+   "salto_amostra": 0.0
+  },
+  {
+   "s": 18.367,
+   "antes_db": -55.6,
+   "depois_db": -48.5,
+   "salto_amostra": 0.0
+  },
+  {
+   "s": 24.2,
+   "antes_db": -77.9,
+   "depois_db": -42.2,
+   "salto_amostra": 0.0
+  },
+  {
+   "s": 29.167,
+   "antes_db": -31.2,
+   "depois_db": -61.2,
+   "salto_amostra": 0.0
+  },
+  {
+   "s": 32.967,
+   "antes_db": -67.5,
+   "depois_db": -34.5,
+   "salto_amostra": 0.0
+  },
+  {
+   "s": 37.733,
+   "antes_db": -78.2,
+   "depois_db": -41.0,
+   "salto_amostra": 0.0
+  },
+  {
+   "s": 43.467,
+   "antes_db": -77.0,
+   "depois_db": -82.2,
+   "salto_amostra": 0.0
+  },
+  {
+   "s": 45.933,
+   "antes_db": -65.4,
+   "depois_db": -89.6,
+   "salto_amostra": 0.0
+  },
+  {
+   "s": 53.9,
+   "antes_db": -84.5,
+   "depois_db": -81.0,
+   "salto_amostra": 0.0
+  }
+ ],
+ "espaco_entre_tomadas": "0 quadros: cada trecho começa no quadro seguinte ao fim do anterior (decupagem.json, out_q contíguos)",
+ "out_q_continuos": true
+}

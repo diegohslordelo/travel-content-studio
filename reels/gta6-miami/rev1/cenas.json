@@ -1,0 +1,379 @@
+{
+ "_doc": "Cenas do Reel GTA 6 × Miami (REV1). 'ini' é uma âncora: 'palavra#n' (n-ésima vez que a palavra é dita no Reel, forma falada), 'Txx' (1ª palavra da tomada) ou 'Txx.k' (k-ésimo trecho da tomada), com deslocamento opcional '+s'/'-s'. Sem deslocamento, a troca cai 0,07 s antes da palavra. A cena vai até o início da seguinte. Marcos usam a mesma sintaxe e viram segundos desde o início da cena.",
+ "cenas": [
+  {
+   "id": "gancho",
+   "ini": "0",
+   "tipo": "clipe",
+   "clipe": "letreiro_gancho"
+  },
+  {
+   "id": "inspirada",
+   "ini": "vice#1",
+   "tipo": "clipe",
+   "clipe": "ocean_neon"
+  },
+  {
+   "id": "transformando",
+   "ini": "agora#1",
+   "tipo": "clipe",
+   "clipe": "drone_cidade"
+  },
+  {
+   "id": "racha",
+   "ini": "mas#1",
+   "tipo": "clipe",
+   "clipe": "drone_racha",
+   "racha": "partindo#1"
+  },
+  {
+   "id": "contador",
+   "ini": "a#2",
+   "tipo": "anim",
+   "anim": "contador",
+   "marcos": {
+    "gira": "novecentos#1",
+    "trava": "mil#1",
+    "dolares": "dólares#1"
+   }
+  },
+  {
+   "id": "letreiro",
+   "ini": "por#1",
+   "tipo": "clipe",
+   "clipe": "drone_telhado"
+  },
+  {
+   "id": "975_camera",
+   "ini": "T04",
+   "tipo": "diego",
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "id": "banana",
+   "ini": "beleza#1",
+   "tipo": "anim",
+   "anim": "banana",
+   "marcos": {
+    "banana": "banana#1"
+   }
+  },
+  {
+   "id": "votacao",
+   "ini": "mas#2",
+   "tipo": "anim",
+   "anim": "barra",
+   "marcos": {
+    "gap": "vinte#1",
+    "voto": "obrigaria#1"
+   }
+  },
+  {
+   "id": "condado",
+   "ini": "T06",
+   "tipo": "anim",
+   "anim": "condado",
+   "marcos": {
+    "espalha": "espalhar#1",
+    "aeroporto": "aeroporto#1",
+    "trens": "trens#1",
+    "predios": "prédios#1"
+   }
+  },
+  {
+   "id": "reacao",
+   "ini": "T07",
+   "tipo": "diego",
+   "zoom": [
+    1.18,
+    1.26
+   ]
+  },
+  {
+   "id": "xerife",
+   "ini": "jogo#2",
+   "tipo": "anim",
+   "anim": "xerife",
+   "marcos": {
+    "gta": "+0",
+    "crime": "crime#1"
+   }
+  },
+  {
+   "id": "carta",
+   "ini": "T07.2",
+   "tipo": "anim",
+   "anim": "carta",
+   "marcos": {
+    "carta": "justiça#1",
+    "prefeita": "prefeita#1",
+    "abre": "falando#1",
+    "texto": "jogo#3",
+    "nao": "não#1"
+   }
+  },
+  {
+   "id": "continuou",
+   "ini": "T08.1",
+   "tipo": "clipe",
+   "clipe": "carros_noite",
+   "luz": true
+  },
+  {
+   "id": "restaurantes",
+   "ini": "restaurantes#1",
+   "tipo": "anim",
+   "anim": "comparar",
+   "fotos": [
+    "imagens/burgershot.jpg",
+    "imagens/cluckinbell.jpg"
+   ],
+   "focos": [
+    [
+     0.55,
+     0.3
+    ],
+    [
+     0.62,
+     0.42
+    ]
+   ],
+   "marcos": {
+    "troca": "temáticos#1"
+   }
+  },
+  {
+   "id": "cadeiras",
+   "ini": "cadeiras#1",
+   "tipo": "foto",
+   "arquivo": "imagens/cadeiras.jpg",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.25,
+    0.55
+   ],
+   "foco_fim": [
+    0.2,
+    0.6
+   ]
+  },
+  {
+   "id": "placas",
+   "ini": "T08.2",
+   "tipo": "clipe",
+   "clipe": "carros_dia"
+  },
+  {
+   "id": "ganha",
+   "ini": "T09",
+   "tipo": "foto",
+   "arquivo": "imagens/dirigivel.jpg",
+   "kb": [
+    1.0,
+    1.1
+   ],
+   "foco": [
+    0.5,
+    0.75
+   ],
+   "foco_fim": [
+    0.55,
+    0.3
+   ]
+  },
+  {
+   "id": "pisar",
+   "ini": "porque#1",
+   "tipo": "clipe",
+   "clipe": "aviao_faixa"
+  },
+  {
+   "id": "viver",
+   "ini": "vai#1",
+   "tipo": "clipe",
+   "clipe": "salva_vidas"
+  },
+  {
+   "id": "marcado",
+   "ini": "marcado#1",
+   "tipo": "clipe",
+   "clipe": "onibus"
+  },
+  {
+   "id": "cta",
+   "ini": "T10",
+   "tipo": "foto",
+   "arquivo": "imagens/letreiro_cta.jpg",
+   "kb": [
+    1.0,
+    1.1
+   ],
+   "foco": [
+    0.45,
+    0.25
+   ]
+  }
+ ],
+ "fim_apos_fala_s": 1.0,
+ "gancho": {
+  "topo": 330,
+  "linhas": [
+   {
+    "texto": "ESSE É O",
+    "tam": 84,
+    "ini": "0"
+   },
+   {
+    "texto": "MAIOR",
+    "tam": 190,
+    "ini": "maior#1",
+    "grad": true
+   },
+   {
+    "texto": "LANÇAMENTO",
+    "tam": 128,
+    "ini": "lançamento#1"
+   },
+   {
+    "texto": "DA HISTÓRIA DOS VIDEOGAMES",
+    "tam": 70,
+    "ini": "da#1"
+   }
+  ]
+ },
+ "numero": {
+  "partes": [
+   {
+    "texto": "975",
+    "em": "T04+0.02"
+   },
+   {
+    "texto": "MIL",
+    "em": "mil#2-0.09"
+   }
+  ]
+ },
+ "batidas": {
+  "_doc": "Picos de entonação do '975 mil' para a câmera, medidos na energia da voz (scripts/montar.py imprime os picos): NO-ve-CEN-tos e se-TEN-ta e CIN-co MIL.",
+  "s": [
+   15.64,
+   16.1,
+   17.18,
+   17.55,
+   17.76
+  ]
+ },
+ "impacto_dolares": "dólares#1",
+ "cta": {
+  "rotulo": "MANDA ESSE VÍDEO",
+  "destino": "MIAMI",
+  "entrada_ms": 200
+ },
+ "legenda": {
+  "escrita": {
+   "novecentos e setenta e cinco mil": "975 mil",
+   "vinte e cinco mil": "25 mil",
+   "gê tê á": "GTA",
+   "rockstar": "Rockstar",
+   "miami": "Miami",
+   "vice": "Vice",
+   "city": "City",
+   "heat": "Heat",
+   "justiça": "Justiça"
+  },
+  "troca_palavra": {
+   "T09:um": "o"
+  },
+  "juntos": [
+   [
+    "vice",
+    "city"
+   ],
+   [
+    "miami",
+    "heat"
+   ]
+  ],
+  "funcionais": [
+   "a",
+   "o",
+   "os",
+   "as",
+   "e",
+   "de",
+   "do",
+   "da",
+   "dos",
+   "das",
+   "em",
+   "na",
+   "no",
+   "nas",
+   "que",
+   "pra",
+   "um",
+   "uma",
+   "com",
+   "por",
+   "pelo",
+   "pelos",
+   "se",
+   "é",
+   "foi",
+   "isso",
+   "quem",
+   "vai",
+   "tá"
+  ],
+  "destaques": [
+   "975 mil",
+   "25 mil",
+   "GTA",
+   "Vice City",
+   "Miami",
+   "banana",
+   "crime",
+   "não",
+   "aeroporto",
+   "trens",
+   "prédios",
+   "Rockstar",
+   "Heat",
+   "votar",
+   "xerife",
+   "fórum",
+   "restaurantes",
+   "cadeiras",
+   "placas",
+   "carro",
+   "história",
+   "maior",
+   "letreiro",
+   "arena",
+   "Justiça",
+   "prefeita",
+   "carta",
+   "praia",
+   "briga",
+   "ganha",
+   "meio",
+   "dólares",
+   "condado",
+   "reação",
+   "momento",
+   "semanas",
+   "isso",
+   "videogames",
+   "transformando",
+   "marca"
+  ],
+  "max_palavras": 4,
+  "max_chars": 22
+ }
+}

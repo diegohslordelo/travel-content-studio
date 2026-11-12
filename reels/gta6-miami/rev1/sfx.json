@@ -1,0 +1,85 @@
+{
+ "_doc": "Efeitos: s = segundo do Reel; db relativo ao loudness da voz.",
+ "fim_s": 57.63333333333333,
+ "efeitos": [
+  {
+   "som": "PDX_swish",
+   "s": 7.883333333333334,
+   "db": -6,
+   "nota": "racha ao meio ('partindo')"
+  },
+  {
+   "som": "PDX_impacto",
+   "s": 12.592,
+   "db": -4,
+   "nota": "DÓLARES"
+  },
+  {
+   "som": "PDX_impacto",
+   "s": 15.64,
+   "db": -4,
+   "nota": "batida do 975 mil"
+  },
+  {
+   "som": "PDX_impacto",
+   "s": 16.1,
+   "db": -4,
+   "nota": "batida do 975 mil"
+  },
+  {
+   "som": "PDX_impacto",
+   "s": 17.18,
+   "db": -4,
+   "nota": "batida do 975 mil"
+  },
+  {
+   "som": "PDX_impacto",
+   "s": 17.55,
+   "db": -4,
+   "nota": "batida do 975 mil"
+  },
+  {
+   "som": "PDX_impacto",
+   "s": 17.76,
+   "db": -4,
+   "nota": "batida do 975 mil"
+  },
+  {
+   "som": "PDX_obturador",
+   "s": 20.978333333333335,
+   "db": -8,
+   "nota": "25 MIL"
+  },
+  {
+   "som": "PDX_swish",
+   "s": 25.485,
+   "db": -6,
+   "nota": "a marca se espalha"
+  },
+  {
+   "som": "PDX_impacto",
+   "s": 32.62133333333333,
+   "db": -4,
+   "nota": "CRIME"
+  },
+  {
+   "som": "PDX_impacto",
+   "s": 37.42566666666667,
+   "db": -4,
+   "nota": "carimbo NÃO"
+  },
+  {
+   "som": "PDX_ar_longo",
+   "s": 37.733333333333334,
+   "db": -6,
+   "nota": "Luz de passagem (pico no corte)",
+   "pico": true
+  },
+  {
+   "som": "PD_clack",
+   "s": 54.379999999999995,
+   "db": -6,
+   "nota": "placa do CTA (DS V2)"
+  }
+ ]
+}

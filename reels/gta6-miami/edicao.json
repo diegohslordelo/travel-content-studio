@@ -1,0 +1,110 @@
+{
+ "_doc": "Decupagem da fala do Diego (fonte/diego_E194BAEE.mp4, gravação de 12/11/2026, 90,7 s, 30 qps). Cada tomada: janela de busca na gravação e o texto falado (forma falada, para o alinhamento forçado). 'escrita' troca a forma falada pela forma da legenda. 'cortar' lista trechos de palavras que saem do Reel (com o motivo).",
+ "fonte": "fonte/diego_E194BAEE.mp4",
+ "tomadas": [
+  {
+   "id": "T01",
+   "janela": [
+    1.4,
+    5.2
+   ],
+   "texto": "esse é o maior lançamento da história dos videogames"
+  },
+  {
+   "id": "T02",
+   "janela": [
+    8.0,
+    16.0
+   ],
+   "texto": "vice city foi inspirado em miami agora miami está se transformando na própria vice city mas está partindo a cidade no meio"
+  },
+  {
+   "id": "T03",
+   "janela": [
+    18.3,
+    26.3
+   ],
+   "texto": "a rockstar pagou novecentos e setenta e cinco mil dólares por um letreiro em cima da arena do miami heat"
+  },
+  {
+   "id": "T04",
+   "janela": [
+    29.9,
+    33.0
+   ],
+   "texto": "novecentos e setenta e cinco mil"
+  },
+  {
+   "id": "T05",
+   "janela": [
+    35.0,
+    42.8
+   ],
+   "texto": "beleza que isso é preço de banana pra rockstar mas isso foi vinte e cinco mil abaixo do que obrigaria o conselho do condado a votar"
+  },
+  {
+   "id": "T06",
+   "janela": [
+    44.2,
+    51.3
+   ],
+   "texto": "e o condado queria mais espalhar a marca do jogo pelo aeroporto pelos trens pelos prédios públicos incluindo de tribunais"
+  },
+  {
+   "id": "T07",
+   "janela": [
+    52.8,
+    62.5
+   ],
+   "texto": "e aí veio a reação o xerife disse que gê tê á é um jogo construído em torno do crime e a própria justiça mandou uma carta pra prefeita falando que jogo de crime dentro do fórum não"
+  },
+  {
+   "id": "T08",
+   "janela": [
+    63.7,
+    72.9
+   ],
+   "texto": "mas a cidade continuou se transformando restaurantes temáticos dentro da arena cadeiras de praia com o nome de vice city e até placas de carro com o nome da cidade"
+  },
+  {
+   "id": "T09",
+   "janela": [
+    74.6,
+    83.4
+   ],
+   "texto": "mas quem ganha nessa briga é quem tá em miami agora porque quem pisar na cidade nas próximas semanas vai viver um momento que vai ficar marcado pra história dos videogames e da cidade"
+  },
+  {
+   "id": "T10",
+   "janela": [
+    85.0,
+    88.8
+   ],
+   "texto": "manda esse vídeo pra quem iria pra miami só pra viver isso"
+  }
+ ],
+ "hdr_para_sdr": "zscale=t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p",
+ "_hdr": "A gravação é HLG/BT.2020 (10 bits). Conversão técnica para SDR/BT.709 com branco de referência 203 nits (BT.2408) e tone mapping Hable, sem ajuste de cor: o Diego já fez a cor (pedido de 12/11/2026).",
+ "cortes": [
+  {
+   "tomada": "T06",
+   "de_palavra": "incluindo",
+   "ate_palavra": "tribunais",
+   "fim_antes": 49.75,
+   "motivo": "Fato: nenhuma fonte diz que o condado quis pôr a marca em tribunais. A carta da Justiça (NBC 6) pediu que os tribunais ficassem expressamente fora, de forma preventiva. O corte cai no fim do 's' de 'públicos' (49,67–49,75 s, medido pela energia acima de 4 kHz). A frase seguinte ('e a própria Justiça mandou uma carta... dentro do fórum, não') continua com sentido."
+  }
+ ],
+ "pausas_internas": {
+  "_doc": "Pausas de silêncio digital dentro de uma tomada acima de 0,2 s são removidas: a fala segue colada, como entre tomadas.",
+  "limiar_s": 0.2
+ },
+ "bordas": {
+  "_doc": "Início = 1º quadro de 10 ms acima de -60 dB (banda 120–4000 Hz) antes da 1ª palavra; fim = queda abaixo de -62 dB por 30 ms depois da última palavra. Entrada arredondada para baixo e saída para cima no quadro de 1/30 s (nada da palavra é cortado; sobra no máximo 33 ms).",
+  "entra_db": -60,
+  "sai_db": -62
+ },
+ "fim_manual": {
+  "T04:mil": 33.03
+ },
+ "_fim_manual": "T04: depois de 'mil' a voz decai até -55 dB em 33,03 s; o som de 33,2–33,45 s não é palavra (o Whisper não ouve nada ali) e fica fora. Conferir no ouvido."
+}

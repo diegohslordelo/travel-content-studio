@@ -1,0 +1,1521 @@
+[
+ {
+  "tomada": "T01",
+  "falado": "esse",
+  "ini": 2.204,
+  "fim": 2.385,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T01",
+  "falado": "é",
+  "ini": 2.405,
+  "fim": 2.425,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T01",
+  "falado": "o",
+  "ini": 2.486,
+  "fim": 2.506,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T01",
+  "falado": "maior",
+  "ini": 2.546,
+  "fim": 2.928,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T01",
+  "falado": "lançamento",
+  "ini": 2.988,
+  "fim": 3.491,
+  "conf": 0.952
+ },
+ {
+  "tomada": "T01",
+  "falado": "da",
+  "ini": 3.531,
+  "fim": 3.592,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T01",
+  "falado": "história",
+  "ini": 3.652,
+  "fim": 4.094,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T01",
+  "falado": "dos",
+  "ini": 4.134,
+  "fim": 4.255,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T01",
+  "falado": "videogames",
+  "ini": 4.295,
+  "fim": 4.939,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T02",
+  "falado": "vice",
+  "ini": 9.303,
+  "fim": 9.544,
+  "conf": 0.888
+ },
+ {
+  "tomada": "T02",
+  "falado": "city",
+  "ini": 9.684,
+  "fim": 9.865,
+  "conf": 0.171
+ },
+ {
+  "tomada": "T02",
+  "falado": "foi",
+  "ini": 9.925,
+  "fim": 10.025,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T02",
+  "falado": "inspirado",
+  "ini": 10.065,
+  "fim": 10.607,
+  "conf": 0.946
+ },
+ {
+  "tomada": "T02",
+  "falado": "em",
+  "ini": 10.647,
+  "fim": 10.687,
+  "conf": 0.5
+ },
+ {
+  "tomada": "T02",
+  "falado": "miami",
+  "ini": 10.727,
+  "fim": 11.088,
+  "conf": 0.8
+ },
+ {
+  "tomada": "T02",
+  "falado": "agora",
+  "ini": 11.148,
+  "fim": 11.348,
+  "conf": 0.998
+ },
+ {
+  "tomada": "T02",
+  "falado": "miami",
+  "ini": 11.429,
+  "fim": 11.87,
+  "conf": 0.857
+ },
+ {
+  "tomada": "T02",
+  "falado": "está",
+  "ini": 11.89,
+  "fim": 11.99,
+  "conf": 0.343
+ },
+ {
+  "tomada": "T02",
+  "falado": "se",
+  "ini": 12.07,
+  "fim": 12.13,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T02",
+  "falado": "transformando",
+  "ini": 12.19,
+  "fim": 12.632,
+  "conf": 0.971
+ },
+ {
+  "tomada": "T02",
+  "falado": "na",
+  "ini": 12.692,
+  "fim": 12.752,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T02",
+  "falado": "própria",
+  "ini": 12.912,
+  "fim": 13.213,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T02",
+  "falado": "vice",
+  "ini": 13.273,
+  "fim": 13.534,
+  "conf": 0.787
+ },
+ {
+  "tomada": "T02",
+  "falado": "city",
+  "ini": 13.654,
+  "fim": 13.855,
+  "conf": 0.248
+ },
+ {
+  "tomada": "T02",
+  "falado": "mas",
+  "ini": 13.935,
+  "fim": 14.055,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T02",
+  "falado": "está",
+  "ini": 14.115,
+  "fim": 14.276,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T02",
+  "falado": "partindo",
+  "ini": 14.436,
+  "fim": 14.957,
+  "conf": 0.991
+ },
+ {
+  "tomada": "T02",
+  "falado": "a",
+  "ini": 14.997,
+  "fim": 15.018,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T02",
+  "falado": "cidade",
+  "ini": 15.078,
+  "fim": 15.398,
+  "conf": 0.998
+ },
+ {
+  "tomada": "T02",
+  "falado": "no",
+  "ini": 15.479,
+  "fim": 15.539,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T02",
+  "falado": "meio",
+  "ini": 15.619,
+  "fim": 15.799,
+  "conf": 0.998
+ },
+ {
+  "tomada": "T03",
+  "falado": "a",
+  "ini": 19.984,
+  "fim": 20.004,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T03",
+  "falado": "rockstar",
+  "ini": 20.084,
+  "fim": 20.506,
+  "conf": 0.776
+ },
+ {
+  "tomada": "T03",
+  "falado": "pagou",
+  "ini": 20.586,
+  "fim": 20.846,
+  "conf": 0.933
+ },
+ {
+  "tomada": "T03",
+  "falado": "novecentos",
+  "ini": 20.947,
+  "fim": 21.648,
+  "conf": 0.989
+ },
+ {
+  "tomada": "T03",
+  "falado": "e",
+  "ini": 21.709,
+  "fim": 21.729,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T03",
+  "falado": "setenta",
+  "ini": 21.809,
+  "fim": 22.11,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T03",
+  "falado": "e",
+  "ini": 22.17,
+  "fim": 22.19,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T03",
+  "falado": "cinco",
+  "ini": 22.29,
+  "fim": 22.531,
+  "conf": 0.999
+ },
+ {
+  "tomada": "T03",
+  "falado": "mil",
+  "ini": 22.751,
+  "fim": 22.932,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T03",
+  "falado": "dólares",
+  "ini": 23.092,
+  "fim": 23.473,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T03",
+  "falado": "por",
+  "ini": 23.553,
+  "fim": 23.653,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T03",
+  "falado": "um",
+  "ini": 23.693,
+  "fim": 23.754,
+  "conf": 0.997
+ },
+ {
+  "tomada": "T03",
+  "falado": "letreiro",
+  "ini": 23.814,
+  "fim": 24.235,
+  "conf": 0.998
+ },
+ {
+  "tomada": "T03",
+  "falado": "em",
+  "ini": 24.275,
+  "fim": 24.315,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T03",
+  "falado": "cima",
+  "ini": 24.516,
+  "fim": 24.736,
+  "conf": 0.998
+ },
+ {
+  "tomada": "T03",
+  "falado": "da",
+  "ini": 24.816,
+  "fim": 24.876,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T03",
+  "falado": "arena",
+  "ini": 24.957,
+  "fim": 25.157,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T03",
+  "falado": "do",
+  "ini": 25.217,
+  "fim": 25.277,
+  "conf": 0.979
+ },
+ {
+  "tomada": "T03",
+  "falado": "miami",
+  "ini": 25.318,
+  "fim": 25.618,
+  "conf": 0.865
+ },
+ {
+  "tomada": "T03",
+  "falado": "heat",
+  "ini": 25.719,
+  "fim": 26.3,
+  "conf": 0.001
+ },
+ {
+  "tomada": "T04",
+  "falado": "novecentos",
+  "ini": 30.464,
+  "fim": 31.39,
+  "conf": 0.994
+ },
+ {
+  "tomada": "T04",
+  "falado": "e",
+  "ini": 31.51,
+  "fim": 31.531,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T04",
+  "falado": "setenta",
+  "ini": 31.651,
+  "fim": 32.014,
+  "conf": 0.997
+ },
+ {
+  "tomada": "T04",
+  "falado": "e",
+  "ini": 32.054,
+  "fim": 32.074,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T04",
+  "falado": "cinco",
+  "ini": 32.195,
+  "fim": 32.416,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T04",
+  "falado": "mil",
+  "ini": 32.517,
+  "fim": 32.698,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "beleza",
+  "ini": 36.885,
+  "fim": 37.206,
+  "conf": 0.988
+ },
+ {
+  "tomada": "T05",
+  "falado": "que",
+  "ini": 37.266,
+  "fim": 37.326,
+  "conf": 0.001
+ },
+ {
+  "tomada": "T05",
+  "falado": "isso",
+  "ini": 37.346,
+  "fim": 37.446,
+  "conf": 0.959
+ },
+ {
+  "tomada": "T05",
+  "falado": "é",
+  "ini": 37.486,
+  "fim": 37.506,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "preço",
+  "ini": 37.607,
+  "fim": 37.827,
+  "conf": 0.997
+ },
+ {
+  "tomada": "T05",
+  "falado": "de",
+  "ini": 37.867,
+  "fim": 37.907,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "banana",
+  "ini": 37.988,
+  "fim": 38.288,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "pra",
+  "ini": 38.349,
+  "fim": 38.449,
+  "conf": 0.733
+ },
+ {
+  "tomada": "T05",
+  "falado": "rockstar",
+  "ini": 38.469,
+  "fim": 38.87,
+  "conf": 0.658
+ },
+ {
+  "tomada": "T05",
+  "falado": "mas",
+  "ini": 38.93,
+  "fim": 39.05,
+  "conf": 0.667
+ },
+ {
+  "tomada": "T05",
+  "falado": "isso",
+  "ini": 39.07,
+  "fim": 39.171,
+  "conf": 0.25
+ },
+ {
+  "tomada": "T05",
+  "falado": "foi",
+  "ini": 39.231,
+  "fim": 39.331,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "vinte",
+  "ini": 39.411,
+  "fim": 39.572,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "e",
+  "ini": 39.612,
+  "fim": 39.632,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "cinco",
+  "ini": 39.672,
+  "fim": 39.872,
+  "conf": 0.998
+ },
+ {
+  "tomada": "T05",
+  "falado": "mil",
+  "ini": 39.933,
+  "fim": 40.053,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "abaixo",
+  "ini": 40.113,
+  "fim": 40.454,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "do",
+  "ini": 40.494,
+  "fim": 40.554,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "que",
+  "ini": 40.614,
+  "fim": 40.675,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "obrigaria",
+  "ini": 40.715,
+  "fim": 41.035,
+  "conf": 0.751
+ },
+ {
+  "tomada": "T05",
+  "falado": "o",
+  "ini": 41.056,
+  "fim": 41.076,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "conselho",
+  "ini": 41.116,
+  "fim": 41.577,
+  "conf": 0.952
+ },
+ {
+  "tomada": "T05",
+  "falado": "do",
+  "ini": 41.617,
+  "fim": 41.657,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "condado",
+  "ini": 41.757,
+  "fim": 42.118,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "a",
+  "ini": 42.158,
+  "fim": 42.178,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T05",
+  "falado": "votar",
+  "ini": 42.239,
+  "fim": 42.579,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T06",
+  "falado": "e",
+  "ini": 44.802,
+  "fim": 44.822,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T06",
+  "falado": "o",
+  "ini": 44.882,
+  "fim": 44.902,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T06",
+  "falado": "condado",
+  "ini": 45.002,
+  "fim": 45.363,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T06",
+  "falado": "queria",
+  "ini": 45.423,
+  "fim": 45.644,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T06",
+  "falado": "mais",
+  "ini": 45.744,
+  "fim": 46.065,
+  "conf": 0.998
+ },
+ {
+  "tomada": "T06",
+  "falado": "espalhar",
+  "ini": 46.085,
+  "fim": 46.286,
+  "conf": 0.365
+ },
+ {
+  "tomada": "T06",
+  "falado": "a",
+  "ini": 46.326,
+  "fim": 46.346,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T06",
+  "falado": "marca",
+  "ini": 46.446,
+  "fim": 46.707,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T06",
+  "falado": "do",
+  "ini": 46.747,
+  "fim": 46.807,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T06",
+  "falado": "jogo",
+  "ini": 46.888,
+  "fim": 47.068,
+  "conf": 0.992
+ },
+ {
+  "tomada": "T06",
+  "falado": "pelo",
+  "ini": 47.108,
+  "fim": 47.249,
+  "conf": 0.993
+ },
+ {
+  "tomada": "T06",
+  "falado": "aeroporto",
+  "ini": 47.269,
+  "fim": 47.83,
+  "conf": 0.89
+ },
+ {
+  "tomada": "T06",
+  "falado": "pelos",
+  "ini": 47.91,
+  "fim": 48.151,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T06",
+  "falado": "trens",
+  "ini": 48.251,
+  "fim": 48.452,
+  "conf": 0.641
+ },
+ {
+  "tomada": "T06",
+  "falado": "pelos",
+  "ini": 48.512,
+  "fim": 48.753,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T06",
+  "falado": "prédios",
+  "ini": 48.853,
+  "fim": 49.174,
+  "conf": 0.998
+ },
+ {
+  "tomada": "T06",
+  "falado": "públicos",
+  "ini": 49.294,
+  "fim": 49.736,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T06",
+  "falado": "incluindo",
+  "ini": 49.796,
+  "fim": 50.297,
+  "conf": 0.994
+ },
+ {
+  "tomada": "T06",
+  "falado": "de",
+  "ini": 50.337,
+  "fim": 50.397,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T06",
+  "falado": "tribunais",
+  "ini": 50.458,
+  "fim": 51.079,
+  "conf": 0.995
+ },
+ {
+  "tomada": "T07",
+  "falado": "e",
+  "ini": 53.441,
+  "fim": 53.461,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T07",
+  "falado": "aí",
+  "ini": 53.521,
+  "fim": 53.562,
+  "conf": 0.5
+ },
+ {
+  "tomada": "T07",
+  "falado": "veio",
+  "ini": 53.662,
+  "fim": 53.762,
+  "conf": 0.366
+ },
+ {
+  "tomada": "T07",
+  "falado": "a",
+  "ini": 53.782,
+  "fim": 53.802,
+  "conf": 0.974
+ },
+ {
+  "tomada": "T07",
+  "falado": "reação",
+  "ini": 53.862,
+  "fim": 54.283,
+  "conf": 0.902
+ },
+ {
+  "tomada": "T07",
+  "falado": "o",
+  "ini": 54.423,
+  "fim": 54.443,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T07",
+  "falado": "xerife",
+  "ini": 54.524,
+  "fim": 54.764,
+  "conf": 0.72
+ },
+ {
+  "tomada": "T07",
+  "falado": "disse",
+  "ini": 54.824,
+  "fim": 54.985,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T07",
+  "falado": "que",
+  "ini": 55.025,
+  "fim": 55.105,
+  "conf": 0.871
+ },
+ {
+  "tomada": "T07",
+  "falado": "gê",
+  "ini": 55.185,
+  "fim": 55.245,
+  "conf": 0.491
+ },
+ {
+  "tomada": "T07",
+  "falado": "tê",
+  "ini": 55.345,
+  "fim": 55.405,
+  "conf": 0.5
+ },
+ {
+  "tomada": "T07",
+  "falado": "á",
+  "ini": 55.526,
+  "fim": 55.546,
+  "conf": 0.002
+ },
+ {
+  "tomada": "T07",
+  "falado": "é",
+  "ini": 55.626,
+  "fim": 55.646,
+  "conf": 0.001
+ },
+ {
+  "tomada": "T07",
+  "falado": "um",
+  "ini": 55.666,
+  "fim": 55.726,
+  "conf": 0.991
+ },
+ {
+  "tomada": "T07",
+  "falado": "jogo",
+  "ini": 55.786,
+  "fim": 55.967,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T07",
+  "falado": "construído",
+  "ini": 56.027,
+  "fim": 56.347,
+  "conf": 0.833
+ },
+ {
+  "tomada": "T07",
+  "falado": "em",
+  "ini": 56.387,
+  "fim": 56.448,
+  "conf": 0.922
+ },
+ {
+  "tomada": "T07",
+  "falado": "torno",
+  "ini": 56.488,
+  "fim": 56.668,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T07",
+  "falado": "do",
+  "ini": 56.708,
+  "fim": 56.768,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T07",
+  "falado": "crime",
+  "ini": 56.888,
+  "fim": 57.129,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T07",
+  "falado": "e",
+  "ini": 57.51,
+  "fim": 57.53,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T07",
+  "falado": "a",
+  "ini": 57.59,
+  "fim": 57.61,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T07",
+  "falado": "própria",
+  "ini": 57.65,
+  "fim": 57.87,
+  "conf": 0.995
+ },
+ {
+  "tomada": "T07",
+  "falado": "justiça",
+  "ini": 57.911,
+  "fim": 58.311,
+  "conf": 0.997
+ },
+ {
+  "tomada": "T07",
+  "falado": "mandou",
+  "ini": 58.351,
+  "fim": 58.532,
+  "conf": 0.84
+ },
+ {
+  "tomada": "T07",
+  "falado": "uma",
+  "ini": 58.552,
+  "fim": 58.632,
+  "conf": 0.951
+ },
+ {
+  "tomada": "T07",
+  "falado": "carta",
+  "ini": 58.732,
+  "fim": 58.973,
+  "conf": 0.999
+ },
+ {
+  "tomada": "T07",
+  "falado": "pra",
+  "ini": 59.053,
+  "fim": 59.133,
+  "conf": 0.643
+ },
+ {
+  "tomada": "T07",
+  "falado": "prefeita",
+  "ini": 59.193,
+  "fim": 59.594,
+  "conf": 0.967
+ },
+ {
+  "tomada": "T07",
+  "falado": "falando",
+  "ini": 59.694,
+  "fim": 59.955,
+  "conf": 0.99
+ },
+ {
+  "tomada": "T07",
+  "falado": "que",
+  "ini": 60.015,
+  "fim": 60.095,
+  "conf": 0.93
+ },
+ {
+  "tomada": "T07",
+  "falado": "jogo",
+  "ini": 60.235,
+  "fim": 60.456,
+  "conf": 0.983
+ },
+ {
+  "tomada": "T07",
+  "falado": "de",
+  "ini": 60.496,
+  "fim": 60.556,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T07",
+  "falado": "crime",
+  "ini": 60.636,
+  "fim": 60.877,
+  "conf": 0.999
+ },
+ {
+  "tomada": "T07",
+  "falado": "dentro",
+  "ini": 60.977,
+  "fim": 61.217,
+  "conf": 0.947
+ },
+ {
+  "tomada": "T07",
+  "falado": "do",
+  "ini": 61.257,
+  "fim": 61.318,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T07",
+  "falado": "fórum",
+  "ini": 61.458,
+  "fim": 61.718,
+  "conf": 0.4
+ },
+ {
+  "tomada": "T07",
+  "falado": "não",
+  "ini": 61.959,
+  "fim": 62.079,
+  "conf": 0.992
+ },
+ {
+  "tomada": "T08",
+  "falado": "mas",
+  "ini": 64.361,
+  "fim": 64.462,
+  "conf": 0.901
+ },
+ {
+  "tomada": "T08",
+  "falado": "a",
+  "ini": 64.482,
+  "fim": 64.522,
+  "conf": 0.81
+ },
+ {
+  "tomada": "T08",
+  "falado": "cidade",
+  "ini": 64.562,
+  "fim": 64.822,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "continuou",
+  "ini": 64.883,
+  "fim": 65.324,
+  "conf": 0.957
+ },
+ {
+  "tomada": "T08",
+  "falado": "se",
+  "ini": 65.364,
+  "fim": 65.424,
+  "conf": 0.923
+ },
+ {
+  "tomada": "T08",
+  "falado": "transformando",
+  "ini": 65.484,
+  "fim": 66.005,
+  "conf": 0.999
+ },
+ {
+  "tomada": "T08",
+  "falado": "restaurantes",
+  "ini": 66.085,
+  "fim": 66.466,
+  "conf": 0.993
+ },
+ {
+  "tomada": "T08",
+  "falado": "temáticos",
+  "ini": 66.526,
+  "fim": 66.967,
+  "conf": 0.996
+ },
+ {
+  "tomada": "T08",
+  "falado": "dentro",
+  "ini": 67.047,
+  "fim": 67.248,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "da",
+  "ini": 67.288,
+  "fim": 67.348,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "arena",
+  "ini": 67.408,
+  "fim": 67.669,
+  "conf": 0.998
+ },
+ {
+  "tomada": "T08",
+  "falado": "cadeiras",
+  "ini": 67.809,
+  "fim": 68.17,
+  "conf": 0.977
+ },
+ {
+  "tomada": "T08",
+  "falado": "de",
+  "ini": 68.21,
+  "fim": 68.25,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "praia",
+  "ini": 68.41,
+  "fim": 68.651,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "com",
+  "ini": 68.731,
+  "fim": 68.811,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "o",
+  "ini": 68.851,
+  "fim": 68.871,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "nome",
+  "ini": 68.911,
+  "fim": 69.092,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "de",
+  "ini": 69.132,
+  "fim": 69.172,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "vice",
+  "ini": 69.232,
+  "fim": 69.453,
+  "conf": 0.966
+ },
+ {
+  "tomada": "T08",
+  "falado": "city",
+  "ini": 69.593,
+  "fim": 69.873,
+  "conf": 0.609
+ },
+ {
+  "tomada": "T08",
+  "falado": "e",
+  "ini": 70.174,
+  "fim": 70.194,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "até",
+  "ini": 70.254,
+  "fim": 70.415,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "placas",
+  "ini": 70.615,
+  "fim": 70.996,
+  "conf": 0.996
+ },
+ {
+  "tomada": "T08",
+  "falado": "de",
+  "ini": 71.036,
+  "fim": 71.096,
+  "conf": 0.869
+ },
+ {
+  "tomada": "T08",
+  "falado": "carro",
+  "ini": 71.256,
+  "fim": 71.537,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "com",
+  "ini": 71.597,
+  "fim": 71.697,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "o",
+  "ini": 71.737,
+  "fim": 71.758,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "nome",
+  "ini": 71.818,
+  "fim": 71.978,
+  "conf": 0.999
+ },
+ {
+  "tomada": "T08",
+  "falado": "da",
+  "ini": 72.018,
+  "fim": 72.078,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T08",
+  "falado": "cidade",
+  "ini": 72.178,
+  "fim": 72.519,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T09",
+  "falado": "mas",
+  "ini": 75.241,
+  "fim": 75.382,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T09",
+  "falado": "quem",
+  "ini": 75.442,
+  "fim": 75.582,
+  "conf": 0.96
+ },
+ {
+  "tomada": "T09",
+  "falado": "ganha",
+  "ini": 75.682,
+  "fim": 75.883,
+  "conf": 0.802
+ },
+ {
+  "tomada": "T09",
+  "falado": "nessa",
+  "ini": 75.923,
+  "fim": 76.083,
+  "conf": 0.799
+ },
+ {
+  "tomada": "T09",
+  "falado": "briga",
+  "ini": 76.204,
+  "fim": 76.404,
+  "conf": 0.981
+ },
+ {
+  "tomada": "T09",
+  "falado": "é",
+  "ini": 76.424,
+  "fim": 76.444,
+  "conf": 0.0
+ },
+ {
+  "tomada": "T09",
+  "falado": "quem",
+  "ini": 76.464,
+  "fim": 76.585,
+  "conf": 0.998
+ },
+ {
+  "tomada": "T09",
+  "falado": "tá",
+  "ini": 76.685,
+  "fim": 76.745,
+  "conf": 0.5
+ },
+ {
+  "tomada": "T09",
+  "falado": "em",
+  "ini": 76.825,
+  "fim": 76.865,
+  "conf": 0.015
+ },
+ {
+  "tomada": "T09",
+  "falado": "miami",
+  "ini": 76.885,
+  "fim": 77.186,
+  "conf": 0.8
+ },
+ {
+  "tomada": "T09",
+  "falado": "agora",
+  "ini": 77.226,
+  "fim": 77.487,
+  "conf": 0.922
+ },
+ {
+  "tomada": "T09",
+  "falado": "porque",
+  "ini": 77.587,
+  "fim": 77.787,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T09",
+  "falado": "quem",
+  "ini": 77.867,
+  "fim": 77.988,
+  "conf": 0.601
+ },
+ {
+  "tomada": "T09",
+  "falado": "pisar",
+  "ini": 78.028,
+  "fim": 78.328,
+  "conf": 0.28
+ },
+ {
+  "tomada": "T09",
+  "falado": "na",
+  "ini": 78.389,
+  "fim": 78.429,
+  "conf": 0.48
+ },
+ {
+  "tomada": "T09",
+  "falado": "cidade",
+  "ini": 78.489,
+  "fim": 78.769,
+  "conf": 0.992
+ },
+ {
+  "tomada": "T09",
+  "falado": "nas",
+  "ini": 78.81,
+  "fim": 78.95,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T09",
+  "falado": "próximas",
+  "ini": 79.01,
+  "fim": 79.371,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T09",
+  "falado": "semanas",
+  "ini": 79.431,
+  "fim": 79.832,
+  "conf": 0.993
+ },
+ {
+  "tomada": "T09",
+  "falado": "vai",
+  "ini": 79.852,
+  "fim": 79.912,
+  "conf": 0.328
+ },
+ {
+  "tomada": "T09",
+  "falado": "viver",
+  "ini": 79.952,
+  "fim": 80.113,
+  "conf": 0.648
+ },
+ {
+  "tomada": "T09",
+  "falado": "um",
+  "ini": 80.133,
+  "fim": 80.173,
+  "conf": 0.014
+ },
+ {
+  "tomada": "T09",
+  "falado": "momento",
+  "ini": 80.193,
+  "fim": 80.453,
+  "conf": 0.941
+ },
+ {
+  "tomada": "T09",
+  "falado": "que",
+  "ini": 80.513,
+  "fim": 80.574,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T09",
+  "falado": "vai",
+  "ini": 80.614,
+  "fim": 80.694,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T09",
+  "falado": "ficar",
+  "ini": 80.734,
+  "fim": 80.914,
+  "conf": 0.999
+ },
+ {
+  "tomada": "T09",
+  "falado": "marcado",
+  "ini": 80.954,
+  "fim": 81.295,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T09",
+  "falado": "pra",
+  "ini": 81.375,
+  "fim": 81.496,
+  "conf": 0.848
+ },
+ {
+  "tomada": "T09",
+  "falado": "história",
+  "ini": 81.536,
+  "fim": 81.877,
+  "conf": 0.954
+ },
+ {
+  "tomada": "T09",
+  "falado": "dos",
+  "ini": 81.897,
+  "fim": 81.997,
+  "conf": 0.991
+ },
+ {
+  "tomada": "T09",
+  "falado": "videogames",
+  "ini": 82.017,
+  "fim": 82.558,
+  "conf": 0.911
+ },
+ {
+  "tomada": "T09",
+  "falado": "e",
+  "ini": 82.578,
+  "fim": 82.598,
+  "conf": 0.999
+ },
+ {
+  "tomada": "T09",
+  "falado": "da",
+  "ini": 82.638,
+  "fim": 82.698,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T09",
+  "falado": "cidade",
+  "ini": 82.799,
+  "fim": 83.119,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T10",
+  "falado": "manda",
+  "ini": 85.704,
+  "fim": 85.925,
+  "conf": 0.9
+ },
+ {
+  "tomada": "T10",
+  "falado": "esse",
+  "ini": 85.945,
+  "fim": 86.086,
+  "conf": 0.096
+ },
+ {
+  "tomada": "T10",
+  "falado": "vídeo",
+  "ini": 86.166,
+  "fim": 86.327,
+  "conf": 0.538
+ },
+ {
+  "tomada": "T10",
+  "falado": "pra",
+  "ini": 86.367,
+  "fim": 86.468,
+  "conf": 0.995
+ },
+ {
+  "tomada": "T10",
+  "falado": "quem",
+  "ini": 86.528,
+  "fim": 86.669,
+  "conf": 0.999
+ },
+ {
+  "tomada": "T10",
+  "falado": "iria",
+  "ini": 86.709,
+  "fim": 86.87,
+  "conf": 1.0
+ },
+ {
+  "tomada": "T10",
+  "falado": "pra",
+  "ini": 86.91,
+  "fim": 87.031,
+  "conf": 0.772
+ },
+ {
+  "tomada": "T10",
+  "falado": "miami",
+  "ini": 87.111,
+  "fim": 87.393,
+  "conf": 0.429
+ },
+ {
+  "tomada": "T10",
+  "falado": "só",
+  "ini": 87.533,
+  "fim": 87.594,
+  "conf": 0.5
+ },
+ {
+  "tomada": "T10",
+  "falado": "pra",
+  "ini": 87.674,
+  "fim": 87.754,
+  "conf": 0.995
+ },
+ {
+  "tomada": "T10",
+  "falado": "viver",
+  "ini": 87.815,
+  "fim": 88.116,
+  "conf": 0.763
+ },
+ {
+  "tomada": "T10",
+  "falado": "isso",
+  "ini": 88.137,
+  "fim": 88.8,
+  "conf": 0.201
+ }
+]

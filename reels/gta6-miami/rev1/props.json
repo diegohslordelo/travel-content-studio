@@ -1,0 +1,1516 @@
+{
+ "fps": 30,
+ "quadros": 1729,
+ "costura": 900,
+ "rostoY": 760,
+ "cenas": [
+  {
+   "id": "gancho",
+   "tipo": "clipe",
+   "ini_q": 0,
+   "fim_q": 84,
+   "arquivo": "clipes/letreiro_gancho.mp4"
+  },
+  {
+   "id": "inspirada",
+   "tipo": "clipe",
+   "ini_q": 84,
+   "fim_q": 139,
+   "arquivo": "clipes/ocean_neon.mp4"
+  },
+  {
+   "id": "transformando",
+   "tipo": "clipe",
+   "ini_q": 139,
+   "fim_q": 223,
+   "arquivo": "clipes/drone_cidade.mp4"
+  },
+  {
+   "id": "racha",
+   "tipo": "clipe",
+   "ini_q": 223,
+   "fim_q": 282,
+   "arquivo": "clipes/drone_racha.mp4",
+   "racha": 0.5
+  },
+  {
+   "id": "contador",
+   "tipo": "anim",
+   "ini_q": 282,
+   "fim_q": 389,
+   "anim": "contador",
+   "marcos": {
+    "gira": 1.047,
+    "trava": 2.851,
+    "dolares": 3.192
+   }
+  },
+  {
+   "id": "letreiro",
+   "tipo": "clipe",
+   "ini_q": 389,
+   "fim_q": 468,
+   "arquivo": "clipes/drone_telhado.mp4"
+  },
+  {
+   "id": "975_camera",
+   "tipo": "diego",
+   "ini_q": 468,
+   "fim_q": 551,
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "id": "banana",
+   "tipo": "anim",
+   "ini_q": 551,
+   "fim_q": 613,
+   "anim": "banana",
+   "marcos": {
+    "banana": 1.188
+   }
+  },
+  {
+   "id": "votacao",
+   "tipo": "anim",
+   "ini_q": 613,
+   "fim_q": 726,
+   "anim": "barra",
+   "marcos": {
+    "gap": 0.545,
+    "voto": 1.849
+   }
+  },
+  {
+   "id": "condado",
+   "tipo": "anim",
+   "ini_q": 726,
+   "fim_q": 875,
+   "anim": "condado",
+   "marcos": {
+    "espalha": 1.285,
+    "aeroporto": 2.469,
+    "trens": 3.451,
+    "predios": 4.053
+   }
+  },
+  {
+   "id": "reacao",
+   "tipo": "diego",
+   "ini_q": 875,
+   "fim_q": 943,
+   "zoom": [
+    1.18,
+    1.26
+   ]
+  },
+  {
+   "id": "xerife",
+   "tipo": "anim",
+   "ini_q": 943,
+   "fim_q": 989,
+   "anim": "xerife",
+   "marcos": {
+    "gta": 0.0,
+    "crime": 1.188
+   }
+  },
+  {
+   "id": "carta",
+   "tipo": "anim",
+   "ini_q": 989,
+   "fim_q": 1132,
+   "anim": "carta",
+   "marcos": {
+    "carta": 0.411,
+    "prefeita": 1.693,
+    "abre": 2.194,
+    "texto": 2.735,
+    "nao": 4.459
+   }
+  },
+  {
+   "id": "continuou",
+   "tipo": "clipe",
+   "ini_q": 1132,
+   "fim_q": 1181,
+   "arquivo": "clipes/carros_noite.mp4"
+  },
+  {
+   "id": "restaurantes",
+   "tipo": "anim",
+   "ini_q": 1181,
+   "fim_q": 1233,
+   "anim": "comparar",
+   "fotos": [
+    "imagens/burgershot.jpg",
+    "imagens/cluckinbell.jpg"
+   ],
+   "focos": [
+    [
+     0.55,
+     0.3
+    ],
+    [
+     0.62,
+     0.42
+    ]
+   ],
+   "marcos": {
+    "troca": 0.526
+   }
+  },
+  {
+   "id": "cadeiras",
+   "tipo": "foto",
+   "ini_q": 1233,
+   "fim_q": 1304,
+   "arquivo": "imagens/cadeiras.jpg",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.25,
+    0.55
+   ],
+   "foco_fim": [
+    0.2,
+    0.6
+   ]
+  },
+  {
+   "id": "placas",
+   "tipo": "clipe",
+   "ini_q": 1304,
+   "fim_q": 1378,
+   "arquivo": "clipes/carros_dia.mp4"
+  },
+  {
+   "id": "ganha",
+   "tipo": "foto",
+   "ini_q": 1378,
+   "fim_q": 1447,
+   "arquivo": "imagens/dirigivel.jpg",
+   "kb": [
+    1.0,
+    1.1
+   ],
+   "foco": [
+    0.5,
+    0.75
+   ],
+   "foco_fim": [
+    0.55,
+    0.3
+   ]
+  },
+  {
+   "id": "pisar",
+   "tipo": "clipe",
+   "ini_q": 1447,
+   "fim_q": 1514,
+   "arquivo": "clipes/aviao_faixa.mp4"
+  },
+  {
+   "id": "viver",
+   "tipo": "clipe",
+   "ini_q": 1514,
+   "fim_q": 1548,
+   "arquivo": "clipes/salva_vidas.mp4"
+  },
+  {
+   "id": "marcado",
+   "tipo": "clipe",
+   "ini_q": 1548,
+   "fim_q": 1617,
+   "arquivo": "clipes/onibus.mp4"
+  },
+  {
+   "id": "cta",
+   "tipo": "foto",
+   "ini_q": 1617,
+   "fim_q": 1729,
+   "arquivo": "imagens/letreiro_cta.jpg",
+   "kb": [
+    1.0,
+    1.1
+   ],
+   "foco": [
+    0.45,
+    0.25
+   ]
+  }
+ ],
+ "gancho": {
+  "topo": 330,
+  "fim": 2.8,
+  "linhas": [
+   {
+    "texto": "ESSE É O",
+    "tam": 84,
+    "ini": 0
+   },
+   {
+    "texto": "MAIOR",
+    "tam": 190,
+    "ini": 0.413,
+    "grad": true
+   },
+   {
+    "texto": "LANÇAMENTO",
+    "tam": 128,
+    "ini": 0.855
+   },
+   {
+    "texto": "DA HISTÓRIA DOS VIDEOGAMES",
+    "tam": 70,
+    "ini": 1.398
+   }
+  ]
+ },
+ "legendas": [
+  {
+   "ini": 0.021,
+   "fim": 0.805,
+   "palavras": [
+    {
+     "texto": "esse",
+     "destaque": false
+    },
+    {
+     "texto": "é",
+     "destaque": false
+    },
+    {
+     "texto": "o",
+     "destaque": false
+    },
+    {
+     "texto": "maior",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 0.805,
+   "fim": 1.951,
+   "palavras": [
+    {
+     "texto": "lançamento",
+     "destaque": false
+    },
+    {
+     "texto": "da",
+     "destaque": false
+    },
+    {
+     "texto": "história",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 1.951,
+   "fim": 2.82,
+   "palavras": [
+    {
+     "texto": "dos",
+     "destaque": false
+    },
+    {
+     "texto": "videogames",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 2.82,
+   "fim": 3.442,
+   "palavras": [
+    {
+     "texto": "Vice",
+     "destaque": true
+    },
+    {
+     "texto": "City",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 3.442,
+   "fim": 4.665,
+   "palavras": [
+    {
+     "texto": "foi",
+     "destaque": false
+    },
+    {
+     "texto": "inspirado",
+     "destaque": false
+    },
+    {
+     "texto": "em",
+     "destaque": false
+    },
+    {
+     "texto": "Miami",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 4.665,
+   "fim": 5.587,
+   "palavras": [
+    {
+     "texto": "agora",
+     "destaque": false
+    },
+    {
+     "texto": "Miami",
+     "destaque": true
+    },
+    {
+     "texto": "está",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 5.587,
+   "fim": 6.209,
+   "palavras": [
+    {
+     "texto": "se",
+     "destaque": false
+    },
+    {
+     "texto": "transformando",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 6.209,
+   "fim": 7.452,
+   "palavras": [
+    {
+     "texto": "na",
+     "destaque": false
+    },
+    {
+     "texto": "própria",
+     "destaque": false
+    },
+    {
+     "texto": "Vice",
+     "destaque": true
+    },
+    {
+     "texto": "City",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 7.452,
+   "fim": 8.514,
+   "palavras": [
+    {
+     "texto": "mas",
+     "destaque": false
+    },
+    {
+     "texto": "está",
+     "destaque": false
+    },
+    {
+     "texto": "partindo",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 8.514,
+   "fim": 9.434,
+   "palavras": [
+    {
+     "texto": "a",
+     "destaque": false
+    },
+    {
+     "texto": "cidade",
+     "destaque": false
+    },
+    {
+     "texto": "no",
+     "destaque": false
+    },
+    {
+     "texto": "meio",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 9.434,
+   "fim": 10.397,
+   "palavras": [
+    {
+     "texto": "a",
+     "destaque": false
+    },
+    {
+     "texto": "Rockstar",
+     "destaque": true
+    },
+    {
+     "texto": "pagou",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 10.397,
+   "fim": 13.003,
+   "palavras": [
+    {
+     "texto": "975 mil",
+     "destaque": true
+    },
+    {
+     "texto": "dólares",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 13.003,
+   "fim": 13.725,
+   "palavras": [
+    {
+     "texto": "por",
+     "destaque": false
+    },
+    {
+     "texto": "um",
+     "destaque": false
+    },
+    {
+     "texto": "letreiro",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 13.725,
+   "fim": 14.667,
+   "palavras": [
+    {
+     "texto": "em",
+     "destaque": false
+    },
+    {
+     "texto": "cima",
+     "destaque": false
+    },
+    {
+     "texto": "da",
+     "destaque": false
+    },
+    {
+     "texto": "arena",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 14.667,
+   "fim": 15.747,
+   "palavras": [
+    {
+     "texto": "do",
+     "destaque": false
+    },
+    {
+     "texto": "Miami",
+     "destaque": true
+    },
+    {
+     "texto": "Heat",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 15.747,
+   "fim": 18.402,
+   "palavras": [
+    {
+     "texto": "975 mil",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 18.402,
+   "fim": 18.783,
+   "palavras": [
+    {
+     "texto": "beleza",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 18.783,
+   "fim": 19.384,
+   "palavras": [
+    {
+     "texto": "que",
+     "destaque": false
+    },
+    {
+     "texto": "isso",
+     "destaque": true
+    },
+    {
+     "texto": "é",
+     "destaque": false
+    },
+    {
+     "texto": "preço",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 19.384,
+   "fim": 20.447,
+   "palavras": [
+    {
+     "texto": "de",
+     "destaque": false
+    },
+    {
+     "texto": "banana",
+     "destaque": true
+    },
+    {
+     "texto": "pra",
+     "destaque": false
+    },
+    {
+     "texto": "Rockstar",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 20.447,
+   "fim": 21.63,
+   "palavras": [
+    {
+     "texto": "mas",
+     "destaque": false
+    },
+    {
+     "texto": "isso",
+     "destaque": false
+    },
+    {
+     "texto": "foi",
+     "destaque": false
+    },
+    {
+     "texto": "25 mil",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 21.63,
+   "fim": 22.011,
+   "palavras": [
+    {
+     "texto": "abaixo",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 22.011,
+   "fim": 22.573,
+   "palavras": [
+    {
+     "texto": "do",
+     "destaque": false
+    },
+    {
+     "texto": "que",
+     "destaque": false
+    },
+    {
+     "texto": "obrigaria",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 22.573,
+   "fim": 23.134,
+   "palavras": [
+    {
+     "texto": "o",
+     "destaque": false
+    },
+    {
+     "texto": "conselho",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 23.134,
+   "fim": 24.152,
+   "palavras": [
+    {
+     "texto": "do",
+     "destaque": false
+    },
+    {
+     "texto": "condado",
+     "destaque": false
+    },
+    {
+     "texto": "a",
+     "destaque": false
+    },
+    {
+     "texto": "votar",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 24.152,
+   "fim": 25.094,
+   "palavras": [
+    {
+     "texto": "e",
+     "destaque": false
+    },
+    {
+     "texto": "o",
+     "destaque": false
+    },
+    {
+     "texto": "condado",
+     "destaque": true
+    },
+    {
+     "texto": "queria",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 25.094,
+   "fim": 25.676,
+   "palavras": [
+    {
+     "texto": "mais",
+     "destaque": false
+    },
+    {
+     "texto": "espalhar",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 25.676,
+   "fim": 26.458,
+   "palavras": [
+    {
+     "texto": "a",
+     "destaque": false
+    },
+    {
+     "texto": "marca",
+     "destaque": true
+    },
+    {
+     "texto": "do",
+     "destaque": false
+    },
+    {
+     "texto": "jogo",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 26.458,
+   "fim": 27.26,
+   "palavras": [
+    {
+     "texto": "pelo",
+     "destaque": false
+    },
+    {
+     "texto": "aeroporto",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 27.26,
+   "fim": 27.862,
+   "palavras": [
+    {
+     "texto": "pelos",
+     "destaque": false
+    },
+    {
+     "texto": "trens",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 27.862,
+   "fim": 29.124,
+   "palavras": [
+    {
+     "texto": "pelos",
+     "destaque": false
+    },
+    {
+     "texto": "prédios",
+     "destaque": true
+    },
+    {
+     "texto": "públicos",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 29.124,
+   "fim": 29.465,
+   "palavras": [
+    {
+     "texto": "e",
+     "destaque": false
+    },
+    {
+     "texto": "aí",
+     "destaque": false
+    },
+    {
+     "texto": "veio",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 29.465,
+   "fim": 30.106,
+   "palavras": [
+    {
+     "texto": "a",
+     "destaque": false
+    },
+    {
+     "texto": "reação",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 30.106,
+   "fim": 30.507,
+   "palavras": [
+    {
+     "texto": "o",
+     "destaque": false
+    },
+    {
+     "texto": "xerife",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 30.507,
+   "fim": 31.309,
+   "palavras": [
+    {
+     "texto": "disse",
+     "destaque": false
+    },
+    {
+     "texto": "que",
+     "destaque": false
+    },
+    {
+     "texto": "GTA",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 31.309,
+   "fim": 32.07,
+   "palavras": [
+    {
+     "texto": "é",
+     "destaque": false
+    },
+    {
+     "texto": "um",
+     "destaque": false
+    },
+    {
+     "texto": "jogo",
+     "destaque": false
+    },
+    {
+     "texto": "construído",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 32.07,
+   "fim": 32.927,
+   "palavras": [
+    {
+     "texto": "em",
+     "destaque": false
+    },
+    {
+     "texto": "torno",
+     "destaque": false
+    },
+    {
+     "texto": "do",
+     "destaque": false
+    },
+    {
+     "texto": "crime",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 32.927,
+   "fim": 33.768,
+   "palavras": [
+    {
+     "texto": "e",
+     "destaque": false
+    },
+    {
+     "texto": "a",
+     "destaque": false
+    },
+    {
+     "texto": "própria",
+     "destaque": false
+    },
+    {
+     "texto": "Justiça",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 33.768,
+   "fim": 34.47,
+   "palavras": [
+    {
+     "texto": "mandou",
+     "destaque": false
+    },
+    {
+     "texto": "uma",
+     "destaque": false
+    },
+    {
+     "texto": "carta",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 34.47,
+   "fim": 35.432,
+   "palavras": [
+    {
+     "texto": "pra",
+     "destaque": false
+    },
+    {
+     "texto": "prefeita",
+     "destaque": true
+    },
+    {
+     "texto": "falando",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 35.432,
+   "fim": 36.394,
+   "palavras": [
+    {
+     "texto": "que",
+     "destaque": false
+    },
+    {
+     "texto": "jogo",
+     "destaque": false
+    },
+    {
+     "texto": "de",
+     "destaque": false
+    },
+    {
+     "texto": "crime",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 36.394,
+   "fim": 37.376,
+   "palavras": [
+    {
+     "texto": "dentro",
+     "destaque": false
+    },
+    {
+     "texto": "do",
+     "destaque": false
+    },
+    {
+     "texto": "fórum",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 37.376,
+   "fim": 37.678,
+   "palavras": [
+    {
+     "texto": "não",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 37.678,
+   "fim": 38.681,
+   "palavras": [
+    {
+     "texto": "mas",
+     "destaque": false
+    },
+    {
+     "texto": "a",
+     "destaque": false
+    },
+    {
+     "texto": "cidade",
+     "destaque": false
+    },
+    {
+     "texto": "continuou",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 38.681,
+   "fim": 39.402,
+   "palavras": [
+    {
+     "texto": "se",
+     "destaque": false
+    },
+    {
+     "texto": "transformando",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 39.402,
+   "fim": 40.364,
+   "palavras": [
+    {
+     "texto": "restaurantes",
+     "destaque": true
+    },
+    {
+     "texto": "temáticos",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 40.364,
+   "fim": 41.126,
+   "palavras": [
+    {
+     "texto": "dentro",
+     "destaque": false
+    },
+    {
+     "texto": "da",
+     "destaque": false
+    },
+    {
+     "texto": "arena",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 41.126,
+   "fim": 42.048,
+   "palavras": [
+    {
+     "texto": "cadeiras",
+     "destaque": true
+    },
+    {
+     "texto": "de",
+     "destaque": false
+    },
+    {
+     "texto": "praia",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 42.048,
+   "fim": 42.449,
+   "palavras": [
+    {
+     "texto": "com",
+     "destaque": false
+    },
+    {
+     "texto": "o",
+     "destaque": false
+    },
+    {
+     "texto": "nome",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 42.449,
+   "fim": 43.457,
+   "palavras": [
+    {
+     "texto": "de",
+     "destaque": false
+    },
+    {
+     "texto": "Vice",
+     "destaque": true
+    },
+    {
+     "texto": "City",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 43.457,
+   "fim": 44.319,
+   "palavras": [
+    {
+     "texto": "e",
+     "destaque": false
+    },
+    {
+     "texto": "até",
+     "destaque": false
+    },
+    {
+     "texto": "placas",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 44.319,
+   "fim": 44.88,
+   "palavras": [
+    {
+     "texto": "de",
+     "destaque": false
+    },
+    {
+     "texto": "carro",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 44.88,
+   "fim": 45.301,
+   "palavras": [
+    {
+     "texto": "com",
+     "destaque": false
+    },
+    {
+     "texto": "o",
+     "destaque": false
+    },
+    {
+     "texto": "nome",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 45.301,
+   "fim": 45.891,
+   "palavras": [
+    {
+     "texto": "da",
+     "destaque": false
+    },
+    {
+     "texto": "cidade",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 45.891,
+   "fim": 46.573,
+   "palavras": [
+    {
+     "texto": "mas",
+     "destaque": false
+    },
+    {
+     "texto": "quem",
+     "destaque": false
+    },
+    {
+     "texto": "ganha",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 46.573,
+   "fim": 47.114,
+   "palavras": [
+    {
+     "texto": "nessa",
+     "destaque": false
+    },
+    {
+     "texto": "briga",
+     "destaque": true
+    },
+    {
+     "texto": "é",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 47.114,
+   "fim": 47.876,
+   "palavras": [
+    {
+     "texto": "quem",
+     "destaque": false
+    },
+    {
+     "texto": "tá",
+     "destaque": false
+    },
+    {
+     "texto": "em",
+     "destaque": false
+    },
+    {
+     "texto": "Miami",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 47.876,
+   "fim": 48.517,
+   "palavras": [
+    {
+     "texto": "agora",
+     "destaque": false
+    },
+    {
+     "texto": "porque",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 48.517,
+   "fim": 49.46,
+   "palavras": [
+    {
+     "texto": "quem",
+     "destaque": false
+    },
+    {
+     "texto": "pisar",
+     "destaque": false
+    },
+    {
+     "texto": "na",
+     "destaque": false
+    },
+    {
+     "texto": "cidade",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 49.46,
+   "fim": 50.502,
+   "palavras": [
+    {
+     "texto": "nas",
+     "destaque": false
+    },
+    {
+     "texto": "próximas",
+     "destaque": false
+    },
+    {
+     "texto": "semanas",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 50.502,
+   "fim": 51.163,
+   "palavras": [
+    {
+     "texto": "vai",
+     "destaque": false
+    },
+    {
+     "texto": "viver",
+     "destaque": false
+    },
+    {
+     "texto": "o",
+     "destaque": false
+    },
+    {
+     "texto": "momento",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 51.163,
+   "fim": 51.604,
+   "palavras": [
+    {
+     "texto": "que",
+     "destaque": false
+    },
+    {
+     "texto": "vai",
+     "destaque": false
+    },
+    {
+     "texto": "ficar",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 51.604,
+   "fim": 52.547,
+   "palavras": [
+    {
+     "texto": "marcado",
+     "destaque": false
+    },
+    {
+     "texto": "pra",
+     "destaque": false
+    },
+    {
+     "texto": "história",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 52.547,
+   "fim": 53.228,
+   "palavras": [
+    {
+     "texto": "dos",
+     "destaque": false
+    },
+    {
+     "texto": "videogames",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 53.228,
+   "fim": 53.921,
+   "palavras": [
+    {
+     "texto": "e",
+     "destaque": false
+    },
+    {
+     "texto": "da",
+     "destaque": false
+    },
+    {
+     "texto": "cidade",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 53.921,
+   "fim": 54.584,
+   "palavras": [
+    {
+     "texto": "manda",
+     "destaque": false
+    },
+    {
+     "texto": "esse",
+     "destaque": false
+    },
+    {
+     "texto": "vídeo",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 54.584,
+   "fim": 55.127,
+   "palavras": [
+    {
+     "texto": "pra",
+     "destaque": false
+    },
+    {
+     "texto": "quem",
+     "destaque": false
+    },
+    {
+     "texto": "iria",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 55.127,
+   "fim": 55.75,
+   "palavras": [
+    {
+     "texto": "pra",
+     "destaque": false
+    },
+    {
+     "texto": "Miami",
+     "destaque": true
+    }
+   ]
+  },
+  {
+   "ini": 55.75,
+   "fim": 56.354,
+   "palavras": [
+    {
+     "texto": "só",
+     "destaque": false
+    },
+    {
+     "texto": "pra",
+     "destaque": false
+    },
+    {
+     "texto": "viver",
+     "destaque": false
+    }
+   ]
+  },
+  {
+   "ini": 56.354,
+   "fim": 56.633,
+   "palavras": [
+    {
+     "texto": "isso",
+     "destaque": true
+    }
+   ]
+  }
+ ],
+ "numero": {
+  "ini": 15.6,
+  "fim": 18.366666666666667,
+  "partes": [
+   {
+    "texto": "975",
+    "em": 15.62
+   },
+   {
+    "texto": "MIL",
+    "em": 17.76
+   }
+  ]
+ },
+ "batidas": [
+  15.64,
+  16.1,
+  17.18,
+  17.55,
+  17.76
+ ],
+ "luz": [
+  37.733333333333334
+ ],
+ "cta": {
+  "ini": 53.9,
+  "rotulo": "MANDA ESSE VÍDEO",
+  "destino": "MIAMI",
+  "entrada": 200
+ }
+}

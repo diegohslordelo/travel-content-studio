@@ -1,0 +1,20 @@
+{
+ "voz_lufs": -15.3,
+ "master_lufs": -14.0,
+ "master_tp": -1.6,
+ "efeitos": [
+  "PDX_swish        7.88 s  -6 dB rel. voz  (evento -12.6 LUFS, ganho -8.7 dB)  racha ao meio ('partindo')",
+  "PDX_impacto     12.59 s  -4 dB rel. voz  (evento -11.2 LUFS, ganho -8.1 dB)  DÓLARES",
+  "PDX_impacto     15.64 s  -4 dB rel. voz  (evento -11.2 LUFS, ganho -8.1 dB)  batida do 975 mil",
+  "PDX_impacto     16.10 s  -4 dB rel. voz  (evento -11.2 LUFS, ganho -8.1 dB)  batida do 975 mil",
+  "PDX_impacto     17.18 s  -4 dB rel. voz  (evento -11.2 LUFS, ganho -8.1 dB)  batida do 975 mil",
+  "PDX_impacto     17.55 s  -4 dB rel. voz  (evento -11.2 LUFS, ganho -8.1 dB)  batida do 975 mil",
+  "PDX_impacto     17.76 s  -4 dB rel. voz  (evento -11.2 LUFS, ganho -8.1 dB)  batida do 975 mil",
+  "PDX_obturador   20.98 s  -8 dB rel. voz  (evento -20.2 LUFS, ganho -3.1 dB)  25 MIL",
+  "PDX_swish       25.48 s  -6 dB rel. voz  (evento -12.6 LUFS, ganho -8.7 dB)  a marca se espalha",
+  "PDX_impacto     32.62 s  -4 dB rel. voz  (evento -11.2 LUFS, ganho -8.1 dB)  CRIME",
+  "PDX_impacto     37.43 s  -4 dB rel. voz  (evento -11.2 LUFS, ganho -8.1 dB)  carimbo NÃO",
+  "PDX_ar_longo    37.73 s  -6 dB rel. voz  (evento -11.5 LUFS, ganho -9.8 dB)  Luz de passagem (pico no corte)",
+  "PD_clack        54.38 s  -6 dB rel. voz  (evento -17.9 LUFS, ganho -3.4 dB)  placa do CTA (DS V2)"
+ ]
+}
