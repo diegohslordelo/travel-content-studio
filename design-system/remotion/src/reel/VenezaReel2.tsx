@@ -62,6 +62,8 @@ export type Cena2 = {
   rotulo?: { txt: string; t: number };
   /** enquadramento vertical do clipe na área de cima (0 = topo, 0,5 = centro, 1 = base) */
   foco?: number;
+  /** REV3: imagem do Diego em preto e branco nesta cena (a legenda não muda) */
+  pb?: boolean;
 };
 type Sfx = { t: number; som: "impacto" | "swish" | "obturador" | "riser"; db: number };
 export type PropsVeneza2 = {
@@ -108,8 +110,8 @@ const FotoCobre: React.FC<{ src: string; W: number; H: number; zoom?: number; fo
   </div>
 );
 
-const Diego: React.FC<{ cheio: boolean; zoom: number }> = ({ cheio, zoom }) => (
-  <AbsoluteFill style={{ top: cheio ? 0 : COSTURA, overflow: "hidden" }}>
+const Diego: React.FC<{ cheio: boolean; zoom: number; pb?: boolean }> = ({ cheio, zoom, pb = false }) => (
+  <AbsoluteFill style={{ top: cheio ? 0 : COSTURA, overflow: "hidden", filter: pb ? "grayscale(1) contrast(1.08)" : undefined }}>
     {/* dividida: rosto (≈ y 610 no quadro) a 42% da metade de baixo */}
     <div style={{ position: "absolute", left: 0, top: cheio ? 0 : 700 - COSTURA, width: 1080, height: 1920, transform: `scale(${zoom})`, transformOrigin: "50% 32%" }}>
       <Video src={staticFile("diego.mp4")} muted style={{ width: 1080, height: 1920 }} />
@@ -536,7 +538,7 @@ export const VenezaReel2: React.FC<PropsVeneza2> = (p) => {
           <Audio src={SFX[s.som]} volume={Math.pow(10, s.db / 20)} />
         </Sequence>
       ))}
-      <Diego cheio={diegoCheio} zoom={zoomDiego} />
+      <Diego cheio={diegoCheio} zoom={zoomDiego} pb={!!cena.pb} />
       {!diegoCheio && (
         <Sequence key={cena.ini} from={fromC} durationInFrames={Math.max(1, Math.round(cena.fim * fps) - fromC + 2)} layout="none">
           {cena.tipo === "graf" ? <Grafismo c={cena} t={t} /> : <Apoio c={cena} t={t} />}
