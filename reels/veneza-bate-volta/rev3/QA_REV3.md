@@ -17,4 +17,11 @@ Todo o resto (cenas, imagens, textos, efeitos, regras de troca no corte) é o da
 
 ## Medições do vídeo final
 
-(preenchido depois do render)
+| Ponto | Resultado |
+|---|---|
+| Formato | 1080 × 1920, 30 qps, H.264 + AAC 48 kHz, 61,3 s (1.839 quadros) |
+| Áudio | −14,2 LUFS integrados, pico −1,5 dBFS (DS 4.6) |
+| Quadros pretos | nenhum (luminância mínima 40/255) |
+| Trocas de cena | todas no quadro planejado; nenhuma a menos de 0,5 s de um corte da gravação. Fora delas, o detector marca só gestos da mão do Diego (24,67 s, 24,87 s, 27,27 s) e a animação de abertura de duas cenas no mesmo quadro do corte (8,23 s, 18,97 s) |
+| Preto e branco | medido: diferença média entre canais R e B = 0 em 35,5–37,5 s e em 46,8–48,1 s; CTA em cor (41,6) |
+| Folha de 1 quadro por segundo | conferida: cada imagem e texto batem com a fala; CTA igual à REV2 |
