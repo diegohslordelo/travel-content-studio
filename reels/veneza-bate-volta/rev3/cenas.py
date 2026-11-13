@@ -119,7 +119,7 @@ gancho = [{
     "fim": SENTA,
     "linhas": [
         {"txt": "VENEZA NÃO", "t": s(0), "tam": 128},
-        {"txt": "TE QUER LÁ", "t": s(2), "tam": 160, "cor": "#E0AE5C"},
+        {"txt": "TE QUER LÁ", "t": s(2), "tam": 160, "cor": "#FFD23F"},  # REV3: amarelo vivo
         {"txt": "E DESSA VEZ", "t": s(5), "tam": 96},
         {"txt": "É DE VERDADE.", "t": s(8), "tam": 96},
     ],
