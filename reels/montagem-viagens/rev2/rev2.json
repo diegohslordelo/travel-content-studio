@@ -1,0 +1,163 @@
+{
+ "referencia": "https://www.instagram.com/reel/DeF4TFYRIUW/ (10,667 s, 30 fps, 25 cortes)",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "cortes_quadros": [
+  0,
+  25,
+  55,
+  67,
+  90,
+  104,
+  115,
+  119,
+  122,
+  126,
+  130,
+  135,
+  138,
+  143,
+  146,
+  152,
+  158,
+  165,
+  183,
+  206,
+  220,
+  230,
+  243,
+  253,
+  277,
+  320
+ ],
+ "takes": [
+  {
+   "arq": "Disney__IMG_3346.MOV",
+   "in": 0.0,
+   "nota": "castelo da Bela Adormecida, torres"
+  },
+  {
+   "arq": "Disney__IMG_3251.MOV",
+   "in": 1.2,
+   "nota": "brinquedo com cascata"
+  },
+  {
+   "arq": "Lisboa__IMG_4291.MOV",
+   "in": 0.8,
+   "nota": "Lisboa, pastéis de nata"
+  },
+  {
+   "arq": "Italia__IMG_6098.MOV",
+   "in": 0.0,
+   "nota": "Veneza, gôndola no Grande Canal"
+  },
+  {
+   "arq": "Disney__IMG_3425.MOV",
+   "in": 7.5,
+   "girar": true,
+   "nota": "Diego e Marina, selfie na Disney"
+  },
+  {
+   "arq": "Paris__IMG_2761.MOV",
+   "in": 2.3,
+   "girar": true,
+   "nota": "Diego e Marina com a Torre Eiffel"
+  },
+  {
+   "arq": "Paris__IMG_2754.MOV",
+   "in": 1.0,
+   "nota": "Paris, Torre Eiffel"
+  },
+  {
+   "arq": "Bruxelas__copy_0032E90A-CE40-40B8-9412-68C1B1BEC5F9.mov",
+   "in": 10.0,
+   "nota": "Barcelona, Sagrada Família"
+  },
+  {
+   "arq": "Italia__IMG_5260.MOV",
+   "in": 4.3,
+   "nota": "Roma, Coliseu"
+  },
+  {
+   "arq": "Amsterdam__IMG_1403-1.MOV",
+   "in": 3.5,
+   "nota": "Amsterdam, canal"
+  },
+  {
+   "arq": "Bruxelas__IMG_2168.MOV",
+   "in": 3.0,
+   "nota": "Bruxelas, Atomium"
+  },
+  {
+   "arq": "Madrid__IMG_3722.MOV",
+   "in": 4.5,
+   "nota": "Madrid, Palácio Real"
+  },
+  {
+   "arq": "Bruges__IMG_2491.MOV",
+   "in": 0.5,
+   "nota": "Bruges, Rozenhoedkaai"
+  },
+  {
+   "arq": "Lisboa__IMG_4308.MOV",
+   "in": 0.5,
+   "nota": "Lisboa, Praça do Comércio"
+  },
+  {
+   "arq": "Italia__IMG_5071.MOV",
+   "in": 8.4,
+   "nota": "Roma, Fontana di Trevi"
+  },
+  {
+   "arq": "Bruxelas__IMG_2213.MOV",
+   "in": 1.0,
+   "nota": "Bruxelas, Grand-Place"
+  },
+  {
+   "arq": "Paris__IMG_2860.MOV",
+   "in": 1.0,
+   "nota": "Paris, Arco do Triunfo"
+  },
+  {
+   "arq": "Italia__IMG_5808.MOV",
+   "in": 4.0,
+   "nota": "Diego e Marina, selfie em Florença"
+  },
+  {
+   "arq": "Disney__IMG_3575.MOV",
+   "in": 0.0,
+   "nota": "Main Street à noite"
+  },
+  {
+   "arq": "Paris__IMG_3177.MOV",
+   "in": 2.0,
+   "nota": "Torre Eiffel iluminada"
+  },
+  {
+   "arq": "Amsterdam__IMG_1518.MOV",
+   "in": 16.0,
+   "nota": "Diego e Marina à noite em Amsterdam"
+  },
+  {
+   "arq": "Disney__IMG_3409.MOV",
+   "in": 1.35,
+   "nota": "Diego e Marina no brinquedo, grito"
+  },
+  {
+   "arq": "Italia__IMG_6157.MOV",
+   "in": 0.0,
+   "nota": "fogos de Ano-Novo em Veneza"
+  },
+  {
+   "arq": "Disney__F2660F17-CD2A-4D28-8540-5E490866CCE3.mp4",
+   "in": 13.6,
+   "nota": "Marina emocionada no show, Diego ao lado"
+  },
+  {
+   "arq": "Disney__IMG_3607.MOV",
+   "in": 14.6,
+   "nota": "fogos no castelo (final)"
+  }
+ ]
+}
