@@ -1,0 +1,163 @@
+{
+ "referencia": "https://www.instagram.com/reel/DeF4TFYRIUW/ (10,667 s, 30 fps, 25 cortes)",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "cortes_quadros": [
+  0,
+  25,
+  55,
+  67,
+  90,
+  104,
+  115,
+  119,
+  122,
+  126,
+  130,
+  135,
+  138,
+  143,
+  146,
+  152,
+  158,
+  165,
+  183,
+  206,
+  220,
+  230,
+  243,
+  253,
+  277,
+  320
+ ],
+ "takes": [
+  {
+   "arq": "Disney__IMG_3346.MOV",
+   "in": 0.0,
+   "nota": "castelo da Bela Adormecida, torres"
+  },
+  {
+   "arq": "Disney__IMG_3251.MOV",
+   "in": 1.2,
+   "nota": "brinquedo com cascata"
+  },
+  {
+   "arq": "Disney__IMG_3449.MOV",
+   "in": 0.5,
+   "nota": "pizza do Mickey"
+  },
+  {
+   "arq": "Italia__IMG_6098.MOV",
+   "in": 0.0,
+   "nota": "Veneza, gôndola no Grande Canal"
+  },
+  {
+   "arq": "Disney__IMG_3425.MOV",
+   "in": 7.5,
+   "girar": true,
+   "nota": "Diego e Marina, selfie na Disney"
+  },
+  {
+   "arq": "Paris__IMG_2761.MOV",
+   "in": 2.3,
+   "girar": true,
+   "nota": "Diego e Marina com a Torre Eiffel"
+  },
+  {
+   "arq": "Paris__IMG_2754.MOV",
+   "in": 1.0,
+   "nota": "Torre Eiffel"
+  },
+  {
+   "arq": "Paris__IMG_2860.MOV",
+   "in": 1.0,
+   "nota": "Arco do Triunfo"
+  },
+  {
+   "arq": "Paris__IMG_2986.MOV",
+   "in": 4.6,
+   "nota": "Louvre"
+  },
+  {
+   "arq": "Paris__IMG_3103.MOV",
+   "in": 3.6,
+   "nota": "Notre-Dame"
+  },
+  {
+   "arq": "Italia__IMG_5260.MOV",
+   "in": 4.3,
+   "nota": "Coliseu"
+  },
+  {
+   "arq": "Italia__IMG_5071.MOV",
+   "in": 8.4,
+   "nota": "Fontana di Trevi"
+  },
+  {
+   "arq": "Italia__IMG_5812.MOV",
+   "in": 11.0,
+   "nota": "Florença, pôr do sol no Arno"
+  },
+  {
+   "arq": "Italia__IMG_5447.MOV",
+   "in": 0.2,
+   "nota": "Panteão, óculo"
+  },
+  {
+   "arq": "Italia__IMG_6265.MOV",
+   "in": 4.4,
+   "nota": "Milão, Galleria com árvore de Natal"
+  },
+  {
+   "arq": "Italia__IMG_6061.MOV",
+   "in": 0.5,
+   "nota": "Veneza, Palácio Ducal"
+  },
+  {
+   "arq": "Paris__IMG_3041.MOV",
+   "in": 2.0,
+   "nota": "cúpula da Galeries Lafayette"
+  },
+  {
+   "arq": "Italia__IMG_5808.MOV",
+   "in": 4.0,
+   "nota": "Diego e Marina, selfie em Florença"
+  },
+  {
+   "arq": "Disney__IMG_3575.MOV",
+   "in": 0.0,
+   "nota": "Main Street à noite"
+  },
+  {
+   "arq": "Paris__IMG_3177.MOV",
+   "in": 2.0,
+   "nota": "Torre Eiffel iluminada"
+  },
+  {
+   "arq": "Disney__F2660F17-CD2A-4D28-8540-5E490866CCE3.mp4",
+   "in": 5.85,
+   "nota": "Diego e Marina, selfie à noite na Disney"
+  },
+  {
+   "arq": "Disney__IMG_3409.MOV",
+   "in": 1.35,
+   "nota": "Diego e Marina no brinquedo, grito"
+  },
+  {
+   "arq": "Italia__IMG_6157.MOV",
+   "in": 0.0,
+   "nota": "fogos de Ano-Novo em Veneza"
+  },
+  {
+   "arq": "Disney__F2660F17-CD2A-4D28-8540-5E490866CCE3.mp4",
+   "in": 13.6,
+   "nota": "Marina emocionada no show, Diego ao lado"
+  },
+  {
+   "arq": "Disney__IMG_3607.MOV",
+   "in": 14.6,
+   "nota": "fogos no castelo (final)"
+  }
+ ]
+}
