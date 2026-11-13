@@ -65,6 +65,21 @@
 
 A temporada 2026 terminou em 27/07/2026. O pedágio volta em 2027 (março 4 dias, abril 17, maio 15, junho 15…, das 8h30 às 16h30); regras e valores de 2027 saem até 31/12/2026. O vídeo fala dos valores de 2026 (5 € / 10 €): as legendas dizem isso. No segundo acesso o site bloqueou o acesso automático (erro 15 de segurança); não insisti.
 
-## Medições do vídeo final
+## Medições do vídeo final (`analise_quadros.py` + conferência visual)
 
-(preenchido depois do render: ver abaixo)
+| Ponto | Resultado |
+|---|---|
+| Formato | 1080 × 1920, 30 qps, H.264 + AAC 48 kHz, 61,8 s (1.851 quadros) |
+| Áudio | −14,2 LUFS integrados, pico −1,5 dBFS (DS 4.6: −14 LUFS, ≤ −1 dBTP); voz idêntica à da REV1 (244/244 palavras) |
+| Quadros pretos | nenhum (luminância mínima 36/255, no corte para o print) |
+| Trocas de cena | 21, todas no quadro planejado; 9 delas no mesmo quadro de um corte da gravação (lista acima) |
+| Duas mudanças a menos de 0,5 s | nenhuma entre trocas de cena e cortes. O detector marca só animação (print subindo, 9,53 s) e gestos da mão do Diego na frente da câmera (24,67 s, 24,87 s, 27,27 s), conferidos quadro a quadro |
+| Cena mais curta | 1,30 s ("E no bolso?", entre dois cortes da própria gravação) |
+| Primeiro quadro de cada cena | sem quadro vazio: o elemento que abre a cena já está na tela (opacidade 0,6 → 1 em 0,18 s) |
+| Gancho → Diego | a troca acontece no quadro em que ele cai na cadeira (quadro 100, 3,33 s) |
+| Texto × fala | todo texto na tela entra na palavra dita (folha de conferência em 16 pontos: "quase", "30", "pedágio", "cinco", "dez", "hora", "Veneza", "bate-volta", "Verona", "25%", "cidade", "me segue"…) |
+
+## Conferir no ouvido (Diego)
+
+1. Volume dos efeitos (impacto em "30 milhões", "pedágio", "multa" e "25%"; obturador no print, nos preços e no "5 € na entrada"; swish no mapa; riser antes de "E eu fiquei"; *clack* da placa em "me segue"). Sintetizados/kit, ninguém ouviu.
+2. A voz é a mesma da REV1, aprovada.
