@@ -193,14 +193,17 @@ const Grafismo: React.FC<{ c: Cena2; t: number }> = ({ c, t }) => {
   const g = c.graf;
 
   if (g === "milhoes") {
-    // praça lotada + contador 0 → 30 milhões no tempo da fala
-    const p = lin(t, at("t0"), at("t1"), 0, 1, Easing.out(Easing.cubic));
+    // praça lotada; o número aparece inteiro na palavra dita (sem contagem: a tela só mostra o que ele fala)
+    const tq = at("tquase");
+    const t30 = at("t30");
+    const p30 = lin(t, t30 - 0.03, t30 + 0.22, 0, 1, Easing.out(Easing.back(1.6)));
     return (
       <div style={BASE}>
         <VideoCobre src={c.src!} W={1080} H={H} zoom={lin(t, c.ini, c.fim, 1.0, 1.06, Easing.linear)} focoY={c.foco ?? 0.5} />
         <AbsoluteFill style={{ height: H, background: "linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.7))" }} />
-        <Txt txt={`${Math.round(30 * p)} MILHÕES`} t={t} t0={at("t0")} tam={190} y={H / 2 - 150} cor="#fff" />
-        <Txt txt="DE PESSOAS NO ANO" t={t} t0={at("t0") + 0.3} tam={46} y={H / 2 + 70} fonte="Inter" cor="#fff" />
+        <Txt txt="QUASE" t={t} t0={tq - 0.03} tam={90} y={H / 2 - 250} cor="#fff" />
+        <div style={{ position: "absolute", left: 0, right: 0, top: H / 2 - 150, textAlign: "center", fontFamily: "Anton", fontSize: 190, lineHeight: 1, color: "#fff", opacity: p30, transform: `scale(${0.8 + 0.2 * p30})`, textShadow: "0 4px 24px rgba(0,0,0,0.55)" }}>30 MILHÕES</div>
+        <Txt txt="DE PESSOAS NO ANO" t={t} t0={at("tpessoas") - 0.03} tam={46} y={H / 2 + 70} fonte="Inter" cor="#fff" />
       </div>
     );
   }
@@ -243,8 +246,7 @@ const Grafismo: React.FC<{ c: Cena2; t: number }> = ({ c, t }) => {
     return (
       <div style={BASE}>
         <div style={{ position: "absolute", left: 210, top: 70, width: 660, height: 420, background: TRACO, borderRadius: 28, boxShadow: "0 30px 70px rgba(0,0,0,0.6)", transform: `translateY(${(1 - p) * -520}px) rotate(${(1 - p) * 6 - 2}deg)` }}>
-          <div style={{ position: "absolute", left: 44, top: 40, fontFamily: "Anton", fontSize: 120, lineHeight: 1, color: FUNDO }}>PEDÁGIO</div>
-          <div style={{ position: "absolute", left: 48, top: 190, fontFamily: "Inter", fontWeight: 800, fontSize: 34, letterSpacing: 4, color: "#7a6a52" }}>VENEZA</div>
+          <div style={{ position: "absolute", left: 44, top: 40, fontFamily: "Anton", fontSize: 120, lineHeight: 1, color: FUNDO, opacity: lin(t, at("tped") - 0.03, at("tped") + 0.12, 0, 1), transform: `scale(${lin(t, at("tped") - 0.03, at("tped") + 0.2, 1.4, 1, Easing.out(Easing.back(1.8)))})`, transformOrigin: "20% 50%" }}>PEDÁGIO</div>
           <div style={{ position: "absolute", right: 44, top: 170, width: 200, height: 200, display: "grid", gridTemplateColumns: "repeat(9,1fr)", gap: 3 }}>
             {qr.map((on, i) => <div key={i} style={{ background: on ? FUNDO : "transparent" }} />)}
           </div>
@@ -267,20 +269,21 @@ const Grafismo: React.FC<{ c: Cena2; t: number }> = ({ c, t }) => {
     const t10 = at("t10");
     const tnp = at("tnp");
     const apaga = lin(t, tnp, tnp + 0.3, 1, 0.35);
-    const card = (x: number, t0: number, icone: React.ReactNode, preco: string, rot: string) => {
+    const card = (x: number, t0: number, icone: React.ReactNode, preco: string, tp: number, rot: string, tr: number) => {
       const p = entra(t, t0, 0.3);
+      const pp = lin(t, tp - 0.03, tp + 0.2, 0, 1, Easing.out(Easing.back(1.6)));
       return (
         <div style={{ position: "absolute", left: x, top: 90, width: 420, height: 560, borderRadius: 30, background: "#221F1A", border: `4px solid ${AMBAR}`, opacity: p * apaga, transform: `translateY(${(1 - p) * 80}px) scale(${0.92 + 0.08 * p})`, textAlign: "center" }}>
           <div style={{ marginTop: 40 }}>{icone}</div>
-          <div style={{ fontFamily: "Anton", fontSize: 190, lineHeight: 1.05, color: AMBAR, marginTop: 10 }}>{preco}</div>
-          <div style={{ fontFamily: "Inter", fontWeight: 800, fontSize: 40, letterSpacing: 4, color: TRACO, marginTop: 10 }}>{rot}</div>
+          <div style={{ fontFamily: "Anton", fontSize: 190, lineHeight: 1.05, color: AMBAR, marginTop: 10, opacity: pp, transform: `scale(${0.8 + 0.2 * pp})` }}>{preco}</div>
+          <div style={{ fontFamily: "Inter", fontWeight: 800, fontSize: 40, letterSpacing: 4, color: TRACO, marginTop: 10, opacity: entra(t, tr - 0.03, 0.2) }}>{rot}</div>
         </div>
       );
     };
     return (
       <div style={BASE}>
-        {card(90, t5, <Calendario />, "5 €", "PROGRAMADO")}
-        {card(570, t10, <Relogio t={t - t10} />, "10 €", "NA HORA")}
+        {card(90, c.ini, <Calendario />, "5 €", t5, "PROGRAMADO", at("tprog"))}
+        {card(570, at("tsao"), <Relogio t={t - t10} />, "10 €", t10, "NA HORA", at("thora"))}
         <Txt txt="E SE NÃO PAGAR?" t={t} t0={tnp} tam={110} y={710} cor="#fff" />
       </div>
     );
@@ -305,26 +308,26 @@ const Grafismo: React.FC<{ c: Cena2; t: number }> = ({ c, t }) => {
   if (g === "hospedagem") {
     // Verona (−25%) × Veneza (cidade dos canais), lado a lado
     const pv = entra(t, c.ini, 0.35);
-    const pb = lin(t, at("t25"), at("t25") + 0.9, 0, 1, Easing.out(Easing.cubic));
+    const p25 = lin(t, at("t25") - 0.03, at("t25") + 0.22, 0, 1, Easing.out(Easing.back(1.6)));
     const pz = entra(t, at("tcanais"), 0.35);
-    const cartao = (x: number, p: number, conteudo: React.ReactNode, nome: string) => (
+    const cartao = (x: number, p: number, conteudo: React.ReactNode, nome: string, tn: number, tam = 84) => (
       <div style={{ position: "absolute", left: x, top: 36, width: 470, height: 600, borderRadius: 26, overflow: "hidden", boxShadow: "0 24px 60px rgba(0,0,0,0.6)", opacity: p, transform: `translateY(${(1 - p) * 90}px)` }}>
         {conteudo}
         <AbsoluteFill style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0) 55%, rgba(0,0,0,0.75))" }} />
-        <div style={{ position: "absolute", left: 0, right: 0, bottom: 28, textAlign: "center", fontFamily: "Anton", fontSize: 84, color: "#fff" }}>{nome}</div>
+        <div style={{ position: "absolute", left: 10, right: 10, bottom: 28, textAlign: "center", fontFamily: "Anton", fontSize: tam, lineHeight: 1.02, color: "#fff", opacity: entra(t, tn - 0.03, 0.2) }}>{nome}</div>
       </div>
     );
     return (
       <div style={BASE}>
-        {cartao(lin(t, at("tcanais") - 0.1, at("tcanais") + 0.3, 305, 50), pv, <FotoCobre src="ponte_pietra.jpg" W={470} H={600} zoom={lin(t, c.ini, c.fim, 1.05, 1.15, Easing.linear)} foco="40% 50%" />, "VERONA")}
+        {cartao(lin(t, at("tcanais") - 0.1, at("tcanais") + 0.3, 305, 50), pv, <FotoCobre src="ponte_pietra.jpg" W={470} H={600} zoom={lin(t, c.ini, c.fim, 1.05, 1.15, Easing.linear)} foco="40% 50%" />, "VERONA", at("tverona"))}
         {cartao(560, pz, (
           <Sequence from={Math.round((at("tcanais") - c.ini) * 30)} layout="none">
             <VideoCobre src="canais.mp4" W={470} H={600} />
           </Sequence>
-        ), "VENEZA")}
-        <div style={{ position: "absolute", left: lin(t, at("tcanais") - 0.1, at("tcanais") + 0.3, 305, 50), top: 650, width: 470, textAlign: "center", opacity: entra(t, at("t25")) }}>
-          <span style={{ fontFamily: "Anton", fontSize: 104, color: AMBAR }}>ATÉ {Math.round(25 * pb)}%</span>
-          <div style={{ fontFamily: "Inter", fontWeight: 800, fontSize: 32, letterSpacing: 3, color: TRACO, marginTop: -4 }}>MAIS BARATO</div>
+        ), "CIDADE DOS CANAIS", at("tcidade"), 60)}
+        <div style={{ position: "absolute", left: lin(t, at("tcanais") - 0.1, at("tcanais") + 0.3, 305, 50), top: 650, width: 470, textAlign: "center", opacity: p25, transform: `scale(${0.85 + 0.15 * p25})` }}>
+          <span style={{ fontFamily: "Anton", fontSize: 104, color: AMBAR }}>ATÉ 25%</span>
+          <div style={{ fontFamily: "Inter", fontWeight: 800, fontSize: 32, letterSpacing: 3, color: TRACO, marginTop: -4, opacity: entra(t, at("tmais") - 0.03, 0.2) }}>MAIS BARATO</div>
         </div>
       </div>
     );
@@ -397,7 +400,7 @@ const Mapa: React.FC<{ c: Cena2; t: number }> = ({ c, t }) => {
     );
   };
   const pHora = entra(t, tl1 - 0.15);
-  const pBate = entra(t, tb);
+  const pBate = entra(t, Number(d.trotulo ?? tb) - 0.03);
   return (
     <div style={{ ...BASE, background: "#1d2a22" }}>
       <svg width={1080} height={H} style={{ position: "absolute", inset: 0 }}>
@@ -408,7 +411,7 @@ const Mapa: React.FC<{ c: Cena2; t: number }> = ({ c, t }) => {
         <path d={P(rota)} stroke={AMBAR} strokeWidth={12} fill="none" strokeDasharray={total} strokeDashoffset={total * (1 - pLinha)} strokeLinecap="round" strokeLinejoin="round" />
         {pts.slice(1, -1).map((q, i) => <circle key={i} cx={q.x} cy={q.y} r={9} fill={pLinha > (i + 1) / (pts.length - 1) ? AMBAR : "#3d4a42"} />)}
         {pin(pts[0], "VERONA", c.ini, 0)}
-        {pin(pts[pts.length - 1], "VENEZA", tl1 - 0.1, -40)}
+        {pin(pts[pts.length - 1], "VENEZA", Number(d.tveneza ?? tl1) - 0.05, -40)}
         <g transform={`translate(${trem.x},${trem.y})`} opacity={(t > tl0 && t < tl1) || (t >= tb && t < tb + 1.2) ? 1 : 0}>
           <rect x={-34} y={-22} width={68} height={44} rx={12} fill={TRACO} stroke={FUNDO} strokeWidth={4} />
           <rect x={-24} y={-12} width={20} height={14} rx={3} fill={FUNDO} />
@@ -417,7 +420,7 @@ const Mapa: React.FC<{ c: Cena2; t: number }> = ({ c, t }) => {
       </svg>
       <div style={{ position: "absolute", left: 0, right: 0, top: 600, textAlign: "center", opacity: pHora * (1 - pBate) }}>
         <div style={{ fontFamily: "Anton", fontSize: 120, color: "#fff" }}>1H E POUQUINHO</div>
-        <div style={{ fontFamily: "Inter", fontWeight: 800, fontSize: 40, letterSpacing: 4, color: TRACO }}>DE TREM</div>
+        <div style={{ fontFamily: "Inter", fontWeight: 800, fontSize: 40, letterSpacing: 4, color: TRACO, opacity: entra(t, Number(d.tdeveneza ?? tl1) - 0.03, 0.2) }}>DE VENEZA</div>
       </div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 620, textAlign: "center", opacity: pBate, transform: `scale(${0.9 + 0.1 * pBate})` }}>
         <div style={{ fontFamily: "Anton", fontSize: 140, color: AMBAR }}>⇄ BATE-VOLTA</div>
