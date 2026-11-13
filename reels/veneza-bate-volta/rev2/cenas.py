@@ -25,12 +25,14 @@ def e(i):
 # de pausas da REV1 (428, 632, 1065, 1405, 1444).
 J = [q / FPS for q in (174, 428, 632, 837, 894, 1065, 1126, 1405, 1444, 1725)]
 J1, J2, J3, J4, J5, J6, J7, J8, J9, J10 = J
+# o Diego cai na cadeira no quadro 100 (3,33 s): a troca do gancho para ele em tela cheia acontece nesse quadro
+SENTA = 100 / FPS
 
 C = [
     # gancho: Palácio Ducal lotado + texto do gancho
-    dict(ini=0.0, fim=3.15, tipo="video", src="ducale_lotado.mp4", zoom=[1.0, 1.06], foco=0.9),
+    dict(ini=0.0, fim=SENTA, tipo="video", src="ducale_lotado.mp4", zoom=[1.0, 1.06], foco=0.9),
     # Diego senta na cadeira · "Em partes."
-    dict(ini=3.15, fim=J1, tipo="diego", zoom=[1.0, 1.04]),
+    dict(ini=SENTA, fim=J1, tipo="diego", zoom=[1.0, 1.04]),
     # "Veneza recebe quase 30 milhões de pessoas no ano": praça lotada + contador
     dict(ini=J1, fim=s(22) - 0.05, tipo="graf", graf="milhoes", src="praca_lotada.mp4", foco=0.9, dados={"tquase": s(15), "t30": s(16), "tpessoas": s(19)}),
     # "sendo que três em cada quatro desses visitantes vão de bate-volta": bonecos + print da Fortune
@@ -109,7 +111,7 @@ grupos = sorted(grupos, key=lambda x: x[0])
 assert sorted(i for x in grupos for i in x) == list(range(len(P)))
 
 gancho = [{
-    "fim": 3.15,
+    "fim": SENTA,
     "linhas": [
         {"txt": "VENEZA NÃO", "t": s(0), "tam": 128},
         {"txt": "TE QUER LÁ", "t": s(2), "tam": 160, "cor": "#E0AE5C"},

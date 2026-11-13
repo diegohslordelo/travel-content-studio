@@ -84,6 +84,8 @@ const ease = Easing.bezier(0.2, 0.8, 0.2, 1);
 const lin = (t: number, a: number, b: number, v0: number, v1: number, e: (x: number) => number = ease) =>
   interpolate(t, [a, b], [v0, v1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e });
 const entra = (t: number, t0: number, d = 0.25) => lin(t, t0, t0 + d, 0, 1);
+/** Para o que abre uma cena: já visível no 1º quadro (sem quadro vazio no corte), só assenta. */
+const abre = (t: number, t0: number) => 0.6 + 0.4 * lin(t, t0, t0 + 0.18, 0, 1);
 
 /* ---------- camadas de vídeo ---------- */
 
@@ -218,7 +220,7 @@ const Grafismo: React.FC<{ c: Cena2; t: number }> = ({ c, t }) => {
       <div style={BASE}>
         <svg width={1080} height={300} style={{ position: "absolute", left: 0, top: 30 }}>
           {[0, 1, 2, 3].map((i) => {
-            const pi = entra(t, c.ini + i * 0.1, 0.25);
+            const pi = abre(t, c.ini);
             const amb = t >= t3 + i * 0.12 && i < 3;
             return <Pessoa key={i} x={300 + i * 160} y={170} cor={amb ? AMBAR : "#5A544B"} p={pi} s={1.35} />;
           })}
@@ -239,7 +241,7 @@ const Grafismo: React.FC<{ c: Cena2; t: number }> = ({ c, t }) => {
 
   if (g === "pedagio") {
     // bilhete de entrada com QR; em "pra quem vai e não dorme": sol (vai) e lua riscada (não dorme)
-    const p = entra(t, c.ini, 0.4);
+    const p = abre(t, c.ini);
     const tv = at("tvai");
     const tn = at("tdorme");
     const qr = Array.from({ length: 81 }, (_, i) => ((i * 7919) % 13) % 3 !== 0 || i % 10 === 0);
@@ -270,7 +272,7 @@ const Grafismo: React.FC<{ c: Cena2; t: number }> = ({ c, t }) => {
     const tnp = at("tnp");
     const apaga = lin(t, tnp, tnp + 0.3, 1, 0.35);
     const card = (x: number, t0: number, icone: React.ReactNode, preco: string, tp: number, rot: string, tr: number) => {
-      const p = entra(t, t0, 0.3);
+      const p = t0 <= c.ini + 0.01 ? abre(t, t0) : entra(t, t0, 0.3);
       const pp = lin(t, tp - 0.03, tp + 0.2, 0, 1, Easing.out(Easing.back(1.6)));
       return (
         <div style={{ position: "absolute", left: x, top: 90, width: 420, height: 560, borderRadius: 30, background: "#221F1A", border: `4px solid ${AMBAR}`, opacity: p * apaga, transform: `translateY(${(1 - p) * 80}px) scale(${0.92 + 0.08 * p})`, textAlign: "center" }}>
@@ -307,7 +309,7 @@ const Grafismo: React.FC<{ c: Cena2; t: number }> = ({ c, t }) => {
 
   if (g === "hospedagem") {
     // Verona (−25%) × Veneza (cidade dos canais), lado a lado
-    const pv = entra(t, c.ini, 0.35);
+    const pv = abre(t, c.ini);
     const p25 = lin(t, at("t25") - 0.03, at("t25") + 0.22, 0, 1, Easing.out(Easing.back(1.6)));
     const pz = entra(t, at("tcanais"), 0.35);
     const cartao = (x: number, p: number, conteudo: React.ReactNode, nome: string, tn: number, tam = 84) => (
@@ -342,7 +344,7 @@ const Grafismo: React.FC<{ c: Cena2; t: number }> = ({ c, t }) => {
     return (
       <div style={BASE}>
         <div style={{ position: "absolute", left: 0, top: 0, width: 1080, height: H, opacity: sai, transform: `scale(${0.92 + 0.08 * sai})` }}>
-          <div style={{ position: "absolute", left: lin(t, t5 - 0.45, t5 - 0.1, 360, 110), top: 170, textAlign: "center", width: 360, opacity: entra(t, c.ini), transform: `scale(${0.9 + 0.1 * entra(t, c.ini)})` }}>
+          <div style={{ position: "absolute", left: lin(t, t5 - 0.45, t5 - 0.1, 360, 110), top: 170, textAlign: "center", width: 360, opacity: abre(t, c.ini), transform: `scale(${0.96 + 0.04 * abre(t, c.ini)})` }}>
             <Calendario s={2} num={t >= t4 ? "4" : ""} />
             <div style={{ fontFamily: "Inter", fontWeight: 800, fontSize: 40, letterSpacing: 3, color: TRACO, marginTop: 10, opacity: entra(t, t4) }}>DIAS ANTES</div>
           </div>
