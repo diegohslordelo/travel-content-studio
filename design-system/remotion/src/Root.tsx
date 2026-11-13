@@ -18,6 +18,7 @@ import { ThumbYT, propsThumbVazias } from "./yt/ThumbYT";
 import { VenezaReel, metadadosVeneza, propsVenezaVazias } from "./reel/VenezaReel";
 import { VenezaReel2, metadadosVeneza2, propsVeneza2Vazias } from "./reel/VenezaReel2";
 import { VenezaReel3, metadadosVeneza3, propsVeneza3Vazias } from "./reel/VenezaReel3";
+import { VenezaReel4, metadadosVeneza4, propsVeneza4Vazias } from "./reel/VenezaReel4";
 
 carregarFontes();
 
@@ -30,6 +31,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="VideoLongo" component={VideoLongo} durationInFrames={24} fps={24} width={1920} height={1080} defaultProps={propsVideoLongoVazias} calculateMetadata={metadadosVideoLongo} />
     <Still id="ThumbYT" component={ThumbYT} width={1280} height={720} defaultProps={propsThumbVazias} />
     <Composition id="VenezaReel" component={VenezaReel} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsVenezaVazias} calculateMetadata={metadadosVeneza} />
+    <Composition id="VenezaReel4" component={VenezaReel4} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsVeneza4Vazias} calculateMetadata={metadadosVeneza4} />
     <Composition id="VenezaReel3" component={VenezaReel3} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsVeneza3Vazias} calculateMetadata={metadadosVeneza3} />
     <Composition id="VenezaReel2" component={VenezaReel2} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsVeneza2Vazias} calculateMetadata={metadadosVeneza2} />
     <Still id="CapaReel" component={CapaReel} width={1080} height={1920} defaultProps={propsVazias} />
