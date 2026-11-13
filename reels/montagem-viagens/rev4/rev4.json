@@ -1,0 +1,177 @@
+{
+ "referencia": "https://www.instagram.com/reel/DeF4TFYRIUW/ (10,667 s, 30 fps, 25 cortes)",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "cortes_quadros": [
+  0,
+  25,
+  55,
+  67,
+  90,
+  104,
+  115,
+  119,
+  122,
+  126,
+  130,
+  135,
+  138,
+  143,
+  146,
+  152,
+  158,
+  165,
+  183,
+  206,
+  220,
+  230,
+  243,
+  253,
+  277,
+  320
+ ],
+ "takes": [
+  {
+   "arq": "Upload__IMG_0455.mov",
+   "in": 2.0,
+   "nota": "asa do avião (abertura)"
+  },
+  {
+   "arq": "Upload__IMG_0452.mov",
+   "in": 0.0,
+   "nota": "Diego e Marina no avião"
+  },
+  {
+   "arq": "Lisboa__IMG_4291.MOV",
+   "in": 0.8,
+   "nota": "Lisboa, pastéis de nata",
+   "cx": 0.72
+  },
+  {
+   "arq": "Italia__IMG_6098.MOV",
+   "in": 0.0,
+   "nota": "Veneza, gôndola no Grande Canal"
+  },
+  {
+   "arq": "Bruges__IMG_2475.MOV",
+   "in": 2.75,
+   "cx": 0.59,
+   "nota": "Marina se vira na praça de Bruges"
+  },
+  {
+   "arq": "Paris__IMG_2761.MOV",
+   "in": 2.3,
+   "girar": true,
+   "nota": "Diego e Marina com a Torre Eiffel",
+   "cx": 0.38
+  },
+  {
+   "arq": "Paris__IMG_2754.MOV",
+   "in": 1.0,
+   "nota": "Paris, Torre Eiffel",
+   "cx": 0.48
+  },
+  {
+   "arq": "Bruxelas__copy_0032E90A-CE40-40B8-9412-68C1B1BEC5F9.mov",
+   "in": 10.0,
+   "nota": "Barcelona, Sagrada Família"
+  },
+  {
+   "arq": "Italia__IMG_5260.MOV",
+   "in": 4.3,
+   "nota": "Roma, Coliseu"
+  },
+  {
+   "arq": "Amsterdam__IMG_1403-1.MOV",
+   "in": 3.5,
+   "nota": "Amsterdam, canal"
+  },
+  {
+   "arq": "Bruxelas__IMG_2168.MOV",
+   "in": 3.0,
+   "nota": "Bruxelas, Atomium",
+   "cx": 0.47
+  },
+  {
+   "arq": "Madrid__IMG_3722.MOV",
+   "in": 4.5,
+   "nota": "Madrid, Palácio Real",
+   "cx": 0.45
+  },
+  {
+   "arq": "Bruges__IMG_2491.MOV",
+   "in": 0.5,
+   "nota": "Bruges, Rozenhoedkaai"
+  },
+  {
+   "arq": "Lisboa__IMG_4308.MOV",
+   "in": 0.5,
+   "nota": "Lisboa, Praça do Comércio",
+   "cx": 0.62
+  },
+  {
+   "arq": "Disney__IMG_3449.MOV",
+   "in": 0.5,
+   "cx": 0.52,
+   "nota": "Disney, pizza do Mickey"
+  },
+  {
+   "arq": "Disney__IMG_3424.MOV",
+   "in": 2.8,
+   "cx": 0.47,
+   "nota": "Disney, Buzz Lightyear"
+  },
+  {
+   "arq": "Disney__IMG_3346.MOV",
+   "in": 0.0,
+   "nota": "Disney, castelo",
+   "cx": 0.54
+  },
+  {
+   "arq": "Paris__IMG_3019.MOV",
+   "in": 1.5,
+   "cx": 0.8,
+   "nota": "Diego andando até a pirâmide do Louvre"
+  },
+  {
+   "arq": "Italia__IMG_5812.MOV",
+   "in": 11.0,
+   "nota": "Florença, pôr do sol no Arno"
+  },
+  {
+   "arq": "Disney__IMG_3536.MOV",
+   "in": 3.3,
+   "cx": 0.59,
+   "nota": "Disney, castelo ao pôr do sol"
+  },
+  {
+   "arq": "Lisboa__IMG_4239.MOV",
+   "in": 1.8,
+   "cx": 0.4,
+   "nota": "Marina andando à noite em Lisboa"
+  },
+  {
+   "arq": "Upload__IMG_3406.mov",
+   "in": 1.1,
+   "nota": "Diego e Marina gritando no brinquedo (vertical original, visto de baixo)"
+  },
+  {
+   "arq": "Italia__IMG_6157.MOV",
+   "in": 0.0,
+   "nota": "fogos de Ano-Novo em Veneza"
+  },
+  {
+   "arq": "Disney__IMG_3392.MOV",
+   "in": 1.68,
+   "cx": 0.76,
+   "nota": "Marina sorrindo na Disney"
+  },
+  {
+   "arq": "Disney__IMG_3607.MOV",
+   "in": 14.6,
+   "nota": "fogos no castelo (final)",
+   "cx": 0.48
+  }
+ ]
+}
