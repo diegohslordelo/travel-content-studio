@@ -84,3 +84,27 @@ Regras de montagem conferidas por `cenas.py`: troca de imagem no mesmo quadro de
 ## Fato novo da fala
 
 "Quem dorme em Veneza já paga a taxa no valor da hospedagem": quem dorme na cidade paga a taxa de turismo (*imposta di soggiorno*), cobrada pela hospedagem, e por isso fica isento do pedágio. Mas precisa pedir a isenção no cda.ve.it. A legenda do post avisa. Fontes: The Local (20240422), Hostaway (guia de Veneza), Untold Italy (2026).
+
+## Medições do vídeo final (`analise_quadros.py` + conferência visual)
+
+| Ponto | Resultado |
+|---|---|
+| Formato | 1080 × 1920, 30 qps, H.264 + AAC 48 kHz 320 kb/s, 66,57 s (1.997 quadros, igual à gravação decupada: a boca fica em sincronia) |
+| Áudio | −14,0 LUFS integrados, pico verdadeiro −2,0 dBTP (DS 4.6). Voz: passa-alta 70 Hz + loudness, igual à REV1 aprovada; as duas gravações igualadas antes de juntar (fala da nova −20,0 LUFS × original −17,9, +2,1 dB). Master: ganho de 2,0 dB e limitador com sobreamostragem 4× |
+| Palavras | Voz final transcrita de novo (Whisper large-v3): todas as palavras do texto acima, na ordem (o Whisper escreve "bate e volta" e "Aqui tá uma cita" para "bate-volta" e "Aí que tá o macete", e acrescenta um "E" antes de "não gostei" que não está na voz: ali é silêncio de −87 dBFS) |
+| Emendas | 14, todas em silêncio (≤ −61 dBFS nos 20 ms de cada lado); 0,10–0,15 s entre a última palavra de uma fala e a primeira da seguinte |
+| Quadros pretos | nenhum (luminância mínima 35/255, nos fogos) |
+| Preto e branco | só A7, A9 e B5 (diferença R−B medida a cada 3 quadros nas cenas com o Diego) |
+| Texto × rosto | Legenda e placa conferidas em todo quadro com o Diego contra a caixa do rosto. Dois avisos do detector, conferidos no quadro: 9,77 s (caixa do rosto pegou cabelo e fundo; a legenda fica acima do cabelo) e 65,67 s (o momento em que ele mais se inclina na CTA: a barba termina ≈ 20 px acima da placa). Nada encosta no rosto |
+| Cartão da Fortune | termina em y ≈ 853, 10 px acima da legenda da costura |
+| Folha de 1 quadro por segundo | `qa_folha_1qps.jpg`: cada imagem e texto batem com a fala |
+
+## Conferir no ouvido (Diego)
+
+1. As emendas entre a gravação original e a nova (20,30 s, 24,17 s, 25,90 s, 30,70 s, 42,83 s, 62,67 s): as duas foram igualadas em volume, mas o timbre de dias diferentes pode mudar um pouco.
+2. "Aí que tá o macete" e "Aí que tá a magia da viagem" (leituras com dica, ver acima).
+3. Volume dos efeitos (kit PDX, ninguém ouviu): impacto em "30", "pedágio", "multa", "taxa" e "25%"; obturador no print, nos preços e no "cinco euros"; swish no mapa; riser antes de "E eu fiquei"; *clack* da placa em "me segue".
+
+## Duração
+
+66,6 s, acima do ideal de 45–60 s: as falas novas somam ≈ 5 s a mais que as que saíram, mesmo com as pausas tiradas (a REV3 tinha 61,3 s). Se precisar enxugar, o candidato é "Cada experiência toca a pessoa de uma maneira diferente." (≈ 2,1 s): a ideia já está em "Durma e tire suas próprias conclusões. Aí que tá a magia da viagem."
