@@ -1,0 +1,114 @@
+{
+ "frases": [
+  {
+   "texto": "A Disney de Paris está te obrigando a ir dois dias pro parque.",
+   "antes_lufs": -15.9,
+   "ganho_db": -1.8
+  },
+  {
+   "texto": "Um seguidor comentou isso aí no meu vídeo de dicas da Disney.",
+   "antes_lufs": -15.0,
+   "ganho_db": -2.8
+  },
+  {
+   "texto": "É verdade.",
+   "antes_lufs": -17.1,
+   "ganho_db": -0.7
+  },
+  {
+   "texto": "No site oficial deles diz que o show de Frozen,",
+   "antes_lufs": -19.0,
+   "ganho_db": 1.2
+  },
+  {
+   "texto": "a área nova dos parques,",
+   "antes_lufs": -20.0,
+   "ganho_db": 2.3
+  },
+  {
+   "texto": "acontece no mesmo horário do show de fogos do castelo.",
+   "antes_lufs": -16.5,
+   "ganho_db": -1.2
+  },
+  {
+   "texto": "É brincadeira,",
+   "antes_lufs": -17.4,
+   "ganho_db": -0.4
+  },
+  {
+   "texto": "velho?",
+   "antes_lufs": -17.6,
+   "ganho_db": -0.1
+  },
+  {
+   "texto": "A gente não tem um minuto de paz?",
+   "antes_lufs": -16.6,
+   "ganho_db": -1.2
+  },
+  {
+   "texto": "Ou seja,",
+   "antes_lufs": -18.7,
+   "ganho_db": 1.0
+  },
+  {
+   "texto": "quem queria fazer os dois parques em um dia ou desiste ou escolhe um dos dois.",
+   "antes_lufs": -18.2,
+   "ganho_db": 0.4
+  },
+  {
+   "texto": "Claramente não é coincidência,",
+   "antes_lufs": -17.8,
+   "ganho_db": 0.0
+  },
+  {
+   "texto": "né?",
+   "antes_lufs": -26.7,
+   "ganho_db": 6.0
+  },
+  {
+   "texto": "Uma jogada da Disney pra você passar mais tempo com eles.",
+   "antes_lufs": -19.4,
+   "ganho_db": 1.6
+  },
+  {
+   "texto": "Quando eu fui não tinha nem área nova,",
+   "antes_lufs": -13.8,
+   "ganho_db": -4.0
+  },
+  {
+   "texto": "eu consegui fazer tudo em um dia,",
+   "antes_lufs": -21.1,
+   "ganho_db": 3.4
+  },
+  {
+   "texto": "mas agora tenho que dividir,",
+   "antes_lufs": -17.7,
+   "ganho_db": -0.0
+  },
+  {
+   "texto": "né?",
+   "antes_lufs": -24.6,
+   "ganho_db": 6.0
+  },
+  {
+   "texto": "Eu quero ver tudo.",
+   "antes_lufs": -18.1,
+   "ganho_db": 0.3
+  },
+  {
+   "texto": "E aí,",
+   "antes_lufs": -16.5,
+   "ganho_db": -1.3
+  },
+  {
+   "texto": "você acha que foi estratégia da Disney também?",
+   "antes_lufs": -14.5,
+   "ganho_db": -3.2
+  },
+  {
+   "texto": "E você continuaria com o park hopper ou separaria os dias?",
+   "antes_lufs": -17.9,
+   "ganho_db": 0.2
+  }
+ ]
+}

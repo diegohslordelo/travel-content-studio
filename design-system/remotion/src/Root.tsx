@@ -6,6 +6,7 @@
  * - AmostraYT: amostra de 30 s dos grafismos do vídeo longo do YouTube (16:9), --public-dir=reels/amostra-yt/public.
  * - Paris: Reel "Paris não quer você lá" em tela dividida, --public-dir=reels/paris-formigueiro/rev1/_tmp/public.
  * - Disney: Reel "A Disney de Paris não quer você lá" (5 dicas) em tela dividida, --public-dir=reels/disney-5-dicas/rev1/_tmp/public.
+ * - Frozen: Reel "A Disney de Paris está te obrigando a ir dois dias" em tela verde + Diego inteiro, --public-dir=reels/disney-frozen/rev1/_tmp/public.
  * - VideoLongo: vídeo longo do YouTube (16:9, 24 fps) montado de reels/<video>/revN (props + --public-dir).
  */
 import React from "react";
@@ -20,6 +21,7 @@ import { ThumbYT, propsThumbVazias } from "./yt/ThumbYT";
 import { ReelParis, metadadosParis, propsVaziasParis } from "./paris/Paris";
 import { carregarFontesParis } from "./paris/estilo";
 import { ReelDisney, metadadosDisney, propsVaziasDisney } from "./disney/Disney";
+import { ReelFrozen, metadadosFrozen, propsVaziasFrozen } from "./disney/Frozen";
 
 carregarFontes();
 carregarFontesParis();
@@ -30,6 +32,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Reel" component={Reel} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsVazias} calculateMetadata={metadadosReel} />
     <Composition id="Paris" component={ReelParis} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsVaziasParis} calculateMetadata={metadadosParis} />
     <Composition id="Disney" component={ReelDisney} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsVaziasDisney} calculateMetadata={metadadosDisney} />
+    <Composition id="Frozen" component={ReelFrozen} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsVaziasFrozen} calculateMetadata={metadadosFrozen} />
     <Composition id="AmostraYT" component={AmostraYT} durationInFrames={900} fps={30} width={1920} height={1080} />
     <Composition id="AmostraFimYT" component={AmostraFimYT} durationInFrames={Math.round((DUR_AMOSTRA_FIM * 30) / 1000)} fps={30} width={1920} height={1080} />
     <Composition id="VideoLongo" component={VideoLongo} durationInFrames={24} fps={24} width={1920} height={1080} defaultProps={propsVideoLongoVazias} calculateMetadata={metadadosVideoLongo} />

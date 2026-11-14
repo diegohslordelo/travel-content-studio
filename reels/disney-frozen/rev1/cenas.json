@@ -1,0 +1,282 @@
+{
+ "nota": "Cenas do Reel do Frozen (REV1, 13/11/2026). Âncoras de palavra como nas Partes 1 e 2 ('f3:Frozen', 'f5:dois#2', 'fX:^' = começo do trecho). Tela verde = Diego recortado por IA na frente do que ele fala; inteiro = o vídeo dele sem recorte. Toda imagem ≥ 3 s (regra dos 3 s); a cena 'pb' tem 2,5 s porque é a tomada inteira do 'É brincadeira, velho?' (pedido do Diego), não imagem de apoio. Nada de efeito sobre o Diego além da conversão HDR → SDR neutra; o preto e branco é pedido dele só nessa cena. Imagens que ainda faltam (print do comentário, print do site oficial e imagem do show do Frozen) entram como cartão provisório marcado, até o Diego mandar.",
+ "acervo_dir": "../fonte/acervo",
+ "desl_verde": 240,
+ "legendaY": 1380,
+ "min_cena": 3.0,
+ "min_excecao": {
+  "pb": 2.4
+ },
+ "imagens": {
+  "comentario": {
+   "arquivo": "comentario_borrado.png",
+   "provisorio": "PRINT DO COMENTÁRIO\n(nome e foto borrados)\naguardando o print do Diego",
+   "w0": 1616,
+   "h0": 560
+  },
+  "site": {
+   "arquivo": "site_oficial.png",
+   "provisorio": "PRINT DO SITE OFICIAL\n(show do Frozen e fogos do castelo\nno mesmo horário)\naguardando o print do Diego",
+   "w0": 1616,
+   "h0": 1040
+  },
+  "frozen": {
+   "arquivo": "frozen_show.jpg",
+   "provisorio": "SHOW DO\nFROZEN\n(imagem a\nconfirmar)",
+   "w0": 1080,
+   "h0": 1920
+  }
+ },
+ "broll": {
+  "IMG_3595.MOV": {
+   "ini": 9.6,
+   "fim_limpo": 21.3,
+   "nota": "castelo no show da noite com o público na frente: lasers (2–8 s), fogos vermelhos (10–15 s) e coloridos (16–20 s)"
+  },
+  "IMG_3606.MOV": {
+   "ini": 0.0,
+   "fim_limpo": 17.2,
+   "nota": "fogos laranja e chafarizes; depois drones em coração sobre o castelo"
+  }
+ },
+ "cenas": [
+  {
+   "id": "gancho",
+   "modo": "verde",
+   "desl": 330,
+   "ini": 0,
+   "fim": "f2:^",
+   "fundo": {
+    "tipo": "video",
+    "plano": {
+     "arquivo": "IMG_3595.MOV",
+     "ini_src": 2.0,
+     "s": 1.0,
+     "u": 0.5,
+     "v": 0.62,
+     "y": 470,
+     "x": 840
+    }
+   },
+   "fita": [
+    {
+     "em": "f1:obrigando-0.1",
+     "y": 560,
+     "giro": -7,
+     "lado": "esq"
+    },
+    {
+     "em": "f1:dias-0.1",
+     "y": 690,
+     "giro": 5,
+     "lado": "dir"
+    }
+   ],
+   "nota": "Gancho com o castelo e a fita zebrada (regra dos Reels da Disney): castelo com os lasers do show (IMG_3595, 2,0–5,1 s), pequeno o bastante para aparecer acima da cabeça do Diego; a fita passa por trás dele"
+  },
+  {
+   "id": "comentario",
+   "modo": "verde",
+   "ini": "f2:^",
+   "fim": "f3:^",
+   "fundo": {
+    "tipo": "cartao",
+    "img_fundo": "IMG_3595.MOV@13.5",
+    "cartao": {
+     "img": "comentario",
+     "x": 136,
+     "y": 300,
+     "w": 808,
+     "entra": "f2:seguidor-0.15"
+    }
+   },
+   "nota": "Print do comentário (nome e foto borrados) sobre o castelo desfocado"
+  },
+  {
+   "id": "site_fogos",
+   "modo": "verde",
+   "ini": "f3:^",
+   "fim": "f4:^",
+   "fundo": {
+    "tipo": "cartao",
+    "plano": {
+     "arquivo": "IMG_3595.MOV",
+     "ini_src": 9.6,
+     "s": 1.35,
+     "u": 0.5,
+     "v": 0.62,
+     "y": 560
+    },
+    "cartao": {
+     "img": "site",
+     "x": 136,
+     "y": 280,
+     "w": 808,
+     "entra": "f3:site-0.15",
+     "sai": "f3:fogos-0.25",
+     "marcas": []
+    },
+    "escurecer": {
+     "ate": "f3:fogos-0.25"
+    }
+   },
+   "nota": "Print do site oficial na frente dos fogos do castelo; no 'show de fogos do castelo' o print sobe e os fogos aparecem"
+  },
+  {
+   "id": "pb",
+   "modo": "inteiro",
+   "pb": true,
+   "ini": "f4:^",
+   "fim": "f5:^",
+   "nota": "Pedido do Diego: inteiro e em preto e branco no 'É brincadeira, velho? A gente não tem um minuto de paz?'"
+  },
+  {
+   "id": "dois_parques",
+   "modo": "verde",
+   "ini": "f5:^",
+   "fim": "f6:^",
+   "fundo": {
+    "tipo": "dois",
+    "esq": {
+     "arquivo": "IMG_3595.MOV",
+     "ini_src": 12.4,
+     "s": 1.35,
+     "u": 0.5,
+     "v": 0.62,
+     "y": 560
+    },
+    "dir": {
+     "img": "frozen",
+     "foco": [
+      0.5,
+      0.3
+     ]
+    },
+    "marcos": {
+     "cinza": "f5:desiste-0.05",
+     "esq": "f5:escolhe-0.05",
+     "dir": "f5:dois#2-0.05"
+    }
+   },
+   "nota": "Os dois parques lado a lado: castelo (fogos) × Frozen. 'desiste' apaga os dois; 'escolhe um dos dois' acende um de cada vez"
+  },
+  {
+   "id": "opiniao",
+   "modo": "inteiro",
+   "ini": "f6:^",
+   "fim": "f7:^",
+   "nota": "Opinião direto para a câmera"
+  },
+  {
+   "id": "quando_fui",
+   "modo": "verde",
+   "ini": "f7:^",
+   "fim": "f8:^",
+   "fundo": {
+    "tipo": "video",
+    "plano": {
+     "arquivo": "IMG_3606.MOV",
+     "ini_src": 0.0,
+     "s": 1.1,
+     "u": 0.5,
+     "v": 0.62,
+     "y": 500
+    }
+   },
+   "nota": "'Quando eu fui': fogos e drones do dia dele na Disney (acervo de 18/03/2026)"
+  },
+  {
+   "id": "cta",
+   "modo": "inteiro",
+   "ini": "f8:^",
+   "fim": "fim",
+   "nota": "Pergunta para os comentários; a placa do DS (PARK HOPPER / OU 2 DIAS ?) entra no 'com o park hopper' e a legenda sai"
+  }
+ ],
+ "gancho": {
+  "topo": 268,
+  "fim": "f2:^",
+  "blocos": [
+   {
+    "ini": 0,
+    "linhas": [
+     {
+      "texto": "A DISNEY DE PARIS",
+      "tam": 80,
+      "em": 0
+     },
+     {
+      "texto": "ESTÁ TE OBRIGANDO",
+      "tam": 100,
+      "em": "f1:está-0.05"
+     },
+     {
+      "texto": "A IR DOIS DIAS",
+      "tam": 124,
+      "cor": "vermelho",
+      "em": "f1:ir-0.05"
+     },
+     {
+      "texto": "PRO PARQUE.",
+      "tam": 100,
+      "em": "f1:pro-0.05"
+     }
+    ]
+   }
+  ]
+ },
+ "legenda": {
+  "troca": {},
+  "quebrar_antes": [],
+  "sem_legenda": [
+   [
+    "f8:com-0.1",
+    "fim"
+   ]
+  ]
+ },
+ "sons": [
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f2:seguidor",
+   "desl": 0.05,
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "o print do comentário cai"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f3:site",
+   "desl": 0.05,
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "o print do site cai"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f3:fogos",
+   "desl": -0.05,
+   "rel_db": -10,
+   "alinhar": "pico",
+   "nota": "o print sobe e os fogos aparecem"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f4:^",
+   "desl": 0.02,
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "corte seco para o preto e branco"
+  }
+ ],
+ "cta": {
+  "ini": "f8:com-0.1",
+  "rotulo": "PARK HOPPER",
+  "destino": "OU 2 DIAS",
+  "modulo": "interrogacao",
+  "x": 72,
+  "y": 1150,
+  "entrada_ms": 0,
+  "clack_db_rel": -6
+ }
+}
