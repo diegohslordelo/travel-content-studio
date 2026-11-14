@@ -67,7 +67,15 @@ type Cartao = {
 type Painel = Plano & { img?: string; foco?: [number, number] };
 type Fundo =
   | { tipo: "video"; plano: Plano; escurecer?: { ate: number } }
-  | { tipo: "cartao"; plano?: Plano; img?: string; cartao: Cartao; escurecer?: { ate: number } }
+  | {
+      tipo: "cartao";
+      plano?: Plano;
+      img?: string;
+      cartao: Cartao;
+      escurecer?: { ate: number };
+      /** REV2: em "em", o plano encolhe para uma janela (gravação de tela) e o "novo" plano aparece atrás */
+      encolhe?: { em: number; novo: Plano; janela: { x: number; y: number; w: number } };
+    }
   | {
       tipo: "dois";
       esq: Painel;
@@ -84,6 +92,10 @@ type Cena = {
   desl?: number;
   fundo?: Fundo;
   fita?: { em: number; y: number; giro: number; lado: "esq" | "dir" }[];
+  /** REV2 (referência do Diego): no tela verde, o recorte fica pequeno, embaixo e no centro, com o fundo em tela cheia */
+  escala?: number;
+  /** REV2: altura da legenda nesta cena (acima da cabeça no tela verde pequeno; abaixo do queixo no inteiro) */
+  legendaY?: number;
 };
 type Palavra = { texto: string; ini: number; fim: number };
 type Grupo = { palavras: Palavra[]; ini: number; fim: number };
@@ -302,9 +314,38 @@ const FundoCena: React.FC<{ cena: Cena; fps: number }> = ({ cena, fps }) => {
   if (f.tipo === "video" || f.tipo === "cartao") {
     // escurece o fundo enquanto um cartão está na frente; volta ao normal quando ele sai
     const esc = f.escurecer ? 1 - easeInOut((t - f.escurecer.ate) / 0.4) : 0;
+    const enc = f.tipo === "cartao" && f.encolhe ? f.encolhe : null;
+    const e = enc ? easeInOut((t - enc.em) / 0.5) : 0;
+    const k = enc ? 1 + (enc.janela.w / 1080 - 1) * e : 1;
+    const planoBase = f.plano && <PlanoVideo p={f.plano} t={t} dur={dur} filtro={esc > 0 ? `brightness(${1 - 0.5 * esc}) blur(${6 * esc}px)` : undefined} />;
     corpo = (
       <>
-        {f.plano && <PlanoVideo p={f.plano} t={t} dur={dur} filtro={esc > 0 ? `brightness(${1 - 0.5 * esc}) blur(${6 * esc}px)` : undefined} />}
+        {enc && (
+          <Sequence from={Math.round(enc.em * fps)} premountFor={20} name="encolhe: plano novo">
+            <PlanoVideo p={enc.novo} t={t - enc.em} dur={dur - enc.em} />
+          </Sequence>
+        )}
+        {enc && e > 0 ? (
+          <div
+            style={{
+              position: "absolute",
+              left: 0,
+              top: 0,
+              width: 1080,
+              height: 1920,
+              transformOrigin: "0 0",
+              transform: `translate(${enc.janela.x * e}px, ${enc.janela.y * e}px) scale(${k})`,
+              borderRadius: (28 * e) / k,
+              overflow: "hidden",
+              boxShadow: e > 0.05 ? `0 ${24 / k}px ${60 / k}px rgba(0,0,0,${0.6 * e})` : undefined,
+              outline: `${(6 * e) / k}px solid rgba(255,255,255,${0.9 * e})`,
+            }}
+          >
+            {planoBase}
+          </div>
+        ) : (
+          planoBase
+        )}
         {f.tipo === "cartao" && f.img && (
           <Img src={staticFile(f.img)} style={{ position: "absolute", inset: 0, width: 1080, height: 1920, objectFit: "cover", scale: "1.1", filter: "blur(22px) brightness(0.45)" }} />
         )}
@@ -335,11 +376,25 @@ const FundoCena: React.FC<{ cena: Cena; fps: number }> = ({ cena, fps }) => {
 };
 
 /** Diego recortado (tela verde): o mesmo vídeo das falas, com alfa, deslocado para baixo para abrir o fundo em cima. */
-const DiegoVerde: React.FC<{ desl: number }> = ({ desl }) => (
-  <div style={{ position: "absolute", left: 0, top: desl, width: 1080, height: 1920 }}>
-    <OffthreadVideo src={staticFile("fala_alfa.webm")} transparent muted style={{ width: 1080, height: 1920 }} />
-  </div>
-);
+const DiegoVerde: React.FC<{ desl: number; escala?: number }> = ({ desl, escala }) => {
+  if (escala) {
+    // REV2: pequeno, embaixo e no centro (como na referência do Diego). As laterais do quadro original cortam os ombros:
+    // a borda some num degradê de 7% em vez de uma linha reta. Nenhum filtro sobre a imagem dele.
+    const w = 1080 * escala;
+    const h = 1920 * escala;
+    const mascara = "linear-gradient(to right, transparent 0%, #000 7%, #000 93%, transparent 100%)";
+    return (
+      <div style={{ position: "absolute", left: (1080 - w) / 2, top: 1920 - h + desl, width: w, height: h, maskImage: mascara, WebkitMaskImage: mascara }}>
+        <OffthreadVideo src={staticFile("fala_alfa.webm")} transparent muted style={{ width: w, height: h }} />
+      </div>
+    );
+  }
+  return (
+    <div style={{ position: "absolute", left: 0, top: desl, width: 1080, height: 1920 }}>
+      <OffthreadVideo src={staticFile("fala_alfa.webm")} transparent muted style={{ width: 1080, height: 1920 }} />
+    </div>
+  );
+};
 
 /** Diego inteiro: o vídeo das falas sem recorte e sem filtro; preto e branco só onde ele pediu. */
 const DiegoInteiro: React.FC<{ pb?: boolean }> = ({ pb }) => (
@@ -352,7 +407,7 @@ const DiegoInteiro: React.FC<{ pb?: boolean }> = ({ pb }) => (
  * Legenda (pedido do Diego): Inter 800 66 px, branca, 1 a 4 palavras; as palavras aparecem quando são ditas e a que ele
  * está falando fica âmbar (a cor de destaque de sempre), em vez da palavra de entonação.
  */
-const Legenda: React.FC<{ p: PropsFrozen; tS: number }> = ({ p, tS }) => {
+const Legenda: React.FC<{ p: PropsFrozen; tS: number; y?: number }> = ({ p, tS, y }) => {
   const g = p.legendas.find((x) => tS >= x.ini && tS < x.fim);
   if (!g) return null;
   const e = ease((tS - g.ini) / 0.12);
@@ -368,7 +423,7 @@ const Legenda: React.FC<{ p: PropsFrozen; tS: number }> = ({ p, tS }) => {
         position: "absolute",
         left: 0,
         right: 0,
-        top: p.legendaY,
+        top: y ?? p.legendaY,
         translate: "0 -50%",
         textAlign: "center",
         padding: "0 90px",
@@ -443,7 +498,7 @@ export const ReelFrozen: React.FC<PropsFrozen> = (p) => {
       {cena.modo === "verde" && cena.fita && (
         <Fita t={t} faixas={cena.fita} />
       )}
-      {cena.modo === "verde" ? <DiegoVerde desl={cena.desl ?? 0} /> : <DiegoInteiro pb={cena.pb} />}
+      {cena.modo === "verde" ? <DiegoVerde desl={cena.desl ?? 0} escala={cena.escala} /> : <DiegoInteiro pb={cena.pb} />}
       {cena.id === p.cenas[0].id && tS < p.fimGancho && (
         <div
           style={{
@@ -458,7 +513,7 @@ export const ReelFrozen: React.FC<PropsFrozen> = (p) => {
         />
       )}
       <Gancho p={p} tS={tS} />
-      <Legenda p={p} tS={tS} />
+      <Legenda p={p} tS={tS} y={cena.legendaY} />
       {/* CTA: único lugar do Reel com o DS V2 (placa de direção + módulo; Chegada; clack) */}
       <Sequence from={ctaQ} name="CTA (DS V2)">
         <Placa rotulo={p.cta.rotulo} destino={p.cta.destino} modulo={p.cta.modulo} entrada={p.cta.entrada} x={p.cta.x} y={p.cta.y} />

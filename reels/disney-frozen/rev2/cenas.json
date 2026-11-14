@@ -1,0 +1,324 @@
+{
+ "nota": "Cenas do Reel do Frozen (REV2, 14/11/2026). Pedido do Diego: tela verde igual à referência (@calma.curioso, reel DCFVQdxubpp): o fundo em tela cheia e o Diego recortado pequeno, embaixo e no centro; o Claude escolhe os momentos de tela verde e de inteiro; entram os vídeos do TikTok gravados na tela (Cascade of Lights, o show do parque da área do Frozen). Regra dos 3 s, sem efeito no Diego (o tamanho menor é layout, como a tela dividida), preto e branco só no 'É brincadeira, velho?'.",
+ "acervo_dir": "../fonte/acervo",
+ "desl_verde": 240,
+ "legendaY": 1380,
+ "min_cena": 3.0,
+ "min_excecao": {
+  "pb": 2.4
+ },
+ "imagens": {
+  "comentario": {
+   "arquivo": "comentario_borrado.png",
+   "provisorio": "PRINT DO COMENTÁRIO\n(nome e foto borrados)\naguardando o print do Diego",
+   "w0": 1616,
+   "h0": 560
+  },
+  "site": {
+   "arquivo": "site_oficial.png",
+   "provisorio": "PRINT DO SITE OFICIAL\n(show do Frozen e fogos do castelo\nno mesmo horário)\naguardando o print do Diego",
+   "w0": 1616,
+   "h0": 1040
+  },
+  "frozen": {
+   "arquivo": "frozen_show.jpg",
+   "provisorio": "SHOW DO\nFROZEN\n(imagem a\nconfirmar)",
+   "w0": 1080,
+   "h0": 1920
+  }
+ },
+ "broll": {
+  "IMG_3595.MOV": {
+   "ini": 9.6,
+   "fim_limpo": 21.3,
+   "nota": "castelo no show da noite com o público na frente: lasers (2–8 s), fogos vermelhos (10–15 s) e coloridos (16–20 s)"
+  },
+  "IMG_3606.MOV": {
+   "ini": 0.0,
+   "fim_limpo": 17.2,
+   "nota": "fogos laranja e chafarizes; depois drones em coração sobre o castelo"
+  },
+  "tela_longo.mp4": {
+   "pasta": "../fonte/tiktok",
+   "ini": 3.0,
+   "fim_limpo": 33.0,
+   "sdr": true,
+   "recorte": [
+    1206,
+    2144,
+    0,
+    239
+   ],
+   "nota": "gravação de tela do TikTok (Rob Ender, 21/04): Disney Cascade of Lights no Disney Adventure World. 3–33 s em 1x (quadros repetidos 2×, medido); 34–36 s em 2x, fora"
+  }
+ },
+ "cenas": [
+  {
+   "id": "gancho",
+   "modo": "verde",
+   "ini": 0,
+   "fim": "f2:^",
+   "fundo": {
+    "tipo": "video",
+    "plano": {
+     "arquivo": "IMG_3595.MOV",
+     "ini_src": 2.0,
+     "s": 1.0,
+     "u": 0.5,
+     "v": 0.73,
+     "y": 1040
+    }
+   },
+   "fita": [
+    {
+     "em": "f1:obrigando-0.1",
+     "y": 800,
+     "giro": -7,
+     "lado": "esq"
+    },
+    {
+     "em": "f1:dias-0.1",
+     "y": 930,
+     "giro": 5,
+     "lado": "dir"
+    }
+   ],
+   "nota": "Gancho: castelo com os lasers (IMG_3595) em tela cheia, fita zebrada cruzando o castelo, Diego pequeno embaixo"
+  },
+  {
+   "id": "comentario",
+   "modo": "verde",
+   "ini": "f2:^",
+   "fim": "f3:^",
+   "fundo": {
+    "tipo": "cartao",
+    "img_fundo": "IMG_3595.MOV@13.5",
+    "cartao": {
+     "img": "comentario",
+     "x": 72,
+     "y": 430,
+     "w": 936,
+     "entra": "f2:seguidor-0.15",
+     "marcas": [
+      {
+       "r": [
+        254,
+        124,
+        304,
+        52
+       ],
+       "em": "f2:isso-0.05"
+      }
+     ]
+    }
+   },
+   "nota": "Print do comentário do seguidor (Instagram, 14/11/2026), recortado e com nome e foto borrados (scripts/borrar.py); marca-texto âmbar em 'show da frozen' no 'isso aí'"
+  },
+  {
+   "id": "site_fogos",
+   "modo": "verde",
+   "ini": "f3:^",
+   "fim": "f4:^",
+   "fundo": {
+    "tipo": "cartao",
+    "plano": {
+     "arquivo": "tela_longo.mp4",
+     "ini_src": 8.0,
+     "s": 1.0,
+     "u": 0.5,
+     "v": 0.5,
+     "y": 960
+    },
+    "cartao": {
+     "img": "site",
+     "x": 136,
+     "y": 300,
+     "w": 808,
+     "entra": "f3:site-0.15",
+     "sai": "f3:acontece-0.4",
+     "marcas": []
+    },
+    "escurecer": {
+     "ate": "f3:acontece-0.4"
+    },
+    "encolhe": {
+     "em": "f3:acontece-0.25",
+     "janela": {
+      "x": 72,
+      "y": 270,
+      "w": 360
+     },
+     "novo": {
+      "arquivo": "IMG_3595.MOV",
+      "ini_src": 12.4,
+      "s": 1.15,
+      "u": 0.5,
+      "v": 0.8,
+      "x": 680,
+      "y": 1050
+     }
+    }
+   },
+   "nota": "Print do site oficial na frente do show do Disney Adventure World (TikTok); no 'acontece no mesmo horário' o print sai, o show encolhe para uma janela (gravação de tela) e os fogos do castelo aparecem atrás: os dois shows ao mesmo tempo"
+  },
+  {
+   "id": "pb",
+   "modo": "inteiro",
+   "pb": true,
+   "ini": "f4:^",
+   "fim": "f5:^",
+   "nota": "Pedido do Diego: inteiro e em preto e branco no 'É brincadeira, velho? A gente não tem um minuto de paz?'"
+  },
+  {
+   "id": "dois_parques",
+   "modo": "verde",
+   "ini": "f5:^",
+   "fim": "f6:^",
+   "fundo": {
+    "tipo": "dois",
+    "esq": {
+     "arquivo": "IMG_3606.MOV",
+     "ini_src": 0.0,
+     "s": 1.0,
+     "u": 0.5,
+     "v": 0.55,
+     "y": 960
+    },
+    "dir": {
+     "arquivo": "tela_longo.mp4",
+     "ini_src": 23.5,
+     "s": 1.0,
+     "u": 0.5,
+     "v": 0.5,
+     "y": 960
+    },
+    "marcos": {
+     "cinza": "f5:desiste-0.05",
+     "esq": "f5:escolhe-0.05",
+     "dir": "f5:dois#2-0.05"
+    }
+   },
+   "nota": "Os dois parques lado a lado: fogos do castelo (acervo) × show do Disney Adventure World (TikTok). 'desiste' apaga os dois; 'escolhe um dos dois' acende um de cada vez"
+  },
+  {
+   "id": "opiniao",
+   "modo": "inteiro",
+   "ini": "f6:^",
+   "fim": "f7:^",
+   "nota": "Opinião direto para a câmera"
+  },
+  {
+   "id": "quando_fui",
+   "modo": "verde",
+   "ini": "f7:^",
+   "fim": "f8:^",
+   "fundo": {
+    "tipo": "video",
+    "plano": {
+     "arquivo": "IMG_3606.MOV",
+     "ini_src": 3.0,
+     "s": 1.0,
+     "u": 0.5,
+     "v": 0.62,
+     "y": 760
+    }
+   },
+   "nota": "'Quando eu fui': fogos e drones do dia dele na Disney (acervo de 18/03/2026)"
+  },
+  {
+   "id": "cta",
+   "modo": "inteiro",
+   "ini": "f8:^",
+   "fim": "fim",
+   "nota": "Pergunta para os comentários; a placa do DS (PARK HOPPER / OU 2 DIAS ?) entra no 'com o park hopper' e a legenda sai"
+  }
+ ],
+ "gancho": {
+  "topo": 268,
+  "fim": "f2:^",
+  "blocos": [
+   {
+    "ini": 0,
+    "linhas": [
+     {
+      "texto": "A DISNEY DE PARIS",
+      "tam": 80,
+      "em": 0
+     },
+     {
+      "texto": "ESTÁ TE OBRIGANDO",
+      "tam": 100,
+      "em": "f1:está-0.05"
+     },
+     {
+      "texto": "A IR DOIS DIAS",
+      "tam": 124,
+      "cor": "vermelho",
+      "em": "f1:ir-0.05"
+     },
+     {
+      "texto": "PRO PARQUE.",
+      "tam": 100,
+      "em": "f1:pro-0.05"
+     }
+    ]
+   }
+  ]
+ },
+ "legenda": {
+  "troca": {},
+  "quebrar_antes": [],
+  "sem_legenda": [
+   [
+    "f8:com-0.1",
+    "fim"
+   ]
+  ]
+ },
+ "sons": [
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f2:seguidor",
+   "desl": 0.05,
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "o print do comentário cai"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f3:site",
+   "desl": 0.05,
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "o print do site cai"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "f3:fogos",
+   "desl": -0.05,
+   "rel_db": -10,
+   "alinhar": "pico",
+   "nota": "o print sobe e os fogos aparecem"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "f4:^",
+   "desl": 0.02,
+   "rel_db": -8,
+   "alinhar": "pico",
+   "nota": "corte seco para o preto e branco"
+  }
+ ],
+ "cta": {
+  "ini": "f8:com-0.1",
+  "rotulo": "PARK HOPPER",
+  "destino": "OU 2 DIAS",
+  "modulo": "interrogacao",
+  "x": 72,
+  "y": 1150,
+  "entrada_ms": 0,
+  "clack_db_rel": -6
+ },
+ "escala_verde": 0.55,
+ "legendaY_verde": 970
+}

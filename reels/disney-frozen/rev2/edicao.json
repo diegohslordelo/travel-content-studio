@@ -1,0 +1,93 @@
+{
+ "nota": "Voz do Reel do Frozen (REV1): uma gravação do quarto (Drive Disney/Reel/Frozen, 13/11/2026), já na ordem do Diego. Pedido dele: não cortar nada da fala.",
+ "fonte_dir": "../fonte",
+ "fonte": "diego_frozen.mp4",
+ "fps": 30,
+ "tomadas": [
+  [
+   0,
+   3.9667
+  ],
+  [
+   3.9667,
+   14.7333
+  ],
+  [
+   14.7333,
+   17.2667
+  ],
+  [
+   17.2667,
+   24.1667
+  ],
+  [
+   24.1667,
+   29.1667
+  ],
+  [
+   29.1667,
+   35.1667
+  ],
+  [
+   35.1667,
+   40.37
+  ]
+ ],
+ "nota_tomadas": "Cortes entre tomadas medidos (ffmpeg scdet): 3,97 · 14,73 · 17,27 · 24,17 · 29,17 · 35,17 s. A gravação já vem montada pelo Diego, uma tomada por frase.",
+ "falas": [
+  {
+   "id": "f1",
+   "in": 0.0,
+   "out": 3.9667,
+   "texto": "A Disney de Paris está te obrigando a ir dois dias pro parque."
+  },
+  {
+   "id": "f2",
+   "in": 3.9667,
+   "out": 7.45,
+   "texto": "Um seguidor comentou isso aí no meu vídeo de dicas da Disney. É verdade."
+  },
+  {
+   "id": "f3",
+   "in": 7.4,
+   "out": 14.7333,
+   "texto": "No site oficial deles diz que o show de Frozen, a área nova dos parques, acontece no mesmo horário do show de fogos do castelo."
+  },
+  {
+   "id": "f4",
+   "in": 14.7333,
+   "out": 17.2667,
+   "texto": "É brincadeira, velho? A gente não tem um minuto de paz?",
+   "out_fixo": 17.2667,
+   "nota": "Termina no fim da tomada: a cara do Diego depois do 'paz?' faz parte da piada (preto e branco)"
+  },
+  {
+   "id": "f5",
+   "in": 19.1,
+   "out": 24.1667,
+   "texto": "Ou seja, quem queria fazer os dois parques em um dia ou desiste ou escolhe um dos dois."
+  },
+  {
+   "id": "f6",
+   "in": 24.1667,
+   "out": 29.1667,
+   "texto": "Claramente não é coincidência, né? Uma jogada da Disney pra você passar mais tempo com eles."
+  },
+  {
+   "id": "f7",
+   "in": 29.1667,
+   "out": 35.1667,
+   "texto": "Quando eu fui não tinha nem área nova, eu consegui fazer tudo em um dia, mas agora tenho que dividir, né? Eu quero ver tudo."
+  },
+  {
+   "id": "f8",
+   "in": 35.1667,
+   "out": 40.3,
+   "texto": "E aí, você acha que foi estratégia da Disney também? E você continuaria com o park hopper ou separaria os dias?",
+   "out_fixo": 40.3,
+   "nota": "Vai até o fim da gravação: segura a placa do CTA"
+  }
+ ],
+ "nota_texto": "Texto conferido: Whisper large-v3 + comparação de alinhamento (MMS_FA) entre as leituras possíveis, 13/11/2026: 'pro parque' (não 'para o'), 'da Disney. É verdade' (sem 'e'), 'coincidência, né? Uma jogada' (não 'não é uma'), 'agora tenho que' (sem 'eu'), 'park hopper' (o Whisper ouviu 'parque e roupa'). 'velho' escrito como o Diego escreveu no pedido. Continua sendo transcrição automática: a escuta é do Diego.",
+ "nota_cortes": "'in'/'out' das falas são só a janela de busca do alinhamento. O corte real sai de preparar.py: do silêncio antes da 1ª palavra ao silêncio depois da última (energia < −45 dB, folga ≤ 0,15 s), dentro da tomada. Nenhuma palavra cortada; nada acelerado."
+}
