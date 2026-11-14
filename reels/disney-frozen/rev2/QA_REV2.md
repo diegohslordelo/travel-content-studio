@@ -1,6 +1,6 @@
 # QA · REV2 · "A Disney de Paris está te obrigando a ir dois dias" (Frozen × fogos do castelo)
 
-**Veredito: ajustar.** O layout de tela verde segue a referência do Diego, e o show do parque do Frozen entrou com a gravação de tela do TikTok. O print do comentário entrou (recortado, com nome e foto borrados). Falta só **o print do site oficial**, que continua como cartão provisório listrado (arquivo com sufixo `_provisorio`). Com ele em `imagens/site_oficial.png`, basta rodar `bash scripts/render.sh`.
+**Veredito: pronto**, depois da escuta do Diego (transcrição e emendas, ≈ 1 min) e da decisão sobre o crédito do vídeo do TikTok. O layout de tela verde segue a referência do Diego; o show do parque do Frozen entrou com a gravação de tela do TikTok; o print do comentário (nome e foto borrados) e o **print do site oficial** (com a frase do "mesmo tempo") estão no vídeo.
 
 ## O que mudou da REV1 (pedido do Diego, 14/11/2026)
 
@@ -18,7 +18,7 @@
 |---|---|---|
 | 0,00–3,10 | "A Disney de Paris está te obrigando a ir dois dias pro parque." | **Tela verde.** Castelo com os lasers do show (acervo) em tela cheia, fita zebrada cruzando o castelo, gancho em letras grandes ("A IR DOIS DIAS" em vermelho) |
 | 3,10–6,57 | "Um seguidor comentou isso aí no meu vídeo de dicas da Disney. É verdade." | **Tela verde.** Print do comentário ("O problema é que no disney adventure agora tem o show da frozen, ai fica uma duvida cruel."), nome e foto borrados, sobre os fogos desfocados |
-| 6,57–13,07 | "No site oficial deles diz que o show de Frozen, a área nova dos parques, acontece no mesmo horário do show de fogos do castelo." | **Tela verde.** Print do site (provisório, 3,2 s) na frente do show do Disney Adventure World. No "acontece no mesmo horário" o print sai, o show **encolhe para uma janela** (como uma gravação de tela) e os fogos do castelo aparecem atrás: os dois shows ao mesmo tempo |
+| 6,57–13,07 | "No site oficial deles diz que o show de Frozen, a área nova dos parques, acontece no mesmo horário do show de fogos do castelo." | **Tela verde.** Print do site oficial (3,2 s) na frente do show do Disney Adventure World; no "diz que" o marca-texto âmbar passa em "Este espetáculo realiza-se ao mesmo tempo que o Disney Tales of Magic no Parque Disneyland." No "acontece no mesmo horário" o print sai, o show **encolhe para uma janela** (como uma gravação de tela) e os fogos do castelo aparecem atrás: os dois shows ao mesmo tempo |
 | 13,07–15,53 | "É brincadeira, velho? A gente não tem um minuto de paz?" | **Inteiro, preto e branco** |
 | 15,53–19,63 | "Ou seja, quem queria fazer os dois parques em um dia ou desiste ou escolhe um dos dois." | **Tela verde em dois:** fogos do castelo (acervo) × show do Disney Adventure World (TikTok). "desiste" apaga os dois; "escolhe um dos dois" acende um, depois o outro |
 | 19,63–23,93 | "Claramente não é coincidência, né? Uma jogada da Disney pra você passar mais tempo com eles." | **Inteiro** |
@@ -53,7 +53,10 @@ Decupagem, texto da fala, voz e legenda palavra a palavra: os mesmos da REV1 (`.
 
 ## Fatos: o que não está confirmado
 
-- **O horário coincidente continua sem confirmação** (o site da Disney recusa acesso automático). O comentário do seguidor fala do show novo e da "dúvida cruel", mas **não fala em mesmo horário**: essa parte vem do site oficial, segundo o Diego. O print do site é a prova na tela.
+- **Horário coincidente: confirmado no site oficial** (14/11/2026, pedido do Diego para o Claude pesquisar e tirar o print). Página do Disney Cascade of Lights em `disneylandparis.com/pt-pt/entretenimento/disney-adventure-world/disney-cascade-of-lights`, pergunta "O Disney Cascade of Lights acontece todas as noites?": *"Este espetáculo realiza-se ao mesmo tempo que o Disney Tales of Magic no Parque Disneyland. Uma vez que os horários podem variar, convidamos os Visitantes a consultarem a App Móvel da Disneyland Paris no dia da sua visita."* A mesma resposta continua: *"Se estiveres hospedado num Hotel Disney como parte de um pacote que inclui Entradas para os Parques Disney, as tuas Entradas incluem o acesso a ambos os Parques durante pelo menos dois dias, permitindo-te desfrutar plenamente destas duas experiências únicas, cada uma num Parque diferente."* (a própria Disney sugere dois dias, o que reforça a leitura do Diego, mas a "jogada" continua sendo opinião).
+- **O print:** capturas reais da página (navegador sem login, versão de celular, 340 px de largura para o texto ficar legível no Reel), montadas em uma imagem: o cabeçalho do site (logo), o título da página e o parágrafo da resposta, sem mudar nenhum texto. Fora do print: o 1º parágrafo da resposta ("Sim! … todas as noites, incluindo ao fim de semana.") e o botão flutuante "Opinião" do site, que cobria o canto (pintado de branco). Capturas originais em `../fonte/prints/site/` (fora do git).
+- O comentário do seguidor fala do show novo e da "dúvida cruel", sem falar em mesmo horário: essa parte vem do site.
+- **Horário exato:** o site não publica; manda ver no app (30 dias antes da visita). O Reel não diz horário.
 - "Claramente não é coincidência" e "jogada da Disney" são opinião do Diego.
 
 ## Conferir no ouvido (≈ 1 min)

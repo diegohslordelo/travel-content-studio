@@ -131,12 +131,40 @@
     },
     "cartao": {
      "img": "site",
-     "x": 136,
-     "y": 300,
-     "w": 808,
+     "x": 170,
+     "y": 200,
+     "w": 740,
      "entra": "f3:site-0.15",
      "sai": "f3:acontece-0.4",
-     "marcas": []
+     "marcas": [
+      {
+       "r": [
+        618,
+        597,
+        284,
+        50
+       ],
+       "em": "f3:diz-0.05"
+      },
+      {
+       "r": [
+        143,
+        651,
+        745,
+        50
+       ],
+       "em": "f3:diz+0.25"
+      },
+      {
+       "r": [
+        143,
+        705,
+        672,
+        50
+       ],
+       "em": "f3:diz+0.55"
+      }
+     ]
     },
     "escurecer": {
      "ate": "f3:acontece-0.4"
@@ -159,7 +187,7 @@
      }
     }
    },
-   "nota": "Print do site oficial na frente do show do Disney Adventure World (TikTok); no 'acontece no mesmo horário' o print sai, o show encolhe para uma janela (gravação de tela) e os fogos do castelo aparecem atrás: os dois shows ao mesmo tempo"
+   "nota": "Print do site oficial (disneylandparis.com/pt-pt, página do Disney Cascade of Lights, pergunta 'acontece todas as noites?', 14/11/2026): marca-texto em 'Este espetáculo realiza-se ao mesmo tempo que o Disney Tales of Magic no Parque Disneyland.' no 'diz que'. No 'acontece no mesmo horário' o print sai, o show encolhe para uma janela (TikTok) e os fogos do castelo aparecem atrás"
   },
   {
    "id": "pb",

@@ -6,7 +6,7 @@ Regras (pedido do Diego): 1 CTA, sem linha de fonte, palavras-chave do tema. O h
 ```
 A Disney de Paris está te obrigando a ir dois dias pro parque? 🏰❄️
 
-Um seguidor me avisou e o site oficial mostra: o show novo do Disney Adventure World (o parque da área do Frozen) acontece no mesmo horário do show de fogos do castelo. Quem ia fazer os dois parques num dia só com o park hopper vai ter que escolher um dos dois.
+Um seguidor me avisou e o site oficial confirma: o show novo do Disney Adventure World (o parque da área do Frozen) acontece no mesmo horário do show de fogos do castelo. Quem ia fazer os dois parques num dia só com o park hopper vai ter que escolher um dos dois.
 
 Quando eu fui, deu pra ver tudo em um dia. Agora eu dividiria.
 
