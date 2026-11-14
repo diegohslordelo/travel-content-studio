@@ -1,0 +1,116 @@
+{
+ "fps": 30,
+ "rampa_s": 0.5,
+ "_nota": "Trechos em segundos do bruto. vel = multiplicador de velocidade. seta = indicação mostrada no trecho.",
+ "trechos": [
+  {
+   "arq": "IMG_9750.mov",
+   "ini": 0.0,
+   "fim": 4.5,
+   "vel": 3
+  },
+  {
+   "arq": "IMG_9750.mov",
+   "ini": 4.5,
+   "fim": 16.5,
+   "vel": 2,
+   "seta": {
+    "tipo": "retorno",
+    "texto": "Faça o retorno"
+   }
+  },
+  {
+   "arq": "IMG_9750.mov",
+   "ini": 16.5,
+   "fim": 28.4,
+   "vel": 5
+  },
+  {
+   "arq": "IMG_9751.mov",
+   "ini": 0.0,
+   "fim": 38.5,
+   "vel": 5
+  },
+  {
+   "arq": "IMG_9751.mov",
+   "ini": 38.5,
+   "fim": 51.0,
+   "vel": 2.5,
+   "seta": {
+    "tipo": "frente",
+    "texto": "Entre no túnel"
+   }
+  },
+  {
+   "arq": "IMG_9751.mov",
+   "ini": 51.0,
+   "fim": 73.0,
+   "vel": 5
+  },
+  {
+   "arq": "IMG_9751.mov",
+   "ini": 73.0,
+   "fim": 81.0,
+   "vel": 1.5,
+   "seta": {
+    "tipo": "direita",
+    "texto": "Vire à direita"
+   }
+  },
+  {
+   "arq": "IMG_9751.mov",
+   "ini": 81.0,
+   "fim": 92.0,
+   "vel": 5
+  },
+  {
+   "arq": "IMG_9751.mov",
+   "ini": 92.0,
+   "fim": 101.0,
+   "vel": 1.5,
+   "seta": {
+    "tipo": "esquerda",
+    "texto": "Vire à esquerda"
+   }
+  },
+  {
+   "arq": "IMG_9751.mov",
+   "ini": 101.0,
+   "fim": 112.5,
+   "vel": 5
+  },
+  {
+   "arq": "IMG_9751.mov",
+   "ini": 112.5,
+   "fim": 124.0,
+   "vel": 2.5,
+   "seta": {
+    "tipo": "frente",
+    "texto": "Siga em frente"
+   }
+  },
+  {
+   "arq": "IMG_9751.mov",
+   "ini": 124.0,
+   "fim": 135.5,
+   "vel": 5
+  },
+  {
+   "arq": "IMG_9751.mov",
+   "ini": 135.5,
+   "fim": 144.4,
+   "vel": 1,
+   "chegada": true
+  }
+ ],
+ "placa": {
+  "arq": "IMG_9751.mov",
+  "t": 142.6
+ },
+ "marcos": {
+  "placa": [
+   "IMG_9751.mov",
+   139.8
+  ]
+ }
+}

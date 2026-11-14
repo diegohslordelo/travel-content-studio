@@ -1,0 +1,95 @@
+{
+ "fps": 30,
+ "quadros": 1706,
+ "eventos": [
+  {
+   "de": 0,
+   "ate": 46,
+   "vel": 3
+  },
+  {
+   "de": 46,
+   "ate": 220,
+   "vel": 2,
+   "seta": {
+    "tipo": "retorno",
+    "texto": "Fa\u00e7a o retorno"
+   }
+  },
+  {
+   "de": 220,
+   "ate": 293,
+   "vel": 5
+  },
+  {
+   "de": 293,
+   "ate": 525,
+   "vel": 5
+  },
+  {
+   "de": 525,
+   "ate": 670,
+   "vel": 2.5,
+   "seta": {
+    "tipo": "frente",
+    "texto": "Entre no t\u00fanel"
+   }
+  },
+  {
+   "de": 670,
+   "ate": 805,
+   "vel": 5
+  },
+  {
+   "de": 805,
+   "ate": 948,
+   "vel": 1.5,
+   "seta": {
+    "tipo": "direita",
+    "texto": "Vire \u00e0 direita"
+   }
+  },
+  {
+   "de": 948,
+   "ate": 1017,
+   "vel": 5
+  },
+  {
+   "de": 1017,
+   "ate": 1180,
+   "vel": 1.5,
+   "seta": {
+    "tipo": "esquerda",
+    "texto": "Vire \u00e0 esquerda"
+   }
+  },
+  {
+   "de": 1180,
+   "ate": 1252,
+   "vel": 5
+  },
+  {
+   "de": 1252,
+   "ate": 1385,
+   "vel": 2.5,
+   "seta": {
+    "tipo": "frente",
+    "texto": "Siga em frente"
+   }
+  },
+  {
+   "de": 1385,
+   "ate": 1457,
+   "vel": 5
+  },
+  {
+   "de": 1457,
+   "ate": 1706,
+   "vel": 1,
+   "chegada": true
+  }
+ ],
+ "marcos": {
+  "placa": 1568
+ }
+}

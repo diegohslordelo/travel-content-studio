@@ -1,0 +1,5 @@
+remotion/node_modules/
+remotion/out/
+# derivado dos brutos: refaz com scripts/remap.py
+remotion/public/rota_base.mp4
+remotion/public/placa.jpg

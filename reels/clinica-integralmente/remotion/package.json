@@ -1,0 +1,15 @@
+{
+  "name": "clinica-integralmente-rota",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": { "studio": "remotion studio", "render": "remotion render Rota out/rota.mp4" },
+  "dependencies": {
+    "@fontsource/montserrat": "^5.2.5",
+    "@remotion/cli": "4.0.535",
+    "@remotion/media": "4.0.535",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.535"
+  },
+  "devDependencies": { "typescript": "^5.6.0", "@types/react": "^19.0.0" }
+}
