@@ -141,10 +141,10 @@ const Chegando: React.FC<{ dur: number }> = ({ dur }) => {
       <div style={{ position: "absolute", left: 0, right: 0, top: 300, display: "flex", justifyContent: "center" }}>
         <div style={{
           transform: `scale(${s * saida})`, background: "white", color: ESCURO, borderRadius: 28, padding: "20px 40px",
-          fontFamily: FONTE, fontWeight: 900, fontSize: 50, display: "flex", alignItems: "center", gap: 18, whiteSpace: "nowrap",
+          fontFamily: FONTE, fontWeight: 900, fontSize: 42, display: "flex", alignItems: "center", gap: 16, whiteSpace: "nowrap",
           boxShadow: "0 14px 40px rgba(0,0,0,.4)",
         }}>
-          <Pin size={50} /> CHEGANDO · PRÉDIO À DIREITA
+          <Pin size={44} /> CHEGANDO · PRÉDIO À ESQUERDA
         </div>
       </div>
     </AbsoluteFill>
@@ -226,15 +226,12 @@ export const Rota: React.FC = () => {
           <React.Fragment key={i}>
             <Sequence from={de} durationInFrames={dur}><Seta tipo={e.seta!.tipo} texto={e.seta!.texto} dur={dur} /></Sequence>
             <Sequence from={de} durationInFrames={20}><Audio src={staticFile("remotion_whoosh.wav")} volume={0.7} /></Sequence>
-            <Sequence from={de + 6} durationInFrames={15}><Audio src={staticFile("remotion_mouse-click.wav")} volume={0.5} /></Sequence>
           </React.Fragment>
         );
       })}
 
       <Sequence from={chegada.de} durationInFrames={placa - chegada.de - 6}><Chegando dur={placa - chegada.de - 6} /></Sequence>
-      <Sequence from={chegada.de - 25} durationInFrames={30}><Audio src={staticFile("PDX_riser.wav")} volume={0.5} /></Sequence>
       <Sequence from={placa} durationInFrames={FIM_VIDEO - placa - CROSS}><NomePredio /></Sequence>
-      <Sequence from={placa} durationInFrames={20}><Audio src={staticFile("PDX_impacto.wav")} volume={0.6} /></Sequence>
 
       <Sequence from={FIM_VIDEO - CROSS} durationInFrames={FINAL}><Final /></Sequence>
       <Sequence from={FIM_VIDEO - CROSS + 22} durationInFrames={25}><Audio src={staticFile("PDX_impacto.wav")} volume={0.8} /></Sequence>

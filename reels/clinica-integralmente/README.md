@@ -21,12 +21,12 @@ Pedido do Diego em 14/11/2026. **Peça livre, fora do DS da Primeiro Dia** (a pe
 | 9751 · 1:41–1:52,5 | 5× | reta |
 | 9751 · 1:52,5–2:04 | 2,5× | seta **Siga em frente** (cruzamento) |
 | 9751 · 2:04–2:15,5 | 5× | reta |
-| 9751 · 2:15,5–fim | 1× | "Chegando · prédio à direita" → "É aqui! Empresarial Costa Andrade" |
+| 9751 · 2:15,5–fim | 1× | "Chegando · prédio à esquerda" → "É aqui! Empresarial Costa Andrade" |
 | quadro 2:22,6 congelado | — | cartão final: Empresarial Costa Andrade · **Sala 807** |
 
 Direção das viradas medida por fluxo óptico (`scripts/yaw.py`) e conferida nos quadros.
 Entre trechos a velocidade muda com rampa de 0,5 s. Áudio original removido (fica estranho acelerado);
-só efeitos CC0 do kit (`design-system/sons/externos/`). Ninguém ouviu o resultado.
+só efeitos CC0 do kit (`design-system/sons/externos/`): whoosh na abertura e em cada seta, impacto no cartão final. Na v2 (14/11/2026) saíram o clique das setas, o riser antes da chegada e o impacto na placa, a pedido do Diego ("som esquisito no meio"); o prédio fica à esquerda (correção do Diego).
 
 ## Refazer
 
