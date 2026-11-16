@@ -1,0 +1,978 @@
+{
+ "f1": [
+  {
+   "texto": "A",
+   "ini": 0.24,
+   "fim": 0.26,
+   "prob": 0.99
+  },
+  {
+   "texto": "Disney",
+   "ini": 0.381,
+   "fim": 0.701,
+   "prob": 0.755
+  },
+  {
+   "texto": "de",
+   "ini": 0.721,
+   "fim": 0.801,
+   "prob": 0.955
+  },
+  {
+   "texto": "Paris",
+   "ini": 0.841,
+   "fim": 1.082,
+   "prob": 0.797
+  },
+  {
+   "texto": "está",
+   "ini": 1.102,
+   "fim": 1.242,
+   "prob": 0.734
+  },
+  {
+   "texto": "te",
+   "ini": 1.322,
+   "fim": 1.382,
+   "prob": 0.963
+  },
+  {
+   "texto": "obrigando",
+   "ini": 1.442,
+   "fim": 2.003,
+   "prob": 0.996
+  },
+  {
+   "texto": "a",
+   "ini": 2.043,
+   "fim": 2.063,
+   "prob": 0.916
+  },
+  {
+   "texto": "ir",
+   "ini": 2.084,
+   "fim": 2.124,
+   "prob": 0.234
+  },
+  {
+   "texto": "dois",
+   "ini": 2.204,
+   "fim": 2.404,
+   "prob": 0.681
+  },
+  {
+   "texto": "dias",
+   "ini": 2.484,
+   "fim": 2.664,
+   "prob": 0.989
+  },
+  {
+   "texto": "pro",
+   "ini": 2.705,
+   "fim": 2.785,
+   "prob": 0.634
+  },
+  {
+   "texto": "parque.",
+   "ini": 2.885,
+   "fim": 3.205,
+   "prob": 0.496
+  }
+ ],
+ "f2": [
+  {
+   "texto": "Um",
+   "ini": 6.668,
+   "fim": 6.728,
+   "prob": 0.998
+  },
+  {
+   "texto": "seguidor",
+   "ini": 6.788,
+   "fim": 7.129,
+   "prob": 0.874
+  },
+  {
+   "texto": "comentou",
+   "ini": 7.169,
+   "fim": 7.53,
+   "prob": 0.988
+  },
+  {
+   "texto": "isso",
+   "ini": 7.59,
+   "fim": 7.79,
+   "prob": 0.999
+  },
+  {
+   "texto": "aí",
+   "ini": 7.85,
+   "fim": 7.931,
+   "prob": 0.995
+  },
+  {
+   "texto": "no",
+   "ini": 7.991,
+   "fim": 8.051,
+   "prob": 0.996
+  },
+  {
+   "texto": "meu",
+   "ini": 8.091,
+   "fim": 8.191,
+   "prob": 0.998
+  },
+  {
+   "texto": "vídeo",
+   "ini": 8.231,
+   "fim": 8.431,
+   "prob": 0.991
+  },
+  {
+   "texto": "de",
+   "ini": 8.452,
+   "fim": 8.532,
+   "prob": 0.901
+  },
+  {
+   "texto": "dicas",
+   "ini": 8.572,
+   "fim": 8.832,
+   "prob": 0.86
+  },
+  {
+   "texto": "da",
+   "ini": 8.852,
+   "fim": 8.932,
+   "prob": 0.838
+  },
+  {
+   "texto": "Disney.",
+   "ini": 8.993,
+   "fim": 9.293,
+   "prob": 0.563
+  },
+  {
+   "texto": "É",
+   "ini": 9.353,
+   "fim": 9.373,
+   "prob": 0.566
+  },
+  {
+   "texto": "verdade,",
+   "ini": 9.433,
+   "fim": 10.014,
+   "prob": 0.999
+  },
+  {
+   "texto": "só",
+   "ini": 10.095,
+   "fim": 10.155,
+   "prob": 0.994
+  },
+  {
+   "texto": "que",
+   "ini": 10.215,
+   "fim": 10.275,
+   "prob": 0.998
+  },
+  {
+   "texto": "não",
+   "ini": 10.315,
+   "fim": 10.415,
+   "prob": 0.996
+  },
+  {
+   "texto": "é",
+   "ini": 10.455,
+   "fim": 10.475,
+   "prob": 0.992
+  },
+  {
+   "texto": "na",
+   "ini": 10.535,
+   "fim": 10.576,
+   "prob": 0.919
+  },
+  {
+   "texto": "área",
+   "ini": 10.616,
+   "fim": 10.736,
+   "prob": 0.933
+  },
+  {
+   "texto": "da",
+   "ini": 10.756,
+   "fim": 10.836,
+   "prob": 0.989
+  },
+  {
+   "texto": "Frozen.",
+   "ini": 10.936,
+   "fim": 11.217,
+   "prob": 0.469
+  }
+ ],
+ "f3": [
+  {
+   "texto": "O",
+   "ini": 11.668,
+   "fim": 11.688,
+   "prob": 0.94
+  },
+  {
+   "texto": "Disney",
+   "ini": 11.768,
+   "fim": 12.028,
+   "prob": 0.809
+  },
+  {
+   "texto": "Adventure",
+   "ini": 12.048,
+   "fim": 12.589,
+   "prob": 0.737
+  },
+  {
+   "texto": "agora",
+   "ini": 12.629,
+   "fim": 12.83,
+   "prob": 0.995
+  },
+  {
+   "texto": "tem",
+   "ini": 12.89,
+   "fim": 12.99,
+   "prob": 0.939
+  },
+  {
+   "texto": "um",
+   "ini": 13.05,
+   "fim": 13.09,
+   "prob": 0.484
+  },
+  {
+   "texto": "show",
+   "ini": 13.17,
+   "fim": 13.351,
+   "prob": 0.578
+  },
+  {
+   "texto": "próprio",
+   "ini": 13.451,
+   "fim": 13.791,
+   "prob": 0.991
+  },
+  {
+   "texto": "no",
+   "ini": 13.811,
+   "fim": 13.872,
+   "prob": 0.999
+  },
+  {
+   "texto": "lago",
+   "ini": 13.932,
+   "fim": 14.152,
+   "prob": 0.971
+  },
+  {
+   "texto": "principal",
+   "ini": 14.192,
+   "fim": 14.633,
+   "prob": 1.0
+  },
+  {
+   "texto": "de",
+   "ini": 14.673,
+   "fim": 14.733,
+   "prob": 0.995
+  },
+  {
+   "texto": "encerramento",
+   "ini": 14.753,
+   "fim": 15.314,
+   "prob": 0.749
+  },
+  {
+   "texto": "do",
+   "ini": 15.334,
+   "fim": 15.394,
+   "prob": 0.998
+  },
+  {
+   "texto": "parque,",
+   "ini": 15.494,
+   "fim": 15.795,
+   "prob": 0.712
+  },
+  {
+   "texto": "que",
+   "ini": 15.815,
+   "fim": 15.895,
+   "prob": 0.966
+  },
+  {
+   "texto": "é",
+   "ini": 15.915,
+   "fim": 15.935,
+   "prob": 0.443
+  },
+  {
+   "texto": "o",
+   "ini": 15.955,
+   "fim": 15.975,
+   "prob": 0.533
+  },
+  {
+   "texto": "Disney",
+   "ini": 16.035,
+   "fim": 16.296,
+   "prob": 0.746
+  },
+  {
+   "texto": "Cascade",
+   "ini": 16.376,
+   "fim": 16.777,
+   "prob": 0.253
+  },
+  {
+   "texto": "of",
+   "ini": 16.817,
+   "fim": 16.897,
+   "prob": 0.991
+  },
+  {
+   "texto": "Lights,",
+   "ini": 16.977,
+   "fim": 17.318,
+   "prob": 0.742
+  },
+  {
+   "texto": "que",
+   "ini": 17.598,
+   "fim": 17.658,
+   "prob": 0.998
+  },
+  {
+   "texto": "acontece",
+   "ini": 17.678,
+   "fim": 18.099,
+   "prob": 0.999
+  },
+  {
+   "texto": "no",
+   "ini": 18.139,
+   "fim": 18.199,
+   "prob": 0.998
+  },
+  {
+   "texto": "mesmo",
+   "ini": 18.279,
+   "fim": 18.62,
+   "prob": 0.999
+  },
+  {
+   "texto": "horário",
+   "ini": 18.66,
+   "fim": 18.981,
+   "prob": 0.981
+  },
+  {
+   "texto": "do",
+   "ini": 18.981,
+   "fim": 19.041,
+   "prob": 0.997
+  },
+  {
+   "texto": "show",
+   "ini": 19.121,
+   "fim": 19.261,
+   "prob": 0.511
+  },
+  {
+   "texto": "de",
+   "ini": 19.301,
+   "fim": 19.361,
+   "prob": 0.998
+  },
+  {
+   "texto": "fogos",
+   "ini": 19.401,
+   "fim": 19.662,
+   "prob": 0.998
+  },
+  {
+   "texto": "do",
+   "ini": 19.682,
+   "fim": 19.722,
+   "prob": 0.997
+  },
+  {
+   "texto": "castelo.",
+   "ini": 19.762,
+   "fim": 20.183,
+   "prob": 0.999
+  }
+ ],
+ "f4": [
+  {
+   "texto": "É",
+   "ini": 22.607,
+   "fim": 22.627,
+   "prob": 0.982
+  },
+  {
+   "texto": "brincadeira,",
+   "ini": 22.688,
+   "fim": 23.331,
+   "prob": 0.935
+  },
+  {
+   "texto": "velho?",
+   "ini": 23.331,
+   "fim": 23.432,
+   "prob": 0.003
+  },
+  {
+   "texto": "A",
+   "ini": 23.432,
+   "fim": 23.452,
+   "prob": 0.07
+  },
+  {
+   "texto": "gente",
+   "ini": 23.452,
+   "fim": 23.593,
+   "prob": 0.031
+  },
+  {
+   "texto": "não",
+   "ini": 23.613,
+   "fim": 23.673,
+   "prob": 0.311
+  },
+  {
+   "texto": "tem",
+   "ini": 23.673,
+   "fim": 23.753,
+   "prob": 0.59
+  },
+  {
+   "texto": "um",
+   "ini": 23.753,
+   "fim": 23.794,
+   "prob": 0.532
+  },
+  {
+   "texto": "minuto",
+   "ini": 23.814,
+   "fim": 24.035,
+   "prob": 0.996
+  },
+  {
+   "texto": "de",
+   "ini": 24.055,
+   "fim": 24.135,
+   "prob": 0.996
+  },
+  {
+   "texto": "paz?",
+   "ini": 24.256,
+   "fim": 24.578,
+   "prob": 0.722
+  }
+ ],
+ "f5": [
+  {
+   "texto": "Ou",
+   "ini": 27.594,
+   "fim": 27.654,
+   "prob": 0.516
+  },
+  {
+   "texto": "seja,",
+   "ini": 27.775,
+   "fim": 28.095,
+   "prob": 0.888
+  },
+  {
+   "texto": "quem",
+   "ini": 28.155,
+   "fim": 28.275,
+   "prob": 0.999
+  },
+  {
+   "texto": "queria",
+   "ini": 28.315,
+   "fim": 28.475,
+   "prob": 0.739
+  },
+  {
+   "texto": "fazer",
+   "ini": 28.536,
+   "fim": 28.716,
+   "prob": 0.974
+  },
+  {
+   "texto": "os",
+   "ini": 28.736,
+   "fim": 28.796,
+   "prob": 0.835
+  },
+  {
+   "texto": "dois",
+   "ini": 28.816,
+   "fim": 28.976,
+   "prob": 0.976
+  },
+  {
+   "texto": "parques",
+   "ini": 29.036,
+   "fim": 29.337,
+   "prob": 0.994
+  },
+  {
+   "texto": "em",
+   "ini": 29.357,
+   "fim": 29.397,
+   "prob": 0.495
+  },
+  {
+   "texto": "um",
+   "ini": 29.417,
+   "fim": 29.477,
+   "prob": 0.896
+  },
+  {
+   "texto": "dia",
+   "ini": 29.537,
+   "fim": 29.717,
+   "prob": 1.0
+  },
+  {
+   "texto": "ou",
+   "ini": 29.897,
+   "fim": 29.957,
+   "prob": 0.501
+  },
+  {
+   "texto": "desiste",
+   "ini": 29.998,
+   "fim": 30.518,
+   "prob": 0.766
+  },
+  {
+   "texto": "ou",
+   "ini": 30.618,
+   "fim": 30.658,
+   "prob": 0.497
+  },
+  {
+   "texto": "escolhe",
+   "ini": 30.698,
+   "fim": 30.999,
+   "prob": 0.851
+  },
+  {
+   "texto": "um",
+   "ini": 30.999,
+   "fim": 31.039,
+   "prob": 0.047
+  },
+  {
+   "texto": "dos",
+   "ini": 31.059,
+   "fim": 31.179,
+   "prob": 0.992
+  },
+  {
+   "texto": "dois.",
+   "ini": 31.239,
+   "fim": 31.52,
+   "prob": 0.983
+  }
+ ],
+ "f6": [
+  {
+   "texto": "Claramente",
+   "ini": 32.041,
+   "fim": 32.683,
+   "prob": 0.998
+  },
+  {
+   "texto": "não",
+   "ini": 32.723,
+   "fim": 32.824,
+   "prob": 0.665
+  },
+  {
+   "texto": "é",
+   "ini": 32.824,
+   "fim": 32.844,
+   "prob": 0.0
+  },
+  {
+   "texto": "coincidência,",
+   "ini": 32.844,
+   "fim": 33.466,
+   "prob": 0.955
+  },
+  {
+   "texto": "né?",
+   "ini": 33.506,
+   "fim": 33.567,
+   "prob": 0.838
+  },
+  {
+   "texto": "Uma",
+   "ini": 33.587,
+   "fim": 33.667,
+   "prob": 0.354
+  },
+  {
+   "texto": "jogada",
+   "ini": 33.707,
+   "fim": 34.109,
+   "prob": 0.977
+  },
+  {
+   "texto": "da",
+   "ini": 34.149,
+   "fim": 34.229,
+   "prob": 0.985
+  },
+  {
+   "texto": "Disney",
+   "ini": 34.29,
+   "fim": 34.531,
+   "prob": 0.723
+  },
+  {
+   "texto": "pra",
+   "ini": 34.551,
+   "fim": 34.611,
+   "prob": 0.667
+  },
+  {
+   "texto": "você",
+   "ini": 34.671,
+   "fim": 34.832,
+   "prob": 0.999
+  },
+  {
+   "texto": "passar",
+   "ini": 34.892,
+   "fim": 35.193,
+   "prob": 0.998
+  },
+  {
+   "texto": "mais",
+   "ini": 35.233,
+   "fim": 35.414,
+   "prob": 0.999
+  },
+  {
+   "texto": "tempo",
+   "ini": 35.514,
+   "fim": 35.776,
+   "prob": 0.999
+  },
+  {
+   "texto": "com",
+   "ini": 35.816,
+   "fim": 35.956,
+   "prob": 0.999
+  },
+  {
+   "texto": "eles.",
+   "ini": 36.016,
+   "fim": 36.257,
+   "prob": 0.999
+  }
+ ],
+ "f7": [
+  {
+   "texto": "Quando",
+   "ini": 37.281,
+   "fim": 37.482,
+   "prob": 0.998
+  },
+  {
+   "texto": "eu",
+   "ini": 37.522,
+   "fim": 37.562,
+   "prob": 0.98
+  },
+  {
+   "texto": "fui",
+   "ini": 37.622,
+   "fim": 37.743,
+   "prob": 0.992
+  },
+  {
+   "texto": "não",
+   "ini": 37.763,
+   "fim": 37.823,
+   "prob": 0.311
+  },
+  {
+   "texto": "tinha",
+   "ini": 37.843,
+   "fim": 37.984,
+   "prob": 0.2
+  },
+  {
+   "texto": "nem",
+   "ini": 38.044,
+   "fim": 38.184,
+   "prob": 0.664
+  },
+  {
+   "texto": "área",
+   "ini": 38.204,
+   "fim": 38.385,
+   "prob": 0.704
+  },
+  {
+   "texto": "nova,",
+   "ini": 38.445,
+   "fim": 38.626,
+   "prob": 0.708
+  },
+  {
+   "texto": "eu",
+   "ini": 38.626,
+   "fim": 38.666,
+   "prob": 0.222
+  },
+  {
+   "texto": "consegui",
+   "ini": 38.686,
+   "fim": 38.947,
+   "prob": 0.645
+  },
+  {
+   "texto": "fazer",
+   "ini": 39.007,
+   "fim": 39.228,
+   "prob": 0.976
+  },
+  {
+   "texto": "tudo",
+   "ini": 39.288,
+   "fim": 39.469,
+   "prob": 0.985
+  },
+  {
+   "texto": "em",
+   "ini": 39.489,
+   "fim": 39.529,
+   "prob": 0.732
+  },
+  {
+   "texto": "um",
+   "ini": 39.549,
+   "fim": 39.589,
+   "prob": 0.973
+  },
+  {
+   "texto": "dia,",
+   "ini": 39.649,
+   "fim": 39.87,
+   "prob": 0.999
+  },
+  {
+   "texto": "mas",
+   "ini": 39.91,
+   "fim": 40.091,
+   "prob": 0.997
+  },
+  {
+   "texto": "agora",
+   "ini": 40.151,
+   "fim": 40.532,
+   "prob": 0.976
+  },
+  {
+   "texto": "tenho",
+   "ini": 40.592,
+   "fim": 40.713,
+   "prob": 0.198
+  },
+  {
+   "texto": "que",
+   "ini": 40.713,
+   "fim": 40.773,
+   "prob": 0.87
+  },
+  {
+   "texto": "dividir,",
+   "ini": 40.813,
+   "fim": 41.214,
+   "prob": 0.839
+  },
+  {
+   "texto": "né?",
+   "ini": 41.275,
+   "fim": 41.355,
+   "prob": 0.959
+  },
+  {
+   "texto": "Eu",
+   "ini": 41.375,
+   "fim": 41.415,
+   "prob": 0.151
+  },
+  {
+   "texto": "ia",
+   "ini": 41.415,
+   "fim": 41.495,
+   "prob": 0.002
+  },
+  {
+   "texto": "querer",
+   "ini": 41.556,
+   "fim": 41.696,
+   "prob": 0.302
+  },
+  {
+   "texto": "ver",
+   "ini": 41.716,
+   "fim": 41.836,
+   "prob": 0.802
+  },
+  {
+   "texto": "tudo.",
+   "ini": 41.877,
+   "fim": 42.117,
+   "prob": 0.998
+  }
+ ],
+ "f8": [
+  {
+   "texto": "E",
+   "ini": 43.08,
+   "fim": 43.101,
+   "prob": 0.936
+  },
+  {
+   "texto": "aí,",
+   "ini": 43.141,
+   "fim": 43.241,
+   "prob": 0.78
+  },
+  {
+   "texto": "você",
+   "ini": 43.281,
+   "fim": 43.482,
+   "prob": 0.999
+  },
+  {
+   "texto": "acha",
+   "ini": 43.542,
+   "fim": 43.662,
+   "prob": 0.937
+  },
+  {
+   "texto": "que",
+   "ini": 43.662,
+   "fim": 43.742,
+   "prob": 0.938
+  },
+  {
+   "texto": "foi",
+   "ini": 43.762,
+   "fim": 43.862,
+   "prob": 0.761
+  },
+  {
+   "texto": "estratégia",
+   "ini": 43.862,
+   "fim": 44.304,
+   "prob": 0.828
+  },
+  {
+   "texto": "da",
+   "ini": 44.344,
+   "fim": 44.404,
+   "prob": 0.992
+  },
+  {
+   "texto": "Disney",
+   "ini": 44.464,
+   "fim": 44.705,
+   "prob": 0.724
+  },
+  {
+   "texto": "também?",
+   "ini": 44.745,
+   "fim": 45.005,
+   "prob": 0.947
+  },
+  {
+   "texto": "E",
+   "ini": 45.186,
+   "fim": 45.206,
+   "prob": 0.997
+  },
+  {
+   "texto": "você",
+   "ini": 45.266,
+   "fim": 45.467,
+   "prob": 0.999
+  },
+  {
+   "texto": "continuaria",
+   "ini": 45.507,
+   "fim": 45.928,
+   "prob": 0.937
+  },
+  {
+   "texto": "com",
+   "ini": 45.928,
+   "fim": 46.048,
+   "prob": 0.82
+  },
+  {
+   "texto": "o",
+   "ini": 46.048,
+   "fim": 46.068,
+   "prob": 0.0
+  },
+  {
+   "texto": "park",
+   "ini": 46.068,
+   "fim": 46.329,
+   "prob": 0.984
+  },
+  {
+   "texto": "hopper",
+   "ini": 46.389,
+   "fim": 46.63,
+   "prob": 0.789
+  },
+  {
+   "texto": "ou",
+   "ini": 46.63,
+   "fim": 46.67,
+   "prob": 0.233
+  },
+  {
+   "texto": "separaria",
+   "ini": 46.69,
+   "fim": 47.111,
+   "prob": 0.81
+  },
+  {
+   "texto": "os",
+   "ini": 47.111,
+   "fim": 47.171,
+   "prob": 0.997
+  },
+  {
+   "texto": "dias?",
+   "ini": 47.211,
+   "fim": 47.472,
+   "prob": 1.0
+  }
+ ]
+}

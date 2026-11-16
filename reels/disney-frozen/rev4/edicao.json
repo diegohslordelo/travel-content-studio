@@ -1,0 +1,91 @@
+{
+ "nota": "REV4 (15/11/2026): o Diego regravou as falas 2 e 3 (take novo, Drive Frozen E934789A…) para corrigir a informação: o show no mesmo horário do castelo é o Disney Cascade of Lights. Fonte única montada por scripts/montar_fonte.py: original 0–3,9667 s + take novo + original de 14,7333 s ao fim (tomadas 3–7 deslocadas +7,7333 s). Nada da fala cortado.",
+ "fonte_dir": "../fonte",
+ "fonte": "diego_rev4_sdr.mkv",
+ "fps": 30,
+ "tomadas": [
+  [
+   0,
+   3.966666666666667
+  ],
+  [
+   3.966666666666667,
+   22.46666666666667
+  ],
+  [
+   22.4666,
+   25.0
+  ],
+  [
+   25.0,
+   31.9
+  ],
+  [
+   31.9,
+   36.9
+  ],
+  [
+   36.9,
+   42.9
+  ],
+  [
+   42.9,
+   48.1033
+  ]
+ ],
+ "nota_tomadas": "Cortes entre tomadas medidos (ffmpeg scdet): 3,97 · 14,73 · 17,27 · 24,17 · 29,17 · 35,17 s. A gravação já vem montada pelo Diego, uma tomada por frase.",
+ "falas": [
+  {
+   "id": "f1",
+   "in": 0.0,
+   "out": 3.9667,
+   "texto": "A Disney de Paris está te obrigando a ir dois dias pro parque."
+  },
+  {
+   "id": "f2",
+   "in": 5.8667,
+   "out": 11.2167,
+   "texto": "Um seguidor comentou isso aí no meu vídeo de dicas da Disney. É verdade, só que não é na área da Frozen."
+  },
+  {
+   "id": "f3",
+   "in": 11.1667,
+   "out": 22.3667,
+   "texto": "O Disney Adventure agora tem um show próprio no lago principal de encerramento do parque, que é o Disney Cascade of Lights, que acontece no mesmo horário do show de fogos do castelo."
+  },
+  {
+   "id": "f4",
+   "in": 22.4666,
+   "out": 25.0,
+   "texto": "É brincadeira, velho? A gente não tem um minuto de paz?"
+  },
+  {
+   "id": "f5",
+   "in": 26.8333,
+   "out": 31.9,
+   "texto": "Ou seja, quem queria fazer os dois parques em um dia ou desiste ou escolhe um dos dois."
+  },
+  {
+   "id": "f6",
+   "in": 31.9,
+   "out": 36.9,
+   "texto": "Claramente não é coincidência, né? Uma jogada da Disney pra você passar mais tempo com eles."
+  },
+  {
+   "id": "f7",
+   "in": 36.9,
+   "out": 42.9,
+   "texto": "Quando eu fui não tinha nem área nova, eu consegui fazer tudo em um dia, mas agora tenho que dividir, né? Eu ia querer ver tudo."
+  },
+  {
+   "id": "f8",
+   "in": 42.9,
+   "out": 48.0333,
+   "texto": "E aí, você acha que foi estratégia da Disney também? E você continuaria com o park hopper ou separaria os dias?"
+  }
+ ],
+ "nota_texto": "Texto conferido: Whisper large-v3 + comparação de alinhamento (MMS_FA) entre as leituras possíveis, 13/11/2026: 'pro parque' (não 'para o'), 'da Disney. É verdade' (sem 'e'), 'coincidência, né? Uma jogada' (não 'não é uma'), 'agora tenho que' (sem 'eu'), 'park hopper' (o Whisper ouviu 'parque e roupa'). 'velho' escrito como o Diego escreveu no pedido. Continua sendo transcrição automática: a escuta é do Diego. REV3 (correção do Diego, 14/11/2026): 'Eu ia querer ver tudo' (não 'Eu quero ver tudo'). REV4: take novo conferido pela comparação de leituras (MMS_FA): 'da Disney. É verdade' (sem 'e'), 'na área da Frozen', 'O Disney Adventure' (sem 'World'), 'de encerramento do parque'.",
+ "nota_cortes": "'in'/'out' das falas são só a janela de busca do alinhamento. O corte real sai de preparar.py: do silêncio antes da 1ª palavra ao silêncio depois da última (energia < −45 dB, folga ≤ 0,15 s), dentro da tomada. Nenhuma palavra cortada; nada acelerado.",
+ "sdr": true,
+ "recorte": "recorte/diego_rev4_alfa.webm"
+}
