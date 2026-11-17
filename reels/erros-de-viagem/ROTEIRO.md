@@ -1,4 +1,4 @@
-# Erros de viagem · Roteiro v4 (17/11/2026) · Tela dividida · 45 s
+# Erros de viagem · Roteiro v5 (17/11/2026) · Tela dividida · 45 s
 
 **Pedido do Diego (17/11/2026):** dois roteiros de **45 s**, os dois em **tela dividida** (você grava no quarto; imagem de apoio em cima, você embaixo), para comparar. O dado tem de vir **com a fonte dita na fala**: quem fez a pesquisa e quantos por cento.
 **Frase obrigatória:** "Ainda tem gente que viaja sem estratégia." **3 erros:** hotel só pelo preço (tempo também conta), estacionamento para quem vai de carro, voos em bilhetes separados com conexão curta.
@@ -94,9 +94,10 @@ Dicas 1 e 2: experiência e opinião do Diego, sem número. **Nenhum valor foi i
 
 ---
 
-## Roteiro B v4 · "A viagem acaba. A fatura, não." · AIDA (gancho escolhido pelo Diego, 17/11/2026)
+## Roteiro B v5 · "A viagem acaba. A fatura, não." · AIDA (gancho escolhido pelo Diego, 17/11/2026)
 
-**Mudança da v3 para a v4 (pedido do Diego):** o bloco 4, que leva às dicas, virou "Não foi azar, foi a reserva. Ainda tem gente que viaja sem estratégia e erra três vezes antes de sair de casa." A culpa muda da sorte para uma decisão que a pessoa controla, e os 3 erros passam a ter um fio: todos acontecem **na reserva**. Para caber: a 2ª pergunta do bloco 3 encurtou, o erro 1 ficou mais enxuto, a frase "Viagem boa se paga antes, não depois" saiu e o CTA ganhou "antes de reservar" (fecha o fio da reserva).
+**Mudança da v4 para a v5 (pedido do Diego):** o erro 2 (bloco 6) ganhou uma instrução prática: o que procurar no anúncio ("nas proximidades", "com taxa") e uma imagem que fica na cabeça ("mais uma diária, só que pro carro"). Saiu "antes de reservar" do bloco, porque o bloco 4 e o CTA já carregam o fio da reserva.
+**Mudança da v3 para a v4:** o bloco 4, que leva às dicas, virou "Não foi azar, foi a reserva. Ainda tem gente que viaja sem estratégia e erra três vezes antes de sair de casa." A culpa muda da sorte para uma decisão que a pessoa controla, e os 3 erros passam a ter um fio: todos acontecem **na reserva**. Para caber: a 2ª pergunta do bloco 3 encurtou, o erro 1 ficou mais enxuto, a frase "Viagem boa se paga antes, não depois" saiu e o CTA ganhou "antes de reservar" (fecha o fio da reserva).
 **Mudança da v2 para a v3:** depois do dado da Serasa entra um bloco de **identificação** ("a viagem saiu mais cara do que você imaginou", "perdeu o controle dos gastos"), no lugar do 51%. Para manter 45 s: "Não foi azar" faz a ponte para a frase obrigatória, o erro 2 ficou mais curto e o fechamento virou "Viagem boa se paga antes, não depois".
 **Gancho:** contraste curto; o dado com a fonte entra como prova; a identificação puxa quem assiste para dentro.
 **Ideia central:** o que endivida a viagem é a falta de estratégia, não o passeio.
@@ -109,11 +110,13 @@ Dicas 1 e 2: experiência e opinião do Diego, sem número. **Nenhum valor foi i
 | 3 | 10,0–16,5 | Interesse (identificação) | Sabe aquela viagem que saiu mais cara do que você imaginou? Ou que no meio dela você perdeu o controle dos gastos? | 1ª pergunta: papel "ORÇAMENTO" com o total riscado e reescrito maior (ilustração, sem valor). 2ª pergunta: tela de celular com notificações de "compra aprovada" empilhando (criada, sem banco real) | Corte seco na 2ª pergunta · `PDX_obturador` (−8 dB) a cada notificação, no máx. 1 a cada 1,5 s |
 | 4 | 16,5–23,0 | Interesse (virada · gancho das dicas) | Não foi azar, foi a reserva. Ainda tem gente que viaja sem estratégia e erra três vezes antes de sair de casa. | **Você em tela cheia** em "Não foi azar, foi a reserva" → volta à tela dividida: tela de reserva com 3 campos (hotel, estacionamento, voo) acendendo um a um em "três vezes" (criada, sem marca real) | Corte de zoom em "foi a reserva" · `PDX_impacto` (−4 dB) em "três" |
 | 5 | 23,0–30,5 | Interesse · erro 1 | Hotel escolhido só pelo preço. Longe de tudo, a economia some no transporte e nas horas de caminho. E na viagem, tempo é ouro. | Card "1" + lista "menor preço" → mapa com trajeto longo se desenhando → relógio | Linha que revela · `PDX_swish` (−6 dB) |
-| 6 | 30,5–36,0 | Interesse · erro 2 | De carro? Confere se o hotel tem estacionamento. Se não tiver, a diária barata deixa de compensar. | Card "2" + estrada (backlog do acervo ou web livre) → ficha do hotel com estacionamento riscado | Corte seco |
-| 7 | 36,0–43,0 | Desejo · erro 3 | Voos separados com conexão curta. Se o primeiro atrasar, a outra companhia não tem obrigação de te esperar. Separado já é arriscado; apertado, nem pensar. | Card "3" + painel "ATRASADO" → portão fechando | `PDX_riser` (−8 dB) → **Luz de passagem** · `PDX_impacto` em "obrigação" |
-| 8 | 43,0–46,5 | Ação | Manda pra quem tá planejando o fim de ano, antes de reservar. | Volta à fatura do gancho (loop) + placa do DS `MANDA PRA QUEM / VAI VIAJAR →` | **Clarão de volta** no corte · *clack* (−6 dB), único som do DS |
+| 6 | 30,5–37,0 | Interesse · erro 2 | De carro? Lê o anúncio: estacionamento "nas proximidades" ou "com taxa" costuma ser mais uma diária, só que pro carro. | Card "2" + estrada (backlog do acervo ou web livre) → anúncio de hotel com as expressões "nas proximidades" e "taxa adicional" sendo marcadas em âmbar na palavra → um 2º recibo de diária com ícone de carro desliza ao lado do 1º (criado, sem marca real de site) | Corte seco · `PDX_obturador` (−8 dB) quando o 2º recibo entra |
+| 7 | 37,0–44,0 | Desejo · erro 3 | Voos separados com conexão curta. Se o primeiro atrasar, a outra companhia não tem obrigação de te esperar. Separado já é arriscado; apertado, nem pensar. | Card "3" + painel "ATRASADO" → portão fechando | `PDX_riser` (−8 dB) → **Luz de passagem** · `PDX_impacto` em "obrigação" |
+| 8 | 44,0–47,5 | Ação | Manda pra quem tá planejando o fim de ano, antes de reservar. | Volta à fatura do gancho (loop) + placa do DS `MANDA PRA QUEM / VAI VIAJAR →` | **Clarão de volta** no corte · *clack* (−6 dB), único som do DS |
 
-**Transições não secas:** linha que revela (5), Luz de passagem (7), Clarão (8): 3, com ≥ 1,5 s entre elas. **Duração:** ≈ 146 palavras, ≈ 46,5 s; na edição as pausas são apertadas para fechar em 45 s (sem acelerar a voz).
+**Transições não secas:** linha que revela (5), Luz de passagem (7), Clarão (8): 3, com ≥ 1,5 s entre elas. **Duração:** ≈ 149 palavras, ≈ 47,5 s a 3,1 palavras/s; no ritmo mais solto da tela dividida (≈ 3,3 palavras/s) fecha em ≈ 45 s, e as pausas são apertadas na edição (sem acelerar a voz). Se ainda passar, o corte sugerido é a 2ª pergunta do bloco 3.
+
+**Sobre o bloco 6:** "Estacionamento nas proximidades" e "taxa adicional" são expressões que os sites de reserva usam nos anúncios; "costuma ser" porque estacionamento público nas proximidades às vezes é grátis. Não há número na fala: nenhum valor de estacionamento foi pesquisado ou inventado.
 
 **Outras versões do bloco 4 (não escolhidas):**
 - Com mistério no fim: "Não foi azar. Ainda tem gente que viaja sem estratégia. São três erros, e o último pode custar a viagem inteira." Segura até o fim, mas é promessa sem fio comum entre as dicas.
@@ -121,7 +124,7 @@ Dicas 1 e 2: experiência e opinião do Diego, sem número. **Nenhum valor foi i
 
 **Por que a identificação é em pergunta:** não afirma nada sobre quem assiste nem inventa história; cada um responde "já" na cabeça. Também não é dado: não cita número.
 
-### Texto para gravar · Roteiro B v4
+### Texto para gravar · Roteiro B v5
 
 ```
 1. A viagem acaba. A fatura, não.
@@ -129,18 +132,18 @@ Dicas 1 e 2: experiência e opinião do Diego, sem número. **Nenhum valor foi i
 3. Sabe aquela viagem que saiu mais cara do que você imaginou? Ou que no meio dela você perdeu o controle dos gastos?
 4. Não foi azar, foi a reserva. Ainda tem gente que viaja sem estratégia e erra três vezes antes de sair de casa.
 5. Hotel escolhido só pelo preço. Longe de tudo, a economia some no transporte e nas horas de caminho. E na viagem, tempo é ouro.
-6. De carro? Confere se o hotel tem estacionamento. Se não tiver, a diária barata deixa de compensar.
+6. De carro? Lê o anúncio: estacionamento "nas proximidades" ou "com taxa" costuma ser mais uma diária, só que pro carro.
 7. Voos separados com conexão curta. Se o primeiro atrasar, a outra companhia não tem obrigação de te esperar. Separado já é arriscado; apertado, nem pensar.
 8. Manda pra quem tá planejando o fim de ano, antes de reservar.
 ```
 
-**Gravação do bloco 3:** tom de cumplicidade, meio rindo, como quem também já passou por isso. Pausa curta entre as duas perguntas. **Bloco 4:** "Não foi azar" seco, pausa mínima, "foi a reserva" olhando firme na lente; "três vezes" com peso.
+**Gravação do bloco 3:** tom de cumplicidade, meio rindo, como quem também já passou por isso. Pausa curta entre as duas perguntas. **Bloco 6:** "nas proximidades" e "com taxa" com aspas na voz (leve pausa antes de cada uma); "só que pro carro" com meio sorriso. **Bloco 4:** "Não foi azar" seco, pausa mínima, "foi a reserva" olhando firme na lente; "três vezes" com peso.
 
 ---
 
-## Comparação (A × B v4)
+## Comparação (A × B v5)
 
-| Critério | Roteiro A | Roteiro B v4 |
+| Critério | Roteiro A | Roteiro B v5 |
 |---|---|---|
 | 1ª frase | Número + "brasileiros" + "endividaram" | Contraste de 6 palavras |
 | Quando o dado aparece | Número aos 0 s, fonte aos 4,5 s | Fonte aos 2,5 s, número aos ≈ 6 s |
@@ -150,7 +153,7 @@ Dicas 1 e 2: experiência e opinião do Diego, sem número. **Nenhum valor foi i
 
 ## Recomendação
 
-**Roteiro B v4.** Com a identificação, ele resolve o ponto fraco que tinha (dado sem conexão pessoal): o gancho prende pela curiosidade, a Serasa dá credibilidade e as perguntas fazem a pessoa se ver no vídeo antes das dicas, o que segura a retenção no meio, onde Reels de lista costumam perder gente. Atenção a um ponto: sem som, "A viagem acaba. A fatura, não." depende da imagem (mala fechando → fatura descendo), então essa animação precisa estar clara já no 1º segundo. O A fica como alternativa para teste de gancho.
+**Roteiro B v5.** Com a identificação, ele resolve o ponto fraco que tinha (dado sem conexão pessoal): o gancho prende pela curiosidade, a Serasa dá credibilidade e as perguntas fazem a pessoa se ver no vídeo antes das dicas, o que segura a retenção no meio, onde Reels de lista costumam perder gente. Atenção a um ponto: sem som, "A viagem acaba. A fatura, não." depende da imagem (mala fechando → fatura descendo), então essa animação precisa estar clara já no 1º segundo. O A fica como alternativa para teste de gancho.
 
 ## Como gravar (vale para os dois)
 
