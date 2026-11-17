@@ -1,4 +1,4 @@
-# Erros de viagem · Roteiro v2 (17/11/2026) · Tela dividida · 45 s
+# Erros de viagem · Roteiro v3 (17/11/2026) · Tela dividida · 45 s
 
 **Pedido do Diego (17/11/2026):** dois roteiros de **45 s**, os dois em **tela dividida** (você grava no quarto; imagem de apoio em cima, você embaixo), para comparar. O dado tem de vir **com a fonte dita na fala**: quem fez a pesquisa e quantos por cento.
 **Frase obrigatória:** "Ainda tem gente que viaja sem estratégia." **3 erros:** hotel só pelo preço (tempo também conta), estacionamento para quem vai de carro, voos em bilhetes separados com conexão curta.
@@ -94,56 +94,60 @@ Dicas 1 e 2: experiência e opinião do Diego, sem número. **Nenhum valor foi i
 
 ---
 
-## Roteiro B · "A viagem acaba. A fatura, não." · AIDA
+## Roteiro B v3 · "A viagem acaba. A fatura, não." · AIDA (gancho escolhido pelo Diego, 17/11/2026)
 
-**Gancho:** contraste curto; o dado com a fonte entra em seguida, como prova.
-**Ideia central:** igual à do A.
-**Sinal que favorece:** retenção nos 3 primeiros segundos (frase curta e de contraste) e envio.
+**Mudança da v2 para a v3 (pedido do Diego):** depois do dado da Serasa entra um bloco de **identificação** ("a viagem saiu mais cara do que você imaginou", "perdeu o controle dos gastos"), no lugar do 51%. Para manter 45 s: "Não foi azar" faz a ponte para a frase obrigatória, o erro 2 ficou mais curto e o fechamento virou "Viagem boa se paga antes, não depois".
+**Gancho:** contraste curto; o dado com a fonte entra como prova; a identificação puxa quem assiste para dentro.
+**Ideia central:** o que endivida a viagem é a falta de estratégia, não o passeio.
+**Sinal que favorece:** retenção (gancho de 6 palavras + identificação aos 10 s, ponto em que muita gente desiste) e envio.
 
 | # | Tempo | Etapa AIDA | Fala | Imagem (metade de cima) | Transição · som |
 |---|---|---|---|---|---|
-| 1 | 0,0–2,5 | Atenção (gancho) | A viagem acaba. A fatura, não. | Texto grande do gancho; mala fechando → fatura de cartão comprida descendo (ilustração) | Corte seco · `PDX_impacto` em "fatura" |
-| 2 | 2,5–10,0 | Atenção (dado) | Segundo a Serasa, numa pesquisa com o Instituto Opinion Box, quarenta e nove por cento dos brasileiros já se endividaram nas férias de fim de ano. | Print do release real + card **SERASA · OPINION BOX** → **49%** entra na palavra | Corte seco no card · animação do 49% |
-| 3 | 10,0–13,5 | Interesse | E cinquenta e um por cento passaram aperto depois do recesso. | **51%** em tela cheia (círculo passando da metade) | `PDX_impacto` (−4 dB) |
-| 4 | 13,5–17,0 | Interesse | Ainda tem gente que viaja sem estratégia. Três erros que pesam no bolso: | **Você em tela cheia** → "3" grande | Corte de zoom em "sem estratégia" |
-| 5 | 17,0–24,5 | Interesse · erro 1 | Hotel escolhido só pelo preço. Longe de tudo, a economia vai embora no transporte e você perde horas no caminho. Na viagem, tempo é ouro. | Lista "menor preço" → mapa com trajeto longo → relógio | Linha que revela · `PDX_swish` |
-| 6 | 24,5–31,5 | Interesse · erro 2 | Carro sem estacionamento. Antes de reservar, confere se o hotel tem vaga. Às vezes não tem, e a diária barata deixa de compensar. | Estrada → ficha do hotel com estacionamento riscado | Corte seco |
-| 7 | 31,5–39,0 | Desejo · erro 3 | Voos separados com conexão curta. Se o primeiro atrasar, a outra companhia não tem obrigação de te esperar. Separado já é arriscado; apertado, nem pensar. | Painel "ATRASADO" → portão fechando | `PDX_riser` → **Luz de passagem** · `PDX_impacto` em "obrigação" |
-| 8 | 39,0–43,0 | Desejo | Viagem boa é a que você paga antes de ir, não depois de voltar. | **Você em tela cheia** | Clarão de volta |
-| 9 | 43,0–45,5 | Ação | Manda pra quem tá planejando o fim de ano. | Volta à fatura do gancho + placa do DS `MANDA PRA QUEM / VAI VIAJAR →` | *clack* (−6 dB) |
+| 1 | 0,0–2,5 | Atenção (gancho) | A viagem acaba. A fatura, não. | Texto grande do gancho; mala fechando → fatura de cartão comprida descendo (ilustração) | Corte seco · `PDX_impacto` (−4 dB) em "fatura" |
+| 2 | 2,5–10,0 | Atenção (dado) | Segundo a Serasa, numa pesquisa com o Instituto Opinion Box, quarenta e nove por cento dos brasileiros já se endividaram nas férias de fim de ano. | Print do release real + card **SERASA · OPINION BOX** → **49%** entra na palavra | Corte seco · animação do 49% |
+| 3 | 10,0–17,0 | Interesse (identificação) | Sabe aquela viagem que saiu mais cara do que você imaginou? Que no meio dela você já tinha perdido o controle dos gastos? | 1ª pergunta: papel "ORÇAMENTO" com o total riscado e reescrito maior (ilustração, sem valor). 2ª pergunta: tela de celular com notificações de "compra aprovada" empilhando (criada, sem banco real) | Corte seco na 2ª pergunta · `PDX_obturador` (−8 dB) a cada notificação, no máx. 1 a cada 1,5 s |
+| 4 | 17,0–20,5 | Interesse (virada) | Não foi azar. Ainda tem gente que viaja sem estratégia. Três erros: | **Você em tela cheia** → "3" grande | Corte de zoom em "sem estratégia" |
+| 5 | 20,5–28,0 | Interesse · erro 1 | Hotel escolhido só pelo preço. Longe de tudo, a economia vai embora no transporte e você perde horas no caminho. Na viagem, tempo é ouro. | Card "1" + lista "menor preço" → mapa com trajeto longo se desenhando → relógio | Linha que revela · `PDX_swish` (−6 dB) |
+| 6 | 28,0–33,5 | Interesse · erro 2 | De carro? Confere se o hotel tem estacionamento. Às vezes não tem, e a diária barata deixa de compensar. | Card "2" + estrada (backlog do acervo ou web livre) → ficha do hotel com estacionamento riscado | Corte seco |
+| 7 | 33,5–41,0 | Desejo · erro 3 | Voos separados com conexão curta. Se o primeiro atrasar, a outra companhia não tem obrigação de te esperar. Separado já é arriscado; apertado, nem pensar. | Card "3" + painel "ATRASADO" → portão fechando | `PDX_riser` (−8 dB) → **Luz de passagem** · `PDX_impacto` em "obrigação" |
+| 8 | 41,0–43,0 | Desejo | Viagem boa se paga antes, não depois. | **Você em tela cheia** | Clarão de volta |
+| 9 | 43,0–45,5 | Ação | Manda pra quem tá planejando o fim de ano. | Volta à fatura do gancho (loop) + placa do DS `MANDA PRA QUEM / VAI VIAJAR →` | Corte seco · *clack* (−6 dB), único som do DS |
 
-### Texto para gravar · Roteiro B
+**Transições não secas:** linha que revela (5), Luz de passagem (7), Clarão (8): 3, com ≥ 1,5 s entre elas. **Duração:** ≈ 143 palavras, ≈ 45,5 s.
+
+**Por que a identificação é em pergunta:** não afirma nada sobre quem assiste nem inventa história; cada um responde "já" na cabeça. Também não é dado: não cita número.
+
+### Texto para gravar · Roteiro B v3
 
 ```
 1. A viagem acaba. A fatura, não.
 2. Segundo a Serasa, numa pesquisa com o Instituto Opinion Box, quarenta e nove por cento dos brasileiros já se endividaram nas férias de fim de ano.
-3. E cinquenta e um por cento passaram aperto depois do recesso.
-4. Ainda tem gente que viaja sem estratégia. Três erros que pesam no bolso:
+3. Sabe aquela viagem que saiu mais cara do que você imaginou? Que no meio dela você já tinha perdido o controle dos gastos?
+4. Não foi azar. Ainda tem gente que viaja sem estratégia. Três erros:
 5. Hotel escolhido só pelo preço. Longe de tudo, a economia vai embora no transporte e você perde horas no caminho. Na viagem, tempo é ouro.
-6. Carro sem estacionamento. Antes de reservar, confere se o hotel tem vaga. Às vezes não tem, e a diária barata deixa de compensar.
+6. De carro? Confere se o hotel tem estacionamento. Às vezes não tem, e a diária barata deixa de compensar.
 7. Voos separados com conexão curta. Se o primeiro atrasar, a outra companhia não tem obrigação de te esperar. Separado já é arriscado; apertado, nem pensar.
-8. Viagem boa é a que você paga antes de ir, não depois de voltar.
+8. Viagem boa se paga antes, não depois.
 9. Manda pra quem tá planejando o fim de ano.
 ```
 
+**Gravação do bloco 3:** tom de cumplicidade, meio rindo, como quem também já passou por isso. Pausa curta entre as duas perguntas. **Bloco 4:** "Não foi azar" seco, depois olhar firme na lente em "sem estratégia".
+
 ---
 
-## Comparação
+## Comparação (A × B v3)
 
-| Critério | Roteiro A | Roteiro B |
+| Critério | Roteiro A | Roteiro B v3 |
 |---|---|---|
 | 1ª frase | Número + "brasileiros" + "endividaram" | Contraste de 6 palavras |
-| Quando o dado aparece | **0 s** (número) e fonte aos 4,5 s | Fonte aos 2,5 s, número aos ≈ 6 s |
-| Fonte dita com clareza | Sim, frase própria | Sim, "Segundo a Serasa…" antes do número |
-| Força do gancho sem som | Alta: "49%" na tela é autoexplicativo | Média: "A fatura, não" precisa da 2ª frase |
-| Curiosidade aberta | "o culpado quase nunca é o passeio" | "três erros que pesam no bolso" |
-| Dados | 1 (49%) | 2 (49% e 51%) |
-| Fechamento | Loop no 49% (incentiva replay) | Frase de efeito + CTA |
-| Risco | Abrir com número pode soar notícia, não conversa | Gancho criativo, mas o dado chega depois dos 3 s |
+| Quando o dado aparece | Número aos 0 s, fonte aos 4,5 s | Fonte aos 2,5 s, número aos ≈ 6 s |
+| Identificação | Indireta ("o culpado quase nunca é o passeio") | **Direta**, em 2 perguntas (10–17 s) |
+| Funciona sem som | Alta: "49%" se explica sozinho | Média: o gancho precisa da fatura na imagem para fazer sentido |
+| Fechamento | Loop no 49% | Loop na fatura do gancho + frase de efeito |
 
 ## Recomendação
 
-**Roteiro A.** O número com "brasileiros" e "endividaram" aparece na tela no 1º segundo e funciona sem som, que é como muita gente decide se fica. A fonte vem numa frase própria, bem clara, e o fim volta ao 49%, o que fecha o loop. O B tem o gancho mais criativo e soma o 51%, mas o dado só chega depois dos 3 s do gancho. **Grave os dois**: o B serve como teste de gancho (referência de conteúdo, 8.3: uma variável por vez) num Trial Reel.
+**Roteiro B v3.** Com a identificação, ele resolve o ponto fraco que tinha (dado sem conexão pessoal): o gancho prende pela curiosidade, a Serasa dá credibilidade e as perguntas fazem a pessoa se ver no vídeo antes das dicas, o que segura a retenção no meio, onde Reels de lista costumam perder gente. Atenção a um ponto: sem som, "A viagem acaba. A fatura, não." depende da imagem (mala fechando → fatura descendo), então essa animação precisa estar clara já no 1º segundo. O A fica como alternativa para teste de gancho.
 
 ## Como gravar (vale para os dois)
 
@@ -152,7 +156,7 @@ Dicas 1 e 2: experiência e opinião do Diego, sem número. **Nenhum valor foi i
 - Diga "**quarenta e nove por cento**" devagar e com peso, e "**Serasa**" e "**Opinion Box**" bem articulados (a legenda depende disso).
 - Bloco 1: duas tomadas (séria e indignada).
 - "Ainda tem gente que viaja sem estratégia": olhando firme para a lente (vai em tela cheia).
-- "Separado e apertado, nem pensar" (A) / "Viagem boa é a que você paga antes de ir" (B): tom de conselho de amigo.
+- "Separado e apertado, nem pensar" (A) / "Viagem boa se paga antes, não depois" (B): tom de conselho de amigo.
 
 ---
 
