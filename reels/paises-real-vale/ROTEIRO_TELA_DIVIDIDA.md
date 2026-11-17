@@ -1,9 +1,10 @@
-# Países onde o brasileiro é rico · Roteiro (Tela dividida) · v3
+# Países onde o brasileiro é rico · Roteiro (Tela dividida) · v4
 
 **Formato:** Tela dividida (Trello, Formato viral validado 01, variação "analisar") · **Duração-alvo:** ≤ 50 s (pedido do Diego, 17/11/2026).
 **Pedido do Diego (17/11/2026):** ignorar o acervo; sem Argentina; países onde a viagem realmente vale para o brasileiro; dólar a **R$ 5,77** e euro a **R$ 6,35** sem IOF; o IOF entra no **problema**.
 **DS só no CTA** (CLAUDE.md, 6): do gancho até antes do CTA, linguagem do formato (`docs/FORMATOS_REELS.md`); o DS V2 entra só na placa final.
-**Status:** v3 para aprovação (v1 e v2 no histórico do git).
+**Status:** v4 para aprovação (v1 a v3 no histórico do git).
+**v4 (pedido do Diego, 17/11/2026), só na Opção A:** o CTA (frase 12) passou de "manda pra quem…" para **seguir o perfil por mais dicas de viagem**.
 **v3 (pedido do Diego, 17/11/2026), só na Opção A:** as frases 2 e 3 viraram uma só, e entrou uma frase de linguagem familiar e imagem mental (o café de 3 euros convertido de cabeça) antes da virada. Para caber em 50 s: as dicas viraram "País: 1 real, X moeda"; o koshari entrou na frase do euro; o CTA ficou mais curto. Duas opções; recomendação no fim.
 **v2 (pedido do Diego, 17/11/2026):** cada dica de país termina com quanto custa **passar o dia comendo bem**. Para caber em 50 s, saíram os preços de prato de rua do Vietnã e da Tailândia e a frase "O real não é fraco no mundo todo…" (Opção A), e a frase "Troca a Europa…" (Opção B). A duração agora é estimada pelas palavras **faladas** (números por extenso), não pelas escritas: a v1 subestimava.
 
@@ -44,8 +45,8 @@
 
 ## Opção A · "Milionário no Vietnã" (AIDA)
 
-**Estrutura:** Universal AIDA (Trello) · **Gancho:** resultado/curiosidade com número · **Duração:** ≈ 48 s (≈ 144 palavras faladas, números por extenso, a ≈ 3 palavras/s). Margem curta: fala rápida e respiros cortados.
-**Sinal que favorece:** retenção (o "milionário" abre um loop; o refrão "pra passar o dia comendo bem" faz esperar o número do próximo país) e envio ("manda pra quem acha que viajar tá caro").
+**Estrutura:** Universal AIDA (Trello) · **Gancho:** resultado/curiosidade com número · **Duração:** ≈ 49 s (≈ 148 palavras faladas, números por extenso, a ≈ 3 palavras/s). Margem curta: fala rápida e respiros cortados.
+**Sinal que favorece:** retenção (o "milionário" abre um loop; o refrão "pra passar o dia comendo bem" faz esperar o número do próximo país) e **seguidores ganhos** (o CTA promete mais destinos do mesmo tipo; o envio continua possível, mas deixa de ser pedido).
 **Elementos viciantes da frase 3 (rótulos do Trello):** *linguagem familiar* (todo brasileiro já converteu preço de cabeça no exterior) e *imagem mental* (a xícara, o preço em euro, a conta na cabeça). O euro volta na frase 10 ("6 reais e 13 não compram nem 1 euro"): a ideia se repete e fecha o loop.
 
 **Gancho na tela (metade de cima, Anton, linha a linha):** `COM R$ 232` / `VOCÊ VIRA` / **`MILIONÁRIO`** / `NO VIETNÃ`
@@ -65,7 +66,7 @@
 | 9 | 35–36,7 s | Egito | Egito: 1 real, 9 libras. | Cédula de libra egípcia (mesma posição) | *Match cut* · `PDX_swish` |
 | 10 | 36,7–41,7 s | Egito · desejo | Com 6 reais e 13 você não compra nem 1 euro. No Cairo, você almoça um koshari. | Tela cheia: moeda de 1 euro "fora de alcance" (ecoa a xícara da frase 3) → corte para o prato de koshari com etiqueta `R$ 6,13` | Corte seco em "No Cairo" · `PDX_impacto` em "koshari" |
 | 11 | 41,7–45 s | Egito · dia | Pra passar o dia comendo bem: uns 130. | Refrão visual → **`≈ R$ 130`**; termina em **Diego em tela cheia** | **Clarão de volta** para o Diego |
-| 12 | 45–48 s | Ação (CTA) | Manda pra quem acha que viajar tá caro. | Plano do gancho (notas de dong, loop) + placa DS **`MANDA PRA QUEM VAI →`** (DS V2, 2.7) | Corte seco · *clack* da placa (−6 dB) |
+| 12 | 45–49 s | Ação (CTA) | Me segue pra mais dicas de viagem onde o seu real rende. | Plano do gancho (notas de dong, loop) + placa DS **`SEGUE PRA MAIS DICAS →`** (DS V2, 2.7: verbo + módulo de seta) | Corte seco · *clack* da placa (−6 dB) |
 
 **Transições não secas:** Luz de passagem (5) e Clarão de volta (11), mais os *match cuts* das cédulas (corte seco, não contam na cota). Todas com ≥ 1,5 s de cena entre elas.
 
@@ -112,7 +113,7 @@ O "R$ 232 = milionário" é um número concreto e absurdo no primeiro segundo: a
 9. Egito: 1 real, 9 libras.
 10. Com 6 reais e 13 você não compra nem 1 euro. No Cairo, você almoça um koshari.
 11. Pra passar o dia comendo bem: uns 130.
-12. Manda pra quem acha que viajar tá caro.
+12. Me segue pra mais dicas de viagem onde o seu real rende.
 ```
 
 **Como gravar:**
@@ -129,10 +130,11 @@ O "R$ 232 = milionário" é um número concreto e absurdo no primeiro segundo: a
 ## Conferir antes do render
 
 - [ ] Gasto diário de comida nas páginas do Budget Your Trip (Tailândia e Egito) e do exiap (Vietnã), abertas no navegador.
-- [ ] Duração real da gravação: se passar de 50 s, encurtar a frase 3 para "Sabe aquele café de 3 euros? Quase 20 reais."
+- [ ] Duração real da gravação: se passar de 50 s, encurtar a frase 3 para "Sabe aquele café de 3 euros? Quase 20 reais." e/ou o CTA para "Me segue pra mais dicas de viagem."
 - [ ] IOF de 3,5% ainda vigente no dia da postagem (DOU / Banco Central).
 - [ ] Cotações do dia: se o dólar sair de R$ 5,77, refazer a tabela de números (as contas estão acima).
 - [ ] Fotos com licença livre (Wikimedia/domínio público): cédulas de real, dong, baht e libra; comida de rua em Hanói e Bangkok; koshari. Sem rosto em destaque (`FORMATOS_REELS.md`, 2, regra do pedido). Crédito CC BY na legenda do post.
+- [ ] Texto da placa `SEGUE PRA MAIS DICAS →`: segue o padrão do DS V2 (2.7, verbo + seta), mas **não está entre os exemplos do DS** (`SALVA PRA VIAGEM →`, `MANDA PRA QUEM VAI →`, `VÍDEO COMPLETO NO YOUTUBE →`). Precisa do OK do Diego (DS V2, Governança).
 - [ ] Placa do CTA conforme o checklist de conformidade do DS V2 (único elemento do DS no Reel).
 - [ ] Sons `PDX_*` e *clack*: **ninguém ouviu**; escuta do Diego antes de postar (CLAUDE.md, 12).
 
@@ -149,7 +151,7 @@ Contas com dólar a R$ 5,77, euro a R$ 6,35 e IOF de 3,5% (17/11/2026). Não inc
 
 "Comer bem o dia todo" = média de gasto com todas as refeições de um dia, por pessoa, de quem viajou (Budget Your Trip / exiap). Sem hospedagem.
 
-Manda pra quem acha que viajar tá caro.
+Me segue pra mais dicas de viagem onde o seu real rende.
 
 #viagembarata #tailandia #vietna #egito #dolarhoje #iof #viajarbarato #mochilao
 ```
