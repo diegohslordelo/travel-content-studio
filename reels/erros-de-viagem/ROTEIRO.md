@@ -1,8 +1,11 @@
-# Erros de viagem · "A viagem acaba, a fatura não" · Roteiro v1 (17/11/2026)
+# Erros de viagem · Roteiro v2 (17/11/2026) · Tela dividida · 45 s
 
-**Pedido do Diego (17/11/2026):** Reel sobre 3 erros que o viajante não deve cometer, **sem partir do acervo**. Gancho com dado real (notícia), a frase obrigatória **"ainda tem gente que viaja sem estratégia"** e 3 dicas: hotel pelo preço × localização (tempo também conta), estacionamento para quem vai de carro, voos em bilhetes separados com conexão curta.
-**DS só no CTA** (CLAUDE.md, 6). Do gancho ao bloco antes do CTA: linguagem do formato (`docs/FORMATOS_REELS.md`) e sons `PDX_*` (`docs/REFERENCIA_EDICAO_FORMATOS.md`, 4.1).
-**Momento:** postar **antes de dezembro**: o dado é sobre as férias de fim de ano, que estão chegando.
+**Pedido do Diego (17/11/2026):** dois roteiros de **45 s**, os dois em **tela dividida** (você grava no quarto; imagem de apoio em cima, você embaixo), para comparar. O dado tem de vir **com a fonte dita na fala**: quem fez a pesquisa e quantos por cento.
+**Frase obrigatória:** "Ainda tem gente que viaja sem estratégia." **3 erros:** hotel só pelo preço (tempo também conta), estacionamento para quem vai de carro, voos em bilhetes separados com conexão curta.
+**Roteiro nasce do roteiro** (CLAUDE.md, 7): acervo só como backlog de paisagem, escolhido depois da gravação. **DS só no CTA** (CLAUDE.md, 6). Postar **antes de dezembro**.
+**Duração:** calculada a ≈ 3,1 palavras/s (fala em tela dividida, `docs/FORMATOS_REELS.md`, 5.1). Se a gravação passar de 45 s, eu corto pausas; nunca acelero a voz.
+
+**Como a fonte aparece:** a fala diz "Serasa" e "Instituto Opinion Box"; a tela mostra **49%** e o card **SERASA · OPINION BOX** (só o que é dito, FORMATOS_REELS, 6). Data, amostra e margem vão na legenda do post.
 
 ## Fatos externos e fontes (pesquisa refeita em 17/11/2026)
 
@@ -51,97 +54,122 @@ Dicas 1 e 2: experiência e opinião do Diego, sem número. **Nenhum valor foi i
 
 ---
 
-## Opção A · Tela dividida · Jeito Errado × Jeito Certo (recomendada)
+## Roteiro A · "49% dos brasileiros" · Jeito Errado × Jeito Certo
 
-**Gancho:** "Quase metade dos brasileiros já se endividou nas férias de fim de ano. E o culpado quase nunca é o passeio caro."
+**Gancho:** o número na 1ª palavra, a fonte logo depois.
 **Ideia central:** o que endivida a viagem é a falta de estratégia, não o passeio.
-**Duração estimada:** ≈ 38 s (≈ 112 palavras a ≈ 3 palavras/s).
-**Sinal que favorece:** **envio** (CTA "manda pra quem vai viajar no fim do ano") e **salvamento** (3 itens de checklist).
+**Sinal que favorece:** envio ("manda pra quem vai viajar no fim do ano") e salvamento (checklist de 3 itens). Loop: o fim volta ao 49%.
 
-| # | Tempo | Etapa | Fala | Imagem / fundo (metade de cima) | Transição · som |
+| # | Tempo | Etapa | Fala | Imagem (metade de cima) | Transição · som |
 |---|---|---|---|---|---|
-| 1 | 0,0–4,0 | Conflito (gancho) | Quase metade dos brasileiros já se endividou nas férias de fim de ano. | **Print da manchete real** (Serasa/Opinion Box) e, na palavra "metade", animação: **49%** grande, círculo enchendo em âmbar. Texto do gancho em letras grandes, Diego embaixo desde o 1º quadro | Corte seco · `PDX_impacto` (−4 dB) no "49" |
-| 2 | 4,0–6,5 | Conflito | E o culpado quase nunca é o passeio caro. | Ingresso/passeio riscado (ilustração) | Corte seco |
-| 3 | 6,5–10,5 | Jeito errado (geral) | É hotel, carro e voo escolhidos no impulso. Ainda tem gente que viaja sem estratégia. | **Diego em tela cheia** na frase obrigatória (respiro) | Corte de zoom em "sem estratégia" |
-| 4 | 10,5–13,5 | Erro 1 · errado | Erro um: escolher a hospedagem só pelo preço. | Card "ERRO 1" + site de reserva ordenado por "menor preço" (gravação de tela criada, sem marca real) | `PDX_pagina` (−8 dB) |
-| 5 | 13,5–18,5 | Erro 1 · virada | A diária barata longe de tudo vira metrô, Uber e uma hora por dia no caminho. | Mapa animado: hotel longe, linha do trajeto se desenhando, relógio somando | Linha que revela (cor de destaque do formato) · `PDX_swish` (−6 dB) |
-| 6 | 18,5–22,5 | Erro 1 · certo | E na viagem tempo é ouro. Põe na balança: às vezes o bem localizado sai mais barato. *(Opcional, +2 s: "Não à toa, 85% dos viajantes concordam: o barato sai caro." Booking.com, 2026)* | Balança animada: "diária" × "deslocamento + tempo"; pende para o hotel central | Corte seco |
-| 7 | 22,5–24,5 | Erro 2 · errado | Erro dois: vai de carro? | Card "ERRO 2" + estrada (backlog do acervo, se houver plano de carro; senão web livre) | `PDX_pagina` |
-| 8 | 24,5–29,0 | Erro 2 · certo | Olha se o hotel tem estacionamento antes de reservar. Às vezes não tem, e a diária barata deixa de compensar. | Ficha do hotel com ícone de estacionamento riscado, depois a diária somando um "+" (sem valor) | Corte seco |
-| 9 | 29,0–31,0 | Erro 3 · errado | Erro três: voos em bilhetes separados com conexão curta. | Card "ERRO 3" + painel de aeroporto com "ATRASADO" | `PDX_riser` (−8 dB) subindo até a linha 10 |
-| 10 | 31,0–34,5 | Erro 3 · virada | Se o primeiro atrasar, a companhia do segundo não tem obrigação de te esperar. | Avião decolando sem ninguém / portão fechando (web livre) | **Luz de passagem** no corte · `PDX_impacto` em "obrigação" |
-| 11 | 34,5–36,5 | Jeito certo | Separado já é arriscado. Separado e apertado, nem pensar. | **Diego em tela cheia** | Clarão de volta |
-| 12 | 36,5–39,5 | Mudança + CTA | Manda pra quem vai viajar no fim do ano e não quer entrar nos 49%. | Volta ao plano do gancho (loop no 49%) + **placa do DS V2**: `MANDA PRA QUEM / VAI VIAJAR →` | Corte seco · *clack* (−6 dB), único som do DS |
+| 1 | 0,0–4,5 | Conflito (gancho) | Quarenta e nove por cento dos brasileiros já se endividaram nas férias de fim de ano. | Texto grande do gancho; **49%** entra na palavra, círculo enchendo em âmbar | Corte seco · `PDX_impacto` (−4 dB) no "49" |
+| 2 | 4,5–8,0 | Conflito (fonte) | O dado é da Serasa, numa pesquisa com o Instituto Opinion Box. | **Print do release real da Serasa** + card **SERASA · OPINION BOX** | Corte seco |
+| 3 | 8,0–10,3 | Conflito | E o culpado quase nunca é o passeio. | Ingresso de passeio riscado (ilustração) | Corte seco |
+| 4 | 10,3–12,5 | Jeito errado | Ainda tem gente que viaja sem estratégia. | **Você em tela cheia** | Corte de zoom em "sem estratégia" |
+| 5 | 12,5–14,5 | Erro 1 | Erro um: escolher hotel só pelo preço. | Card "ERRO 1" + lista de hotéis ordenada por "menor preço" (criada, sem marca real) | `PDX_pagina` (−8 dB) |
+| 6 | 14,5–19,5 | Erro 1 · virada | A diária barata longe de tudo vira metrô, Uber e uma hora por dia no caminho. | Mapa animado: hotel longe, trajeto se desenhando, relógio somando | Linha que revela · `PDX_swish` (−6 dB) |
+| 7 | 19,5–24,5 | Erro 1 · certo | E tempo, na viagem, é ouro. Põe na balança: às vezes o bem localizado sai mais barato. | Balança animada: "diária" × "transporte + tempo", pende para o hotel central | Corte seco |
+| 8 | 24,5–31,0 | Erro 2 | Erro dois: vai de carro? Confere se o hotel tem estacionamento. Às vezes não tem, e a diária barata deixa de compensar. | Card "ERRO 2" → estrada (backlog do acervo ou web livre) → ficha do hotel com estacionamento riscado | `PDX_pagina` · corte seco |
+| 9 | 31,0–37,0 | Erro 3 | Erro três: voos separados com conexão curta. Se o primeiro atrasar, a outra companhia não tem obrigação de te esperar. | Card "ERRO 3" → painel "ATRASADO" → portão fechando | `PDX_riser` (−8 dB) até o portão · **Luz de passagem** · `PDX_impacto` em "obrigação" |
+| 10 | 37,0–40,0 | Jeito certo | Separado já é arriscado. Separado e apertado, nem pensar. | **Você em tela cheia** | Clarão de volta |
+| 11 | 40,0–45,0 | Mudança + CTA | Manda pra quem vai viajar no fim do ano e não quer entrar nos 49%. | Volta ao 49% do gancho + **placa do DS V2** `MANDA PRA QUEM / VAI VIAJAR →` | Corte seco · *clack* (−6 dB), único som do DS |
 
-**Transições não secas:** linha que revela (5), Luz de passagem (10), Clarão de volta (11) = 3, com ≥ 1,5 s entre elas (REFERENCIA_EDICAO_FORMATOS, 2).
+**Transições não secas:** linha que revela (6), Luz de passagem (9), Clarão (10): 3, com ≥ 1,5 s entre elas.
 
-## Opção B · Tela verde · AIDA
+### Texto para gravar · Roteiro A
 
-**Gancho:** "A viagem acaba. A fatura, não."
-**Ideia central:** igual à A.
-**Duração estimada:** ≈ 33 s (fala acelerada do formato, respiros cortados).
-**Sinal que favorece:** retenção (gancho curto e de contraste) e envio.
-
-| # | Tempo | Etapa AIDA | Fala | Fundo (atrás do Diego) | Transição · som |
-|---|---|---|---|---|---|
-| 1 | 0,0–2,5 | Atenção | A viagem acaba. A fatura, não. | Mala fechando → fatura de cartão comprida descendo (ilustração) | Corte seco · `PDX_impacto` em "fatura" |
-| 2 | 2,5–6,5 | Atenção | Uma pesquisa da Serasa mostrou: quase metade dos brasileiros já se endividou nas férias de fim de ano. | Print da manchete real → **49%** grande | Fusão de fundo |
-| 3 | 6,5–9,0 | Interesse | Ainda tem gente que viaja sem estratégia. | Fundo escurecido, frase grande | Corte de zoom no rosto |
-| 4 | 9,0–15,5 | Interesse · erro 1 | Primeiro: hotel escolhido só pelo preço. Longe de tudo, a economia vai embora no transporte e no tempo. E tempo, na viagem, é ouro. | Mapa com trajeto longo + relógio | Fusão de fundo · `PDX_swish` |
-| 5 | 15,5–20,5 | Interesse · erro 2 | Segundo: vai de carro? Confere se o hotel tem estacionamento. Às vezes não tem, e a diária barata deixa de compensar. | Ficha do hotel, estacionamento riscado | Fusão de fundo |
-| 6 | 20,5–27,0 | Desejo · erro 3 | Terceiro: voos separados com conexão curta. Se o primeiro atrasar, o segundo não te espera. Separado já é arriscado; apertado, nem pensar. | Painel "ATRASADO" → portão fechando | `PDX_riser` → `PDX_impacto` em "não te espera" |
-| 7 | 27,0–30,5 | Desejo | Viagem boa é a que você paga antes de ir, não depois de voltar. | Mala aberta, cidade ao fundo (backlog do acervo) | Fusão de fundo |
-| 8 | 30,5–33,5 | Ação | Manda pra quem tá planejando o fim de ano. | Plano do gancho + placa do DS `MANDA PRA QUEM / VAI VIAJAR →` | *clack* (−6 dB) |
-
-## Recomendação
-
-**Opção A.** O gancho tem o **número na primeira frase** (pedido do Diego), o "e o culpado quase nunca é o passeio caro" abre curiosidade que só fecha no fim, e a estrutura Jeito Errado × Jeito Certo dá contraste a cada dica, o que segura a retenção numa lista. O fechamento volta ao "49%" (loop). A Opção B tem o gancho mais curto e esperto, mas o dado só chega no 2º bloco; vale guardar "A viagem acaba. A fatura, não." como **gancho alternativo para teste** (referência de conteúdo, 8.3: uma variável por vez).
-
-**Sobre usar vídeo de outra pessoa "extrapolando":** não recomendo. É conteúdo de terceiro (direito de imagem e risco de repost, referência de conteúdo, P4). A manchete real com o número faz o mesmo papel e é verificável.
+```
+1. Quarenta e nove por cento dos brasileiros já se endividaram nas férias de fim de ano.
+2. O dado é da Serasa, numa pesquisa com o Instituto Opinion Box.
+3. E o culpado quase nunca é o passeio.
+4. Ainda tem gente que viaja sem estratégia.
+5. Erro um: escolher hotel só pelo preço.
+6. A diária barata longe de tudo vira metrô, Uber e uma hora por dia no caminho.
+7. E tempo, na viagem, é ouro. Põe na balança: às vezes o bem localizado sai mais barato.
+8. Erro dois: vai de carro? Confere se o hotel tem estacionamento. Às vezes não tem, e a diária barata deixa de compensar.
+9. Erro três: voos separados com conexão curta. Se o primeiro atrasar, a outra companhia não tem obrigação de te esperar.
+10. Separado já é arriscado. Separado e apertado, nem pensar.
+11. Manda pra quem vai viajar no fim do ano e não quer entrar nos 49%.
+```
 
 ---
 
-## Texto para gravar (Opção A, no quarto)
+## Roteiro B · "A viagem acaba. A fatura, não." · AIDA
+
+**Gancho:** contraste curto; o dado com a fonte entra em seguida, como prova.
+**Ideia central:** igual à do A.
+**Sinal que favorece:** retenção nos 3 primeiros segundos (frase curta e de contraste) e envio.
+
+| # | Tempo | Etapa AIDA | Fala | Imagem (metade de cima) | Transição · som |
+|---|---|---|---|---|---|
+| 1 | 0,0–2,5 | Atenção (gancho) | A viagem acaba. A fatura, não. | Texto grande do gancho; mala fechando → fatura de cartão comprida descendo (ilustração) | Corte seco · `PDX_impacto` em "fatura" |
+| 2 | 2,5–10,0 | Atenção (dado) | Segundo a Serasa, numa pesquisa com o Instituto Opinion Box, quarenta e nove por cento dos brasileiros já se endividaram nas férias de fim de ano. | Print do release real + card **SERASA · OPINION BOX** → **49%** entra na palavra | Corte seco no card · animação do 49% |
+| 3 | 10,0–13,5 | Interesse | E cinquenta e um por cento passaram aperto depois do recesso. | **51%** em tela cheia (círculo passando da metade) | `PDX_impacto` (−4 dB) |
+| 4 | 13,5–17,0 | Interesse | Ainda tem gente que viaja sem estratégia. Três erros que pesam no bolso: | **Você em tela cheia** → "3" grande | Corte de zoom em "sem estratégia" |
+| 5 | 17,0–24,5 | Interesse · erro 1 | Hotel escolhido só pelo preço. Longe de tudo, a economia vai embora no transporte e você perde horas no caminho. Na viagem, tempo é ouro. | Lista "menor preço" → mapa com trajeto longo → relógio | Linha que revela · `PDX_swish` |
+| 6 | 24,5–31,5 | Interesse · erro 2 | Carro sem estacionamento. Antes de reservar, confere se o hotel tem vaga. Às vezes não tem, e a diária barata deixa de compensar. | Estrada → ficha do hotel com estacionamento riscado | Corte seco |
+| 7 | 31,5–39,0 | Desejo · erro 3 | Voos separados com conexão curta. Se o primeiro atrasar, a outra companhia não tem obrigação de te esperar. Separado já é arriscado; apertado, nem pensar. | Painel "ATRASADO" → portão fechando | `PDX_riser` → **Luz de passagem** · `PDX_impacto` em "obrigação" |
+| 8 | 39,0–43,0 | Desejo | Viagem boa é a que você paga antes de ir, não depois de voltar. | **Você em tela cheia** | Clarão de volta |
+| 9 | 43,0–45,5 | Ação | Manda pra quem tá planejando o fim de ano. | Volta à fatura do gancho + placa do DS `MANDA PRA QUEM / VAI VIAJAR →` | *clack* (−6 dB) |
+
+### Texto para gravar · Roteiro B
 
 ```
-1. Quase metade dos brasileiros já se endividou nas férias de fim de ano.
-2. E o culpado quase nunca é o passeio caro.
-3. É hotel, carro e voo escolhidos no impulso. Ainda tem gente que viaja sem estratégia.
-4. Erro um: escolher a hospedagem só pelo preço.
-5. A diária barata longe de tudo vira metrô, Uber e uma hora por dia no caminho.
-6. E na viagem tempo é ouro. Põe na balança: às vezes o bem localizado sai mais barato.
-7. Erro dois: vai de carro?
-8. Olha se o hotel tem estacionamento antes de reservar. Às vezes não tem, e a diária barata deixa de compensar.
-9. Erro três: voos em bilhetes separados com conexão curta.
-10. Se o primeiro atrasar, a companhia do segundo não tem obrigação de te esperar.
-11. Separado já é arriscado. Separado e apertado, nem pensar.
-12. Manda pra quem vai viajar no fim do ano e não quer entrar nos 49%.
+1. A viagem acaba. A fatura, não.
+2. Segundo a Serasa, numa pesquisa com o Instituto Opinion Box, quarenta e nove por cento dos brasileiros já se endividaram nas férias de fim de ano.
+3. E cinquenta e um por cento passaram aperto depois do recesso.
+4. Ainda tem gente que viaja sem estratégia. Três erros que pesam no bolso:
+5. Hotel escolhido só pelo preço. Longe de tudo, a economia vai embora no transporte e você perde horas no caminho. Na viagem, tempo é ouro.
+6. Carro sem estacionamento. Antes de reservar, confere se o hotel tem vaga. Às vezes não tem, e a diária barata deixa de compensar.
+7. Voos separados com conexão curta. Se o primeiro atrasar, a outra companhia não tem obrigação de te esperar. Separado já é arriscado; apertado, nem pensar.
+8. Viagem boa é a que você paga antes de ir, não depois de voltar.
+9. Manda pra quem tá planejando o fim de ano.
 ```
 
-**Como gravar:**
-- Celular na vertical, do peito para cima, olhando para a lente, luz de frente.
-- **1 tomada por bloco**, com 1 s de pausa entre blocos e **1 s de silêncio antes de parar** (o iPhone corta o fim do áudio).
-- Bloco 1: duas tomadas (uma séria, outra indignada). Diga "metade" com peso.
-- Bloco 3: "sem estratégia" olhando firme para a lente (vai em tela cheia).
-- Bloco 11: tom de bronca de amigo, quase rindo.
-- Nunca acelerar a voz na edição: se passar de 40 s, eu corto pausas.
+---
 
-## Legenda do post (rascunho)
+## Comparação
+
+| Critério | Roteiro A | Roteiro B |
+|---|---|---|
+| 1ª frase | Número + "brasileiros" + "endividaram" | Contraste de 6 palavras |
+| Quando o dado aparece | **0 s** (número) e fonte aos 4,5 s | Fonte aos 2,5 s, número aos ≈ 6 s |
+| Fonte dita com clareza | Sim, frase própria | Sim, "Segundo a Serasa…" antes do número |
+| Força do gancho sem som | Alta: "49%" na tela é autoexplicativo | Média: "A fatura, não" precisa da 2ª frase |
+| Curiosidade aberta | "o culpado quase nunca é o passeio" | "três erros que pesam no bolso" |
+| Dados | 1 (49%) | 2 (49% e 51%) |
+| Fechamento | Loop no 49% (incentiva replay) | Frase de efeito + CTA |
+| Risco | Abrir com número pode soar notícia, não conversa | Gancho criativo, mas o dado chega depois dos 3 s |
+
+## Recomendação
+
+**Roteiro A.** O número com "brasileiros" e "endividaram" aparece na tela no 1º segundo e funciona sem som, que é como muita gente decide se fica. A fonte vem numa frase própria, bem clara, e o fim volta ao 49%, o que fecha o loop. O B tem o gancho mais criativo e soma o 51%, mas o dado só chega depois dos 3 s do gancho. **Grave os dois**: o B serve como teste de gancho (referência de conteúdo, 8.3: uma variável por vez) num Trial Reel.
+
+## Como gravar (vale para os dois)
+
+- Celular na vertical, do peito para cima, olhando para a lente, luz de frente. Você fica na **metade de baixo**: deixe espaço acima da cabeça.
+- **1 tomada por bloco**, 1 s de pausa entre blocos e **1 s de silêncio antes de parar** (o iPhone corta o fim do áudio).
+- Diga "**quarenta e nove por cento**" devagar e com peso, e "**Serasa**" e "**Opinion Box**" bem articulados (a legenda depende disso).
+- Bloco 1: duas tomadas (séria e indignada).
+- "Ainda tem gente que viaja sem estratégia": olhando firme para a lente (vai em tela cheia).
+- "Separado e apertado, nem pensar" (A) / "Viagem boa é a que você paga antes de ir" (B): tom de conselho de amigo.
+
+---
+
+## Legenda do post (serve para os dois)
 
 ```
-Quase metade dos brasileiros já se endividou nas férias de fim de ano. 💸
-3 erros de planejamento que fazem a viagem sair mais cara do que deveria: hotel escolhido só pelo preço, carro sem estacionamento na reserva e voos em bilhetes separados com conexão curta.
+49% dos brasileiros já se endividaram com gastos nas férias de fim de ano. 💸
+3 erros de planejamento que fazem a viagem sair mais cara: hotel escolhido só pelo preço, carro sem estacionamento na reserva e voos em bilhetes separados com conexão curta.
 Manda pra quem vai viajar no fim do ano.
 
-51% contam que passaram aperto depois das férias de fim de ano, e 38% pagam tudo no cartão parcelado.
-Fonte: pesquisa Serasa e Instituto Opinion Box, 11 a 15/11/2025, 1.152 entrevistas online, margem de 2,9 p.p.
+Fonte: pesquisa Serasa e Instituto Opinion Box, 11 a 15/11/2025, 1.152 entrevistas online em todo o Brasil, margem de erro de 2,9 p.p.
 
 #dicasdeviagem #planejamentodeviagem #viagembarata #hospedagem #passagensaereas #primeirodia
 ```
 
 ## Pendências antes do render
 
-- Release da Serasa conferido (17/11/2026). Falta decidir: "quase metade dos brasileiros" (como a Serasa divulga) ou a versão conservadora "uma pesquisa da Serasa mostrou".
-- Print da manchete: usar matéria real, com o veículo visível; crédito na legenda.
-- Imagens de mapa, balança, ficha de hotel e painel: **criadas** (parecem ilustração, sem marca real de site de reserva ou companhia).
+- Print do release da Serasa: usar a página real, com o nome visível; crédito na legenda.
+- Mapa, balança, ficha de hotel, painel e fatura: **criados** (parecem ilustração, sem marca real de site de reserva, banco ou companhia).
 - Acervo só como backlog de paisagem (estrada, cidade), escolhido depois da gravação.
