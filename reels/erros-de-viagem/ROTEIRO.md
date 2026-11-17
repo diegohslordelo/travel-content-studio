@@ -4,15 +4,50 @@
 **DS só no CTA** (CLAUDE.md, 6). Do gancho ao bloco antes do CTA: linguagem do formato (`docs/FORMATOS_REELS.md`) e sons `PDX_*` (`docs/REFERENCIA_EDICAO_FORMATOS.md`, 4.1).
 **Momento:** postar **antes de dezembro**: o dado é sobre as férias de fim de ano, que estão chegando.
 
-## Fatos externos e fontes
+## Fatos externos e fontes (pesquisa refeita em 17/11/2026)
 
-| Fato usado | Fonte | Observação |
+### Pesquisa 1 · Serasa + Instituto Opinion Box: dado do gancho
+
+- **Release original:** [Serasa, "Planejamento para férias coletivas: 76% dos brasileiros já deixaram de viajar por falta de organização financeira"](https://www.serasa.com.br/imprensa/ferias-coletivas-76-brasileiros-nao-viajam-serasa/), dezembro de 2025 (a página não dá o dia).
+- **Metodologia (literal):** "Pesquisa realizada pelo Instituto Opinion Box entre 11 e 15 de novembro de 2025, com 1.152 entrevistas online em todo o Brasil. Margem de erro de 2,9 pontos percentuais."
+- **Tema:** férias coletivas / recesso de fim de ano (dezembro e janeiro), não férias em geral.
+
+| Número | Frase literal do release | Uso |
 |---|---|---|
-| **49%** dos brasileiros já se endividaram com gastos nas férias de fim de ano (recesso) | Serasa + Instituto Opinion Box. Campo de 11 a 15/11/2025, 1.152 entrevistas online, margem de 2,9 p.p. Reproduzido em [Hoje em Dia, 25/12/2025](https://www.hojeemdia.com.br/opiniao/logo-ali/76-dos-brasileiros-ja-deixaram-de-viajar-por-falta-de-organizac-o-financeira-revela-serasa-1.1097903) | A pesquisa é sobre **férias coletivas / fim de ano**, não férias em geral: a fala diz "férias de fim de ano". O release original da Serasa **não foi encontrado**; conferir antes de postar |
-| Mesma pesquisa: **76%** já deixaram de viajar no recesso por falta de planejamento financeiro; **38%** pagam as férias no cartão parcelado | Mesma fonte | Reserva para a legenda do post |
-| Em **bilhetes separados**, a companhia do 2º voo, em regra, não é obrigada a esperar nem a remarcar se o 1º atrasar | [Cartões e Viagens](https://cartoeseviagens.com.br/conexao-internacional-perdida); ANAC, Res. 400 (vale para conexão no **mesmo** bilhete): [dicas ANAC](https://www.gov.br/anac/pt-br/centrais-de-conteudo/publicacoes/publicacoes-arquivos/dicas_anac_atrasos_e_cancelamentos_web.pdf) | Fala escrita com "não tem obrigação de te esperar", sem prometer direito nenhum |
+| **49%** | "49% já se endividaram por despesas feitas nesse momento" | **Gancho** |
+| 51% | "mais da metade (51%) relata dificuldades financeiras no pós-férias coletivas" | Legenda / reserva |
+| 76% | "76% já deixaram de viajar no período por falta de planejamento financeiro" | Legenda / gancho alternativo |
+| 71% | "71% afirmam programar bem o orçamento para o recesso" | Contraste: dizem que planejam, mas metade se endivida |
+| 18% | "18% dizem gastar apenas conforme conseguem, sem planejamento prévio" | Reserva |
+| 34% | "34% afirmam se organizar com mais de três meses de antecedência" | Reserva |
+| 38% | "parcelamento no cartão de crédito (38%)": forma de pagamento mais usada | Legenda |
+| 40% | "40% pretendem recorrer ao crédito para custear as próximas férias" | Reserva |
+| 41% | "41% pretendem gastar até R$1.000 durante o período de descanso" | Não usar |
 
-Dicas 1 e 2: experiência/opinião do Diego, sem número. **Nenhum valor foi inventado.** Se o Diego quiser um exemplo real das viagens (ex.: quanto gastou de transporte num hotel longe), fica **a confirmar** com ele.
+**Limites do 49%:** o release **não diz a base** (se é o total das 1.152 pessoas ou só quem tira férias coletivas) e não diz se a dívida veio de **viagem** ou de qualquer gasto do recesso. Por isso a fala diz "nas férias de fim de ano" e não "em viagem". O próprio release trata a amostra como "brasileiros" no título, então "quase metade dos brasileiros" segue a forma como a Serasa divulga. Versão mais conservadora, se o Diego preferir: "Uma pesquisa da Serasa mostrou: quase metade já se endividou nas férias de fim de ano."
+
+### Pesquisa 2 · Booking.com (junho de 2026): reforço da dica 1
+
+- **Fonte:** [Catraca Livre, 12/09/2026](https://catracalivre.com.br/viagem-livre/brasileiros-estao-dispostos-a-pagar-mais-por-conforto-na-hora-de-viajar/), com dados da Booking.com. Release da Booking não encontrado.
+- **Metodologia:** "1.200 brasileiros com 18 anos ou mais que fizeram pelo menos uma viagem de lazer, nacional ou internacional, nos 12 meses anteriores à pesquisa, realizada em junho de 2026". Margem de erro e instituto de campo não informados.
+
+| Número | Frase literal | Uso |
+|---|---|---|
+| **85%** | "85% concordam que, ao viajar, o barato pode sair caro" | **Opcional na dica 1** |
+| 30% | pagariam mais por "uma hospedagem bem localizada, com 30%" | Reserva (dica 1) |
+| 89% | "consideram que, em determinadas situações, vale pagar mais para evitar problemas durante a viagem" | Reserva |
+| 92% | "a preocupação em manter os gastos dentro do orçamento planejado" | Reserva |
+| 5% | "apenas 5% dos brasileiros dizem que evitariam cortar" gasto com transporte | Não usar: fala de corte, não de custo |
+
+### Dado descartado
+
+- **"25% tentam economizar mas acabam gastando mais do que o planejado" (Booking.com):** aparece só em matérias sem data nem metodologia, e não estava na página da Booking de 2026. Fica de fora.
+
+### Dica 3 · bilhetes separados
+
+- Em **bilhetes separados**, a companhia do 2º voo, em regra, não é obrigada a esperar nem a remarcar se o 1º atrasar ([Cartões e Viagens](https://cartoeseviagens.com.br/conexao-internacional-perdida)). A proteção da ANAC (Res. 400) vale para conexão no **mesmo** bilhete ([dicas ANAC](https://www.gov.br/anac/pt-br/centrais-de-conteudo/publicacoes/publicacoes-arquivos/dicas_anac_atrasos_e_cancelamentos_web.pdf)). A fala não promete direito nenhum.
+
+Dicas 1 e 2: experiência e opinião do Diego, sem número. **Nenhum valor foi inventado.** Exemplo real das viagens (ex.: transporte gasto num hotel longe) fica **a confirmar** com ele.
 
 ---
 
@@ -30,7 +65,7 @@ Dicas 1 e 2: experiência/opinião do Diego, sem número. **Nenhum valor foi inv
 | 3 | 6,5–10,5 | Jeito errado (geral) | É hotel, carro e voo escolhidos no impulso. Ainda tem gente que viaja sem estratégia. | **Diego em tela cheia** na frase obrigatória (respiro) | Corte de zoom em "sem estratégia" |
 | 4 | 10,5–13,5 | Erro 1 · errado | Erro um: escolher a hospedagem só pelo preço. | Card "ERRO 1" + site de reserva ordenado por "menor preço" (gravação de tela criada, sem marca real) | `PDX_pagina` (−8 dB) |
 | 5 | 13,5–18,5 | Erro 1 · virada | A diária barata longe de tudo vira metrô, Uber e uma hora por dia no caminho. | Mapa animado: hotel longe, linha do trajeto se desenhando, relógio somando | Linha que revela (cor de destaque do formato) · `PDX_swish` (−6 dB) |
-| 6 | 18,5–22,5 | Erro 1 · certo | E na viagem tempo é ouro. Põe na balança: às vezes o bem localizado sai mais barato. | Balança animada: "diária" × "deslocamento + tempo"; pende para o hotel central | Corte seco |
+| 6 | 18,5–22,5 | Erro 1 · certo | E na viagem tempo é ouro. Põe na balança: às vezes o bem localizado sai mais barato. *(Opcional, +2 s: "Não à toa, 85% dos viajantes concordam: o barato sai caro." Booking.com, 2026)* | Balança animada: "diária" × "deslocamento + tempo"; pende para o hotel central | Corte seco |
 | 7 | 22,5–24,5 | Erro 2 · errado | Erro dois: vai de carro? | Card "ERRO 2" + estrada (backlog do acervo, se houver plano de carro; senão web livre) | `PDX_pagina` |
 | 8 | 24,5–29,0 | Erro 2 · certo | Olha se o hotel tem estacionamento antes de reservar. Às vezes não tem, e a diária barata deixa de compensar. | Ficha do hotel com ícone de estacionamento riscado, depois a diária somando um "+" (sem valor) | Corte seco |
 | 9 | 29,0–31,0 | Erro 3 · errado | Erro três: voos em bilhetes separados com conexão curta. | Card "ERRO 3" + painel de aeroporto com "ATRASADO" | `PDX_riser` (−8 dB) subindo até a linha 10 |
@@ -98,14 +133,15 @@ Quase metade dos brasileiros já se endividou nas férias de fim de ano. 💸
 3 erros de planejamento que fazem a viagem sair mais cara do que deveria: hotel escolhido só pelo preço, carro sem estacionamento na reserva e voos em bilhetes separados com conexão curta.
 Manda pra quem vai viajar no fim do ano.
 
-Fonte: pesquisa Serasa e Instituto Opinion Box, novembro de 2025 (1.152 entrevistas).
+51% contam que passaram aperto depois das férias de fim de ano, e 38% pagam tudo no cartão parcelado.
+Fonte: pesquisa Serasa e Instituto Opinion Box, 11 a 15/11/2025, 1.152 entrevistas online, margem de 2,9 p.p.
 
 #dicasdeviagem #planejamentodeviagem #viagembarata #hospedagem #passagensaereas #primeirodia
 ```
 
 ## Pendências antes do render
 
-- Conferir o número no **release original da Serasa** (só achei a reprodução no Hoje em Dia).
+- Release da Serasa conferido (17/11/2026). Falta decidir: "quase metade dos brasileiros" (como a Serasa divulga) ou a versão conservadora "uma pesquisa da Serasa mostrou".
 - Print da manchete: usar matéria real, com o veículo visível; crédito na legenda.
 - Imagens de mapa, balança, ficha de hotel e painel: **criadas** (parecem ilustração, sem marca real de site de reserva ou companhia).
 - Acervo só como backlog de paisagem (estrada, cidade), escolhido depois da gravação.
