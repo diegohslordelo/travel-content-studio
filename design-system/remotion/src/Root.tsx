@@ -4,7 +4,7 @@
  * - Catalogo: todas as animações em sequência, com os sons da 4.6.
  * - Reel / CapaReel: montagem de um Reel a partir de reels/<reel>/revN (props + --public-dir).
  * - AmostraYT: amostra de 30 s dos grafismos do vídeo longo do YouTube (16:9), --public-dir=reels/amostra-yt/public.
- * - ComidaReel / ComidaReel2: Reel em tela dividida "3 formas de economizar com comida" (reels/comida-3-regras/rev1 e rev2).
+ * - ComidaReel / ComidaReel2 / ComidaReel3: Reel em tela dividida "3 formas de economizar com comida" (reels/comida-3-regras/rev1, rev2 e rev3).
  * - VideoLongo: vídeo longo do YouTube (16:9, 24 fps) montado de reels/<video>/revN (props + --public-dir).
  */
 import React from "react";
@@ -18,6 +18,7 @@ import { VideoLongo, metadadosVideoLongo, propsVideoLongoVazias } from "./yt/Vid
 import { ThumbYT, propsThumbVazias } from "./yt/ThumbYT";
 import { ComidaReel, metadadosComida, propsComidaVazias } from "./reel/ComidaReel";
 import { ComidaReel2, metadadosComida2, propsComida2Vazias } from "./reel/ComidaReel2";
+import { ComidaReel3, metadadosComida3, propsComida3Vazias } from "./reel/ComidaReel3";
 
 carregarFontes();
 
@@ -27,6 +28,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Reel" component={Reel} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsVazias} calculateMetadata={metadadosReel} />
     <Composition id="ComidaReel" component={ComidaReel} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsComidaVazias} calculateMetadata={metadadosComida} />
     <Composition id="ComidaReel2" component={ComidaReel2} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsComida2Vazias} calculateMetadata={metadadosComida2} />
+    <Composition id="ComidaReel3" component={ComidaReel3} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsComida3Vazias} calculateMetadata={metadadosComida3} />
     <Composition id="AmostraYT" component={AmostraYT} durationInFrames={900} fps={30} width={1920} height={1080} />
     <Composition id="AmostraFimYT" component={AmostraFimYT} durationInFrames={Math.round((DUR_AMOSTRA_FIM * 30) / 1000)} fps={30} width={1920} height={1080} />
     <Composition id="VideoLongo" component={VideoLongo} durationInFrames={24} fps={24} width={1920} height={1080} defaultProps={propsVideoLongoVazias} calculateMetadata={metadadosVideoLongo} />
