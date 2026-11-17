@@ -1,8 +1,9 @@
-# Legendas · 3 formas de economizar com comida na viagem · REV1
+# Legendas · 3 formas de economizar com comida na viagem · REV2
 
 **CTA único:** seguir (pedido do Diego). A primeira linha reforça o gancho; palavras-chave de busca: economizar, comida, viagem, Europa, restaurante, café da manhã, comida de rua, orçamento.
 **Valores:** os 50 € são exemplo ("vamos supor"), como no vídeo. Nenhum preço real da viagem entra aqui: os valores do acervo estão em `acervo/CORTES_DE_CUSTO.md` e ainda não foram revisados.
-**Imagens:** todas do acervo do Diego (Paris, Lisboa, Amsterdam, Bruges). Sem crédito de terceiros.
+**Imagens:** todas do acervo do Diego (Paris, Barcelona, Amsterdam, Bruxelas, Madrid, Florença). Sem crédito de terceiros.
+**Capa:** `capa_rev2.jpg`, quadro de 0,9 s (prato do bouillon, "economizar" em destaque, rosto aberto).
 
 ## Instagram (Reels)
 
@@ -16,7 +17,7 @@ As 3 formas que eu uso:
 
 Economizar com comida não é comer mal. É saber onde gastar.
 
-📍 O prato do vídeo: Le Petit Bouillon Pharamond, Paris
+📍 O prato do início: Le Petit Bouillon Pharamond, Paris. A paella é de Barcelona.
 
 Me segue pra aprender a viajar melhor sem gastar dinheiro à toa.
 
