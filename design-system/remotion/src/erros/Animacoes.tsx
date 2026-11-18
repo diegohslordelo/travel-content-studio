@@ -304,7 +304,7 @@ export const PulosDoGato: React.FC<Area & { m: Marcos; src: string }> = ({ w, h,
 
 /**
  * Pedido do Diego: deixar claro qual é a dica 1, 2 e 3 com transição, porque ele não diz o número.
- * O cartão entra empurrando a cena (deslize com desfoque) e o número bate; sai deslizando para a esquerda.
+ * O cartão entra com zoom e desfoque (cobrindo a tela desde o 1º quadro) e o número bate; sai ampliando com desfoque.
  */
 export const CartaoDica: React.FC<Area & { src: string; n: number; titulo: string[]; simbolo: "xis" | "carro" | "nenhum"; foco?: [number, number] }> = ({
   w,
@@ -317,15 +317,16 @@ export const CartaoDica: React.FC<Area & { src: string; n: number; titulo: strin
   simbolo,
   foco,
 }) => {
-  const ent = ease(t / 0.3);
-  const sai = clamp01((t - (dur - 0.22)) / 0.22);
-  const x = (1 - ent) * w - ease(sai) * w;
-  const blur = (1 - ent) * 18 + sai * 18;
+  // cobre a tela inteira desde o 1º quadro (sem área vazia): entra com zoom e desfoque, sai ampliando com desfoque
+  const ent = ease(t / 0.28);
+  const sai = ease(clamp01((t - (dur - 0.18)) / 0.18));
+  const z = (1.25 - 0.25 * ent) * (1 + 0.15 * sai);
+  const blur = (1 - ent) * 20 + sai * 14;
   const num = easeBack((t - 0.2) / 0.32);
   const tit = aparece(t, 0.42, 0.25);
   const xis = clamp01((t - 0.75) / 0.3);
   return (
-    <div style={{ position: "absolute", inset: 0, width: w, height: h, overflow: "hidden", translate: `${x}px 0`, filter: blur > 0.3 ? `blur(${blur}px)` : undefined }}>
+    <div style={{ position: "absolute", inset: 0, width: w, height: h, overflow: "hidden", scale: String(z), filter: blur > 0.3 ? `blur(${blur}px)` : undefined }}>
       <Foto src={src} w={w} h={h} t={t} dur={dur} kb={[1.08, 1.14]} foco={foco} desfoque={5} escurecer={0.5} />
       <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 85%)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 380, textAlign: "center", color: PALETA.branco, textShadow: "0 8px 34px rgba(0,0,0,0.6)" }}>

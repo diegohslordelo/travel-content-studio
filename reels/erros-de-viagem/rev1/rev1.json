@@ -99,15 +99,6 @@
    "origem": "Print do release real da Serasa (https://www.serasa.com.br/imprensa/ferias-coletivas-76-brasileiros-nao-viajam-serasa/), feito em 18/11/2026 (Playwright, tela de celular 430 px, 3×)",
    "uso": "\"Segundo o Serasa, 49% dos brasileiros já se endividaram…\""
   },
-  "reveillon": {
-   "arquivo": "reveillon.jpg",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Fireworks_%288333336004%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "titulo": "File:Fireworks (8333336004).jpg",
-   "autor": "Leandro Neumann Ciuffo",
-   "licenca": "CC BY 2.0",
-   "pagina": "https://commons.wikimedia.org/wiki/File:Fireworks_(8333336004).jpg",
-   "uso": "\"férias de final de ano\""
-  },
   "reveillon2": {
    "arquivo": "reveillon2.jpg",
    "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Feliz_2013_%288332275903%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -341,9 +332,9 @@
    "ini": "b02:segundo-0.12",
    "foto": "serasa",
    "marcos": {
-    "rola": "b02:49%-0.5",
-    "marca": "b02:49%",
-    "selo": "b02:brasileiros"
+    "rola": "b02:brasileiros",
+    "marca": "b02:já",
+    "selo": "b02:49%"
    },
    "extra": {
     "pagW": 1290,
@@ -362,21 +353,6 @@
      }
     ]
    }
-  },
-  {
-   "id": "reveillon",
-   "tipo": "foto",
-   "layout": "split",
-   "ini": "b02:nas-0.08",
-   "foto": "reveillon",
-   "kb": [
-    1.0,
-    1.08
-   ],
-   "foco": [
-    0.5,
-    0.5
-   ]
   },
   {
    "id": "viajante",

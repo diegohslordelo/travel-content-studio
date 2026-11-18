@@ -23,7 +23,6 @@ As fotos CC BY e CC BY-SA exigem crédito (autor, licença e fonte). Sem este co
 
 ```
 Imagens (Wikimedia Commons e Flickr):
-- Fireworks (8333336004).jpg · Leandro Neumann Ciuffo · CC BY 2.0
 - One way · hernanpba · CC BY-SA 2.0
 - Adyen card payment terminal (9607998259).jpg · Alper Çuğun from Berlin, Germany · CC BY 2.0
 - silver-camera-near-black-coffee-in-mug-silver-samsung-galaxy-2305761 · topten5 · CC BY 2.0
