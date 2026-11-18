@@ -1,6 +1,6 @@
 # QA · Reel "Barcelona: roteiro de 3 dias" · REV1 (18/11/2026)
 
-**Entrega:** `reel_barcelona_3dias_rev1.mp4` (1080 × 1920, 9:16, 30 qps, H.264 + AAC 320 kb/s, 65.3 s, −14,0 LUFS, pico −2,3 dBTP). **Sem música**: o Diego coloca a trilha no app (pedido de 17/11/2026). Também: `reel_barcelona_3dias_rev1_previa.mp4` (540 × 960), `capa_reel_barcelona_3dias_rev1.jpg` (quadro de 3,6 s, gancho completo), `qa_folha_1qps.jpg` (1 quadro por segundo) e `legenda_post.md`.
+**Entrega:** `reel_barcelona_3dias_rev1.mp4` (1080 × 1920, 9:16, 30 qps, H.264 + AAC 320 kb/s, 65.3 s, −14,0 LUFS, pico −2,3 dBTP). **Sem música**: o Diego coloca a trilha no app (pedido de 17/11/2026). Também: `reel_barcelona_3dias_rev1_previa.mp4` (540 × 960), `capa_reel_barcelona_3dias_rev1.jpg` (capa pelo DS V2, ver "Capa") + `capa_reel_barcelona_3dias_rev1_grade_3x4.jpg` (como aparece na grade do perfil), `qa_folha_1qps.jpg` (1 quadro por segundo) e `legenda_post.md` (regras do DS aplicadas listadas no arquivo).
 **Composição:** `BarcelonaReel` (`design-system/remotion/src/reel/BarcelonaReel.tsx`). Scripts, na ordem: `voz.py` (decupagem da narração, alinhamento forçado) → `clipes.py` (takes do vlog em vertical, a partir de `takes.json`) → `cenas.py` (cenas, legenda, gancho, efeitos → `props.json`) → render → master → `qa_voz.py` e `conferir_cortes.py`. Escolha dos takes: `folhas.py`, `linhas.py`, `recortes.py` (folhas de contato da cópia leve do vlog).
 
 ## Pedido do Diego (17/11/2026) e o que foi feito
@@ -16,6 +16,7 @@
 | Animação só quando precisar compor | 3 composições: **mapa** das rotas dos 3 dias (em "organizamos o nosso roteiro" e de novo em "Nosso terceiro dia"), **grade** para a lista rápida do Gótico (cada lugar entra no seu quadro quando é dito) e **divisão de tela** nos pares falados juntos (Camp Nou → Montjuïc, Colombo → Barceloneta, Cidadela → Arco, Batlló → Milà), para cada imagem ficar ≈ 2 s sem atrasar a fala. "3 DIAS" em letras grandes na palavra |
 | Design System só no fim | DS V2 só no CTA: placa `SE BARCELONA TIVER NOS SEUS PLANOS / SALVA →` na posição fixa do DS (y 640), com Chegada e *clack* (−6 dB da voz), entrando em "Salva". Do gancho até antes do CTA, linguagem do formato (FORMATOS_REELS: Anton/Inter, âmbar #E0AE5C, fundo #14120F) |
 | Legenda que acompanha a fala e fica colorida quando ele fala | Karaokê: grupos de 1–4 palavras (≤ 24 caracteres), Inter 800 66 px centrada em x 540, y 1320; a palavra dita fica âmbar; nada aparece antes de ser dito. No gancho, a 1ª frase é o próprio texto grande, também em karaokê |
+| Gancho na fonte da referência, sem escurecer e sem sombra (18/11) | Anton em CAIXA ALTA, branco, "ESTRATÉGIA" em amarelo `#FFD23F` a 190 px (as outras linhas a 112 px), como a capa do Reel "3 formas de economizar com comida". Sem degradê sobre a imagem e sem sombra no texto. O bloco fica sobre a pedra escura da fachada (y 720 → ≈ 1371) para ser legível sem efeito; larguras medidas com a fonte: a maior linha termina em x 874 (zona segura até 944). Cada palavra entra quando é dita; o texto é a fala, sem pontuação |
 | Ajustes depois da 1ª versão (18/11) | Paisagem do Park Güell mantida (o banco de mosaico saiu); Montjuïc: as quatro colunas saíram e entrou o Palau Nacional ("castelo" do vlog) com a escadaria da Font Màgica; Sagrada por dentro: a "floresta" de colunas (25:23) |
 
 ## Texto falado (o que vai na legenda)
@@ -124,6 +125,15 @@ Master: `Barcelona_3dias.mov` (Drive, pasta Youtube; 10.137.720.126 bytes; 3840 
 1. "das fontes **da** data" e "pra não **doer** no bolso" (ver leituras acima).
 2. Efeitos (kit PDX, ninguém ouviu): impacto em "3 dias"; swish na entrada do mapa, na divisão Camp Nou/Montjuïc e na Batlló/Milà; obturador quando entra cada "DIA"; página na grade do Gótico; riser antes do mergulho na Sagrada; *clack* da placa.
 3. Com a música: deixar a trilha bem abaixo da voz (≈ −18 dB sob a fala, REFERENCIA_EDICAO_FORMATOS 4.1), senão os efeitos somem.
+
+## Capa (DS V2)
+
+`capa_reel_barcelona_3dias_rev1.jpg` (1080 × 1920), composição `CapaBarcelona` (`BarcelonaReel.tsx`):
+- Fundo: quadro do master (1572,6 s, Sagrada Família, o mesmo plano do gancho), sem efeito.
+- Placa variante **Série** (DS V2, 2.1: linha 1 = série, linha 2 = lugar): `ROTEIRO · 3 DIAS` / `BARCELONA` + módulo de seta, **estática** (brilho congelado a 30%), tamanho G, na posição fixa **x 72 · y 640** (DS 1.3). 4 palavras.
+- Um elemento dominante (a placa), nenhum texto solto sobre a foto (DS 0.3, "Objeto, não caixa"). Amarelo ≈ 7% da tela.
+- Grade do perfil (3:4, y 240–1680): placa e torres inteiras (`…_grade_3x4.jpg`).
+- Teste de miniatura (DS 7.2): a 25% (270 × 480) "BARCELONA" continua legível.
 
 ## Decisões e pendências
 

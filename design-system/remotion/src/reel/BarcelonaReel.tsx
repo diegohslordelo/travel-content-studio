@@ -75,7 +75,7 @@ export type PropsBarcelona = {
   palavras: Palavra[];
   cenas: CenaBcn[];
   grupos: number[][];
-  gancho: { fim: number; linhas: { tam: number; palavras: number[] }[] };
+  gancho: { fim: number; linhas: { tam: number; palavras: number[]; amarelo?: boolean; cor?: string }[] };
   dias: { t: number; txt: string }[];
   sfx: Sfx[];
   cta: { ini: number; rotulo: string; destino: string };
@@ -351,26 +351,28 @@ const Legenda: React.FC<{ p: PropsBarcelona; t: number }> = ({ p, t }) => {
   );
 };
 
-/** Gancho: texto grande, palavra por palavra, a palavra dita em âmbar. */
+/**
+ * Gancho (pedido do Diego, 18/11/2026, referência: capa do Reel "3 formas de economizar com comida"):
+ * Anton em CAIXA ALTA, branco, a palavra-chave grande em amarelo; imagem sem escurecer e texto sem sombra.
+ * Cada palavra entra quando é dita (nada antes da fala). Tamanhos medidos com a fonte: nenhuma linha passa de x 944.
+ */
+const AMARELO_GANCHO = "#FFD23F"; // o da referência (capa do Reel de comida, REV3)
 const Gancho: React.FC<{ p: PropsBarcelona; t: number }> = ({ p, t }) => {
   if (!p.gancho.linhas.length || t >= p.gancho.fim) return null;
-  let y = 300;
+  let y = 720; // sobre a pedra escura da fachada: branco e amarelo legíveis sem sombra nem véu (base do bloco ≈ y 1350)
   return (
     <>
-      <AbsoluteFill style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.25) 45%, rgba(0,0,0,0) 62%)" }} />
       {p.gancho.linhas.map((l, i) => {
         const top = y;
-        y += l.tam * 1.06;
+        y += l.tam * 1.02;
         return (
-          <div key={i} style={{ position: "absolute", left: 72, top, fontFamily: "Anton", fontSize: l.tam, lineHeight: 1.05, textShadow: "0 4px 24px rgba(0,0,0,0.65)", whiteSpace: "pre" }}>
+          <div key={i} style={{ position: "absolute", left: 72, top, fontFamily: "Anton", fontSize: l.tam, lineHeight: 1.02, whiteSpace: "pre", textTransform: "uppercase", color: l.amarelo ? AMARELO_GANCHO : "#fff" }}>
             {l.palavras.map((k, j) => {
               const w = p.palavras[k];
               const o = entra(t, w.s, 0.12);
-              const prox = k + 1 < p.palavras.length ? p.palavras[k + 1].s : w.e;
-              const ativa = t >= w.s && t < Math.max(w.e, prox);
               return (
-                <span key={j} style={{ display: "inline-block", opacity: o, transform: `translateY(${(1 - o) * 24}px)`, color: ativa ? AMBAR : "#fff" }}>
-                  {(j ? " " : "") + w.w}
+                <span key={j} style={{ display: "inline-block", opacity: o, transform: `translateY(${(1 - o) * 24}px)` }}>
+                  {(j ? " " : "") + w.w.replace(/[.,]$/, "")}
                 </span>
               );
             })}
@@ -429,3 +431,21 @@ export const BarcelonaReel: React.FC<PropsBarcelona> = (p) => {
     </AbsoluteFill>
   );
 };
+
+/* ---------- capa (DS V2) ---------- */
+
+export type PropsCapaBarcelona = { fundo: string; rotulo: string; destino: string };
+export const propsCapaBarcelonaVazias: PropsCapaBarcelona = { fundo: "capa_fundo.png", rotulo: "ROTEIRO · 3 DIAS", destino: "BARCELONA" };
+
+/**
+ * Capa do Reel: quadro do master (Sagrada Família, o mesmo plano do gancho) + Placa variante Série, estática
+ * (brilho de esmalte congelado a 30%, DS 2.1), na posição fixa x 72 · y 640 (DS 1.3), tamanho G.
+ * Um elemento dominante (a placa), nenhum texto solto sobre a foto (DS 0.3). No recorte 3:4 da grade do perfil
+ * (y 240–1680) a placa e as torres continuam inteiras.
+ */
+export const CapaBarcelona: React.FC<PropsCapaBarcelona> = ({ fundo, rotulo, destino }) => (
+  <AbsoluteFill style={{ background: "#000" }}>
+    <Img src={staticFile(fundo)} style={{ width: W, height: H, objectFit: "cover" }} />
+    <Placa rotulo={rotulo} destino={destino} entrada={null} />
+  </AbsoluteFill>
+);

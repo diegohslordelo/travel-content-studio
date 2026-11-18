@@ -187,12 +187,12 @@ for gr in grupos:
 # ---------------------------------------------------------------- gancho (as palavras da 1ª frase, em linhas)
 g0 = [i for i, p in enumerate(P) if p["take"] == 1]
 assert txt(g0) == "Barcelona acaba com os viajantes que não montam um roteiro com estratégia.", txt(g0)
-gancho = {"fim": C[0]["fim"], "linhas": [
-    {"tam": 128, "palavras": g0[0:2]},     # Barcelona acaba (≈ 853 px: termina antes de x 944)
-    {"tam": 104, "palavras": g0[2:5]},     # com os viajantes
-    {"tam": 104, "palavras": g0[5:8]},     # que não montam
-    {"tam": 104, "palavras": g0[8:11]},    # um roteiro com
-    {"tam": 150, "palavras": g0[11:12]},   # estratégia.
+gancho = {"fim": C[0]["fim"], "linhas": [   # Anton caixa alta; larguras medidas com a fonte (≤ 872 px a partir de x 72)
+    {"tam": 112, "palavras": g0[0:2]},                    # BARCELONA ACABA (≈ 766 px)
+    {"tam": 112, "palavras": g0[2:5]},                    # COM OS VIAJANTES (≈ 786 px)
+    {"tam": 112, "palavras": g0[5:8]},                    # QUE NÃO MONTAM (≈ 746 px)
+    {"tam": 112, "palavras": g0[8:11]},                   # UM ROTEIRO COM (≈ 711 px)
+    {"tam": 190, "palavras": g0[11:12], "amarelo": True},  # ESTRATÉGIA (≈ 830 px), a palavra-chave
 ]}
 
 # ---------------------------------------------------------------- marcador do dia (entra quando o dia é dito)
