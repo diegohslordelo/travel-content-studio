@@ -3,7 +3,8 @@
 **Status:** renderizada, falta a escuta do Diego (o Claude não ouve áudio; CLAUDE.md, 12). Pontos que dependem de decisão dele estão na seção 9.
 
 **Entrega**
-- `reel_erros-de-viagem_rev1.mp4` (1080 × 1920, 30 qps, H.264 + AAC 320k, −14 LUFS) e `reel_erros-de-viagem_rev1_previa.mp4` (540 × 960, leve)
+- **`reel_erros-de-viagem_rev1_hdr.mp4` (versão para postar: gravação crua em HDR HLG, HEVC 10 bits, −14 LUFS)**
+- `reel_erros-de-viagem_rev1.mp4` (alternativa SDR, H.264 + AAC 320k, −14 LUFS) e `reel_erros-de-viagem_rev1_previa.mp4` (540 × 960, leve)
 - `capa_erros-de-viagem_rev1.jpg` (gancho completo)
 - `legenda_post.md` (legenda + 1º comentário com os créditos das imagens)
 - `qa_frames/folha_rev1.jpg` (um quadro por cena)
@@ -149,9 +150,12 @@ Fatos externos da fala conferidos: 49% (Serasa + Opinion Box, release de dezembr
 
 ## 8. Imagem da gravação
 
-**Sem tratamento** (decisão do Diego, 18/11/2026: "não precisa fazer edição no vídeo, tratar imagem… eu já mandei ele pronto para ser usado"). Cor, brilho e enquadramento ficam como ele mandou; só a conversão técnica de 10 para 8 bits do H.264. Uma versão com conversão de cor chegou a ser testada e foi descartada. A foto do gancho também entra sem nitidez nem ajuste: só ampliada para a largura do Reel.
+**Gravação crua, sem nenhuma alteração** (decisão do Diego, 18/11/2026: "não quero que você altere absolutamente nada no vídeo"). A versão final é **`reel_erros-de-viagem_rev1_hdr.mp4`**: a gravação entra em HDR (HLG, BT.2020, 10 bits), exatamente como veio do iPhone. O Remotion gera só a camada de gráficos com transparência e o ffmpeg põe a gravação por baixo (`rev1.py hdr`). Só os gráficos são convertidos para HLG (branco no nível de referência de 75%).
 
-A única edição na gravação é a decupagem pedida por ele: tirar os trechos em que ele está fora do quadro indo e voltando do celular (seção 1), sem cortar nem repetir fala.
+- Conferido: na metade de baixo e em tela cheia, os pixels da gravação batem com o original (diferença média de 1,6 numa escala de 0 a 1023, só compressão HEVC CRF 14).
+- Sem aproximação nas cenas do Diego em tela cheia, sem grão sobre a gravação e sem ajuste de cor.
+- A versão SDR (`reel_erros-de-viagem_rev1.mp4`) fica como alternativa, para onde não houver HDR; nela a gravação é convertida para SDR e parece mais apagada.
+- A única edição na gravação é a decupagem pedida: tirar os trechos em que ele está fora do quadro, indo e voltando do celular (seção 1), sem cortar nem repetir fala.
 
 ---
 

@@ -8,6 +8,7 @@ Pipeline (rode de dentro desta pasta):
     python3 rev1.py master     # −14 LUFS integrados, pico verdadeiro ≤ −1 dBTP
     python3 rev1.py capa       # capa 1080 × 1920 (quadro do gancho completo)
     python3 rev1.py quadros    # folha de QA (qa_frames/)
+    python3 rev1.py hdr        # versão final: gravação crua (HDR HLG, como o Diego mandou) por baixo dos gráficos
     python3 rev1.py tudo
 
 Entradas: rev1.json (decisões), transcricao_large-v3.json (palavras com tempo, Whisper large-v3 da gravação inteira),
@@ -413,9 +414,64 @@ def quadros():
     print("folha em qa_frames/folha_rev1.jpg")
 
 
+# ---------------------------------------------------------------- HDR: gravação crua por baixo dos gráficos
+
+SAIDA_HDR = os.path.join(AQUI, "reel_erros-de-viagem_rev1_hdr.mp4")
+
+
+def hdr():
+    """Pedido do Diego (18/11/2026): a gravação entra exatamente como ele mandou (HLG, BT.2020, 10 bits).
+    O Remotion gera só a camada de gráficos (fotos, animações, legendas, placa) com transparência; o ffmpeg põe a
+    gravação crua por baixo (corte, deslocamento e enquadramento sem mexer em pixel) e converte só os gráficos para
+    HLG (branco no nível de referência de 75%, npl 203). Áudio: o do master."""
+    d = carregar()
+    fps = d["fps"]
+    with open(os.path.join(TMP, "props.json"), encoding="utf-8") as f:
+        p = json.load(f)
+    with open(os.path.join(TMP, "blocos.json"), encoding="utf-8") as f:
+        blocos = json.load(f)
+    pg = dict(p, soGraficos=True)
+    arq_pg = os.path.join(TMP, "props_graficos.json")
+    with open(arq_pg, "w", encoding="utf-8") as f:
+        json.dump(pg, f, ensure_ascii=False)
+    graf = os.path.join(TMP, "graficos.mov")
+    if not os.path.exists(graf) or os.path.getmtime(graf) < os.path.getmtime(arq_pg):
+        remotion(["render", "src/index.ts", "ReelErrosViagem", graf, f"--props={arq_pg}", f"--public-dir={PUBLIC}", "--codec=prores",
+                  "--prores-profile=4444", "--pixel-format=yuva444p10le", "--image-format=png", "--muted", "--log=warn", "--concurrency=4"])
+    src = os.path.join(FONTE, d["fonte"]["arquivo"])
+    entradas, fc = [], []
+    for i, b in enumerate(blocos):
+        entradas += ["-ss", f"{b['qi'] / fps:.4f}", "-t", f"{b['dur'] + 0.5:.4f}", "-i", src]
+        fc.append(f"[{i}:v]trim=end_frame={b['qo'] - b['qi']},setpts=PTS-STARTPTS[b{i}]")
+    n = len(blocos)
+    cauda = p["quadros"] / fps - sum(b["dur"] for b in blocos)
+    rosto_top = round(1020 * 0.42 - p["rostoY"]) * -1  # 212: linha da gravação que fica no topo da metade de baixo
+    rosto_top -= rosto_top % 2
+    fc.append("".join(f"[b{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=0,tpad=stop_mode=clone:stop_duration={cauda + 0.1:.3f},split=2[fa][fb]")
+    fc.append(f"[fa]crop=1080:1020:0:{rosto_top},pad=1080:1920:0:{p['costura']}:black[sp]")
+    cheias = [c for c in p["cenas"] if c["tipo"] == "diego"]
+    en = "+".join(f"between(n,{c['ini_q']},{c['fim_q'] - 1})" for c in cheias)
+    fc.append(f"[sp][fb]overlay=x=0:y=0:enable='{en}':format=yuv420p10[base]")
+    g = n
+    entradas += ["-i", graf]
+    fc.append(f"[{g}:v]split=2[gc][ga]")
+    fc.append("[gc]zscale=min=bt709:rin=limited:tin=iec61966-2-1:pin=bt709:m=gbr:r=full:t=linear:p=bt709:npl=203,format=gbrpf32le,"
+              "zscale=t=arib-std-b67:p=bt2020:m=gbr:r=full:npl=203,zscale=m=bt2020nc:r=limited,format=yuv444p10le[gcor]")
+    fc.append("[ga]alphaextract,format=gray10le[galfa]")
+    fc.append("[gcor][galfa]alphamerge[gfin]")
+    fc.append(f"[base][gfin]overlay=x=0:y=0:format=yuv420p10:eof_action=pass,trim=end_frame={p['quadros']},format=yuv420p10le[out]")
+    entradas += ["-i", SAIDA]
+    sh(["ffmpeg", "-v", "error", "-y", *entradas, "-filter_complex", ";".join(fc), "-map", "[out]", "-map", f"{g + 1}:a", "-c:a", "copy",
+        "-c:v", "libx265", "-preset", "medium", "-crf", "14", "-pix_fmt", "yuv420p10le", "-tag:v", "hvc1",
+        "-x265-params", "colorprim=bt2020:transfer=arib-std-b67:colormatrix=bt2020nc:range=limited:log-level=error",
+        "-color_primaries", "bt2020", "-color_trc", "arib-std-b67", "-colorspace", "bt2020nc", "-color_range", "tv",
+        "-movflags", "+faststart", SAIDA_HDR])
+    print(f"HDR (HLG) → {os.path.basename(SAIDA_HDR)}")
+
+
 if __name__ == "__main__":
     passo = sys.argv[1] if len(sys.argv) > 1 else "tudo"
-    passos = {"imagens": imagens, "preparar": preparar, "render": render, "master": master, "capa": capa, "quadros": quadros}
+    passos = {"imagens": imagens, "preparar": preparar, "render": render, "master": master, "capa": capa, "quadros": quadros, "hdr": hdr}
     if passo == "tudo":
         for f in (imagens, preparar, render, master, capa, quadros):
             f()

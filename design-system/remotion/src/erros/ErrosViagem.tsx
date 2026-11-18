@@ -58,6 +58,8 @@ export type PropsErros = {
   sons: SomEv[];
   cta: { ini: number; entrada_ms: number; rotulo: string; destino: string; clack_db_rel: number };
   voz_lufs: number;
+  /** Só a camada de gráficos (fundo transparente, sem o Diego): a gravação entra crua por baixo, no ffmpeg (HDR intacto). */
+  soGraficos?: boolean;
 };
 
 export const propsVaziasErros: PropsErros = {
@@ -230,8 +232,8 @@ const Legenda: React.FC<{ p: PropsErros; tS: number; cena: Cena }> = ({ p, tS, c
   );
 };
 
-const Grao: React.FC<{ q: number }> = ({ q }) => (
-  <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, opacity: 0.06, mixBlendMode: "overlay", pointerEvents: "none" }}>
+const Grao: React.FC<{ q: number; h?: number }> = ({ q, h = 1920 }) => (
+  <svg width={1080} height={h} style={{ position: "absolute", left: 0, top: 0, opacity: 0.06, mixBlendMode: "overlay", pointerEvents: "none" }}>
     <filter id="grao-erros">
       <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={q % 7} stitchTiles="stitch" />
     </filter>
@@ -242,15 +244,15 @@ const Grao: React.FC<{ q: number }> = ({ q }) => (
 export const ReelErrosViagem: React.FC<PropsErros> = (p) => {
   const q = useCurrentFrame();
   const { fps } = useVideoConfig();
-  if (!p.cenas.length) return <AbsoluteFill style={{ background: PALETA.preto }} />;
+  if (!p.cenas.length) return <AbsoluteFill style={{ background: p.soGraficos ? "transparent" : PALETA.preto }} />;
   const tS = q / fps;
   const cena = p.cenas.find((c) => q >= c.ini_q && q < c.fim_q) ?? p.cenas[p.cenas.length - 1];
   const t = (q - cena.ini_q) / fps;
   const split = cena.layout === "split";
   const ctaQ = Math.round(p.cta.ini * fps);
   return (
-    <AbsoluteFill style={{ background: PALETA.preto }}>
-      <Diego p={p} cena={cena} t={t} />
+    <AbsoluteFill style={{ background: p.soGraficos ? "transparent" : PALETA.preto }}>
+      {!p.soGraficos && <Diego p={p} cena={cena} t={t} />}
       {p.cenas
         .filter((c) => c.tipo !== "diego")
         .map((c) => (
@@ -259,7 +261,7 @@ export const ReelErrosViagem: React.FC<PropsErros> = (p) => {
           </Sequence>
         ))}
       {split && <div style={{ position: "absolute", left: 0, right: 0, top: p.costura - 3, height: 6, background: "rgba(0,0,0,0.55)" }} />}
-      <Grao q={q} />
+      {cena.tipo !== "diego" && <Grao q={q} h={split ? p.costura : p.altura} />}
       <Legenda p={p} tS={tS} cena={cena} />
       {cena.tipo === "gancho" && <Gancho p={p} tS={tS} />}
       {p.sons.map((s, i) => (
