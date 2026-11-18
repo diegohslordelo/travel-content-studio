@@ -28,17 +28,10 @@ Imagens (Wikimedia Commons e Flickr):
 - silver-camera-near-black-coffee-in-mug-silver-samsung-galaxy-2305761 · topten5 · CC BY 2.0
 - Ph-mm-pasay-ninoy aquino international airport (naia)-terminal 3 - ticketing hall (2014) a0006.JPG · Patrick Roque · CC BY-SA 3.0
 - Cat jump.jpg · Vengolis · CC BY-SA 3.0
-- (sem título) · autor não informado · CC0
+- Mapas antigos (rawpixel) · autor não informado · CC0
 - Tropicana hotel, Las Vegas by night (3).jpg · Tristan Surtel · CC BY-SA 4.0
 - Aerial View City Skyline Skyscraper · autor não informado · CC0
-- Taxi-cabs-New-York-0986.jpg · Loadmaster (David R. Tribble
-
-
-
-
-
-
-This image was made by Lo · CC BY-SA 3.0
+- Taxi-cabs-New-York-0986.jpg · Loadmaster (David R. Tribble) · CC BY-SA 3.0
 - WalletMpegMan.jpg · TheArmadillo at English Wikipedia. · CC BY-SA 3.0
 - traffic jam in bangkok · sese_87 · CC BY-SA 2.0
 - Sprott Gold Bar · sprottmoney · CC BY 2.0
