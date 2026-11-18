@@ -18,10 +18,38 @@ Salva esse roteiro se Barcelona estiver nos seus planos.
 #Barcelona #roteirobarcelona #oquefazerembarcelona #Gaudí #PrimeiroDia
 ```
 
-## TikTok e YouTube Shorts (título ≤ 60 caracteres)
+## YouTube Shorts
+
+Título (≤ 60 caracteres, 1ª palavra-chave no começo; diz só o que o vídeo mostra):
 
 ```
 Roteiro de 3 dias em Barcelona: longe primeiro, Gaudí no fim
 ```
+
+Descrição (1ª linha = gancho falado; CTA único = salvar; palavras-chave de busca; sem valores, então sem cotação):
+
+```
+Barcelona acaba com os viajantes que não montam um roteiro com estratégia. Esse foi o nosso roteiro de 3 dias:
+
+DIA 1 · Camp Nou, Montjuïc, Colombo, Barceloneta, Parque da Cidadela e Arco do Triunfo.
+DIA 2 · Casa Vicens, bairro Gótico (Muro do Beijo, Ponte do Bispo, Catedral e Praça Real), La Rambla, Mercado de La Boqueria, Passeig de Gràcia, Casa Batlló e Casa Milà.
+DIA 3 · Sagrada Família e Parque Güell.
+
+Salva esse roteiro se Barcelona estiver nos seus planos.
+
+Instagram: @primeirodiaem
+
+#Shorts #Barcelona #roteirobarcelona #oquefazerembarcelona #Gaudí
+```
+
+Notas: `#Shorts` primeiro nas hashtags. Sem link do vlog completo para manter **um CTA só** (referência de conteúdo, 3.4); se o Diego quiser ligar ao vlog de Barcelona no canal, troque a linha do Instagram por `Vídeo completo: [LINK]` (a confirmar). Foto de Gaudí (1878, Pau Audouard) é domínio público: crédito opcional.
+
+## TikTok
+
+```
+Roteiro de 3 dias em Barcelona: longe primeiro, Gaudí no fim
+```
+
+Mesma legenda do Instagram.
 
 Crédito opcional (domínio público, não obrigatório), no comentário fixado: "Foto de Gaudí: Pau Audouard, 1878, domínio público."
