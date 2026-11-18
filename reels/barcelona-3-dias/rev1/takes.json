@@ -1,0 +1,181 @@
+{
+ "gancho": {
+  "ini": 1572.1,
+  "dur": 3.95,
+  "cx": 0.45,
+  "vlog": "26:12 Sagrada Família, torres e palmeira (dia 3)"
+ },
+ "tres_dias": {
+  "ini": 1228.2,
+  "dur": 3.45,
+  "cx": 0.5,
+  "vlog": "20:28 Plaça de Catalunya (dia 2)"
+ },
+ "camp_nou": {
+  "ini": 74.5,
+  "dur": 2.45,
+  "cx": 0.58,
+  "vlog": "01:14 Camp Nou em reforma; recorte à direita tira a etiqueta 'Camp Nou' do vlog"
+ },
+ "montjuic": {
+  "ini": 241.8,
+  "dur": 1.65,
+  "cx": 0.5,
+  "vlog": "04:02 vista de Montjuïc"
+ },
+ "fonte": {
+  "ini": 213.85,
+  "dur": 1.93,
+  "cx": 0.968,
+  "cx_fim": 0.617,
+  "vlog": "03:33 Palau Nacional (MNAC), o 'castelo' do vlog, com a escadaria da Font Màgica; o recorte acompanha a panorâmica para o palácio ficar parado"
+ },
+ "mequi": {
+  "ini": 323.0,
+  "dur": 1.95,
+  "cx": 0.42,
+  "vlog": "05:23 Marina no McDonald's"
+ },
+ "colombo": {
+  "ini": 311.0,
+  "dur": 1.7,
+  "cx": 0.3,
+  "vlog": "05:11 Monumento a Colombo"
+ },
+ "barceloneta": {
+  "ini": 453.6,
+  "dur": 1.6,
+  "cx": 0.95,
+  "vlog": "07:33 praia da Barceloneta com o hotel W"
+ },
+ "cidadela": {
+  "ini": 527.6,
+  "dur": 2.1,
+  "cx": 0.85,
+  "vlog": "08:47 Cascata do Parque da Cidadela"
+ },
+ "arco": {
+  "ini": 566.1,
+  "dur": 2.4,
+  "cx": 0.45,
+  "vlog": "09:26 Arco do Triunfo"
+ },
+ "gracia": {
+  "ini": 695.4,
+  "dur": 2.05,
+  "cx": 0.25,
+  "vlog": "11:35 rua em Gràcia com a esquina da Casa Vicens"
+ },
+ "vicens": {
+  "ini": 749.3,
+  "dur": 1.85,
+  "cx": 0.5,
+  "vlog": "12:29 fachada da Casa Vicens"
+ },
+ "gotico": {
+  "ini": 759.2,
+  "dur": 1.9,
+  "cx": 0.55,
+  "vlog": "12:39 rua a caminho do bairro Gótico"
+ },
+ "beijo": {
+  "ini": 826.75,
+  "dur": 2.7,
+  "cx": 0.4,
+  "vlog": "13:46 Mural do Beijo (sem a etiqueta do vlog)"
+ },
+ "ponte_bispo": {
+  "ini": 882.8,
+  "dur": 2.15,
+  "cx": 0.35,
+  "vlog": "14:42 Pont del Bisbe"
+ },
+ "catedral": {
+  "ini": 863.6,
+  "dur": 1.4,
+  "cx": 0.42,
+  "vlog": "14:23 torres da Catedral"
+ },
+ "praca_real": {
+  "ini": 911.9,
+  "dur": 1.0,
+  "cx": 0.5,
+  "vlog": "15:11 Plaça Reial"
+ },
+ "rambla": {
+  "ini": 1156.27,
+  "dur": 2.63,
+  "cx": 0.55,
+  "vlog": "19:16 La Rambla"
+ },
+ "boqueria": {
+  "ini": 1162.9,
+  "dur": 1.95,
+  "cx": 0.5,
+  "vlog": "19:22 entrada da Boqueria"
+ },
+ "boqueria_precos": {
+  "ini": 1159.25,
+  "dur": 2.0,
+  "cx": 0.6,
+  "vlog": "19:19 bancas da Boqueria (mesmo plano da entrada, trecho anterior sem sobreposição)"
+ },
+ "passeig": {
+  "ini": 1248.9,
+  "dur": 3.05,
+  "cx": 0.5,
+  "vlog": "20:49 Passeig de Gràcia"
+ },
+ "batllo": {
+  "ini": 1296.4,
+  "dur": 1.75,
+  "cx": 0.5,
+  "vlog": "21:36 Casa Batlló"
+ },
+ "mila": {
+  "ini": 1367.6,
+  "dur": 2.95,
+  "cx": 0.5,
+  "vlog": "22:47 Casa Milà"
+ },
+ "sagrada_fora": {
+  "ini": 1425.6,
+  "dur": 2.0,
+  "cx": 0.6,
+  "portal_x": 0.5,
+  "portal_y": 0.6,
+  "vlog": "23:45 fachada da Sagrada Família; recorte alto (zoom 1,18 pelo topo) tira a etiqueta do vlog",
+  "zoom": 1.18,
+  "cy": 0.0
+ },
+ "sagrada_dentro": {
+  "ini": 1523.17,
+  "dur": 3.47,
+  "cx": 0.5,
+  "vlog": "25:23 a 'floresta' de colunas da Sagrada Família, por dentro"
+ },
+ "churros": {
+  "ini": 1679.6,
+  "dur": 2.75,
+  "cx": 0.55,
+  "vlog": "27:59 churros no chocolate"
+ },
+ "guell": {
+  "ini": 1912.55,
+  "dur": 2.9,
+  "cx": 0.5,
+  "vlog": "31:52 pavilhão do Park Güell"
+ },
+ "final": {
+  "ini": 218.3,
+  "dur": 2.75,
+  "cx": 0.5,
+  "vlog": "03:38 vista do MNAC sobre a Plaça d'Espanya"
+ },
+ "vista": {
+  "ini": 1842.3,
+  "dur": 2.65,
+  "cx": 0.5,
+  "vlog": "30:42 paisagem de Barcelona vista do Park Güell"
+ }
+}

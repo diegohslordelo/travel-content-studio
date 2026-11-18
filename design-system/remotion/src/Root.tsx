@@ -4,6 +4,7 @@
  * - Catalogo: todas as animações em sequência, com os sons da 4.6.
  * - Reel / CapaReel: montagem de um Reel a partir de reels/<reel>/revN (props + --public-dir).
  * - AmostraYT: amostra de 30 s dos grafismos do vídeo longo do YouTube (16:9), --public-dir=reels/amostra-yt/public.
+ * - BarcelonaReel: Reel narrado de Barcelona (reels/barcelona-3-dias/rev1, props + --public-dir).
  * - VideoLongo: vídeo longo do YouTube (16:9, 24 fps) montado de reels/<video>/revN (props + --public-dir).
  */
 import React from "react";
@@ -15,6 +16,7 @@ import { AmostraYT } from "./yt/AmostraYT";
 import { AmostraFimYT, DUR_AMOSTRA_FIM } from "./yt/AmostraFimYT";
 import { VideoLongo, metadadosVideoLongo, propsVideoLongoVazias } from "./yt/VideoLongo";
 import { ThumbYT, propsThumbVazias } from "./yt/ThumbYT";
+import { BarcelonaReel, metadadosBarcelona, propsBarcelonaVazias } from "./reel/BarcelonaReel";
 
 carregarFontes();
 
@@ -25,6 +27,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="AmostraYT" component={AmostraYT} durationInFrames={900} fps={30} width={1920} height={1080} />
     <Composition id="AmostraFimYT" component={AmostraFimYT} durationInFrames={Math.round((DUR_AMOSTRA_FIM * 30) / 1000)} fps={30} width={1920} height={1080} />
     <Composition id="VideoLongo" component={VideoLongo} durationInFrames={24} fps={24} width={1920} height={1080} defaultProps={propsVideoLongoVazias} calculateMetadata={metadadosVideoLongo} />
+    <Composition id="BarcelonaReel" component={BarcelonaReel} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsBarcelonaVazias} calculateMetadata={metadadosBarcelona} />
     <Still id="ThumbYT" component={ThumbYT} width={1280} height={720} defaultProps={propsThumbVazias} />
     <Still id="CapaReel" component={CapaReel} width={1080} height={1920} defaultProps={propsVazias} />
   </>

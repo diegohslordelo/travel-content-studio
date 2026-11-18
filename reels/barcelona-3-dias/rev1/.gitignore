@@ -1,0 +1,9 @@
+# intermediários e material derivado dos brutos (fora do git; refazer com voz.py, clipes.py e cenas.py)
+public/
+_tmp/
+aseg*.wav
+sil*.wav
+voz_bruta.wav
+a.txt
+render_sem_master.mp4
+__pycache__/
