@@ -1,0 +1,877 @@
+{
+ "_sobre": "REV1 do Reel 'Erros de viagem' (tela dividida). Gravação do Diego no quarto (18/11/2026), texto dele (a fala gravada manda: docs/FORMATOS_REELS.md, 9.5). DS V2 só no CTA (CLAUDE.md, 6).",
+ "fps": 30,
+ "largura": 1080,
+ "altura": 1920,
+ "costura_y": 900,
+ "rosto_y": 640,
+ "fonte": {
+  "arquivo": "diego_serasa.mp4",
+  "drive_id": "1UHrDw_0e_q32y7oeSZuIUu_xwjSTrsIx",
+  "drive_pasta": "Serasa (https://drive.google.com/drive/folders/1knBE9zhGKiR6ChxYBrqUS8szhZGjoMiA)",
+  "nota": "93,4 s, HEVC HLG 1080 × 1920 a 30 qps. Já vem editado pelo Diego: 10 clipes com cortes em 7,90 · 19,53 · 26,97 · 32,20 · 41,93 · 54,57 · 66,37 · 79,87 · 87,03 s; entre as falas ele vai e volta do celular."
+ },
+ "blocos": [
+  {
+   "id": "b01",
+   "in": 2.74,
+   "out": 5.26,
+   "inicio_voz": 2.86,
+   "texto": "Sua viagem acaba, mas a fatura não, viu?"
+  },
+  {
+   "id": "b02",
+   "in": 11.72,
+   "out": 16.92,
+   "inicio_voz": 11.84,
+   "texto": "Segundo o Serasa, 49% dos brasileiros já se endividaram nas férias de final de ano."
+  },
+  {
+   "id": "b03",
+   "in": 19.74,
+   "out": 24.66,
+   "inicio_voz": 19.86,
+   "texto": "Sabe aquela viagem que no meio dela você já estava de olho fechado para os gastos e que no papel era mais barato?"
+  },
+  {
+   "id": "b04",
+   "in": 27.12,
+   "out": 31.02,
+   "inicio_voz": 27.24,
+   "texto": "Isso é mais comum do que você imagina porque muita gente ainda viaja sem estratégia."
+  },
+  {
+   "id": "b05",
+   "in": 34.95,
+   "out": 39.56,
+   "inicio_voz": 35.07,
+   "texto": "Por isso eu vou te mostrar 3 pulos do gato para você ficar ligado no planejamento de sua viagem."
+  },
+  {
+   "id": "b06",
+   "in": 41.967,
+   "out": 52.2,
+   "inicio_voz": 42.02,
+   "texto": "Primeiro, escolha hospedagem só pelo preço. Fica longe de tudo e perde toda a economia no deslocamento e na distância dos lugares. Além de doer no bolso, você perde tempo. E tempo em viagem é ouro.",
+   "nota": "começa no 1º quadro do clipe (corte da fonte em 41,93 s); a voz entra 0,05 s depois"
+  },
+  {
+   "id": "b07",
+   "in": 56.52,
+   "out": 64.07,
+   "inicio_voz": 56.63,
+   "texto": "Outra coisa, se você vai alugar carro, você tem que ver se seu hotel tem estacionamento grátis. Imagina se você tem que pagar 20 dólares todo dia só para deixar o carro parado."
+  },
+  {
+   "id": "b08",
+   "in": 66.367,
+   "out": 77.46,
+   "inicio_voz": 66.37,
+   "fade_in": 0.004,
+   "texto": "Não compre trechos(?) separados com conexão curta, porque a companhia aérea não é obrigada a te esperar. Aí o que era para ser uma economia virou uma dor de cabeça enorme. Você comprar separado já é um risco. Apertado então nem se fala, né?",
+   "nota": "o clipe da fonte começa já no 'Não' (corte em 66,37 s): conferir na escuta se o início da palavra está inteiro"
+  },
+  {
+   "id": "b09",
+   "in": 82.76,
+   "out": 86.52,
+   "inicio_voz": 82.88,
+   "texto": "Viagem boa é a que cabe no seu bolso. Antes, durante e depois."
+  },
+  {
+   "id": "b10",
+   "in": 87.9,
+   "out": 91.18,
+   "inicio_voz": 88.02,
+   "texto": "Manda esse vídeo para aquela pessoa que está planejando uma viagem para o final do ano."
+  }
+ ],
+ "imagens": {
+  "gancho": {
+   "arquivo": "gancho.jpg",
+   "original": "gancho_original.webp",
+   "origem": "Enviada pelo Diego em 18/11/2026 para o gancho (620 × 430). Autor e licença desconhecidos: parece foto de banco de imagens",
+   "uso": "gancho \"Sua viagem acaba, mas a fatura não\""
+  },
+  "serasa": {
+   "arquivo": "serasa_pagina.jpg",
+   "pasta": "serasa",
+   "origem": "Print do release real da Serasa (https://www.serasa.com.br/imprensa/ferias-coletivas-76-brasileiros-nao-viajam-serasa/), feito em 18/11/2026 (Playwright, tela de celular 430 px, 3×)",
+   "uso": "\"Segundo o Serasa, 49% dos brasileiros já se endividaram…\""
+  },
+  "reveillon": {
+   "arquivo": "reveillon.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Fireworks_%288333336004%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "titulo": "File:Fireworks (8333336004).jpg",
+   "autor": "Leandro Neumann Ciuffo",
+   "licenca": "CC BY 2.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Fireworks_(8333336004).jpg",
+   "uso": "\"férias de final de ano\""
+  },
+  "reveillon2": {
+   "arquivo": "reveillon2.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Feliz_2013_%288332275903%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "titulo": "File:Feliz 2013 (8332275903).jpg",
+   "autor": "Leandro Neumann Ciuffo",
+   "licenca": "CC BY 2.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Feliz_2013_(8332275903).jpg",
+   "uso": "CTA (\"viagem para o final do ano\")"
+  },
+  "aeroporto_lotado": {
+   "arquivo": "aeroporto_lotado.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Ph-mm-pasay-ninoy_aquino_international_airport_%28naia%29-terminal_3_-_ticketing_hall_%282014%29_a0006.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "titulo": "File:Ph-mm-pasay-ninoy aquino international airport (naia)-terminal 3 - ticketing hall (2014) a0006.JPG",
+   "autor": "Patrick Roque (talk) (Uploads)",
+   "licenca": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Ph-mm-pasay-ninoy_aquino_international_airport_(naia)-terminal_3_-_ticketing_hall_(2014)_a0006.JPG",
+   "uso": "\"Isso é mais comum do que você imagina\""
+  },
+  "gato": {
+   "arquivo": "gato.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Cat_jump.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "titulo": "File:Cat jump.jpg",
+   "autor": "Vengolis",
+   "licenca": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Cat_jump.jpg",
+   "uso": "\"3 pulos do gato\""
+  },
+  "cartao": {
+   "arquivo": "cartao.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Adyen_card_payment_terminal_%289607998259%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "titulo": "File:Adyen card payment terminal (9607998259).jpg",
+   "autor": "Alper Çuğun from Berlin, Germany",
+   "licenca": "CC BY 2.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Adyen_card_payment_terminal_(9607998259).jpg",
+   "uso": "\"de olho fechado para os gastos\""
+  },
+  "hotel": {
+   "arquivo": "hotel.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Tropicana_hotel%2C_Las_Vegas_by_night_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "titulo": "File:Tropicana hotel, Las Vegas by night (3).jpg",
+   "autor": "Tristan Surtel",
+   "licenca": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Tropicana_hotel,_Las_Vegas_by_night_(3).jpg",
+   "uso": "cartão DICA 1 (hospedagem)"
+  },
+  "taxi": {
+   "arquivo": "taxi.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Taxi-cabs-New-York-0986.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "titulo": "File:Taxi-cabs-New-York-0986.jpg",
+   "autor": "Loadmaster (David R. Tribble\n\n\n\n\n\n\nThis image was made by Lo",
+   "licenca": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Taxi-cabs-New-York-0986.jpg",
+   "uso": "\"no deslocamento e na distância dos lugares\""
+  },
+  "viajante": {
+   "arquivo": "viajante.jpg",
+   "url": "https://live.staticflickr.com/8536/8881653568_0fa88ab76c_b.jpg",
+   "titulo": "One way",
+   "autor": "hernanpba",
+   "licenca": "CC BY-SA 2.0",
+   "pagina": "https://www.flickr.com/photos/67430875@N03/8881653568",
+   "uso": "\"Sabe aquela viagem\""
+  },
+  "cofrinho": {
+   "arquivo": "cofrinho.jpg",
+   "url": "https://live.staticflickr.com/5029/5737823348_3377213de5_b.jpg",
+   "titulo": "Pink Piggy Bank",
+   "autor": "kenteegardin",
+   "licenca": "CC BY-SA 2.0",
+   "pagina": "https://www.flickr.com/photos/26373139@N08/5737823348",
+   "uso": "\"o que era para ser uma economia\""
+  },
+  "paris": {
+   "arquivo": "paris.jpg",
+   "url": "https://live.staticflickr.com/3279/2312565579_27ea634cf2_b.jpg",
+   "titulo": "a backpacking travel to europe R002-005",
+   "autor": "kokorowashinjin",
+   "licenca": "CC BY 2.0",
+   "pagina": "https://www.flickr.com/photos/24252665@N03/2312565579",
+   "uso": "\"Viagem boa é a que cabe no seu bolso\""
+  },
+  "paisagem": {
+   "arquivo": "paisagem.jpg",
+   "url": "https://live.staticflickr.com/3228/2312619779_183cfffed0_b.jpg",
+   "titulo": "a backpacking travel to europe R010-003",
+   "autor": "kokorowashinjin",
+   "licenca": "CC BY 2.0",
+   "pagina": "https://www.flickr.com/photos/24252665@N03/2312619779",
+   "uso": "\"Antes, durante e depois\""
+  },
+  "terminal": {
+   "arquivo": "terminal.jpg",
+   "url": "https://live.staticflickr.com/1439/716271573_220f051b7b_b.jpg",
+   "titulo": "Frankfurt Airport Terminal 2",
+   "autor": "flickrsven",
+   "licenca": "CC BY 2.0",
+   "pagina": "https://www.flickr.com/photos/9665215@N02/716271573",
+   "uso": "\"Você comprar separado já é um risco\""
+  },
+  "planejamento": {
+   "arquivo": "planejamento.jpg",
+   "url": "https://live.staticflickr.com/65535/49106643663_c080d09eca_b.jpg",
+   "titulo": "silver-camera-near-black-coffee-in-mug-silver-samsung-galaxy-2305761",
+   "autor": "topten5",
+   "licenca": "CC BY 2.0",
+   "pagina": "https://www.flickr.com/photos/185174148@N07/49106643663",
+   "uso": "\"no papel era mais barato\""
+  },
+  "mapas": {
+   "arquivo": "mapas.jpg",
+   "url": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHgxMzY0MjgxLWltYWdlLWt3eXFsbWk1LmpwZw.jpg",
+   "titulo": "(sem título)",
+   "autor": "",
+   "licenca": "CC CC0 1.0",
+   "pagina": "https://www.rawpixel.com/image/5958207/free-public-domain-cc0-photo",
+   "uso": "\"ficar ligado no planejamento de sua viagem\""
+  },
+  "aerea": {
+   "arquivo": "aerea.jpg",
+   "url": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvbnMxMzMwLWltYWdlLWt3eXMyeXB6LmpwZw.jpg",
+   "titulo": "Aerial View City Skyline Skyscraper",
+   "autor": "",
+   "licenca": "CC CC0 1.0",
+   "pagina": "https://www.rawpixel.com/image/5967710/aerial-view-city-skyline-skyscraper",
+   "uso": "\"Fica longe de tudo e perde toda a economia\" (mapa animado)"
+  },
+  "transito": {
+   "arquivo": "transito.jpg",
+   "url": "https://live.staticflickr.com/5794/20553025101_fe9719d301_b.jpg",
+   "titulo": "traffic jam in bangkok",
+   "autor": "sese_87",
+   "licenca": "CC BY-SA 2.0",
+   "pagina": "https://www.flickr.com/photos/59820460@N07/20553025101",
+   "uso": "\"você perde tempo\""
+  },
+  "ouro": {
+   "arquivo": "ouro.jpg",
+   "url": "https://live.staticflickr.com/7340/10304289064_d6918f78cb_b.jpg",
+   "titulo": "Sprott Gold Bar",
+   "autor": "sprottmoney",
+   "licenca": "CC BY 2.0",
+   "pagina": "https://www.flickr.com/photos/105572614@N04/10304289064",
+   "uso": "\"tempo em viagem é ouro\""
+  },
+  "painel": {
+   "arquivo": "painel.jpg",
+   "url": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvaXMxNTE4Mi1pbWFnZS1rd3Z3dDB4MS5qcGc.jpg",
+   "titulo": "Free airport departure board image",
+   "autor": "",
+   "licenca": "CC CC0 1.0",
+   "pagina": "https://www.rawpixel.com/image/5917082/image-light-public-domain-free",
+   "uso": "cartão DICA 3 (voos)"
+  },
+  "aviao": {
+   "arquivo": "aviao.jpg",
+   "url": "https://live.staticflickr.com/5505/11489954635_4b6822da44_b.jpg",
+   "titulo": "B737",
+   "autor": "Bernal Saborio G. (berkuspic)",
+   "licenca": "CC BY-SA 2.0",
+   "pagina": "https://www.flickr.com/photos/44073224@N04/11489954635",
+   "uso": "\"a companhia aérea não é obrigada a te esperar\""
+  },
+  "carteira": {
+   "arquivo": "carteira.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/WalletMpegMan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "titulo": "File:WalletMpegMan.jpg",
+   "autor": "The original uploader was TheArmadillo at English Wikipedia.",
+   "licenca": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:WalletMpegMan.jpg",
+   "uso": "\"Além de doer no bolso\""
+  },
+  "presos": {
+   "arquivo": "presos.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/20260908_093734_Taoyuan_airport_woman_napping.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "titulo": "File:20260908 093734 Taoyuan airport woman napping.jpg",
+   "autor": "Saimmx",
+   "licenca": "CC0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:20260908_093734_Taoyuan_airport_woman_napping.jpg",
+   "uso": "\"virou uma dor de cabeça enorme\""
+  },
+  "carro_parado": {
+   "arquivo": "carro_parado.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Interior_of_the_car_park%2C_Ridings_Centre%2C_Wakefield%2C_West_Yorkshire_%283rd_December_2022%29_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "titulo": "File:Interior of the car park, Ridings Centre, Wakefield, West Yorkshire (3rd December 2022) 001.jpg",
+   "autor": "Mtaylor848",
+   "licenca": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Interior_of_the_car_park,_Ridings_Centre,_Wakefield,_West_Yorkshire_(3rd_December_2022)_001.jpg",
+   "uso": "\"só para deixar o carro parado\""
+  },
+  "garagem": {
+   "arquivo": "garagem.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Interior_of_the_Trenchard_Street_car_park_-_June_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "titulo": "File:Interior of the Trenchard Street car park - June 2026.jpg",
+   "autor": "Captain Galaxy",
+   "licenca": "CC BY 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Interior_of_the_Trenchard_Street_car_park_-_June_2026.jpg",
+   "uso": "cartão DICA 2 (alugar carro)"
+  },
+  "valet": {
+   "arquivo": "valet.jpg",
+   "url": "https://live.staticflickr.com/4179/34461283402_5cd58a9d14_b.jpg",
+   "titulo": "Valet Parking Rates",
+   "autor": "pasa47",
+   "licenca": "CC BY 2.0",
+   "pagina": "https://www.flickr.com/photos/53301297@N00/34461283402",
+   "uso": "\"ver se seu hotel tem estacionamento grátis\" (placa real de valet de hotel, em dólar)"
+  },
+  "garagem_hotel": {
+   "arquivo": "garagem_hotel.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Hotel_Monteleone_New_Orleans_November_2025_-_Parking_Garage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "titulo": "File:Hotel Monteleone New Orleans November 2025 - Parking Garage.jpg",
+   "autor": "Jeremy Thompson",
+   "licenca": "CC BY 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Hotel_Monteleone_New_Orleans_November_2025_-_Parking_Garage.jpg",
+   "uso": "\"pagar 20 dólares todo dia\""
+  }
+ },
+ "cenas": [
+  {
+   "id": "gancho",
+   "tipo": "gancho",
+   "layout": "split",
+   "ini": 0,
+   "foto": "gancho"
+  },
+  {
+   "id": "serasa",
+   "tipo": "anim",
+   "anim": "serasa",
+   "layout": "split",
+   "ini": "b02:segundo-0.12",
+   "foto": "serasa",
+   "marcos": {
+    "rola": "b02:49%-0.5",
+    "marca": "b02:49%",
+    "selo": "b02:brasileiros"
+   },
+   "extra": {
+    "pagW": 1290,
+    "linhas": [
+     {
+      "x": 48,
+      "y": 3963,
+      "w": 1194,
+      "h": 57
+     },
+     {
+      "x": 48,
+      "y": 4035,
+      "w": 219,
+      "h": 57
+     }
+    ]
+   }
+  },
+  {
+   "id": "reveillon",
+   "tipo": "foto",
+   "layout": "split",
+   "ini": "b02:nas-0.08",
+   "foto": "reveillon",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "viajante",
+   "tipo": "foto",
+   "layout": "split",
+   "ini": "b03:sabe-0.12",
+   "foto": "viajante",
+   "kb": [
+    1.0,
+    1.07
+   ],
+   "foco": [
+    0.6,
+    0.5
+   ]
+  },
+  {
+   "id": "olho",
+   "tipo": "anim",
+   "anim": "olho",
+   "layout": "split",
+   "ini": "b03:você-0.08",
+   "foto": "cartao",
+   "marcos": {
+    "n1": "b03:você+0.02",
+    "n2": "b03:já",
+    "n3": "b03:estava+0.08",
+    "olho": "b03:olho-0.05",
+    "abre": "b03:os-0.1",
+    "n4": "b03:gastos"
+   }
+  },
+  {
+   "id": "papel",
+   "tipo": "anim",
+   "anim": "papel",
+   "layout": "split",
+   "ini": "b03:e-0.05",
+   "foto": "planejamento",
+   "marcos": {
+    "papel": "b03:papel-0.15",
+    "risca": "b03:barato+0.1"
+   }
+  },
+  {
+   "id": "aeroporto",
+   "tipo": "foto",
+   "layout": "split",
+   "ini": "b04:isso-0.12",
+   "foto": "aeroporto_lotado",
+   "kb": [
+    1.0,
+    1.07
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "diego1",
+   "tipo": "diego",
+   "layout": "full",
+   "ini": "b04:porque-0.06",
+   "zoom": [
+    1.0,
+    1.07
+   ]
+  },
+  {
+   "id": "gato",
+   "tipo": "anim",
+   "anim": "gato",
+   "layout": "split",
+   "ini": "b05:por-0.12",
+   "foto": "gato",
+   "marcos": {
+    "tres": "b05:3-0.04",
+    "pulos": "b05:pulos"
+   }
+  },
+  {
+   "id": "planejamento",
+   "tipo": "foto",
+   "layout": "split",
+   "ini": "b05:para-0.06",
+   "foto": "mapas",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "dica1",
+   "tipo": "dica",
+   "layout": "full",
+   "ini": "b06:primeiro-0.05",
+   "foto": "hotel",
+   "foco": [
+    0.5,
+    0.6
+   ],
+   "dica": {
+    "n": 1,
+    "titulo": [
+     "HOSPEDAGEM",
+     "SÓ PELO PREÇO"
+    ],
+    "simbolo": "xis"
+   }
+  },
+  {
+   "id": "longe",
+   "tipo": "anim",
+   "anim": "longe",
+   "layout": "split",
+   "ini": "b06:fica-0.08",
+   "foto": "aerea",
+   "marcos": {
+    "hotel": "b06:fica",
+    "rota": "b06:longe",
+    "economia": "b06:economia-0.25"
+   }
+  },
+  {
+   "id": "taxi",
+   "tipo": "foto",
+   "layout": "split",
+   "ini": "b06:no-0.06",
+   "foto": "taxi",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "carteira",
+   "tipo": "foto",
+   "layout": "split",
+   "ini": "b06:além-0.08",
+   "foto": "carteira",
+   "kb": [
+    1.04,
+    1.12
+   ],
+   "foco": [
+    0.22,
+    0.45
+   ]
+  },
+  {
+   "id": "tempo",
+   "tipo": "anim",
+   "anim": "tempo",
+   "layout": "split",
+   "ini": "b06:você-0.06",
+   "foto": "transito",
+   "foto2": "ouro",
+   "marcos": {
+    "tempo": "b06:tempo#1-0.1",
+    "frase": "b06:tempo#2",
+    "ouro": "b06:ouro-0.15"
+   }
+  },
+  {
+   "id": "dica2",
+   "tipo": "dica",
+   "layout": "full",
+   "ini": "b07:outra-0.05",
+   "foto": "garagem",
+   "foco": [
+    0.5,
+    0.5
+   ],
+   "dica": {
+    "n": 2,
+    "titulo": [
+     "ALUGAR CARRO"
+    ],
+    "simbolo": "carro"
+   }
+  },
+  {
+   "id": "valet",
+   "tipo": "anim",
+   "anim": "valet",
+   "layout": "split",
+   "ini": "b07:você#2-0.08",
+   "foto": "valet",
+   "marcos": {
+    "tag": "b07:estacionamento-0.05",
+    "caixa": "b07:hotel-0.1"
+   },
+   "extra": {
+    "caixa": {
+     "x": 30,
+     "y": 360,
+     "w": 1020,
+     "h": 140
+    }
+   }
+  },
+  {
+   "id": "vinte",
+   "tipo": "anim",
+   "anim": "vinte",
+   "layout": "split",
+   "ini": "b07:imagina-0.08",
+   "foto": "garagem_hotel",
+   "marcos": {
+    "vinte": "b07:20-0.05",
+    "dia": "b07:todo-0.05"
+   }
+  },
+  {
+   "id": "carro",
+   "tipo": "foto",
+   "layout": "split",
+   "ini": "b07:só-0.06",
+   "foto": "carro_parado",
+   "kb": [
+    1.0,
+    1.07
+   ],
+   "foco": [
+    0.55,
+    0.6
+   ]
+  },
+  {
+   "id": "dica3",
+   "tipo": "dica",
+   "layout": "full",
+   "ini": "b08:não",
+   "foto": "painel",
+   "foco": [
+    0.5,
+    0.5
+   ],
+   "dica": {
+    "n": 3,
+    "titulo": [
+     "CONEXÃO CURTA"
+    ],
+    "simbolo": "xis"
+   }
+  },
+  {
+   "id": "aviao",
+   "tipo": "foto",
+   "layout": "split",
+   "ini": "b08:porque-0.08",
+   "foto": "aviao",
+   "kb": [
+    1.0,
+    1.08
+   ],
+   "foco": [
+    0.55,
+    0.5
+   ]
+  },
+  {
+   "id": "cofrinho",
+   "tipo": "foto",
+   "layout": "split",
+   "ini": "b08:aí-0.08",
+   "foto": "cofrinho",
+   "kb": [
+    1.0,
+    1.07
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "presos",
+   "tipo": "foto",
+   "layout": "split",
+   "ini": "b08:virou-0.06",
+   "foto": "presos",
+   "kb": [
+    1.02,
+    1.09
+   ],
+   "foco": [
+    0.45,
+    0.55
+   ]
+  },
+  {
+   "id": "separado",
+   "tipo": "anim",
+   "anim": "separado",
+   "layout": "split",
+   "ini": "b08:você-0.08",
+   "foto": "terminal",
+   "marcos": {
+    "separado": "b08:separado#2",
+    "risco": "b08:risco-0.1"
+   }
+  },
+  {
+   "id": "diego2",
+   "tipo": "diego",
+   "layout": "full",
+   "ini": "b08:apertado-0.25",
+   "zoom": [
+    1.04,
+    1.14
+   ]
+  },
+  {
+   "id": "paris",
+   "tipo": "foto",
+   "layout": "split",
+   "ini": "b09:viagem-0.12",
+   "foto": "paris",
+   "kb": [
+    1.0,
+    1.07
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "antes",
+   "tipo": "anim",
+   "anim": "antes",
+   "layout": "split",
+   "ini": "b09:antes-0.08",
+   "foto": "paisagem",
+   "marcos": {
+    "antes": "b09:antes",
+    "durante": "b09:durante",
+    "depois": "b09:depois"
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "layout": "split",
+   "ini": "b10:manda-0.12",
+   "foto": "reveillon2",
+   "kb": [
+    1.0,
+    1.06
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ]
+  }
+ ],
+ "gancho": [
+  {
+   "txt": "SUA VIAGEM ACABA,",
+   "tam": 92,
+   "em": 0
+  },
+  {
+   "txt": "MAS A FATURA",
+   "tam": 134,
+   "em": "b01:mas-0.04",
+   "destaque": "FATURA"
+  },
+  {
+   "txt": "NÃO.",
+   "tam": 240,
+   "em": "b01:não-0.04"
+  }
+ ],
+ "correcoes_legenda": {
+  "b08:3#1": "trechos",
+  "b08:separado#1": "separados",
+  "b09:é#1": "é a"
+ },
+ "destaques": [
+  "49%",
+  "endividaram",
+  "férias",
+  "gastos",
+  "barato",
+  "comum",
+  "estratégia",
+  "gato",
+  "planejamento",
+  "preço",
+  "longe",
+  "economia",
+  "deslocamento",
+  "bolso",
+  "tempo",
+  "ouro",
+  "carro",
+  "grátis",
+  "dólares",
+  "parado",
+  "curta",
+  "esperar",
+  "cabeça",
+  "risco",
+  "apertado"
+ ],
+ "sons": [
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "b02:49%",
+   "rel_db": -4,
+   "uso": "49% (número em destaque)"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "b05:3-0.08",
+   "rel_db": -6,
+   "uso": "3 pulos do gato"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "b06:primeiro-0.05",
+   "rel_db": -6,
+   "uso": "entrada do cartão DICA 1"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "b07:outra-0.05",
+   "rel_db": -6,
+   "uso": "entrada do cartão DICA 2"
+  },
+  {
+   "arquivo": "PDX_impacto.wav",
+   "em": "b07:20-0.05",
+   "rel_db": -4,
+   "uso": "US$ 20"
+  },
+  {
+   "arquivo": "PDX_swish.wav",
+   "em": "b08:não",
+   "rel_db": -6,
+   "uso": "entrada do cartão DICA 3"
+  }
+ ],
+ "nivel_l50": {
+  "PDX_ar_longo.wav": -11.5,
+  "PDX_impacto.wav": -11.2,
+  "PDX_obturador.wav": -20.2,
+  "PDX_pagina.wav": -10.5,
+  "PDX_riser.wav": -11.2,
+  "PDX_swish.wav": -12.6
+ },
+ "cta": {
+  "ini": "b10:manda-0.12",
+  "rotulo": "MANDA PRA QUEM ESTÁ",
+  "destino": "PLANEJANDO",
+  "entrada_ms": 300,
+  "cauda_s": 1.8
+ },
+ "mix": {
+  "voz_lufs": -14,
+  "voz_pico_dbtp": -1.5,
+  "master_lufs": -14,
+  "master_pico_dbtp": -1,
+  "clack_db_rel": -6
+ },
+ "quebrar_antes": [
+  "b02:de#1",
+  "b04:sem#1",
+  "b06:no#1",
+  "b07:tem#3",
+  "b07:20#1",
+  "b08:conexão#1",
+  "b08:não#2",
+  "b08:para#1",
+  "b08:dor#1",
+  "b08:nem#1",
+  "b09:cabe#1"
+ ],
+ "nao_quebrar_depois": [
+  "b07:hotel#1",
+  "b07:todo#1",
+  "b08:companhia#1",
+  "b08:cabeça#1",
+  "b08:fala#1",
+  "b09:é#1"
+ ]
+}

@@ -56,6 +56,8 @@ O arquivo sai em `../kit/mov/` com o nome da composição. Todos têm 1080 × 19
 | `scripts/videolongo.mjs` | — | Render do `VideoLongo`: quadros de conferência, trecho ou vídeo inteiro (`BUNDLE_DIR` reaproveita o bundle; `X264_PRESET` e `CRF` mudam a codificação; escala 2 = 4K) |
 | `scripts/servir.mjs` | — | Servidor local com Range para o proxy do vídeo longo (fora da pasta pública: o bundle não copia gigabytes) |
 | `scripts/kit.mjs` | 6.1 | Exportação do kit |
+| `src/erros/` | — | Reel "Erros de viagem" (`reels/erros-de-viagem/rev1`), tela dividida na linguagem do formato (Anton, Inter, âmbar; não é paleta do DS): animações sempre sobre foto, cartões DICA 1/2/3, legendas do formato; DS só no CTA (placa + *clack*) |
+| `scripts/quadros_reel.mjs` | — | Quadros de conferência de qualquer Reel 1080 × 1920 num único bundle (`node scripts/quadros_reel.mjs <Composicao> <props.json> <public-dir> <saida> <q1,q2,...> [escala]`) |
 
 ## Decisões de implementação (registradas, não são regra nova)
 

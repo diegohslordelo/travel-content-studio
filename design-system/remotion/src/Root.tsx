@@ -5,6 +5,7 @@
  * - Reel / CapaReel: montagem de um Reel a partir de reels/<reel>/revN (props + --public-dir).
  * - AmostraYT: amostra de 30 s dos grafismos do vídeo longo do YouTube (16:9), --public-dir=reels/amostra-yt/public.
  * - VideoLongo: vídeo longo do YouTube (16:9, 24 fps) montado de reels/<video>/revN (props + --public-dir).
+ * - ReelErrosViagem: Reel "Erros de viagem" (reels/erros-de-viagem/rev1), tela dividida; DS só no CTA.
  */
 import React from "react";
 import { Composition, Still } from "remotion";
@@ -15,8 +16,11 @@ import { AmostraYT } from "./yt/AmostraYT";
 import { AmostraFimYT, DUR_AMOSTRA_FIM } from "./yt/AmostraFimYT";
 import { VideoLongo, metadadosVideoLongo, propsVideoLongoVazias } from "./yt/VideoLongo";
 import { ThumbYT, propsThumbVazias } from "./yt/ThumbYT";
+import { ReelErrosViagem, metadadosErros, propsVaziasErros } from "./erros/ErrosViagem";
+import { carregarFontesErros } from "./erros/estilo";
 
 carregarFontes();
+carregarFontesErros();
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -26,6 +30,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="AmostraFimYT" component={AmostraFimYT} durationInFrames={Math.round((DUR_AMOSTRA_FIM * 30) / 1000)} fps={30} width={1920} height={1080} />
     <Composition id="VideoLongo" component={VideoLongo} durationInFrames={24} fps={24} width={1920} height={1080} defaultProps={propsVideoLongoVazias} calculateMetadata={metadadosVideoLongo} />
     <Still id="ThumbYT" component={ThumbYT} width={1280} height={720} defaultProps={propsThumbVazias} />
+    <Composition id="ReelErrosViagem" component={ReelErrosViagem} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsVaziasErros} calculateMetadata={metadadosErros} />
     <Still id="CapaReel" component={CapaReel} width={1080} height={1920} defaultProps={propsVazias} />
   </>
 );
