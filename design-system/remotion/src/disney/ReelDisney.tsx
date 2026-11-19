@@ -98,8 +98,9 @@ const CenaVideo: React.FC<{ p: PropsDisney; c: Cena; prox?: Cena }> = ({ p, c, p
     }
   }
   const tKb = c.congelar != null ? Math.min(t, c.congelar) : t;
-  const z = lerp(tKb, 0, dur, c.kb[0], c.kb[1], (k) => Math.min(1, Math.max(0, k)));
   const congelado = c.congelar != null && t >= c.congelar;
+  // no congelamento, um corte de zoom seco (×1,05) deixa o "clique" visível mesmo num plano parado
+  const z = lerp(tKb, 0, dur, c.kb[0], c.kb[1], (k) => Math.min(1, Math.max(0, k))) * (congelado ? 1.05 : 1);
   const qCongela = c.congelar != null ? Math.round(c.congelar * p.fps) + c.pre_q : 0;
   return (
     <AbsoluteFill style={{ overflow: "hidden", translate: `${x}px ${y}px`, filter: desfoque > 0.3 ? `blur(${desfoque}px)` : undefined }}>
@@ -111,7 +112,7 @@ const CenaVideo: React.FC<{ p: PropsDisney; c: Cena; prox?: Cena }> = ({ p, c, p
       {congelado && c.congelar != null && (
         // "a área nova da Frozen": quadro congelado com um frio leve (clarão de 2 quadros + tom azulado)
         <>
-          <AbsoluteFill style={{ background: "rgba(170, 205, 255, 0.16)", mixBlendMode: "screen" }} />
+          <AbsoluteFill style={{ background: "rgba(170, 205, 255, 0.22)", mixBlendMode: "screen" }} />
           <AbsoluteFill style={{ background: "white", opacity: lerp(t, c.congelar, c.congelar + 0.1, 0.45, 0, (k) => Math.min(1, Math.max(0, k))) }} />
         </>
       )}
