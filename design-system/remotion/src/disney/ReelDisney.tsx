@@ -131,8 +131,7 @@ const Legenda: React.FC<{ p: PropsDisney; tS: number }> = ({ p, tS }) => {
         padding: "0 90px",
         font: `800 66px ${TEXTO}`,
         lineHeight: 1.1,
-        // sem degradê sobre a imagem: a leitura vem só da sombra das letras
-        textShadow: "0 2px 3px rgba(0,0,0,0.75), 0 3px 0 rgba(0,0,0,0.35), 0 4px 22px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.45)",
+        // só o texto: sem sombra, sem caixa e sem degradê sob a legenda (pedido do Diego, 19/11/2026)
         scale: String(0.94 + 0.06 * e),
         opacity: e,
         whiteSpace: "nowrap",
@@ -164,7 +163,7 @@ const Gancho: React.FC<{ p: PropsDisney; tS: number }> = ({ p, tS }) => {
   const sai = lerp(tS, g.fim - 0.08, g.fim, 1, 0, (k) => Math.min(1, Math.max(0, k)));
   return (
     <div style={{ opacity: sai }}>
-      <div style={{ position: "absolute", left: 72, right: 72, top: g.topo, textShadow: "0 3px 6px rgba(0,0,0,0.6), 0 6px 40px rgba(0,0,0,0.65), 0 0 80px rgba(0,0,0,0.35)" }}>
+      <div style={{ position: "absolute", left: 72, right: 72, top: g.topo }}>
         {g.linhas.map((l, k) => {
           const e = l.em <= 0 ? 1 : ease((tS - l.em) / 0.16);
           return (
