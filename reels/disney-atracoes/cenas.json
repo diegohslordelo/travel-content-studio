@@ -1,0 +1,50 @@
+{
+ "nota": "Cenas ancoradas nas palavras ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte; toda imagem gravada pelo Diego fica no mínimo 2 s na tela (pedido do Diego), e no Narrado o alvo é até 3 s (Trello). 'video' = acervo do Diego (fonte, entrada em s no bruto, foco x/y do recorte 9:16, 0–1, zoom do recorte para ter margem de estabilização). Escolha das imagens: folhas de contato do Drive (Youtube/analise/Disney/folhas) e tremor medido (scripts/estabilidade.py); só planos sem balanço, selfies trêmulos de fora. O recorte é estabilizado movendo a janela 9:16 dentro do quadro 4K (scripts/reel.py broll). 'entrada': transição motivada (queda = a câmera despenca, depois de 'morrer' na Torre do Terror; chicote = troca de parque). 'congelar': o quadro para na palavra 'Frozen'. Pedido do Diego (19/11/2026): edição natural, sem mosaico de quadros, sem cara de agência; sem música (ele coloca no app).",
+ "gancho": {
+  "topo": 300,
+  "fim": "f01:Isso-0.06",
+  "linhas": [
+   {"texto": "NÃO DÁ PRA IR", "tam": 142, "em": "0"},
+   {"texto": "PRA DISNEY", "tam": 156, "em": "f01:pra#2-0.04"},
+   {"texto": "DE PARIS", "tam": 156, "em": "f01:de-0.04"},
+   {"texto": "EM UM DIA.", "tam": 200, "em": "f01:em-0.04", "cor": "ambar"}
+  ],
+  "nota": "Como o gancho da Grand-Place (REV2): letras garrafais em Anton, x 72, uma linha por vez na palavra; o texto é a fala gravada ('Não dá pra ir pra Disney de Paris em um dia.'). Larguras medidas na fonte (fontTools, avanço dos glifos): 751, 656, 509 e 856 px (≤ 872, zona segura x 72–944)."
+ },
+ "cenas": [
+  {"id": "gancho_castelo", "ini": "0", "video": {"fonte": "IMG_3535", "in": 0.6, "foco": [0.5, 0.5]}, "kb": [1.0, 1.05], "nota": "castelo da Bela Adormecida no pôr do sol (18/03, 19h08), subida lenta da câmera; ideia do Diego"},
+  {"id": "multidao_chegada", "ini": "f01:Isso-0.06", "video": {"fonte": "IMG_3209", "in": 0.7, "foco": [0.5, 0.5]}, "kb": [1.0, 1.04], "nota": "'duas pernas e um sonho': o povo andando para os parques às 9h45"},
+  {"id": "marina_vem_comigo", "ini": "f02:Vem-0.08", "video": {"fonte": "IMG_3211", "in": 0.6, "foco": [0.62, 0.5]}, "kb": [1.0, 1.04], "nota": "'Vem comigo': a Marina andando para a entrada do Studios e virando para a câmera"},
+  {"id": "castelo_dia", "ini": "f02:pode-0.06", "video": {"fonte": "IMG_3345", "in": 0.1, "foco": [0.5, 0.5]}, "kb": [1.0, 1.04], "nota": "'os dois parques': o castelo de dia (14h32)"},
+  {"id": "studios_entrada", "ini": "f03:Começamos-0.06", "video": {"fonte": "IMG_3212", "in": 0.3, "foco": [0.5, 0.5]}, "kb": [1.0, 1.04], "nota": "'Disney Adventure': a fachada de entrada do Walt Disney Studios (hoje Disney Adventure World), 9h56"},
+  {"id": "crush", "ini": "f03:pro-0.06", "video": {"fonte": "IMG_3226", "in": 1.2, "foco": [0.5, 0.5]}, "kb": [1.0, 1.04], "nota": "Crush's Coaster: os carrinhos em casco de tartaruga no embarque"},
+  {"id": "cars", "ini": "f04:Depois-0.08", "video": {"fonte": "IMG_3249", "in": 0.4, "foco": [0.58, 0.5]}, "kb": [1.0, 1.03], "nota": "Relâmpago McQueen, Luigi e Guido vistos do bonde da Cars ROAD TRIP"},
+  {"id": "torre", "ini": "f05:De-0.08", "video": {"fonte": "IMG_3267", "in": 1.2, "foco": [0.5, 0.5]}, "kb": [1.0, 1.04], "nota": "Hollywood Tower Hotel (Torre do Terror); a câmera despenca depois de 'morrer'"},
+  {"id": "avengers_campus", "ini": "f06:E-0.06", "entrada": "queda", "video": {"fonte": "IMG_3278", "in": 1.0, "foco": [0.55, 0.5]}, "kb": [1.0, 1.03], "nota": "placa do Avengers Campus"},
+  {"id": "homem_de_ferro", "ini": "f06:fomos-0.06", "video": {"fonte": "IMG_3295", "in": 1.6, "foco": [0.5, 0.5]}, "kb": [1.0, 1.04], "nota": "'montanha-russa': a armadura do Homem de Ferro na fila da Avengers Assemble: Flight Force"},
+  {"id": "web", "ini": "f06:fomos#2-0.06", "video": {"fonte": "IMG_3281", "in": 0.4, "foco": [0.5, 0.5]}, "kb": [1.0, 1.03], "nota": "prédio WEB do Spider-Man W.E.B. Adventure"},
+  {"id": "spiderman_telhado", "ini": "f06:mais-0.06", "video": {"fonte": "IMG_3315", "in": 3.15, "foco": [0.46, 0.45]}, "kb": [1.0, 1.04], "nota": "'melhor herói da Marvel… deu um salve pra gente': o Spider-Man no telhado (14h12)"},
+  {"id": "main_street", "ini": "f08:Segundo-0.19", "entrada": "chicote", "video": {"fonte": "IMG_3338", "in": 4.0, "foco": [0.5, 0.5], "zoom": 1.05}, "kb": [1.0, 1.03], "nota": "segundo parque: a Main Street com o castelo no fim"},
+  {"id": "castelo_interior", "ini": "f08:depois+0.02", "video": {"fonte": "IMG_3373", "in": 3.2, "foco": [0.5, 0.5]}, "kb": [1.0, 1.03], "nota": "o interior do castelo: abóbada e árvores esculpidas"},
+  {"id": "piratas", "ini": "f09:Piratas-0.06", "video": {"fonte": "IMG_3380", "in": 0.2, "foco": [0.5, 0.45]}, "kb": [1.0, 1.05], "nota": "placa do Pirates of the Caribbean"},
+  {"id": "star_wars", "ini": "f10:montanha-russa-0.06", "video": {"fonte": "IMG_3402", "in": 0.1, "foco": [0.42, 0.5]}, "kb": [1.0, 1.04], "nota": "cartaz de Star Wars na fila"},
+  {"id": "hyperspace", "ini": "f11:Buzz-2.26", "video": {"fonte": "IMG_3396", "in": 0.02, "foco": [0.48, 0.5]}, "kb": [1.0, 1.03], "nota": "placa da Hyperspace Mountain (o plano inteiro: 2,25 s)"},
+  {"id": "buzz", "ini": "f11:Buzz-0.06", "video": {"fonte": "IMG_3424", "in": 5.0, "foco": [0.45, 0.5]}, "kb": [1.0, 1.03], "nota": "o Buzz Lightyear animado na fila da Buzz Lightyear Laser Blast"},
+  {"id": "big_thunder", "ini": "f12:Para-0.06", "video": {"fonte": "IMG_3518", "in": 0.5, "foco": [0.52, 0.5]}, "kb": [1.0, 1.04], "nota": "Big Thunder Mountain às 18h04"},
+  {"id": "por_do_sol", "ini": "f12:pegamos-0.12", "video": {"fonte": "IMG_3526", "in": 0.8, "foco": [0.5, 0.5]}, "kb": [1.0, 1.03], "nota": "o pôr do sol na Big Thunder Mountain (18h57)"},
+  {"id": "trapaceamos", "ini": "f13:Confesso-0.12", "video": {"fonte": "IMG_3409", "in": 0.15, "foco": [0.45, 0.5]}, "kb": [1.0, 1.03], "nota": "'Confesso que trapaceamos': os dois fazendo careta na fila escura da Hyperspace (15h43)"},
+  {"id": "ratatouille", "ini": "f13:reforma-0.06", "congelar": "f13:Frozen-0.03", "video": {"fonte": "IMG_3233", "in": 2.0, "foco": [0.5, 0.5]}, "kb": [1.0, 1.04], "nota": "a área do Ratatouille (em reforma em 18/03); o quadro congela em 'Frozen'"},
+  {"id": "main_street_noite", "ini": "f14:Provavelmente-0.05", "video": {"fonte": "IMG_3574", "in": 0.6, "foco": [0.5, 0.5]}, "kb": [1.0, 1.04], "nota": "a Main Street acendendo (19h28)"},
+  {"id": "castelo_noite", "ini": "f14:Se-0.06", "video": {"fonte": "IMG_3590", "in": 2.0, "foco": [0.5, 0.5], "zoom": 1.04}, "kb": [1.0, 1.03], "nota": "o castelo iluminado à noite (22h03)"},
+  {"id": "fogos", "ini": "f14:A-0.06", "video": {"fonte": "IMG_3595", "in": 12.6, "foco": [0.5, 0.5], "zoom": 1.04}, "kb": [1.0, 1.03], "nota": "'A Disney é mágica': os fogos do show do castelo (22h06)"},
+  {"id": "cta_castelo", "ini": "f15:me-0.06", "video": {"fonte": "IMG_3536", "in": 1.5, "foco": [0.5, 0.5]}, "kb": [1.0, 1.04], "nota": "fecho: a câmera desce até o castelo inteiro, o mesmo quadro do gancho (loop)"}
+ ],
+ "transicoes": {"queda": 0.30, "chicote": 0.24},
+ "cta": {"ini": "f15:me-0.06", "entrada": "f15:segue-0.12", "rotulo": "SEGUE O PERFIL", "destino": "@PRIMEIRODIAEM"},
+ "sons": [
+  {"som": "keen", "em": "f01:Isso-0.06", "alinhar": "pico", "rel_db": -6, "nota": "som do fim do gancho (regra do Diego de 01/11/2026): pico no corte para a 1ª cena depois do gancho"},
+  {"som": "PDX_ar_longo", "em": "f06:E-0.21", "alinhar": "pico", "rel_db": -6, "nota": "a queda depois de 'morrer' (pico no meio da descida)"},
+  {"som": "PDX_swish", "em": "f08:Segundo-0.31", "alinhar": "pico", "rel_db": -6, "nota": "chicote da troca de parque"},
+  {"som": "PDX_obturador", "em": "f13:Frozen-0.03", "rel_db": -8, "nota": "o quadro congela em 'Frozen'"}
+ ]
+}
