@@ -35,7 +35,7 @@ CHROMES = ["/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-
            "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell"]
 CHROME = next((c for c in CHROMES if os.path.exists(c)), "")
 AMBAR = "#E0AE5C"
-TM = "zscale=t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p"
+TM = "zscale=t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=reinhard:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p"
 
 
 def sh(cmd, cwd=None):
@@ -308,7 +308,7 @@ def recorta(arq, t0, dur, w, h, fps_src, xs, ys, cw, ch, nq, saida):
 
 
 def broll():
-    """Cada trecho do acervo vira um vídeo 1080 × 1920 a 30 qps, mudo, com tone mapping HLG → SDR (Möbius), recortado em
+    """Cada trecho do acervo vira um vídeo 1080 × 1920 a 30 qps, mudo, com a conversão técnica HLG → SDR (Reinhard, npl 203; sem ajuste de cor), recortado em
     9:16 no foco da cena. Estabilização: a janela 9:16 acompanha o tremor (a trajetória menos a sua média de 1,2 s), dentro
     da margem do quadro 4K; o movimento intencional (panorâmica) fica. Nunca estica o take: se o trecho não cabe no plano,
     para com erro."""
