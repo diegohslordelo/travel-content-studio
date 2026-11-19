@@ -35,7 +35,7 @@ CHROMES = ["/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-
            "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell"]
 CHROME = next((c for c in CHROMES if os.path.exists(c)), "")
 AMBAR = "#E0AE5C"
-TM = "zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=mobius:param=0.3:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p"
+TM = "zscale=t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p"
 
 
 def sh(cmd, cwd=None):
