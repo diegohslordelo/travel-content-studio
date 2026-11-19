@@ -481,34 +481,12 @@ def conferir():
         t = c["ini_q"] / FPS
         perto = min(cortes, key=lambda x: abs(x - t)) if cortes else None
         desvios.append({"cena": c["id"], "inicio": round(t, 3), "corte_detectado": perto, "desvio_s": round(abs(perto - t), 3) if perto is not None else None})
-    # contraste da legenda (só as letras, sem sombra: pedido do Diego) contra o fundo atrás dela, no meio de cada grupo
-    def lum(rgb):
-        c = rgb / 255.0
-        c = np.where(c <= 0.03928, c / 12.92, ((c + 0.055) / 1.055) ** 2.4)
-        return 0.2126 * c[..., 0] + 0.7152 * c[..., 1] + 0.0722 * c[..., 2]
-    L_BRANCO, L_AMBAR = 1.0, float(lum(np.array([0xE0, 0xAE, 0x5C], dtype=float)))
-    contr = []
-    for g, (txt, wpx) in zip(p["legendas"], leg):
-        t = (g["ini"] + g["fim"]) / 2
-        raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{t:.3f}", "-i", f"_tmp/reel_sem_master.mov", "-frames:v", "1", "-f", "rawvideo",
-                              "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
-        if len(raw) < 1080 * 1920 * 3:
-            continue
-        q = np.frombuffer(raw, dtype=np.uint8).reshape(1920, 1080, 3).astype(float)
-        x0, x1 = int(540 - wpx / 2), int(540 + wpx / 2)
-        faixa = q[p["legendaY"] - 40:p["legendaY"] + 40, max(0, x0):min(1080, x1)]
-        lb = float(np.median(lum(faixa)))
-        cb = (L_BRANCO + 0.05) / (lb + 0.05); ca = (max(L_AMBAR, lb) + 0.05) / (min(L_AMBAR, lb) + 0.05)
-        contr.append({"legenda": txt, "t": round(t, 2), "lum_fundo": round(lb, 3), "contraste_branco": round(cb, 2), "contraste_ambar": round(ca, 2)})
     out = {"arquivo": vid, "ffprobe": pr, "lufs": i, "pico_dbtp": tp, "cenas": durs, "legendas": leg, "maior_legenda_px": max(x[1] for x in leg),
-           "cortes": desvios, "contraste_legendas": contr}
+           "cortes": desvios}
     json.dump(out, open("_tmp/conferir.json", "w"), ensure_ascii=False, indent=1)
     print(f"  {vid}: {float(pr['format']['duration']):.2f} s · {i:.1f} LUFS · pico {tp:.1f} dBTP")
     print(f"  cenas: menor {min(d for _, d in durs):.2f} s, maior {max(d for _, d in durs):.2f} s, média {np.mean([d for _, d in durs]):.2f} s")
     print(f"  legendas: {len(leg)} grupos, a maior {out['maior_legenda_px']} px")
-    if contr:
-        nb = sum(1 for x in contr if x["contraste_branco"] < 3); na = sum(1 for x in contr if x["contraste_ambar"] < 3)
-        print(f"  contraste (sem sombra): branco < 3:1 em {nb} de {len(contr)} grupos; âmbar < 3:1 em {na} de {len(contr)}")
     ok = [d for d in desvios if d["desvio_s"] is not None and d["desvio_s"] <= 0.05]
     print(f"  cortes: {len(ok)} de {len(desvios)} no quadro da cena (±0,05 s); sem corte detectado: "
           + ", ".join(f"{d['cena']}({d['desvio_s']})" for d in desvios if d not in ok))

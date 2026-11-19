@@ -1,6 +1,6 @@
 # QA · Reel da Disney · REV1 (19/11/2026)
 
-**Veredito: [VEREDITO]**
+**Veredito: pronto para a escuta do Diego.** Formato, áudio, legendas e cortes conferidos (abaixo). Antes de postar: ouvir os itens de "Conferir no ouvido" e decidir sobre a duração (68,5 s).
 
 **Formato:** Narrado (Trello, formato 04) · estrutura AIDA · voz do Diego gravada no quarto (19/11/2026) sobre as imagens da viagem (18/03/2026). DS V2 só no CTA (placa `SEGUE O PERFIL / @PRIMEIRODIAEM` + *clack*).
 
@@ -23,7 +23,7 @@
 
 | Arquivo | O que é |
 |---|---|
-| `reel_disney-atracoes_rev1.mp4` | [ENTREGA] |
+| `reel_disney-atracoes_rev1.mp4` | Final: 1080 × 1920, 30 qps, H.264 + AAC 48 kHz, **68.47 s**, **-14.0 LUFS**, pico **-1.3 dBTP**, 196 MB |
 | `reel_disney-atracoes_rev1_previa.mp4` | Prévia leve (540 × 960) |
 | `capa_disney-atracoes_rev1.jpg` | Capa: o gancho completo sobre o castelo no pôr do sol |
 | `qa_frames/` | Um quadro por cena · um quadro por segundo |
@@ -124,11 +124,19 @@ Verificação em três planos (tremor medido do mesmo jeito no recorte sem e com
 | Emendas | 15 emendas, todas no silêncio (−53 a −82 dB nos 10 ms em volta) e sem salto de amostra (fades de 10/30 ms) |
 | Efeitos (`_tmp/sons.json`) | `keen` −6 dB (pico no corte do gancho, 2,33 s) · `PDX_ar_longo` −6 dB (a queda, 21,1 s) · `PDX_swish` −6 dB (chicote, 31,1 s) · `PDX_obturador` −8 dB ("Frozen", 55,0 s) · *clack* da placa −6 dB. Volumes de trabalho de `docs/REFERENCIA_EDICAO_FORMATOS.md`, 4.1 |
 | Música | Nenhuma (pedido do Diego) |
-| Master | [MASTER] |
+| Master | -14.0 LUFS integrados, pico -1.3 dBTP (alvo −14 LUFS, ≤ −1 dBTP; DS V2, 4.6) |
 
 ## Medido no vídeo final (`scripts/reel.py conferir`)
 
-[MEDIDO]
+| Ponto | Resultado |
+|---|---|
+| Duração e formato | 68.47 s · H.264 1080 × 1920 30 qps · AAC 48 kHz ✅ |
+| Áudio | -14.0 LUFS · pico -1.3 dBTP ✅ |
+| Cenas | 26 · menor 2.00 s, maior 3.70 s, média 2.63 s · nenhuma abaixo de 2 s ✅ |
+| Cortes no quadro da cena | 23 de 25 detectados no quadro exato (±0,05 s). As 2 restantes são as transições com movimento (queda em 21,4 s e chicote em 31,2 s), que não são corte seco; a troca Main Street → castelo por dentro (33,2 s) foi conferida no quadro (33,13 × 33,23 s) ✅ |
+| Legendas | 98 grupos, 1 linha cada; a maior tem 794 px (≤ 808 px: centrada em x 540, fica em x 72–944) ✅ |
+| Legenda × fala | O texto de cada grupo é a fala gravada (edicao.json), alinhada palavra a palavra; as palavras incertas estão em "Conferir no ouvido" |
+| Sem tratamento de imagem | Sem grade, grão, tom ou degradê sobre a imagem (código: `design-system/remotion/src/disney/ReelDisney.tsx`) ✅ |
 
 ## Conferir no ouvido (o Claude não escuta áudio)
 
