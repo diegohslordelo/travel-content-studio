@@ -1,0 +1,1247 @@
+{
+ "fps": 24,
+ "duracao": 1765,
+ "cenas": [
+  {
+   "id": "s01_gancho",
+   "tipo": "video",
+   "ini": 0,
+   "fim": 62,
+   "cidade": "bxl",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "planos": [
+    {
+     "arquivo": "clipes/s01_gancho_0_IMG_2211.mp4",
+     "entra": 0,
+     "fim": 62,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2211.MOV",
+     "entrada": 0.0
+    }
+   ]
+  },
+  {
+   "id": "s02_tanta_gente",
+   "tipo": "video",
+   "ini": 62,
+   "fim": 128,
+   "cidade": "bxl",
+   "zoom": [
+    1.04,
+    1.0
+   ],
+   "planos": [
+    {
+     "arquivo": "clipes/s02_tanta_gente_0_IMG_2212.mp4",
+     "entra": 62,
+     "fim": 128,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2212.MOV",
+     "entrada": 0.4
+    }
+   ]
+  },
+  {
+   "id": "s03_mapa_belgica",
+   "tipo": "mapa",
+   "ini": 128,
+   "fim": 176,
+   "cidade": "bxl",
+   "modo": "belgica",
+   "mapa": {
+    "caminho": "M491.1,416.9 L508.6,425.7 L524.1,427.7 L530.9,423.8 L526.6,402.4 L539.2,391.0 L553.2,385.8 L559.5,395.0 L572.3,404.4 L582.4,404.5 L609.7,380.0 L616.0,384.8 L621.9,393.5 L623.2,400.6 L624.2,407.9 L630.3,411.0 L651.8,409.4 L662.7,396.1 L671.3,387.8 L677.7,393.4 L680.8,409.7 L686.8,431.0 L712.4,454.9 L734.0,461.7 L760.6,457.0 L771.2,452.7 L778.3,456.3 L785.4,468.9 L800.7,483.3 L832.9,493.5 L842.8,499.3 L849.7,509.0 L847.7,522.8 L832.3,557.3 L830.3,567.5 L832.4,570.9 L829.4,577.3 L809.4,600.4 L807.6,608.5 L814.3,621.8 L819.7,632.8 L819.8,632.8 L831.7,638.1 L843.0,639.9 L864.3,640.6 L887.0,641.4 L889.7,647.8 L915.1,666.5 L923.0,681.3 L941.2,695.6 L926.1,713.7 L928.4,721.8 L933.8,730.1 L954.4,734.9 L964.7,746.8 L965.3,764.9 L970.0,794.6 L927.6,824.1 L915.5,857.0 L914.5,863.5 L913.0,862.5 L908.3,851.6 L900.6,851.7 L883.1,847.2 L858.6,877.0 L847.5,901.7 L840.9,919.9 L831.0,934.5 L829.1,950.1 L830.3,956.6 L826.9,965.0 L826.8,973.8 L840.9,991.3 L844.4,1000.7 L861.6,1031.5 L856.2,1042.8 L852.0,1055.0 L847.0,1063.6 L841.3,1069.1 L823.5,1068.8 L801.0,1072.7 L785.9,1078.7 L778.0,1078.8 L761.7,1063.4 L743.6,1040.3 L732.0,1029.3 L726.8,1019.8 L712.5,1015.8 L692.2,1004.5 L678.1,992.1 L665.9,984.4 L648.8,980.6 L634.7,980.9 L630.6,960.1 L628.9,936.4 L617.4,920.5 L633.1,858.2 L623.8,852.1 L613.5,857.1 L598.7,871.9 L591.6,889.6 L587.4,905.3 L562.5,920.2 L523.0,925.6 L479.8,920.2 L473.8,916.2 L471.1,911.7 L471.0,906.2 L474.1,897.8 L481.6,887.5 L483.4,873.0 L475.7,860.4 L470.7,855.4 L472.7,843.2 L478.4,827.9 L479.5,819.2 L450.3,792.8 L429.1,787.6 L408.6,786.7 L393.0,783.7 L384.0,785.0 L377.4,792.7 L370.8,798.2 L365.9,791.6 L356.8,744.8 L349.8,737.7 L323.2,729.9 L287.2,727.1 L277.6,718.6 L272.4,697.6 L269.0,672.2 L257.2,648.0 L251.1,641.9 L240.3,631.1 L221.5,635.6 L198.9,649.6 L185.6,653.5 L180.5,655.0 L162.5,641.3 L142.3,619.8 L126.1,597.1 L122.2,584.4 L127.1,569.1 L121.2,557.3 L112.5,535.8 L110.0,519.0 L207.5,459.6 L266.9,429.2 L294.8,420.0 L301.5,450.6 L306.6,460.3 L313.3,466.6 L322.1,467.8 L332.2,460.3 L346.4,452.3 L369.1,456.0 L385.7,463.4 L391.6,471.0 L402.5,478.3 L418.5,480.0 L449.4,466.1 L479.0,444.9 L487.8,430.2 L491.1,416.9 Z",
+    "altura": 699,
+    "bruxelas": [
+     519.4,
+     607.4
+    ],
+    "bruges": [
+     266.7,
+     479.4
+    ],
+    "caixa": {
+     "x": 110,
+     "y": 380,
+     "w": 860
+    },
+    "marcos": {
+     "belgica": 152,
+     "ponto": 169
+    }
+   },
+   "planos": []
+  },
+  {
+   "id": "s04_grand_place",
+   "tipo": "video",
+   "ini": 176,
+   "fim": 231,
+   "cidade": "bxl",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "planos": [
+    {
+     "arquivo": "clipes/s04_grand_place_0_IMG_2190.mp4",
+     "entra": 176,
+     "fim": 231,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2190.MOV",
+     "entrada": 1.0
+    }
+   ]
+  },
+  {
+   "id": "s05_comida_lugares",
+   "tipo": "split",
+   "ini": 231,
+   "fim": 281,
+   "cidade": "bxl",
+   "planos": [
+    {
+     "arquivo": "clipes/s05_comida_lugares_0_IMG_2205.mp4",
+     "entra": 231,
+     "fim": 281,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2205.MOV",
+     "entrada": 0.4
+    },
+    {
+     "arquivo": "clipes/s05_comida_lugares_1_IMG_2241.mp4",
+     "entra": 250,
+     "fim": 281,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2241.MOV",
+     "entrada": 0.6
+    }
+   ]
+  },
+  {
+   "id": "s06_falta",
+   "tipo": "video",
+   "ini": 281,
+   "fim": 346,
+   "cidade": "bxl",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "desat": {
+    "ini": 294,
+    "fim": 317,
+    "sat": 0.22
+   },
+   "planos": [
+    {
+     "arquivo": "clipes/s06_falta_0_IMG_2397.mp4",
+     "entra": 281,
+     "fim": 346,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2397.MOV",
+     "entrada": 1.6
+    }
+   ]
+  },
+  {
+   "id": "s07_atracao",
+   "tipo": "video",
+   "ini": 346,
+   "fim": 420,
+   "cidade": "bxl",
+   "origem": "50% 44%",
+   "zoom_kf": {
+    "t": [
+     346,
+     368,
+     383,
+     420
+    ],
+    "z": [
+     1.0,
+     1.04,
+     1.5,
+     1.56
+    ]
+   },
+   "planos": [
+    {
+     "arquivo": "clipes/s07_atracao_0_IMG_2255.mp4",
+     "entra": 346,
+     "fim": 420,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2255.MOV",
+     "entrada": 0.2
+    }
+   ]
+  },
+  {
+   "id": "s08_noticia",
+   "tipo": "video",
+   "ini": 420,
+   "fim": 497,
+   "cidade": "bxl",
+   "zoom": [
+    1.1,
+    1.18
+   ],
+   "origem": "50% 40%",
+   "planos": [
+    {
+     "arquivo": "clipes/s08_noticia_0_IMG_2251.mp4",
+     "entra": 420,
+     "fim": 497,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2251.MOV",
+     "entrada": 0.0
+    }
+   ],
+   "desfoque": {
+    "ini": 423,
+    "fim": 497
+   }
+  },
+  {
+   "id": "s09_grand_place_noite",
+   "tipo": "video",
+   "ini": 497,
+   "fim": 578,
+   "cidade": "bxl",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "grade_quente": true,
+   "entrada": "dissolve",
+   "planos": [
+    {
+     "arquivo": "clipes/s09_grand_place_noite_0_IMG_2411.mp4",
+     "entra": 497,
+     "fim": 578,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2411.MOV",
+     "entrada": 0.0
+    }
+   ]
+  },
+  {
+   "id": "s10_mont_des_arts",
+   "tipo": "video",
+   "ini": 578,
+   "fim": 630,
+   "cidade": "bxl",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "grade_quente": true,
+   "planos": [
+    {
+     "arquivo": "clipes/s10_mont_des_arts_0_IMG_2365.mp4",
+     "entra": 578,
+     "fim": 630,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2365.MOV",
+     "entrada": 1.2
+    }
+   ]
+  },
+  {
+   "id": "s11_waffle_cerveja",
+   "tipo": "split",
+   "ini": 630,
+   "fim": 710,
+   "cidade": "bxl",
+   "grade_quente": true,
+   "planos": [
+    {
+     "arquivo": "clipes/s11_waffle_cerveja_0_IMG_2232.mp4",
+     "entra": 630,
+     "fim": 710,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2232.MOV",
+     "entrada": 0.0
+    },
+    {
+     "arquivo": "clipes/s11_waffle_cerveja_1_AC2A8D11.mp4",
+     "entra": 673,
+     "fim": 710,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "AC2A8D11.mp4",
+     "entrada": 0.0
+    }
+   ]
+  },
+  {
+   "id": "s12_so_que",
+   "tipo": "video",
+   "ini": 710,
+   "fim": 761,
+   "cidade": "bxl",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "desat": {
+    "ini": 710,
+    "fim": 736,
+    "sat": 0.3
+   },
+   "planos": [
+    {
+     "arquivo": "clipes/s12_so_que_0_IMG_2181.mp4",
+     "entra": 710,
+     "fim": 761,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2181.MOV",
+     "entrada": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s13_sem_sal",
+   "tipo": "video",
+   "ini": 761,
+   "fim": 817,
+   "cidade": "bxl",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "brilho": 0.8,
+   "desat": {
+    "ini": 761,
+    "fim": 765,
+    "sat": 0.3
+   },
+   "planos": [
+    {
+     "arquivo": "clipes/s13_sem_sal_0_IMG_2369.mp4",
+     "entra": 761,
+     "fim": 817,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2369.MOV",
+     "entrada": 0.5
+    }
+   ]
+  },
+  {
+   "id": "s14_sensacao",
+   "tipo": "video",
+   "ini": 817,
+   "fim": 875,
+   "cidade": "bxl",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "desat": {
+    "ini": 817,
+    "fim": 822,
+    "sat": 0.55
+   },
+   "planos": [
+    {
+     "arquivo": "clipes/s14_sensacao_0_IMG_2381.mp4",
+     "entra": 817,
+     "fim": 875,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2381.MOV",
+     "entrada": 9.4
+    }
+   ]
+  },
+  {
+   "id": "s15_trem",
+   "tipo": "video",
+   "ini": 875,
+   "fim": 924,
+   "cidade": "bxl",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "planos": [
+    {
+     "arquivo": "clipes/s15_trem_0_IMG_2417.mp4",
+     "entra": 875,
+     "fim": 924,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2417.MOV",
+     "entrada": 0.6
+    }
+   ]
+  },
+  {
+   "id": "s16_mapa_trem",
+   "tipo": "mapa",
+   "ini": 924,
+   "fim": 950,
+   "cidade": "bru",
+   "modo": "trem",
+   "mapa": {
+    "caminho": "M491.1,416.9 L508.6,425.7 L524.1,427.7 L530.9,423.8 L526.6,402.4 L539.2,391.0 L553.2,385.8 L559.5,395.0 L572.3,404.4 L582.4,404.5 L609.7,380.0 L616.0,384.8 L621.9,393.5 L623.2,400.6 L624.2,407.9 L630.3,411.0 L651.8,409.4 L662.7,396.1 L671.3,387.8 L677.7,393.4 L680.8,409.7 L686.8,431.0 L712.4,454.9 L734.0,461.7 L760.6,457.0 L771.2,452.7 L778.3,456.3 L785.4,468.9 L800.7,483.3 L832.9,493.5 L842.8,499.3 L849.7,509.0 L847.7,522.8 L832.3,557.3 L830.3,567.5 L832.4,570.9 L829.4,577.3 L809.4,600.4 L807.6,608.5 L814.3,621.8 L819.7,632.8 L819.8,632.8 L831.7,638.1 L843.0,639.9 L864.3,640.6 L887.0,641.4 L889.7,647.8 L915.1,666.5 L923.0,681.3 L941.2,695.6 L926.1,713.7 L928.4,721.8 L933.8,730.1 L954.4,734.9 L964.7,746.8 L965.3,764.9 L970.0,794.6 L927.6,824.1 L915.5,857.0 L914.5,863.5 L913.0,862.5 L908.3,851.6 L900.6,851.7 L883.1,847.2 L858.6,877.0 L847.5,901.7 L840.9,919.9 L831.0,934.5 L829.1,950.1 L830.3,956.6 L826.9,965.0 L826.8,973.8 L840.9,991.3 L844.4,1000.7 L861.6,1031.5 L856.2,1042.8 L852.0,1055.0 L847.0,1063.6 L841.3,1069.1 L823.5,1068.8 L801.0,1072.7 L785.9,1078.7 L778.0,1078.8 L761.7,1063.4 L743.6,1040.3 L732.0,1029.3 L726.8,1019.8 L712.5,1015.8 L692.2,1004.5 L678.1,992.1 L665.9,984.4 L648.8,980.6 L634.7,980.9 L630.6,960.1 L628.9,936.4 L617.4,920.5 L633.1,858.2 L623.8,852.1 L613.5,857.1 L598.7,871.9 L591.6,889.6 L587.4,905.3 L562.5,920.2 L523.0,925.6 L479.8,920.2 L473.8,916.2 L471.1,911.7 L471.0,906.2 L474.1,897.8 L481.6,887.5 L483.4,873.0 L475.7,860.4 L470.7,855.4 L472.7,843.2 L478.4,827.9 L479.5,819.2 L450.3,792.8 L429.1,787.6 L408.6,786.7 L393.0,783.7 L384.0,785.0 L377.4,792.7 L370.8,798.2 L365.9,791.6 L356.8,744.8 L349.8,737.7 L323.2,729.9 L287.2,727.1 L277.6,718.6 L272.4,697.6 L269.0,672.2 L257.2,648.0 L251.1,641.9 L240.3,631.1 L221.5,635.6 L198.9,649.6 L185.6,653.5 L180.5,655.0 L162.5,641.3 L142.3,619.8 L126.1,597.1 L122.2,584.4 L127.1,569.1 L121.2,557.3 L112.5,535.8 L110.0,519.0 L207.5,459.6 L266.9,429.2 L294.8,420.0 L301.5,450.6 L306.6,460.3 L313.3,466.6 L322.1,467.8 L332.2,460.3 L346.4,452.3 L369.1,456.0 L385.7,463.4 L391.6,471.0 L402.5,478.3 L418.5,480.0 L449.4,466.1 L479.0,444.9 L487.8,430.2 L491.1,416.9 Z",
+    "altura": 699,
+    "bruxelas": [
+     519.4,
+     607.4
+    ],
+    "bruges": [
+     266.7,
+     479.4
+    ],
+    "caixa": {
+     "x": 110,
+     "y": 380,
+     "w": 860
+    },
+    "marcos": {
+     "linha": 924,
+     "bruges": 932
+    }
+   },
+   "planos": []
+  },
+  {
+   "id": "s17_chegada",
+   "tipo": "video",
+   "ini": 950,
+   "fim": 1009,
+   "cidade": "bru",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "planos": [
+    {
+     "arquivo": "clipes/s17_chegada_0_IMG_2426.mp4",
+     "entra": 950,
+     "fim": 1009,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2426.MOV",
+     "entrada": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s18_virada",
+   "tipo": "video",
+   "ini": 1009,
+   "fim": 1064,
+   "cidade": "bru",
+   "zoom": [
+    1.08,
+    1.0
+   ],
+   "luz": true,
+   "planos": [
+    {
+     "arquivo": "clipes/s18_virada_0_IMG_2492.mp4",
+     "entra": 1009,
+     "fim": 1064,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2492.MOV",
+     "entrada": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s19_europa_imagina",
+   "tipo": "video",
+   "ini": 1064,
+   "fim": 1119,
+   "cidade": "bru",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "planos": [
+    {
+     "arquivo": "clipes/s19_europa_imagina_0_IMG_2672.mp4",
+     "entra": 1064,
+     "fim": 1119,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2672.MOV",
+     "entrada": 3.0
+    }
+   ]
+  },
+  {
+   "id": "s20_lista",
+   "tipo": "grade",
+   "ini": 1119,
+   "fim": 1213,
+   "cidade": "bru",
+   "planos": [
+    {
+     "arquivo": "clipes/s20_lista_0_IMG_2427.mp4",
+     "entra": 1119,
+     "fim": 1213,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2427.MOV",
+     "entrada": 0.3
+    },
+    {
+     "arquivo": "clipes/s20_lista_1_IMG_2486.mp4",
+     "entra": 1139,
+     "fim": 1213,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2486.MOV",
+     "entrada": 1.6
+    },
+    {
+     "arquivo": "clipes/s20_lista_2_IMG_2448.mp4",
+     "entra": 1153,
+     "fim": 1213,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2448.MOV",
+     "entrada": 0.8
+    },
+    {
+     "arquivo": "clipes/s20_lista_3_IMG_2479.mp4",
+     "entra": 1179,
+     "fim": 1213,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2479.MOV",
+     "entrada": 0.4
+    }
+   ]
+  },
+  {
+   "id": "s21_chocolate",
+   "tipo": "video",
+   "ini": 1213,
+   "fim": 1261,
+   "cidade": "bru",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "planos": [
+    {
+     "arquivo": "clipes/s21_chocolate_0_IMG_2603.mp4",
+     "entra": 1213,
+     "fim": 1261,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2603.MOV",
+     "entrada": 0.2
+    }
+   ]
+  },
+  {
+   "id": "s22_filme",
+   "tipo": "video",
+   "ini": 1261,
+   "fim": 1329,
+   "cidade": "bru",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "cinema": 1286,
+   "planos": [
+    {
+     "arquivo": "clipes/s22_filme_0_IMG_2644.mp4",
+     "entra": 1261,
+     "fim": 1329,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2644.MOV",
+     "entrada": 0.0
+    }
+   ]
+  },
+  {
+   "id": "s23_comparar",
+   "tipo": "comparar",
+   "ini": 1329,
+   "fim": 1493,
+   "cidade": "bxl",
+   "desat": {
+    "ini": 1387,
+    "fim": 1404,
+    "sat": 0.35
+   },
+   "planos": [
+    {
+     "arquivo": "clipes/s23_comparar_0_IMG_2216.mp4",
+     "entra": 1329,
+     "fim": 1416,
+     "cidade": "bxl",
+     "rotulo": null,
+     "take": "IMG_2216.MOV",
+     "entrada": 0.3
+    },
+    {
+     "arquivo": "clipes/s23_comparar_1_IMG_2183.mp4",
+     "entra": 1416,
+     "fim": 1493,
+     "cidade": "bxl",
+     "rotulo": "BRUXELAS",
+     "take": "IMG_2183.MOV",
+     "entrada": 0.2
+    },
+    {
+     "arquivo": "clipes/s23_comparar_2_IMG_2577.mp4",
+     "entra": 1416,
+     "fim": 1493,
+     "cidade": "bru",
+     "rotulo": "BRUGES",
+     "take": "IMG_2577.MOV",
+     "entrada": 0.4
+    }
+   ]
+  },
+  {
+   "id": "s24_marina",
+   "tipo": "video",
+   "ini": 1493,
+   "fim": 1547,
+   "cidade": "bru",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "planos": [
+    {
+     "arquivo": "clipes/s24_marina_0_IMG_2594.mp4",
+     "entra": 1493,
+     "fim": 1547,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2594.MOV",
+     "entrada": 2.0
+    }
+   ]
+  },
+  {
+   "id": "s25_barco",
+   "tipo": "video",
+   "ini": 1547,
+   "fim": 1600,
+   "cidade": "bru",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "planos": [
+    {
+     "arquivo": "clipes/s25_barco_0_IMG_2591.mp4",
+     "entra": 1547,
+     "fim": 1600,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2591.MOV",
+     "entrada": 1.8
+    }
+   ]
+  },
+  {
+   "id": "s26_minnewater",
+   "tipo": "video",
+   "ini": 1600,
+   "fim": 1649,
+   "cidade": "bru",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "planos": [
+    {
+     "arquivo": "clipes/s26_minnewater_0_IMG_2651.mp4",
+     "entra": 1600,
+     "fim": 1649,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2651.MOV",
+     "entrada": 2.6
+    }
+   ]
+  },
+  {
+   "id": "s27_nos",
+   "tipo": "video",
+   "ini": 1649,
+   "fim": 1699,
+   "cidade": "bru",
+   "zoom": [
+    1.0,
+    1.02
+   ],
+   "planos": [
+    {
+     "arquivo": "clipes/s27_nos_0_IMG_2654.mp4",
+     "entra": 1649,
+     "fim": 1699,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2654.MOV",
+     "entrada": 1.5
+    }
+   ]
+  },
+  {
+   "id": "s28_cta",
+   "tipo": "video",
+   "ini": 1699,
+   "fim": 1765,
+   "cidade": "bru",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "cta": true,
+   "planos": [
+    {
+     "arquivo": "clipes/s28_cta_0_IMG_2491.mp4",
+     "entra": 1699,
+     "fim": 1765,
+     "cidade": "bru",
+     "rotulo": null,
+     "take": "IMG_2491.MOV",
+     "entrada": 0.3
+    }
+   ]
+  }
+ ],
+ "gancho": {
+  "ate": 62,
+  "linhas": [
+   {
+    "texto": "A CIDADE MAIS",
+    "em": 12,
+    "tam": 104
+   },
+   {
+    "texto": "SUPERESTIMADA",
+    "em": 26,
+    "tam": 138,
+    "destaque": true
+   },
+   {
+    "texto": "DA EUROPA",
+    "em": 49,
+    "tam": 104
+   }
+  ]
+ },
+ "noticia": {
+  "arquivo": "recorte_vrt_2012.png",
+  "entra": 423,
+  "destaque": 458,
+  "sai": 497,
+  "largura": 940,
+  "larguraImg": 1317,
+  "alturaImg": 1080,
+  "marca": {
+   "x": 60,
+   "y": 330,
+   "w": 1136,
+   "h": 102
+  }
+ },
+ "legendas": [
+  {
+   "texto": "e agora entendi",
+   "destaque": null,
+   "ini": 62,
+   "fim": 74
+  },
+  {
+   "texto": "por que tanta gente",
+   "destaque": null,
+   "ini": 74,
+   "fim": 96
+  },
+  {
+   "texto": "se decepciona",
+   "destaque": "decepciona",
+   "ini": 96,
+   "fim": 129
+  },
+  {
+   "texto": "Nós passamos dois dias",
+   "destaque": "dois",
+   "ini": 129,
+   "fim": 150
+  },
+  {
+   "texto": "na Bélgica e um deles",
+   "destaque": "Bélgica",
+   "ini": 150,
+   "fim": 170
+  },
+  {
+   "texto": "foi em Bruxelas",
+   "destaque": "Bruxelas",
+   "ini": 170,
+   "fim": 191
+  },
+  {
+   "texto": "e eu vou te falar",
+   "destaque": null,
+   "ini": 191,
+   "fim": 208
+  },
+  {
+   "texto": "é uma cidade bonita",
+   "destaque": "bonita",
+   "ini": 208,
+   "fim": 232
+  },
+  {
+   "texto": "tem comida boa",
+   "destaque": "comida",
+   "ini": 232,
+   "fim": 251
+  },
+  {
+   "texto": "lugares interessantes",
+   "destaque": null,
+   "ini": 251,
+   "fim": 282
+  },
+  {
+   "texto": "mas parece que falta",
+   "destaque": "falta",
+   "ini": 282,
+   "fim": 299
+  },
+  {
+   "texto": "alguma coisa",
+   "destaque": null,
+   "ini": 299,
+   "fim": 325
+  },
+  {
+   "texto": "Para você ter ideia",
+   "destaque": null,
+   "ini": 325,
+   "fim": 338
+  },
+  {
+   "texto": "a atração mais famosa",
+   "destaque": null,
+   "ini": 338,
+   "fim": 357
+  },
+  {
+   "texto": "da cidade",
+   "destaque": null,
+   "ini": 357,
+   "fim": 368
+  },
+  {
+   "texto": "o Manneken Pis",
+   "destaque": "Manneken Pis",
+   "ini": 368,
+   "fim": 387
+  },
+  {
+   "texto": "do menino fazendo xixi",
+   "destaque": null,
+   "ini": 387,
+   "fim": 421
+  },
+  {
+   "texto": "já foi considerado",
+   "destaque": null,
+   "ini": 421,
+   "fim": 435
+  },
+  {
+   "texto": "um dos pontos turísticos",
+   "destaque": null,
+   "ini": 435,
+   "fim": 455
+  },
+  {
+   "texto": "mais decepcionantes",
+   "destaque": "decepcionantes",
+   "ini": 455,
+   "fim": 478
+  },
+  {
+   "texto": "da Europa",
+   "destaque": "Europa",
+   "ini": 478,
+   "fim": 498
+  },
+  {
+   "texto": "Mas também não posso",
+   "destaque": null,
+   "ini": 498,
+   "fim": 510
+  },
+  {
+   "texto": "ser injusto",
+   "destaque": "injusto",
+   "ini": 510,
+   "fim": 524
+  },
+  {
+   "texto": "a cidade também",
+   "destaque": null,
+   "ini": 524,
+   "fim": 535
+  },
+  {
+   "texto": "tem sua beleza",
+   "destaque": "beleza",
+   "ini": 535,
+   "fim": 553
+  },
+  {
+   "texto": "a Grand Place é linda",
+   "destaque": "Grand Place",
+   "ini": 553,
+   "fim": 576
+  },
+  {
+   "texto": "o Monte das Artes",
+   "destaque": "Monte das Artes",
+   "ini": 576,
+   "fim": 595
+  },
+  {
+   "texto": "no final de tarde",
+   "destaque": null,
+   "ini": 595,
+   "fim": 612
+  },
+  {
+   "texto": "é maravilhoso",
+   "destaque": "maravilhoso",
+   "ini": 612,
+   "fim": 631
+  },
+  {
+   "texto": "tem waffles",
+   "destaque": "waffles",
+   "ini": 631,
+   "fim": 646
+  },
+  {
+   "texto": "muito gostosos",
+   "destaque": "gostosos",
+   "ini": 646,
+   "fim": 669
+  },
+  {
+   "texto": "e cervejas muito boas",
+   "destaque": "cervejas",
+   "ini": 669,
+   "fim": 711
+  },
+  {
+   "texto": "Só que falta",
+   "destaque": "falta",
+   "ini": 711,
+   "fim": 737
+  },
+  {
+   "texto": "alguma coisa",
+   "destaque": null,
+   "ini": 737,
+   "fim": 756
+  },
+  {
+   "texto": "aqui na Bahia a gente",
+   "destaque": null,
+   "ini": 756,
+   "fim": 770
+  },
+  {
+   "texto": "falaria que falta",
+   "destaque": "falta",
+   "ini": 770,
+   "fim": 788
+  },
+  {
+   "texto": "um molho",
+   "destaque": "molho",
+   "ini": 788,
+   "fim": 800
+  },
+  {
+   "texto": "tá sem sal",
+   "destaque": "sal",
+   "ini": 800,
+   "fim": 818
+  },
+  {
+   "texto": "foi exatamente",
+   "destaque": null,
+   "ini": 818,
+   "fim": 833
+  },
+  {
+   "texto": "essa a sensação",
+   "destaque": "sensação",
+   "ini": 833,
+   "fim": 854
+  },
+  {
+   "texto": "que eu tive",
+   "destaque": null,
+   "ini": 854,
+   "fim": 876
+  },
+  {
+   "texto": "Até que no dia seguinte",
+   "destaque": "dia",
+   "ini": 876,
+   "fim": 895
+  },
+  {
+   "texto": "nós pegamos um trem",
+   "destaque": "trem",
+   "ini": 895,
+   "fim": 919
+  },
+  {
+   "texto": "e fomos conhecer Bruges",
+   "destaque": "Bruges",
+   "ini": 919,
+   "fim": 951
+  },
+  {
+   "texto": "e aí a Bélgica",
+   "destaque": "Bélgica",
+   "ini": 951,
+   "fim": 975
+  },
+  {
+   "texto": "finalmente mostrou",
+   "destaque": null,
+   "ini": 975,
+   "fim": 996
+  },
+  {
+   "texto": "sua cara",
+   "destaque": "cara",
+   "ini": 996,
+   "fim": 1013
+  },
+  {
+   "texto": "É exatamente isso",
+   "destaque": null,
+   "ini": 1013,
+   "fim": 1030
+  },
+  {
+   "texto": "que estava faltando",
+   "destaque": "faltando",
+   "ini": 1030,
+   "fim": 1049
+  },
+  {
+   "texto": "sabe aquela Europa",
+   "destaque": "Europa",
+   "ini": 1049,
+   "fim": 1065
+  },
+  {
+   "texto": "que você imagina antes",
+   "destaque": null,
+   "ini": 1065,
+   "fim": 1095
+  },
+  {
+   "texto": "de ir para a Europa?",
+   "destaque": "Europa",
+   "ini": 1095,
+   "fim": 1120
+  },
+  {
+   "texto": "Ruazinhas de pedra",
+   "destaque": "pedra",
+   "ini": 1120,
+   "fim": 1140
+  },
+  {
+   "texto": "canais",
+   "destaque": "canais",
+   "ini": 1140,
+   "fim": 1154
+  },
+  {
+   "texto": "casinhas medievais",
+   "destaque": "medievais",
+   "ini": 1154,
+   "fim": 1180
+  },
+  {
+   "texto": "construções maravilhosas",
+   "destaque": "maravilhosas",
+   "ini": 1180,
+   "fim": 1211
+  },
+  {
+   "texto": "e a cidade ainda",
+   "destaque": null,
+   "ini": 1211,
+   "fim": 1224
+  },
+  {
+   "texto": "cheira a chocolate",
+   "destaque": "chocolate",
+   "ini": 1224,
+   "fim": 1262
+  },
+  {
+   "texto": "A sensação de que você",
+   "destaque": "sensação",
+   "ini": 1262,
+   "fim": 1282
+  },
+  {
+   "texto": "está literalmente",
+   "destaque": null,
+   "ini": 1282,
+   "fim": 1301
+  },
+  {
+   "texto": "dentro de um filme",
+   "destaque": "filme",
+   "ini": 1301,
+   "fim": 1330
+  },
+  {
+   "texto": "Não é que foi ruim",
+   "destaque": "ruim",
+   "ini": 1330,
+   "fim": 1344
+  },
+  {
+   "texto": "estar em Bruxelas",
+   "destaque": "Bruxelas",
+   "ini": 1344,
+   "fim": 1361
+  },
+  {
+   "texto": "mas enquanto falta",
+   "destaque": "falta",
+   "ini": 1361,
+   "fim": 1384
+  },
+  {
+   "texto": "aquele tempero na cidade",
+   "destaque": "tempero",
+   "ini": 1384,
+   "fim": 1416
+  },
+  {
+   "texto": "Bruges entrega tudo",
+   "destaque": "Bruges",
+   "ini": 1416,
+   "fim": 1442
+  },
+  {
+   "texto": "que você sempre imaginou",
+   "destaque": null,
+   "ini": 1442,
+   "fim": 1470
+  },
+  {
+   "texto": "sobre a Bélgica",
+   "destaque": "Bélgica",
+   "ini": 1470,
+   "fim": 1494
+  },
+  {
+   "texto": "Se você tá planejando",
+   "destaque": null,
+   "ini": 1494,
+   "fim": 1515
+  },
+  {
+   "texto": "conhecer a Bélgica",
+   "destaque": "Bélgica",
+   "ini": 1515,
+   "fim": 1536
+  },
+  {
+   "texto": "não fique só",
+   "destaque": null,
+   "ini": 1536,
+   "fim": 1553
+  },
+  {
+   "texto": "em Bruxelas",
+   "destaque": "Bruxelas",
+   "ini": 1553,
+   "fim": 1567
+  },
+  {
+   "texto": "reserve esse dia",
+   "destaque": "dia",
+   "ini": 1567,
+   "fim": 1588
+  },
+  {
+   "texto": "pra Bruges e se puder",
+   "destaque": "Bruges",
+   "ini": 1588,
+   "fim": 1612
+  },
+  {
+   "texto": "durma na cidade",
+   "destaque": "durma",
+   "ini": 1612,
+   "fim": 1636
+  },
+  {
+   "texto": "porque foi lá",
+   "destaque": null,
+   "ini": 1636,
+   "fim": 1656
+  },
+  {
+   "texto": "que eu encontrei a Europa",
+   "destaque": "Europa",
+   "ini": 1656,
+   "fim": 1675
+  },
+  {
+   "texto": "que eu tava procurando",
+   "destaque": "procurando",
+   "ini": 1675,
+   "fim": 1708
+  }
+ ],
+ "cta": {
+  "entra": 1703,
+  "destino": "MANDA PRA QUEM VAI"
+ },
+ "luz": {
+  "corte": 1009
+ }
+}

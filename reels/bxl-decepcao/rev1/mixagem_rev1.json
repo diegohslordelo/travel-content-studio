@@ -1,0 +1,135 @@
+{
+ "voz_lufs_original": -16.46,
+ "musica_lufs_bruta": -12.69,
+ "efeitos": [
+  {
+   "arq": "PDX_pagina.wav",
+   "t": 17.625,
+   "dur": 0.4,
+   "rel_db": -8,
+   "loudness_evento": -10.6,
+   "ganho_db": -13.4,
+   "rms_efeito_db": -33.4,
+   "rms_musica_db": -39.5,
+   "margem_sobre_musica_db": 6.5,
+   "motivo": "recorte da notícia cai",
+   "trilha_abaixa_db": 0.4
+  },
+  {
+   "arq": "PDX_swish.wav",
+   "t": 19.133,
+   "dur": 0.173,
+   "rel_db": -10,
+   "loudness_evento": -12.6,
+   "ganho_db": -13.4,
+   "rms_efeito_db": -30.7,
+   "rms_musica_db": -48.0,
+   "margem_sobre_musica_db": 17.3,
+   "motivo": "marca-texto na manchete"
+  },
+  {
+   "arq": "PDX_swish.wav",
+   "t": 38.6,
+   "dur": 0.173,
+   "rel_db": -6,
+   "loudness_evento": -12.6,
+   "ganho_db": -9.4,
+   "rms_efeito_db": -26.7,
+   "rms_musica_db": -38.1,
+   "margem_sobre_musica_db": 11.5,
+   "motivo": "linha do trem corre no mapa"
+  },
+  {
+   "arq": "PDX_riser.wav",
+   "t": 41.339,
+   "dur": 0.823,
+   "rel_db": -8,
+   "loudness_evento": -11.3,
+   "ganho_db": -12.7,
+   "rms_efeito_db": -31.2,
+   "rms_musica_db": -34.4,
+   "margem_sobre_musica_db": 6.6,
+   "motivo": "sobe até a virada (termina no pico da luz)",
+   "trilha_abaixa_db": 3.4
+  },
+  {
+   "arq": "PDX_ar_longo.wav",
+   "t": 41.992,
+   "dur": 0.424,
+   "rel_db": -6,
+   "loudness_evento": -11.6,
+   "ganho_db": -10.4,
+   "rms_efeito_db": -28.6,
+   "rms_musica_db": -32.4,
+   "margem_sobre_musica_db": 8.0,
+   "motivo": "luz de passagem na virada",
+   "trilha_abaixa_db": 2.6
+  },
+  {
+   "arq": "PDX_swish.wav",
+   "t": 59.0,
+   "dur": 0.173,
+   "rel_db": -6,
+   "loudness_evento": -12.6,
+   "ganho_db": -9.4,
+   "rms_efeito_db": -26.7,
+   "rms_musica_db": -35.2,
+   "margem_sobre_musica_db": 8.6,
+   "motivo": "tela divide Bruxelas × Bruges"
+  },
+  {
+   "arq": "PD_clack_v1.wav",
+   "t": 71.238,
+   "dur": 0.222,
+   "rel_db": -6,
+   "loudness_evento": -17.9,
+   "ganho_db": -4.1,
+   "rms_efeito_db": -30.5,
+   "rms_musica_db": -31.5,
+   "margem_sobre_musica_db": 6.5,
+   "motivo": "placa do CTA assenta (Chegada, 280 ms) — único som do DS",
+   "trilha_abaixa_db": 5.5
+  }
+ ],
+ "master": {
+  "arquivo": "_tmp/mix_master.wav",
+  "lufs": -14.01,
+  "true_peak_dbtp": -1.51
+ },
+ "master_sem_trilha": {
+  "arquivo": "_tmp/mix_sem_trilha.wav",
+  "lufs": -14.01,
+  "true_peak_dbtp": -1.51
+ },
+ "trilha": [
+  {
+   "arq": "fonte/musica/Investigations.mp3",
+   "reel_ini": 0.0,
+   "faixa_ini": 0.0,
+   "reel_fim": 36.82,
+   "fade_in": 0.0,
+   "fade_out": 0.9,
+   "credito": "\"Investigations\" Kevin MacLeod (incompetech.com), CC BY 4.0"
+  },
+  {
+   "arq": "fonte/musica/Reunited.mp3",
+   "reel_ini": 36.42,
+   "faixa_ini": 31.878,
+   "reel_fim": 55.32,
+   "fade_in": 1.2,
+   "fade_out": 1.4,
+   "credito": "\"Reunited\" Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "nota": "o trecho que 'abre' (37,5 s da faixa) cai na virada"
+  },
+  {
+   "arq": "fonte/musica/Reunited.mp3",
+   "reel_ini": 53.92,
+   "faixa_ini": 0.0,
+   "reel_fim": 73.542,
+   "fade_in": 1.4,
+   "fade_out": 1.6,
+   "credito": "\"Reunited\" Kevin MacLeod (incompetech.com), CC BY 4.0",
+   "nota": "fechamento: volta ao tema de abertura da faixa"
+  }
+ ]
+}

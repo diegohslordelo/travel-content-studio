@@ -1,0 +1,107 @@
+{
+ "com_trilha": {
+  "arquivo": "rev1/reel_bxl-decepcao_rev1.mp4",
+  "streams": [
+   {
+    "codec_name": "h264",
+    "width": 1080,
+    "height": 1920,
+    "r_frame_rate": "24/1",
+    "bit_rate": "13194380"
+   },
+   {
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "r_frame_rate": "0/0",
+    "bit_rate": "278011"
+   }
+  ],
+  "duracao": 73.541667,
+  "lufs": -14.0,
+  "true_peak_dbtp": -1.5,
+  "lra": 3.0
+ },
+ "sem_trilha": {
+  "arquivo": "rev1/reel_bxl-decepcao_rev1_sem_trilha.mp4",
+  "streams": [
+   {
+    "codec_name": "h264",
+    "width": 1080,
+    "height": 1920,
+    "r_frame_rate": "24/1",
+    "bit_rate": "13194380"
+   },
+   {
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "r_frame_rate": "0/0",
+    "bit_rate": "228924"
+   }
+  ],
+  "duracao": 73.541667,
+  "lufs": -14.0,
+  "true_peak_dbtp": -1.5,
+  "lra": 3.0
+ },
+ "previa": {
+  "arquivo": "rev1/reel_bxl-decepcao_rev1_previa.mp4",
+  "streams": [
+   {
+    "codec_name": "h264",
+    "width": 720,
+    "height": 1280,
+    "r_frame_rate": "24/1",
+    "bit_rate": "2008292"
+   },
+   {
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "r_frame_rate": "0/0",
+    "bit_rate": "131055"
+   }
+  ],
+  "duracao": 73.541667,
+  "lufs": -14.0,
+  "true_peak_dbtp": -1.3,
+  "lra": 3.0
+ },
+ "cenas": {
+  "total": 28,
+  "media_s": 2.63,
+  "abaixo_2s": [
+   [
+    "s16_mapa_trem",
+    1.08
+   ]
+  ],
+  "acima_3s": [
+   [
+    "s07_atracao",
+    3.08
+   ],
+   [
+    "s08_noticia",
+    3.21
+   ],
+   [
+    "s09_grand_place_noite",
+    3.38
+   ],
+   [
+    "s11_waffle_cerveja",
+    3.33
+   ],
+   [
+    "s20_lista",
+    3.92
+   ],
+   [
+    "s23_comparar",
+    6.83
+   ]
+  ]
+ }
+}

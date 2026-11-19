@@ -1,0 +1,1906 @@
+{
+ "duracao": 71.13,
+ "trechos": [
+  {
+   "arquivo": "audio_1.m4a",
+   "entrada": 0.5,
+   "saida": 5.67,
+   "inicio_reel": 0.0
+  },
+  {
+   "arquivo": "audio_2.m4a",
+   "entrada": 0.68,
+   "saida": 7.0,
+   "inicio_reel": 5.37
+  },
+  {
+   "arquivo": "audio_2.m4a",
+   "entrada": 7.12,
+   "saida": 8.84,
+   "inicio_reel": 11.69
+  },
+  {
+   "arquivo": "audio_3.m4a",
+   "entrada": 0.99,
+   "saida": 4.95,
+   "inicio_reel": 13.53
+  },
+  {
+   "arquivo": "audio_3.m4a",
+   "entrada": 5.09,
+   "saida": 8.14,
+   "inicio_reel": 17.49
+  },
+  {
+   "arquivo": "audio_4.m4a",
+   "entrada": 0.68,
+   "saida": 16.21,
+   "inicio_reel": 20.74
+  },
+  {
+   "arquivo": "audio_5.m4a",
+   "entrada": 0.65,
+   "saida": 6.34,
+   "inicio_reel": 36.47
+  },
+  {
+   "arquivo": "audio_5.m4a",
+   "entrada": 6.61,
+   "saida": 11.06,
+   "inicio_reel": 42.16
+  },
+  {
+   "arquivo": "audio_5.m4a",
+   "entrada": 11.41,
+   "saida": 17.32,
+   "inicio_reel": 46.61
+  },
+  {
+   "arquivo": "audio_5.m4a",
+   "entrada": 17.47,
+   "saida": 20.17,
+   "inicio_reel": 52.52
+  },
+  {
+   "arquivo": "audio_6.m4a",
+   "entrada": 0.68,
+   "saida": 7.29,
+   "inicio_reel": 55.42
+  },
+  {
+   "arquivo": "audio_7.m4a",
+   "entrada": 0.94,
+   "saida": 9.84,
+   "inicio_reel": 62.23
+  }
+ ],
+ "palavras": [
+  {
+   "w": "Visitei",
+   "s": 0.06,
+   "e": 0.54,
+   "p": 0.967,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "a",
+   "s": 0.54,
+   "e": 0.6,
+   "p": 0.999,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "cidade",
+   "s": 0.56,
+   "e": 0.78,
+   "p": 0.999,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "mais",
+   "s": 0.78,
+   "e": 1.18,
+   "p": 0.997,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "superestimada",
+   "s": 1.18,
+   "e": 2.02,
+   "p": 0.97,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "da",
+   "s": 2.02,
+   "e": 2.12,
+   "p": 0.997,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "Europa",
+   "s": 2.12,
+   "e": 2.3,
+   "p": 0.999,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "e",
+   "s": 2.3,
+   "e": 2.54,
+   "p": 0.884,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "agora",
+   "s": 2.54,
+   "e": 2.66,
+   "p": 0.994,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "entendi",
+   "s": 2.66,
+   "e": 3.14,
+   "p": 0.774,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "porque",
+   "s": 3.14,
+   "e": 3.38,
+   "p": 0.765,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "tanta",
+   "s": 3.38,
+   "e": 3.74,
+   "p": 0.997,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "gente",
+   "s": 3.74,
+   "e": 4.06,
+   "p": 0.999,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "se",
+   "s": 4.06,
+   "e": 4.28,
+   "p": 0.992,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "decepciona.",
+   "s": 4.28,
+   "e": 4.94,
+   "p": 0.999,
+   "arquivo": "audio_1.m4a"
+  },
+  {
+   "w": "Nós",
+   "s": 5.42,
+   "e": 5.48,
+   "p": 0.86,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "passamos",
+   "s": 5.47,
+   "e": 5.83,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "dois",
+   "s": 5.83,
+   "e": 6.01,
+   "p": 0.881,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "dias",
+   "s": 6.01,
+   "e": 6.29,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "na",
+   "s": 6.29,
+   "e": 6.43,
+   "p": 0.998,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "Bélgica",
+   "s": 6.43,
+   "e": 6.83,
+   "p": 0.988,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "e",
+   "s": 6.83,
+   "e": 6.89,
+   "p": 0.909,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "um",
+   "s": 6.89,
+   "e": 6.99,
+   "p": 0.997,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "deles",
+   "s": 6.99,
+   "e": 7.13,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "foi",
+   "s": 7.13,
+   "e": 7.33,
+   "p": 1.0,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "em",
+   "s": 7.33,
+   "e": 7.43,
+   "p": 0.994,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "Bruxelas,",
+   "s": 7.43,
+   "e": 7.95,
+   "p": 0.998,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "e",
+   "s": 7.99,
+   "e": 8.15,
+   "p": 0.972,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "eu",
+   "s": 8.15,
+   "e": 8.25,
+   "p": 0.977,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "vou",
+   "s": 8.25,
+   "e": 8.31,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "te",
+   "s": 8.29,
+   "e": 8.37,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "falar,",
+   "s": 8.37,
+   "e": 8.65,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "é",
+   "s": 8.71,
+   "e": 8.81,
+   "p": 0.998,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "uma",
+   "s": 8.81,
+   "e": 8.89,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "cidade",
+   "s": 8.89,
+   "e": 9.11,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "bonita,",
+   "s": 9.11,
+   "e": 9.71,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "tem",
+   "s": 9.71,
+   "e": 9.85,
+   "p": 0.998,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "comida",
+   "s": 9.85,
+   "e": 10.13,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "boa,",
+   "s": 10.13,
+   "e": 10.45,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "lugares",
+   "s": 10.51,
+   "e": 10.71,
+   "p": 0.998,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "interessantes,",
+   "s": 10.71,
+   "e": 11.51,
+   "p": 1.0,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "mas",
+   "s": 11.79,
+   "e": 11.85,
+   "p": 0.998,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "parece",
+   "s": 11.81,
+   "e": 12.15,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "que",
+   "s": 12.15,
+   "e": 12.35,
+   "p": 0.999,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "falta",
+   "s": 12.35,
+   "e": 12.49,
+   "p": 0.998,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "alguma",
+   "s": 12.49,
+   "e": 12.77,
+   "p": 0.998,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "coisa.",
+   "s": 12.77,
+   "e": 13.07,
+   "p": 1.0,
+   "arquivo": "audio_2.m4a"
+  },
+  {
+   "w": "Para",
+   "s": 13.58,
+   "e": 13.64,
+   "p": 0.394,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "você",
+   "s": 13.58,
+   "e": 13.7,
+   "p": 0.994,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "ter",
+   "s": 13.7,
+   "e": 13.86,
+   "p": 0.997,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "ideia,",
+   "s": 13.86,
+   "e": 14.04,
+   "p": 0.958,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "a",
+   "s": 14.14,
+   "e": 14.2,
+   "p": 0.997,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "atração",
+   "s": 14.16,
+   "e": 14.34,
+   "p": 0.954,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "mais",
+   "s": 14.34,
+   "e": 14.5,
+   "p": 0.999,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "famosa",
+   "s": 14.5,
+   "e": 14.92,
+   "p": 0.996,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "da",
+   "s": 14.92,
+   "e": 15.02,
+   "p": 0.995,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "cidade,",
+   "s": 15.02,
+   "e": 15.34,
+   "p": 0.998,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "o",
+   "s": 15.38,
+   "e": 15.48,
+   "p": 0.92,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "Manneken",
+   "s": 15.48,
+   "e": 15.72,
+   "p": 0.765,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "Pis,",
+   "s": 15.72,
+   "e": 16.0,
+   "p": 0.42,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "do",
+   "s": 16.18,
+   "e": 16.42,
+   "p": 0.457,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "menino",
+   "s": 16.42,
+   "e": 16.7,
+   "p": 0.983,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "falando",
+   "s": 16.7,
+   "e": 16.86,
+   "p": 0.995,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "xixi,",
+   "s": 16.86,
+   "e": 17.28,
+   "p": 0.976,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "já",
+   "s": 17.59,
+   "e": 17.65,
+   "p": 0.997,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "foi",
+   "s": 17.6,
+   "e": 17.72,
+   "p": 1.0,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "considerado",
+   "s": 17.72,
+   "e": 18.18,
+   "p": 0.859,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "um",
+   "s": 18.18,
+   "e": 18.24,
+   "p": 0.997,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "dos",
+   "s": 18.2,
+   "e": 18.3,
+   "p": 1.0,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "pontos",
+   "s": 18.3,
+   "e": 18.48,
+   "p": 0.999,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "turísticos",
+   "s": 18.48,
+   "e": 18.98,
+   "p": 1.0,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "mais",
+   "s": 18.98,
+   "e": 19.16,
+   "p": 0.999,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "decepcionantes",
+   "s": 19.16,
+   "e": 19.94,
+   "p": 1.0,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "da",
+   "s": 19.94,
+   "e": 20.06,
+   "p": 1.0,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "Europa.",
+   "s": 20.06,
+   "e": 20.22,
+   "p": 1.0,
+   "arquivo": "audio_3.m4a"
+  },
+  {
+   "w": "Mas",
+   "s": 20.79,
+   "e": 20.85,
+   "p": 0.793,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "também",
+   "s": 20.8,
+   "e": 21.0,
+   "p": 0.982,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "não",
+   "s": 21.0,
+   "e": 21.1,
+   "p": 0.997,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "posso",
+   "s": 21.1,
+   "e": 21.28,
+   "p": 0.996,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "ser",
+   "s": 21.28,
+   "e": 21.4,
+   "p": 0.998,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "injusto,",
+   "s": 21.4,
+   "e": 21.86,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "a",
+   "s": 21.86,
+   "e": 21.92,
+   "p": 0.993,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "cidade",
+   "s": 21.9,
+   "e": 22.06,
+   "p": 1.0,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "também",
+   "s": 22.06,
+   "e": 22.34,
+   "p": 0.974,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "tem",
+   "s": 22.34,
+   "e": 22.54,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "sua",
+   "s": 22.54,
+   "e": 22.68,
+   "p": 0.985,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "beleza,",
+   "s": 22.68,
+   "e": 22.96,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "a",
+   "s": 23.08,
+   "e": 23.16,
+   "p": 0.996,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "Grand",
+   "s": 23.16,
+   "e": 23.24,
+   "p": 0.672,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "Place",
+   "s": 23.24,
+   "e": 23.58,
+   "p": 0.828,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "é",
+   "s": 23.58,
+   "e": 23.76,
+   "p": 0.997,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "linda,",
+   "s": 23.76,
+   "e": 24.04,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "o",
+   "s": 24.04,
+   "e": 24.18,
+   "p": 0.994,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "Monte",
+   "s": 24.18,
+   "e": 24.3,
+   "p": 0.839,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "das",
+   "s": 24.3,
+   "e": 24.48,
+   "p": 0.996,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "Artes",
+   "s": 24.48,
+   "e": 24.84,
+   "p": 0.994,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "no",
+   "s": 24.84,
+   "e": 24.9,
+   "p": 0.946,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "final",
+   "s": 24.9,
+   "e": 25.1,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "de",
+   "s": 25.1,
+   "e": 25.24,
+   "p": 0.994,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "tarde",
+   "s": 25.24,
+   "e": 25.52,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "é",
+   "s": 25.52,
+   "e": 25.64,
+   "p": 0.994,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "maravilhoso,",
+   "s": 25.64,
+   "e": 26.28,
+   "p": 1.0,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "tem",
+   "s": 26.34,
+   "e": 26.6,
+   "p": 0.998,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "waffles",
+   "s": 26.6,
+   "e": 26.96,
+   "p": 0.911,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "muito",
+   "s": 26.96,
+   "e": 27.2,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "gostosos",
+   "s": 27.2,
+   "e": 27.9,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "e",
+   "s": 27.9,
+   "e": 28.12,
+   "p": 0.968,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "cervejas",
+   "s": 28.12,
+   "e": 28.64,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "muito",
+   "s": 28.64,
+   "e": 28.84,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "boas.",
+   "s": 28.84,
+   "e": 29.32,
+   "p": 1.0,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "Só",
+   "s": 29.68,
+   "e": 30.08,
+   "p": 0.997,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "que",
+   "s": 30.08,
+   "e": 30.26,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "falta",
+   "s": 30.26,
+   "e": 30.76,
+   "p": 0.973,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "alguma",
+   "s": 30.76,
+   "e": 31.02,
+   "p": 0.995,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "coisa,",
+   "s": 31.02,
+   "e": 31.46,
+   "p": 1.0,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "aqui",
+   "s": 31.52,
+   "e": 31.66,
+   "p": 0.984,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "na",
+   "s": 31.66,
+   "e": 31.78,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "Bahia",
+   "s": 31.78,
+   "e": 32.0,
+   "p": 0.994,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "a",
+   "s": 32.0,
+   "e": 32.06,
+   "p": 0.996,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "gente",
+   "s": 32.06,
+   "e": 32.14,
+   "p": 1.0,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "falaria",
+   "s": 32.14,
+   "e": 32.46,
+   "p": 0.996,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "que",
+   "s": 32.46,
+   "e": 32.54,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "falta",
+   "s": 32.54,
+   "e": 32.88,
+   "p": 0.997,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "um",
+   "s": 32.88,
+   "e": 33.04,
+   "p": 0.519,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "molho,",
+   "s": 33.04,
+   "e": 33.38,
+   "p": 0.994,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "tá",
+   "s": 33.38,
+   "e": 33.5,
+   "p": 0.852,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "sem",
+   "s": 33.5,
+   "e": 33.7,
+   "p": 1.0,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "sal,",
+   "s": 33.7,
+   "e": 34.04,
+   "p": 1.0,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "foi",
+   "s": 34.14,
+   "e": 34.26,
+   "p": 0.99,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "exatamente",
+   "s": 34.26,
+   "e": 34.76,
+   "p": 1.0,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "essa",
+   "s": 34.76,
+   "e": 35.2,
+   "p": 1.0,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "a",
+   "s": 35.2,
+   "e": 35.28,
+   "p": 0.543,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "sensação",
+   "s": 35.28,
+   "e": 35.62,
+   "p": 1.0,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "que",
+   "s": 35.62,
+   "e": 35.74,
+   "p": 1.0,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "eu",
+   "s": 35.74,
+   "e": 35.8,
+   "p": 0.999,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "tive.",
+   "s": 35.76,
+   "e": 35.98,
+   "p": 1.0,
+   "arquivo": "audio_4.m4a"
+  },
+  {
+   "w": "Até",
+   "s": 36.52,
+   "e": 36.68,
+   "p": 0.937,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "que",
+   "s": 36.68,
+   "e": 36.82,
+   "p": 0.998,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "no",
+   "s": 36.82,
+   "e": 36.9,
+   "p": 0.982,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "dia",
+   "s": 36.9,
+   "e": 37.04,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "seguinte",
+   "s": 37.04,
+   "e": 37.32,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "nós",
+   "s": 37.32,
+   "e": 37.54,
+   "p": 0.917,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "pegamos",
+   "s": 37.54,
+   "e": 37.94,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "um",
+   "s": 37.94,
+   "e": 38.06,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "trem",
+   "s": 38.06,
+   "e": 38.32,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "e",
+   "s": 38.32,
+   "e": 38.42,
+   "p": 0.976,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "fomos",
+   "s": 38.42,
+   "e": 38.58,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "conhecer",
+   "s": 38.58,
+   "e": 38.9,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "Bruges,",
+   "s": 38.9,
+   "e": 39.52,
+   "p": 0.958,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "e",
+   "s": 39.68,
+   "e": 39.96,
+   "p": 0.988,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "aí",
+   "s": 39.96,
+   "e": 40.12,
+   "p": 0.978,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "a",
+   "s": 40.12,
+   "e": 40.18,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "Bélgica",
+   "s": 40.18,
+   "e": 40.66,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "finalmente",
+   "s": 40.66,
+   "e": 40.98,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "mostrou",
+   "s": 40.98,
+   "e": 41.52,
+   "p": 0.997,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "sua",
+   "s": 41.52,
+   "e": 41.62,
+   "p": 0.988,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "cara.",
+   "s": 41.62,
+   "e": 41.92,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "É",
+   "s": 42.26,
+   "e": 42.32,
+   "p": 0.982,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "exatamente",
+   "s": 42.26,
+   "e": 42.61,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "isso",
+   "s": 42.61,
+   "e": 42.95,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "que",
+   "s": 42.95,
+   "e": 43.07,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "estava",
+   "s": 43.07,
+   "e": 43.17,
+   "p": 0.678,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "faltando,",
+   "s": 43.17,
+   "e": 43.71,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "sabe",
+   "s": 43.73,
+   "e": 43.89,
+   "p": 0.995,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "aquela",
+   "s": 43.89,
+   "e": 44.07,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "Europa",
+   "s": 44.07,
+   "e": 44.41,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "que",
+   "s": 44.41,
+   "e": 44.65,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "você",
+   "s": 44.65,
+   "e": 44.87,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "imagina",
+   "s": 44.87,
+   "e": 45.35,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "antes",
+   "s": 45.35,
+   "e": 45.67,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "de",
+   "s": 45.67,
+   "e": 45.87,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "ir",
+   "s": 45.87,
+   "e": 46.05,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "para",
+   "s": 46.05,
+   "e": 46.13,
+   "p": 0.706,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "a",
+   "s": 46.13,
+   "e": 46.21,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "Europa?",
+   "s": 46.21,
+   "e": 46.41,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "Ruazinhas",
+   "s": 46.71,
+   "e": 46.94,
+   "p": 0.977,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "de",
+   "s": 46.94,
+   "e": 47.02,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "pedra,",
+   "s": 47.02,
+   "e": 47.5,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "canais,",
+   "s": 47.52,
+   "e": 48.08,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "casinhas",
+   "s": 48.12,
+   "e": 48.44,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "medievais,",
+   "s": 48.44,
+   "e": 49.18,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "construções",
+   "s": 49.2,
+   "e": 49.74,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "maravilhosas",
+   "s": 49.74,
+   "e": 50.5,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "e",
+   "s": 50.5,
+   "e": 50.62,
+   "p": 0.952,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "a",
+   "s": 50.62,
+   "e": 50.68,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "cidade",
+   "s": 50.68,
+   "e": 50.88,
+   "p": 0.986,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "ainda",
+   "s": 50.88,
+   "e": 51.06,
+   "p": 0.995,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "cheira",
+   "s": 51.06,
+   "e": 51.56,
+   "p": 0.992,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "a",
+   "s": 51.56,
+   "e": 51.62,
+   "p": 0.989,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "chocolate.",
+   "s": 51.62,
+   "e": 52.04,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "A",
+   "s": 52.62,
+   "e": 52.68,
+   "p": 0.935,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "sensação",
+   "s": 52.62,
+   "e": 53.15,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "de",
+   "s": 53.15,
+   "e": 53.23,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "que",
+   "s": 53.23,
+   "e": 53.29,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "você",
+   "s": 53.29,
+   "e": 53.47,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "está",
+   "s": 53.47,
+   "e": 53.67,
+   "p": 0.988,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "literalmente",
+   "s": 53.67,
+   "e": 54.25,
+   "p": 0.999,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "dentro",
+   "s": 54.25,
+   "e": 54.49,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "de",
+   "s": 54.49,
+   "e": 54.67,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "um",
+   "s": 54.67,
+   "e": 54.73,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "filme.",
+   "s": 54.73,
+   "e": 54.93,
+   "p": 1.0,
+   "arquivo": "audio_5.m4a"
+  },
+  {
+   "w": "Não",
+   "s": 55.47,
+   "e": 55.53,
+   "p": 0.937,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "é",
+   "s": 55.48,
+   "e": 55.6,
+   "p": 0.994,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "que",
+   "s": 55.6,
+   "e": 55.66,
+   "p": 0.996,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "foi",
+   "s": 55.62,
+   "e": 55.76,
+   "p": 0.998,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "ruim",
+   "s": 55.76,
+   "e": 56.02,
+   "p": 1.0,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "estar",
+   "s": 56.02,
+   "e": 56.18,
+   "p": 0.955,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "em",
+   "s": 56.18,
+   "e": 56.28,
+   "p": 0.998,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "Bruxelas,",
+   "s": 56.28,
+   "e": 56.76,
+   "p": 0.997,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "mas",
+   "s": 56.76,
+   "e": 57.02,
+   "p": 0.998,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "enquanto",
+   "s": 57.02,
+   "e": 57.24,
+   "p": 0.989,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "falta",
+   "s": 57.24,
+   "e": 57.7,
+   "p": 0.999,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "aquele",
+   "s": 57.7,
+   "e": 57.88,
+   "p": 0.999,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "tempero",
+   "s": 57.88,
+   "e": 58.54,
+   "p": 0.997,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "na",
+   "s": 58.54,
+   "e": 58.6,
+   "p": 0.997,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "cidade,",
+   "s": 58.6,
+   "e": 58.98,
+   "p": 1.0,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "Bruges",
+   "s": 59.06,
+   "e": 59.44,
+   "p": 0.684,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "entrega",
+   "s": 59.44,
+   "e": 59.92,
+   "p": 0.999,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "tudo",
+   "s": 59.92,
+   "e": 60.14,
+   "p": 0.999,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "que",
+   "s": 60.14,
+   "e": 60.34,
+   "p": 0.779,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "você",
+   "s": 60.34,
+   "e": 60.52,
+   "p": 1.0,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "sempre",
+   "s": 60.52,
+   "e": 60.84,
+   "p": 0.996,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "imaginou",
+   "s": 60.84,
+   "e": 61.3,
+   "p": 1.0,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "sobre",
+   "s": 61.3,
+   "e": 61.46,
+   "p": 0.999,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "a",
+   "s": 61.46,
+   "e": 61.58,
+   "p": 1.0,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "Bélgica.",
+   "s": 61.58,
+   "e": 61.9,
+   "p": 1.0,
+   "arquivo": "audio_6.m4a"
+  },
+  {
+   "w": "Se",
+   "s": 62.28,
+   "e": 62.34,
+   "p": 0.937,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "você",
+   "s": 62.28,
+   "e": 62.43,
+   "p": 0.997,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "tá",
+   "s": 62.43,
+   "e": 62.71,
+   "p": 0.637,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "planejando",
+   "s": 62.71,
+   "e": 63.17,
+   "p": 0.999,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "conhecer",
+   "s": 63.17,
+   "e": 63.43,
+   "p": 0.999,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "a",
+   "s": 63.43,
+   "e": 63.65,
+   "p": 0.999,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "Bélgica,",
+   "s": 63.65,
+   "e": 64.05,
+   "p": 0.999,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "não",
+   "s": 64.05,
+   "e": 64.21,
+   "p": 0.998,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "fique",
+   "s": 64.21,
+   "e": 64.55,
+   "p": 0.997,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "só",
+   "s": 64.55,
+   "e": 64.75,
+   "p": 0.998,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "em",
+   "s": 64.75,
+   "e": 64.87,
+   "p": 0.999,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "Bruxelas,",
+   "s": 64.87,
+   "e": 65.33,
+   "p": 0.999,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "reserve",
+   "s": 65.35,
+   "e": 65.69,
+   "p": 0.985,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "esse",
+   "s": 65.69,
+   "e": 65.93,
+   "p": 0.991,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "dia",
+   "s": 65.93,
+   "e": 66.21,
+   "p": 0.999,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "pra",
+   "s": 66.21,
+   "e": 66.35,
+   "p": 0.927,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "Bruges",
+   "s": 66.35,
+   "e": 66.65,
+   "p": 0.629,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "e",
+   "s": 66.65,
+   "e": 66.73,
+   "p": 0.903,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "se",
+   "s": 66.73,
+   "e": 66.83,
+   "p": 0.89,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "puder",
+   "s": 66.83,
+   "e": 67.19,
+   "p": 0.998,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "durma",
+   "s": 67.19,
+   "e": 67.57,
+   "p": 0.734,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "na",
+   "s": 67.57,
+   "e": 67.67,
+   "p": 0.999,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "cidade,",
+   "s": 67.67,
+   "e": 67.99,
+   "p": 1.0,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "porque",
+   "s": 68.19,
+   "e": 68.59,
+   "p": 0.984,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "foi",
+   "s": 68.59,
+   "e": 68.79,
+   "p": 0.999,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "lá",
+   "s": 68.79,
+   "e": 69.03,
+   "p": 1.0,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "que",
+   "s": 69.03,
+   "e": 69.13,
+   "p": 1.0,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "eu",
+   "s": 69.13,
+   "e": 69.23,
+   "p": 0.994,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "encontrei",
+   "s": 69.23,
+   "e": 69.61,
+   "p": 0.999,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "a",
+   "s": 69.61,
+   "e": 69.67,
+   "p": 1.0,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "Europa",
+   "s": 69.65,
+   "e": 69.85,
+   "p": 1.0,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "que",
+   "s": 69.85,
+   "e": 70.11,
+   "p": 0.999,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "eu",
+   "s": 70.11,
+   "e": 70.19,
+   "p": 0.999,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "tava",
+   "s": 70.19,
+   "e": 70.31,
+   "p": 0.997,
+   "arquivo": "audio_7.m4a"
+  },
+  {
+   "w": "procurando.",
+   "s": 70.31,
+   "e": 70.91,
+   "p": 1.0,
+   "arquivo": "audio_7.m4a"
+  }
+ ]
+}
