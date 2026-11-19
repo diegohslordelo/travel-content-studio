@@ -1,22 +1,14 @@
 # Reel da Disney · para continuar em outro chat
 
-Cole este arquivo no novo chat. Repositório `diegohslordelo/travel-content-studio`, branch `claude/practical-dijkstra-37s26o`. Leia antes o `CLAUDE.md` (seção 12, "Padrão de edição de todo vídeo").
+Cole este arquivo no novo chat. Repositório `diegohslordelo/travel-content-studio`, branch `claude/new-session-a5toxu` (a REV1 nasceu em `claude/practical-dijkstra-37s26o`). Leia antes o `CLAUDE.md` (seção 12, "Padrão de edição de todo vídeo").
 
 ## Onde estamos
 
-Reel narrado da Disney Paris (REV1) já renderizado e commitado em `reels/disney-atracoes/rev1/` (68,47 s, 1080 × 1920, −14 LUFS, pico −1,3 dBTP, sem música). QA em `rev1/QA_REV1.md`; legendas do post em `legenda_post.md`.
+**REV2 entregue** (19/11/2026) em `reels/disney-atracoes/rev2/` (68,47 s, 1080 × 1920, −14 LUFS, pico −1,3 dBTP, sem música). É a REV1 com a conversão de cor corrigida: o vídeo estava estourado porque a conversão HDR (HLG) → SDR era Möbius com `npl=100`. Agora é Reinhard com `npl=203`, aprovada pelo Diego nos quadros de teste (`rev2/qa_frames/cor/`) e registrada como regra de todo vídeo no `CLAUDE.md`, seção 12. QA em `rev2/QA_REV2.md`; a REV1 não foi alterada. Branch da REV2: `claude/new-session-a5toxu`.
 
-## Problema aberto (a próxima tarefa)
+## Próximo passo
 
-O Diego achou o vídeo **estourado, como se estivesse saturado**. Causa: a conversão HDR (HLG, iPhone) → SDR em `scripts/reel.py` (constante `TM`: `zscale … tonemap=mobius:param=0.3:desat=0 …`) deixa as cores mais vivas e claras que o iPhone/Drive mostram. A grade antiga (`saturate(0.7) contrast(1.06) brightness(0.96)`) escondia isso; foi removida a pedido dele ("imagens exatamente como no Drive, nada de cor"), mas a conversão não foi corrigida.
-
-**Plano combinado (o Diego disse "Sim"):**
-1. Trocar o `TM` por uma conversão HLG → BT.709 fiel ao que o iPhone mostra, sem ajuste criativo (testar, por exemplo, `zscale` HLG→linear→BT.709 com `tonemap=none` ou `hable` suave, e `npl` mais coerente, sem o Möbius agressivo).
-2. **Testar em 3 ou 4 quadros** (castelo IMG_3535, Cars IMG_3249, Buzz IMG_3424, céu IMG_3338), comparando com o original, e **mostrar ao Diego para aprovar a cor** antes de renderizar tudo.
-3. Aprovado: `python3 scripts/reel.py broll` (26 cenas, ≈ 15 min, aceita lista de cenas e roda em paralelo), `render`, `master`, `capa`, `quadros`, `conferir` (≈ 10 min). Depois atualizar `rev1/QA_REV1.md` (linha "Imagens exatamente como no Drive" e o veredito) e commitar com o vídeo pelo Git LFS.
-4. Registrar no `CLAUDE.md` (seção 12, "Imagens sem tratamento") a conversão HDR certa como regra para todos os vídeos. Hoje o texto diz só "conversão técnica HDR/HLG → SDR".
-
-Observação: a revisão anterior nunca se altera (CLAUDE.md, 12). Se o vídeo já foi entregue como REV1, faça **rev2** em vez de sobrescrever (`REV=rev2 python3 scripts/reel.py …`).
+O Diego conferir a REV2 no celular (cenas escuras e céu) e escutar os trechos duvidosos. Se as cenas escuras ainda ficarem escuras demais, testar a mesma Reinhard com `npl` menor, na conversão do vídeo todo (nunca ajuste de cor cena a cena), mostrar os quadros e só então fazer uma REV3.
 
 ## Como o projeto está montado
 
@@ -25,7 +17,7 @@ Observação: a revisão anterior nunca se altera (CLAUDE.md, 12). Se o vídeo j
 - Composição Remotion: `design-system/remotion/src/disney/ReelDisney.tsx` (id `ReelDisney`). Imagens sem grade/grão/degradê; sombra nas letras da legenda e do gancho **fica** (só saiu o sombreado na base da tela).
 - Recorte 9:16 estabilizado por subpixel (correlação de fase na janela do recorte, `warpAffine`). Piratas com `"estabilizar": false`.
 - Os IDs dos clipes no Drive estão em `_tmp/ids_drive.tsv` (se `_tmp/` sumir, refazer a busca no conector: pasta `Youtube/Disney`, id `1XR38AC5kXWPr7TWm6TDhsKzIUHdwHLxQ`). Voz em `Youtube/Disney/Reel/Roteiro`, id `1TW5P8OT5eGHVJcKxxsKlRZqKhrkBVtfM` (IDs dos 15 áudios em `edicao.json`).
-- Dependências já instaladas nesta máquina e que podem sumir: `faster-whisper`, `torch` (CPU), `transformers`, `opencv-python-headless`, `scipy`, `soundfile`, `pyloudnorm`, `fonttools`, `brotli`; `npm ci` em `design-system/remotion/`. Chromium em `/opt/pw-browsers/`.
+- Dependências já instaladas nesta máquina e que podem sumir: `faster-whisper`, `torch` e `torchaudio` (CPU, índice download.pytorch.org/whl/cpu), `transformers`, `opencv-python-headless`, `scipy`, `soundfile`, `pyloudnorm`, `fonttools`, `brotli`; `npm ci` em `design-system/remotion/`. Chromium em `/opt/pw-browsers/`.
 
 ## Decisões do Diego nesta sessão (já salvas na main)
 
