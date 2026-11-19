@@ -4,14 +4,14 @@
  * de agência (nada de mosaico de vários quadros); legenda que acende palavra a palavra com a voz; imagens estáveis;
  * gancho em letras garrafais como no Reel da Grand-Place (Bruxelas). O DS V2 aparece só no CTA final (placa + clack).
  * Camadas: vídeos (um por cena, já estabilizados e recortados em 9:16 por reels/disney-atracoes/scripts/reel.py) ·
- * degradês · grão · legenda · gancho · CTA. Tudo vem das props (_tmp/props.json).
+ * legenda · gancho · CTA. As imagens ficam como estão no Drive: sem grade de cor, grão, degradê ou tom (Diego, 19/11/2026). Tudo vem das props (_tmp/props.json).
  */
 import React from "react";
 import { Audio, Video } from "@remotion/media";
 import { AbsoluteFill, CalculateMetadataFunction, Freeze, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Placa } from "../ds/Placa";
 import { Som } from "../ds/Som";
-import { COR, GRADE_VIDEO, TEXTO, TITULO, ease, easeIn, easeInOut, lerp } from "./estilo";
+import { COR, TEXTO, TITULO, ease, easeIn, easeInOut, lerp } from "./estilo";
 
 type Palavra = { t: string; i: number; f: number };
 type Grupo = { p: Palavra[]; ini: number; fim: number };
@@ -104,18 +104,12 @@ const CenaVideo: React.FC<{ p: PropsDisney; c: Cena; prox?: Cena }> = ({ p, c, p
   const qCongela = c.congelar != null ? Math.round(c.congelar * p.fps) + c.pre_q : 0;
   return (
     <AbsoluteFill style={{ overflow: "hidden", translate: `${x}px ${y}px`, filter: desfoque > 0.3 ? `blur(${desfoque}px)` : undefined }}>
-      <AbsoluteFill style={{ scale: String(z), filter: GRADE_VIDEO }}>
+      {/* imagem do acervo sem tratamento nenhum de cor (pedido do Diego, 19/11/2026): só recorte, estabilização e aproximação */}
+      <AbsoluteFill style={{ scale: String(z) }}>
         <Freeze frame={qCongela} active={congelado}>
           <Video src={staticFile(c.video)} muted style={{ width: p.largura, height: p.altura }} />
         </Freeze>
       </AbsoluteFill>
-      {congelado && c.congelar != null && (
-        // "a área nova da Frozen": quadro congelado com um frio leve (clarão de 2 quadros + tom azulado)
-        <>
-          <AbsoluteFill style={{ background: "rgba(170, 205, 255, 0.22)", mixBlendMode: "screen" }} />
-          <AbsoluteFill style={{ background: "white", opacity: lerp(t, c.congelar, c.congelar + 0.1, 0.45, 0, (k) => Math.min(1, Math.max(0, k))) }} />
-        </>
-      )}
     </AbsoluteFill>
   );
 };
@@ -137,7 +131,8 @@ const Legenda: React.FC<{ p: PropsDisney; tS: number }> = ({ p, tS }) => {
         padding: "0 90px",
         font: `800 66px ${TEXTO}`,
         lineHeight: 1.1,
-        textShadow: "0 3px 0 rgba(0,0,0,0.35), 0 4px 22px rgba(0,0,0,0.85)",
+        // sem degradê sobre a imagem: a leitura vem só da sombra das letras
+        textShadow: "0 2px 3px rgba(0,0,0,0.75), 0 3px 0 rgba(0,0,0,0.35), 0 4px 22px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.45)",
         scale: String(0.94 + 0.06 * e),
         opacity: e,
         whiteSpace: "nowrap",
@@ -169,8 +164,7 @@ const Gancho: React.FC<{ p: PropsDisney; tS: number }> = ({ p, tS }) => {
   const sai = lerp(tS, g.fim - 0.08, g.fim, 1, 0, (k) => Math.min(1, Math.max(0, k)));
   return (
     <div style={{ opacity: sai }}>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 1150, background: "linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.38) 55%, rgba(0,0,0,0) 100%)" }} />
-      <div style={{ position: "absolute", left: 72, right: 72, top: g.topo, textShadow: "0 4px 30px rgba(0,0,0,0.5)" }}>
+      <div style={{ position: "absolute", left: 72, right: 72, top: g.topo, textShadow: "0 3px 6px rgba(0,0,0,0.6), 0 6px 40px rgba(0,0,0,0.65), 0 0 80px rgba(0,0,0,0.35)" }}>
         {g.linhas.map((l, k) => {
           const e = l.em <= 0 ? 1 : ease((tS - l.em) / 0.16);
           return (
@@ -183,16 +177,6 @@ const Gancho: React.FC<{ p: PropsDisney; tS: number }> = ({ p, tS }) => {
     </div>
   );
 };
-
-/** Grão de película do formato (6%, overlay); não é o grão do DS. */
-const Grao: React.FC<{ q: number }> = ({ q }) => (
-  <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, opacity: 0.06, mixBlendMode: "overlay", pointerEvents: "none" }}>
-    <filter id="grao-disney">
-      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={q % 7} stitchTiles="stitch" />
-    </filter>
-    <rect width="100%" height="100%" filter="url(#grao-disney)" />
-  </svg>
-);
 
 export const ReelDisney: React.FC<PropsDisney> = (p) => {
   const q = useCurrentFrame();
@@ -207,9 +191,6 @@ export const ReelDisney: React.FC<PropsDisney> = (p) => {
           <CenaVideo p={p} c={c} prox={p.cenas[k + 1]} />
         </Sequence>
       ))}
-      {/* tela cheia clara: degradê escuro na base para a legenda branca (FORMATOS_REELS.md, 3) */}
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 960, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0.62) 100%)" }} />
-      <Grao q={q} />
       <Legenda p={p} tS={tS} />
       <Gancho p={p} tS={tS} />
       {/* CTA: único lugar do Reel com o DS V2 (2.7: placa de direção com verbo + módulo de seta; Chegada; clack) */}

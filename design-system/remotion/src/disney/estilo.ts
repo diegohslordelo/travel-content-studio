@@ -1,7 +1,7 @@
 /**
  * Reel da Disney (reels/disney-atracoes/): linguagem visual dos Reels do perfil nos formatos do Trello
- * (docs/FORMATOS_REELS.md), copiada sem mudança de valor: Anton no gancho, Inter 800 nas legendas, âmbar #E0AE5C,
- * grade dos vídeos e grão de 6%. O DS V2 só entra no CTA final; estas fontes e cores NÃO são do DS (CLAUDE.md, 6).
+ * (docs/FORMATOS_REELS.md), copiada sem mudança de valor: Anton no gancho, Inter 800 nas legendas, âmbar #E0AE5C.
+ * Sem grade de cor e sem grão nos vídeos (pedido do Diego, 19/11/2026). O DS V2 só entra no CTA final; estas fontes e cores NÃO são do DS (CLAUDE.md, 6).
  */
 import { loadFont } from "@remotion/fonts";
 import anton from "@fontsource/anton/files/anton-latin-400-normal.woff2";
@@ -27,8 +27,7 @@ export const carregarFontesDisney = () => {
   return carregadas;
 };
 
-/** Grade dos vídeos de apoio (FORMATOS_REELS.md, 2): tira o excesso de saturação do HDR convertido. */
-export const GRADE_VIDEO = "saturate(0.7) contrast(1.06) brightness(0.96)";
+/* Sem grade de cor nos vídeos: o Diego pediu as imagens exatamente como estão no Drive (19/11/2026). */
 
 export const clamp01 = (p: number) => Math.min(1, Math.max(0, p));
 export const ease = (p: number) => 1 - Math.pow(1 - clamp01(p), 3);

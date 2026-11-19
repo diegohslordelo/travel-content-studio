@@ -94,16 +94,37 @@ def limpo(w):
     return w.strip().rstrip(".,:;")
 
 
+_METRICA = None
+
+
+def largura_legenda(txt):
+    """Largura em px do texto em Inter 800, 66 px (avanço dos glifos da fonte usada no render)."""
+    global _METRICA
+    if _METRICA is None:
+        from fontTools.ttLib import TTFont
+        ft = TTFont(os.path.join(REMOTION, "node_modules/@fontsource/inter/files/inter-latin-800-normal.woff2"))
+        _METRICA = (ft["head"].unitsPerEm, ft.getBestCmap(), ft["hmtx"])
+    upm, cmap, hm = _METRICA
+    return sum(hm[cmap.get(ord(ch), cmap[ord("?")])][0] for ch in txt) / upm * 66
+
+
+LARGURA_MAX = 800  # centrada em x 540, a linha fica dentro da zona segura (x 72–944) até 808 px; 8 px de folga
+
+
 def custo(grupo):
     txt = " ".join(limpo(w["texto"]) for w in grupo)
     c = 0.0
-    if len(grupo) > 4 or len(txt) > 24:
+    if len(grupo) > 5 or largura_legenda(txt) > LARGURA_MAX:
         c += 1000
+    if len(grupo) == 5:
+        c += 6  # 5 palavras só se forem curtas e evitarem uma quebra ruim (o limite de 4 é julgamento, FORMATOS_REELS.md, 6)
     c += ((len(txt) - 17) / 6) ** 2
     if len(grupo) > 1 and norm(grupo[-1]["texto"]) in FUNCIONAIS:
         c += 20 if norm(grupo[-1]["texto"]) == "e" else 10
     if len(grupo) == 1 and norm(grupo[0]["texto"]) in FUNCIONAIS:
         c += 4
+    if len(grupo) == 1 and norm(grupo[0]["texto"]) == "e":
+        c += 40  # "e" sozinho na tela
     if all(norm(w["texto"]) in FUNCIONAIS for w in grupo):
         c += 15  # grupo só de palavras funcionais ("e a")
     if any(norm(w["texto"]) == "e" for w in grupo[1:]):
@@ -121,7 +142,7 @@ def agrupa(frase):
     melhor = [0.0] + [1e9] * n
     corte = [0] * (n + 1)
     for j in range(1, n + 1):
-        for i in range(max(0, j - 4), j):
+        for i in range(max(0, j - 5), j):
             c = melhor[i] + custo(frase[i:j])
             if 0 < i < n and corta_par(frase[i - 1], frase[i]):
                 c += 20
@@ -320,6 +341,10 @@ def broll():
         tx, ty = trajetoria(arq, t0, dur_dec, w, h, fps_src, (bx, by, cw, ch))
         sig = 1.2 * fps_src  # o que oscila em menos de ~1 s é balanço da mão; panorâmica e inclinação lentas ficam
         rx, ry = tx - suave(tx, sig), ty - suave(ty, sig)
+        if not v.get("estabilizar", True):
+            # plano em que a câmera se aproxima (escala, não deslocamento): a correlação de fase lê a aproximação como
+            # tremor e empurraria a janela; fica o recorte fixo
+            rx, ry = np.zeros_like(rx), np.zeros_like(ry)
         xs = np.clip(bx + rx, 0, w - cw); ys = np.clip(by + ry, 0, h - ch)
         resto = float(np.sqrt(np.mean((rx - (xs - bx)) ** 2 + (ry - (ys - by)) ** 2)))
         recorta(arq, t0, dur_dec, w, h, fps_src, xs, ys, cw, ch, nq, os.path.join(PUBLIC, "broll", e["id"] + ".mp4"))
