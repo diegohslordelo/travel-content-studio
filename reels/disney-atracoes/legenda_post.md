@@ -1,4 +1,4 @@
-# Legenda do post · Reel da Disney (REV1)
+# Legenda do post · Reel da Disney (REV1 e REV2)
 
 **Regras:** primeira linha reforça o gancho; palavras-chave do tema para a busca; **um CTA**, com o mesmo verbo da placa do vídeo (`SEGUE O PERFIL →`, DS V2, 2.7); fatos conferidos (referência de conteúdo, 3.4; `docs/FORMATOS_REELS.md`, 9.6).
 
@@ -35,7 +35,7 @@ Não dá pra ir pra Disney de Paris em um dia? A gente fez os dois parques num d
 ## YouTube Shorts (título ≤ 100 caracteres)
 
 ```
-Disney de Paris em UM dia: tudo o que deu pra fazer nos dois parques #DisneylandParis #DisneyParis #Shorts
+Disney de Paris em UM dia: tudo o que deu pra fazer nos dois parques #DisneylandParis #Shorts
 ```
 
 ## Fatos e fontes
