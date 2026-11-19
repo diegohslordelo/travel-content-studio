@@ -3,7 +3,7 @@
 Texto pronto para colar. A primeira linha reforça o gancho, e o post tem um CTA só: **mandar** (o mesmo verbo da placa). Os créditos no fim são obrigatórios. A trilha é CC BY 4.0, e a licença exige crédito publicado. A notícia aparece na tela e vai creditada.
 
 ```
-Bruxelas é a cidade mais superestimada da Europa? Pra mim, faltou tempero. 🧂
+@primeirodiaem · Bruxelas é a cidade mais superestimada da Europa? Pra mim, faltou tempero. 🧂
 
 Um dia em Bruxelas: Grand-Place linda, Mont des Arts no fim de tarde, waffle e cerveja boa. Mesmo assim, faltou alguma coisa.
 No dia seguinte, um trem até Bruges, e lá estava a Europa que eu imaginava: ruazinhas de pedra, canais, casinhas medievais e cheiro de chocolate.
