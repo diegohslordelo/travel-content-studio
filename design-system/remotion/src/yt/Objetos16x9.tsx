@@ -10,6 +10,9 @@ import { GlifoInstagram, Seta } from "../ds/icones";
 import { Bilhete } from "../ds/Bilhete";
 import { Simbolo1 } from "../ds/Simbolo1";
 import { Som } from "../ds/Som";
+import { estiloPainelPlacar, usePlacarAceso } from "../ds/Placar";
+import { Placa } from "../ds/Placa";
+import { SOMBRA_TEXTO } from "../ds/Legendas";
 import { kf, useMs } from "../ds/tempo";
 import { COR, DUR, EASE, FONTE, RAIO, SOM, SOMBRA, TIPO, YT, rgba } from "../ds/tokens";
 
@@ -113,7 +116,8 @@ type DadosMapa = {
   canal: string[];
   parque: string[];
   rota: [number, number][];
-  paradas: { n: number; nome: string; hora: string; xy: [number, number] }[];
+  /** `rotulo`: deslocamento (px) da etiqueta da parada em relação ao ponto; sem ele, 30 px à direita e acima (ou abaixo, na última). */
+  paradas: { n: number; nome: string; hora: string; xy: [number, number]; rotulo?: [number, number] }[];
 };
 
 const comprimento = (pts: [number, number][]): number =>
@@ -198,7 +202,7 @@ export const MapaRota: React.FC<{ arquivo: string; ini: number; fim: number; des
               const o = kf(tp, [0, DUR.fast], [0, 1], EASE.out);
               const ultima = i === dados.paradas.length - 1;
               const [x, y] = s.xy;
-              const labelY = ultima ? y + 40 : y - 64;
+              const labelY = s.rotulo ? y + s.rotulo[1] : ultima ? y + 40 : y - 64;
               return (
                 <g key={s.n} opacity={o}>
                   {!ultima && <circle cx={x} cy={y} r={14 / zoom} fill={COR.grafite} stroke={COR.amarelo} strokeWidth={4} />}
@@ -207,7 +211,7 @@ export const MapaRota: React.FC<{ arquivo: string; ini: number; fim: number; des
                       {s.n}
                     </text>
                   )}
-                  <g transform={`translate(${x + 30} ${labelY}) scale(${1 / zoom})`}>
+                  <g transform={`translate(${x + (s.rotulo ? s.rotulo[0] : 30)} ${labelY}) scale(${1 / zoom})`}>
                     <rect x={0} y={0} width={40 + 17.6 * (s.nome.length + s.hora.length + 3)} height={48} rx={RAIO.tag} fill={COR.grafite} stroke={rgba(COR.papel, 0.15)} />
                     <text x={18} y={33} fontFamily={FONTE.mono} fontWeight={500} fontSize={27} letterSpacing="0.04em" fill={COR.papel}>
                       {s.nome} <tspan fill={COR.amarelo}>· {s.hora}</tspan>
@@ -353,6 +357,123 @@ export const Quadro: React.FC<{ linhas: { em: number; nome: string; complemento?
           </div>
         );
       })}
+    </div>
+  );
+};
+
+/**
+ * Data do dia no painel do Placar (vlog de Bruxelas, pedido do Diego, 06/11/2026: "a data nas cores do placar, um
+ * pouco menor que a placa"): mesmo material, fonte, altura e acender do Placar (2.5), na posição dele no 16:9
+ * (x 96 · y 72). Sem som. Variação do Placar: precisa do OK do Diego (governança do DS, 7.4).
+ */
+export const DataPlacar: React.FC<{ texto: string; ini: number; fim: number; x?: number; y?: number }> = ({ texto, ini, fim, x = YT.margemTitulo, y = 72 }) => {
+  const opac = usePlacarAceso(ini, fim);
+  if (opac === null || opac <= 0) return null;
+  return <div style={{ position: "absolute", left: x, top: y, ...estiloPainelPlacar, opacity: opac, textTransform: "uppercase", whiteSpace: "nowrap" }}>{texto}</div>;
+};
+
+/**
+ * "Placa + recorte de foto" (DS V2 2.6, objeto de Destino) no 16:9: foto com `radius-photo` e sombra de papel
+ * erguido, revelada por máscara de baixo para cima (400 ms, `ease-out`), com a placa P (50%) encostada na base
+ * esquerda, sobrepondo 40 px, chegando com a Chegada. Crédito da foto (licença CC) em Plex Mono embaixo, à direita.
+ * Sai inteira em 240 ms (opacidade + desce 12 px). Sem som próprio (a placa toca o clack, como em todo o vídeo longo).
+ * Primeiro uso: vlog de Bruges (pedido do Diego, 20/11/2026): a relíquia do Sangue Sagrado, que não podia ser
+ * filmada, "meio escanteada, sem cobrir a tela toda".
+ */
+export const RecorteFoto: React.FC<{
+  arquivo: string;
+  x: number;
+  y: number;
+  largura: number;
+  altura: number;
+  /** objectPosition da foto (ex.: "50% 60%") */
+  foco?: string;
+  rotulo?: string;
+  destino: string;
+  credito?: string;
+  ini: number;
+  fim: number;
+}> = ({ arquivo, x, y, largura, altura, foco = "50% 50%", rotulo, destino, credito, ini, fim }) => {
+  const t = useMs();
+  const te = t - ini;
+  const ts = t - fim;
+  if (te < 0 || ts >= DUR.base) return null;
+  const revela = kf(te, [0, 400], [0, 1], EASE.out);
+  const sai = kf(ts, [0, DUR.base], [0, 1], EASE.exit);
+  return (
+    <>
+      <div style={{ position: "absolute", left: x, top: y, opacity: 1 - sai, translate: `0 ${sai * 12}px` }}>
+        <div
+          style={{
+            width: largura,
+            height: altura,
+            borderRadius: RAIO.foto,
+            overflow: "hidden",
+            boxShadow: SOMBRA.ergue,
+            clipPath: `inset(${(1 - revela) * 100}% 0 0 0 round ${RAIO.foto}px)`,
+          }}
+        >
+          <img src={staticFile(arquivo)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: foco, display: "block" }} />
+        </div>
+        {credito && (
+          <div style={{ position: "absolute", right: 0, top: altura + 10, fontFamily: FONTE.mono, fontSize: 18, color: COR.papel, textShadow: SOMBRA_TEXTO, opacity: revela, whiteSpace: "nowrap" }}>
+            {credito}
+          </div>
+        )}
+      </div>
+      {/* placa P (50%) encostada na base esquerda da foto, sobrepondo 40 px (2.6) */}
+      <Placa rotulo={rotulo} destino={destino} tamanho="P" x={x + 24} y={y + altura - 40} entrada={ini + 250} saida={fim} />
+    </>
+  );
+};
+
+export type PalavraLegenda = { p: string; ini: number; fim: number };
+export type GrupoLegendaYT = { ini: number; fim: number; palavras: PalavraLegenda[] };
+
+/**
+ * Legenda embutida de reforço do vídeo longo (DS V2 3.4.2: Barlow 700 56 px, `caption-text`, centro do canvas
+ * x 960 = W / 2, base y 984, linha de até 1306 px, 2 linhas, grupo entra em 120 ms subindo 10 px e sai em 120 ms),
+ * com duas decisões do Diego por cima do DS:
+ *   - padrão de edição de 19/11/2026 (CLAUDE.md, 12): o grupo aparece branco e cada palavra fica amarela
+ *     (`signal-500`) no instante em que é dita, pelo tempo de cada palavra (a 3.4.2 prevê o grupo inteiro);
+ *   - "sem sombreado na base da tela": sem o scrim da 3.4.2; fica só a sombra das letras (3.1).
+ * Só nos trechos que o Diego marcou (vlog de Bruges, 20/11/2026: falas com barulho).
+ */
+export const LegendaReforco: React.FC<{ grupos: GrupoLegendaYT[] }> = ({ grupos }) => {
+  const t = useMs();
+  const g = grupos.find((x) => t >= x.ini && t < x.fim + 120);
+  if (!g) return null;
+  const te = t - g.ini;
+  const ts = t - g.fim;
+  const opac = kf(te, [0, 120], [0, 1], EASE.out) * kf(ts, [0, 120], [1, 0], EASE.exit);
+  const dy = kf(te, [0, 120], [10, 0], EASE.out) + kf(ts, [0, 120], [0, -6], EASE.exit);
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: 0,
+        right: 0,
+        marginInline: "auto",
+        bottom: YT.altura - YT.legendaBaseY,
+        width: YT.legendaLargura,
+        textAlign: "center",
+        fontFamily: FONTE.texto,
+        fontWeight: TIPO.caption.fontWeight,
+        fontSize: TIPO.caption.fontSize,
+        lineHeight: TIPO.caption.lineHeight,
+        letterSpacing: TIPO.caption.letterSpacing,
+        color: COR.legenda,
+        textShadow: SOMBRA_TEXTO,
+        opacity: opac,
+        translate: `0 ${dy}px`,
+      }}
+    >
+      {g.palavras.map((w, i) => (
+        <span key={i} style={{ color: t >= w.ini - 20 ? COR.amarelo : COR.legenda }}>
+          {w.p}
+          {i < g.palavras.length - 1 ? " " : ""}
+        </span>
+      ))}
     </div>
   );
 };

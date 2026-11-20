@@ -210,4 +210,8 @@ export const YT = {
   altura: px("layout.yt.height"),
   margemTitulo: px("layout.yt.title-safe"),
   margemAcao: px("layout.yt.action-safe"),
+  /** Legenda embutida de reforço (DS V2 3.4.2): eixo x 960 (W / 2), base y 984, linha de até 1306 px. */
+  legendaCentroX: px("layout.yt.caption-center-x"),
+  legendaBaseY: px("layout.yt.caption-base-y"),
+  legendaLargura: px("layout.yt.caption-max-width"),
 } as const;

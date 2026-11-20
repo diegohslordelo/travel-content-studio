@@ -1,0 +1,87 @@
+{
+ "gancho_ms": 28220.0,
+ "fechamento_ms": 48949.99999999974,
+ "narracao_gancho": [
+  {
+   "id": "G1",
+   "ini": 200,
+   "fim": 4875.0,
+   "texto": "Quanto custa um dia em Bruges, a cidade que parece um conto de fadas?"
+  },
+  {
+   "id": "G2",
+   "ini": 5100,
+   "fim": 9462.5,
+   "texto": "Voltamos três vezes no mesmo waffle e achamos a melhor batata da viagem."
+  },
+  {
+   "id": "G3",
+   "ini": 16450,
+   "fim": 19875.0,
+   "texto": "E vimos de pertinho a relíquia do sangue de Cristo."
+  },
+  {
+   "id": "G4",
+   "ini": 20050,
+   "fim": 25037.5,
+   "texto": "Eu anotei cada euro. No final, te mostro quanto deu e se vale a pena."
+  },
+  {
+   "id": "G5",
+   "ini": 25250,
+   "fim": 28050.0,
+   "texto": "E a conta começa aqui, ainda em Bruxelas."
+  }
+ ],
+ "narracao_fechamento": [
+  {
+   "id": "F1",
+   "ini": 6900,
+   "fim": 14387.5,
+   "texto": "Num dia só, a gente rodou o centro de Bruges a pé: o Markt, o Burg, a Basílica, os canais e o Minnewater."
+  },
+  {
+   "id": "F2",
+   "ini": 14737.5,
+   "fim": 19100.0,
+   "texto": "Trem, waffle, batata e cerveja: o dia deu 132 euros pra nós dois."
+  },
+  {
+   "id": "F3",
+   "ini": 19450.0,
+   "fim": 25062.5,
+   "texto": "Somando a noite de hotel, ficou em uns 276 euros: 138 por pessoa, perto de 834 reais."
+  },
+  {
+   "id": "F4",
+   "ini": 25412.5,
+   "fim": 32587.5,
+   "texto": "Vale a pena? Muito. Eu voltaria mil vezes. E de trem, saindo de Bruxelas, dá pra conhecer o principal em um dia."
+  },
+  {
+   "id": "F5",
+   "ini": 32937.5,
+   "fim": 40737.5,
+   "texto": "Dica: a entrada na Basílica do Sangue Sagrado é de graça, e a relíquia fica exposta todo dia das duas às quatro da tarde."
+  },
+  {
+   "id": "F6",
+   "ini": 41087.5,
+   "fim": 46700.0,
+   "texto": "Se esse vídeo te ajudou, se inscreve, deixa o like e me segue no Instagram: arroba primeirodiaem."
+  },
+  {
+   "id": "F7",
+   "ini": 47050.0,
+   "fim": 52037.5,
+   "texto": "Toda cidade tem um primeiro dia. E o próximo é em Paris. Te espero lá!"
+  }
+ ],
+ "contas_previa": {
+  "gastos": 132.0,
+  "hotel": 143.76,
+  "total": 275.76,
+  "pp": 137.88,
+  "pp_brl": 833.84
+ }
+}

@@ -1,0 +1,665 @@
+[
+ {
+  "palavra": "e",
+  "de": 12.06,
+  "ate": 13.18,
+  "antes": "Bruges,",
+  "depois": "aí",
+  "arrasto": [
+   12.31,
+   13.12
+  ],
+  "segunda": "Uhul!",
+  "miolo": "Uhul!",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "ir",
+  "de": 31.08,
+  "ate": 31.88,
+  "antes": "você",
+  "depois": "pra",
+  "arrasto": [
+   31.33,
+   31.82
+  ],
+  "segunda": "É isso aí.",
+  "miolo": "isso aí.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "a",
+  "de": 83.18,
+  "ate": 83.82,
+  "antes": "Albert.",
+  "depois": "gente",
+  "arrasto": [
+   83.43,
+   83.76
+  ],
+  "segunda": "É isso aí, gente.",
+  "miolo": "gente.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "e",
+  "de": 129.34,
+  "ate": 130.02,
+  "antes": "medievalzinho",
+  "depois": "sua",
+  "arrasto": [
+   129.59,
+   129.96
+  ],
+  "segunda": "Obrigado.",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   129.59,
+   129.96
+  ]
+ },
+ {
+  "palavra": "nela",
+  "de": 237.45,
+  "ate": 238.57,
+  "antes": "e",
+  "depois": "também",
+  "arrasto": [
+   237.7,
+   238.51
+  ],
+  "segunda": "E...",
+  "miolo": "E...",
+  "cortar": true,
+  "corte": [
+   237.7,
+   238.51
+  ]
+ },
+ {
+  "palavra": "Mas",
+  "de": 308.74,
+  "ate": 309.72,
+  "antes": "vocês",
+  "depois": "são",
+  "arrasto": [
+   308.99,
+   309.66
+  ],
+  "segunda": "É isso aí.",
+  "miolo": "aí.",
+  "cortar": true,
+  "corte": [
+   308.99,
+   309.66
+  ]
+ },
+ {
+  "palavra": "um",
+  "de": 327.8,
+  "ate": 328.52,
+  "antes": "parece",
+  "depois": "conto",
+  "arrasto": [
+   328.05,
+   328.46
+  ],
+  "segunda": "É, sim.",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   328.05,
+   328.46
+  ]
+ },
+ {
+  "palavra": "aí",
+  "de": 331.34,
+  "ate": 331.98,
+  "antes": "canal,",
+  "depois": "tudo",
+  "arrasto": [
+   331.59,
+   331.92
+  ],
+  "segunda": "Tchau.",
+  "miolo": "Tchau.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "já",
+  "de": 334.4,
+  "ate": 335.28,
+  "antes": "atrás",
+  "depois": "tem",
+  "arrasto": [
+   334.65,
+   335.22
+  ],
+  "segunda": "Mas...",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   334.65,
+   335.22
+  ]
+ },
+ {
+  "palavra": "e",
+  "de": 375.9,
+  "ate": 376.66,
+  "antes": "Cristo.",
+  "depois": "ele",
+  "arrasto": [
+   376.15,
+   376.6
+  ],
+  "segunda": "Hã?",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   376.15,
+   376.6
+  ]
+ },
+ {
+  "palavra": "e",
+  "de": 379.1,
+  "ate": 379.8,
+  "antes": "horas",
+  "depois": "eu",
+  "arrasto": [
+   379.35,
+   379.74
+  ],
+  "segunda": "Obrigado, tchau.",
+  "miolo": "Obrigado,",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "e",
+  "de": 387.73,
+  "ate": 388.55,
+  "antes": "celebração",
+  "depois": "colocar",
+  "arrasto": [
+   387.98,
+   388.49
+  ],
+  "segunda": "Tá bom?",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   387.98,
+   388.49
+  ]
+ },
+ {
+  "palavra": "o",
+  "de": 390.63,
+  "ate": 391.39,
+  "antes": "mostra",
+  "depois": "vidrinho",
+  "arrasto": [
+   390.88,
+   391.33
+  ],
+  "segunda": "Gostou dessa amostra?",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   390.88,
+   391.33
+  ]
+ },
+ {
+  "palavra": "e",
+  "de": 399.27,
+  "ate": 399.95,
+  "antes": "minutos",
+  "depois": "por",
+  "arrasto": [
+   399.52,
+   399.89
+  ],
+  "segunda": "Vamos lá, vamos.",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   399.52,
+   399.89
+  ]
+ },
+ {
+  "palavra": "e",
+  "de": 402.52,
+  "ate": 403.16,
+  "antes": "ver",
+  "depois": "aí",
+  "arrasto": [
+   402.77,
+   403.1
+  ],
+  "segunda": "É isso aí.",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   402.77,
+   403.1
+  ]
+ },
+ {
+  "palavra": "é",
+  "de": 414.15,
+  "ate": 414.79,
+  "antes": "ali",
+  "depois": "o",
+  "arrasto": [
+   414.4,
+   414.73
+  ],
+  "segunda": "Sim.",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   414.4,
+   414.73
+  ]
+ },
+ {
+  "palavra": "lado,",
+  "de": 425.78,
+  "ate": 426.76,
+  "antes": "do",
+  "depois": "bem",
+  "arrasto": [
+   426.03,
+   426.7
+  ],
+  "segunda": "Do lado.",
+  "miolo": "Do lado.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "e",
+  "de": 427.6,
+  "ate": 428.26,
+  "antes": "bonito",
+  "depois": "a",
+  "arrasto": [
+   427.85,
+   428.2
+  ],
+  "segunda": "Obrigado.",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   427.85,
+   428.2
+  ]
+ },
+ {
+  "palavra": "todo",
+  "de": 431.26,
+  "ate": 433.3,
+  "antes": "é",
+  "depois": "medievalzinho",
+  "arrasto": [
+   431.51,
+   433.24
+  ],
+  "segunda": "Pois é.",
+  "miolo": "Pois é.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "e",
+  "de": 440.06,
+  "ate": 440.84,
+  "antes": "mundo",
+  "depois": "é",
+  "arrasto": [
+   440.31,
+   440.78
+  ],
+  "segunda": "Não, não.",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   440.31,
+   440.78
+  ]
+ },
+ {
+  "palavra": "em",
+  "de": 453.41,
+  "ate": 454.29,
+  "antes": "canal",
+  "depois": "Bruges.",
+  "arrasto": [
+   453.66,
+   454.23
+  ],
+  "segunda": "Tchau. Tchau.",
+  "miolo": "Tchau.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "E",
+  "de": 488.12,
+  "ate": 489.08,
+  "antes": "acompanhar",
+  "depois": "eu",
+  "arrasto": [
+   488.37,
+   489.02
+  ],
+  "segunda": "Não, não, não, não, não.",
+  "miolo": "não, não, não,",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "Mas",
+  "de": 492.38,
+  "ate": 493.36,
+  "antes": "coca",
+  "depois": "é",
+  "arrasto": [
+   492.63,
+   493.3
+  ],
+  "segunda": "Mas é...",
+  "miolo": "Mas é...",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "Não",
+  "de": 518.78,
+  "ate": 519.56,
+  "antes": "Diego",
+  "depois": "só",
+  "arrasto": [
+   519.03,
+   519.5
+  ],
+  "segunda": "Não.",
+  "miolo": "Não.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "e",
+  "de": 563.6,
+  "ate": 564.24,
+  "antes": "batata",
+  "depois": "a",
+  "arrasto": [
+   563.85,
+   564.18
+  ],
+  "segunda": "Obrigada.",
+  "miolo": "Obrigada.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "de",
+  "de": 586.44,
+  "ate": 587.12,
+  "antes": "opções",
+  "depois": "waffles",
+  "arrasto": [
+   586.69,
+   587.06
+  ],
+  "segunda": "É isso aí.",
+  "miolo": "aí.",
+  "cortar": true,
+  "corte": [
+   586.69,
+   587.06
+  ]
+ },
+ {
+  "palavra": "E",
+  "de": 604.22,
+  "ate": 605.08,
+  "antes": "original",
+  "depois": "agora",
+  "arrasto": [
+   604.47,
+   605.02
+  ],
+  "segunda": "Tá ruim.",
+  "miolo": "ruim.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "um",
+  "de": 629.62,
+  "ate": 631.7,
+  "antes": "para",
+  "depois": "parque",
+  "arrasto": [
+   629.87,
+   631.64
+  ],
+  "segunda": "E aí, Mozaca? E aí, Mozaca?",
+  "miolo": "E aí, Mozaca? E aí, Mozaca?",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "E",
+  "de": 638.82,
+  "ate": 639.54,
+  "antes": "Park",
+  "depois": "é",
+  "arrasto": [
+   639.07,
+   639.48
+  ],
+  "segunda": "Tá.",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   639.07,
+   639.48
+  ]
+ },
+ {
+  "palavra": "é",
+  "de": 640.3,
+  "ate": 641.5,
+  "antes": "E",
+  "depois": "isso",
+  "arrasto": [
+   640.55,
+   641.44
+  ],
+  "segunda": "Êêêê...",
+  "miolo": "Êêêê...",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "Tem",
+  "de": 644.62,
+  "ate": 645.46,
+  "antes": "demais",
+  "depois": "um",
+  "arrasto": [
+   644.87,
+   645.4
+  ],
+  "segunda": "Tchau, tchau.",
+  "miolo": "Tchau,",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "E",
+  "de": 659.89,
+  "ate": 660.53,
+  "antes": "água",
+  "depois": "um",
+  "arrasto": [
+   660.14,
+   660.47
+  ],
+  "segunda": "Hã?",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   660.14,
+   660.47
+  ]
+ },
+ {
+  "palavra": "E",
+  "de": 661.57,
+  "ate": 662.35,
+  "antes": "cara",
+  "depois": "a",
+  "arrasto": [
+   661.82,
+   662.29
+  ],
+  "segunda": "E aí",
+  "miolo": "E",
+  "cortar": true,
+  "corte": [
+   661.82,
+   662.29
+  ]
+ },
+ {
+  "palavra": "E",
+  "de": 727.05,
+  "ate": 727.65,
+  "antes": "waffle.",
+  "depois": "o",
+  "arrasto": [
+   727.3,
+   727.59
+  ],
+  "segunda": "E...",
+  "miolo": "E...",
+  "cortar": true,
+  "corte": [
+   727.3,
+   727.59
+  ]
+ },
+ {
+  "palavra": "A",
+  "de": 768.89,
+  "ate": 769.57,
+  "antes": "mudar",
+  "depois": "gente",
+  "arrasto": [
+   769.14,
+   769.51
+  ],
+  "segunda": "Tá.",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   769.14,
+   769.51
+  ]
+ },
+ {
+  "palavra": "eu",
+  "de": 796.6,
+  "ate": 797.48,
+  "antes": "E",
+  "depois": "estava",
+  "arrasto": [
+   796.85,
+   797.42
+  ],
+  "segunda": "Tchau, tchau.",
+  "miolo": "Tchau, tchau.",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "37ª",
+  "de": 800.76,
+  "ate": 802.58,
+  "antes": "pela",
+  "depois": "vez",
+  "arrasto": [
+   801.01,
+   802.52
+  ],
+  "segunda": "Pela trigésima...",
+  "miolo": "Pela trigésima...",
+  "cortar": false,
+  "corte": null
+ },
+ {
+  "palavra": "Na",
+  "de": 805.26,
+  "ate": 805.98,
+  "antes": "certa",
+  "depois": "nossa",
+  "arrasto": [
+   805.51,
+   805.92
+  ],
+  "segunda": "Hã?",
+  "miolo": "Hã?",
+  "cortar": true,
+  "corte": [
+   805.51,
+   805.92
+  ]
+ },
+ {
+  "palavra": "aí",
+  "de": 843.66,
+  "ate": 844.3,
+  "antes": "dividir",
+  "depois": "fomos",
+  "arrasto": [
+   843.91,
+   844.24
+  ],
+  "segunda": "Hã?",
+  "miolo": "",
+  "cortar": true,
+  "corte": [
+   843.91,
+   844.24
+  ]
+ },
+ {
+  "palavra": "num",
+  "de": 856.58,
+  "ate": 859.32,
+  "antes": "waffle",
+  "depois": "palito",
+  "arrasto": [
+   856.83,
+   859.26
+  ],
+  "segunda": "Tem um, um ovo no...",
+  "miolo": "Tem um, um ovo no...",
+  "cortar": false,
+  "corte": null
+ }
+]

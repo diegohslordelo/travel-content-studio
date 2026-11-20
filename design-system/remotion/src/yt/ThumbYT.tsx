@@ -24,6 +24,10 @@ export type PropsThumbYT = {
   /** só o nome, em Condensed 800 amarelo (Display, DS 3.2), no lugar da Placa */
   titulo?: string;
   tituloTamanho?: number;
+  /** posição do nome: canto superior esquerdo (padrão: x 48 · y 40) ou centrado no quadro (x = W / 2) */
+  tituloX?: number;
+  tituloY?: number;
+  tituloCentro?: boolean;
   reciboX: number;
   reciboY: number;
   reciboEscala: number;
@@ -58,8 +62,8 @@ export const ThumbYT: React.FC<PropsThumbYT> = (p) => (
       <div
         style={{
           position: "absolute",
-          left: 48,
-          top: 40,
+          ...(p.tituloCentro ? { left: 0, right: 0, textAlign: "center" as const } : { left: p.tituloX ?? 48 }),
+          top: p.tituloY ?? 40,
           fontFamily: FONTE.display,
           fontWeight: 800,
           fontSize: p.tituloTamanho ?? 168,

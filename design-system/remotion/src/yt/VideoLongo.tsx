@@ -17,11 +17,14 @@ import { NomeSom, Som } from "../ds/Som";
 import { kf, useMs } from "../ds/tempo";
 import { EASE, SOM, YT } from "../ds/tokens";
 import { LIKE_APERTA, LIKE_INSCRITO } from "../ds/Placa";
-import { ChamadaInstagram, DUR_PAGINA, EtiquetaLugar, LOWER_BASE, MapaRota, Quadro, TelaFinal, VOLUME_PAGINA_DB, VirarPagina } from "./Objetos16x9";
+import { ChamadaInstagram, DataPlacar, DUR_PAGINA, EtiquetaLugar, GrupoLegendaYT, LegendaReforco, LOWER_BASE, MapaRota, Quadro, RecorteFoto, TelaFinal, VOLUME_PAGINA_DB, VirarPagina } from "./Objetos16x9";
 import { ConfeteMurcho, FogosMurchos, GuiaNarracao, Nota, PrintSite } from "./Efeitos";
 
-/** `congela`: mostra só o quadro `src` (imagem parada; o som da mixagem segue). */
-export type Trecho = { src: number; de: number; ate: number; pagina?: boolean; congela?: boolean };
+/**
+ * `congela`: mostra só o quadro `src` (imagem parada; o som da mixagem segue). `velocidade`: time-lapse (ex.: 4 = a
+ * fonte de `src` a `src + (ate − de) × 4` passa em `ate − de`; vlog de Bruges, pedido do Diego, 20/11/2026).
+ */
+export type Trecho = { src: number; de: number; ate: number; pagina?: boolean; congela?: boolean; velocidade?: number };
 
 type Base = { ini: number; fim: number };
 export type Evento =
@@ -35,14 +38,17 @@ export type Evento =
   | { tipo: "som"; nome: NomeSom; em: number; relDb: number }
   | { tipo: "audio"; arquivo: string; em: number; volume: number }
   | ({ tipo: "instagram" } & Base)
+  | ({ tipo: "data"; texto: string; x?: number; y?: number } & Base)
   | { tipo: "like"; entrada: number; saida: number; x?: number; y?: number }
   | { tipo: "quadro"; linhas: { em: number; nome: string; complemento?: string }[]; fim: number; x: number; y: number; escala?: number }
   | ({ tipo: "ticket"; escala?: number } & TicketProps)
   | ({ tipo: "bilhete"; escala?: number } & BilheteProps)
   | ({ tipo: "print"; arquivo: string; endereco: string; x: number; y: number; largura: number; alturaJanela: number; rolagem?: number } & Base)
   | ({ tipo: "mapa"; arquivo: string; desenho?: number } & Base)
+  | ({ tipo: "foto"; arquivo: string; x: number; y: number; largura: number; altura: number; foco?: string; rotulo?: string; destino: string; credito?: string } & Base)
+  | { tipo: "legenda"; grupos: GrupoLegendaYT[] }
   | { tipo: "telafinal"; ini: number; proximo: string }
-  | { tipo: "guia"; inicio: number; fim: number; frases: { ini: number; fim: number; texto: string }[] };
+  | { tipo: "guia"; inicio: number; fim: number; topo?: boolean; rotulo?: string; semContador?: boolean; frases: { ini: number; fim: number; texto: string }[] };
 
 /** Zoom da imagem (ex.: tensão crescendo no rufar): keyframes em ms do vídeo final, origem em % da tela. */
 export type Zoom = { ms: number[]; escala: number[]; origem?: [number, number] };
@@ -54,13 +60,20 @@ export type PropsVideoLongo = {
   eventos: Evento[];
   zooms?: Zoom[];
   refLufs: number;
+  /** Quadros por segundo do vídeo final (padrão 24, o de Amsterdam). Os tempos das props são em ms (DS V2, 6.2). */
+  fps?: number;
+  /**
+   * Sem o grão de 5% do DS (1.4) sobre a imagem: padrão de edição do Diego de 19/11/2026 ("imagens sem tratamento",
+   * CLAUDE.md, 12). Primeiro uso: vlog de Bruges. Divergência com o DS registrada na QA da revisão.
+   */
+  semGrao?: boolean;
 };
 
 export const propsVideoLongoVazias: PropsVideoLongo = { video: "", duracao: 1000, trechos: [], eventos: [], zooms: [], refLufs: -16 };
 
 export const metadadosVideoLongo: CalculateMetadataFunction<PropsVideoLongo> = ({ props }) => ({
-  durationInFrames: Math.max(1, Math.round((props.duracao * 24) / 1000)),
-  fps: 24,
+  durationInFrames: Math.max(1, Math.round((props.duracao * (props.fps ?? 24)) / 1000)),
+  fps: props.fps ?? 24,
 });
 
 const TrechoBase: React.FC<{ v: string; tr: Trecho }> = ({ v, tr }) => {
@@ -70,7 +83,7 @@ const TrechoBase: React.FC<{ v: string; tr: Trecho }> = ({ v, tr }) => {
   // o Chromium do render não decodifica HEVC e cai no <OffthreadVideo>; sem `transparent: false`, cada quadro da fonte
   // vira PNG (caro no 4K). A fonte não tem alfa: BMP dá os mesmos pixels
   const base = (
-    <Video src={v.startsWith("http") ? v : staticFile(v)} trimBefore={q(tr.src)} muted objectFit="cover" style={{ width: "100%", height: "100%" }} fallbackOffthreadVideoProps={{ transparent: false }} />
+    <Video src={v.startsWith("http") ? v : staticFile(v)} trimBefore={q(tr.src)} playbackRate={tr.velocidade ?? 1} muted objectFit="cover" style={{ width: "100%", height: "100%" }} fallbackOffthreadVideoProps={{ transparent: false }} />
   );
   const video = tr.congela ? <Freeze frame={0}>{base}</Freeze> : base;
   return (
@@ -124,6 +137,9 @@ const UmEvento: React.FC<{ e: Evento; refLufs: number }> = ({ e, refLufs }) => {
             <Recibo {...r} x={0} y={0} som={false} />
           </Escala>
           {e.som !== false && <Som nome="moeda" em={e.ini} relDb={-10} refLufs={refLufs} />}
+          {/* lista progressiva: cada linha nova soma e toca a moeda de novo (as linhas que entram juntas com o Recibo, não) */}
+          {e.som !== false &&
+            (e.aparecer ?? []).map((a, i) => (a > 0 && (e.aparecer ?? []).indexOf(a) === i ? <Som key={`m${i}`} nome="moeda" em={e.ini + a} relDb={-10} refLufs={refLufs} /> : null))}
           {e.correcao && <Som nome="clique" em={e.ini + e.correcao.em} relDb={SOM.clique} refLufs={refLufs} />}
         </>
       );
@@ -147,6 +163,8 @@ const UmEvento: React.FC<{ e: Evento; refLufs: number }> = ({ e, refLufs }) => {
       );
     case "instagram":
       return <ChamadaInstagram ini={e.ini} fim={e.fim} />;
+    case "data":
+      return <DataPlacar texto={e.texto} ini={e.ini} fim={e.fim} x={e.x} y={e.y} />;
     case "like":
       return (
         <>
@@ -183,10 +201,14 @@ const UmEvento: React.FC<{ e: Evento; refLufs: number }> = ({ e, refLufs }) => {
       return <PrintSite {...e} />;
     case "mapa":
       return <MapaRota arquivo={e.arquivo} ini={e.ini} fim={e.fim} desenho={e.desenho} refLufs={refLufs} />;
+    case "foto":
+      return <RecorteFoto arquivo={e.arquivo} x={e.x} y={e.y} largura={e.largura} altura={e.altura} foco={e.foco} rotulo={e.rotulo} destino={e.destino} credito={e.credito} ini={e.ini} fim={e.fim} />;
+    case "legenda":
+      return <LegendaReforco grupos={e.grupos} />;
     case "telafinal":
       return <TelaFinal ini={e.ini} proximo={e.proximo} refLufs={refLufs} />;
     case "guia":
-      return <GuiaNarracao frases={e.frases} inicio={e.inicio} fim={e.fim} />;
+      return <GuiaNarracao frases={e.frases} inicio={e.inicio} fim={e.fim} topo={e.topo} rotulo={e.rotulo} semContador={e.semContador} />;
     default:
       return null;
   }
@@ -217,7 +239,7 @@ export const VideoLongo: React.FC<PropsVideoLongo> = (p) => {
         <UmEvento key={`ev${i}`} e={e} refLufs={p.refLufs} />
       ))}
       <SonsPagina trechos={p.trechos} refLufs={p.refLufs} />
-      <Grao />
+      {!p.semGrao && <Grao />}
       {guia.map((e, i) => (
         <UmEvento key={`g${i}`} e={e} refLufs={p.refLufs} />
       ))}

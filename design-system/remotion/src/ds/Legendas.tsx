@@ -8,7 +8,7 @@ import React from "react";
 import { kf, useMs } from "./tempo";
 import { BLUR, COR, DUR, EASE, FONTE, RAIO, REEL, SOMBRA, TIPO, rgba } from "./tokens";
 
-const SOMBRA_TEXTO = "0 2px 0 rgba(0,0,0,.35), 0 0 24px rgba(0,0,0,.45)"; // 3.1
+export const SOMBRA_TEXTO = "0 2px 0 rgba(0,0,0,.35), 0 0 24px rgba(0,0,0,.45)"; // 3.1
 const BASE_LEGENDA = REEL.altura - 1420; // base do bloco em y 1420 (3.1)
 const LARGURA_CAIXA = 872; // largura da caixa da legenda na prévia (pd-bundle.css); ver pendência 13 do CLAUDE.md
 

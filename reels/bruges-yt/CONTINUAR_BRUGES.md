@@ -1,0 +1,19 @@
+# Vlog de Bruges (YouTube) · como continuar em outra sessão
+
+Sessão de 20/11/2026, branch `claude/bruges-video-editing-7ntcrx`. Leia junto com `CLAUDE.md`, `docs/VIDEO_LONGO_YOUTUBE.md`, `docs/VIDEO_LONGO_PASSO_A_PASSO.md`, `docs/AUDIO_REVIEW_STANDARD.md` e `rev1/QA_REV1.md`.
+
+## Onde está
+
+- **REV1** (`rev1/`): prévia para aprovação (540p, sem música, narrações por gravar). Roteiro das narrações em `rev1/ROTEIRO_NARRACAO_REV1.md`, música em `rev1/MUSICA_REV1.md`, decisões e pendências em `rev1/QA_REV1.md`.
+- Próximo passo: receber do Diego as narrações (G1–G5, F1–F7), o valor da 2ª ida ao Chez Albert e as faixas da Biblioteca de áudio do YouTube; então encaixar as narrações, mixar a música, mandar os cortes com música para aprovar e só depois renderizar o final (pedido do Diego: um render só, depois de aprovar tudo).
+
+## Refazer o ambiente (o container novo não tem `fonte/` nem `_tmp/`)
+
+Tudo de `reels/bruges-yt/`:
+
+1. `pip install faster-whisper soundfile scipy pyloudnorm mapbox-vector-tile networkx` e `npm ci` em `design-system/remotion`.
+2. Fonte: `curl -L -o fonte/1120.mp4 "https://drive.usercontent.google.com/download?id=1piFcHDG5akHx3EngzbT_a3tPxvDqhc75&export=download&confirm=t"` (Drive, Bruges/Youtube/1120.mp4, 1,55 GB) e conferir com `dados/sha256_fonte.txt`.
+3. `mkdir -p _tmp/servir && cp dados/{transcricao,cenas,hesitacoes,prolongamentos,confere_cortes}.json _tmp/`
+4. Áudio: `ffmpeg -i fonte/1120.mp4 -vn -ac 2 -ar 48000 -c:a pcm_s16le _tmp/voz_orig.wav` e `ffmpeg -i fonte/1120.mp4 -vn -ac 1 -ar 16000 -c:a pcm_s16le _tmp/voz16k.wav`
+5. Proxy: `ffmpeg -i fonte/1120.mp4 -vf "scale=1920:1080:flags=lanczos,format=yuv420p" -c:v libx264 -preset veryfast -crf 17 -g 24 -an -movflags +faststart _tmp/servir/proxy1080.mp4` (~15 min) e `node ../../design-system/remotion/scripts/servir.mjs _tmp/servir 8787`
+6. Regerar: `python -I scripts/decupar.py rev1 && python -I rev1/montar_rev1.py` (esperado: 72 cortes; 15:16,5).
