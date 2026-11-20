@@ -32,10 +32,37 @@ Me segue pra mais dicas e roteiros de viagem.
 Não dá pra ir pra Disney de Paris em um dia? A gente fez os dois parques num dia só. Me segue pra mais roteiros. #DisneylandParis #DisneyParis #DisneyAdventureWorld #RoteiroDeViagem #Paris
 ```
 
-## YouTube Shorts (título ≤ 100 caracteres)
+## YouTube Shorts (título ≤ 100 caracteres + descrição)
+
+Título (93 caracteres):
 
 ```
 Disney de Paris em UM dia: tudo o que deu pra fazer nos dois parques #DisneylandParis #Shorts
+```
+
+Descrição:
+
+```
+"Não dá pra ir pra Disney de Paris em um dia." A gente foi nos dois parques num dia só.
+
+Fomos em 18/03/2026. De manhã, o Disney Adventure World (na época ainda Walt Disney Studios). À tarde, o Disneyland Park, até os fogos no castelo.
+
+Atrações do vídeo:
+· Crush's Coaster
+· Cars ROAD TRIP
+· Torre do Terror
+· Avengers Assemble: Flight Force
+· Spider-Man W.E.B. Adventure
+· Piratas do Caribe
+· Star Wars Hyperspace Mountain
+· Buzz Lightyear Laser Blast
+· Big Thunder Mountain
+
+Confesso que trapaceamos: o Ratatouille estava em reforma e a área nova de Frozen ainda não existia. Hoje a gente dividiria em dois dias.
+
+Me segue pra mais dicas e roteiros de viagem.
+
+#DisneylandParis #DisneyParis #DisneyAdventureWorld #RoteiroDeViagem #Paris #Shorts
 ```
 
 ## Fatos e fontes
