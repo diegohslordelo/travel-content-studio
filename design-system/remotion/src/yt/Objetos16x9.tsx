@@ -375,7 +375,7 @@ export const DataPlacar: React.FC<{ texto: string; ini: number; fim: number; x?:
 /**
  * "Placa + recorte de foto" (DS V2 2.6, objeto de Destino) no 16:9: foto com `radius-photo` e sombra de papel
  * erguido, revelada por máscara de baixo para cima (400 ms, `ease-out`), com a placa P (50%) encostada na base
- * esquerda, sobrepondo 40 px, chegando com a Chegada. Crédito da foto (licença CC) em Plex Mono embaixo, à direita.
+ * esquerda, sobrepondo 40 px, chegando com a Chegada. Crédito da foto (licença CC) em Plex Mono acima, à direita.
  * Sai inteira em 240 ms (opacidade + desce 12 px). Sem som próprio (a placa toca o clack, como em todo o vídeo longo).
  * Primeiro uso: vlog de Bruges (pedido do Diego, 20/11/2026): a relíquia do Sangue Sagrado, que não podia ser
  * filmada, "meio escanteada, sem cobrir a tela toda".
@@ -416,7 +416,8 @@ export const RecorteFoto: React.FC<{
           <img src={staticFile(arquivo)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: foco, display: "block" }} />
         </div>
         {credito && (
-          <div style={{ position: "absolute", right: 0, top: altura + 10, fontFamily: FONTE.mono, fontSize: 18, color: COR.papel, textShadow: SOMBRA_TEXTO, opacity: revela, whiteSpace: "nowrap" }}>
+          // acima da foto, à direita: embaixo fica a placa
+          <div style={{ position: "absolute", right: 0, top: -30, fontFamily: FONTE.mono, fontSize: 18, color: COR.papel, textShadow: SOMBRA_TEXTO, opacity: revela, whiteSpace: "nowrap" }}>
             {credito}
           </div>
         )}

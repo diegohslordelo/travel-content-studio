@@ -35,7 +35,7 @@ d, n = sys.argv[1], int(sys.argv[2])
 fps = json.load(open("rev1/props_rev1.json"))["fps"]
 pedacos = []
 for i in range(n):
-    q = int(subprocess.check_output(["ffprobe", "-v", "error", "-count_packets", "-select_streams", "v", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", f"{d}/parte_{i}.mp4"]).decode().strip())
+    q = int(subprocess.check_output(["ffprobe", "-v", "error", "-count_packets", "-select_streams", "v", "-show_entries", "stream=nb_read_packets", "-of", "default=nw=1:nk=1", f"{d}/parte_{i}.mp4"]).decode().strip().strip(","))
     subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", f"{d}/parte_{i}.mp4", "-map", "0:a", "-ar", "48000", "-ac", "2", "-c:a", "pcm_f32le", f"{d}/sfx_{i}.wav"], check=True)
     x, sr = sf.read(f"{d}/sfx_{i}.wav", dtype="float32", always_2d=True)
     alvo = round(q * sr / fps)

@@ -26,7 +26,7 @@
 | 11 | Imagem da relíquia, escanteada, sem encher o vídeo | Uma foto só, do cilindro do sangue, no canto direito (não cobre o rosto), com a placa "RELÍQUIA DO SANGUE SAGRADO", 8,5 s, no "colocar à mostra o vidrinho lá que tem o sangue de Cristo" (6:30,0). Foto de Matt Hopkins, CC BY-SA 2.0 (crédito na tela e vai na descrição) |
 | 12 | Imagens iniciais e finais por baixo da voz, como nos outros vídeos | Gancho: 8 planos (Rozenhoedkaai, carruagens, waffle, batata, Marina, Basílica, Belfort, bilhete). Fechamento: 14 planos de paisagem que não repetem o gancho (o vídeo termina numa selfie) |
 | 13 | Músicas da Biblioteca do YouTube, até 5 no corpo + abertura + final, por momento | Mapa das seções, climas e filtros em `MUSICA_REV1.md`. **Bloqueado:** preciso que você baixe as candidatas ou conecte o computador (seção 1 do documento) |
-| 14 | Mandar as partes editadas e animadas para aprovar | `previas/rev1_previa_540p.mp4` (vídeo inteiro) + cortes de cada parte animada em `previas/` |
+| 14 | Mandar as partes editadas e animadas para aprovar | `previas/rev1_previa_540p.mp4` (vídeo inteiro, 15:16) + `previas/rev1_partes_animadas.mp4` (só as 18 partes com objeto ou efeito, 3:47, com o minuto da prévia na tela) |
 | 15 | Renderizar tudo de uma vez, só depois da aprovação | Nada definitivo foi renderizado |
 
 ## 2. Para você aprovar
@@ -34,6 +34,7 @@
 | O quê | Onde |
 |---|---|
 | Vídeo inteiro (cortes, decupagem, objetos; sem música; narrações como texto) | `previas/rev1_previa_540p.mp4` |
+| Só as partes animadas, em sequência (o minuto da prévia aparece no canto) | `previas/rev1_partes_animadas.mp4` |
 | Cada efeito, com o minuto e o porquê | `efeitos_rev1.md` |
 | Cada take do gancho e do fechamento | `takes_rev1.md` |
 | Cada corte da voz | `DECUPAGEM_REV1.md` |
