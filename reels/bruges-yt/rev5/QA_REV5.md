@@ -1,0 +1,84 @@
+# QA · REV5 (FINAL) · Vlog de Bruges (vídeo longo do YouTube)
+
+| Campo | Valor |
+|---|---|
+| Parte de | REV4 (`rev4/`, não alterada), aprovada pelo Diego em 21/11/2026 ("o vídeo está aprovado") |
+| Data | 21/11/2026 |
+| Duração | **15:12,9** (REV4: 15:24,3) · 21.909 quadros a 24 qps |
+| Estado | **Final**, render 4K entregue por link do GoFile. Áudio: AGUARDANDO ESCUTA (a escuta é sua) |
+
+## 1. O que você pediu e o que foi feito
+
+| Pedido (21/11/2026) | Feito |
+|---|---|
+| "Eu subi no Drive as gravações" | 13 arquivos baixados (P1–P5 = gancho; R1–R8 = fechamento), transcritos de novo (Whisper large-v3, 2 passadas) e encaixados pelo que você **disse**: cada plano do gancho e do fechamento agora corta na palavra (tabelas 2 e 3). Os arquivos de `fonte/` não foram alterados (SHA-256 em `dados/`) |
+| "Eu tirei a parte dos custos da hospedagem da narração, então tire do vídeo também" | Saíram a frase do hotel (F5), a linha "Hotel (1 noite)" do Recibo final e o hotel das contas. O Recibo do fechamento mostra só o que você fala na F4: **comida e bebida € 60,00 + trem € 72,00 = € 132,00** (€ 66,00 por pessoa ≈ R$ 399,14). Cabeçalho: "SEG 16/03 · 2 PESSOAS" (antes: "…SEM PASSAGEM AÉREA", que dava a entender que o hotel estava incluído). A descrição também não fala de hospedagem. Nos props do vídeo, "hotel" aparece 0 vezes |
+| "Não sei se vai precisar editar alguma coisa no vídeo, nos cortes" | O corpo do vídeo não mudou (a mesma decupagem da REV4: `edl_rev5.json` = `edl_rev4.json`). Mudaram o gancho e o fechamento, porque as falas gravadas têm outro tamanho: o gancho foi de 30,9 s para **29,2 s** e o fechamento de 61,3 s para **51,7 s** (sem a frase do hotel e com as suas falas mais corridas) |
+| "Renderize tudo na maior qualidade possível" | **4K (3840 × 2160)** lido direto da fonte 4K, cada quadro em JPEG 100 (o padrão do Remotion é 80), x264 preset medium, CRF 17 com teto de 45 Mbps (o YouTube recomenda 35–45 Mbps para subir 4K a 24 qps em H.264). Som AAC 192 kbps 48 kHz. Medidas na seção 5 |
+| "Para me enviar, tem que ser no link no GoFile" | Seção 6 |
+
+## 2. Gancho (29,2 s)
+
+Os planos são os da REV4, na mesma ordem. O que mudou: os tempos (cada corte na palavra) e a tela do bilhete, que passou de 4,5 s para **5,5 s**, porque a sua G5 gravada explica a compra ("…e compramos na hora o bilhete"). Ela começa no "E a conta começa **aqui**" e a música de abertura continua terminando nela.
+
+| No vídeo | Plano | Cai em |
+|---|---|---|
+| 0:00,0–0:03,0 | Rozenhoedkaai | G1 "Quanto custa um dia em Bruges" |
+| 0:03,0–0:05,1 | canal com a torre da igreja | G1 "um conto de fadas" |
+| 0:05,1–0:07,4 | waffle do Chez Albert | G2 "três vezes o mesmo waffle" |
+| 0:07,4–0:09,4 | a batata do Fritbar | G2 "a melhor batata frita da cidade" |
+| 0:09,4–0:14,8 | Marina: "Um dos pratos mais saborosos…" | fala real |
+| 0:14,8–0:18,7 | Basílica do Sangue Sagrado | G3 "o sangue de Cristo" |
+| 0:18,7–0:20,9 | canal com bandeiras | G4 "no final quanto deu" |
+| 0:20,9–0:23,7 | canal entre casas de tijolo | G4 "e se vale a pena" |
+| 0:23,7–0:29,2 | compra do bilhete (€ 72,00) + Recibo do trem | G5 "E a conta começa aqui…" |
+
+## 3. Fechamento (51,7 s)
+
+Mesmos planos da REV4, sem o da frase do hotel; o canal de tijolo passou para o começo, para o Rozenhoedkaai entrar no "Pois é, ela existe e se chama Bruges".
+
+| No vídeo | Plano | Cai em | Objeto |
+|---|---|---|---|
+| 14:01,2 | casas de tijolo sobre o canal | F1 "Sabe aquela Europa que você imagina…" | — |
+| 14:04,7 | Rozenhoedkaai aberto | F1 "Pois é, ela existe e se chama Bruges" | — |
+| 14:08,9 | canal com o salgueiro | F2 "um canal em cada esquina" | — |
+| 14:10,9 | carruagens no Markt | F2 "carruagens passando" | — |
+| 14:12,9 | vitrine de chocolate | F2 "cheira a chocolate e a waffle" | — |
+| 14:14,9 | torre do Belfort | F3 "patrimônio mundial da UNESCO" | — |
+| 14:17,2 | Marina andando no Burg | F3 "dá pra fazer tudo andando" | — |
+| 14:19,9 | fachadas do Markt | F4 "tudo que nós consumimos aqui" | Recibo: comida € 60,00 |
+| 14:23,0 | prefeitura do Burg | F4 "ficou 132 euros para o casal" | + trem € 72,00 → € 132,00 (entra no "mais o transporte") |
+| 14:25,5 | carruagem no Begijnhof | F6 "Vale muito a pena" | Bilhete "vale muito! voltaria mil vezes" |
+| 14:29,3 | Minnewater e o castelinho | F6 "Eu voltaria mil vezes" | — |
+| 14:32,0 | rua tranquila | F7 "durma na cidade" | nota "dica: durma 1 noite em Bruges" |
+| 14:35,1 | Marina numa ruela vazia | F7 "ela fica mais vazia" | — |
+| 14:38,0 | Minnewater com a torre | F8 "se esse vídeo te ajudou" | like e inscrição |
+| 14:41,4 | Marina na beira do Minnewater | F8 "me seguir lá no Instagram" | Instagram |
+| 14:44,6 | Markt: bandeiras e Belfort | F9 "Toda cidade tem um primeiro dia" | placa final |
+| 14:50,6 | vocês dois acenando | F9 "O próximo é em Paris, te espero lá" | página → tela final de 20 s |
+
+Todo take tem 2 s ou mais e fica dentro de um plano da fonte (`VIDEO_LONGO_PASSO_A_PASSO.md`, seção 8). Detalhe com os tempos da fonte em `takes_rev5.md`; objetos em `efeitos_rev5.md`.
+
+## 4. Decisões minhas para o seu OK
+
+- **Texto das narrações na legenda (.srt):** usei o que você disse, conferido em 2 passadas do Whisper. Duas dúvidas: na G1, as duas passadas ouvem "Quanto custam de em Bruges" (ficou "Quanto custa um dia em Bruges", o texto do roteiro); na G5, uma passada ouve "cerca de uma hora de **Bruxelas**" e a outra "…de **Bruges**" (ficou Bruxelas). No vídeo, isso não muda nada: é a sua voz.
+- **Mixagem final:** a voz do vlog variava 9 dB entre os planos; 12 trechos foram nivelados (no máximo ±5 dB; os maiores: a Igreja de Nossa Senhora, +4 a +5 dB). Os efeitos do DS agora estão no volume do DS em relação à voz; na prévia, estavam ~4 dB mais altos. Detalhes em `audio/RELATORIO_AUDIO_REV5.md`.
+- **Thumbnails:** 3 opções (`thumb/`), com você no Rozenhoedkaai, sem valores na capa (decisão de Amsterdam). O componente da thumbnail aplica contraste +10% e brilho +18% na foto (precedente de Amsterdam); o padrão de 19/11 ("imagens sem tratamento") fala de vídeo. Se valer também para a capa, eu tiro.
+
+## 5. Medidas do arquivo final
+
+⟨MEDIDAS⟩
+
+## 6. Entrega
+
+⟨ENTREGA⟩
+
+## 7. Pendências
+
+- **Escuta** (obrigatória): o roteiro do que ouvir está no relatório de áudio, seção 11.
+- **Legenda:** conferir os 6 trechos com dúvida de `legenda_duvidas_rev5.md` antes de subir o `.srt` (entre eles, "a gente pagou 5 euros na batata", 9:05 do vídeo: o Recibo mostra € 15,00).
+- **Créditos das músicas:** conferir no YouTube Studio se alguma das 7 faixas pede atribuição (`DESCRICAO_YOUTUBE_REV5.md`).
+
+## 8. Como refazer
+
+De `reels/bruges-yt/`, com o ambiente de `CONTINUAR_BRUGES.md`: `python -I scripts/decupar.py rev5`, `python -I rev5/montar_rev5.py`, `python -I rev5/musica_rev5.py`, `bash rev5/renderizar_final_rev5.sh` (~3 h), `python -I rev5/finalizar_rev5.py`, `python -I rev5/conferir_audio_rev5.py`, `python -I rev5/gerar_srt_rev5.py`. Conferir o encaixe sem renderizar: `python -I rev5/encaixe_rev5.py`.
