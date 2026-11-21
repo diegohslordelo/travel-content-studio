@@ -1,0 +1,758 @@
+{
+ "fps": 24,
+ "gancho_ms": 30919.99999999996,
+ "corpo_fim_ms": 842982.5,
+ "fechamento_fim_ms": 904274.1666666665,
+ "duracao_ms": 924274.1666666665,
+ "audio": [
+  {
+   "src": 523050,
+   "out": 11450,
+   "dur": 5400,
+   "tipo": "gancho_fala"
+  },
+  {
+   "src": 10083.333333333334,
+   "out": 30919.99999999996,
+   "dur": 8374.999999999996,
+   "tipo": "corpo"
+  },
+  {
+   "src": 18708.333333333332,
+   "out": 39294.999999999956,
+   "dur": 32041.66666666667,
+   "tipo": "corpo"
+  },
+  {
+   "src": 51625.0,
+   "out": 71336.66666666663,
+   "dur": 27833.33333333333,
+   "tipo": "corpo"
+  },
+  {
+   "src": 82708.33333333333,
+   "out": 99169.99999999996,
+   "dur": 46916.66666666667,
+   "tipo": "corpo"
+  },
+  {
+   "src": 130208.33333333333,
+   "out": 146086.66666666663,
+   "dur": 10000.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 140500.0,
+   "out": 156086.66666666663,
+   "dur": 20208.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 160875.0,
+   "out": 176294.99999999997,
+   "dur": 5208.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 166208.33333333334,
+   "out": 181503.3333333333,
+   "dur": 12333.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 178958.33333333334,
+   "out": 193836.66666666666,
+   "dur": 8208.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 188333.33333333334,
+   "out": 202045.0,
+   "dur": 3208.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 191666.66666666666,
+   "out": 205253.33333333334,
+   "dur": 1958.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 193750.0,
+   "out": 207211.6666666667,
+   "dur": 3541.666666666657,
+   "tipo": "corpo"
+  },
+  {
+   "src": 198041.66666666666,
+   "out": 210753.33333333334,
+   "dur": 3458.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 201750.0,
+   "out": 214211.6666666667,
+   "dur": 2750.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 206000.0,
+   "out": 216961.6666666667,
+   "dur": 3791.666666666657,
+   "tipo": "corpo"
+  },
+  {
+   "src": 210041.66666666666,
+   "out": 220753.33333333334,
+   "dur": 34500.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 244666.66666666666,
+   "out": 255253.33333333334,
+   "dur": 6500.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 251291.66666666666,
+   "out": 261753.33333333334,
+   "dur": 2500.000000000029,
+   "tipo": "corpo"
+  },
+  {
+   "src": 254041.66666666666,
+   "out": 264253.3333333334,
+   "dur": 2333.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 257083.33333333334,
+   "out": 266586.6666666667,
+   "dur": 1125.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 258625.0,
+   "out": 267711.6666666667,
+   "dur": 7166.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 267250.0,
+   "out": 274878.3333333334,
+   "dur": 41708.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 309625.0,
+   "out": 316586.6666666667,
+   "dur": 1333.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 311791.6666666667,
+   "out": 317920.0,
+   "dur": 19708.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 332250.0,
+   "out": 337628.3333333333,
+   "dur": 2416.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 335208.3333333333,
+   "out": 340045.0,
+   "dur": 4083.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 339666.6666666667,
+   "out": 344128.3333333333,
+   "dur": 26833.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 366750.0,
+   "out": 370961.6666666666,
+   "dur": 9250.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 381166.6666666667,
+   "out": 380211.6666666666,
+   "dur": 2833.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 384583.3333333333,
+   "out": 383044.99999999994,
+   "dur": 3416.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 388458.3333333333,
+   "out": 386461.6666666666,
+   "dur": 2458.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 391416.6666666667,
+   "out": 388919.99999999994,
+   "dur": 8083.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 400666.6666666667,
+   "out": 397003.33333333326,
+   "dur": 2083.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 403583.3333333333,
+   "out": 399086.66666666657,
+   "dur": 4541.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 408958.3333333333,
+   "out": 403628.33333333326,
+   "dur": 3916.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 413000.0,
+   "out": 407544.99999999994,
+   "dur": 1416.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 414916.6666666667,
+   "out": 408961.6666666666,
+   "dur": 1166.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 418375.0,
+   "out": 410128.3333333333,
+   "dur": 9500.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 428166.6666666667,
+   "out": 419628.3333333333,
+   "dur": 6375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 434708.3333333333,
+   "out": 426003.3333333333,
+   "dur": 5625.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 440750.0,
+   "out": 431628.3333333333,
+   "dur": 9125.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 450375.0,
+   "out": 440753.3333333333,
+   "dur": 2500.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 453083.3333333333,
+   "out": 443253.3333333333,
+   "dur": 35291.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 489041.6666666667,
+   "out": 478545.0,
+   "dur": 50791.66666666663,
+   "tipo": "corpo"
+  },
+  {
+   "src": 541291.6666666666,
+   "out": 529336.6666666666,
+   "dur": 8208.333333333372,
+   "tipo": "corpo"
+  },
+  {
+   "src": 549916.6666666666,
+   "out": 537545.0,
+   "dur": 4041.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 554125.0,
+   "out": 541586.6666666666,
+   "dur": 1166.6666666666279,
+   "tipo": "corpo"
+  },
+  {
+   "src": 556041.6666666666,
+   "out": 542753.3333333333,
+   "dur": 17500.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 574625.0,
+   "out": 560253.3333333333,
+   "dur": 12000.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 587458.3333333334,
+   "out": 572253.3333333333,
+   "dur": 16875.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 604958.3333333334,
+   "out": 589128.3333333333,
+   "dur": 24375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 629500.0,
+   "out": 613503.3333333333,
+   "dur": 1333.3333333333721,
+   "tipo": "corpo"
+  },
+  {
+   "src": 631625.0,
+   "out": 614836.6666666666,
+   "dur": 5916.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 637791.6666666666,
+   "out": 620753.3333333333,
+   "dur": 1291.6666666666279,
+   "tipo": "corpo"
+  },
+  {
+   "src": 640208.3333333334,
+   "out": 622044.9999999999,
+   "dur": 1083.3333333333721,
+   "tipo": "corpo"
+  },
+  {
+   "src": 642166.6666666666,
+   "out": 623128.3333333333,
+   "dur": 7833.333333333372,
+   "tipo": "corpo"
+  },
+  {
+   "src": 650458.3333333334,
+   "out": 630961.6666666666,
+   "dur": 9708.333333333372,
+   "tipo": "corpo"
+  },
+  {
+   "src": 660458.3333333334,
+   "out": 640670.0,
+   "dur": 1208.3333333333721,
+   "tipo": "corpo"
+  },
+  {
+   "src": 662250.0,
+   "out": 641878.3333333334,
+   "dur": 2875.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 665250.0,
+   "out": 644753.3333333334,
+   "dur": 3750.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 670625.0,
+   "out": 648503.3333333334,
+   "dur": 18541.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 689708.3333333334,
+   "out": 667045.0,
+   "dur": 37625.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 727583.3333333334,
+   "out": 704670.0,
+   "dur": 6375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 734083.3333333334,
+   "out": 711045.0,
+   "dur": 2625.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 752791.6666666666,
+   "out": 717690.8333333334,
+   "dur": 16375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 769500.0,
+   "out": 734065.8333333334,
+   "dur": 15125.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 784833.3333333334,
+   "out": 749190.8333333334,
+   "dur": 3541.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 788875.0,
+   "out": 752732.5,
+   "dur": 3416.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 792583.3333333334,
+   "out": 756149.1666666666,
+   "dur": 2125.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 794875.0,
+   "out": 758274.1666666666,
+   "dur": 2166.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 797666.6666666666,
+   "out": 760440.8333333333,
+   "dur": 30375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 828583.3333333334,
+   "out": 790815.8333333333,
+   "dur": 12208.333333333372,
+   "tipo": "corpo"
+  },
+  {
+   "src": 840958.3333333334,
+   "out": 803024.1666666666,
+   "dur": 2958.333333333372,
+   "tipo": "corpo"
+  },
+  {
+   "src": 844208.3333333334,
+   "out": 805982.5,
+   "dur": 10916.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 855416.6666666666,
+   "out": 816899.1666666666,
+   "dur": 7625.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 863166.6666666666,
+   "out": 824524.1666666666,
+   "dur": 1458.3333333333721,
+   "tipo": "corpo"
+  },
+  {
+   "src": 864875.0,
+   "out": 825982.5,
+   "dur": 10375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 875750.0,
+   "out": 836357.5,
+   "dur": 6083.333333333372,
+   "tipo": "corpo"
+  },
+  {
+   "src": 882000.0,
+   "out": 842440.8333333334,
+   "dur": 541.6666666666279,
+   "tipo": "corpo"
+  }
+ ],
+ "narracoes": [
+  {
+   "id": "G1",
+   "ini": 200,
+   "fim": 4875.0,
+   "texto": "Quanto custa um dia em Bruges, a cidade que parece um conto de fadas?"
+  },
+  {
+   "id": "G2",
+   "ini": 5100,
+   "fim": 9462.5,
+   "texto": "Voltamos três vezes no mesmo waffle e achamos a melhor batata da viagem."
+  },
+  {
+   "id": "G3",
+   "ini": 17100,
+   "fim": 20525.0,
+   "texto": "E vimos de pertinho a relíquia do sangue de Cristo."
+  },
+  {
+   "id": "G4",
+   "ini": 20750,
+   "fim": 25737.5,
+   "texto": "Eu anotei cada euro. No final, te mostro quanto deu e se vale a pena."
+  },
+  {
+   "id": "G5",
+   "ini": 25950,
+   "fim": 28750.0,
+   "texto": "E a conta começa aqui, ainda em Bruxelas."
+  },
+  {
+   "id": "F1",
+   "ini": 843882.5,
+   "fim": 849495.0,
+   "texto": "Sabe aquela Europa que você imagina antes de conhecer a Europa? Ela existe. E se chama Bruges."
+  },
+  {
+   "id": "F2",
+   "ini": 849845.0,
+   "fim": 855770.0,
+   "texto": "Canal em cada esquina, carruagem passando na praça e uma cidade inteira com cheiro de chocolate e waffle."
+  },
+  {
+   "id": "F3",
+   "ini": 856120.0,
+   "fim": 861420.0,
+   "texto": "O centro histórico inteiro é Patrimônio Mundial da UNESCO, e dá pra conhecer tudo a pé."
+  },
+  {
+   "id": "F4",
+   "ini": 861770.0,
+   "fim": 867070.0,
+   "texto": "E tudo isso num bate-volta: trem, waffle, batata e cerveja deram 132 euros pra nós dois."
+  },
+  {
+   "id": "F5",
+   "ini": 867420.0,
+   "fim": 873032.5,
+   "texto": "Somando a noite de hotel, ficou em uns 276 euros: 138 por pessoa, perto de 834 reais."
+  },
+  {
+   "id": "F6",
+   "ini": 873382.5,
+   "fim": 879932.5,
+   "texto": "Vale a pena? Muito. Um dia é suficiente pra conhecer, mas não pra querer ir embora. Eu voltaria mil vezes."
+  },
+  {
+   "id": "F7",
+   "ini": 880282.5,
+   "fim": 889020.0,
+   "texto": "Dica: se puder, durma uma noite em Bruges. De manhã cedo e à noite, quando os grupos de bate-volta vão embora, a cidade fica bem mais vazia."
+  },
+  {
+   "id": "F8",
+   "ini": 889370.0,
+   "fim": 894982.5,
+   "texto": "Se esse vídeo te ajudou, se inscreve, deixa o like e me segue no Instagram: arroba primeirodiaem."
+  },
+  {
+   "id": "F9",
+   "ini": 895332.5,
+   "fim": 902820.0,
+   "texto": "Toda cidade tem um primeiro dia. E o de Bruges, a gente nunca vai esquecer. O próximo é em Paris. Te espero lá!"
+  }
+ ],
+ "musica": [
+  {
+   "id": "M1",
+   "nome": "Chegada e o primeiro waffle",
+   "clima": "leve, curiosa, manhã: violão/ukulele, assobio ou pizzicato, 95–110 BPM",
+   "ini": 71372,
+   "fim": 91871,
+   "fonte": [
+    51.66,
+    72.16
+   ]
+  },
+  {
+   "id": "M1",
+   "nome": "Chegada e o primeiro waffle",
+   "clima": "leve, curiosa, manhã: violão/ukulele, assobio ou pizzicato, 95–110 BPM",
+   "ini": 116742,
+   "fim": 135221,
+   "fonte": [
+    100.28,
+    118.76
+   ]
+  },
+  {
+   "id": "M2",
+   "nome": "Markt, Burg e canais: o conto de fadas",
+   "clima": "encantadora e empolgante: cordas, celesta ou glockenspiel, pop orquestral leve, 100–120 BPM",
+   "ini": 163117,
+   "fim": 176276,
+   "fonte": [
+    147.53,
+    160.69
+   ]
+  },
+  {
+   "id": "M2",
+   "nome": "Markt, Burg e canais: o conto de fadas",
+   "clima": "encantadora e empolgante: cordas, celesta ou glockenspiel, pop orquestral leve, 100–120 BPM",
+   "ini": 224822,
+   "fim": 243931,
+   "fonte": [
+    214.11,
+    233.22
+   ]
+  },
+  {
+   "id": "M2",
+   "nome": "Markt, Burg e canais: o conto de fadas",
+   "clima": "encantadora e empolgante: cordas, celesta ou glockenspiel, pop orquestral leve, 100–120 BPM",
+   "ini": 279588,
+   "fim": 310017,
+   "fonte": [
+    271.96,
+    302.39
+   ]
+  },
+  {
+   "id": "M2",
+   "nome": "Markt, Burg e canais: o conto de fadas",
+   "clima": "encantadora e empolgante: cordas, celesta ou glockenspiel, pop orquestral leve, 100–120 BPM",
+   "ini": 348012,
+   "fim": 370951,
+   "fonte": [
+    343.55,
+    366.49
+   ]
+  },
+  {
+   "id": "M3",
+   "nome": "Fome, chocolate e a batata",
+   "clima": "animada e gostosa: swing/jazz leve ou funk acústico, 105–120 BPM",
+   "ini": 448520,
+   "fim": 465289,
+   "fonte": [
+    458.35,
+    475.12
+   ]
+  },
+  {
+   "id": "M3",
+   "nome": "Fome, chocolate e a batata",
+   "clima": "animada e gostosa: swing/jazz leve ou funk acústico, 105–120 BPM",
+   "ini": 487443,
+   "fim": 505722,
+   "fonte": [
+    497.94,
+    516.22
+   ]
+  },
+  {
+   "id": "M3",
+   "nome": "Fome, chocolate e a batata",
+   "clima": "animada e gostosa: swing/jazz leve ou funk acústico, 105–120 BPM",
+   "ini": 589140,
+   "fim": 606159,
+   "fonte": [
+    604.97,
+    621.99
+   ]
+  },
+  {
+   "id": "M4",
+   "nome": "Minnewater: o descanso",
+   "clima": "calma: piano ou violão dedilhado, lo-fi suave, 65–85 BPM",
+   "ini": 654318,
+   "fim": 674046,
+   "fonte": [
+    676.44,
+    696.71
+   ]
+  },
+  {
+   "id": "M5",
+   "nome": "O teste dos waffles e a despedida",
+   "clima": "brincalhona/cômica: pizzicato, fagote, percussão leve, 100–120 BPM",
+   "ini": 674047,
+   "fim": 687396,
+   "fonte": [
+    696.71,
+    710.06
+   ]
+  },
+  {
+   "id": "M5",
+   "nome": "O teste dos waffles e a despedida",
+   "clima": "brincalhona/cômica: pizzicato, fagote, percussão leve, 100–120 BPM",
+   "ini": 713670,
+   "fim": 717690,
+   "fonte": [
+    736.71,
+    752.79
+   ]
+  },
+  {
+   "id": "M5",
+   "nome": "O teste dos waffles e a despedida",
+   "clima": "brincalhona/cômica: pizzicato, fagote, percussão leve, 100–120 BPM",
+   "ini": 779324,
+   "fim": 790723,
+   "fonte": [
+    816.55,
+    827.95
+   ]
+  },
+  {
+   "id": "G",
+   "nome": "Abertura (gancho)",
+   "clima": "empolgante, termina na compra do bilhete",
+   "ini": 0,
+   "fim": 30920,
+   "fonte": null
+  },
+  {
+   "id": "F",
+   "nome": "Fechamento e tela final",
+   "clima": "nostálgica e quente",
+   "ini": 842982,
+   "fim": 924274,
+   "fonte": null
+  }
+ ],
+ "faixas": {
+  "G": "Bright Skies - Audio Hertz",
+  "M1": "Top Of The Morning - TrackTribe",
+  "M2": "Ripples In Time - Asher Fulero",
+  "M3": "Swing Haven 1 - Los Angeles - Reed Mathis",
+  "M4": "Starlight on the Water - Chris Haugen",
+  "M5": "Peaked My Interest - Nathan Moore",
+  "F": "Spring Migration - The Great North Sound Society"
+ },
+ "inicio_faixa_s": {
+  "G": 12.0,
+  "M1": 1.0,
+  "M2": 3.0,
+  "M3": 0.0,
+  "M4": 0.0,
+  "M5": 9.0,
+  "F": 15.0
+ },
+ "narracao_fim_gancho_ms": 28750.0,
+ "fechamento_narr_fim_ms": 902820.0,
+ "gastos_dia_previa": 132.0,
+ "keen_ms": null
+}

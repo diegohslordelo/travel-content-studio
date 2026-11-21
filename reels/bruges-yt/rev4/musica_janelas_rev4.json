@@ -1,0 +1,161 @@
+[
+ {
+  "id": "M1",
+  "nome": "Chegada e o primeiro waffle",
+  "clima": "leve, curiosa, manhã: violão/ukulele, assobio ou pizzicato, 95–110 BPM",
+  "ini": 71372,
+  "fim": 91871,
+  "fonte": [
+   51.66,
+   72.16
+  ]
+ },
+ {
+  "id": "M1",
+  "nome": "Chegada e o primeiro waffle",
+  "clima": "leve, curiosa, manhã: violão/ukulele, assobio ou pizzicato, 95–110 BPM",
+  "ini": 116742,
+  "fim": 135221,
+  "fonte": [
+   100.28,
+   118.76
+  ]
+ },
+ {
+  "id": "M2",
+  "nome": "Markt, Burg e canais: o conto de fadas",
+  "clima": "encantadora e empolgante: cordas, celesta ou glockenspiel, pop orquestral leve, 100–120 BPM",
+  "ini": 163117,
+  "fim": 176276,
+  "fonte": [
+   147.53,
+   160.69
+  ]
+ },
+ {
+  "id": "M2",
+  "nome": "Markt, Burg e canais: o conto de fadas",
+  "clima": "encantadora e empolgante: cordas, celesta ou glockenspiel, pop orquestral leve, 100–120 BPM",
+  "ini": 224822,
+  "fim": 243931,
+  "fonte": [
+   214.11,
+   233.22
+  ]
+ },
+ {
+  "id": "M2",
+  "nome": "Markt, Burg e canais: o conto de fadas",
+  "clima": "encantadora e empolgante: cordas, celesta ou glockenspiel, pop orquestral leve, 100–120 BPM",
+  "ini": 279588,
+  "fim": 310017,
+  "fonte": [
+   271.96,
+   302.39
+  ]
+ },
+ {
+  "id": "M2",
+  "nome": "Markt, Burg e canais: o conto de fadas",
+  "clima": "encantadora e empolgante: cordas, celesta ou glockenspiel, pop orquestral leve, 100–120 BPM",
+  "ini": 348012,
+  "fim": 370951,
+  "fonte": [
+   343.55,
+   366.49
+  ]
+ },
+ {
+  "id": "M3",
+  "nome": "Fome, chocolate e a batata",
+  "clima": "animada e gostosa: swing/jazz leve ou funk acústico, 105–120 BPM",
+  "ini": 448520,
+  "fim": 465289,
+  "fonte": [
+   458.35,
+   475.12
+  ]
+ },
+ {
+  "id": "M3",
+  "nome": "Fome, chocolate e a batata",
+  "clima": "animada e gostosa: swing/jazz leve ou funk acústico, 105–120 BPM",
+  "ini": 487443,
+  "fim": 505722,
+  "fonte": [
+   497.94,
+   516.22
+  ]
+ },
+ {
+  "id": "M3",
+  "nome": "Fome, chocolate e a batata",
+  "clima": "animada e gostosa: swing/jazz leve ou funk acústico, 105–120 BPM",
+  "ini": 589140,
+  "fim": 606159,
+  "fonte": [
+   604.97,
+   621.99
+  ]
+ },
+ {
+  "id": "M4",
+  "nome": "Minnewater: o descanso",
+  "clima": "calma: piano ou violão dedilhado, lo-fi suave, 65–85 BPM",
+  "ini": 654318,
+  "fim": 674046,
+  "fonte": [
+   676.44,
+   696.71
+  ]
+ },
+ {
+  "id": "M5",
+  "nome": "O teste dos waffles e a despedida",
+  "clima": "brincalhona/cômica: pizzicato, fagote, percussão leve, 100–120 BPM",
+  "ini": 674047,
+  "fim": 687396,
+  "fonte": [
+   696.71,
+   710.06
+  ]
+ },
+ {
+  "id": "M5",
+  "nome": "O teste dos waffles e a despedida",
+  "clima": "brincalhona/cômica: pizzicato, fagote, percussão leve, 100–120 BPM",
+  "ini": 713670,
+  "fim": 717690,
+  "fonte": [
+   736.71,
+   752.79
+  ]
+ },
+ {
+  "id": "M5",
+  "nome": "O teste dos waffles e a despedida",
+  "clima": "brincalhona/cômica: pizzicato, fagote, percussão leve, 100–120 BPM",
+  "ini": 779324,
+  "fim": 790723,
+  "fonte": [
+   816.55,
+   827.95
+  ]
+ },
+ {
+  "id": "G",
+  "nome": "Abertura (gancho)",
+  "clima": "empolgante, termina na compra do bilhete",
+  "ini": 0,
+  "fim": 30920,
+  "fonte": null
+ },
+ {
+  "id": "F",
+  "nome": "Fechamento e tela final",
+  "clima": "nostálgica e quente",
+  "ini": 842982,
+  "fim": 924274,
+  "fonte": null
+ }
+]
