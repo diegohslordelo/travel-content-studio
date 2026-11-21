@@ -6,7 +6,7 @@
 | Vídeo / formato | Vídeo longo do YouTube, 16:9, 3840 × 2160, 24 qps, 15:12,9 |
 | Viagem / dia / local | Bruges (bate-volta de Bruxelas), segunda-feira 16/03/2026 |
 | Arquivo de origem | `fonte/1120.mp4` (Drive, Bruges/Youtube; editado pelo Diego, sem música) + 13 narrações gravadas (`fonte/narracao/P1–P5`, `R1–R8`, Drive, 21/11/2026) |
-| SHA-256 do original (antes / depois) | `dados/sha256_fonte.txt` / ⟨SHA⟩ ; narrações: `dados/sha256_narracao.txt` (nenhum arquivo de `fonte/` foi alterado) |
+| SHA-256 do original (antes / depois) | `dados/sha256_fonte.txt` / igual (`920467ae…ccb343cd`) ; narrações: `dados/sha256_narracao.txt` (nenhum arquivo de `fonte/` foi alterado) |
 | Data da revisão / responsável | 21/11/2026 / Claude (medição; a escuta é do Diego) |
 | Ferramentas e versões | ffmpeg (ebur128, AAC nativo), Python 3.13 (numpy, scipy, soundfile, pyloudnorm), faster-whisper large-v3 (int8, CPU), Remotion 4.0.535 (efeitos) |
 | Estado | **AGUARDANDO ESCUTA** |
@@ -19,11 +19,11 @@ Recomendação: **AGUARDANDO ESCUTA** (a escuta humana é pré-condição de qua
 
 | Item | Original | Exportado | Observação |
 |---|---|---|---|
-| Contêiner / duração vídeo / duração áudio | MP4 · 14:43,5 · 14:43,5 | MP4 · ⟨DUR_V⟩ · ⟨DUR_A⟩ | O exportado é a montagem (gancho + corpo decupado + fechamento + tela final) |
-| Fluxo de imagem | HEVC Main 10, 3840 × 2160, 24 qps, bt709 | ⟨VIDEO⟩ | Render do Remotion (objetos do DS); cores conferidas contra a fonte: diferença média < 2/255 por canal |
-| Áudio | AAC 44,1 kHz estéreo, 148 kbps | ⟨AUDIO⟩ | [PRECEDENTE] AAC 192 kbps 48 kHz |
-| LUFS integrado | fala de −27 a −18 LUFS por plano | ⟨LUFS⟩ | alvo [PROJETO]: −14 ± 1 LU |
-| Pico verdadeiro (dBTP) | −0,5 dBFS (pico de amostra, sem saturação) | ⟨TP⟩ | limite [PROJETO]: −1 |
+| Contêiner / duração vídeo / duração áudio | MP4 · 14:43,5 · 14:43,5 | MP4 · 15:12,875 · 15:12,875 | O exportado é a montagem (gancho + corpo decupado + fechamento + tela final) |
+| Fluxo de imagem | HEVC Main 10, 3840 × 2160, 24 qps, bt709 | H.264 High, 3840 × 2160, 24 qps, yuvj420p, 41,8 Mbps | Render do Remotion (objetos do DS); cores conferidas contra a fonte: diferença média < 2/255 por canal |
+| Áudio | AAC 44,1 kHz estéreo, 148 kbps | AAC 48 kHz estéreo, 194,6 kbps | [PRECEDENTE] AAC 192 kbps 48 kHz |
+| LUFS integrado | fala de −27 a −18 LUFS por plano | **−14,1 LUFS** (desvio −0,1 LU) | alvo [PROJETO]: −14 ± 1 LU |
+| Pico verdadeiro (dBTP) | −0,5 dBFS (pico de amostra, sem saturação) | **−1,6 dBTP** | limite [PROJETO]: −1 |
 | Piso de ruído (dBFS) | de −27 a −44 por plano (rua, bares) | — | ambiente da cena, preservado |
 
 ## 3. Blocos analisados
@@ -93,10 +93,10 @@ Narrações gravadas (medidas em `dados/narracao_fala.json`; arquivos inteiros, 
 |---|---|---|---|---|---|---|
 | P01 | 2 | Ganho por bloco até a mediana dos blocos (−22,1 LUFS), ±5 dB no máximo, transição de 200 ms no corte de cena | Seção 6.3 (G2 × T1) | 12 blocos com ganho (de −4,0 a +5,0 dB) | AGUARDANDO ESCUTA | — |
 | P03, P06 | 3 | Passa-altas Butterworth 2ª ordem, 80 Hz, fase zero | [PRECEDENTE] Amsterdam REV1–REV3 | — | AGUARDANDO ESCUTA | — |
-| P04 | 6 | Compressor 2:1, joelho 4 dB, ataque 20 ms, liberação 150 ms, máx. 3 dB, limiar 8 dB acima da fala-alvo, ligado nos 2 canais | [PRECEDENTE] REV6 | Voz do vlog: redução máx. ⟨COMP⟩ dB; narrações: máx. 2,0 dB (G1) | AGUARDANDO ESCUTA | — |
+| P04 | 6 | Compressor 2:1, joelho 4 dB, ataque 20 ms, liberação 150 ms, máx. 3 dB, limiar 8 dB acima da fala-alvo, ligado nos 2 canais | [PRECEDENTE] REV6 | Voz do vlog: redução máx. 1,79 (acima de 1 dB em 0,08% do tempo) dB; narrações: máx. 2,0 dB (G1) | AGUARDANDO ESCUTA | — |
 | P05, P07 | 1–2 | Narrações: recorte + ganho até a fala-alvo + o mesmo compressor | — | Ganhos da tabela 3 | AGUARDANDO ESCUTA | — |
-| P08 | 7 | Música −9 dB sob a narração; −3 dB da fala nas paisagens | [PROJETO] 8–10 dB | ⟨MUSICA⟩ (`CONFERENCIA_AUDIO_REV5.md`, 4) | AGUARDANDO ESCUTA | — |
-| P04 | 8 | Ganho de master ⟨GMASTER⟩ dB para −14 LUFS + limitador de pico verdadeiro (sobreamostragem 4×, antecipação 5 ms, liberação 80 ms, teto −2,0 dBTP) + correção de pico pós-AAC (alvo −1,2 dBTP, no máximo 3 dB por ponto e por rodada) | [PROJETO] −14 LUFS, ≤ −1 dBTP | Limitador acima de 1 dB em ⟨LIM1⟩% do tempo e acima de 6 dB em ⟨LIM6⟩% (Amsterdam REV1: 9,0% e 0,3%) | AGUARDANDO ESCUTA | — |
+| P08 | 7 | Música −9 dB sob a narração; −3 dB da fala nas paisagens | [PROJETO] 8–10 dB | Paisagens: −3,5 dB da fala (mediana); sob a narração: −8,7 dB no gancho e −9,7 dB no fechamento (`CONFERENCIA_AUDIO_REV5.md`, 4) | AGUARDANDO ESCUTA | — |
+| P04 | 8 | Ganho de master +9,69 dB para −14 LUFS + limitador de pico verdadeiro (sobreamostragem 4×, antecipação 5 ms, liberação 80 ms, teto −2,0 dBTP) + correção de pico pós-AAC (alvo −1,2 dBTP, no máximo 3 dB por ponto e por rodada) | [PROJETO] −14 LUFS, ≤ −1 dBTP | Limitador acima de 1 dB em 11,07% do tempo e acima de 6 dB em 0,32% (Amsterdam REV1: 9,0% e 0,3%) | AGUARDANDO ESCUTA | — |
 | P02 | — | **Tratamento não necessário** (redução de ruído) | Ambiente da cena; trechos mais barulhentos com legenda gravada | — | — | — |
 | P09 | — | **Tratamento não necessário** | Nada encontrado | — | — | — |
 
@@ -139,7 +139,23 @@ Faixa `.srt` (DS 3.4.1): `rev5/legenda_rev5.srt`, 185 legendas, nenhuma linha ac
 
 ## 10. Validação técnica
 
-⟨VALIDACAO⟩
+| Item (11.3) | Esperado | Obtido |
+|---|---|---|
+| Original intacto | SHA-256 igual ao registrado | Igual: `920467ae…ccb343cd` (`dados/sha256_fonte.txt`); narrações também intactas (`dados/sha256_narracao.txt`) |
+| Decodifica sem erros | Decodificação completa sem mensagens de erro | Sem erros (`ffmpeg -v error -i … -f null -`, vídeo inteiro) |
+| Duração do vídeo | A da montagem (props: 912.894 ms → 21.909 quadros) | 21.909 quadros = 912,875 s |
+| Duração do áudio | Igual à do vídeo | 912,875 s no contêiner (a mixagem foi cortada no último quadro) |
+| Fluxo de imagem | Render do Remotion a partir da fonte 4K | H.264 High, 3840 × 2160, 24 qps, yuvj420p, 41,8 Mbps (CRF 17, teto 45 Mbps); cores conferidas contra a fonte (diferença média < 2/255) |
+| Áudio | [PRECEDENTE] AAC 192 kbps 48 kHz; estéreo | AAC 194,6 kbps, 48 kHz, estéreo |
+| Capítulos/metadados | Não perdidos sem motivo | Capítulos vão na descrição do YouTube (`DESCRICAO_YOUTUBE_REV5.md`) |
+| Loudness | −14 LUFS ± 1 LU | **−14,1 LUFS** (desvio −0,1 LU): cumpre |
+| Pico verdadeiro | ≤ −1 dBTP | **−1,6 dBTP**: cumpre (a correção pós-AAC não precisou agir: 1 rodada, nenhuma amostra acima de −1,2 dBTP) |
+| Clipping | Nenhuma amostra no teto introduzida | Pico de amostra −1,7 dBFS no decodificado |
+| Início e fim | Sem estalo nem degrau | 1ª amostra 0,0000; primeiros 10 ms a −66 dBFS; música sai nos 3 s finais (último 0,2 s a −46 dBFS) |
+| Emendas | Nível contínuo | 80 trechos da fonte sem sobreposição; 13 narrações sem pisar umas nas outras nem na fala do vídeo (`CONFERENCIA_AUDIO_REV5.md`, 1) |
+| Sincronia áudio × imagem | Início, meio e fim | Partes do render juntadas só pela imagem (21.909 quadros contínuos) e som montado no mesmo relógio dos props; as falas reais caem nos quadros dos takes (conferido em quadros-chave do 4K: Recibo do trem, placa, Recibo do Fritbar, foto da relíquia, legenda palavra a palavra, mapa, Recibo final, tela final). Conferência visual da sincronia labial: com a escuta |
+
+LRA (faixa de loudness) do exportado: 6,0 LU. Medidas completas em `medidas_final_rev5.json` e `mixagem_final_rev5.json`.
 
 ## 11. Validação auditiva
 

@@ -67,11 +67,34 @@ Todo take tem 2 s ou mais e fica dentro de um plano da fonte (`VIDEO_LONGO_PASSO
 
 ## 5. Medidas do arquivo final
 
-⟨MEDIDAS⟩
+Medidas no arquivo exportado (`rev5/finalizar_rev5.py` → `audio/medidas_final_rev5.json`):
+
+| Item | Resultado |
+|---|---|
+| Imagem | H.264 High, **3840 × 2160**, 24 qps, 41,8 Mbps |
+| Quadros | **21.909** (esperados 21.909): as 16 partes do render juntadas só pela imagem, sem recodificar |
+| Som | AAC 48 kHz estéreo, 194,6 kbps |
+| Duração | imagem e som com **912,875 s** (15:12,9) |
+| Loudness | **−14,1 LUFS** (alvo −14 ± 1 LU) |
+| Pico verdadeiro | **−1,6 dBTP** (limite −1) |
+| Decodificação completa | sem erros |
+| Fonte | `fonte/1120.mp4` intacta (SHA-256 igual ao registrado) |
+| Tamanho | 4,79 GB · MD5 `ca68593d11d51871751ff9d0bfdfc4bb` |
+
+Conferência do som (`audio/CONFERENCIA_AUDIO_REV5.md`): nenhum problema medido. Os 3 casos de palavra encostando na música são os mesmos da REV4 aprovada (2 bordas de janela e 1 erro de tempo do Whisper). Relatório completo: `audio/RELATORIO_AUDIO_REV5.md` (estado **AGUARDANDO ESCUTA**) e checklist `audio/CHECKLIST_AUDIO_REV5.md`. Quadros-chave do 4K conferidos: Recibo do trem, placa e data, Recibo do Fritbar, foto da relíquia com crédito, legenda palavra a palavra, mapa, Recibo final de € 132,00 e tela final.
 
 ## 6. Entrega
 
-⟨ENTREGA⟩
+**Link (GoFile): https://gofile.io/d/1zKTaSES** (enviado em 21/11/2026). O MD5 que o GoFile devolveu bate com o de cada arquivo local.
+
+| Arquivo | O que é |
+|---|---|
+| `PrimeiroDia_Bruges_REV5_4K.mp4` (4,79 GB) | O vídeo final, para subir no YouTube |
+| `PrimeiroDia_Bruges_REV5_legenda_pt-BR.srt` | Legenda fechada (DS 3.4.1): 185 legendas, nenhuma linha acima de 42 caracteres. Confira `legenda_duvidas_rev5.md` antes de subir |
+| `DESCRICAO_YOUTUBE_REV5.md` | 3 títulos para o teste A/B, descrição com o total do dia, capítulos e créditos |
+| `thumbnail_A_recibo_menor.png`, `thumbnail_B_sem_recibo.png`, `thumbnail_C_so_bruges.png` | 3 opções de capa (1280 × 720), sem valores na capa |
+
+O GoFile apaga arquivos de quem não tem conta depois de alguns dias sem download (~10 dias, segundo fontes de terceiros; a página oficial não diz): baixe logo. O vídeo não vai para o git (fica em `_tmp/`); no git ficam os scripts, os props, o `.srt`, a descrição e as thumbnails.
 
 ## 7. Pendências
 

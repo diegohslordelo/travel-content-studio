@@ -1,0 +1,30 @@
+{
+ "arquivo": "_tmp/final_rev5/PrimeiroDia_Bruges_REV5_4K.mp4",
+ "tamanho_bytes": 4794910954,
+ "md5": "ca68593d11d51871751ff9d0bfdfc4bb",
+ "lufs_integrado": -14.1,
+ "desvio_lu": -0.1,
+ "pico_verdadeiro_dbtp": -1.6,
+ "lra_lu": 6.0,
+ "video": {
+  "codec": "h264",
+  "perfil": "High",
+  "largura": 3840,
+  "altura": 2160,
+  "fps": "24/1",
+  "pix_fmt": "yuvj420p",
+  "bitrate": 41818708,
+  "duracao_s": 912.875,
+  "quadros": 21909,
+  "quadros_esperados": 21909
+ },
+ "audio": {
+  "codec": "aac",
+  "taxa": 48000,
+  "canais": 2,
+  "bitrate": 194558,
+  "duracao_s": 912.875
+ },
+ "decodificacao_erros": null,
+ "fonte_sha256_igual_ao_registrado": true
+}

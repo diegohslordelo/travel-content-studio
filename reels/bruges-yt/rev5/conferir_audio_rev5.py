@@ -148,7 +148,7 @@ def main():
     L += ["## 6. Começo e fim", "",
           f"- Primeiros 10 ms: {db(fim[:480, 0]):.0f} dBFS; salto da 1ª amostra {abs(float(fim[0, 0])):.4f} (sem estalo de início).",
           f"- Gancho → 1ª cena: a música de abertura termina no corte ({mmss(G)}); 100 ms depois do corte, música a {db(mus[int((G + 0.02) * SR):int((G + 0.12) * SR), 0]):.0f} dBFS.",
-          f"- Último 0,2 s: {db(fim[-int(0.2 * SR):, 0]):.0f} dBFS (a música sai nos 3 s finais). Duração do som {len(fim) / SR:.3f} s × imagem {props['duracao'] / 1000:.3f} s.", ""]
+          f"- Último 0,2 s: {db(fim[-int(0.2 * SR):, 0]):.0f} dBFS (a música sai nos 3 s finais). Duração do som decodificado {len(fim) / SR:.3f} s (o decodificador AAC soma ~20 ms de enchimento; no contêiner, o som tem a duração da imagem: `medidas_final_rev5.json`) × imagem {round(props['duracao'] * props['fps'] / 1000) / props['fps']:.3f} s ({round(props['duracao'] * props['fps'] / 1000)} quadros).", ""]
 
     # 7. loudness
     lv = med.integrated_loudness(fim)
