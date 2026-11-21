@@ -35,6 +35,14 @@ def hash_arq(caminho, alg):
 def main():
     assert os.path.exists(f"{DIR}/imagem.mp4") and os.path.exists(f"{DIR}/sfx.wav"), "falta o render (rev5/renderizar_final_rev5.sh)"
     print(roda([sys.executable, "-I", "rev5/mixar_rev5.py", "--sfx", f"{DIR}/sfx.wav", "--saida", f"{DIR}/mix.wav"]).stdout[-600:])
+    # o som termina junto com a imagem: a duração dos props (912.894 ms) cai entre dois quadros; a imagem tem q / 24 s
+    import soundfile as sf
+    q_img = int(roda(["ffprobe", "-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries", "stream=nb_read_packets", "-of", "default=nw=1:nk=1", f"{DIR}/imagem.mp4"]).stdout.strip().strip(","))
+    x, sr = sf.read(f"{DIR}/mix.wav", dtype="float32", always_2d=True)
+    n = round(q_img * sr / 24)
+    assert len(x) - n < sr // 10, "a mixagem é muito mais longa que a imagem"
+    sf.write(f"{DIR}/mix.wav", x[:n], sr, subtype="FLOAT")
+    del x
     for velho in (f"{DIR}/mix_sem_sfx.wav", f"{DIR}/mix_sem_sfx_mix.json"):
         if os.path.exists(velho):
             os.remove(velho)
