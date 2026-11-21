@@ -1,0 +1,137 @@
+{
+ "P1": {
+  "dur_s": 5.055,
+  "fala_ini_s": 0.69,
+  "fala_fim_s": 4.57,
+  "pausas_s": [],
+  "lufs_fala": -21.2,
+  "pico_dbfs": -2.5,
+  "piso_dbfs": -47.8,
+  "graves_abaixo_100hz_db": -27.5
+ },
+ "P2": {
+  "dur_s": 5.567,
+  "fala_ini_s": 0.46,
+  "fala_fim_s": 5.02,
+  "pausas_s": [],
+  "lufs_fala": -17.8,
+  "pico_dbfs": -1.7,
+  "piso_dbfs": -45.6,
+  "graves_abaixo_100hz_db": -39.4
+ },
+ "P3": {
+  "dur_s": 3.177,
+  "fala_ini_s": 0.47,
+  "fala_fim_s": 2.81,
+  "pausas_s": [],
+  "lufs_fala": -15.7,
+  "pico_dbfs": -1.0,
+  "piso_dbfs": -49.9,
+  "graves_abaixo_100hz_db": -25.9
+ },
+ "P4": {
+  "dur_s": 6.42,
+  "fala_ini_s": 0.77,
+  "fala_fim_s": 5.94,
+  "pausas_s": [],
+  "lufs_fala": -18.7,
+  "pico_dbfs": -2.4,
+  "piso_dbfs": -54.5,
+  "graves_abaixo_100hz_db": -40.3
+ },
+ "P5": {
+  "dur_s": 6.335,
+  "fala_ini_s": 0.34,
+  "fala_fim_s": 5.84,
+  "pausas_s": [],
+  "lufs_fala": -19.9,
+  "pico_dbfs": -3.0,
+  "piso_dbfs": -52.2,
+  "graves_abaixo_100hz_db": -38.9
+ },
+ "R1": {
+  "dur_s": 7.017,
+  "fala_ini_s": 0.78,
+  "fala_fim_s": 6.22,
+  "pausas_s": [
+   [
+    3.91,
+    0.28
+   ]
+  ],
+  "lufs_fala": -16.6,
+  "pico_dbfs": -1.2,
+  "piso_dbfs": -45.0,
+  "graves_abaixo_100hz_db": -37.2
+ },
+ "R2": {
+  "dur_s": 7.529,
+  "fala_ini_s": 0.66,
+  "fala_fim_s": 6.98,
+  "pausas_s": [],
+  "lufs_fala": -16.6,
+  "pico_dbfs": -1.4,
+  "piso_dbfs": -49.7,
+  "graves_abaixo_100hz_db": -35.5
+ },
+ "R3": {
+  "dur_s": 5.225,
+  "fala_ini_s": 0.61,
+  "fala_fim_s": 4.66,
+  "pausas_s": [],
+  "lufs_fala": -16.5,
+  "pico_dbfs": -1.1,
+  "piso_dbfs": -50.3,
+  "graves_abaixo_100hz_db": -35.0
+ },
+ "R4": {
+  "dur_s": 7.273,
+  "fala_ini_s": 0.56,
+  "fala_fim_s": 6.61,
+  "pausas_s": [],
+  "lufs_fala": -16.4,
+  "pico_dbfs": -0.7,
+  "piso_dbfs": -50.2,
+  "graves_abaixo_100hz_db": -35.2
+ },
+ "R5": {
+  "dur_s": 7.444,
+  "fala_ini_s": 0.6,
+  "fala_fim_s": 6.68,
+  "pausas_s": [],
+  "lufs_fala": -16.5,
+  "pico_dbfs": -0.5,
+  "piso_dbfs": -45.5,
+  "graves_abaixo_100hz_db": -33.9
+ },
+ "R6": {
+  "dur_s": 7.615,
+  "fala_ini_s": 0.54,
+  "fala_fim_s": 6.85,
+  "pausas_s": [],
+  "lufs_fala": -17.1,
+  "pico_dbfs": -0.7,
+  "piso_dbfs": -50.8,
+  "graves_abaixo_100hz_db": -35.3
+ },
+ "R7": {
+  "dur_s": 7.785,
+  "fala_ini_s": 0.36,
+  "fala_fim_s": 7.38,
+  "pausas_s": [],
+  "lufs_fala": -17.1,
+  "pico_dbfs": -1.5,
+  "piso_dbfs": -44.0,
+  "graves_abaixo_100hz_db": -33.4
+ },
+ "R8": {
+  "dur_s": 6.932,
+  "fala_ini_s": 0.66,
+  "fala_fim_s": 6.34,
+  "pausas_s": [],
+  "lufs_fala": -16.2,
+  "pico_dbfs": -0.8,
+  "piso_dbfs": -49.4,
+  "graves_abaixo_100hz_db": -34.7
+ }
+}

@@ -1,0 +1,223 @@
+{
+ "faixas": {
+  "G": {
+   "faixa": "Bright Skies - Audio Hertz",
+   "lufs_faixa": -12.1,
+   "duracao_s": 173.7
+  },
+  "M1": {
+   "faixa": "Top Of The Morning - TrackTribe",
+   "lufs_faixa": -10.4,
+   "duracao_s": 148.0
+  },
+  "M2": {
+   "faixa": "Ripples In Time - Asher Fulero",
+   "lufs_faixa": -10.0,
+   "duracao_s": 237.7
+  },
+  "M3": {
+   "faixa": "Swing Haven 1 - Los Angeles - Reed Mathis",
+   "lufs_faixa": -14.4,
+   "duracao_s": 127.9
+  },
+  "M4": {
+   "faixa": "Starlight on the Water - Chris Haugen",
+   "lufs_faixa": -13.6,
+   "duracao_s": 143.9
+  },
+  "M5": {
+   "faixa": "Peaked My Interest - Nathan Moore",
+   "lufs_faixa": -13.2,
+   "duracao_s": 123.7
+  },
+  "F": {
+   "faixa": "Spring Migration - The Great North Sound Society",
+   "lufs_faixa": -11.6,
+   "duracao_s": 149.1
+  }
+ },
+ "janelas": [
+  {
+   "id": "G",
+   "faixa": "Bright Skies - Audio Hertz",
+   "video_s": [
+    0.0,
+    29.17
+   ],
+   "faixa_s": [
+    12.069,
+    41.239
+   ],
+   "nota": "entrada em 12.07 s da faixa: batida forte no corte do gancho; −29 LUFS sob a narração, −23 LUFS de 29.1 s ao corte; termina no corte"
+  },
+  {
+   "id": "M1",
+   "faixa": "Top Of The Morning - TrackTribe",
+   "video_s": [
+    69.622,
+    90.121
+   ],
+   "faixa_s": [
+    1.0,
+    21.499
+   ]
+  },
+  {
+   "id": "M1",
+   "faixa": "Top Of The Morning - TrackTribe",
+   "video_s": [
+    114.992,
+    133.471
+   ],
+   "faixa_s": [
+    21.499,
+    39.978
+   ]
+  },
+  {
+   "id": "M2",
+   "faixa": "Ripples In Time - Asher Fulero",
+   "video_s": [
+    161.367,
+    174.526
+   ],
+   "faixa_s": [
+    3.0,
+    16.159
+   ]
+  },
+  {
+   "id": "M2",
+   "faixa": "Ripples In Time - Asher Fulero",
+   "video_s": [
+    223.072,
+    242.181
+   ],
+   "faixa_s": [
+    16.159,
+    35.268
+   ]
+  },
+  {
+   "id": "M2",
+   "faixa": "Ripples In Time - Asher Fulero",
+   "video_s": [
+    277.838,
+    308.267
+   ],
+   "faixa_s": [
+    35.268,
+    65.697
+   ]
+  },
+  {
+   "id": "M2",
+   "faixa": "Ripples In Time - Asher Fulero",
+   "video_s": [
+    346.262,
+    369.201
+   ],
+   "faixa_s": [
+    65.697,
+    88.636
+   ]
+  },
+  {
+   "id": "M3",
+   "faixa": "Swing Haven 1 - Los Angeles - Reed Mathis",
+   "video_s": [
+    446.77,
+    463.539
+   ],
+   "faixa_s": [
+    0.0,
+    16.769
+   ]
+  },
+  {
+   "id": "M3",
+   "faixa": "Swing Haven 1 - Los Angeles - Reed Mathis",
+   "video_s": [
+    485.693,
+    503.972
+   ],
+   "faixa_s": [
+    16.769,
+    35.048
+   ]
+  },
+  {
+   "id": "M3",
+   "faixa": "Swing Haven 1 - Los Angeles - Reed Mathis",
+   "video_s": [
+    587.39,
+    604.409
+   ],
+   "faixa_s": [
+    35.048,
+    52.067
+   ]
+  },
+  {
+   "id": "M4",
+   "faixa": "Starlight on the Water - Chris Haugen",
+   "video_s": [
+    652.568,
+    672.296
+   ],
+   "faixa_s": [
+    0.0,
+    19.728
+   ]
+  },
+  {
+   "id": "M5",
+   "faixa": "Peaked My Interest - Nathan Moore",
+   "video_s": [
+    672.297,
+    685.646
+   ],
+   "faixa_s": [
+    9.0,
+    22.349
+   ]
+  },
+  {
+   "id": "M5",
+   "faixa": "Peaked My Interest - Nathan Moore",
+   "video_s": [
+    711.92,
+    715.94
+   ],
+   "faixa_s": [
+    22.349,
+    26.369
+   ]
+  },
+  {
+   "id": "M5",
+   "faixa": "Peaked My Interest - Nathan Moore",
+   "video_s": [
+    777.574,
+    788.973
+   ],
+   "faixa_s": [
+    26.369,
+    37.768
+   ]
+  },
+  {
+   "id": "F",
+   "faixa": "Spring Migration - The Great North Sound Society",
+   "video_s": [
+    841.232,
+    912.894
+   ],
+   "faixa_s": [
+    15.0,
+    86.662
+   ],
+   "nota": "−29 LUFS sob a narração (até 892.3 s), −23 LUFS na tela final, sai nos últimos 3 s"
+  }
+ ]
+}

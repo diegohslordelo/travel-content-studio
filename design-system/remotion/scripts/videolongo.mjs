@@ -10,6 +10,8 @@
  * X264_PRESET (ex.: veryfast) troca o preset do x264 (padrão do Remotion: medium) e CRF troca o CRF (padrão 20).
  * MAXRATE (ex.: 12M) limita a taxa do CRF (buffer = 2 × MAXRATE): com o grão do DS, o CRF puro pesa (a prévia 720p em
  * CRF 20 passava de 2 GB).
+ * JPEG_QUALITY (1–100; padrão do Remotion: 80) é a qualidade do JPEG de cada quadro antes do x264; IMAGE_FORMAT=png troca
+ * o JPEG por PNG (sem perda, mais lento). Render final "na maior qualidade possível" (Bruges, 21/11/2026): JPEG_QUALITY=100.
  * CONCURRENCY (padrão: nº de núcleos) e OFFTHREAD_CACHE_MB (cache de quadros do <OffthreadVideo>; padrão do Remotion:
  * metade da memória) seguram a memória do 4K: com os padrões, a máquina de 15 GB reiniciou no meio do render 4K
  * (provável falta de memória: no 1080p, o compositor sozinho passou de 5,8 GB).
@@ -42,6 +44,8 @@ const codificacao = {
   crf: Number(process.env.CRF ?? 20),
   ...(process.env.X264_PRESET ? { x264Preset: process.env.X264_PRESET } : {}),
   ...(process.env.MAXRATE ? { encodingMaxRate: process.env.MAXRATE, encodingBufferSize: `${parseFloat(process.env.MAXRATE) * 2}M` } : {}),
+  ...(process.env.IMAGE_FORMAT ? { imageFormat: process.env.IMAGE_FORMAT } : {}),
+  ...(process.env.JPEG_QUALITY ? { jpegQuality: Number(process.env.JPEG_QUALITY) } : {}),
 };
 const composition = await selectComposition({ ...comum, id: "VideoLongo" });
 const concurrency = Number(process.env.CONCURRENCY ?? Math.max(1, os.cpus().length));

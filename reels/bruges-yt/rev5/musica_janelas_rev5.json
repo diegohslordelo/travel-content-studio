@@ -1,0 +1,161 @@
+[
+ {
+  "id": "M1",
+  "nome": "Chegada e o primeiro waffle",
+  "clima": "leve, curiosa, manhã",
+  "ini": 69622,
+  "fim": 90121,
+  "fonte": [
+   51.66,
+   72.16
+  ]
+ },
+ {
+  "id": "M1",
+  "nome": "Chegada e o primeiro waffle",
+  "clima": "leve, curiosa, manhã",
+  "ini": 114992,
+  "fim": 133471,
+  "fonte": [
+   100.28,
+   118.76
+  ]
+ },
+ {
+  "id": "M2",
+  "nome": "Markt, Burg e canais: o conto de fadas",
+  "clima": "encantadora e empolgante",
+  "ini": 161367,
+  "fim": 174526,
+  "fonte": [
+   147.53,
+   160.69
+  ]
+ },
+ {
+  "id": "M2",
+  "nome": "Markt, Burg e canais: o conto de fadas",
+  "clima": "encantadora e empolgante",
+  "ini": 223072,
+  "fim": 242181,
+  "fonte": [
+   214.11,
+   233.22
+  ]
+ },
+ {
+  "id": "M2",
+  "nome": "Markt, Burg e canais: o conto de fadas",
+  "clima": "encantadora e empolgante",
+  "ini": 277838,
+  "fim": 308267,
+  "fonte": [
+   271.96,
+   302.39
+  ]
+ },
+ {
+  "id": "M2",
+  "nome": "Markt, Burg e canais: o conto de fadas",
+  "clima": "encantadora e empolgante",
+  "ini": 346262,
+  "fim": 369201,
+  "fonte": [
+   343.55,
+   366.49
+  ]
+ },
+ {
+  "id": "M3",
+  "nome": "Fome, chocolate e a batata",
+  "clima": "animada e gostosa",
+  "ini": 446770,
+  "fim": 463539,
+  "fonte": [
+   458.35,
+   475.12
+  ]
+ },
+ {
+  "id": "M3",
+  "nome": "Fome, chocolate e a batata",
+  "clima": "animada e gostosa",
+  "ini": 485693,
+  "fim": 503972,
+  "fonte": [
+   497.94,
+   516.22
+  ]
+ },
+ {
+  "id": "M3",
+  "nome": "Fome, chocolate e a batata",
+  "clima": "animada e gostosa",
+  "ini": 587390,
+  "fim": 604409,
+  "fonte": [
+   604.97,
+   621.99
+  ]
+ },
+ {
+  "id": "M4",
+  "nome": "Minnewater: o descanso",
+  "clima": "calma",
+  "ini": 652568,
+  "fim": 672296,
+  "fonte": [
+   676.44,
+   696.71
+  ]
+ },
+ {
+  "id": "M5",
+  "nome": "O teste dos waffles e a despedida",
+  "clima": "brincalhona",
+  "ini": 672297,
+  "fim": 685646,
+  "fonte": [
+   696.71,
+   710.06
+  ]
+ },
+ {
+  "id": "M5",
+  "nome": "O teste dos waffles e a despedida",
+  "clima": "brincalhona",
+  "ini": 711920,
+  "fim": 715940,
+  "fonte": [
+   736.71,
+   752.79
+  ]
+ },
+ {
+  "id": "M5",
+  "nome": "O teste dos waffles e a despedida",
+  "clima": "brincalhona",
+  "ini": 777574,
+  "fim": 788973,
+  "fonte": [
+   816.55,
+   827.95
+  ]
+ },
+ {
+  "id": "G",
+  "nome": "Abertura (gancho)",
+  "clima": "empolgante, termina na compra do bilhete",
+  "ini": 0,
+  "fim": 29170,
+  "fonte": null
+ },
+ {
+  "id": "F",
+  "nome": "Fechamento e tela final",
+  "clima": "alegre e calorosa",
+  "ini": 841232,
+  "fim": 912894,
+  "fonte": null
+ }
+]

@@ -1,0 +1,810 @@
+{
+ "fps": 24,
+ "gancho_ms": 29170,
+ "corpo_fim_ms": 841232.5,
+ "fechamento_fim_ms": 892893.6666666666,
+ "duracao_ms": 912894,
+ "audio": [
+  {
+   "src": 523050,
+   "out": 9410,
+   "dur": 5400,
+   "tipo": "gancho_fala"
+  },
+  {
+   "src": 10083.333333333334,
+   "out": 29170,
+   "dur": 8375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 18708.333333333332,
+   "out": 37545.0,
+   "dur": 32041.66666666667,
+   "tipo": "corpo"
+  },
+  {
+   "src": 51625.0,
+   "out": 69586.66666666667,
+   "dur": 27833.33333333333,
+   "tipo": "corpo"
+  },
+  {
+   "src": 82708.33333333333,
+   "out": 97420.0,
+   "dur": 46916.66666666666,
+   "tipo": "corpo"
+  },
+  {
+   "src": 130208.33333333333,
+   "out": 144336.66666666666,
+   "dur": 10000.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 140500.0,
+   "out": 154336.66666666666,
+   "dur": 20208.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 160875.0,
+   "out": 174545.0,
+   "dur": 5208.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 166208.33333333334,
+   "out": 179753.33333333334,
+   "dur": 12333.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 178958.33333333334,
+   "out": 192086.6666666667,
+   "dur": 8208.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 188333.33333333334,
+   "out": 200295.00000000003,
+   "dur": 3208.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 191666.66666666666,
+   "out": 203503.33333333337,
+   "dur": 1958.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 193750.0,
+   "out": 205461.66666666672,
+   "dur": 3541.666666666657,
+   "tipo": "corpo"
+  },
+  {
+   "src": 198041.66666666666,
+   "out": 209003.33333333337,
+   "dur": 3458.333333333343,
+   "tipo": "corpo"
+  },
+  {
+   "src": 201750.0,
+   "out": 212461.66666666672,
+   "dur": 2750.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 206000.0,
+   "out": 215211.66666666672,
+   "dur": 3791.666666666657,
+   "tipo": "corpo"
+  },
+  {
+   "src": 210041.66666666666,
+   "out": 219003.33333333337,
+   "dur": 34500.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 244666.66666666666,
+   "out": 253503.33333333337,
+   "dur": 6500.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 251291.66666666666,
+   "out": 260003.33333333337,
+   "dur": 2500.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 254041.66666666666,
+   "out": 262503.3333333334,
+   "dur": 2333.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 257083.33333333334,
+   "out": 264836.6666666667,
+   "dur": 1125.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 258625.0,
+   "out": 265961.6666666667,
+   "dur": 7166.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 267250.0,
+   "out": 273128.3333333334,
+   "dur": 41708.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 309625.0,
+   "out": 314836.6666666667,
+   "dur": 1333.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 311791.6666666667,
+   "out": 316170.0,
+   "dur": 19708.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 332250.0,
+   "out": 335878.3333333333,
+   "dur": 2416.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 335208.3333333333,
+   "out": 338295.0,
+   "dur": 4083.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 339666.6666666667,
+   "out": 342378.3333333333,
+   "dur": 26833.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 366750.0,
+   "out": 369211.6666666666,
+   "dur": 9250.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 381166.6666666667,
+   "out": 378461.6666666666,
+   "dur": 2833.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 384583.3333333333,
+   "out": 381294.99999999994,
+   "dur": 3416.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 388458.3333333333,
+   "out": 384711.6666666666,
+   "dur": 2458.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 391416.6666666667,
+   "out": 387169.99999999994,
+   "dur": 8083.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 400666.6666666667,
+   "out": 395253.33333333326,
+   "dur": 2083.333333333314,
+   "tipo": "corpo"
+  },
+  {
+   "src": 403583.3333333333,
+   "out": 397336.66666666657,
+   "dur": 4541.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 408958.3333333333,
+   "out": 401878.33333333326,
+   "dur": 3916.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 413000.0,
+   "out": 405794.99999999994,
+   "dur": 1416.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 414916.6666666667,
+   "out": 407211.6666666666,
+   "dur": 1166.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 418375.0,
+   "out": 408378.3333333333,
+   "dur": 9500.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 428166.6666666667,
+   "out": 417878.3333333333,
+   "dur": 6375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 434708.3333333333,
+   "out": 424253.3333333333,
+   "dur": 5625.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 440750.0,
+   "out": 429878.3333333333,
+   "dur": 9125.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 450375.0,
+   "out": 439003.3333333333,
+   "dur": 2500.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 453083.3333333333,
+   "out": 441503.3333333333,
+   "dur": 35291.666666666686,
+   "tipo": "corpo"
+  },
+  {
+   "src": 489041.6666666667,
+   "out": 476795.0,
+   "dur": 50791.66666666663,
+   "tipo": "corpo"
+  },
+  {
+   "src": 541291.6666666666,
+   "out": 527586.6666666666,
+   "dur": 8208.333333333372,
+   "tipo": "corpo"
+  },
+  {
+   "src": 549916.6666666666,
+   "out": 535795.0,
+   "dur": 4041.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 554125.0,
+   "out": 539836.6666666666,
+   "dur": 1166.6666666666279,
+   "tipo": "corpo"
+  },
+  {
+   "src": 556041.6666666666,
+   "out": 541003.3333333333,
+   "dur": 17500.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 574625.0,
+   "out": 558503.3333333333,
+   "dur": 12000.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 587458.3333333334,
+   "out": 570503.3333333333,
+   "dur": 16875.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 604958.3333333334,
+   "out": 587378.3333333333,
+   "dur": 24375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 629500.0,
+   "out": 611753.3333333333,
+   "dur": 1333.3333333333721,
+   "tipo": "corpo"
+  },
+  {
+   "src": 631625.0,
+   "out": 613086.6666666666,
+   "dur": 5916.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 637791.6666666666,
+   "out": 619003.3333333333,
+   "dur": 1291.6666666666279,
+   "tipo": "corpo"
+  },
+  {
+   "src": 640208.3333333334,
+   "out": 620294.9999999999,
+   "dur": 1083.3333333333721,
+   "tipo": "corpo"
+  },
+  {
+   "src": 642166.6666666666,
+   "out": 621378.3333333333,
+   "dur": 7833.333333333372,
+   "tipo": "corpo"
+  },
+  {
+   "src": 650458.3333333334,
+   "out": 629211.6666666666,
+   "dur": 9708.333333333372,
+   "tipo": "corpo"
+  },
+  {
+   "src": 660458.3333333334,
+   "out": 638920.0,
+   "dur": 1208.3333333333721,
+   "tipo": "corpo"
+  },
+  {
+   "src": 662250.0,
+   "out": 640128.3333333334,
+   "dur": 2875.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 665250.0,
+   "out": 643003.3333333334,
+   "dur": 3750.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 670625.0,
+   "out": 646753.3333333334,
+   "dur": 18541.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 689708.3333333334,
+   "out": 665295.0,
+   "dur": 37625.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 727583.3333333334,
+   "out": 702920.0,
+   "dur": 6375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 734083.3333333334,
+   "out": 709295.0,
+   "dur": 2625.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 752791.6666666666,
+   "out": 715940.8333333334,
+   "dur": 16375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 769500.0,
+   "out": 732315.8333333334,
+   "dur": 15125.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 784833.3333333334,
+   "out": 747440.8333333334,
+   "dur": 3541.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 788875.0,
+   "out": 750982.5,
+   "dur": 3416.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 792583.3333333334,
+   "out": 754399.1666666666,
+   "dur": 2125.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 794875.0,
+   "out": 756524.1666666666,
+   "dur": 2166.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 797666.6666666666,
+   "out": 758690.8333333333,
+   "dur": 30375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 828583.3333333334,
+   "out": 789065.8333333333,
+   "dur": 12208.333333333372,
+   "tipo": "corpo"
+  },
+  {
+   "src": 840958.3333333334,
+   "out": 801274.1666666666,
+   "dur": 2958.333333333372,
+   "tipo": "corpo"
+  },
+  {
+   "src": 844208.3333333334,
+   "out": 804232.5,
+   "dur": 10916.666666666628,
+   "tipo": "corpo"
+  },
+  {
+   "src": 855416.6666666666,
+   "out": 815149.1666666666,
+   "dur": 7625.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 863166.6666666666,
+   "out": 822774.1666666666,
+   "dur": 1458.3333333333721,
+   "tipo": "corpo"
+  },
+  {
+   "src": 864875.0,
+   "out": 824232.5,
+   "dur": 10375.0,
+   "tipo": "corpo"
+  },
+  {
+   "src": 875750.0,
+   "out": 834607.5,
+   "dur": 6083.333333333372,
+   "tipo": "corpo"
+  },
+  {
+   "src": 882000.0,
+   "out": 840690.8333333334,
+   "dur": 541.6666666666279,
+   "tipo": "corpo"
+  }
+ ],
+ "narracoes": [
+  {
+   "id": "G1",
+   "arq": "P1",
+   "t0_ms": -389.99999999999994,
+   "fala_ini": 300,
+   "fala_fim": 4180,
+   "arq_ini_s": 0.69,
+   "arq_fim_s": 4.57,
+   "texto": "Quanto custa um dia em Bruges, a cidade que parece um conto de fadas?"
+  },
+  {
+   "id": "G2",
+   "arq": "P2",
+   "t0_ms": 4020.0000000000005,
+   "fala_ini": 4480,
+   "fala_fim": 9040,
+   "arq_ini_s": 0.46,
+   "arq_fim_s": 5.02,
+   "texto": "Nós comemos três vezes o mesmo waffle e achamos a melhor batata frita da cidade."
+  },
+  {
+   "id": "G3",
+   "arq": "P3",
+   "t0_ms": 14589.999999999998,
+   "fala_ini": 15060,
+   "fala_fim": 17400,
+   "arq_ini_s": 0.47,
+   "arq_fim_s": 2.81,
+   "texto": "E vimos de pertinho o sangue de Cristo."
+  },
+  {
+   "id": "G4",
+   "arq": "P4",
+   "t0_ms": 16980.0,
+   "fala_ini": 17750,
+   "fala_fim": 22920,
+   "arq_ini_s": 0.77,
+   "arq_fim_s": 5.94,
+   "texto": "Eu anotei cada euro e eu vou te mostrar no final quanto deu isso tudo e se vale a pena."
+  },
+  {
+   "id": "G5",
+   "arq": "P5",
+   "t0_ms": 22930.000000000004,
+   "fala_ini": 23270,
+   "fala_fim": 28770,
+   "arq_ini_s": 0.34,
+   "arq_fim_s": 5.84,
+   "texto": "E a conta começa aqui. Nós saímos de um bate-volta de Bruxelas, cerca de uma hora de Bruxelas, e compramos na hora o bilhete."
+  },
+  {
+   "id": "F1",
+   "arq": "R1",
+   "t0_ms": 841102.0,
+   "fala_ini": 841882,
+   "fala_fim": 847322,
+   "arq_ini_s": 0.78,
+   "arq_fim_s": 6.22,
+   "texto": "Sabe aquela Europa que você imagina antes de visitar a Europa? Pois é, ela existe e se chama Bruges."
+  },
+  {
+   "id": "F2",
+   "arq": "R2",
+   "t0_ms": 847062.0,
+   "fala_ini": 847722,
+   "fala_fim": 854042,
+   "arq_ini_s": 0.66,
+   "arq_fim_s": 6.98,
+   "texto": "Conhecida como Veneza do Norte, ela tem um canal em cada esquina, carruagens passando, cheira a chocolate e a waffle."
+  },
+  {
+   "id": "F3",
+   "arq": "R3",
+   "t0_ms": 853982.0,
+   "fala_ini": 854592,
+   "fala_fim": 858642,
+   "arq_ini_s": 0.61,
+   "arq_fim_s": 4.66,
+   "texto": "O centro histórico inteiro é patrimônio mundial da UNESCO e dá pra fazer tudo andando."
+  },
+  {
+   "id": "F4",
+   "arq": "R4",
+   "t0_ms": 858532.0,
+   "fala_ini": 859092,
+   "fala_fim": 865142,
+   "arq_ini_s": 0.56,
+   "arq_fim_s": 6.61,
+   "texto": "No final das contas, tudo que nós consumimos aqui, mais o transporte saindo de Bruxelas, ficou 132 euros para o casal."
+  },
+  {
+   "id": "F6",
+   "arq": "R5",
+   "t0_ms": 864992.0,
+   "fala_ini": 865592,
+   "fala_fim": 871672,
+   "arq_ini_s": 0.6,
+   "arq_fim_s": 6.68,
+   "texto": "Vale muito a pena visitar essa cidade. Um dia é o suficiente para você conhecer, mas não para querer ir embora. Eu voltaria mil vezes."
+  },
+  {
+   "id": "F7",
+   "arq": "R6",
+   "t0_ms": 871582.0,
+   "fala_ini": 872122,
+   "fala_fim": 878432,
+   "arq_ini_s": 0.54,
+   "arq_fim_s": 6.85,
+   "texto": "E a dica que eu dou é: durma na cidade. De manhã cedo e à noite, os bate-voltas vão embora e ela fica mais vazia e mais legal ainda de conhecer."
+  },
+  {
+   "id": "F8",
+   "arq": "R7",
+   "t0_ms": 878522.0,
+   "fala_ini": 878882,
+   "fala_fim": 885902,
+   "arq_ini_s": 0.36,
+   "arq_fim_s": 7.38,
+   "texto": "E se esse vídeo te ajudou de alguma forma, se inscreve e deixa o like aí, que vai me ajudar muito. E não se esquece de me seguir lá no Instagram, @primeirodiaem."
+  },
+  {
+   "id": "F9",
+   "arq": "R8",
+   "t0_ms": 885692.0,
+   "fala_ini": 886352,
+   "fala_fim": 892032,
+   "arq_ini_s": 0.66,
+   "arq_fim_s": 6.34,
+   "texto": "Toda cidade tem um primeiro dia, e o de Bruges a gente nunca vai esquecer. O próximo é em Paris, te espero lá."
+  }
+ ],
+ "musica": [
+  {
+   "id": "M1",
+   "nome": "Chegada e o primeiro waffle",
+   "clima": "leve, curiosa, manhã",
+   "ini": 69622,
+   "fim": 90121,
+   "fonte": [
+    51.66,
+    72.16
+   ]
+  },
+  {
+   "id": "M1",
+   "nome": "Chegada e o primeiro waffle",
+   "clima": "leve, curiosa, manhã",
+   "ini": 114992,
+   "fim": 133471,
+   "fonte": [
+    100.28,
+    118.76
+   ]
+  },
+  {
+   "id": "M2",
+   "nome": "Markt, Burg e canais: o conto de fadas",
+   "clima": "encantadora e empolgante",
+   "ini": 161367,
+   "fim": 174526,
+   "fonte": [
+    147.53,
+    160.69
+   ]
+  },
+  {
+   "id": "M2",
+   "nome": "Markt, Burg e canais: o conto de fadas",
+   "clima": "encantadora e empolgante",
+   "ini": 223072,
+   "fim": 242181,
+   "fonte": [
+    214.11,
+    233.22
+   ]
+  },
+  {
+   "id": "M2",
+   "nome": "Markt, Burg e canais: o conto de fadas",
+   "clima": "encantadora e empolgante",
+   "ini": 277838,
+   "fim": 308267,
+   "fonte": [
+    271.96,
+    302.39
+   ]
+  },
+  {
+   "id": "M2",
+   "nome": "Markt, Burg e canais: o conto de fadas",
+   "clima": "encantadora e empolgante",
+   "ini": 346262,
+   "fim": 369201,
+   "fonte": [
+    343.55,
+    366.49
+   ]
+  },
+  {
+   "id": "M3",
+   "nome": "Fome, chocolate e a batata",
+   "clima": "animada e gostosa",
+   "ini": 446770,
+   "fim": 463539,
+   "fonte": [
+    458.35,
+    475.12
+   ]
+  },
+  {
+   "id": "M3",
+   "nome": "Fome, chocolate e a batata",
+   "clima": "animada e gostosa",
+   "ini": 485693,
+   "fim": 503972,
+   "fonte": [
+    497.94,
+    516.22
+   ]
+  },
+  {
+   "id": "M3",
+   "nome": "Fome, chocolate e a batata",
+   "clima": "animada e gostosa",
+   "ini": 587390,
+   "fim": 604409,
+   "fonte": [
+    604.97,
+    621.99
+   ]
+  },
+  {
+   "id": "M4",
+   "nome": "Minnewater: o descanso",
+   "clima": "calma",
+   "ini": 652568,
+   "fim": 672296,
+   "fonte": [
+    676.44,
+    696.71
+   ]
+  },
+  {
+   "id": "M5",
+   "nome": "O teste dos waffles e a despedida",
+   "clima": "brincalhona",
+   "ini": 672297,
+   "fim": 685646,
+   "fonte": [
+    696.71,
+    710.06
+   ]
+  },
+  {
+   "id": "M5",
+   "nome": "O teste dos waffles e a despedida",
+   "clima": "brincalhona",
+   "ini": 711920,
+   "fim": 715940,
+   "fonte": [
+    736.71,
+    752.79
+   ]
+  },
+  {
+   "id": "M5",
+   "nome": "O teste dos waffles e a despedida",
+   "clima": "brincalhona",
+   "ini": 777574,
+   "fim": 788973,
+   "fonte": [
+    816.55,
+    827.95
+   ]
+  },
+  {
+   "id": "G",
+   "nome": "Abertura (gancho)",
+   "clima": "empolgante, termina na compra do bilhete",
+   "ini": 0,
+   "fim": 29170,
+   "fonte": null
+  },
+  {
+   "id": "F",
+   "nome": "Fechamento e tela final",
+   "clima": "alegre e calorosa",
+   "ini": 841232,
+   "fim": 912894,
+   "fonte": null
+  }
+ ],
+ "faixas": {
+  "G": "Bright Skies - Audio Hertz",
+  "M1": "Top Of The Morning - TrackTribe",
+  "M2": "Ripples In Time - Asher Fulero",
+  "M3": "Swing Haven 1 - Los Angeles - Reed Mathis",
+  "M4": "Starlight on the Water - Chris Haugen",
+  "M5": "Peaked My Interest - Nathan Moore",
+  "F": "Spring Migration - The Great North Sound Society"
+ },
+ "inicio_faixa_s": {
+  "G": 12.0,
+  "M1": 1.0,
+  "M2": 3.0,
+  "M3": 0.0,
+  "M4": 0.0,
+  "M5": 9.0,
+  "F": 15.0
+ },
+ "narracao_fim_gancho_ms": 28770,
+ "fechamento_narr_fim_ms": 892032,
+ "contas": {
+  "comida": 60.0,
+  "transporte": 72.0,
+  "total": 132.0,
+  "pp": 66.0,
+  "pp_brl": 399.14
+ },
+ "keen_ms": null
+}

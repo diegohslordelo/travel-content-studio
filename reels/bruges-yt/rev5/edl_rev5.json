@@ -1,0 +1,1039 @@
+{
+ "fps": 24,
+ "duracao_fonte_s": 883.519,
+ "duracao_saida_s": 835.167,
+ "removido_s": 48.333,
+ "manter": [
+  [
+   0,
+   443
+  ],
+  [
+   449,
+   1218
+  ],
+  [
+   1239,
+   1907
+  ],
+  [
+   1985,
+   3111
+  ],
+  [
+   3125,
+   3365
+  ],
+  [
+   3372,
+   3857
+  ],
+  [
+   3861,
+   3986
+  ],
+  [
+   3989,
+   4285
+  ],
+  [
+   4295,
+   4492
+  ],
+  [
+   4520,
+   4597
+  ],
+  [
+   4600,
+   4647
+  ],
+  [
+   4650,
+   4735
+  ],
+  [
+   4753,
+   4836
+  ],
+  [
+   4842,
+   4908
+  ],
+  [
+   4944,
+   5035
+  ],
+  [
+   5041,
+   5869
+  ],
+  [
+   5872,
+   6028
+  ],
+  [
+   6031,
+   6091
+  ],
+  [
+   6097,
+   6153
+  ],
+  [
+   6170,
+   6197
+  ],
+  [
+   6207,
+   6379
+  ],
+  [
+   6414,
+   7415
+  ],
+  [
+   7431,
+   7463
+  ],
+  [
+   7483,
+   7956
+  ],
+  [
+   7974,
+   8032
+  ],
+  [
+   8045,
+   8143
+  ],
+  [
+   8152,
+   8796
+  ],
+  [
+   8802,
+   9024
+  ],
+  [
+   9148,
+   9216
+  ],
+  [
+   9230,
+   9312
+  ],
+  [
+   9323,
+   9382
+  ],
+  [
+   9394,
+   9588
+  ],
+  [
+   9616,
+   9666
+  ],
+  [
+   9686,
+   9795
+  ],
+  [
+   9815,
+   9909
+  ],
+  [
+   9912,
+   9946
+  ],
+  [
+   9958,
+   9986
+  ],
+  [
+   10041,
+   10269
+  ],
+  [
+   10276,
+   10429
+  ],
+  [
+   10433,
+   10568
+  ],
+  [
+   10578,
+   10797
+  ],
+  [
+   10809,
+   10869
+  ],
+  [
+   10874,
+   11721
+  ],
+  [
+   11737,
+   12956
+  ],
+  [
+   12991,
+   13188
+  ],
+  [
+   13198,
+   13295
+  ],
+  [
+   13299,
+   13327
+  ],
+  [
+   13345,
+   13765
+  ],
+  [
+   13791,
+   14079
+  ],
+  [
+   14099,
+   14504
+  ],
+  [
+   14519,
+   15104
+  ],
+  [
+   15108,
+   15140
+  ],
+  [
+   15159,
+   15301
+  ],
+  [
+   15307,
+   15338
+  ],
+  [
+   15365,
+   15391
+  ],
+  [
+   15412,
+   15600
+  ],
+  [
+   15611,
+   15844
+  ],
+  [
+   15851,
+   15880
+  ],
+  [
+   15894,
+   15963
+  ],
+  [
+   15966,
+   16056
+  ],
+  [
+   16095,
+   16540
+  ],
+  [
+   16553,
+   17456
+  ],
+  [
+   17462,
+   17615
+  ],
+  [
+   17618,
+   18460
+  ],
+  [
+   18468,
+   18831
+  ],
+  [
+   18836,
+   18921
+  ],
+  [
+   18933,
+   19015
+  ],
+  [
+   19022,
+   19073
+  ],
+  [
+   19077,
+   19129
+  ],
+  [
+   19144,
+   19873
+  ],
+  [
+   19886,
+   20179
+  ],
+  [
+   20183,
+   20254
+  ],
+  [
+   20261,
+   20523
+  ],
+  [
+   20530,
+   20713
+  ],
+  [
+   20716,
+   20751
+  ],
+  [
+   20757,
+   21006
+  ],
+  [
+   21018,
+   21164
+  ],
+  [
+   21168,
+   21204
+  ]
+ ],
+ "removidos": [
+  {
+   "de_q": 443,
+   "ate_q": 449,
+   "de_s": 18.458,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 1218,
+   "ate_q": 1239,
+   "de_s": 50.75,
+   "dur_s": 0.875,
+   "motivo": "[fala pendurada] \"E\" solto antes da montagem com música (0:51): a frase só continua depois da paisagem (\"como nossa primeira parada\", 1:12); sem ele, fica \"…vamos aproveitar aqui agora.\" e, depois da música, \"Como nossa primeira parada\""
+  },
+  {
+   "de_q": 1907,
+   "ate_q": 1985,
+   "de_s": 79.458,
+   "dur_s": 3.25,
+   "motivo": "[tropeço] \"o Alferia, acho que fala assim,\" antes de \"Chez Albert\" (1:19): fica \"um dos pontos turísticos da cidade, Chez Albert\""
+  },
+  {
+   "de_q": 3111,
+   "ate_q": 3125,
+   "de_s": 129.625,
+   "dur_s": 0.583,
+   "motivo": "[prolongamento] \"e\" esticado (medievalzinho _ sua)"
+  },
+  {
+   "de_q": 3365,
+   "ate_q": 3372,
+   "de_s": 140.208,
+   "dur_s": 0.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 3857,
+   "ate_q": 3861,
+   "de_s": 160.708,
+   "dur_s": 0.167,
+   "motivo": "[visual] 5 quadros tortos no começo da selfie do Markt (2:40,7); o \"Chegamos\" começa em 161,0 (energia)"
+  },
+  {
+   "de_q": 3986,
+   "ate_q": 3989,
+   "de_s": 166.083,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 4285,
+   "ate_q": 4295,
+   "de_s": 178.542,
+   "dur_s": 0.417,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 4492,
+   "ate_q": 4520,
+   "de_s": 187.167,
+   "dur_s": 1.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 4597,
+   "ate_q": 4600,
+   "de_s": 191.542,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 4647,
+   "ate_q": 4650,
+   "de_s": 193.625,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 4735,
+   "ate_q": 4753,
+   "de_s": 197.292,
+   "dur_s": 0.75,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 4836,
+   "ate_q": 4842,
+   "de_s": 201.5,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 4908,
+   "ate_q": 4944,
+   "de_s": 204.5,
+   "dur_s": 1.5,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 5035,
+   "ate_q": 5041,
+   "de_s": 209.792,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 5869,
+   "ate_q": 5872,
+   "de_s": 244.542,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 6028,
+   "ate_q": 6031,
+   "de_s": 251.167,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 6091,
+   "ate_q": 6097,
+   "de_s": 253.792,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 6153,
+   "ate_q": 6170,
+   "de_s": 256.375,
+   "dur_s": 0.708,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 6197,
+   "ate_q": 6207,
+   "de_s": 258.208,
+   "dur_s": 0.417,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 6379,
+   "ate_q": 6414,
+   "de_s": 265.792,
+   "dur_s": 1.458,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 7415,
+   "ate_q": 7431,
+   "de_s": 308.958,
+   "dur_s": 0.667,
+   "motivo": "[prolongamento] \"Mas\" esticado (vocês _ são)"
+  },
+  {
+   "de_q": 7463,
+   "ate_q": 7483,
+   "de_s": 310.958,
+   "dur_s": 0.833,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 7956,
+   "ate_q": 7974,
+   "de_s": 331.5,
+   "dur_s": 0.75,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 8032,
+   "ate_q": 8045,
+   "de_s": 334.667,
+   "dur_s": 0.542,
+   "motivo": "[prolongamento] \"já\" esticado (atrás _ tem)"
+  },
+  {
+   "de_q": 8143,
+   "ate_q": 8152,
+   "de_s": 339.292,
+   "dur_s": 0.375,
+   "motivo": "[hesitação] buraco com voz: 2ª transcrição \"Hã?\""
+  },
+  {
+   "de_q": 8796,
+   "ate_q": 8802,
+   "de_s": 366.5,
+   "dur_s": 0.25,
+   "motivo": "[visual] câmera virando da traseira para a selfie antes da fala da Basílica (6:06,5); a fala começa em 366,85"
+  },
+  {
+   "de_q": 9024,
+   "ate_q": 9148,
+   "de_s": 376.0,
+   "dur_s": 5.167,
+   "motivo": "[correção] \"e ele fica exposto das 12 às 16 horas, e eu não sabia disso\" (6:15) sai: o horário oficial é das 14h às 16h (Diego, 21/11/2026: \"é 14 às 16, corrija minha frase\"). Fica \"…que tem o sangue de Cristo. Temos sorte, a gente entrou era exatamente 12 horas…\" e o horário certo entra escrito na tela"
+  },
+  {
+   "de_q": 9216,
+   "ate_q": 9230,
+   "de_s": 384.0,
+   "dur_s": 0.583,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 9312,
+   "ate_q": 9323,
+   "de_s": 388.0,
+   "dur_s": 0.458,
+   "motivo": "[prolongamento] \"e\" esticado (celebração _ colocar)"
+  },
+  {
+   "de_q": 9382,
+   "ate_q": 9394,
+   "de_s": 390.917,
+   "dur_s": 0.5,
+   "motivo": "[prolongamento] \"o\" esticado (mostra _ vidrinho)"
+  },
+  {
+   "de_q": 9588,
+   "ate_q": 9616,
+   "de_s": 399.5,
+   "dur_s": 1.167,
+   "motivo": "[prolongamento] \"e\" esticado (minutos _ por)"
+  },
+  {
+   "de_q": 9666,
+   "ate_q": 9686,
+   "de_s": 402.75,
+   "dur_s": 0.833,
+   "motivo": "[prolongamento] \"e\" esticado (ver _ aí)"
+  },
+  {
+   "de_q": 9795,
+   "ate_q": 9815,
+   "de_s": 408.125,
+   "dur_s": 0.833,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 9909,
+   "ate_q": 9912,
+   "de_s": 412.875,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 9946,
+   "ate_q": 9958,
+   "de_s": 414.417,
+   "dur_s": 0.5,
+   "motivo": "[prolongamento] \"é\" esticado (ali _ o)"
+  },
+  {
+   "de_q": 9986,
+   "ate_q": 10041,
+   "de_s": 416.083,
+   "dur_s": 2.292,
+   "motivo": "[hesitação] buraco com voz: 2ª transcrição \"E...\""
+  },
+  {
+   "de_q": 10269,
+   "ate_q": 10276,
+   "de_s": 427.875,
+   "dur_s": 0.292,
+   "motivo": "[prolongamento] \"e\" esticado (bonito _ a)"
+  },
+  {
+   "de_q": 10429,
+   "ate_q": 10433,
+   "de_s": 434.542,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 10568,
+   "ate_q": 10578,
+   "de_s": 440.333,
+   "dur_s": 0.417,
+   "motivo": "[prolongamento] \"e\" esticado (mundo _ é)"
+  },
+  {
+   "de_q": 10797,
+   "ate_q": 10809,
+   "de_s": 449.875,
+   "dur_s": 0.5,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 10869,
+   "ate_q": 10874,
+   "de_s": 452.875,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 11721,
+   "ate_q": 11737,
+   "de_s": 488.375,
+   "dur_s": 0.667,
+   "motivo": "[hesitação] palavra esticada [E]: 2ª transcrição \"ahn...\""
+  },
+  {
+   "de_q": 12956,
+   "ate_q": 12991,
+   "de_s": 539.833,
+   "dur_s": 1.458,
+   "motivo": "[hesitação] buraco com voz: 2ª transcrição \"E...\""
+  },
+  {
+   "de_q": 13188,
+   "ate_q": 13198,
+   "de_s": 549.5,
+   "dur_s": 0.417,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 13295,
+   "ate_q": 13299,
+   "de_s": 553.958,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 13327,
+   "ate_q": 13345,
+   "de_s": 555.292,
+   "dur_s": 0.75,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 13765,
+   "ate_q": 13791,
+   "de_s": 573.542,
+   "dur_s": 1.083,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 14079,
+   "ate_q": 14099,
+   "de_s": 586.625,
+   "dur_s": 0.833,
+   "motivo": "[prolongamento] \"de\" esticado (opções _ waffles)"
+  },
+  {
+   "de_q": 14504,
+   "ate_q": 14519,
+   "de_s": 604.333,
+   "dur_s": 0.625,
+   "motivo": "[fala pendurada] \"E…\" esticado antes da montagem com música (10:04); a frase continua depois (\"agora que nós nos alimentamos\")"
+  },
+  {
+   "de_q": 15104,
+   "ate_q": 15108,
+   "de_s": 629.333,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 15140,
+   "ate_q": 15159,
+   "de_s": 630.833,
+   "dur_s": 0.792,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 15301,
+   "ate_q": 15307,
+   "de_s": 637.542,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 15338,
+   "ate_q": 15365,
+   "de_s": 639.083,
+   "dur_s": 1.125,
+   "motivo": "[prolongamento] \"E\" esticado (Park _ é)"
+  },
+  {
+   "de_q": 15391,
+   "ate_q": 15412,
+   "de_s": 641.292,
+   "dur_s": 0.875,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 15600,
+   "ate_q": 15611,
+   "de_s": 650.0,
+   "dur_s": 0.458,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 15844,
+   "ate_q": 15851,
+   "de_s": 660.167,
+   "dur_s": 0.292,
+   "motivo": "[prolongamento] \"E\" esticado (água _ um)"
+  },
+  {
+   "de_q": 15880,
+   "ate_q": 15894,
+   "de_s": 661.667,
+   "dur_s": 0.583,
+   "motivo": "[prolongamento] \"E\" esticado (cara _ a)"
+  },
+  {
+   "de_q": 15963,
+   "ate_q": 15966,
+   "de_s": 665.125,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 16056,
+   "ate_q": 16095,
+   "de_s": 669.0,
+   "dur_s": 1.625,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 16540,
+   "ate_q": 16553,
+   "de_s": 689.167,
+   "dur_s": 0.542,
+   "motivo": "[visual] câmera girando no fim do aceno no Minnewater (11:29,2), antes da Marina andando no lago; sem fala"
+  },
+  {
+   "de_q": 17456,
+   "ate_q": 17462,
+   "de_s": 727.333,
+   "dur_s": 0.25,
+   "motivo": "[prolongamento] \"E\" esticado (waffle. _ o)"
+  },
+  {
+   "de_q": 17615,
+   "ate_q": 17618,
+   "de_s": 733.958,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 18460,
+   "ate_q": 18468,
+   "de_s": 769.167,
+   "dur_s": 0.333,
+   "motivo": "[prolongamento] \"A\" esticado (mudar _ gente)"
+  },
+  {
+   "de_q": 18831,
+   "ate_q": 18836,
+   "de_s": 784.625,
+   "dur_s": 0.208,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 18921,
+   "ate_q": 18933,
+   "de_s": 788.375,
+   "dur_s": 0.5,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 19015,
+   "ate_q": 19022,
+   "de_s": 792.292,
+   "dur_s": 0.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 19073,
+   "ate_q": 19077,
+   "de_s": 794.708,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 19129,
+   "ate_q": 19144,
+   "de_s": 797.042,
+   "dur_s": 0.625,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 19873,
+   "ate_q": 19886,
+   "de_s": 828.042,
+   "dur_s": 0.542,
+   "motivo": "[visual] chicote borrado do bar para a rua (13:48,0); o \"pra fechar\" começa em 829,16"
+  },
+  {
+   "de_q": 20179,
+   "ate_q": 20183,
+   "de_s": 840.792,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 20254,
+   "ate_q": 20261,
+   "de_s": 843.917,
+   "dur_s": 0.292,
+   "motivo": "[prolongamento] \"aí\" esticado (dividir _ fomos)"
+  },
+  {
+   "de_q": 20523,
+   "ate_q": 20530,
+   "de_s": 855.125,
+   "dur_s": 0.292,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 20713,
+   "ate_q": 20716,
+   "de_s": 863.042,
+   "dur_s": 0.125,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 20751,
+   "ate_q": 20757,
+   "de_s": 864.625,
+   "dur_s": 0.25,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 21006,
+   "ate_q": 21018,
+   "de_s": 875.25,
+   "dur_s": 0.5,
+   "motivo": "pausa na fala"
+  },
+  {
+   "de_q": 21164,
+   "ate_q": 21168,
+   "de_s": 881.833,
+   "dur_s": 0.167,
+   "motivo": "pausa na fala"
+  }
+ ],
+ "cortes_manuais_aplicados": [
+  {
+   "de": 79.43,
+   "ate": 82.71,
+   "motivo": "[tropeço] \"o Alferia, acho que fala assim,\" antes de \"Chez Albert\" (1:19): fica \"um dos pontos turísticos da cidade, Chez Albert\""
+  },
+  {
+   "de": 375.99,
+   "ate": 381.17,
+   "motivo": "[correção] \"e ele fica exposto das 12 às 16 horas, e eu não sabia disso\" (6:15) sai: o horário oficial é das 14h às 16h (Diego, 21/11/2026: \"é 14 às 16, corrija minha frase\"). Fica \"…que tem o sangue de Cristo. Temos sorte, a gente entrou era exatamente 12 horas…\" e o horário certo entra escrito na tela"
+  },
+  {
+   "de": 160.71,
+   "ate": 160.9,
+   "motivo": "[visual] 5 quadros tortos no começo da selfie do Markt (2:40,7); o \"Chegamos\" começa em 161,0 (energia)"
+  },
+  {
+   "de": 366.5,
+   "ate": 366.76,
+   "motivo": "[visual] câmera virando da traseira para a selfie antes da fala da Basílica (6:06,5); a fala começa em 366,85"
+  },
+  {
+   "de": 689.15,
+   "ate": 689.71,
+   "motivo": "[visual] câmera girando no fim do aceno no Minnewater (11:29,2), antes da Marina andando no lago; sem fala"
+  },
+  {
+   "de": 828.04,
+   "ate": 828.62,
+   "motivo": "[visual] chicote borrado do bar para a rua (13:48,0); o \"pra fechar\" começa em 829,16"
+  },
+  {
+   "de": 50.72,
+   "ate": 51.66,
+   "motivo": "[fala pendurada] \"E\" solto antes da montagem com música (0:51): a frase só continua depois da paisagem (\"como nossa primeira parada\", 1:12); sem ele, fica \"…vamos aproveitar aqui agora.\" e, depois da música, \"Como nossa primeira parada\""
+  },
+  {
+   "de": 604.32,
+   "ate": 604.96,
+   "motivo": "[fala pendurada] \"E…\" esticado antes da montagem com música (10:04); a frase continua depois (\"agora que nós nos alimentamos\")"
+  },
+  {
+   "de": 339.27,
+   "ate": 339.67,
+   "motivo": "[hesitação] buraco com voz (2ª transcrição: \"Hã?\")"
+  },
+  {
+   "de": 416.4,
+   "ate": 418.4,
+   "motivo": "[hesitação] buraco com voz (2ª transcrição: \"E...\")"
+  },
+  {
+   "de": 488.34,
+   "ate": 489.06,
+   "motivo": "[hesitação] palavra esticada [E] (2ª transcrição: \"ahn...\")"
+  },
+  {
+   "de": 539.83,
+   "ate": 541.33,
+   "motivo": "[hesitação] buraco com voz (2ª transcrição: \"E...\")"
+  },
+  {
+   "de": 129.59,
+   "ate": 129.96,
+   "motivo": "[prolongamento] \"e\" esticado, entre \"medievalzinho\" e \"sua\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 308.99,
+   "ate": 309.66,
+   "motivo": "[prolongamento] \"Mas\" esticado, entre \"vocês\" e \"são\" (2ª transcrição do arrasto: \"aí.\")"
+  },
+  {
+   "de": 334.65,
+   "ate": 335.22,
+   "motivo": "[prolongamento] \"já\" esticado, entre \"atrás\" e \"tem\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 376.15,
+   "ate": 376.6,
+   "motivo": "[prolongamento] \"e\" esticado, entre \"Cristo.\" e \"ele\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 387.98,
+   "ate": 388.49,
+   "motivo": "[prolongamento] \"e\" esticado, entre \"celebração\" e \"colocar\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 390.88,
+   "ate": 391.33,
+   "motivo": "[prolongamento] \"o\" esticado, entre \"mostra\" e \"vidrinho\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 399.52,
+   "ate": 399.89,
+   "motivo": "[prolongamento] \"e\" esticado, entre \"minutos\" e \"por\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 402.77,
+   "ate": 403.1,
+   "motivo": "[prolongamento] \"e\" esticado, entre \"ver\" e \"aí\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 414.4,
+   "ate": 414.73,
+   "motivo": "[prolongamento] \"é\" esticado, entre \"ali\" e \"o\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 427.85,
+   "ate": 428.2,
+   "motivo": "[prolongamento] \"e\" esticado, entre \"bonito\" e \"a\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 440.31,
+   "ate": 440.78,
+   "motivo": "[prolongamento] \"e\" esticado, entre \"mundo\" e \"é\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 586.69,
+   "ate": 587.06,
+   "motivo": "[prolongamento] \"de\" esticado, entre \"opções\" e \"waffles\" (2ª transcrição do arrasto: \"aí.\")"
+  },
+  {
+   "de": 639.07,
+   "ate": 639.48,
+   "motivo": "[prolongamento] \"E\" esticado, entre \"Park\" e \"é\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 660.14,
+   "ate": 660.47,
+   "motivo": "[prolongamento] \"E\" esticado, entre \"água\" e \"um\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 661.82,
+   "ate": 662.29,
+   "motivo": "[prolongamento] \"E\" esticado, entre \"cara\" e \"a\" (2ª transcrição do arrasto: \"E\")"
+  },
+  {
+   "de": 727.3,
+   "ate": 727.59,
+   "motivo": "[prolongamento] \"E\" esticado, entre \"waffle.\" e \"o\" (2ª transcrição do arrasto: \"E...\")"
+  },
+  {
+   "de": 769.14,
+   "ate": 769.51,
+   "motivo": "[prolongamento] \"A\" esticado, entre \"mudar\" e \"gente\" (2ª transcrição do arrasto: \"\")"
+  },
+  {
+   "de": 843.91,
+   "ate": 844.24,
+   "motivo": "[prolongamento] \"aí\" esticado, entre \"dividir\" e \"fomos\" (2ª transcrição do arrasto: \"\")"
+  }
+ ],
+ "congelar": [
+  {
+   "de": 118.79,
+   "ate": 119.95,
+   "quadro": 118.7,
+   "motivo": "[visual] câmera virando para o chão (pés) e depois para a selfie (1:58,8); o \"a gente sentou pra comer\" começa em 119,25, então a imagem para no último quadro de você comendo o waffle e o som segue"
+  }
+ ],
+ "fragmentos": [
+  "pedaço de 0.54 s com fala em 123.75 s: corte de pausa em 124.29 s desfeito",
+  "pedaço de 0.04 s sem fala em 160.71 s: sai junto com o corte",
+  "pedaço de 0.67 s sem fala em 187.67 s: sai junto com o corte",
+  "pedaço de 0.46 s com fala em 253.33 s: corte de pausa em 253.00 s desfeito",
+  "pedaço de 0.92 s sem fala em 266.12 s: sai junto com o corte",
+  "pedaço de 0.04 s com fala em 388.46 s: corte de pausa em 388.50 s desfeito",
+  "pedaço de 0.25 s com fala em 412.62 s: corte de pausa em 412.46 s desfeito",
+  "pedaço de 0.08 s com fala em 428.17 s: corte de pausa em 428.25 s desfeito",
+  "pedaço de 0.58 s com fala em 436.00 s: corte de pausa em 436.58 s desfeito",
+  "pedaço de 0.62 s com fala em 541.29 s: corte de pausa em 541.92 s desfeito",
+  "pedaço de 0.17 s sem fala em 574.00 s: sai junto com o corte",
+  "pedaço de 0.33 s sem fala em 574.17 s: sai junto com o corte",
+  "pedaço de 0.38 s sem fala em 669.17 s: sai junto com o corte",
+  "pedaço de 0.50 s com fala em 794.21 s: corte de pausa em 793.83 s desfeito",
+  "pedaço de 0.50 s com fala em 796.54 s: corte de pausa em 796.38 s desfeito",
+  "pedaço de 0.46 s com fala em 881.38 s: corte de pausa em 881.04 s desfeito"
+ ]
+}

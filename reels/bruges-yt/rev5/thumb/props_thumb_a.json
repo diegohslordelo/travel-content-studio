@@ -1,0 +1,28 @@
+{
+ "foto": "foto_diego_rozenhoedkaai.jpg",
+ "fotoLargura": 1280,
+ "fotoX": 0,
+ "fotoY": 0,
+ "reciboX": 60,
+ "reciboY": 250,
+ "reciboEscala": 0.5,
+ "rotulo": "QUANTO CUSTA",
+ "destino": "BRUGES?",
+ "recibo": {
+  "lugar": "1 DIA · 2 PESSOAS",
+  "cabecalho": "SEG 16/03 · BATE-VOLTA",
+  "linhas": [
+   [
+    "Trem",
+    "€ ???"
+   ],
+   [
+    "Waffles e batata",
+    "€ ???"
+   ]
+  ],
+  "total": "€ ???",
+  "real": "valeu a pena?",
+  "rodape": "descubra no vídeo"
+ }
+}
