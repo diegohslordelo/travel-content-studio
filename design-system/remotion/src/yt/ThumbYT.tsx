@@ -38,6 +38,11 @@ export type PropsThumbYT = {
    * `youtube/barcelona-3-dias/thumbnail/rev1/thumb.html`, branch claude/eloquent-archimedes-cwgnwd). Usa reciboX/Y/Escala.
    */
   reciboMudo?: { total: string } | null;
+  /**
+   * Foto exatamente como veio, sem o contraste/brilho e sem o degradê grafite das laterais (Bruges, pedido do Diego em
+   * 21/11/2026: "o fundo tá com umas cores aí editadas que ficaram ruins… eu quero ela original").
+   */
+  fotoOriginal?: boolean;
 };
 
 export const propsThumbVazias: PropsThumbYT = {
@@ -55,10 +60,10 @@ export const ThumbYT: React.FC<PropsThumbYT> = (p) => (
   <AbsoluteFill style={{ background: COR.grafite, overflow: "hidden" }}>
     <Img
       src={staticFile(p.foto)}
-      style={{ position: "absolute", left: p.fotoX, top: p.fotoY, width: p.fotoLargura, filter: "contrast(1.1) brightness(1.18)" }}
+      style={{ position: "absolute", left: p.fotoX, top: p.fotoY, width: p.fotoLargura, ...(p.fotoOriginal ? {} : { filter: "contrast(1.1) brightness(1.18)" }) }}
     />
     {/* scrim grafite de apoio à placa e ao recibo (DS 1.4: grafite 15–20% da peça) */}
-    <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(18,19,23,.42) 0%, rgba(18,19,23,0) 36%, rgba(18,19,23,0) 62%, rgba(18,19,23,.38) 100%)" }} />
+    {!p.fotoOriginal && <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(18,19,23,.42) 0%, rgba(18,19,23,0) 36%, rgba(18,19,23,0) 62%, rgba(18,19,23,.38) 100%)" }} />}
     {p.recibo && (
       <div style={{ position: "absolute", left: p.reciboX, top: p.reciboY, transformOrigin: "top left", transform: `scale(${p.reciboEscala})` }}>
         <Recibo {...p.recibo} ini={-10000} fim={10000000} x={0} y={0} som={false} />

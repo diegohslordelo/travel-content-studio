@@ -3,14 +3,13 @@
  "fotoLargura": 1280,
  "fotoX": 0,
  "fotoY": 0,
- "titulo": "BRUGES",
- "tituloTamanho": 170,
- "tituloX": 772,
- "tituloY": 34,
- "reciboX": 884,
- "reciboY": 232,
- "reciboEscala": 0.58,
+ "fotoOriginal": true,
+ "rotulo": "1 DIA EM",
+ "destino": "BRUGES",
  "reciboMudo": {
   "total": "€ ???"
- }
+ },
+ "reciboX": 48,
+ "reciboY": 411,
+ "reciboEscala": 0.7
 }
