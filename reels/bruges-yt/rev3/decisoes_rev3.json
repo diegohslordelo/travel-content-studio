@@ -1,0 +1,76 @@
+{
+ "fonte": "fonte/1120.mp4 (export do Diego, 4K HEVC 10 bits, 24 fps, 14:43,5, sem música; Drive, pasta Bruges/Youtube, 20/11/2026) · REV2 (21/11/2026): correção da frase da relíquia",
+ "parametros": {
+  "silencio_acima_do_piso_db": 8,
+  "janela_piso_s": 10,
+  "pad_fim": 0.12,
+  "pad_ini": 0.08,
+  "pausa_max": 0.3,
+  "pausa_longa": 3.0,
+  "min_plano": 0.5,
+  "min_fragmento": 1.0
+ },
+ "cortes_manuais": [
+  {
+   "de": [
+    79.33,
+    79.52
+   ],
+   "ate": [
+    82.55,
+    82.74
+   ],
+   "motivo": "[tropeço] \"o Alferia, acho que fala assim,\" antes de \"Chez Albert\" (1:19): fica \"um dos pontos turísticos da cidade, Chez Albert\""
+  },
+  {
+   "de": [
+    375.88,
+    376.02
+   ],
+   "ate": [
+    381.13,
+    381.22
+   ],
+   "motivo": "[correção] \"e ele fica exposto das 12 às 16 horas, e eu não sabia disso\" (6:15) sai: o horário oficial é das 14h às 16h (Diego, 21/11/2026: \"é 14 às 16, corrija minha frase\"). Fica \"…que tem o sangue de Cristo. Temos sorte, a gente entrou era exatamente 12 horas…\" e o horário certo entra escrito na tela"
+  }
+ ],
+ "zonas_protegidas": [
+  {
+   "de": 798.4,
+   "ate": 805.2,
+   "motivo": "Marina: \"pela trigésima… sétima vez nessa viagem, eu estava certa\": a pausa é a piada"
+  },
+  {
+   "de": 0.0,
+   "ate": 10.0,
+   "motivo": "compra do bilhete: vai para o fim do gancho (4,5 s, 4,70–9,20 da fonte)"
+  },
+  {
+   "de": 237.4,
+   "ate": 238.6,
+   "motivo": "\"e nela também\" (3:57): a conferência transcreveu \"e ela\" depois do corte do arrasto; fica sem corte"
+  },
+  {
+   "de": 327.7,
+   "ate": 328.6,
+   "motivo": "\"parece um conto de fadas\" (5:28): a conferência perdeu o \"conto\" depois do corte; fica sem corte"
+  },
+  {
+   "de": 431.2,
+   "ate": 433.4,
+   "motivo": "\"é todo medievalzinho\" (7:11): a conferência não achou o \"todo\" depois do corte; fica sem corte"
+  },
+  {
+   "de": 626.6,
+   "ate": 628.4,
+   "motivo": "\"viemos aqui\" (10:27): a conferência não achou o \"viemos\" depois do corte; fica sem corte"
+  },
+  {
+   "de": 805.2,
+   "ate": 806.4,
+   "motivo": "\"Na nossa próxima rota\" (13:25): a conferência ouviu \"A nossa\" depois do corte; fica sem corte"
+  }
+ ],
+ "congelar": [],
+ "parametros_nota": "pad_fim 0,12 s e pad_ini 0,08 s (Bruxelas: 0,18/0,12): o Diego pediu \"não deixe espaço entre minhas vozes\" (20/11/2026) e o padrão de edição de 19/11 pede a voz corrida, sem espaço entre as falas"
+}

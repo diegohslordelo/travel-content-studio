@@ -4,6 +4,7 @@ Sessão de 20/11/2026, branch `claude/bruges-video-editing-7ntcrx`. Leia junto c
 
 ## Onde está
 
+- **REV3** (`rev3/`, 21/11/2026): só a música muda, para faixas mais animadas (`rev3/MUSICA_REV3.md`). É a revisão vigente.
 - **REV2** (`rev2/`, 21/11/2026): sem `keen`, mais canal no gancho, fechamento novo (F1–F9), waffle € 4,70, frase da relíquia corrigida (14h–16h), **música escolhida por seção** (`rev2/MUSICA_REV2.md`). Prévia com música para aprovação; narrações ainda por gravar. Decisões e pendências em `rev2/QA_REV2.md`.
 - Faixas: baixar do Drive (Bruges/Youtube/Música) para `fonte/musica/` com os IDs de `dados/musica_ids_drive.tsv` (`curl -L -o "fonte/musica/<nome>" "https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t"`). Precisa de `pip install librosa`.
 

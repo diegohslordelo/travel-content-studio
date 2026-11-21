@@ -1,0 +1,170 @@
+{
+ "Bop Walker - Freedom Trail Studio": {
+  "bpm_tempograma": 117.5,
+  "percussao": 0.232,
+  "ataques_s": 3.31,
+  "fluxo": 1.207,
+  "pulso": 0.192,
+  "animacao": -0.2
+ },
+ "Bright Skies - Audio Hertz": {
+  "bpm_tempograma": 117.5,
+  "percussao": 0.597,
+  "ataques_s": 3.16,
+  "fluxo": 1.285,
+  "pulso": 0.182,
+  "animacao": 0.21
+ },
+ "Clouds Lifting - Telecasted": {
+  "bpm_tempograma": 78.3,
+  "percussao": 0.622,
+  "ataques_s": 3.97,
+  "fluxo": 1.573,
+  "pulso": 0.271,
+  "animacao": 0.85
+ },
+ "Dusty Road Magic - Chris Haugen": {
+  "bpm_tempograma": 73.8,
+  "percussao": 0.415,
+  "ataques_s": 3.72,
+  "fluxo": 1.212,
+  "pulso": 0.231,
+  "animacao": 0.03
+ },
+ "Fine Dining - TrackTribe": {
+  "bpm_tempograma": 129.2,
+  "percussao": 0.05,
+  "ataques_s": 4.0,
+  "fluxo": 1.188,
+  "pulso": 0.209,
+  "animacao": -0.14
+ },
+ "Lily's Song - TrackTribe": {
+  "bpm_tempograma": 136.0,
+  "percussao": 0.144,
+  "ataques_s": 4.72,
+  "fluxo": 1.168,
+  "pulso": 0.129,
+  "animacao": -0.24
+ },
+ "No.3 Morning Folk Song - Esther Abrami": {
+  "bpm_tempograma": 86.1,
+  "percussao": 0.043,
+  "ataques_s": 2.97,
+  "fluxo": 0.899,
+  "pulso": 0.234,
+  "animacao": -0.73
+ },
+ "Panoramic Arrival - Asher Fulero": {
+  "bpm_tempograma": 129.2,
+  "percussao": 0.051,
+  "ataques_s": 3.36,
+  "fluxo": 0.86,
+  "pulso": 0.173,
+  "animacao": -0.72
+ },
+ "Peaked My Interest - Nathan Moore": {
+  "bpm_tempograma": 198.8,
+  "percussao": 0.128,
+  "ataques_s": 4.48,
+  "fluxo": 1.263,
+  "pulso": 0.242,
+  "animacao": 0.66
+ },
+ "Powdered Waltz - The Mini Vandals": {
+  "bpm_tempograma": 123.0,
+  "percussao": 0.026,
+  "ataques_s": 3.63,
+  "fluxo": 1.222,
+  "pulso": 0.237,
+  "animacao": -0.12
+ },
+ "Ripples In Time - Asher Fulero": {
+  "bpm_tempograma": 136.0,
+  "percussao": 0.145,
+  "ataques_s": 6.19,
+  "fluxo": 1.266,
+  "pulso": 0.167,
+  "animacao": 0.31
+ },
+ "Scale The Mountain - Density & Time": {
+  "bpm_tempograma": 123.0,
+  "percussao": 0.069,
+  "ataques_s": 1.56,
+  "fluxo": 0.949,
+  "pulso": 0.171,
+  "animacao": -1.02
+ },
+ "Spring Migration - The Great North Sound Society": {
+  "bpm_tempograma": 143.6,
+  "percussao": 0.031,
+  "ataques_s": 4.87,
+  "fluxo": 1.06,
+  "pulso": 0.242,
+  "animacao": 0.13
+ },
+ "Squirm Worm - TrackTribe": {
+  "bpm_tempograma": 184.6,
+  "percussao": 0.035,
+  "ataques_s": 5.14,
+  "fluxo": 1.263,
+  "pulso": 0.134,
+  "animacao": 0.09
+ },
+ "Starlight on the Water - Chris Haugen": {
+  "bpm_tempograma": 184.6,
+  "percussao": 0.116,
+  "ataques_s": 3.36,
+  "fluxo": 1.054,
+  "pulso": 0.271,
+  "animacao": 0.3
+ },
+ "Strollin' - TrackTribe": {
+  "bpm_tempograma": 86.1,
+  "percussao": 0.071,
+  "ataques_s": 4.39,
+  "fluxo": 1.229,
+  "pulso": 0.214,
+  "animacao": -0.23
+ },
+ "Swing Haven 1 - Los Angeles - Reed Mathis": {
+  "bpm_tempograma": 184.6,
+  "percussao": 0.108,
+  "ataques_s": 5.76,
+  "fluxo": 1.908,
+  "pulso": 0.269,
+  "animacao": 1.49
+ },
+ "Taking Flight - Blue Deer Studio": {
+  "bpm_tempograma": 129.2,
+  "percussao": 0.146,
+  "ataques_s": 3.8,
+  "fluxo": 1.187,
+  "pulso": 0.188,
+  "animacao": -0.17
+ },
+ "The Palace Gardens - Asher Fulero": {
+  "bpm_tempograma": 86.1,
+  "percussao": 0.024,
+  "ataques_s": 4.04,
+  "fluxo": 0.962,
+  "pulso": 0.25,
+  "animacao": -0.41
+ },
+ "The Swan - The Soundlings": {
+  "bpm_tempograma": 136.0,
+  "percussao": 0.019,
+  "ataques_s": 5.16,
+  "fluxo": 0.879,
+  "pulso": 0.182,
+  "animacao": -0.3
+ },
+ "Top Of The Morning - TrackTribe": {
+  "bpm_tempograma": 123.0,
+  "percussao": 0.229,
+  "ataques_s": 3.77,
+  "fluxo": 1.179,
+  "pulso": 0.26,
+  "animacao": 0.22
+ }
+}
