@@ -4,6 +4,9 @@ Sessão de 20/11/2026, branch `claude/bruges-video-editing-7ntcrx`. Leia junto c
 
 ## Onde está
 
+- **REV2** (`rev2/`, 21/11/2026): sem `keen`, mais canal no gancho, fechamento novo (F1–F9), waffle € 4,70, frase da relíquia corrigida (14h–16h), **música escolhida por seção** (`rev2/MUSICA_REV2.md`). Prévia com música para aprovação; narrações ainda por gravar. Decisões e pendências em `rev2/QA_REV2.md`.
+- Faixas: baixar do Drive (Bruges/Youtube/Música) para `fonte/musica/` com os IDs de `dados/musica_ids_drive.tsv` (`curl -L -o "fonte/musica/<nome>" "https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t"`). Precisa de `pip install librosa`.
+
 - **REV1** (`rev1/`): prévia para aprovação (540p, sem música, narrações por gravar). Roteiro das narrações em `rev1/ROTEIRO_NARRACAO_REV1.md`, música em `rev1/MUSICA_REV1.md`, decisões e pendências em `rev1/QA_REV1.md`.
 - Próximo passo: receber do Diego as narrações (G1–G5, F1–F7), o valor da 2ª ida ao Chez Albert e as faixas da Biblioteca de áudio do YouTube; então encaixar as narrações, mixar a música, mandar os cortes com música para aprovar e só depois renderizar o final (pedido do Diego: um render só, depois de aprovar tudo).
 

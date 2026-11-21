@@ -45,5 +45,7 @@ sf.write(f"{d}/sfx.wav", np.vstack(pedacos), 48000, subtype="FLOAT")
 EOF
 python3 -I rev2/musica_rev2.py
 python3 -I rev2/mixar_previa_rev2.py --sfx "$DIR/sfx.wav" --saida "$DIR/mix.wav"
-ffmpeg -nostdin -v error -y -i "$DIR/imagem.mp4" -i "$DIR/mix.wav" -map 0:v -map 1:a -c:v copy -c:a aac -b:a 160k -shortest -movflags +faststart rev2/previas/rev2_previa_540p.mp4
+# o pico dos efeitos segura o ganho da mixagem: +6,5 dB e limitador a −1 dBFS (≈ −16,6 LUFS); imagem recomprimida (CRF 31)
+ffmpeg -nostdin -v error -y -i "$DIR/mix.wav" -af "volume=6.5dB,alimiter=limit=0.89:attack=5:release=60:level=disabled" -c:a pcm_f32le "$DIR/mix_lim.wav"
+ffmpeg -nostdin -v error -y -i "$DIR/imagem.mp4" -i "$DIR/mix_lim.wav" -map 0:v -map 1:a -c:v libx264 -preset faster -crf 31 -c:a aac -b:a 160k -shortest -movflags +faststart rev2/previas/rev2_previa_540p.mp4
 ls -la rev2/previas/rev2_previa_540p.mp4

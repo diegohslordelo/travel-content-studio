@@ -1,7 +1,7 @@
 """Som da prévia da REV2 (vlog de Bruges): voz da fonte nos trechos mantidos da decupagem (com rampas de 12 ms em cada
 emenda), a fala da Marina no gancho, os efeitos do render (Recibo, Placa, mapa, like…) e a MÚSICA (rev2/musica_rev2.py →
 _tmp/musica_rev2.wav). Sem o `keen` (Diego, 21/11/2026) e sem as narrações (a gravar).
-Não é a mixagem final (essa segue o docs/AUDIO_REVIEW_STANDARD.md): só nivela a fala em −20 LUFS e o todo em −16 LUFS.
+Não é a mixagem final (essa segue o docs/AUDIO_REVIEW_STANDARD.md): só nivela a fala em −20 LUFS e o todo em −16 LUFS (o pico dos efeitos limita o ganho; a prévia da REV2 passou ainda por +6,5 dB e um limitador a −1 dBFS, no ffmpeg).
 
 Roda de reels/bruges-yt:  python -I rev2/mixar_previa_rev2.py --sfx <efeitos.wav> --saida <mix.wav>
 """
