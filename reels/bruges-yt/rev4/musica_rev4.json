@@ -48,14 +48,14 @@
     14.498,
     45.418
    ],
-   "nota": "entrada em 14.50 s da faixa: batida forte no corte do gancho; −29 LUFS sob a narração, −23 LUFS de 29.1 s ao corte"
+   "nota": "entrada em 14.50 s da faixa: batida forte no corte do gancho; −29 LUFS sob a narração, −23 LUFS de 29.1 s ao corte; termina no corte"
   },
   {
    "id": "M1",
    "faixa": "Top Of The Morning - TrackTribe",
    "video_s": [
-    72.247,
-    92.746
+    71.372,
+    91.871
    ],
    "faixa_s": [
     1.0,
@@ -66,8 +66,8 @@
    "id": "M1",
    "faixa": "Top Of The Morning - TrackTribe",
    "video_s": [
-    117.617,
-    136.096
+    116.742,
+    135.221
    ],
    "faixa_s": [
     21.499,
@@ -78,8 +78,8 @@
    "id": "M2",
    "faixa": "Ripples In Time - Asher Fulero",
    "video_s": [
-    163.992,
-    177.151
+    163.117,
+    176.276
    ],
    "faixa_s": [
     3.0,
@@ -90,8 +90,8 @@
    "id": "M2",
    "faixa": "Ripples In Time - Asher Fulero",
    "video_s": [
-    225.697,
-    244.806
+    224.822,
+    243.931
    ],
    "faixa_s": [
     16.159,
@@ -102,8 +102,8 @@
    "id": "M2",
    "faixa": "Ripples In Time - Asher Fulero",
    "video_s": [
-    280.463,
-    310.892
+    279.588,
+    310.017
    ],
    "faixa_s": [
     35.268,
@@ -114,8 +114,8 @@
    "id": "M2",
    "faixa": "Ripples In Time - Asher Fulero",
    "video_s": [
-    348.887,
-    371.826
+    348.012,
+    370.951
    ],
    "faixa_s": [
     65.697,
@@ -126,8 +126,8 @@
    "id": "M3",
    "faixa": "Swing Haven 1 - Los Angeles - Reed Mathis",
    "video_s": [
-    449.395,
-    466.164
+    448.52,
+    465.289
    ],
    "faixa_s": [
     0.0,
@@ -138,8 +138,8 @@
    "id": "M3",
    "faixa": "Swing Haven 1 - Los Angeles - Reed Mathis",
    "video_s": [
-    488.318,
-    506.597
+    487.443,
+    505.722
    ],
    "faixa_s": [
     16.769,
@@ -150,8 +150,8 @@
    "id": "M3",
    "faixa": "Swing Haven 1 - Los Angeles - Reed Mathis",
    "video_s": [
-    590.64,
-    607.659
+    589.14,
+    606.159
    ],
    "faixa_s": [
     35.048,
@@ -162,8 +162,8 @@
    "id": "M4",
    "faixa": "Starlight on the Water - Chris Haugen",
    "video_s": [
-    655.818,
-    675.546
+    654.318,
+    674.046
    ],
    "faixa_s": [
     0.0,
@@ -174,8 +174,8 @@
    "id": "M5",
    "faixa": "Peaked My Interest - Nathan Moore",
    "video_s": [
-    675.547,
-    688.896
+    674.047,
+    687.396
    ],
    "faixa_s": [
     9.0,
@@ -186,8 +186,8 @@
    "id": "M5",
    "faixa": "Peaked My Interest - Nathan Moore",
    "video_s": [
-    715.17,
-    719.19
+    713.67,
+    717.69
    ],
    "faixa_s": [
     22.349,
@@ -198,8 +198,8 @@
    "id": "M5",
    "faixa": "Peaked My Interest - Nathan Moore",
    "video_s": [
-    780.824,
-    792.223
+    779.324,
+    790.723
    ],
    "faixa_s": [
     26.369,
@@ -210,14 +210,14 @@
    "id": "F",
    "faixa": "Spring Migration - The Great North Sound Society",
    "video_s": [
-    844.482,
-    925.774
+    842.982,
+    924.274
    ],
    "faixa_s": [
     15.0,
     96.292
    ],
-   "nota": "−29 LUFS sob a narração (até 904.6 s), −23 LUFS na tela final, sai nos últimos 3 s"
+   "nota": "−29 LUFS sob a narração (até 903.1 s), −23 LUFS na tela final, sai nos últimos 3 s"
   }
  ]
 }

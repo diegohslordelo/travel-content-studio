@@ -24,9 +24,14 @@ for i in $(seq 0 $((PARTES - 1))); do
   (cd "$RM" && TMPDIR="$OLDPWD/_tmp/rtmp" CRF=26 X264_PRESET=veryfast node scripts/videolongo.mjs ../../reels/bruges-yt/rev4/props_rev4.json ../../reels/bruges-yt/public trecho "../../reels/bruges-yt/$out.tmp.mp4" "$a" "$b" 0.5) 2>&1 | grep -v -i "memory\|docker" | tail -1
   mv "$out.tmp.mp4" "$out"
 done
-# imagem: junta sem recodificar; efeitos: cada parte cortada no tamanho exato da imagem
+# imagem: junta sem recodificar; efeitos: cada parte cortada no tamanho exato da imagem.
+# REV4: junta só a IMAGEM de cada parte (sem o áudio dela). Com o áudio junto, o concat usava a duração do áudio de cada
+# parte (~20 ms mais longo) e empurrava a imagem a cada emenda: no fim, 0,15 s de atraso da imagem em relação ao som
 : > "$DIR/lista.txt"
-for i in $(seq 0 $((PARTES - 1))); do echo "file 'parte_$i.mp4'" >> "$DIR/lista.txt"; done
+for i in $(seq 0 $((PARTES - 1))); do
+  ffmpeg -nostdin -v error -y -i "$DIR/parte_$i.mp4" -map 0:v -c copy "$DIR/parte_${i}_v.mp4"
+  echo "file 'parte_${i}_v.mp4'" >> "$DIR/lista.txt"
+done
 ffmpeg -nostdin -v error -y -f concat -safe 0 -i "$DIR/lista.txt" -map 0:v -c copy "$DIR/imagem.mp4"
 python3 -I - "$DIR" "$PARTES" <<'EOF'
 import subprocess, sys, json

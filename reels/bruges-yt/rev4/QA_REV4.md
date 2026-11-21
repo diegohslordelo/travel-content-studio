@@ -15,7 +15,11 @@
 | "Revise o áudio e os inícios e términos do vídeo e veja se não tem nada fora de lugar" | Conferência medida em `audio/CONFERENCIA_AUDIO_REV4.md`. Achei e corrigi: 2 "E" soltos antes de montagens com música; a música da abertura passando 0,12 s do corte; as duas músicas se sobrepondo na entrada da House of Waffles |
 | Tirar a dica do fim e pôr outra: dormir uma noite na cidade para aproveitar Bruges mais vazia | F7 nova (`ROTEIRO_NARRACAO_REV4.md`): "Dica: se puder, durma uma noite em Bruges. De manhã cedo e à noite, quando os grupos de bate-volta vão embora, a cidade fica bem mais vazia." Na tela: rua tranquila e a Marina numa ruela vazia, com a nota "dica: durma 1 noite em Bruges" |
 
-### O que estava fora do lugar
+### A causa principal (minha): som e imagem saindo de sincronia na reta final
+
+A prévia é renderizada em 8 partes e depois juntada. Na junção, cada parte empurrava a imagem uns 20 ms, porque o áudio interno de cada parte é um pouco mais longo que a imagem. O atraso se acumulava: no fim do vídeo, a imagem chegava **0,15 s depois do som**. Nos cortes da decupagem, o som trocava antes da imagem, e um pedaço de sílaba aparecia "fora do lugar". Isso pesa mais justamente na reta final, onde fica a House of Waffles (≈ 0,1 s ali). Agora as partes são juntadas só pela imagem: 22.183 quadros = 924,292 s exatos, e som e imagem batem do começo ao fim. As prévias da REV1 à REV3 tinham esse desvio. O render final vai usar a mesma junção corrigida.
+
+### O que mais estava fora do lugar
 
 | Na REV3 | Fonte | O que era | Correção |
 |---|---|---|---|
