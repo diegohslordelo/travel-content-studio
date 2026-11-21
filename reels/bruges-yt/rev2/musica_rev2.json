@@ -1,0 +1,223 @@
+{
+ "faixas": {
+  "G": {
+   "faixa": "Scale The Mountain - Density & Time",
+   "lufs_faixa": -11.5,
+   "duracao_s": 178.0
+  },
+  "M1": {
+   "faixa": "Top Of The Morning - TrackTribe",
+   "lufs_faixa": -10.4,
+   "duracao_s": 148.0
+  },
+  "M2": {
+   "faixa": "Powdered Waltz - The Mini Vandals",
+   "lufs_faixa": -9.4,
+   "duracao_s": 134.5
+  },
+  "M3": {
+   "faixa": "Fine Dining - TrackTribe",
+   "lufs_faixa": -21.1,
+   "duracao_s": 192.4
+  },
+  "M4": {
+   "faixa": "The Swan - The Soundlings",
+   "lufs_faixa": -14.7,
+   "duracao_s": 166.3
+  },
+  "M5": {
+   "faixa": "Squirm Worm - TrackTribe",
+   "lufs_faixa": -19.2,
+   "duracao_s": 214.5
+  },
+  "F": {
+   "faixa": "Dusty Road Magic - Chris Haugen",
+   "lufs_faixa": -13.7,
+   "duracao_s": 139.3
+  }
+ },
+ "janelas": [
+  {
+   "id": "G",
+   "faixa": "Scale The Mountain - Density & Time",
+   "video_s": [
+    0.0,
+    30.92
+   ],
+   "faixa_s": [
+    0.589,
+    31.509
+   ],
+   "nota": "entrada em 0.59 s da faixa: batida forte no corte do gancho; −29 LUFS sob a narração, −23 LUFS de 29.1 s ao corte"
+  },
+  {
+   "id": "M1",
+   "faixa": "Top Of The Morning - TrackTribe",
+   "video_s": [
+    72.247,
+    92.746
+   ],
+   "faixa_s": [
+    0.0,
+    20.499
+   ]
+  },
+  {
+   "id": "M1",
+   "faixa": "Top Of The Morning - TrackTribe",
+   "video_s": [
+    117.617,
+    136.096
+   ],
+   "faixa_s": [
+    20.499,
+    38.978
+   ]
+  },
+  {
+   "id": "M2",
+   "faixa": "Powdered Waltz - The Mini Vandals",
+   "video_s": [
+    163.992,
+    177.151
+   ],
+   "faixa_s": [
+    0.0,
+    13.159
+   ]
+  },
+  {
+   "id": "M2",
+   "faixa": "Powdered Waltz - The Mini Vandals",
+   "video_s": [
+    225.863,
+    244.972
+   ],
+   "faixa_s": [
+    13.159,
+    32.268
+   ]
+  },
+  {
+   "id": "M2",
+   "faixa": "Powdered Waltz - The Mini Vandals",
+   "video_s": [
+    280.63,
+    311.059
+   ],
+   "faixa_s": [
+    32.268,
+    62.697
+   ]
+  },
+  {
+   "id": "M2",
+   "faixa": "Powdered Waltz - The Mini Vandals",
+   "video_s": [
+    349.053,
+    371.992
+   ],
+   "faixa_s": [
+    62.697,
+    85.636
+   ]
+  },
+  {
+   "id": "M3",
+   "faixa": "Fine Dining - TrackTribe",
+   "video_s": [
+    449.812,
+    466.581
+   ],
+   "faixa_s": [
+    0.0,
+    16.769
+   ]
+  },
+  {
+   "id": "M3",
+   "faixa": "Fine Dining - TrackTribe",
+   "video_s": [
+    488.735,
+    507.014
+   ],
+   "faixa_s": [
+    16.769,
+    35.048
+   ]
+  },
+  {
+   "id": "M3",
+   "faixa": "Fine Dining - TrackTribe",
+   "video_s": [
+    591.057,
+    608.076
+   ],
+   "faixa_s": [
+    35.048,
+    52.067
+   ]
+  },
+  {
+   "id": "M4",
+   "faixa": "The Swan - The Soundlings",
+   "video_s": [
+    656.235,
+    676.504
+   ],
+   "faixa_s": [
+    0.0,
+    20.269
+   ]
+  },
+  {
+   "id": "M5",
+   "faixa": "Squirm Worm - TrackTribe",
+   "video_s": [
+    676.505,
+    689.854
+   ],
+   "faixa_s": [
+    0.0,
+    13.349
+   ]
+  },
+  {
+   "id": "M5",
+   "faixa": "Squirm Worm - TrackTribe",
+   "video_s": [
+    716.088,
+    720.127
+   ],
+   "faixa_s": [
+    13.349,
+    17.388
+   ]
+  },
+  {
+   "id": "M5",
+   "faixa": "Squirm Worm - TrackTribe",
+   "video_s": [
+    781.72,
+    793.119
+   ],
+   "faixa_s": [
+    17.388,
+    28.787
+   ]
+  },
+  {
+   "id": "F",
+   "faixa": "Dusty Road Magic - Chris Haugen",
+   "video_s": [
+    845.92,
+    925.07
+   ],
+   "faixa_s": [
+    0.0,
+    79.15
+   ],
+   "nota": "−29 LUFS sob a narração (até 904.8 s), −23 LUFS na tela final, sai nos últimos 3 s"
+  }
+ ]
+}
