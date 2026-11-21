@@ -1,0 +1,16 @@
+{
+ "foto": "foto_lago_diego.jpg",
+ "fotoLargura": 1280,
+ "fotoX": 0,
+ "fotoY": 0,
+ "titulo": "BRUGES",
+ "tituloTamanho": 170,
+ "tituloX": 772,
+ "tituloY": 34,
+ "reciboX": 884,
+ "reciboY": 232,
+ "reciboEscala": 0.58,
+ "reciboMudo": {
+  "total": "€ ???"
+ }
+}

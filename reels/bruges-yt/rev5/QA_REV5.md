@@ -63,7 +63,7 @@ Todo take tem 2 s ou mais e fica dentro de um plano da fonte (`VIDEO_LONGO_PASSO
 
 - **Texto das narrações na legenda (.srt):** usei o que você disse, conferido em 2 passadas do Whisper. Duas dúvidas: na G1, as duas passadas ouvem "Quanto custam de em Bruges" (ficou "Quanto custa um dia em Bruges", o texto do roteiro); na G5, uma passada ouve "cerca de uma hora de **Bruxelas**" e a outra "…de **Bruges**" (ficou Bruxelas). No vídeo, isso não muda nada: é a sua voz.
 - **Mixagem final:** a voz do vlog variava 9 dB entre os planos; 12 trechos foram nivelados (no máximo ±5 dB; os maiores: a Igreja de Nossa Senhora, +4 a +5 dB). Os efeitos do DS agora estão no volume do DS em relação à voz; na prévia, estavam ~4 dB mais altos. Detalhes em `audio/RELATORIO_AUDIO_REV5.md`.
-- **Thumbnails:** 3 opções (`thumb/`), com você no Rozenhoedkaai, sem valores na capa (decisão de Amsterdam). O componente da thumbnail aplica contraste +10% e brilho +18% na foto (precedente de Amsterdam); o padrão de 19/11 ("imagens sem tratamento") fala de vídeo. Se valer também para a capa, eu tiro.
+- **Thumbnails:** a do lago (`thumb/thumb_lago.png`, montada por `thumb/lago/montar_thumb_lago.py`: recorte pelo BiRefNet + sua foto do Minnewater sem ajuste de cor) e 3 opções com você no Rozenhoedkaai, todas sem valores na capa (decisão de Amsterdam). O Recibo sem texto é um modo novo só da thumbnail (`reciboMudo` no `ThumbYT`), cópia do de Barcelona; o Recibo do vídeo não mudou. O componente da thumbnail aplica contraste +10% e brilho +18% na foto (precedente de Amsterdam); o padrão de 19/11 ("imagens sem tratamento") fala de vídeo. Se valer também para a capa, eu tiro.
 
 ## 5. Medidas do arquivo final
 
@@ -92,7 +92,8 @@ Conferência do som (`audio/CONFERENCIA_AUDIO_REV5.md`): nenhum problema medido.
 | `PrimeiroDia_Bruges_REV5_4K.mp4` (4,79 GB) | O vídeo final, para subir no YouTube |
 | `PrimeiroDia_Bruges_REV5_legenda_pt-BR.srt` | Legenda fechada (DS 3.4.1): 185 legendas, nenhuma linha acima de 42 caracteres. Confira `legenda_duvidas_rev5.md` antes de subir |
 | `DESCRICAO_YOUTUBE_REV5.md` | 3 títulos para o teste A/B, descrição com o total do dia, capítulos e créditos |
-| `thumbnail_A_recibo_menor.png`, `thumbnail_B_sem_recibo.png`, `thumbnail_C_so_bruges.png` | 3 opções de capa (1280 × 720), sem valores na capa |
+| `thumbnail_D2_lago_recibo_sem_texto.png` | **A capa que você pediu (21/11/2026):** você comendo o waffle, recortado do quadro 4K de 10:12,5 da fonte (o mesmo momento do seu print), na frente da sua foto do Minnewater; só "BRUGES" escrito e o Recibo sem texto (barras cinza e "€ ???", como na thumbnail de Barcelona), sem cobrir o rosto nem o waffle. A `thumbnail_D_lago_waffle.png` da mesma pasta é a versão anterior, com texto no Recibo: o GoFile sem conta não deixa apagar, use a D2 |
+| `thumbnail_A_recibo_menor.png`, `thumbnail_B_sem_recibo.png`, `thumbnail_C_so_bruges.png` | As 3 opções anteriores (Rozenhoedkaai), sem valores na capa |
 
 O GoFile apaga arquivos de quem não tem conta depois de alguns dias sem download (~10 dias, segundo fontes de terceiros; a página oficial não diz): baixe logo. O vídeo não vai para o git (fica em `_tmp/`); no git ficam os scripts, os props, o `.srt`, a descrição e as thumbnails.
 

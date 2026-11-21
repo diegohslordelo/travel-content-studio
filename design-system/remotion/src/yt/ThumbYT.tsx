@@ -31,6 +31,13 @@ export type PropsThumbYT = {
   reciboX: number;
   reciboY: number;
   reciboEscala: number;
+  /**
+   * Recibo sem texto (só na thumbnail; Bruges, pedido do Diego em 21/11/2026: "não precisa colocar nada escrito no
+   * recibo, porque na thumbnail não dá pra ler… igual você fez com o de Barcelona"): as linhas dos itens viram barras
+   * cinza (night-300) e só o total aparece, em PD Placar 128 px. Cópia da thumbnail de Barcelona (3 dias, REV1,
+   * `youtube/barcelona-3-dias/thumbnail/rev1/thumb.html`, branch claude/eloquent-archimedes-cwgnwd). Usa reciboX/Y/Escala.
+   */
+  reciboMudo?: { total: string } | null;
 };
 
 export const propsThumbVazias: PropsThumbYT = {
@@ -57,6 +64,7 @@ export const ThumbYT: React.FC<PropsThumbYT> = (p) => (
         <Recibo {...p.recibo} ini={-10000} fim={10000000} x={0} y={0} som={false} />
       </div>
     )}
+    {p.reciboMudo && <ReciboMudo total={p.reciboMudo.total} x={p.reciboX} y={p.reciboY} escala={p.reciboEscala} />}
     {p.destino && <Placa rotulo={p.rotulo} destino={p.destino} tamanho="M" x={48} y={48} entrada={null} />}
     {p.titulo && (
       <div
@@ -77,4 +85,39 @@ export const ThumbYT: React.FC<PropsThumbYT> = (p) => (
       </div>
     )}
   </AbsoluteFill>
+);
+
+/** Recibo sem texto (ver `reciboMudo`): papel do Recibo (DS 2.6, 600 px, dentes de 22 px), 4 linhas de barras e o total. */
+const BARRAS: [number, number][] = [[44, 22], [58, 18], [36, 24], [50, 20]];
+const ReciboMudo: React.FC<{ total: string; x: number; y: number; escala: number }> = ({ total, x, y, escala }) => (
+  <div
+    style={{
+      position: "absolute",
+      left: x,
+      top: y,
+      width: 600,
+      transformOrigin: "top left",
+      transform: `scale(${escala})`,
+      filter: "drop-shadow(0 1px 1px rgba(0,0,0,.18)) drop-shadow(0 14px 16px rgba(0,0,0,.35))",
+      color: COR.grafite,
+    }}
+  >
+    <div style={{ background: COR.recibo, padding: "40px 44px 26px" }}>
+      {BARRAS.map(([a, b], i) => (
+        <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 24, paddingTop: 16 }}>
+          <i style={{ display: "block", height: 18, width: `${a}%`, borderRadius: 2, background: COR.concreto }} />
+          <i style={{ display: "block", height: 18, width: `${b}%`, borderRadius: 2, background: COR.concreto }} />
+        </div>
+      ))}
+      <div style={{ marginTop: 22, paddingTop: 18, borderTop: `3px solid ${COR.grafite}`, display: "flex", justifyContent: "flex-end" }}>
+        <b style={{ fontFamily: FONTE.dados, fontWeight: 700, fontSize: 128, lineHeight: 0.85, fontVariantNumeric: "tabular-nums" }}>{total}</b>
+      </div>
+    </div>
+    <div
+      style={{
+        height: 22,
+        background: `linear-gradient(-45deg, transparent 11px, ${COR.recibo} 0) 0 0/22px 22px repeat-x, linear-gradient(45deg, transparent 11px, ${COR.recibo} 0) 0 0/22px 22px repeat-x`,
+      }}
+    />
+  </div>
 );
