@@ -1,0 +1,234 @@
+{
+ "nota": "Cenas ancoradas nas palavras ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos; número = segundos do Reel). Cada cena vai até o início da seguinte, em corte seco; toda imagem gravada pelo Diego fica no mínimo 2 s na tela. 'video' = acervo do Diego (fonte = arquivo no Drive Youtube/Amsterdam, entrada em s no bruto). Pedidos do Diego (22/11/2026): a imagem mostra o que ele está falando (hotel = hotel, transporte = transporte, comida = comida); recorte centralizado e o mais aberto possível (zoom 1,0: o quadro 9:16 usa a altura inteira do plano horizontal, e o vertical entra inteiro), sem aproximação, sem efeito e sem mexer na cor; gancho no canal ao fim de tarde, de preferência vertical. Escolha dos planos: folhas de contato de _tmp/ (scripts/folha.py).",
+ "gancho": {
+  "topo": 280,
+  "fim": "f02:E-0.06",
+  "linhas": [
+   {
+    "texto": "AMSTERDÃ É",
+    "tam": 156,
+    "em": "0"
+   },
+   {
+    "texto": "DAS CIDADES",
+    "tam": 156,
+    "em": "f01:das-0.04"
+   },
+   {
+    "texto": "TURÍSTICAS",
+    "tam": 156,
+    "em": "f01:turísticas-0.04"
+   },
+   {
+    "texto": "MAIS CARAS",
+    "tam": 190,
+    "em": "f01:mais-0.04",
+    "cor": "ambar"
+   },
+   {
+    "texto": "DA EUROPA.",
+    "tam": 156,
+    "em": "f01:da-0.04"
+   }
+  ],
+  "nota": "Como o gancho da Grand-Place e o da Disney: letras garrafais em Anton, x 72, uma linha por vez na palavra; o texto é a fala gravada. Sem nada atrás das letras (pedido do Diego: 'não precisa deixar sombra no fundo'); a sombra nas próprias letras fica (CLAUDE.md, 12). Larguras na fonte (fontTools): 718, 736, 635, 862 e 662 px (≤ 872, zona segura x 72–944)."
+ },
+ "noticia": {
+  "ini": "f02:E-0.06",
+  "fim": "f03:Mas-0.20",
+  "img": "noticia.png",
+  "largura": 940,
+  "topo": 470,
+  "escuro": 0.55,
+  "nota": "Brasilturis, 18/11/2026, 'Amsterdã elevará taxa turística para 16% em 2027' (https://brasilturis.com.br/2026/11/18/amsterda-elevara-taxa-turistica-para-16-em-2027/): faixa do logo, título, linha fina, data e o 1º parágrafo (12,5% → 16% a partir de 1º/01/2027). Recorte do print da página (scripts/noticia.py), sem redesenho. Centrada em x 540."
+ },
+ "cta": {
+  "ini": "f10:Se-0.06",
+  "entrada": "f10:segue-0.12",
+  "rotulo": "SEGUE O PERFIL",
+  "destino": "@PRIMEIRODIAEM",
+  "nota": "Mesma placa do Reel da Disney (DS V2, 2.7: verbo + módulo de seta; Chegada; clack), na palavra 'segue'."
+ },
+ "sons": [
+  {
+   "som": "keen",
+   "em": "f02:E-0.06",
+   "alinhar": "pico",
+   "rel_db": -6,
+   "nota": "som do fim do gancho (regra do Diego de 01/11/2026): pico no fim do gancho, quando a notícia entra"
+  }
+ ],
+ "cenas": [
+  {
+   "id": "c01_gancho_canal_rosa",
+   "ini": "0",
+   "video": {
+    "fonte": "IMG_2068.MOV",
+    "in": 0.2
+   },
+   "nota": "gancho + fundo da notícia: canal no fim de tarde, céu rosa refletido na água (dia 3, 18h53), vertical; escurece quando a notícia entra"
+  },
+  {
+   "id": "c02_noticia_canal",
+   "ini": 8.8,
+   "video": {
+    "fonte": "IMG_2070.MOV",
+    "in": 0.2
+   },
+   "nota": "mesmo canal, outro ângulo (vertical), ainda atrás da notícia escurecida: o IMG_2068 acaba em 9,08 s"
+  },
+  {
+   "id": "c03_canal_barco",
+   "ini": "f03:Mas-0.06",
+   "video": {
+    "fonte": "IMG_1403-1.MOV",
+    "in": 0.1
+   },
+   "nota": "'Mas será que é isso tudo mesmo?': canal com barco (dia 1, 16h27), vertical"
+  },
+  {
+   "id": "c04_marina_rua",
+   "ini": "f03:nesses-0.08",
+   "video": {
+    "fonte": "IMG_2074.MOV",
+    "in": 0.0
+   },
+   "nota": "'nesses três dias que nós passamos lá': a Marina andando na rua à noite (dia 3), vertical"
+  },
+  {
+   "id": "c05_hotel_cama",
+   "ini": "f04:Vou-0.06",
+   "video": {
+    "fonte": "IMG_1390.MOV",
+    "in": 14.55
+   },
+   "nota": "'Vou começar pelo hotel': o quarto do XO Hotel Inner (dia 1, 15h20); só o trecho sem o rosto nem a mão (14,55–16,55 s)"
+  },
+  {
+   "id": "c06_hotel_quarto",
+   "ini": 19.76,
+   "video": {
+    "fonte": "IMG_1390.MOV",
+    "in": 18.0
+   },
+   "nota": "o resto do quarto (TV, porta), trecho limpo 17,9–23,1 s. Não há imagem do café da manhã no acervo"
+  },
+  {
+   "id": "c08_ponto_bonde",
+   "ini": "f05:O-0.06",
+   "video": {
+    "fonte": "IMG_1570.MOV",
+    "in": 0.6
+   },
+   "nota": "'O transporte público': o Diego no ponto do bonde, com o trilho e a rua (dia 2, 11h36); plano estável. Dentro do ônibus do aeroporto (IMG_1377) só aparecia o teto, e o plano dentro do bonde (IMG_1538) balança demais"
+  },
+  {
+   "id": "c09_pizza_fatia",
+   "ini": "f06:Comida-0.06",
+   "video": {
+    "fonte": "IMG_1416.MOV",
+    "in": 0.0
+   },
+   "nota": "'Comida': as fatias da New York Pizza com Coca na mesa (dia 1, 16h48), antes de a Marina entrar no quadro"
+  },
+  {
+   "id": "c10_pizza_beppe",
+   "ini": "f06:reais-0.06",
+   "video": {
+    "fonte": "IMG_1829.MOV",
+    "in": 0.0
+   },
+   "nota": "a pizza do jantar na Pizza Beppe (dia 2, 19h29), vertical"
+  },
+  {
+   "id": "c11_stroopwafel_centro",
+   "ini": "f07:Um-0.06",
+   "video": {
+    "fonte": "IMG_1478-1.MOV",
+    "in": 0.05
+   },
+   "nota": "'Um stroopwafel no centro': o stroopwafel do Hans Egstorf na mão (dia 1, 18h48), vertical"
+  },
+  {
+   "id": "c12_albert_cuyp",
+   "ini": "f07:No#2-0.08",
+   "video": {
+    "fonte": "IMG_1603.MOV",
+    "in": 0.4
+   },
+   "nota": "'No Albert Cuyp Market': a rua do mercado (dia 2, 12h19)"
+  },
+  {
+   "id": "c13_batata",
+   "ini": "f07:E-0.06",
+   "video": {
+    "fonte": "IMG_1817-1.MOV",
+    "in": 12.0
+   },
+   "nota": "'a batata mais famosa da cidade': a Marina com a batata da Fabel Friet, canal ao fundo (dia 2, 17h35), vertical"
+  },
+  {
+   "id": "c14_anne_frank",
+   "ini": "f08:Passeios-0.10",
+   "video": {
+    "fonte": "IMG_1558-1.MOV",
+    "in": 0.3
+   },
+   "nota": "'a Casa de Anne Frank': a estátua da Anne Frank, ao lado da casa (dia 2, 11h11), vertical. A fachada (IMG_1556) no recorte 9:16 mostrava só uma porta verde"
+  },
+  {
+   "id": "c15_heineken_tanques",
+   "ini": "f08:Heineken-0.04",
+   "video": {
+    "fonte": "IMG_1984-1.MOV",
+    "in": 0.5
+   },
+   "nota": "'o Heineken Experience': os tanques de cobre da antiga cervejaria (dia 3, 15h38), vertical"
+  },
+  {
+   "id": "c16_heineken_tela",
+   "ini": "f08:Deu-0.02",
+   "video": {
+    "fonte": "IMG_2003.MOV",
+    "in": 2.0
+   },
+   "nota": "a tela da Heineken com os dois (dia 3, 15h58), vertical"
+  },
+  {
+   "id": "c17_canal_arvores",
+   "ini": "f09:No-0.06",
+   "video": {
+    "fonte": "IMG_1814-1.MOV",
+    "in": 0.0
+   },
+   "nota": "'No total': canal com árvores ao fim de tarde (dia 2, 17h19), vertical"
+  },
+  {
+   "id": "c18_canal_rosa",
+   "ini": "f09:E-0.06",
+   "video": {
+    "fonte": "IMG_2067.MOV",
+    "in": 0.2
+   },
+   "nota": "'Amsterdã é cara mesmo?': de volta ao canal do gancho (dia 3, 18h53), vertical"
+  },
+  {
+   "id": "c19_canal_noite",
+   "ini": "f10:Aqui-0.06",
+   "video": {
+    "fonte": "IMG_2078.MOV",
+    "in": 0.0
+   },
+   "nota": "canal à noite com as luzes (dia 3, 19h22), vertical"
+  },
+  {
+   "id": "c20_cta_canal",
+   "ini": "f10:Se-0.06",
+   "video": {
+    "fonte": "IMG_2070.MOV",
+    "in": 2.58
+   },
+   "nota": "CTA sobre o canal do gancho (loop); o trecho 2,58–5,55 s quase não repete a c02 (0,20–2,57 s)"
+  }
+ ]
+}

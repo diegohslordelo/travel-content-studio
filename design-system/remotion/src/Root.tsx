@@ -3,6 +3,7 @@
  * - Kit-animacoes / Kit-png: objetos, assinaturas, legendas e transições do DS (exportáveis com alfa).
  * - Catalogo: todas as animações em sequência, com os sons da 4.6.
  * - Reel / CapaReel: montagem de um Reel a partir de reels/<reel>/revN (props + --public-dir).
+ * - ReelAmsCusto: Reel narrado "Amsterdã é cara mesmo?" (reels/ams-custo/), tela cheia, legenda que acende com a voz; DS só no CTA.
  * - AmostraYT: amostra de 30 s dos grafismos do vídeo longo do YouTube (16:9), --public-dir=reels/amostra-yt/public.
  * - VideoLongo: vídeo longo do YouTube (16:9, 24 fps) montado de reels/<video>/revN (props + --public-dir).
  */
@@ -15,8 +16,11 @@ import { AmostraYT } from "./yt/AmostraYT";
 import { AmostraFimYT, DUR_AMOSTRA_FIM } from "./yt/AmostraFimYT";
 import { VideoLongo, metadadosVideoLongo, propsVideoLongoVazias } from "./yt/VideoLongo";
 import { ThumbYT, propsThumbVazias } from "./yt/ThumbYT";
+import { ReelAmsCusto, metadadosAms, propsVaziasAms } from "./ams/ReelAmsCusto";
+import { carregarFontesAms } from "./ams/estilo";
 
 carregarFontes();
+carregarFontesAms();
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -26,6 +30,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="AmostraFimYT" component={AmostraFimYT} durationInFrames={Math.round((DUR_AMOSTRA_FIM * 30) / 1000)} fps={30} width={1920} height={1080} />
     <Composition id="VideoLongo" component={VideoLongo} durationInFrames={24} fps={24} width={1920} height={1080} defaultProps={propsVideoLongoVazias} calculateMetadata={metadadosVideoLongo} />
     <Still id="ThumbYT" component={ThumbYT} width={1280} height={720} defaultProps={propsThumbVazias} />
+    <Composition id="ReelAmsCusto" component={ReelAmsCusto} durationInFrames={30} fps={30} width={1080} height={1920} defaultProps={propsVaziasAms} calculateMetadata={metadadosAms} />
     <Still id="CapaReel" component={CapaReel} width={1080} height={1920} defaultProps={propsVazias} />
   </>
 );

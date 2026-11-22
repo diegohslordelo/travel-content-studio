@@ -1,0 +1,5 @@
+fonte/
+_tmp/
+public/
+# Vídeos da REV1: fora do git porque a cota de Git LFS do repositório estourou (22/11/2026). Entregues ao Diego pelo app.
+rev1/*.mp4
