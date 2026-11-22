@@ -18,7 +18,10 @@
   "voz_10": "1mg1ILWp8m53L3n3QvGuwQ4q-k8sNJRWU",
   "voz_11": "1obyBr5PTRruj4t3rAQhwy6BQusYSfUoX",
   "voz_12": "1islc9mvY3TByEwqNZNAFvvFYYllL4YoY",
-  "pasta_clipes": "Youtube/Amsterdam (1lR60skWQ7WLu_VUbj38W0WIUlrhIs5Qf); IDs em ids_drive.tsv"
+  "pasta_clipes": "Youtube/Amsterdam (1lR60skWQ7WLu_VUbj38W0WIUlrhIs5Qf); IDs em ids_drive.tsv",
+  "voz_13": "14QnzKrh8tVLIe4lq_zYLV_3IFIbMH1-8",
+  "voz_14": "1l1eogVP19-sm6I9EMCb9m01gAYQ1W_nw",
+  "voz_15": "1-CRDQr0xADptNzYdz-TzzqdIMH38W6hL"
  },
  "audio": {
   "passa_alta_hz": 70,
@@ -26,7 +29,7 @@
   "fade_in_ms": 10,
   "fade_out_ms": 30
  },
- "cauda_s": 1.6,
+ "cauda_s": 1.2,
  "falas": [
   {
    "id": "f01",
@@ -128,38 +131,38 @@
   {
    "id": "f07",
    "bloco": "7 · comida e bebida (total)",
-   "fonte": "voz_11",
+   "fonte": "voz_13",
    "trechos": [
     [
-     1.45,
-     7.32
+     1.03,
+     7.0
     ]
    ],
-   "texto": "Contando tudo que a gente comeu e bebeu, ficou 575 reais por pessoa, 192 por dia.",
+   "texto": "Contando tudo o que a gente comeu e bebeu, ficou 575 reais por pessoa, 192 por dia.",
    "falado": {
-    "575": "quinhentos e setenta e dois",
+    "575": "quinhentos e setenta e cinco",
     "192": "cento e noventa e dois"
    },
-   "nota": "Gravação 11 (substitui a 7, que tinha o valor sem bebida). Ele diz 'quinhentos e setenta e DOIS' (perda do CTC 38 × 118 para 'cinco'); o registro dá R$ 575,10. A legenda mostra 575, o valor atualizado (pedido do Diego, 22/11/2026: 'use o valor atualizado e altere nas legendas')."
+   "nota": "Gravação 13 (22/11/2026, 22h51), correção da 11: agora ele diz 'quinhentos e setenta e cinco' (perda do CTC 34 × 114 para 'dois'). Fala e legenda batem."
   },
   {
    "id": "f08",
    "bloco": "8 · passeios",
-   "fonte": "voz_08",
+   "fonte": "voz_14",
    "trechos": [
     [
-     0.68,
-     6.75
+     0.93,
+     8.45
     ]
    ],
-   "texto": "Passeios: fomos para a Casa de Anne Frank e o museu da primeira fábrica da Heineken no mundo, e ficou 268 reais.",
+   "texto": "E passeios: nós fomos para a Casa de Anne Frank e o museu da primeira fábrica da Heineken no mundo. Isso ficou 268 reais por pessoa.",
    "falado": {
     "Anne": "ãne",
     "Frank": "frenk",
     "Heineken": "ráineken",
-    "268": "duzentos e setenta e oito"
+    "268": "duzentos e sessenta e oito"
    },
-   "nota": "Ele diz 'duzentos e SETENTA e oito' de novo (Whisper e wav2vec2 concordam); o registro dá R$ 268,40. A legenda mostra 268, o valor atualizado (pedido do Diego)."
+   "nota": "Gravação 14, correção da 8: agora ele diz 'duzentos e sessenta e oito' (perda do CTC 154 × 184 para 'setenta'). O Whisper ouve 'que é o museu'; o wav2vec2 prefere 'e o museu'. Fala e legenda batem."
   },
   {
    "id": "f09",
@@ -184,16 +187,17 @@
   {
    "id": "f10",
    "bloco": "10 · CTA",
-   "fonte": "voz_10",
+   "fonte": "voz_15",
    "trechos": [
     [
-     1.24,
-     6.08
+     0.82,
+     6.59
     ]
    ],
-   "texto": "Toda semana eu posto dicas, custos e roteiros de viagem no meu perfil. Se você gostou, já me segue aí."
+   "texto": "Toda semana eu posto dicas, custos e roteiros de viagens aqui no meu perfil, e se você gostou, já me segue aí pra não perder nada.",
+   "nota": "Gravação 15, CTA com a frase nova no fim ('pra não perder nada'). A gravação acaba 0,06 s depois de 'nada'."
   }
  ],
- "revisao": "rev2",
+ "revisao": "rev3",
  "pasta_voz": "voz2"
 }

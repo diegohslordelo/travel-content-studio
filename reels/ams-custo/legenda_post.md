@@ -1,6 +1,6 @@
 # Reel "Amsterdã é cara mesmo?" · legenda do post
 
-**REV2:** comida agora inclui as bebidas (R$ 575 por pessoa) e o total é R$ 2.636. No áudio da REV2 o Diego fala "572" e "278"; a legenda gravada no vídeo e este texto usam os valores certos, 575 e 268 (rev2/QA_REV2.md, seção 2).
+**REV3:** comida com as bebidas (R$ 575 por pessoa) e total de R$ 2.636. Fala, legenda do vídeo e este texto batem em todos os valores.
 
 ## Instagram
 
@@ -18,7 +18,7 @@ TOTAL: R$ 2.636 por pessoa
 
 A taxa turística de Amsterdã é a maior da Europa: 12,5% sobre a diária, e sobe para 16% em 2027 (Brasilturis, 18/11/2026).
 
-Me segue para mais dicas, roteiros e custos de viagem.
+Toda semana tem dicas, custos e roteiros de viagem aqui no perfil. Me segue pra não perder nada.
 
 #amsterdam #amsterda #viagemeuropa #quantocusta #custosdeviagem #primeirodia
 ```

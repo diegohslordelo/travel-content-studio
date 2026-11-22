@@ -409,9 +409,33 @@ def medir(arq):
     return i, tp
 
 
+def duracao(arq):
+    return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", arq],
+                                capture_output=True, text=True).stdout)
+
+
+def velocidade():
+    """Pedido do Diego (22/11/2026, REV3): o Reel tem de ficar com até 60 s. Se o render passar disso, o vídeo inteiro
+    (imagem e voz juntas) é acelerado pelo multiplicador que o leva a 59,97 s; a voz mantém o tom (atempo). Se já tiver
+    até 60 s, nada muda. Exceção pedida por ele à regra 'a voz nunca é acelerada' (CLAUDE.md, 12), só neste Reel."""
+    ent = "_tmp/reel_sem_master.mov"
+    lim = ler("cenas.json").get("duracao_max_s")
+    d = duracao(ent)
+    if not lim or d <= lim:
+        print(f"  velocidade: {d:.2f} s ≤ {lim} s, sem multiplicador")
+        return ent, 1.0
+    k = d / (lim - 0.03)
+    sai = "_tmp/reel_sem_master_vel.mov"
+    sh(["ffmpeg", "-v", "error", "-y", "-i", ent, "-filter_complex", f"[0:v]setpts=PTS/{k:.6f},fps={FPS}[v];[0:a]atempo={k:.6f}[a]",
+        "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "14", "-preset", "slow", "-pix_fmt", "yuv420p", "-c:a", "pcm_s16le", sai])
+    print(f"  velocidade: {d:.2f} s × 1/{k:.4f} → {duracao(sai):.2f} s")
+    json.dump({"duracao_render_s": round(d, 3), "multiplicador": round(k, 4), "duracao_final_s": round(duracao(sai), 3)}, open("_tmp/velocidade.json", "w"))
+    return sai, k
+
+
 def master():
     os.makedirs(REV, exist_ok=True)
-    ent = "_tmp/reel_sem_master.mov"
+    ent, _ = velocidade()
     sai = f"{REV}/reel_{NOME}_{REV}.mp4"
     i0, _ = medir(ent)
     ganho, alvo, pico = -14.0 - i0, -14.0, -1.0
@@ -440,8 +464,15 @@ def capa():
     sh(cmd, cwd=REMOTION)
 
 
+def fator():
+    return ler("_tmp/velocidade.json")["multiplicador"] if os.path.exists("_tmp/velocidade.json") else 1.0
+
+
 def quadros():
     p = ler("_tmp/props.json")
+    k = fator()
+    for c in p["cenas"]:  # tempos das cenas no vídeo acelerado
+        c["ini_q"], c["fim_q"] = c["ini_q"] / k, c["fim_q"] / k
     vid = f"{REV}/reel_{NOME}_{REV}.mp4"
     d = f"{REV}/qa_frames"
     os.makedirs(d, exist_ok=True)
@@ -459,6 +490,9 @@ def conferir():
     """Medições do QA: formato, loudness, duração de cada cena, largura das legendas, cortes no quadro certo."""
     from fontTools.ttLib import TTFont
     p = ler("_tmp/props.json")
+    k = fator()
+    for c in p["cenas"]:
+        c["ini_q"], c["fim_q"] = c["ini_q"] / k, c["fim_q"] / k
     vid = f"{REV}/reel_{NOME}_{REV}.mp4"
     pr = json.loads(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration:stream=codec_name,width,height,r_frame_rate,sample_rate",
                                     "-of", "json", vid], capture_output=True, text=True).stdout)

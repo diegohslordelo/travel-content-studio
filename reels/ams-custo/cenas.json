@@ -164,7 +164,7 @@
   },
   {
    "id": "c10b_febo_sanduiche",
-   "ini": "f07:ficou",
+   "ini": "f07:ficou+0.20",
    "video": {
     "fonte": "IMG_1923.MOV",
     "in": 0.8
@@ -173,12 +173,12 @@
   },
   {
    "id": "c14_anne_frank",
-   "ini": "f08:Passeios-0.10",
+   "ini": "f08:E-0.10",
    "video": {
     "fonte": "IMG_1558-1.MOV",
     "in": 0.3
    },
-   "nota": "'a Casa de Anne Frank': a estátua da Anne Frank, ao lado da casa (dia 2, 11h11), vertical"
+   "nota": "'E passeios, nós fomos para a Casa de Anne Frank': a estátua da Anne Frank, ao lado da casa (dia 2, 11h11), vertical"
   },
   {
    "id": "c15_heineken_tanques",
@@ -227,12 +227,13 @@
   },
   {
    "id": "c20_cta_canal",
-   "ini": "f10:Se-0.06",
+   "ini": "f10:já-0.06",
    "video": {
     "fonte": "IMG_2070.MOV",
-    "in": 2.45
+    "in": 2.31
    },
-   "nota": "CTA sobre o canal do gancho (loop); o trecho 2,45–5,49 s não repete a c02 (0,20–2,28 s)"
+   "nota": "CTA sobre o canal do gancho (loop), a partir de 'já me segue aí'; o trecho 2,31–5,5 s não repete a c02 (0,20–2,30 s)"
   }
- ]
+ ],
+ "duracao_max_s": 60
 }
