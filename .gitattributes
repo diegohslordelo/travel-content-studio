@@ -1,2 +1,5 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mov filter=lfs diff=lfs merge=lfs -text
+
+# Cópia de download do Reel Amsterdã (sem LFS: a cota do LFS estourou; 49 MB, abaixo do limite de 100 MB do GitHub)
+reels/ams-custo/download/*.mp4 -filter -diff -merge binary
