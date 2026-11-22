@@ -15,7 +15,7 @@ os.makedirs("public", exist_ok=True); os.makedirs("_tmp", exist_ok=True)
 
 
 def le(fonte):
-    r = subprocess.run(["ffmpeg", "-v", "error", "-i", f"fonte/voz/{fonte}.m4a", "-ac", "1", "-ar", str(SR), "-af",
+    r = subprocess.run(["ffmpeg", "-v", "error", "-i", f"fonte/{d.get('pasta_voz', 'voz')}/{fonte}.m4a", "-ac", "1", "-ar", str(SR), "-af",
                         f"highpass=f={A['passa_alta_hz']},{A['afftdn']}", "-f", "f32le", "-"], capture_output=True, check=True)
     return np.frombuffer(r.stdout, dtype=np.float32).astype(np.float64)
 

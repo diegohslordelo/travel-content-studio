@@ -3,53 +3,197 @@
  "titulo": "Amsterdã é cara mesmo? Quanto gastamos em 3 dias",
  "formato": "Narrado (Trello, formato 04): a voz do Diego gravada no quarto (22/11/2026) sobre imagens da viagem (12 a 14/03/2026)",
  "fps": 30,
- "nota": "Tempos em segundos do arquivo de voz (fonte/voz/voz_NN.m4a = Drive Youtube/Amsterdam/Custos, 'Rua das Avencas N.m4a'). Entrada e saída medidas pela energia da voz (120–4.000 Hz, janelas de 10 ms; scripts/segmentar.py): entrada 0,05 s antes da voz e saída 0,10 s depois. Começo e fim em branco das gravações ficam de fora (pedido do Diego, 22/11/2026). A voz nunca é acelerada. O texto de cada bloco é a fala gravada (Whisper large-v3 conferido com wav2vec2), não o roteiro (docs/FORMATOS_REELS.md, 9.5). 'falado' é a forma por extenso, só para o alinhamento.",
+ "nota": "Tempos em segundos do arquivo de voz (fonte/voz2/voz_NN.m4a = Drive Youtube/Amsterdam/Custos, 'Rua das Avencas N.m4a' gravadas com microfone em 22/11/2026, 22h18–22h25; a REV1 usou as gravações do celular das 21h19, em fonte/voz/). Entrada e saída medidas pela energia da voz (120–4.000 Hz, janelas de 10 ms; scripts/segmentar.py): entrada 0,05 s antes da voz e saída 0,10 s depois. Começo e fim em branco das gravações ficam de fora (pedido do Diego, 22/11/2026). A voz nunca é acelerada. O texto de cada bloco é a fala gravada (Whisper large-v3 conferido com wav2vec2), não o roteiro (docs/FORMATOS_REELS.md, 9.5). 'falado' é a forma por extenso, só para o alinhamento.",
  "fontes_drive": {
-  "pasta_voz": "Youtube/Amsterdam/Custos (1O7-E5CjAAfmGKbXN_EnPUu_LQiOuBsNQ)",
-  "voz_01": "1Ol7qICnbHpLFUbP2kSmrVxl8TdSmiZcC",
-  "voz_02": "1TLmo8RO7JpictXQSSz_SySwEXug4wTCo",
-  "voz_03": "1KEB03XP1utz10xgMqR69W_l24gsEezsH",
-  "voz_04": "1gxdLHNZ3mUCJR-D6Me4wk3kQq2McPRM1",
-  "voz_05": "1PY_pMkB_h8RX8dnp_9B2CiLA3iF8mnw2",
-  "voz_06": "1x26YRiMEzhLL15ovhJ3F-3fQQFffA3i0",
-  "voz_07": "17orKbMS7x52r7N5d_jKguqKMndcM8N0c",
-  "voz_08": "1hJ99ilpAKEJiutgiO7Pl8To3LEeG32Is",
-  "voz_09": "1YYzyLEzyrWesXitxtZ5J33EgWX8CmNTy",
-  "voz_10": "1jVe-97FsZ3jd2PkQrf1x49uOAUOJvkYC",
+  "pasta_voz": "Youtube/Amsterdam/Custos (1O7-E5CjAAfmGKbXN_EnPUu_LQiOuBsNQ), gravações com microfone (22/11/2026, 22h18–22h25)",
+  "voz_01": "1a236KlNR9caZRnJSf82aGZMLVlhNWk67",
+  "voz_02": "14mzBy_K5tPcOksWqGJEY0jC1mrh8Un1h",
+  "voz_03": "1TYBtfTJvDtI_xDIcMcNzAvpnV2SknA3t",
+  "voz_04": "17u8dmP_M646lWW387dasCm1xGpmF0zxJ",
+  "voz_05": "13dfqAZPAlRyF2gVAsz5rzzW8zLUik8Jf",
+  "voz_06": "1zs0-QPVZPasLWc0LntaPX47pAzhCHOzR",
+  "voz_07": "1iaVuQ9VLDykwI1BK99qiW9ntriGdHL9B",
+  "voz_08": "1V0OGI_Nvu5tjgJWguq2TMGDpZ_xcYDkH",
+  "voz_09": "11QFOg-YV1aRQXWjtRkbI0i4c39tFYO_Y",
+  "voz_10": "1mg1ILWp8m53L3n3QvGuwQ4q-k8sNJRWU",
+  "voz_11": "1obyBr5PTRruj4t3rAQhwy6BQusYSfUoX",
+  "voz_12": "1islc9mvY3TByEwqNZNAFvvFYYllL4YoY",
   "pasta_clipes": "Youtube/Amsterdam (1lR60skWQ7WLu_VUbj38W0WIUlrhIs5Qf); IDs em ids_drive.tsv"
  },
- "audio": {"passa_alta_hz": 70, "afftdn": "afftdn=nr=8:nf=-58:tn=1", "fade_in_ms": 10, "fade_out_ms": 30},
+ "audio": {
+  "passa_alta_hz": 70,
+  "afftdn": "afftdn=nr=8:nf=-58:tn=1",
+  "fade_in_ms": 10,
+  "fade_out_ms": 30
+ },
  "cauda_s": 1.6,
  "falas": [
-  {"id": "f01", "bloco": "1 · gancho", "fonte": "voz_01", "trechos": [[0.42, 3.70]],
-   "texto": "Amsterdã é das cidades turísticas mais caras da Europa."},
-  {"id": "f02", "bloco": "2 · a notícia", "fonte": "voz_02", "trechos": [[0.57, 8.47]],
-   "texto": "E ela cobra a maior taxa turística do continente: em 2026 são 12,5% em cima do hotel, e em 2027 vai aumentar para 16%.",
-   "falado": {"2026": "dois mil e vinte e seis", "12,5%": "doze e meio por cento", "2027": "dois mil e vinte e sete", "16%": "dezesseis por cento"}},
-  {"id": "f03", "bloco": "3 · promessa", "fonte": "voz_03", "trechos": [[0.33, 6.90]],
-   "texto": "Mas será que é isso tudo mesmo? Eu vou te mostrar tudo o que gastamos nesses três dias que nós passamos lá, e você tira suas próprias conclusões."},
-  {"id": "f04", "bloco": "4 · hotel", "fonte": "voz_04", "trechos": [[1.80, 7.65]],
-   "texto": "Vou começar pelo hotel. Foram três noites, com café da manhã incluso. Deu 3.315 reais pro casal.",
-   "falado": {"3.315": "três mil trezentos e quinze"}},
-  {"id": "f05", "bloco": "5 · transporte", "fonte": "voz_05", "trechos": [[0.43, 4.55]],
-   "texto": "O transporte público deu mais ou menos 135 reais por pessoa.",
-   "falado": {"135": "cento e trinta e cinco"}},
-  {"id": "f06", "bloco": "6 · comida", "fonte": "voz_06", "trechos": [[0.45, 4.60]],
-   "texto": "Comida ficou 472 reais, 157 por dia.",
-   "falado": {"472": "quatrocentos e setenta e dois", "157": "cento e cinquenta e sete"}},
-  {"id": "f07", "bloco": "7 · exemplos de comida", "fonte": "voz_07", "trechos": [[2.08, 10.23]],
-   "texto": "Um stroopwafel no centro saiu 57 reais. No Albert Cuyp Market, 24. E a batata mais famosa da cidade, 42.",
-   "falado": {"stroopwafel": "strup ófel", "57": "cinquenta e sete", "Albert": "álbert", "Cuyp": "cuip", "Market": "márket", "24": "vinte e quatro", "42": "quarenta e dois"},
-   "nota": "O ruído em 0,00–0,01 s fica de fora."},
-  {"id": "f08", "bloco": "8 · passeios", "fonte": "voz_08", "trechos": [[2.19, 8.84]],
-   "texto": "Passeios: nós fomos para a Casa de Anne Frank e o Heineken Experience, o museu da Heineken. Deu 278 reais por pessoa.",
-   "falado": {"Anne": "ãne", "Frank": "frenk", "Heineken": "ráineken", "Experience": "expiriens", "278": "duzentos e setenta e oito"},
-   "nota": "Ele diz 'duzentos e SETENTA e oito' (Whisper e wav2vec2 concordam: 80 × 110 na perda do CTC). O valor dos registros é R$ 268,40 por pessoa. A legenda segue a fala; a divergência vai para o Diego (QA)."},
-  {"id": "f09", "bloco": "9 · total", "fonte": "voz_09", "trechos": [[2.18, 7.96]],
-   "texto": "No total, deu 2.533 reais por pessoa. E aí, o que você achou? Amsterdã é cara mesmo?",
-   "falado": {"2.533": "dois mil quinhentos e trinta e três"},
-   "nota": "Os ruídos em 1,10–2,06 s ficam de fora."},
-  {"id": "f10", "bloco": "10 · CTA", "fonte": "voz_10", "trechos": [[0.39, 4.78]],
-   "texto": "Aqui no perfil eu posto dicas, roteiros e custos de viagem. Se você gostou, já segue aí."}
- ]
+  {
+   "id": "f01",
+   "bloco": "1 · gancho",
+   "fonte": "voz_01",
+   "trechos": [
+    [
+     0.96,
+     3.6
+    ]
+   ],
+   "texto": "Amsterdã é das cidades mais caras da Europa.",
+   "nota": "O Whisper ouve 'é uma das'; o wav2vec2 lê 'é das' (perda do CTC 56 × 89). Fica 'é das'. A gravação acaba 0,01 s depois de 'Europa'."
+  },
+  {
+   "id": "f02",
+   "bloco": "2 · a notícia",
+   "fonte": "voz_02",
+   "trechos": [
+    [
+     0.78,
+     8.38
+    ]
+   ],
+   "texto": "E ela cobra a maior taxa turística do continente: foram 12,5% para hotel em 2026, e em 2027 vai aumentar para 16%.",
+   "falado": {
+    "12,5%": "doze e meio por cento",
+    "2026": "dois mil e vinte e seis",
+    "2027": "dois mil e vinte e sete",
+    "16%.": "dezesseis por cento",
+    "16%": "dezesseis por cento"
+   }
+  },
+  {
+   "id": "f03",
+   "bloco": "3 · promessa",
+   "fonte": "voz_03",
+   "trechos": [
+    [
+     0.73,
+     7.17
+    ]
+   ],
+   "texto": "Mas será que é isso tudo mesmo? Vou te mostrar quanto custou os três dias que nós passamos lá, e você tira suas próprias conclusões."
+  },
+  {
+   "id": "f04",
+   "bloco": "4 · hotel",
+   "fonte": "voz_04",
+   "trechos": [
+    [
+     0.84,
+     6.76
+    ]
+   ],
+   "texto": "Começando pelo hotel: foram três noites com café da manhã incluso, e o total ficou 3.315 reais pro casal.",
+   "falado": {
+    "3.315": "três mil trezentos e quinze"
+   }
+  },
+  {
+   "id": "f05",
+   "bloco": "5 · transporte",
+   "fonte": "voz_05",
+   "trechos": [
+    [
+     0.88,
+     4.07
+    ]
+   ],
+   "texto": "Transporte público ficou 135 reais para cada um.",
+   "falado": {
+    "135": "cento e trinta e cinco"
+   }
+  },
+  {
+   "id": "f06",
+   "bloco": "6 · comida (exemplos)",
+   "fonte": "voz_06",
+   "trechos": [
+    [
+     2.12,
+     12.36
+    ]
+   ],
+   "texto": "E comida teve de tudo. Um stroopwafel no centro saiu 57 reais, e no Albert Cuyp Market foi 24, e ainda era melhor, tá? E a batata frita mais famosa da cidade foi 42.",
+   "falado": {
+    "stroopwafel": "strup ófel",
+    "57": "cinquenta e sete",
+    "Albert": "álbert",
+    "Cuyp": "cuip",
+    "Market": "márket",
+    "24,": "vinte e quatro",
+    "24": "vinte e quatro",
+    "42.": "quarenta e dois",
+    "42": "quarenta e dois"
+   }
+  },
+  {
+   "id": "f07",
+   "bloco": "7 · comida e bebida (total)",
+   "fonte": "voz_11",
+   "trechos": [
+    [
+     1.45,
+     7.32
+    ]
+   ],
+   "texto": "Contando tudo que a gente comeu e bebeu, ficou 575 reais por pessoa, 192 por dia.",
+   "falado": {
+    "575": "quinhentos e setenta e dois",
+    "192": "cento e noventa e dois"
+   },
+   "nota": "Gravação 11 (substitui a 7, que tinha o valor sem bebida). Ele diz 'quinhentos e setenta e DOIS' (perda do CTC 38 × 118 para 'cinco'); o registro dá R$ 575,10. A legenda mostra 575, o valor atualizado (pedido do Diego, 22/11/2026: 'use o valor atualizado e altere nas legendas')."
+  },
+  {
+   "id": "f08",
+   "bloco": "8 · passeios",
+   "fonte": "voz_08",
+   "trechos": [
+    [
+     0.68,
+     6.75
+    ]
+   ],
+   "texto": "Passeios: fomos para a Casa de Anne Frank e o museu da primeira fábrica da Heineken no mundo, e ficou 268 reais.",
+   "falado": {
+    "Anne": "ãne",
+    "Frank": "frenk",
+    "Heineken": "ráineken",
+    "268": "duzentos e setenta e oito"
+   },
+   "nota": "Ele diz 'duzentos e SETENTA e oito' de novo (Whisper e wav2vec2 concordam); o registro dá R$ 268,40. A legenda mostra 268, o valor atualizado (pedido do Diego)."
+  },
+  {
+   "id": "f09",
+   "bloco": "9 · total",
+   "fonte": "voz_12",
+   "trechos": [
+    [
+     1.19,
+     5.03
+    ],
+    [
+     5.25,
+     7.29
+    ]
+   ],
+   "texto": "No total, tudo junto ficou 2.636 reais por pessoa. E agora, você achou Amsterdã cara mesmo?",
+   "falado": {
+    "2.636": "dois mil seiscentos e trinta e seis"
+   },
+   "nota": "Gravação 12 (substitui a 9, que tinha o total sem bebida). A pausa de 0,37 s entre as frases fica em 0,17 s."
+  },
+  {
+   "id": "f10",
+   "bloco": "10 · CTA",
+   "fonte": "voz_10",
+   "trechos": [
+    [
+     1.24,
+     6.08
+    ]
+   ],
+   "texto": "Toda semana eu posto dicas, custos e roteiros de viagem no meu perfil. Se você gostou, já me segue aí."
+  }
+ ],
+ "revisao": "rev2",
+ "pasta_voz": "voz2"
 }
