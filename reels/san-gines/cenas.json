@@ -243,7 +243,7 @@
     "fonte": "IMG_3820",
     "in": 0.4,
     "foco": [
-     0.5,
+     0.45,
      0.5
     ]
    },
@@ -251,7 +251,7 @@
     1.0,
     1.04
    ],
-   "nota": "'um extra de chocolate quente': a Marina tomando o chocolate, sem piscar (0,4–3,4 s; o olho semicerrado vem depois de 4 s e fica de fora)"
+   "nota": "'um extra de chocolate quente': a Marina tomando o chocolate, sem piscar (0,4–3,4 s; o olho semicerrado vem depois de 4 s e fica de fora) REV3: recorte centrado no rosto (foco x 0,45)"
   },
   {
    "id": "churro_no_chocolate",
@@ -277,15 +277,16 @@
     "fonte": "IMG_3819",
     "in": 1.2,
     "foco": [
-     0.5,
+     0.42,
      0.5
-    ]
+    ],
+    "zoom": 1.05
    },
    "kb": [
     1.0,
     1.04
    ],
-   "nota": "'não é nada demais': a Marina prova o churro e pisca (a única vez; pedido do Diego, REV2)"
+   "nota": "'não é nada demais': a Marina prova o churro e pisca (a única vez; pedido do Diego, REV2). REV3: recorte centrado no rosto (foco x 0,42; o rosto vai de 0,43 a 0,39 da largura do quadro durante o trecho); na REV2 o recorte era 0,50 e cortava o olho esquerdo dela"
   },
   {
    "id": "letreiro_frente",

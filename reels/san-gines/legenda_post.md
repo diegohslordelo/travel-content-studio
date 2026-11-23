@@ -1,4 +1,4 @@
-# Legenda do post · Reel San Ginés (REV2)
+# Legenda do post · Reel San Ginés (REV3)
 
 **Regras:** primeira linha reforça o gancho e fica abaixo de ~125 caracteres (o Instagram corta ali); o nome da churrería só aparece depois do corte (o mistério do vídeo não é entregue no feed); palavras-chave do tema para a busca; **um CTA** (comentar, o mesmo da placa do vídeo); fatos conferidos (referência de conteúdo, 3.4; `docs/FORMATOS_REELS.md`, 9.6).
 
@@ -66,4 +66,4 @@ Vídeos da tela: TikTok de travelroosa, vivamaissp e Vale Aristizábal.
 
 ## Capa
 
-`rev2/capa_san-gines_rev2.jpg` (1080 × 1920): o quadro em que o gancho está completo, com o Urso em preto e branco e "DECEPÇÃO" em âmbar. O texto fica entre y 310 e 1080, dentro do recorte central 3:4 do grid do perfil (y 240–1680).
+`rev3/capa_san-gines_rev3.jpg` (1080 × 1920): o quadro em que o gancho está completo, com o Urso em preto e branco e "DECEPÇÃO" em âmbar. O texto fica entre y 310 e 1080, dentro do recorte central 3:4 do grid do perfil (y 240–1680).
