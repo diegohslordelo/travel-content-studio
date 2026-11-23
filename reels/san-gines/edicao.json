@@ -1,0 +1,161 @@
+{
+ "reel": "san-gines",
+ "titulo": "Chocolatería San Ginés: a maior decepção em Madrid",
+ "formato": "Narrado (Trello, formato 04): a voz do Diego gravada em 23/11/2026 sobre imagens da viagem a Madrid (19 e 20/03/2026)",
+ "fps": 30,
+ "nota": "Tempos em segundos do arquivo de voz (fonte/voz/vNN.m4a, 48 kHz). Entrada 0,04 s antes do início da voz (0,08 s quando a fala começa em 's') e saída 0,07 s depois do fim (0,12 s em 's' final), para caber nos 45 s pedidos (energia 120–4.000 Hz, janelas de 10 ms; scripts/segmentar.py), conferidas com Whisper large-v3 e wav2vec2: nenhuma palavra cortada no início nem no fim. O silêncio entre blocos é o tom real que sobra nas pontas, sem silêncio digital. A voz nunca é acelerada. O texto de cada bloco é a fala gravada, não o roteiro (docs/FORMATOS_REELS.md, 9.5).",
+ "fontes_drive": {
+  "pasta_voz": "Youtube/Madrid/San gines (1QS7fz4V0hRFUqUbVsSx7ws9T27MfbTBw): 11 arquivos 'Praça Ernesto Lebram N.m4a' (o 1 sem número), baixados como fonte/voz/v01..v11.m4a",
+  "v01": "195bV7w6rgCxk6QIr-0d90yeRb2fxL_M3",
+  "v02": "1ADFWJ7wMRFMPyMu3Kz_lWeaIeJdZ_h5K",
+  "v03": "1FcVensbRP6Pj6x-O5TZ-haKioei_tdce",
+  "v04": "1wxsMLTjMPyIOUuwb33HQp2u36WZgOvny",
+  "v05": "1Y8p-SI_kbYL1TtLzib_hWDO1fd1j2YcE",
+  "v06": "1S2XpMpfnmMQQLY4TTQc4oL7Ev5MZAWd2",
+  "v07": "1qeKMZiD-Q87aiFg0wOA9rV04KMWDvO34",
+  "v08": "1yPK3FaYt4KrxsADTck_37YDCcKZB5Ks7",
+  "v09": "1QMLbZinvyXmr6ln3IJubecXPGjfGeNaz",
+  "v10": "1X9X5pPWPC0DspdUoo5h7AvmBS1IOS04F",
+  "v11": "1ITgudy0eQZGgYw8-K-znz2AQNYfldRTm",
+  "tiktok": "ScreenRecording_11-23-2026 17-11-24_1.mp4 (1wUrDr7FfJL4rYnhal64Jll-x2KZqHxCE), baixado como fonte/tiktok/tiktok.mp4",
+  "pasta_clipes": "Youtube/Madrid (11dlBPVbjT7waO7pdGip7jQNzyCpT2MJ-); IDs em _tmp/ids_drive.tsv"
+ },
+ "audio": {
+  "passa_alta_hz": 70,
+  "afftdn": "afftdn=nr=8:nf=-58:tn=1",
+  "fade_in_ms": 10,
+  "fade_out_ms": 30
+ },
+ "cauda_s": 0.5,
+ "falas": [
+  {
+   "id": "f01",
+   "bloco": "gancho",
+   "fonte": "v01",
+   "trechos": [
+    [
+     0.33,
+     2.62
+    ]
+   ],
+   "texto": "Essa foi a minha maior decepção de Madrid."
+  },
+  {
+   "id": "f02",
+   "bloco": "pista: 1894",
+   "fonte": "v02",
+   "trechos": [
+    [
+     0.39,
+     3.7
+    ]
+   ],
+   "texto": "Ela abriu em 1894 e colada na Puerta del Sol.",
+   "nota": "Gravado 'e colada' (com 'e'); a legenda segue a fala. O Whisper escreve 'Puerta do Sol'; o nome certo é Puerta del Sol."
+  },
+  {
+   "id": "f03",
+   "bloco": "pista: a mais famosa",
+   "fonte": "v03",
+   "trechos": [
+    [
+     0.44,
+     4.99
+    ]
+   ],
+   "texto": "A churrería mais famosa da cidade chega a servir mais de 10 mil churros em um único dia.",
+   "nota": "O estalo em 0,00–0,01 s fica de fora."
+  },
+  {
+   "id": "f04",
+   "bloco": "expectativa",
+   "fonte": "v04",
+   "trechos": [
+    [
+     0.22,
+     3.56
+    ]
+   ],
+   "texto": "Todo mundo me disse que era imperdível e a minha expectativa foi lá pro alto."
+  },
+  {
+   "id": "f05",
+   "bloco": "revelação",
+   "fonte": "v05",
+   "trechos": [
+    [
+     0.38,
+     4.41
+    ]
+   ],
+   "texto": "Eu estou falando da Chocolatería San Ginés e nós vamos tomar um café da manhã lá."
+  },
+  {
+   "id": "f06",
+   "bloco": "o pedido e a conta",
+   "fonte": "v06",
+   "trechos": [
+    [
+     0.35,
+     7.1
+    ],
+    [
+     7.31,
+     9.48
+    ]
+   ],
+   "texto": "Nós pedimos uma porção de 6 churros com chocolate quente que ficou €6,50 e pedimos um extra de chocolate quente que foi mais €3,90. No total ficou €10,40 para duas pessoas.",
+   "nota": "Valores ditos sem moeda ('seis e cinquenta', 'três e noventa', 'dez e quarenta'); o Whisper escreve 'R$'. Em Madrid são euros. A pausa de 0,31 s antes de 'No total' vira 0,14 s (corte no silêncio). Na legenda os valores levam '€' (a fala não diz a moeda; sem o símbolo, quem é do Brasil leria reais)."
+  },
+  {
+   "id": "f07",
+   "bloco": "veredito",
+   "fonte": "v07",
+   "trechos": [
+    [
+     0.41,
+     3.27
+    ]
+   ],
+   "texto": "E eu vou ser sincero com vocês, não é nada demais.",
+   "nota": "O ruído em 0,07–0,15 s (estalo de boca) fica de fora."
+  },
+  {
+   "id": "f08",
+   "bloco": "comparação",
+   "fonte": "v08",
+   "trechos": [
+    [
+     0.34,
+     6.61
+    ]
+   ],
+   "texto": "Se você tá com a expectativa alta de provar um bom churro, saiba que aqueles churros de barraquinha aqui do Brasil dão uma surra nesses aí."
+  },
+  {
+   "id": "f09",
+   "bloco": "moral",
+   "fonte": "v09",
+   "trechos": [
+    [
+     0.62,
+     5.15
+    ]
+   ],
+   "texto": "Vale pela história, mas se você tá esperando o melhor churro da sua vida, não é lá que você vai encontrar."
+  },
+  {
+   "id": "f10",
+   "bloco": "CTA",
+   "fonte": "v10",
+   "trechos": [
+    [
+     0.18,
+     5.0
+    ]
+   ],
+   "texto": "Se você já foi, coloca aqui nos comentários o que você achou e se você ainda vai, eu quero saber se ainda quer provar.",
+   "nota": "Duas tomadas do CTA (v10 e v11). A v10 entra porque cabe nos 45 s; a v11 ('se está planejando uma viagem para Madrid') fica 1,3 s mais longa."
+  }
+ ]
+}

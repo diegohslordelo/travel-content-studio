@@ -1,0 +1,5 @@
+# Derivados regeneráveis pelo pipeline (scripts/preparar.py e scripts/reel.py): voz decupada, efeitos e trechos do acervo
+public/
+
+# Prévias em vídeo: a cota de Git LFS do repositório acabou (23/11/2026); ficam fora do git até o Diego liberar
+ganchos/*.mp4

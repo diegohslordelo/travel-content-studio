@@ -1,0 +1,28 @@
+{
+ "nota": "Cenas ancoradas nas palavras ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. 'video' = acervo do Diego (fonte, entrada em s no bruto, foco x/y do recorte 9:16, 0–1). Imagens sem tratamento de cor; recorte 9:16 estabilizado (scripts/reel.py broll).",
+ "gancho": {
+  "anim": "pb",
+  "topo": 300,
+  "fim": "f02:Ela-0.06",
+  "decepcao": "f01:decepção",
+  "linhas": [
+   {"texto": "ESSA FOI A MINHA", "tam": 128, "em": "0"},
+   {"texto": "MAIOR", "tam": 170, "em": "f01:maior-0.04"},
+   {"texto": "DECEPÇÃO", "tam": 225, "em": "f01:decepção-0.04", "cor": "ambar", "peso": true},
+   {"texto": "DE MADRID.", "tam": 150, "em": "f01:de-0.04"}
+  ],
+  "opcoes": {
+   "pb": {"id": "gancho_pb_plaza_mayor", "video": {"fonte": "IMG_3650", "in": 0.05, "foco": [0.5, 0.5]}, "kb": [1.0, 1.05], "nota": "Plaza Mayor: Felipe III e as fachadas vermelhas, céu azul (19/03, 16h14)"},
+   "queda": {"id": "gancho_queda_sol_urso", "video": {"fonte": "IMG_3636", "in": 0.6, "foco": [0.47, 0.5]}, "kb": [1.0, 1.05], "nota": "Puerta del Sol: o Urso e o Medronheiro, símbolo de Madrid (19/03, 15h52)"},
+   "apagao": {"id": "gancho_apagao_debod", "video": {"fonte": "IMG_3782", "in": 0.4, "foco": [0.74, 0.5]}, "kb": [1.0, 1.05], "nota": "Templo de Debod iluminado ao anoitecer (19/03, 19h39)"}
+  },
+  "nota": "Letras garrafais em Anton, x 72, uma linha por vez na palavra (como a Grand-Place); o texto é a fala gravada. Larguras medidas na fonte: 842, 412, 835 e 643 px (≤ 872). Sem degradê atrás (pedido do Diego, 23/11/2026)."
+ },
+ "cenas": [
+  {"id": "gancho", "ini": "0"},
+  {"id": "sol_correos", "ini": "f02:Ela-0.06", "video": {"fonte": "IMG_3632", "in": 0.2, "foco": [0.5, 0.5]}, "kb": [1.0, 1.04], "nota": "'abriu em 1894 e colada na Puerta del Sol': a Real Casa de Correos, o relógio da Puerta del Sol"}
+ ],
+ "sons": [
+  {"som": "keen", "em": "f02:Ela-0.06", "alinhar": "pico", "rel_db": -6, "nota": "som do fim do gancho (regra do Diego de 01/11/2026): pico no corte para a 1ª cena depois do gancho"}
+ ]
+}
