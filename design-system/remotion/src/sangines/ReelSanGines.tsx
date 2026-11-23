@@ -13,7 +13,8 @@
  *   "queda_pb" · a escolhida pelo Diego (23/11/2026): a queda do texto sobre a Puerta del Sol, com a imagem ficando P&B;
  *   o efeito de cor só vale no gancho, por pedido dele (exceção deste Reel, não regra);
  * - sem sombreado atrás do texto do gancho: só a imagem e as letras (a sombra nas letras fica, para ler);
- * - os vídeos do TikTok entram como prova ("a mais famosa", "imperdível"): cartões de vídeo que aparecem um a um, com clique.
+ * - os vídeos do TikTok entram como prova ("a mais famosa", "imperdível"): cartões de vídeo que aparecem um a um, com clique,
+ *   em sequência rápida, com o fundo desfocado e escuro para os três ficarem em evidência (REV2).
  * Tudo vem das props (_tmp/props.json, gerado por reels/san-gines/scripts/reel.py).
  */
 import React from "react";
@@ -42,6 +43,7 @@ export type PropsSanGines = {
     linhas: { texto: string; tam: number; em: number; cor?: string | null; peso?: boolean }[];
   };
   cartoes: Cartao[];
+  fundoCartoes: { desfoque: number; brilho: number }; // fundo desfocado e escuro enquanto os cartões estão na tela (pedido do Diego, 23/11/2026)
   legendas: Grupo[];
   legendaY: number;
   cta: { ini: number; rotulo: string; destino: string; entrada: number };
@@ -57,6 +59,7 @@ export const propsVaziasSanGines: PropsSanGines = {
   cenas: [],
   gancho: { anim: "pb", topo: 300, fim: 0, decepcao: 0, linhas: [] },
   cartoes: [],
+  fundoCartoes: { desfoque: 0, brilho: 1 },
   legendas: [],
   legendaY: 1320,
   cta: { ini: 0, rotulo: "", destino: "", entrada: 200 },
@@ -243,13 +246,24 @@ export const ReelSanGines: React.FC<PropsSanGines> = (p) => {
   if (!p.cenas.length) return <AbsoluteFill style={{ background: COR.preto }} />;
   const tS = q / fps;
   const ctaQ = Math.round(p.cta.ini * fps);
+  // fundo atrás dos cartões: desfoca e escurece em 0,25 s quando o 1º entra e volta em 0,2 s quando eles saem
+  let kFundo = 0;
+  if (p.cartoes.length && p.fundoCartoes.desfoque > 0) {
+    const a = Math.min(...p.cartoes.map((c) => c.ini));
+    const b = Math.max(...p.cartoes.map((c) => c.fim));
+    kFundo = Math.min(ease((tS - a + 0.05) / 0.25), 1 - ease((tS - (b - 0.2)) / 0.2));
+    kFundo = clamp01(kFundo);
+  }
+  const fundo = kFundo > 0.001 ? `blur(${p.fundoCartoes.desfoque * kFundo}px) brightness(${1 - (1 - p.fundoCartoes.brilho) * kFundo})` : undefined;
   return (
     <AbsoluteFill style={{ background: COR.preto }}>
-      {p.cenas.map((c, k) => (
-        <Sequence key={c.id} from={c.ini_q} durationInFrames={c.fim_q - c.ini_q} premountFor={30} name={c.id}>
-          <CenaVideo p={p} c={c} gancho={k === 0} />
-        </Sequence>
-      ))}
+      <AbsoluteFill style={{ filter: fundo, scale: String(1 + 0.05 * kFundo) }}>
+        {p.cenas.map((c, k) => (
+          <Sequence key={c.id} from={c.ini_q} durationInFrames={c.fim_q - c.ini_q} premountFor={30} name={c.id}>
+            <CenaVideo p={p} c={c} gancho={k === 0} />
+          </Sequence>
+        ))}
+      </AbsoluteFill>
       {p.cartoes.map((c) => (
         <Sequence key={c.id} from={Math.round(c.ini * fps)} durationInFrames={Math.max(1, Math.round((c.fim - c.ini) * fps))} premountFor={30} name={c.id}>
           <CartaoTikTok p={p} c={c} tS={tS} />

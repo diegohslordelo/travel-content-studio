@@ -224,6 +224,7 @@ def props():
                    "linhas": [{"texto": l["texto"], "tam": l["tam"], "em": round(A(l["em"]), 3), "cor": AMBAR if l.get("cor") == "ambar" else None,
                                "peso": bool(l.get("peso"))} for l in g["linhas"]]},
         "cartoes": cartoes,
+        "fundoCartoes": {"desfoque": c.get("fundo_cartoes", {}).get("desfoque_px", 0), "brilho": c.get("fundo_cartoes", {}).get("brilho", 1)},
         "legendas": legendas(pal, fim_gancho), "legendaY": 1320,
         "cta": ({"ini": round(A(cta["ini"]), 3), "rotulo": cta["rotulo"], "destino": cta["destino"], "entrada": round((A(cta["entrada"]) - A(cta["ini"])) * 1000)}
                 if cta else {"ini": 0, "rotulo": "", "destino": "", "entrada": 0}),
@@ -353,6 +354,9 @@ def broll():
         tx, ty = trajetoria(arq, t0, dur_dec, w, h, fps_src, (bx, by, cw, ch))
         sig = 1.2 * fps_src  # o que oscila em menos de ~1 s é balanço da mão; panorâmica e inclinação lentas ficam
         rx, ry = tx - suave(tx, sig), ty - suave(ty, sig)
+        if v.get("seguir"):
+            # a janela 9:16 acompanha o conteúdo (trava no assunto, ex.: o letreiro inteiro no recorte enquanto a câmera anda)
+            rx, ry = tx.copy(), ty.copy()
         if not v.get("estabilizar", True):
             # plano em que a câmera se aproxima (escala, não deslocamento): a correlação de fase lê a aproximação como
             # tremor e empurraria a janela; fica o recorte fixo

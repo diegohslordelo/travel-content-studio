@@ -187,25 +187,27 @@
    "id": "letreiro",
    "ini": "f05:Chocolatería-0.06",
    "video": {
-    "fonte": "IMG_3812",
-    "in": 2.6,
+    "fonte": "IMG_3811",
+    "in": 0.0,
     "foco": [
-     0.5,
+     0.46,
      0.5
-    ]
+    ],
+    "zoom": 1.0,
+    "seguir": true
    },
    "kb": [
     1.0,
     1.04
    ],
-   "nota": "revelação: o letreiro CHOCOLATERIA SAN GINES aparece pela primeira vez no nome"
+   "nota": "revelação: o letreiro CHOCOLATERIA SAN GINES de frente, inteiro, no nome (a janela 9:16 acompanha o letreiro enquanto a câmera anda). REV2: a REV1 usava o IMG_3812 de lado, sem o nome (Diego, 23/11/2026)"
   },
   {
-   "id": "fachada_terraco",
+   "id": "terraco_cafe",
    "ini": "f05:café-0.06",
    "video": {
-    "fonte": "IMG_3811",
-    "in": 0.05,
+    "fonte": "IMG_3813",
+    "in": 0.0,
     "foco": [
      0.5,
      0.5
@@ -215,7 +217,7 @@
     1.0,
     1.04
    ],
-   "nota": "'tomar um café da manhã lá': a fachada com as mesas (20/03, 10h37)"
+   "nota": "'tomar um café da manhã lá': o terraço cheio de mesas"
   },
   {
    "id": "prato_de_cima",
@@ -235,25 +237,8 @@
    "nota": "'porção de 6 churros com chocolate quente': o prato visto de cima"
   },
   {
-   "id": "churro_no_chocolate",
+   "id": "marina_chocolate",
    "ini": "f06:e-0.06",
-   "video": {
-    "fonte": "IMG_3818",
-    "in": 1.6,
-    "foco": [
-     0.5,
-     0.5
-    ]
-   },
-   "kb": [
-    1.0,
-    1.04
-   ],
-   "nota": "'um extra de chocolate quente': o churro molhando na xícara"
-  },
-  {
-   "id": "marina_xicara",
-   "ini": "f06:No-0.06",
    "video": {
     "fonte": "IMG_3820",
     "in": 0.4,
@@ -266,7 +251,24 @@
     1.0,
     1.04
    ],
-   "nota": "'para duas pessoas': a Marina com a xícara"
+   "nota": "'um extra de chocolate quente': a Marina tomando o chocolate, sem piscar (0,4–3,4 s; o olho semicerrado vem depois de 4 s e fica de fora)"
+  },
+  {
+   "id": "churro_no_chocolate",
+   "ini": "f06:No-0.06",
+   "video": {
+    "fonte": "IMG_3818",
+    "in": 1.6,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'No total ficou €10,40 para duas pessoas': o churro molhando na xícara"
   },
   {
    "id": "marina_prova",
@@ -283,11 +285,28 @@
     1.0,
     1.04
    ],
-   "nota": "'não é nada demais': a Marina prova o churro"
+   "nota": "'não é nada demais': a Marina prova o churro e pisca (a única vez; pedido do Diego, REV2)"
   },
   {
-   "id": "churro_molhando_2",
+   "id": "letreiro_frente",
    "ini": "f08:Se-0.06",
+   "video": {
+    "fonte": "IMG_3812",
+    "in": 3.4,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'expectativa alta de provar um bom churro': o letreiro grande de frente"
+  },
+  {
+   "id": "churro_molhando",
+   "ini": "f08:churro-0.06",
    "video": {
     "fonte": "IMG_3818",
     "in": 4.6,
@@ -300,31 +319,14 @@
     1.0,
     1.04
    ],
-   "nota": "'provar um bom churro'"
+   "nota": "'aqueles churros de barraquinha aqui do Brasil': o churro no chocolate"
   },
   {
-   "id": "marina_xicara_2",
-   "ini": "f08:churro-0.06",
-   "video": {
-    "fonte": "IMG_3820",
-    "in": 3.8,
-    "foco": [
-     0.5,
-     0.5
-    ]
-   },
-   "kb": [
-    1.0,
-    1.04
-   ],
-   "nota": "'aqueles churros de barraquinha aqui do Brasil'"
-  },
-  {
-   "id": "marina_cara",
+   "id": "terraco_surra",
    "ini": "f08:do-0.06",
    "video": {
-    "fonte": "IMG_3819",
-    "in": 4.4,
+    "fonte": "IMG_3813",
+    "in": 1.95,
     "foco": [
      0.5,
      0.5
@@ -334,10 +336,10 @@
     1.0,
     1.04
    ],
-   "nota": "'dão uma surra nesses aí': a cara da Marina depois de provar"
+   "nota": "'dão uma surra nesses aí': o terraço"
   },
   {
-   "id": "letreiro_chegando",
+   "id": "letreiro_historia",
    "ini": "f09:Vale-0.06",
    "video": {
     "fonte": "IMG_3812",
@@ -354,11 +356,11 @@
    "nota": "'Vale pela história': o letreiro antigo entrando no quadro"
   },
   {
-   "id": "terraco",
+   "id": "sol_multidao_fim",
    "ini": "f09:churro-0.06",
    "video": {
-    "fonte": "IMG_3813",
-    "in": 1.6,
+    "fonte": "IMG_3630",
+    "in": 0.3,
     "foco": [
      0.5,
      0.5
@@ -368,7 +370,7 @@
     1.0,
     1.04
    ],
-   "nota": "'não é lá que você vai encontrar': o terraço da churrería"
+   "nota": "'não é lá que você vai encontrar': a Puerta del Sol cheia (Madrid segue). REV2: tira o 2º take da Marina piscando (Diego: piscando e provando só uma vez)"
   },
   {
    "id": "cta_sol_urso",
@@ -413,37 +415,37 @@
    "fonte_in": 49.0,
    "fonte_out": 51.3,
    "x": 330,
-   "y": 620,
-   "w": 560,
-   "h": 683,
+   "y": 640,
+   "w": 620,
+   "h": 756,
    "rot": -6,
    "nota": "vivamaissp: 'PORRAS E CHURROS MAIS FAMOSOS DA ESPANHA' (antes de o logo San Ginés aparecer)"
   },
   {
    "id": "tk_famous",
-   "ini": "f03:10-0.04",
+   "ini": "f03:cidade-0.04",
    "fim": "f04:e-0.06",
    "fonte_in": 0.0,
    "fonte_out": 0.95,
-   "x": 745,
-   "y": 700,
-   "w": 560,
-   "h": 683,
+   "x": 750,
+   "y": 730,
+   "w": 620,
+   "h": 756,
    "rot": 5,
    "nota": "travelroosa: 'THE MOST FAMOUS CHURROS IN THE WORLD' (só o 1º segundo; depois aparece a fachada com o nome). Para no último quadro"
   },
   {
    "id": "tk_mejor",
-   "ini": "f04:Todo-0.04",
+   "ini": "f03:chega-0.04",
    "fim": "f04:e-0.06",
-   "fonte_in": 22.6,
+   "fonte_in": 21.0,
    "fonte_out": 24.4,
-   "x": 520,
-   "y": 880,
-   "w": 560,
-   "h": 683,
+   "x": 540,
+   "y": 870,
+   "w": 620,
+   "h": 756,
    "rot": -2,
-   "nota": "Vale Aristizábal: 'LA MEJOR CHOCOLATERÍA de Madrid' (antes da fachada com o nome)"
+   "nota": "Vale Aristizábal: 'LA MEJOR CHOCOLATERÍA de Madrid' (o título se monta palavra a palavra; para antes da fachada com o nome)"
   }
  ],
  "tiktok_recorte": {
@@ -475,15 +477,20 @@
   },
   {
    "som": "remotion_mouse-click",
-   "em": "f03:10-0.04",
+   "em": "f03:cidade-0.04",
    "rel_db": -8,
    "nota": "clique do 2º cartão"
   },
   {
    "som": "remotion_mouse-click",
-   "em": "f04:Todo-0.04",
+   "em": "f03:chega-0.04",
    "rel_db": -8,
    "nota": "clique do 3º cartão"
   }
- ]
+ ],
+ "fundo_cartoes": {
+  "desfoque_px": 22,
+  "brilho": 0.5,
+  "nota": "enquanto os cartões estão na tela, o fundo desfoca e escurece para os três ficarem em evidência (pedido do Diego, 23/11/2026)"
+ }
 }
