@@ -1,0 +1,115 @@
+{
+  "reel": "bruges-bate-volta",
+  "revisao": 1,
+  "data": "2026-11-23",
+  "pedido": "Diego, 23/11/2026: Reel só de cortes, sem roteiro, sem texto, sem animação e sem CTA, no máximo 30 s, cortes de 3 a 4 s no máximo, com o take dele andando e o waffle do Chez Albert na mão. A música e o texto entram no app; a legenda do post divulga o vídeo do YouTube.",
+  "canvas": {
+    "largura": 1080,
+    "altura": 1920,
+    "fps": 30
+  },
+  "audio": "silencio",
+  "fontes": {
+    "IMG_4117.mov": {
+      "drive_id": "1iw1DBI3rBKjs5sog-XCQqebKS4iyfQpX",
+      "o_que": "Belfort, de baixo, a câmera desce para a Markt"
+    },
+    "IMG_4121.mp4": {
+      "drive_id": "1kSnoPfNQGXSkkrIT_yMLRcSLnDGiofPq",
+      "o_que": "Markt; o Diego aparece: fica de fora (pedido do Diego)"
+    },
+    "IMG_4128.mov": {
+      "drive_id": "1NSaJzofTBH99cWtfrkMxqbX44Y-Siywg",
+      "o_que": "Canal com barco de passeio e o Belfort ao fundo"
+    },
+    "IMG_4131.mov": {
+      "drive_id": "1JFPG61thiKhRdAvb3uVqk-m-mWO8_P_n",
+      "o_que": "Canal com a torre da Onze-Lieve-Vrouwekerk"
+    },
+    "IMG_4133.mov": {
+      "drive_id": "1scxBLbxg59JcRYQvDAdCNwMuSCsgIFTy",
+      "o_que": "Canal estreito, plano parado"
+    },
+    "IMG_4218.mp4": {
+      "drive_id": "1hla7uJ-nCq-EVM8A7pI2GZhG1K3mLE5n",
+      "o_que": "Minnewater: lago e o castelinho"
+    },
+    "IMG_4227.mov": {
+      "drive_id": "1DneEa-CHcSHDyZHpNfalmCznx2Vhh9du",
+      "o_que": "Parque (Minnewater), panorâmica; fica de fora"
+    },
+    "IMG_4235.mov": {
+      "drive_id": "1aV-ES92JwMYH_am2x9L1Q27KkkVqyqYA",
+      "o_que": "Waffle de palito na mão; não é o do Chez Albert: fica de fora"
+    },
+    "IMG_2489.MOV": {
+      "drive_id": "1eTtZp-W_MSsNtSIhI-KEnC7cWoIx3sQg",
+      "o_que": "Acervo, 16/03 12:39: Diego andando de costas numa rua de paralelepípedo (4K horizontal)"
+    },
+    "IMG_2681.MOV": {
+      "drive_id": "1vZ_NmPIFHxxAPkoXT5lazkPuSXqIbquF",
+      "o_que": "Acervo, 16/03 15:21: Diego andando de costas no parque (4K horizontal, câmera parada)"
+    },
+    "IMG_2639.MOV": {
+      "drive_id": "1XCha4v0LElVUPms0GBAWTMviEfKAuxaN",
+      "o_que": "Acervo, 16/03 14:41: waffle do Chez Albert (bandeirinha da Bélgica) na mão do Diego, vertical"
+    },
+    "IMG_2432.MOV": {
+      "drive_id": null,
+      "o_que": "Acervo, 16/03 11:29: fachada do Chez Albert; não entra, só confirma a loja"
+    }
+  },
+  "cortes": [
+    {
+      "fonte": "IMG_4128.mov",
+      "in": 7.6,
+      "dur": 3.0,
+      "por_que": "Abertura: o cartão-postal (canal, barco e Belfort) no 1º quadro"
+    },
+    {
+      "fonte": "IMG_2489.MOV",
+      "in": 4.2,
+      "dur": 3.0,
+      "centro_x": 0.43,
+      "por_que": "Diego andando de costas na rua; termina antes de ele virar para a câmera (9 s)"
+    },
+    {
+      "fonte": "IMG_4117.mov",
+      "in": 0.0,
+      "dur": 2.8,
+      "por_que": "Belfort de baixo para cima"
+    },
+    {
+      "fonte": "IMG_4133.mov",
+      "in": 1.0,
+      "dur": 2.7,
+      "por_que": "Canal estreito, plano parado (respiro)"
+    },
+    {
+      "fonte": "IMG_4131.mov",
+      "in": 0.8,
+      "dur": 2.7,
+      "por_que": "Canal com a torre da igreja"
+    },
+    {
+      "fonte": "IMG_2639.MOV",
+      "in": 0.0,
+      "dur": 3.0,
+      "por_que": "Waffle do Chez Albert na mão (antes do pé entrar no quadro, 3,25 s)"
+    },
+    {
+      "fonte": "IMG_2681.MOV",
+      "in": 2.0,
+      "dur": 3.0,
+      "centro_x": 0.47,
+      "por_que": "Diego andando no parque, câmera parada"
+    },
+    {
+      "fonte": "IMG_4218.mp4",
+      "in": 5.6,
+      "dur": 3.4,
+      "por_que": "Fecha no Minnewater com o castelinho; plano calmo que volta bem para o canal do início (loop)"
+    }
+  ],
+  "pedido_ajuste": "Diego, 23/11/2026 (2ª mensagem): nos takes verticais enviados ele não quer aparecer; os takes dele andando e o waffle do Chez Albert vêm do acervo."
+}
