@@ -83,7 +83,7 @@ class Ancoras:
 # ---------------------------------------------------------------- legendas (grupos de 1 a 4 palavras, uma linha)
 FUNCIONAIS = {"de", "do", "da", "dos", "das", "o", "a", "os", "as", "e", "que", "pra", "pro", "na", "no", "em", "um", "uma", "para",
               "com", "se", "me", "te", "eu", "ao", "isso", "esse", "essa", "mais", "tudo", "ele", "você", "nós", "lá", "aqui"}
-PARES = [("puerta", "del"), ("del", "sol"), ("san", "ginés"), ("chocolatería", "san"), ("10", "mil"), ("mil", "churros"), ("duas", "pessoas"), ("nada", "demais"), ("do", "brasil"), ("café", "da"), ("da", "manhã"), ("bom", "churro"), ("uma", "surra"), ("quer", "provar"), ("6", "churros"), ("chocolate", "quente"), ("disney", "adventure"), ("crush's", "coaster"), ("relâmpago", "mcqueen"), ("torre", "do"), ("do", "terror"), ("main", "street"),
+PARES = [("dão", "uma"), ("é", "lá"), ("vai", "encontrar"), ("nos", "comentários"), ("ainda", "vai"), ("puerta", "del"), ("del", "sol"), ("san", "ginés"), ("chocolatería", "san"), ("10", "mil"), ("mil", "churros"), ("duas", "pessoas"), ("nada", "demais"), ("do", "brasil"), ("café", "da"), ("da", "manhã"), ("bom", "churro"), ("uma", "surra"), ("quer", "provar"), ("6", "churros"), ("chocolate", "quente"), ("disney", "adventure"), ("crush's", "coaster"), ("relâmpago", "mcqueen"), ("torre", "do"), ("do", "terror"), ("main", "street"),
          ("piratas", "do"), ("do", "caribe"), ("star", "wars"), ("hyperspace", "mountain"), ("buzz", "lightyear"), ("big", "thunder"),
          ("pôr", "do"), ("do", "sol"), ("procurando", "nemo"), ("duas", "pernas"), ("um", "sonho"), ("dois", "dias"), ("dois", "parques"),
          ("um", "dia"), ("de", "paris"), ("primeira", "fileira"), ("de", "verdade"), ("ia", "morrer"), ("tava", "lá"), ("final", "de"),
@@ -369,6 +369,27 @@ def broll():
     json.dump(feitos, open("_tmp/broll.json", "w"), indent=1)
 
 
+# ---------------------------------------------------------------- cartões do TikTok
+def tiktok():
+    """Cada cartão: o trecho da gravação de tela do TikTok (fonte/tiktok/tiktok.mp4, 60 qps, SDR), recortado (sem a barra de
+    busca e sem a legenda de baixo, que tem o nome do lugar), no tamanho do cartão, mudo, a 30 qps. O trecho não é esticado:
+    quando o cartão fica mais tempo na tela que o trecho, o último quadro fica parado (vídeo pausado)."""
+    p = ler("_tmp/props.json")
+    c = ler("cenas.json")
+    r = c["tiktok_recorte"]
+    os.makedirs(os.path.join(PUBLIC, "tiktok"), exist_ok=True)
+    defs = {x["id"]: x for x in c["cartoes"]}
+    for ct in p["cartoes"]:
+        d = defs[ct["id"]]
+        tela = ct["fim"] - ct["ini"] + 0.2
+        trecho = d["fonte_out"] - d["fonte_in"]
+        resto = max(0.0, tela - trecho)
+        sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{d['fonte_in']:.3f}", "-i", "fonte/tiktok/tiktok.mp4", "-t", f"{trecho:.3f}", "-an",
+            "-vf", f"crop={r['w']}:{r['h']}:{r['x']}:{r['y']},scale={ct['w'] * 2}:{ct['h'] * 2},fps=30,tpad=stop_mode=clone:stop_duration={resto:.3f},setsar=1",
+            "-c:v", "libx264", "-crf", "16", "-preset", "fast", "-pix_fmt", "yuv420p", os.path.join(PUBLIC, "tiktok", ct["id"] + ".mp4")])
+        print(f"  {ct['id']:10} {d['fonte_in']:.2f}–{d['fonte_out']:.2f} s ({trecho:.2f} s) na tela {tela:.2f} s · parado {resto:.2f} s")
+
+
 # ---------------------------------------------------------------- sons
 def sons():
     import pyloudnorm as pyln
@@ -382,6 +403,7 @@ def sons():
     feitos = []
     for ev in c["sons"]:
         y, sr = sf.read(os.path.join(SONS_DIR, ev["som"] + ".wav"))
+        y = np.asarray(y, dtype=np.float64)
         if y.ndim > 1:
             y = y.mean(axis=1)
         if sr != SR:
@@ -506,9 +528,9 @@ def conferir():
 
 if __name__ == "__main__":
     passo = sys.argv[1] if len(sys.argv) > 1 else "tudo"
-    passos = {"props": props, "broll": broll, "sons": sons, "render": render, "master": master, "capa": capa, "quadros": quadros, "conferir": conferir}
+    passos = {"props": props, "broll": broll, "tiktok": tiktok, "sons": sons, "render": render, "master": master, "capa": capa, "quadros": quadros, "conferir": conferir}
     if passo == "tudo":
-        for k in ["props", "broll", "sons", "props", "render", "master", "capa", "quadros", "conferir"]:
+        for k in ["props", "broll", "tiktok", "sons", "props", "render", "master", "capa", "quadros", "conferir"]:
             passos[k]()
     else:
         passos[passo]()

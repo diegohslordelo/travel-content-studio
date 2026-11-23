@@ -1,28 +1,489 @@
 {
- "nota": "Cenas ancoradas nas palavras ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. 'video' = acervo do Diego (fonte, entrada em s no bruto, foco x/y do recorte 9:16, 0–1). Imagens sem tratamento de cor; recorte 9:16 estabilizado (scripts/reel.py broll).",
+ "nota": "Cenas ancoradas nas palavras ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos; corte 0,06 s antes da palavra). Cada cena vai até o início da seguinte; nenhuma imagem do acervo fica menos de 2 s na tela (pedido do Diego) e, no Narrado, o alvo é até 3 s (Trello). 'video' = acervo do Diego (fonte, entrada em s no bruto, foco x/y do recorte 9:16, 0–1). Imagens sem tratamento de cor; recorte 9:16 estabilizado (scripts/reel.py broll). Mistério do roteiro: nenhum plano antes de 'Chocolatería San Ginés' mostra o letreiro, e os vídeos do TikTok entram só em trechos sem o nome.",
  "gancho": {
-  "anim": "pb",
+  "anim": "queda_pb",
   "topo": 300,
   "fim": "f02:Ela-0.06",
   "decepcao": "f01:decepção",
   "linhas": [
-   {"texto": "ESSA FOI A MINHA", "tam": 128, "em": "0"},
-   {"texto": "MAIOR", "tam": 170, "em": "f01:maior-0.04"},
-   {"texto": "DECEPÇÃO", "tam": 225, "em": "f01:decepção-0.04", "cor": "ambar", "peso": true},
-   {"texto": "DE MADRID.", "tam": 150, "em": "f01:de-0.04"}
+   {
+    "texto": "ESSA FOI A MINHA",
+    "tam": 128,
+    "em": "0"
+   },
+   {
+    "texto": "MAIOR",
+    "tam": 170,
+    "em": "f01:maior-0.04"
+   },
+   {
+    "texto": "DECEPÇÃO",
+    "tam": 225,
+    "em": "f01:decepção-0.04",
+    "cor": "ambar",
+    "peso": true
+   },
+   {
+    "texto": "DE MADRID.",
+    "tam": 150,
+    "em": "f01:de-0.04"
+   }
   ],
   "opcoes": {
-   "pb": {"id": "gancho_pb_plaza_mayor", "video": {"fonte": "IMG_3650", "in": 0.05, "foco": [0.5, 0.5]}, "kb": [1.0, 1.05], "nota": "Plaza Mayor: Felipe III e as fachadas vermelhas, céu azul (19/03, 16h14)"},
-   "queda": {"id": "gancho_queda_sol_urso", "video": {"fonte": "IMG_3636", "in": 0.6, "foco": [0.47, 0.5]}, "kb": [1.0, 1.05], "nota": "Puerta del Sol: o Urso e o Medronheiro, símbolo de Madrid (19/03, 15h52)"},
-   "apagao": {"id": "gancho_apagao_debod", "video": {"fonte": "IMG_3782", "in": 0.4, "foco": [0.74, 0.5]}, "kb": [1.0, 1.05], "nota": "Templo de Debod iluminado ao anoitecer (19/03, 19h39)"}
+   "pb": {
+    "id": "gancho_pb_plaza_mayor",
+    "video": {
+     "fonte": "IMG_3650",
+     "in": 0.05,
+     "foco": [
+      0.5,
+      0.5
+     ]
+    },
+    "kb": [
+     1.0,
+     1.05
+    ]
+   },
+   "queda": {
+    "id": "gancho_queda_sol_urso",
+    "video": {
+     "fonte": "IMG_3636",
+     "in": 0.6,
+     "foco": [
+      0.47,
+      0.5
+     ]
+    },
+    "kb": [
+     1.0,
+     1.05
+    ]
+   },
+   "apagao": {
+    "id": "gancho_apagao_debod",
+    "video": {
+     "fonte": "IMG_3782",
+     "in": 0.4,
+     "foco": [
+      0.74,
+      0.5
+     ]
+    },
+    "kb": [
+     1.0,
+     1.05
+    ]
+   },
+   "queda_pb": {
+    "id": "gancho_sol_urso",
+    "video": {
+     "fonte": "IMG_3636",
+     "in": 0.6,
+     "foco": [
+      0.47,
+      0.5
+     ]
+    },
+    "kb": [
+     1.0,
+     1.05
+    ]
+   }
   },
-  "nota": "Letras garrafais em Anton, x 72, uma linha por vez na palavra (como a Grand-Place); o texto é a fala gravada. Larguras medidas na fonte: 842, 412, 835 e 643 px (≤ 872). Sem degradê atrás (pedido do Diego, 23/11/2026)."
+  "nota": "Escolha do Diego (23/11/2026), entre as 3 opções de reels/san-gines/ganchos/: a Puerta del Sol (o Urso e o Medronheiro, 19/03, 15h52) com a queda do texto e a imagem ficando preto e branco ('caindo e preto e branco'). O P&B só vale no gancho, por pedido dele (exceção deste Reel; a regra 'imagens sem tratamento' não muda). Letras garrafais em Anton, x 72, uma linha por vez na palavra; larguras medidas: 842, 412, 835 e 643 px (≤ 872). Sem degradê atrás."
  },
  "cenas": [
-  {"id": "gancho", "ini": "0"},
-  {"id": "sol_correos", "ini": "f02:Ela-0.06", "video": {"fonte": "IMG_3632", "in": 0.2, "foco": [0.5, 0.5]}, "kb": [1.0, 1.04], "nota": "'abriu em 1894 e colada na Puerta del Sol': a Real Casa de Correos, o relógio da Puerta del Sol"}
+  {
+   "id": "gancho",
+   "ini": "0"
+  },
+  {
+   "id": "sol_correos",
+   "ini": "f02:Ela-0.06",
+   "video": {
+    "fonte": "IMG_3631",
+    "in": 0.2,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'Ela abriu em 1894': a Real Casa de Correos, com o relógio da Puerta del Sol"
+  },
+  {
+   "id": "placa_puerta_del_sol",
+   "ini": "f02:Puerta-0.06",
+   "video": {
+    "fonte": "IMG_3640",
+    "in": 0.2,
+    "foco": [
+     0.45,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'colada na Puerta del Sol': o azulejo com o nome da praça; o 1º cartão do TikTok entra por cima em 'famosa'"
+  },
+  {
+   "id": "rua_movimento",
+   "ini": "f03:cidade-0.06",
+   "video": {
+    "fonte": "IMG_3641",
+    "in": 0.3,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "rua cheia perto de Sol, sob os cartões"
+  },
+  {
+   "id": "multidao_sol",
+   "ini": "f03:único-0.06",
+   "video": {
+    "fonte": "IMG_3634",
+    "in": 0.4,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'Todo mundo me disse que era imperdível': a multidão na Puerta del Sol"
+  },
+  {
+   "id": "olhar_pro_alto",
+   "ini": "f04:e-0.06",
+   "video": {
+    "fonte": "IMG_3637",
+    "in": 1.6,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'a minha expectativa foi lá pro alto': a câmera sobe para o céu"
+  },
+  {
+   "id": "letreiro",
+   "ini": "f05:Chocolatería-0.06",
+   "video": {
+    "fonte": "IMG_3812",
+    "in": 2.6,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "revelação: o letreiro CHOCOLATERIA SAN GINES aparece pela primeira vez no nome"
+  },
+  {
+   "id": "fachada_terraco",
+   "ini": "f05:café-0.06",
+   "video": {
+    "fonte": "IMG_3811",
+    "in": 0.05,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'tomar um café da manhã lá': a fachada com as mesas (20/03, 10h37)"
+  },
+  {
+   "id": "prato_de_cima",
+   "ini": "f06:6-0.12",
+   "video": {
+    "fonte": "IMG_3815",
+    "in": 0.1,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'porção de 6 churros com chocolate quente': o prato visto de cima"
+  },
+  {
+   "id": "churro_no_chocolate",
+   "ini": "f06:e-0.06",
+   "video": {
+    "fonte": "IMG_3818",
+    "in": 1.6,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'um extra de chocolate quente': o churro molhando na xícara"
+  },
+  {
+   "id": "marina_xicara",
+   "ini": "f06:No-0.06",
+   "video": {
+    "fonte": "IMG_3820",
+    "in": 0.4,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'para duas pessoas': a Marina com a xícara"
+  },
+  {
+   "id": "marina_prova",
+   "ini": "f07:E-0.06",
+   "video": {
+    "fonte": "IMG_3819",
+    "in": 1.2,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'não é nada demais': a Marina prova o churro"
+  },
+  {
+   "id": "churro_molhando_2",
+   "ini": "f08:Se-0.06",
+   "video": {
+    "fonte": "IMG_3818",
+    "in": 4.6,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'provar um bom churro'"
+  },
+  {
+   "id": "marina_xicara_2",
+   "ini": "f08:churro-0.06",
+   "video": {
+    "fonte": "IMG_3820",
+    "in": 3.8,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'aqueles churros de barraquinha aqui do Brasil'"
+  },
+  {
+   "id": "marina_cara",
+   "ini": "f08:do-0.06",
+   "video": {
+    "fonte": "IMG_3819",
+    "in": 4.4,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'dão uma surra nesses aí': a cara da Marina depois de provar"
+  },
+  {
+   "id": "letreiro_chegando",
+   "ini": "f09:Vale-0.06",
+   "video": {
+    "fonte": "IMG_3812",
+    "in": 0.0,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'Vale pela história': o letreiro antigo entrando no quadro"
+  },
+  {
+   "id": "terraco",
+   "ini": "f09:churro-0.06",
+   "video": {
+    "fonte": "IMG_3813",
+    "in": 1.6,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "'não é lá que você vai encontrar': o terraço da churrería"
+  },
+  {
+   "id": "cta_sol_urso",
+   "ini": "f10:Se-0.06",
+   "video": {
+    "fonte": "IMG_3636",
+    "in": 2.2,
+    "foco": [
+     0.47,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "CTA: volta ao Urso do gancho, agora em cores (loop)"
+  },
+  {
+   "id": "cta_plaza_mayor",
+   "ini": "f10:e-0.06",
+   "video": {
+    "fonte": "IMG_3651",
+    "in": 0.2,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "kb": [
+    1.0,
+    1.04
+   ],
+   "nota": "CTA: a Plaza Mayor, sob a placa"
+  }
  ],
+ "cartoes": [
+  {
+   "id": "tk_porras",
+   "ini": "f03:famosa-0.04",
+   "fim": "f04:e-0.06",
+   "fonte_in": 49.0,
+   "fonte_out": 51.3,
+   "x": 330,
+   "y": 620,
+   "w": 560,
+   "h": 683,
+   "rot": -6,
+   "nota": "vivamaissp: 'PORRAS E CHURROS MAIS FAMOSOS DA ESPANHA' (antes de o logo San Ginés aparecer)"
+  },
+  {
+   "id": "tk_famous",
+   "ini": "f03:10-0.04",
+   "fim": "f04:e-0.06",
+   "fonte_in": 0.0,
+   "fonte_out": 0.95,
+   "x": 745,
+   "y": 700,
+   "w": 560,
+   "h": 683,
+   "rot": 5,
+   "nota": "travelroosa: 'THE MOST FAMOUS CHURROS IN THE WORLD' (só o 1º segundo; depois aparece a fachada com o nome). Para no último quadro"
+  },
+  {
+   "id": "tk_mejor",
+   "ini": "f04:Todo-0.04",
+   "fim": "f04:e-0.06",
+   "fonte_in": 22.6,
+   "fonte_out": 24.4,
+   "x": 520,
+   "y": 880,
+   "w": 560,
+   "h": 683,
+   "rot": -2,
+   "nota": "Vale Aristizábal: 'LA MEJOR CHOCOLATERÍA de Madrid' (antes da fachada com o nome)"
+  }
+ ],
+ "tiktok_recorte": {
+  "x": 0,
+  "y": 310,
+  "w": 1206,
+  "h": 1470,
+  "nota": "da gravação de tela 1206 × 2622: tira a barra de busca de cima e a legenda de baixo (que tem o nome e a localização 'Chocolatería San Ginés'); ficam o vídeo, o texto do criador e os ícones da direita"
+ },
+ "cta": {
+  "ini": "f10:coloca-0.06",
+  "entrada": "f10:comentários-0.10",
+  "rotulo": "JÁ FOI? COLOCA AQUI",
+  "destino": "NOS COMENTÁRIOS"
+ },
  "sons": [
-  {"som": "keen", "em": "f02:Ela-0.06", "alinhar": "pico", "rel_db": -6, "nota": "som do fim do gancho (regra do Diego de 01/11/2026): pico no corte para a 1ª cena depois do gancho"}
+  {
+   "som": "keen",
+   "em": "f02:Ela-0.06",
+   "alinhar": "pico",
+   "rel_db": -6,
+   "nota": "som do fim do gancho (regra do Diego de 01/11/2026): pico no corte para a 1ª cena depois do gancho"
+  },
+  {
+   "som": "remotion_mouse-click",
+   "em": "f03:famosa-0.04",
+   "rel_db": -8,
+   "nota": "clique do 1º cartão do TikTok (pedido do Diego: 'fazendo barulhinho, clique, clique, clique')"
+  },
+  {
+   "som": "remotion_mouse-click",
+   "em": "f03:10-0.04",
+   "rel_db": -8,
+   "nota": "clique do 2º cartão"
+  },
+  {
+   "som": "remotion_mouse-click",
+   "em": "f04:Todo-0.04",
+   "rel_db": -8,
+   "nota": "clique do 3º cartão"
+  }
  ]
 }

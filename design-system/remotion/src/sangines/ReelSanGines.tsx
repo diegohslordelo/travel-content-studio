@@ -10,6 +10,7 @@
  *   "pb"     · a imagem perde a cor e escurece na palavra "decepção" (ideia dele);
  *   "queda"  · o texto entra reto e "DECEPÇÃO" despenca, solta de um lado; no fim a frase cai da tela (ideia dele);
  *   "apagao" · a luz do lugar pisca e apaga, como uma lâmpada que queima;
+ *   "queda_pb" · a escolhida pelo Diego (23/11/2026): a queda do texto sobre a Puerta del Sol, com a imagem ficando P&B;
  *   o efeito de cor só vale no gancho, por pedido dele (exceção deste Reel, não regra);
  * - sem sombreado atrás do texto do gancho: só a imagem e as letras (a sombra nas letras fica, para ler);
  * - os vídeos do TikTok entram como prova ("a mais famosa", "imperdível"): cartões de vídeo que aparecem um a um, com clique.
@@ -26,7 +27,7 @@ type Palavra = { t: string; i: number; f: number };
 type Grupo = { p: Palavra[]; ini: number; fim: number };
 type Cena = { id: string; ini_q: number; fim_q: number; video: string; kb: [number, number] };
 type Cartao = { id: string; video: string; ini: number; fim: number; x: number; y: number; w: number; h: number; rot: number };
-export type AnimGancho = "pb" | "queda" | "apagao";
+export type AnimGancho = "pb" | "queda" | "apagao" | "queda_pb";
 export type PropsSanGines = {
   fps: number;
   largura: number;
@@ -82,7 +83,7 @@ const brilhoApagao = (d: number) => {
 const filtroGancho = (p: PropsSanGines, tS: number) => {
   const g = p.gancho;
   const d = tS - g.decepcao;
-  if (g.anim === "pb") {
+  if (g.anim === "pb" || g.anim === "queda_pb") {
     const k = ease(d / 0.75);
     if (k <= 0) return undefined;
     return `grayscale(${k}) brightness(${1 - 0.42 * k}) contrast(${1 + 0.12 * k})`;
@@ -163,7 +164,7 @@ const mola = (d: number, f = 2.2, amort = 5.5) => (d <= 0 ? 0 : 1 - Math.exp(-am
 const Gancho: React.FC<{ p: PropsSanGines; tS: number }> = ({ p, tS }) => {
   const g = p.gancho;
   if (!g.linhas.length || tS >= g.fim) return null;
-  const queda = g.anim === "queda";
+  const queda = g.anim === "queda" || g.anim === "queda_pb";
   // "queda": a palavra de peso solta do lado direito 0,35 s depois de dita (gira no canto de baixo à esquerda e fica torta);
   // nos últimos 0,3 s antes do corte, a frase inteira cai da tela, com gravidade, e o corte fica no pico do keen
   const dPeso = tS - (g.decepcao + 0.35);
