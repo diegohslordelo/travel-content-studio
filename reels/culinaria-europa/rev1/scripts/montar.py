@@ -36,8 +36,17 @@ def grupos(censurar):
             assert norm(w["raw"]) == norm(tk), f"legenda difere da fala: {tk!r} x {w['raw']!r} ({w['ini']:.2f}s)"
             t = "p*rra" if (censurar and norm(tk) == "porra") else tk
             ps.append({"t": t, "ini": round(w["ini"], 3), "fim": w["fim"]})
-        txt = " ".join(p["t"] for p in ps); larg = fonte.getlength(txt)
-        out.append({"palavras": [{"t": p["t"], "ini": p["ini"]} for p in ps], "ini": round(ps[0]["ini"] - 0.06, 3), "fim_fala": ps[-1]["fim"], "px": 66 if larg <= 840 else int(66 * 840 / larg), "largura": round(larg)})
+        # um grupo não atravessa troca de composição (a legenda muda de altura): divide na troca
+        pos = lambda tt: next(("baixo" if (c["tipo"] == "diego" or c.get("layout") == "cheia") else "costura") for c in cen["cenas"] if c["ini"] - 0.001 <= tt < c["fim"] + 1e-6)
+        partes, cur = [], [ps[0]]
+        for q_ in ps[1:]:
+            if pos(q_["ini"]) != pos(cur[0]["ini"]): partes.append(cur); cur = []
+            cur.append(q_)
+        partes.append(cur)
+        for pp in partes:
+            txt = " ".join(p["t"] for p in pp); larg = fonte.getlength(txt)
+            out.append({"palavras": [{"t": p["t"], "ini": p["ini"]} for p in pp], "ini": round(pp[0]["ini"] - 0.06, 3), "fim_fala": pp[-1]["fim"], "px": 66 if larg <= 840 else int(66 * 840 / larg), "largura": round(larg)})
+            if len(partes) > 1: print("grupo dividido na troca de composição:", txt)
     assert k == len(pal), f"sobraram palavras: {[w['raw'] for w in pal[k:]]}"
     for a, b in zip(out, out[1:]):
         a["fim"] = round(min(b["ini"], a["fim_fala"] + 0.9), 3)
@@ -103,7 +112,7 @@ def master(mix, saida):
 props_base = {
     "dur": round(len(voz) / SR, 3),
     "diego": {"src": "cenas/diego.mp4", "offsetY": 668, "zoomCheia": [1.0, 1.05]},
-    "cenas": [{k: c[k] for k in ("id", "tipo", "ini", "fim") } | ({"src": f'cenas/{c["id"]}.mp4'} if c["tipo"] == "video" else {}) | ({"src": f'fotos/{c["fonte"]}', "zoom": c.get("zoom", [1, 1]), "cx": c.get("cx", 0.5), "cy": c.get("cy", 0.5)} if c["tipo"] == "foto" else {}) for c in cen["cenas"]],
+    "cenas": [{k: c[k] for k in ("id", "tipo", "ini", "fim") } | {"layout": c.get("layout", "dividida")} | ({"src": f'cenas/{c["id"]}.mp4'} if c["tipo"] == "video" else {}) | ({"src": f'fotos/{c["fonte"]}', "zoom": c.get("zoom", [1, 1]), "cx": c.get("cx", 0.5), "cy": c.get("cy", 0.5)} if c["tipo"] == "foto" else {}) for c in cen["cenas"]],
     "gancho": {"linhas": [{"t": cen["gancho"]["texto"][0], "px": 104}, {"t": cen["gancho"]["texto"][1], "px": 180, "cor": "#E0AE5C"}, {"t": cen["gancho"]["texto"][2], "px": 104}], "ini": 0, "fim": cen["gancho"]["fim"], "topo": 300},
     "pb": {"ini": cen["pb"]["ini"], "fim": cen["pb"]["fim"]},
     "cta": {"destino": cen["cta"]["destino"], "modulo": cen["cta"]["modulo"], "entrada": cen["cta"]["entrada"]},

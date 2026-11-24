@@ -15,6 +15,8 @@ import { Placa, Modulo } from "../ds/Placa";
 type Cena = {
   id: string;
   tipo: "video" | "foto" | "diego";
+  /** dividida = apoio em cima e o Diego embaixo; cheia = só a imagem de apoio na tela (a voz continua). */
+  layout?: "dividida" | "cheia";
   src?: string;
   ini: number;
   fim: number;
@@ -119,7 +121,8 @@ export const TelaDividida: React.FC<TelaDivididaProps> = (p) => {
   const t = frame / fps;
   const q = (s: number) => Math.round(s * fps);
   const cenaAtual = p.cenas.find((c) => t >= c.ini && t < c.fim) ?? p.cenas[p.cenas.length - 1];
-  const cheia = cenaAtual?.tipo === "diego";
+  const cheia = cenaAtual?.tipo === "diego"; // o Diego em tela cheia
+  const apoioCheio = cenaAtual?.layout === "cheia";
   const pb = t >= p.pb.ini && t < p.pb.fim;
 
   // Diego: um único vídeo contínuo (a boca nunca sai de sincronia); só muda o enquadramento
@@ -138,18 +141,19 @@ export const TelaDividida: React.FC<TelaDivididaProps> = (p) => {
         <AbsoluteFill style={estiloDiego}>
           <Video src={staticFile(p.diego.src)} muted style={{ width: W, height: 1920 }} />
         </AbsoluteFill>
-        {!cheia && (
-          <div style={{ position: "absolute", left: 0, top: 0, width: W, height: COSTURA, overflow: "hidden" }}>
-            {p.cenas.map((c) =>
-              c.tipo === "diego" ? null : (
-                <Sequence key={c.id} from={q(c.ini)} durationInFrames={q(c.fim) - q(c.ini)} name={c.id} layout="none">
-                  <Apoio c={c} altura={COSTURA} />
-                </Sequence>
-              ),
-            )}
-          </div>
-        )}
-        {!cheia && <div style={{ position: "absolute", left: 0, top: COSTURA - 3, width: W, height: 6, backgroundColor: "rgba(0,0,0,0.55)" }} />}
+        {!cheia &&
+          p.cenas.map((c) => {
+            if (c.tipo === "diego") return null;
+            const alt = c.layout === "cheia" ? 1920 : COSTURA;
+            return (
+              <Sequence key={c.id} from={q(c.ini)} durationInFrames={q(c.fim) - q(c.ini)} name={c.id} layout="none">
+                <div style={{ position: "absolute", left: 0, top: 0, width: W, height: alt, overflow: "hidden" }}>
+                  <Apoio c={c} altura={alt} />
+                </div>
+              </Sequence>
+            );
+          })}
+        {!cheia && !apoioCheio && <div style={{ position: "absolute", left: 0, top: COSTURA - 3, width: W, height: 6, backgroundColor: "rgba(0,0,0,0.55)" }} />}
       </AbsoluteFill>
 
       {/* Gancho: frase inteira já escrita desde o 1º quadro (pedido do Diego), sem legenda por baixo */}
@@ -166,7 +170,7 @@ export const TelaDividida: React.FC<TelaDivididaProps> = (p) => {
       {p.legendas.map((g, i) => {
         const t0 = g.palavras[0]?.ini ?? g.ini; // posição pela 1ª palavra (o grupo entra 60 ms antes dela)
         const cena = p.cenas.find((c) => t0 >= c.ini - 0.001 && t0 < c.fim);
-        const y = cena?.tipo === "diego" ? 1320 : COSTURA;
+        const y = cena?.tipo === "diego" || cena?.layout === "cheia" ? 1320 : COSTURA;
         return (
           <Sequence key={i} from={q(g.ini)} durationInFrames={Math.max(1, q(g.fim) - q(g.ini))} name={`legenda ${i}`} layout="none">
             <Legenda g={g} y={y} destaque={p.estilo.destaque} />

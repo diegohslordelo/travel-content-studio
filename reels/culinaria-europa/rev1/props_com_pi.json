@@ -14,34 +14,39 @@
    "tipo": "video",
    "ini": 0.0,
    "fim": 2.85,
+   "layout": "dividida",
    "src": "cenas/c00_torre_eiffel.mp4"
   },
   {
-   "id": "c01_bcn_bar",
+   "id": "c01_bruges_canal",
    "tipo": "video",
    "ini": 2.85,
-   "fim": 5.08,
-   "src": "cenas/c01_bcn_bar.mp4"
+   "fim": 4.87,
+   "layout": "cheia",
+   "src": "cenas/c01_bruges_canal.mp4"
   },
   {
-   "id": "c02_bcn_almoco",
+   "id": "c02_paris_trocadero",
    "tipo": "video",
-   "ini": 5.08,
+   "ini": 4.87,
    "fim": 7.83,
-   "src": "cenas/c02_bcn_almoco.mp4"
+   "layout": "dividida",
+   "src": "cenas/c02_paris_trocadero.mp4"
   },
   {
    "id": "c03_paella",
    "tipo": "video",
    "ini": 7.83,
-   "fim": 10.3,
+   "fim": 10.22,
+   "layout": "cheia",
    "src": "cenas/c03_paella.mp4"
   },
   {
    "id": "c04_tigre_mesa",
    "tipo": "video",
-   "ini": 10.3,
+   "ini": 10.22,
    "fim": 12.5,
+   "layout": "dividida",
    "src": "cenas/c04_tigre_mesa.mp4"
   },
   {
@@ -49,20 +54,22 @@
    "tipo": "video",
    "ini": 12.5,
    "fim": 14.8,
+   "layout": "dividida",
    "src": "cenas/c05_tigre_tosta.mp4"
   },
   {
-   "id": "c06_tigre_jamon",
-   "tipo": "video",
+   "id": "c06_diego",
+   "tipo": "diego",
    "ini": 14.8,
-   "fim": 16.95,
-   "src": "cenas/c06_tigre_jamon.mp4"
+   "fim": 16.84,
+   "layout": "dividida"
   },
   {
    "id": "c07_churros",
    "tipo": "video",
-   "ini": 16.95,
+   "ini": 16.84,
    "fim": 19.8,
+   "layout": "dividida",
    "src": "cenas/c07_churros.mp4"
   },
   {
@@ -70,19 +77,22 @@
    "tipo": "video",
    "ini": 19.8,
    "fim": 21.9,
+   "layout": "cheia",
    "src": "cenas/c08_lisboa.mp4"
   },
   {
    "id": "c09_diego_pb",
    "tipo": "diego",
    "ini": 21.9,
-   "fim": 24.3
+   "fim": 24.3,
+   "layout": "dividida"
   },
   {
    "id": "c10_lisboa_almoco",
    "tipo": "video",
    "ini": 24.3,
    "fim": 27.55,
+   "layout": "dividida",
    "src": "cenas/c10_lisboa_almoco.mp4"
   },
   {
@@ -90,6 +100,7 @@
    "tipo": "video",
    "ini": 27.55,
    "fim": 30.2,
+   "layout": "dividida",
    "src": "cenas/c11_bacalhau_nata.mp4"
   },
   {
@@ -97,6 +108,7 @@
    "tipo": "video",
    "ini": 30.2,
    "fim": 32.4,
+   "layout": "cheia",
    "src": "cenas/c12_bacalhau_prova.mp4"
   },
   {
@@ -104,6 +116,7 @@
    "tipo": "video",
    "ini": 32.4,
    "fim": 34.45,
+   "layout": "dividida",
    "src": "cenas/c13_pastel.mp4"
   },
   {
@@ -111,6 +124,7 @@
    "tipo": "video",
    "ini": 34.45,
    "fim": 37.5,
+   "layout": "dividida",
    "src": "cenas/c14_pasteis_rua.mp4"
   },
   {
@@ -118,6 +132,7 @@
    "tipo": "foto",
    "ini": 37.5,
    "fim": 40.82,
+   "layout": "cheia",
    "src": "fotos/ita_IMG_5040.jpg",
    "zoom": [
     1.0,
@@ -131,6 +146,7 @@
    "tipo": "foto",
    "ini": 40.82,
    "fim": 44.05,
+   "layout": "dividida",
    "src": "fotos/web_trastevere_franganillo.jpg",
    "zoom": [
     1.0,
@@ -144,6 +160,7 @@
    "tipo": "foto",
    "ini": 44.05,
    "fim": 45.65,
+   "layout": "cheia",
    "src": "fotos/ita_IMG_5672.jpg",
    "zoom": [
     1.0,
@@ -157,6 +174,7 @@
    "tipo": "foto",
    "ini": 45.65,
    "fim": 47.18,
+   "layout": "dividida",
    "src": "fotos/ita_IMG_6335.jpg",
    "zoom": [
     1.0,
@@ -170,6 +188,7 @@
    "tipo": "foto",
    "ini": 47.18,
    "fim": 49.25,
+   "layout": "cheia",
    "src": "fotos/ita_IMG_5984.jpg",
    "zoom": [
     1.0,
@@ -183,6 +202,7 @@
    "tipo": "foto",
    "ini": 49.25,
    "fim": 52.45,
+   "layout": "dividida",
    "src": "fotos/web_trastevere_jordiferrer.jpg",
    "zoom": [
     1.07,
@@ -196,6 +216,7 @@
    "tipo": "foto",
    "ini": 52.45,
    "fim": 55.5,
+   "layout": "dividida",
    "src": "fotos/ita_IMG_5095.jpg",
    "zoom": [
     1.0,
@@ -208,13 +229,15 @@
    "id": "c22_diego",
    "tipo": "diego",
    "ini": 55.5,
-   "fim": 58.0
+   "fim": 58.0,
+   "layout": "dividida"
   },
   {
    "id": "c23_taglio_2",
    "tipo": "foto",
    "ini": 58.0,
-   "fim": 60.5,
+   "fim": 60.21,
+   "layout": "cheia",
    "src": "fotos/ita_IMG_5672.jpg",
    "zoom": [
     1.08,
@@ -226,8 +249,9 @@
   {
    "id": "c24_pizza_2",
    "tipo": "foto",
-   "ini": 60.5,
+   "ini": 60.21,
    "fim": 62.85,
+   "layout": "dividida",
    "src": "fotos/ita_IMG_5040.jpg",
    "zoom": [
     1.1,
@@ -241,6 +265,7 @@
    "tipo": "video",
    "ini": 62.85,
    "fim": 67.567,
+   "layout": "dividida",
    "src": "cenas/c25_cta_brinde.mp4"
   }
  ],

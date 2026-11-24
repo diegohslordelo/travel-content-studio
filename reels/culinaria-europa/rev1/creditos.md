@@ -5,12 +5,11 @@
 |---|---|---|
 | Fala (tela de baixo) | Drive `Comida/2931038C-AED4-4A14-B22F-5A6FD6A0DD73.mp4` | gravação no quarto, editada pelo Diego |
 | c00 gancho · Torre Eiffel (pedido do Diego) | `IMG_2787.MOV` | Paris · Trocadéro · 17/03/2026 |
-| c01 bar com a Marina | `IMG_0816-1.MOV` | Barcelona · 2026 |
-| c02 almoço | `IMG_1001.MOV` | Barcelona · 10/03/2026 |
+| c01 canal (tela cheia) | `IMG_2484.MOV` | Bruges · 16/03/2026 |
+| c02 Diego subindo o Trocadéro | `IMG_2793.MOV` | Paris · 17/03/2026 |
 | c03 paella | `IMG_0996.MOV` | Barcelona · 10/03/2026 |
 | c04 tapas na mesa | `IMG_3790.MOV` | Madrid · El Tigre · 19/03/2026 |
 | c05 tostas + chope | `IMG_3795.MOV` | Madrid · El Tigre |
-| c06 jamón | `IMG_3794.MOV` | Madrid · El Tigre |
 | c07 churros | `IMG_3815.MOV` | Madrid · Chocolatería San Ginés · 20/03/2026 |
 | c08 Lisboa à noite | `IMG_4247.MOV` | Lisboa |
 | c10 almoço na Rua Augusta | `IMG_4525.MOV` | Lisboa |

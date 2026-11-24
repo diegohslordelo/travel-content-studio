@@ -5,7 +5,7 @@ import json, os, subprocess, sys
 CENAS = json.load(open("rev1/cenas.json"))
 TM = ("zscale=tin=arib-std-b67:min=bt2020nc:pin=bt2020:rin=tv:t=linear:npl=203,format=gbrpf32le,"
       "zscale=p=bt709,tonemap=tonemap=mobius:param=0.3:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p")
-W, H = 1080, 900
+W = 1080
 os.makedirs("rev1/public/cenas", exist_ok=True); os.makedirs("_tmp/stab", exist_ok=True)
 so = sys.argv[1:]
 for c in CENAS["cenas"]:
@@ -15,6 +15,7 @@ for c in CENAS["cenas"]:
     out = f'rev1/public/cenas/{c["id"]}.mp4'
     dur = round(c["fim"] - c["ini"] + 0.1, 3)  # alça de 0,1 s
     rot = {"cw": "transpose=1,", "ccw": "transpose=2,", "180": "hflip,vflip,"}.get(c.get("girar", ""), "")
+    H = 1920 if c.get("layout") == "cheia" else 900
     z = c.get("zoom", 1.0); cx = c.get("cx", 0.5); cy = c.get("cy", 0.5)
     # escala para cobrir 1080x900 * zoom, depois corta centrado em (cx, cy)
     crop = (f"scale=w='if(gt(iw/ih,{W/H}),-2,{int(W*z)})':h='if(gt(iw/ih,{W/H}),{int(H*z)},-2)':flags=lanczos,"

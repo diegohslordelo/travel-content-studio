@@ -36,27 +36,32 @@
    "estabilizar": true,
    "fala": "Qual é a melhor culinária da Europa?",
    "cx": 0.31,
-   "_": "pedido do Diego: o Diego gravando a Torre Eiffel no gancho (de propósito, soa aleatório)"
+   "_": "pedido do Diego: o Diego gravando a Torre Eiffel no gancho (de propósito, soa aleatório)",
+   "layout": "dividida"
   },
   {
-   "id": "c01_bcn_bar",
+   "id": "c01_bruges_canal",
    "tipo": "video",
-   "fonte": "bcn_IMG_0816-1.MOV",
-   "in": 5.5,
+   "layout": "cheia",
+   "fonte": "brg_IMG_2484.MOV",
+   "in": 0.5,
    "ini": 2.85,
-   "fim": 5.08,
-   "estabilizar": true,
-   "fala": "Até então eu visitei 7 países na Europa"
+   "fim": 4.87,
+   "estabilizar": false,
+   "fala": "Até então eu visitei 7 países na Europa",
+   "_": "sem comida e sem pista dos países do pódio (pedido do Diego)"
   },
   {
-   "id": "c02_bcn_almoco",
+   "id": "c02_paris_trocadero",
    "tipo": "video",
-   "fonte": "bcn_IMG_1001.MOV",
-   "in": 21.0,
-   "ini": 5.08,
+   "fonte": "par_IMG_2793.MOV",
+   "in": 2.0,
+   "ini": 4.87,
    "fim": 7.83,
    "estabilizar": true,
-   "fala": "e vou te mostrar 3 deles que a culinária me surpreendeu"
+   "fala": "e vou te mostrar 3 deles que a culinária me surpreendeu",
+   "_": "o Diego andando pela cidade (pedido do Diego)",
+   "layout": "dividida"
   },
   {
    "id": "c03_paella",
@@ -64,19 +69,21 @@
    "fonte": "bcn_IMG_0996.MOV",
    "in": 0.0,
    "ini": 7.83,
-   "fim": 10.3,
+   "fim": 10.22,
    "estabilizar": true,
-   "fala": "Em terceiro lugar fica Espanha. A paella é muito boa"
+   "fala": "Em terceiro lugar fica Espanha. A paella é muito boa",
+   "layout": "cheia"
   },
   {
    "id": "c04_tigre_mesa",
    "tipo": "video",
    "fonte": "mad_IMG_3790.MOV",
    "in": 0.3,
-   "ini": 10.3,
+   "ini": 10.22,
    "fim": 12.5,
    "estabilizar": true,
-   "fala": "e a variedade de tapas é imensa"
+   "fala": "e a variedade de tapas é imensa",
+   "layout": "dividida"
   },
   {
    "id": "c05_tigre_tosta",
@@ -86,16 +93,14 @@
    "ini": 12.5,
    "fim": 14.8,
    "estabilizar": true,
-   "fala": "Tem lugar que você pede a bebida e a tapa já vem de graça acompanhando"
+   "fala": "Tem lugar que você pede a bebida e a tapa já vem de graça acompanhando",
+   "layout": "dividida"
   },
   {
-   "id": "c06_tigre_jamon",
-   "tipo": "video",
-   "fonte": "mad_IMG_3794.MOV",
-   "in": 0.0,
+   "id": "c06_diego",
+   "tipo": "diego",
    "ini": 14.8,
-   "fim": 16.95,
-   "estabilizar": true,
+   "fim": 16.84,
    "fala": "E lá você come barato"
   },
   {
@@ -103,10 +108,11 @@
    "tipo": "video",
    "fonte": "mad_IMG_3815.MOV",
    "in": 0.0,
-   "ini": 16.95,
+   "ini": 16.84,
    "fim": 19.8,
    "estabilizar": false,
-   "fala": "só que apesar da variedade enorme no doce, deixa um pouco a desejar"
+   "fala": "só que apesar da variedade enorme no doce, deixa um pouco a desejar",
+   "layout": "dividida"
   },
   {
    "id": "c08_lisboa",
@@ -116,7 +122,8 @@
    "ini": 19.8,
    "fim": 21.9,
    "estabilizar": true,
-   "fala": "Em segundo lugar, Portugal"
+   "fala": "Em segundo lugar, Portugal",
+   "layout": "cheia"
   },
   {
    "id": "c09_diego_pb",
@@ -133,7 +140,8 @@
    "ini": 24.3,
    "fim": 27.55,
    "estabilizar": false,
-   "fala": "aqui você vai comer bons pratos de frutos do mar e baratos"
+   "fala": "aqui você vai comer bons pratos de frutos do mar e baratos",
+   "layout": "dividida"
   },
   {
    "id": "c11_bacalhau_nata",
@@ -143,7 +151,8 @@
    "ini": 27.55,
    "fim": 30.2,
    "estabilizar": true,
-   "fala": "Esse bacalhau com nata foi 20 euros pra duas pessoas"
+   "fala": "Esse bacalhau com nata foi 20 euros pra duas pessoas",
+   "layout": "dividida"
   },
   {
    "id": "c12_bacalhau_prova",
@@ -153,7 +162,8 @@
    "ini": 30.2,
    "fim": 32.4,
    "estabilizar": true,
-   "fala": "e eu não tenho nem palavras pra descrever o que foi isso aí, pô"
+   "fala": "e eu não tenho nem palavras pra descrever o que foi isso aí, pô",
+   "layout": "cheia"
   },
   {
    "id": "c13_pastel",
@@ -163,7 +173,8 @@
    "ini": 32.4,
    "fim": 34.45,
    "estabilizar": true,
-   "fala": "E o pastel de nata é sinistro de bom, pô"
+   "fala": "E o pastel de nata é sinistro de bom, pô",
+   "layout": "dividida"
   },
   {
    "id": "c14_pasteis_rua",
@@ -174,7 +185,8 @@
    "fim": 37.5,
    "estabilizar": true,
    "girar": "cw",
-   "fala": "Eu comi quatro em uma manhã. Portugal cravou o segundo lugar"
+   "fala": "Eu comi quatro em uma manhã. Portugal cravou o segundo lugar",
+   "layout": "dividida"
   },
   {
    "id": "c15_pizza",
@@ -186,7 +198,8 @@
     1.0,
     1.08
    ],
-   "fala": "E o primeiro lugar chegou chutando a porta. A Itália, por muito"
+   "fala": "E o primeiro lugar chegou chutando a porta. A Itália, por muito",
+   "layout": "cheia"
   },
   {
    "id": "c16_rua_1",
@@ -198,7 +211,8 @@
     1.0,
     1.07
    ],
-   "fala": "lá tem um milhão de restaurantes na rua"
+   "fala": "lá tem um milhão de restaurantes na rua",
+   "layout": "dividida"
   },
   {
    "id": "c17_taglio",
@@ -210,7 +224,8 @@
     1.0,
     1.05
    ],
-   "fala": "Do mais simples ao mais sofisticado"
+   "fala": "Do mais simples ao mais sofisticado",
+   "layout": "cheia"
   },
   {
    "id": "c18_fortunata",
@@ -222,7 +237,8 @@
     1.0,
     1.05
    ],
-   "fala": "Do mais barato ao mais caro"
+   "fala": "Do mais barato ao mais caro",
+   "layout": "dividida"
   },
   {
    "id": "c19_tagliatelle",
@@ -234,7 +250,8 @@
     1.0,
     1.06
    ],
-   "fala": "Só que em qualquer um deles você vai comer bem"
+   "fala": "Só que em qualquer um deles você vai comer bem",
+   "layout": "cheia"
   },
   {
    "id": "c20_rua_2",
@@ -246,7 +263,8 @@
     1.07,
     1.0
    ],
-   "fala": "você vai escolher o que cabe no seu bolso e correr pro abraço"
+   "fala": "você vai escolher o que cabe no seu bolso e correr pro abraço",
+   "layout": "dividida"
   },
   {
    "id": "c21_cannoli",
@@ -258,7 +276,8 @@
     1.0,
     1.08
    ],
-   "fala": "Na Itália, o difícil não é comer bem. É escolher o que comer"
+   "fala": "Na Itália, o difícil não é comer bem. É escolher o que comer",
+   "layout": "dividida"
   },
   {
    "id": "c22_diego",
@@ -272,25 +291,27 @@
    "tipo": "foto",
    "fonte": "ita_IMG_5672.jpg",
    "ini": 58.0,
-   "fim": 60.5,
+   "fim": 60.21,
    "zoom": [
     1.08,
     1.0
    ],
    "cx": 0.35,
-   "fala": "sem pensar muito e ter a certeza de uma comida boa"
+   "fala": "sem pensar muito e ter a certeza de uma comida boa",
+   "layout": "cheia"
   },
   {
    "id": "c24_pizza_2",
    "tipo": "foto",
    "fonte": "ita_IMG_5040.jpg",
-   "ini": 60.5,
+   "ini": 60.21,
    "fim": 62.85,
    "zoom": [
     1.1,
     1.04
    ],
-   "fala": "que vai caber no bolso. Por isso a Itália ganha por muito"
+   "fala": "que vai caber no bolso. Por isso a Itália ganha por muito",
+   "layout": "dividida"
   },
   {
    "id": "c25_cta_brinde",
@@ -301,7 +322,8 @@
    "fim": 67.567,
    "estabilizar": true,
    "fala": "Agora eu quero saber de você... qual país não poderia ter ficado de fora dessa lista?",
-   "_": "fecho: chope e sangria do El Tigre (o plano do gancho, IMG_3791, tem só 2,96 s), com a placa do CTA"
+   "_": "fecho: chope e sangria do El Tigre (o plano do gancho, IMG_3791, tem só 2,96 s), com a placa do CTA",
+   "layout": "dividida"
   }
  ]
 }
