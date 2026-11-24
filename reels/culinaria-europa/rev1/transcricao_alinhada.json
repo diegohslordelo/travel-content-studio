@@ -1,0 +1,1917 @@
+{
+ "fonte": "fala_diego.mp4",
+ "metodo": "faster-whisper large-v3 + torchaudio MMS_FA",
+ "palavras": [
+  {
+   "p": "Qual",
+   "ini": 0.781,
+   "fim": 0.921,
+   "whisper_ini": 0.0,
+   "conf": 0.562
+  },
+  {
+   "p": "é",
+   "ini": 0.921,
+   "fim": 0.941,
+   "whisper_ini": 0.78,
+   "conf": 0.546
+  },
+  {
+   "p": "a",
+   "ini": 0.981,
+   "fim": 1.001,
+   "whisper_ini": 0.9,
+   "conf": 0.961
+  },
+  {
+   "p": "melhor",
+   "ini": 1.041,
+   "fim": 1.322,
+   "whisper_ini": 0.98,
+   "conf": 0.994
+  },
+  {
+   "p": "culinária",
+   "ini": 1.442,
+   "fim": 2.143,
+   "whisper_ini": 1.2,
+   "conf": 0.976
+  },
+  {
+   "p": "da",
+   "ini": 2.183,
+   "fim": 2.263,
+   "whisper_ini": 2.0,
+   "conf": 0.996
+  },
+  {
+   "p": "Europa?",
+   "ini": 2.323,
+   "fim": 2.724,
+   "whisper_ini": 2.22,
+   "conf": 0.998
+  },
+  {
+   "p": "Até",
+   "ini": 2.944,
+   "fim": 3.104,
+   "whisper_ini": 2.76,
+   "conf": 0.867
+  },
+  {
+   "p": "então",
+   "ini": 3.164,
+   "fim": 3.384,
+   "whisper_ini": 3.02,
+   "conf": 0.973
+  },
+  {
+   "p": "eu",
+   "ini": 3.424,
+   "fim": 3.465,
+   "whisper_ini": 3.28,
+   "conf": 0.003
+  },
+  {
+   "p": "visitei",
+   "ini": 3.465,
+   "fim": 3.785,
+   "whisper_ini": 3.4,
+   "conf": 0.755
+  },
+  {
+   "p": "7",
+   "ini": 3.885,
+   "fim": 4.145,
+   "whisper_ini": 3.72,
+   "conf": 0.722
+  },
+  {
+   "p": "países",
+   "ini": 4.185,
+   "fim": 4.506,
+   "whisper_ini": 3.92,
+   "conf": 0.971
+  },
+  {
+   "p": "na",
+   "ini": 4.526,
+   "fim": 4.586,
+   "whisper_ini": 4.36,
+   "conf": 0.997
+  },
+  {
+   "p": "Europa",
+   "ini": 4.626,
+   "fim": 4.906,
+   "whisper_ini": 4.56,
+   "conf": 0.996
+  },
+  {
+   "p": "e",
+   "ini": 4.926,
+   "fim": 4.946,
+   "whisper_ini": 4.74,
+   "conf": 0.961
+  },
+  {
+   "p": "vou",
+   "ini": 4.966,
+   "fim": 5.047,
+   "whisper_ini": 4.9,
+   "conf": 0.985
+  },
+  {
+   "p": "te",
+   "ini": 5.067,
+   "fim": 5.127,
+   "whisper_ini": 4.98,
+   "conf": 0.99
+  },
+  {
+   "p": "mostrar",
+   "ini": 5.147,
+   "fim": 5.447,
+   "whisper_ini": 5.08,
+   "conf": 0.933
+  },
+  {
+   "p": "3",
+   "ini": 5.507,
+   "fim": 5.748,
+   "whisper_ini": 5.3,
+   "conf": 0.994
+  },
+  {
+   "p": "deles",
+   "ini": 5.828,
+   "fim": 6.068,
+   "whisper_ini": 5.6,
+   "conf": 0.998
+  },
+  {
+   "p": "que",
+   "ini": 6.088,
+   "fim": 6.148,
+   "whisper_ini": 5.92,
+   "conf": 0.996
+  },
+  {
+   "p": "a",
+   "ini": 6.188,
+   "fim": 6.208,
+   "whisper_ini": 6.08,
+   "conf": 0.996
+  },
+  {
+   "p": "culinária",
+   "ini": 6.248,
+   "fim": 6.669,
+   "whisper_ini": 6.16,
+   "conf": 0.98
+  },
+  {
+   "p": "me",
+   "ini": 6.729,
+   "fim": 6.809,
+   "whisper_ini": 6.54,
+   "conf": 0.995
+  },
+  {
+   "p": "surpreendeu.",
+   "ini": 6.909,
+   "fim": 7.57,
+   "whisper_ini": 6.72,
+   "conf": 0.973
+  },
+  {
+   "p": "Em",
+   "ini": 7.891,
+   "fim": 7.952,
+   "whisper_ini": 7.64,
+   "conf": 0.925
+  },
+  {
+   "p": "terceiro",
+   "ini": 7.992,
+   "fim": 8.353,
+   "whisper_ini": 7.88,
+   "conf": 0.88
+  },
+  {
+   "p": "lugar",
+   "ini": 8.373,
+   "fim": 8.573,
+   "whisper_ini": 8.26,
+   "conf": 0.994
+  },
+  {
+   "p": "fica",
+   "ini": 8.613,
+   "fim": 8.794,
+   "whisper_ini": 8.48,
+   "conf": 0.647
+  },
+  {
+   "p": "Espanha.",
+   "ini": 8.834,
+   "fim": 9.255,
+   "whisper_ini": 8.66,
+   "conf": 0.94
+  },
+  {
+   "p": "A",
+   "ini": 9.395,
+   "fim": 9.415,
+   "whisper_ini": 9.26,
+   "conf": 0.995
+  },
+  {
+   "p": "paella",
+   "ini": 9.496,
+   "fim": 9.716,
+   "whisper_ini": 9.36,
+   "conf": 0.371
+  },
+  {
+   "p": "é",
+   "ini": 9.756,
+   "fim": 9.796,
+   "whisper_ini": 9.58,
+   "conf": 0.835
+  },
+  {
+   "p": "muito",
+   "ini": 9.837,
+   "fim": 10.077,
+   "whisper_ini": 9.72,
+   "conf": 0.982
+  },
+  {
+   "p": "boa",
+   "ini": 10.137,
+   "fim": 10.258,
+   "whisper_ini": 9.9,
+   "conf": 0.695
+  },
+  {
+   "p": "e",
+   "ini": 10.278,
+   "fim": 10.298,
+   "whisper_ini": 10.2,
+   "conf": 0.769
+  },
+  {
+   "p": "a",
+   "ini": 10.358,
+   "fim": 10.378,
+   "whisper_ini": 10.28,
+   "conf": 0.991
+  },
+  {
+   "p": "variedade",
+   "ini": 10.418,
+   "fim": 10.819,
+   "whisper_ini": 10.34,
+   "conf": 0.984
+  },
+  {
+   "p": "de",
+   "ini": 10.859,
+   "fim": 10.939,
+   "whisper_ini": 10.74,
+   "conf": 0.866
+  },
+  {
+   "p": "tapas",
+   "ini": 11.0,
+   "fim": 11.3,
+   "whisper_ini": 10.88,
+   "conf": 0.996
+  },
+  {
+   "p": "é",
+   "ini": 11.361,
+   "fim": 11.381,
+   "whisper_ini": 11.22,
+   "conf": 0.961
+  },
+  {
+   "p": "imensa.",
+   "ini": 11.441,
+   "fim": 11.862,
+   "whisper_ini": 11.32,
+   "conf": 0.997
+  },
+  {
+   "p": "Tem",
+   "ini": 11.922,
+   "fim": 12.022,
+   "whisper_ini": 11.86,
+   "conf": 0.797
+  },
+  {
+   "p": "lugar",
+   "ini": 12.042,
+   "fim": 12.203,
+   "whisper_ini": 11.94,
+   "conf": 0.996
+  },
+  {
+   "p": "que",
+   "ini": 12.203,
+   "fim": 12.283,
+   "whisper_ini": 12.08,
+   "conf": 0.992
+  },
+  {
+   "p": "você",
+   "ini": 12.303,
+   "fim": 12.484,
+   "whisper_ini": 12.2,
+   "conf": 0.997
+  },
+  {
+   "p": "pede",
+   "ini": 12.584,
+   "fim": 12.784,
+   "whisper_ini": 12.38,
+   "conf": 0.949
+  },
+  {
+   "p": "a",
+   "ini": 12.804,
+   "fim": 12.825,
+   "whisper_ini": 12.68,
+   "conf": 0.624
+  },
+  {
+   "p": "bebida",
+   "ini": 12.865,
+   "fim": 13.165,
+   "whisper_ini": 12.78,
+   "conf": 0.825
+  },
+  {
+   "p": "e",
+   "ini": 13.165,
+   "fim": 13.185,
+   "whisper_ini": 13.06,
+   "conf": 0.664
+  },
+  {
+   "p": "a",
+   "ini": 13.226,
+   "fim": 13.246,
+   "whisper_ini": 13.14,
+   "conf": 0.982
+  },
+  {
+   "p": "tapa",
+   "ini": 13.306,
+   "fim": 13.506,
+   "whisper_ini": 13.24,
+   "conf": 0.998
+  },
+  {
+   "p": "já",
+   "ini": 13.546,
+   "fim": 13.627,
+   "whisper_ini": 13.38,
+   "conf": 0.996
+  },
+  {
+   "p": "vem",
+   "ini": 13.687,
+   "fim": 13.807,
+   "whisper_ini": 13.54,
+   "conf": 0.656
+  },
+  {
+   "p": "de",
+   "ini": 13.847,
+   "fim": 13.907,
+   "whisper_ini": 13.74,
+   "conf": 0.985
+  },
+  {
+   "p": "graça",
+   "ini": 13.968,
+   "fim": 14.208,
+   "whisper_ini": 13.86,
+   "conf": 0.746
+  },
+  {
+   "p": "acompanhando.",
+   "ini": 14.228,
+   "fim": 14.77,
+   "whisper_ini": 14.08,
+   "conf": 0.97
+  },
+  {
+   "p": "E",
+   "ini": 14.891,
+   "fim": 14.911,
+   "whisper_ini": 14.78,
+   "conf": 0.713
+  },
+  {
+   "p": "lá",
+   "ini": 14.992,
+   "fim": 15.092,
+   "whisper_ini": 14.86,
+   "conf": 0.987
+  },
+  {
+   "p": "você",
+   "ini": 15.132,
+   "fim": 15.333,
+   "whisper_ini": 15.02,
+   "conf": 0.852
+  },
+  {
+   "p": "come",
+   "ini": 15.393,
+   "fim": 15.554,
+   "whisper_ini": 15.2,
+   "conf": 0.8
+  },
+  {
+   "p": "barato,",
+   "ini": 15.614,
+   "fim": 16.176,
+   "whisper_ini": 15.46,
+   "conf": 0.998
+  },
+  {
+   "p": "só",
+   "ini": 16.277,
+   "fim": 16.357,
+   "whisper_ini": 16.14,
+   "conf": 0.998
+  },
+  {
+   "p": "que",
+   "ini": 16.417,
+   "fim": 16.498,
+   "whisper_ini": 16.3,
+   "conf": 0.918
+  },
+  {
+   "p": "apesar",
+   "ini": 16.518,
+   "fim": 16.879,
+   "whisper_ini": 16.4,
+   "conf": 0.768
+  },
+  {
+   "p": "da",
+   "ini": 16.899,
+   "fim": 16.979,
+   "whisper_ini": 16.76,
+   "conf": 0.945
+  },
+  {
+   "p": "variedade",
+   "ini": 17.02,
+   "fim": 17.421,
+   "whisper_ini": 16.9,
+   "conf": 0.998
+  },
+  {
+   "p": "enorme",
+   "ini": 17.461,
+   "fim": 17.803,
+   "whisper_ini": 17.34,
+   "conf": 0.998
+  },
+  {
+   "p": "no",
+   "ini": 17.843,
+   "fim": 17.923,
+   "whisper_ini": 17.58,
+   "conf": 0.996
+  },
+  {
+   "p": "doce,",
+   "ini": 18.044,
+   "fim": 18.445,
+   "whisper_ini": 17.84,
+   "conf": 0.932
+  },
+  {
+   "p": "deixa",
+   "ini": 18.525,
+   "fim": 18.746,
+   "whisper_ini": 18.34,
+   "conf": 0.981
+  },
+  {
+   "p": "um",
+   "ini": 18.766,
+   "fim": 18.807,
+   "whisper_ini": 18.56,
+   "conf": 0.804
+  },
+  {
+   "p": "pouco",
+   "ini": 18.867,
+   "fim": 19.048,
+   "whisper_ini": 18.76,
+   "conf": 0.996
+  },
+  {
+   "p": "a",
+   "ini": 19.068,
+   "fim": 19.088,
+   "whisper_ini": 18.92,
+   "conf": 0.934
+  },
+  {
+   "p": "desejar.",
+   "ini": 19.108,
+   "fim": 19.57,
+   "whisper_ini": 19.06,
+   "conf": 0.946
+  },
+  {
+   "p": "Em",
+   "ini": 19.871,
+   "fim": 19.911,
+   "whisper_ini": 19.6,
+   "conf": 0.983
+  },
+  {
+   "p": "segundo",
+   "ini": 20.032,
+   "fim": 20.493,
+   "whisper_ini": 19.9,
+   "conf": 0.977
+  },
+  {
+   "p": "lugar,",
+   "ini": 20.533,
+   "fim": 20.854,
+   "whisper_ini": 20.28,
+   "conf": 0.998
+  },
+  {
+   "p": "Portugal.",
+   "ini": 21.054,
+   "fim": 21.736,
+   "whisper_ini": 20.82,
+   "conf": 0.987
+  },
+  {
+   "p": "Aqui",
+   "ini": 21.956,
+   "fim": 22.357,
+   "whisper_ini": 21.74,
+   "conf": 0.967
+  },
+  {
+   "p": "meu",
+   "ini": 22.458,
+   "fim": 22.598,
+   "whisper_ini": 22.14,
+   "conf": 0.998
+  },
+  {
+   "p": "amigo,",
+   "ini": 22.658,
+   "fim": 23.039,
+   "whisper_ini": 22.5,
+   "conf": 0.998
+  },
+  {
+   "p": "porra,",
+   "ini": 23.24,
+   "fim": 23.841,
+   "whisper_ini": 23.06,
+   "conf": 0.496
+  },
+  {
+   "p": "aqui",
+   "ini": 24.362,
+   "fim": 24.603,
+   "whisper_ini": 23.88,
+   "conf": 0.989
+  },
+  {
+   "p": "você",
+   "ini": 24.643,
+   "fim": 24.823,
+   "whisper_ini": 24.46,
+   "conf": 0.998
+  },
+  {
+   "p": "vai",
+   "ini": 24.844,
+   "fim": 24.944,
+   "whisper_ini": 24.7,
+   "conf": 0.648
+  },
+  {
+   "p": "comer",
+   "ini": 24.964,
+   "fim": 25.144,
+   "whisper_ini": 24.86,
+   "conf": 0.845
+  },
+  {
+   "p": "bons",
+   "ini": 25.184,
+   "fim": 25.385,
+   "whisper_ini": 25.04,
+   "conf": 0.931
+  },
+  {
+   "p": "pratos",
+   "ini": 25.485,
+   "fim": 25.766,
+   "whisper_ini": 25.24,
+   "conf": 0.714
+  },
+  {
+   "p": "de",
+   "ini": 25.786,
+   "fim": 25.846,
+   "whisper_ini": 25.62,
+   "conf": 0.714
+  },
+  {
+   "p": "frutos",
+   "ini": 25.906,
+   "fim": 26.167,
+   "whisper_ini": 25.78,
+   "conf": 0.969
+  },
+  {
+   "p": "do",
+   "ini": 26.207,
+   "fim": 26.287,
+   "whisper_ini": 26.06,
+   "conf": 0.989
+  },
+  {
+   "p": "mar",
+   "ini": 26.347,
+   "fim": 26.508,
+   "whisper_ini": 26.2,
+   "conf": 0.957
+  },
+  {
+   "p": "e",
+   "ini": 26.668,
+   "fim": 26.688,
+   "whisper_ini": 26.4,
+   "conf": 0.993
+  },
+  {
+   "p": "baratos.",
+   "ini": 26.808,
+   "fim": 27.37,
+   "whisper_ini": 26.64,
+   "conf": 0.99
+  },
+  {
+   "p": "Esse",
+   "ini": 27.612,
+   "fim": 27.813,
+   "whisper_ini": 27.22,
+   "conf": 0.828
+  },
+  {
+   "p": "bacalhau",
+   "ini": 27.833,
+   "fim": 28.194,
+   "whisper_ini": 27.6,
+   "conf": 0.679
+  },
+  {
+   "p": "com",
+   "ini": 28.214,
+   "fim": 28.315,
+   "whisper_ini": 28.12,
+   "conf": 0.644
+  },
+  {
+   "p": "nata",
+   "ini": 28.355,
+   "fim": 28.616,
+   "whisper_ini": 28.24,
+   "conf": 0.991
+  },
+  {
+   "p": "foi",
+   "ini": 28.656,
+   "fim": 28.797,
+   "whisper_ini": 28.56,
+   "conf": 0.997
+  },
+  {
+   "p": "20",
+   "ini": 28.837,
+   "fim": 29.078,
+   "whisper_ini": 28.7,
+   "conf": 0.893
+  },
+  {
+   "p": "euros",
+   "ini": 29.158,
+   "fim": 29.318,
+   "whisper_ini": 28.92,
+   "conf": 0.959
+  },
+  {
+   "p": "pra",
+   "ini": 29.359,
+   "fim": 29.459,
+   "whisper_ini": 29.18,
+   "conf": 0.992
+  },
+  {
+   "p": "duas",
+   "ini": 29.539,
+   "fim": 29.72,
+   "whisper_ini": 29.4,
+   "conf": 0.995
+  },
+  {
+   "p": "pessoas",
+   "ini": 29.78,
+   "fim": 30.181,
+   "whisper_ini": 29.58,
+   "conf": 0.996
+  },
+  {
+   "p": "e",
+   "ini": 30.222,
+   "fim": 30.242,
+   "whisper_ini": 30.04,
+   "conf": 0.919
+  },
+  {
+   "p": "eu",
+   "ini": 30.262,
+   "fim": 30.322,
+   "whisper_ini": 30.22,
+   "conf": 0.214
+  },
+  {
+   "p": "não",
+   "ini": 30.322,
+   "fim": 30.382,
+   "whisper_ini": 30.26,
+   "conf": 0.147
+  },
+  {
+   "p": "tenho",
+   "ini": 30.402,
+   "fim": 30.543,
+   "whisper_ini": 30.3,
+   "conf": 0.297
+  },
+  {
+   "p": "nem",
+   "ini": 30.543,
+   "fim": 30.663,
+   "whisper_ini": 30.44,
+   "conf": 0.782
+  },
+  {
+   "p": "palavras",
+   "ini": 30.764,
+   "fim": 31.245,
+   "whisper_ini": 30.6,
+   "conf": 0.997
+  },
+  {
+   "p": "pra",
+   "ini": 31.285,
+   "fim": 31.406,
+   "whisper_ini": 30.94,
+   "conf": 0.943
+  },
+  {
+   "p": "descrever",
+   "ini": 31.426,
+   "fim": 31.727,
+   "whisper_ini": 31.3,
+   "conf": 0.685
+  },
+  {
+   "p": "o",
+   "ini": 31.747,
+   "fim": 31.767,
+   "whisper_ini": 31.64,
+   "conf": 0.463
+  },
+  {
+   "p": "que",
+   "ini": 31.767,
+   "fim": 31.827,
+   "whisper_ini": 31.72,
+   "conf": 0.935
+  },
+  {
+   "p": "foi",
+   "ini": 31.847,
+   "fim": 31.968,
+   "whisper_ini": 31.76,
+   "conf": 0.897
+  },
+  {
+   "p": "isso",
+   "ini": 32.008,
+   "fim": 32.128,
+   "whisper_ini": 31.88,
+   "conf": 0.261
+  },
+  {
+   "p": "aí,",
+   "ini": 32.169,
+   "fim": 32.209,
+   "whisper_ini": 32.0,
+   "conf": 0.398
+  },
+  {
+   "p": "pô.",
+   "ini": 32.269,
+   "fim": 32.349,
+   "whisper_ini": 32.26,
+   "conf": 0.546
+  },
+  {
+   "p": "E",
+   "ini": 32.433,
+   "fim": 32.453,
+   "whisper_ini": 32.34,
+   "conf": 0.669
+  },
+  {
+   "p": "o",
+   "ini": 32.493,
+   "fim": 32.514,
+   "whisper_ini": 32.46,
+   "conf": 0.861
+  },
+  {
+   "p": "pastel",
+   "ini": 32.554,
+   "fim": 32.856,
+   "whisper_ini": 32.5,
+   "conf": 0.767
+  },
+  {
+   "p": "de",
+   "ini": 32.877,
+   "fim": 32.937,
+   "whisper_ini": 32.7,
+   "conf": 0.732
+  },
+  {
+   "p": "nata",
+   "ini": 32.977,
+   "fim": 33.24,
+   "whisper_ini": 32.88,
+   "conf": 0.832
+  },
+  {
+   "p": "é",
+   "ini": 33.26,
+   "fim": 33.28,
+   "whisper_ini": 33.14,
+   "conf": 0.076
+  },
+  {
+   "p": "sinistro",
+   "ini": 33.32,
+   "fim": 33.784,
+   "whisper_ini": 33.22,
+   "conf": 0.912
+  },
+  {
+   "p": "de",
+   "ini": 33.824,
+   "fim": 33.885,
+   "whisper_ini": 33.72,
+   "conf": 0.876
+  },
+  {
+   "p": "bom,",
+   "ini": 33.966,
+   "fim": 34.107,
+   "whisper_ini": 33.8,
+   "conf": 0.781
+  },
+  {
+   "p": "pô.",
+   "ini": 34.167,
+   "fim": 34.268,
+   "whisper_ini": 34.1,
+   "conf": 0.606
+  },
+  {
+   "p": "Eu",
+   "ini": 34.031,
+   "fim": 34.253,
+   "whisper_ini": 34.24,
+   "conf": 0.044
+  },
+  {
+   "p": "comi",
+   "ini": 34.314,
+   "fim": 34.496,
+   "whisper_ini": 34.32,
+   "conf": 0.496
+  },
+  {
+   "p": "quatro",
+   "ini": 34.618,
+   "fim": 34.942,
+   "whisper_ini": 34.46,
+   "conf": 0.786
+  },
+  {
+   "p": "em",
+   "ini": 34.942,
+   "fim": 35.003,
+   "whisper_ini": 34.74,
+   "conf": 0.109
+  },
+  {
+   "p": "uma",
+   "ini": 35.003,
+   "fim": 35.064,
+   "whisper_ini": 34.94,
+   "conf": 0.332
+  },
+  {
+   "p": "manhã.",
+   "ini": 35.125,
+   "fim": 35.327,
+   "whisper_ini": 35.02,
+   "conf": 0.76
+  },
+  {
+   "p": "Portugal",
+   "ini": 35.613,
+   "fim": 35.997,
+   "whisper_ini": 35.5,
+   "conf": 0.982
+  },
+  {
+   "p": "cravou",
+   "ini": 36.058,
+   "fim": 36.502,
+   "whisper_ini": 35.82,
+   "conf": 0.994
+  },
+  {
+   "p": "o",
+   "ini": 36.522,
+   "fim": 36.542,
+   "whisper_ini": 36.4,
+   "conf": 0.565
+  },
+  {
+   "p": "segundo",
+   "ini": 36.603,
+   "fim": 36.906,
+   "whisper_ini": 36.5,
+   "conf": 0.986
+  },
+  {
+   "p": "lugar.",
+   "ini": 36.946,
+   "fim": 37.209,
+   "whisper_ini": 36.74,
+   "conf": 0.998
+  },
+  {
+   "p": "E",
+   "ini": 37.574,
+   "fim": 37.594,
+   "whisper_ini": 37.24,
+   "conf": 0.913
+  },
+  {
+   "p": "o",
+   "ini": 37.655,
+   "fim": 37.675,
+   "whisper_ini": 37.56,
+   "conf": 0.973
+  },
+  {
+   "p": "primeiro",
+   "ini": 37.715,
+   "fim": 38.138,
+   "whisper_ini": 37.64,
+   "conf": 0.976
+  },
+  {
+   "p": "lugar",
+   "ini": 38.178,
+   "fim": 38.42,
+   "whisper_ini": 37.96,
+   "conf": 0.998
+  },
+  {
+   "p": "chegou",
+   "ini": 38.48,
+   "fim": 38.702,
+   "whisper_ini": 38.28,
+   "conf": 0.966
+  },
+  {
+   "p": "chutando",
+   "ini": 38.762,
+   "fim": 39.266,
+   "whisper_ini": 38.56,
+   "conf": 0.928
+  },
+  {
+   "p": "a",
+   "ini": 39.306,
+   "fim": 39.326,
+   "whisper_ini": 39.12,
+   "conf": 0.99
+  },
+  {
+   "p": "porta.",
+   "ini": 39.407,
+   "fim": 39.749,
+   "whisper_ini": 39.28,
+   "conf": 0.985
+  },
+  {
+   "p": "A",
+   "ini": 39.714,
+   "fim": 39.734,
+   "whisper_ini": 39.64,
+   "conf": 0.925
+  },
+  {
+   "p": "Itália,",
+   "ini": 39.795,
+   "fim": 40.241,
+   "whisper_ini": 39.74,
+   "conf": 0.994
+  },
+  {
+   "p": "por",
+   "ini": 40.322,
+   "fim": 40.484,
+   "whisper_ini": 40.2,
+   "conf": 0.629
+  },
+  {
+   "p": "muito.",
+   "ini": 40.565,
+   "fim": 40.869,
+   "whisper_ini": 40.34,
+   "conf": 0.796
+  },
+  {
+   "p": "E",
+   "ini": 40.892,
+   "fim": 40.912,
+   "whisper_ini": 40.86,
+   "conf": 0.888
+  },
+  {
+   "p": "o",
+   "ini": 40.952,
+   "fim": 40.972,
+   "whisper_ini": 40.92,
+   "conf": 0.984
+  },
+  {
+   "p": "que",
+   "ini": 41.032,
+   "fim": 41.113,
+   "whisper_ini": 40.98,
+   "conf": 0.975
+  },
+  {
+   "p": "mais",
+   "ini": 41.193,
+   "fim": 41.374,
+   "whisper_ini": 41.08,
+   "conf": 0.854
+  },
+  {
+   "p": "me",
+   "ini": 41.374,
+   "fim": 41.435,
+   "whisper_ini": 41.28,
+   "conf": 0.256
+  },
+  {
+   "p": "surpreendeu",
+   "ini": 41.495,
+   "fim": 41.958,
+   "whisper_ini": 41.38,
+   "conf": 0.896
+  },
+  {
+   "p": "é",
+   "ini": 41.998,
+   "fim": 42.018,
+   "whisper_ini": 41.86,
+   "conf": 0.052
+  },
+  {
+   "p": "porque",
+   "ini": 42.058,
+   "fim": 42.259,
+   "whisper_ini": 41.98,
+   "conf": 0.935
+  },
+  {
+   "p": "lá",
+   "ini": 42.32,
+   "fim": 42.4,
+   "whisper_ini": 42.14,
+   "conf": 0.837
+  },
+  {
+   "p": "tem",
+   "ini": 42.46,
+   "fim": 42.581,
+   "whisper_ini": 42.32,
+   "conf": 0.843
+  },
+  {
+   "p": "um",
+   "ini": 42.581,
+   "fim": 42.621,
+   "whisper_ini": 42.48,
+   "conf": 0.013
+  },
+  {
+   "p": "milhão",
+   "ini": 42.722,
+   "fim": 43.044,
+   "whisper_ini": 42.62,
+   "conf": 0.656
+  },
+  {
+   "p": "de",
+   "ini": 43.084,
+   "fim": 43.164,
+   "whisper_ini": 42.98,
+   "conf": 0.971
+  },
+  {
+   "p": "restaurantes",
+   "ini": 43.204,
+   "fim": 43.667,
+   "whisper_ini": 43.1,
+   "conf": 0.952
+  },
+  {
+   "p": "na",
+   "ini": 43.727,
+   "fim": 43.808,
+   "whisper_ini": 43.6,
+   "conf": 0.95
+  },
+  {
+   "p": "rua.",
+   "ini": 43.868,
+   "fim": 44.069,
+   "whisper_ini": 43.72,
+   "conf": 0.924
+  },
+  {
+   "p": "Do",
+   "ini": 44.113,
+   "fim": 44.174,
+   "whisper_ini": 44.02,
+   "conf": 0.958
+  },
+  {
+   "p": "mais",
+   "ini": 44.214,
+   "fim": 44.376,
+   "whisper_ini": 44.14,
+   "conf": 0.857
+  },
+  {
+   "p": "simples",
+   "ini": 44.476,
+   "fim": 44.84,
+   "whisper_ini": 44.26,
+   "conf": 0.977
+  },
+  {
+   "p": "ao",
+   "ini": 44.86,
+   "fim": 44.921,
+   "whisper_ini": 44.66,
+   "conf": 0.919
+  },
+  {
+   "p": "mais",
+   "ini": 44.941,
+   "fim": 45.062,
+   "whisper_ini": 44.86,
+   "conf": 0.833
+  },
+  {
+   "p": "sofisticado.",
+   "ini": 45.102,
+   "fim": 45.869,
+   "whisper_ini": 44.96,
+   "conf": 0.898
+  },
+  {
+   "p": "Do",
+   "ini": 45.713,
+   "fim": 45.773,
+   "whisper_ini": 45.7,
+   "conf": 0.512
+  },
+  {
+   "p": "mais",
+   "ini": 45.895,
+   "fim": 46.056,
+   "whisper_ini": 45.84,
+   "conf": 0.742
+  },
+  {
+   "p": "barato",
+   "ini": 46.117,
+   "fim": 46.562,
+   "whisper_ini": 45.94,
+   "conf": 0.716
+  },
+  {
+   "p": "ao",
+   "ini": 46.582,
+   "fim": 46.622,
+   "whisper_ini": 46.42,
+   "conf": 0.204
+  },
+  {
+   "p": "mais",
+   "ini": 46.663,
+   "fim": 46.865,
+   "whisper_ini": 46.56,
+   "conf": 0.769
+  },
+  {
+   "p": "caro.",
+   "ini": 46.946,
+   "fim": 47.188,
+   "whisper_ini": 46.7,
+   "conf": 0.632
+  },
+  {
+   "p": "Só",
+   "ini": 47.253,
+   "fim": 47.334,
+   "whisper_ini": 47.12,
+   "conf": 0.996
+  },
+  {
+   "p": "que",
+   "ini": 47.415,
+   "fim": 47.495,
+   "whisper_ini": 47.26,
+   "conf": 0.943
+  },
+  {
+   "p": "em",
+   "ini": 47.515,
+   "fim": 47.556,
+   "whisper_ini": 47.42,
+   "conf": 0.659
+  },
+  {
+   "p": "qualquer",
+   "ini": 47.616,
+   "fim": 47.919,
+   "whisper_ini": 47.52,
+   "conf": 0.882
+  },
+  {
+   "p": "um",
+   "ini": 47.959,
+   "fim": 48.0,
+   "whisper_ini": 47.76,
+   "conf": 0.913
+  },
+  {
+   "p": "deles",
+   "ini": 48.06,
+   "fim": 48.282,
+   "whisper_ini": 47.92,
+   "conf": 0.998
+  },
+  {
+   "p": "você",
+   "ini": 48.322,
+   "fim": 48.504,
+   "whisper_ini": 48.12,
+   "conf": 0.999
+  },
+  {
+   "p": "vai",
+   "ini": 48.564,
+   "fim": 48.685,
+   "whisper_ini": 48.38,
+   "conf": 0.997
+  },
+  {
+   "p": "comer",
+   "ini": 48.706,
+   "fim": 48.907,
+   "whisper_ini": 48.58,
+   "conf": 0.838
+  },
+  {
+   "p": "bem.",
+   "ini": 48.948,
+   "fim": 49.089,
+   "whisper_ini": 48.78,
+   "conf": 0.999
+  },
+  {
+   "p": "Basicamente,",
+   "ini": 49.311,
+   "fim": 49.955,
+   "whisper_ini": 49.42,
+   "conf": 1.0
+  },
+  {
+   "p": "você",
+   "ini": 49.955,
+   "fim": 50.055,
+   "whisper_ini": 49.74,
+   "conf": 0.249
+  },
+  {
+   "p": "vai",
+   "ini": 50.096,
+   "fim": 50.196,
+   "whisper_ini": 49.98,
+   "conf": 0.664
+  },
+  {
+   "p": "escolher",
+   "ini": 50.196,
+   "fim": 50.558,
+   "whisper_ini": 50.14,
+   "conf": 0.901
+  },
+  {
+   "p": "o",
+   "ini": 50.558,
+   "fim": 50.578,
+   "whisper_ini": 50.5,
+   "conf": 0.043
+  },
+  {
+   "p": "que",
+   "ini": 50.599,
+   "fim": 50.679,
+   "whisper_ini": 50.56,
+   "conf": 0.99
+  },
+  {
+   "p": "cabe",
+   "ini": 50.759,
+   "fim": 50.941,
+   "whisper_ini": 50.62,
+   "conf": 0.997
+  },
+  {
+   "p": "no",
+   "ini": 50.981,
+   "fim": 51.041,
+   "whisper_ini": 50.82,
+   "conf": 0.998
+  },
+  {
+   "p": "seu",
+   "ini": 51.101,
+   "fim": 51.242,
+   "whisper_ini": 50.96,
+   "conf": 0.998
+  },
+  {
+   "p": "bolso",
+   "ini": 51.283,
+   "fim": 51.524,
+   "whisper_ini": 51.16,
+   "conf": 0.877
+  },
+  {
+   "p": "e",
+   "ini": 51.564,
+   "fim": 51.584,
+   "whisper_ini": 51.4,
+   "conf": 0.669
+  },
+  {
+   "p": "correr",
+   "ini": 51.604,
+   "fim": 51.826,
+   "whisper_ini": 51.52,
+   "conf": 0.941
+  },
+  {
+   "p": "pro",
+   "ini": 51.846,
+   "fim": 51.906,
+   "whisper_ini": 51.72,
+   "conf": 0.565
+  },
+  {
+   "p": "abraço.",
+   "ini": 51.967,
+   "fim": 52.369,
+   "whisper_ini": 51.86,
+   "conf": 0.809
+  },
+  {
+   "p": "Na",
+   "ini": 52.513,
+   "fim": 52.594,
+   "whisper_ini": 52.38,
+   "conf": 0.688
+  },
+  {
+   "p": "Itália,",
+   "ini": 52.635,
+   "fim": 52.998,
+   "whisper_ini": 52.54,
+   "conf": 0.672
+  },
+  {
+   "p": "o",
+   "ini": 52.998,
+   "fim": 53.018,
+   "whisper_ini": 52.94,
+   "conf": 0.54
+  },
+  {
+   "p": "difícil",
+   "ini": 53.038,
+   "fim": 53.442,
+   "whisper_ini": 53.0,
+   "conf": 0.9
+  },
+  {
+   "p": "não",
+   "ini": 53.462,
+   "fim": 53.583,
+   "whisper_ini": 53.16,
+   "conf": 0.997
+  },
+  {
+   "p": "é",
+   "ini": 53.644,
+   "fim": 53.664,
+   "whisper_ini": 53.46,
+   "conf": 0.997
+  },
+  {
+   "p": "comer",
+   "ini": 53.744,
+   "fim": 54.027,
+   "whisper_ini": 53.62,
+   "conf": 0.991
+  },
+  {
+   "p": "bem.",
+   "ini": 54.087,
+   "fim": 54.269,
+   "whisper_ini": 53.84,
+   "conf": 0.988
+  },
+  {
+   "p": "É",
+   "ini": 54.152,
+   "fim": 54.172,
+   "whisper_ini": 54.26,
+   "conf": 0.979
+  },
+  {
+   "p": "escolher",
+   "ini": 54.415,
+   "fim": 54.942,
+   "whisper_ini": 54.4,
+   "conf": 0.807
+  },
+  {
+   "p": "o",
+   "ini": 54.962,
+   "fim": 54.983,
+   "whisper_ini": 54.88,
+   "conf": 0.183
+  },
+  {
+   "p": "que",
+   "ini": 55.023,
+   "fim": 55.104,
+   "whisper_ini": 54.96,
+   "conf": 0.9
+  },
+  {
+   "p": "comer.",
+   "ini": 55.165,
+   "fim": 55.489,
+   "whisper_ini": 55.06,
+   "conf": 0.764
+  },
+  {
+   "p": "E",
+   "ini": 55.594,
+   "fim": 55.615,
+   "whisper_ini": 55.46,
+   "conf": 0.344
+  },
+  {
+   "p": "pra",
+   "ini": 55.696,
+   "fim": 55.837,
+   "whisper_ini": 55.6,
+   "conf": 0.946
+  },
+  {
+   "p": "mim,",
+   "ini": 55.918,
+   "fim": 56.04,
+   "whisper_ini": 55.74,
+   "conf": 0.699
+  },
+  {
+   "p": "o",
+   "ini": 56.06,
+   "fim": 56.08,
+   "whisper_ini": 56.0,
+   "conf": 0.754
+  },
+  {
+   "p": "que",
+   "ini": 56.12,
+   "fim": 56.201,
+   "whisper_ini": 56.08,
+   "conf": 0.863
+  },
+  {
+   "p": "pesa",
+   "ini": 56.262,
+   "fim": 56.444,
+   "whisper_ini": 56.14,
+   "conf": 0.608
+  },
+  {
+   "p": "é",
+   "ini": 56.485,
+   "fim": 56.505,
+   "whisper_ini": 56.38,
+   "conf": 0.938
+  },
+  {
+   "p": "isso.",
+   "ini": 56.626,
+   "fim": 56.91,
+   "whisper_ini": 56.46,
+   "conf": 0.633
+  },
+  {
+   "p": "Poder",
+   "ini": 56.852,
+   "fim": 57.032,
+   "whisper_ini": 56.7,
+   "conf": 0.716
+  },
+  {
+   "p": "escolher",
+   "ini": 57.052,
+   "fim": 57.474,
+   "whisper_ini": 57.0,
+   "conf": 0.851
+  },
+  {
+   "p": "o",
+   "ini": 57.494,
+   "fim": 57.514,
+   "whisper_ini": 57.38,
+   "conf": 0.069
+  },
+  {
+   "p": "que",
+   "ini": 57.514,
+   "fim": 57.595,
+   "whisper_ini": 57.46,
+   "conf": 0.957
+  },
+  {
+   "p": "comer",
+   "ini": 57.655,
+   "fim": 57.936,
+   "whisper_ini": 57.54,
+   "conf": 0.763
+  },
+  {
+   "p": "sem",
+   "ini": 58.016,
+   "fim": 58.137,
+   "whisper_ini": 57.82,
+   "conf": 0.798
+  },
+  {
+   "p": "pensar",
+   "ini": 58.197,
+   "fim": 58.558,
+   "whisper_ini": 58.04,
+   "conf": 0.996
+  },
+  {
+   "p": "muito",
+   "ini": 58.639,
+   "fim": 58.9,
+   "whisper_ini": 58.36,
+   "conf": 0.988
+  },
+  {
+   "p": "e",
+   "ini": 58.92,
+   "fim": 58.94,
+   "whisper_ini": 58.74,
+   "conf": 0.002
+  },
+  {
+   "p": "ter",
+   "ini": 58.94,
+   "fim": 59.04,
+   "whisper_ini": 58.88,
+   "conf": 0.616
+  },
+  {
+   "p": "a",
+   "ini": 59.06,
+   "fim": 59.08,
+   "whisper_ini": 59.0,
+   "conf": 0.908
+  },
+  {
+   "p": "certeza",
+   "ini": 59.121,
+   "fim": 59.502,
+   "whisper_ini": 59.04,
+   "conf": 0.987
+  },
+  {
+   "p": "de",
+   "ini": 59.542,
+   "fim": 59.582,
+   "whisper_ini": 59.4,
+   "conf": 0.946
+  },
+  {
+   "p": "uma",
+   "ini": 59.582,
+   "fim": 59.663,
+   "whisper_ini": 59.52,
+   "conf": 0.335
+  },
+  {
+   "p": "comida",
+   "ini": 59.683,
+   "fim": 59.984,
+   "whisper_ini": 59.58,
+   "conf": 0.831
+  },
+  {
+   "p": "boa",
+   "ini": 60.044,
+   "fim": 60.225,
+   "whisper_ini": 59.82,
+   "conf": 0.654
+  },
+  {
+   "p": "que",
+   "ini": 60.265,
+   "fim": 60.366,
+   "whisper_ini": 60.1,
+   "conf": 0.9
+  },
+  {
+   "p": "vai",
+   "ini": 60.406,
+   "fim": 60.546,
+   "whisper_ini": 60.22,
+   "conf": 0.951
+  },
+  {
+   "p": "caber",
+   "ini": 60.586,
+   "fim": 60.807,
+   "whisper_ini": 60.42,
+   "conf": 0.791
+  },
+  {
+   "p": "no",
+   "ini": 60.827,
+   "fim": 60.928,
+   "whisper_ini": 60.76,
+   "conf": 0.795
+  },
+  {
+   "p": "bolso.",
+   "ini": 60.988,
+   "fim": 61.289,
+   "whisper_ini": 60.84,
+   "conf": 0.56
+  },
+  {
+   "p": "Por",
+   "ini": 61.334,
+   "fim": 61.435,
+   "whisper_ini": 61.24,
+   "conf": 0.973
+  },
+  {
+   "p": "isso",
+   "ini": 61.475,
+   "fim": 61.597,
+   "whisper_ini": 61.36,
+   "conf": 0.26
+  },
+  {
+   "p": "a",
+   "ini": 61.617,
+   "fim": 61.637,
+   "whisper_ini": 61.5,
+   "conf": 0.865
+  },
+  {
+   "p": "Itália",
+   "ini": 61.677,
+   "fim": 62.021,
+   "whisper_ini": 61.6,
+   "conf": 0.863
+  },
+  {
+   "p": "ganha",
+   "ini": 62.041,
+   "fim": 62.183,
+   "whisper_ini": 61.94,
+   "conf": 0.991
+  },
+  {
+   "p": "por",
+   "ini": 62.264,
+   "fim": 62.405,
+   "whisper_ini": 62.16,
+   "conf": 0.998
+  },
+  {
+   "p": "muito.",
+   "ini": 62.486,
+   "fim": 62.769,
+   "whisper_ini": 62.28,
+   "conf": 0.996
+  },
+  {
+   "p": "Agora",
+   "ini": 62.892,
+   "fim": 63.113,
+   "whisper_ini": 62.78,
+   "conf": 0.968
+  },
+  {
+   "p": "eu",
+   "ini": 63.113,
+   "fim": 63.153,
+   "whisper_ini": 62.96,
+   "conf": 0.014
+  },
+  {
+   "p": "quero",
+   "ini": 63.153,
+   "fim": 63.293,
+   "whisper_ini": 63.12,
+   "conf": 0.729
+  },
+  {
+   "p": "saber",
+   "ini": 63.334,
+   "fim": 63.534,
+   "whisper_ini": 63.22,
+   "conf": 0.995
+  },
+  {
+   "p": "de",
+   "ini": 63.554,
+   "fim": 63.615,
+   "whisper_ini": 63.44,
+   "conf": 0.995
+  },
+  {
+   "p": "você.",
+   "ini": 63.635,
+   "fim": 63.916,
+   "whisper_ini": 63.58,
+   "conf": 0.999
+  },
+  {
+   "p": "Na",
+   "ini": 63.996,
+   "fim": 64.077,
+   "whisper_ini": 63.9,
+   "conf": 0.998
+  },
+  {
+   "p": "sua",
+   "ini": 64.197,
+   "fim": 64.338,
+   "whisper_ini": 64.0,
+   "conf": 0.998
+  },
+  {
+   "p": "opinião,",
+   "ini": 64.358,
+   "fim": 64.679,
+   "whisper_ini": 64.22,
+   "conf": 0.996
+  },
+  {
+   "p": "qual",
+   "ini": 64.78,
+   "fim": 64.92,
+   "whisper_ini": 64.66,
+   "conf": 0.972
+  },
+  {
+   "p": "país",
+   "ini": 64.981,
+   "fim": 65.202,
+   "whisper_ini": 64.8,
+   "conf": 1.0
+  },
+  {
+   "p": "não",
+   "ini": 65.242,
+   "fim": 65.342,
+   "whisper_ini": 65.06,
+   "conf": 0.999
+  },
+  {
+   "p": "poderia",
+   "ini": 65.382,
+   "fim": 65.704,
+   "whisper_ini": 65.26,
+   "conf": 0.926
+  },
+  {
+   "p": "ter",
+   "ini": 65.724,
+   "fim": 65.824,
+   "whisper_ini": 65.52,
+   "conf": 0.938
+  },
+  {
+   "p": "ficado",
+   "ini": 65.844,
+   "fim": 66.106,
+   "whisper_ini": 65.72,
+   "conf": 0.973
+  },
+  {
+   "p": "de",
+   "ini": 66.126,
+   "fim": 66.206,
+   "whisper_ini": 66.04,
+   "conf": 0.986
+  },
+  {
+   "p": "fora",
+   "ini": 66.266,
+   "fim": 66.467,
+   "whisper_ini": 66.16,
+   "conf": 0.999
+  },
+  {
+   "p": "dessa",
+   "ini": 66.487,
+   "fim": 66.708,
+   "whisper_ini": 66.34,
+   "conf": 0.977
+  },
+  {
+   "p": "lista?",
+   "ini": 66.769,
+   "fim": 67.05,
+   "whisper_ini": 66.54,
+   "conf": 0.997
+  }
+ ]
+}

@@ -1,0 +1,1964 @@
+{
+ "dur": 67.569,
+ "diego": {
+  "src": "cenas/diego.mp4",
+  "offsetY": 668,
+  "zoomCheia": [
+   1.0,
+   1.05
+  ]
+ },
+ "cenas": [
+  {
+   "id": "c00_torre_eiffel",
+   "tipo": "video",
+   "ini": 0.0,
+   "fim": 2.85,
+   "src": "cenas/c00_torre_eiffel.mp4"
+  },
+  {
+   "id": "c01_bcn_bar",
+   "tipo": "video",
+   "ini": 2.85,
+   "fim": 5.08,
+   "src": "cenas/c01_bcn_bar.mp4"
+  },
+  {
+   "id": "c02_bcn_almoco",
+   "tipo": "video",
+   "ini": 5.08,
+   "fim": 7.83,
+   "src": "cenas/c02_bcn_almoco.mp4"
+  },
+  {
+   "id": "c03_paella",
+   "tipo": "video",
+   "ini": 7.83,
+   "fim": 10.3,
+   "src": "cenas/c03_paella.mp4"
+  },
+  {
+   "id": "c04_tigre_mesa",
+   "tipo": "video",
+   "ini": 10.3,
+   "fim": 12.5,
+   "src": "cenas/c04_tigre_mesa.mp4"
+  },
+  {
+   "id": "c05_tigre_tosta",
+   "tipo": "video",
+   "ini": 12.5,
+   "fim": 14.8,
+   "src": "cenas/c05_tigre_tosta.mp4"
+  },
+  {
+   "id": "c06_tigre_jamon",
+   "tipo": "video",
+   "ini": 14.8,
+   "fim": 16.95,
+   "src": "cenas/c06_tigre_jamon.mp4"
+  },
+  {
+   "id": "c07_churros",
+   "tipo": "video",
+   "ini": 16.95,
+   "fim": 19.8,
+   "src": "cenas/c07_churros.mp4"
+  },
+  {
+   "id": "c08_lisboa",
+   "tipo": "video",
+   "ini": 19.8,
+   "fim": 21.9,
+   "src": "cenas/c08_lisboa.mp4"
+  },
+  {
+   "id": "c09_diego_pb",
+   "tipo": "diego",
+   "ini": 21.9,
+   "fim": 24.3
+  },
+  {
+   "id": "c10_lisboa_almoco",
+   "tipo": "video",
+   "ini": 24.3,
+   "fim": 27.55,
+   "src": "cenas/c10_lisboa_almoco.mp4"
+  },
+  {
+   "id": "c11_bacalhau_nata",
+   "tipo": "video",
+   "ini": 27.55,
+   "fim": 30.2,
+   "src": "cenas/c11_bacalhau_nata.mp4"
+  },
+  {
+   "id": "c12_bacalhau_prova",
+   "tipo": "video",
+   "ini": 30.2,
+   "fim": 32.4,
+   "src": "cenas/c12_bacalhau_prova.mp4"
+  },
+  {
+   "id": "c13_pastel",
+   "tipo": "video",
+   "ini": 32.4,
+   "fim": 34.45,
+   "src": "cenas/c13_pastel.mp4"
+  },
+  {
+   "id": "c14_pasteis_rua",
+   "tipo": "video",
+   "ini": 34.45,
+   "fim": 37.5,
+   "src": "cenas/c14_pasteis_rua.mp4"
+  },
+  {
+   "id": "c15_pizza",
+   "tipo": "foto",
+   "ini": 37.5,
+   "fim": 40.82,
+   "src": "fotos/ita_IMG_5040.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "cx": 0.5,
+   "cy": 0.5
+  },
+  {
+   "id": "c16_rua_1",
+   "tipo": "foto",
+   "ini": 40.82,
+   "fim": 44.05,
+   "src": "fotos/web_trastevere_franganillo.jpg",
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "cx": 0.5,
+   "cy": 0.5
+  },
+  {
+   "id": "c17_taglio",
+   "tipo": "foto",
+   "ini": 44.05,
+   "fim": 45.65,
+   "src": "fotos/ita_IMG_5672.jpg",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "cx": 0.5,
+   "cy": 0.5
+  },
+  {
+   "id": "c18_fortunata",
+   "tipo": "foto",
+   "ini": 45.65,
+   "fim": 47.18,
+   "src": "fotos/ita_IMG_6335.jpg",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "cx": 0.5,
+   "cy": 0.5
+  },
+  {
+   "id": "c19_tagliatelle",
+   "tipo": "foto",
+   "ini": 47.18,
+   "fim": 49.25,
+   "src": "fotos/ita_IMG_5984.jpg",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "cx": 0.5,
+   "cy": 0.5
+  },
+  {
+   "id": "c20_rua_2",
+   "tipo": "foto",
+   "ini": 49.25,
+   "fim": 52.45,
+   "src": "fotos/web_trastevere_jordiferrer.jpg",
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "cx": 0.5,
+   "cy": 0.5
+  },
+  {
+   "id": "c21_cannoli",
+   "tipo": "foto",
+   "ini": 52.45,
+   "fim": 55.5,
+   "src": "fotos/ita_IMG_5095.jpg",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "cx": 0.5,
+   "cy": 0.5
+  },
+  {
+   "id": "c22_diego",
+   "tipo": "diego",
+   "ini": 55.5,
+   "fim": 58.0
+  },
+  {
+   "id": "c23_taglio_2",
+   "tipo": "foto",
+   "ini": 58.0,
+   "fim": 60.5,
+   "src": "fotos/ita_IMG_5672.jpg",
+   "zoom": [
+    1.08,
+    1.0
+   ],
+   "cx": 0.35,
+   "cy": 0.5
+  },
+  {
+   "id": "c24_pizza_2",
+   "tipo": "foto",
+   "ini": 60.5,
+   "fim": 62.85,
+   "src": "fotos/ita_IMG_5040.jpg",
+   "zoom": [
+    1.1,
+    1.04
+   ],
+   "cx": 0.5,
+   "cy": 0.5
+  },
+  {
+   "id": "c25_cta_brinde",
+   "tipo": "video",
+   "ini": 62.85,
+   "fim": 67.567,
+   "src": "cenas/c25_cta_brinde.mp4"
+  }
+ ],
+ "gancho": {
+  "linhas": [
+   {
+    "t": "QUAL É A MELHOR",
+    "px": 104
+   },
+   {
+    "t": "CULINÁRIA",
+    "px": 180,
+    "cor": "#E0AE5C"
+   },
+   {
+    "t": "DA EUROPA?",
+    "px": 104
+   }
+  ],
+  "ini": 0,
+  "fim": 2.85,
+  "topo": 300
+ },
+ "pb": {
+  "ini": 22.18,
+  "fim": 24.12
+ },
+ "cta": {
+  "destino": "COMENTA",
+  "modulo": "seta",
+  "entrada": 63.0
+ },
+ "estilo": {
+  "destaque": "#E0AE5C",
+  "fonteLegenda": "fontes/Inter-ExtraBold.otf",
+  "fonteGancho": "fontes/anton-latin-400-normal.woff2"
+ },
+ "audio": "audio/mix_com_pi.wav",
+ "legendas": [
+  {
+   "palavras": [
+    {
+     "t": "Até",
+     "ini": 2.944
+    },
+    {
+     "t": "então",
+     "ini": 3.164
+    },
+    {
+     "t": "eu",
+     "ini": 3.28
+    },
+    {
+     "t": "visitei",
+     "ini": 3.465
+    }
+   ],
+   "ini": 2.884,
+   "px": 66,
+   "largura": 623,
+   "fim": 3.825
+  },
+  {
+   "palavras": [
+    {
+     "t": "7",
+     "ini": 3.885
+    },
+    {
+     "t": "países",
+     "ini": 4.185
+    },
+    {
+     "t": "na",
+     "ini": 4.526
+    },
+    {
+     "t": "Europa",
+     "ini": 4.626
+    }
+   ],
+   "ini": 3.825,
+   "px": 66,
+   "largura": 609,
+   "fim": 4.866
+  },
+  {
+   "palavras": [
+    {
+     "t": "e",
+     "ini": 4.926
+    },
+    {
+     "t": "vou",
+     "ini": 4.966
+    },
+    {
+     "t": "te",
+     "ini": 5.067
+    },
+    {
+     "t": "mostrar",
+     "ini": 5.147
+    }
+   ],
+   "ini": 4.866,
+   "px": 66,
+   "largura": 528,
+   "fim": 5.447
+  },
+  {
+   "palavras": [
+    {
+     "t": "3",
+     "ini": 5.507
+    },
+    {
+     "t": "deles",
+     "ini": 5.828
+    },
+    {
+     "t": "que",
+     "ini": 6.088
+    },
+    {
+     "t": "a",
+     "ini": 6.188
+    },
+    {
+     "t": "culinária",
+     "ini": 6.248
+    }
+   ],
+   "ini": 5.447,
+   "px": 66,
+   "largura": 726,
+   "fim": 6.669
+  },
+  {
+   "palavras": [
+    {
+     "t": "me",
+     "ini": 6.729
+    },
+    {
+     "t": "surpreendeu",
+     "ini": 6.909
+    }
+   ],
+   "ini": 6.669,
+   "px": 66,
+   "largura": 536,
+   "fim": 7.831
+  },
+  {
+   "palavras": [
+    {
+     "t": "Em",
+     "ini": 7.891
+    },
+    {
+     "t": "terceiro",
+     "ini": 7.992
+    },
+    {
+     "t": "lugar",
+     "ini": 8.373
+    }
+   ],
+   "ini": 7.831,
+   "px": 66,
+   "largura": 554,
+   "fim": 8.553
+  },
+  {
+   "palavras": [
+    {
+     "t": "fica",
+     "ini": 8.613
+    },
+    {
+     "t": "Espanha",
+     "ini": 8.834
+    }
+   ],
+   "ini": 8.553,
+   "px": 66,
+   "largura": 422,
+   "fim": 9.335
+  },
+  {
+   "palavras": [
+    {
+     "t": "A",
+     "ini": 9.395
+    },
+    {
+     "t": "paella",
+     "ini": 9.496
+    },
+    {
+     "t": "é",
+     "ini": 9.756
+    },
+    {
+     "t": "muito",
+     "ini": 9.837
+    },
+    {
+     "t": "boa",
+     "ini": 10.137
+    }
+   ],
+   "ini": 9.335,
+   "px": 66,
+   "largura": 655,
+   "fim": 10.218
+  },
+  {
+   "palavras": [
+    {
+     "t": "e",
+     "ini": 10.278
+    },
+    {
+     "t": "a",
+     "ini": 10.358
+    },
+    {
+     "t": "variedade",
+     "ini": 10.418
+    },
+    {
+     "t": "de",
+     "ini": 10.859
+    },
+    {
+     "t": "tapas",
+     "ini": 11.0
+    }
+   ],
+   "ini": 10.218,
+   "px": 66,
+   "largura": 729,
+   "fim": 11.301
+  },
+  {
+   "palavras": [
+    {
+     "t": "é",
+     "ini": 11.361
+    },
+    {
+     "t": "imensa",
+     "ini": 11.441
+    }
+   ],
+   "ini": 11.301,
+   "px": 66,
+   "largura": 292,
+   "fim": 11.862
+  },
+  {
+   "palavras": [
+    {
+     "t": "Tem",
+     "ini": 11.922
+    },
+    {
+     "t": "lugar",
+     "ini": 12.042
+    },
+    {
+     "t": "que",
+     "ini": 12.203
+    },
+    {
+     "t": "você",
+     "ini": 12.303
+    }
+   ],
+   "ini": 11.862,
+   "px": 66,
+   "largura": 636,
+   "fim": 12.524
+  },
+  {
+   "palavras": [
+    {
+     "t": "pede",
+     "ini": 12.584
+    },
+    {
+     "t": "a",
+     "ini": 12.804
+    },
+    {
+     "t": "bebida",
+     "ini": 12.865
+    }
+   ],
+   "ini": 12.524,
+   "px": 66,
+   "largura": 455,
+   "fim": 13.105
+  },
+  {
+   "palavras": [
+    {
+     "t": "e",
+     "ini": 13.165
+    },
+    {
+     "t": "a",
+     "ini": 13.226
+    },
+    {
+     "t": "tapa",
+     "ini": 13.306
+    },
+    {
+     "t": "já",
+     "ini": 13.546
+    },
+    {
+     "t": "vem",
+     "ini": 13.687
+    }
+   ],
+   "ini": 13.105,
+   "px": 66,
+   "largura": 480,
+   "fim": 13.787
+  },
+  {
+   "palavras": [
+    {
+     "t": "de",
+     "ini": 13.847
+    },
+    {
+     "t": "graça",
+     "ini": 13.968
+    },
+    {
+     "t": "acompanhando",
+     "ini": 14.228
+    }
+   ],
+   "ini": 13.787,
+   "px": 66,
+   "largura": 806,
+   "fim": 14.831
+  },
+  {
+   "palavras": [
+    {
+     "t": "E",
+     "ini": 14.891
+    },
+    {
+     "t": "lá",
+     "ini": 14.992
+    },
+    {
+     "t": "você",
+     "ini": 15.132
+    },
+    {
+     "t": "come",
+     "ini": 15.393
+    },
+    {
+     "t": "barato",
+     "ini": 15.614
+    }
+   ],
+   "ini": 14.831,
+   "px": 66,
+   "largura": 708,
+   "fim": 16.217
+  },
+  {
+   "palavras": [
+    {
+     "t": "só",
+     "ini": 16.277
+    },
+    {
+     "t": "que",
+     "ini": 16.417
+    },
+    {
+     "t": "apesar",
+     "ini": 16.518
+    }
+   ],
+   "ini": 16.217,
+   "px": 66,
+   "largura": 456,
+   "fim": 16.839
+  },
+  {
+   "palavras": [
+    {
+     "t": "da",
+     "ini": 16.899
+    },
+    {
+     "t": "variedade",
+     "ini": 17.02
+    },
+    {
+     "t": "enorme",
+     "ini": 17.461
+    }
+   ],
+   "ini": 16.839,
+   "px": 66,
+   "largura": 689,
+   "fim": 17.783
+  },
+  {
+   "palavras": [
+    {
+     "t": "no",
+     "ini": 17.843
+    },
+    {
+     "t": "doce",
+     "ini": 18.044
+    }
+   ],
+   "ini": 17.783,
+   "px": 66,
+   "largura": 259,
+   "fim": 18.465
+  },
+  {
+   "palavras": [
+    {
+     "t": "deixa",
+     "ini": 18.525
+    },
+    {
+     "t": "um",
+     "ini": 18.766
+    },
+    {
+     "t": "pouco",
+     "ini": 18.867
+    },
+    {
+     "t": "a",
+     "ini": 19.068
+    },
+    {
+     "t": "desejar",
+     "ini": 19.108
+    }
+   ],
+   "ini": 18.465,
+   "px": 66,
+   "largura": 827,
+   "fim": 19.811
+  },
+  {
+   "palavras": [
+    {
+     "t": "Em",
+     "ini": 19.871
+    },
+    {
+     "t": "segundo",
+     "ini": 20.032
+    },
+    {
+     "t": "lugar",
+     "ini": 20.533
+    }
+   ],
+   "ini": 19.811,
+   "px": 66,
+   "largura": 586,
+   "fim": 20.994
+  },
+  {
+   "palavras": [
+    {
+     "t": "Portugal",
+     "ini": 21.054
+    }
+   ],
+   "ini": 20.994,
+   "px": 66,
+   "largura": 279,
+   "fim": 21.896
+  },
+  {
+   "palavras": [
+    {
+     "t": "Aqui",
+     "ini": 21.956
+    },
+    {
+     "t": "meu",
+     "ini": 22.458
+    },
+    {
+     "t": "amigo",
+     "ini": 22.658
+    }
+   ],
+   "ini": 21.896,
+   "px": 66,
+   "largura": 525,
+   "fim": 23.18
+  },
+  {
+   "palavras": [
+    {
+     "t": "p*rra",
+     "ini": 23.24
+    }
+   ],
+   "ini": 23.18,
+   "px": 66,
+   "largura": 174,
+   "fim": 24.302
+  },
+  {
+   "palavras": [
+    {
+     "t": "aqui",
+     "ini": 24.362
+    },
+    {
+     "t": "você",
+     "ini": 24.643
+    },
+    {
+     "t": "vai",
+     "ini": 24.844
+    },
+    {
+     "t": "comer",
+     "ini": 24.964
+    }
+   ],
+   "ini": 24.302,
+   "px": 66,
+   "largura": 650,
+   "fim": 25.124
+  },
+  {
+   "palavras": [
+    {
+     "t": "bons",
+     "ini": 25.184
+    },
+    {
+     "t": "pratos",
+     "ini": 25.485
+    }
+   ],
+   "ini": 25.124,
+   "px": 66,
+   "largura": 388,
+   "fim": 25.726
+  },
+  {
+   "palavras": [
+    {
+     "t": "de",
+     "ini": 25.786
+    },
+    {
+     "t": "frutos",
+     "ini": 25.906
+    },
+    {
+     "t": "do",
+     "ini": 26.207
+    },
+    {
+     "t": "mar",
+     "ini": 26.347
+    }
+   ],
+   "ini": 25.726,
+   "px": 66,
+   "largura": 536,
+   "fim": 26.608
+  },
+  {
+   "palavras": [
+    {
+     "t": "e",
+     "ini": 26.668
+    },
+    {
+     "t": "baratos",
+     "ini": 26.808
+    }
+   ],
+   "ini": 26.608,
+   "px": 66,
+   "largura": 304,
+   "fim": 27.552
+  },
+  {
+   "palavras": [
+    {
+     "t": "Esse",
+     "ini": 27.612
+    },
+    {
+     "t": "bacalhau",
+     "ini": 27.833
+    },
+    {
+     "t": "com",
+     "ini": 28.214
+    },
+    {
+     "t": "nata",
+     "ini": 28.355
+    }
+   ],
+   "ini": 27.552,
+   "px": 66,
+   "largura": 787,
+   "fim": 28.596
+  },
+  {
+   "palavras": [
+    {
+     "t": "foi",
+     "ini": 28.656
+    },
+    {
+     "t": "20",
+     "ini": 28.837
+    },
+    {
+     "t": "euros",
+     "ini": 29.158
+    }
+   ],
+   "ini": 28.596,
+   "px": 66,
+   "largura": 388,
+   "fim": 29.299
+  },
+  {
+   "palavras": [
+    {
+     "t": "pra",
+     "ini": 29.359
+    },
+    {
+     "t": "duas",
+     "ini": 29.539
+    },
+    {
+     "t": "pessoas",
+     "ini": 29.78
+    }
+   ],
+   "ini": 29.299,
+   "px": 66,
+   "largura": 572,
+   "fim": 30.162
+  },
+  {
+   "palavras": [
+    {
+     "t": "e",
+     "ini": 30.222
+    },
+    {
+     "t": "eu",
+     "ini": 30.252
+    },
+    {
+     "t": "não",
+     "ini": 30.282
+    },
+    {
+     "t": "tenho",
+     "ini": 30.312
+    },
+    {
+     "t": "nem",
+     "ini": 30.543
+    },
+    {
+     "t": "palavras",
+     "ini": 30.764
+    }
+   ],
+   "ini": 30.162,
+   "px": 59,
+   "largura": 928,
+   "fim": 31.225
+  },
+  {
+   "palavras": [
+    {
+     "t": "pra",
+     "ini": 31.285
+    },
+    {
+     "t": "descrever",
+     "ini": 31.426
+    }
+   ],
+   "ini": 31.225,
+   "px": 66,
+   "largura": 452,
+   "fim": 31.687
+  },
+  {
+   "palavras": [
+    {
+     "t": "o",
+     "ini": 31.747
+    },
+    {
+     "t": "que",
+     "ini": 31.777
+    },
+    {
+     "t": "foi",
+     "ini": 31.847
+    },
+    {
+     "t": "isso",
+     "ini": 31.88
+    },
+    {
+     "t": "aí",
+     "ini": 32.169
+    },
+    {
+     "t": "pô",
+     "ini": 32.269
+    }
+   ],
+   "ini": 31.687,
+   "px": 66,
+   "largura": 598,
+   "fim": 32.373
+  },
+  {
+   "palavras": [
+    {
+     "t": "E",
+     "ini": 32.433
+    },
+    {
+     "t": "o",
+     "ini": 32.493
+    },
+    {
+     "t": "pastel",
+     "ini": 32.554
+    },
+    {
+     "t": "de",
+     "ini": 32.877
+    },
+    {
+     "t": "nata",
+     "ini": 32.977
+    }
+   ],
+   "ini": 32.373,
+   "px": 66,
+   "largura": 568,
+   "fim": 33.08
+  },
+  {
+   "palavras": [
+    {
+     "t": "é",
+     "ini": 33.14
+    },
+    {
+     "t": "sinistro",
+     "ini": 33.32
+    },
+    {
+     "t": "de",
+     "ini": 33.824
+    },
+    {
+     "t": "bom",
+     "ini": 33.966
+    },
+    {
+     "t": "pô",
+     "ini": 34.167
+    }
+   ],
+   "ini": 33.08,
+   "px": 66,
+   "largura": 653,
+   "fim": 34.18
+  },
+  {
+   "palavras": [
+    {
+     "t": "Eu",
+     "ini": 34.24
+    },
+    {
+     "t": "comi",
+     "ini": 34.314
+    },
+    {
+     "t": "quatro",
+     "ini": 34.618
+    }
+   ],
+   "ini": 34.18,
+   "px": 66,
+   "largura": 486,
+   "fim": 34.68
+  },
+  {
+   "palavras": [
+    {
+     "t": "em",
+     "ini": 34.74
+    },
+    {
+     "t": "uma",
+     "ini": 35.003
+    },
+    {
+     "t": "manhã",
+     "ini": 35.125
+    }
+   ],
+   "ini": 34.68,
+   "px": 66,
+   "largura": 494,
+   "fim": 35.553
+  },
+  {
+   "palavras": [
+    {
+     "t": "Portugal",
+     "ini": 35.613
+    },
+    {
+     "t": "cravou",
+     "ini": 36.058
+    }
+   ],
+   "ini": 35.553,
+   "px": 66,
+   "largura": 519,
+   "fim": 36.462
+  },
+  {
+   "palavras": [
+    {
+     "t": "o",
+     "ini": 36.522
+    },
+    {
+     "t": "segundo",
+     "ini": 36.603
+    },
+    {
+     "t": "lugar",
+     "ini": 36.946
+    }
+   ],
+   "ini": 36.462,
+   "px": 66,
+   "largura": 526,
+   "fim": 37.514
+  },
+  {
+   "palavras": [
+    {
+     "t": "E",
+     "ini": 37.574
+    },
+    {
+     "t": "o",
+     "ini": 37.655
+    },
+    {
+     "t": "primeiro",
+     "ini": 37.715
+    },
+    {
+     "t": "lugar",
+     "ini": 38.178
+    }
+   ],
+   "ini": 37.514,
+   "px": 66,
+   "largura": 569,
+   "fim": 38.42
+  },
+  {
+   "palavras": [
+    {
+     "t": "chegou",
+     "ini": 38.48
+    },
+    {
+     "t": "chutando",
+     "ini": 38.762
+    },
+    {
+     "t": "a",
+     "ini": 39.306
+    },
+    {
+     "t": "porta",
+     "ini": 39.407
+    }
+   ],
+   "ini": 38.42,
+   "px": 66,
+   "largura": 817,
+   "fim": 39.654
+  },
+  {
+   "palavras": [
+    {
+     "t": "A",
+     "ini": 39.714
+    },
+    {
+     "t": "Itália",
+     "ini": 39.795
+    },
+    {
+     "t": "por",
+     "ini": 40.322
+    },
+    {
+     "t": "muito",
+     "ini": 40.565
+    }
+   ],
+   "ini": 39.654,
+   "px": 66,
+   "largura": 552,
+   "fim": 40.832
+  },
+  {
+   "palavras": [
+    {
+     "t": "E",
+     "ini": 40.892
+    },
+    {
+     "t": "o",
+     "ini": 40.952
+    },
+    {
+     "t": "que",
+     "ini": 41.032
+    },
+    {
+     "t": "mais",
+     "ini": 41.193
+    }
+   ],
+   "ini": 40.832,
+   "px": 66,
+   "largura": 405,
+   "fim": 41.22
+  },
+  {
+   "palavras": [
+    {
+     "t": "me",
+     "ini": 41.28
+    },
+    {
+     "t": "surpreendeu",
+     "ini": 41.495
+    }
+   ],
+   "ini": 41.22,
+   "px": 66,
+   "largura": 536,
+   "fim": 41.8
+  },
+  {
+   "palavras": [
+    {
+     "t": "é",
+     "ini": 41.86
+    },
+    {
+     "t": "porque",
+     "ini": 42.058
+    },
+    {
+     "t": "lá",
+     "ini": 42.32
+    },
+    {
+     "t": "tem",
+     "ini": 42.46
+    }
+   ],
+   "ini": 41.8,
+   "px": 66,
+   "largura": 498,
+   "fim": 42.43
+  },
+  {
+   "palavras": [
+    {
+     "t": "um",
+     "ini": 42.49
+    },
+    {
+     "t": "milhão",
+     "ini": 42.722
+    }
+   ],
+   "ini": 42.43,
+   "px": 66,
+   "largura": 338,
+   "fim": 43.024
+  },
+  {
+   "palavras": [
+    {
+     "t": "de",
+     "ini": 43.084
+    },
+    {
+     "t": "restaurantes",
+     "ini": 43.204
+    },
+    {
+     "t": "na",
+     "ini": 43.727
+    },
+    {
+     "t": "rua",
+     "ini": 43.868
+    }
+   ],
+   "ini": 43.024,
+   "px": 66,
+   "largura": 733,
+   "fim": 44.053
+  },
+  {
+   "palavras": [
+    {
+     "t": "Do",
+     "ini": 44.113
+    },
+    {
+     "t": "mais",
+     "ini": 44.214
+    },
+    {
+     "t": "simples",
+     "ini": 44.476
+    }
+   ],
+   "ini": 44.053,
+   "px": 66,
+   "largura": 530,
+   "fim": 44.8
+  },
+  {
+   "palavras": [
+    {
+     "t": "ao",
+     "ini": 44.86
+    },
+    {
+     "t": "mais",
+     "ini": 44.941
+    },
+    {
+     "t": "sofisticado",
+     "ini": 45.102
+    }
+   ],
+   "ini": 44.8,
+   "px": 66,
+   "largura": 634,
+   "fim": 45.653
+  },
+  {
+   "palavras": [
+    {
+     "t": "Do",
+     "ini": 45.713
+    },
+    {
+     "t": "mais",
+     "ini": 45.895
+    },
+    {
+     "t": "barato",
+     "ini": 46.117
+    }
+   ],
+   "ini": 45.653,
+   "px": 66,
+   "largura": 486,
+   "fim": 46.36
+  },
+  {
+   "palavras": [
+    {
+     "t": "ao",
+     "ini": 46.42
+    },
+    {
+     "t": "mais",
+     "ini": 46.663
+    },
+    {
+     "t": "caro",
+     "ini": 46.946
+    }
+   ],
+   "ini": 46.36,
+   "px": 66,
+   "largura": 411,
+   "fim": 47.193
+  },
+  {
+   "palavras": [
+    {
+     "t": "Só",
+     "ini": 47.253
+    },
+    {
+     "t": "que",
+     "ini": 47.415
+    },
+    {
+     "t": "em",
+     "ini": 47.515
+    },
+    {
+     "t": "qualquer",
+     "ini": 47.616
+    },
+    {
+     "t": "um",
+     "ini": 47.959
+    }
+   ],
+   "ini": 47.193,
+   "px": 66,
+   "largura": 763,
+   "fim": 48.0
+  },
+  {
+   "palavras": [
+    {
+     "t": "deles",
+     "ini": 48.06
+    },
+    {
+     "t": "você",
+     "ini": 48.322
+    },
+    {
+     "t": "vai",
+     "ini": 48.564
+    },
+    {
+     "t": "comer",
+     "ini": 48.706
+    },
+    {
+     "t": "bem",
+     "ini": 48.948
+    }
+   ],
+   "ini": 48.0,
+   "px": 65,
+   "largura": 844,
+   "fim": 49.251
+  },
+  {
+   "palavras": [
+    {
+     "t": "Basicamente",
+     "ini": 49.311
+    }
+   ],
+   "ini": 49.251,
+   "px": 66,
+   "largura": 425,
+   "fim": 49.68
+  },
+  {
+   "palavras": [
+    {
+     "t": "você",
+     "ini": 49.74
+    },
+    {
+     "t": "vai",
+     "ini": 50.096
+    },
+    {
+     "t": "escolher",
+     "ini": 50.196
+    }
+   ],
+   "ini": 49.68,
+   "px": 66,
+   "largura": 571,
+   "fim": 50.44
+  },
+  {
+   "palavras": [
+    {
+     "t": "o",
+     "ini": 50.5
+    },
+    {
+     "t": "que",
+     "ini": 50.599
+    },
+    {
+     "t": "cabe",
+     "ini": 50.759
+    },
+    {
+     "t": "no",
+     "ini": 50.981
+    },
+    {
+     "t": "seu",
+     "ini": 51.101
+    },
+    {
+     "t": "bolso",
+     "ini": 51.283
+    }
+   ],
+   "ini": 50.44,
+   "px": 66,
+   "largura": 780,
+   "fim": 51.504
+  },
+  {
+   "palavras": [
+    {
+     "t": "e",
+     "ini": 51.564
+    },
+    {
+     "t": "correr",
+     "ini": 51.604
+    },
+    {
+     "t": "pro",
+     "ini": 51.846
+    },
+    {
+     "t": "abraço",
+     "ini": 51.967
+    }
+   ],
+   "ini": 51.504,
+   "px": 66,
+   "largura": 619,
+   "fim": 52.453
+  },
+  {
+   "palavras": [
+    {
+     "t": "Na",
+     "ini": 52.513
+    },
+    {
+     "t": "Itália",
+     "ini": 52.635
+    }
+   ],
+   "ini": 52.453,
+   "px": 66,
+   "largura": 264,
+   "fim": 52.938
+  },
+  {
+   "palavras": [
+    {
+     "t": "o",
+     "ini": 52.998
+    },
+    {
+     "t": "difícil",
+     "ini": 53.038
+    }
+   ],
+   "ini": 52.938,
+   "px": 66,
+   "largura": 239,
+   "fim": 53.402
+  },
+  {
+   "palavras": [
+    {
+     "t": "não",
+     "ini": 53.462
+    },
+    {
+     "t": "é",
+     "ini": 53.644
+    },
+    {
+     "t": "comer",
+     "ini": 53.744
+    },
+    {
+     "t": "bem",
+     "ini": 54.087
+    }
+   ],
+   "ini": 53.402,
+   "px": 66,
+   "largura": 556,
+   "fim": 54.092
+  },
+  {
+   "palavras": [
+    {
+     "t": "É",
+     "ini": 54.152
+    },
+    {
+     "t": "escolher",
+     "ini": 54.415
+    },
+    {
+     "t": "o",
+     "ini": 54.88
+    },
+    {
+     "t": "que",
+     "ini": 55.023
+    },
+    {
+     "t": "comer",
+     "ini": 55.165
+    }
+   ],
+   "ini": 54.092,
+   "px": 66,
+   "largura": 757,
+   "fim": 55.534
+  },
+  {
+   "palavras": [
+    {
+     "t": "E",
+     "ini": 55.594
+    },
+    {
+     "t": "pra",
+     "ini": 55.696
+    },
+    {
+     "t": "mim",
+     "ini": 55.918
+    }
+   ],
+   "ini": 55.534,
+   "px": 66,
+   "largura": 318,
+   "fim": 56.0
+  },
+  {
+   "palavras": [
+    {
+     "t": "o",
+     "ini": 56.06
+    },
+    {
+     "t": "que",
+     "ini": 56.12
+    },
+    {
+     "t": "pesa",
+     "ini": 56.262
+    },
+    {
+     "t": "é",
+     "ini": 56.485
+    },
+    {
+     "t": "isso",
+     "ini": 56.626
+    }
+   ],
+   "ini": 56.0,
+   "px": 66,
+   "largura": 556,
+   "fim": 56.792
+  },
+  {
+   "palavras": [
+    {
+     "t": "Poder",
+     "ini": 56.852
+    },
+    {
+     "t": "escolher",
+     "ini": 57.052
+    }
+   ],
+   "ini": 56.792,
+   "px": 66,
+   "largura": 493,
+   "fim": 57.32
+  },
+  {
+   "palavras": [
+    {
+     "t": "o",
+     "ini": 57.38
+    },
+    {
+     "t": "que",
+     "ini": 57.514
+    },
+    {
+     "t": "comer",
+     "ini": 57.655
+    }
+   ],
+   "ini": 57.32,
+   "px": 66,
+   "largura": 402,
+   "fim": 57.956
+  },
+  {
+   "palavras": [
+    {
+     "t": "sem",
+     "ini": 58.016
+    },
+    {
+     "t": "pensar",
+     "ini": 58.197
+    },
+    {
+     "t": "muito",
+     "ini": 58.639
+    }
+   ],
+   "ini": 57.956,
+   "px": 66,
+   "largura": 583,
+   "fim": 58.68
+  },
+  {
+   "palavras": [
+    {
+     "t": "e",
+     "ini": 58.74
+    },
+    {
+     "t": "ter",
+     "ini": 58.94
+    },
+    {
+     "t": "a",
+     "ini": 59.06
+    },
+    {
+     "t": "certeza",
+     "ini": 59.121
+    }
+   ],
+   "ini": 58.68,
+   "px": 66,
+   "largura": 462,
+   "fim": 59.482
+  },
+  {
+   "palavras": [
+    {
+     "t": "de",
+     "ini": 59.542
+    },
+    {
+     "t": "uma",
+     "ini": 59.582
+    },
+    {
+     "t": "comida",
+     "ini": 59.683
+    },
+    {
+     "t": "boa",
+     "ini": 60.044
+    }
+   ],
+   "ini": 59.482,
+   "px": 66,
+   "largura": 630,
+   "fim": 60.205
+  },
+  {
+   "palavras": [
+    {
+     "t": "que",
+     "ini": 60.265
+    },
+    {
+     "t": "vai",
+     "ini": 60.406
+    },
+    {
+     "t": "caber",
+     "ini": 60.586
+    },
+    {
+     "t": "no",
+     "ini": 60.827
+    },
+    {
+     "t": "bolso",
+     "ini": 60.988
+    }
+   ],
+   "ini": 60.205,
+   "px": 66,
+   "largura": 730,
+   "fim": 61.274
+  },
+  {
+   "palavras": [
+    {
+     "t": "Por",
+     "ini": 61.334
+    },
+    {
+     "t": "isso",
+     "ini": 61.364
+    },
+    {
+     "t": "a",
+     "ini": 61.617
+    },
+    {
+     "t": "Itália",
+     "ini": 61.677
+    }
+   ],
+   "ini": 61.274,
+   "px": 66,
+   "largura": 489,
+   "fim": 61.981
+  },
+  {
+   "palavras": [
+    {
+     "t": "ganha",
+     "ini": 62.041
+    },
+    {
+     "t": "por",
+     "ini": 62.264
+    },
+    {
+     "t": "muito",
+     "ini": 62.486
+    }
+   ],
+   "ini": 61.981,
+   "px": 66,
+   "largura": 530,
+   "fim": 62.832
+  },
+  {
+   "palavras": [
+    {
+     "t": "Agora",
+     "ini": 62.892
+    },
+    {
+     "t": "eu",
+     "ini": 62.96
+    },
+    {
+     "t": "quero",
+     "ini": 63.153
+    },
+    {
+     "t": "saber",
+     "ini": 63.334
+    }
+   ],
+   "ini": 62.832,
+   "px": 66,
+   "largura": 698,
+   "fim": 63.494
+  },
+  {
+   "palavras": [
+    {
+     "t": "de",
+     "ini": 63.554
+    },
+    {
+     "t": "você",
+     "ini": 63.635
+    }
+   ],
+   "ini": 63.494,
+   "px": 66,
+   "largura": 255,
+   "fim": 63.936
+  },
+  {
+   "palavras": [
+    {
+     "t": "Na",
+     "ini": 63.996
+    },
+    {
+     "t": "sua",
+     "ini": 64.197
+    },
+    {
+     "t": "opinião",
+     "ini": 64.358
+    }
+   ],
+   "ini": 63.936,
+   "px": 66,
+   "largura": 479,
+   "fim": 64.72
+  },
+  {
+   "palavras": [
+    {
+     "t": "qual",
+     "ini": 64.78
+    },
+    {
+     "t": "país",
+     "ini": 64.981
+    },
+    {
+     "t": "não",
+     "ini": 65.242
+    },
+    {
+     "t": "poderia",
+     "ini": 65.382
+    }
+   ],
+   "ini": 64.72,
+   "px": 66,
+   "largura": 695,
+   "fim": 65.664
+  },
+  {
+   "palavras": [
+    {
+     "t": "ter",
+     "ini": 65.724
+    },
+    {
+     "t": "ficado",
+     "ini": 65.844
+    },
+    {
+     "t": "de",
+     "ini": 66.126
+    },
+    {
+     "t": "fora",
+     "ini": 66.266
+    }
+   ],
+   "ini": 65.664,
+   "px": 66,
+   "largura": 557,
+   "fim": 66.427
+  },
+  {
+   "palavras": [
+    {
+     "t": "dessa",
+     "ini": 66.487
+    },
+    {
+     "t": "lista?",
+     "ini": 66.769
+    }
+   ],
+   "ini": 66.427,
+   "px": 66,
+   "largura": 388,
+   "fim": 67.65
+  }
+ ]
+}

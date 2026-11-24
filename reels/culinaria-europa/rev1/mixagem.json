@@ -1,0 +1,57 @@
+{
+ "voz_lufs_original": -18.19,
+ "sem_pi": [
+  {
+   "som": "keen: pico (0,96 s) no corte do gancho",
+   "em_s": 1.89,
+   "rel_voz_db": -6,
+   "ganho_lin": 0.1781
+  },
+  {
+   "som": "impacto em 'porta'",
+   "em_s": 39.41,
+   "rel_voz_db": -8,
+   "ganho_lin": 0.3187
+  },
+  {
+   "som": "clack da placa (DS), na chegada",
+   "em_s": 63.28,
+   "rel_voz_db": -6,
+   "ganho_lin": 0.9665
+  },
+  {
+   "master_lufs": -14.0,
+   "pico_verdadeiro_dbtp": -1.7
+  }
+ ],
+ "com_pi": [
+  {
+   "som": "keen: pico (0,96 s) no corte do gancho",
+   "em_s": 1.89,
+   "rel_voz_db": -6,
+   "ganho_lin": 0.1781
+  },
+  {
+   "som": "impacto em 'porta'",
+   "em_s": 39.41,
+   "rel_voz_db": -8,
+   "ganho_lin": 0.3187
+  },
+  {
+   "som": "clack da placa (DS), na chegada",
+   "em_s": 63.28,
+   "rel_voz_db": -6,
+   "ganho_lin": 0.9665
+  },
+  {
+   "som": "bipe 1 kHz sobre 'porra'",
+   "de_s": 23.21,
+   "ate_s": 24.12,
+   "rel_voz_db": -4
+  },
+  {
+   "master_lufs": -14.0,
+   "pico_verdadeiro_dbtp": -1.7
+  }
+ ]
+}

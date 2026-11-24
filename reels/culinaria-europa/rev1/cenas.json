@@ -1,0 +1,307 @@
+{
+ "_leia": "Decupagem da REV1. Tempos em segundos na linha do tempo do vídeo do Diego (fala_diego.mp4, 67,57 s, já editado por ele). 'in' = segundo do arquivo de origem. Cada troca cai 0,04-0,12 s antes da palavra que a imagem mostra (FORMATOS_REELS 7.1).",
+ "gancho": {
+  "texto": [
+   "QUAL É A MELHOR",
+   "CULINÁRIA",
+   "DA EUROPA?"
+  ],
+  "ini": 0.0,
+  "fim": 2.85,
+  "cor_destaque_linha": 1
+ },
+ "pb": {
+  "ini": 22.18,
+  "fim": 24.12,
+  "_": "'meu amigo, porra' em preto e branco (pedido do Diego)"
+ },
+ "bipe": {
+  "ini": 23.21,
+  "fim": 24.12,
+  "_": "'porra' (medido na energia da voz 120-4000 Hz)"
+ },
+ "cta": {
+  "destino": "COMENTA",
+  "modulo": "seta",
+  "entrada": 63.0
+ },
+ "cenas": [
+  {
+   "id": "c00_torre_eiffel",
+   "tipo": "video",
+   "fonte": "par_IMG_2787.MOV",
+   "in": 1.0,
+   "ini": 0.0,
+   "fim": 2.85,
+   "estabilizar": true,
+   "fala": "Qual é a melhor culinária da Europa?",
+   "cx": 0.31,
+   "_": "pedido do Diego: o Diego gravando a Torre Eiffel no gancho (de propósito, soa aleatório)"
+  },
+  {
+   "id": "c01_bcn_bar",
+   "tipo": "video",
+   "fonte": "bcn_IMG_0816-1.MOV",
+   "in": 5.5,
+   "ini": 2.85,
+   "fim": 5.08,
+   "estabilizar": true,
+   "fala": "Até então eu visitei 7 países na Europa"
+  },
+  {
+   "id": "c02_bcn_almoco",
+   "tipo": "video",
+   "fonte": "bcn_IMG_1001.MOV",
+   "in": 21.0,
+   "ini": 5.08,
+   "fim": 7.83,
+   "estabilizar": true,
+   "fala": "e vou te mostrar 3 deles que a culinária me surpreendeu"
+  },
+  {
+   "id": "c03_paella",
+   "tipo": "video",
+   "fonte": "bcn_IMG_0996.MOV",
+   "in": 0.0,
+   "ini": 7.83,
+   "fim": 10.3,
+   "estabilizar": true,
+   "fala": "Em terceiro lugar fica Espanha. A paella é muito boa"
+  },
+  {
+   "id": "c04_tigre_mesa",
+   "tipo": "video",
+   "fonte": "mad_IMG_3790.MOV",
+   "in": 0.3,
+   "ini": 10.3,
+   "fim": 12.5,
+   "estabilizar": true,
+   "fala": "e a variedade de tapas é imensa"
+  },
+  {
+   "id": "c05_tigre_tosta",
+   "tipo": "video",
+   "fonte": "mad_IMG_3795.MOV",
+   "in": 0.0,
+   "ini": 12.5,
+   "fim": 14.8,
+   "estabilizar": true,
+   "fala": "Tem lugar que você pede a bebida e a tapa já vem de graça acompanhando"
+  },
+  {
+   "id": "c06_tigre_jamon",
+   "tipo": "video",
+   "fonte": "mad_IMG_3794.MOV",
+   "in": 0.0,
+   "ini": 14.8,
+   "fim": 16.95,
+   "estabilizar": true,
+   "fala": "E lá você come barato"
+  },
+  {
+   "id": "c07_churros",
+   "tipo": "video",
+   "fonte": "mad_IMG_3815.MOV",
+   "in": 0.0,
+   "ini": 16.95,
+   "fim": 19.8,
+   "estabilizar": false,
+   "fala": "só que apesar da variedade enorme no doce, deixa um pouco a desejar"
+  },
+  {
+   "id": "c08_lisboa",
+   "tipo": "video",
+   "fonte": "lis_IMG_4247.MOV",
+   "in": 0.3,
+   "ini": 19.8,
+   "fim": 21.9,
+   "estabilizar": true,
+   "fala": "Em segundo lugar, Portugal"
+  },
+  {
+   "id": "c09_diego_pb",
+   "tipo": "diego",
+   "ini": 21.9,
+   "fim": 24.3,
+   "fala": "Aqui meu amigo, porra"
+  },
+  {
+   "id": "c10_lisboa_almoco",
+   "tipo": "video",
+   "fonte": "lis_IMG_4525.MOV",
+   "in": 9.0,
+   "ini": 24.3,
+   "fim": 27.55,
+   "estabilizar": false,
+   "fala": "aqui você vai comer bons pratos de frutos do mar e baratos"
+  },
+  {
+   "id": "c11_bacalhau_nata",
+   "tipo": "video",
+   "fonte": "lis_IMG_4249.MOV",
+   "in": 0.0,
+   "ini": 27.55,
+   "fim": 30.2,
+   "estabilizar": true,
+   "fala": "Esse bacalhau com nata foi 20 euros pra duas pessoas"
+  },
+  {
+   "id": "c12_bacalhau_prova",
+   "tipo": "video",
+   "fonte": "lis_IMG_4252.MOV",
+   "in": 4.5,
+   "ini": 30.2,
+   "fim": 32.4,
+   "estabilizar": true,
+   "fala": "e eu não tenho nem palavras pra descrever o que foi isso aí, pô"
+  },
+  {
+   "id": "c13_pastel",
+   "tipo": "video",
+   "fonte": "lis_IMG_4470.MOV",
+   "in": 0.0,
+   "ini": 32.4,
+   "fim": 34.45,
+   "estabilizar": true,
+   "fala": "E o pastel de nata é sinistro de bom, pô"
+  },
+  {
+   "id": "c14_pasteis_rua",
+   "tipo": "video",
+   "fonte": "lis_IMG_4469.MOV",
+   "in": 13.0,
+   "ini": 34.45,
+   "fim": 37.5,
+   "estabilizar": true,
+   "girar": "cw",
+   "fala": "Eu comi quatro em uma manhã. Portugal cravou o segundo lugar"
+  },
+  {
+   "id": "c15_pizza",
+   "tipo": "foto",
+   "fonte": "ita_IMG_5040.jpg",
+   "ini": 37.5,
+   "fim": 40.82,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fala": "E o primeiro lugar chegou chutando a porta. A Itália, por muito"
+  },
+  {
+   "id": "c16_rua_1",
+   "tipo": "foto",
+   "fonte": "web_trastevere_franganillo.jpg",
+   "ini": 40.82,
+   "fim": 44.05,
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "fala": "lá tem um milhão de restaurantes na rua"
+  },
+  {
+   "id": "c17_taglio",
+   "tipo": "foto",
+   "fonte": "ita_IMG_5672.jpg",
+   "ini": 44.05,
+   "fim": 45.65,
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "fala": "Do mais simples ao mais sofisticado"
+  },
+  {
+   "id": "c18_fortunata",
+   "tipo": "foto",
+   "fonte": "ita_IMG_6335.jpg",
+   "ini": 45.65,
+   "fim": 47.18,
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "fala": "Do mais barato ao mais caro"
+  },
+  {
+   "id": "c19_tagliatelle",
+   "tipo": "foto",
+   "fonte": "ita_IMG_5984.jpg",
+   "ini": 47.18,
+   "fim": 49.25,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "fala": "Só que em qualquer um deles você vai comer bem"
+  },
+  {
+   "id": "c20_rua_2",
+   "tipo": "foto",
+   "fonte": "web_trastevere_jordiferrer.jpg",
+   "ini": 49.25,
+   "fim": 52.45,
+   "zoom": [
+    1.07,
+    1.0
+   ],
+   "fala": "você vai escolher o que cabe no seu bolso e correr pro abraço"
+  },
+  {
+   "id": "c21_cannoli",
+   "tipo": "foto",
+   "fonte": "ita_IMG_5095.jpg",
+   "ini": 52.45,
+   "fim": 55.5,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "fala": "Na Itália, o difícil não é comer bem. É escolher o que comer"
+  },
+  {
+   "id": "c22_diego",
+   "tipo": "diego",
+   "ini": 55.5,
+   "fim": 58.0,
+   "fala": "E pra mim, o que pesa é isso. Poder escolher o que comer"
+  },
+  {
+   "id": "c23_taglio_2",
+   "tipo": "foto",
+   "fonte": "ita_IMG_5672.jpg",
+   "ini": 58.0,
+   "fim": 60.5,
+   "zoom": [
+    1.08,
+    1.0
+   ],
+   "cx": 0.35,
+   "fala": "sem pensar muito e ter a certeza de uma comida boa"
+  },
+  {
+   "id": "c24_pizza_2",
+   "tipo": "foto",
+   "fonte": "ita_IMG_5040.jpg",
+   "ini": 60.5,
+   "fim": 62.85,
+   "zoom": [
+    1.1,
+    1.04
+   ],
+   "fala": "que vai caber no bolso. Por isso a Itália ganha por muito"
+  },
+  {
+   "id": "c25_cta_brinde",
+   "tipo": "video",
+   "fonte": "mad_IMG_3789.MOV",
+   "in": 0.0,
+   "ini": 62.85,
+   "fim": 67.567,
+   "estabilizar": true,
+   "fala": "Agora eu quero saber de você... qual país não poderia ter ficado de fora dessa lista?",
+   "_": "fecho: chope e sangria do El Tigre (o plano do gancho, IMG_3791, tem só 2,96 s), com a placa do CTA"
+  }
+ ]
+}
