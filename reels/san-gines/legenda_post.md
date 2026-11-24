@@ -33,10 +33,10 @@ Minha maior decepção em Madrid: a churrería mais famosa da cidade. Já foi? M
 
 ## YouTube Shorts (título ≤ 100 caracteres + descrição)
 
-Título (74 caracteres):
+Título (83 caracteres):
 
 ```
-Maior decepção de Madrid: a churrería mais famosa da cidade #Madrid #Shorts
+Maior decepção de Madrid: a churrería mais famosa da cidade #Madrid #Churros #Shorts
 ```
 
 Descrição:
