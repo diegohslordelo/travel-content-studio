@@ -14,9 +14,9 @@ Duração: ~38 s. Cartões de 5 s.
 Letras garrafais, linha a linha:
 
 ```
-NEM TODA CIDADE
-DA EUROPA
-MERECE O HYPE
+MINHA OPINIÃO
+IMPOPULAR
+SOBRE A EUROPA
 ```
 
 Som `keen` com o pico no corte entre o gancho e o primeiro cartão (CLAUDE.md, seção 12).
