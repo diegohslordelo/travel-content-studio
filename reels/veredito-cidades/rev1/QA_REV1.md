@@ -1,11 +1,11 @@
 # Veredito das cidades · REV1 (25/11/2026)
 
-Entrega: `reel_veredito-cidades_rev1.mp4` (1080 × 1920, 30 fps, 47,7 s). Roteiro: `../ROTEIRO.md`.
+Entrega: `reel_veredito-cidades_rev1.mp4` (1080 × 1920, 30 fps, 52,7 s). Roteiro: `../ROTEIRO.md`.
 Montagem: `../baixar.py` (brutos do Drive em `../fonte/`, fora do git; IDs em `../fontes.json`), `../cta.mjs` (placas do DS V2) e `../montar.py`.
 
 ## Decisões do Diego aplicadas (25/11/2026)
-- Gancho clássico em Anton, inteiro desde o 1º quadro: "Dos países que eu visitei, esse é o meu" em português normal (branco) e "VEREDITO DA EUROPA" em maiúsculas, 2,6× maior e na cor mostarda (`#E0AE5C`), sobre a Fontana di Trevi (`IMG_5067`, vertical, sem recorte). Opções que o Diego viu: Bruges, Torre Eiffel e Trevi (`ganchos.py`).
-- Categorias novas (25/11/2026): "A melhor de caminhar · Florença" e "Todo mundo deveria ir um dia · Bruges".
+- Gancho em Anton, inteiro desde o 1º quadro: "MINHA OPINIÃO IMPOPULAR SOBRE A EUROPA", branco, sobre a Fontana di Trevi (`IMG_5067`, vertical, sem recorte). O Diego também viu a versão "Dos países que eu visitei, esse é o meu VEREDITO DA EUROPA" (`ganchos.py` guarda as 3 opções de fundo) e voltou para este texto em 25/11/2026.
+- Categorias novas (25/11/2026): "A melhor de caminhar · Florença", "Todo mundo deveria ir um dia · Bruges" e "Mais cara pelo que entrega · Milão".
 - Cartões: categoria em branco e cidade em mostarda (`#E0AE5C`), Barlow 800 em maiúsculas e minúsculas, tamanho de legenda (66 px), na altura da legenda (y ≈ 1290–1370), centrados em x 540. Sem frase de justificativa. Nada aparece por partes.
 - Imagem igual ao original: sem filtro, grade ou ajuste; takes verticais entram inteiros; só a conversão técnica HLG → SDR. Fotos: perfil Display P3 → sRGB, recorte 9:16 e aproximação lenta e linear de 100% → 108% (pedido do Diego, 25/11/2026).
 - Imagens que remetem ao que se fala: comida = foto do prato; paisagem e nada em recinto fechado.
@@ -24,9 +24,10 @@ Montagem: `../baixar.py` (brutos do Drive em `../fonte/`, fora do git; IDs em `.
 | 18–23 s | Mais armadilha de turista · Veneza | `IMG_6016` (Grand Canal) + `IMG_6062` (multidão no Palácio Ducal) |
 | 23–28 s | Mais superestimada · Bruxelas | `IMG_2217` (Grand-Place) + `IMG_2251` (Manneken Pis) |
 | 28–33 s | Todo mundo deveria ir um dia · Bruges | `IMG_2490` (Rozenhoedkaai com o Belfort) + `IMG_2448` (casas do Markt) |
-| 33–38 s | Não voltaria · Amsterdam | `IMG_1403-1` (canal) + `IMG_2068` (canal ao entardecer) |
-| 38–43 s | Voltaria amanhã · Barcelona | Sagrada Família (`copy_71526AEF…mov`, 1572,2–1574,0 s; trecho do compilado longo) + `IMG_1084` (Casa Batlló) + `IMG_1105` (Casa Milà) |
-| 43–47,7 s | CTA | `italia/IMG_6099` (Grand Canal de Veneza) |
+| 33–38 s | Mais cara pelo que entrega · Milão | `IMG_6265` (Galleria Vittorio Emanuele II) + foto `IMG_6254` (Duomo, com aproximação lenta) |
+| 38–43 s | Não voltaria · Amsterdam | `IMG_1403-1` (canal) + `IMG_2068` (canal ao entardecer) |
+| 43–48 s | Voltaria amanhã · Barcelona | Sagrada Família (`copy_71526AEF…mov`, 1572,2–1574,0 s; trecho do compilado longo) + `IMG_1084` (Casa Batlló) + `IMG_1105` (Casa Milà) |
+| 48–52,7 s | CTA | `italia/IMG_6099` (Grand Canal de Veneza) |
 
 ## Pendências
 1. **Gancho:** diz "países" e o Reel vota por cidade; o Diego escolheu a frase assim (25/11/2026).

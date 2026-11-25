@@ -60,6 +60,8 @@ CARTOES = [
      "cenas": [("c4a", "bruxelas", "IMG_2217.MOV", 0.5, 2.60, 0.5), ("c4b", "bruxelas", "IMG_2251.MOV", 0.4, 2.40, 0.5)]},
     {"id": "c4b", "categoria": "Todo mundo deveria ir um dia", "cidade": "Bruges",
      "cenas": [("c4ba", "bruges", "IMG_2490.MOV", 3.5, 2.50, 0.5), ("c4bb", "bruges", "IMG_2448.MOV", 1.0, 2.50, 0.5)]},
+    {"id": "c4m", "categoria": "Mais cara pelo que entrega", "cidade": "Milão",
+     "cenas": [("c4ma", "milao", "IMG_6265.MOV", 5.0, 2.50, 0.5), ("c4mb", "milao_fotos", "IMG_6254.JPEG", 0.0, 2.50, 0.5)]},
     {"id": "c5", "categoria": "Não voltaria", "cidade": "Amsterdam",  # só paisagem, nada em recinto fechado
      "cenas": [("c5a", "amsterdam_v", "IMG_1403-1.MOV", 0.0, 2.60, 0.5), ("c5b", "amsterdam_v", "IMG_2068.MOV", 1.0, 2.40, 0.5)]},
     {"id": "c6", "categoria": "Voltaria amanhã", "cidade": "Barcelona",
@@ -216,23 +218,16 @@ def cartao_video(c):
 
 
 def gancho_video():
-    """Gancho clássico em Anton, inteiro desde o 1º quadro: frase em português normal (branca) e
-    "VEREDITO DA EUROPA" em maiúsculas, bem maior e na cor mostarda (decisão do Diego, 25/11/2026)."""
+    """Gancho em Anton, texto inteiro desde o 1º quadro (decisão do Diego, 25/11/2026), sobre a Fontana di Trevi."""
     saida = os.path.join(SEG, "gancho_texto.mp4")
     base = cena(HOOK)
-    pequeno = ["Dos países que eu visitei,", "esse é o meu"]
-    grande = ["VEREDITO", "DA EUROPA"]
-    fp = ajustar("\n".join(pequeno), ANTON, 100, 872)
-    fg = ajustar("\n".join(grande), ANTON, 300, 872)
+    texto = "MINHA OPINIÃO\nIMPOPULAR\nSOBRE A EUROPA"
+    f = ajustar(texto, ANTON, 170, 872)
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    y = 290
-    for linha in pequeno:
-        sombra(img, linha, (72, y), fp, BRANCO, "la")
-        y += int(fp.size * 1.08)
-    y += int(fp.size * 0.25)
-    for linha in grande:
-        sombra(img, linha, (72, y), fg, AMBAR, "la")
-        y += int(fg.size * 1.02)
+    y = 300
+    for linha in texto.split("\n"):
+        sombra(img, linha, (72, y), f, BRANCO, "la")
+        y += int(f.size * 1.05)
     arq = os.path.join(TXT, "gancho.png")
     img.save(arq)
     sh(["ffmpeg", "-v", "error", "-y", "-i", base, "-loop", "1", "-framerate", str(FPS), "-t", "3", "-i", arq,
