@@ -42,44 +42,26 @@ TONEMAP = (
 )
 
 # cenas: (id, pasta, arquivo, início no bruto, duração, foco horizontal do recorte 9:16 em planos horizontais)
-# Preferência por takes verticais: entram inteiros, sem recorte (decisão do Diego, 25/11/2026: "igual ao original").
-# Gancho: o Diego andando em terceira pessoa. Cartões: paisagem + Diego em terceira pessoa, mostrando o porquê.
-HOOK = ("gancho", "amsterdam_v", "IMG_1984-1.MOV", 4.50, 3.00, 0.5)
+# Takes verticais entram inteiros (só escala); horizontais só quando o lugar não tem vertical (recorte 9:16).
+# Fotos (HEIC) entram paradas, com recorte 9:16 e o perfil de cor convertido para sRGB. Sem filtro nem grade.
+# Gancho: o Diego andando num lugar que se reconheça como Europa (decisão do Diego, 25/11/2026).
+HOOK = ("gancho", "amsterdam_v", "IMG_1984-1.MOV", 4.50, 3.00, 0.5)  # provisório: falta o Diego indicar o take
 CARTOES = [
-    {
-        "id": "c1", "categoria": "MAIS BARATA", "cidade": "LISBOA",
-        "cenas": [("c1a", "lisboa_v", "IMG_4416.MOV", 0.5, 2.60, 0.5), ("c1b", "lisboa_v", "IMG_4470.MOV", 0.5, 2.40, 0.5)],
-        "grupos": [("Barata, e todo mundo\nte entende.", 0.4, 5.0)],
-    },
-    {
-        "id": "c2", "categoria": "MELHOR COMIDA", "cidade": "ROMA",
-        "cenas": [("c2a", "italia", "IMG_5260.MOV", 1.0, 5.00, 0.5)],
-        "grupos": [("Foge do Coliseu e\ncome muito bem.", 0.4, 5.0)],
-    },
-    {
-        "id": "c3", "categoria": "MAIS ARMADILHA DE TURISTA", "cidade": "VENEZA",
-        "cenas": [("c3a", "italia", "IMG_6016.MOV", 4.0, 2.50, 0.5), ("c3b", "italia", "IMG_6062.MOV", 5.5, 2.50, 0.5)],
-        "grupos": [("Linda,", 0.3, 2.5), ("mas o cartão-postal\né caro.", 2.5, 5.0)],
-    },
-    {
-        "id": "c4", "categoria": "MAIS SUPERESTIMADA", "cidade": "BRUXELAS",
-        "cenas": [("c4a", "bruxelas", "IMG_2217.MOV", 0.5, 2.60, 0.5), ("c4b", "bruxelas", "IMG_2251.MOV", 0.4, 2.40, 0.5)],
-        "grupos": [("Grand-Place linda.", 0.3, 2.6), ("Manneken Pis?\nPequeno demais.", 2.6, 5.0)],
-    },
-    {
-        "id": "c5", "categoria": "NÃO VOLTARIA", "cidade": "AMSTERDAM",
-        "cenas": [("c5a", "amsterdam_v", "IMG_1403-1.MOV", 0.0, 2.60, 0.5), ("c5b", "amsterdam_v", "IMG_1459-1.MOV", 1.0, 2.40, 0.5)],
-        "grupos": [("Já vi de tudo.", 0.3, 2.6), ("E é caro pra voltar\ntão cedo.", 2.6, 5.0)],
-    },
-    {
-        "id": "c6", "categoria": "VOLTARIA AMANHÃ", "cidade": "BARCELONA",
-        "cenas": [("c6a", "barcelona2", "IMG_0986-1.MOV", 1.0, 1.80, 0.5), ("c6b", "barcelona", "IMG_0941.MOV", 0.2, 1.60, 0.5),
-                  ("c6c", "barcelona2", "IMG_1029-1.MOV", 2.0, 1.60, 0.5)],
-        "grupos": [("Praia, comida e cidade\ngrande no mesmo dia.", 0.4, 5.0)],
-    },
+    {"id": "c1", "categoria": "Mais barata", "cidade": "Lisboa",
+     "cenas": [("c1a", "lisboa_v", "IMG_4416.MOV", 0.5, 2.60, 0.5), ("c1b", "lisboa_v", "IMG_4470.MOV", 0.5, 2.40, 0.5)]},
+    {"id": "c2", "categoria": "Melhor comida", "cidade": "Roma",  # começa no prato (foto), depois o Coliseu
+     "cenas": [("c2a", "italia_fotos", "IMG_5040.HEIC", 0.0, 2.60, 0.5), ("c2b", "italia", "IMG_5260.MOV", 1.0, 2.40, 0.5)]},
+    {"id": "c3", "categoria": "Mais armadilha de turista", "cidade": "Veneza",
+     "cenas": [("c3a", "italia", "IMG_6016.MOV", 4.0, 2.50, 0.5), ("c3b", "italia", "IMG_6062.MOV", 5.5, 2.50, 0.5)]},
+    {"id": "c4", "categoria": "Mais superestimada", "cidade": "Bruxelas",
+     "cenas": [("c4a", "bruxelas", "IMG_2217.MOV", 0.5, 2.60, 0.5), ("c4b", "bruxelas", "IMG_2251.MOV", 0.4, 2.40, 0.5)]},
+    {"id": "c5", "categoria": "Não voltaria", "cidade": "Amsterdam",  # só paisagem, nada em recinto fechado
+     "cenas": [("c5a", "amsterdam_v", "IMG_1403-1.MOV", 0.0, 2.60, 0.5), ("c5b", "amsterdam_v", "IMG_2068.MOV", 1.0, 2.40, 0.5)]},
+    {"id": "c6", "categoria": "Voltaria amanhã", "cidade": "Barcelona",
+     "cenas": [("c6a", "barcelona2", "IMG_1084.MOV", 0.2, 2.50, 0.5), ("c6b", "barcelona2", "IMG_1105.MOV", 0.5, 2.50, 0.5)]},
 ]
-CTA_CENA = ("cta", "barcelona2", "IMG_0986-1.MOV", 6.0, 4.70, 0.5)
-CTA_PLACAS = [("placa_cta.mov", 0.0), ("placa_perfil.mov", 2.40)]  # (arquivo, início no CTA, s)
+CTA_CENA = ("cta", "paris_v", "IMG_3172.MOV", 0.0, 4.70, 0.5)  # Torre Eiffel à noite: remete à Europa
+CTA_PLACAS = [("placa_cta.mov", 0.0), ("placa_perfil.mov", 2.65)]  # (arquivo, início no CTA, s)
 
 
 def sh(cmd):
@@ -113,6 +95,11 @@ def cena(c):
     if os.path.exists(saida):
         return saida
     bruto = os.path.join(FONTE, pasta, arq)
+    if arq.upper().endswith((".HEIC", ".JPG", ".JPEG", ".PNG")):
+        png = foto_9x16(bruto, os.path.join(SEG, f"{cid}.png"), foco)
+        sh(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-framerate", str(FPS), "-t", f"{dur}", "-i", png,
+            "-vf", "format=yuv420p", "-c:v", "libx264", "-crf", "14", "-preset", "medium", "-movflags", "+faststart", saida])
+        return saida
     w, h, trc = sonda(bruto)
     if w > h:  # horizontal: recorte 9:16 centrado no foco
         enq = f"crop=w=ih*9/16:h=ih:x=(iw-ih*9/16)*{foco}:y=0,scale={W}:{H}:flags=lanczos"
@@ -123,6 +110,30 @@ def cena(c):
         "-vf", f"{cor}{enq},fps={FPS},format=yuv420p", "-c:v", "libx264", "-crf", "14",
         "-preset", "medium", "-movflags", "+faststart", saida])
     return saida
+
+
+def foto_9x16(bruto, png, foco):
+    """Foto do iPhone: orientação do EXIF, perfil de cor (Display P3) → sRGB, recorte 9:16, 1080 × 1920."""
+    import io
+    from PIL import ImageCms, ImageOps
+    import pillow_heif
+    pillow_heif.register_heif_opener()
+    im = ImageOps.exif_transpose(Image.open(bruto))
+    icc = im.info.get("icc_profile")
+    im = im.convert("RGB")
+    if icc:
+        im = ImageCms.profileToProfile(im, ImageCms.ImageCmsProfile(io.BytesIO(icc)), ImageCms.createProfile("sRGB"))
+    w, h = im.size
+    if w / h > 9 / 16:
+        nw = int(h * 9 / 16)
+        x = int((w - nw) * foco)
+        im = im.crop((x, 0, x + nw, h))
+    else:
+        nh = int(w * 16 / 9)
+        y = (h - nh) // 2
+        im = im.crop((0, y, w, y + nh))
+    im.resize((W, H), Image.LANCZOS).save(png)
+    return png
 
 
 def sombra(img, texto, xy, fonte, cor, ancora):
@@ -155,21 +166,12 @@ def ajustar(texto, caminho, maximo, largura):
 
 
 def png_rotulo(cartao):
+    """Categoria (branca) e cidade (mostarda) em Barlow, tamanho de legenda, na altura da legenda, centradas em x 540."""
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    f_cat = ajustar(cartao["categoria"], BARLOW_800, 68, 872)
-    sombra(img, cartao["categoria"], (72, 256), f_cat, BRANCO, "la")
-    f_cid = ajustar(cartao["cidade"], BARLOW_800, 190, 872)
-    sombra(img, cartao["cidade"], (72, 256 + int(f_cat.size * 1.15)), f_cid, AMBAR, "la")
+    f = ImageFont.truetype(BARLOW_800, 66)
+    sombra(img, cartao["categoria"], (540, 1290), f, BRANCO, "mm")
+    sombra(img, cartao["cidade"], (540, 1290 + 80), f, AMBAR, "mm")
     arq = os.path.join(TXT, f"{cartao['id']}_rotulo.png")
-    img.save(arq)
-    return arq
-
-
-def png_grupo(cid, i, texto):
-    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    f = ImageFont.truetype(BARLOW_700, 66)
-    sombra(img, texto, (540, 1320), f, BRANCO, "mm")
-    arq = os.path.join(TXT, f"{cid}_g{i}.png")
     img.save(arq)
     return arq
 
@@ -187,13 +189,12 @@ def cartao_video(c):
     saida = os.path.join(SEG, f"{c['id']}_texto.mp4")
     base = concat([cena(x) for x in c["cenas"]], os.path.join(SEG, f"{c['id']}_base.mp4"))
     dur = sum(x[4] for x in c["cenas"])
-    pngs = [(png_rotulo(c), 0.0, dur)] + [(png_grupo(c["id"], i, t), a, b) for i, (t, a, b) in enumerate(c["grupos"])]
+    pngs = [(png_rotulo(c), 0.0, dur)]
     entradas = ["-i", base]
     fg = []
     for i, (p, a, b) in enumerate(pngs, start=1):
         entradas += ["-loop", "1", "-framerate", str(FPS), "-t", f"{dur}", "-i", p]
-        # entrada de 120 ms (opacidade 0 → 1); saída curta no fim do grupo (docs/FORMATOS_REELS.md, 6)
-        fg.append(f"[{i}:v]format=rgba,fade=t=in:st={a}:d=0.12:alpha=1,fade=t=out:st={max(a, b - 0.10)}:d=0.10:alpha=1[t{i}]")
+        fg.append(f"[{i}:v]format=rgba[t{i}]")  # texto inteiro desde o corte, sem aparecer por partes
     cadeia = "[0:v]"
     for i in range(1, len(pngs) + 1):
         saida_no = f"[v{i}]"
@@ -205,26 +206,20 @@ def cartao_video(c):
 
 
 def gancho_video():
+    """Gancho em Anton, com o texto inteiro desde o 1º quadro (decisão do Diego, 25/11/2026)."""
     saida = os.path.join(SEG, "gancho_texto.mp4")
     base = cena(HOOK)
-    linhas = [("MINHA OPINIÃO", BRANCO, 0.10), ("IMPOPULAR", BRANCO, 0.90), ("SOBRE A EUROPA", BRANCO, 1.70)]
-    f = ajustar("\n".join(l[0] for l in linhas), ANTON, 230, 872)
-    entradas = ["-i", base]
-    fg = []
+    texto = "MINHA OPINIÃO\nIMPOPULAR\nSOBRE A EUROPA"
+    f = ajustar(texto, ANTON, 170, 872)
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     y = 300
-    for i, (t, cor, ini) in enumerate(linhas, start=1):
-        img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-        sombra(img, t, (72, y), f, cor, "la")
-        arq = os.path.join(TXT, f"gancho_l{i}.png")
-        img.save(arq)
-        entradas += ["-loop", "1", "-framerate", str(FPS), "-t", "3", "-i", arq]
-        fg.append(f"[{i}:v]format=rgba,fade=t=in:st={ini}:d=0.12:alpha=1[t{i}]")
+    for linha in texto.split("\n"):
+        sombra(img, linha, (72, y), f, BRANCO, "la")
         y += int(f.size * 1.05)
-    cadeia = "[0:v]"
-    for i in range(1, len(linhas) + 1):
-        fg.append(f"{cadeia}[t{i}]overlay=0:0:format=auto[v{i}]")
-        cadeia = f"[v{i}]"
-    sh(["ffmpeg", "-v", "error", "-y", *entradas, "-filter_complex", ";".join(fg), "-map", cadeia, "-an", "-t", "3",
+    arq = os.path.join(TXT, "gancho.png")
+    img.save(arq)
+    sh(["ffmpeg", "-v", "error", "-y", "-i", base, "-loop", "1", "-framerate", str(FPS), "-t", "3", "-i", arq,
+        "-filter_complex", "[1:v]format=rgba[t];[0:v][t]overlay=0:0:format=auto[v]", "-map", "[v]", "-an", "-t", "3",
         "-c:v", "libx264", "-crf", "14", "-preset", "medium", "-pix_fmt", "yuv420p", saida])
     return saida
 
