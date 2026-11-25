@@ -31,10 +31,10 @@ Som `keen` com o pico no corte entre o gancho e o primeiro cartão (CLAUDE.md, s
 | 18–23 s | MAIS SUPERESTIMADA | Bruxelas | Grand-Place linda. Manneken Pis? Pequeno demais. | Corte seco |
 | 23–28 s | NÃO VOLTARIA | Amsterdam | Já vi de tudo. E é caro pra voltar tão cedo. | Corte seco |
 | 28–33 s | VOLTARIA AMANHÃ | Barcelona | Praia, comida e cidade grande no mesmo dia. | Corte seco |
-| 33–38 s | CTA | — | DS V2 (placa e `@primeirodiaem`) | DS V2 |
+| 33–38 s | CTA (comentar) | — | Placa de direção do DS V2: `ME CONTA SE` / `VOCÊ CONCORDA →`, depois `@primeirodiaem` | DS V2 |
 
 ## Pendências
 - **Amsterdam:** motivo dado pelo Diego (25/11/2026): na segunda ida sentiu que já tinha visto tudo, e a cidade é cara. Ele não quer citar que a primeira visita foi de 1 dia.
 - **Imagens:** escolher o plano mais forte e estável de cada cidade depois que o roteiro estiver aprovado, sem tratamento de cor (seção 12). Sem material de apoio fora do acervo.
-- **CTA:** definir o texto único do CTA antes de montar (referência de conteúdo, CTA único).
+- **CTA:** único e de comentar (referência de conteúdo, 3.4). Legenda do post com o mesmo verbo: "Me conta nos comentários: você concorda?".
 - DS V2 só no CTA (seção 6).
