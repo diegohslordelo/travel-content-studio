@@ -45,17 +45,21 @@ TONEMAP = (
 # Takes verticais entram inteiros (só escala); horizontais só quando o lugar não tem vertical (recorte 9:16).
 # Fotos (HEIC) entram paradas, com recorte 9:16 e o perfil de cor convertido para sRGB. Sem filtro nem grade.
 # Gancho: o Diego andando num lugar que se reconheça como Europa (decisão do Diego, 25/11/2026).
-HOOK = ("gancho", "paris_v", "IMG_3171.MOV", 1.00, 3.00, 0.5)  # Torre Eiffel à noite (não há take do Diego andando em 3ª pessoa na rua)
+HOOK = ("gancho", "bruges", "IMG_2489.MOV", 0.40, 3.00, 0.45)  # o Diego andando em 3ª pessoa numa rua de Bruges
 CARTOES = [
     {"id": "c1", "categoria": "Mais barata", "cidade": "Lisboa",
      "cenas": [("c1a", "lisboa_v", "IMG_4416.MOV", 0.5, 2.60, 0.5), ("c1b", "lisboa_v", "IMG_4470.MOV", 0.5, 2.40, 0.5)]},
     {"id": "c2", "categoria": "Melhor comida", "cidade": "Roma",  # só comida: pizza de Roma + Osteria da Fortunata
      # A foto da Fortunata (IMG_6335) é da casa de Milão (GPS, 02/01/2025); entra no cartão de Roma por decisão do Diego (25/11/2026).
      "cenas": [("c2a", "italia_fotos", "IMG_5040.HEIC", 0.0, 2.50, 0.5), ("c2b", "italia_fotos", "IMG_6335.HEIC", 0.0, 2.50, 0.5)]},
+    {"id": "c2f", "categoria": "A melhor de caminhar", "cidade": "Florença",
+     "cenas": [("c2fa", "florenca", "IMG_5554.MOV", 0.3, 2.50, 0.5), ("c2fb", "florenca", "IMG_5583.MOV", 2.5, 2.50, 0.5)]},
     {"id": "c3", "categoria": "Mais armadilha de turista", "cidade": "Veneza",
      "cenas": [("c3a", "italia", "IMG_6016.MOV", 4.0, 2.50, 0.5), ("c3b", "italia", "IMG_6062.MOV", 5.5, 2.50, 0.5)]},
     {"id": "c4", "categoria": "Mais superestimada", "cidade": "Bruxelas",
      "cenas": [("c4a", "bruxelas", "IMG_2217.MOV", 0.5, 2.60, 0.5), ("c4b", "bruxelas", "IMG_2251.MOV", 0.4, 2.40, 0.5)]},
+    {"id": "c4b", "categoria": "Todo mundo deveria ir um dia", "cidade": "Bruges",
+     "cenas": [("c4ba", "bruges", "IMG_2490.MOV", 3.5, 2.50, 0.5), ("c4bb", "bruges", "IMG_2448.MOV", 1.0, 2.50, 0.5)]},
     {"id": "c5", "categoria": "Não voltaria", "cidade": "Amsterdam",  # só paisagem, nada em recinto fechado
      "cenas": [("c5a", "amsterdam_v", "IMG_1403-1.MOV", 0.0, 2.60, 0.5), ("c5b", "amsterdam_v", "IMG_2068.MOV", 1.0, 2.40, 0.5)]},
     {"id": "c6", "categoria": "Voltaria amanhã", "cidade": "Barcelona",
