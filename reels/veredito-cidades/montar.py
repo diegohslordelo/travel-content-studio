@@ -59,7 +59,9 @@ CARTOES = [
     {"id": "c5", "categoria": "Não voltaria", "cidade": "Amsterdam",  # só paisagem, nada em recinto fechado
      "cenas": [("c5a", "amsterdam_v", "IMG_1403-1.MOV", 0.0, 2.60, 0.5), ("c5b", "amsterdam_v", "IMG_2068.MOV", 1.0, 2.40, 0.5)]},
     {"id": "c6", "categoria": "Voltaria amanhã", "cidade": "Barcelona",
-     "cenas": [("c6a", "barcelona2", "IMG_1084.MOV", 0.2, 2.50, 0.5), ("c6b", "barcelona2", "IMG_1105.MOV", 0.5, 2.50, 0.5)]},
+     # Sagrada Família: trecho do compilado longo (7,5 GB; só o trecho baixado, ver baixar.py), take de 1572,0–1576,1 s
+     "cenas": [("c6a", "barcelona_longo", "copy_71526AEF-84EA-49ED-8F07-487197B471F9.mov", 1572.2, 1.80, 0.38),
+               ("c6b", "barcelona2", "IMG_1084.MOV", 0.2, 1.60, 0.5), ("c6c", "barcelona2", "IMG_1105.MOV", 0.5, 1.60, 0.5)]},
 ]
 CTA_CENA = ("cta", "italia", "IMG_6099.MOV", 5.0, 4.70, 0.5)  # Grand Canal de Veneza: remete à Europa
 CTA_PLACAS = [("placa_cta.mov", 0.0), ("placa_perfil.mov", 2.65)]  # (arquivo, início no CTA, s)
@@ -98,8 +100,11 @@ def cena(c):
     bruto = os.path.join(FONTE, pasta, arq)
     if arq.upper().endswith((".HEIC", ".JPG", ".JPEG", ".PNG")):
         png = foto_9x16(bruto, os.path.join(SEG, f"{cid}.png"), foco)
-        sh(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-framerate", str(FPS), "-t", f"{dur}", "-i", png,
-            "-vf", "format=yuv420p", "-c:v", "libx264", "-crf", "14", "-preset", "medium", "-movflags", "+faststart", saida])
+        q = round(dur * FPS)
+        # aproximação lenta e linear de 100% → 108% (como uma câmera chegando perto; decisão do Diego, 25/11/2026)
+        zoom = f"scale=w='2*trunc({W // 2}*(1+0.08*n/{q - 1}))':h=-2:eval=frame:flags=lanczos,crop={W}:{H},setsar=1"
+        sh(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-framerate", str(FPS), "-i", png, "-frames:v", str(q),
+            "-vf", f"{zoom},format=yuv420p", "-c:v", "libx264", "-crf", "14", "-preset", "medium", "-movflags", "+faststart", saida])
         return saida
     w, h, trc = sonda(bruto)
     if w > h:  # horizontal: recorte 9:16 centrado no foco
@@ -133,7 +138,7 @@ def foto_9x16(bruto, png, foco):
         nh = int(w * 16 / 9)
         y = (h - nh) // 2
         im = im.crop((0, y, w, y + nh))
-    im.resize((W, H), Image.LANCZOS).save(png)
+    im.resize((2 * W, 2 * H), Image.LANCZOS).save(png)  # 2× para a aproximação não perder nitidez
     return png
 
 
