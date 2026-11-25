@@ -45,7 +45,7 @@ TONEMAP = (
 # Takes verticais entram inteiros (só escala); horizontais só quando o lugar não tem vertical (recorte 9:16).
 # Fotos (HEIC) entram paradas, com recorte 9:16 e o perfil de cor convertido para sRGB. Sem filtro nem grade.
 # Gancho: o Diego andando num lugar que se reconheça como Europa (decisão do Diego, 25/11/2026).
-HOOK = ("gancho", "bruges", "IMG_2489.MOV", 0.40, 3.00, 0.45)  # o Diego andando em 3ª pessoa numa rua de Bruges
+HOOK = ("gancho", "italia", "IMG_5067.MOV", 1.50, 3.00, 0.5)  # Fontana di Trevi (vertical, sem recorte), escolhida pelo Diego em 25/11/2026
 CARTOES = [
     {"id": "c1", "categoria": "Mais barata", "cidade": "Lisboa",
      "cenas": [("c1a", "lisboa_v", "IMG_4416.MOV", 0.5, 2.60, 0.5), ("c1b", "lisboa_v", "IMG_4470.MOV", 0.5, 2.40, 0.5)]},
@@ -216,16 +216,23 @@ def cartao_video(c):
 
 
 def gancho_video():
-    """Gancho em Anton, com o texto inteiro desde o 1º quadro (decisão do Diego, 25/11/2026)."""
+    """Gancho clássico em Anton, inteiro desde o 1º quadro: frase em português normal (branca) e
+    "VEREDITO DA EUROPA" em maiúsculas, bem maior e na cor mostarda (decisão do Diego, 25/11/2026)."""
     saida = os.path.join(SEG, "gancho_texto.mp4")
     base = cena(HOOK)
-    texto = "MINHA OPINIÃO\nIMPOPULAR\nSOBRE A EUROPA"
-    f = ajustar(texto, ANTON, 170, 872)
+    pequeno = ["Dos países que eu visitei,", "esse é o meu"]
+    grande = ["VEREDITO", "DA EUROPA"]
+    fp = ajustar("\n".join(pequeno), ANTON, 100, 872)
+    fg = ajustar("\n".join(grande), ANTON, 300, 872)
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    y = 300
-    for linha in texto.split("\n"):
-        sombra(img, linha, (72, y), f, BRANCO, "la")
-        y += int(f.size * 1.05)
+    y = 290
+    for linha in pequeno:
+        sombra(img, linha, (72, y), fp, BRANCO, "la")
+        y += int(fp.size * 1.08)
+    y += int(fp.size * 0.25)
+    for linha in grande:
+        sombra(img, linha, (72, y), fg, AMBAR, "la")
+        y += int(fg.size * 1.02)
     arq = os.path.join(TXT, "gancho.png")
     img.save(arq)
     sh(["ffmpeg", "-v", "error", "-y", "-i", base, "-loop", "1", "-framerate", str(FPS), "-t", "3", "-i", arq,
