@@ -14,9 +14,9 @@ Duração: ~38 s. Cartões de 5 s.
 Letras garrafais, linha a linha:
 
 ```
-ESSE É O VEREDITO
-DAS CIDADES DA EUROPA
-QUE NINGUÉM QUER OUVIR
+NEM TODA CIDADE
+DA EUROPA
+MERECE O HYPE
 ```
 
 Som `keen` com o pico no corte entre o gancho e o primeiro cartão (CLAUDE.md, seção 12).
@@ -25,11 +25,11 @@ Som `keen` com o pico no corte entre o gancho e o primeiro cartão (CLAUDE.md, s
 
 | Tempo | Categoria | Cidade | Texto na tela | Transição |
 |---|---|---|---|---|
-| 3–8 s | MAIS BARATA | Lisboa | A mais barata. Mas o barato já acabou. | Corte seco |
-| 8–13 s | MELHOR COMIDA | Roma | Só se você sair de perto do Coliseu. | Corte seco |
-| 13–18 s | MAIS ARMADILHA DE TURISTA | Veneza | Pague mais para ver menos. | Corte seco |
-| 18–23 s | MAIS SUPERESTIMADA | Bruxelas | O Manneken Pis é minúsculo. A Grand-Place salva. | Corte seco |
-| 23–28 s | NÃO VOLTARIA | Amsterdam | Fui duas vezes. A primeira bastava. *(motivo a confirmar)* | Corte seco |
+| 3–8 s | MAIS BARATA | Lisboa | Barata, e todo mundo te entende. | Corte seco |
+| 8–13 s | MELHOR COMIDA | Roma | Foge do Coliseu e come muito bem. | Corte seco |
+| 13–18 s | CILADA DE TURISTA | Veneza | Linda, mas o cartão-postal é caro. | Corte seco |
+| 18–23 s | MAIS SUPERESTIMADA | Bruxelas | Grand-Place linda. Manneken Pis? Pequeno demais. | Corte seco |
+| 23–28 s | NÃO VOLTARIA | Amsterdam | Fui duas vezes. Gostei, mas uma bastava. *(motivo a confirmar)* | Corte seco |
 | 28–33 s | VOLTARIA AMANHÃ | Barcelona | Praia, comida e cidade grande no mesmo dia. | Corte seco |
 | 33–38 s | CTA | — | DS V2 (placa e `@primeirodiaem`) | DS V2 |
 
