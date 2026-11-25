@@ -30,7 +30,7 @@ Montagem: `../baixar.py` (brutos do Drive em `../fonte/`, fora do git; IDs em `.
 | 48–52,7 s | CTA | `italia/IMG_6099` (Grand Canal de Veneza) |
 
 ## Pendências
-1. **Gancho:** diz "países" e o Reel vota por cidade; o Diego escolheu a frase assim (25/11/2026).
+1. **Gancho:** o take do Diego andando em terceira pessoa (Bruges, `IMG_2489`) ficou de fora; o Diego escolheu a Fontana di Trevi.
 2. **Recorte 9:16:** Grand-Place, Bruges, Sagrada Família, Casa Batlló e Casa Milà só existem na horizontal.
 6. **Sagrada Família:** não está nos takes avulsos de Barcelona (o catálogo só tem 09 e 10/03); veio do compilado longo de 7,5 GB, do qual o `baixar.py` baixa só o trecho.
 3. **"Mais barata" em Lisboa** ainda depende de o Diego confirmar pelo gasto real.
