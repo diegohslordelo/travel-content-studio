@@ -1,0 +1,2 @@
+# Cota de Git LFS do repositório esgotada (25/11/2026): por autorização do Diego, o vídeo desta revisão vai como arquivo comum do git.
+*.mp4 -filter -diff -merge binary
