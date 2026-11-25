@@ -1,9 +1,10 @@
-# Países onde o brasileiro é rico · Roteiro (Tela dividida) · v4
+# Países onde o brasileiro vive como rico · Roteiro (Tela dividida) · v5
 
 **Formato:** Tela dividida (Trello, Formato viral validado 01, variação "analisar") · **Duração-alvo:** ≤ 50 s (pedido do Diego, 17/11/2026).
 **Pedido do Diego (17/11/2026):** ignorar o acervo; sem Argentina; países onde a viagem realmente vale para o brasileiro; dólar a **R$ 5,77** e euro a **R$ 6,35** sem IOF; o IOF entra no **problema**.
 **DS só no CTA** (CLAUDE.md, 6): do gancho até antes do CTA, linguagem do formato (`docs/FORMATOS_REELS.md`); o DS V2 entra só na placa final.
-**Status:** v4 para aprovação (v1 a v3 no histórico do git).
+**Status:** v5 para aprovação (v1 a v4 no histórico do git).
+**v5 (pedido do Diego, 25/11/2026):** novo gancho, "3 países onde o brasileiro vive como rico e gasta pouco". **Saiu todo valor de gasto por dia** (o "comer bem por dia" e a ideia dos 100 reais): comida de rua cabe em R$ 100, mas a média de turista não, então a afirmação não se sustentava sem condição. Os países continuam (Vietnã, Tailândia, Egito), com o desenvolvimento novo: contagem 1-2-3, gancho secundário ("o terceiro quase ninguém considera"), uma pergunta que abre e fecha no Vietnã e a massagem na Tailândia como o "luxo barato".
 **v4 (pedido do Diego, 17/11/2026), só na Opção A:** o CTA (frase 12) passou de "manda pra quem…" para **seguir o perfil por mais dicas de viagem**.
 **v3 (pedido do Diego, 17/11/2026), só na Opção A:** as frases 2 e 3 viraram uma só, e entrou uma frase de linguagem familiar e imagem mental (o café de 3 euros convertido de cabeça) antes da virada. Para caber em 50 s: as dicas viraram "País: 1 real, X moeda"; o koshari entrou na frase do euro; o CTA ficou mais curto. Duas opções; recomendação no fim.
 **v2 (pedido do Diego, 17/11/2026):** cada dica de país termina com quanto custa **passar o dia comendo bem**. Para caber em 50 s, saíram os preços de prato de rua do Vietnã e da Tailândia e a frase "O real não é fraco no mundo todo…" (Opção A), e a frase "Troca a Europa…" (Opção B). A duração agora é estimada pelas palavras **faladas** (números por extenso), não pelas escritas: a v1 subestimava.
@@ -29,11 +30,13 @@
 | "Café de 3 euros… quase 20 reais" | 3 × 6,57 = **R$ 19,71** com IOF (R$ 19,05 sem) | — | Cotação do Diego. Os 3 € são **exemplo hipotético** ("sabe aquele café…"), não preço médio afirmado |
 | "Com 6 reais e 13 você não compra nem 1 euro" | Verdade com ou sem IOF (6,35 / 6,57) | — | Cotação do Diego |
 
+| 1 milhão de dong = quantos pratos de rua | **20 pratos** | 1.000.000 ÷ 50.000 | Mesmo preço de prato de rua da linha de Hanói acima |
+| Massagem tailandesa de 1 h em loja de rua, Bangkok | 200–300 baht → **R$ 34,57 a R$ 51,85** com IOF; falado "uns 50 reais" (topo da faixa, lado conservador) | 300 × 0,167 × 1,035 | [Klook](https://www.klook.com/blog/cheap-massage-bangkok/) (200–300 baht em lojas de bairro) · [Agoda](https://www.agoda.com/travel-guides/thailand/bangkok/places-for-thai-massage-in-bangkok-budget-studios-luxury-spas/) (lojas a 200 e 290 baht). Spas como Health Land começam em 500 baht: não é esse o preço do vídeo |
 | Comer bem o dia todo · Tailândia | US$ 30 → **≈ R$ 180** com IOF (R$ 179,16) | 30 × 5,77 × 1,035 | Média diária de comida por viajante do [Budget Your Trip](https://www.budgetyourtrip.com/thailand) (US$ 30 / ฿ 986; a página de Bangkok dá US$ 35) |
 | Comer bem o dia todo · Vietnã | US$ 19 → **≈ R$ 115** com IOF (R$ 113,47) | 19 × 5,77 × 1,035 | Faixa "intermediária" de comida por dia em [exiap](https://exiap.co.uk/guides/spending-money-how-much-for-vietnam) (US$ 19 / 368.521 ₫). Fonte mais fraca das três: não encontrei a página do Budget Your Trip do Vietnã |
 | Comer bem o dia todo · Egito | US$ 22 → **≈ R$ 130** com IOF (R$ 131,38) | 22 × 5,77 × 1,035 | Média diária de comida por viajante do [Budget Your Trip](https://www.budgetyourtrip.com/egypt) (US$ 22 / E£ 1.165; faixa de US$ 9 a 55) |
 
-**"Passar o dia comendo bem" = todas as refeições de um dia, por pessoa, no gasto médio de quem viajou** (não é comida de rua o dia todo, nem inclui hospedagem). As páginas do Budget Your Trip recusaram leitura automática (HTTP 403): os valores vieram dos trechos da busca. **Abrir as páginas no navegador e conferir antes do render.** Os valores falados são arredondados e ditos com "uns"; na tela, "≈".
+**Fora do roteiro desde a v5** (ficam só como registro). **"Passar o dia comendo bem" = todas as refeições de um dia, por pessoa, no gasto médio de quem viajou** (não é comida de rua o dia todo, nem inclui hospedagem). As páginas do Budget Your Trip recusaram leitura automática (HTTP 403): os valores vieram dos trechos da busca. **Abrir as páginas no navegador e conferir antes do render.** Os valores falados são arredondados e ditos com "uns"; na tela, "≈".
 
 **Se quiser o dia inteiro (hospedagem, comida, passeios e transporte local), em vez de só comida:** Tailândia US$ 98 ≈ R$ 585 ([Budget Your Trip](https://www.budgetyourtrip.com/thailand/trip-cost-TH)); Vietnã US$ 65 ≈ R$ 388 (faixa intermediária atribuída ao Budget Your Trip por [Travel Value Finder](https://travelvaluefinder.com/vietnam-travel-budget/)); Egito US$ 53 ≈ R$ 317 (faixa intermediária, abr/2026, atribuída ao Budget Your Trip). Fontes mais fracas e menos comparáveis entre si: por isso o roteiro usa só a comida.
 
@@ -43,36 +46,41 @@
 
 ---
 
-## Opção A · "Milionário no Vietnã" (AIDA)
+## Opção A · "3 países onde o brasileiro vive como rico" (AIDA, contagem 1-2-3)
 
-**Estrutura:** Universal AIDA (Trello) · **Gancho:** resultado/curiosidade com número · **Duração:** ≈ 49 s (≈ 148 palavras faladas, números por extenso, a ≈ 3 palavras/s). Margem curta: fala rápida e respiros cortados.
-**Sinal que favorece:** retenção (o "milionário" abre um loop; o refrão "pra passar o dia comendo bem" faz esperar o número do próximo país) e **seguidores ganhos** (o CTA promete mais destinos do mesmo tipo; o envio continua possível, mas deixa de ser pedido).
-**Elementos viciantes da frase 3 (rótulos do Trello):** *linguagem familiar* (todo brasileiro já converteu preço de cabeça no exterior) e *imagem mental* (a xícara, o preço em euro, a conta na cabeça). O euro volta na frase 10 ("6 reais e 13 não compram nem 1 euro"): a ideia se repete e fecha o loop.
+**Estrutura:** Universal AIDA (Trello) em formato de lista · **Duração:** ≈ 49 s (≈ 147 palavras faladas, números por extenso, a ≈ 3 palavras/s). Margem curta: fala rápida e respiros cortados.
+**Sinal que favorece:** retenção (três *loops* abertos, ver abaixo) e seguidores ganhos (CTA de seguir por mais destinos).
 
-**Gancho na tela (metade de cima, Anton, linha a linha):** `COM R$ 232` / `VOCÊ VIRA` / **`MILIONÁRIO`** / `NO VIETNÃ`
+**Como o roteiro prende (os *loops*):**
+1. **Gancho secundário, aberto no 1º segundo e fechado só aos ≈ 36 s:** "o terceiro quase ninguém considera". Na tela, o 3º país fica como um cartão com **"?"** desde o gancho; ele só vira **EGITO** na frase 8. Quem quer saber qual é precisa ficar até o fim da lista.
+2. **Contagem "Número 1, Número 2…":** a pessoa sabe quanto falta e espera o próximo.
+3. **Pergunta e resposta no Vietnã:** "Compra o quê?" abre uma curiosidade de 2 segundos e fecha logo, o que reinicia a atenção no meio do vídeo.
+4. **Imagem de rico em cada país:** milionário (Vietnã), massagem todo dia (Tailândia), prato nacional mais barato que 1 euro (Egito). O euro volta da frase 3 e fecha a comparação.
 
-**Refrão visual (fim de cada dica):** a mesma animação nos 3 países, para virar padrão reconhecível. Cartão "UM DIA" com 3 ícones em traço (café, almoço, jantar) que acendem um a um e o total grande no fim (`≈ R$ 115`), em fundo `#14120F` e cor de destaque do formato (`FORMATOS_REELS.md`, 5.4). `PDX_obturador` no total (−8 dB).
+**Gancho na tela (metade de cima, Anton, linha a linha):** `3 PAÍSES` / `ONDE O BRASILEIRO` / **`VIVE COMO RICO`** / `E GASTA POUCO`. Na 2ª frase, 3 cartões pequenos aparecem lado a lado: os dois primeiros com imagem desfocada, o terceiro com **"?"**.
 
 | # | Tempo | Etapa | Fala | Imagem / fundo (em cima) | Transição · som |
 |---|---|---|---|---|---|
-| 1 | 0–3,7 s | Atenção | Com 232 reais você vira milionário no Vietnã. | Animação: notas de dong caindo, contador sobe até **1.000.000** | Corte seco · `PDX_impacto` em "milionário" (−4 dB) |
-| 2 | 3,7–14,4 s | Interesse · problema + IOF | Dólar a 5,77, euro a 6,35; no cartão, com 3,5% de IOF, vira 5,97 e 6,57. | Animação: placar de câmbio `US$ 5,77` · `€ 6,35`; em "IOF" bate o carimbo "+3,5% IOF" e os números rolam até **5,97** e **6,57** (cor de destaque do formato, não o amarelo do DS) | `PDX_obturador` em "5,97" (−8 dB) |
-| 3 | 14,4–19,7 s | Interesse · linguagem familiar + imagem mental | Sabe aquele café de 3 euros na Europa? Você já converte de cabeça: quase 20 reais. | **Tela cheia de apoio:** close de xícara de expresso num balcão de café europeu (Wikimedia, sem rosto), etiqueta `3 €` → a conta aparece "escrita à mão" ao lado e vira **`≈ R$ 20`** em "20 reais". Legenda em y 1320 com degradê na base | Corte seco · `PDX_riser` começa em "converte" e sobe até o corte da frase 4 (−8 dB) |
-| 4 | 19,7–23,4 s | Virada | Só que tem país onde o real manda, mesmo com IOF. | **Diego em tela cheia** (respiro), aproximação lenta | Corte seco no fim do riser (o pico do som esconde o corte) |
-| 5 | 23,4–26 s | Vietnã | Vietnã: 1 real, mais de 4 mil dong. | Cédula de real ao lado de cédulas de dong (Wikimedia) | **Luz de passagem** na volta à tela dividida |
-| 6 | 26–29,7 s | Vietnã · dia | Pra passar o dia comendo bem: uns 115 reais. | Refrão visual: `UM DIA` → **`≈ R$ 115`** (por trás, comida de rua em Hanói) | `PDX_obturador` no total |
-| 7 | 29,7–31,7 s | Tailândia | Tailândia: 1 real, quase 6 baht. | Cédula de baht (Wikimedia), na mesma posição da cédula de dong | *Match cut* cédula → cédula · `PDX_swish` (−6 dB) |
-| 8 | 31,7–35 s | Tailândia · dia | Pra passar o dia comendo bem: uns 180. | Refrão visual → **`≈ R$ 180`** (por trás, wok de rua em Bangkok) | `PDX_obturador` no total |
-| 9 | 35–36,7 s | Egito | Egito: 1 real, 9 libras. | Cédula de libra egípcia (mesma posição) | *Match cut* · `PDX_swish` |
-| 10 | 36,7–41,7 s | Egito · desejo | Com 6 reais e 13 você não compra nem 1 euro. No Cairo, você almoça um koshari. | Tela cheia: moeda de 1 euro "fora de alcance" (ecoa a xícara da frase 3) → corte para o prato de koshari com etiqueta `R$ 6,13` | Corte seco em "No Cairo" · `PDX_impacto` em "koshari" |
-| 11 | 41,7–45 s | Egito · dia | Pra passar o dia comendo bem: uns 130. | Refrão visual → **`≈ R$ 130`**; termina em **Diego em tela cheia** | **Clarão de volta** para o Diego |
-| 12 | 45–49 s | Ação (CTA) | Me segue pra mais dicas de viagem onde o seu real rende. | Plano do gancho (notas de dong, loop) + placa DS **`SEGUE PRA MAIS DICAS →`** (DS V2, 2.7: verbo + módulo de seta) | Corte seco · *clack* da placa (−6 dB) |
+| 1 | 0–6,3 s | Atenção + gancho secundário | Vou te mostrar 3 países onde o brasileiro vive como rico e gasta pouco. E o terceiro quase ninguém considera. | Texto do gancho; em "o terceiro", os 3 cartões (o 3º com **"?"**) | Corte seco · `PDX_impacto` no "?" (−4 dB) |
+| 2 | 6,3–17 s | Interesse · problema + IOF | Dólar a 5,77, euro a 6,35; no cartão, com 3,5% de IOF, vira 5,97 e 6,57. | Animação: placar de câmbio `US$ 5,77` · `€ 6,35`; em "IOF" bate o carimbo "+3,5% IOF" e os números rolam até **5,97** e **6,57** | `PDX_obturador` em "5,97" (−8 dB) |
+| 3 | 17–21 s | Interesse · linguagem familiar + imagem mental | Sabe aquele café de 3 euros? Na cabeça, já virou quase 20 reais. | **Tela cheia de apoio:** expresso no balcão (Wikimedia), etiqueta `3 €` → conta "escrita à mão" → **`≈ R$ 20`** | Corte seco · `PDX_riser` começa em "Na cabeça" e sobe até o corte da frase 4 (−8 dB) |
+| 4 | 21–24 s | Virada | Mas nesses três, o real manda, mesmo com IOF. | **Diego em tela cheia**, aproximação lenta | Corte seco no pico do riser |
+| 5 | 24–28,7 s | Nº 1 · Vietnã | Número 1: Vietnã. Lá, você vira milionário com 232 reais. | Número `1` grande entra → cédulas de dong caindo, contador até **1.000.000** | **Luz de passagem** na volta à tela dividida · `PDX_impacto` em "milionário" |
+| 6 | 28,7–31 s | Vietnã · pergunta e resposta | Compra o quê? Uns 20 pratos de rua. | **Animação em tela cheia:** pratos empilhando, contador 1 → **20**, sobre foto de banca de rua em Hanói | Corte seco |
+| 7 | 31–36,3 s | Nº 2 · Tailândia | Número 2: Tailândia. Massagem tailandesa de uma hora: uns 50 reais. Dá pra ir todo dia. | `2` → fachada de loja de massagem com tabela de preços (Wikimedia, sem rosto) e etiqueta **`≈ R$ 50`**; em "todo dia", calendário marcando ✓ dia após dia | *Match cut* do número `1` → `2` (mesma posição) · `PDX_swish` (−6 dB) |
+| 8 | 36,3–39,7 s | Nº 3 · revelação (fecha o gancho secundário) | E o número 3, o que quase ninguém considera: Egito. | **O cartão "?" do gancho volta e vira**, revelando **EGITO** (pirâmides de Gizé, Wikimedia) em tela cheia | Giro do cartão (revelação por objeto) · `PDX_impacto` em "Egito" |
+| 9 | 39,7–45 s | Egito · desejo | O prato nacional, o koshari, sai 6 reais e 13. Você não compra nem 1 euro com isso. | Prato de koshari, etiqueta **`R$ 6,13`** → moeda de 1 euro "fora de alcance" (ecoa o café da frase 3); termina em **Diego em tela cheia** | **Clarão de volta** para o Diego |
+| 10 | 45–49 s | Ação (CTA) | Me segue pra mais dicas de viagem onde o seu real rende. | Plano do gancho com os 3 cartões agora revelados (loop) + placa DS **`SEGUE PRA MAIS DICAS →`** (DS V2, 2.7) | Corte seco · *clack* da placa (−6 dB) |
 
-**Transições não secas:** Luz de passagem (5) e Clarão de volta (11), mais os *match cuts* das cédulas (corte seco, não contam na cota). Todas com ≥ 1,5 s de cena entre elas.
+**Transições não secas:** Luz de passagem (5), giro do cartão (8) e Clarão de volta (9): 3, com ≥ 1,5 s de cena entre elas. Os *match cuts* são corte seco e não contam na cota.
+**Composições:** nunca 3 seguidas iguais (dividida → dividida/animação → tela cheia → Diego → dividida → animação → dividida → cartão em tela cheia → dividida → CTA).
 
 ---
 
-## Opção B · "Dólar a 5,77 e você quer ir pra Europa?" (Jeito Errado × Jeito Certo)
+## Opção B (arquivada na v5)
+
+Ficou da v2 e usa o "comer bem por dia", que saiu do roteiro. Não usar sem refazer.
+
 
 **Estrutura:** Jeito Errado × Jeito Certo (Trello) · **Gancho:** conflito com o câmbio de hoje · **Duração:** ≈ 47 s (≈ 141 palavras faladas).
 **Sinal que favorece:** salvamento (vira lista de destino com custo por dia) e identificação imediata (todo mundo viu o dólar subir).
@@ -93,44 +101,36 @@
 
 ---
 
-## Recomendação: Opção A
-
-O "R$ 232 = milionário" é um número concreto e absurdo no primeiro segundo: abre curiosidade sem explicar nada, e o câmbio com IOF entra logo em seguida, como o problema (como pedido). O refrão "pra passar o dia comendo bem" no fim de cada país dá ritmo e faz a pessoa esperar o próximo número. A Opção B coloca o dólar no gancho, mas "dólar caro" é assunto que o público já conhece, e a pergunta "você quer ir pra Europa?" convida a passar o vídeo. Se quiser testar as duas, mude **só o gancho** e mantenha o resto (referência de conteúdo, 8.3).
-
----
-
 ## Texto para gravar (Opção A, no quarto)
 
 ```
-1. Com 232 reais você vira milionário no Vietnã.
+1. Vou te mostrar 3 países onde o brasileiro vive como rico e gasta pouco. E o terceiro quase ninguém considera.
 2. Dólar a 5,77, euro a 6,35; no cartão, com 3,5% de IOF, vira 5,97 e 6,57.
-3. Sabe aquele café de 3 euros na Europa? Você já converte de cabeça: quase 20 reais.
-4. Só que tem país onde o real manda, mesmo com IOF.
-5. Vietnã: 1 real, mais de 4 mil dong.
-6. Pra passar o dia comendo bem: uns 115 reais.
-7. Tailândia: 1 real, quase 6 baht.
-8. Pra passar o dia comendo bem: uns 180.
-9. Egito: 1 real, 9 libras.
-10. Com 6 reais e 13 você não compra nem 1 euro. No Cairo, você almoça um koshari.
-11. Pra passar o dia comendo bem: uns 130.
-12. Me segue pra mais dicas de viagem onde o seu real rende.
+3. Sabe aquele café de 3 euros? Na cabeça, já virou quase 20 reais.
+4. Mas nesses três, o real manda, mesmo com IOF.
+5. Número 1: Vietnã. Lá, você vira milionário com 232 reais.
+6. Compra o quê? Uns 20 pratos de rua.
+7. Número 2: Tailândia. Massagem tailandesa de uma hora: uns 50 reais. Dá pra ir todo dia.
+8. E o número 3, o que quase ninguém considera: Egito.
+9. O prato nacional, o koshari, sai 6 reais e 13. Você não compra nem 1 euro com isso.
+10. Me segue pra mais dicas de viagem onde o seu real rende.
 ```
 
 **Como gravar:**
-- Do peito para cima, olhando para a lente, celular na vertical, luz de frente. O enquadramento precisa deixar o rosto a ≈ 42% da metade de baixo (`FORMATOS_REELS.md`, 2): deixe espaço acima da cabeça.
-- Fala **rápida** e com energia: o roteiro tem ≈ 48 s com os respiros cortados, e o limite é 50 s. **1 s de pausa entre as frases** (eu corto) e **1 s de silêncio antes de parar** (o iPhone corta o fim).
-- Frase 1: duas tomadas (uma de surpresa, outra séria).
-- Frases 6, 8 e 11 (o refrão): diga **do mesmo jeito** as três vezes, mesma entonação; o número no fim, com ênfase.
-- Frase 3: tom de conversa, como quem conta pra um amigo; em "de cabeça", leve o dedo à têmpora (gesto da conta mental). Frase 4 vai em tela cheia: olhe firme para a lente.
-- Frase 10: pausa curta antes de "No Cairo" (é onde a imagem muda).
-- Fale os números como estão escritos ("cinco e setenta e sete", "cento e quinze reais").
+- Do peito para cima, olhando para a lente, celular na vertical, luz de frente, espaço acima da cabeça (rosto a ≈ 42% da metade de baixo, `FORMATOS_REELS.md`, 2).
+- Fala **rápida** e com energia: ≈ 49 s com os respiros cortados, limite de 50 s. **1 s de pausa entre as frases** e **1 s de silêncio antes de parar**.
+- Frase 1: duas tomadas. Em "E o terceiro quase ninguém considera", baixe um pouco a voz, como quem conta um segredo.
+- Frase 3: tom de conversa; em "Na cabeça", dedo na têmpora. Frase 4 vai em tela cheia: olhar firme na lente.
+- Frase 6: "Compra o quê?" como pergunta de verdade, com meio segundo de pausa antes da resposta.
+- Frase 8: pausa curta antes de "Egito" e diga com ênfase (é a revelação).
+- Fale os números como estão escritos ("cinco e setenta e sete", "duzentos e trinta e dois reais").
 
 ---
 
 ## Conferir antes do render
 
-- [ ] Gasto diário de comida nas páginas do Budget Your Trip (Tailândia e Egito) e do exiap (Vietnã), abertas no navegador.
-- [ ] Duração real da gravação: se passar de 50 s, encurtar a frase 3 para "Sabe aquele café de 3 euros? Quase 20 reais." e/ou o CTA para "Me segue pra mais dicas de viagem."
+- [ ] Preço da massagem: conferir 2 ou 3 lojas de rua de Bangkok com preço publicado (faixa de 200–300 baht por hora).
+- [ ] Duração real da gravação: se passar de 50 s, cortar "Dá pra ir todo dia" (frase 7) e/ou encurtar o CTA para "Me segue pra mais dicas de viagem."
 - [ ] IOF de 3,5% ainda vigente no dia da postagem (DOU / Banco Central).
 - [ ] Cotações do dia: se o dólar sair de R$ 5,77, refazer a tabela de números (as contas estão acima).
 - [ ] Fotos com licença livre (Wikimedia/domínio público): cédulas de real, dong, baht e libra; comida de rua em Hanói e Bangkok; koshari. Sem rosto em destaque (`FORMATOS_REELS.md`, 2, regra do pedido). Crédito CC BY na legenda do post.
@@ -141,15 +141,13 @@ O "R$ 232 = milionário" é um número concreto e absurdo no primeiro segundo: a
 ## Legenda do post (rascunho, Opção A)
 
 ```
-R$ 232 = 1 milhão de dong. E não é só no Vietnã que o real ainda rende.
+3 países onde o brasileiro vive como rico (e o 3º quase ninguém considera).
 
-Contas com dólar a R$ 5,77, euro a R$ 6,35 e IOF de 3,5% (17/11/2026). Não inclui o spread do banco. Preços de comida de rua variam por lugar.
+Contas com dólar a R$ 5,77, euro a R$ 6,35 e IOF de 3,5% (17/11/2026). Não inclui o spread do banco. Preços variam por lugar.
 
-🇻🇳 Vietnã: R$ 1 ≈ 4.458 dong · comer bem o dia todo ≈ R$ 115 (US$ 19)
-🇹🇭 Tailândia: R$ 1 ≈ 6 baht · comer bem o dia todo ≈ R$ 180 (US$ 30)
-🇪🇬 Egito: R$ 1 ≈ 9,3 libras · koshari (55 £E) ≈ R$ 6,13 · comer bem o dia todo ≈ R$ 130 (US$ 22)
-
-"Comer bem o dia todo" = média de gasto com todas as refeições de um dia, por pessoa, de quem viajou (Budget Your Trip / exiap). Sem hospedagem.
+🇻🇳 Vietnã: R$ 1 ≈ 4.458 dong · 1 milhão de dong ≈ R$ 232 · prato de rua ≈ 50.000 ₫
+🇹🇭 Tailândia: R$ 1 ≈ 6 baht · massagem tailandesa de 1 h em loja de rua: 200–300 baht (≈ R$ 35 a 52)
+🇪🇬 Egito: R$ 1 ≈ 9,3 libras · koshari (55 £E) ≈ R$ 6,13
 
 Me segue pra mais dicas de viagem onde o seu real rende.
 
