@@ -9,8 +9,8 @@ Montagem: `../baixar.py` (brutos do Drive em `../fonte/`, fora do git; IDs em `.
 - Cartões: categoria em branco e cidade em mostarda (`#E0AE5C`), Barlow 800 em maiúsculas e minúsculas, tamanho de legenda (66 px), na altura da legenda (y ≈ 1290–1370), centrados em x 540. Sem frase de justificativa. Nada aparece por partes.
 - Imagem igual ao original: sem filtro, grade ou ajuste; takes verticais entram inteiros; só a conversão técnica HLG → SDR. Fotos: perfil Display P3 → sRGB, recorte 9:16 e aproximação lenta e linear de 100% → 108% (pedido do Diego, 25/11/2026).
 - Imagens que remetem ao que se fala: comida = foto do prato; paisagem e nada em recinto fechado.
-- Sem música (o Diego coloca no app). Som: `keen` no fim do gancho (−6 dB) e `clack` nas placas do CTA (−10 dB, DS V2 4.6).
-- DS V2 só no CTA: placa `ME CONTA SE / VOCÊ CONCORDA →` e depois `@PRIMEIRODIAEM`, sobre o Grand Canal de Veneza.
+- Sem música (o Diego coloca no app). Som: `keen` no fim do gancho (−6 dB) e `clack` nas placas do fim (−10 dB, DS V2 4.6).
+- Fim do Reel sem CTA (decisão do Diego, 25/11/2026): placa do DS V2 `MOTIVO NA LEGENDA` e depois `@PRIMEIRODIAEM`, as duas com o símbolo 1º no lugar da seta (a seta é o desenho de chamado do DS). O motivo de cada cidade vai na legenda do post.
 - Roma: só comida, a pizza de Roma e o prato da Osteria da Fortunata. A foto da Fortunata (`IMG_6335`) é da casa de Milão (GPS, 02/01/2025); entra no cartão de Roma por decisão do Diego (25/11/2026).
 
 ## Planos
@@ -27,7 +27,7 @@ Montagem: `../baixar.py` (brutos do Drive em `../fonte/`, fora do git; IDs em `.
 | 33–38 s | Mais cara pelo que entrega · Milão | `IMG_6265` (Galleria Vittorio Emanuele II) + foto `IMG_6254` (Duomo, com aproximação lenta) |
 | 38–43 s | Não voltaria · Amsterdam | `IMG_1403-1` (canal) + `IMG_2068` (canal ao entardecer) |
 | 43–48 s | Voltaria amanhã · Barcelona | Sagrada Família (`copy_71526AEF…mov`, 1572,2–1574,0 s; trecho do compilado longo) + `IMG_1084` (Casa Batlló) + `IMG_1105` (Casa Milà) |
-| 48–52,7 s | CTA | `italia/IMG_6099` (Grand Canal de Veneza) |
+| 48–52,7 s | Fim (sem CTA) | `italia/IMG_6099` (Grand Canal de Veneza) |
 
 ## Pendências
 1. **Gancho:** o take do Diego andando em terceira pessoa (Bruges, `IMG_2489`) ficou de fora; o Diego escolheu a Fontana di Trevi.

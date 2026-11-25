@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Renderiza as placas do CTA (DS V2, Remotion) com fundo transparente, em _tmp/cta/.
+ * Renderiza as placas do fim do Reel (DS V2, Remotion) com fundo transparente, em _tmp/cta/.
  * Rode de dentro da pasta do Reel:  node cta.mjs
  * Usa o design-system/remotion (npm install feito lá) e a composições Kit-Placa-Abertura (CTA) e Kit-Placa-Marca (assinatura).
  */
@@ -24,10 +24,11 @@ const serveUrl = await bundle({ entryPoint: path.join(remotion, "src", "index.ts
 const comum = { serveUrl, browserExecutable, logLevel: "warn" };
 
 const placas = [
-  // CTA único (comentar): entra com a Chegada e sai.
-  { arq: "placa_cta.mov", id: "Kit-Placa-Abertura", props: { rotulo: "ME CONTA SE", destino: "VOCÊ CONCORDA", saida: 2300 } },
-  // Assinatura do perfil.
-  { arq: "placa_perfil.mov", id: "Kit-Placa-Marca", props: { destino: "@PRIMEIRODIAEM" } },
+  // Fim do Reel: sem CTA, só a indicação de que o motivo de cada cidade está na legenda (decisão do Diego, 25/11/2026).
+  // Módulo "1º" no lugar da seta: não parece botão nem chamado para clicar.
+  { arq: "placa_cta.mov", id: "Kit-Placa-Marca", props: { destino: "MOTIVO NA LEGENDA", modulo: "um", saida: 2300 } },
+  // Assinatura do perfil (também com o 1º, sem seta: sem CTA).
+  { arq: "placa_perfil.mov", id: "Kit-Placa-Marca", props: { destino: "@PRIMEIRODIAEM", modulo: "um" } },
 ];
 for (const { arq, id, props } of placas) {
   const composition = await selectComposition({ ...comum, id, inputProps: props });
