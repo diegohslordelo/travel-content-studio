@@ -4,7 +4,7 @@ Entrega: `reel_veredito-cidades_rev1.mp4` (1080 × 1920, 30 fps, 52,7 s). Roteir
 Montagem: `../baixar.py` (brutos do Drive em `../fonte/`, fora do git; IDs em `../fontes.json`), `../cta.mjs` (placas do DS V2) e `../montar.py`.
 
 ## Decisões do Diego aplicadas (25/11/2026)
-- Gancho em Anton, inteiro desde o 1º quadro: "MINHA OPINIÃO IMPOPULAR SOBRE A EUROPA", branco, sobre a Fontana di Trevi (`IMG_5067`, vertical, sem recorte). O Diego também viu a versão "Dos países que eu visitei, esse é o meu VEREDITO DA EUROPA" (`ganchos.py` guarda as 3 opções de fundo) e voltou para este texto em 25/11/2026.
+- Gancho em Anton, inteiro desde o 1º quadro: "MINHA OPINIÃO IMPOPULAR SOBRE A EUROPA", branco, sobre a Torre Eiffel iluminada à noite (`paris/IMG_3171`, vertical, sem recorte), pedido do Diego em 25/11/2026. As opções de fundo que ele viu (Bruges, Torre Eiffel, Fontana di Trevi) estão em `ganchos.py`.
 - Categorias novas (25/11/2026): "A melhor de caminhar · Florença", "Todo mundo deveria ir um dia · Bruges" e "Mais cara pelo que entrega · Milão".
 - Cartões: categoria em branco e cidade em mostarda (`#E0AE5C`), Barlow 800 em maiúsculas e minúsculas, tamanho de legenda (66 px), na altura da legenda (y ≈ 1290–1370), centrados em x 540. Sem frase de justificativa. Nada aparece por partes.
 - Imagem igual ao original: sem filtro, grade ou ajuste; takes verticais entram inteiros; só a conversão técnica HLG → SDR. Fotos: perfil Display P3 → sRGB, recorte 9:16 e aproximação lenta e linear de 100% → 108% (pedido do Diego, 25/11/2026).
@@ -17,7 +17,7 @@ Montagem: `../baixar.py` (brutos do Drive em `../fonte/`, fora do git; IDs em `.
 
 | Tempo | Cartão | Takes |
 |---|---|---|
-| 0–3 s | Gancho | `italia/IMG_5067` (Fontana di Trevi) |
+| 0–3 s | Gancho | `paris/IMG_3171` (Torre Eiffel iluminada à noite) |
 | 3–8 s | Mais barata · Lisboa | `IMG_4416` (vista do miradouro) + `IMG_4470` (pastel de nata) |
 | 8–13 s | Melhor comida · Roma | foto `IMG_5040` (pizza, Roma, 24/12/2024) + foto `IMG_6335` (Osteria da Fortunata, Milão, 02/01/2025), com aproximação lenta |
 | 13–18 s | A melhor de caminhar · Florença | `IMG_5554` (Duomo) + `IMG_5583` (Palazzo Vecchio) |
@@ -30,7 +30,7 @@ Montagem: `../baixar.py` (brutos do Drive em `../fonte/`, fora do git; IDs em `.
 | 48–52,7 s | Fim (sem CTA) | `italia/IMG_6099` (Grand Canal de Veneza) |
 
 ## Pendências
-1. **Gancho:** o take do Diego andando em terceira pessoa (Bruges, `IMG_2489`) ficou de fora; o Diego escolheu a Fontana di Trevi.
+1. **Gancho:** o take do Diego andando em terceira pessoa (Bruges, `IMG_2489`) ficou de fora; o Diego escolheu a Torre Eiffel.
 2. **Recorte 9:16:** Grand-Place, Bruges, Sagrada Família, Casa Batlló e Casa Milà só existem na horizontal.
 6. **Sagrada Família:** não está nos takes avulsos de Barcelona (o catálogo só tem 09 e 10/03); veio do compilado longo de 7,5 GB, do qual o `baixar.py` baixa só o trecho.
 3. **"Mais barata" em Lisboa** ainda depende de o Diego confirmar pelo gasto real.

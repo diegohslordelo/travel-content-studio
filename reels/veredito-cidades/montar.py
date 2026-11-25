@@ -45,7 +45,7 @@ TONEMAP = (
 # Takes verticais entram inteiros (só escala); horizontais só quando o lugar não tem vertical (recorte 9:16).
 # Fotos (HEIC) entram paradas, com recorte 9:16 e o perfil de cor convertido para sRGB. Sem filtro nem grade.
 # Gancho: o Diego andando num lugar que se reconheça como Europa (decisão do Diego, 25/11/2026).
-HOOK = ("gancho", "italia", "IMG_5067.MOV", 1.50, 3.00, 0.5)  # Fontana di Trevi (vertical, sem recorte), escolhida pelo Diego em 25/11/2026
+HOOK = ("gancho", "paris_v", "IMG_3171.MOV", 1.00, 3.00, 0.5)  # Torre Eiffel iluminada à noite (vertical, sem recorte), pedido do Diego em 25/11/2026
 CARTOES = [
     {"id": "c1", "categoria": "Mais barata", "cidade": "Lisboa",
      "cenas": [("c1a", "lisboa_v", "IMG_4416.MOV", 0.5, 2.60, 0.5), ("c1b", "lisboa_v", "IMG_4470.MOV", 0.5, 2.40, 0.5)]},
@@ -218,7 +218,7 @@ def cartao_video(c):
 
 
 def gancho_video():
-    """Gancho em Anton, texto inteiro desde o 1º quadro (decisão do Diego, 25/11/2026), sobre a Fontana di Trevi."""
+    """Gancho em Anton, texto inteiro desde o 1º quadro (decisão do Diego, 25/11/2026), sobre a Torre Eiffel."""
     saida = os.path.join(SEG, "gancho_texto.mp4")
     base = cena(HOOK)
     texto = "MINHA OPINIÃO\nIMPOPULAR\nSOBRE A EUROPA"
