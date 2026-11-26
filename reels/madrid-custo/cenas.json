@@ -1,5 +1,5 @@
 {
- "nota": "Cenas ancoradas nas palavras da voz decupada ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. 'video' = acervo de Madrid (Drive Youtube/Madrid; fonte, entrada em s no bruto, foco x/y do recorte 9:16, 0–1, zoom do recorte para ter margem de estabilização). Escolha: folhas de contato do Drive (Youtube/analise/Madrid/folhas, as 46 vistas) e tremor medido (scripts/estabilidade.py, _tmp/estabilidade.json): só planos parados (tripé de mão), na janela de menor tremor de cada clipe; selfies e planos andando ficaram de fora (IMG_3861, IMG_3987 e IMG_3618 medidos e descartados). Pedido do Diego (26/11/2026): gancho com um take bonito de Madrid desde o 1º quadro; trechos bem estáticos e sem efeito (kb [1, 1]: sem aproximação lenta); quando fala de comida, ele comendo; metrô quando fala de metrô; dinâmico, mas respeitando o tempo das imagens; sem música; animação só se necessária (só o CTA do DS).",
+ "nota": "Cenas ancoradas nas palavras da voz decupada ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. 'video' = acervo de Madrid (Drive Youtube/Madrid; fonte, entrada em s no bruto, foco x/y do recorte 9:16, 0–1, zoom do recorte para ter margem de estabilização). Escolha: folhas de contato do Drive (Youtube/analise/Madrid/folhas, as 46 vistas) e tremor medido (scripts/estabilidade.py, _tmp/estabilidade.json): só planos parados (tripé de mão), na janela de menor tremor de cada clipe; selfies e planos andando ficaram de fora (IMG_3861, IMG_3987 e IMG_3618 medidos e descartados). Pedido do Diego (26/11/2026): gancho com um take bonito de Madrid desde o 1º quadro; trechos bem estáticos e sem efeito (kb [1, 1]: sem aproximação lenta); quando fala de comida, ele comendo; metrô quando fala de metrô; dinâmico, mas respeitando o tempo das imagens; sem música; animação só se necessária (só o CTA do DS). Revisão do Diego (26/11/2026): nas cenas de cidade, pontos turísticos em vez de rua; paisagem da cidade no lugar do avião; a falafeleria no 'restaurante asiático'.",
  "gancho": {
   "topo": 250,
   "fim": "f02:E-0.11",
@@ -64,43 +64,43 @@
    "nota": "'o mais curioso é que a hospedagem…': Fonte de Cibeles (20/03, 11h59)"
   },
   {
-   "id": "gran_via",
+   "id": "puerta_del_sol",
    "ini": "f03:desse-0.06",
    "video": {
-    "fonte": "IMG_4169",
+    "fonte": "IMG_3631",
     "in": 0.1,
     "foco": [
-     0.6,
+     0.55,
      0.5
     ]
    },
-   "nota": "'onde o dinheiro foi parar': Gran Via cheia de lojas (21/03, 17h41)"
+   "nota": "'desse valor, mas dá pra entender onde o dinheiro foi parar': a Real Casa de Correos, na Puerta del Sol (19/03, 15h48)"
   },
   {
-   "id": "calle_alcala",
+   "id": "almudena",
    "ini": "f04:Bom-0.10",
    "video": {
-    "fonte": "IMG_4162",
-    "in": 0.4,
+    "fonte": "IMG_3692",
+    "in": 1.9,
     "foco": [
-     0.8,
+     0.42,
      0.5
     ]
    },
-   "nota": "'o valor do euro a 6,46…': Calle de Alcalá (21/03, 17h34), plano parado de 3,9 s (a frase da cotação inteira, sem cortar no meio)"
+   "nota": "'o valor do euro a 6,46…': a Catedral de la Almudena (19/03, 16h38), 3,9 s parados (a frase da cotação inteira)"
   },
   {
-   "id": "rua_centro",
+   "id": "oso_madrono",
    "ini": "f05:O-0.10",
    "video": {
-    "fonte": "IMG_3746",
-    "in": 1.0,
+    "fonte": "IMG_3636",
+    "in": 1.4,
     "foco": [
-     0.5,
+     0.55,
      0.5
     ]
    },
-   "nota": "'o hotel que ficamos era muito bem localizado': rua do centro, perto da Plaza Mayor (19/03, 18h08). Não há imagem do hotel no acervo"
+   "nota": "'o hotel que ficamos era muito bem localizado': o Urso e o Medronheiro, na Puerta del Sol, a 5 minutos do hotel (19/03, 15h52). Provisório até a imagem do hotel (Hotel Boutique Negresco Plaza Mayor)"
   },
   {
    "id": "plaza_mayor",
@@ -129,17 +129,17 @@
    "nota": "'R$ 1.095 por pessoa nas três diárias': a estátua de Felipe III na Plaza Mayor"
   },
   {
-   "id": "transito",
+   "id": "puerta_alcala",
    "ini": "f06:No-0.10",
    "video": {
-    "fonte": "IMG_3863",
-    "in": 1.0,
+    "fonte": "IMG_3879",
+    "in": 2.0,
     "foco": [
      0.5,
      0.5
     ]
    },
-   "nota": "'pegamos o Uber do aeroporto pro hotel': carros e táxis no Paseo del Prado (20/03, 11h52). Não é o carro deles: só a rua"
+   "nota": "'pegamos o Uber do aeroporto pro hotel': a Puerta de Alcalá com o trânsito em volta (20/03, 12h12)"
   },
   {
    "id": "metro",
@@ -156,18 +156,17 @@
    "nota": "'ficamos rodando de metrô': o Diego e a Marina dentro do metrô indo ao Bernabéu (21/03, 9h54), trecho de menor tremor (12–14 s). Gravado com o celular deitado: girado 90° (enquadramento, sem mexer na cor)"
   },
   {
-   "id": "aviao",
+   "id": "panorama",
    "ini": "f06:aeroporto#2-0.06",
    "video": {
-    "fonte": "IMG_4225",
-    "in": 0.5,
+    "fonte": "IMG_3769",
+    "in": 1.6,
     "foco": [
-     0.5,
+     0.3,
      0.5
-    ],
-    "zoom": 1.06
+    ]
    },
-   "nota": "'a volta pro aeroporto': a asa do avião saindo de Madrid (22/03, 18h16)"
+   "nota": "'a volta pro aeroporto… R$ 210 por pessoa': a cidade vista do Templo de Debod (19/03, 19h11). Troca pedida pelo Diego (26/11/2026): a asa do avião ficava aleatória"
   },
   {
    "id": "churros_cerveja",
@@ -183,30 +182,30 @@
    "nota": "'a alimentação deu 840 reais': o Diego com cerveja e churros salgados na primeira parada (19/03, 15h15)"
   },
   {
-   "id": "cervejas",
+   "id": "diego_hamburguer",
    "ini": "f07:que-0.06",
    "video": {
-    "fonte": "IMG_3789",
-    "in": 0.3,
-    "foco": [
-     0.45,
-     0.5
-    ]
-   },
-   "nota": "'280 por dia': as cervejas na mesa do bar de tapas (19/03, 20h42)"
-  },
-  {
-   "id": "hamburguer",
-   "ini": "f08:comemos-0.06",
-   "video": {
     "fonte": "IMG_3984",
-    "in": 12.0,
+    "in": 11.0,
     "foco": [
      0.58,
      0.5
     ]
    },
-   "nota": "'comemos muito bem, fomos no melhor hambúrguer do mundo': o Diego comendo o hambúrguer (20/03, 21h28)"
+   "nota": "'que dá uns 280 por dia. E olha que comemos muito bem': o Diego comendo o hambúrguer (20/03, 21h28)"
+  },
+  {
+   "id": "hamburguer",
+   "ini": "f08:fomos-0.06",
+   "video": {
+    "fonte": "IMG_3978",
+    "in": 1.6,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   },
+   "nota": "'fomos no melhor hambúrguer do mundo': o hambúrguer no prato (20/03, 21h25). Pedido do Diego (26/11/2026): nessa frase, o próprio hambúrguer"
   },
   {
    "id": "massa_italiano",
@@ -219,20 +218,20 @@
      0.5
     ]
    },
-   "nota": "'restaurante italiano, restaurante asiático': o Diego comendo massa no italiano (21/03, 14h24). Não há imagem do asiático no acervo"
+   "nota": "'restaurante italiano': o Diego comendo massa no italiano (21/03, 14h24)"
   },
   {
-   "id": "focaccia_mesa",
-   "ini": "f08:importante-0.12",
+   "id": "falafel",
+   "ini": "f08:asiático-0.06",
    "video": {
-    "fonte": "IMG_4197",
-    "in": 1.1,
+    "fonte": "IMG_3937",
+    "in": 3.2,
     "foco": [
-     0.5,
+     0.62,
      0.5
     ]
    },
-   "nota": "'o importante é equilibrar bem as refeições': a focaccia dividida na mesa (21/03, 21h29)"
+   "nota": "'restaurante asiático, o importante é equilibrar bem as refeições': o sanduíche de falafel da falafeleria (20/03, 13h58); o Diego confirmou que o 'asiático' é a falafeleria (26/11/2026). A imagem troca na palavra 'asiático'"
   },
   {
    "id": "bernabeu",
