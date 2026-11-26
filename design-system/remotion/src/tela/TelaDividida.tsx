@@ -271,15 +271,16 @@ const Cartoes: React.FC<{ c: Conteudo; t: number; t0: number; w: number; h: numb
         const d = d0 - i * 170;
         if (d < 0) return null;
         const r = RECT_CARTAO(i, h);
-        const esc = kf(d, [0, 160, 260], [0.7, 1.05, 1], [sai, sai]);
-        const op = kf(d, [0, 120], [0, 1]);
+        const esc = c.simples ? 1 : kf(d, [0, 160, 260], [0.7, 1.05, 1], [sai, sai]);
+        const op = kf(d, [0, c.simples ? 200 : 120], [0, 1]);
+        const sobe = c.simples ? kf(d, [0, 200], [20, 0], sai) : 0;
         const balanca = f === null && dr >= 0 ? Math.sin(dr / 60) * kf(dr, [0, 500], [7, 0]) : 0;
         return (
-          <div key={i} style={{ position: "absolute", left: r.x, top: r.y, width: r.w, height: r.h, transform: `scale(${esc}) rotate(${(i - 1) * 3 + balanca}deg)`, opacity: op, borderRadius: 22, overflow: "hidden", boxShadow: "0 24px 50px rgba(0,0,0,0.6)", border: f === null ? `5px solid ${AMBAR}` : "5px solid rgba(236,229,216,0.9)", backgroundColor: "#211D18" }}>
+          <div key={i} style={{ position: "absolute", left: r.x, top: r.y, width: r.w, height: r.h, transform: `translateY(${sobe}px) scale(${esc}) rotate(${c.simples ? 0 : (i - 1) * 3 + balanca}deg)`, opacity: op, borderRadius: 22, overflow: "hidden", boxShadow: "0 24px 50px rgba(0,0,0,0.6)", border: f === null ? `5px solid ${AMBAR}` : "5px solid rgba(236,229,216,0.9)", backgroundColor: "#211D18" }}>
             {f !== null ? (
               <Img src={staticFile(`img/${f}.jpg`)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: FILTRO_FOTO }} />
             ) : (
-              <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: ANTON, fontSize: 230, color: AMBAR, transform: `scale(${1 + Math.sin(t / 180) * 0.04})` }}>?</div>
+              <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: ANTON, fontSize: 230, color: AMBAR, transform: `scale(${c.simples ? 1 : 1 + Math.sin(t / 180) * 0.04})` }}>?</div>
             )}
             <div style={{ position: "absolute", left: 18, top: 12, fontFamily: ANTON, fontSize: 72, color: "#fff", textShadow: "0 4px 18px rgba(0,0,0,0.8)" }}>{i + 1}</div>
           </div>
@@ -310,11 +311,22 @@ const Numero: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: num
         <AbsoluteFill style={{ background: h > 1000 ? "linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.0) 32%, rgba(0,0,0,0.0) 55%, rgba(0,0,0,0.55) 100%)" : "linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,0.0) 45%, rgba(0,0,0,0.55) 100%)" }} />
       </AbsoluteFill>
       {c.n && <div style={{ position: "absolute", left: 72, top: c.tituloY ?? 270, opacity: saiTitulo, display: "flex", alignItems: "flex-end", gap: 26 }}>
-        <TextoSobe txt={c.n} t={t} em={c.entrada === "cartao0" ? 200 : 0} tam={300} cor={AMBAR} />
+        <TextoSobe txt={c.n} t={t} em={c.tituloEm !== undefined ? c.tituloEm - t0 : c.entrada === "cartao0" ? 200 : 0} tam={300} cor={AMBAR} />
         <div style={{ paddingBottom: 30 }}>
-          <TextoSobe txt={c.nome} t={t} em={(c.entrada === "cartao0" ? 200 : 0) + 160} tam={c.nome.length > 7 ? 104 : 128} />
+          <TextoSobe txt={c.nome} t={t} em={(c.tituloEm !== undefined ? c.tituloEm - t0 : c.entrada === "cartao0" ? 200 : 0) + 160} tam={c.nome.length > 7 ? 104 : 128} />
         </div>
       </div>}
+      {c.print && t - (c.print.em - t0) >= 0 && (() => {
+        const pr = c.print;
+        const dp = t - (pr.em - t0);
+        const pw = pr.largura ?? 760, ph = (pr.tamanho[1] * pw) / pr.tamanho[0];
+        const e = kf(dp, [0, 220], [0, 1], sai);
+        return (
+          <div style={{ position: "absolute", left: (w - pw) / 2, top: pr.y ?? h * 0.42, width: pw, height: ph, opacity: e, transform: `translateY(${(1 - e) * 40}px)`, borderRadius: 24, overflow: "hidden", boxShadow: "0 24px 60px rgba(0,0,0,0.6)", backgroundColor: "#fff" }}>
+            <Img src={staticFile(`img/${pr.src}.jpg`)} style={{ width: "100%", height: "100%", display: "block" }} />
+          </div>
+        );
+      })()}
       {k && dk >= 0 && (
         <div style={{ position: "absolute", left: 0, right: 0, top: h * 0.36, textAlign: "center" }}>
           <div style={{ fontFamily: ANTON, fontSize: 150, color: "#fff", textShadow: "0 8px 30px rgba(0,0,0,0.7)", transform: `scale(${kf(dk, [0, 140], [0.8, 1], sai)})` }}>
@@ -526,18 +538,20 @@ const Euro: React.FC<{ c: Conteudo; t: number; t0: number; w: number; h: number 
 };
 
 /** Print real da cotação (enviado pelo Diego): entra como captura (flash de 80 ms) e os valores são marcados na palavra falada. */
-const Print: React.FC<{ c: Conteudo; t: number; t0: number; w: number; h: number }> = ({ c, t, t0, w }) => {
+const Print: React.FC<{ c: Conteudo; t: number; t0: number; w: number; h: number }> = ({ c, t, t0, w, h }) => {
   const pw = c.largura ?? 940;
   const esc = pw / c.tamanho[0];
   const ph = c.tamanho[1] * esc;
   const x0 = (w - pw) / 2, y0 = c.topo ?? 300;
-  const ent = kf(t, [0, 260], [0, 1], sai);
-  const flash = kf(t, [0, 40, 120], [0.9, 0.9, 0]);
+  const te = c.em !== undefined ? t - (c.em - t0) : t;
+  const ent = kf(te, [0, 220], [0, 1], sai);
+  const flash = c.flash === false ? 0 : kf(te, [0, 40, 120], [0.9, 0.9, 0]);
   const dc = c.carimbo ? t - (c.carimbo.em - t0) : -1;
   return (
     <AbsoluteFill style={{ backgroundColor: FUNDO }}>
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 50%, rgba(224,174,92,0.12), rgba(0,0,0,0) 60%)" }} />
-      <div style={{ position: "absolute", left: x0, top: y0, width: pw, height: ph, transform: `translateY(${(1 - ent) * 90}px) scale(${1.04 - 0.04 * ent}) rotate(${(1 - ent) * -2}deg)`, opacity: ent, borderRadius: 28, overflow: "hidden", boxShadow: "0 30px 70px rgba(0,0,0,0.7)", border: "4px solid rgba(236,229,216,0.85)" }}>
+      {c.fundo && <Foto src={c.fundo} t={t} dur={c.dur ?? 3000} zoom={[1.04, 1.1]} filtro={`${FILTRO_FOTO} brightness(0.42)`} />}
+      {!c.fundo && <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 50%, rgba(224,174,92,0.12), rgba(0,0,0,0) 60%)" }} />}
+      <div style={{ position: "absolute", left: x0, top: c.centro ? (h - ph) / 2 + (c.desloc ?? 0) : y0, width: pw, height: ph, transform: `translateY(${(1 - ent) * 40}px)`, opacity: ent, borderRadius: c.raio ?? 28, overflow: "hidden", boxShadow: "0 30px 70px rgba(0,0,0,0.7)", border: "4px solid rgba(236,229,216,0.85)" }}>
         <Img src={staticFile(`img/${c.src}.jpg`)} style={{ width: "100%", height: "100%", display: "block" }} />
         <svg width={pw} height={ph} style={{ position: "absolute", inset: 0 }}>
           {(c.marcas ?? []).map((m: any, i: number) => {
@@ -564,6 +578,21 @@ const Print: React.FC<{ c: Conteudo; t: number; t0: number; w: number; h: number
   );
 };
 
+/** Cartão "?" parado no centro (gancho secundário, versão simples: sem giro). */
+const Interrogacao: React.FC<{ c: Conteudo; t: number; w: number; h: number }> = ({ c, t, w, h }) => {
+  const cw = 480, ch = 660;
+  const e = kf(t, [0, 200], [0, 1], sai);
+  return (
+    <AbsoluteFill style={{ backgroundColor: FUNDO }}>
+      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 42%, rgba(224,174,92,0.14), rgba(0,0,0,0) 55%)" }} />
+      <div style={{ position: "absolute", left: (w - cw) / 2, top: (h - ch) / 2 - 140, width: cw, height: ch, opacity: e, borderRadius: 26, border: `6px solid ${AMBAR}`, backgroundColor: "#211D18", boxShadow: "0 30px 60px rgba(0,0,0,0.6)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: ANTON, fontSize: 360, color: AMBAR }}>
+        ?
+        <div style={{ position: "absolute", left: 26, top: 14, fontFamily: ANTON, fontSize: 110, color: "#fff" }}>{c.n}</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 const ConteudoV: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: number; h: number; props: PropsTela }> = ({ c, t, dur, t0, w, h, props }) => {
   switch (c.tipo) {
     case "gancho":
@@ -584,6 +613,8 @@ const ConteudoV: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: 
       return <FotoEtiquetas c={c} t={t} dur={dur} t0={t0} w={w} h={h} />;
     case "revela":
       return <Revela c={c} t={t} dur={dur} t0={t0} w={w} h={h} />;
+    case "interrogacao":
+      return <Interrogacao c={c} t={t} w={w} h={h} />;
     case "print":
       return <Print c={c} t={t} t0={t0} w={w} h={h} />;
     case "euro":
