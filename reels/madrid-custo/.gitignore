@@ -1,0 +1,6 @@
+# Derivados regeneráveis pelo pipeline (scripts/preparar.py e scripts/reel.py): voz decupada, efeitos e trechos do acervo
+public/
+fonte/
+_tmp/
+# Vídeos da revisão: fora do git enquanto a cota de Git LFS do repositório estiver esgotada (26/11/2026)
+rev*/*.mp4
