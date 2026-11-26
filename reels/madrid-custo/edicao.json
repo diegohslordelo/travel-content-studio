@@ -1,9 +1,9 @@
 {
  "reel": "madrid-custo",
  "titulo": "Quanto custa 3 dias em Madrid (custos reais por pessoa)",
- "formato": "Narrado (Trello, formato 04): a voz do Diego gravada no quarto (26/11/2026, 11 blocos) sobre imagens da viagem (19 a 22/03/2026)",
+ "formato": "Narrado (Trello, formato 04): a voz do Diego gravada no quarto (26/11/2026, 2ª gravação: 10 blocos, 'Praça Ernesto Lebram 12…21') sobre imagens da viagem (19 a 22/03/2026). A 1ª gravação (blocos 1…11, REV1) fica em fonte/voz_v1/",
  "fps": 30,
- "nota": "texto_gravado = a fala (Whisper large-v3 e large-v3-turbo). Onde os dois discordam ou o Whisper normaliza a fala ('pra' x 'para'), a variante {a|b} é decidida por scripts/cortes.py pelo alinhamento forçado (wav2vec2 PT): fica a de maior verossimilhança, e o resultado vai para 'texto' (o que a legenda mostra). 'R$_2.400' = 'R$ 2.400' com espaço inseparável (o '_' vira espaço na tela). Trechos (segundos do arquivo de voz) também saem de scripts/cortes.py: entrada 0,08 s antes do início da 1ª palavra e saída 0,15 s depois do fim da última, para nenhuma palavra perder começo ou fim (pedido do Diego, 26/11/2026). A voz nunca é acelerada; entre blocos fica só o tom do quarto que sobra nas pontas, sem silêncio digital.",
+ "nota": "texto_gravado = a fala (Whisper large-v3 e large-v3-turbo). Onde os dois discordam ou o Whisper normaliza a fala ('pra' x 'para'), a variante {a|b} é decidida por scripts/cortes.py pelo alinhamento forçado (wav2vec2 PT): fica a de maior verossimilhança, e o resultado vai para 'texto' (o que a legenda mostra). 'R$_2.400' = 'R$ 2.400' com espaço inseparável (o '_' vira espaço na tela). Trechos (segundos do arquivo de voz) também saem de scripts/cortes.py: entrada 0,08 s antes do início da 1ª palavra e saída 0,15 s depois do fim da última; pausa interna maior que 0,35 s entre duas palavras é cortada (fica 0,12 s depois da palavra e 0,08 s antes da seguinte), para nenhuma palavra perder começo ou fim (pedido do Diego, 26/11/2026). A voz nunca é acelerada; entre blocos fica só o tom do quarto que sobra nas pontas, sem silêncio digital.",
  "fontes_drive": {
   "pasta_voz": "Youtube/Madrid/Custo madrid (1yRvQ7XF6tMwuZMIjXDCZFSa56XlVfNR0)",
   "pasta_clipes": "Youtube/Madrid (11dlBPVbjT7waO7pdGip7jQNzyCpT2MJ-); IDs em _tmp/ids_drive.tsv (lista pública da pasta)"
@@ -19,13 +19,13 @@
   {
    "id": "f01",
    "bloco": "1 · gancho falado",
-   "fonte": "voz_01",
-   "arquivo_drive": "Praça Ernesto Lebram.m4a",
-   "id_drive": "1svuTpLR3bmGykWpF4T7ALlFyZjDbiSdy",
+   "fonte": "voz_12",
+   "arquivo_drive": "Praça Ernesto Lebram 12.m4a",
+   "id_drive": "14jSkIecOyVu-eyzuMhNAMn5_snMUNpkL",
    "trechos": [
     [
-     0.14,
-     4.89
+     0.36,
+     4.83
     ]
    ],
    "texto_gravado": "Você acredita que dá {pra|para} passar 3 dias em Madrid por menos de R$_2.400 por pessoa?",
@@ -35,13 +35,13 @@
   {
    "id": "f02",
    "bloco": "2 · sem perrengue",
-   "fonte": "voz_02",
-   "arquivo_drive": "Praça Ernesto Lebram 2.m4a",
-   "id_drive": "1EFlLZWPc_HndiuVsO1S1u0NZLQ381mRJ",
+   "fonte": "voz_13",
+   "arquivo_drive": "Praça Ernesto Lebram 13.m4a",
+   "id_drive": "1NYUKiB5jVRHx1D-H8vcEJGHzvJX_o_C3",
    "trechos": [
     [
-     0.18,
-     2.88
+     0.16,
+     2.74
     ]
    ],
    "texto_gravado": "E não, a gente não ficou passando perrengue {pra|para} economizar.",
@@ -51,13 +51,13 @@
   {
    "id": "f03",
    "bloco": "3 · curiosidade (hospedagem)",
-   "fonte": "voz_03",
-   "arquivo_drive": "Praça Ernesto Lebram 3.m4a",
-   "id_drive": "1tljUDfNsc7PB1PLKgNIvHuPGhEn9NUqe",
+   "fonte": "voz_14",
+   "arquivo_drive": "Praça Ernesto Lebram 14.m4a",
+   "id_drive": "1VRmTZZ2z0uZ8wtownIhsFTLa1D4ZY3sa",
    "trechos": [
     [
-     0.38,
-     4.66
+     0.2,
+     4.56
     ]
    ],
    "texto_gravado": "E o mais curioso é que a hospedagem foi quase metade desse valor, mas dá {pra|para} entender onde o dinheiro foi parar.",
@@ -67,66 +67,66 @@
   {
    "id": "f04",
    "bloco": "4 · cotação",
-   "fonte": "voz_04",
-   "arquivo_drive": "Praça Ernesto Lebram 4.m4a",
-   "id_drive": "1C_oaAAxTFDG1iw3En9NJ46eGjU_knjHG",
+   "fonte": "voz_15",
+   "arquivo_drive": "Praça Ernesto Lebram 15.m4a",
+   "id_drive": "1S59c2Rg2QabHLfX54LHiD46_ZwlK-cAR",
    "trechos": [
     [
-     0.56,
-     4.47
+     0.76,
+     4.84
     ]
    ],
-   "texto_gravado": "Bom, {pra|para} começar, eu usei o valor do euro a 6,46, que é o valor de hoje mais o IOF.",
-   "texto": "Bom, para começar, eu usei o valor do euro a 6,46, que é o valor de hoje mais o IOF.",
+   "texto_gravado": "Bom, {pra|para} começar, eu usei o valor do euro a 6,46, que é o valor de hoje, mais o IOF.",
+   "texto": "Bom, para começar, eu usei o valor do euro a 6,46, que é o valor de hoje, mais o IOF.",
    "leituras": {
-    "6,46,": "seis quarenta e seis",
+    "6,46,": "seis e quarenta e seis",
     "IOF.": "iofe"
    }
   },
   {
    "id": "f05",
    "bloco": "5 · hotel",
-   "fonte": "voz_05",
-   "arquivo_drive": "Praça Ernesto Lebram 5.m4a",
-   "id_drive": "16dXrZN4O_q_K2AaxI2JpNLViH6aC1YLQ",
+   "fonte": "voz_16",
+   "arquivo_drive": "Praça Ernesto Lebram 16.m4a",
+   "id_drive": "1qDm1saXEReSsmW-Or6futigh9O4QII3b",
    "trechos": [
     [
-     0.4,
-     7.51
+     0.8,
+     7.95
     ]
    ],
-   "texto_gravado": "O hotel que ficamos era muito bem localizado, pertinho da Plaza Mayor, reservamos pelo Hotéis.com e pagamos R$_1.095 por pessoa nas três diárias.",
-   "texto": "O hotel que ficamos era muito bem localizado, pertinho da Plaza Mayor, reservamos pelo Hotéis.com e pagamos R$_1.095 por pessoa nas três diárias.",
+   "texto_gravado": "O hotel que ficamos era muito bem localizado, pertinho da Plaza Mayor. Reservamos pelo Hotéis.com e pagamos R$_1.095 por pessoa nas três diárias.",
+   "texto": "O hotel que ficamos era muito bem localizado, pertinho da Plaza Mayor. Reservamos pelo Hotéis.com e pagamos R$_1.095 por pessoa nas três diárias.",
    "leituras": {
-    "Plaza": "plaça"
+    "Plaza": "plaza"
    }
   },
   {
    "id": "f06",
    "bloco": "6 · transporte",
-   "fonte": "voz_06",
-   "arquivo_drive": "Praça Ernesto Lebram 6.m4a",
-   "id_drive": "1lHCI3kmqI07nphM8vKPFoJVf1RALSOJM",
+   "fonte": "voz_17",
+   "arquivo_drive": "Praça Ernesto Lebram 17.m4a",
+   "id_drive": "1M8F6Xj6PlqNhcLSKRp048g2gHdfmwfkS",
    "trechos": [
     [
-     0.62,
-     8.61
+     1.18,
+     8.96
     ]
    ],
-   "texto_gravado": "No transporte, nós pegamos {o Uber|Uber} {pra|para} ir do aeroporto {pro|para o} hotel e ficamos rodando de metrô pela cidade. A volta {pro|para o} aeroporto, nós fomos de metrô. Isso deu R$_210 por pessoa.",
-   "texto": "No transporte, nós pegamos o Uber pra ir do aeroporto pro hotel e ficamos rodando de metrô pela cidade. A volta pro aeroporto, nós fomos de metrô. Isso deu R$_210 por pessoa.",
+   "texto_gravado": "No transporte, nós pegamos o Uber {pra|para} ir do aeroporto {pro|para o} hotel e ficamos rodando de metrô pela cidade. A volta {pro|do|para o} aeroporto, nós fomos de metrô. Isso deu 210 {pra|para} cada um.",
+   "texto": "No transporte, nós pegamos o Uber para ir do aeroporto pro hotel e ficamos rodando de metrô pela cidade. A volta do aeroporto, nós fomos de metrô. Isso deu 210 para cada um.",
    "leituras": {}
   },
   {
    "id": "f07",
    "bloco": "7 · alimentação",
-   "fonte": "voz_07",
-   "arquivo_drive": "Praça Ernesto Lebram 7.m4a",
-   "id_drive": "1cDb4MNk8Sq6Yg7Hg4H6E7sR1KCgsdt7m",
+   "fonte": "voz_18",
+   "arquivo_drive": "Praça Ernesto Lebram 18.m4a",
+   "id_drive": "1HU9Ckm1p62VgiEPm2CYX8odt74kKdkID",
    "trechos": [
     [
-     0.3,
-     4.4
+     0.98,
+     4.9
     ]
    ],
    "texto_gravado": "A alimentação deu 840 reais por pessoa, que dá uns 280 por dia.",
@@ -136,68 +136,57 @@
   {
    "id": "f08",
    "bloco": "8 · comemos bem",
-   "fonte": "voz_08",
-   "arquivo_drive": "Praça Ernesto Lebram 8.m4a",
-   "id_drive": "1aJmcXA7zIgIq6KP1M_dXD4SN8ym_1yBi",
+   "fonte": "voz_19",
+   "arquivo_drive": "Praça Ernesto Lebram 19.m4a",
+   "id_drive": "1xUPCZRyozhs1Inv0gD2mm9wPp6htuzns",
    "trechos": [
     [
-     0.26,
-     6.65
+     1.1,
+     7.75
     ]
    ],
-   "texto_gravado": "E olha que comemos muito bem, fomos no melhor hambúrguer do mundo, restaurante italiano, restaurante asiático, o importante é equilibrar bem as refeições.",
-   "texto": "E olha que comemos muito bem, fomos no melhor hambúrguer do mundo, restaurante italiano, restaurante asiático, o importante é equilibrar bem as refeições.",
+   "texto_gravado": "E olha que comemos muito bem, tá? Fomos no melhor hambúrguer do mundo, restaurante italiano, restaurante asiático. O importante é equilibrar bem as refeições.",
+   "texto": "E olha que comemos muito bem, tá? Fomos no melhor hambúrguer do mundo, restaurante italiano, restaurante asiático. O importante é equilibrar bem as refeições.",
    "leituras": {}
   },
   {
    "id": "f09",
    "bloco": "9 · passeio",
-   "fonte": "voz_09",
-   "arquivo_drive": "Praça Ernesto Lebram 9.m4a",
-   "id_drive": "15udGKTT_tnMz7Fq-MdMtAMAmBUjLbo4Z",
+   "fonte": "voz_20",
+   "arquivo_drive": "Praça Ernesto Lebram 20.m4a",
+   "id_drive": "1deRw_p2FO9FReJsrikPTmPCJY4f_EonV",
    "trechos": [
     [
      0.26,
-     4.1
+     4.27
     ]
    ],
-   "texto_gravado": "E de passeio, nós fizemos o tour pelo Bernabéu, que custou 250 reais por pessoa.",
-   "texto": "E de passeio, nós fizemos o tour pelo Bernabéu, que custou 250 reais por pessoa.",
-   "leituras": {}
+   "texto_gravado": "E de passeio, nós fizemos o tour pelo Bernabéu, em que o ingresso custou 250 reais.",
+   "texto": "E de passeio, nós fizemos o tour pelo Bernabéu, em que o ingresso custou 250 reais.",
+   "leituras": {},
+   "nota": "Whisper: 'em que a degressa custou' (large-v3) e 'em que a igreja custou' (turbo). Alinhamento: 'o ingresso' 252,2 × 'a igreja' 250,6 (empate). Fica 'o ingresso', o que faz sentido no tour; conferir no ouvido."
   },
   {
    "id": "f10",
-   "bloco": "10 · total e moral",
-   "fonte": "voz_10",
-   "arquivo_drive": "Praça Ernesto Lebram 10.m4a",
-   "id_drive": "11mtzuIQBSzo76Y3ewrPG7EEgJAoa2A2H",
+   "bloco": "10 · total, moral e CTA",
+   "fonte": "voz_21",
+   "arquivo_drive": "Praça Ernesto Lebram 21.m4a",
+   "id_drive": "1i3W029hUBZeGUOSFPrHoq0lD8-HqNxbH",
    "trechos": [
     [
-     3.25,
-     9.55
+     0.86,
+     6.88
+    ],
+    [
+     7.1,
+     10.65
     ]
    ],
-   "texto_gravado": "No total foram 2.385 reais por pessoa. Você não precisa fazer tudo. Precisa escolher o que vale a pena {pra|para a} sua viagem.",
-   "texto": "No total foram 2.385 reais por pessoa. Você não precisa fazer tudo. Precisa escolher o que vale a pena pra sua viagem.",
+   "texto_gravado": "No total foram R$_2.385 por pessoa. Você não precisa fazer tudo, precisa escolher o que vale a pena {pra|para a} sua viagem. Se você gostou, salva esse vídeo e me segue {pra|para} aprender a viajar gastando menos.",
+   "texto": "No total foram R$_2.385 por pessoa. Você não precisa fazer tudo, precisa escolher o que vale a pena para a sua viagem. Se você gostou, salva esse vídeo e me segue para aprender a viajar gastando menos.",
    "leituras": {
-    "2.385": "dois mil trezentos e oitenta e cinco"
+    "R$_2.385": "dois mil trezentos e oitenta e cinco reais"
    }
-  },
-  {
-   "id": "f11",
-   "bloco": "11 · CTA",
-   "fonte": "voz_11",
-   "arquivo_drive": "Praça Ernesto Lebram 11.m4a",
-   "id_drive": "1InGMDnkDUR-lKYbzvQKx7AoGikKgtBhY",
-   "trechos": [
-    [
-     0.06,
-     3.55
-    ]
-   ],
-   "texto_gravado": "Se você gostou, salva esse vídeo e me segue {pra|para} aprender a viajar gastando menos.",
-   "texto": "Se você gostou, salva esse vídeo e me segue para aprender a viajar gastando menos.",
-   "leituras": {}
   }
  ]
 }

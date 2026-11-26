@@ -1,7 +1,8 @@
 """Decide o texto e os cortes de cada bloco de voz a partir do alinhamento forçado no arquivo BRUTO (não decupado).
 1. Variantes {a|b} do texto gravado (onde o Whisper normaliza a fala ou os dois modelos discordam) e variantes de leitura
    (PRONUNCIA): fica a de menor −log p (perda CTC) — a que o áudio sustenta melhor.
-2. Entrada = início da 1ª palavra − 0,08 s; saída = fim da última + 0,15 s (nenhuma palavra perde começo ou fim).
+2. Entrada = início da 1ª palavra − 0,08 s; saída = fim da última + 0,15 s (nenhuma palavra perde começo ou fim); pausa
+   interna > 0,35 s é cortada (0,12 s depois da palavra, 0,08 s antes da seguinte).
 Uso (de dentro de reels/madrid-custo/): python3 scripts/cortes.py   → reescreve 'texto' e 'trechos' em edicao.json e
 grava _tmp/cortes.json (palavras no tempo do bruto, com a probabilidade de cada uma)."""
 import json, os, re, subprocess, sys
@@ -10,6 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from alinhamento import PRONUNCIA, alinhar, alvo, chave, emissoes, nll
 
 ANTES, DEPOIS = 0.08, 0.15
+PAUSA_MAX = 0.35  # pausa interna maior que isso é cortada (decupagem: sem espaço entre as falas)
 
 
 def le16(f):
@@ -63,12 +65,18 @@ for fa in d["falas"]:
     a = max(0.0, al[0][0] - ANTES)
     b = min(dur, al[-1][1] + DEPOIS)
     fa["texto"] = " ".join(ws)
-    fa["trechos"] = [[round(a, 2), round(b, 2)]]
+    trechos, ini = [], a
+    for (w0, w1, _), (v0, _, _) in zip(al[:-1], al[1:]):
+        if v0 - w1 > PAUSA_MAX:
+            trechos.append([round(ini, 2), round(w1 + 0.12, 2)])
+            ini = v0 - ANTES
+    trechos.append([round(ini, 2), round(b, 2)])
+    fa["trechos"] = trechos
     fa["leituras"] = {ws[i]: PRONUNCIA[chave(ws[i])][j] for i, j in lei.items()}
     saida[fa["id"]] = {"palavras": [{"t": w, "ini": round(i0, 3), "fim": round(i1, 3), "prob": round(p, 3)} for w, (i0, i1, p) in zip(ws, al)],
                        "decisoes": decisoes, "dur": round(dur, 3)}
     fracas = [f"{w}({p:.2f})" for w, (_, _, p) in zip(ws, al) if p < 0.5]
-    print(f"{fa['id']} {fa['fonte']} corte {a:.2f}–{b:.2f} de {dur:.2f} s · 1ª palavra {al[0][0]:.2f} · última termina {al[-1][1]:.2f}")
+    print(f"{fa['id']} {fa['fonte']} trechos {fa['trechos']} de {dur:.2f} s · 1ª palavra {al[0][0]:.2f} · última termina {al[-1][1]:.2f}")
     print(f"   {fa['texto']}")
     for x_ in decisoes:
         print("   decisão:", x_)

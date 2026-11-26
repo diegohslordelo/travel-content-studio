@@ -1,5 +1,5 @@
 {
- "nota": "Cenas ancoradas nas palavras da voz decupada ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. 'video' = acervo de Madrid (Drive Youtube/Madrid; fonte, entrada em s no bruto, foco x/y do recorte 9:16, 0–1, zoom do recorte para ter margem de estabilização). Escolha: folhas de contato do Drive (Youtube/analise/Madrid/folhas, as 46 vistas) e tremor medido (scripts/estabilidade.py, _tmp/estabilidade.json): só planos parados (tripé de mão), na janela de menor tremor de cada clipe; selfies e planos andando ficaram de fora (IMG_3861, IMG_3987 e IMG_3618 medidos e descartados). Pedido do Diego (26/11/2026): gancho com um take bonito de Madrid desde o 1º quadro; trechos bem estáticos e sem efeito (kb [1, 1]: sem aproximação lenta); quando fala de comida, ele comendo; metrô quando fala de metrô; dinâmico, mas respeitando o tempo das imagens; sem música; animação só se necessária (só o CTA do DS). Revisão do Diego (26/11/2026): nas cenas de cidade, pontos turísticos em vez de rua; paisagem da cidade no lugar do avião; a falafeleria no 'restaurante asiático'.",
+ "nota": "Cenas ancoradas nas palavras da voz decupada ('fala:palavra', '#n' = n-ésima ocorrência na fala, ± segundos). Cada cena vai até o início da seguinte. 'video' = acervo de Madrid (Drive Youtube/Madrid; fonte, entrada em s no bruto, foco x/y do recorte 9:16, 0–1, zoom do recorte para ter margem de estabilização). Escolha: folhas de contato do Drive (Youtube/analise/Madrid/folhas, as 46 vistas) e tremor medido (scripts/estabilidade.py, _tmp/estabilidade.json): só planos parados (tripé de mão), na janela de menor tremor de cada clipe; selfies e planos andando ficaram de fora (IMG_3861, IMG_3987 e IMG_3618 medidos e descartados). Pedido do Diego (26/11/2026): gancho com um take bonito de Madrid desde o 1º quadro; trechos bem estáticos e sem efeito (kb [1, 1]: sem aproximação lenta); quando fala de comida, ele comendo; metrô quando fala de metrô; dinâmico, mas respeitando o tempo das imagens; sem música; animação só se necessária (só o CTA do DS). Revisão do Diego (26/11/2026): nas cenas de cidade, pontos turísticos em vez de rua; paisagem da cidade no lugar do avião; a falafeleria no 'restaurante asiático'. REV2: voz regravada pelo Diego (blocos 12–21) e prints do hotel sobre a Plaza Mayor.",
  "gancho": {
   "topo": 250,
   "fim": "f02:E-0.11",
@@ -81,7 +81,7 @@
    "ini": "f04:Bom-0.10",
    "video": {
     "fonte": "IMG_3692",
-    "in": 1.9,
+    "in": 1.7,
     "foco": [
      0.42,
      0.5
@@ -90,43 +90,17 @@
    "nota": "'o valor do euro a 6,46…': a Catedral de la Almudena (19/03, 16h38), 3,9 s parados (a frase da cotação inteira)"
   },
   {
-   "id": "oso_madrono",
+   "id": "plaza_mayor",
    "ini": "f05:O-0.10",
    "video": {
-    "fonte": "IMG_3636",
-    "in": 1.4,
-    "foco": [
-     0.55,
-     0.5
-    ]
-   },
-   "nota": "'o hotel que ficamos era muito bem localizado': o Urso e o Medronheiro, na Puerta del Sol, a 5 minutos do hotel (19/03, 15h52). Provisório até a imagem do hotel (Hotel Boutique Negresco Plaza Mayor)"
-  },
-  {
-   "id": "plaza_mayor",
-   "ini": "f05:Plaza-0.06",
-   "video": {
     "fonte": "IMG_3647",
-    "in": 1.5,
+    "in": 0.6,
     "foco": [
      0.5,
      0.5
     ]
    },
-   "nota": "'Plaza Mayor': a praça inteira (19/03, 16h11)"
-  },
-  {
-   "id": "felipe_iii",
-   "ini": "f05:R$_1.095-0.06",
-   "video": {
-    "fonte": "IMG_3650",
-    "in": 0.15,
-    "foco": [
-     0.55,
-     0.5
-    ]
-   },
-   "nota": "'R$ 1.095 por pessoa nas três diárias': a estátua de Felipe III na Plaza Mayor"
+   "nota": "frase inteira do hotel (7,1 s) sobre a Plaza Mayor (19/03, 16h11), com os prints do hotel entrando por cima, um de cada vez ('cartoes'): pedido do Diego (26/11/2026)"
   },
   {
    "id": "puerta_alcala",
@@ -199,17 +173,17 @@
    "ini": "f08:E-0.06",
    "video": {
     "fonte": "IMG_3978",
-    "in": 1.4,
+    "in": 1.2,
     "foco": [
      0.5,
      0.5
     ]
    },
-   "nota": "'E olha que comemos muito bem, fomos no melhor hambúrguer do mundo': o hambúrguer no prato (20/03, 21h25), na tela durante toda a frase do hambúrguer. Pedido do Diego (26/11/2026)"
+   "nota": "'E olha que comemos muito bem, tá? Fomos no melhor hambúrguer do mundo': o hambúrguer no prato (20/03, 21h25), na tela durante a frase do hambúrguer (pedido do Diego, 26/11/2026)"
   },
   {
    "id": "massa_italiano",
-   "ini": "f08:mundo-0.06",
+   "ini": "f08:restaurante-0.06",
    "video": {
     "fonte": "IMG_4144",
     "in": 4.2,
@@ -287,7 +261,7 @@
   },
   {
    "id": "cta_palacio_real",
-   "ini": "f11:Se-0.10",
+   "ini": "f10:Se-0.10",
    "video": {
     "fonte": "IMG_3722",
     "in": 0.9,
@@ -304,8 +278,8 @@
   "chicote": 0.24
  },
  "cta": {
-  "ini": "f11:Se-0.10",
-  "entrada": "f11:segue-0.12",
+  "ini": "f10:Se-0.10",
+  "entrada": "f10:segue-0.12",
   "rotulo": "SEGUE O PERFIL",
   "destino": "@PRIMEIRODIAEM"
  },
@@ -316,6 +290,35 @@
    "alinhar": "pico",
    "rel_db": -6,
    "nota": "som do fim do gancho (regra do Diego de 01/11/2026): pico no corte entre o gancho e a cena seguinte, quando o gancho escrito sai"
+  }
+ ],
+ "cartoes": [
+  {
+   "id": "hotel_nome",
+   "img": "hotel/IMG_8775_nome_recorte.png",
+   "ini": "f05:hotel-0.10",
+   "fim": "f05:pertinho-0.08",
+   "largura": 700,
+   "topo": 230,
+   "nota": "'O hotel que ficamos era muito bem localizado': print do app Hoteis.com com a fachada e o nome (Hotel boutique Negresco Plaza Mayor, 8,8); enviado pelo Diego (IMG_8775). Sai em 'pertinho da Plaza Mayor' para a praça aparecer inteira"
+  },
+  {
+   "id": "hotel_quarto",
+   "img": "hotel/IMG_8774_quarto_recorte.png",
+   "ini": "f05:Reservamos-0.08",
+   "fim": "f05:R$_1.095-0.06",
+   "largura": 860,
+   "topo": 300,
+   "nota": "'Reservamos pelo Hotéis.com e pagamos': o quarto (print IMG_8774, recortado só na foto)"
+  },
+  {
+   "id": "hotel_banheiro",
+   "img": "hotel/IMG_8773_banheiro_recorte.png",
+   "ini": "f05:R$_1.095-0.06",
+   "fim": "f06:No-0.13",
+   "largura": 860,
+   "topo": 300,
+   "nota": "'R$ 1.095 por pessoa nas três diárias': o banheiro (print IMG_8773, recortado só na foto)"
   }
  ]
 }

@@ -221,7 +221,13 @@ def props():
         "cta": {"ini": round(cta_ini, 3), "rotulo": c["cta"]["rotulo"], "destino": c["cta"]["destino"], "entrada": round((A(c["cta"]["entrada"]) - cta_ini) * 1000)},
         "mix": {"voz_lufs": round(medir_lufs("public/voz.wav"), 2), "clack_db_rel": -6},
         "sfx": os.path.exists(os.path.join(PUBLIC, "sfx.wav")),
+        # prints sobre o vídeo (ex.: hotel), um de cada vez; a imagem é copiada de fonte/ para public/
+        "cartoes": [{"src": k["img"], "ini": round(A(k["ini"]), 3), "fim": round(A(k["fim"]), 3), "largura": k["largura"], "topo": k["topo"]}
+                    for k in c.get("cartoes", [])],
     }
+    for k in c.get("cartoes", []):
+        os.makedirs(os.path.join(PUBLIC, os.path.dirname(k["img"])), exist_ok=True)
+        shutil.copy(os.path.join("fonte", k["img"]), os.path.join(PUBLIC, k["img"]))
     json.dump(p, open("_tmp/props.json", "w"), ensure_ascii=False)
     print(f"props: {len(cenas)} cenas, {quadros} quadros ({total:.2f} s), {len(p['legendas'])} grupos de legenda, voz {p['mix']['voz_lufs']:.1f} LUFS")
     for e in cenas:

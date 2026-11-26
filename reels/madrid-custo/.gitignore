@@ -2,5 +2,5 @@
 public/
 fonte/
 _tmp/
-# Vídeos da revisão: fora do git enquanto a cota de Git LFS do repositório estiver esgotada (26/11/2026)
-rev*/*.mp4
+# REV1: vídeos fora do git (o push por LFS foi recusado). Da REV2 em diante, vídeo de entrega < 100 MB como arquivo comum (.gitattributes)
+rev1/*.mp4

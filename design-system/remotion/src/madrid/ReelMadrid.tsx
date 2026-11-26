@@ -7,11 +7,11 @@
  * - a legenda que acende com a voz aparece desde o início, embaixo do gancho;
  * - planos estáticos, sem efeito: sem aproximação lenta (kb fica [1, 1] nas props) e sem transição pronta.
  * Camadas: vídeos (um por cena, já estabilizados e recortados em 9:16 por reels/madrid-custo/scripts/reel.py) · legenda ·
- * gancho · CTA (DS V2: placa + clack). Imagens sem grade de cor, grão, degradê ou tom. Tudo vem das props (_tmp/props.json).
+ * cartões (prints do hotel, um de cada vez sobre o vídeo; nunca mosaico) · gancho · CTA (DS V2: placa + clack). Imagens sem grade de cor, grão, degradê ou tom. Tudo vem das props (_tmp/props.json).
  */
 import React from "react";
 import { Audio, Video } from "@remotion/media";
-import { AbsoluteFill, CalculateMetadataFunction, Freeze, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, CalculateMetadataFunction, Freeze, Img, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Placa } from "../ds/Placa";
 import { Som } from "../ds/Som";
 import { COR, TEXTO, TITULO, ease, easeIn, easeInOut, lerp } from "./estilo";
@@ -19,6 +19,8 @@ import { COR, TEXTO, TITULO, ease, easeIn, easeInOut, lerp } from "./estilo";
 type Palavra = { t: string; i: number; f: number };
 type Grupo = { p: Palavra[]; ini: number; fim: number };
 type Transicao = "queda" | "chicote";
+/** Print (ex.: foto do hotel no app) que aparece sobre o vídeo, centrado no canvas (x 540), um de cada vez. */
+type Cartao = { src: string; ini: number; fim: number; largura: number; topo: number };
 type Cena = {
   id: string;
   ini_q: number;
@@ -39,6 +41,7 @@ export type PropsMadrid = {
   gancho: { topo: number; fim: number; linhas: { texto: string; tam: number; em: number; cor?: string | null }[] };
   legendas: Grupo[];
   legendaY: number;
+  cartoes?: Cartao[];
   cta: { ini: number; rotulo: string; destino: string; entrada: number };
   mix: { voz_lufs: number; clack_db_rel: number };
   sfx: boolean;
@@ -154,6 +157,22 @@ const Legenda: React.FC<{ p: PropsMadrid; tS: number }> = ({ p, tS }) => {
   );
 };
 
+/**
+ * Cartão: o print entra com fade e leve escala (0,94 → 1 em 220 ms) e sai com fade (150 ms). Centrado no canvas
+ * (left/right 0 + margin auto, CLAUDE.md, 12), cantos arredondados e sombra para destacar do vídeo. Sem tratamento de cor.
+ */
+const Cartoes: React.FC<{ p: PropsMadrid; tS: number }> = ({ p, tS }) => {
+  const c = (p.cartoes ?? []).find((x) => tS >= x.ini && tS < x.fim);
+  if (!c) return null;
+  const e = ease((tS - c.ini) / 0.22);
+  const sai = lerp(tS, c.fim - 0.15, c.fim, 1, 0, (k) => Math.min(1, Math.max(0, k)));
+  return (
+    <div style={{ position: "absolute", left: 0, right: 0, top: c.topo, width: c.largura, marginInline: "auto", opacity: Math.min(e, sai), scale: String(0.94 + 0.06 * e) }}>
+      <Img src={staticFile(c.src)} style={{ width: "100%", display: "block", borderRadius: 30, boxShadow: "0 18px 50px rgba(0,0,0,0.55), 0 4px 12px rgba(0,0,0,0.35)" }} />
+    </div>
+  );
+};
+
 const mistura = (k: number) => {
   const a = [255, 255, 255];
   const b = [0xe0, 0xae, 0x5c];
@@ -194,6 +213,7 @@ export const ReelMadrid: React.FC<PropsMadrid> = (p) => {
           <CenaVideo p={p} c={c} prox={p.cenas[k + 1]} />
         </Sequence>
       ))}
+      <Cartoes p={p} tS={tS} />
       <Legenda p={p} tS={tS} />
       <Gancho p={p} tS={tS} />
       {/* CTA: único lugar do Reel com o DS V2 (2.7: placa de direção com verbo + módulo de seta; Chegada; clack) */}

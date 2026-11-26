@@ -11,7 +11,7 @@ MODELO = "jonatasgrosman/wav2vec2-large-xlsr-53-portuguese"
 PRONUNCIA = {
     "r$_2.400": ["dois mil e quatrocentos reais"], "3": ["três"], "6,46": ["seis e quarenta e seis", "seis vírgula quarenta e seis", "seis quarenta e seis"],
     "iof": ["iofe", "i ó éfe", "i o éfe"], "hotéis.com": ["hotéis ponto com"], "r$_1.095": ["mil e noventa e cinco reais"],
-    "r$_210": ["duzentos e dez reais"], "840": ["oitocentos e quarenta"], "280": ["duzentos e oitenta"], "250": ["duzentos e cinquenta"],
+    "r$_210": ["duzentos e dez reais"], "210": ["duzentos e dez"], "r$_2.385": ["dois mil trezentos e oitenta e cinco reais", "dois mil e trezentos e oitenta e cinco reais"], "840": ["oitocentos e quarenta"], "280": ["duzentos e oitenta"], "250": ["duzentos e cinquenta"],
     "2.385": ["dois mil trezentos e oitenta e cinco", "dois mil e trezentos e oitenta e cinco"], "uber": ["úber"], "bernabéu": ["bernabéu"],
     "mayor": ["maior"], "plaza": ["plaça", "plaza"],
 }
