@@ -26,7 +26,7 @@ carregarFontesFormato();
 // ---------- tipos das props ----------
 type Palavra = { txt: string; s: number; e: number; tomada: string };
 type Grupo = { palavras: number[]; de: number; ate: number };
-type Etiqueta = { txt: string; em: number; x: number; y: number; troca?: boolean; pequena?: boolean };
+type Etiqueta = { txt: string; em: number; x: number; y: number; troca?: boolean; pequena?: boolean; giro?: number };
 type Conteudo = Record<string, any> & { tipo: string };
 type Cena = { id: string; layout: "dividida" | "apoio" | "diego"; de: number; ate: number; conteudo?: Conteudo; zoom?: [number, number]; entrada?: string };
 type Som = { src: string; em: number; ganho_db: number; dur: number };
@@ -41,7 +41,10 @@ export type PropsTela = {
   cenas: Cena[];
   sons: Som[];
   gancho: { linhas: { txt: string; em: number; tam: number; destaque?: boolean }[] };
-  cta: { destino: string; em: number };
+  cta: { destino: string; rotulo?: string; em: number };
+  /** Cortes de zoom no rosto (punch-in): durante [de, ate) o Diego fica `esc` vezes maior, com corte seco. */
+  zooms?: { de: number; ate: number; esc: number }[];
+  popLegenda?: boolean;
 };
 
 export const propsTelaVazias: PropsTela = {
@@ -63,13 +66,18 @@ const sai = EASE.out;
 const clamp = (v: number, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 
 // ---------- peças comuns ----------
-const Foto: React.FC<{ src: string; t: number; dur: number; zoom?: [number, number]; foco?: [number, number]; filtro?: string }> = ({ src, t, dur, zoom = [1, 1.07], foco = [0.5, 0.5], filtro }) => {
-  const z = zoom[0] + (zoom[1] - zoom[0]) * clamp(t / dur);
+const semente = (txt: string) => txt.split("").reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) % 1000, 7);
+const Foto: React.FC<{ src: string; t: number; dur: number; zoom?: [number, number]; foco?: [number, number]; filtro?: string; mao?: number }> = ({ src, t, dur, zoom = [1, 1.07], foco = [0.5, 0.5], filtro, mao = 1 }) => {
+  const z = zoom[0] + (zoom[1] - zoom[0]) * clamp(t / dur) + 0.02 * mao;
+  const k = semente(src);
+  const dx = mao * (Math.sin(t / 830 + k) * 5 + Math.sin(t / 370 + k * 2) * 2);
+  const dy = mao * (Math.sin(t / 970 + k * 3) * 4 + Math.sin(t / 290 + k) * 1.5);
+  const rot = mao * Math.sin(t / 1300 + k) * 0.25;
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: FUNDO }}>
       <Img
         src={staticFile(`img/${src}.jpg`)}
-        style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: `${foco[0] * 100}% ${foco[1] * 100}%`, transform: `scale(${z})`, transformOrigin: `${foco[0] * 100}% ${foco[1] * 100}%`, filter: filtro ?? FILTRO_FOTO }}
+        style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: `${foco[0] * 100}% ${foco[1] * 100}%`, transform: `translate(${dx}px, ${dy}px) rotate(${rot}deg) scale(${z})`, transformOrigin: `${foco[0] * 100}% ${foco[1] * 100}%`, filter: filtro ?? FILTRO_FOTO }}
       />
     </AbsoluteFill>
   );
@@ -80,12 +88,12 @@ const EtiquetaV: React.FC<{ e: Etiqueta; t: number; w: number; h: number; saiEm?
   const d = t - e.em;
   if (d < 0) return null;
   if (saiEm !== undefined && t >= saiEm) return null;
-  const esc = kf(d, [0, 120, 200], [0.55, 1.08, 1], [sai, sai]);
+  const esc = kf(d, [0, 120, 200], [0.86, 1.02, 1], [sai, sai]);
   const op = kf(d, [0, 90], [0, 1]);
   const giro = e.troca ? kf(d, [0, 200], [90, 0], sai) : 0;
   const tam = e.pequena ? 44 : 118;
   return (
-    <div style={{ position: "absolute", left: e.x * w, top: e.y * h, transform: `translate(-50%, -50%) scale(${esc}) rotate(-3deg) rotateX(${giro}deg)`, opacity: op }}>
+    <div style={{ position: "absolute", left: e.x * w, top: e.y * h, transform: `translate(-50%, -50%) scale(${esc}) rotate(${e.giro ?? -2}deg) rotateX(${giro}deg)`, opacity: op }}>
       <div
         style={{
           fontFamily: e.pequena ? INTER : ANTON, fontWeight: e.pequena ? 800 : 400, fontSize: tam, lineHeight: 1, color: e.pequena ? TRACO : AMBAR,
@@ -117,7 +125,7 @@ const Gancho: React.FC<{ c: Conteudo; t: number; dur: number; w: number; h: numb
   return (
     <AbsoluteFill>
       <Foto src={c.foto} t={t} dur={dur} zoom={[1.12, 1.0]} foco={[0.5, 0.6]} />
-      <Notas t={dn} w={w} h={h} />
+      {c.notas !== undefined && <Notas t={dn} w={w} h={h} />}
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.55) 26%, rgba(0,0,0,0.62) 70%, rgba(0,0,0,0.25) 100%)" }} />
       <div style={{ position: "absolute", left: 72, top: 262 }}>
         {linhas.map((l, i) => {
@@ -225,6 +233,7 @@ const Aviao: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: numb
   const [x2, y2] = P(Math.min(1, p + 0.01));
   const ang = (Math.atan2(y2 - y, x2 - x) * 180) / Math.PI;
   const ds = t - (c.sonham - t0);
+  if (c.semRota) return <Foto src={c.foto} t={t} dur={dur} zoom={c.zoom ?? [1.0, 1.12]} foco={[0.5, 0.45]} />;
   return (
     <AbsoluteFill style={{ backgroundColor: FUNDO }}>
       {c.foto && <Foto src={c.foto} t={t} dur={dur} zoom={[1.0, 1.08]} foco={[0.5, 0.45]} filtro={`${FILTRO_FOTO} brightness(0.5)`} />}
@@ -599,7 +608,7 @@ const Legenda: React.FC<{ props: PropsTela; ms: number; y: number }> = ({ props,
           const p = props.palavras[i];
           const dita = ms >= p.s;
           const agora = ms >= p.s && ms < p.e + 40;
-          const pop = agora ? kf(ms - p.s, [0, 90, 180], [1, 1.1, 1.04], [sai, sai]) : 1;
+          const pop = agora && props.popLegenda ? kf(ms - p.s, [0, 90, 180], [1, 1.1, 1.04], [sai, sai]) : 1;
           return (
             <span key={k} style={{ display: "inline-block", color: dita ? AMBAR : "#FFFFFF", transform: `scale(${pop})`, margin: "0 0.13em" }}>
               {p.txt}
@@ -648,6 +657,7 @@ export const TelaDividida: React.FC<PropsTela> = (props) => {
     topoY = -COSTURA * (1 - p);
     diegoY = props.diegoY * p;
   }
+  for (const z of props.zooms ?? []) if (ms >= z.de && ms < z.ate) diegoEsc *= z.esc;
   const yLeg = cena.layout === "dividida" ? COSTURA : 1320;
   const qms = 1000 / fps;
   let luz = 0;
@@ -662,7 +672,7 @@ export const TelaDividida: React.FC<PropsTela> = (props) => {
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
       {/* Diego (sempre rodando; mudo aqui, o áudio vem do <Audio> abaixo) */}
       <AbsoluteFill style={{ opacity: cena.layout === "apoio" ? 0 : 1 }}>
-        <OffthreadVideo src={staticFile(props.voz)} muted style={{ position: "absolute", left: 0, top: 0, width: W, height: H, transform: `translateY(${diegoY}px) scale(${diegoEsc})`, transformOrigin: "50% 35%" }} />
+        <OffthreadVideo src={staticFile(props.voz)} muted style={{ position: "absolute", left: 0, top: 0, width: W, height: H, transform: `translateY(${diegoY}px) scale(${diegoEsc})`, transformOrigin: "50% 700px" }} />
       </AbsoluteFill>
 
       {/* apoio */}
@@ -679,7 +689,7 @@ export const TelaDividida: React.FC<PropsTela> = (props) => {
       <Legenda props={props} ms={ms} y={yLeg} />
 
       {/* CTA: placa do DS V2 (única peça do DS no Reel) */}
-      {ms >= props.cta.em && <Sequence from={Math.round((props.cta.em * fps) / 1000)} layout="none"><Placa destino={props.cta.destino} modulo="seta" entrada={0} /></Sequence>}
+      {ms >= props.cta.em && <Sequence from={Math.round((props.cta.em * fps) / 1000)} layout="none"><Placa rotulo={props.cta.rotulo} destino={props.cta.destino} modulo="seta" entrada={0} /></Sequence>}
 
       {luz > 0 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 0%, rgba(255,214,150,1) 0%, rgba(255,170,90,0.9) 45%, rgba(255,140,60,0.55) 100%)", opacity: luz, mixBlendMode: "screen" }} />}
       {clarao > 0 && <AbsoluteFill style={{ backgroundColor: "#FFF6E6", opacity: clarao }} />}
