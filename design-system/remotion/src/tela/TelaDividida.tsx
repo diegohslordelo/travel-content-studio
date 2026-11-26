@@ -26,7 +26,7 @@ carregarFontesFormato();
 // ---------- tipos das props ----------
 type Palavra = { txt: string; s: number; e: number; tomada: string };
 type Grupo = { palavras: number[]; de: number; ate: number };
-type Etiqueta = { txt: string; em: number; x: number; y: number; troca?: boolean; pequena?: boolean; giro?: number };
+type Etiqueta = { txt: string; em: number; x: number; y: number; troca?: boolean; pequena?: boolean; giro?: number; fixa?: boolean };
 type Conteudo = Record<string, any> & { tipo: string };
 type Cena = { id: string; layout: "dividida" | "apoio" | "diego"; de: number; ate: number; conteudo?: Conteudo; zoom?: [number, number]; entrada?: string };
 type Som = { src: string; em: number; ganho_db: number; dur: number };
@@ -85,7 +85,7 @@ const Foto: React.FC<{ src: string; t: number; dur: number; zoom?: [number, numb
 
 /** Etiqueta de preço/informação: entra com "pop" (180 ms) e leve giro. */
 const EtiquetaV: React.FC<{ e: Etiqueta; t: number; w: number; h: number; saiEm?: number }> = ({ e, t, w, h, saiEm }) => {
-  const d = t - e.em;
+  const d = e.fixa ? 10000 : t - e.em;
   if (d < 0) return null;
   if (saiEm !== undefined && t >= saiEm) return null;
   const esc = kf(d, [0, 120, 200], [0.86, 1.02, 1], [sai, sai]);
@@ -129,11 +129,11 @@ const Gancho: React.FC<{ c: Conteudo; t: number; dur: number; w: number; h: numb
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.55) 26%, rgba(0,0,0,0.62) 70%, rgba(0,0,0,0.25) 100%)" }} />
       <div style={{ position: "absolute", left: 72, top: 262 }}>
         {linhas.map((l, i) => {
-          const d = t - (l.em - t0);
+          const d = c.fixo ? 10000 : t - (l.em - t0);
           if (d < 0) return null;
           const op = kf(d, [0, 160], [0, 1]);
           const y = kf(d, [0, 160], [24, 0], sai);
-          const pulso = l.destaque ? kf(d, [0, 120, 260], [0.9, 1.06, 1], [sai, sai]) : 1;
+          const pulso = l.destaque && !c.fixo ? kf(d, [0, 120, 260], [0.9, 1.06, 1], [sai, sai]) : 1;
           return (
             <div key={i} style={{ fontFamily: ANTON, fontSize: l.tam, lineHeight: 1.0, color: l.destaque ? AMBAR : "#fff", opacity: op, transform: `translateY(${y}px) scale(${pulso})`, transformOrigin: "left center", textShadow: "0 6px 30px rgba(0,0,0,0.7)", whiteSpace: "nowrap" }}>
               {l.txt}
@@ -593,6 +593,18 @@ const Interrogacao: React.FC<{ c: Conteudo; t: number; w: number; h: number }> =
   );
 };
 
+/** Vídeo de apoio gravado pelo Diego (mudo, cobre a área, sem filtro). */
+const VideoApoio: React.FC<{ c: Conteudo; t0: number }> = ({ c, t0 }) => {
+  const { fps } = useVideoConfig();
+  return (
+    <Sequence from={Math.round((t0 * fps) / 1000)} layout="none">
+    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: FUNDO }}>
+      <OffthreadVideo src={staticFile(`video/${c.src}.mp4`)} muted startFrom={Math.round(((c.inicio ?? 0) * fps) / 1000)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: `50% ${(c.focoY ?? 0.5) * 100}%` }} />
+    </AbsoluteFill>
+    </Sequence>
+  );
+};
+
 const ConteudoV: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: number; h: number; props: PropsTela }> = ({ c, t, dur, t0, w, h, props }) => {
   switch (c.tipo) {
     case "gancho":
@@ -613,6 +625,8 @@ const ConteudoV: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: 
       return <FotoEtiquetas c={c} t={t} dur={dur} t0={t0} w={w} h={h} />;
     case "revela":
       return <Revela c={c} t={t} dur={dur} t0={t0} w={w} h={h} />;
+    case "video":
+      return <VideoApoio c={c} t0={t0} />;
     case "interrogacao":
       return <Interrogacao c={c} t={t} w={w} h={h} />;
     case "print":

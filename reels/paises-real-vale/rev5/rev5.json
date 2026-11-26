@@ -1,0 +1,414 @@
+{
+ "_doc": "REV2 · decisões editáveis sem mexer no código. Âncoras 'tomada:palavra[#n][@fim][±ms]' (FORMATOS_REELS.md, 7.1). layout: dividida (apoio em cima, Diego embaixo), apoio (apoio em tela cheia), diego (Diego em tela cheia). REV5 (pedido do Diego, 26/11/2026): prints com no mínimo 3 s de tela; vídeo do Diego (asa do avião, IMG_4227) no lugar da foto; gancho e '3 € ≈ R$ 20' fixos na tela.",
+ "saida": "reel_paises_real_rev5.mp4",
+ "margem": {
+  "antes": 0.12,
+  "depois": 0.16,
+  "silencio_db": -52
+ },
+ "cauda_ms": 1400,
+ "diegoY": 620,
+ "semLegenda": [
+  {
+   "de": 0,
+   "ate": "cambio:O-80"
+  }
+ ],
+ "gancho": {
+  "linhas": [
+   {
+    "txt": "COM R$ 232",
+    "em": "gancho:Com",
+    "tam": 96
+   },
+   {
+    "txt": "VOCÊ VIRA",
+    "em": "gancho:você",
+    "tam": 96
+   },
+   {
+    "txt": "MILIONÁRIO",
+    "em": "gancho:milionário",
+    "tam": 150,
+    "destaque": true
+   },
+   {
+    "txt": "NO VIETNÃ",
+    "em": "gancho:no",
+    "tam": 96
+   }
+  ],
+  "fixo": true
+ },
+ "cenas": [
+  {
+   "id": "gancho",
+   "layout": "dividida",
+   "de": 0,
+   "ate": "cambio:O-80",
+   "conteudo": {
+    "tipo": "gancho",
+    "foto": "halong",
+    "fixo": true
+   }
+  },
+  {
+   "id": "cambio",
+   "layout": "dividida",
+   "de": "cambio:O-80",
+   "ate": "cafe:Ou-80",
+   "conteudo": {
+    "tipo": "print",
+    "src": "print_cambio",
+    "tamanho": [
+     1016,
+     461
+    ],
+    "largura": 1000,
+    "topo": 262,
+    "marcas": [
+     {
+      "x": 812,
+      "y": 36,
+      "w": 192,
+      "h": 64,
+      "em": "cambio:R$ 5,80"
+     },
+     {
+      "x": 812,
+      "y": 244,
+      "w": 192,
+      "h": 64,
+      "em": "cambio:R$ 6,40,"
+     }
+    ],
+    "flash": false
+   }
+  },
+  {
+   "id": "viajantes",
+   "layout": "dividida",
+   "de": "cafe:Ou-80",
+   "ate": "cafe:aquele-60",
+   "conteudo": {
+    "tipo": "video",
+    "src": "aviao",
+    "inicio": 300,
+    "focoY": 0.55
+   }
+  },
+  {
+   "id": "cafe",
+   "layout": "apoio",
+   "de": "cafe:aquele-60",
+   "ate": "virada:Mas-80",
+   "conteudo": {
+    "tipo": "foto",
+    "src": "cafe",
+    "zoom": [
+     1.0,
+     1.1
+    ],
+    "foco": [
+     0.5,
+     0.55
+    ],
+    "etiquetas": [
+     {
+      "txt": "3 € ≈ R$ 20",
+      "em": 0,
+      "x": 0.5,
+      "y": 0.42,
+      "fixa": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "virada",
+   "layout": "diego",
+   "de": "virada:Mas-80",
+   "ate": "virada:Eu-80",
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "id": "tres",
+   "layout": "dividida",
+   "de": "virada:Eu-80",
+   "ate": "vietna:Número-80",
+   "conteudo": {
+    "tipo": "cartoes",
+    "fotos": [
+     "vn_trangan_v2",
+     "th_maya_dd",
+     null
+    ],
+    "em": "virada:3",
+    "simples": true
+   }
+  },
+  {
+   "id": "vietna",
+   "layout": "apoio",
+   "de": "vietna:Número-80",
+   "ate": "vietna:Lá-60",
+   "conteudo": {
+    "tipo": "numero",
+    "n": "1",
+    "nome": "VIETNÃ",
+    "foto": "vn_trangan_v2",
+    "entrada": "corte",
+    "zoom": [
+     1.0,
+     1.12
+    ],
+    "tituloY": 300,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  {
+   "id": "milhao",
+   "layout": "dividida",
+   "de": "vietna:Lá-60",
+   "ate": "tailandia:Número-80",
+   "conteudo": {
+    "tipo": "print",
+    "src": "print_vnd_232",
+    "tamanho": [
+     1120,
+     520
+    ],
+    "largura": 820,
+    "centro": true,
+    "desloc": 10,
+    "raio": 22,
+    "flash": false,
+    "em": "vietna:Lá-60",
+    "fundo": "vn_trangan_v2",
+    "dur": 4000
+   }
+  },
+  {
+   "id": "tailandia",
+   "layout": "apoio",
+   "de": "tailandia:Número-80",
+   "ate": "tailandia:Pra-60",
+   "entrada": "luz",
+   "conteudo": {
+    "tipo": "numero",
+    "n": "2",
+    "nome": "TAILÂNDIA",
+    "foto": "th_maya_dd",
+    "entrada": "numero",
+    "zoom": [
+     1.0,
+     1.12
+    ],
+    "tituloY": 300,
+    "foco": [
+     0.28,
+     0.5
+    ]
+   }
+  },
+  {
+   "id": "refeicoes",
+   "layout": "dividida",
+   "de": "tailandia:Pra-60",
+   "ate": "massagem:aquela-60",
+   "conteudo": {
+    "tipo": "print",
+    "src": "print_thb_150",
+    "tamanho": [
+     852,
+     508
+    ],
+    "largura": 700,
+    "centro": true,
+    "desloc": 10,
+    "raio": 22,
+    "flash": false,
+    "em": "tailandia:Pra-60",
+    "fundo": "th_maya_dd",
+    "dur": 3600
+   }
+  },
+  {
+   "id": "massagem",
+   "layout": "dividida",
+   "de": "massagem:aquela-60",
+   "ate": "egito:E-80",
+   "conteudo": {
+    "tipo": "foto",
+    "src": "mass_pes",
+    "zoom": [
+     1.02,
+     1.12
+    ],
+    "foco": [
+     0.5,
+     0.55
+    ],
+    "etiquetas": [
+     {
+      "txt": "≈ R$ 50",
+      "em": "massagem:R$ 50,",
+      "x": 0.76,
+      "y": 0.84
+     }
+    ]
+   }
+  },
+  {
+   "id": "egito_q",
+   "layout": "apoio",
+   "de": "egito:E-80",
+   "ate": "egito:considera,@fim",
+   "conteudo": {
+    "tipo": "interrogacao",
+    "n": "3"
+   }
+  },
+  {
+   "id": "egito",
+   "layout": "apoio",
+   "de": "egito:considera,@fim",
+   "ate": "egito:Você#2-60",
+   "conteudo": {
+    "tipo": "numero",
+    "n": "3",
+    "nome": "EGITO",
+    "foto": "piramides",
+    "foco": [
+     0.5,
+     0.55
+    ],
+    "zoom": [
+     1.08,
+     1.0
+    ],
+    "tituloY": 300,
+    "print": {
+     "src": "print_egp_100",
+     "tamanho": [
+      888,
+      488
+     ],
+     "largura": 700,
+     "em": "egito:considera,@fim",
+     "y": 760
+    }
+   }
+  },
+  {
+   "id": "euro",
+   "layout": "diego",
+   "de": "egito:Você#2-60",
+   "ate": "cta:Toda-80",
+   "zoom": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "id": "fecho",
+   "layout": "dividida",
+   "de": "cta:Toda-80",
+   "ate": "cta:Se-80",
+   "conteudo": {
+    "tipo": "cartoes",
+    "fotos": [
+     "vn_trangan_v2",
+     "th_maya_dd",
+     "piramides"
+    ],
+    "em": "cta:Toda-80",
+    "revelados": true,
+    "simples": true
+   }
+  },
+  {
+   "id": "cta",
+   "layout": "dividida",
+   "de": "cta:Se-80",
+   "ate": 0,
+   "conteudo": {
+    "tipo": "foto",
+    "src": "halong",
+    "zoom": [
+     1.0,
+     1.08
+    ],
+    "foco": [
+     0.5,
+     0.6
+    ]
+   }
+  }
+ ],
+ "cta": {
+  "rotulo": "SEGUE PARA",
+  "destino": "MAIS DICAS",
+  "em": "cta:Se+200"
+ },
+ "sons": [
+  {
+   "arq": "PDX_impacto",
+   "em": "gancho:milionário",
+   "db": -4
+  },
+  {
+   "arq": "PDX_obturador",
+   "em": "cambio:O+20",
+   "db": -8
+  },
+  {
+   "arq": "PDX_riser",
+   "fim": "virada:Mas-80",
+   "db": -8
+  },
+  {
+   "arq": "PDX_ar_longo",
+   "em": "tailandia:Número-200",
+   "db": -6
+  },
+  {
+   "arq": "PD_clack_v1",
+   "em": "cta:Se+600",
+   "db": -6
+  },
+  {
+   "arq": "PDX_impacto",
+   "em": "egito:considera,@fim",
+   "db": -6
+  }
+ ],
+ "zooms": [
+  {
+   "de": "cambio:isso",
+   "ate": "cafe:Ou-80",
+   "esc": 1.14
+  },
+  {
+   "de": "virada:real",
+   "ate": "virada:Eu-80",
+   "esc": 1.12
+  },
+  {
+   "de": "massagem:dá#2",
+   "ate": "egito:E-80",
+   "esc": 1.12
+  },
+  {
+   "de": "egito:nem",
+   "ate": "cta:Toda-80",
+   "esc": 1.2
+  }
+ ]
+}

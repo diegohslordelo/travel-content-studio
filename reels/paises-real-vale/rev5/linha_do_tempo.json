@@ -1,0 +1,1198 @@
+{
+ "tomadas": [
+  {
+   "id": "gancho",
+   "de": 0,
+   "ate": 3458,
+   "bruto": [
+    3.2083333333333335,
+    6.666666666666667
+   ],
+   "borda_db": [
+    -74.5,
+    -75.3
+   ]
+  },
+  {
+   "id": "cambio",
+   "de": 3458,
+   "ate": 8250,
+   "bruto": [
+    18.375,
+    23.166666666666668
+   ],
+   "borda_db": [
+    -75.6,
+    -81.9
+   ]
+  },
+  {
+   "id": "cafe",
+   "de": 8250,
+   "ate": 14208,
+   "bruto": [
+    28.625,
+    34.583333333333336
+   ],
+   "borda_db": [
+    -69.7,
+    -78.0
+   ]
+  },
+  {
+   "id": "virada",
+   "de": 14208,
+   "ate": 20083,
+   "bruto": [
+    43.708333333333336,
+    49.583333333333336
+   ],
+   "borda_db": [
+    -64.2,
+    -79.8
+   ]
+  },
+  {
+   "id": "vietna",
+   "de": 20083,
+   "ate": 25417,
+   "bruto": [
+    56.375,
+    61.708333333333336
+   ],
+   "borda_db": [
+    -79.5,
+    -73.4
+   ]
+  },
+  {
+   "id": "tailandia",
+   "de": 25417,
+   "ate": 29667,
+   "bruto": [
+    94.16666666666667,
+    98.41666666666667
+   ],
+   "borda_db": [
+    -78.8,
+    -82.1
+   ]
+  },
+  {
+   "id": "massagem",
+   "de": 29667,
+   "ate": 34208,
+   "bruto": [
+    106.29166666666667,
+    110.83333333333333
+   ],
+   "borda_db": [
+    -76.0,
+    -80.6
+   ]
+  },
+  {
+   "id": "egito",
+   "de": 34208,
+   "ate": 41167,
+   "bruto": [
+    123.16666666666667,
+    130.125
+   ],
+   "borda_db": [
+    -65.8,
+    -78.0
+   ]
+  },
+  {
+   "id": "cta",
+   "de": 41167,
+   "ate": 46958,
+   "bruto": [
+    161.79166666666666,
+    167.58333333333334
+   ],
+   "borda_db": [
+    -76.1,
+    -79.3
+   ]
+  }
+ ],
+ "palavras": [
+  {
+   "txt": "Com",
+   "s": 135,
+   "e": 256,
+   "tomada": "gancho"
+  },
+  {
+   "txt": "R$ 232",
+   "s": 276,
+   "e": 1622,
+   "tomada": "gancho"
+  },
+  {
+   "txt": "você",
+   "s": 1642,
+   "e": 1823,
+   "tomada": "gancho"
+  },
+  {
+   "txt": "vira",
+   "s": 1863,
+   "e": 2023,
+   "tomada": "gancho"
+  },
+  {
+   "txt": "milionário",
+   "s": 2104,
+   "e": 2706,
+   "tomada": "gancho"
+  },
+  {
+   "txt": "no",
+   "s": 2726,
+   "e": 2807,
+   "tomada": "gancho"
+  },
+  {
+   "txt": "Vietnã.",
+   "s": 2847,
+   "e": 3309,
+   "tomada": "gancho"
+  },
+  {
+   "txt": "O",
+   "s": 3586,
+   "e": 3606,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "dólar",
+   "s": 3666,
+   "e": 3907,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "bateu",
+   "s": 3907,
+   "e": 4148,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "R$ 5,80",
+   "s": 4228,
+   "e": 4891,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "e",
+   "s": 4931,
+   "e": 4951,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "o",
+   "s": 5011,
+   "e": 5031,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "euro",
+   "s": 5071,
+   "e": 5192,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "R$ 6,40,",
+   "s": 5312,
+   "e": 6055,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "isso",
+   "s": 6075,
+   "e": 6215,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "sem",
+   "s": 6275,
+   "e": 6376,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "contar",
+   "s": 6416,
+   "e": 6637,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "as",
+   "s": 6677,
+   "e": 6737,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "taxas",
+   "s": 6777,
+   "e": 7078,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "de",
+   "s": 7118,
+   "e": 7158,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "transação",
+   "s": 7199,
+   "e": 7640,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "do",
+   "s": 7660,
+   "e": 7720,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "câmbio.",
+   "s": 7801,
+   "e": 8102,
+   "tomada": "cambio"
+  },
+  {
+   "txt": "Ou",
+   "s": 8369,
+   "e": 8429,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "seja,",
+   "s": 8529,
+   "e": 8830,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "nós",
+   "s": 8890,
+   "e": 9051,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "viajantes",
+   "s": 9071,
+   "e": 9532,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "ou",
+   "s": 9552,
+   "e": 9592,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "aqueles",
+   "s": 9612,
+   "e": 9873,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "que",
+   "s": 9913,
+   "e": 9993,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "sonham",
+   "s": 10073,
+   "e": 10254,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "em",
+   "s": 10254,
+   "e": 10314,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "viajar,",
+   "s": 10334,
+   "e": 10775,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "aquele",
+   "s": 10895,
+   "e": 11136,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "cafezinho",
+   "s": 11176,
+   "e": 11577,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "de",
+   "s": 11577,
+   "e": 11637,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "3",
+   "s": 11698,
+   "e": 11898,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "euros",
+   "s": 12018,
+   "e": 12159,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "na",
+   "s": 12199,
+   "e": 12239,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "Europa",
+   "s": 12279,
+   "e": 12540,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "já",
+   "s": 12560,
+   "e": 12640,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "está",
+   "s": 12640,
+   "e": 12760,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "praticamente",
+   "s": 12861,
+   "e": 13482,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "20",
+   "s": 13502,
+   "e": 13683,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "reais.",
+   "s": 13703,
+   "e": 14064,
+   "tomada": "cafe"
+  },
+  {
+   "txt": "Mas",
+   "s": 14349,
+   "e": 14489,
+   "tomada": "virada"
+  },
+  {
+   "txt": "ainda",
+   "s": 14529,
+   "e": 14670,
+   "tomada": "virada"
+  },
+  {
+   "txt": "existem",
+   "s": 14730,
+   "e": 15050,
+   "tomada": "virada"
+  },
+  {
+   "txt": "países",
+   "s": 15110,
+   "e": 15431,
+   "tomada": "virada"
+  },
+  {
+   "txt": "onde",
+   "s": 15471,
+   "e": 15591,
+   "tomada": "virada"
+  },
+  {
+   "txt": "o",
+   "s": 15611,
+   "e": 15631,
+   "tomada": "virada"
+  },
+  {
+   "txt": "real",
+   "s": 15651,
+   "e": 15812,
+   "tomada": "virada"
+  },
+  {
+   "txt": "é",
+   "s": 15932,
+   "e": 15952,
+   "tomada": "virada"
+  },
+  {
+   "txt": "valorizado.",
+   "s": 16072,
+   "e": 16613,
+   "tomada": "virada"
+  },
+  {
+   "txt": "Eu",
+   "s": 16633,
+   "e": 16673,
+   "tomada": "virada"
+  },
+  {
+   "txt": "vou",
+   "s": 16673,
+   "e": 16733,
+   "tomada": "virada"
+  },
+  {
+   "txt": "te",
+   "s": 16753,
+   "e": 16834,
+   "tomada": "virada"
+  },
+  {
+   "txt": "mostrar",
+   "s": 16854,
+   "e": 17194,
+   "tomada": "virada"
+  },
+  {
+   "txt": "3",
+   "s": 17254,
+   "e": 17535,
+   "tomada": "virada"
+  },
+  {
+   "txt": "deles",
+   "s": 17635,
+   "e": 17896,
+   "tomada": "virada"
+  },
+  {
+   "txt": "que",
+   "s": 17916,
+   "e": 17996,
+   "tomada": "virada"
+  },
+  {
+   "txt": "o",
+   "s": 17996,
+   "e": 18016,
+   "tomada": "virada"
+  },
+  {
+   "txt": "brasileiro",
+   "s": 18016,
+   "e": 18376,
+   "tomada": "virada"
+  },
+  {
+   "txt": "vive",
+   "s": 18457,
+   "e": 18677,
+   "tomada": "virada"
+  },
+  {
+   "txt": "como",
+   "s": 18737,
+   "e": 18917,
+   "tomada": "virada"
+  },
+  {
+   "txt": "rico",
+   "s": 18958,
+   "e": 19158,
+   "tomada": "virada"
+  },
+  {
+   "txt": "e",
+   "s": 19198,
+   "e": 19218,
+   "tomada": "virada"
+  },
+  {
+   "txt": "gasta",
+   "s": 19258,
+   "e": 19559,
+   "tomada": "virada"
+  },
+  {
+   "txt": "pouco.",
+   "s": 19639,
+   "e": 19919,
+   "tomada": "virada"
+  },
+  {
+   "txt": "Número",
+   "s": 20191,
+   "e": 20432,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "1,",
+   "s": 20472,
+   "e": 20532,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "Vietnã.",
+   "s": 20592,
+   "e": 21114,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "Lá",
+   "s": 21214,
+   "e": 21294,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "você",
+   "s": 21334,
+   "e": 21495,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "vira",
+   "s": 21555,
+   "e": 21736,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "milionário",
+   "s": 21736,
+   "e": 22117,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "com",
+   "s": 22137,
+   "e": 22217,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "232",
+   "s": 22257,
+   "e": 23280,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "reais",
+   "s": 23300,
+   "e": 23541,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "e",
+   "s": 23561,
+   "e": 23581,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "dá",
+   "s": 23601,
+   "e": 23682,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "pra",
+   "s": 23722,
+   "e": 23802,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "comprar",
+   "s": 23862,
+   "e": 24123,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "uns",
+   "s": 24143,
+   "e": 24223,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "20",
+   "s": 24304,
+   "e": 24564,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "pratos",
+   "s": 24605,
+   "e": 24905,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "de",
+   "s": 24946,
+   "e": 25006,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "rua.",
+   "s": 25066,
+   "e": 25247,
+   "tomada": "vietna"
+  },
+  {
+   "txt": "Número",
+   "s": 25532,
+   "e": 25753,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "2,",
+   "s": 25793,
+   "e": 25913,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "Tailândia.",
+   "s": 25994,
+   "e": 26496,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "Pra",
+   "s": 26556,
+   "e": 26656,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "comer",
+   "s": 26717,
+   "e": 26938,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "você",
+   "s": 26958,
+   "e": 27098,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "leva",
+   "s": 27138,
+   "e": 27299,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "R$ 150",
+   "s": 27379,
+   "e": 28103,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "e",
+   "s": 28143,
+   "e": 28163,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "dá",
+   "s": 28183,
+   "e": 28243,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "pra",
+   "s": 28283,
+   "e": 28384,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "todas",
+   "s": 28464,
+   "e": 28665,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "as",
+   "s": 28685,
+   "e": 28745,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "refeições",
+   "s": 28765,
+   "e": 29167,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "do",
+   "s": 29187,
+   "e": 29247,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "dia.",
+   "s": 29308,
+   "e": 29488,
+   "tomada": "tailandia"
+  },
+  {
+   "txt": "E",
+   "s": 29797,
+   "e": 29817,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "tem",
+   "s": 29897,
+   "e": 30038,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "mais,",
+   "s": 30058,
+   "e": 30238,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "aquela",
+   "s": 30278,
+   "e": 30479,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "massagem",
+   "s": 30519,
+   "e": 30861,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "tailandesa",
+   "s": 30881,
+   "e": 31302,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "famosa",
+   "s": 31363,
+   "e": 31804,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "de",
+   "s": 31844,
+   "e": 31905,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "uma",
+   "s": 31945,
+   "e": 32045,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "hora",
+   "s": 32085,
+   "e": 32266,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "dá",
+   "s": 32326,
+   "e": 32387,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "uns",
+   "s": 32427,
+   "e": 32527,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "R$ 50,",
+   "s": 32547,
+   "e": 33170,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "dá",
+   "s": 33190,
+   "e": 33250,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "pra",
+   "s": 33270,
+   "e": 33370,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "fazer",
+   "s": 33411,
+   "e": 33611,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "todo",
+   "s": 33631,
+   "e": 33872,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "dia.",
+   "s": 33892,
+   "e": 34053,
+   "tomada": "massagem"
+  },
+  {
+   "txt": "E",
+   "s": 34343,
+   "e": 34363,
+   "tomada": "egito"
+  },
+  {
+   "txt": "o",
+   "s": 34424,
+   "e": 34444,
+   "tomada": "egito"
+  },
+  {
+   "txt": "número",
+   "s": 34484,
+   "e": 34744,
+   "tomada": "egito"
+  },
+  {
+   "txt": "3,",
+   "s": 34805,
+   "e": 35025,
+   "tomada": "egito"
+  },
+  {
+   "txt": "o",
+   "s": 35065,
+   "e": 35085,
+   "tomada": "egito"
+  },
+  {
+   "txt": "que",
+   "s": 35105,
+   "e": 35186,
+   "tomada": "egito"
+  },
+  {
+   "txt": "quase",
+   "s": 35286,
+   "e": 35526,
+   "tomada": "egito"
+  },
+  {
+   "txt": "ninguém",
+   "s": 35567,
+   "e": 35787,
+   "tomada": "egito"
+  },
+  {
+   "txt": "considera,",
+   "s": 35807,
+   "e": 36309,
+   "tomada": "egito"
+  },
+  {
+   "txt": "o",
+   "s": 36549,
+   "e": 36569,
+   "tomada": "egito"
+  },
+  {
+   "txt": "Egito.",
+   "s": 36649,
+   "e": 37091,
+   "tomada": "egito"
+  },
+  {
+   "txt": "Lá",
+   "s": 37151,
+   "e": 37231,
+   "tomada": "egito"
+  },
+  {
+   "txt": "você",
+   "s": 37271,
+   "e": 37432,
+   "tomada": "egito"
+  },
+  {
+   "txt": "compra",
+   "s": 37492,
+   "e": 37672,
+   "tomada": "egito"
+  },
+  {
+   "txt": "o",
+   "s": 37672,
+   "e": 37712,
+   "tomada": "egito"
+  },
+  {
+   "txt": "prato",
+   "s": 37772,
+   "e": 38093,
+   "tomada": "egito"
+  },
+  {
+   "txt": "nacional",
+   "s": 38133,
+   "e": 38555,
+   "tomada": "egito"
+  },
+  {
+   "txt": "por",
+   "s": 38615,
+   "e": 38755,
+   "tomada": "egito"
+  },
+  {
+   "txt": "6",
+   "s": 38855,
+   "e": 39076,
+   "tomada": "egito"
+  },
+  {
+   "txt": "reais.",
+   "s": 39136,
+   "e": 39497,
+   "tomada": "egito"
+  },
+  {
+   "txt": "Você",
+   "s": 39537,
+   "e": 39718,
+   "tomada": "egito"
+  },
+  {
+   "txt": "não",
+   "s": 39738,
+   "e": 39818,
+   "tomada": "egito"
+  },
+  {
+   "txt": "compra",
+   "s": 39838,
+   "e": 40039,
+   "tomada": "egito"
+  },
+  {
+   "txt": "nem",
+   "s": 40079,
+   "e": 40199,
+   "tomada": "egito"
+  },
+  {
+   "txt": "um",
+   "s": 40219,
+   "e": 40319,
+   "tomada": "egito"
+  },
+  {
+   "txt": "euro",
+   "s": 40359,
+   "e": 40580,
+   "tomada": "egito"
+  },
+  {
+   "txt": "com",
+   "s": 40620,
+   "e": 40720,
+   "tomada": "egito"
+  },
+  {
+   "txt": "isso.",
+   "s": 40801,
+   "e": 41021,
+   "tomada": "egito"
+  },
+  {
+   "txt": "Toda",
+   "s": 41296,
+   "e": 41457,
+   "tomada": "cta"
+  },
+  {
+   "txt": "semana",
+   "s": 41537,
+   "e": 41798,
+   "tomada": "cta"
+  },
+  {
+   "txt": "aqui",
+   "s": 41818,
+   "e": 41898,
+   "tomada": "cta"
+  },
+  {
+   "txt": "no",
+   "s": 41938,
+   "e": 41978,
+   "tomada": "cta"
+  },
+  {
+   "txt": "perfil",
+   "s": 42019,
+   "e": 42340,
+   "tomada": "cta"
+  },
+  {
+   "txt": "eu",
+   "s": 42340,
+   "e": 42380,
+   "tomada": "cta"
+  },
+  {
+   "txt": "dou",
+   "s": 42420,
+   "e": 42520,
+   "tomada": "cta"
+  },
+  {
+   "txt": "dicas",
+   "s": 42540,
+   "e": 42801,
+   "tomada": "cta"
+  },
+  {
+   "txt": "do",
+   "s": 42821,
+   "e": 42901,
+   "tomada": "cta"
+  },
+  {
+   "txt": "que",
+   "s": 42941,
+   "e": 43042,
+   "tomada": "cta"
+  },
+  {
+   "txt": "fazer",
+   "s": 43102,
+   "e": 43443,
+   "tomada": "cta"
+  },
+  {
+   "txt": "e",
+   "s": 43443,
+   "e": 43463,
+   "tomada": "cta"
+  },
+  {
+   "txt": "como",
+   "s": 43523,
+   "e": 43704,
+   "tomada": "cta"
+  },
+  {
+   "txt": "economizar",
+   "s": 43744,
+   "e": 44185,
+   "tomada": "cta"
+  },
+  {
+   "txt": "nas",
+   "s": 44185,
+   "e": 44265,
+   "tomada": "cta"
+  },
+  {
+   "txt": "suas",
+   "s": 44285,
+   "e": 44426,
+   "tomada": "cta"
+  },
+  {
+   "txt": "viagens.",
+   "s": 44466,
+   "e": 44827,
+   "tomada": "cta"
+  },
+  {
+   "txt": "Se",
+   "s": 44847,
+   "e": 44907,
+   "tomada": "cta"
+  },
+  {
+   "txt": "você",
+   "s": 44927,
+   "e": 45128,
+   "tomada": "cta"
+  },
+  {
+   "txt": "gostou,",
+   "s": 45168,
+   "e": 45449,
+   "tomada": "cta"
+  },
+  {
+   "txt": "já",
+   "s": 45469,
+   "e": 45549,
+   "tomada": "cta"
+  },
+  {
+   "txt": "me",
+   "s": 45569,
+   "e": 45630,
+   "tomada": "cta"
+  },
+  {
+   "txt": "segue",
+   "s": 45730,
+   "e": 45951,
+   "tomada": "cta"
+  },
+  {
+   "txt": "aí",
+   "s": 45971,
+   "e": 46031,
+   "tomada": "cta"
+  },
+  {
+   "txt": "para",
+   "s": 46071,
+   "e": 46151,
+   "tomada": "cta"
+  },
+  {
+   "txt": "não",
+   "s": 46191,
+   "e": 46252,
+   "tomada": "cta"
+  },
+  {
+   "txt": "perder",
+   "s": 46292,
+   "e": 46532,
+   "tomada": "cta"
+  },
+  {
+   "txt": "nada.",
+   "s": 46552,
+   "e": 46813,
+   "tomada": "cta"
+  }
+ ],
+ "voz_ms": 46958
+}
