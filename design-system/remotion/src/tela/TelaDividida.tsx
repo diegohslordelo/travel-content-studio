@@ -288,7 +288,7 @@ const Numero: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: num
   // entrada a partir do cartão 1 (a foto cresce do cartão até a tela: Mergulho)
   let wrap: React.CSSProperties = {};
   if (c.entrada === "cartao0") {
-    const r = RECT_CARTAO(0, h);
+    const r = RECT_CARTAO(0, COSTURA);
     const p = kf(t, [0, 420], [0, 1], EASE.cinema);
     const sx = r.w / w + (1 - r.w / w) * p, sy = r.h / h + (1 - r.h / h) * p;
     const tx = r.x * (1 - p), ty = r.y * (1 - p);
@@ -297,15 +297,15 @@ const Numero: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: num
   return (
     <AbsoluteFill style={{ backgroundColor: FUNDO }}>
       <AbsoluteFill style={wrap}>
-        <Foto src={c.foto} t={t} dur={dur} zoom={[1.0, 1.1]} filtro={k && dk >= 0 ? `${FILTRO_FOTO} brightness(${kf(dk, [0, 250], [1, 0.42])})` : FILTRO_FOTO} />
-        <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,0.0) 45%, rgba(0,0,0,0.55) 100%)" }} />
+        <Foto src={c.foto} t={t} dur={dur} zoom={c.zoom ?? [1.0, 1.1]} foco={c.foco} filtro={k && dk >= 0 ? `${FILTRO_FOTO} brightness(${kf(dk, [0, 250], [1, 0.42])})` : FILTRO_FOTO} />
+        <AbsoluteFill style={{ background: h > 1000 ? "linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.0) 32%, rgba(0,0,0,0.0) 55%, rgba(0,0,0,0.55) 100%)" : "linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,0.0) 45%, rgba(0,0,0,0.55) 100%)" }} />
       </AbsoluteFill>
-      <div style={{ position: "absolute", left: 72, top: 270, opacity: saiTitulo, display: "flex", alignItems: "flex-end", gap: 26 }}>
+      {c.n && <div style={{ position: "absolute", left: 72, top: c.tituloY ?? 270, opacity: saiTitulo, display: "flex", alignItems: "flex-end", gap: 26 }}>
         <TextoSobe txt={c.n} t={t} em={c.entrada === "cartao0" ? 200 : 0} tam={300} cor={AMBAR} />
         <div style={{ paddingBottom: 30 }}>
           <TextoSobe txt={c.nome} t={t} em={(c.entrada === "cartao0" ? 200 : 0) + 160} tam={c.nome.length > 7 ? 104 : 128} />
         </div>
-      </div>
+      </div>}
       {k && dk >= 0 && (
         <div style={{ position: "absolute", left: 0, right: 0, top: h * 0.36, textAlign: "center" }}>
           <div style={{ fontFamily: ANTON, fontSize: 150, color: "#fff", textShadow: "0 8px 30px rgba(0,0,0,0.7)", transform: `scale(${kf(dk, [0, 140], [0.8, 1], sai)})` }}>
@@ -381,17 +381,17 @@ const IconeRefeicao: React.FC<{ tipo: number; tam: number }> = ({ tipo, tam }) =
   </svg>
 );
 
-const Refeicoes: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: number; h: number }> = ({ c, t, dur, t0 }) => {
+const Refeicoes: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: number; h: number }> = ({ c, t, dur, t0, h }) => {
   const dv = t - (c.valor.em - t0);
   return (
     <AbsoluteFill>
       {c.foto ? <Foto src={c.foto} t={t} dur={dur} zoom={[1.0, 1.08]} filtro={`${FILTRO_FOTO} brightness(0.4)`} /> : <AbsoluteFill style={{ backgroundColor: FUNDO }} />}
       {dv >= 0 && (
-        <div style={{ position: "absolute", left: 0, right: 0, top: 330, display: "flex", justifyContent: "center" }}>
-          <div style={{ transform: `rotate(-3deg) scale(${kf(dv, [0, 120, 220], [0.5, 1.1, 1], [sai, sai])})`, fontFamily: ANTON, fontSize: 200, color: AMBAR, backgroundColor: "rgba(20,18,15,0.88)", border: `6px solid ${AMBAR}`, borderRadius: 24, padding: "10px 48px 4px" }}>{c.valor.txt}</div>
+        <div style={{ position: "absolute", left: 0, right: 0, top: h > 1000 ? 330 : 275, display: "flex", justifyContent: "center" }}>
+          <div style={{ transform: `rotate(-3deg) scale(${kf(dv, [0, 120, 220], [0.5, 1.1, 1], [sai, sai])})`, fontFamily: ANTON, fontSize: h > 1000 ? 200 : 170, color: AMBAR, backgroundColor: "rgba(20,18,15,0.88)", border: `6px solid ${AMBAR}`, borderRadius: 24, padding: "10px 48px 4px" }}>{c.valor.txt}</div>
         </div>
       )}
-      <div style={{ position: "absolute", left: 0, right: 0, top: 720, display: "flex", justifyContent: "center", gap: 70 }}>
+      <div style={{ position: "absolute", left: 0, right: 0, top: h > 1000 ? 720 : 545, display: "flex", justifyContent: "center", gap: 70 }}>
         {c.icones.map((em: number, i: number) => {
           const d = t - (em - t0);
           const aparece = t - (c.valor.em - t0) - 250 - i * 120;
@@ -464,7 +464,7 @@ const Revela: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: num
         {frente ? (
           <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: ANTON, fontSize: 380, color: AMBAR, transform: `scale(${1 + Math.sin(t / 160) * 0.04})` }}>?</div>
         ) : (
-          <Foto src={c.foto} t={Math.max(0, dv)} dur={dur} zoom={[1.15, 1.0]} foco={[0.5, 0.55]} />
+          <Foto src={c.foto} t={Math.max(0, dv)} dur={dur} zoom={[1.15, 1.0]} foco={c.foco ?? [0.5, 0.55]} />
         )}
         <div style={{ position: "absolute", left: 26, top: 14, fontFamily: ANTON, fontSize: 110, color: "#fff", textShadow: "0 4px 18px rgba(0,0,0,0.8)", opacity: frente ? 1 : 0 }}>{c.n}</div>
       </div>
@@ -476,7 +476,7 @@ const Revela: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: num
           </div>
         </div>
       )}
-      {dv >= 280 && <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.0) 60%, rgba(0,0,0,0.6) 100%)", opacity: expande }} />}
+      {dv >= 280 && <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.0) 60%, rgba(0,0,0,0.6) 100%)", opacity: expande }} />}
     </AbsoluteFill>
   );
 };
@@ -516,6 +516,45 @@ const Euro: React.FC<{ c: Conteudo; t: number; t0: number; w: number; h: number 
   );
 };
 
+/** Print real da cotação (enviado pelo Diego): entra como captura (flash de 80 ms) e os valores são marcados na palavra falada. */
+const Print: React.FC<{ c: Conteudo; t: number; t0: number; w: number; h: number }> = ({ c, t, t0, w }) => {
+  const pw = c.largura ?? 940;
+  const esc = pw / c.tamanho[0];
+  const ph = c.tamanho[1] * esc;
+  const x0 = (w - pw) / 2, y0 = c.topo ?? 300;
+  const ent = kf(t, [0, 260], [0, 1], sai);
+  const flash = kf(t, [0, 40, 120], [0.9, 0.9, 0]);
+  const dc = c.carimbo ? t - (c.carimbo.em - t0) : -1;
+  return (
+    <AbsoluteFill style={{ backgroundColor: FUNDO }}>
+      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 50%, rgba(224,174,92,0.12), rgba(0,0,0,0) 60%)" }} />
+      <div style={{ position: "absolute", left: x0, top: y0, width: pw, height: ph, transform: `translateY(${(1 - ent) * 90}px) scale(${1.04 - 0.04 * ent}) rotate(${(1 - ent) * -2}deg)`, opacity: ent, borderRadius: 28, overflow: "hidden", boxShadow: "0 30px 70px rgba(0,0,0,0.7)", border: "4px solid rgba(236,229,216,0.85)" }}>
+        <Img src={staticFile(`img/${c.src}.jpg`)} style={{ width: "100%", height: "100%", display: "block" }} />
+        <svg width={pw} height={ph} style={{ position: "absolute", inset: 0 }}>
+          {(c.marcas ?? []).map((m: any, i: number) => {
+            const d = t - (m.em - t0);
+            if (d < 0) return null;
+            const rw = m.w * esc, rh = m.h * esc, per = 2 * (rw + rh);
+            const p = kf(d, [0, 260], [0, 1], sai);
+            return (
+              <g key={i}>
+                <rect x={m.x * esc} y={m.y * esc} width={rw} height={rh} rx={18} fill={`rgba(224,174,92,${0.18 * p})`} />
+                <rect x={m.x * esc} y={m.y * esc} width={rw} height={rh} rx={18} fill="none" stroke={AMBAR} strokeWidth={7} strokeDasharray={per} strokeDashoffset={per * (1 - p)} />
+              </g>
+            );
+          })}
+        </svg>
+        <AbsoluteFill style={{ backgroundColor: "#fff", opacity: flash }} />
+      </div>
+      {dc >= 0 && (
+        <div style={{ position: "absolute", left: 0, right: 0, margin: "0 auto", top: y0 + ph - 46, width: "fit-content", transform: `rotate(-4deg) scale(${kf(dc, [0, 110, 220], [1.6, 0.94, 1], [sai, sai])})`, opacity: kf(dc, [0, 80], [0, 1]), border: `6px solid ${AMBAR}`, borderRadius: 14, padding: "10px 30px 6px", fontFamily: ANTON, fontSize: 76, color: AMBAR, backgroundColor: "rgba(20,18,15,0.9)", whiteSpace: "nowrap" }}>
+          {c.carimbo.txt}
+        </div>
+      )}
+    </AbsoluteFill>
+  );
+};
+
 const ConteudoV: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: number; h: number; props: PropsTela }> = ({ c, t, dur, t0, w, h, props }) => {
   switch (c.tipo) {
     case "gancho":
@@ -536,6 +575,8 @@ const ConteudoV: React.FC<{ c: Conteudo; t: number; dur: number; t0: number; w: 
       return <FotoEtiquetas c={c} t={t} dur={dur} t0={t0} w={w} h={h} />;
     case "revela":
       return <Revela c={c} t={t} dur={dur} t0={t0} w={w} h={h} />;
+    case "print":
+      return <Print c={c} t={t} t0={t0} w={w} h={h} />;
     case "euro":
       return <Euro c={c} t={t} t0={t0} w={w} h={h} />;
     default:
@@ -608,6 +649,13 @@ export const TelaDividida: React.FC<PropsTela> = (props) => {
     diegoY = props.diegoY * p;
   }
   const yLeg = cena.layout === "dividida" ? COSTURA : 1320;
+  const qms = 1000 / fps;
+  let luz = 0;
+  for (const c of props.cenas) {
+    if (c.entrada !== "luz") continue;
+    const d = (ms - c.de) / qms; // em quadros, 0 = corte
+    if (d >= -5 && d <= 6) luz = Math.max(luz, kf(d, [-5, -2, 2, 6], [0.08, 0.85, 0.85, 0], [EASE.out, EASE.out, EASE.out]));
+  }
   const clarao = cena.entrada === "clarao" ? kf(t, [0, 40, 170], [0.85, 0.85, 0], EASE.out) : 0;
 
   return (
@@ -633,6 +681,7 @@ export const TelaDividida: React.FC<PropsTela> = (props) => {
       {/* CTA: placa do DS V2 (única peça do DS no Reel) */}
       {ms >= props.cta.em && <Sequence from={Math.round((props.cta.em * fps) / 1000)} layout="none"><Placa destino={props.cta.destino} modulo="seta" entrada={0} /></Sequence>}
 
+      {luz > 0 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 0%, rgba(255,214,150,1) 0%, rgba(255,170,90,0.9) 45%, rgba(255,140,60,0.55) 100%)", opacity: luz, mixBlendMode: "screen" }} />}
       {clarao > 0 && <AbsoluteFill style={{ backgroundColor: "#FFF6E6", opacity: clarao }} />}
       <Grao seed={f % 8} />
 

@@ -1,0 +1,475 @@
+{
+ "_doc": "REV2 · decisões editáveis sem mexer no código. Âncoras 'tomada:palavra[#n][@fim][±ms]' (FORMATOS_REELS.md, 7.1). layout: dividida (apoio em cima, Diego embaixo), apoio (apoio em tela cheia), diego (Diego em tela cheia). REV2 (pedido do Diego, 26/11/2026): print real da cotação no câmbio; cada país abre em tela cheia com uma paisagem bonita; massagem com foto discreta; edição variada.",
+ "saida": "reel_paises_real_rev2.mp4",
+ "margem": {
+  "antes": 0.12,
+  "depois": 0.16,
+  "silencio_db": -52
+ },
+ "cauda_ms": 1400,
+ "diegoY": 620,
+ "semLegenda": [
+  {
+   "de": 0,
+   "ate": "cambio:O-80"
+  }
+ ],
+ "gancho": {
+  "linhas": [
+   {
+    "txt": "COM R$ 232",
+    "em": "gancho:Com",
+    "tam": 96
+   },
+   {
+    "txt": "VOCÊ VIRA",
+    "em": "gancho:você",
+    "tam": 96
+   },
+   {
+    "txt": "MILIONÁRIO",
+    "em": "gancho:milionário",
+    "tam": 150,
+    "destaque": true
+   },
+   {
+    "txt": "NO VIETNÃ",
+    "em": "gancho:no",
+    "tam": 96
+   }
+  ]
+ },
+ "cenas": [
+  {
+   "id": "gancho",
+   "layout": "dividida",
+   "de": 0,
+   "ate": "cambio:O-80",
+   "conteudo": {
+    "tipo": "gancho",
+    "foto": "halong",
+    "notas": "gancho:milionário"
+   }
+  },
+  {
+   "id": "cambio",
+   "layout": "dividida",
+   "de": "cambio:O-80",
+   "ate": "cafe:Ou-80",
+   "conteudo": {
+    "tipo": "print",
+    "src": "print_cambio",
+    "tamanho": [
+     1016,
+     461
+    ],
+    "largura": 1000,
+    "topo": 262,
+    "marcas": [
+     {
+      "x": 812,
+      "y": 36,
+      "w": 192,
+      "h": 64,
+      "em": "cambio:R$ 5,80"
+     },
+     {
+      "x": 812,
+      "y": 244,
+      "w": 192,
+      "h": 64,
+      "em": "cambio:R$ 6,40,"
+     }
+    ],
+    "carimbo": {
+     "txt": "+ TAXAS DO CÂMBIO",
+     "em": "cambio:taxas"
+    }
+   }
+  },
+  {
+   "id": "viajantes",
+   "layout": "dividida",
+   "de": "cafe:Ou-80",
+   "ate": "cafe:aquele-60",
+   "conteudo": {
+    "tipo": "aviao",
+    "sonham": "cafe:sonham",
+    "foto": "aviao"
+   }
+  },
+  {
+   "id": "cafe",
+   "layout": "apoio",
+   "de": "cafe:aquele-60",
+   "ate": "virada:Mas-80",
+   "conteudo": {
+    "tipo": "foto",
+    "src": "cafe",
+    "zoom": [
+     1.0,
+     1.1
+    ],
+    "foco": [
+     0.5,
+     0.55
+    ],
+    "etiquetas": [
+     {
+      "txt": "3 €",
+      "em": "cafe:3",
+      "x": 0.5,
+      "y": 0.42
+     },
+     {
+      "txt": "≈ R$ 20",
+      "em": "cafe:20",
+      "x": 0.5,
+      "y": 0.42,
+      "troca": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "virada",
+   "layout": "diego",
+   "de": "virada:Mas-80",
+   "ate": "virada:Eu-80",
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "id": "tres",
+   "layout": "dividida",
+   "de": "virada:Eu-80",
+   "ate": "vietna:Número-80",
+   "conteudo": {
+    "tipo": "cartoes",
+    "fotos": [
+     "vn_trangan_v2",
+     "th_maya_dd",
+     null
+    ],
+    "em": "virada:3",
+    "rico": "virada:rico"
+   }
+  },
+  {
+   "id": "vietna",
+   "layout": "apoio",
+   "de": "vietna:Número-80",
+   "ate": "vietna:com-60",
+   "conteudo": {
+    "tipo": "numero",
+    "n": "1",
+    "nome": "VIETNÃ",
+    "foto": "vn_trangan_v2",
+    "entrada": "cartao0",
+    "zoom": [
+     1.0,
+     1.12
+    ],
+    "tituloY": 300,
+    "foco": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  {
+   "id": "milhao",
+   "layout": "dividida",
+   "de": "vietna:com-60",
+   "ate": "vietna:e-60",
+   "conteudo": {
+    "tipo": "numero",
+    "foto": "vn_sapa",
+    "zoom": [
+     1.05,
+     1.12
+    ],
+    "contador": {
+     "de": "vietna:com",
+     "ate": "vietna:232",
+     "valor": 1000000,
+     "sufixo": " DONG",
+     "igual": {
+      "txt": "= R$ 232",
+      "em": "vietna:232"
+     }
+    }
+   }
+  },
+  {
+   "id": "pratos",
+   "layout": "apoio",
+   "de": "vietna:e-60",
+   "ate": "tailandia:Número-80",
+   "conteudo": {
+    "tipo": "pratos",
+    "foto": "pho",
+    "n": 20,
+    "de": "vietna:uns",
+    "ate": "vietna:rua.@fim"
+   }
+  },
+  {
+   "id": "tailandia",
+   "layout": "apoio",
+   "de": "tailandia:Número-80",
+   "ate": "tailandia:R$ 150-60",
+   "entrada": "luz",
+   "conteudo": {
+    "tipo": "numero",
+    "n": "2",
+    "nome": "TAILÂNDIA",
+    "foto": "th_maya_dd",
+    "entrada": "numero",
+    "zoom": [
+     1.0,
+     1.12
+    ],
+    "tituloY": 300,
+    "foco": [
+     0.28,
+     0.5
+    ]
+   }
+  },
+  {
+   "id": "refeicoes",
+   "layout": "dividida",
+   "de": "tailandia:R$ 150-60",
+   "ate": "massagem:E-80",
+   "conteudo": {
+    "tipo": "refeicoes",
+    "foto": "comida_bkk2",
+    "valor": {
+     "txt": "R$ 150",
+     "em": "tailandia:R$ 150"
+    },
+    "icones": [
+     "tailandia:todas",
+     "tailandia:refeições",
+     "tailandia:dia."
+    ]
+   }
+  },
+  {
+   "id": "massagem",
+   "layout": "dividida",
+   "de": "massagem:E-80",
+   "ate": "egito:E-80",
+   "conteudo": {
+    "tipo": "foto",
+    "src": "mass_pes",
+    "zoom": [
+     1.02,
+     1.12
+    ],
+    "foco": [
+     0.5,
+     0.55
+    ],
+    "etiquetas": [
+     {
+      "txt": "1 HORA",
+      "em": "massagem:hora",
+      "x": 0.24,
+      "y": 0.36
+     },
+     {
+      "txt": "≈ R$ 50",
+      "em": "massagem:R$ 50,",
+      "x": 0.76,
+      "y": 0.84
+     }
+    ],
+    "calendario": {
+     "em": "massagem:todo"
+    }
+   }
+  },
+  {
+   "id": "egito",
+   "layout": "apoio",
+   "de": "egito:E-80",
+   "ate": "egito:prato-80",
+   "conteudo": {
+    "tipo": "revela",
+    "n": "3",
+    "foto": "piramides",
+    "nome": "EGITO",
+    "virar": "egito:considera,@fim",
+    "foco": [
+     0.5,
+     0.55
+    ]
+   }
+  },
+  {
+   "id": "koshari",
+   "layout": "dividida",
+   "de": "egito:prato-80",
+   "ate": "egito:Você#2-60",
+   "conteudo": {
+    "tipo": "foto",
+    "src": "koshari",
+    "zoom": [
+     1.0,
+     1.1
+    ],
+    "foco": [
+     0.5,
+     0.5
+    ],
+    "etiquetas": [
+     {
+      "txt": "PRATO NACIONAL",
+      "em": "egito:prato",
+      "x": 0.5,
+      "y": 0.2,
+      "pequena": true
+     },
+     {
+      "txt": "R$ 6",
+      "em": "egito:6",
+      "x": 0.5,
+      "y": 0.62
+     }
+    ]
+   }
+  },
+  {
+   "id": "euro",
+   "layout": "apoio",
+   "de": "egito:Você#2-60",
+   "ate": "cta:Toda-80",
+   "conteudo": {
+    "tipo": "euro",
+    "em": "egito:Você#2",
+    "moeda": "egito:euro",
+    "xis": "egito:isso."
+   }
+  },
+  {
+   "id": "fecho",
+   "layout": "dividida",
+   "de": "cta:Toda-80",
+   "ate": "cta:Se-80",
+   "entrada": "clarao",
+   "conteudo": {
+    "tipo": "cartoes",
+    "fotos": [
+     "vn_trangan_v2",
+     "th_maya_dd",
+     "piramides"
+    ],
+    "em": "cta:Toda-80",
+    "revelados": true
+   }
+  },
+  {
+   "id": "cta",
+   "layout": "dividida",
+   "de": "cta:Se-80",
+   "ate": 0,
+   "conteudo": {
+    "tipo": "foto",
+    "src": "halong",
+    "zoom": [
+     1.0,
+     1.08
+    ],
+    "foco": [
+     0.5,
+     0.6
+    ]
+   }
+  }
+ ],
+ "cta": {
+  "destino": "ME SEGUE AÍ",
+  "em": "cta:Se+200"
+ },
+ "sons": [
+  {
+   "arq": "PDX_impacto",
+   "em": "gancho:milionário",
+   "db": -4
+  },
+  {
+   "arq": "PDX_obturador",
+   "em": "cambio:O-80",
+   "db": -8
+  },
+  {
+   "arq": "PDX_impacto",
+   "em": "cambio:taxas",
+   "db": -8
+  },
+  {
+   "arq": "PDX_swish",
+   "em": "cafe:aquele-90",
+   "db": -6
+  },
+  {
+   "arq": "PDX_riser",
+   "fim": "virada:Mas-80",
+   "db": -8
+  },
+  {
+   "arq": "PDX_ar_longo",
+   "em": "vietna:Número-120",
+   "db": -6
+  },
+  {
+   "arq": "PDX_obturador",
+   "em": "vietna:232",
+   "db": -8
+  },
+  {
+   "arq": "PDX_ar_longo",
+   "em": "tailandia:Número-200",
+   "db": -6
+  },
+  {
+   "arq": "PDX_obturador",
+   "em": "tailandia:R$ 150",
+   "db": -8
+  },
+  {
+   "arq": "PDX_obturador",
+   "em": "massagem:R$ 50,",
+   "db": -8
+  },
+  {
+   "arq": "PDX_riser",
+   "fim": "egito:considera,@fim",
+   "db": -8
+  },
+  {
+   "arq": "PDX_impacto",
+   "em": "egito:considera,@fim+20",
+   "db": -4
+  },
+  {
+   "arq": "PDX_obturador",
+   "em": "egito:6",
+   "db": -8
+  },
+  {
+   "arq": "PDX_impacto",
+   "em": "egito:isso.",
+   "db": -6
+  },
+  {
+   "arq": "PD_clack_v1",
+   "em": "cta:Se+600",
+   "db": -6
+  }
+ ]
+}

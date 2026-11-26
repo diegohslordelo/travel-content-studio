@@ -22,6 +22,16 @@ def get(url, tent=12):
 def api(params):
     return json.loads(get("https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({"format": "json", **params})))
 
+# metadados de todos os arquivos numa consulta só (o Commons limita requisições por IP)
+lote = {n: a for n, a in cfg.items() if not n.startswith("_") and isinstance(a, str) and not (os.path.exists(f"_tmp/public/img/{n}.jpg") and n in lic)}
+meta = {}
+if lote:
+    r = api({"action": "query", "titles": "|".join(lote.values()), "prop": "imageinfo", "iiprop": "url|size|extmetadata", "iiurlwidth": 1600})
+    norm = {x["from"]: x["to"] for x in r["query"].get("normalized", [])}
+    por_titulo = {p["title"]: p for p in r["query"]["pages"].values()}
+    for n, a in lote.items():
+        meta[n] = por_titulo.get(norm.get(a, a))
+
 for nome, alvo in cfg.items():
     if nome.startswith("_"):
         continue
@@ -38,10 +48,12 @@ for nome, alvo in cfg.items():
             print("   ", p["title"], ii["width"], "x", ii["height"], "|", m.get("LicenseShortName", {}).get("value", ""))
         time.sleep(6)
         continue
-    r = api({"action": "query", "titles": alvo, "prop": "imageinfo", "iiprop": "url|size|extmetadata", "iiurlwidth": 1600})
-    p = list(r["query"]["pages"].values())[0]
+    p = meta.get(nome)
+    if not p or "imageinfo" not in p:
+        print(f"  {nome}: sem metadados ({alvo})"); continue
     ii = p["imageinfo"][0]; m = ii.get("extmetadata", {})
-    dados = get(ii["thumburl"])
+    # o servidor de arquivos (upload.wikimedia.org) devolve 429 por muito tempo; thumb.php no próprio Commons funciona (FORMATOS_REELS.md, 8.5)
+    dados = get("https://commons.wikimedia.org/w/thumb.php?" + urllib.parse.urlencode({"f": alvo.replace("File:", ""), "w": 1600}))
     if len(dados) < 1000 or dados[:2] != b"\xff\xd8":
         print(f"  {nome}: download inválido"); time.sleep(10); continue
     open(dest, "wb").write(dados)
