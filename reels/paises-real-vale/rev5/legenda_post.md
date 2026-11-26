@@ -7,7 +7,7 @@ R$ 232 = 1 milhão de dong. 3 países onde o brasileiro vive como rico e gasta p
 🇹🇭 Tailândia: R$ 150 viram 877 baht e cobrem as refeições do dia comendo como os locais. Massagem tailandesa de 1 h ≈ R$ 50.
 🇪🇬 Egito: R$ 100 viram 942 libras. O koshari, prato nacional, sai ≈ R$ 6 (você não compra nem 1 euro com isso).
 
-Conversões do Google em 25/11/2026 (dólar a R$ 5,82, euro a R$ 6,39). No cartão ainda entram IOF de 3,5% e o spread do banco. Preços variam por lugar.
+Conversões do Google (nov/2026; dólar a R$ 5,82 e euro a R$ 6,39 em 25/11). No cartão ainda entram IOF de 3,5% e o spread do banco. Preços variam por lugar.
 
 Segue pra mais dicas de viagem que cabem no bolso.
 
