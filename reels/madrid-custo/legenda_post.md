@@ -34,7 +34,7 @@ Quanto custa 3 dias em Madrid? R$ 2.385 por pessoa, com hotel e sem a passagem. 
 
 ## YouTube Shorts (título ≤ 100 caracteres + descrição)
 
-Título (82 caracteres):
+Título (84 caracteres):
 
 ```
 3 dias em Madrid por R$ 2.385 por pessoa, com hotel (sem a passagem) #Madrid #Shorts
@@ -60,6 +60,6 @@ Me segue pra mais custos reais de viagem.
 
 ## Fatos externos
 
-- **IOF de 3,5%** em compras no exterior no cartão: vigente desde 17/07/2026 por fontes de blogs de finanças (ArqFinance, InfoMoney, Folha PE), não pela Receita; reconferir antes de publicar.
+- **IOF de 3,5%** em compras no exterior no cartão: vigente desde 17/07/2025 segundo fontes de blogs de finanças (ArqFinance, InfoMoney, Folha PE), não pela Receita; reconferir antes de publicar.
 - **Cotação € 1 = R$ 6,237:** informada pelo Diego em 26/11/2026 (não confirmada em outra fonte).
 - **Hotel boutique Negresco Plaza Mayor:** nome do link de compartilhamento do Hoteis.com enviado pelo Diego.
