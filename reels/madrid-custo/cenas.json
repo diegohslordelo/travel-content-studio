@@ -182,34 +182,34 @@
    "nota": "'a alimentação deu 840 reais': o Diego com cerveja e churros salgados na primeira parada (19/03, 15h15)"
   },
   {
-   "id": "diego_hamburguer",
-   "ini": "f07:que-0.06",
+   "id": "cervejas",
+   "ini": "f07:pessoa-0.06",
    "video": {
-    "fonte": "IMG_3984",
-    "in": 11.0,
+    "fonte": "IMG_3789",
+    "in": 0.3,
     "foco": [
-     0.58,
+     0.45,
      0.5
     ]
    },
-   "nota": "'que dá uns 280 por dia. E olha que comemos muito bem': o Diego comendo o hambúrguer (20/03, 21h28)"
+   "nota": "'840 reais por pessoa, que dá uns 280 por dia': as cervejas na mesa do bar de tapas (19/03, 20h42)"
   },
   {
    "id": "hamburguer",
-   "ini": "f08:fomos-0.06",
+   "ini": "f08:E-0.06",
    "video": {
     "fonte": "IMG_3978",
-    "in": 1.6,
+    "in": 1.4,
     "foco": [
      0.5,
      0.5
     ]
    },
-   "nota": "'fomos no melhor hambúrguer do mundo': o hambúrguer no prato (20/03, 21h25). Pedido do Diego (26/11/2026): nessa frase, o próprio hambúrguer"
+   "nota": "'E olha que comemos muito bem, fomos no melhor hambúrguer do mundo': o hambúrguer no prato (20/03, 21h25), na tela durante toda a frase do hambúrguer. Pedido do Diego (26/11/2026)"
   },
   {
    "id": "massa_italiano",
-   "ini": "f08:restaurante-0.06",
+   "ini": "f08:mundo-0.06",
    "video": {
     "fonte": "IMG_4144",
     "in": 4.2,
