@@ -5,7 +5,7 @@ Primeira linha reforça o gancho (referência de conteúdo, 3.4); palavras-chave
 ```
 Quanto custa 3 dias em Madrid? Fizemos por R$ 2.385 por pessoa, sem a passagem.
 
-🏨 Hospedagem: R$ 1.095 por pessoa (3 diárias, pertinho da Plaza Mayor)
+🏨 Hospedagem: R$ 1.095 por pessoa (3 diárias no Hotel boutique Negresco Plaza Mayor, pertinho da Plaza Mayor)
 🚇 Transporte: R$ 210 (Uber do aeroporto + metrô)
 🍽️ Alimentação: R$ 840 (uns R$ 280 por dia)
 🏟️ Passeio: tour do Bernabéu, R$ 250
@@ -19,4 +19,4 @@ Salva esse vídeo pra quando for planejar Madrid.
 #madrid #viagemmadrid #quantocusta #viagembarata #europa #roteiromadrid #primeirodia
 ```
 
-**A conferir antes de publicar:** a soma das partes faladas dá R$ 2.395 (1.095 + 210 + 840 + 250), e o total falado é R$ 2.385 (ver QA_REV1.md, "Números").
+**A conferir antes de publicar:** a soma das partes faladas dá R$ 2.395 (1.095 + 210 + 840 + 250), e o total falado é R$ 2.385 (ver rev2/QA_REV2.md, "Números").
