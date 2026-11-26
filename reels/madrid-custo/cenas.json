@@ -283,15 +283,7 @@
   "rotulo": "SEGUE O PERFIL",
   "destino": "@PRIMEIRODIAEM"
  },
- "sons": [
-  {
-   "som": "keen",
-   "em": "f02:E-0.11",
-   "alinhar": "pico",
-   "rel_db": -6,
-   "nota": "som do fim do gancho (regra do Diego de 01/11/2026): pico no corte entre o gancho e a cena seguinte, quando o gancho escrito sai"
-  }
- ],
+ "sons": [],
  "cartoes": [
   {
    "id": "hotel_nome",
@@ -320,5 +312,6 @@
    "topo": 300,
    "nota": "'R$ 1.095 por pessoa nas três diárias': o banheiro (print IMG_8773, recortado só na foto)"
   }
- ]
+ ],
+ "nota_sons": "Sem efeito sonoro: o Diego pediu para tirar o 'keen' do fim do gancho (26/11/2026). Só ficam a voz e o clack da placa do CTA (DS V2)."
 }
