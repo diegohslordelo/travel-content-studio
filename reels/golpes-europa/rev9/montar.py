@@ -62,7 +62,7 @@ FUNDO = {
     "golpe1": [("g5_0744", 6.15, 3.25, 9.40), ("g5_0744", 29.95, None, 34.60)],
     # petição: só os trechos estáveis da câmera (movimento medido quadro a quadro; o resto do
     # vídeo tem chicotes de câmera que parecem imagem perdida); no fim, a mão na bolsa (cachecol)
-    "golpe2": [("g3_0740", 1.50, 1.25, 2.75), ("g3_0740", 4.00, 0.95, 4.95), ("g3_0740", 7.75, 2.70, 10.45),
+    "golpe2": [("g3_0740", 1.50, 1.25, 2.75), ("g3_0740", 4.00, 0.92, 4.95), ("g3_0740", 7.75, 2.70, 10.50),
                ("g7_1538@cachecol", 18.60, None, 20.60)],
     "golpe3": [("IMG_3734", 0.40, 2.20, 4.04), ("IMG_3743", 0.30, 1.60, 4.50), ("IMG_3744", 2.20, None, 5.08)],
     "moral": [("IMG_3634", 0.20, None, 5.75)],
