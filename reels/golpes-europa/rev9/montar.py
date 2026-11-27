@@ -46,6 +46,7 @@ CROP = {  # gravações de tela: sem barra de status, interface, nomes e textos
     "g1_0738": "1056:1878:75:278", "g2_0739": "1206:2144:0:200", "g3_0740": "1122:1996:42:160",
     "g4_0742": "1206:2144:0:180", "g5_0744": "1206:2144:0:180", "g6_1357": "1206:2144:0:180",
     "g7_1538@metro": "953:1694:200:346", "g7_1538@veneza": "1206:2144:0:200",
+    "g7_1538@cachecol": "1068:1898:69:150",   # sem a marca d'água do autor (y > 2080)
 }
 CROP_X_ACERVO = {"IMG_3744": 1900}   # personagem azul inteiro
 
@@ -59,7 +60,10 @@ FUNDO = {
     "relevancia": [("IMG_3647", 0.50, 3.00, 8.60), ("g2_0739", 2.00, 1.80, 7.40), ("g1_0738", 9.00, None, 30.80)],
     "abertura": [("g4_0742", 6.40, None, 22.90)],
     "golpe1": [("g5_0744", 6.15, 3.25, 9.40), ("g5_0744", 29.95, None, 34.60)],
-    "golpe2": [("g3_0740", 1.40, 1.80, 10.50), ("g3_0740", 14.95, 1.00, 15.95), ("g3_0740", 3.20, None, 10.50)],
+    # petição: só os trechos estáveis da câmera (movimento medido quadro a quadro; o resto do
+    # vídeo tem chicotes de câmera que parecem imagem perdida); no fim, a mão na bolsa (cachecol)
+    "golpe2": [("g3_0740", 1.50, 1.25, 2.75), ("g3_0740", 4.00, 0.95, 4.95), ("g3_0740", 7.75, 2.70, 10.45),
+               ("g7_1538@cachecol", 18.60, None, 20.60)],
     "golpe3": [("IMG_3734", 0.40, 2.20, 4.04), ("IMG_3743", 0.30, 1.60, 4.50), ("IMG_3744", 2.20, None, 5.08)],
     "moral": [("IMG_3634", 0.20, None, 5.75)],
     "cta": [("IMG_3630", 0.20, 2.60, 3.08), ("IMG_3647", 3.50, None, 8.60)],
@@ -329,6 +333,18 @@ def render(versao, gancho, lado, edl, cache_pal):
                 img, xy = img_legenda(g, k + 1, y_leg, font_leg)
                 estados.append((round(s * FPS), round(e * FPS), img, xy))
     estados.sort(key=lambda x: x[0])
+    # palavra acesa por menos de 2 quadros pisca: acende junto com a seguinte
+    limpo = []
+    for st in estados:
+        if st[1] - st[0] < 2 and limpo:
+            continue
+        if limpo and limpo[-1][1] < st[0]:
+            limpo[-1] = (limpo[-1][0], st[0], limpo[-1][2], limpo[-1][3])
+        limpo.append(st)
+    for i in range(len(limpo) - 1):              # sem buraco entre estados do mesmo trecho falado
+        if 0 < limpo[i + 1][0] - limpo[i][1] <= 2:
+            limpo[i] = (limpo[i][0], limpo[i + 1][0], limpo[i][2], limpo[i][3])
+    estados = [st for st in limpo if st[1] - st[0] >= 2]
     json.dump(cache_pal, open(f"{TMP}palavras.json", "w"), ensure_ascii=False, indent=1)
 
     f_fim_gancho = round(blocos_t["dado"] * FPS)
