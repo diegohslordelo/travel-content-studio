@@ -1,0 +1,125 @@
+{
+ "referencia": "https://www.instagram.com/reel/DGMLRGwPqnY/ (viagensdoborges, Egito; áudio: erikerrante · Áudio original; 15,53 s, ~103 BPM; volume sobe ~10 dB em 8,2 s)",
+ "estrutura": "Instagram (internet, 0–8,22 s) x Realidade (acervo, 8,22–15,53 s), na mesma ordem de lugares; troca no drop da música",
+ "keen": {
+  "corte": 8.22,
+  "volume_db": -10
+ },
+ "planos": [
+  {
+   "ini": 0.0,
+   "fim": 1.32,
+   "arquivo": "internet/pexels_14258476.mp4",
+   "src_in": 1.0,
+   "cx": 0.4,
+   "lado": "Instagram",
+   "o_que": "canal com árvores verdes",
+   "credito": "Pexels 14258476"
+  },
+  {
+   "ini": 1.32,
+   "fim": 2.44,
+   "arquivo": "internet/pexels_27706783.mp4",
+   "src_in": 1.0,
+   "lado": "Instagram",
+   "o_que": "roseiral florido",
+   "credito": "Pexels 27706783 (Olena)"
+  },
+  {
+   "ini": 2.44,
+   "fim": 3.53,
+   "arquivo": "internet/pexels_12614660.mp4",
+   "src_in": 1.0,
+   "cx": 0.5,
+   "lado": "Instagram",
+   "o_que": "tulipas em flor",
+   "credito": "Pexels 12614660"
+  },
+  {
+   "ini": 3.53,
+   "fim": 4.64,
+   "arquivo": "internet/pexels_20455955.mp4",
+   "src_in": 10.0,
+   "lado": "Instagram",
+   "o_que": "parque verde com bicicletas e céu azul",
+   "credito": "Pexels 20455955"
+  },
+  {
+   "ini": 4.64,
+   "fim": 6.46,
+   "arquivo": "internet/pexels_2034220.mp4",
+   "src_in": 1.6,
+   "cx": 0.5,
+   "lado": "Instagram",
+   "o_que": "Museumplein e Rijksmuseum com sol",
+   "credito": "Pexels 2034220 (Chait Goli)"
+  },
+  {
+   "ini": 6.46,
+   "fim": 8.22,
+   "arquivo": "internet/pexels_28349547.mp4",
+   "src_in": 3.0,
+   "cx": 0.35,
+   "lado": "Instagram",
+   "o_que": "canal e barcos com céu azul",
+   "credito": "Pexels 28349547"
+  },
+  {
+   "ini": 8.22,
+   "fim": 9.33,
+   "arquivo": "IMG_1561.MOV",
+   "src_in": 0.6,
+   "cx": 0.5,
+   "lado": "Realidade",
+   "o_que": "canal nublado (13/03 11:24)"
+  },
+  {
+   "ini": 9.33,
+   "fim": 10.43,
+   "arquivo": "IMG_1749.MOV",
+   "src_in": 3.0,
+   "cx": 0.35,
+   "h": 1500,
+   "lado": "Realidade",
+   "o_que": "roseiral do Vondelpark sem flor (13/03 15:22)"
+  },
+  {
+   "ini": 10.43,
+   "fim": 11.59,
+   "arquivo": "IMG_1750.MOV",
+   "src_in": 6.2,
+   "cx": 0.5,
+   "lado": "Realidade",
+   "o_que": "canteiros secos (13/03 15:22)"
+  },
+  {
+   "ini": 11.59,
+   "fim": 12.79,
+   "arquivo": "IMG_1745.MOV",
+   "src_in": 2.2,
+   "cx": 0.55,
+   "lado": "Realidade",
+   "o_que": "Vondelpark de inverno, piscina vazia (13/03 15:17)"
+  },
+  {
+   "ini": 12.79,
+   "fim": 14.0,
+   "arquivo": "IMG_1650.MOV",
+   "src_in": 0.8,
+   "cx": 0.55,
+   "lado": "Realidade",
+   "o_que": "Museumplein com poças (13/03 13:03)"
+  },
+  {
+   "ini": 14.0,
+   "fim": 15.533,
+   "arquivo": "IMG_1536.MOV",
+   "src_in": 2.0,
+   "cx": 0.56,
+   "girar": true,
+   "lado": "Realidade",
+   "o_que": "Diego e Marina no guarda-chuva, chuva (13/03 09:01)"
+  }
+ ],
+ "texto": "nenhum: o Diego coloca a legenda/letreiro no app"
+}
