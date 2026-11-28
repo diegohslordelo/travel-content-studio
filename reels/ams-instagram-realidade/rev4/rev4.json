@@ -1,0 +1,20 @@
+{
+ "referencia": "https://www.instagram.com/reel/DGMLRGwPqnY/ (áudio: erikerrante · Áudio original; 15,53 s, ~103 BPM)",
+ "estrutura": "Leitura da música (Diego, 28/11/2026): 0–2,97 intro = bonito; 2,97–8,22 sobe = perrengue; 8,22–11,59 calma = bonito; 11,59–15,53 sobe de novo = perrengue. Bonito = internet (Pexels); perrengue = acervo.",
+ "texto": "nenhum: o Diego coloca a legenda no app",
+ "audio": "nenhum no arquivo de postar; o áudio do trend entra no app (sem keen, pedido do Diego)",
+ "planos": [
+  {"ini": 0.00,  "fim": 1.88,  "arquivo": "internet/pexels_foto_29434685.jpg", "cx": 0.50, "lado": "bonito", "o_que": "pôr do sol no canal", "credito": "Pexels 29434685 (Kai Pro)"},
+  {"ini": 1.88,  "fim": 2.97,  "arquivo": "internet/pexels_foto_34221321.jpg", "cx": 0.50, "lado": "bonito", "o_que": "casinhas do canal ao pôr do sol", "credito": "Pexels 34221321 (senanur yılmaz)"},
+  {"ini": 2.97,  "fim": 4.09,  "arquivo": "IMG_1537.MOV", "src_in": 0.3, "retrato": true, "lado": "perrengue", "o_que": "Marina e o guarda-chuva na chuva (13/03 09:02)"},
+  {"ini": 4.09,  "fim": 5.25,  "arquivo": "IMG_1561.MOV", "src_in": 0.6, "cx": 0.50, "lado": "perrengue", "o_que": "canal nublado (13/03 11:24)"},
+  {"ini": 5.25,  "fim": 6.46,  "arquivo": "IMG_1650.MOV", "src_in": 0.8, "cx": 0.55, "lado": "perrengue", "o_que": "Museumplein com poças (13/03 13:03)"},
+  {"ini": 6.46,  "fim": 8.22,  "arquivo": "IMG_1745.MOV", "src_in": 2.2, "cx": 0.55, "lado": "perrengue", "o_que": "Vondelpark no inverno, piscina vazia (13/03 15:17)"},
+  {"ini": 8.22,  "fim": 9.33,  "arquivo": "internet/pexels_foto_16053323.jpg", "cx": 0.25, "lado": "bonito", "o_que": "canal com barco e céu azul", "credito": "Pexels 16053323"},
+  {"ini": 9.33,  "fim": 10.43, "arquivo": "internet/pexels_foto_23508041.jpg", "cx": 0.50, "lado": "bonito", "o_que": "bicicleta com flores na ponte do canal", "credito": "Pexels 23508041 (Sahuri)"},
+  {"ini": 10.43, "fim": 11.59, "arquivo": "internet/pexels_12614660.mp4", "src_in": 1.0, "cx": 0.50, "lado": "bonito", "o_que": "tulipas em flor", "credito": "Pexels 12614660"},
+  {"ini": 11.59, "fim": 12.79, "arquivo": "IMG_1749.MOV", "src_in": 3.0, "cx": 0.35, "h": 1500, "lado": "perrengue", "o_que": "roseiral do Vondelpark sem flor (13/03 15:22)"},
+  {"ini": 12.79, "fim": 14.00, "arquivo": "IMG_1672.MOV", "src_in": 0.3, "cx": 0.50, "lado": "perrengue", "o_que": "Marina tapando o rosto do frio (13/03 14:25)"},
+  {"ini": 14.00, "fim": 15.533,"arquivo": "IMG_1536.MOV", "src_in": 2.0, "retrato": true, "lado": "perrengue", "o_que": "Diego e Marina no guarda-chuva, de lado como foi gravado (13/03 09:01)"}
+ ]
+}
